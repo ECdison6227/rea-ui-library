@@ -1,0 +1,1 @@
+__d(function(g,r,i,a,m,e,d){Object.defineProperty(e,"__esModule",{value:!0}),e.styles=void 0;var t=r(d[0]);e.styles=t.StyleSheet.create({scrollbar:{height:30,marginTop:6,flexGrow:0,marginHorizontal:18},tab:{},pager:{marginTop:16,flex:1}})},"sp-729",[18]);

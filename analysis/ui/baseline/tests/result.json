@@ -1,0 +1,132 @@
+{
+  "runId": "2026-10-15T13-48-00-341Z",
+  "at": "2026-10-15T13:51:25.293Z",
+  "classification": "D reference runtime verification; does not establish original parity",
+  "serial": "emulator-5580",
+  "apkSha256": "4a62b1255795edbb422990a8198e3320f98b8cdf592a4966a42c18ef8c9d3b5b",
+  "passed": 14,
+  "failed": 0,
+  "results": [
+    {
+      "name": "health components mount and metric event returns",
+      "status": "passed",
+      "evidence": [
+        "hero-destination.xml",
+        "hero-return.xml"
+      ]
+    },
+    {
+      "name": "metric card emits detail and preserves overview",
+      "status": "passed",
+      "evidence": [
+        "metric-destination.xml",
+        "metric-return.xml"
+      ]
+    },
+    {
+      "name": "profile auth boundary can cancel",
+      "status": "passed",
+      "evidence": [
+        "mine-top.xml",
+        "profile-boundary.xml",
+        "profile-cancel.xml"
+      ]
+    },
+    {
+      "name": "shortcut prerequisite sheet cancels without navigating",
+      "status": "passed",
+      "evidence": [
+        "shortcut-sheet.xml",
+        "shortcut-cancel.xml"
+      ]
+    },
+    {
+      "name": "surface card prerequisite sheet cancels",
+      "status": "passed",
+      "evidence": [
+        "surface-sheet.xml",
+        "surface-cancel.xml"
+      ]
+    },
+    {
+      "name": "add menu closes on Back and outside then routes add to auth boundary",
+      "status": "passed",
+      "evidence": [
+        "menu-open.xml",
+        "menu-back.xml",
+        "menu-outside.xml",
+        "menu-auth.xml",
+        "menu-auth-return.xml"
+      ]
+    },
+    {
+      "name": "prerequisite sheet dismisses by outside tap and Back",
+      "status": "passed",
+      "evidence": [
+        "guard-outside-after.xml",
+        "guard-back-after.xml"
+      ]
+    },
+    {
+      "name": "tab reselection and settings return preserve scroll anchor",
+      "status": "passed",
+      "evidence": [
+        "mine-scrolled.xml",
+        "mine-reselected.xml",
+        "settings-pushed.xml",
+        "mine-settings-return.xml"
+      ]
+    },
+    {
+      "name": "switch commits off/on and updates explanatory copy",
+      "status": "passed",
+      "evidence": [
+        "switch-off.xml",
+        "switch-restored.xml"
+      ]
+    },
+    {
+      "name": "guest logout remains on settings",
+      "status": "passed",
+      "evidence": [
+        "logout-before.xml",
+        "logout-after.xml"
+      ]
+    },
+    {
+      "name": "transfer validates empty input then saves data",
+      "status": "passed",
+      "evidence": [
+        "edit-empty.xml",
+        "edit-invalid.xml",
+        "transfer-saved.xml"
+      ]
+    },
+    {
+      "name": "transfer cancel and preferences return retain saved item",
+      "status": "passed",
+      "evidence": [
+        "transfer-cancelled.xml",
+        "preferences.xml",
+        "preferences-return.xml"
+      ]
+    },
+    {
+      "name": "transfer failed update retains data and retry recovers",
+      "status": "passed",
+      "evidence": [
+        "retry-error.xml",
+        "retry-success.xml"
+      ]
+    },
+    {
+      "name": "modal queue shows one at a time and advances on close",
+      "status": "passed",
+      "evidence": [
+        "queue-first.xml",
+        "queue-second.xml",
+        "queue-closed.xml"
+      ]
+    }
+  ]
+}

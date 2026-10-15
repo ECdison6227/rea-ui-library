@@ -1,0 +1,16 @@
+{
+  "format": "One JSON object per line in texts.jsonl",
+  "sourceFile": "Byte-exact preserved XML. Look up inventory.json by file for original path and SHA-256.",
+  "sourceEvidenceClass": "B",
+  "businessScopeEvidenceClass": "C",
+  "scopeRules": {
+    "generic": "Exact short-label allowlist: Allow, Back, Cancel, Close, Delete, Deny, Done, Exit, Help, Next, OK, Retry, Save, Search, Settings, Sign in, 下一步, 保存, 允许, 关闭, 删除, 取消, 完成, 帮助, 拒绝, 搜索, 登录, 确定, 确认, 设置, 返回, 退出, 重试",
+    "health": "Explicit health-domain term matched by the documented build script; analyst classification, not author intent.",
+    "unknown": "No reviewed classification; preserve context-dependent copy."
+  },
+  "limitations": [
+    "Copying a string does not approve its meaning for another product.",
+    "The JSON index is a lookup representation. Original XML is authoritative for spans, placeholders, escaping, attributes and quantity rules.",
+    "Most resource text ownership and SDK provenance are unknown; do not infer first-party authorship from name prefixes."
+  ]
+}

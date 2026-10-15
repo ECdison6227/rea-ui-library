@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/device_fragment_device_tab_parent_v4_0" android:background="@color/device_page_background" android:paddingTop="@dimen/dimen_margin_35dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xiaomi.fitness.widget.view.HomeHeaderTabTitleView android:id="@id/header" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/header" app:layout_constraintVertical_weight="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

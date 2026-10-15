@@ -1,0 +1,357 @@
+{
+  "bundle": "dial",
+  "id": "di-525",
+  "line": 533,
+  "aliases": {
+    "t": 3,
+    "n": 27,
+    "l": 14,
+    "o": 1113,
+    "s": "di-118",
+    "u": "di-144",
+    "c": 631,
+    "f": 382,
+    "y": "di-149",
+    "b": 2465,
+    "h": 1780,
+    "p": "di-526"
+  },
+  "elements": [
+    {
+      "type": "h.Row",
+      "module": 1780,
+      "props": {
+        "alignItems": "center",
+        "height": 44,
+        "paddingX": 21,
+        "marginBottom": 1.5,
+        "bg": {
+          "$code": "j"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Pressable,{onPress:w,w:9,h:9,justifyContent:\"center\",_pressed:{opacity:.7},accessibilityLabel:u.default.trans(\"dial.nav.back\"),accessibilityRole:\"button\"},l.default.createElement(o.default,{source:M,style:[{width:36,height:36},f.CommonStyles.mirrorRotate],resizeMode:\"contai"
+        },
+        {
+          "$code": "l.default.createElement(h.Row,{flex:1,justifyContent:\"center\"},l.default.createElement(h.Pressable,{onPress:W,style:{flex:1,alignItems:\"flex-end\",height:44,justifyContent:\"center\"},_pressed:{opacity:.7},accessibilityLabel:\"\"+(0===v?u.default.trans(\"dial.nav.selected\"):u.default.trans(\"dial.nav.unsel"
+        },
+        {
+          "$code": "l.default.createElement(h.Pressable,{onPress:E,w:9,h:9,justifyContent:\"center\",_pressed:{opacity:.7},accessibilityLabel:u.default.trans(\"dial.search.search\"),accessibilityRole:\"button\"},l.default.createElement(o.default,{source:z,style:{width:36,height:36},resizeMode:\"contain\"}))"
+        }
+      ]
+    },
+    {
+      "type": "h.Pressable",
+      "module": 1780,
+      "props": {
+        "onPress": {
+          "$code": "w"
+        },
+        "w": 9,
+        "h": 9,
+        "justifyContent": "center",
+        "_pressed": {
+          "opacity": 0.7
+        },
+        "accessibilityLabel": {
+          "$code": "u.default.trans(\"dial.nav.back\")"
+        },
+        "accessibilityRole": "button"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(o.default,{source:M,style:[{width:36,height:36},f.CommonStyles.mirrorRotate],resizeMode:\"contain\"})"
+        }
+      ]
+    },
+    {
+      "type": "o.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "M"
+        },
+        "style": [
+          {
+            "width": 36,
+            "height": 36
+          },
+          {
+            "$code": "f.CommonStyles.mirrorRotate"
+          }
+        ],
+        "resizeMode": "contain"
+      },
+      "children": []
+    },
+    {
+      "type": "h.Row",
+      "module": 1780,
+      "props": {
+        "flex": 1,
+        "justifyContent": "center"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Pressable,{onPress:W,style:{flex:1,alignItems:\"flex-end\",height:44,justifyContent:\"center\"},_pressed:{opacity:.7},accessibilityLabel:\"\"+(0===v?u.default.trans(\"dial.nav.selected\"):u.default.trans(\"dial.nav.unselected\"))+T},B?l.default.createElement(p.default,{text:T,style:{"
+        },
+        {
+          "$code": "l.default.createElement(h.Box,{w:21})"
+        },
+        {
+          "$code": "l.default.createElement(h.Pressable,{onPress:L,style:{flex:1,height:44,justifyContent:\"center\"},_pressed:{opacity:.7},accessibilityLabel:\"\"+(1===v?u.default.trans(\"dial.nav.selected\"):u.default.trans(\"dial.nav.unselected\"))+u.default.trans(\"dial.market.nav.title.my\")},B?l.default.createElement(p.def"
+        }
+      ]
+    },
+    {
+      "type": "h.Pressable",
+      "module": 1780,
+      "props": {
+        "onPress": {
+          "$code": "W"
+        },
+        "style": {
+          "flex": 1,
+          "alignItems": "flex-end",
+          "height": 44,
+          "justifyContent": "center"
+        },
+        "_pressed": {
+          "opacity": 0.7
+        },
+        "accessibilityLabel": {
+          "$code": "\"\"+(0===v?u.default.trans(\"dial.nav.selected\"):u.default.trans(\"dial.nav.unselected\"))+T"
+        }
+      },
+      "children": [
+        {
+          "$code": "B?l.default.createElement(p.default,{text:T,style:{fontSize:19,fontWeight:\"500\",color:C},width:120}):l.default.createElement(h.Text,{fontSize:19,fontWeight:\"500\",color:C,numberOfLines:1,ellipsizeMode:\"tail\"},T)"
+        }
+      ]
+    },
+    {
+      "type": "p.default",
+      "module": "di-526",
+      "props": {
+        "text": {
+          "$code": "T"
+        },
+        "style": {
+          "fontSize": 19,
+          "fontWeight": "500",
+          "color": {
+            "$code": "C"
+          }
+        },
+        "width": 120
+      },
+      "children": []
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 19,
+        "fontWeight": "500",
+        "color": {
+          "$code": "C"
+        },
+        "numberOfLines": 1,
+        "ellipsizeMode": "tail"
+      },
+      "children": [
+        {
+          "$code": "T"
+        }
+      ]
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "w": 21
+      },
+      "children": []
+    },
+    {
+      "type": "h.Pressable",
+      "module": 1780,
+      "props": {
+        "onPress": {
+          "$code": "L"
+        },
+        "style": {
+          "flex": 1,
+          "height": 44,
+          "justifyContent": "center"
+        },
+        "_pressed": {
+          "opacity": 0.7
+        },
+        "accessibilityLabel": {
+          "$code": "\"\"+(1===v?u.default.trans(\"dial.nav.selected\"):u.default.trans(\"dial.nav.unselected\"))+u.default.trans(\"dial.market.nav.title.my\")"
+        }
+      },
+      "children": [
+        {
+          "$code": "B?l.default.createElement(p.default,{text:u.default.trans(\"dial.market.nav.title.my\"),style:{fontSize:19,fontWeight:\"500\",color:O},width:120}):l.default.createElement(h.Text,{fontSize:19,fontWeight:\"500\",color:O,numberOfLines:1,ellipsizeMode:\"tail\"},u.default.trans(\"dial.market.nav.title.my\"))"
+        }
+      ]
+    },
+    {
+      "type": "p.default",
+      "module": "di-526",
+      "props": {
+        "text": {
+          "$code": "u.default.trans(\"dial.market.nav.title.my\")"
+        },
+        "style": {
+          "fontSize": 19,
+          "fontWeight": "500",
+          "color": {
+            "$code": "O"
+          }
+        },
+        "width": 120
+      },
+      "children": []
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 19,
+        "fontWeight": "500",
+        "color": {
+          "$code": "O"
+        },
+        "numberOfLines": 1,
+        "ellipsizeMode": "tail"
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.market.nav.title.my\")"
+        }
+      ]
+    },
+    {
+      "type": "h.Pressable",
+      "module": 1780,
+      "props": {
+        "onPress": {
+          "$code": "E"
+        },
+        "w": 9,
+        "h": 9,
+        "justifyContent": "center",
+        "_pressed": {
+          "opacity": 0.7
+        },
+        "accessibilityLabel": {
+          "$code": "u.default.trans(\"dial.search.search\")"
+        },
+        "accessibilityRole": "button"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(o.default,{source:z,style:{width:36,height:36},resizeMode:\"contain\"})"
+        }
+      ]
+    },
+    {
+      "type": "o.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "z"
+        },
+        "style": {
+          "width": 36,
+          "height": 36
+        },
+        "resizeMode": "contain"
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": [
+    {
+      "key": "height",
+      "value": 44
+    },
+    {
+      "key": "paddingX",
+      "value": 21
+    },
+    {
+      "key": "marginBottom",
+      "value": 1.5
+    },
+    {
+      "key": "width",
+      "value": 36
+    },
+    {
+      "key": "height",
+      "value": 36
+    },
+    {
+      "key": "height",
+      "value": 44
+    },
+    {
+      "key": "fontSize",
+      "value": 19
+    },
+    {
+      "key": "fontWeight",
+      "value": "500"
+    },
+    {
+      "key": "width",
+      "value": 120
+    },
+    {
+      "key": "fontSize",
+      "value": 19
+    },
+    {
+      "key": "fontWeight",
+      "value": "500"
+    },
+    {
+      "key": "height",
+      "value": 44
+    },
+    {
+      "key": "fontSize",
+      "value": 19
+    },
+    {
+      "key": "fontWeight",
+      "value": "500"
+    },
+    {
+      "key": "width",
+      "value": 120
+    },
+    {
+      "key": "fontSize",
+      "value": 19
+    },
+    {
+      "key": "fontWeight",
+      "value": "500"
+    },
+    {
+      "key": "width",
+      "value": 36
+    },
+    {
+      "key": "height",
+      "value": 36
+    }
+  ]
+}

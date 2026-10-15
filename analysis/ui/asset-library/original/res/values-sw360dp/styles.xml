@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="userinfo_Picker.Number.Guide" parent="@style/userinfo_Picker.Number">
+        <item name="android:focusable">true</item>
+        <item name="npv_HintTextPosition">center_up</item>
+        <item name="npv_ItemPaddingVertical">0.0dp</item>
+        <item name="npv_ShowCount">5</item>
+        <item name="npv_TextColorHint">@color/userinfo_black</item>
+        <item name="npv_TextColorNormal">@color/userinfo_black_20</item>
+        <item name="npv_TextColorOuter">@color/userinfo_black_10</item>
+        <item name="npv_TextColorSelected">@color/userinfo_black</item>
+        <item name="npv_TextEllipsize">end</item>
+        <item name="npv_TextSizeHint">@dimen/dimen_margin_14dp</item>
+        <item name="npv_TextSizeNormal">37.0dp</item>
+        <item name="npv_TextSizeOuter">33.0dp</item>
+        <item name="npv_TextSizeSelected">46.0dp</item>
+        <item name="npv_WrapSelectorWheel">false</item>
+    </style>
+</resources>

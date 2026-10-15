@@ -1,0 +1,110 @@
+{
+  "id": "sp-857",
+  "line": 865,
+  "bytes": 3877,
+  "deps": [
+    3,
+    14,
+    18,
+    1113,
+    631,
+    "sp-144",
+    1780,
+    "sp-234",
+    "sp-858"
+  ],
+  "exports": [
+    "IndicatorCard"
+  ],
+  "strings": [
+    "500",
+    "600",
+    "left",
+    "400",
+    "row",
+    "center",
+    "space-between",
+    "auto",
+    "180deg",
+    "0deg",
+    "#FFBB00",
+    "#8ADB22",
+    "#1AD3B2",
+    "#29A9FF",
+    "#f7f8f9",
+    "#212121",
+    "ios",
+    "window",
+    " ",
+    "button",
+    "10px",
+    "1px",
+    "segment-",
+    "#E9ECF3"
+  ],
+  "routes": [],
+  "styleSheets": [
+    {
+      "callee": "o.StyleSheet.create",
+      "styles": {
+        "card": {
+          "borderRadius": 14,
+          "padding": 12,
+          "marginRight": 10,
+          "minHeight": 160
+        },
+        "titleText": {
+          "fontSize": 16,
+          "fontWeight": "500",
+          "marginVertical": 4
+        },
+        "mainValue": {
+          "marginTop": 1,
+          "marginBottom": 3,
+          "fontSize": 18,
+          "fontWeight": "600",
+          "paddingVertical": 3.5,
+          "textAlign": "left"
+        },
+        "emptyValueContainer": {
+          "marginTop": 4
+        },
+        "emptyValue": {
+          "fontSize": 14,
+          "fontWeight": "400",
+          "paddingVertical": 3
+        },
+        "statusText": {
+          "fontSize": 13,
+          "fontWeight": "400",
+          "paddingVertical": 2.5,
+          "marginBottom": 22
+        },
+        "rangeContainer": {
+          "flexDirection": "row",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "marginBottom": 10,
+          "marginTop": "auto"
+        },
+        "rangeText": {
+          "fontSize": 12
+        },
+        "arrow": {
+          "width": 20,
+          "height": 20,
+          "transform": [
+            {
+              "rotate": {
+                "$code": "h?\"180deg\":\"0deg\""
+              }
+            }
+          ]
+        }
+      },
+      "code": "o.StyleSheet.create({card:{borderRadius:14,padding:12,marginRight:10,minHeight:160},titleText:{fontSize:16,fontWeight:\"500\",marginVertical:4},mainValue:{marginTop:1,marginBottom:3,fontSize:18,fontWeight:\"600\",paddingVertical:3.5,textAlign:\"left\"},emptyValueContainer:{marginTop:4},emptyValue:{fontSize:14,fontWeight:\"400\",paddingVertical:3},statusText:{fontSize:13,fontWeight:\"400\",paddingVertical:2.5,marginBottom:22},rangeContainer:{flexDirection:\"row\",alignItems:\"center\",justifyContent:\"space-between\",marginBottom:10,marginTop:\"auto\"},rangeText:{fontSize:12},arrow:{width:20,height:20,transform:[{rotate:h?\"180deg\":\"0deg\"}]}})"
+    }
+  ],
+  "assetNames": [],
+  "calls": []
+}

@@ -1,0 +1,44 @@
+{
+  "id": "mi-343",
+  "line": 351,
+  "bytes": 2649,
+  "deps": [
+    3,
+    54,
+    14,
+    18,
+    1113,
+    1215,
+    "mi-138",
+    1780,
+    "mi-344",
+    "mi-345",
+    "mi-340"
+  ],
+  "exports": [
+    "MedalItem"
+  ],
+  "strings": [
+    "native",
+    "center",
+    "contain",
+    "#FFFFFF",
+    "12px",
+    "8px",
+    "#8F8F8F",
+    "#FF612E"
+  ],
+  "routes": [],
+  "styleSheets": [],
+  "assetNames": [],
+  "calls": [
+    {
+      "method": "timing",
+      "code": "u.Animated.timing(M.current,{toValue:.9,duration:100,useNativeDriver:!0})"
+    },
+    {
+      "method": "spring",
+      "code": "u.Animated.spring(M.current,{toValue:1,friction:3,tension:40,useNativeDriver:!0})"
+    }
+  ]
+}

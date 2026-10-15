@@ -1,0 +1,100 @@
+/* Shipped XML-derived semantic candidates, not a screenshot-calibrated universal theme.
+ * dp -> CSS px assumes logical 1:1 units; sp -> px assumes Android fontScale=1.
+ * Retain original units/provenance in design-tokens.json.
+ * Explicit [data-mi-theme] opt-in: app day/night mode was not observed at runtime.
+ * MIUI adaptive/smooth corners require a platform implementation; card radius below is only the XML corner value. */
+:root, [data-mi-theme="day"] {
+  /* @color/page_bg; main_activity_main.xml: main_fl_content; main_fragment_homepage through common_page_bg_color */
+  --mi-page-background: #fafafa;
+  /* @color/mine_page_background; legacy/compatibility native mine_fragment_v4.xml root; current MineFragmentV4 is a YRN container */
+  --mi-legacy-native-mine-page-background: #f4f5f8;
+  /* @color/common_card_bg_color; common_card_bg_white.xml */
+  --mi-card-background: #ffffff;
+  /* @color/mine_white; mine_label_bg_white.xml bound in legacy/compatibility native mine_fragment_v4.xml; not proof of current YRN Mine rendering */
+  --mi-legacy-native-mine-card-background: #ffffff;
+  /* @color/text_color; health_home_card_common_title.xml and widget_title_bar.xml */
+  --mi-text-primary: #000000;
+  /* @color/text_color_40; health_home_card_common_title.xml:tvHomeCardDesc */
+  --mi-text-muted: rgba(0, 0, 0, 0.4);
+  /* @color/main_tab_bg; main_activity_main.xml:main_tl_bottom */
+  --mi-navigation-background: #ffffff;
+  /* @color/main_tab_text_color_normal; main_view_tab.xml:main_tv_tab_name */
+  --mi-navigation-label-inactive: rgba(0, 0, 0, 0.301961);
+  /* @color/colorPrimary; MainActivity.selected(): z=true -> b5k.a=2131099886 -> public.xml colorPrimary */
+  --mi-navigation-label-selected: #ff612e;
+  /* @color/text_color; HomeHeaderTabTitleView.bindTitle(): isCurrent=true -> b6k.o=2131103704 -> public.xml text_color */
+  --mi-page-header-label-selected: #000000;
+  /* @color/home_header_title_unselect; HomeHeaderTabTitleView.bindTitle(): isCurrent=false -> b6k.f=2131100815 -> public.xml home_header_title_unselect */
+  --mi-page-header-label-inactive: rgba(0, 0, 0, 0.4);
+  /* @color/colorPrimary; CommonBtn.Primary > selector_bottom_btn_positive_bg > common_dialog_positive_btn_smooth */
+  --mi-action-primary-background: #ff612e;
+  /* @color/common_btn_primary_text_color; CommonBtn.Primary > selector_common_btn_primary_text_color enabled/default */
+  --mi-action-primary-label: #ffffff;
+  /* @color/common_btn_primary_text_color_unenabled; CommonBtn.Primary > selector_common_btn_primary_text_color state_enabled=false */
+  --mi-action-primary-label-disabled: rgba(255, 255, 255, 0.4);
+  /* @color/feature_item_title_text_color; layout_single_textview_right_arrow.xml through selector_feature_item_title_text_color */
+  --mi-list-label: #000000;
+  /* @color/feature_item_title_text_color_unenabled; selector_feature_item_title_text_color state_enabled=false */
+  --mi-list-label-disabled: rgba(0, 0, 0, 0.376471);
+  /* @color/feature_item_subtitle_text_color; layout_two_textview_right_arrow.xml through selector_feature_item_subtitle_text_color */
+  --mi-list-description: rgba(0, 0, 0, 0.4);
+  /* @color/feature_item_subtitle_text_color_unenabled; selector_feature_item_subtitle_text_color state_enabled=false */
+  --mi-list-description-disabled: rgba(0, 0, 0, 0.376471);
+  /* @color/line_normal; main_activity_main.xml divider */
+  --mi-navigation-divider: rgba(0, 0, 0, 0.05098);
+  /* @dimen/main_tab_height: 66.66998dp */
+  --mi-navigation-height: 66.66998px;
+  /* @dimen/dimen_11sp: 11.0sp */
+  --mi-navigation-label-size: 11px;
+  /* @dimen/page_extra_padding_horizontal_large: 14.0dp */
+  --mi-native-page-inline-padding-large: 14px;
+  /* @dimen/dimen_margin_16dp: 16.0dp */
+  --mi-card-radius-declared: 16px;
+  /* @dimen/common_btn_height: 46.659973dp */
+  --mi-button-height: 46.659973px;
+  /* @dimen/common_btn_text_size: 15.0sp */
+  --mi-button-label-size: 15px;
+  /* @dimen/common_btn_margin: 26.0dp */
+  --mi-button-default-margin: 26px;
+  /* @dimen/feature_item_icon_size: 30.0dp */
+  --mi-list-leading-icon-size: 30px;
+  /* @dimen/feature_item_icon_top_bottom_margin: 15.0dp */
+  --mi-list-icon-block-margin: 15px;
+  /* @dimen/feature_item_title_start_margin: 16.0dp */
+  --mi-list-icon-label-gap: 16px;
+  /* @dimen/title_bar_height: 50.0dp */
+  --mi-detail-titlebar-height: 50px;
+  /* @dimen/title_bar_text_size: 18.0sp */
+  --mi-detail-title-size: 18px;
+  /* XML literal: layout_home_header_title_item.xml; system face, fallback is a web adaptation. */
+  --mi-page-title-size: 32px;
+  --mi-page-title-family: "sans-serif-light", sans-serif;
+  /* XML FontRegular family resolves to mipro-regular; system fallback is platform-dependent. */
+  --mi-font-family: "mipro-regular", sans-serif;
+}
+[data-mi-theme="night"] {
+  --mi-page-background: #000000;
+  --mi-legacy-native-mine-page-background: #000000;
+  --mi-card-background: #191919;
+  --mi-legacy-native-mine-card-background: #191919;
+  --mi-text-primary: rgba(255, 255, 255, 0.901961);
+  --mi-text-muted: rgba(255, 255, 255, 0.701961);
+  --mi-navigation-background: #242424;
+  --mi-navigation-label-inactive: rgba(255, 255, 255, 0.45098);
+  --mi-navigation-label-selected: #f04d18;
+  --mi-page-header-label-selected: rgba(255, 255, 255, 0.901961);
+  --mi-page-header-label-inactive: rgba(255, 255, 255, 0.501961);
+  --mi-action-primary-background: #f04d18;
+  --mi-action-primary-label: rgba(255, 255, 255, 0.898039);
+  --mi-action-primary-label-disabled: rgba(255, 255, 255, 0.4);
+  --mi-list-label: #ffffff;
+  --mi-list-label-disabled: rgba(255, 255, 255, 0.282353);
+  --mi-list-description: rgba(255, 255, 255, 0.501961);
+  --mi-list-description-disabled: rgba(255, 255, 255, 0.282353);
+  --mi-navigation-divider: rgba(255, 255, 255, 0.101961);
+}
+/* Unknown/conditional and deliberately unset:
+ * navigation icon sizes, universal shadows, global motion durations,
+ * keyboard/status/navigation insets, global page gutter (legacy native mine uses 14dp; buttons use 26dp),
+ * universal button radius (MIUI AdaptRoundButtonDrawable uses adaptive radii).
+ */

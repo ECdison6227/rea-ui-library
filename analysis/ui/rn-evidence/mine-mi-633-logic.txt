@@ -1,0 +1,11 @@
+var t=r(d[0]);
+
+Object.defineProperty(e,"__esModule",{value:!0}),e.useMessageUnreadData=void 0;
+
+var n=t(r(d[1])),o=r(d[2]),c=r(d[3]),u=t(r(d[4])),s=r(d[5]);
+
+/* Babel regenerator helper omitted from readable view; exact source retained in .js */
+
+var f="[MessageEntrance]";
+
+e.useMessageUnreadData=function(){var t=(0,o.useState)(),h=(0,n.default)(t,2),p=h[0],v=h[1];return{hasUnreadMsg:p,loadUnreadMsgData:function(){var t,n,o,h,p,y,w,L;return l().async(function(b){for(;;)switch(b.prev=b.next){case 0:return b.prev=0,b.next=3,l().awrap(u.default.getCurrentDeviceModelFromNative());case 3:return o=b.sent,h=null==o?void 0:null==(t=o.deviceInfo)?void 0:null==(n=t.device)?void 0:n.model,p=h?{bindDevices:[h]}:{},s.RRLog.info(f,"Request_Message_Unread_Mark",p),b.next=9,l().awrap((0,c.getMsgUnreadMark)(p));case 9:y=b.sent,s.RRLog.info(f,"Response_Message_Unread_Mark",y),0===(null==y?void 0:y.code)&&(L=(null==(w=y.result)?void 0:w.hasUnread)||!1,v(L)),b.next=17;break;case 14:b.prev=14,b.t0=b.catch(0),s.RRLog.error(f,"Get_Message_Unread_Mark_Failed:",b.t0);case 17:case"end":return b.stop()}},null,null,[[0,14]],Promise)}}}

@@ -1,0 +1,70 @@
+{
+  "id": "di-138",
+  "line": 146,
+  "bytes": 3905,
+  "deps": [
+    3,
+    14,
+    18,
+    1099,
+    2010,
+    "di-9",
+    "di-139",
+    "di-140",
+    "di-141",
+    382
+  ],
+  "exports": [
+    "DataLoadState",
+    "default"
+  ],
+  "strings": [
+    "dark",
+    "#000000",
+    "#F6F7F9",
+    "",
+    "hardwareBackPress",
+    "light-content",
+    "dark-content",
+    "android",
+    "top",
+    "left",
+    "right",
+    "bottom",
+    "#FFFFFF",
+    "异常状态",
+    "loading",
+    "failure",
+    "loaded",
+    "custom",
+    "column",
+    "hidden",
+    "flex",
+    "100%"
+  ],
+  "routes": [],
+  "styleSheets": [
+    {
+      "callee": "u.StyleSheet.create",
+      "styles": {
+        "container": {
+          "flex": 1,
+          "flexGrow": 1,
+          "flexDirection": "column",
+          "overflow": "hidden"
+        },
+        "mainContainer": {
+          "display": "flex",
+          "flex": 1,
+          "height": "100%",
+          "marginTop": 0,
+          "marginLeft": 0,
+          "marginBottom": 0
+        }
+      },
+      "code": "u.StyleSheet.create({container:{flex:1,flexGrow:1,flexDirection:\"column\",overflow:\"hidden\"},mainContainer:{display:\"flex\",flex:1,height:\"100%\",marginTop:0,marginLeft:0,marginBottom:0}})"
+    }
+  ],
+  "assetNames": [],
+  "calls": []
+}

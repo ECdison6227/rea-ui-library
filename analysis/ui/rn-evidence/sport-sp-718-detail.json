@@ -1,0 +1,95 @@
+{
+  "bundle": "sport",
+  "id": "sp-718",
+  "line": 726,
+  "aliases": {
+    "t": 3,
+    "n": 54,
+    "o": 27,
+    "c": 14,
+    "u": 18,
+    "l": 1113,
+    "f": "sp-138",
+    "s": "sp-141",
+    "h": 382,
+    "p": 558,
+    "y": "sp-144",
+    "v": "sp-719",
+    "w": "sp-250",
+    "b": "sp-721"
+  },
+  "elements": [
+    {
+      "type": "c.default.Fragment",
+      "props": null,
+      "children": [
+        {
+          "$code": "c.default.createElement(v.default,{accessibilityTitle:s.default.trans(\"sport.home.popModal\"),customStyles:u.StyleSheet.flatten([x.container,{top:S}]),options:O,onSelect:function(n){var o=function(){return E().async(function(o){for(;;)switch(o.prev=o.next){case 0:return o.next=2,E().awrap((0,w.checkL"
+        },
+        {
+          "$code": "c.default.createElement(u.View,{ref:L,onLayout:function(){var t;p.RRLog.info(\"measure start\"),null==(t=L.current)||t.measure(function(t,n,o,c,u,l){p.RRLog.info(\"measure end\",l+c),k(l+c)})}})"
+        }
+      ]
+    },
+    {
+      "type": "v.default",
+      "module": "sp-719",
+      "props": {
+        "accessibilityTitle": {
+          "$code": "s.default.trans(\"sport.home.popModal\")"
+        },
+        "customStyles": {
+          "$code": "u.StyleSheet.flatten([x.container,{top:S}])"
+        },
+        "options": {
+          "$code": "O"
+        },
+        "onSelect": {
+          "$code": "function(n){var o=function(){return E().async(function(o){for(;;)switch(o.prev=o.next){case 0:return o.next=2,E().awrap((0,w.checkLogin)());case 2:if(o.sent){o.next=6;break}return null==h.CommonBridge.checkerUserPrivacySetting||h.CommonBridge.checkerUserPrivacySetting(function(){}),o.abrupt(\"return\");case 6:t.push(n,{_rt:\"native\",_useNativeRoute:!0});case 7:case\"end\":return o.stop()}},null,null,null,Promise)};N?setTimeout(o,200):o()}"
+        },
+        "useRNModal": {
+          "$code": "!0"
+        }
+      },
+      "children": [
+        {
+          "$code": "c.default.createElement(l.default,j(j({},n),{},{accessibilityLabel:s.default.trans(\"sport.home.addNewDevice\"),accessibilityRole:\"button\"}))"
+        }
+      ]
+    },
+    {
+      "type": "l.default",
+      "module": 1113,
+      "props": {
+        "$code": "j(j({},n),{},{accessibilityLabel:s.default.trans(\"sport.home.addNewDevice\"),accessibilityRole:\"button\"})"
+      },
+      "children": []
+    },
+    {
+      "type": "u.View",
+      "module": 18,
+      "props": {
+        "ref": {
+          "$code": "L"
+        },
+        "onLayout": {
+          "$code": "function(){var t;p.RRLog.info(\"measure start\"),null==(t=L.current)||t.measure(function(t,n,o,c,u,l){p.RRLog.info(\"measure end\",l+c),k(l+c)})}"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [
+    "setTimeout(o,200)"
+  ],
+  "numericStyleProperties": [
+    {
+      "key": "fontSize",
+      "value": 15
+    },
+    {
+      "key": "width",
+      "value": 167.5
+    }
+  ]
+}

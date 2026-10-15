@@ -1,0 +1,72 @@
+{
+  "bundle": "sport",
+  "id": "sp-733",
+  "line": 741,
+  "aliases": {
+    "t": 3,
+    "n": 27,
+    "o": 14,
+    "u": 631,
+    "c": 1780,
+    "l": "sp-734",
+    "f": "sp-278",
+    "s": "sp-860",
+    "h": "sp-863",
+    "p": "sp-871"
+  },
+  "elements": [
+    {
+      "type": "c.VStack",
+      "module": 1780,
+      "props": {
+        "flex": 1,
+        "style": {
+          "$code": "p.default.backgroundContainer"
+        }
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(o.Suspense,{fallback:o.default.createElement(h.default,null)},o.default.createElement(s.default,{promise:w,onRefresh:j,refreshing:L}))"
+        }
+      ]
+    },
+    {
+      "type": "o.Suspense",
+      "module": 14,
+      "props": {
+        "fallback": {
+          "$code": "o.default.createElement(h.default,null)"
+        }
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(s.default,{promise:w,onRefresh:j,refreshing:L})"
+        }
+      ]
+    },
+    {
+      "type": "h.default",
+      "module": "sp-863",
+      "props": null,
+      "children": []
+    },
+    {
+      "type": "s.default",
+      "module": "sp-860",
+      "props": {
+        "promise": {
+          "$code": "w"
+        },
+        "onRefresh": {
+          "$code": "j"
+        },
+        "refreshing": {
+          "$code": "L"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": []
+}

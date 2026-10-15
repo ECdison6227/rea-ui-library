@@ -1,0 +1,455 @@
+{
+  "bundle": "dial",
+  "id": "di-341",
+  "line": 349,
+  "aliases": {
+    "t": 3,
+    "n": 27,
+    "o": 14,
+    "l": 18,
+    "u": 1113,
+    "c": 2010,
+    "s": "di-141",
+    "f": "di-128",
+    "b": 558,
+    "p": "di-149",
+    "h": "di-297",
+    "v": "di-342",
+    "y": "di-251",
+    "w": "di-343",
+    "x": "di-421"
+  },
+  "elements": [
+    {
+      "type": "o.default.Fragment",
+      "props": null,
+      "children": [
+        {
+          "$code": "o.default.createElement(l.Animated.View,{style:[E.container,{bottom:-69-ne,transform:[{translateY:Y}],opacity:q,overflow:\"hidden\"}]},o.default.createElement(l.Pressable,{onPress:function(){if(G(!0),b.RRLog.info(\"membership bar source\",I),I){var t={tip:\"56.82.1.1.50191\",name:\"member_guidance_snackbar"
+        },
+        {
+          "$code": "o.default.createElement(w.default,{visible:N,contentSource:\"watchface_feed\",pageDetail:\"DialMarket\",onClose:function(){k(),G(!1)},onPaymentResult:function(t){t.success&&D&&D()}})"
+        }
+      ]
+    },
+    {
+      "type": "l.Animated.View",
+      "props": {
+        "style": [
+          {
+            "$code": "E.container"
+          },
+          {
+            "bottom": {
+              "$code": "-69-ne"
+            },
+            "transform": [
+              {
+                "translateY": {
+                  "$code": "Y"
+                }
+              }
+            ],
+            "opacity": {
+              "$code": "q"
+            },
+            "overflow": "hidden"
+          }
+        ]
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(l.Pressable,{onPress:function(){if(G(!0),b.RRLog.info(\"membership bar source\",I),I){var t={tip:\"56.82.1.1.50191\",name:\"member_guidance_snackbar\",btn_name:\"continue\",source:I};f.default.click(t)}},style:{flex:1,flexDirection:\"row\",alignItems:\"center\",paddingHorizontal:8,minHei"
+        }
+      ]
+    },
+    {
+      "type": "l.Pressable",
+      "module": 18,
+      "props": {
+        "onPress": {
+          "$code": "function(){if(G(!0),b.RRLog.info(\"membership bar source\",I),I){var t={tip:\"56.82.1.1.50191\",name:\"member_guidance_snackbar\",btn_name:\"continue\",source:I};f.default.click(t)}}"
+        },
+        "style": {
+          "flex": 1,
+          "flexDirection": "row",
+          "alignItems": "center",
+          "paddingHorizontal": 8,
+          "minHeight": 69
+        }
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(l.Pressable,{onPress:function(t){if(t.stopPropagation(),k(),b.RRLog.info(\"membership bar source\",I),I){var n={tip:\"56.82.1.1.50191\",name:\"member_guidance_snackbar\",btn_name:\"close\",source:I};f.default.click(n)}},style:[{position:\"absolute\",top:0,zIndex:10,left:-8}]},o.default"
+        },
+        {
+          "$code": "o.default.createElement(u.default,{source:L,style:E.memberBgImg})"
+        },
+        {
+          "$code": "(null==S?void 0:S.icon)&&o.default.createElement(u.default,{source:{uri:S.icon},style:E.icon,onLoad:te})"
+        },
+        {
+          "$code": "o.default.createElement(l.View,{style:E.textContainer},o.default.createElement(l.Text,{style:[E.title,(0,y.isTibetan)()&&{lineHeight:36,includeFontPadding:!1}]},null==S?void 0:S.title),o.default.createElement(l.Text,{style:[E.content,(0,y.isTibetan)()&&{lineHeight:28,includeFontPadding:!1}]},null==S"
+        },
+        {
+          "$code": "o.default.createElement(l.View,{style:E.nextgo},o.default.createElement(l.Text,{style:[E.nextgoText]},null==S?void 0:S.btnText))"
+        }
+      ]
+    },
+    {
+      "type": "l.Pressable",
+      "module": 18,
+      "props": {
+        "onPress": {
+          "$code": "function(t){if(t.stopPropagation(),k(),b.RRLog.info(\"membership bar source\",I),I){var n={tip:\"56.82.1.1.50191\",name:\"member_guidance_snackbar\",btn_name:\"close\",source:I};f.default.click(n)}}"
+        },
+        "style": [
+          {
+            "position": "absolute",
+            "top": 0,
+            "zIndex": 10,
+            "left": {
+              "$code": "-8"
+            }
+          }
+        ]
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(l.View,{style:E.closebg},o.default.createElement(u.default,{source:O,style:[E.closeIcon,{transform:[{rotate:l.I18nManager.isRTL?\"90deg\":\"0deg\"}]}],onLoad:ee}))"
+        }
+      ]
+    },
+    {
+      "type": "l.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "E.closebg"
+        }
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(u.default,{source:O,style:[E.closeIcon,{transform:[{rotate:l.I18nManager.isRTL?\"90deg\":\"0deg\"}]}],onLoad:ee})"
+        }
+      ]
+    },
+    {
+      "type": "u.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "O"
+        },
+        "style": [
+          {
+            "$code": "E.closeIcon"
+          },
+          {
+            "transform": [
+              {
+                "rotate": {
+                  "$code": "l.I18nManager.isRTL?\"90deg\":\"0deg\""
+                }
+              }
+            ]
+          }
+        ],
+        "onLoad": {
+          "$code": "ee"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "u.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "L"
+        },
+        "style": {
+          "$code": "E.memberBgImg"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "u.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "uri": {
+            "$code": "S.icon"
+          }
+        },
+        "style": {
+          "$code": "E.icon"
+        },
+        "onLoad": {
+          "$code": "te"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "l.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "E.textContainer"
+        }
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(l.Text,{style:[E.title,(0,y.isTibetan)()&&{lineHeight:36,includeFontPadding:!1}]},null==S?void 0:S.title)"
+        },
+        {
+          "$code": "o.default.createElement(l.Text,{style:[E.content,(0,y.isTibetan)()&&{lineHeight:28,includeFontPadding:!1}]},null==S?void 0:S.description)"
+        }
+      ]
+    },
+    {
+      "type": "l.Text",
+      "module": 18,
+      "props": {
+        "style": [
+          {
+            "$code": "E.title"
+          },
+          {
+            "$code": "(0,y.isTibetan)()&&{lineHeight:36,includeFontPadding:!1}"
+          }
+        ]
+      },
+      "children": [
+        {
+          "$code": "null==S?void 0:S.title"
+        }
+      ]
+    },
+    {
+      "type": "l.Text",
+      "module": 18,
+      "props": {
+        "style": [
+          {
+            "$code": "E.content"
+          },
+          {
+            "$code": "(0,y.isTibetan)()&&{lineHeight:28,includeFontPadding:!1}"
+          }
+        ]
+      },
+      "children": [
+        {
+          "$code": "null==S?void 0:S.description"
+        }
+      ]
+    },
+    {
+      "type": "l.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "E.nextgo"
+        }
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(l.Text,{style:[E.nextgoText]},null==S?void 0:S.btnText)"
+        }
+      ]
+    },
+    {
+      "type": "l.Text",
+      "module": 18,
+      "props": {
+        "style": [
+          {
+            "$code": "E.nextgoText"
+          }
+        ]
+      },
+      "children": [
+        {
+          "$code": "null==S?void 0:S.btnText"
+        }
+      ]
+    },
+    {
+      "type": "w.default",
+      "module": "di-343",
+      "props": {
+        "visible": {
+          "$code": "N"
+        },
+        "contentSource": "watchface_feed",
+        "pageDetail": "DialMarket",
+        "onClose": {
+          "$code": "function(){k(),G(!1)}"
+        },
+        "onPaymentResult": {
+          "$code": "function(t){t.success&&D&&D()}"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [
+    "l.Animated.parallel([l.Animated.timing(Y,{toValue:-69-C-ne,duration:n?0:300,useNativeDriver:!0}),l.Animated.timing(q,{toValue:1,duration:n?0:300,useNativeDriver:!0})])",
+    "l.Animated.timing(Y,{toValue:-69-C-ne,duration:n?0:300,useNativeDriver:!0})",
+    "l.Animated.timing(q,{toValue:1,duration:n?0:300,useNativeDriver:!0})",
+    "l.Animated.parallel([l.Animated.timing(Y,{toValue:0,duration:n?0:300,useNativeDriver:!0}),l.Animated.timing(q,{toValue:0,duration:n?0:300,useNativeDriver:!0})])",
+    "l.Animated.timing(Y,{toValue:0,duration:n?0:300,useNativeDriver:!0})",
+    "l.Animated.timing(q,{toValue:0,duration:n?0:300,useNativeDriver:!0})"
+  ],
+  "numericStyleProperties": [
+    {
+      "key": "height",
+      "value": "auto"
+    },
+    {
+      "key": "borderRadius",
+      "value": 18
+    },
+    {
+      "key": "marginHorizontal",
+      "value": 12
+    },
+    {
+      "key": "paddingHorizontal",
+      "value": 8
+    },
+    {
+      "key": "marginLeft",
+      "value": {
+        "$code": "-20"
+      }
+    },
+    {
+      "key": "width",
+      "value": 40
+    },
+    {
+      "key": "height",
+      "value": 40
+    },
+    {
+      "key": "marginRight",
+      "value": 12
+    },
+    {
+      "key": "width",
+      "value": 24
+    },
+    {
+      "key": "height",
+      "value": 24
+    },
+    {
+      "key": "borderRadius",
+      "value": 24
+    },
+    {
+      "key": "width",
+      "value": 24
+    },
+    {
+      "key": "height",
+      "value": 24
+    },
+    {
+      "key": "paddingVertical",
+      "value": 8
+    },
+    {
+      "key": "height",
+      "value": "100%"
+    },
+    {
+      "key": "fontSize",
+      "value": 14
+    },
+    {
+      "key": "fontWeight",
+      "value": "bold"
+    },
+    {
+      "key": "lineHeight",
+      "value": 18
+    },
+    {
+      "key": "fontSize",
+      "value": 10
+    },
+    {
+      "key": "marginTop",
+      "value": 4
+    },
+    {
+      "key": "lineHeight",
+      "value": 18
+    },
+    {
+      "key": "paddingHorizontal",
+      "value": 12
+    },
+    {
+      "key": "height",
+      "value": 36
+    },
+    {
+      "key": "borderRadius",
+      "value": 100
+    },
+    {
+      "key": "fontFamily",
+      "value": "MiSans"
+    },
+    {
+      "key": "fontSize",
+      "value": 14
+    },
+    {
+      "key": "fontWeight",
+      "value": "500"
+    },
+    {
+      "key": "duration",
+      "value": {
+        "$code": "n?0:300"
+      }
+    },
+    {
+      "key": "duration",
+      "value": {
+        "$code": "n?0:300"
+      }
+    },
+    {
+      "key": "duration",
+      "value": {
+        "$code": "n?0:300"
+      }
+    },
+    {
+      "key": "duration",
+      "value": {
+        "$code": "n?0:300"
+      }
+    },
+    {
+      "key": "paddingHorizontal",
+      "value": 8
+    },
+    {
+      "key": "lineHeight",
+      "value": 36
+    },
+    {
+      "key": "lineHeight",
+      "value": 28
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "17-mine-night",
+  "title": "我的首页（深色）",
+  "state": "未登录、取消认证；本次配置加载后可见五个快捷入口",
+  "theme": "night",
+  "source": "original-apk-on-emulator",
+  "evidence": {
+    "evidence_id": "ev_d606428678a64f2a4609539c25c45c865a9e8dfee76dcfa60d6f1b1a53183e67",
+    "subject": null,
+    "provider": {
+      "id": "adb",
+      "name": "Android Debug Bridge",
+      "version": "37.0.1-15733141"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "capture_adb_screen",
+    "parameters": {
+      "serial": "emulator-5580",
+      "output_directory": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\runtime\\captures\\17-mine-night"
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "client": {
+        "binary_path": "adb",
+        "path_source": "path",
+        "version": "37.0.1-15733141",
+        "installed_path": "C:\\Users\\edsjrcheng\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5580",
+      "local_path": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\runtime\\captures\\17-mine-night\\screen.png",
+      "bytes": 255473,
+      "sha256": "7a69a6dd75d32a5bcb8e35a084d3cfedc5b420100115103c05a2c412074f147a",
+      "width": 1080,
+      "height": 2400
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "The capture is one frame at read time; no recording or interaction occurred"
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  },
+  "runtimeBundle": {
+    "name": "mine",
+    "version": "11.202.21",
+    "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958"
+  }
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlertDialog.Theme.DayNight" parent="@style/AlertDialog.Theme.Dark" />
+    <style name="Base.Theme.SplashScreen.DayNight" parent="@style/Base.Theme.SplashScreen" />
+    <style name="DatePickerDialog" parent="@style/AlertDialog.Theme.Dark">
+        <item name="numberPickerStyle">@style/HealthNumberPickerStyle</item>
+        <item name="primaryButtonBackground">@drawable/dialog_common_primary_button_bg</item>
+    </style>
+    <style name="FilterSortViewStyle" />
+    <style name="HealthNumberPickerStyle" parent="@style/Widget.NumberPicker.Dark">
+        <item name="android:textColorHighlight">@color/common_main_red_color</item>
+        <item name="labelTextColor">@color/common_main_red_color</item>
+    </style>
+    <style name="MipaySdk.Theme.Web" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+    <style name="Miuix.DropDownPopupList.DayNight" parent="@style/Miuix.DropDownPopupList.Dark" />
+    <style name="Theme.AppCompat.DayNight" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="@style/Theme.AppCompat.Dialog.Alert" />
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar" />
+    <style name="Theme.DayNight" parent="@style/Theme.Dark" />
+    <style name="Theme.DayNight.NoTitle" parent="@style/Theme.Dark.NoTitle" />
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar" parent="@style/Theme.MaterialComponents.NoActionBar" />
+    <style name="Theme.PreferenceOverlay.DayNight" parent="@style/Theme.PreferenceOverlay.Dark" />
+    <style name="Widget.AlphabetIndexer.Starred.DayNight" parent="@style/Widget.AlphabetIndexer.Dark.Starred" />
+    <style name="Widget.ArrowPopupView.DayNight" parent="@style/Widget.ArrowPopupView.Dark" />
+    <style name="Widget.DateTimePicker.Big.DayNight" parent="@style/Widget.DateTimePicker.Big.Dark" />
+    <style name="Widget.EditText.DayNight" parent="@style/Widget.EditText.Dark" />
+    <style name="Widget.FilterSortTabView.DayNight" parent="@style/Widget.FilterSortTabView.Dark" />
+    <style name="Widget.FilterSortTabView2.DayNight" parent="@style/Widget.FilterSortTabView2.Dark" />
+    <style name="Widget.FilterSortView.DayNight" parent="@style/Widget.FilterSortView.Dark" />
+    <style name="Widget.FilterSortView2.DayNight" parent="@style/Widget.FilterSortView2.Dark" />
+    <style name="Widget.GuidePopupView.DayNight" parent="@style/Widget.GuidePopupView.Dark" />
+    <style name="Widget.NumberPicker.DayNight" parent="@style/Widget.NumberPicker.Dark" />
+    <style name="Widget.PageIndicator.DayNight" parent="@style/Widget.PageIndicator.Dark" />
+    <style name="Widget.PopupWindow.DayNight" parent="@style/Widget.PopupWindow.Dark" />
+    <style name="Widget.ProgressBar.Horizontal.DayNight" parent="@style/Widget.ProgressBar.Horizontal.Dark" />
+    <style name="Widget.SlidingButton.DayNight" parent="@style/Widget.SlidingButton.Dark" />
+    <style name="Widget.StateEditText.DayNight" parent="@style/Widget.StateEditText.Dark" />
+    <style name="Widget.TextInputLayout.DayNight" parent="@style/Widget.TextInputLayout.Dark" />
+    <style name="Widget.TextInputLayout.Error.DayNight" parent="@style/Widget.TextInputLayout.Error.Dark" />
+</resources>

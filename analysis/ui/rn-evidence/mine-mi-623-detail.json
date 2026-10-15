@@ -1,0 +1,129 @@
+{
+  "bundle": "mine",
+  "id": "mi-623",
+  "line": 631,
+  "aliases": {
+    "t": 3,
+    "n": 17,
+    "o": 27,
+    "u": 14,
+    "c": "mi-138",
+    "l": "mi-11",
+    "f": 382,
+    "s": "mi-413",
+    "h": "mi-156",
+    "p": "mi-624",
+    "y": "mi-450",
+    "v": "mi-399",
+    "w": "mi-625",
+    "L": "mi-628"
+  },
+  "elements": [
+    {
+      "type": "p.UserProfileView",
+      "module": "mi-624",
+      "props": {
+        "name": {
+          "$code": "l.default.trans(\"mine.user.info.no.login.name\")"
+        },
+        "descList": [
+          {
+            "$code": "l.default.trans(\"mine.user.info.no.login\")"
+          }
+        ],
+        "onPress": {
+          "$code": "function(){f.CommonBridge.showLoginPage()}"
+        }
+      },
+      "children": [
+        {
+          "$code": "n"
+        }
+      ]
+    },
+    {
+      "type": "p.UserProfileView",
+      "module": "mi-624",
+      "props": {
+        "name": {
+          "$code": "f"
+        },
+        "source": {
+          "$code": "b"
+        },
+        "descList": {
+          "$code": "[s,y,w].filter(Boolean)"
+        },
+        "onPress": {
+          "$code": "function(){(0,v.clickPersonalCenterTrack)(),E.push(L.default.userInfoRoute,{_rt:\"native\"})}"
+        }
+      },
+      "children": [
+        {
+          "$code": "o"
+        }
+      ]
+    },
+    {
+      "type": "s.default",
+      "module": "mi-413",
+      "props": {
+        "fallback": {
+          "$code": "u.default.createElement(p.UserProfileView,{name:\"\",descList:[]})"
+        }
+      },
+      "children": [
+        {
+          "$code": "u.default.createElement(u.Suspense,{fallback:u.default.createElement(p.UserProfileView,{name:\"\",descList:[]})},u.default.createElement(P,{fetcher:h},c))"
+        }
+      ]
+    },
+    {
+      "type": "p.UserProfileView",
+      "module": "mi-624",
+      "props": {
+        "name": "",
+        "descList": []
+      },
+      "children": []
+    },
+    {
+      "type": "u.Suspense",
+      "module": 14,
+      "props": {
+        "fallback": {
+          "$code": "u.default.createElement(p.UserProfileView,{name:\"\",descList:[]})"
+        }
+      },
+      "children": [
+        {
+          "$code": "u.default.createElement(P,{fetcher:h},c)"
+        }
+      ]
+    },
+    {
+      "type": "p.UserProfileView",
+      "module": "mi-624",
+      "props": {
+        "name": "",
+        "descList": []
+      },
+      "children": []
+    },
+    {
+      "type": "P",
+      "props": {
+        "fetcher": {
+          "$code": "h"
+        }
+      },
+      "children": [
+        {
+          "$code": "c"
+        }
+      ]
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": []
+}

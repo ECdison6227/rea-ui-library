@@ -1,0 +1,127 @@
+{
+  "bundle": "sport",
+  "id": "sp-438",
+  "line": 446,
+  "aliases": {
+    "t": 3,
+    "n": 27,
+    "u": 14,
+    "l": 18,
+    "o": 558,
+    "f": "sp-439",
+    "c": "sp-440",
+    "s": "sp-441"
+  },
+  "elements": [
+    {
+      "type": "l.View",
+      "module": 18,
+      "props": {
+        "style": [
+          {
+            "$code": "b.tabbar"
+          },
+          {
+            "$code": "L"
+          }
+        ]
+      },
+      "children": []
+    },
+    {
+      "type": "l.View",
+      "module": 18,
+      "props": {
+        "style": [
+          {
+            "$code": "b.tabbar"
+          },
+          {
+            "$code": "L"
+          }
+        ]
+      },
+      "children": [
+        {
+          "$code": "p.map(function(t,n){var o=H||n===R||n===G,f=(0,u.useMemo)(function(){return 0===p.length?new l.Animated.Value(1):l.Animated.add(S,w).interpolate({inputRange:[n-1,n,n+1],outputRange:[.8,o?1:.8,.8],extrapolate:\"clamp\"})},[S,w,n,o,p.length]);\"ios\"===l.Platform.OS&&Math.abs(R-G)>1&&n===G&&(f=l.Animated."
+        },
+        {
+          "$code": "z.current&&u.default.createElement(f.default,{style:[b.indicator,x],scrollX:F})"
+        }
+      ]
+    },
+    {
+      "type": "c.default",
+      "module": "sp-440",
+      "props": {
+        "renderTabItem": {
+          "$code": "A"
+        },
+        "route": {
+          "$code": "I[n]"
+        },
+        "key": {
+          "$code": "t"
+        },
+        "title": {
+          "$code": "t"
+        },
+        "onPress": {
+          "$code": "function(){return J(n)}"
+        },
+        "onLayout": {
+          "$code": "function(t){return B(n,t.nativeEvent.layout)}"
+        },
+        "style": {
+          "$code": "l.StyleSheet.flatten([j,s])"
+        },
+        "active": {
+          "$code": "n===R"
+        },
+        "labelStyle": {
+          "$code": "l.StyleSheet.flatten([k,{opacity:f}])"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "f.default",
+      "module": "sp-439",
+      "props": {
+        "style": [
+          {
+            "$code": "b.indicator"
+          },
+          {
+            "$code": "x"
+          }
+        ],
+        "scrollX": {
+          "$code": "F"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [
+    "l.Animated.add(S,w).interpolate({inputRange:T,outputRange:W})",
+    "l.Animated.add(S,w).interpolate({inputRange:[n-1,n,n+1],outputRange:[.8,o?1:.8,.8],extrapolate:\"clamp\"})",
+    "l.Animated.add(S,w).interpolate({inputRange:[R-1,R,R+1],outputRange:[1,.6,1],extrapolate:\"clamp\"})"
+  ],
+  "numericStyleProperties": [
+    {
+      "key": "width",
+      "value": 18
+    },
+    {
+      "key": "width",
+      "value": 0
+    },
+    {
+      "key": "marginLeft",
+      "value": {
+        "$code": "0===n?0:O"
+      }
+    }
+  ]
+}

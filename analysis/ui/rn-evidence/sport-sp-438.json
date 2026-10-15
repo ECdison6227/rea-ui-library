@@ -1,0 +1,47 @@
+{
+  "id": "sp-438",
+  "line": 446,
+  "bytes": 3348,
+  "deps": [
+    3,
+    27,
+    14,
+    18,
+    558,
+    "sp-439",
+    "sp-440",
+    "sp-441"
+  ],
+  "exports": [
+    "default"
+  ],
+  "strings": [
+    "number",
+    "row",
+    "center",
+    "---------------onTabLayout-------------------",
+    "lastPage",
+    "currentPage",
+    "不空闲，无法点击",
+    "clamp",
+    "ios"
+  ],
+  "routes": [],
+  "styleSheets": [
+    {
+      "callee": "l.StyleSheet.create",
+      "styles": {
+        "tabbar": {
+          "flexDirection": "row",
+          "alignItems": "center"
+        },
+        "indicator": {
+          "width": 18
+        }
+      },
+      "code": "l.StyleSheet.create({tabbar:{flexDirection:\"row\",alignItems:\"center\"},indicator:{width:18}})"
+    }
+  ],
+  "assetNames": [],
+  "calls": []
+}

@@ -1,0 +1,13 @@
+var t=r(d[0]);
+
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=e.CourseTab=void 0;
+
+var n=t(r(d[1])),o=(function(t,n){if(!n&&t&&t.__esModule)return t;if(null===t||"object"!=typeof t&&"function"!=typeof t)return{default:t};var o=y(n);if(o&&o.has(t))return o.get(t);var u={__proto__:null},c=Object.defineProperty&&Object.getOwnPropertyDescriptor;for(var l in t)if("default"!==l&&{}.hasOwnProperty.call(t,l)){var f=c?Object.getOwnPropertyDescriptor(t,l):null;f&&(f.get||f.set)?Object.defineProperty(u,l,f):u[l]=t[l]}return u.default=t,o&&o.set(t,u),u})(r(d[2])),u=r(d[3]),c=r(d[4]),l=r(d[5]),f=r(d[6]),s=t(r(d[7])),h=t(r(d[8])),p=t(r(d[9]));
+
+function y(t){if("function"!=typeof WeakMap)return null;var n=new WeakMap,o=new WeakMap;return(y=function(t){return t?o:n})(t)}
+
+/* Babel regenerator helper omitted from readable view; exact source retained in .js */
+
+var w=e.CourseTab=function(){var t=(0,o.useState)(l.fetchCourseTabData),y=(0,n.default)(t,2),w=y[0],b=y[1],x=(0,o.useState)(!1),E=(0,n.default)(x,2),L=E[0],_=E[1],O=(0,o.useCallback)(function(){var t;return v().async(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,v().awrap((0,l.fetchCourseTabData)());case 2:t=n.sent,b({data:t,status:"fulfilled"});case 4:case"end":return n.stop()}},null,null,null,Promise)},[]),j=(0,o.useCallback)(function(){return v().async(function(t){for(;;)switch(t.prev=t.next){case 0:return t.prev=0,_(!0),t.next=4,v().awrap(O());case 4:return t.prev=4,_(!1),t.finish(4);case 7:case"end":return t.stop()}},null,null,[[0,,4,7]],Promise)},[O]);return(0,u.useMount)(function(){(0,f.trackSportTabExpose)(f.ETrackKey.course)}),o.default.createElement(c.VStack,{flex:1,style:p.default.backgroundContainer},o.default.createElement(o.Suspense,{fallback:o.default.createElement(h.default,null)},o.default.createElement(s.default,{promise:w,onRefresh:j,refreshing:L})))};
+
+e.default=w

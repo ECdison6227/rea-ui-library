@@ -1,0 +1,54 @@
+{
+  "classification": "D local fixture failure; original backend unknown",
+  "origin": "current",
+  "apkSha256": "e9321933fcdeb64591b0061595899ba0df1150afff0db100cbfd41c3a1abc1ca",
+  "capture": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_aee0c8ef9a061510176e0d73c1217e42d113a9f55b35b5d97db84c16e020ae87\",\"subject\":null,\"provider\":{\"id\":\"adb\",\"name\":\"Android Debug Bridge\",\"version\":\"37.0.1-15733141\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"capture_adb_screen\",\"parameters\":{\"serial\":\"emulator-5580\",\"output_directory\":\"C:\\\\Users\\\\edsjrcheng\\\\Desktop\\\\xiaomi健康\\\\analysis\\\\ui\\\\baseline\\\\transfer\\\\error\"},\"raw_result\":null,\"normalized_result\":{\"client\":{\"binary_path\":\"adb\",\"path_source\":\"path\",\"version\":\"37.0.1-15733141\",\"installed_path\":\"C:\\\\Users\\\\edsjrcheng\\\\AppData\\\\Local\\\\Microsoft\\\\WinGet\\\\Packages\\\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\\\platform-tools\\\\adb.exe\"},\"serial\":\"emulator-5580\",\"local_path\":\"C:\\\\Users\\\\edsjrcheng\\\\Desktop\\\\xiaomi健康\\\\analysis\\\\ui\\\\baseline\\\\transfer\\\\error\\\\screen.png\",\"bytes\":115117,\"sha256\":\"90d424d0a274e6ddbb1f94bdcc935347e70178a67daf080f25f31b5f3c0f989c\",\"width\":1080,\"height\":2400},\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Artifact identity is unavailable for this observation.\",\"The capture is one frame at read time; no recording or interaction occurred\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_aee0c8ef9a061510176e0d73c1217e42d113a9f55b35b5d97db84c16e020ae87",
+      "subject": null,
+      "provider": {
+        "id": "adb",
+        "name": "Android Debug Bridge",
+        "version": "37.0.1-15733141"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "capture_adb_screen",
+      "parameters": {
+        "serial": "emulator-5580",
+        "output_directory": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\baseline\\transfer\\error"
+      },
+      "raw_result": null,
+      "normalized_result": {
+        "client": {
+          "binary_path": "adb",
+          "path_source": "path",
+          "version": "37.0.1-15733141",
+          "installed_path": "C:\\Users\\edsjrcheng\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\platform-tools\\adb.exe"
+        },
+        "serial": "emulator-5580",
+        "local_path": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\baseline\\transfer\\error\\screen.png",
+        "bytes": 115117,
+        "sha256": "90d424d0a274e6ddbb1f94bdcc935347e70178a67daf080f25f31b5f3c0f989c",
+        "width": 1080,
+        "height": 2400
+      },
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "The capture is one frame at read time; no recording or interaction occurred"
+      ],
+      "relationship_coverage": null,
+      "locations": [],
+      "evidence_links": []
+    }
+  }
+}

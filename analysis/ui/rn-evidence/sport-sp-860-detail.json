@@ -1,0 +1,95 @@
+{
+  "bundle": "sport",
+  "id": "sp-860",
+  "line": 868,
+  "aliases": {
+    "t": 3,
+    "n": 54,
+    "o": 14,
+    "c": 18,
+    "u": 558,
+    "f": 566,
+    "l": 1780,
+    "p": "sp-376",
+    "s": "sp-861",
+    "y": "sp-735",
+    "O": "sp-862"
+  },
+  "elements": [
+    {
+      "type": "n.component",
+      "module": 54,
+      "props": {
+        "$code": "j(j({},n.props),{},{key:n.props.type+\"_\"+c})"
+      },
+      "children": []
+    },
+    {
+      "type": "l.View",
+      "module": 1780,
+      "props": {
+        "style": {
+          "paddingBottom": 10
+        }
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(n.component,j(j({},n.props),{},{key:n.props.type+\"_\"+c}))"
+        }
+      ]
+    },
+    {
+      "type": "n.component",
+      "module": 54,
+      "props": {
+        "$code": "j(j({},n.props),{},{key:n.props.type+\"_\"+c})"
+      },
+      "children": []
+    },
+    {
+      "type": "s.default",
+      "module": "sp-861",
+      "props": {
+        "ref": {
+          "$code": "j"
+        },
+        "refreshControl": {
+          "$code": "y?o.default.createElement(c.RefreshControl,{refreshing:l,onRefresh:y}):void 0"
+        },
+        "showsVerticalScrollIndicator": {
+          "$code": "!1"
+        },
+        "sections": {
+          "$code": "v"
+        },
+        "renderItem": {
+          "$code": "P"
+        },
+        "keyExtractor": {
+          "$code": "function(t,n){return t.props.type+\"_\"+n}"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "c.RefreshControl",
+      "module": 18,
+      "props": {
+        "refreshing": {
+          "$code": "l"
+        },
+        "onRefresh": {
+          "$code": "y"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": [
+    {
+      "key": "paddingBottom",
+      "value": 10
+    }
+  ]
+}

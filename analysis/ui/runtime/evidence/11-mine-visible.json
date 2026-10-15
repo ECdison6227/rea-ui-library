@@ -1,0 +1,52 @@
+{
+  "id": "11-mine-visible",
+  "title": "我的首页（取消登录后）",
+  "state": "未登录，RN MineTab；可见运营卡片与菜单",
+  "source": "original-apk-on-emulator",
+  "evidence": {
+    "evidence_id": "ev_0c9585a076ccb3e7ca91981befde7e455f159e48681043b40821afa5b39968dc",
+    "subject": null,
+    "provider": {
+      "id": "adb",
+      "name": "Android Debug Bridge",
+      "version": "37.0.1-15733141"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "capture_adb_screen",
+    "parameters": {
+      "serial": "emulator-5580",
+      "output_directory": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\runtime\\captures\\11-mine-visible"
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "client": {
+        "binary_path": "adb",
+        "path_source": "path",
+        "version": "37.0.1-15733141",
+        "installed_path": "C:\\Users\\edsjrcheng\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5580",
+      "local_path": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\runtime\\captures\\11-mine-visible\\screen.png",
+      "bytes": 250266,
+      "sha256": "24bcb1fe55bfb1865ea39443c72380b3d7a97127899964e342a4dd68cb1c6f5e",
+      "width": 1080,
+      "height": 2400
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "The capture is one frame at read time; no recording or interaction occurred"
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  },
+  "runtimeBundle": {
+    "name": "mine",
+    "version": "11.190.11",
+    "sha256": "eb58f7d3ff59bcd96a4bb36394f9686adc159cca3ab0fb6511291785ca3b9f90"
+  }
+}

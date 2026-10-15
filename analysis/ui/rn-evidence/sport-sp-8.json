@@ -1,0 +1,90 @@
+{
+  "id": "sp-8",
+  "line": 16,
+  "bytes": 3613,
+  "deps": [
+    3,
+    14,
+    18,
+    1099,
+    "sp-9",
+    382,
+    71,
+    "sp-114",
+    "sp-115",
+    "sp-116"
+  ],
+  "exports": [
+    "ExceptionConfig",
+    "ExceptionView",
+    "ExceptionViewType",
+    "ModuleErrorBoundary",
+    "PageErrorBoundary"
+  ],
+  "strings": [
+    "ExceptionConfig",
+    "ExceptionViewType",
+    "ModuleErrorBoundary",
+    "PageErrorBoundary",
+    "dark",
+    "#000000",
+    "#F6F7F9",
+    "#FFFFFF",
+    "light-content",
+    "dark-content",
+    "android",
+    "contain",
+    "center",
+    "bold",
+    "#9CA3AF"
+  ],
+  "routes": [],
+  "styleSheets": [
+    {
+      "callee": "o.StyleSheet.create",
+      "styles": {
+        "container": {
+          "flex": 1
+        },
+        "mainContainer": {
+          "marginTop": 0,
+          "marginLeft": 0,
+          "marginBottom": 0
+        },
+        "contentContainer": {
+          "flex": 1,
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingHorizontal": 16
+        },
+        "moduleContainer": {
+          "marginVertical": 40
+        },
+        "image": {
+          "width": 100,
+          "height": 100,
+          "marginBottom": 16
+        },
+        "title": {
+          "fontSize": 19,
+          "fontWeight": "bold",
+          "textAlign": "center",
+          "marginBottom": 16
+        },
+        "message": {
+          "fontSize": 15,
+          "textAlign": "center",
+          "marginBottom": 8
+        },
+        "subMessage": {
+          "fontSize": 12,
+          "color": "#9CA3AF",
+          "textAlign": "center"
+        }
+      },
+      "code": "o.StyleSheet.create({container:{flex:1},mainContainer:{marginTop:0,marginLeft:0,marginBottom:0},contentContainer:{flex:1,alignItems:\"center\",justifyContent:\"center\",paddingHorizontal:16},moduleContainer:{marginVertical:40},image:{width:100,height:100,marginBottom:16},title:{fontSize:19,fontWeight:\"bold\",textAlign:\"center\",marginBottom:16},message:{fontSize:15,textAlign:\"center\",marginBottom:8},subMessage:{fontSize:12,color:\"#9CA3AF\",textAlign:\"center\"}})"
+    }
+  ],
+  "assetNames": [],
+  "calls": []
+}

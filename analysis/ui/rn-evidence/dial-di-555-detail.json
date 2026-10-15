@@ -1,0 +1,190 @@
+{
+  "bundle": "dial",
+  "id": "di-555",
+  "line": 563,
+  "aliases": {
+    "t": 3,
+    "l": 54,
+    "n": 14,
+    "o": 18,
+    "u": 1268,
+    "c": "di-144",
+    "s": 2468,
+    "f": 1201,
+    "y": "di-156",
+    "b": "di-556",
+    "p": "di-557"
+  },
+  "elements": [
+    {
+      "type": "o.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "p.styles.menuBg"
+        }
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(u.default,{colors:[w,k],locations:[0,.8],style:p.styles.menuBgGradient},n.default.createElement(o.View,{style:[p.styles.container,{borderColor:S}]},n.default.createElement(o.View,{style:p.styles.blurContainer},n.default.createElement(s.BlurView,{style:p.styles.blurView,blurTy"
+        }
+      ]
+    },
+    {
+      "type": "u.default",
+      "module": 1268,
+      "props": {
+        "colors": [
+          {
+            "$code": "w"
+          },
+          {
+            "$code": "k"
+          }
+        ],
+        "locations": [
+          0,
+          0.8
+        ],
+        "style": {
+          "$code": "p.styles.menuBgGradient"
+        }
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(o.View,{style:[p.styles.container,{borderColor:S}]},n.default.createElement(o.View,{style:p.styles.blurContainer},n.default.createElement(s.BlurView,{style:p.styles.blurView,blurType:(0,y.useColorModeValue)(\"xlight\",\"dark\"),blurAmount:(0,y.useColorModeValue)(10,15),reducedTra"
+        }
+      ]
+    },
+    {
+      "type": "o.View",
+      "module": 18,
+      "props": {
+        "style": [
+          {
+            "$code": "p.styles.container"
+          },
+          {
+            "borderColor": {
+              "$code": "S"
+            }
+          }
+        ]
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(o.View,{style:p.styles.blurContainer},n.default.createElement(s.BlurView,{style:p.styles.blurView,blurType:(0,y.useColorModeValue)(\"xlight\",\"dark\"),blurAmount:(0,y.useColorModeValue)(10,15),reducedTransparencyFallbackColor:V}))"
+        },
+        {
+          "$code": "n.default.createElement(o.View,{style:p.styles.menuContent},I.map(function(t){var u=l===t.key,s=t.icon,y=u?t.activeIcon:t.icon;return n.default.createElement(o.Pressable,{key:t.key,style:p.styles.item,onPress:function(){return O(t.key)}},n.default.createElement(f.FastImage,M({source:\"ios\"===o.Platfo"
+        }
+      ]
+    },
+    {
+      "type": "o.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "p.styles.blurContainer"
+        }
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(s.BlurView,{style:p.styles.blurView,blurType:(0,y.useColorModeValue)(\"xlight\",\"dark\"),blurAmount:(0,y.useColorModeValue)(10,15),reducedTransparencyFallbackColor:V})"
+        }
+      ]
+    },
+    {
+      "type": "s.BlurView",
+      "module": 2468,
+      "props": {
+        "style": {
+          "$code": "p.styles.blurView"
+        },
+        "blurType": {
+          "$code": "(0,y.useColorModeValue)(\"xlight\",\"dark\")"
+        },
+        "blurAmount": {
+          "$code": "(0,y.useColorModeValue)(10,15)"
+        },
+        "reducedTransparencyFallbackColor": {
+          "$code": "V"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "o.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "p.styles.menuContent"
+        }
+      },
+      "children": [
+        {
+          "$code": "I.map(function(t){var u=l===t.key,s=t.icon,y=u?t.activeIcon:t.icon;return n.default.createElement(o.Pressable,{key:t.key,style:p.styles.item,onPress:function(){return O(t.key)}},n.default.createElement(f.FastImage,M({source:\"ios\"===o.Platform.OS?y:s,style:p.styles.icon,resizeMode:\"contain\"},\"android"
+        }
+      ]
+    },
+    {
+      "type": "o.Pressable",
+      "module": 18,
+      "props": {
+        "key": {
+          "$code": "t.key"
+        },
+        "style": {
+          "$code": "p.styles.item"
+        },
+        "onPress": {
+          "$code": "function(){return O(t.key)}"
+        }
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(f.FastImage,M({source:\"ios\"===o.Platform.OS?y:s,style:p.styles.icon,resizeMode:\"contain\"},\"android\"===o.Platform.OS?{tintColor:u?j:P}:{}))"
+        },
+        {
+          "$code": "n.default.createElement(o.Text,{style:[p.styles.label,{color:u?j:P}],numberOfLines:1,ellipsizeMode:\"tail\",accessibilityLabel:(u?c.default.trans(\"dial.nav.selected\"):c.default.trans(\"dial.nav.unselected\"))+t.label},t.label)"
+        }
+      ]
+    },
+    {
+      "type": "f.FastImage",
+      "module": 1201,
+      "props": {
+        "$code": "M({source:\"ios\"===o.Platform.OS?y:s,style:p.styles.icon,resizeMode:\"contain\"},\"android\"===o.Platform.OS?{tintColor:u?j:P}:{})"
+      },
+      "children": []
+    },
+    {
+      "type": "o.Text",
+      "module": 18,
+      "props": {
+        "style": [
+          {
+            "$code": "p.styles.label"
+          },
+          {
+            "color": {
+              "$code": "u?j:P"
+            }
+          }
+        ],
+        "numberOfLines": 1,
+        "ellipsizeMode": "tail",
+        "accessibilityLabel": {
+          "$code": "(u?c.default.trans(\"dial.nav.selected\"):c.default.trans(\"dial.nav.unselected\"))+t.label"
+        }
+      },
+      "children": [
+        {
+          "$code": "t.label"
+        }
+      ]
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": []
+}

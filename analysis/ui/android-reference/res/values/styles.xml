@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Activity applies the observed page-specific day/night palette at runtime. -->
+    <style name="ReferenceTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">#F6F7F9</item>
+        <item name="android:colorAccent">#FF612E</item>
+        <item name="android:statusBarColor">#F6F7F9</item>
+        <item name="android:navigationBarColor">#F6F7F9</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:windowActivityTransitions">false</item>
+    </style>
+</resources>

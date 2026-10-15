@@ -1,0 +1,106 @@
+{
+  "id": "di-557",
+  "line": 565,
+  "bytes": 1012,
+  "deps": [
+    18
+  ],
+  "exports": [
+    "styles",
+    "MENU_HEIGHT"
+  ],
+  "strings": [
+    "absolute",
+    "100%",
+    "relative",
+    "center",
+    "bold",
+    "hidden",
+    "row"
+  ],
+  "routes": [],
+  "styleSheets": [
+    {
+      "callee": "t.StyleSheet.create",
+      "styles": {
+        "menuBg": {
+          "position": "absolute",
+          "left": 0,
+          "right": 0,
+          "bottom": 0,
+          "width": "100%"
+        },
+        "menuBgGradient": {
+          "height": {
+            "$code": "o"
+          },
+          "width": "100%",
+          "paddingHorizontal": 12,
+          "paddingTop": 27
+        },
+        "container": {
+          "height": 69,
+          "width": "100%",
+          "borderRadius": 18,
+          "paddingVertical": 0,
+          "position": "relative",
+          "borderWidth": 0.5
+        },
+        "containerImg": {
+          "borderRadius": 18,
+          "width": "100%",
+          "height": "100%",
+          "borderWidth": 0.5,
+          "opacity": 0.98
+        },
+        "item": {
+          "flex": 1,
+          "alignItems": "center",
+          "justifyContent": "center",
+          "zIndex": 2
+        },
+        "label": {
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "textAlign": "center",
+          "flexShrink": 1,
+          "paddingLeft": 8,
+          "paddingRight": 8
+        },
+        "icon": {
+          "width": 24,
+          "height": 24,
+          "marginBottom": 4
+        },
+        "blurContainer": {
+          "position": "absolute",
+          "top": 0,
+          "left": 0,
+          "right": 0,
+          "bottom": 0,
+          "borderRadius": 18,
+          "overflow": "hidden"
+        },
+        "blurView": {
+          "position": "absolute",
+          "top": 0,
+          "left": 0,
+          "right": 0,
+          "bottom": 0,
+          "borderRadius": 18
+        },
+        "menuContent": {
+          "position": "relative",
+          "zIndex": 2,
+          "flexDirection": "row",
+          "alignItems": "center",
+          "height": "100%",
+          "width": "100%"
+        }
+      },
+      "code": "t.StyleSheet.create({menuBg:{position:\"absolute\",left:0,right:0,bottom:0,width:\"100%\"},menuBgGradient:{height:o,width:\"100%\",paddingHorizontal:12,paddingTop:27},container:{height:69,width:\"100%\",borderRadius:18,paddingVertical:0,position:\"relative\",borderWidth:.5},containerImg:{borderRadius:18,width:\"100%\",height:\"100%\",borderWidth:.5,opacity:.98},item:{flex:1,alignItems:\"center\",justifyContent:\"center\",zIndex:2},label:{fontSize:14,fontWeight:\"bold\",textAlign:\"center\",flexShrink:1,paddingLeft:8,paddingRight:8},icon:{width:24,height:24,marginBottom:4},blurContainer:{position:\"absolute\",top:0,left:0,right:0,bottom:0,borderRadius:18,overflow:\"hidden\"},blurView:{position:\"absolute\",top:0,left:0,right:0,bottom:0,borderRadius:18},menuContent:{position:\"relative\",zIndex:2,flexDirection:\"row\",alignItems:\"center\",height:\"100%\",width:\"100%\"}})"
+    }
+  ],
+  "assetNames": [],
+  "calls": []
+}

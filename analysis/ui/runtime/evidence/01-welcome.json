@@ -1,0 +1,47 @@
+{
+  "id": "01-welcome",
+  "title": "欢迎页",
+  "state": "首次启动，未登录",
+  "source": "original-apk-on-emulator",
+  "evidence": {
+    "evidence_id": "ev_6e53848bbb6f12d9d3c53a334d2ddd2e79c9ad56ae64dfef2cfb23bb1cac88ea",
+    "subject": null,
+    "provider": {
+      "id": "adb",
+      "name": "Android Debug Bridge",
+      "version": "37.0.1-15733141"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "capture_adb_screen",
+    "parameters": {
+      "serial": "emulator-5580",
+      "output_directory": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\runtime\\captures\\01-welcome"
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "client": {
+        "binary_path": "adb",
+        "path_source": "path",
+        "version": "37.0.1-15733141",
+        "installed_path": "C:\\Users\\edsjrcheng\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5580",
+      "local_path": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\runtime\\captures\\01-welcome\\screen.png",
+      "bytes": 821566,
+      "sha256": "20eab5a803d5784b7ebeacfb03560ea4bea41058bac8345d4f9de2376c538a1d",
+      "width": 1080,
+      "height": 2400
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "The capture is one frame at read time; no recording or interaction occurred"
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  }
+}

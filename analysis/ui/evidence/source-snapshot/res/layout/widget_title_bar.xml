@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/title_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="start|center" android:id="@id/title_bar_left_icon" android:visibility="gone" android:layout_width="@dimen/top_bar_icon_size" android:layout_height="@dimen/top_bar_icon_size" android:scaleType="centerCrop" android:layout_marginStart="@dimen/top_bar_ege_margin" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="60.0dp" android:layout_marginEnd="60.0dp">
+        <TextView android:textSize="@dimen/title_bar_text_size" android:textStyle="bold" android:textColor="@color/text_color" android:ellipsize="end" android:gravity="center" android:id="@id/title_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+        <TextView android:textSize="@dimen/title_bar_sub_text_size" android:textColor="@color/text_color_50" android:ellipsize="end" android:id="@id/title_bar_sub_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="end|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/title_bar_right_container" android:visibility="gone" android:layout_width="@dimen/title_bar_height" android:layout_height="@dimen/title_bar_height" />
+        <ImageView android:id="@id/title_bar_right_icon" android:visibility="gone" android:layout_width="@dimen/title_bar_height" android:layout_height="@dimen/title_bar_height" android:scaleType="center" />
+        <ImageView android:id="@id/title_bar_right_icon_2" android:visibility="gone" android:layout_width="@dimen/title_bar_height" android:layout_height="@dimen/title_bar_height" android:scaleType="center" />
+        <TextView android:id="@id/title_bar_right_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+    </LinearLayout>
+    <TextView android:textColor="@color/common_textcolor_1" android:layout_gravity="start|center" android:id="@id/title_bar_left_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+    <View android:layout_gravity="bottom" android:id="@id/title_bar_divider" android:background="@color/common_divider_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/common_divider_height" />
+</FrameLayout>

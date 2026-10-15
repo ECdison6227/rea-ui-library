@@ -1,0 +1,776 @@
+{
+  "bundle": "dial",
+  "id": "di-597",
+  "line": 605,
+  "aliases": {
+    "t": 3,
+    "n": 54,
+    "o": 27,
+    "l": 14,
+    "u": 18,
+    "c": "di-144",
+    "s": "di-128",
+    "f": 631,
+    "p": 1121,
+    "b": 1780,
+    "h": "di-297",
+    "y": "di-402",
+    "E": "di-404",
+    "R": "di-406",
+    "w": "di-395",
+    "v": "di-596"
+  },
+  "elements": [
+    {
+      "type": "b.Modal",
+      "module": 1780,
+      "props": {
+        "isOpen": {
+          "$code": "n"
+        },
+        "onClose": {
+          "$code": "oe"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(u.Animated.View,{style:{transform:[{translateY:D}],position:\"absolute\",top:0,left:0,right:0,bottom:0,backgroundColor:\"rgba(0,0,0,0.5)\",opacity:re}},l.default.createElement(u.Animated.View,{collapsable:!1,pointerEvents:\"none\",style:[S.amountProgressHost,{transform:[{translateX"
+        }
+      ]
+    },
+    {
+      "type": "u.Animated.View",
+      "props": {
+        "style": {
+          "transform": [
+            {
+              "translateY": {
+                "$code": "D"
+              }
+            }
+          ],
+          "position": "absolute",
+          "top": 0,
+          "left": 0,
+          "right": 0,
+          "bottom": 0,
+          "backgroundColor": "rgba(0,0,0,0.5)",
+          "opacity": {
+            "$code": "re"
+          }
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(u.Animated.View,{collapsable:!1,pointerEvents:\"none\",style:[S.amountProgressHost,{transform:[{translateX:L.interpolate({inputRange:[0,1],outputRange:[0,100],extrapolate:\"clamp\"})}]}]})"
+        },
+        {
+          "$code": "l.default.createElement(b.Center,{flex:1},l.default.createElement(b.Box,null,l.default.createElement(u.Animated.View,{style:{transform:[{translateY:ne},{translateX:te},{scale:ee}]}},l.default.createElement(u.View,{style:S.card},l.default.createElement(u.View,{style:S.topBg}),l.default.createElement("
+        }
+      ]
+    },
+    {
+      "type": "u.Animated.View",
+      "props": {
+        "collapsable": {
+          "$code": "!1"
+        },
+        "pointerEvents": "none",
+        "style": [
+          {
+            "$code": "S.amountProgressHost"
+          },
+          {
+            "transform": [
+              {
+                "translateX": {
+                  "$code": "L.interpolate({inputRange:[0,1],outputRange:[0,100],extrapolate:\"clamp\"})"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "children": []
+    },
+    {
+      "type": "b.Center",
+      "module": 1780,
+      "props": {
+        "flex": 1
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(b.Box,null,l.default.createElement(u.Animated.View,{style:{transform:[{translateY:ne},{translateX:te},{scale:ee}]}},l.default.createElement(u.View,{style:S.card},l.default.createElement(u.View,{style:S.topBg}),l.default.createElement(u.View,{style:S.top},l.default.createEleme"
+        }
+      ]
+    },
+    {
+      "type": "b.Box",
+      "module": 1780,
+      "props": null,
+      "children": [
+        {
+          "$code": "l.default.createElement(u.Animated.View,{style:{transform:[{translateY:ne},{translateX:te},{scale:ee}]}},l.default.createElement(u.View,{style:S.card},l.default.createElement(u.View,{style:S.topBg}),l.default.createElement(u.View,{style:S.top},l.default.createElement(u.ImageBackground,{source:h.defa"
+        },
+        {
+          "$code": "l.default.createElement(b.Center,{mt:\"20px\"},l.default.createElement(b.Pressable,{onPress:oe,_pressed:{opacity:.7}},l.default.createElement(b.Image,{source:p.Assets.Icons.CircleClose,alt:\"Close\",width:42.67,height:42.67})))"
+        }
+      ]
+    },
+    {
+      "type": "u.Animated.View",
+      "props": {
+        "style": {
+          "transform": [
+            {
+              "translateY": {
+                "$code": "ne"
+              }
+            },
+            {
+              "translateX": {
+                "$code": "te"
+              }
+            },
+            {
+              "scale": {
+                "$code": "ee"
+              }
+            }
+          ]
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(u.View,{style:S.card},l.default.createElement(u.View,{style:S.topBg}),l.default.createElement(u.View,{style:S.top},l.default.createElement(u.ImageBackground,{source:h.default.dial.redbagTextBg,resizeMode:\"stretch\",style:S.topBadge},l.default.createElement(u.Text,{style:S.topB"
+        }
+      ]
+    },
+    {
+      "type": "u.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "S.card"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(u.View,{style:S.topBg})"
+        },
+        {
+          "$code": "l.default.createElement(u.View,{style:S.top},l.default.createElement(u.ImageBackground,{source:h.default.dial.redbagTextBg,resizeMode:\"stretch\",style:S.topBadge},l.default.createElement(u.Text,{style:S.topBadgeText},c.default.trans(\"dial.redPacket.newUserLimitedTime\"))),l.default.createElement(u.Tex"
+        },
+        {
+          "$code": "l.default.createElement(u.ImageBackground,{source:h.default.dial.redbagBg,style:S.bottom,resizeMode:\"cover\"},l.default.createElement(u.View,{style:S.countdownPill},l.default.createElement(y.default,{duration:j,upperFlip:Q,color:v.RED_PACKET_COLORS.white,timeBgColor:v.RED_PACKET_COLORS.flipTimeBg,tim"
+        }
+      ]
+    },
+    {
+      "type": "u.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "S.topBg"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "u.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "S.top"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(u.ImageBackground,{source:h.default.dial.redbagTextBg,resizeMode:\"stretch\",style:S.topBadge},l.default.createElement(u.Text,{style:S.topBadgeText},c.default.trans(\"dial.redPacket.newUserLimitedTime\")))"
+        },
+        {
+          "$code": "l.default.createElement(u.Text,{style:S.title},c.default.trans(\"dial.redPacket.unusedTitle\"))"
+        },
+        {
+          "$code": "l.default.createElement(u.View,{style:S.amountRow},l.default.createElement(u.View,{style:[S.amountRoller,{width:W}]},z.map(function(t,n){return l.default.createElement(u.View,{key:t+\"-\"+n,style:S.amountCard},l.default.createElement(u.Animated.View,{collapsable:!1,style:[S.amountInnerRow,F[n]]},l.def"
+        }
+      ]
+    },
+    {
+      "type": "u.ImageBackground",
+      "module": 18,
+      "props": {
+        "source": {
+          "$code": "h.default.dial.redbagTextBg"
+        },
+        "resizeMode": "stretch",
+        "style": {
+          "$code": "S.topBadge"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(u.Text,{style:S.topBadgeText},c.default.trans(\"dial.redPacket.newUserLimitedTime\"))"
+        }
+      ]
+    },
+    {
+      "type": "u.Text",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "S.topBadgeText"
+        }
+      },
+      "children": [
+        {
+          "$code": "c.default.trans(\"dial.redPacket.newUserLimitedTime\")"
+        }
+      ]
+    },
+    {
+      "type": "u.Text",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "S.title"
+        }
+      },
+      "children": [
+        {
+          "$code": "c.default.trans(\"dial.redPacket.unusedTitle\")"
+        }
+      ]
+    },
+    {
+      "type": "u.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "S.amountRow"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(u.View,{style:[S.amountRoller,{width:W}]},z.map(function(t,n){return l.default.createElement(u.View,{key:t+\"-\"+n,style:S.amountCard},l.default.createElement(u.Animated.View,{collapsable:!1,style:[S.amountInnerRow,F[n]]},l.default.createElement(u.Text,{style:S.amountLine,numbe"
+        }
+      ]
+    },
+    {
+      "type": "u.View",
+      "module": 18,
+      "props": {
+        "style": [
+          {
+            "$code": "S.amountRoller"
+          },
+          {
+            "width": {
+              "$code": "W"
+            }
+          }
+        ]
+      },
+      "children": [
+        {
+          "$code": "z.map(function(t,n){return l.default.createElement(u.View,{key:t+\"-\"+n,style:S.amountCard},l.default.createElement(u.Animated.View,{collapsable:!1,style:[S.amountInnerRow,F[n]]},l.default.createElement(u.Text,{style:S.amountLine,numberOfLines:1},l.default.createElement(u.Text,{style:S.amount},K(t)),"
+        }
+      ]
+    },
+    {
+      "type": "u.View",
+      "module": 18,
+      "props": {
+        "key": {
+          "$code": "t+\"-\"+n"
+        },
+        "style": {
+          "$code": "S.amountCard"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(u.Animated.View,{collapsable:!1,style:[S.amountInnerRow,F[n]]},l.default.createElement(u.Text,{style:S.amountLine,numberOfLines:1},l.default.createElement(u.Text,{style:S.amount},K(t)),l.default.createElement(u.Text,{style:S.amountUnit},c.default.trans(\"dial.redPacket.currenc"
+        }
+      ]
+    },
+    {
+      "type": "u.Animated.View",
+      "props": {
+        "collapsable": {
+          "$code": "!1"
+        },
+        "style": [
+          {
+            "$code": "S.amountInnerRow"
+          },
+          {
+            "$code": "F[n]"
+          }
+        ]
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(u.Text,{style:S.amountLine,numberOfLines:1},l.default.createElement(u.Text,{style:S.amount},K(t)),l.default.createElement(u.Text,{style:S.amountUnit},c.default.trans(\"dial.redPacket.currencyUnit\")))"
+        }
+      ]
+    },
+    {
+      "type": "u.Text",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "S.amountLine"
+        },
+        "numberOfLines": 1
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(u.Text,{style:S.amount},K(t))"
+        },
+        {
+          "$code": "l.default.createElement(u.Text,{style:S.amountUnit},c.default.trans(\"dial.redPacket.currencyUnit\"))"
+        }
+      ]
+    },
+    {
+      "type": "u.Text",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "S.amount"
+        }
+      },
+      "children": [
+        {
+          "$code": "K(t)"
+        }
+      ]
+    },
+    {
+      "type": "u.Text",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "S.amountUnit"
+        }
+      },
+      "children": [
+        {
+          "$code": "c.default.trans(\"dial.redPacket.currencyUnit\")"
+        }
+      ]
+    },
+    {
+      "type": "u.ImageBackground",
+      "module": 18,
+      "props": {
+        "source": {
+          "$code": "h.default.dial.redbagBg"
+        },
+        "style": {
+          "$code": "S.bottom"
+        },
+        "resizeMode": "cover"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(u.View,{style:S.countdownPill},l.default.createElement(y.default,{duration:j,upperFlip:Q,color:v.RED_PACKET_COLORS.white,timeBgColor:v.RED_PACKET_COLORS.flipTimeBg,timeAreaBorderColor:v.RED_PACKET_COLORS.flipBorderWhite,label:c.default.trans(\"dial.redPacket.expireAfter\",{coun"
+        },
+        {
+          "$code": "l.default.createElement(b.Pressable,{onPress:ae,_pressed:{opacity:.9}},l.default.createElement(w.default,null,l.default.createElement(u.ImageBackground,{source:h.default.dial.redbagButtonBg,style:S.button,resizeMode:\"stretch\"},l.default.createElement(u.Text,{style:S.buttonText},c.default.trans(\"dial"
+        },
+        {
+          "$code": "l.default.createElement(u.Text,{style:S.footnote},c.default.trans(\"dial.redPacket.monthlySubscriptionOnly\"))"
+        }
+      ]
+    },
+    {
+      "type": "u.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "S.countdownPill"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(y.default,{duration:j,upperFlip:Q,color:v.RED_PACKET_COLORS.white,timeBgColor:v.RED_PACKET_COLORS.flipTimeBg,timeAreaBorderColor:v.RED_PACKET_COLORS.flipBorderWhite,label:c.default.trans(\"dial.redPacket.expireAfter\",{countdownTime:E.DEFAULT_LABEL_PLACEHOLDER}),labelTextStyle:"
+        }
+      ]
+    },
+    {
+      "type": "y.default",
+      "module": "di-402",
+      "props": {
+        "duration": {
+          "$code": "j"
+        },
+        "upperFlip": {
+          "$code": "Q"
+        },
+        "color": {
+          "$code": "v.RED_PACKET_COLORS.white"
+        },
+        "timeBgColor": {
+          "$code": "v.RED_PACKET_COLORS.flipTimeBg"
+        },
+        "timeAreaBorderColor": {
+          "$code": "v.RED_PACKET_COLORS.flipBorderWhite"
+        },
+        "label": {
+          "$code": "c.default.trans(\"dial.redPacket.expireAfter\",{countdownTime:E.DEFAULT_LABEL_PLACEHOLDER})"
+        },
+        "labelTextStyle": {
+          "$code": "S.countdownSuffix"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "b.Pressable",
+      "module": 1780,
+      "props": {
+        "onPress": {
+          "$code": "ae"
+        },
+        "_pressed": {
+          "opacity": 0.9
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(w.default,null,l.default.createElement(u.ImageBackground,{source:h.default.dial.redbagButtonBg,style:S.button,resizeMode:\"stretch\"},l.default.createElement(u.Text,{style:S.buttonText},c.default.trans(\"dial.redPacket.goUse\"))))"
+        }
+      ]
+    },
+    {
+      "type": "w.default",
+      "module": "di-395",
+      "props": null,
+      "children": [
+        {
+          "$code": "l.default.createElement(u.ImageBackground,{source:h.default.dial.redbagButtonBg,style:S.button,resizeMode:\"stretch\"},l.default.createElement(u.Text,{style:S.buttonText},c.default.trans(\"dial.redPacket.goUse\")))"
+        }
+      ]
+    },
+    {
+      "type": "u.ImageBackground",
+      "module": 18,
+      "props": {
+        "source": {
+          "$code": "h.default.dial.redbagButtonBg"
+        },
+        "style": {
+          "$code": "S.button"
+        },
+        "resizeMode": "stretch"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(u.Text,{style:S.buttonText},c.default.trans(\"dial.redPacket.goUse\"))"
+        }
+      ]
+    },
+    {
+      "type": "u.Text",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "S.buttonText"
+        }
+      },
+      "children": [
+        {
+          "$code": "c.default.trans(\"dial.redPacket.goUse\")"
+        }
+      ]
+    },
+    {
+      "type": "u.Text",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "S.footnote"
+        }
+      },
+      "children": [
+        {
+          "$code": "c.default.trans(\"dial.redPacket.monthlySubscriptionOnly\")"
+        }
+      ]
+    },
+    {
+      "type": "b.Center",
+      "module": 1780,
+      "props": {
+        "mt": "20px"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(b.Pressable,{onPress:oe,_pressed:{opacity:.7}},l.default.createElement(b.Image,{source:p.Assets.Icons.CircleClose,alt:\"Close\",width:42.67,height:42.67}))"
+        }
+      ]
+    },
+    {
+      "type": "b.Pressable",
+      "module": 1780,
+      "props": {
+        "onPress": {
+          "$code": "oe"
+        },
+        "_pressed": {
+          "opacity": 0.7
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(b.Image,{source:p.Assets.Icons.CircleClose,alt:\"Close\",width:42.67,height:42.67})"
+        }
+      ]
+    },
+    {
+      "type": "b.Image",
+      "module": 1780,
+      "props": {
+        "source": {
+          "$code": "p.Assets.Icons.CircleClose"
+        },
+        "alt": "Close",
+        "width": 42.67,
+        "height": 42.67
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [
+    "L.interpolate({inputRange:[0,1],outputRange:[1,1],extrapolate:\"clamp\"})",
+    "L.interpolate({inputRange:[0,u,u+.001],outputRange:[1,1,0],extrapolate:\"clamp\"})",
+    "L.interpolate({inputRange:[l-.001,l,1],outputRange:[0,1,1],extrapolate:\"clamp\"})",
+    "L.interpolate({inputRange:[l-.001,l,u,u+.001],outputRange:[0,1,1,0],extrapolate:\"clamp\"})",
+    "u.Animated.parallel([u.Animated.spring(D,{toValue:0,useNativeDriver:!0,tension:50,friction:14}),u.Animated.timing(L,{toValue:1,duration:1e3,useNativeDriver:!0})])",
+    "u.Animated.spring(D,{toValue:0,useNativeDriver:!0,tension:50,friction:14})",
+    "u.Animated.timing(L,{toValue:1,duration:1e3,useNativeDriver:!0})",
+    "setTimeout(function(){o||(\"ios\"===u.Platform.OS?t=setTimeout(function(){o||G()},0):G())},0)",
+    "setTimeout(function(){o||G()},0)",
+    "u.Animated.parallel([u.Animated.timing(ee,{toValue:0,duration:500,useNativeDriver:!0}),u.Animated.timing(te,{toValue:_,duration:500,useNativeDriver:!0}),u.Animated.timing(ne,{toValue:x,duration:500,useNativeDriver:!0}),u.Animated.timing(re,{toValue:0,duration:500,useNativeDriver:!0})])",
+    "u.Animated.timing(ee,{toValue:0,duration:500,useNativeDriver:!0})",
+    "u.Animated.timing(te,{toValue:_,duration:500,useNativeDriver:!0})",
+    "u.Animated.timing(ne,{toValue:x,duration:500,useNativeDriver:!0})",
+    "u.Animated.timing(re,{toValue:0,duration:500,useNativeDriver:!0})",
+    "L.interpolate({inputRange:[0,1],outputRange:[0,100],extrapolate:\"clamp\"})"
+  ],
+  "numericStyleProperties": [
+    {
+      "key": "tension",
+      "value": 50
+    },
+    {
+      "key": "friction",
+      "value": 14
+    },
+    {
+      "key": "duration",
+      "value": 1000
+    },
+    {
+      "key": "duration",
+      "value": 500
+    },
+    {
+      "key": "duration",
+      "value": 500
+    },
+    {
+      "key": "duration",
+      "value": 500
+    },
+    {
+      "key": "duration",
+      "value": 500
+    },
+    {
+      "key": "width",
+      "value": {
+        "$code": "W"
+      }
+    },
+    {
+      "key": "duration",
+      "value": {
+        "$code": "j"
+      }
+    },
+    {
+      "key": "width",
+      "value": 42.67
+    },
+    {
+      "key": "height",
+      "value": 42.67
+    },
+    {
+      "key": "width",
+      "value": 1
+    },
+    {
+      "key": "height",
+      "value": 1
+    },
+    {
+      "key": "width",
+      "value": 280
+    },
+    {
+      "key": "width",
+      "value": 280
+    },
+    {
+      "key": "height",
+      "value": "70%"
+    },
+    {
+      "key": "width",
+      "value": 255
+    },
+    {
+      "key": "paddingBottom",
+      "value": 44
+    },
+    {
+      "key": "width",
+      "value": 130
+    },
+    {
+      "key": "paddingHorizontal",
+      "value": 12
+    },
+    {
+      "key": "paddingVertical",
+      "value": 6
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "fontWeight",
+      "value": "600"
+    },
+    {
+      "key": "marginTop",
+      "value": 18
+    },
+    {
+      "key": "fontSize",
+      "value": 22
+    },
+    {
+      "key": "fontWeight",
+      "value": "700"
+    },
+    {
+      "key": "marginTop",
+      "value": 16
+    },
+    {
+      "key": "height",
+      "value": 80
+    },
+    {
+      "key": "height",
+      "value": 80
+    },
+    {
+      "key": "lineHeight",
+      "value": 80
+    },
+    {
+      "key": "fontSize",
+      "value": 72
+    },
+    {
+      "key": "fontWeight",
+      "value": "800"
+    },
+    {
+      "key": "fontFamily",
+      "value": "Semibold"
+    },
+    {
+      "key": "fontSize",
+      "value": 18
+    },
+    {
+      "key": "fontWeight",
+      "value": "700"
+    },
+    {
+      "key": "marginLeft",
+      "value": 4
+    },
+    {
+      "key": "marginTop",
+      "value": {
+        "$code": "-58"
+      }
+    },
+    {
+      "key": "paddingTop",
+      "value": 62
+    },
+    {
+      "key": "paddingBottom",
+      "value": 16
+    },
+    {
+      "key": "paddingHorizontal",
+      "value": 18
+    },
+    {
+      "key": "fontWeight",
+      "value": "600"
+    },
+    {
+      "key": "fontFamily",
+      "value": "MiSans"
+    },
+    {
+      "key": "letterSpacing",
+      "value": 0
+    },
+    {
+      "key": "width",
+      "value": 235
+    },
+    {
+      "key": "height",
+      "value": 42
+    },
+    {
+      "key": "marginTop",
+      "value": 10
+    },
+    {
+      "key": "fontSize",
+      "value": 18
+    },
+    {
+      "key": "fontWeight",
+      "value": "800"
+    },
+    {
+      "key": "marginTop",
+      "value": 10
+    },
+    {
+      "key": "fontSize",
+      "value": 11
+    },
+    {
+      "key": "fontWeight",
+      "value": "400"
+    }
+  ]
+}

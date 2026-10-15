@@ -1,0 +1,56 @@
+{
+  "id": "di-530",
+  "line": 538,
+  "bytes": 441,
+  "deps": [
+    18,
+    382
+  ],
+  "exports": [
+    "default"
+  ],
+  "strings": [
+    "row",
+    "center",
+    "space-between",
+    "100%"
+  ],
+  "routes": [],
+  "styleSheets": [
+    {
+      "callee": "t.StyleSheet.create",
+      "styles": {
+        "viewPager": {
+          "flex": 1
+        },
+        "topView": {
+          "flexDirection": "row",
+          "alignItems": "center",
+          "justifyContent": "space-between"
+        },
+        "card": {
+          "height": "100%",
+          "flex": 1,
+          "margin": 0
+        },
+        "leftCard": {
+          "flex": 2,
+          "marginRight": 12
+        },
+        "briefView": {
+          "marginTop": 16,
+          "minHeight": 112
+        },
+        "mt12": {
+          "marginTop": 12
+        },
+        "mb58": {
+          "marginBottom": 58
+        }
+      },
+      "code": "t.StyleSheet.create({viewPager:{flex:1},topView:{flexDirection:\"row\",alignItems:\"center\",justifyContent:\"space-between\"},card:{height:\"100%\",flex:1,margin:0},leftCard:{flex:2,marginRight:12},briefView:{marginTop:16,minHeight:112},mt12:{marginTop:12},mb58:{marginBottom:58}})"
+    }
+  ],
+  "assetNames": [],
+  "calls": []
+}

@@ -1,0 +1,48 @@
+{
+  "id": "14-settings-night",
+  "title": "App 设置（深色）",
+  "state": "系统夜间模式开启，原生设置页",
+  "theme": "night",
+  "source": "original-apk-on-emulator",
+  "evidence": {
+    "evidence_id": "ev_0cd614eac6588c42df58df8867f7c19121061e487680055520b33464f8a0d63e",
+    "subject": null,
+    "provider": {
+      "id": "adb",
+      "name": "Android Debug Bridge",
+      "version": "37.0.1-15733141"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "capture_adb_screen",
+    "parameters": {
+      "serial": "emulator-5580",
+      "output_directory": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\runtime\\captures\\14-settings-night"
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "client": {
+        "binary_path": "adb",
+        "path_source": "path",
+        "version": "37.0.1-15733141",
+        "installed_path": "C:\\Users\\edsjrcheng\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5580",
+      "local_path": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\runtime\\captures\\14-settings-night\\screen.png",
+      "bytes": 125661,
+      "sha256": "63dd19a98df0a866058884b87d6483b97640f123171a417b3373efa15c85e0b2",
+      "width": 1080,
+      "height": 2400
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "The capture is one frame at read time; no recording or interaction occurred"
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  }
+}

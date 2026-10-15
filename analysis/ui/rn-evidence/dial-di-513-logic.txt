@@ -1,0 +1,11 @@
+var t=r(d[0]);
+
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;
+
+var n=t(r(d[1])),l=(function(t,n){if(!n&&t&&t.__esModule)return t;if(null===t||"object"!=typeof t&&"function"!=typeof t)return{default:t};var l=c(n);if(l&&l.has(t))return l.get(t);var o={__proto__:null},u=Object.defineProperty&&Object.getOwnPropertyDescriptor;for(var s in t)if("default"!==s&&{}.hasOwnProperty.call(t,s)){var f=u?Object.getOwnPropertyDescriptor(t,s):null;f&&(f.get||f.set)?Object.defineProperty(o,s,f):o[s]=t[s]}return o.default=t,l&&l.set(t,o),o})(r(d[2])),o=r(d[3]),u=t(r(d[4])),s=r(d[5]),f=r(d[6]);
+
+function c(t){if("function"!=typeof WeakMap)return null;var n=new WeakMap,l=new WeakMap;return(c=function(t){return t?l:n})(t)}
+
+var p=(0,f.Factory)(o.Animated.View),v=o.Dimensions.get("window").height;
+
+e.default=function(t){var c=t.imageUrl,b=t.children,y=t.isOpen,h=t.onClose,_=t.onImagePress,w=(0,l.useState)(new o.Animated.Value(v)),P=(0,n.default)(w,1)[0];(0,l.useEffect)(function(){y?o.Animated.spring(P,{toValue:0,useNativeDriver:!0,tension:50,friction:7}).start():o.Animated.timing(P,{toValue:v,duration:300,useNativeDriver:!0}).start()},[y]);var C=(0,l.useCallback)(function(){null==_||_()},[_]),E=(0,l.useCallback)(function(){null==h||h()},[h]);return l.default.createElement(f.Modal,{isOpen:y,onClose:E},l.default.createElement(p,{style:{transform:[{translateY:P}],position:"absolute",top:0,left:0,right:0,bottom:0,backgroundColor:"rgba(0,0,0,0.5)"}},l.default.createElement(f.Center,{flex:1},l.default.createElement(f.Box,null,b||(c?l.default.createElement(f.Pressable,{onPress:C,_pressed:{opacity:.7}},l.default.createElement(u.default,{source:{uri:c},style:{width:289.67,height:406,borderRadius:37},resizeMode:u.default.resizeMode.contain})):null),l.default.createElement(f.Center,{mt:"20px"},l.default.createElement(f.Pressable,{onPress:E,_pressed:{opacity:.7}},l.default.createElement(f.Image,{source:s.Assets.Icons.CircleClose,alt:"Close",width:42.67,height:42.67})))))))}

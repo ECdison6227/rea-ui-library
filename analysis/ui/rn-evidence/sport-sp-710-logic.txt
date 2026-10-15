@@ -1,0 +1,11 @@
+var t=r(d[0]);
+
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;
+
+var n=t(r(d[1])),o=(function(t,n){if(!n&&t&&t.__esModule)return t;if(null===t||"object"!=typeof t&&"function"!=typeof t)return{default:t};var o=v(n);if(o&&o.has(t))return o.get(t);var u={__proto__:null},c=Object.defineProperty&&Object.getOwnPropertyDescriptor;for(var f in t)if("default"!==f&&{}.hasOwnProperty.call(t,f)){var l=c?Object.getOwnPropertyDescriptor(t,f):null;l&&(l.get||l.set)?Object.defineProperty(u,f,l):u[f]=t[f]}return u.default=t,o&&o.set(t,u),u})(r(d[2])),u=t(r(d[3])),c=r(d[4]),f=r(d[5]),l=r(d[6]),s=r(d[7]),h=r(d[8]),p=r(d[9]),y=r(d[10]);
+
+function v(t){if("function"!=typeof WeakMap)return null;var n=new WeakMap,o=new WeakMap;return(v=function(t){return t?o:n})(t)}
+
+/* Babel regenerator helper omitted from readable view; exact source retained in .js */
+
+e.default=function(t){var v=t.type,b=(0,o.useRef)(!1),E=(0,o.useRef)(v),L=((0,u.default)(),(0,f.useNetworkInfo)().isNetworkAvailable),_=(0,o.useRef)(L);_.current=L;var x=(0,s.useFetchCacheState)(function(){return(0,p.getTabs)(E.current,L)},l.SportDataCacheKey.SPORT_HOME_TAB),O=(0,n.default)(x,2),j=O[0],P=O[1];return(0,o.useEffect)(function(){return h.subscribe.LOGIN_EVENT.register(function(){return w().async(function(t){for(;;)switch(t.prev=t.next){case 0:c.RRLog.debug("login-"),b.current||(b.current=!0,P((0,p.getTabs)(E.current,_.current),!0));case 2:case"end":return t.stop()}},null,null,null,Promise)})},[]),o.default.createElement(o.Suspense,{fallback:o.default.createElement(o.default.Fragment,null)},o.default.createElement(y.SportHomeContent,{promise:j}))}

@@ -1,0 +1,203 @@
+{
+  "bundle": "dial",
+  "id": "di-524",
+  "line": 532,
+  "aliases": {
+    "t": 3,
+    "n": 54,
+    "o": 14,
+    "l": 631,
+    "u": 1047,
+    "c": "di-149",
+    "p": 1780
+  },
+  "elements": [
+    {
+      "type": "p.VStack",
+      "module": 1780,
+      "props": {
+        "space": 3
+      },
+      "children": [
+        {
+          "$code": "Array.from({length:y}).map(function(t,n){return l=n,o.default.createElement(p.Box,{key:l,borderRadius:18,bg:O,px:5,pt:21,pb:30},o.default.createElement(p.Skeleton,{width:24,height:8,startColor:w,endColor:j,mb:26,rounded:11}),o.default.createElement(p.VStack,{space:44},Array.from({length:2}).map(func"
+        }
+      ]
+    },
+    {
+      "type": "p.Box",
+      "module": 1780,
+      "props": {
+        "key": {
+          "$code": "l"
+        },
+        "borderRadius": 18,
+        "bg": {
+          "$code": "O"
+        },
+        "px": 5,
+        "pt": 21,
+        "pb": 30
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(p.Skeleton,{width:24,height:8,startColor:w,endColor:j,mb:26,rounded:11})"
+        },
+        {
+          "$code": "o.default.createElement(p.VStack,{space:44},Array.from({length:2}).map(function(t,n){return o.default.createElement(p.HStack,{key:n,justifyContent:\"space-between\"},Array.from({length:3}).map(function(t,n){return o.default.createElement(p.VStack,{alignItems:\"center\",space:2,key:n,flex:1},o.default.cr"
+        }
+      ]
+    },
+    {
+      "type": "p.Skeleton",
+      "module": 1780,
+      "props": {
+        "width": 24,
+        "height": 8,
+        "startColor": {
+          "$code": "w"
+        },
+        "endColor": {
+          "$code": "j"
+        },
+        "mb": 26,
+        "rounded": 11
+      },
+      "children": []
+    },
+    {
+      "type": "p.VStack",
+      "module": 1780,
+      "props": {
+        "space": 44
+      },
+      "children": [
+        {
+          "$code": "Array.from({length:2}).map(function(t,n){return o.default.createElement(p.HStack,{key:n,justifyContent:\"space-between\"},Array.from({length:3}).map(function(t,n){return o.default.createElement(p.VStack,{alignItems:\"center\",space:2,key:n,flex:1},o.default.createElement(p.Skeleton,h(h({},v),{},{startCo"
+        }
+      ]
+    },
+    {
+      "type": "p.HStack",
+      "module": 1780,
+      "props": {
+        "key": {
+          "$code": "n"
+        },
+        "justifyContent": "space-between"
+      },
+      "children": [
+        {
+          "$code": "Array.from({length:3}).map(function(t,n){return o.default.createElement(p.VStack,{alignItems:\"center\",space:2,key:n,flex:1},o.default.createElement(p.Skeleton,h(h({},v),{},{startColor:w,endColor:j})),o.default.createElement(p.Skeleton,{width:60,height:4,rounded:6,startColor:w,endColor:j}))})"
+        }
+      ]
+    },
+    {
+      "type": "p.VStack",
+      "module": 1780,
+      "props": {
+        "alignItems": "center",
+        "space": 2,
+        "key": {
+          "$code": "n"
+        },
+        "flex": 1
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(p.Skeleton,h(h({},v),{},{startColor:w,endColor:j}))"
+        },
+        {
+          "$code": "o.default.createElement(p.Skeleton,{width:60,height:4,rounded:6,startColor:w,endColor:j})"
+        }
+      ]
+    },
+    {
+      "type": "p.Skeleton",
+      "module": 1780,
+      "props": {
+        "$code": "h(h({},v),{},{startColor:w,endColor:j})"
+      },
+      "children": []
+    },
+    {
+      "type": "p.Skeleton",
+      "module": 1780,
+      "props": {
+        "width": 60,
+        "height": 4,
+        "rounded": 6,
+        "startColor": {
+          "$code": "w"
+        },
+        "endColor": {
+          "$code": "j"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": [
+    {
+      "key": "width",
+      "value": "96px"
+    },
+    {
+      "key": "height",
+      "value": "96px"
+    },
+    {
+      "key": "width",
+      "value": "94px"
+    },
+    {
+      "key": "height",
+      "value": "110px"
+    },
+    {
+      "key": "width",
+      "value": "92px"
+    },
+    {
+      "key": "height",
+      "value": "131px"
+    },
+    {
+      "key": "width",
+      "value": "64px"
+    },
+    {
+      "key": "height",
+      "value": "161px"
+    },
+    {
+      "key": "width",
+      "value": "96px"
+    },
+    {
+      "key": "height",
+      "value": "96px"
+    },
+    {
+      "key": "borderRadius",
+      "value": 18
+    },
+    {
+      "key": "width",
+      "value": 24
+    },
+    {
+      "key": "height",
+      "value": 8
+    },
+    {
+      "key": "width",
+      "value": 60
+    },
+    {
+      "key": "height",
+      "value": 4
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "bundle": "mine",
+  "id": "mi-528",
+  "line": 536,
+  "aliases": {
+    "t": 3,
+    "l": 14,
+    "n": 1780,
+    "u": "mi-408",
+    "c": "mi-529",
+    "f": "mi-535",
+    "C": "mi-540"
+  },
+  "elements": [
+    {
+      "type": "n.View",
+      "module": 1780,
+      "props": {
+        "mt": "12px"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(n.HStack,null,l.default.createElement(n.View,{flex:1},u),l.default.createElement(n.View,{width:\"10px\"}),l.default.createElement(n.View,{flex:1,justifyContent:\"space-between\"},l.default.createElement(c.SportsHealthWeekly,null),l.default.createElement(n.View,{height:\"10px\"}),l."
+        }
+      ]
+    },
+    {
+      "type": "n.HStack",
+      "module": 1780,
+      "props": null,
+      "children": [
+        {
+          "$code": "l.default.createElement(n.View,{flex:1},u)"
+        },
+        {
+          "$code": "l.default.createElement(n.View,{width:\"10px\"})"
+        },
+        {
+          "$code": "l.default.createElement(n.View,{flex:1,justifyContent:\"space-between\"},l.default.createElement(c.SportsHealthWeekly,null),l.default.createElement(n.View,{height:\"10px\"}),l.default.createElement(f.VitalityCompetitionCard,null))"
+        }
+      ]
+    },
+    {
+      "type": "n.View",
+      "module": 1780,
+      "props": {
+        "flex": 1
+      },
+      "children": [
+        {
+          "$code": "u"
+        }
+      ]
+    },
+    {
+      "type": "n.View",
+      "module": 1780,
+      "props": {
+        "width": "10px"
+      },
+      "children": []
+    },
+    {
+      "type": "n.View",
+      "module": 1780,
+      "props": {
+        "flex": 1,
+        "justifyContent": "space-between"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(c.SportsHealthWeekly,null)"
+        },
+        {
+          "$code": "l.default.createElement(n.View,{height:\"10px\"})"
+        },
+        {
+          "$code": "l.default.createElement(f.VitalityCompetitionCard,null)"
+        }
+      ]
+    },
+    {
+      "type": "c.SportsHealthWeekly",
+      "module": "mi-529",
+      "props": null,
+      "children": []
+    },
+    {
+      "type": "n.View",
+      "module": 1780,
+      "props": {
+        "height": "10px"
+      },
+      "children": []
+    },
+    {
+      "type": "f.VitalityCompetitionCard",
+      "module": "mi-535",
+      "props": null,
+      "children": []
+    },
+    {
+      "type": "o",
+      "props": null,
+      "children": [
+        {
+          "$code": "l.default.createElement(C.UnLoginLittleHabitCards,null)"
+        }
+      ]
+    },
+    {
+      "type": "C.UnLoginLittleHabitCards",
+      "module": "mi-540",
+      "props": null,
+      "children": []
+    },
+    {
+      "type": "o",
+      "props": null,
+      "children": [
+        {
+          "$code": "l.default.createElement(C.LittleHabitCards,null)"
+        }
+      ]
+    },
+    {
+      "type": "C.LittleHabitCards",
+      "module": "mi-540",
+      "props": null,
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": [
+    {
+      "key": "width",
+      "value": "10px"
+    },
+    {
+      "key": "height",
+      "value": "10px"
+    }
+  ]
+}

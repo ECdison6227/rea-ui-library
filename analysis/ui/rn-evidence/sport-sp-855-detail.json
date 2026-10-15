@@ -1,0 +1,163 @@
+{
+  "bundle": "sport",
+  "id": "sp-855",
+  "line": 863,
+  "aliases": {
+    "t": 3,
+    "n": 17,
+    "o": 27,
+    "u": 14,
+    "c": 18,
+    "l": "sp-149",
+    "f": 558,
+    "s": "sp-261",
+    "h": "sp-271",
+    "p": "sp-711",
+    "y": "sp-376",
+    "v": "sp-856"
+  },
+  "elements": [
+    {
+      "type": "v.TrainingIndicatorsContent",
+      "module": "sp-856",
+      "props": {
+        "list": {
+          "$code": "h"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "u.default.Fragment",
+      "props": null,
+      "children": [
+        {
+          "$code": "O"
+        }
+      ]
+    },
+    {
+      "type": "c.View",
+      "module": 18,
+      "props": null,
+      "children": [
+        {
+          "$code": "u.default.createElement(c.Animated.View,{style:{height:_,overflow:\"hidden\"}},u.default.createElement(c.View,null,O))"
+        },
+        {
+          "$code": "0===L&&u.default.createElement(c.View,{style:{opacity:0,position:\"absolute\"},onLayout:function(t){x(t.nativeEvent.layout.height)}},u.default.createElement(c.View,{style:{flexDirection:\"row\"}},O))"
+        }
+      ]
+    },
+    {
+      "type": "c.Animated.View",
+      "props": {
+        "style": {
+          "height": {
+            "$code": "_"
+          },
+          "overflow": "hidden"
+        }
+      },
+      "children": [
+        {
+          "$code": "u.default.createElement(c.View,null,O)"
+        }
+      ]
+    },
+    {
+      "type": "c.View",
+      "module": 18,
+      "props": null,
+      "children": [
+        {
+          "$code": "O"
+        }
+      ]
+    },
+    {
+      "type": "c.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "opacity": 0,
+          "position": "absolute"
+        },
+        "onLayout": {
+          "$code": "function(t){x(t.nativeEvent.layout.height)}"
+        }
+      },
+      "children": [
+        {
+          "$code": "u.default.createElement(c.View,{style:{flexDirection:\"row\"}},O)"
+        }
+      ]
+    },
+    {
+      "type": "c.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "flexDirection": "row"
+        }
+      },
+      "children": [
+        {
+          "$code": "O"
+        }
+      ]
+    },
+    {
+      "type": "u.Suspense",
+      "module": 14,
+      "props": {
+        "fallback": {
+          "$code": "u.default.createElement(b,{fetcher:Promise.resolve(c)})"
+        }
+      },
+      "children": [
+        {
+          "$code": "u.default.createElement(b,{fetcher:v,silentUpdate:function(){return E().async(function(t){for(;;)switch(t.prev=t.next){case 0:f.RRLog.info(\"TrainingIndicators\",\"silentUpdateFetcher\"),w(s.default.getTrainingIndicators(),!0);case 2:case\"end\":return t.stop()}},null,null,null,Promise)}})"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "props": {
+        "fetcher": {
+          "$code": "Promise.resolve(c)"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "b",
+      "props": {
+        "fetcher": {
+          "$code": "v"
+        },
+        "silentUpdate": {
+          "$code": "function(){return E().async(function(t){for(;;)switch(t.prev=t.next){case 0:f.RRLog.info(\"TrainingIndicators\",\"silentUpdateFetcher\"),w(s.default.getTrainingIndicators(),!0);case 2:case\"end\":return t.stop()}},null,null,null,Promise)}"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [
+    "setTimeout(function(){c.Animated.timing(w.current,{toValue:1,duration:500,useNativeDriver:!1}).start()},2e3)",
+    "c.Animated.timing(w.current,{toValue:1,duration:500,useNativeDriver:!1})",
+    "w.current.interpolate({inputRange:[0,1],outputRange:[0,L],extrapolate:\"clamp\"})"
+  ],
+  "numericStyleProperties": [
+    {
+      "key": "duration",
+      "value": 500
+    },
+    {
+      "key": "height",
+      "value": {
+        "$code": "_"
+      }
+    }
+  ]
+}

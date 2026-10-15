@@ -1,0 +1,7 @@
+var n=r(d[0]);
+
+Object.defineProperty(e,"__esModule",{value:!0}),e.useCollapse=void 0;
+
+var t=n(r(d[1])),o=r(d[2]),u=r(d[3]),s=r(d[4]),l=r(d[5]);
+
+e.useCollapse=function(){var n=arguments.length>0&&void 0!==arguments[0]&&arguments[0],p=arguments.length>1&&void 0!==arguments[1]?arguments[1]:300,y=(0,o.useState)(n),c=(0,t.default)(y,2),f=c[0],v=c[1],A=(0,l.usePlatform)().isAndroid,E=(0,o.useMemo)(function(){return{duration:p,create:{type:u.LayoutAnimation.Types.easeInEaseOut,property:u.LayoutAnimation.Properties.opacity},update:{type:u.LayoutAnimation.Types.spring,springDamping:.8,initialVelocity:1}}},[p]),L=(0,s.useMemoizedFn)(function(){u.LayoutAnimation.configureNext(E),v(function(n){return!n})});return(0,o.useEffect)(function(){A&&u.UIManager.setLayoutAnimationEnabledExperimental&&u.UIManager.setLayoutAnimationEnabledExperimental(!0)},[A]),{isOpen:f,handleCollapse:L}}

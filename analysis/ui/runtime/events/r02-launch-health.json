@@ -1,0 +1,25 @@
+{
+  "id": "r02-launch-health",
+  "serial": "emulator-5580",
+  "avd": "rea_mihealth_ui_20261015",
+  "started": "2026-10-15T13:00:28.546Z",
+  "finished": "2026-10-15T13:00:30.187Z",
+  "args": [
+    "shell",
+    "am",
+    "start",
+    "-W",
+    "-n",
+    "study.style.reference/.MainActivity",
+    "--es",
+    "scene",
+    "health",
+    "--es",
+    "theme",
+    "day"
+  ],
+  "exitCode": 0,
+  "stdout": "Starting: Intent { cmp=study.style.reference/.MainActivity (has extras) }\r\nStatus: ok\r\nLaunchState: COLD\r\nActivity: study.style.reference/.MainActivity\r\nTotalTime: 1473\r\nWaitTime: 1480\r\nComplete\r\n",
+  "stderr": "",
+  "error": null
+}

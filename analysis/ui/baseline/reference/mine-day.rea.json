@@ -1,0 +1,49 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_6169a1dfb3c6ff777e10df791be209bc1dd23343dbb21f6191f0763f7feae694\",\"subject\":null,\"provider\":{\"id\":\"adb\",\"name\":\"Android Debug Bridge\",\"version\":\"37.0.1-15733141\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"capture_adb_screen\",\"parameters\":{\"serial\":\"emulator-5580\",\"output_directory\":\"C:\\\\Users\\\\edsjrcheng\\\\Desktop\\\\xiaomi健康\\\\analysis\\\\ui\\\\baseline\\\\reference\\\\mine-day\"},\"raw_result\":null,\"normalized_result\":{\"client\":{\"binary_path\":\"adb\",\"path_source\":\"path\",\"version\":\"37.0.1-15733141\",\"installed_path\":\"C:\\\\Users\\\\edsjrcheng\\\\AppData\\\\Local\\\\Microsoft\\\\WinGet\\\\Packages\\\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\\\platform-tools\\\\adb.exe\"},\"serial\":\"emulator-5580\",\"local_path\":\"C:\\\\Users\\\\edsjrcheng\\\\Desktop\\\\xiaomi健康\\\\analysis\\\\ui\\\\baseline\\\\reference\\\\mine-day\\\\screen.png\",\"bytes\":256759,\"sha256\":\"315bfedfdec46529b86bf1d7fc188d881a68c07b99211ac56eade4d4c7125ab6\",\"width\":1080,\"height\":2400},\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Artifact identity is unavailable for this observation.\",\"The capture is one frame at read time; no recording or interaction occurred\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_6169a1dfb3c6ff777e10df791be209bc1dd23343dbb21f6191f0763f7feae694",
+    "subject": null,
+    "provider": {
+      "id": "adb",
+      "name": "Android Debug Bridge",
+      "version": "37.0.1-15733141"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "capture_adb_screen",
+    "parameters": {
+      "serial": "emulator-5580",
+      "output_directory": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\baseline\\reference\\mine-day"
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "client": {
+        "binary_path": "adb",
+        "path_source": "path",
+        "version": "37.0.1-15733141",
+        "installed_path": "C:\\Users\\edsjrcheng\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5580",
+      "local_path": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\baseline\\reference\\mine-day\\screen.png",
+      "bytes": 256759,
+      "sha256": "315bfedfdec46529b86bf1d7fc188d881a68c07b99211ac56eade4d4c7125ab6",
+      "width": 1080,
+      "height": 2400
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "The capture is one frame at read time; no recording or interaction occurred"
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  }
+}

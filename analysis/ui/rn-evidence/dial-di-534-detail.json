@@ -1,0 +1,334 @@
+{
+  "bundle": "dial",
+  "id": "di-534",
+  "line": 542,
+  "aliases": {
+    "t": 3,
+    "l": 14,
+    "n": 18,
+    "u": 1113,
+    "o": 631,
+    "f": 1047,
+    "c": "di-148",
+    "s": "di-149",
+    "p": "di-317",
+    "y": 1780,
+    "h": "di-297",
+    "v": "di-170",
+    "w": "di-446",
+    "E": "di-535"
+  },
+  "elements": [
+    {
+      "type": "y.Pressable",
+      "module": 1780,
+      "props": {
+        "onPress": {
+          "$code": "z"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(n.View,{style:E.default.container},l.default.createElement(u.default,{source:j,style:E.default.bgImage,resizeMode:\"contain\"},l.default.createElement(n.View,{style:E.default.contentWrapper},l.default.createElement(u.default,{source:T,style:E.default.headerImage,resizeMode:\"con"
+        }
+      ]
+    },
+    {
+      "type": "n.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "E.default.container"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(u.default,{source:j,style:E.default.bgImage,resizeMode:\"contain\"},l.default.createElement(n.View,{style:E.default.contentWrapper},l.default.createElement(u.default,{source:T,style:E.default.headerImage,resizeMode:\"contain\"}),l.default.createElement(n.View,{style:E.default.wat"
+        }
+      ]
+    },
+    {
+      "type": "u.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "j"
+        },
+        "style": {
+          "$code": "E.default.bgImage"
+        },
+        "resizeMode": "contain"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(n.View,{style:E.default.contentWrapper},l.default.createElement(u.default,{source:T,style:E.default.headerImage,resizeMode:\"contain\"}),l.default.createElement(n.View,{style:E.default.watchfaceSection},l.default.createElement(u.default,{source:W,style:E.default.lineImage,resiz"
+        }
+      ]
+    },
+    {
+      "type": "n.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "E.default.contentWrapper"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(u.default,{source:T,style:E.default.headerImage,resizeMode:\"contain\"})"
+        },
+        {
+          "$code": "l.default.createElement(n.View,{style:E.default.watchfaceSection},l.default.createElement(u.default,{source:W,style:E.default.lineImage,resizeMode:\"contain\"}),l.default.createElement(n.View,{style:E.default.watchfaceRow},null==D?void 0:D.slice(0,3).map(function(t,o){var f=P[o];return l.default.creat"
+        },
+        {
+          "$code": "l.default.createElement(n.View,{style:E.default.priceRow},l.default.createElement(y.Text,{style:E.default.promoPrice},\"\\xa5\",R(null==S?void 0:S.promotionPrice)),l.default.createElement(y.Text,{style:E.default.originalPrice},\"\\xa5\",R(null==S?void 0:S.originalPrice)))"
+        },
+        {
+          "$code": "l.default.createElement(u.default,{source:V,style:E.default.actionButton,resizeMode:\"contain\"})"
+        },
+        {
+          "$code": "l.default.createElement(y.Pressable,{onPress:function(t){t.stopPropagation(),M()}},l.default.createElement(y.Text,{style:E.default.collectionLink},w.default.myCollection))"
+        }
+      ]
+    },
+    {
+      "type": "u.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "T"
+        },
+        "style": {
+          "$code": "E.default.headerImage"
+        },
+        "resizeMode": "contain"
+      },
+      "children": []
+    },
+    {
+      "type": "n.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "E.default.watchfaceSection"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(u.default,{source:W,style:E.default.lineImage,resizeMode:\"contain\"})"
+        },
+        {
+          "$code": "l.default.createElement(n.View,{style:E.default.watchfaceRow},null==D?void 0:D.slice(0,3).map(function(t,o){var f=P[o];return l.default.createElement(n.View,{key:t.id||o,style:[E.default.watchfaceItem,f]},l.default.createElement(u.default,{source:k,style:E.default.cardBg,resizeMode:\"contain\"},l.defa"
+        }
+      ]
+    },
+    {
+      "type": "u.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "W"
+        },
+        "style": {
+          "$code": "E.default.lineImage"
+        },
+        "resizeMode": "contain"
+      },
+      "children": []
+    },
+    {
+      "type": "n.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "E.default.watchfaceRow"
+        }
+      },
+      "children": [
+        {
+          "$code": "null==D?void 0:D.slice(0,3).map(function(t,o){var f=P[o];return l.default.createElement(n.View,{key:t.id||o,style:[E.default.watchfaceItem,f]},l.default.createElement(u.default,{source:k,style:E.default.cardBg,resizeMode:\"contain\"},l.default.createElement(n.View,{style:E.default.cardInner},l.default"
+        }
+      ]
+    },
+    {
+      "type": "n.View",
+      "module": 18,
+      "props": {
+        "key": {
+          "$code": "t.id||o"
+        },
+        "style": [
+          {
+            "$code": "E.default.watchfaceItem"
+          },
+          {
+            "$code": "f"
+          }
+        ]
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(u.default,{source:k,style:E.default.cardBg,resizeMode:\"contain\"},l.default.createElement(n.View,{style:E.default.cardInner},l.default.createElement(u.default,{source:{uri:t.icon},style:N,resizeMode:\"contain\"})))"
+        }
+      ]
+    },
+    {
+      "type": "u.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "k"
+        },
+        "style": {
+          "$code": "E.default.cardBg"
+        },
+        "resizeMode": "contain"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(n.View,{style:E.default.cardInner},l.default.createElement(u.default,{source:{uri:t.icon},style:N,resizeMode:\"contain\"}))"
+        }
+      ]
+    },
+    {
+      "type": "n.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "E.default.cardInner"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(u.default,{source:{uri:t.icon},style:N,resizeMode:\"contain\"})"
+        }
+      ]
+    },
+    {
+      "type": "u.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "uri": {
+            "$code": "t.icon"
+          }
+        },
+        "style": {
+          "$code": "N"
+        },
+        "resizeMode": "contain"
+      },
+      "children": []
+    },
+    {
+      "type": "n.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "E.default.priceRow"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(y.Text,{style:E.default.promoPrice},\"\\xa5\",R(null==S?void 0:S.promotionPrice))"
+        },
+        {
+          "$code": "l.default.createElement(y.Text,{style:E.default.originalPrice},\"\\xa5\",R(null==S?void 0:S.originalPrice))"
+        }
+      ]
+    },
+    {
+      "type": "y.Text",
+      "module": 1780,
+      "props": {
+        "style": {
+          "$code": "E.default.promoPrice"
+        }
+      },
+      "children": [
+        "¥",
+        {
+          "$code": "R(null==S?void 0:S.promotionPrice)"
+        }
+      ]
+    },
+    {
+      "type": "y.Text",
+      "module": 1780,
+      "props": {
+        "style": {
+          "$code": "E.default.originalPrice"
+        }
+      },
+      "children": [
+        "¥",
+        {
+          "$code": "R(null==S?void 0:S.originalPrice)"
+        }
+      ]
+    },
+    {
+      "type": "u.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "V"
+        },
+        "style": {
+          "$code": "E.default.actionButton"
+        },
+        "resizeMode": "contain"
+      },
+      "children": []
+    },
+    {
+      "type": "y.Pressable",
+      "module": 1780,
+      "props": {
+        "onPress": {
+          "$code": "function(t){t.stopPropagation(),M()}"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(y.Text,{style:E.default.collectionLink},w.default.myCollection)"
+        }
+      ]
+    },
+    {
+      "type": "y.Text",
+      "module": 1780,
+      "props": {
+        "style": {
+          "$code": "E.default.collectionLink"
+        }
+      },
+      "children": [
+        {
+          "$code": "w.default.myCollection"
+        }
+      ]
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": [
+    {
+      "key": "width",
+      "value": {
+        "$code": "Math.ceil(.6*O.width)"
+      }
+    },
+    {
+      "key": "height",
+      "value": {
+        "$code": "Math.ceil(.6*O.height)"
+      }
+    },
+    {
+      "key": "borderRadius",
+      "value": {
+        "$code": "L?Math.ceil(.6*L):0"
+      }
+    }
+  ]
+}

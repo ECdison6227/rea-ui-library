@@ -1,0 +1,427 @@
+{
+  "bundle": "dial",
+  "id": "di-546",
+  "line": 554,
+  "aliases": {
+    "n": 3,
+    "t": 35,
+    "o": 54,
+    "u": 27,
+    "c": 14,
+    "l": 18,
+    "s": 1113,
+    "f": 834,
+    "p": "di-140",
+    "b": "di-141",
+    "h": "di-144",
+    "v": 631,
+    "y": 382,
+    "E": 558,
+    "C": "di-515",
+    "S": "di-149",
+    "w": "di-262",
+    "I": 566,
+    "k": 1780,
+    "O": "di-516",
+    "_": "di-519",
+    "M": "di-239",
+    "L": "di-321",
+    "R": "di-327",
+    "x": "di-544",
+    "T": "di-547",
+    "P": "di-548",
+    "D": "di-421",
+    "j": "di-549"
+  },
+  "elements": [
+    {
+      "type": "P.default",
+      "module": "di-548",
+      "props": {
+        "item": {
+          "$code": "t"
+        },
+        "isRecommend": {
+          "$code": "se"
+        },
+        "freeze": {
+          "$code": "ie"
+        },
+        "shape": {
+          "$code": "A"
+        },
+        "deviceSize": {
+          "$code": "q"
+        },
+        "vip": {
+          "$code": "K"
+        },
+        "onFeedItemMount": {
+          "$code": "ve"
+        },
+        "onIndexChanged": {
+          "$code": "De"
+        },
+        "panRef": {
+          "$code": "fe"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "k.VStack",
+      "module": 1780,
+      "props": {
+        "space": 3
+      },
+      "children": [
+        {
+          "$code": "!(0,I.isEmpty)(Re)&&se?c.default.createElement(O.default,{data:Re,onIndexChanged:De,useGestureScrollView:!0,from:O.EBannerType.DIAL,useRNTouchable:!0}):null"
+        },
+        {
+          "$code": "!(0,I.isEmpty)(Le)&&se?c.default.createElement(k.Box,{onLayout:ze},c.default.createElement(_.default,{data:Le,customBgColor:\"transparent\",useGestureScrollView:!0,imageSize:46,px:\"9px\",justifyContent:\"space-between\",useRNTouchable:!0})):null"
+        },
+        {
+          "$code": "!(0,I.isEmpty)(xe)&&se?c.default.createElement(k.Text,{px:\"14px\",pb:3,fontSize:\"17px\",fontWeight:\"bold\",color:$},h.default.trans(\"dial.home.recommend\")):null"
+        }
+      ]
+    },
+    {
+      "type": "O.default",
+      "module": "di-516",
+      "props": {
+        "data": {
+          "$code": "Re"
+        },
+        "onIndexChanged": {
+          "$code": "De"
+        },
+        "useGestureScrollView": {
+          "$code": "!0"
+        },
+        "from": {
+          "$code": "O.EBannerType.DIAL"
+        },
+        "useRNTouchable": {
+          "$code": "!0"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "k.Box",
+      "module": 1780,
+      "props": {
+        "onLayout": {
+          "$code": "ze"
+        }
+      },
+      "children": [
+        {
+          "$code": "c.default.createElement(_.default,{data:Le,customBgColor:\"transparent\",useGestureScrollView:!0,imageSize:46,px:\"9px\",justifyContent:\"space-between\",useRNTouchable:!0})"
+        }
+      ]
+    },
+    {
+      "type": "_.default",
+      "module": "di-519",
+      "props": {
+        "data": {
+          "$code": "Le"
+        },
+        "customBgColor": "transparent",
+        "useGestureScrollView": {
+          "$code": "!0"
+        },
+        "imageSize": 46,
+        "px": "9px",
+        "justifyContent": "space-between",
+        "useRNTouchable": {
+          "$code": "!0"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "k.Text",
+      "module": 1780,
+      "props": {
+        "px": "14px",
+        "pb": 3,
+        "fontSize": "17px",
+        "fontWeight": "bold",
+        "color": {
+          "$code": "$"
+        }
+      },
+      "children": [
+        {
+          "$code": "h.default.trans(\"dial.home.recommend\")"
+        }
+      ]
+    },
+    {
+      "type": "k.Center",
+      "module": 1780,
+      "props": {
+        "py": 3
+      },
+      "children": [
+        {
+          "$code": "c.default.createElement(k.Text,null,h.default.trans(\"common.loading\"))"
+        }
+      ]
+    },
+    {
+      "type": "k.Text",
+      "module": 1780,
+      "props": null,
+      "children": [
+        {
+          "$code": "h.default.trans(\"common.loading\")"
+        }
+      ]
+    },
+    {
+      "type": "k.Box",
+      "module": 1780,
+      "props": {
+        "h": "28px"
+      },
+      "children": []
+    },
+    {
+      "type": "f.PanGestureHandler",
+      "module": 834,
+      "props": {
+        "ref": {
+          "$code": "fe"
+        },
+        "activeOffsetY": 1
+      },
+      "children": [
+        {
+          "$code": "c.default.createElement(M.IOFlatList,{ref:de,onScroll:Fe,style:j.styles.container,data:Pe,renderItem:je,numColumns:se?1:3,keyExtractor:Me,refreshControl:c.default.createElement(l.RefreshControl,{refreshing:o,onRefresh:Oe}),onEndReached:R?_e:void 0,onEndReachedThreshold:.2,ListHeaderComponent:Be,init"
+        }
+      ]
+    },
+    {
+      "type": "M.IOFlatList",
+      "module": "di-239",
+      "props": {
+        "ref": {
+          "$code": "de"
+        },
+        "onScroll": {
+          "$code": "Fe"
+        },
+        "style": {
+          "$code": "j.styles.container"
+        },
+        "data": {
+          "$code": "Pe"
+        },
+        "renderItem": {
+          "$code": "je"
+        },
+        "numColumns": {
+          "$code": "se?1:3"
+        },
+        "keyExtractor": {
+          "$code": "Me"
+        },
+        "refreshControl": {
+          "$code": "c.default.createElement(l.RefreshControl,{refreshing:o,onRefresh:Oe})"
+        },
+        "onEndReached": {
+          "$code": "R?_e:void 0"
+        },
+        "onEndReachedThreshold": 0.2,
+        "ListHeaderComponent": {
+          "$code": "Be"
+        },
+        "initialNumToRender": 6,
+        "maxToRenderPerBatch": 9,
+        "windowSize": 18,
+        "ListFooterComponent": {
+          "$code": "Ve"
+        },
+        "viewabilityConfigCallbackPairs": {
+          "$code": "se?ke.current:Ee.current"
+        },
+        "ListEmptyComponent": {
+          "$code": "function(){return(0,I.isEmpty)(Re)&&(0,I.isEmpty)(Le)&&(0,I.isEmpty)(xe)?c.default.createElement(k.Center,{flex:1,minHeight:y.CommonStyles.ViewHeight-100},c.default.createElement(k.VStack,{alignItems:\"center\",space:2.5},c.default.createElement(s.default,{source:ne,style:{height:60,width:93}}),c.default.createElement(k.Text,{color:ee},h.default.trans(\"common.emptyData\")))):le?null:c.default.createElement(L.default,null)}"
+        },
+        "ItemSeparatorComponent": {
+          "$code": "Ae"
+        },
+        "contentContainerStyle": {
+          "paddingBottom": 110
+        },
+        "showsVerticalScrollIndicator": {
+          "$code": "!1"
+        },
+        "scrollEventThrottle": 32
+      },
+      "children": []
+    },
+    {
+      "type": "l.RefreshControl",
+      "module": 18,
+      "props": {
+        "refreshing": {
+          "$code": "o"
+        },
+        "onRefresh": {
+          "$code": "Oe"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "k.Center",
+      "module": 1780,
+      "props": {
+        "flex": 1,
+        "minHeight": {
+          "$code": "y.CommonStyles.ViewHeight-100"
+        }
+      },
+      "children": [
+        {
+          "$code": "c.default.createElement(k.VStack,{alignItems:\"center\",space:2.5},c.default.createElement(s.default,{source:ne,style:{height:60,width:93}}),c.default.createElement(k.Text,{color:ee},h.default.trans(\"common.emptyData\")))"
+        }
+      ]
+    },
+    {
+      "type": "k.VStack",
+      "module": 1780,
+      "props": {
+        "alignItems": "center",
+        "space": 2.5
+      },
+      "children": [
+        {
+          "$code": "c.default.createElement(s.default,{source:ne,style:{height:60,width:93}})"
+        },
+        {
+          "$code": "c.default.createElement(k.Text,{color:ee},h.default.trans(\"common.emptyData\"))"
+        }
+      ]
+    },
+    {
+      "type": "s.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "ne"
+        },
+        "style": {
+          "height": 60,
+          "width": 93
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "k.Text",
+      "module": 1780,
+      "props": {
+        "color": {
+          "$code": "ee"
+        }
+      },
+      "children": [
+        {
+          "$code": "h.default.trans(\"common.emptyData\")"
+        }
+      ]
+    },
+    {
+      "type": "L.default",
+      "module": "di-321",
+      "props": null,
+      "children": []
+    },
+    {
+      "type": "A",
+      "props": {
+        "bannerVisible": {
+          "$code": "O"
+        },
+        "refreshing": {
+          "$code": "t"
+        },
+        "hasMore": {
+          "$code": "o"
+        },
+        "onRefresh": {
+          "$code": "u"
+        },
+        "onLoadMore": {
+          "$code": "l"
+        },
+        "onDetailClick": {
+          "$code": "s"
+        },
+        "shape": {
+          "$code": "f"
+        },
+        "operationStats": {
+          "$code": "p"
+        },
+        "watchfaceSets": {
+          "$code": "b"
+        },
+        "deviceSize": {
+          "$code": "h"
+        },
+        "requestTime": {
+          "$code": "v"
+        },
+        "deviceDid": {
+          "$code": "y"
+        },
+        "tabType": {
+          "$code": "E"
+        },
+        "tabTitle": {
+          "$code": "C"
+        },
+        "tabIndex": {
+          "$code": "S"
+        },
+        "vip": {
+          "$code": "w"
+        },
+        "showBar": {
+          "$code": "I"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": [
+    {
+      "key": "fontSize",
+      "value": "17px"
+    },
+    {
+      "key": "fontWeight",
+      "value": "bold"
+    },
+    {
+      "key": "height",
+      "value": 60
+    },
+    {
+      "key": "width",
+      "value": 93
+    },
+    {
+      "key": "paddingBottom",
+      "value": 110
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "basis": "APK layouts/resources and JADX output; no verified device interaction capture",
+  "coordinateUnits": {"layout":"dp","text":"sp","exceptions":["health header divider is 1px"]},
+  "primaryNavigation": {
+    "status":"static_observed",
+    "tabs":[{"index":0,"label":"健康"},{"index":1,"label":"运动"},{"index":2,"label":"设备"},{"index":3,"label":"我的"}],
+    "shellLayout":"main_activity_main.xml",
+    "itemLayout":"main_view_tab.xml",
+    "heightDp":66.66998,
+    "labelSizeSp":11,
+    "selectedColor":{"light":"#FF612E","night":"#F04D18","resource":"colorPrimary"},
+    "reselectBehavior":"empty callback; no scroll-to-top action observed",
+    "rootBackBehavior":"MainActivity.onBackPressed eventually calls finish()",
+    "source":["native-sources/com/xiaomi/fitness/main/export/MainTab.java:15","native-sources/com/xiaomi/fitness/main/MainActivity.java:370","native-sources/com/xiaomi/fitness/main/MainActivity.java:1725"]
+  },
+  "pages":[
+    {
+      "id":"health_v2",
+      "status":"static_observed",
+      "layout":"fragment_data_v2.xml",
+      "structure":["fixed HomeHeaderTabTitleView","SpringBackLayout > NestedScrollView","DataHeaderV2View","optional announcement banner","health card grid","optional Alipay touch service","operational banner list"],
+      "gridColumns":{"phone":2,"unfoldedFoldable":3,"tabletLandscape":4},
+      "gridGapDp":10,
+      "refresh":{"manual":"sync + fetch user info from web","onVisible":"automatic sync","loadActionSizeDp":34},
+      "detailContext":["did","local_date","sport_type"],
+      "optionalByDefaultGone":["bannerAnnouncementView","alipay_touch_view"],
+      "cardListProvider":"com.xiaomi.fitness.v2.HealthDataTypeUtilsV2.getHomeDisplayTypeList",
+      "cardOrderRule":"saved HEALTH_CARD_SORT first, append missing candidates, then apply user visibility, defaults, history and device capability rules",
+      "defaultCandidates":["sleep","heart_rate","blood_pressure","ecg_medical","blood_glucose if non-Play","spo2","weight","temperature","female health early for female profile","stress","hearing if non-Play mainland","vitality","pai","energy","female health late otherwise","health_check"],
+      "sources":["native-sources/com/xiaomi/fitness/homepage/HealthV2Fragment.java:738","native-sources/com/xiaomi/fitness/homepage/HealthV2Fragment.java:778","native-sources/com/xiaomi/fitness/homepage/HealthV2Fragment.java:1028","native-sources/com/xiaomi/fitness/homepage/HealthV2Fragment.java:1152"]
+    },
+    {
+      "id":"health_summary_header",
+      "status":"static_observed",
+      "layout":"health_main_header_data_view2_v2.xml",
+      "structure":["269dp background area","200dp-wide ThreeTargetView","210x80dp reflection placeholder","share/calorie conversion element","equal-width three metric row starting 168dp below top","activity count row separated by 1px divider"],
+      "unknown":["ring draw geometry","ring animation timing","actual runtime ratio and visual layering"]
+    },
+    {
+      "id":"device_parent_v4",
+      "status":"static_observed",
+      "layout":"device_fragment_device_tab_parent_v4.xml",
+      "structure":["HomeHeaderTabTitleView","ViewPager containing category subpages"],
+      "tabEligibility":"provider.index > 2 and provider.deviceCount > 0; if none remain, fall back to wearable provider index 3",
+      "categoryIndexes":{"wearable":3,"other":4},
+      "topPaddingDp":35,
+      "sources":["native-sources/com/xiaomi/fitness/device/manager/ui/tab/DeviceTabParentFragmentV4.java:146","native-sources/com/xiaomi/fitness/device/manager/ui/tab/DeviceTabParentFragmentV4.java:225"]
+    },
+    {
+      "id":"device_content_v4",
+      "status":"static_observed",
+      "layout":"device_fragment_device_tab_v4.xml",
+      "states":{
+        "noCurrentDeviceNoAccessory":"add/scan card + no-device banners",
+        "accessoryOnly":"accessory card + wear mode",
+        "currentDevice":"status + accessory + reminder settings + optional face entrance + banners + capability-filtered feature/settings cards"
+      },
+      "capabilityConditions":["WearOS omits standard face entrance","feature cards filtered by isSupportFeatureCardV4"],
+      "statusTap":{"connected":"sync","states_1_4_9":"force reconnect and record manual attempt","state_8":"choose common app"},
+      "nonForcedPromptThrottleMs":172800000,
+      "promptThrottleScope":["connect permission","location switch"],
+      "sources":["native-sources/com/xiaomi/fitness/device/manager/ui/tab/DeviceTabV4ViewModel.java:1338","native-sources/com/xiaomi/fitness/device/manager/ui/tab/DeviceTabV4ViewModel.java:1415","native-sources/com/xiaomi/fitness/device/manager/ui/tab/DeviceTabV4ViewModel.java:1453","native-sources/com/xiaomi/fitness/device/manager/ui/tab/DeviceTabV4ViewModel.java:1921"]
+    },
+    {
+      "id":"device_empty",
+      "status":"static_observed",
+      "layout":"device_item_add_new_v4.xml",
+      "animation":{"kind":"Lottie","widthDp":180,"heightDp":140,"topMarginDp":52,"autoPlay":true,"loop":true,"duration":"unknown"},
+      "actions":[{"label":"扫一扫","role":"secondary"},{"label":"添加设备","role":"primary"}],
+      "actionGapDp":12,
+      "horizontalInsetDp":28,
+      "bottomPaddingDp":28
+    },
+    {
+      "id":"first_entry",
+      "status":"static_observed",
+      "priority":["welcome not finished -> WelcomeActivity","privacy not accepted and no basic mode -> PrivacyActivity","privacy basic mode -> main sport tab","region empty -> RegionSelectActivity","otherwise channel/version/ad branches -> main"],
+      "separateStateConcepts":["privacy basic mode","concise appearance mode"],
+      "appearanceGuideGate":"non-Play channel, unknown appearance mode, V4 disabled",
+      "privacyAgreeTap":"continue if agreement checked; otherwise second consent dialog",
+      "privacyBasicMode":"set region to China mainland and enter sport tab",
+      "sources":["../phase2/sources/com/xiaomi/fitness/login/SplashActivity.java:317","native-sources/com/xiaomi/fitness/login/welcome/WelcomeActivity.java:82","native-sources/com/xiaomi/fitness/login/privacy/PrivacyActivity.java:156"]
+    },
+    {
+      "id":"rn_main_routes",
+      "status":"static_observed_native_container",
+      "routes":{"sport":"sport/SportHome","mine":"mine/MineTab"},
+      "warning":"XML resources sport_tab_v4_page.xml and mine_fragment_v4.xml must not be assumed to be the active V4 RN body",
+      "sources":["native-sources/com/xiaomi/fitness/sport/sporttab/SportTabV4Fragment.java:55","native-sources/com/xiaomi/fitness/mine/v4/MineFragmentV4.java:52"]
+    }
+  ],
+  "migrationRecommendations":{
+    "status":"recommendation_not_original_behavior_claim",
+    "navigation":"stable primary regions > object/category subtabs > scrollable grouped cards > detail",
+    "stateContract":["loading","empty","ready","stale","error","disabled"],
+    "permission":"ask at the feature trigger; explain benefit; preserve context on denial; retry when explicitly requested",
+    "destructiveAction":"specific consequence and named confirm action; cancel leaves original state",
+    "context":"carry selected object/date/filter across detail navigation",
+    "repeatedPrompts":"throttle automatic prompts but honor explicit user retry",
+    "implementationState":["welcomeFinished","privacyAccepted","privacyBasicMode","regionSelected","authenticated","profileComplete","appearanceMode","selectedPrimaryTab","selectedDeviceId","deviceConnectionState","syncState","permissionState","featureAvailability"]
+  },
+  "unknowns":["server and account feature gates","exact visible card list for current device","motion timing and haptics","pixel-perfect runtime match","all error-dialog combinations","appearance in every theme/configuration"]
+}

@@ -1,0 +1,7 @@
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const base=path.resolve('analysis/ui'),folder=path.join(base,'runtime/evidence');fs.mkdirSync(folder,{recursive:true});
+const records=fs.readdirSync(folder).filter(x=>x.endsWith('.json')).map(x=>JSON.parse(fs.readFileSync(path.join(folder,x),'utf8')));
+const qualityFile=path.join(base,'runtime/screen-quality.json');const quality=fs.existsSync(qualityFile)?JSON.parse(fs.readFileSync(qualityFile,'utf8')):{};
+const all=records.filter(x=>x.evidence?.operation==='capture_adb_screen').map(x=>{const r=x.evidence.normalized_result;const actual=crypto.createHash('sha256').update(fs.readFileSync(r.local_path)).digest('hex');if(actual!==r.sha256)throw Error('Screen digest mismatch: '+x.id);return {id:x.id,title:x.title,state:x.state,source:x.source,image:path.relative(base,r.local_path).replaceAll('\\','/'),width:r.width,height:r.height,densityDpi:x.densityDpi||440,fontScale:x.fontScale||1,api:35,locale:'zh-CN',theme:x.theme||'day',runtimeBundle:x.runtimeBundle||null,evidenceId:x.evidence.evidence_id,sha256:r.sha256,usableForVisualAnalysis:quality[x.id]?.usableForVisualAnalysis!==false};}).sort((a,b)=>a.id.localeCompare(b.id));
+const screens=all.filter(s=>s.usableForVisualAnalysis);fs.writeFileSync(path.join(base,'runtime/blocked-screens.json'),JSON.stringify(all.filter(s=>!s.usableForVisualAnalysis),null,2));
+fs.writeFileSync(path.join(base,'runtime/screens.json'),JSON.stringify(screens,null,2));console.log(JSON.stringify({screens:screens.length,ids:screens.map(s=>s.id)}));

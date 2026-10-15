@@ -1,0 +1,13 @@
+const fs=require('node:fs'),path=require('node:path'),cp=require('node:child_process');
+const {DOMParser}=require(path.join(process.env.APPDATA,'npm/node_modules/rea-agents/node_modules/@xmldom/xmldom'));
+const id=process.argv[2];if(!id||!/^[a-zA-Z0-9_-]+$/.test(id))throw Error('Pass a safe state id');
+const adb=path.join(process.env.LOCALAPPDATA,'Microsoft/WinGet/Packages/Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe/platform-tools/adb.exe'),serial='emulator-5580';
+const run=args=>cp.execFileSync(adb,['-s',serial,...args],{encoding:'utf8',windowsHide:true,maxBuffer:6*1024*1024,timeout:40000});
+if(run(['shell','getprop','ro.boot.qemu.avd_name']).trim()!=='rea_mihealth_ui_20261015')throw Error('Unexpected target');
+const root=path.resolve('analysis/ui/runtime/hierarchy');fs.mkdirSync(root,{recursive:true});
+const started=new Date().toISOString(),remote='/sdcard/rea-mihealth-'+id+'.xml';
+const dump=run(['shell','uiautomator','dump',remote]);if(!dump.includes('dumped to:'))throw Error('UI hierarchy dump failed; stale dumps are never reused: '+dump);
+const xml=run(['exec-out','cat',remote]);if(!xml.includes('<hierarchy'))throw Error('No hierarchy in fresh dump');fs.writeFileSync(path.join(root,id+'.xml'),xml);
+const doc=new DOMParser().parseFromString(xml,'text/xml');const nodes=Array.from(doc.getElementsByTagName('node')).map(n=>Object.fromEntries(['text','resource-id','class','package','content-desc','clickable','enabled','selected','checked','scrollable','bounds'].map(a=>[a,n.getAttribute(a)])));
+const record={id,serial,at:started,nodes};fs.writeFileSync(path.join(root,id+'.json'),JSON.stringify(record,null,2));
+console.log(JSON.stringify({id,count:nodes.length,visibleLabels:nodes.filter(n=>n.text||n['content-desc']).map(n=>({text:n.text||n['content-desc'],id:n['resource-id'],bounds:n.bounds,clickable:n.clickable,checked:n.checked})).slice(0,Number(process.argv[3]||18))},null,2));

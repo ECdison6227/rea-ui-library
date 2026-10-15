@@ -1,0 +1,1 @@
+__d(function(g,r,i,a,m,e,d){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var o=(0,r(d[0]).extendTheme)({config:{initialColorMode:"system",useSystemColorMode:!0},components:{Text:{defaultProps:{lineHeight:void 0}}}});e.default=o},"sp-132",[1780]);

@@ -1,0 +1,180 @@
+{
+  "bundle": "sport",
+  "id": "sp-175",
+  "line": 183,
+  "aliases": {
+    "t": 3,
+    "o": 54,
+    "n": 14,
+    "l": 1113,
+    "c": "sp-141",
+    "u": "sp-144",
+    "f": 1780,
+    "s": "sp-176",
+    "b": "sp-234"
+  },
+  "elements": [
+    {
+      "type": "f.VStack",
+      "module": 1780,
+      "props": {
+        "bgColor": {
+          "$code": "_"
+        },
+        "pt": 1,
+        "pl": "12px",
+        "pb": 3,
+        "rounded": 18,
+        "style": {
+          "$code": "x"
+        }
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(f.HStack,{mr:z,py:\"10px\",pl:\"2px\",justifyContent:\"space-between\",alignItems:\"center\"},n.default.createElement(f.Text,{color:L,fontSize:T,fontWeight:\"bold\",flex:1,numberOfLines:1,textAlign:\"left\"},p),h?n.default.createElement(b.default,{onPress:P,activeOpacity:1,accessibilityR"
+        },
+        {
+          "$code": "O"
+        }
+      ]
+    },
+    {
+      "type": "f.HStack",
+      "module": 1780,
+      "props": {
+        "mr": {
+          "$code": "z"
+        },
+        "py": "10px",
+        "pl": "2px",
+        "justifyContent": "space-between",
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(f.Text,{color:L,fontSize:T,fontWeight:\"bold\",flex:1,numberOfLines:1,textAlign:\"left\"},p)"
+        },
+        {
+          "$code": "h?n.default.createElement(b.default,{onPress:P,activeOpacity:1,accessibilityRole:\"button\",accessibilityLabel:null!==(o=S)&&void 0!==o?o:E},n.default.createElement(f.HStack,{alignItems:\"center\"},n.default.createElement(f.Text,{fontSize:M,mr:\"-2px\",color:I},E),n.default.createElement(l.default,{source"
+        }
+      ]
+    },
+    {
+      "type": "f.Text",
+      "module": 1780,
+      "props": {
+        "color": {
+          "$code": "L"
+        },
+        "fontSize": {
+          "$code": "T"
+        },
+        "fontWeight": "bold",
+        "flex": 1,
+        "numberOfLines": 1,
+        "textAlign": "left"
+      },
+      "children": [
+        {
+          "$code": "p"
+        }
+      ]
+    },
+    {
+      "type": "b.default",
+      "module": "sp-234",
+      "props": {
+        "onPress": {
+          "$code": "P"
+        },
+        "activeOpacity": 1,
+        "accessibilityRole": "button",
+        "accessibilityLabel": {
+          "$code": "null!==(o=S)&&void 0!==o?o:E"
+        }
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(f.HStack,{alignItems:\"center\"},n.default.createElement(f.Text,{fontSize:M,mr:\"-2px\",color:I},E),n.default.createElement(l.default,{source:R,style:y({width:28,height:28},(0,s.mirrorRotate)())}))"
+        }
+      ]
+    },
+    {
+      "type": "f.HStack",
+      "module": 1780,
+      "props": {
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(f.Text,{fontSize:M,mr:\"-2px\",color:I},E)"
+        },
+        {
+          "$code": "n.default.createElement(l.default,{source:R,style:y({width:28,height:28},(0,s.mirrorRotate)())})"
+        }
+      ]
+    },
+    {
+      "type": "f.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": {
+          "$code": "M"
+        },
+        "mr": "-2px",
+        "color": {
+          "$code": "I"
+        }
+      },
+      "children": [
+        {
+          "$code": "E"
+        }
+      ]
+    },
+    {
+      "type": "l.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "R"
+        },
+        "style": {
+          "$code": "y({width:28,height:28},(0,s.mirrorRotate)())"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": [
+    {
+      "key": "marginBottom",
+      "value": 12
+    },
+    {
+      "key": "fontSize",
+      "value": {
+        "$code": "T"
+      }
+    },
+    {
+      "key": "fontWeight",
+      "value": "bold"
+    },
+    {
+      "key": "fontSize",
+      "value": {
+        "$code": "M"
+      }
+    },
+    {
+      "key": "width",
+      "value": 28
+    },
+    {
+      "key": "height",
+      "value": 28
+    }
+  ]
+}

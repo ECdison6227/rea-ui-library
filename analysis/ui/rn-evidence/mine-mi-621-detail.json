@@ -1,0 +1,89 @@
+{
+  "bundle": "mine",
+  "id": "mi-621",
+  "line": 629,
+  "aliases": {
+    "t": 3,
+    "n": 14,
+    "o": 18,
+    "c": 1113,
+    "l": "mi-163",
+    "s": 1780,
+    "u": "mi-510",
+    "f": "mi-399"
+  },
+  "elements": [
+    {
+      "type": "s.Pressable",
+      "module": 1780,
+      "props": {
+        "justifyContent": "center",
+        "alignItems": "center",
+        "onPress": {
+          "$code": "b"
+        },
+        "flex": 1
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(c.default,{source:E,style:h.icon})"
+        },
+        {
+          "$code": "n.default.createElement(s.Text,{fontSize:\"14px\",pt:\"2px\",pb:\"10px\",fontWeight:\"400\",numberOfLines:1},o)"
+        }
+      ]
+    },
+    {
+      "type": "c.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "E"
+        },
+        "style": {
+          "$code": "h.icon"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "s.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": "14px",
+        "pt": "2px",
+        "pb": "10px",
+        "fontWeight": "400",
+        "numberOfLines": 1
+      },
+      "children": [
+        {
+          "$code": "o"
+        }
+      ]
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": [
+    {
+      "key": "height",
+      "value": 24
+    },
+    {
+      "key": "width",
+      "value": 24
+    },
+    {
+      "key": "marginBottom",
+      "value": 6
+    },
+    {
+      "key": "fontSize",
+      "value": "14px"
+    },
+    {
+      "key": "fontWeight",
+      "value": "400"
+    }
+  ]
+}

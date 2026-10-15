@@ -1,0 +1,2482 @@
+{
+  "bundle": "dial",
+  "id": "di-430",
+  "line": 438,
+  "aliases": {
+    "t": 3,
+    "n": 54,
+    "l": 14,
+    "o": 18,
+    "c": 1113,
+    "u": "di-144",
+    "s": 631,
+    "f": "di-172",
+    "p": 1047,
+    "F": "di-149",
+    "x": "di-296",
+    "h": 1780,
+    "E": "di-171",
+    "b": "di-297"
+  },
+  "elements": [
+    {
+      "type": "h.Pressable",
+      "module": 1780,
+      "props": {
+        "_pressed": {
+          "opacity": 0.7
+        },
+        "onPress": {
+          "$code": "_"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.VStack,{space:2,alignItems:\"center\"},l.default.createElement(h.Box,{position:\"relative\"},l.default.createElement(c.default,{source:v,style:b,resizeMode:c.default.resizeMode.contain})),l.default.createElement(h.Center,null,l.default.createElement(h.Text,{fontSize:14,fontWeig"
+        }
+      ]
+    },
+    {
+      "type": "h.VStack",
+      "module": 1780,
+      "props": {
+        "space": 2,
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Box,{position:\"relative\"},l.default.createElement(c.default,{source:v,style:b,resizeMode:c.default.resizeMode.contain}))"
+        },
+        {
+          "$code": "l.default.createElement(h.Center,null,l.default.createElement(h.Text,{fontSize:14,fontWeight:\"500\",color:C,width:w,numberOfLines:1,textAlign:\"center\"},null==o?void 0:o.displayName),T?l.default.createElement(h.View,{backgroundColor:\"#FF475933\",borderRadius:2.9,paddingX:\"3px\",paddingY:\"1.5px\"},l.defau"
+        }
+      ]
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "position": "relative"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(c.default,{source:v,style:b,resizeMode:c.default.resizeMode.contain})"
+        }
+      ]
+    },
+    {
+      "type": "c.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "v"
+        },
+        "style": {
+          "$code": "b"
+        },
+        "resizeMode": {
+          "$code": "c.default.resizeMode.contain"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "h.Center",
+      "module": 1780,
+      "props": null,
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{fontSize:14,fontWeight:\"500\",color:C,width:w,numberOfLines:1,textAlign:\"center\"},null==o?void 0:o.displayName)"
+        },
+        {
+          "$code": "T?l.default.createElement(h.View,{backgroundColor:\"#FF475933\",borderRadius:2.9,paddingX:\"3px\",paddingY:\"1.5px\"},l.default.createElement(h.Text,{color:\"#FF4759\",fontSize:12},u.default.trans(\"dial.market.feedFreeInstall\"))):S<y?l.default.createElement(h.View,{flexDirection:\"row\"},l.default.createEleme"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 14,
+        "fontWeight": "500",
+        "color": {
+          "$code": "C"
+        },
+        "width": {
+          "$code": "w"
+        },
+        "numberOfLines": 1,
+        "textAlign": "center"
+      },
+      "children": [
+        {
+          "$code": "null==o?void 0:o.displayName"
+        }
+      ]
+    },
+    {
+      "type": "h.View",
+      "module": 1780,
+      "props": {
+        "backgroundColor": "#FF475933",
+        "borderRadius": 2.9,
+        "paddingX": "3px",
+        "paddingY": "1.5px"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{color:\"#FF4759\",fontSize:12},u.default.trans(\"dial.market.feedFreeInstall\"))"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": "#FF4759",
+        "fontSize": 12
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.market.feedFreeInstall\")"
+        }
+      ]
+    },
+    {
+      "type": "h.View",
+      "module": 1780,
+      "props": {
+        "flexDirection": "row"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{color:\"#FF4759\",fontSize:12},u.default.trans(\"dial.purchased.price\",{slot0:(S/100).toFixed(2)}))"
+        },
+        {
+          "$code": "l.default.createElement(h.Text,{marginLeft:1,textDecorationLine:\"line-through\",color:M,fontSize:12},u.default.trans(\"dial.purchased.price\",{slot0:(y/100).toFixed(2)}))"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": "#FF4759",
+        "fontSize": 12
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.purchased.price\",{slot0:(S/100).toFixed(2)})"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "marginLeft": 1,
+        "textDecorationLine": "line-through",
+        "color": {
+          "$code": "M"
+        },
+        "fontSize": 12
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.purchased.price\",{slot0:(y/100).toFixed(2)})"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 13,
+        "textAlign": "center",
+        "color": {
+          "$code": "M"
+        },
+        "width": {
+          "$code": "w"
+        },
+        "numberOfLines": 1
+      },
+      "children": [
+        {
+          "$code": "z"
+        }
+      ]
+    },
+    {
+      "type": "h.Pressable",
+      "module": 1780,
+      "props": {
+        "onPress": {
+          "$code": "I"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.VStack,null,l.default.createElement(h.Center,{alignItems:\"center\",justifyContent:\"center\",paddingY:21,bg:z},l.default.createElement(h.Box,{borderWidth:1,p:1,borderColor:W,borderRadius:k,overflow:\"hidden\"},l.default.createElement(c.default,{source:v,style:b,resizeMode:c.defa"
+        }
+      ]
+    },
+    {
+      "type": "h.VStack",
+      "module": 1780,
+      "props": null,
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Center,{alignItems:\"center\",justifyContent:\"center\",paddingY:21,bg:z},l.default.createElement(h.Box,{borderWidth:1,p:1,borderColor:W,borderRadius:k,overflow:\"hidden\"},l.default.createElement(c.default,{source:v,style:b,resizeMode:c.default.resizeMode.contain})))"
+        },
+        {
+          "$code": "l.default.createElement(h.Box,{flex:1,alignItems:\"flex-start\",bg:y,p:3},l.default.createElement(h.Text,{fontSize:16,fontWeight:\"500\",color:_,numberOfLines:1},o.displayName),M?l.default.createElement(h.View,{backgroundColor:\"#FF475933\",borderRadius:2.9,paddingX:\"3px\",paddingY:\"1.5px\"},l.default.creat"
+        }
+      ]
+    },
+    {
+      "type": "h.Center",
+      "module": 1780,
+      "props": {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingY": 21,
+        "bg": {
+          "$code": "z"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Box,{borderWidth:1,p:1,borderColor:W,borderRadius:k,overflow:\"hidden\"},l.default.createElement(c.default,{source:v,style:b,resizeMode:c.default.resizeMode.contain}))"
+        }
+      ]
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "borderWidth": 1,
+        "p": 1,
+        "borderColor": {
+          "$code": "W"
+        },
+        "borderRadius": {
+          "$code": "k"
+        },
+        "overflow": "hidden"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(c.default,{source:v,style:b,resizeMode:c.default.resizeMode.contain})"
+        }
+      ]
+    },
+    {
+      "type": "c.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "v"
+        },
+        "style": {
+          "$code": "b"
+        },
+        "resizeMode": {
+          "$code": "c.default.resizeMode.contain"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "flex": 1,
+        "alignItems": "flex-start",
+        "bg": {
+          "$code": "y"
+        },
+        "p": 3
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{fontSize:16,fontWeight:\"500\",color:_,numberOfLines:1},o.displayName)"
+        },
+        {
+          "$code": "M?l.default.createElement(h.View,{backgroundColor:\"#FF475933\",borderRadius:2.9,paddingX:\"3px\",paddingY:\"1.5px\"},l.default.createElement(h.Text,{color:\"#FF4759\",fontSize:14},u.default.trans(\"dial.market.feedFreeInstall\"))):C<T?l.default.createElement(h.View,{flexDirection:\"row\"},l.default.createEleme"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 16,
+        "fontWeight": "500",
+        "color": {
+          "$code": "_"
+        },
+        "numberOfLines": 1
+      },
+      "children": [
+        {
+          "$code": "o.displayName"
+        }
+      ]
+    },
+    {
+      "type": "h.View",
+      "module": 1780,
+      "props": {
+        "backgroundColor": "#FF475933",
+        "borderRadius": 2.9,
+        "paddingX": "3px",
+        "paddingY": "1.5px"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{color:\"#FF4759\",fontSize:14},u.default.trans(\"dial.market.feedFreeInstall\"))"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": "#FF4759",
+        "fontSize": 14
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.market.feedFreeInstall\")"
+        }
+      ]
+    },
+    {
+      "type": "h.View",
+      "module": 1780,
+      "props": {
+        "flexDirection": "row"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{color:\"#FF4759\",fontSize:14},u.default.trans(\"dial.purchased.price\",{slot0:(C/100).toFixed(2)}))"
+        },
+        {
+          "$code": "l.default.createElement(h.Text,{marginLeft:1,textDecorationLine:\"line-through\",color:w,fontSize:14},u.default.trans(\"dial.purchased.price\",{slot0:(T/100).toFixed(2)}))"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": "#FF4759",
+        "fontSize": 14
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.purchased.price\",{slot0:(C/100).toFixed(2)})"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "marginLeft": 1,
+        "textDecorationLine": "line-through",
+        "color": {
+          "$code": "w"
+        },
+        "fontSize": 14
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.purchased.price\",{slot0:(T/100).toFixed(2)})"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 14,
+        "color": {
+          "$code": "w"
+        }
+      },
+      "children": [
+        {
+          "$code": "S"
+        }
+      ]
+    },
+    {
+      "type": "h.Pressable",
+      "module": 1780,
+      "props": {
+        "onPress": {
+          "$code": "C"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.VStack,{space:2},l.default.createElement(h.Center,{alignItems:\"center\",justifyContent:\"center\",paddingTop:19.5},l.default.createElement(h.Box,{position:\"relative\"},l.default.createElement(c.default,{source:E,style:M,resizeMode:c.default.resizeMode.contain}))),l.default.crea"
+        }
+      ]
+    },
+    {
+      "type": "h.VStack",
+      "module": 1780,
+      "props": {
+        "space": 2
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Center,{alignItems:\"center\",justifyContent:\"center\",paddingTop:19.5},l.default.createElement(h.Box,{position:\"relative\"},l.default.createElement(c.default,{source:E,style:M,resizeMode:c.default.resizeMode.contain})))"
+        },
+        {
+          "$code": "l.default.createElement(h.Box,{flex:1,alignItems:\"center\",paddingTop:1,paddingBottom:19.5},l.default.createElement(h.Text,{fontSize:14,color:S,numberOfLines:1},o.displayName),y?l.default.createElement(h.View,{backgroundColor:\"#FF475933\",borderRadius:2.9,paddingX:\"3px\",paddingY:\"1.5px\"},l.default.cre"
+        }
+      ]
+    },
+    {
+      "type": "h.Center",
+      "module": 1780,
+      "props": {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": 19.5
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Box,{position:\"relative\"},l.default.createElement(c.default,{source:E,style:M,resizeMode:c.default.resizeMode.contain}))"
+        }
+      ]
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "position": "relative"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(c.default,{source:E,style:M,resizeMode:c.default.resizeMode.contain})"
+        }
+      ]
+    },
+    {
+      "type": "c.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "E"
+        },
+        "style": {
+          "$code": "M"
+        },
+        "resizeMode": {
+          "$code": "c.default.resizeMode.contain"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "flex": 1,
+        "alignItems": "center",
+        "paddingTop": 1,
+        "paddingBottom": 19.5
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{fontSize:14,color:S,numberOfLines:1},o.displayName)"
+        },
+        {
+          "$code": "y?l.default.createElement(h.View,{backgroundColor:\"#FF475933\",borderRadius:2.9,paddingX:\"3px\",paddingY:\"1.5px\"},l.default.createElement(h.Text,{color:\"#FF4759\",fontSize:13},u.default.trans(\"dial.market.feedFreeInstall\"))):z<v?l.default.createElement(h.View,{flexDirection:\"row\"},l.default.createEleme"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 14,
+        "color": {
+          "$code": "S"
+        },
+        "numberOfLines": 1
+      },
+      "children": [
+        {
+          "$code": "o.displayName"
+        }
+      ]
+    },
+    {
+      "type": "h.View",
+      "module": 1780,
+      "props": {
+        "backgroundColor": "#FF475933",
+        "borderRadius": 2.9,
+        "paddingX": "3px",
+        "paddingY": "1.5px"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{color:\"#FF4759\",fontSize:13},u.default.trans(\"dial.market.feedFreeInstall\"))"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": "#FF4759",
+        "fontSize": 13
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.market.feedFreeInstall\")"
+        }
+      ]
+    },
+    {
+      "type": "h.View",
+      "module": 1780,
+      "props": {
+        "flexDirection": "row"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{color:\"#FF4759\",fontSize:13},u.default.trans(\"dial.purchased.price\",{slot0:(z/100).toFixed(2)}))"
+        },
+        {
+          "$code": "l.default.createElement(h.Text,{marginLeft:1,textDecorationLine:\"line-through\",color:T,fontSize:13},u.default.trans(\"dial.purchased.price\",{slot0:(v/100).toFixed(2)}))"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": "#FF4759",
+        "fontSize": 13
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.purchased.price\",{slot0:(z/100).toFixed(2)})"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "marginLeft": 1,
+        "textDecorationLine": "line-through",
+        "color": {
+          "$code": "T"
+        },
+        "fontSize": 13
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.purchased.price\",{slot0:(v/100).toFixed(2)})"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 13,
+        "color": {
+          "$code": "T"
+        }
+      },
+      "children": [
+        {
+          "$code": "b"
+        }
+      ]
+    },
+    {
+      "type": "h.Pressable",
+      "module": 1780,
+      "props": {
+        "onPress": {
+          "$code": "_"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.VStack,{space:1,alignItems:\"center\"},l.default.createElement(h.Box,{borderWidth:3,p:1,borderRadius:W.activeRadius,borderColor:null!=o&&o.isCurrent&&M?\"#FF612E\":\"transparent\",overflow:\"hidden\",accessibilityLabel:k},l.default.createElement(c.default,{source:y,style:W,resizeMo"
+        }
+      ]
+    },
+    {
+      "type": "h.VStack",
+      "module": 1780,
+      "props": {
+        "space": 1,
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Box,{borderWidth:3,p:1,borderRadius:W.activeRadius,borderColor:null!=o&&o.isCurrent&&M?\"#FF612E\":\"transparent\",overflow:\"hidden\",accessibilityLabel:k},l.default.createElement(c.default,{source:y,style:W,resizeMode:c.default.resizeMode.contain}))"
+        },
+        {
+          "$code": "S?l.default.createElement(h.Box,{position:\"absolute\",top:1,right:1,px:\"5px\",py:\"3px\",bg:\"#FFAF47\",borderRadius:100,borderWidth:1,borderColor:\"#FFFFFF\"},l.default.createElement(h.Text,{fontSize:10,color:\"#FFFFFF\"},u.default.trans(\"dial.market.myPurchaseInVip\"))):void 0"
+        },
+        {
+          "$code": "l.default.createElement(h.Center,null,l.default.createElement(h.Text,{fontSize:15,color:T,width:w,numberOfLines:1,textAlign:\"center\",importantForAccessibility:\"no\"},null==o?void 0:o.name),l.default.createElement(h.Text,{fontSize:12,color:C,width:w,numberOfLines:1,textAlign:\"center\",importantForAcces"
+        }
+      ]
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "borderWidth": 3,
+        "p": 1,
+        "borderRadius": {
+          "$code": "W.activeRadius"
+        },
+        "borderColor": {
+          "$code": "null!=o&&o.isCurrent&&M?\"#FF612E\":\"transparent\""
+        },
+        "overflow": "hidden",
+        "accessibilityLabel": {
+          "$code": "k"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(c.default,{source:y,style:W,resizeMode:c.default.resizeMode.contain})"
+        }
+      ]
+    },
+    {
+      "type": "c.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "y"
+        },
+        "style": {
+          "$code": "W"
+        },
+        "resizeMode": {
+          "$code": "c.default.resizeMode.contain"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "position": "absolute",
+        "top": 1,
+        "right": 1,
+        "px": "5px",
+        "py": "3px",
+        "bg": "#FFAF47",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "borderColor": "#FFFFFF"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{fontSize:10,color:\"#FFFFFF\"},u.default.trans(\"dial.market.myPurchaseInVip\"))"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 10,
+        "color": "#FFFFFF"
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.market.myPurchaseInVip\")"
+        }
+      ]
+    },
+    {
+      "type": "h.Center",
+      "module": 1780,
+      "props": null,
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{fontSize:15,color:T,width:w,numberOfLines:1,textAlign:\"center\",importantForAccessibility:\"no\"},null==o?void 0:o.name)"
+        },
+        {
+          "$code": "l.default.createElement(h.Text,{fontSize:12,color:C,width:w,numberOfLines:1,textAlign:\"center\",importantForAccessibility:\"no\"},I)"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 15,
+        "color": {
+          "$code": "T"
+        },
+        "width": {
+          "$code": "w"
+        },
+        "numberOfLines": 1,
+        "textAlign": "center",
+        "importantForAccessibility": "no"
+      },
+      "children": [
+        {
+          "$code": "null==o?void 0:o.name"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 12,
+        "color": {
+          "$code": "C"
+        },
+        "width": {
+          "$code": "w"
+        },
+        "numberOfLines": 1,
+        "textAlign": "center",
+        "importantForAccessibility": "no"
+      },
+      "children": [
+        {
+          "$code": "I"
+        }
+      ]
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "borderWidth": 3,
+        "p": 1,
+        "borderColor": "transparent",
+        "overflow": "hidden"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Box,{style:c})"
+        }
+      ]
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "style": {
+          "$code": "c"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "style": {
+          "$code": "c"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "h.Pressable",
+      "module": 1780,
+      "props": {
+        "onPress": {
+          "$code": "y"
+        },
+        "accessibilityLabel": {
+          "$code": "_"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.VStack,{space:2},l.default.createElement(h.Center,{alignItems:\"center\",justifyContent:\"center\",paddingTop:null!==(n=E)&&void 0!==n?n:19.5},l.default.createElement(h.Box,{position:\"relative\"},l.default.createElement(c.default,{source:v,style:T,resizeMode:c.default.resizeMode"
+        }
+      ]
+    },
+    {
+      "type": "h.VStack",
+      "module": 1780,
+      "props": {
+        "space": 2
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Center,{alignItems:\"center\",justifyContent:\"center\",paddingTop:null!==(n=E)&&void 0!==n?n:19.5},l.default.createElement(h.Box,{position:\"relative\"},l.default.createElement(c.default,{source:v,style:T,resizeMode:c.default.resizeMode.contain},M&&l.default.createElement(h.Cent"
+        },
+        {
+          "$code": "l.default.createElement(h.Box,{flex:1,alignItems:\"center\",paddingTop:1},l.default.createElement(h.Text,{fontSize:15,color:z,numberOfLines:1,opacity:M?C:1},s.displayName))"
+        }
+      ]
+    },
+    {
+      "type": "h.Center",
+      "module": 1780,
+      "props": {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": {
+          "$code": "null!==(n=E)&&void 0!==n?n:19.5"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Box,{position:\"relative\"},l.default.createElement(c.default,{source:v,style:T,resizeMode:c.default.resizeMode.contain},M&&l.default.createElement(h.Center,{position:\"absolute\",top:0,left:0,right:0,bottom:0,bg:\"rgba(196,196,196,0.85)\"},l.default.createElement(h.Box,{borderRa"
+        },
+        {
+          "$code": "S?l.default.createElement(h.Box,{position:\"absolute\",top:E?0:4,right:2,px:\"5px\",py:\"3px\",bg:\"#FFAF47\",borderRadius:100,borderWidth:1,borderColor:\"#FFFFFF\"},l.default.createElement(h.Text,{fontSize:10,color:\"#FFFFFF\"},u.default.trans(\"dial.market.myPurchaseInVip\"))):void 0"
+        }
+      ]
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "position": "relative"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(c.default,{source:v,style:T,resizeMode:c.default.resizeMode.contain},M&&l.default.createElement(h.Center,{position:\"absolute\",top:0,left:0,right:0,bottom:0,bg:\"rgba(196,196,196,0.85)\"},l.default.createElement(h.Box,{borderRadius:8,backgroundColor:\"rgba(0,0,0,0.6)\",px:\"6px\"},l"
+        }
+      ]
+    },
+    {
+      "type": "c.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "v"
+        },
+        "style": {
+          "$code": "T"
+        },
+        "resizeMode": {
+          "$code": "c.default.resizeMode.contain"
+        }
+      },
+      "children": [
+        {
+          "$code": "M&&l.default.createElement(h.Center,{position:\"absolute\",top:0,left:0,right:0,bottom:0,bg:\"rgba(196,196,196,0.85)\"},l.default.createElement(h.Box,{borderRadius:8,backgroundColor:\"rgba(0,0,0,0.6)\",px:\"6px\"},l.default.createElement(h.Text,{fontSize:12,color:\"#FFFFFF\",textAlign:\"center\",py:\"6px\"},u.def"
+        }
+      ]
+    },
+    {
+      "type": "h.Center",
+      "module": 1780,
+      "props": {
+        "position": "absolute",
+        "top": 0,
+        "left": 0,
+        "right": 0,
+        "bottom": 0,
+        "bg": "rgba(196,196,196,0.85)"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Box,{borderRadius:8,backgroundColor:\"rgba(0,0,0,0.6)\",px:\"6px\"},l.default.createElement(h.Text,{fontSize:12,color:\"#FFFFFF\",textAlign:\"center\",py:\"6px\"},u.default.trans(\"dial.item.invalid\")))"
+        }
+      ]
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "borderRadius": 8,
+        "backgroundColor": "rgba(0,0,0,0.6)",
+        "px": "6px"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{fontSize:12,color:\"#FFFFFF\",textAlign:\"center\",py:\"6px\"},u.default.trans(\"dial.item.invalid\"))"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 12,
+        "color": "#FFFFFF",
+        "textAlign": "center",
+        "py": "6px"
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.item.invalid\")"
+        }
+      ]
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "position": "absolute",
+        "top": {
+          "$code": "E?0:4"
+        },
+        "right": 2,
+        "px": "5px",
+        "py": "3px",
+        "bg": "#FFAF47",
+        "borderRadius": 100,
+        "borderWidth": 1,
+        "borderColor": "#FFFFFF"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{fontSize:10,color:\"#FFFFFF\"},u.default.trans(\"dial.market.myPurchaseInVip\"))"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 10,
+        "color": "#FFFFFF"
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.market.myPurchaseInVip\")"
+        }
+      ]
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "flex": 1,
+        "alignItems": "center",
+        "paddingTop": 1
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{fontSize:15,color:z,numberOfLines:1,opacity:M?C:1},s.displayName)"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 15,
+        "color": {
+          "$code": "z"
+        },
+        "numberOfLines": 1,
+        "opacity": {
+          "$code": "M?C:1"
+        }
+      },
+      "children": [
+        {
+          "$code": "s.displayName"
+        }
+      ]
+    },
+    {
+      "type": "h.Pressable",
+      "module": 1780,
+      "props": {
+        "_pressed": {
+          "opacity": 0.7
+        },
+        "onPress": {
+          "$code": "W"
+        },
+        "accessible": {
+          "$code": "!0"
+        },
+        "accessibilityLabel": {
+          "$code": "L"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.VStack,{space:2,alignItems:\"center\"},l.default.createElement(h.Box,{position:\"relative\"},l.default.createElement(c.default,{source:v,style:b,resizeMode:c.default.resizeMode.contain})),l.default.createElement(h.Center,null,l.default.createElement(h.Text,{fontSize:14,fontWeig"
+        }
+      ]
+    },
+    {
+      "type": "h.VStack",
+      "module": 1780,
+      "props": {
+        "space": 2,
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Box,{position:\"relative\"},l.default.createElement(c.default,{source:v,style:b,resizeMode:c.default.resizeMode.contain}))"
+        },
+        {
+          "$code": "l.default.createElement(h.Center,null,l.default.createElement(h.Text,{fontSize:14,fontWeight:\"500\",color:w,width:O,numberOfLines:1,textAlign:\"center\"},null==o?void 0:o.displayName),M?l.default.createElement(h.View,null,l.default.createElement(h.Box,{backgroundColor:\"#FF505026\",borderRadius:6,padding"
+        }
+      ]
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "position": "relative"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(c.default,{source:v,style:b,resizeMode:c.default.resizeMode.contain})"
+        }
+      ]
+    },
+    {
+      "type": "c.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "v"
+        },
+        "style": {
+          "$code": "b"
+        },
+        "resizeMode": {
+          "$code": "c.default.resizeMode.contain"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "h.Center",
+      "module": 1780,
+      "props": null,
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{fontSize:14,fontWeight:\"500\",color:w,width:O,numberOfLines:1,textAlign:\"center\"},null==o?void 0:o.displayName)"
+        },
+        {
+          "$code": "M?l.default.createElement(h.View,null,l.default.createElement(h.Box,{backgroundColor:\"#FF505026\",borderRadius:6,paddingX:\"6px\",paddingY:1},l.default.createElement(h.Text,{color:\"#FF5050\",fontSize:10,textAlign:\"center\"},u.default.trans(_?\"dial.detail.promotionBannerTry\":\"dial.detail.promotionBannerFr"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 14,
+        "fontWeight": "500",
+        "color": {
+          "$code": "w"
+        },
+        "width": {
+          "$code": "O"
+        },
+        "numberOfLines": 1,
+        "textAlign": "center"
+      },
+      "children": [
+        {
+          "$code": "null==o?void 0:o.displayName"
+        }
+      ]
+    },
+    {
+      "type": "h.View",
+      "module": 1780,
+      "props": null,
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Box,{backgroundColor:\"#FF505026\",borderRadius:6,paddingX:\"6px\",paddingY:1},l.default.createElement(h.Text,{color:\"#FF5050\",fontSize:10,textAlign:\"center\"},u.default.trans(_?\"dial.detail.promotionBannerTry\":\"dial.detail.promotionBannerFree\")))"
+        },
+        {
+          "$code": "l.default.createElement(h.Text,{color:I,textAlign:\"center\",fontSize:12,opacity:0},z)"
+        }
+      ]
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "backgroundColor": "#FF505026",
+        "borderRadius": 6,
+        "paddingX": "6px",
+        "paddingY": 1
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{color:\"#FF5050\",fontSize:10,textAlign:\"center\"},u.default.trans(_?\"dial.detail.promotionBannerTry\":\"dial.detail.promotionBannerFree\"))"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": "#FF5050",
+        "fontSize": 10,
+        "textAlign": "center"
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(_?\"dial.detail.promotionBannerTry\":\"dial.detail.promotionBannerFree\")"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": {
+          "$code": "I"
+        },
+        "textAlign": "center",
+        "fontSize": 12,
+        "opacity": 0
+      },
+      "children": [
+        {
+          "$code": "z"
+        }
+      ]
+    },
+    {
+      "type": "h.VStack",
+      "module": 1780,
+      "props": null,
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{color:k,fontSize:12,textAlign:\"center\",width:O},u.default.trans(\"dial.detail.button.vipFree\"))"
+        },
+        {
+          "$code": "S<y?l.default.createElement(h.View,{flexDirection:\"row\",marginTop:\"1px\",justifyContent:\"center\"},l.default.createElement(h.Text,{color:\"#FF4D00\",fontSize:12},u.default.trans(\"dial.purchased.price\",{slot0:(S/100).toFixed(2)})),l.default.createElement(h.Text,{marginLeft:1,textDecorationLine:\"line-thro"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": {
+          "$code": "k"
+        },
+        "fontSize": 12,
+        "textAlign": "center",
+        "width": {
+          "$code": "O"
+        }
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.detail.button.vipFree\")"
+        }
+      ]
+    },
+    {
+      "type": "h.View",
+      "module": 1780,
+      "props": {
+        "flexDirection": "row",
+        "marginTop": "1px",
+        "justifyContent": "center"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{color:\"#FF4D00\",fontSize:12},u.default.trans(\"dial.purchased.price\",{slot0:(S/100).toFixed(2)}))"
+        },
+        {
+          "$code": "l.default.createElement(h.Text,{marginLeft:1,textDecorationLine:\"line-through\",color:I,fontSize:12},u.default.trans(\"dial.purchased.price\",{slot0:(y/100).toFixed(2)}))"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": "#FF4D00",
+        "fontSize": 12
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.purchased.price\",{slot0:(S/100).toFixed(2)})"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "marginLeft": 1,
+        "textDecorationLine": "line-through",
+        "color": {
+          "$code": "I"
+        },
+        "fontSize": 12
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.purchased.price\",{slot0:(y/100).toFixed(2)})"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": {
+          "$code": "I"
+        },
+        "textAlign": "center",
+        "fontSize": 12
+      },
+      "children": [
+        {
+          "$code": "z"
+        }
+      ]
+    },
+    {
+      "type": "h.VStack",
+      "module": 1780,
+      "props": null,
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{fontSize:14,textAlign:\"center\",color:I,width:O,numberOfLines:1},z)"
+        },
+        {
+          "$code": "l.default.createElement(h.Text,{color:I,textAlign:\"center\",fontSize:12,opacity:0},z)"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 14,
+        "textAlign": "center",
+        "color": {
+          "$code": "I"
+        },
+        "width": {
+          "$code": "O"
+        },
+        "numberOfLines": 1
+      },
+      "children": [
+        {
+          "$code": "z"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": {
+          "$code": "I"
+        },
+        "textAlign": "center",
+        "fontSize": 12,
+        "opacity": 0
+      },
+      "children": [
+        {
+          "$code": "z"
+        }
+      ]
+    },
+    {
+      "type": "h.Pressable",
+      "module": 1780,
+      "props": {
+        "onPress": {
+          "$code": "W"
+        },
+        "accessible": {
+          "$code": "!0"
+        },
+        "accessibilityLabel": {
+          "$code": "L"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.VStack,{paddingY:3},l.default.createElement(h.Center,{alignItems:\"center\",justifyContent:\"center\"},l.default.createElement(c.default,{source:v,style:O,resizeMode:c.default.resizeMode.contain})),l.default.createElement(h.Box,{flex:1,alignItems:\"center\",marginTop:\"6px\"},l.def"
+        }
+      ]
+    },
+    {
+      "type": "h.VStack",
+      "module": 1780,
+      "props": {
+        "paddingY": 3
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Center,{alignItems:\"center\",justifyContent:\"center\"},l.default.createElement(c.default,{source:v,style:O,resizeMode:c.default.resizeMode.contain}))"
+        },
+        {
+          "$code": "l.default.createElement(h.Box,{flex:1,alignItems:\"center\",marginTop:\"6px\"},l.default.createElement(h.Text,{fontSize:16,fontWeight:\"500\",color:w,numberOfLines:1},o.displayName),M?l.default.createElement(h.View,null,l.default.createElement(h.Box,{backgroundColor:\"#FF505026\",borderRadius:6,paddingX:\"6p"
+        }
+      ]
+    },
+    {
+      "type": "h.Center",
+      "module": 1780,
+      "props": {
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(c.default,{source:v,style:O,resizeMode:c.default.resizeMode.contain})"
+        }
+      ]
+    },
+    {
+      "type": "c.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "v"
+        },
+        "style": {
+          "$code": "O"
+        },
+        "resizeMode": {
+          "$code": "c.default.resizeMode.contain"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "flex": 1,
+        "alignItems": "center",
+        "marginTop": "6px"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{fontSize:16,fontWeight:\"500\",color:w,numberOfLines:1},o.displayName)"
+        },
+        {
+          "$code": "M?l.default.createElement(h.View,null,l.default.createElement(h.Box,{backgroundColor:\"#FF505026\",borderRadius:6,paddingX:\"6px\",paddingY:1},l.default.createElement(h.Text,{color:\"#FF5050\",fontSize:10,textAlign:\"center\"},u.default.trans(_?\"dial.detail.promotionBannerTry\":\"dial.detail.promotionBannerFr"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 16,
+        "fontWeight": "500",
+        "color": {
+          "$code": "w"
+        },
+        "numberOfLines": 1
+      },
+      "children": [
+        {
+          "$code": "o.displayName"
+        }
+      ]
+    },
+    {
+      "type": "h.View",
+      "module": 1780,
+      "props": null,
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Box,{backgroundColor:\"#FF505026\",borderRadius:6,paddingX:\"6px\",paddingY:1},l.default.createElement(h.Text,{color:\"#FF5050\",fontSize:10,textAlign:\"center\"},u.default.trans(_?\"dial.detail.promotionBannerTry\":\"dial.detail.promotionBannerFree\")))"
+        },
+        {
+          "$code": "l.default.createElement(h.Text,{color:I,textAlign:\"center\",fontSize:12,opacity:0},z)"
+        }
+      ]
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "backgroundColor": "#FF505026",
+        "borderRadius": 6,
+        "paddingX": "6px",
+        "paddingY": 1
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{color:\"#FF5050\",fontSize:10,textAlign:\"center\"},u.default.trans(_?\"dial.detail.promotionBannerTry\":\"dial.detail.promotionBannerFree\"))"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": "#FF5050",
+        "fontSize": 10,
+        "textAlign": "center"
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(_?\"dial.detail.promotionBannerTry\":\"dial.detail.promotionBannerFree\")"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": {
+          "$code": "I"
+        },
+        "textAlign": "center",
+        "fontSize": 12,
+        "opacity": 0
+      },
+      "children": [
+        {
+          "$code": "z"
+        }
+      ]
+    },
+    {
+      "type": "h.VStack",
+      "module": 1780,
+      "props": null,
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{color:k,fontSize:12,textAlign:\"center\"},u.default.trans(\"dial.detail.button.vipFree\"))"
+        },
+        {
+          "$code": "S<y?l.default.createElement(h.View,{flexDirection:\"row\",marginTop:\"1px\",justifyContent:\"center\"},l.default.createElement(h.Text,{color:\"#FF4D00\",fontSize:16},u.default.trans(\"dial.purchased.price\",{slot0:(S/100).toFixed(2)})),l.default.createElement(h.Text,{marginLeft:1,textDecorationLine:\"line-thro"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": {
+          "$code": "k"
+        },
+        "fontSize": 12,
+        "textAlign": "center"
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.detail.button.vipFree\")"
+        }
+      ]
+    },
+    {
+      "type": "h.View",
+      "module": 1780,
+      "props": {
+        "flexDirection": "row",
+        "marginTop": "1px",
+        "justifyContent": "center"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{color:\"#FF4D00\",fontSize:16},u.default.trans(\"dial.purchased.price\",{slot0:(S/100).toFixed(2)}))"
+        },
+        {
+          "$code": "l.default.createElement(h.Text,{marginLeft:1,textDecorationLine:\"line-through\",color:I,fontSize:12},u.default.trans(\"dial.purchased.price\",{slot0:(y/100).toFixed(2)}))"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": "#FF4D00",
+        "fontSize": 16
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.purchased.price\",{slot0:(S/100).toFixed(2)})"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "marginLeft": 1,
+        "textDecorationLine": "line-through",
+        "color": {
+          "$code": "I"
+        },
+        "fontSize": 12
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.purchased.price\",{slot0:(y/100).toFixed(2)})"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": {
+          "$code": "I"
+        },
+        "textAlign": "center",
+        "fontSize": 12
+      },
+      "children": [
+        {
+          "$code": "z"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 14,
+        "textAlign": "center",
+        "color": {
+          "$code": "I"
+        },
+        "numberOfLines": 1
+      },
+      "children": [
+        {
+          "$code": "z"
+        }
+      ]
+    },
+    {
+      "type": "h.Pressable",
+      "module": 1780,
+      "props": {
+        "_pressed": {
+          "opacity": 0.7
+        },
+        "onPress": {
+          "$code": "A"
+        },
+        "accessible": {
+          "$code": "!0"
+        },
+        "accessibilityLabel": {
+          "$code": "H||X?\"\":Y"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.VStack,{space:2,alignItems:\"center\"},l.default.createElement(h.Box,{position:\"relative\"},l.default.createElement(c.default,{source:w,style:y(y({},_),{},{overflow:\"visible\"}),resizeMode:c.default.resizeMode.contain},J&&l.default.createElement(h.Pressable,{onPress:function(t)"
+        }
+      ]
+    },
+    {
+      "type": "h.VStack",
+      "module": 1780,
+      "props": {
+        "space": 2,
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Box,{position:\"relative\"},l.default.createElement(c.default,{source:w,style:y(y({},_),{},{overflow:\"visible\"}),resizeMode:c.default.resizeMode.contain},J&&l.default.createElement(h.Pressable,{onPress:function(t){t.stopPropagation(),null==T||T(o)},position:\"absolute\",top:0,r"
+        },
+        {
+          "$code": "l.default.createElement(h.Center,null,l.default.createElement(h.Text,{fontSize:14,fontWeight:\"500\",color:V,width:j,numberOfLines:1,textAlign:\"center\"},null==o?void 0:o.displayName),L?l.default.createElement(h.View,null,l.default.createElement(h.Box,{backgroundColor:\"#FF505026\",borderRadius:6,padding"
+        }
+      ]
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "position": "relative"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(c.default,{source:w,style:y(y({},_),{},{overflow:\"visible\"}),resizeMode:c.default.resizeMode.contain},J&&l.default.createElement(h.Pressable,{onPress:function(t){t.stopPropagation(),null==T||T(o)},position:\"absolute\",top:0,right:0,alignItems:\"center\",justifyContent:\"center\",h"
+        }
+      ]
+    },
+    {
+      "type": "c.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "w"
+        },
+        "style": {
+          "$code": "y(y({},_),{},{overflow:\"visible\"})"
+        },
+        "resizeMode": {
+          "$code": "c.default.resizeMode.contain"
+        }
+      },
+      "children": [
+        {
+          "$code": "J&&l.default.createElement(h.Pressable,{onPress:function(t){t.stopPropagation(),null==T||T(o)},position:\"absolute\",top:0,right:0,alignItems:\"center\",justifyContent:\"center\",hitSlop:10},l.default.createElement(h.Image,{source:S?N:U,style:{width:26,height:26},resizeMode:\"contain\",alt:\"\"}))"
+        },
+        {
+          "$code": "q&&l.default.createElement(h.Center,{position:\"absolute\",top:0,left:0,right:0,bottom:0,bg:\"rgba(196,196,196,0.85)\"},l.default.createElement(h.Box,{borderRadius:8,backgroundColor:\"rgba(0,0,0,0.6)\",px:\"6px\",py:\"4px\"},l.default.createElement(h.Text,{fontSize:12,color:\"#FFFFFF\",textAlign:\"center\"},u.def"
+        }
+      ]
+    },
+    {
+      "type": "h.Pressable",
+      "module": 1780,
+      "props": {
+        "onPress": {
+          "$code": "function(t){t.stopPropagation(),null==T||T(o)}"
+        },
+        "position": "absolute",
+        "top": 0,
+        "right": 0,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "hitSlop": 10
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Image,{source:S?N:U,style:{width:26,height:26},resizeMode:\"contain\",alt:\"\"})"
+        }
+      ]
+    },
+    {
+      "type": "h.Image",
+      "module": 1780,
+      "props": {
+        "source": {
+          "$code": "S?N:U"
+        },
+        "style": {
+          "width": 26,
+          "height": 26
+        },
+        "resizeMode": "contain",
+        "alt": ""
+      },
+      "children": []
+    },
+    {
+      "type": "h.Center",
+      "module": 1780,
+      "props": {
+        "position": "absolute",
+        "top": 0,
+        "left": 0,
+        "right": 0,
+        "bottom": 0,
+        "bg": "rgba(196,196,196,0.85)"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Box,{borderRadius:8,backgroundColor:\"rgba(0,0,0,0.6)\",px:\"6px\",py:\"4px\"},l.default.createElement(h.Text,{fontSize:12,color:\"#FFFFFF\",textAlign:\"center\"},u.default.trans(\"dial.item.invalid\")))"
+        }
+      ]
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "borderRadius": 8,
+        "backgroundColor": "rgba(0,0,0,0.6)",
+        "px": "6px",
+        "py": "4px"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{fontSize:12,color:\"#FFFFFF\",textAlign:\"center\"},u.default.trans(\"dial.item.invalid\"))"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 12,
+        "color": "#FFFFFF",
+        "textAlign": "center"
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.item.invalid\")"
+        }
+      ]
+    },
+    {
+      "type": "h.Center",
+      "module": 1780,
+      "props": null,
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{fontSize:14,fontWeight:\"500\",color:V,width:j,numberOfLines:1,textAlign:\"center\"},null==o?void 0:o.displayName)"
+        },
+        {
+          "$code": "L?l.default.createElement(h.View,null,l.default.createElement(h.Box,{backgroundColor:\"#FF505026\",borderRadius:6,paddingX:\"6px\",paddingY:1},l.default.createElement(h.Text,{color:\"#FF5050\",fontSize:10},u.default.trans(B?\"dial.detail.promotionBannerTry\":\"dial.detail.promotionBannerFree\"))),l.default.cr"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 14,
+        "fontWeight": "500",
+        "color": {
+          "$code": "V"
+        },
+        "width": {
+          "$code": "j"
+        },
+        "numberOfLines": 1,
+        "textAlign": "center"
+      },
+      "children": [
+        {
+          "$code": "null==o?void 0:o.displayName"
+        }
+      ]
+    },
+    {
+      "type": "h.View",
+      "module": 1780,
+      "props": null,
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Box,{backgroundColor:\"#FF505026\",borderRadius:6,paddingX:\"6px\",paddingY:1},l.default.createElement(h.Text,{color:\"#FF5050\",fontSize:10},u.default.trans(B?\"dial.detail.promotionBannerTry\":\"dial.detail.promotionBannerFree\")))"
+        },
+        {
+          "$code": "l.default.createElement(h.Text,{color:D,textAlign:\"center\",fontSize:12},G)"
+        }
+      ]
+    },
+    {
+      "type": "h.Box",
+      "module": 1780,
+      "props": {
+        "backgroundColor": "#FF505026",
+        "borderRadius": 6,
+        "paddingX": "6px",
+        "paddingY": 1
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{color:\"#FF5050\",fontSize:10},u.default.trans(B?\"dial.detail.promotionBannerTry\":\"dial.detail.promotionBannerFree\"))"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": "#FF5050",
+        "fontSize": 10
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(B?\"dial.detail.promotionBannerTry\":\"dial.detail.promotionBannerFree\")"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": {
+          "$code": "D"
+        },
+        "textAlign": "center",
+        "fontSize": 12
+      },
+      "children": [
+        {
+          "$code": "G"
+        }
+      ]
+    },
+    {
+      "type": "h.VStack",
+      "module": 1780,
+      "props": null,
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{color:R,fontSize:12,textAlign:\"center\"},u.default.trans(\"dial.detail.button.vipFree\"))"
+        },
+        {
+          "$code": "H||X?l.default.createElement(h.Text,{color:D,textAlign:\"center\",fontSize:12},H||X):W<k?l.default.createElement(h.View,{flexDirection:\"row\",marginTop:\"1px\",justifyContent:\"center\"},l.default.createElement(h.Text,{color:\"#FF4D00\",fontSize:12},u.default.trans(\"dial.purchased.price\",{slot0:(W/100).toFix"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": {
+          "$code": "R"
+        },
+        "fontSize": 12,
+        "textAlign": "center"
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.detail.button.vipFree\")"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": {
+          "$code": "D"
+        },
+        "textAlign": "center",
+        "fontSize": 12
+      },
+      "children": [
+        {
+          "$code": "H||X"
+        }
+      ]
+    },
+    {
+      "type": "h.View",
+      "module": 1780,
+      "props": {
+        "flexDirection": "row",
+        "marginTop": "1px",
+        "justifyContent": "center"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(h.Text,{color:\"#FF4D00\",fontSize:12},u.default.trans(\"dial.purchased.price\",{slot0:(W/100).toFixed(2)}))"
+        },
+        {
+          "$code": "l.default.createElement(h.Text,{marginLeft:1,textDecorationLine:\"line-through\",color:D,fontSize:12},u.default.trans(\"dial.purchased.price\",{slot0:(k/100).toFixed(2)}))"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": "#FF4D00",
+        "fontSize": 12
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.purchased.price\",{slot0:(W/100).toFixed(2)})"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "marginLeft": 1,
+        "textDecorationLine": "line-through",
+        "color": {
+          "$code": "D"
+        },
+        "fontSize": 12
+      },
+      "children": [
+        {
+          "$code": "u.default.trans(\"dial.purchased.price\",{slot0:(k/100).toFixed(2)})"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "color": {
+          "$code": "D"
+        },
+        "textAlign": "center",
+        "fontSize": 12
+      },
+      "children": [
+        {
+          "$code": "I"
+        }
+      ]
+    },
+    {
+      "type": "h.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": {
+          "$code": "H||X?12:14"
+        },
+        "textAlign": "center",
+        "color": {
+          "$code": "D"
+        },
+        "width": {
+          "$code": "j"
+        },
+        "numberOfLines": 1
+      },
+      "children": [
+        {
+          "$code": "G"
+        }
+      ]
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": [
+    {
+      "key": "borderRadius",
+      "value": 999
+    },
+    {
+      "key": "fontSize",
+      "value": 14
+    },
+    {
+      "key": "fontWeight",
+      "value": "500"
+    },
+    {
+      "key": "paddingHorizontal",
+      "value": 8
+    },
+    {
+      "key": "paddingVertical",
+      "value": 4
+    },
+    {
+      "key": "borderRadius",
+      "value": 4
+    },
+    {
+      "key": "paddingHorizontal",
+      "value": 6
+    },
+    {
+      "key": "paddingVertical",
+      "value": 2
+    },
+    {
+      "key": "borderRadius",
+      "value": 4
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "fontWeight",
+      "value": "500"
+    },
+    {
+      "key": "fontSize",
+      "value": 14
+    },
+    {
+      "key": "fontWeight",
+      "value": "500"
+    },
+    {
+      "key": "width",
+      "value": {
+        "$code": "w"
+      }
+    },
+    {
+      "key": "borderRadius",
+      "value": 2.9
+    },
+    {
+      "key": "paddingX",
+      "value": "3px"
+    },
+    {
+      "key": "paddingY",
+      "value": "1.5px"
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "marginLeft",
+      "value": 1
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "fontSize",
+      "value": 13
+    },
+    {
+      "key": "width",
+      "value": {
+        "$code": "w"
+      }
+    },
+    {
+      "key": "paddingY",
+      "value": 21
+    },
+    {
+      "key": "borderRadius",
+      "value": {
+        "$code": "k"
+      }
+    },
+    {
+      "key": "fontSize",
+      "value": 16
+    },
+    {
+      "key": "fontWeight",
+      "value": "500"
+    },
+    {
+      "key": "borderRadius",
+      "value": 2.9
+    },
+    {
+      "key": "paddingX",
+      "value": "3px"
+    },
+    {
+      "key": "paddingY",
+      "value": "1.5px"
+    },
+    {
+      "key": "fontSize",
+      "value": 14
+    },
+    {
+      "key": "fontSize",
+      "value": 14
+    },
+    {
+      "key": "marginLeft",
+      "value": 1
+    },
+    {
+      "key": "fontSize",
+      "value": 14
+    },
+    {
+      "key": "fontSize",
+      "value": 14
+    },
+    {
+      "key": "paddingTop",
+      "value": 19.5
+    },
+    {
+      "key": "paddingTop",
+      "value": 1
+    },
+    {
+      "key": "paddingBottom",
+      "value": 19.5
+    },
+    {
+      "key": "fontSize",
+      "value": 14
+    },
+    {
+      "key": "borderRadius",
+      "value": 2.9
+    },
+    {
+      "key": "paddingX",
+      "value": "3px"
+    },
+    {
+      "key": "paddingY",
+      "value": "1.5px"
+    },
+    {
+      "key": "fontSize",
+      "value": 13
+    },
+    {
+      "key": "fontSize",
+      "value": 13
+    },
+    {
+      "key": "marginLeft",
+      "value": 1
+    },
+    {
+      "key": "fontSize",
+      "value": 13
+    },
+    {
+      "key": "fontSize",
+      "value": 13
+    },
+    {
+      "key": "width",
+      "value": {
+        "$code": "z.width"
+      }
+    },
+    {
+      "key": "height",
+      "value": {
+        "$code": "z.height"
+      }
+    },
+    {
+      "key": "width",
+      "value": {
+        "$code": "t*F.width/F.height"
+      }
+    },
+    {
+      "key": "height",
+      "value": {
+        "$code": "t"
+      }
+    },
+    {
+      "key": "borderRadius",
+      "value": {
+        "$code": "W.activeRadius"
+      }
+    },
+    {
+      "key": "borderRadius",
+      "value": 100
+    },
+    {
+      "key": "fontSize",
+      "value": 10
+    },
+    {
+      "key": "fontSize",
+      "value": 15
+    },
+    {
+      "key": "width",
+      "value": {
+        "$code": "w"
+      }
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "width",
+      "value": {
+        "$code": "w"
+      }
+    },
+    {
+      "key": "paddingTop",
+      "value": {
+        "$code": "null!==(n=E)&&void 0!==n?n:19.5"
+      }
+    },
+    {
+      "key": "borderRadius",
+      "value": 8
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "borderRadius",
+      "value": 100
+    },
+    {
+      "key": "fontSize",
+      "value": 10
+    },
+    {
+      "key": "paddingTop",
+      "value": 1
+    },
+    {
+      "key": "fontSize",
+      "value": 15
+    },
+    {
+      "key": "fontSize",
+      "value": 14
+    },
+    {
+      "key": "fontWeight",
+      "value": "500"
+    },
+    {
+      "key": "width",
+      "value": {
+        "$code": "O"
+      }
+    },
+    {
+      "key": "borderRadius",
+      "value": 6
+    },
+    {
+      "key": "paddingX",
+      "value": "6px"
+    },
+    {
+      "key": "paddingY",
+      "value": 1
+    },
+    {
+      "key": "fontSize",
+      "value": 10
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "width",
+      "value": {
+        "$code": "O"
+      }
+    },
+    {
+      "key": "marginTop",
+      "value": "1px"
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "marginLeft",
+      "value": 1
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "fontSize",
+      "value": 14
+    },
+    {
+      "key": "width",
+      "value": {
+        "$code": "O"
+      }
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "width",
+      "value": {
+        "$code": "154*p.width/p.height"
+      }
+    },
+    {
+      "key": "height",
+      "value": 154
+    },
+    {
+      "key": "borderRadius",
+      "value": {
+        "$code": "154*p.radius/p.height"
+      }
+    },
+    {
+      "key": "paddingY",
+      "value": 3
+    },
+    {
+      "key": "marginTop",
+      "value": "6px"
+    },
+    {
+      "key": "fontSize",
+      "value": 16
+    },
+    {
+      "key": "fontWeight",
+      "value": "500"
+    },
+    {
+      "key": "borderRadius",
+      "value": 6
+    },
+    {
+      "key": "paddingX",
+      "value": "6px"
+    },
+    {
+      "key": "paddingY",
+      "value": 1
+    },
+    {
+      "key": "fontSize",
+      "value": 10
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "marginTop",
+      "value": "1px"
+    },
+    {
+      "key": "fontSize",
+      "value": 16
+    },
+    {
+      "key": "marginLeft",
+      "value": 1
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "fontSize",
+      "value": 14
+    },
+    {
+      "key": "width",
+      "value": 26
+    },
+    {
+      "key": "height",
+      "value": 26
+    },
+    {
+      "key": "borderRadius",
+      "value": 8
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "fontSize",
+      "value": 14
+    },
+    {
+      "key": "fontWeight",
+      "value": "500"
+    },
+    {
+      "key": "width",
+      "value": {
+        "$code": "j"
+      }
+    },
+    {
+      "key": "borderRadius",
+      "value": 6
+    },
+    {
+      "key": "paddingX",
+      "value": "6px"
+    },
+    {
+      "key": "paddingY",
+      "value": 1
+    },
+    {
+      "key": "fontSize",
+      "value": 10
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "marginTop",
+      "value": "1px"
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "marginLeft",
+      "value": 1
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "fontSize",
+      "value": {
+        "$code": "H||X?12:14"
+      }
+    },
+    {
+      "key": "width",
+      "value": {
+        "$code": "j"
+      }
+    }
+  ]
+}

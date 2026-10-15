@@ -1,0 +1,265 @@
+{
+  "method": "Read-only PNG pixel sampling; no edits or generated screenshots",
+  "limitations": [
+    "Point samples describe these pixels only, not every surface in an app.",
+    "Different runtime bundle versions are recorded separately; no cross-version shape equivalence is claimed."
+  ],
+  "observations": [
+    {
+      "capture": "13-app-settings",
+      "samples": [
+        {
+          "role": "floor",
+          "pointPx": [
+            10,
+            800
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#ffffff"
+        },
+        {
+          "role": "primary_button",
+          "pointPx": [
+            250,
+            2200
+          ],
+          "rgb": [
+            255,
+            97,
+            46
+          ],
+          "hex": "#ff612e"
+        }
+      ]
+    },
+    {
+      "capture": "14-settings-night",
+      "samples": [
+        {
+          "role": "floor",
+          "pointPx": [
+            10,
+            800
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "hex": "#000000"
+        },
+        {
+          "role": "primary_button",
+          "pointPx": [
+            250,
+            2200
+          ],
+          "rgb": [
+            240,
+            77,
+            24
+          ],
+          "hex": "#f04d18"
+        }
+      ]
+    },
+    {
+      "capture": "06-entry-after-region",
+      "samples": [
+        {
+          "role": "navigation_floor",
+          "pointPx": [
+            10,
+            2300
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#ffffff"
+        }
+      ],
+      "navRegionTopColors": [
+        {
+          "hex": "#ffffff",
+          "pixels": 183111
+        },
+        {
+          "hex": "#d3d3d3",
+          "pixels": 4224
+        },
+        {
+          "hex": "#ff612e",
+          "pixels": 2504
+        },
+        {
+          "hex": "#b2b2b2",
+          "pixels": 1755
+        },
+        {
+          "hex": "#d4d4d4",
+          "pixels": 1023
+        },
+        {
+          "hex": "#d2d2d2",
+          "pixels": 449
+        },
+        {
+          "hex": "#e1e1e1",
+          "pixels": 184
+        },
+        {
+          "hex": "#d0d0d0",
+          "pixels": 143
+        }
+      ]
+    },
+    {
+      "capture": "15-health-night",
+      "samples": [
+        {
+          "role": "navigation_floor",
+          "pointPx": [
+            10,
+            2300
+          ],
+          "rgb": [
+            36,
+            36,
+            36
+          ],
+          "hex": "#242424"
+        }
+      ],
+      "navRegionTopColors": [
+        {
+          "hex": "#242424",
+          "pixels": 183412
+        },
+        {
+          "hex": "#565656",
+          "pixels": 3948
+        },
+        {
+          "hex": "#f04d18",
+          "pixels": 2504
+        },
+        {
+          "hex": "#878787",
+          "pixels": 1755
+        },
+        {
+          "hex": "#575757",
+          "pixels": 959
+        },
+        {
+          "hex": "#585858",
+          "pixels": 351
+        },
+        {
+          "hex": "#555555",
+          "pixels": 267
+        },
+        {
+          "hex": "#232323",
+          "pixels": 160
+        }
+      ]
+    },
+    {
+      "capture": "07-sport",
+      "samples": [
+        {
+          "role": "page_floor",
+          "pointPx": [
+            10,
+            1200
+          ],
+          "rgb": [
+            246,
+            247,
+            249
+          ],
+          "hex": "#f6f7f9"
+        }
+      ]
+    },
+    {
+      "capture": "18-sport-night",
+      "samples": [
+        {
+          "role": "page_floor",
+          "pointPx": [
+            10,
+            1200
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "hex": "#000000"
+        }
+      ]
+    },
+    {
+      "capture": "11-mine-visible",
+      "samples": [
+        {
+          "role": "page_floor",
+          "pointPx": [
+            10,
+            1450
+          ],
+          "rgb": [
+            246,
+            247,
+            249
+          ],
+          "hex": "#f6f7f9"
+        }
+      ]
+    },
+    {
+      "capture": "17-mine-night",
+      "samples": [
+        {
+          "role": "page_floor",
+          "pointPx": [
+            10,
+            1450
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "hex": "#000000"
+        }
+      ]
+    },
+    {
+      "capture": "21-mine-day-updated",
+      "samples": [
+        {
+          "role": "page_floor",
+          "pointPx": [
+            10,
+            1450
+          ],
+          "rgb": [
+            246,
+            247,
+            249
+          ],
+          "hex": "#f6f7f9"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "coordinates": "Full screenshot physical px; right/bottom exclusive; same crop box on A/D retains displacement. Bounds selected from contracts.json, spec.md and visible original pixel regions.",
+  "derivation": "Crops are derived from retained full native runtime screenshots. They are not standalone component captures and do not add verified interaction states.",
+  "components": [
+    {"id":"TopBar","page":"health-day","cropBoxPx":[0,136,1080,301],"sourceBoundsPx":[0,136,1080,301],"basis":"health title [72,151,248,280] plus add action [926,166,1025,265]; enclosing top bar context","notes":"Health variant only; Settings expanded and Mine blank-title variants remain in full-page comparison."},
+    {"id":"BottomNav","page":"health-day","cropBoxPx":[0,2143,1080,2334],"sourceBoundsPx":[0,2151,1080,2334],"basis":"spec.md health fixed bottom navigation; 8px context above","notes":"Default selected Health state; no animation inferred."},
+    {"id":"ProgressHero","page":"health-day","cropBoxPx":[0,327,1080,1328],"sourceBoundsPx":[0,335,1080,1319],"basis":"Hero rings/reflection/share plus three-summary surface [33,797,1047,1319] with 8px context","notes":"Composite component in zero-progress guest state. Reflection is a reconstruction choice; nonzero progress remains unknown."},
+    {"id":"MetricCard","page":"health-day","cropBoxPx":[25,1611,548,2151],"sourceBoundsPx":[33,1620,540,2150],"basis":"Visible left sleep card exact white extent, with context","notes":"Only the visible part above the fixed navigation is observed; this is not evidence of full card height."},
+    {"id":"ProfileHeader","page":"mine-day","cropBoxPx":[60,288,1025,445],"sourceBoundsPx":[69,296,1011,434],"basis":"Visible 50dp avatar [69,296,206,434], name [239,306,404,380], description [239,380,404,424], trailing badge","notes":"Logged-out five-shortcut runtime baseline mine 11.202.21; glyph boxes differ from text view boxes."},
+    {"id":"ShortcutGrid","page":"mine-day","cropBoxPx":[25,497,1055,681],"sourceBoundsPx":[33,505,1047,673],"basis":"spec.md five ordered equal-width entrances and original icon/label region with 8px context","notes":"Preserves Activity/Courses/Friends/Prizes/Orders order. Does not validate more-item overflow."},
+    {"id":"SurfaceCard","page":"mine-day","cropBoxPx":[25,1097,534,1587],"sourceBoundsPx":[33,1105,526,1579],"basis":"Exact white connected surface of left habit card, with 8px context","notes":"RN 18dp surface variant; ordinary native card and adaptive button radii are separate roles."},
+    {"id":"ChevronRow","page":"settings-day","cropBoxPx":[64,485,1016,648],"sourceBoundsPx":[72,493,1008,640],"basis":"spec.md original region row and 8px context","notes":"Native single-line trailing-value variant; other variants are visible in full pages."},
+    {"id":"SwitchRow","page":"settings-day","cropBoxPx":[64,1133,1016,1337],"sourceBoundsPx":[72,1141,1008,1329],"basis":"spec.md notification row; orange switch exact extent [884,1200,1008,1269]","notes":"ON is established by orange pixels and description, even when source custom widget reports checked=false. This crop does not verify persistence or permission behavior."},
+    {"id":"PrimaryButton","page":"settings-day","cropBoxPx":[70,2124,1010,2268],"sourceBoundsPx":[78,2132,1002,2260],"basis":"Exact #FF612E connected button extent and spec.md settingsLargePositive variant, with 8px context","notes":"17sp label; ordinary capsule reconstruction is compared with original adaptive/smooth shape. Default guest state only."}
+  ]
+}

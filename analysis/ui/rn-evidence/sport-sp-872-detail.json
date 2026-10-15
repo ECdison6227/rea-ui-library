@@ -1,0 +1,93 @@
+{
+  "bundle": "sport",
+  "id": "sp-872",
+  "line": 880,
+  "aliases": {
+    "t": 3,
+    "n": 27,
+    "o": 14,
+    "u": "sp-141",
+    "c": 631,
+    "l": 1070,
+    "f": 1074,
+    "s": 558,
+    "h": 1096,
+    "p": "sp-257",
+    "y": "sp-144",
+    "v": "sp-312",
+    "b": 1780,
+    "w": "sp-726",
+    "E": "sp-495",
+    "x": "sp-759",
+    "L": "sp-873",
+    "_": "sp-278",
+    "k": "sp-735",
+    "T": "sp-860",
+    "P": "sp-266",
+    "O": "sp-892"
+  },
+  "elements": [
+    {
+      "type": "b.VStack",
+      "module": 1780,
+      "props": {
+        "flex": 1,
+        "style": {
+          "$code": "O.default.backgroundContainer"
+        }
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(o.Suspense,{fallback:o.default.createElement(h.default,{style:{backgroundColor:\"transparent\"}})},o.default.createElement(T.default,{ref:B,promise:N,refreshing:G,onRefresh:V}))"
+        }
+      ]
+    },
+    {
+      "type": "o.Suspense",
+      "module": 14,
+      "props": {
+        "fallback": {
+          "$code": "o.default.createElement(h.default,{style:{backgroundColor:\"transparent\"}})"
+        }
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(T.default,{ref:B,promise:N,refreshing:G,onRefresh:V})"
+        }
+      ]
+    },
+    {
+      "type": "h.default",
+      "module": 1096,
+      "props": {
+        "style": {
+          "backgroundColor": "transparent"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "T.default",
+      "module": "sp-860",
+      "props": {
+        "ref": {
+          "$code": "B"
+        },
+        "promise": {
+          "$code": "N"
+        },
+        "refreshing": {
+          "$code": "G"
+        },
+        "onRefresh": {
+          "$code": "V"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [
+    "setTimeout(function(){W()},2e3)"
+  ],
+  "numericStyleProperties": []
+}

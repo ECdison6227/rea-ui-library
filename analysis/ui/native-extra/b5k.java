@@ -1,0 +1,73 @@
+package defpackage;
+
+/* JADX INFO: loaded from: classes10.dex */
+public final class b5k {
+    public static int a = 2131099886;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public static int f1860b = 2131101378;
+    public static int c = 2131101379;
+    public static int common_black = 2131099957;
+    public static int common_blue = 2131099958;
+    public static int common_btn_disable_bg_color = 2131099959;
+    public static int common_btn_gray_solid_disable_bg_color = 2131099960;
+    public static int common_btn_gray_solid_normal_bg_color = 2131099961;
+    public static int common_btn_gray_solid_pressed_bg_color = 2131099962;
+    public static int common_btn_normal_bg_color = 2131099963;
+    public static int common_btn_normal_dark_bg_color = 2131099964;
+    public static int common_btn_normal_red_bg_color = 2131099965;
+    public static int common_btn_normal_text_color = 2131099966;
+    public static int common_btn_normal_text_color_unenabled = 2131099967;
+    public static int common_btn_pressed_bg_color = 2131099968;
+    public static int common_btn_pressed_mask_layer_color = 2131099969;
+    public static int common_btn_primary_disable_bg_color = 2131099970;
+    public static int common_btn_primary_text_color = 2131099971;
+    public static int common_btn_primary_text_color_unenabled = 2131099972;
+    public static int common_card_bg_color = 2131099973;
+    public static int common_card_pressed_mask_layer_color = 2131099975;
+    public static int common_dialog_list_item_bg_color = 2131099977;
+    public static int common_dialog_list_item_selected_bg_color = 2131099978;
+    public static int common_dialog_orange = 2131099979;
+    public static int common_divider_bg_color = 2131099980;
+    public static int common_divider_color = 2131099981;
+    public static int common_divider_line = 2131099982;
+    public static int common_google_signin_btn_text_dark = 2131099984;
+    public static int common_google_signin_btn_text_dark_default = 2131099985;
+    public static int common_google_signin_btn_text_dark_disabled = 2131099986;
+    public static int common_google_signin_btn_text_dark_focused = 2131099987;
+    public static int common_google_signin_btn_text_dark_pressed = 2131099988;
+    public static int common_google_signin_btn_text_light = 2131099989;
+    public static int common_google_signin_btn_text_light_default = 2131099990;
+    public static int common_google_signin_btn_text_light_disabled = 2131099991;
+    public static int common_google_signin_btn_text_light_focused = 2131099992;
+    public static int common_google_signin_btn_text_light_pressed = 2131099993;
+    public static int common_google_signin_btn_tint = 2131099994;
+    public static int common_hint_txt_color = 2131099996;
+    public static int common_item_disable_txt_color = 2131099997;
+    public static int common_item_main_title_txt_color = 2131099998;
+    public static int common_item_normal_bg_color = 2131099999;
+    public static int common_item_pressed_bg_color = 2131100000;
+    public static int common_item_pressed_mask_layer_color = 2131100001;
+    public static int common_item_sub_title_txt_color = 2131100002;
+    public static int common_main_dark_gray_color = 2131100003;
+    public static int common_main_red_color = 2131100004;
+    public static int common_main_yellow_color = 2131100005;
+    public static int common_network_connection_failed_text_color = 2131100006;
+    public static int common_page_bg_color = 2131100007;
+    public static int common_page_color = 2131100008;
+    public static int common_selector_item_bg = 2131100011;
+    public static int common_selector_item_press_bg = 2131100012;
+    public static int common_text_color_gray = 2131100014;
+    public static int common_transparent = 2131100016;
+    public static int common_view_shadow_color = 2131100017;
+    public static int common_white = 2131100018;
+    public static int course_action_bg_color = 2131100024;
+    public static int course_black = 2131100029;
+    public static int course_desc = 2131100038;
+    public static int course_gym_body_main_color = 2131100041;
+    public static int course_gym_body_secondary_color = 2131100042;
+    public static int course_item_pressed = 2131100045;
+    public static int course_label_color = 2131100046;
+    public static int course_white = 2131100058;
+    public static int number_picker_black_50 = 2131103152;
+}

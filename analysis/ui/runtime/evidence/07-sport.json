@@ -1,0 +1,52 @@
+{
+  "id": "07-sport",
+  "title": "运动首页空态",
+  "state": "普通模式、未登录，RN 首次挂载完成，无运动记录",
+  "source": "original-apk-on-emulator",
+  "evidence": {
+    "evidence_id": "ev_adf889f4cb78f08fe2d73c2c5fe114a1b09e562aaace3f2e3f7ea6bddbbe8cdc",
+    "subject": null,
+    "provider": {
+      "id": "adb",
+      "name": "Android Debug Bridge",
+      "version": "37.0.1-15733141"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "capture_adb_screen",
+    "parameters": {
+      "serial": "emulator-5580",
+      "output_directory": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\runtime\\captures\\07-sport"
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "client": {
+        "binary_path": "adb",
+        "path_source": "path",
+        "version": "37.0.1-15733141",
+        "installed_path": "C:\\Users\\edsjrcheng\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5580",
+      "local_path": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\runtime\\captures\\07-sport\\screen.png",
+      "bytes": 164687,
+      "sha256": "f339fc835c2714864911ba219456ec1689234a8d17512658f756d522f5428a09",
+      "width": 1080,
+      "height": 2400
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "The capture is one frame at read time; no recording or interaction occurred"
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  },
+  "runtimeBundle": {
+    "name": "sport",
+    "version": "11.190.10",
+    "sha256": "daba176f2d9c4727959b5bb0bee65e68528fcbef3783a9cb0a117bd4b8c43f0d"
+  }
+}

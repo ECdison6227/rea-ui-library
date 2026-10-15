@@ -1,0 +1,5 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>跨业务原生迁移示例</title>
+<style>body{margin:32px;background:#f6f7f9;color:#202020;font-family:system-ui,sans-serif}a{color:#ad3c10}main{display:grid;grid-template-columns:repeat(3,minmax(220px,1fr));gap:24px}figure{margin:0;padding:16px;background:white;border-radius:18px}img{width:100%;height:auto}h1{font-weight:400}p{line-height:1.7}figcaption{margin-bottom:12px}@media(max-width:800px){main{grid-template-columns:1fr}}</style>
+<h1>从同一套组件迁移到资料管理</h1><p>实际 Android 原生运行截图，D独立示例。空态、保存与错误恢复使用同一套语义色、组件和页面容器。编辑/存储/更新策略为本地fixture，原健康App的对应行为未被证明。<a href="README.md">映射与运行说明</a> · <a href="../baseline/tests/result.json">行为验证</a></p>
+<main><figure><figcaption>空态：说明原因并提供添加动作</figcaption><img src="../baseline/transfer/accepted-empty/screen.png" alt="资料管理空态原生参考"></figure><figure><figcaption>保存后：保留资料与管理入口</figcaption><img src="../baseline/transfer/accepted-ready/screen.png" alt="资料管理保存后原生参考"></figure><figure><figcaption>失败：保留原资料，提供重试</figcaption><img src="../baseline/transfer/accepted-error/screen.png" alt="资料管理更新失败原生参考"></figure></main>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="2.0dp" />
+            <solid android:color="@color/white_20" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <scale android:drawable="@drawable/course_pre_pb_foreground" android:scaleWidth="100%" />
+    </item>
+</layer-list>

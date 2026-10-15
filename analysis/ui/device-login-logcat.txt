@@ -1,0 +1,570 @@
+﻿10-15 11:51:06.991  4271  4271 W WindowOnBackDispatcher: OnBackInvokedCallback is not enabled for the application.
+10-15 11:51:06.991  4271  4271 W WindowOnBackDispatcher: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+10-15 11:51:07.000  4271  4369 D EGL_emulation: app_time_stats: avg=3087.45ms min=5.08ms max=51787.69ms count=17
+10-15 11:51:07.007  4271  4271 I TaskImpl_4271_4271: onPageShowChanged：com.xiaomi.fitness.sport.sporttab.SportTabV4Fragment null---false
+10-15 11:51:07.009  4271  4271 I AutoPageTrack-Fragment_4271_4271: onFragmentCreated com.xiaomi.fitness.device.manager.ui.tab.DeviceTabParentFragmentV4
+10-15 11:51:07.015  4271  4844 I RRLog_4271_4844: [SportHome] onPageOutSportTab
+10-15 11:51:07.025  4304  4314 I DeviceModel_4304_4314: getWearableDeviceSize() : 0 , mDeviceModels size : 0
+10-15 11:51:07.029  4304  4314 I DeviceManagerRemoteImpl_4304_4314: getLocalDeviceModels
+10-15 11:51:07.029  4271  4271 I OtherDeviceTabFragmentV4_4271_4271: miJiaDeviceSize:0,shouldShowLocalDeviceSize:0
+10-15 11:51:07.030  4304  4313 I EcoDeviceModel_4304_4313: EcoDeviceManagerRemoteImpl getEcoDeviceSize...
+10-15 11:51:07.030  4304  4313 I EcoDeviceModel_4304_4313: getEcoDeviceSize() : 0 , mDeviceModels size : 0
+10-15 11:51:07.032  4304  4314 I DeviceModel_4304_4314: getWearableDeviceSize() : 0 , mDeviceModels size : 0
+10-15 11:51:07.035  4304  4313 I DeviceModel_4304_4313: getWearableDeviceSize() : 0 , mDeviceModels size : 0
+10-15 11:51:07.043  4271  4271 I AutoPageTrack-Fragment_4271_4271: onFragment visible stat {fragment_name=com.xiaomi.fitness.device.manager.ui.tab.DeviceTabParentFragmentV4, tip=56.0.0.0.26766, expose_type=start, fragment_referrer=com.xiaomi.fitness.homepage.HealthV2Fragment}
+10-15 11:51:07.044  4271  4271 I TaskImpl_4271_4271: onPageShowChanged：com.xiaomi.fitness.device.manager.ui.tab.DeviceTabParentFragmentV4 null---true
+10-15 11:51:07.052  4304  4313 I EcoDeviceModel_4304_4313: EcoDeviceManagerRemoteImpl refreshEcoList...
+10-15 11:51:07.054  4271  4271 I AutoPageTrack-Fragment_4271_4271: onFragmentCreated com.xiaomi.fitness.device.manager.ui.tab.DeviceTabFragmentV4
+10-15 11:51:07.059  4304  5051 I Account_4304_5051: First request
+10-15 11:51:07.060  4304  5051 I XiaomiFit_4304_5051: Remote is connected, then get token
+10-15 11:51:07.062  4304  5051 I Account_4304_5051: getServiceToken, account==null, invalidate=false, isLocal:true, sid=miothealth
+10-15 11:51:07.068  4271  4271 W libc    : Access denied finding property "ro.vendor.display.dynamic_refresh_rate"
+10-15 11:51:07.097  4271  4271 I NotifyModule_4271_4271: showCustomNotify = false && notifyEnabled = false && notifySettingChanged = false && notificationCustomCloseTimes = 0
+10-15 11:51:07.174  4271  4271 I DevicePowerModeManagerImpl_4271_4271: addPowerModeChangeListener 添加监听 com.xiaomi.fitness.device.manager.ui.tab.DeviceTabV4ViewModel$devicePowerModeListener$1@be72000 this: com.xiaomi.fitness.devicesettings.DevicePowerModeManagerImpl@5afeaef
+10-15 11:51:07.179  4271  4271 I FaceHelperImpl_4271_4271: addFaceEventListener, CurrentListener size : 1
+10-15 11:51:07.180  4271  4271 I FaceHelperImpl_4271_4271: addFaceEventListener, CurrentListener size : 1
+10-15 11:51:07.192  4271  5052 I Account_4271_5052: First request
+10-15 11:51:07.192  4271  5052 I XiaomiFit_4271_5052: getServiceToken not login request loginPolicy 3, login false
+10-15 11:51:07.193  4271  5052 I Account_4271_5052: token is null
+10-15 11:51:07.194  4271  5052 I baronqi_4271_5052: intercept() called with: secret SecretData(encryptResponse=true, pathPrefix=, filterSignatureKeys=[data], sid=miothealth, loginPolicy=3)
+10-15 11:51:07.194  4271  5052 I XiaomiFit_4271_5052: getServiceToken not login request loginPolicy 3, login false
+10-15 11:51:07.197  4271  4271 I NestEffectiveExpose_4271_4271: startTrackItemExpose
+10-15 11:51:07.197  4271  5052 I baronqi_4271_5052: intercept() called with: nonce lf474Bev1UMBx77n, GET
+10-15 11:51:07.198  4271  4271 I NestEffectiveExpose_4271_4271: endTrackItemExpose
+10-15 11:51:07.201  4271  4271 I AutoPageTrack-Fragment_4271_4271: onFragment visible stat {fragment_name=com.xiaomi.fitness.device.manager.ui.tab.DeviceTabFragmentV4, tip=56.0.0.0.26766, expose_type=start, fragment_referrer=com.xiaomi.fitness.device.manager.ui.tab.DeviceTabParentFragmentV4}
+10-15 11:51:07.201  4271  4271 I TaskImpl_4271_4271: onPageShowChanged：com.xiaomi.fitness.device.manager.ui.tab.DeviceTabFragmentV4 null---true
+10-15 11:51:07.215  4271  4271 I GameModeExternalImp_4271_4271: addDeviceChangeListener(deviceChangeListener)
+10-15 11:51:07.221  4271  5052 D TrafficStats: tagSocket(305) with statsTag=0xffffffff, statsUid=-1
+10-15 11:51:07.221  4271  4271 W System.err: android.content.pm.PackageManager$NameNotFoundException: com.xiaomi.joyose
+10-15 11:51:07.223  4271  4271 W System.err: 	at android.app.ApplicationPackageManager.getPackageInfoAsUser(ApplicationPackageManager.java:273)
+10-15 11:51:07.223  4271  4271 W System.err: 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:233)
+10-15 11:51:07.223  4271  4271 W System.err: 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:227)
+10-15 11:51:07.224  4271  4271 W System.err: 	at com.xiaomi.fitness.devicesettings.common.gamemode.GameModeExternalImp.getGameServiceVersion(Unknown Source:13)
+10-15 11:51:07.224  4271  4271 W System.err: 	at com.xiaomi.fitness.devicesettings.common.gamemode.GameModeExternalImp.isGameServiceSupport(Unknown Source:2)
+10-15 11:51:07.224  4271  4271 W System.err: 	at com.xiaomi.fitness.devicesettings.common.gamemode.GameModeExternalImp.isSupportGameMode(Unknown Source:0)
+10-15 11:51:07.224  4271  4271 W System.err: 	at com.xiaomi.fitness.device.manager.ui.tab.DeviceTabFragmentV4.onVisible(Unknown Source:13)
+10-15 11:51:07.225  4271  4271 W System.err: 	at com.xiaomi.fitness.baseui.view.BaseFragment.visible(Unknown Source:11)
+10-15 11:51:07.225  4271  4271 W System.err: 	at com.xiaomi.fitness.baseui.view.BaseFragment.onResume(Unknown Source:15)
+10-15 11:51:07.225  4271  4271 W System.err: 	at com.xiaomi.fitness.device.manager.ui.tab.DeviceTabFragmentV4.onResume(Unknown Source:0)
+10-15 11:51:07.225  4271  4271 W System.err: 	at androidx.fragment.app.Fragment.performResume(Unknown Source:17)
+10-15 11:51:07.225  4271  4271 W System.err: 	at androidx.fragment.app.h.p(Unknown Source:63)
+10-15 11:51:07.225  4271  4271 W System.err: 	at androidx.fragment.app.h.m(Unknown Source:44)
+10-15 11:51:07.226  4271  4271 W System.err: 	at androidx.fragment.app.l$d.c(Unknown Source:5)
+10-15 11:51:07.226  4271  4271 W System.err: 	at androidx.fragment.app.l$e.d(Unknown Source:16)
+10-15 11:51:07.226  4271  4271 W System.err: 	at androidx.fragment.app.b$l.a(Unknown Source:4)
+10-15 11:51:07.226  4271  4271 W System.err: 	at androidx.fragment.app.b.w(Unknown Source:50)
+10-15 11:51:07.226  4271  4271 W System.err: 	at androidx.fragment.app.b.f(Unknown Source:177)
+10-15 11:51:07.227  4271  4271 W System.err: 	at androidx.fragment.app.l.g(Unknown Source:132)
+10-15 11:51:07.230  4271  4271 W System.err: 	at androidx.fragment.app.FragmentManager.f0(Unknown Source:268)
+10-15 11:51:07.231  4271  4271 W System.err: 	at androidx.fragment.app.FragmentManager.m1(Unknown Source:81)
+10-15 11:51:07.231  4271  4271 W System.err: 	at androidx.fragment.app.FragmentManager.d0(Unknown Source:31)
+10-15 11:51:07.232  4271  4271 W System.err: 	at androidx.fragment.app.a.o(Unknown Source:6)
+10-15 11:51:07.232  4271  4271 W System.err: 	at androidx.fragment.app.i.finishUpdate(Unknown Source:12)
+10-15 11:51:07.232  4271  4271 W System.err: 	at androidx.viewpager.widget.ViewPager.F(Unknown Source:415)
+10-15 11:51:07.233  4271  4271 W System.err: 	at androidx.viewpager.widget.ViewPager.E(Unknown Source:2)
+10-15 11:51:07.233  4271  4271 W System.err: 	at androidx.viewpager.widget.ViewPager.onMeasure(Unknown Source:189)
+10-15 11:51:07.233  4271  4271 W System.err: 	at android.view.View.measure(View.java:28114)
+10-15 11:51:07.234  4271  4271 W System.err: 	at androidx.constraintlayout.widget.ConstraintLayout$b.a(Unknown Source:543)
+10-15 11:51:07.234  4271  4271 W System.err: 	at androidx.constraintlayout.core.widgets.d.X1(Unknown Source:276)
+10-15 11:51:07.234  4271  4271 W System.err: 	at androidx.constraintlayout.core.widgets.d.w1(Unknown Source:126)
+10-15 11:51:07.234  4271  4271 W System.err: 	at po2.c(Unknown Source:34)
+10-15 11:51:07.234  4271  4271 W System.err: 	at po2.d(Unknown Source:313)
+10-15 11:51:07.235  4271  4271 W System.err: 	at androidx.constraintlayout.core.widgets.d.W1(Unknown Source:21)
+10-15 11:51:07.235  4271  4271 W System.err: 	at androidx.constraintlayout.widget.ConstraintLayout.resolveSystem(Unknown Source:101)
+10-15 11:51:07.235  4271  4271 W System.err: 	at androidx.constraintlayout.widget.ConstraintLayout.onMeasure(Unknown Source:69)
+10-15 11:51:07.235  4271  4271 W System.err: 	at android.view.View.measure(View.java:28114)
+10-15 11:51:07.235  4271  4271 W System.err: 	at androidx.constraintlayout.widget.ConstraintLayout$b.a(Unknown Source:543)
+10-15 11:51:07.235  4271  4271 W System.err: 	at po2.a(Unknown Source:104)
+10-15 11:51:07.235  4271  4271 W System.err: 	at po2.b(Unknown Source:157)
+10-15 11:51:07.235  4271  4271 W System.err: 	at po2.d(Unknown Source:284)
+10-15 11:51:07.236  4271  4271 W System.err: 	at androidx.constraintlayout.core.widgets.d.W1(Unknown Source:21)
+10-15 11:51:07.236  4271  4271 W System.err: 	at androidx.constraintlayout.widget.ConstraintLayout.resolveSystem(Unknown Source:101)
+10-15 11:51:07.236  4271  4271 W System.err: 	at androidx.constraintlayout.widget.ConstraintLayout.onMeasure(Unknown Source:69)
+10-15 11:51:07.236  4271  4271 W System.err: 	at android.view.View.measure(View.java:28114)
+10-15 11:51:07.236  4271  4271 W System.err: 	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6989)
+10-15 11:51:07.236  4271  4271 W System.err: 	at android.widget.FrameLayout.onMeasure(FrameLayout.java:194)
+10-15 11:51:07.236  4271  4271 W System.err: 	at android.view.View.measure(View.java:28114)
+10-15 11:51:07.240  4271  4271 W System.err: 	at android.widget.LinearLayout.measureVertical(LinearLayout.java:1031)
+10-15 11:51:07.240  4271  4271 W System.err: 	at android.widget.LinearLayout.onMeasure(LinearLayout.java:721)
+10-15 11:51:07.240  4271  4271 W System.err: 	at android.view.View.measure(View.java:28114)
+10-15 11:51:07.240  4271  4271 W System.err: 	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6989)
+10-15 11:51:07.240  4271  4271 W System.err: 	at android.widget.FrameLayout.onMeasure(FrameLayout.java:194)
+10-15 11:51:07.240  4271  4271 W System.err: 	at android.view.View.measure(View.java:28114)
+10-15 11:51:07.241  4271  4271 W System.err: 	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6989)
+10-15 11:51:07.241  4271  4271 W System.err: 	at miuix.appcompat.internal.app.widget.ActionBarOverlayLayout.onMeasure(Unknown Source:429)
+10-15 11:51:07.241  4271  4271 W System.err: 	at android.view.View.measure(View.java:28114)
+10-15 11:51:07.243  4271  4271 W System.err: 	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6989)
+10-15 11:51:07.243  4271  4271 W System.err: 	at android.widget.FrameLayout.onMeasure(FrameLayout.java:194)
+10-15 11:51:07.243  4271  4271 W System.err: 	at android.view.View.measure(View.java:28114)
+10-15 11:51:07.243  4271  4271 W System.err: 	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6989)
+10-15 11:51:07.244  4271  4271 W System.err: 	at android.widget.LinearLayout.measureChildBeforeLayout(LinearLayout.java:1608)
+10-15 11:51:07.244  4271  4271 W System.err: 	at android.widget.LinearLayout.measureVertical(LinearLayout.java:878)
+10-15 11:51:07.253  4271  4271 W System.err: 	at android.widget.LinearLayout.onMeasure(LinearLayout.java:721)
+10-15 11:51:07.253  4271  4271 W System.err: 	at android.view.View.measure(View.java:28114)
+10-15 11:51:07.253  4271  4271 W System.err: 	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6989)
+10-15 11:51:07.254  4271  4271 W System.err: 	at android.widget.FrameLayout.onMeasure(FrameLayout.java:194)
+10-15 11:51:07.254  4271  4271 W System.err: 	at com.android.internal.policy.DecorView.onMeasure(DecorView.java:719)
+10-15 11:51:07.255  4271  4271 W System.err: 	at android.view.View.measure(View.java:28114)
+10-15 11:51:07.255  4271  4271 W System.err: 	at android.view.ViewRootImpl.performMeasure(ViewRootImpl.java:4823)
+10-15 11:51:07.256  4271  4271 W System.err: 	at android.view.ViewRootImpl.measureHierarchy(ViewRootImpl.java:3220)
+10-15 11:51:07.256  4271  4271 W System.err: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:3525)
+10-15 11:51:07.256  4271  4271 W System.err: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2917)
+10-15 11:51:07.257  4271  4271 W System.err: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:10324)
+10-15 11:51:07.257  4271  4271 W System.err: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1406)
+10-15 11:51:07.257  4271  4271 W System.err: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1415)
+10-15 11:51:07.258  4271  4271 W System.err: 	at android.view.Choreographer.doCallbacks(Choreographer.java:1015)
+10-15 11:51:07.258  4271  4271 W System.err: 	at android.view.Choreographer.doFrame(Choreographer.java:945)
+10-15 11:51:07.259  4271  4271 W System.err: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1389)
+10-15 11:51:07.259  4271  4271 W System.err: 	at android.os.Handler.handleCallback(Handler.java:959)
+10-15 11:51:07.259  4271  4271 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+10-15 11:51:07.259  4271  4271 W System.err: 	at android.os.Looper.loopOnce(Looper.java:232)
+10-15 11:51:07.259  4271  4271 W System.err: 	at android.os.Looper.loop(Looper.java:317)
+10-15 11:51:07.259  4271  4271 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:8705)
+10-15 11:51:07.260  4271  4271 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 11:51:07.264  4271  4271 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+10-15 11:51:07.264  4271  4271 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
+10-15 11:51:07.265  4271  4271 I GameModeExternalImp_4271_4271: isGameServiceSupport() false
+10-15 11:51:07.266  4271  4271 W System.err: android.content.pm.PackageManager$NameNotFoundException: com.xiaomi.joyose
+10-15 11:51:07.266  4271  4271 W System.err: 	at android.app.ApplicationPackageManager.getPackageInfoAsUser(ApplicationPackageManager.java:273)
+10-15 11:51:07.267  4271  4271 W System.err: 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:233)
+10-15 11:51:07.267  4271  4271 W System.err: 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:227)
+10-15 11:51:07.267  4271  4271 W System.err: 	at com.xiaomi.fitness.devicesettings.common.gamemode.GameModeExternalImp.getGameServiceVersion(Unknown Source:13)
+10-15 11:51:07.267  4271  4271 W System.err: 	at com.xiaomi.fitness.devicesettings.common.gamemode.GameModeExternalImp.isGameServiceSupport(Unknown Source:38)
+10-15 11:51:07.268  4271  4271 W System.err: 	at com.xiaomi.fitness.devicesettings.common.gamemode.GameModeExternalImp.isSupportGameMode(Unknown Source:0)
+10-15 11:51:07.269  4271  4271 W System.err: 	at com.xiaomi.fitness.device.manager.ui.tab.DeviceTabFragmentV4.onVisible(Unknown Source:13)
+10-15 11:51:07.269  4271  4271 W System.err: 	at com.xiaomi.fitness.baseui.view.BaseFragment.visible(Unknown Source:11)
+10-15 11:51:07.269  4271  4271 W System.err: 	at com.xiaomi.fitness.baseui.view.BaseFragment.onResume(Unknown Source:15)
+10-15 11:51:07.269  4271  4271 W System.err: 	at com.xiaomi.fitness.device.manager.ui.tab.DeviceTabFragmentV4.onResume(Unknown Source:0)
+10-15 11:51:07.269  4271  4271 W System.err: 	at androidx.fragment.app.Fragment.performResume(Unknown Source:17)
+10-15 11:51:07.269  4271  4271 W System.err: 	at androidx.fragment.app.h.p(Unknown Source:63)
+10-15 11:51:07.270  4271  4271 W System.err: 	at androidx.fragment.app.h.m(Unknown Source:44)
+10-15 11:51:07.270  4271  4271 W System.err: 	at androidx.fragment.app.l$d.c(Unknown Source:5)
+10-15 11:51:07.270  4271  4271 W System.err: 	at androidx.fragment.app.l$e.d(Unknown Source:16)
+10-15 11:51:07.270  4271  4271 W System.err: 	at androidx.fragment.app.b$l.a(Unknown Source:4)
+10-15 11:51:07.270  4271  4271 W System.err: 	at androidx.fragment.app.b.w(Unknown Source:50)
+10-15 11:51:07.270  4271  4271 W System.err: 	at androidx.fragment.app.b.f(Unknown Source:177)
+10-15 11:51:07.270  4271  4271 W System.err: 	at androidx.fragment.app.l.g(Unknown Source:132)
+10-15 11:51:07.272  4271  4271 W System.err: 	at androidx.fragment.app.FragmentManager.f0(Unknown Source:268)
+10-15 11:51:07.272  4271  4271 W System.err: 	at androidx.fragment.app.FragmentManager.m1(Unknown Source:81)
+10-15 11:51:07.272  4271  4271 W System.err: 	at androidx.fragment.app.FragmentManager.d0(Unknown Source:31)
+10-15 11:51:07.272  4271  4271 W System.err: 	at androidx.fragment.app.a.o(Unknown Source:6)
+10-15 11:51:07.273  4271  4271 W System.err: 	at androidx.fragment.app.i.finishUpdate(Unknown Source:12)
+10-15 11:51:07.273  4271  4271 W System.err: 	at androidx.viewpager.widget.ViewPager.F(Unknown Source:415)
+10-15 11:51:07.281  4271  4271 W System.err: 	at androidx.viewpager.widget.ViewPager.E(Unknown Source:2)
+10-15 11:51:07.281  4271  4271 W System.err: 	at androidx.viewpager.widget.ViewPager.onMeasure(Unknown Source:189)
+10-15 11:51:07.281  4271  4271 W System.err: 	at android.view.View.measure(View.java:28114)
+10-15 11:51:07.281  4271  4271 W System.err: 	at androidx.constraintlayout.widget.ConstraintLayout$b.a(Unknown Source:543)
+10-15 11:51:07.282  4271  4271 W System.err: 	at androidx.constraintlayout.core.widgets.d.X1(Unknown Source:276)
+10-15 11:51:07.282  4271  4271 W System.err: 	at androidx.constraintlayout.core.widgets.d.w1(Unknown Source:126)
+10-15 11:51:07.282  4271  4271 W System.err: 	at po2.c(Unknown Source:34)
+10-15 11:51:07.283  4271  4271 W System.err: 	at po2.d(Unknown Source:313)
+10-15 11:51:07.283  4271  4271 W System.err: 	at androidx.constraintlayout.core.widgets.d.W1(Unknown Source:21)
+10-15 11:51:07.283  4271  4271 W System.err: 	at androidx.constraintlayout.widget.ConstraintLayout.resolveSystem(Unknown Source:101)
+10-15 11:51:07.283  4271  4271 W System.err: 	at androidx.constraintlayout.widget.ConstraintLayout.onMeasure(Unknown Source:69)
+10-15 11:51:07.283  4271  4271 W System.err: 	at android.view.View.measure(View.java:28114)
+10-15 11:51:07.284  4271  4271 W System.err: 	at androidx.constraintlayout.widget.ConstraintLayout$b.a(Unknown Source:543)
+10-15 11:51:07.288  4271  4271 W System.err: 	at po2.a(Unknown Source:104)
+10-15 11:51:07.288  4271  4271 W System.err: 	at po2.b(Unknown Source:157)
+10-15 11:51:07.289  4271  4271 W System.err: 	at po2.d(Unknown Source:284)
+10-15 11:51:07.289  4271  4271 W System.err: 	at androidx.constraintlayout.core.widgets.d.W1(Unknown Source:21)
+10-15 11:51:07.290  4271  4271 W System.err: 	at androidx.constraintlayout.widget.ConstraintLayout.resolveSystem(Unknown Source:101)
+10-15 11:51:07.290  4271  4271 W System.err: 	at androidx.constraintlayout.widget.ConstraintLayout.onMeasure(Unknown Source:69)
+10-15 11:51:07.291  4271  4271 W System.err: 	at android.view.View.measure(View.java:28114)
+10-15 11:51:07.291  4271  4271 W System.err: 	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6989)
+10-15 11:51:07.292  4271  4271 W System.err: 	at android.widget.FrameLayout.onMeasure(FrameLayout.java:194)
+10-15 11:51:07.292  4271  4271 W System.err: 	at android.view.View.measure(View.java:28114)
+10-15 11:51:07.292  4271  4271 W System.err: 	at android.widget.LinearLayout.measureVertical(LinearLayout.java:1031)
+10-15 11:51:07.293  4271  4271 W System.err: 	at android.widget.LinearLayout.onMeasure(LinearLayout.java:721)
+10-15 11:51:07.293  4271  4271 W System.err: 	at android.view.View.measure(View.java:28114)
+10-15 11:51:07.293  4271  4271 W System.err: 	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6989)
+10-15 11:51:07.294  4271  4271 W System.err: 	at android.widget.FrameLayout.onMeasure(FrameLayout.java:194)
+10-15 11:51:07.294  4271  4271 W System.err: 	at android.view.View.measure(View.java:28114)
+10-15 11:51:07.296  4271  4271 W System.err: 	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6989)
+10-15 11:51:07.296  4271  4271 W System.err: 	at miuix.appcompat.internal.app.widget.ActionBarOverlayLayout.onMeasure(Unknown Source:429)
+10-15 11:51:07.296  4271  4271 W System.err: 	at android.view.View.measure(View.java:28114)
+10-15 11:51:07.296  4271  4271 W System.err: 	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6989)
+10-15 11:51:07.297  4271  4271 W System.err: 	at android.widget.FrameLayout.onMeasure(FrameLayout.java:194)
+10-15 11:51:07.297  4271  4271 W System.err: 	at android.view.View.measure(View.java:28114)
+10-15 11:51:07.298  4271  4271 W System.err: 	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6989)
+10-15 11:51:07.298  4271  4271 W System.err: 	at android.widget.LinearLayout.measureChildBeforeLayout(LinearLayout.java:1608)
+10-15 11:51:07.299  4271  4271 W System.err: 	at android.widget.LinearLayout.measureVertical(LinearLayout.java:878)
+10-15 11:51:07.299  4271  4271 W System.err: 	at android.widget.LinearLayout.onMeasure(LinearLayout.java:721)
+10-15 11:51:07.299  4271  4271 W System.err: 	at android.view.View.measure(View.java:28114)
+10-15 11:51:07.299  4271  4271 W System.err: 	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6989)
+10-15 11:51:07.300  4271  4271 W System.err: 	at android.widget.FrameLayout.onMeasure(FrameLayout.java:194)
+10-15 11:51:07.300  4271  4271 W System.err: 	at com.android.internal.policy.DecorView.onMeasure(DecorView.java:719)
+10-15 11:51:07.300  4271  4271 W System.err: 	at android.view.View.measure(View.java:28114)
+10-15 11:51:07.301  4271  4271 W System.err: 	at android.view.ViewRootImpl.performMeasure(ViewRootImpl.java:4823)
+10-15 11:51:07.301  4271  4271 W System.err: 	at android.view.ViewRootImpl.measureHierarchy(ViewRootImpl.java:3220)
+10-15 11:51:07.301  4271  4271 W System.err: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:3525)
+10-15 11:51:07.302  4271  4271 W System.err: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2917)
+10-15 11:51:07.302  4271  4271 W System.err: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:10324)
+10-15 11:51:07.303  4271  4271 W System.err: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1406)
+10-15 11:51:07.303  4271  4271 W System.err: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1415)
+10-15 11:51:07.303  4271  4271 W System.err: 	at android.view.Choreographer.doCallbacks(Choreographer.java:1015)
+10-15 11:51:07.303  4271  4271 W System.err: 	at android.view.Choreographer.doFrame(Choreographer.java:945)
+10-15 11:51:07.303  4271  4271 W System.err: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1389)
+10-15 11:51:07.304  4271  4271 W System.err: 	at android.os.Handler.handleCallback(Handler.java:959)
+10-15 11:51:07.304  4271  4271 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+10-15 11:51:07.305  4271  4271 W System.err: 	at android.os.Looper.loopOnce(Looper.java:232)
+10-15 11:51:07.305  4271  4271 W System.err: 	at android.os.Looper.loop(Looper.java:317)
+10-15 11:51:07.306  4271  4271 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:8705)
+10-15 11:51:07.306  4271  4271 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 11:51:07.307  4271  4271 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+10-15 11:51:07.307  4271  4271 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
+10-15 11:51:07.308  4271  4271 I GameModeExternalImp_4271_4271: isSupportGameMode false
+10-15 11:51:07.310  4271  4271 E DeviceModel_4271_4271: DeviceManagerImpl isConnected: did=null: false
+10-15 11:51:07.311  4304  4314 I DeviceModel_4304_4314: null(null)'s status is null
+10-15 11:51:07.312  4271  4271 I DeviceTabViewModelV4_4271_4271: updateBatteryIfNeed isConnected=false,deviceStatus=-1
+10-15 11:51:07.314  4271  4271 E DeviceModel_4271_4271: DeviceManagerImpl isConnected: did=null: false
+10-15 11:51:07.314  4271  4271 I DeviceTabViewModelV4_4271_4271: syncDeviceIfNeed = false
+10-15 11:51:07.315  4271  4271 I SportAccessApiImp_4271_4271: downloadSportAudioFeedbackResources complete=true callSite=
+10-15 11:51:07.316  4271  4271 I DeviceTabFragmentV4_4271_4271: onVisible
+10-15 11:51:07.319  4271  4271 I FITNESS.TSM_4271_4271: loadMasterRegionList isPlayChannel:false
+10-15 11:51:07.320  4271  4271 I showSystemRedPoint_4271_4271: systemTabItem null  isKeepAliveSetTrue = false
+10-15 11:51:07.323  4271  4984 I DeviceTabFragmentV4_4271_4984: vibrate 进入设备tab页，开始检查振动统计功能
+10-15 11:51:07.329  4271  4984 I DeviceTabFragmentV4_4271_4984: vibrate 当前日期: 2026-10-15, 最后上报日期: 
+10-15 11:51:07.330  4271  4984 I DeviceTabFragmentV4_4271_4984: vibrate 今天尚未上报振动统计信息，开始上报流程
+10-15 11:51:07.338  4271  4984 E DeviceModel_4271_4984: DeviceManagerImpl isConnected: did=null: false
+10-15 11:51:07.338  4271  4984 I DeviceTabFragmentV4_4271_4984: vibrate 设备未连接，跳过振动统计
+10-15 11:51:07.363  4271  4271 I DataBindingAdapter_4271_4271: setLottie
+10-15 11:51:07.383  4271  5059 D TrafficStats: tagSocket(199) with statsTag=0xffffffff, statsUid=-1
+10-15 11:51:07.386  4271  4271 I LoginComponent_4271_4271: onReceive: Intent { act=action_login flg=0x10 (has extras) }
+10-15 11:51:07.418   595  2302 I ActivityTaskManager: START u0 {flg=0x10020000 cmp=com.mi.health/com.xiaomi.fitness.login.LoginSupportActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 10209 (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-15 11:51:07.419  4271  4271 I DeviceBasicStatusDataHandler_4271_4271: addHandler com.xiaomi.fitness.device.manager.ui.tab.DeviceTabV4ViewModel$deviceChargeStatusDataHandler$1@2928a16
+10-15 11:51:07.431  4271  4271 I ActivityLifecycle_4271_4271: onActivityPaused->com.xiaomi.fitness.main.MainActivity@83f6622
+10-15 11:51:07.432  4271  4271 I XiaomiFit_4271_4271: deliver main activity create event: onPause>>>com.mi.health
+10-15 11:51:07.432  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@fadd34a, isMain=true, cost=0
+10-15 11:51:07.433  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: v17@89fb2bb, isMain=true, cost=1
+10-15 11:51:07.433  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: w17@c1643d8, isMain=true, cost=0
+10-15 11:51:07.434  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: mw6@f36e331, isMain=true, cost=1
+10-15 11:51:07.434  4271  4271 I ConnectAssist_4271_4271: isForeground true
+10-15 11:51:07.435  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ut4@c7dda16, isMain=true, cost=1
+10-15 11:51:07.435  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: oxq@d0cbf97, isMain=true, cost=0
+10-15 11:51:07.436  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ljt@697c584, isMain=true, cost=0
+10-15 11:51:07.436  4271  4294 I AppManager_4271_4294: visibleActivityCount: 1
+10-15 11:51:07.437  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: z4p@cc220cd, isMain=true, cost=0
+10-15 11:51:07.437  4271  4271 I AppManager_4271_4271: onLifecycleReceive() called with: activity = com.xiaomi.fitness.main.MainActivity;138372642;4271, lifecycle = onPause
+10-15 11:51:07.440  4271  4271 I AutoPageTrack-Activity_4271_4271: onActivity invisible stat {activity_name=com.xiaomi.fitness.main.MainActivity, tip=56.0.0.0.26766, expose_type=end, duration_sec=202}
+10-15 11:51:07.452  4271  4290 I XiaomiFit_4271_4290: com.mi.health receive lifecycle event, put: activity
+10-15 11:51:07.456  4271  4844 I RRLog_4271_4844: [SportHome] onPageOutSportTab
+10-15 11:51:07.462  4304  4319 I XiaomiFit_4304_4319: com.mi.health:device receive lifecycle event, put: activity
+10-15 11:51:07.463  4304  4319 I XiaomiFit_4304_4319: onReceive: handleAction:0->put
+10-15 11:51:07.464  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@a327b20, isMain=false, cost=1
+10-15 11:51:07.464  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nk8@3c25cd9, isMain=false, cost=0
+10-15 11:51:07.464  4304  4319 I DeviceManagerComponent_4304_4319: requestDeviceWhenMainResume() called with: activity = com.xiaomi.fitness.main.MainActivity;138372642;4271, lifecycle = onPause
+10-15 11:51:07.466  4304  4319 I DeviceManagerComponent_4304_4319: requestDeviceWhenMainResume() called with: activity = com.xiaomi.fitness.main.MainActivity;138372642;4271, ON_RESUME
+10-15 11:51:07.467  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nw6@91c2eb1, isMain=false, cost=2
+10-15 11:51:07.467  4304  4304 I XiaomiFit_4304_4304: deliver main activity create event: onPause>>>com.mi.health:device
+10-15 11:51:07.468  4304  4319 I AppManager_4304_4319: onLifecycleReceive() called with: activity = com.xiaomi.fitness.main.MainActivity;138372642;4271, lifecycle = onPause
+10-15 11:51:07.482  4271  4271 I ActivityLifecycle_4271_4271: onActivityPreCreated->com.xiaomi.fitness.login.LoginSupportActivity@432594c
+10-15 11:51:07.483  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@fadd34a, isMain=true, cost=0
+10-15 11:51:07.484  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: v17@89fb2bb, isMain=true, cost=0
+10-15 11:51:07.484  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: w17@c1643d8, isMain=true, cost=0
+10-15 11:51:07.485  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: mw6@f36e331, isMain=true, cost=0
+10-15 11:51:07.485  4271  4271 I ConnectAssist_4271_4271: isForeground true
+10-15 11:51:07.485  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ut4@c7dda16, isMain=true, cost=0
+10-15 11:51:07.485  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: oxq@d0cbf97, isMain=true, cost=0
+10-15 11:51:07.486  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ljt@697c584, isMain=true, cost=0
+10-15 11:51:07.487  4271  4984 I AppManager_4271_4984: visibleActivityCount: 1
+10-15 11:51:07.487  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: z4p@cc220cd, isMain=true, cost=0
+10-15 11:51:07.487  4271  4271 I AppManager_4271_4271: onLifecycleReceive() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onPreCreated
+10-15 11:51:07.498  4271  4271 I ActivityLifecycle_4271_4271: onActivityCreated->com.xiaomi.fitness.login.LoginSupportActivity@432594c
+10-15 11:51:07.499  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@fadd34a, isMain=true, cost=0
+10-15 11:51:07.500  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: v17@89fb2bb, isMain=true, cost=1
+10-15 11:51:07.500  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: w17@c1643d8, isMain=true, cost=0
+10-15 11:51:07.500  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: mw6@f36e331, isMain=true, cost=0
+10-15 11:51:07.503  4271  4290 I XiaomiFit_4271_4290: com.mi.health receive lifecycle event, put: activity
+10-15 11:51:07.504  4271  4271 I ConnectAssist_4271_4271: isForeground true
+10-15 11:51:07.504  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ut4@c7dda16, isMain=true, cost=4
+10-15 11:51:07.504  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: oxq@d0cbf97, isMain=true, cost=0
+10-15 11:51:07.505  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ljt@697c584, isMain=true, cost=0
+10-15 11:51:07.505  4271  4984 I AppManager_4271_4984: visibleActivityCount: 1
+10-15 11:51:07.506  4304  4319 I XiaomiFit_4304_4319: com.mi.health:device receive lifecycle event, put: activity
+10-15 11:51:07.506  4304  4319 I XiaomiFit_4304_4319: onReceive: handleAction:0->put
+10-15 11:51:07.507  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@a327b20, isMain=false, cost=1
+10-15 11:51:07.507  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nk8@3c25cd9, isMain=false, cost=0
+10-15 11:51:07.508  4304  4319 I DeviceManagerComponent_4304_4319: requestDeviceWhenMainResume() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onPreCreated
+10-15 11:51:07.508  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nw6@91c2eb1, isMain=false, cost=0
+10-15 11:51:07.509  4304  4319 I AppManager_4304_4319: onLifecycleReceive() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onPreCreated
+10-15 11:51:07.509  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: z4p@cc220cd, isMain=true, cost=0
+10-15 11:51:07.510  4271  4271 I AppManager_4271_4271: onLifecycleReceive() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onCreated
+10-15 11:51:07.517  4271  4271 I BikeLifeCycleHandler_4271_4271: onActivityCreated com.xiaomi.fitness.login.LoginSupportActivity
+10-15 11:51:07.517  4271  4290 I XiaomiFit_4271_4290: com.mi.health receive lifecycle event, put: activity
+10-15 11:51:07.519  4271  4271 I LoginSupportActivity_4271_4271: onCreate: loginIntent=null
+10-15 11:51:07.521  4304  4319 I XiaomiFit_4304_4319: com.mi.health:device receive lifecycle event, put: activity
+10-15 11:51:07.521  4304  4319 I XiaomiFit_4304_4319: onReceive: handleAction:0->put
+10-15 11:51:07.521  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@a327b20, isMain=false, cost=0
+10-15 11:51:07.522  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nk8@3c25cd9, isMain=false, cost=0
+10-15 11:51:07.523  4304  4319 I DeviceManagerComponent_4304_4319: requestDeviceWhenMainResume() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onCreated
+10-15 11:51:07.523  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nw6@91c2eb1, isMain=false, cost=0
+10-15 11:51:07.523  4304  4319 I AppManager_4304_4319: onLifecycleReceive() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onCreated
+10-15 11:51:07.540  4271  4271 I Account_4271_4271: setUserLocal...
+10-15 11:51:07.542  4271  4271 I Account_4271_4271: localLogin: xiaomiAccount = null
+10-15 11:51:07.544  4271  4271 I Account_4271_4271: Add xiaomi account，sid=miothealth
+10-15 11:51:07.557  4271  4271 I ActivityLifecycle_4271_4271: onActivityPostCreated->com.xiaomi.fitness.login.LoginSupportActivity@432594c
+10-15 11:51:07.558  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@fadd34a, isMain=true, cost=0
+10-15 11:51:07.559  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: v17@89fb2bb, isMain=true, cost=1
+10-15 11:51:07.559  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: w17@c1643d8, isMain=true, cost=0
+10-15 11:51:07.560  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: mw6@f36e331, isMain=true, cost=0
+10-15 11:51:07.560  4271  4271 I ConnectAssist_4271_4271: isForeground true
+10-15 11:51:07.568  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ut4@c7dda16, isMain=true, cost=8
+10-15 11:51:07.568  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: oxq@d0cbf97, isMain=true, cost=0
+10-15 11:51:07.569  4271  4984 I AppManager_4271_4984: visibleActivityCount: 1
+10-15 11:51:07.569  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ljt@697c584, isMain=true, cost=1
+10-15 11:51:07.569  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: z4p@cc220cd, isMain=true, cost=0
+10-15 11:51:07.570  4271  4271 I AppManager_4271_4271: onLifecycleReceive() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onPostCreated
+10-15 11:51:07.572  4271  4271 I ActivityLifecycle_4271_4271: onActivityStarted->com.xiaomi.fitness.login.LoginSupportActivity@432594c
+10-15 11:51:07.573  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@fadd34a, isMain=true, cost=0
+10-15 11:51:07.573  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: v17@89fb2bb, isMain=true, cost=0
+10-15 11:51:07.573  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: w17@c1643d8, isMain=true, cost=0
+10-15 11:51:07.574  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: mw6@f36e331, isMain=true, cost=1
+10-15 11:51:07.574  4271  4271 I ConnectAssist_4271_4271: isForeground true
+10-15 11:51:07.574  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ut4@c7dda16, isMain=true, cost=0
+10-15 11:51:07.576  4271  4290 I XiaomiFit_4271_4290: com.mi.health receive lifecycle event, put: activity
+10-15 11:51:07.578  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: oxq@d0cbf97, isMain=true, cost=1
+10-15 11:51:07.579  4271  4982 I AppManager_4271_4982: visibleActivityCount: 1
+10-15 11:51:07.579  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ljt@697c584, isMain=true, cost=1
+10-15 11:51:07.580  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: z4p@cc220cd, isMain=true, cost=0
+10-15 11:51:07.580  4271  4271 I AppManager_4271_4271: onLifecycleReceive() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onStart
+10-15 11:51:07.580  4304  4319 I XiaomiFit_4304_4319: com.mi.health:device receive lifecycle event, put: activity
+10-15 11:51:07.581  4304  4319 I XiaomiFit_4304_4319: onReceive: handleAction:0->put
+10-15 11:51:07.581  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@a327b20, isMain=false, cost=0
+10-15 11:51:07.584  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nk8@3c25cd9, isMain=false, cost=0
+10-15 11:51:07.584  4271  4271 I LifeCycleHandler_4271_4271: onActivityStarted:LoginSupportActivity
+10-15 11:51:07.584  4271  4271 I BikeLifeCycleHandler_4271_4271: onActivityStarted1 com.xiaomi.fitness.login.LoginSupportActivity - 2
+10-15 11:51:07.585  4271  4290 I XiaomiFit_4271_4290: com.mi.health receive lifecycle event, put: activity
+10-15 11:51:07.588  4304  4319 I DeviceManagerComponent_4304_4319: requestDeviceWhenMainResume() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onPostCreated
+10-15 11:51:07.589  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nw6@91c2eb1, isMain=false, cost=0
+10-15 11:51:07.589  4304  4319 I AppManager_4304_4319: onLifecycleReceive() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onPostCreated
+10-15 11:51:07.590  4271  4271 I ActivityLifecycle_4271_4271: onActivityResumed->com.xiaomi.fitness.login.LoginSupportActivity@432594c
+10-15 11:51:07.591  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@fadd34a, isMain=true, cost=0
+10-15 11:51:07.591  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: v17@89fb2bb, isMain=true, cost=0
+10-15 11:51:07.592  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: w17@c1643d8, isMain=true, cost=1
+10-15 11:51:07.593  4304  4319 I XiaomiFit_4304_4319: com.mi.health:device receive lifecycle event, put: activity
+10-15 11:51:07.593  4304  4319 I XiaomiFit_4304_4319: onReceive: handleAction:0->put
+10-15 11:51:07.594  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@a327b20, isMain=false, cost=0
+10-15 11:51:07.594  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nk8@3c25cd9, isMain=false, cost=0
+10-15 11:51:07.594  4304  4319 I DeviceManagerComponent_4304_4319: requestDeviceWhenMainResume() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onStart
+10-15 11:51:07.595  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: mw6@f36e331, isMain=true, cost=0
+10-15 11:51:07.595  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nw6@91c2eb1, isMain=false, cost=1
+10-15 11:51:07.595  4304  4319 I AppManager_4304_4319: onLifecycleReceive() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onStart
+10-15 11:51:07.595  4271  4271 I ConnectAssist_4271_4271: isForeground true
+10-15 11:51:07.595  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ut4@c7dda16, isMain=true, cost=0
+10-15 11:51:07.599  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: oxq@d0cbf97, isMain=true, cost=0
+10-15 11:51:07.599  4271  4984 I REQ_WIFI_TAG_4271_4984: app back to foreground, handle wifi time: 0, 1792065067599
+10-15 11:51:07.600  4271  4982 I AppManager_4271_4982: visibleActivityCount: 2
+10-15 11:51:07.600  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ljt@697c584, isMain=true, cost=1
+10-15 11:51:07.600  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: z4p@cc220cd, isMain=true, cost=0
+10-15 11:51:07.601  4271  4271 I AppManager_4271_4271: onLifecycleReceive() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onResume
+10-15 11:51:07.601  4271  4982 W XiaomiFit_4271_4982: checkRefreshSplashInfo：false,0
+10-15 11:51:07.604  4271  4271 I AutoPageTrack-Activity_4271_4271: onActivity visible stat {activity_name=com.xiaomi.fitness.login.LoginSupportActivity, tip=56.0.0.0.26766, expose_type=start, activity_referrer=com.xiaomi.fitness.main.MainActivity}
+10-15 11:51:07.610  4271  4290 I XiaomiFit_4271_4290: com.mi.health receive lifecycle event, put: activity
+10-15 11:51:07.615  4304  4319 I XiaomiFit_4304_4319: com.mi.health:device receive lifecycle event, put: activity
+10-15 11:51:07.616  4304  4319 I XiaomiFit_4304_4319: onReceive: handleAction:0->put
+10-15 11:51:07.618  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@a327b20, isMain=false, cost=0
+10-15 11:51:07.618  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nk8@3c25cd9, isMain=false, cost=0
+10-15 11:51:07.618  4304  4319 I DeviceManagerComponent_4304_4319: requestDeviceWhenMainResume() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onResume
+10-15 11:51:07.619  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nw6@91c2eb1, isMain=false, cost=0
+10-15 11:51:07.619  4304  4319 I AppManager_4304_4319: onLifecycleReceive() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onResume
+10-15 11:51:07.912  4271  4271 I Account_4271_4271: result Bundle[{intent=Intent { flg=0x4000000 cmp=com.mi.health/com.xiaomi.passport.ui.page.AccountLoginActivity (has extras) }}]
+10-15 11:51:07.917  4271  4271 I Account_4271_4271: localLogin: 0, result = Bundle[{intent=Intent { flg=0x4000000 cmp=com.mi.health/com.xiaomi.passport.ui.page.AccountLoginActivity (has extras) }}]
+10-15 11:51:07.955   595  2302 I ActivityTaskManager: START u0 {flg=0x4000000 cmp=com.mi.health/com.xiaomi.passport.ui.page.AccountLoginActivity (has extras)} with LAUNCH_MULTIPLE from uid 10209 (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-15 11:51:08.023  4271  4271 I ActivityLifecycle_4271_4271: onActivityPaused->com.xiaomi.fitness.login.LoginSupportActivity@432594c
+10-15 11:51:08.024  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@fadd34a, isMain=true, cost=0
+10-15 11:51:08.024  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: v17@89fb2bb, isMain=true, cost=0
+10-15 11:51:08.025  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: w17@c1643d8, isMain=true, cost=0
+10-15 11:51:08.025  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: mw6@f36e331, isMain=true, cost=0
+10-15 11:51:08.025  4271  4271 I ConnectAssist_4271_4271: isForeground true
+10-15 11:51:08.025  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ut4@c7dda16, isMain=true, cost=0
+10-15 11:51:08.026  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: oxq@d0cbf97, isMain=true, cost=0
+10-15 11:51:08.026  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ljt@697c584, isMain=true, cost=0
+10-15 11:51:08.027  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: z4p@cc220cd, isMain=true, cost=0
+10-15 11:51:08.027  4271  4271 I AppManager_4271_4271: onLifecycleReceive() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onPause
+10-15 11:51:08.028  4271  4982 I AppManager_4271_4982: visibleActivityCount: 2
+10-15 11:51:08.029  4271  4271 I AutoPageTrack-Activity_4271_4271: onActivity invisible stat {activity_name=com.xiaomi.fitness.login.LoginSupportActivity, tip=56.0.0.0.26766, expose_type=end, duration_sec=1}
+10-15 11:51:08.031  4271  4290 I XiaomiFit_4271_4290: com.mi.health receive lifecycle event, put: activity
+10-15 11:51:08.042  4304  4319 I XiaomiFit_4304_4319: com.mi.health:device receive lifecycle event, put: activity
+10-15 11:51:08.044  4304  4319 I XiaomiFit_4304_4319: onReceive: handleAction:0->put
+10-15 11:51:08.045  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@a327b20, isMain=false, cost=0
+10-15 11:51:08.045  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nk8@3c25cd9, isMain=false, cost=0
+10-15 11:51:08.045  4304  4319 I DeviceManagerComponent_4304_4319: requestDeviceWhenMainResume() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onPause
+10-15 11:51:08.045  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nw6@91c2eb1, isMain=false, cost=0
+10-15 11:51:08.045  4304  4319 I AppManager_4304_4319: onLifecycleReceive() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onPause
+10-15 11:51:08.081  4271  4271 I ActivityLifecycle_4271_4271: onActivityPreCreated->com.xiaomi.passport.ui.page.AccountLoginActivity@59b9d3
+10-15 11:51:08.081  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@fadd34a, isMain=true, cost=0
+10-15 11:51:08.083  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: v17@89fb2bb, isMain=true, cost=2
+10-15 11:51:08.084  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: w17@c1643d8, isMain=true, cost=0
+10-15 11:51:08.084  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: mw6@f36e331, isMain=true, cost=0
+10-15 11:51:08.084  4271  4271 I ConnectAssist_4271_4271: isForeground true
+10-15 11:51:08.085  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ut4@c7dda16, isMain=true, cost=1
+10-15 11:51:08.085  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: oxq@d0cbf97, isMain=true, cost=0
+10-15 11:51:08.086  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ljt@697c584, isMain=true, cost=0
+10-15 11:51:08.086  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: z4p@cc220cd, isMain=true, cost=0
+10-15 11:51:08.087  4271  4271 I AppManager_4271_4271: onLifecycleReceive() called with: activity = com.xiaomi.passport.ui.page.AccountLoginActivity;5880275;4271, lifecycle = onPreCreated
+10-15 11:51:08.091  4271  4294 I AppManager_4271_4294: visibleActivityCount: 2
+10-15 11:51:08.092  4271  4290 I XiaomiFit_4271_4290: com.mi.health receive lifecycle event, put: activity
+10-15 11:51:08.098  4271  4271 I ActivityLifecycle_4271_4271: onActivityCreated->com.xiaomi.passport.ui.page.AccountLoginActivity@59b9d3
+10-15 11:51:08.098  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@fadd34a, isMain=true, cost=0
+10-15 11:51:08.098  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: v17@89fb2bb, isMain=true, cost=0
+10-15 11:51:08.099  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: w17@c1643d8, isMain=true, cost=0
+10-15 11:51:08.099  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: mw6@f36e331, isMain=true, cost=0
+10-15 11:51:08.099  4271  4271 I ConnectAssist_4271_4271: isForeground true
+10-15 11:51:08.115  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ut4@c7dda16, isMain=true, cost=16
+10-15 11:51:08.115  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: oxq@d0cbf97, isMain=true, cost=0
+10-15 11:51:08.116  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ljt@697c584, isMain=true, cost=1
+10-15 11:51:08.121  4271  4984 I AppManager_4271_4984: visibleActivityCount: 2
+10-15 11:51:08.124  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: z4p@cc220cd, isMain=true, cost=0
+10-15 11:51:08.124  4271  4271 I AppManager_4271_4271: onLifecycleReceive() called with: activity = com.xiaomi.passport.ui.page.AccountLoginActivity;5880275;4271, lifecycle = onCreated
+10-15 11:51:08.124  4304  4319 I XiaomiFit_4304_4319: com.mi.health:device receive lifecycle event, put: activity
+10-15 11:51:08.125  4304  4319 I XiaomiFit_4304_4319: onReceive: handleAction:0->put
+10-15 11:51:08.125  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@a327b20, isMain=false, cost=0
+10-15 11:51:08.125  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nk8@3c25cd9, isMain=false, cost=0
+10-15 11:51:08.126  4304  4319 I DeviceManagerComponent_4304_4319: requestDeviceWhenMainResume() called with: activity = com.xiaomi.passport.ui.page.AccountLoginActivity;5880275;4271, lifecycle = onPreCreated
+10-15 11:51:08.126  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nw6@91c2eb1, isMain=false, cost=0
+10-15 11:51:08.126  4304  4319 I AppManager_4304_4319: onLifecycleReceive() called with: activity = com.xiaomi.passport.ui.page.AccountLoginActivity;5880275;4271, lifecycle = onPreCreated
+10-15 11:51:08.135  4271  4271 I BikeLifeCycleHandler_4271_4271: onActivityCreated com.xiaomi.passport.ui.page.AccountLoginActivity
+10-15 11:51:08.148  4271  4290 I XiaomiFit_4271_4290: com.mi.health receive lifecycle event, put: activity
+10-15 11:51:08.162  4271  4271 I ActivityLifecycle_4271_4271: onActivityPostCreated->com.xiaomi.passport.ui.page.AccountLoginActivity@59b9d3
+10-15 11:51:08.162  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@fadd34a, isMain=true, cost=0
+10-15 11:51:08.162  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: v17@89fb2bb, isMain=true, cost=0
+10-15 11:51:08.162  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: w17@c1643d8, isMain=true, cost=0
+10-15 11:51:08.163  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: mw6@f36e331, isMain=true, cost=0
+10-15 11:51:08.163  4271  4271 I ConnectAssist_4271_4271: isForeground true
+10-15 11:51:08.163  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ut4@c7dda16, isMain=true, cost=0
+10-15 11:51:08.163  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: oxq@d0cbf97, isMain=true, cost=0
+10-15 11:51:08.180  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ljt@697c584, isMain=true, cost=1
+10-15 11:51:08.180  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: z4p@cc220cd, isMain=true, cost=0
+10-15 11:51:08.181  4271  4271 I AppManager_4271_4271: onLifecycleReceive() called with: activity = com.xiaomi.passport.ui.page.AccountLoginActivity;5880275;4271, lifecycle = onPostCreated
+10-15 11:51:08.181  4271  4294 I AppManager_4271_4294: visibleActivityCount: 2
+10-15 11:51:08.182  4304  4319 I XiaomiFit_4304_4319: com.mi.health:device receive lifecycle event, put: activity
+10-15 11:51:08.184  4304  4319 I XiaomiFit_4304_4319: onReceive: handleAction:0->put
+10-15 11:51:08.185  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@a327b20, isMain=false, cost=0
+10-15 11:51:08.185  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nk8@3c25cd9, isMain=false, cost=0
+10-15 11:51:08.186  4304  4319 I DeviceManagerComponent_4304_4319: requestDeviceWhenMainResume() called with: activity = com.xiaomi.passport.ui.page.AccountLoginActivity;5880275;4271, lifecycle = onCreated
+10-15 11:51:08.187  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nw6@91c2eb1, isMain=false, cost=1
+10-15 11:51:08.187  4271  5059 D TrafficStats: tagSocket(325) with statsTag=0xffffffff, statsUid=-1
+10-15 11:51:08.188  4304  4319 I AppManager_4304_4319: onLifecycleReceive() called with: activity = com.xiaomi.passport.ui.page.AccountLoginActivity;5880275;4271, lifecycle = onCreated
+10-15 11:51:08.189  4271  4271 I ActivityLifecycle_4271_4271: onActivityStarted->com.xiaomi.passport.ui.page.AccountLoginActivity@59b9d3
+10-15 11:51:08.190  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@fadd34a, isMain=true, cost=0
+10-15 11:51:08.190  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: v17@89fb2bb, isMain=true, cost=0
+10-15 11:51:08.190  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: w17@c1643d8, isMain=true, cost=0
+10-15 11:51:08.190  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: mw6@f36e331, isMain=true, cost=0
+10-15 11:51:08.193  4271  4290 I XiaomiFit_4271_4290: com.mi.health receive lifecycle event, put: activity
+10-15 11:51:08.196  4271  4271 I ConnectAssist_4271_4271: isForeground true
+10-15 11:51:08.196  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ut4@c7dda16, isMain=true, cost=0
+10-15 11:51:08.196  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: oxq@d0cbf97, isMain=true, cost=0
+10-15 11:51:08.197  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ljt@697c584, isMain=true, cost=0
+10-15 11:51:08.198  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: z4p@cc220cd, isMain=true, cost=0
+10-15 11:51:08.200  4271  4271 I AppManager_4271_4271: onLifecycleReceive() called with: activity = com.xiaomi.passport.ui.page.AccountLoginActivity;5880275;4271, lifecycle = onStart
+10-15 11:51:08.200  4304  4319 I XiaomiFit_4304_4319: com.mi.health:device receive lifecycle event, put: activity
+10-15 11:51:08.201  4304  4319 I XiaomiFit_4304_4319: onReceive: handleAction:0->put
+10-15 11:51:08.201  4271  4984 I AppManager_4271_4984: visibleActivityCount: 2
+10-15 11:51:08.203  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@a327b20, isMain=false, cost=0
+10-15 11:51:08.203  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nk8@3c25cd9, isMain=false, cost=0
+10-15 11:51:08.203  4304  4319 I DeviceManagerComponent_4304_4319: requestDeviceWhenMainResume() called with: activity = com.xiaomi.passport.ui.page.AccountLoginActivity;5880275;4271, lifecycle = onPostCreated
+10-15 11:51:08.204  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nw6@91c2eb1, isMain=false, cost=1
+10-15 11:51:08.205  4304  4319 I AppManager_4304_4319: onLifecycleReceive() called with: activity = com.xiaomi.passport.ui.page.AccountLoginActivity;5880275;4271, lifecycle = onPostCreated
+10-15 11:51:08.205  4271  5071 W InteractionJankMonitor: Initializing without READ_DEVICE_CONFIG permission. enabled=true, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=com.mi.health
+10-15 11:51:08.207  4271  4271 I LifeCycleHandler_4271_4271: onActivityStarted:AccountLoginActivity
+10-15 11:51:08.207  4271  4271 I BikeLifeCycleHandler_4271_4271: onActivityStarted1 com.xiaomi.passport.ui.page.AccountLoginActivity - 3
+10-15 11:51:08.208  4271  4290 I XiaomiFit_4271_4290: com.mi.health receive lifecycle event, put: activity
+10-15 11:51:08.215  4304  4319 I XiaomiFit_4304_4319: com.mi.health:device receive lifecycle event, put: activity
+10-15 11:51:08.216  4304  4319 I XiaomiFit_4304_4319: onReceive: handleAction:0->put
+10-15 11:51:08.216  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@a327b20, isMain=false, cost=0
+10-15 11:51:08.217  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nk8@3c25cd9, isMain=false, cost=0
+10-15 11:51:08.217  4304  4319 I DeviceManagerComponent_4304_4319: requestDeviceWhenMainResume() called with: activity = com.xiaomi.passport.ui.page.AccountLoginActivity;5880275;4271, lifecycle = onStart
+10-15 11:51:08.217  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nw6@91c2eb1, isMain=false, cost=0
+10-15 11:51:08.217  4304  4319 I AppManager_4304_4319: onLifecycleReceive() called with: activity = com.xiaomi.passport.ui.page.AccountLoginActivity;5880275;4271, lifecycle = onStart
+10-15 11:51:08.235  4271  4271 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+10-15 11:51:08.282  4271  4271 W WindowOnBackDispatcher: OnBackInvokedCallback is not enabled for the application.
+10-15 11:51:08.282  4271  4271 W WindowOnBackDispatcher: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+10-15 11:51:08.283  4271  4271 I ActivityLifecycle_4271_4271: onActivityResumed->com.xiaomi.passport.ui.page.AccountLoginActivity@59b9d3
+10-15 11:51:08.283  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@fadd34a, isMain=true, cost=0
+10-15 11:51:08.284  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: v17@89fb2bb, isMain=true, cost=0
+10-15 11:51:08.284  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: w17@c1643d8, isMain=true, cost=0
+10-15 11:51:08.285  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: mw6@f36e331, isMain=true, cost=0
+10-15 11:51:08.285  4271  4271 I ConnectAssist_4271_4271: isForeground true
+10-15 11:51:08.285  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ut4@c7dda16, isMain=true, cost=0
+10-15 11:51:08.285  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: oxq@d0cbf97, isMain=true, cost=0
+10-15 11:51:08.286  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ljt@697c584, isMain=true, cost=0
+10-15 11:51:08.286  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: z4p@cc220cd, isMain=true, cost=0
+10-15 11:51:08.286  4271  4271 I AppManager_4271_4271: onLifecycleReceive() called with: activity = com.xiaomi.passport.ui.page.AccountLoginActivity;5880275;4271, lifecycle = onResume
+10-15 11:51:08.288  4271  4293 I REQ_WIFI_TAG_4271_4293: app back to foreground, handle wifi time: 0, 1792065068288
+10-15 11:51:08.289  4271  4984 I AppManager_4271_4984: visibleActivityCount: 3
+10-15 11:51:08.289  4271  4294 W XiaomiFit_4271_4294: checkRefreshSplashInfo：false,0
+10-15 11:51:08.312  4271  4271 I AutoPageTrack-Activity_4271_4271: onActivity visible stat {activity_name=com.xiaomi.passport.ui.page.AccountLoginActivity, tip=56.0.0.0.26766, expose_type=start, activity_referrer=com.xiaomi.fitness.login.LoginSupportActivity}
+10-15 11:51:08.317  4271  4290 I XiaomiFit_4271_4290: com.mi.health receive lifecycle event, put: activity
+10-15 11:51:08.334  4304  4319 I XiaomiFit_4304_4319: com.mi.health:device receive lifecycle event, put: activity
+10-15 11:51:08.335  4304  4319 I XiaomiFit_4304_4319: onReceive: handleAction:0->put
+10-15 11:51:08.336  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@a327b20, isMain=false, cost=0
+10-15 11:51:08.336  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nk8@3c25cd9, isMain=false, cost=0
+10-15 11:51:08.336  4304  4319 I DeviceManagerComponent_4304_4319: requestDeviceWhenMainResume() called with: activity = com.xiaomi.passport.ui.page.AccountLoginActivity;5880275;4271, lifecycle = onResume
+10-15 11:51:08.338  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nw6@91c2eb1, isMain=false, cost=2
+10-15 11:51:08.339  4304  4319 I AppManager_4304_4319: onLifecycleReceive() called with: activity = com.xiaomi.passport.ui.page.AccountLoginActivity;5880275;4271, lifecycle = onResume
+10-15 11:51:08.349  4271  4369 D EGL_emulation: app_time_stats: avg=20.79ms min=4.81ms max=336.25ms count=48
+10-15 11:51:08.404  4271  4271 W WindowOnBackDispatcher: OnBackInvokedCallback is not enabled for the application.
+10-15 11:51:08.404  4271  4271 W WindowOnBackDispatcher: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+10-15 11:51:08.450  4271  5099 D TrafficStats: tagSocket(349) with statsTag=0xffffffff, statsUid=-1
+10-15 11:51:08.455  4271  5097 D TrafficStats: tagSocket(316) with statsTag=0xffffffff, statsUid=-1
+10-15 11:51:08.564  4271  4271 I DataBindingAdapter_4271_4271: setLottie response: https://cdn.cnbj1.fds.api.mi-img.com/hlth-common-resource/widget/watch/all/add_new_white.zip?Expires=9223372036854775807&GalaxyAccessKeyId=AKT2UWBXKVZSRFIQAA&Signature=ncZgsiPQSCVVa3TTVnpQDsTM69c=
+10-15 11:51:08.565  4271  5108 D TrafficStats: tagSocket(375) with statsTag=0xffffffff, statsUid=-1
+10-15 11:51:08.578  4271  5109 D TrafficStats: tagSocket(379) with statsTag=0xffffffff, statsUid=-1
+10-15 11:51:08.603  4271  4271 D AutofillManager: notifyViewReadyInner:1073741826
+10-15 11:51:08.604  4271  4271 D AutofillManager: notifyViewReadyInner:1073741827
+10-15 11:51:09.353  4271  4271 D VRI[MainActivity]: visibilityChanged oldVisibility=true newVisibility=false
+10-15 11:51:09.353  4271  4271 D VRI[LoginSupportActivity]: visibilityChanged oldVisibility=true newVisibility=false
+10-15 11:51:09.409  4271  4271 I ActivityLifecycle_4271_4271: onActivityStopped->com.xiaomi.fitness.login.LoginSupportActivity@432594c
+10-15 11:51:09.409  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@fadd34a, isMain=true, cost=0
+10-15 11:51:09.409  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: v17@89fb2bb, isMain=true, cost=0
+10-15 11:51:09.410  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: w17@c1643d8, isMain=true, cost=0
+10-15 11:51:09.410  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: mw6@f36e331, isMain=true, cost=0
+10-15 11:51:09.411  4271  4271 I ConnectAssist_4271_4271: isForeground true
+10-15 11:51:09.411  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ut4@c7dda16, isMain=true, cost=0
+10-15 11:51:09.411  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: oxq@d0cbf97, isMain=true, cost=0
+10-15 11:51:09.412  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ljt@697c584, isMain=true, cost=0
+10-15 11:51:09.412  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: z4p@cc220cd, isMain=true, cost=0
+10-15 11:51:09.412  4271  4984 I AppManager_4271_4984: visibleActivityCount: 3
+10-15 11:51:09.414  4271  4271 I AppManager_4271_4271: onLifecycleReceive() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onStop
+10-15 11:51:09.417  4271  4290 I XiaomiFit_4271_4290: com.mi.health receive lifecycle event, put: activity
+10-15 11:51:09.423  4271  4271 I LifeCycleHandler_4271_4271: onActivityStopped:LoginSupportActivity
+10-15 11:51:09.424  4271  4271 I BikeLifeCycleHandler_4271_4271: onActivityStopped1 com.xiaomi.fitness.login.LoginSupportActivity - 2
+10-15 11:51:09.424  4304  4319 I XiaomiFit_4304_4319: com.mi.health:device receive lifecycle event, put: activity
+10-15 11:51:09.425  4304  4319 I XiaomiFit_4304_4319: onReceive: handleAction:0->put
+10-15 11:51:09.431  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@a327b20, isMain=false, cost=0
+10-15 11:51:09.431  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nk8@3c25cd9, isMain=false, cost=0
+10-15 11:51:09.431  4304  4319 I DeviceManagerComponent_4304_4319: requestDeviceWhenMainResume() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onStop
+10-15 11:51:09.433  4271  4271 I ActivityLifecycle_4271_4271: onActivityStopped->com.xiaomi.fitness.main.MainActivity@83f6622
+10-15 11:51:09.433  4271  4271 I XiaomiFit_4271_4271: deliver main activity create event: onStop>>>com.mi.health
+10-15 11:51:09.433  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@fadd34a, isMain=true, cost=0
+10-15 11:51:09.434  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nw6@91c2eb1, isMain=false, cost=2
+10-15 11:51:09.434  4304  4319 I AppManager_4304_4319: onLifecycleReceive() called with: activity = com.xiaomi.fitness.login.LoginSupportActivity;70408524;4271, lifecycle = onStop
+10-15 11:51:09.435  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: v17@89fb2bb, isMain=true, cost=1
+10-15 11:51:09.436  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: w17@c1643d8, isMain=true, cost=0
+10-15 11:51:09.436  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: mw6@f36e331, isMain=true, cost=0
+10-15 11:51:09.437  4271  4271 I ConnectAssist_4271_4271: isForeground true
+10-15 11:51:09.438  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ut4@c7dda16, isMain=true, cost=1
+10-15 11:51:09.438  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: oxq@d0cbf97, isMain=true, cost=0
+10-15 11:51:09.440  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: ljt@697c584, isMain=true, cost=2
+10-15 11:51:09.440  4271  4984 I AppManager_4271_4984: visibleActivityCount: 2
+10-15 11:51:09.441  4271  4271 I LifecycleReceiver_4271_4271: dispatchLifecycle: z4p@cc220cd, isMain=true, cost=0
+10-15 11:51:09.441  4271  4271 I AppManager_4271_4271: onLifecycleReceive() called with: activity = com.xiaomi.fitness.main.MainActivity;138372642;4271, lifecycle = onStop
+10-15 11:51:09.447  4271  4271 I LifeCycleHandler_4271_4271: onActivityStopped:MainActivity
+10-15 11:51:09.448  4271  4271 I BikeLifeCycleHandler_4271_4271: onActivityStopped1 com.xiaomi.fitness.main.MainActivity - 1
+10-15 11:51:09.449  4271  4290 I XiaomiFit_4271_4290: com.mi.health receive lifecycle event, put: activity
+10-15 11:51:09.451  4304  4319 I XiaomiFit_4304_4319: com.mi.health:device receive lifecycle event, put: activity
+10-15 11:51:09.453  4271  4271 I TaskImpl_4271_4271: onPageShowChanged：com.xiaomi.fitness.sport.sporttab.SportTabV4Fragment null---false
+10-15 11:51:09.455  4271  4271 I AutoPageTrack-Fragment_4271_4271: onFragment invisible stat {fragment_name=com.xiaomi.fitness.device.manager.ui.tab.DeviceTabFragmentV4, tip=56.0.0.0.26766, expose_type=end, duration_sec=2}
+10-15 11:51:09.455  4304  4319 I XiaomiFit_4304_4319: onReceive: handleAction:0->put
+10-15 11:51:09.456  4271  4271 I TaskImpl_4271_4271: onPageShowChanged：com.xiaomi.fitness.device.manager.ui.tab.DeviceTabFragmentV4 null---false
+10-15 11:51:09.456  4304  4304 I XiaomiFit_4304_4304: deliver main activity create event: onStop>>>com.mi.health:device
+10-15 11:51:09.457  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: com.xiaomi.fitness.component.AppCallbackMediator$listenAppLifecycle$1@a327b20, isMain=false, cost=2
+10-15 11:51:09.458  4271  4271 I DeviceTabFragmentV4_4271_4271: devices page show durationSec is 2
+10-15 11:51:09.461  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nk8@3c25cd9, isMain=false, cost=0
+10-15 11:51:09.462  4304  4319 I DeviceManagerComponent_4304_4319: requestDeviceWhenMainResume() called with: activity = com.xiaomi.fitness.main.MainActivity;138372642;4271, lifecycle = onStop
+10-15 11:51:09.464  4304  4319 I DeviceManagerComponent_4304_4319: requestDeviceWhenMainResume() called with: activity = com.xiaomi.fitness.main.MainActivity;138372642;4271, ON_RESUME
+10-15 11:51:09.465  4304  4319 I LifecycleReceiver_4304_4319: dispatchLifecycle: nw6@91c2eb1, isMain=false, cost=4
+10-15 11:51:09.465  4271  4271 I AutoPageTrack-Fragment_4271_4271: onFragment invisible stat {fragment_name=com.xiaomi.fitness.device.manager.ui.tab.DeviceTabParentFragmentV4, tip=56.0.0.0.26766, expose_type=end, duration_sec=2}
+10-15 11:51:09.465  4271  4271 I TaskImpl_4271_4271: onPageShowChanged：com.xiaomi.fitness.device.manager.ui.tab.DeviceTabParentFragmentV4 null---false
+10-15 11:51:09.467  4304  4319 I AppManager_4304_4319: onLifecycleReceive() called with: activity = com.xiaomi.fitness.main.MainActivity;138372642;4271, lifecycle = onStop
+10-15 11:51:09.493  4271  4654 D TrafficStats: tagSocket(175) with statsTag=0xffffffff, statsUid=-1

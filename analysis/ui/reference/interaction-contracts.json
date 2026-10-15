@@ -1,0 +1,15 @@
+{
+  "authority": "New cross-business contracts distilled from shipped source; not original source and not runtime validation",
+  "rules": [
+    {"id":"navigation.reselect", "observed":"Current native primary-tab reselection callback performs no action.", "implement":"Keep the current page/state unless the new product explicitly chooses a different behavior.", "source":"native-pages.md"},
+    {"id":"navigation.context", "observed":"Health detail navigation carries source item, date and device context.", "implement":"Carry itemId/date/sourcePage through detail navigation; preserve context on return.", "source":"native-pages.md"},
+    {"id":"refresh.intent", "observed":"Health onVisible triggers non-manual sync; pull-to-refresh triggers manual sync.", "implement":"Separate passive refresh from explicit refresh and show user-initiated progress without blanking previous content by default.", "scope":"First sentence is code evidence; content-preservation policy is an adaptation.", "source":"native-pages.md"},
+    {"id":"action.validity", "observed":"Region next action is disabled without valid CountryInfo.", "implement":"Derive submit.enabled from validated input and pending state; do not navigate on invalid submission.", "source":"native-pages.md"},
+    {"id":"row.disabled-feedback", "observed":"allowClickWhenDisabled may retain ACTION_UP performClick despite disabled appearance.", "implement":"Model disabled visual state and permitted explanation action separately; never silently execute the restricted operation.", "source":"design-system.md"},
+    {"id":"permission.reminder", "observed":"Some device permission reminders have a non-forced 48-hour cooldown; forced user actions can bypass the reminder throttle.", "implement":"Use an explicit configurable reminder policy. Do not impose this device-specific 48-hour value on unrelated permissions.", "source":"native-pages.md"},
+    {"id":"asset.prepare-before-navigation", "observed":"Share checks required artwork; missing asset shows download progress, success continues and failure gives short feedback.", "implement":"Represent prerequisite preparation as idle/preparing/ready/error, with progress and recovery while retaining the user's destination.", "source":"native-pages.md"},
+    {"id":"tab.transition-lock", "observed":"RN top tabs ignore clicks while the pager is not idle.", "implement":"Prevent overlapping transitions; release the guard when the pager reports idle.", "source":"rn-pages.md"},
+    {"id":"settings.leading-throttle", "observed":"RN settings row click uses a 300ms leading-only throttle.", "implement":"Preserve a leading-only action guard for the matching component; do not turn 300ms into a universal latency for every control.", "source":"rn-pages.md"},
+    {"id":"state.partition", "observed":"Privacy basic mode, logged-out state, no-device state and simple visual theme are distinct source conditions.", "implement":"Keep mode/auth/content/visual-preference state independent. Avoid one boolean that hides all account and device content.", "source":"native-pages.md"}
+  ]
+}

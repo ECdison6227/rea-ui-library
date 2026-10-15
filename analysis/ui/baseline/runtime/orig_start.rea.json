@@ -1,0 +1,52 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_1d68d9de10813f8c890cbbf1c15599391b3f9e04c8e908d4554ec16a4f13e17f\",\"subject\":null,\"provider\":{\"id\":\"adb\",\"name\":\"Android Debug Bridge\",\"version\":\"37.0.1-15733141\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"start_adb_app\",\"parameters\":{\"serial\":\"emulator-5580\",\"package\":\"com.mi.health\"},\"raw_result\":{\"stdout\":\"Starting: Intent { cmp=com.mi.health/com.xiaomi.fitness.login.SplashActivity }\\r\\nStatus: ok\\r\\nLaunchState: COLD\\r\\nActivity: com.mi.health/com.xiaomi.fitness.main.MainActivity\\r\\nTotalTime: 3564\\r\\nWaitTime: 3569\\r\\nComplete\\r\\n\",\"stderr\":\"\"},\"normalized_result\":{\"client\":{\"binary_path\":\"adb\",\"path_source\":\"path\",\"version\":\"37.0.1-15733141\",\"installed_path\":\"C:\\\\Users\\\\edsjrcheng\\\\AppData\\\\Local\\\\Microsoft\\\\WinGet\\\\Packages\\\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\\\platform-tools\\\\adb.exe\"},\"serial\":\"emulator-5580\",\"package_name\":\"com.mi.health\",\"component\":\"com.mi.health/com.xiaomi.fitness.login.SplashActivity\",\"started_activity\":\"cmp=com.mi.health/com.xiaomi.fitness.login.SplashActivity\",\"reported_activity\":\"com.mi.health/com.xiaomi.fitness.main.MainActivity\",\"reported_status\":\"ok\"},\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Artifact identity is unavailable for this observation.\",\"Starting an activity changes device state; am start -W waits for launch completion but no lifecycle observation is captured\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_1d68d9de10813f8c890cbbf1c15599391b3f9e04c8e908d4554ec16a4f13e17f",
+    "subject": null,
+    "provider": {
+      "id": "adb",
+      "name": "Android Debug Bridge",
+      "version": "37.0.1-15733141"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "start_adb_app",
+    "parameters": {
+      "serial": "emulator-5580",
+      "package": "com.mi.health"
+    },
+    "raw_result": {
+      "stdout": "Starting: Intent { cmp=com.mi.health/com.xiaomi.fitness.login.SplashActivity }\r\nStatus: ok\r\nLaunchState: COLD\r\nActivity: com.mi.health/com.xiaomi.fitness.main.MainActivity\r\nTotalTime: 3564\r\nWaitTime: 3569\r\nComplete\r\n",
+      "stderr": ""
+    },
+    "normalized_result": {
+      "client": {
+        "binary_path": "adb",
+        "path_source": "path",
+        "version": "37.0.1-15733141",
+        "installed_path": "C:\\Users\\edsjrcheng\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5580",
+      "package_name": "com.mi.health",
+      "component": "com.mi.health/com.xiaomi.fitness.login.SplashActivity",
+      "started_activity": "cmp=com.mi.health/com.xiaomi.fitness.login.SplashActivity",
+      "reported_activity": "com.mi.health/com.xiaomi.fitness.main.MainActivity",
+      "reported_status": "ok"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Starting an activity changes device state; am start -W waits for launch completion but no lifecycle observation is captured"
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  }
+}

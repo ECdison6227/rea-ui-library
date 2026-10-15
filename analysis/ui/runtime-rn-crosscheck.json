@@ -1,0 +1,640 @@
+{
+  "title": "MineTab 运行时与内置 RN 静态基线窄交叉验证",
+  "scope": "Two existing hierarchy captures, builtin modules, read-only PID logs, and narrow AST comparison of the parent-retained active mine bundle. No new UI action, shared REA session, Java analysis or target bundle execution.",
+  "environment": {
+    "source": "Parent agent runtime environment record plus read-only adb timezone query",
+    "android": 15,
+    "api": 35,
+    "viewportPx": [
+      1080,
+      2400
+    ],
+    "densityDpi": 440,
+    "densityScale": 2.75,
+    "fontScale": 1,
+    "locale": "zh-CN",
+    "device": "emulator-5580",
+    "deviceTimezone": "GMT",
+    "adbDateSample": "2026-10-15T12:08:49+0000"
+  },
+  "snapshots": [
+    {
+      "id": "11-mine-after-login-cancel",
+      "at": "2026-10-15T11:55:17.648Z",
+      "path": "analysis/ui/runtime/hierarchy/11-mine-after-login-cancel.json",
+      "sha256": "ff50174fa7c4d19edb0dcb2533e3ac6c4b84c52eed266ab840ff723c97469c15",
+      "entryCount": 4,
+      "entryOrder": [
+        "我的活动",
+        "我的课程",
+        "我的订单",
+        "我的亲友"
+      ],
+      "items": [
+        {
+          "label": "我的活动",
+          "labelNode": 37,
+          "labelBoundsPx": "[111,588][267,673]",
+          "clickTargetNode": 34,
+          "clickBoundsPx": "[72,505][306,673]",
+          "widthPx": 234,
+          "heightPx": 168,
+          "iconBoundsPx": "[156,505][222,571]",
+          "iconSizePx": [
+            66,
+            66
+          ]
+        },
+        {
+          "label": "我的课程",
+          "labelNode": 41,
+          "labelBoundsPx": "[345,588][501,673]",
+          "clickTargetNode": 38,
+          "clickBoundsPx": "[306,505][540,673]",
+          "widthPx": 234,
+          "heightPx": 168,
+          "iconBoundsPx": "[390,505][456,571]",
+          "iconSizePx": [
+            66,
+            66
+          ]
+        },
+        {
+          "label": "我的订单",
+          "labelNode": 45,
+          "labelBoundsPx": "[579,588][735,673]",
+          "clickTargetNode": 42,
+          "clickBoundsPx": "[540,505][774,673]",
+          "widthPx": 234,
+          "heightPx": 168,
+          "iconBoundsPx": "[624,505][690,571]",
+          "iconSizePx": [
+            66,
+            66
+          ]
+        },
+        {
+          "label": "我的亲友",
+          "labelNode": 49,
+          "labelBoundsPx": "[813,588][969,673]",
+          "clickTargetNode": 46,
+          "clickBoundsPx": "[774,505][1009,673]",
+          "widthPx": 235,
+          "heightPx": 168,
+          "iconBoundsPx": "[858,505][924,571]",
+          "iconSizePx": [
+            66,
+            66
+          ]
+        }
+      ],
+      "rowBoundsPx": {
+        "left": 72,
+        "right": 1009,
+        "width": 937
+      },
+      "rowInsetsApproxDp": {
+        "left": 26.181818181818183,
+        "right": 25.818181818181817
+      },
+      "title": {
+        "text": " ",
+        "node": 16,
+        "boundsPx": "[72,151][94,268]"
+      }
+    },
+    {
+      "id": "17c-mine-night-visible",
+      "at": "2026-10-15T12:03:29.113Z",
+      "path": "analysis/ui/runtime/hierarchy/17c-mine-night-visible.json",
+      "sha256": "6485458628e797be3789fdfd1bc0fe7c246f4261b37000b8aa3f9e6a8001feaa",
+      "entryCount": 5,
+      "entryOrder": [
+        "我的活动",
+        "我的课程",
+        "我的亲友",
+        "我的奖品",
+        "我的订单"
+      ],
+      "items": [
+        {
+          "label": "我的活动",
+          "labelNode": 37,
+          "labelBoundsPx": "[56,588][212,673]",
+          "clickTargetNode": 34,
+          "clickBoundsPx": "[33,505][236,673]",
+          "widthPx": 203,
+          "heightPx": 168,
+          "iconBoundsPx": "[101,505][167,571]",
+          "iconSizePx": [
+            66,
+            66
+          ]
+        },
+        {
+          "label": "我的课程",
+          "labelNode": 41,
+          "labelBoundsPx": "[259,588][415,673]",
+          "clickTargetNode": 38,
+          "clickBoundsPx": "[236,505][439,673]",
+          "widthPx": 203,
+          "heightPx": 168,
+          "iconBoundsPx": "[304,505][370,571]",
+          "iconSizePx": [
+            66,
+            66
+          ]
+        },
+        {
+          "label": "我的亲友",
+          "labelNode": 45,
+          "labelBoundsPx": "[462,588][618,673]",
+          "clickTargetNode": 42,
+          "clickBoundsPx": "[439,505][641,673]",
+          "widthPx": 202,
+          "heightPx": 168,
+          "iconBoundsPx": "[507,505][573,571]",
+          "iconSizePx": [
+            66,
+            66
+          ]
+        },
+        {
+          "label": "我的奖品",
+          "labelNode": 49,
+          "labelBoundsPx": "[664,588][820,673]",
+          "clickTargetNode": 46,
+          "clickBoundsPx": "[641,505][844,673]",
+          "widthPx": 203,
+          "heightPx": 168,
+          "iconBoundsPx": "[709,505][775,571]",
+          "iconSizePx": [
+            66,
+            66
+          ]
+        },
+        {
+          "label": "我的订单",
+          "labelNode": 53,
+          "labelBoundsPx": "[867,588][1023,673]",
+          "clickTargetNode": 50,
+          "clickBoundsPx": "[844,505][1047,673]",
+          "widthPx": 203,
+          "heightPx": 168,
+          "iconBoundsPx": "[912,505][978,571]",
+          "iconSizePx": [
+            66,
+            66
+          ]
+        }
+      ],
+      "rowBoundsPx": {
+        "left": 33,
+        "right": 1047,
+        "width": 1014
+      },
+      "rowInsetsApproxDp": {
+        "left": 12,
+        "right": 12
+      },
+      "title": {
+        "text": " ",
+        "node": 16,
+        "boundsPx": "[72,151][94,268]"
+      }
+    }
+  ],
+  "sourceEvidence": [
+    {
+      "file": "analysis/ui/rn-evidence/mine-mi-412.js",
+      "sha256": "d7210ee3ee23a0c759e5419ab731e8a8ff7c23099a66b855ce2631ba5b9ad439"
+    },
+    {
+      "file": "analysis/ui/rn-evidence/mine-mi-414.js",
+      "sha256": "e2d07f6782fea452c47b91bd082753f034fa1fe49ece84fc3dffd11e57eea75d"
+    },
+    {
+      "file": "analysis/ui/rn-evidence/mine-mi-620.js",
+      "sha256": "37d81aa581f50f908e38d8ba8e763fe1e5e51172531e1f0264cd3c4ee13de780"
+    },
+    {
+      "file": "analysis/ui/rn-evidence/mine-mi-621.js",
+      "sha256": "8a148c2e93b1c44ed37b1f281fcc485e021c5c5a22a75f391912f855ccadada7"
+    },
+    {
+      "file": "analysis/ui/rn-evidence/mine-mi-512.js",
+      "sha256": "bd180def668248dea23c4899f0603f69ec0c2e66d75ef1377dee7d2bd122ab4e"
+    },
+    {
+      "file": "analysis/ui/rn-evidence/mine-mi-408.js",
+      "sha256": "8eddd3df6997ef3acda1b9ab8dfd808db1a389297ec8bf0b726eb3e8ddd131dc"
+    },
+    {
+      "file": "analysis/ui/rn-evidence/mine-mi-423.js",
+      "sha256": "df2390e190a1e4ce27fd5509a731f3d3da32026308dbae8212772aad181bb85d"
+    }
+  ],
+  "runtimeBundleIdentity": {
+    "authority": "Observed process log metadata + retained active bundle file SHA-256 + narrow source AST",
+    "logEvidence": {
+      "path": "analysis/ui/runtime/logs/rn-bundle-log-probe.json",
+      "sha256": "a43cd8b7278ded0f5ea093c4b8a924526a1eee6a01b0746b0428408a3599bf79",
+      "pid": "4271"
+    },
+    "builtinInfoEvidence": {
+      "path": "analysis/assets/extracted/7ac11763bcbe7105-bundleInfo.json",
+      "sha256": "3daf19ff81824cf2f838caec80b85effeece50abdc1302bbd569cc3e23ee08de"
+    },
+    "builtinMineMetadata": {
+      "contentHash": "6079ee7e8efa08fe8de55ccf13ed2a8c",
+      "buildNum": "19419013",
+      "urlmd5": "31c9f454df8a88403912b6eeed02dc60",
+      "id": "35191",
+      "residentMemory": true,
+      "moduleName": "mine",
+      "branch": "release-202606-4",
+      "maxNativeApiLevel": 10,
+      "maxCommonJSApiLevel": 3,
+      "originalClassName": "BundleInfo",
+      "bundlePath": "builtin_bundles_skytree/mine.zip",
+      "version": "11.190.11",
+      "updateType": 2,
+      "noticeStrategy": "[{\"reminderLocation\":0,\"reminderType\":3,\"popTitle\":\"\",\"popContents\":\"\",\"updateMinVersion\":\"\",\"updateMaxVersion\":\"\"}]",
+      "moduleMapVersion": 8,
+      "moduleId": "143",
+      "description": "",
+      "makeTime": "20260709140144",
+      "urlcdn": "https://skytree.gnr.mi-img.com/skytree/FCBA32FB3BA596F8CCDCA7CEC7F76D50_1783577122979.zip"
+    },
+    "runtimeMineMetadata": [
+      {
+        "processLogLine": 3298,
+        "logTimestamp": "10-15 11:52:18.767",
+        "metadata": {
+          "appName": "miwear",
+          "branch": null,
+          "bundlePath": "/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/mine/31c9f454df8a88403912b6eeed02dc60",
+          "bundlePathFileName": "/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/mine/31c9f454df8a88403912b6eeed02dc60/index.android.bundle",
+          "description": "",
+          "maketime": "20260709140144",
+          "maxCommonApiLevel": 3,
+          "maxCommonJSApiLevel": 3,
+          "maxNativeApiLevel": 10,
+          "md5": "31c9f454df8a88403912b6eeed02dc60",
+          "memoryMode": 1,
+          "module": "mine",
+          "moduleIdMapVersion": "8",
+          "needUpdate": 1,
+          "platform": "Android",
+          "residentMemory": 1,
+          "rnEngineVersion": "610",
+          "updateStrategy": 2,
+          "version": "11.190.11"
+        }
+      },
+      {
+        "processLogLine": 5735,
+        "logTimestamp": "10-15 12:01:36.675",
+        "metadata": {
+          "appName": "miwear",
+          "branch": null,
+          "bundlePath": "/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/mine/e5d8d3390f6109d6c50e9a27d0143a22",
+          "bundlePathFileName": "/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/mine/e5d8d3390f6109d6c50e9a27d0143a22/index.android.bundle",
+          "description": "",
+          "maketime": "20260721193548",
+          "maxCommonApiLevel": 3,
+          "maxCommonJSApiLevel": 3,
+          "maxNativeApiLevel": 10,
+          "md5": "e5d8d3390f6109d6c50e9a27d0143a22",
+          "memoryMode": 1,
+          "module": "mine",
+          "moduleIdMapVersion": "8",
+          "needUpdate": 1,
+          "platform": "Android",
+          "residentMemory": 1,
+          "rnEngineVersion": "610",
+          "updateStrategy": 2,
+          "version": "11.202.21"
+        }
+      }
+    ],
+    "activeBundle": {
+      "file": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "reaAcquisitionEvidence": "ev_4b19bdb230e5223001a26c650fb1510cee45222ac78f7712f381ac8115c85bbb",
+      "config": {
+        "moduleIDPrefix": "mi",
+        "name": "mine",
+        "maxCommonApiLevel": 3,
+        "maxNativeApiLevel": 10,
+        "moduleIdMapVersion": "8",
+        "SDKVersion": "610",
+        "description": "MINE 包",
+        "resourceDirectory": "app/assets/mine/res",
+        "maketime": 20260721193548,
+        "buildnum": 35681,
+        "pack_version": "11.202.21",
+        "YRN_BUNDLE_MD5": "353b0b90ac5b1d6eaba6b1b340600ab4"
+      },
+      "configFile": "analysis/ui/runtime/active-bundles/mine/config/buz.config.json"
+    },
+    "note": "Log md5 matches cache directory and builtin urlmd5. It is not represented here as the index.android.bundle file MD5 or SHA-256."
+  },
+  "activeModules": [
+    {
+      "moduleId": "mi-412",
+      "bundleLine": 420,
+      "file": "analysis/ui/rn-evidence/active-mine-mi-412.js",
+      "moduleFileSha256": "c0576c3e0b739981ebf2ef614ae1674c9535f36ae3f1dcb673625bd734ef5d0b",
+      "source": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sourceSha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958"
+    },
+    {
+      "moduleId": "mi-414",
+      "bundleLine": 422,
+      "file": "analysis/ui/rn-evidence/active-mine-mi-414.js",
+      "moduleFileSha256": "e2d07f6782fea452c47b91bd082753f034fa1fe49ece84fc3dffd11e57eea75d",
+      "source": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sourceSha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958"
+    },
+    {
+      "moduleId": "mi-406",
+      "bundleLine": 414,
+      "file": "analysis/ui/rn-evidence/active-mine-mi-406.js",
+      "moduleFileSha256": "2fcadefcdd8822430357820a98cbab93e9fc44659813410e12a5d313cc0eff79",
+      "source": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sourceSha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958"
+    },
+    {
+      "moduleId": "mi-512",
+      "bundleLine": 520,
+      "file": "analysis/ui/rn-evidence/active-mine-mi-512.js",
+      "moduleFileSha256": "c8409622d3cddc51bc9d8883669552106b07c28f8367a6eef676e1935ece611b",
+      "source": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sourceSha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958"
+    },
+    {
+      "moduleId": "mi-621",
+      "bundleLine": 629,
+      "file": "analysis/ui/rn-evidence/active-mine-mi-621.js",
+      "moduleFileSha256": "781ce3ecf93e5555b4e1db01d6a586c3a1efc435b56ac53303d6e1374582bcea",
+      "source": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sourceSha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958"
+    },
+    {
+      "moduleId": "mi-622",
+      "bundleLine": 630,
+      "file": "analysis/ui/rn-evidence/active-mine-mi-622.js",
+      "moduleFileSha256": "45551d86dcdf50b1969dc624432d5d56fe68f7a4e047be2f50fc71ee4d05e353",
+      "source": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sourceSha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958"
+    }
+  ],
+  "quickActionsAstComparison": {
+    "baseline": {
+      "version": "11.190.11",
+      "moduleId": "mi-620",
+      "entries": [
+        {
+          "props": {
+            "icon": "activity",
+            "onPress": {
+              "$code": "function(){(0,p.clickMyActivityTrack)(),y.push(\"miwear/sport/MyActivity\")}"
+            }
+          },
+          "translationKey": "mine.assets.item.active"
+        },
+        {
+          "props": {
+            "icon": "course",
+            "onPress": {
+              "$code": "function(){(0,p.clickMyCourseTrack)(),y.push(\"miwear/sport/MyCourse\")}"
+            }
+          },
+          "translationKey": "mine.assets.item.course"
+        },
+        {
+          "props": {
+            "icon": "order",
+            "onPress": {
+              "$code": "function(){(0,p.clickMyOrderTrack)(),y.push(\"miwear/dial/OrderPage\")}"
+            }
+          },
+          "translationKey": "mine.assets.item.order"
+        },
+        {
+          "props": {
+            "icon": "friend",
+            "onPress": {
+              "$code": "function(){(0,p.clickMyFriendTrack)(),y.push(\"com.xiaomi.fitness.relative.ui.RelativeCareHomePageActivity\",{_rt:\"native\",_useNativeRoute:!0})}"
+            }
+          },
+          "translationKey": "mine.assets.item.friend"
+        }
+      ],
+      "count": 4,
+      "rowProps": {
+        "mt": "8px",
+        "px": "14px",
+        "pt": "18px",
+        "mb": "5px",
+        "justifyContent": "space-between"
+      },
+      "rowChildNodeTypes": [
+        "CallExpression",
+        "CallExpression",
+        "CallExpression",
+        "CallExpression"
+      ],
+      "entryCallsUnconditionalInRow": true
+    },
+    "active": {
+      "version": "11.202.21",
+      "moduleId": "mi-621",
+      "entries": [
+        {
+          "props": {
+            "icon": "activity",
+            "onPress": {
+              "$code": "function(){(0,v.clickMyActivityTrack)(),k.push(\"miwear/sport/MyActivity\")}"
+            }
+          },
+          "translationKey": "mine.assets.item.active"
+        },
+        {
+          "props": {
+            "icon": "course",
+            "onPress": {
+              "$code": "function(){(0,v.clickMyCourseTrack)(),k.push(\"miwear/sport/MyCourse\")}"
+            }
+          },
+          "translationKey": "mine.assets.item.course"
+        },
+        {
+          "props": {
+            "icon": "friend",
+            "onPress": {
+              "$code": "function(){(0,v.clickMyFriendTrack)(),k.push(\"com.xiaomi.fitness.relative.ui.RelativeCareHomePageActivity\",{_rt:\"native\",_useNativeRoute:!0})}"
+            }
+          },
+          "translationKey": "mine.assets.item.friend"
+        },
+        {
+          "props": {
+            "icon": "prize",
+            "onPress": {
+              "$code": "function(){(0,y.clickMyPrizeTrack)(),k.push(\"com.xiaomi.fitness.webview.healthwebview.HealthWebViewActivity\",{_rt:\"native\",URL:\"https://\"+h+\"/mobile/lotteryRecord?channelType=5\"})}"
+            }
+          },
+          "translationKey": "mine.assets.item.prize"
+        },
+        {
+          "props": {
+            "icon": "order",
+            "onPress": {
+              "$code": "function(){(0,v.clickMyOrderTrack)(),k.push(\"miwear/dial/OrderPage\")}"
+            }
+          },
+          "translationKey": "mine.assets.item.order"
+        }
+      ],
+      "count": 5,
+      "rowProps": {
+        "mt": "8px",
+        "pt": "18px",
+        "mb": "5px",
+        "justifyContent": "space-between"
+      },
+      "rowChildNodeTypes": [
+        "CallExpression",
+        "CallExpression",
+        "CallExpression",
+        "CallExpression",
+        "CallExpression"
+      ],
+      "entryCallsUnconditionalInRow": true
+    },
+    "unchangedFactories": {
+      "entranceItem": true,
+      "titleContainer": true
+    },
+    "result": "Updated code unconditionally has 5 entry calls, reorders friend/order, adds prize, and removes row px=14px. This accounts for the observed variants without a theme-dependent count rule.",
+    "prizeAction": {
+      "authority": "source-call only, not exercised",
+      "nativeRoute": "com.xiaomi.fitness.webview.healthwebview.HealthWebViewActivity",
+      "urlExpression": "https:// + getHttpHost(HostType.watch) + /mobile/lotteryRecord?channelType=5",
+      "loginGate": "Shared EntranceItem calls useLoginStatusCheck before onPress",
+      "theme": "prize_light.webp / prize_dark.webp changes icon only"
+    }
+  },
+  "sourceFindings": {
+    "title": {
+      "authority": "shipped-source + observed-runtime",
+      "rule": "mi-412 passes icons but omits title; mi-414 defaults undefined title to one space. Both captures node16 contain one space, not 我的.",
+      "visiblePageHeading": false
+    },
+    "quickActions": {
+      "authority": "shipped-source",
+      "builtinCount": 4,
+      "builtinOrder": [
+        "我的活动",
+        "我的课程",
+        "我的订单",
+        "我的亲友"
+      ],
+      "dynamicCountConditionFound": false,
+      "sourceChain": [
+        "mi-412.MineTab",
+        "mi-423.MyProfileMapPage",
+        "mi-512.QuickActions",
+        "mi-620.QuickActions",
+        "mi-621.EntranceItem"
+      ],
+      "layout": {
+        "row": {
+          "mtDp": 8,
+          "pxDp": 14,
+          "ptDp": 18,
+          "mbDp": 5,
+          "justifyContent": "space-between"
+        },
+        "item": {
+          "flex": 1,
+          "alignItems": "center",
+          "justifyContent": "center"
+        },
+        "icon": {
+          "widthDp": 24,
+          "heightDp": 24,
+          "marginBottomDp": 6
+        },
+        "label": {
+          "fontSizeDp": 14,
+          "fontWeight": "400",
+          "paddingTopDp": 2,
+          "paddingBottomDp": 10,
+          "numberOfLines": 1
+        }
+      },
+      "themeBehavior": "mi-621 changes only light/dark icon source; does not change count or ordering. mi-620 has no color-mode branch.",
+      "wrapper": "mi-408 withRenderFC logs lifecycle and passes props through; it does not inject entries."
+    },
+    "keywordPresence": {
+      "lottery": false,
+      "mine.assets.item.prize": false,
+      "mine.assets.item.award": false,
+      "mine.assets.item.lottery": false,
+      "showPrize": false,
+      "showLottery": false,
+      "奖品": false
+    }
+  },
+  "adjudication": {
+    "countAndOrder": "Runtime 4→5 count and reordering are confirmed observations. Process logs and retained active bundle establish version11.190.11→11.202.21 change between captures; new QuickActions source unconditionally includes prize and the observed order.",
+    "layout": "4-entry row uses approx26dp total left/right inset, matching outer12dp + builtin inner14dp. 5-entry row uses12dp total inset. Count is not the only changed layout parameter.",
+    "preserved": "Both variants keep equal-width items, 24dp icons and the same icon/label vertical bounds in these captures.",
+    "themeCausality": "Count/order/inset difference is explained by the verified business-bundle source version change. Neither QuickActions version contains a theme-dependent entry-count branch.",
+    "unknowns": [
+      "Prize destination runtime behavior after its source-defined navigation; not exercised",
+      "What caused the updater to fetch this package at that moment; not needed to establish the UI code difference"
+    ]
+  },
+  "reconstructionRule": {
+    "authority": "Configurable cross-business implementation is a recommendation; both version-specific fixtures are source- and runtime-confirmed",
+    "entries": "Use an ordered entry list from product configuration; render N equal-width items. Preserve 4-entry and 5-entry source-version fixtures with separate insets. Do not invent a theme-dependent count switch.",
+    "variants": [
+      {
+        "version": "11.190.11",
+        "count": 4,
+        "order": [
+          "我的活动",
+          "我的课程",
+          "我的订单",
+          "我的亲友"
+        ],
+        "totalRowInsetDpApprox": 26
+      },
+      {
+        "version": "11.202.21",
+        "count": 5,
+        "order": [
+          "我的活动",
+          "我的课程",
+          "我的亲友",
+          "我的奖品",
+          "我的订单"
+        ],
+        "totalRowInsetDpApprox": 12
+      }
+    ],
+    "title": "Leave the large title text blank for MineTab while preserving header height and message/add controls."
+  },
+  "verification": {
+    "hierarchyItemOrderVerified": true,
+    "sourceBundleReadOnly": true,
+    "noTargetUiActions": true,
+    "activeBundleSha256Matched": true,
+    "activeModulesParsed": 6,
+    "narrowScopeOnly": true
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "installed_package",
+  "source": "REA device observation",
+  "evidence": {
+    "evidence_id": "ev_da5fdc2c97358e3f637d0fd68eed88e48fd3940e4a43a8dbc99cb23cdbaca735",
+    "subject": null,
+    "provider": {
+      "id": "adb",
+      "name": "Android Debug Bridge",
+      "version": "37.0.1-15733141"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "inspect_adb_package",
+    "parameters": {
+      "serial": "emulator-5580",
+      "package": "com.mi.health"
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "client": {
+        "binary_path": "adb",
+        "path_source": "path",
+        "version": "37.0.1-15733141",
+        "installed_path": "C:\\Users\\edsjrcheng\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5580",
+      "package_name": "com.mi.health",
+      "version_name": "3.57.0",
+      "version_code": 357000,
+      "first_install_time": "2026-10-15 11:41:36",
+      "last_update_time": "2026-10-15 11:42:30",
+      "installer_package_name": "null",
+      "user_id": null,
+      "pkg_flags": "[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]",
+      "requested_permissions_count": 118,
+      "coverage": "complete"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Fields are a fixed projection of dumpsys package output; version-dependent sections are ignored rather than guessed",
+      "requested_permissions_count counts the listed requested permissions section only"
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  }
+}

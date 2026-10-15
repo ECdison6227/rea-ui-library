@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill_horizontal|center" android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/size_11" />
+            <size android:height="@dimen/size_6_7" />
+            <gradient android:startColor="@color/step_widget_horizontal_normal_background_start_color" android:endColor="@color/step_widget_horizontal_normal_background_end_color" android:angle="0.0" android:type="linear" />
+        </shape>
+    </item>
+    <item android:gravity="fill_horizontal|center" android:id="@android:id/progress">
+        <scale android:scaleWidth="100%">
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/size_11" />
+                <size android:height="@dimen/size_6_7" />
+                <gradient android:startColor="@color/step_widget_horizontal_normal_progress_start_color" android:endColor="@color/step_widget_horizontal_normal_progress_end_color" android:angle="0.0" android:type="linear" />
+            </shape>
+        </scale>
+    </item>
+</layer-list>

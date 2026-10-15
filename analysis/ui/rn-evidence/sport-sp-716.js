@@ -1,0 +1,1 @@
+__d(function(g,r,i,a,m,e,d){Object.defineProperty(e,"__esModule",{value:!0}),e.defaultRes=e.TabTypeMap=void 0;var p=r(d[0]),t=[{label:"",value:0,type:p.SportMenuTabType.Sport}];e.defaultRes={tabs:t,activeTab:0},e.TabTypeMap={sport:p.SportMenuTabType.Sport,course:p.SportMenuTabType.Course,plan:p.SportMenuTabType.Plan,weight:p.SportMenuTabType.Weight}},"sp-716",["sp-262"]);

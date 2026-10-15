@@ -1,0 +1,605 @@
+{
+  "schemaVersion": 1,
+  "artifactSha256": "2a80fc5a87353c2c6ef3c01fa0085862fe45e4ddb9c2d272cb3780841b5889a6",
+  "authority": "Portable semantic profile derived from shipped code; see source-specific variants and runtime crosschecks",
+  "profileSelection": {
+    "native": "Android XML and native component contracts",
+    "rn": "Shipped RN/YRN bundle roles; live downloaded bundles may differ"
+  },
+  "native": {
+    "tokenFile": "../design-tokens.json",
+    "cssFile": "../tokens.css",
+    "components": "../components.json"
+  },
+  "rn": {
+    "colorMode": {
+      "initial": "system",
+      "useSystemColorMode": true,
+      "evidence": [
+        {
+          "bundle": "sport",
+          "moduleId": "sp-130",
+          "bundleLine": 138,
+          "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+          "extractedModule": "analysis/ui/rn-evidence/sport-sp-130.js"
+        },
+        {
+          "bundle": "sport",
+          "moduleId": "sp-132",
+          "bundleLine": 140,
+          "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+          "extractedModule": "analysis/ui/rn-evidence/sport-sp-132.js"
+        }
+      ]
+    },
+    "appTheme": {
+      "light": {
+        "bgColor": "#FFFFFF",
+        "LinebgColor": "#0000000D",
+        "popoerBgColor": "#FFFFFF",
+        "hTxtColor": "#000000",
+        "tabLabelColor": "#00000099",
+        "mTxtColor": "#00000066",
+        "sTxtColor": "#00000066",
+        "panelColor": "#FFFFFF",
+        "iBgColor": "#FCFCFC",
+        "skeletonStartColor": "#F6F7F9",
+        "skeletonEndColor": "#F6F7F9",
+        "cardSubtitle": "#00000099",
+        "navBarBgColor": "#F6F7F9",
+        "mainTextColor": "#000000",
+        "subTextColor": "#00000066",
+        "primaryColor": "#FF612E",
+        "toastTextColor": "#000000CC",
+        "toastBorderColor": "#00000019",
+        "toastBgColor": "#FAFAFA",
+        "text_000_FFF90": "#000000",
+        "text_00040_FFF40": "#00000040",
+        "text_00060_FFF60": "#00000060",
+        "Color_E3E3E3_E3E3E330": "#E3E3E3",
+        "text_000_FFFCC": "#000000",
+        "text_000_FFF99": "#000000",
+        "lineColor": "#000000",
+        "text_3C4347_757575": "#3C4347",
+        "text_00099_FFF99": "#00000099"
+      },
+      "dark": {
+        "bgColor": "#191919",
+        "LinebgColor": "#FFFFFF0D",
+        "popoerBgColor": "#2C2C2E",
+        "hTxtColor": "#FFFFFF",
+        "tabLabelColor": "#FFFFFF99",
+        "mTxtColor": "#FFFFFF66",
+        "sTxtColor": "#FFFFFF66",
+        "panelColor": "#19191900",
+        "iBgColor": "#00000066",
+        "skeletonStartColor": "#F6F7F90D",
+        "skeletonEndColor": "#F6F7F915",
+        "cardSubtitle": "#FFFFFF80",
+        "navBarBgColor": "#000000",
+        "mainTextColor": "#FFFFFF",
+        "subTextColor": "#FFFFFF66",
+        "primaryColor": "#F04D18",
+        "toastTextColor": "#FFFFFFCC",
+        "toastBorderColor": "#FFFFFF19",
+        "toastBgColor": "#5C5C5C",
+        "text_000_FFF90": "#FFFFFF90",
+        "text_00040_FFF40": "#FFFFFF40",
+        "text_00060_FFF60": "#FFFFFF60",
+        "Color_E3E3E3_E3E3E330": "#E3E3E330",
+        "text_000_FFFCC": "#FFFFFFCC",
+        "text_000_FFF99": "#FFFFFF99",
+        "lineColor": "#FFFFFF",
+        "text_3C4347_757575": "#757575",
+        "text_00099_FFF99": "#FFFFFF99"
+      },
+      "evidence": [
+        {
+          "bundle": "sport",
+          "moduleId": "sp-293",
+          "bundleLine": 301,
+          "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+          "extractedModule": "analysis/ui/rn-evidence/sport-sp-293.js"
+        }
+      ]
+    },
+    "semanticColors": {
+      "light": {
+        "color.brand.primary": "#FF612E",
+        "color.brand.primaryPressed": "#e5571f",
+        "color.brand.primaryHalo": "rgba(255,97,46,0.2)",
+        "color.link": "#0093ff",
+        "color.error": "#FF3B30",
+        "color.disabled": "#cccccc",
+        "color.activity.status.notStarted": "#BFBFBF",
+        "color.activity.status.ongoing": "#33D9C9",
+        "color.activity.status.ended": "#BFBFBF",
+        "color.activity.status.text": "#FFFFFF",
+        "color.activity.category.free.bg": "#FF6200",
+        "color.activity.category.free.text": "#FFFFFF",
+        "color.activity.category.paid.bg": "#2B2A2A",
+        "color.activity.category.paid.text": "#FAC58D",
+        "color.activity.avatar.border": "#FFFFFF"
+      },
+      "dark": {
+        "color.brand.primary": "#F04D18",
+        "color.brand.primaryPressed": "#cc4416",
+        "color.brand.primaryHalo": "rgba(240,77,24,0.2)",
+        "color.link": "#0093ff",
+        "color.error": "#FF3B30",
+        "color.disabled": "#555555",
+        "color.activity.status.notStarted": "#BFBFBF",
+        "color.activity.status.ongoing": "#33D9C9",
+        "color.activity.status.ended": "#BFBFBF",
+        "color.activity.status.text": "#FFFFFF",
+        "color.activity.category.free.bg": "#FF6200",
+        "color.activity.category.free.text": "#FFFFFF",
+        "color.activity.category.paid.bg": "#3A3A3A",
+        "color.activity.category.paid.text": "#FAC58D",
+        "color.activity.avatar.border": "#191919"
+      },
+      "evidence": [
+        {
+          "bundle": "sport",
+          "moduleId": "sp-311",
+          "bundleLine": 319,
+          "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+          "extractedModule": "analysis/ui/rn-evidence/sport-sp-311.js"
+        }
+      ]
+    },
+    "fontFamilies": {
+      "platformFamilyTargets": {
+        "ios": {
+          "light": "PingFangSC-Light",
+          "normal": "PingFangSC-Regular",
+          "medium": "PingFangSC-Medium",
+          "demibold": "PingFangSC-Semibold",
+          "semibold": "PingFangSC-Semibold",
+          "bold": "PingFangSC-Semibold",
+          "heavy": "PingFangSC-Semibold"
+        },
+        "android": {
+          "light": "mipro-light",
+          "normal": "mipro-normal",
+          "medium": "mipro-medium",
+          "demibold": "mipro-demibold",
+          "semibold": "mipro-semibold",
+          "bold": "mipro-bold",
+          "heavy": "mipro-heavy"
+        }
+      },
+      "scope": "Explicitly used by large title and selected components; bulk NativeBase Text retains platform family unless overridden. Not a universal MiSans font rule.",
+      "evidence": [
+        {
+          "bundle": "sport",
+          "moduleId": "sp-297",
+          "bundleLine": 305,
+          "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+          "extractedModule": "analysis/ui/rn-evidence/sport-sp-297.js"
+        },
+        {
+          "bundle": "sport",
+          "moduleId": "sp-724",
+          "bundleLine": 732,
+          "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+          "extractedModule": "analysis/ui/rn-evidence/sport-sp-724.js"
+        },
+        {
+          "bundle": "sport",
+          "moduleId": "sp-132",
+          "bundleLine": 140,
+          "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+          "extractedModule": "analysis/ui/rn-evidence/sport-sp-132.js"
+        },
+        {
+          "bundle": "common",
+          "moduleId": 1914,
+          "bundleLine": 1919,
+          "source": "analysis\\assets\\extracted\\42856e26522e2704-index.android.bundle",
+          "extractedModule": "analysis/ui/rn-evidence/common-1914.js"
+        }
+      ]
+    },
+    "typography": [
+      {
+        "role": "Large page title",
+        "size": {
+          "android": 32,
+          "ios": 30
+        },
+        "familyWeight": "light",
+        "evidence": [
+          {
+            "bundle": "sport",
+            "moduleId": "sp-724",
+            "bundleLine": 732,
+            "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+            "extractedModule": "analysis/ui/rn-evidence/sport-sp-724.js"
+          }
+        ]
+      },
+      {
+        "role": "Secondary page base title",
+        "size": 20,
+        "evidence": [
+          {
+            "bundle": "dial",
+            "moduleId": "di-138",
+            "bundleLine": 146,
+            "source": "analysis\\assets\\extracted\\b48567af188568ad-index.android.bundle",
+            "extractedModule": "analysis/ui/rn-evidence/dial-di-138.js"
+          }
+        ]
+      },
+      {
+        "role": "Section card title",
+        "size": 17,
+        "fontWeight": "bold",
+        "evidence": [
+          {
+            "bundle": "sport",
+            "moduleId": "sp-175",
+            "bundleLine": 183,
+            "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+            "extractedModule": "analysis/ui/rn-evidence/sport-sp-175.js"
+          }
+        ]
+      },
+      {
+        "role": "Profile name",
+        "size": 20,
+        "fontWeight": "500",
+        "oneLine": true,
+        "ellipsis": "tail",
+        "evidence": [
+          {
+            "bundle": "mine",
+            "moduleId": "mi-624",
+            "bundleLine": 632,
+            "source": "analysis\\assets\\extracted\\fc87206bd4201baa-index.android.bundle",
+            "extractedModule": "analysis/ui/rn-evidence/mine-mi-624.js"
+          }
+        ]
+      },
+      {
+        "role": "Profile metadata",
+        "size": 12,
+        "fontWeight": "400",
+        "oneLine": true,
+        "separator": " | ",
+        "evidence": [
+          {
+            "bundle": "mine",
+            "moduleId": "mi-624",
+            "bundleLine": 632,
+            "source": "analysis\\assets\\extracted\\fc87206bd4201baa-index.android.bundle",
+            "extractedModule": "analysis/ui/rn-evidence/mine-mi-624.js"
+          }
+        ]
+      },
+      {
+        "role": "Settings row",
+        "size": 16,
+        "fontWeight": "bold",
+        "resolvedWeight": 700,
+        "declaredProps": {
+          "bold": true,
+          "fontWeight": "500"
+        },
+        "precedence": "common2023 resolves bold before fontWeight",
+        "oneLine": true,
+        "evidence": [
+          {
+            "bundle": "mine",
+            "moduleId": "mi-490",
+            "bundleLine": 498,
+            "source": "analysis\\assets\\extracted\\fc87206bd4201baa-index.android.bundle",
+            "extractedModule": "analysis/ui/rn-evidence/mine-mi-490.js"
+          },
+          {
+            "bundle": "common",
+            "moduleId": 2023,
+            "bundleLine": 2028,
+            "source": "analysis\\assets\\extracted\\42856e26522e2704-index.android.bundle",
+            "extractedModule": "analysis/ui/rn-evidence/common-2023.js"
+          },
+          {
+            "bundle": "common",
+            "moduleId": 2125,
+            "bundleLine": 2130,
+            "source": "analysis\\assets\\extracted\\42856e26522e2704-index.android.bundle",
+            "extractedModule": "analysis/ui/rn-evidence/common-2125.js"
+          },
+          {
+            "bundle": "common",
+            "moduleId": 1914,
+            "bundleLine": 1919,
+            "source": "analysis\\assets\\extracted\\42856e26522e2704-index.android.bundle",
+            "extractedModule": "analysis/ui/rn-evidence/common-1914.js"
+          }
+        ]
+      },
+      {
+        "role": "Tab label",
+        "size": 16,
+        "evidence": [
+          {
+            "bundle": "sport",
+            "moduleId": "sp-440",
+            "bundleLine": 448,
+            "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+            "extractedModule": "analysis/ui/rn-evidence/sport-sp-440.js"
+          }
+        ]
+      },
+      {
+        "role": "Quick action label",
+        "size": 14,
+        "fontWeight": "400",
+        "oneLine": true,
+        "evidence": [
+          {
+            "bundle": "mine",
+            "moduleId": "mi-621",
+            "bundleLine": 629,
+            "source": "analysis\\assets\\extracted\\fc87206bd4201baa-index.android.bundle",
+            "extractedModule": "analysis/ui/rn-evidence/mine-mi-621.js"
+          }
+        ]
+      },
+      {
+        "role": "Indicator metric",
+        "size": 18,
+        "fontWeight": "600",
+        "evidence": [
+          {
+            "bundle": "sport",
+            "moduleId": "sp-857",
+            "bundleLine": 865,
+            "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+            "extractedModule": "analysis/ui/rn-evidence/sport-sp-857.js"
+          }
+        ]
+      },
+      {
+        "role": "Toast",
+        "size": 16,
+        "evidence": [
+          {
+            "bundle": "sport",
+            "moduleId": "sp-292",
+            "bundleLine": 300,
+            "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+            "extractedModule": "analysis/ui/rn-evidence/sport-sp-292.js"
+          }
+        ]
+      }
+    ],
+    "resolverDefaults": {
+      "spacing": {
+        "0": 0,
+        "1": 4,
+        "2": 8,
+        "3": 12,
+        "4": 16,
+        "5": 20,
+        "6": 24,
+        "7": 28,
+        "8": 32,
+        "9": 36,
+        "10": 40,
+        "12": 48,
+        "16": 64,
+        "20": 80,
+        "24": 96,
+        "32": 128,
+        "40": 160,
+        "48": 192,
+        "56": 224,
+        "64": 256,
+        "72": 288,
+        "80": 320,
+        "96": 384,
+        "px": "1px",
+        "0.5": 2,
+        "1.5": 6,
+        "2.5": 10,
+        "3.5": 14,
+        "1/2": "50%",
+        "1/3": "33.333%",
+        "2/3": "66.666%",
+        "1/4": "25%",
+        "2/4": "50%",
+        "3/4": "75%",
+        "1/5": "20%",
+        "2/5": "40%",
+        "3/5": "60%",
+        "4/5": "80%",
+        "1/6": "16.666%",
+        "2/6": "33.333%",
+        "3/6": "50%",
+        "4/6": "66.666%",
+        "5/6": "83.333%",
+        "full": "100%"
+      },
+      "radii": {
+        "none": 0,
+        "xs": 2,
+        "sm": 4,
+        "md": 6,
+        "lg": 8,
+        "xl": 12,
+        "2xl": 16,
+        "3xl": 24,
+        "full": 9999
+      },
+      "typography": {
+        "letterSpacings": {
+          "xs": "-0.05em",
+          "sm": "-0.025em",
+          "md": 0,
+          "lg": "0.025em",
+          "xl": "0.05em",
+          "2xl": "0.1em"
+        },
+        "lineHeights": {
+          "2xs": "1em",
+          "xs": "1.125em",
+          "sm": "1.25em",
+          "md": "1.375em",
+          "lg": "1.5em",
+          "xl": "1.75em",
+          "2xl": "2em",
+          "3xl": "2.5em",
+          "4xl": "3em",
+          "5xl": "4em"
+        },
+        "fontConfig": {},
+        "fontWeights": {
+          "hairline": 100,
+          "thin": 200,
+          "light": 300,
+          "normal": 400,
+          "medium": 500,
+          "semibold": 600,
+          "bold": 700,
+          "extrabold": 800,
+          "black": 900,
+          "extraBlack": 950
+        },
+        "fonts": {
+          "heading": {
+            "$code": "void 0"
+          },
+          "body": {
+            "$code": "void 0"
+          },
+          "mono": {
+            "$code": "void 0"
+          }
+        },
+        "fontSizes": {
+          "2xs": 10,
+          "xs": 12,
+          "sm": 14,
+          "md": 16,
+          "lg": 18,
+          "xl": 20,
+          "2xl": 24,
+          "3xl": 30,
+          "4xl": 36,
+          "5xl": 48,
+          "6xl": 60,
+          "7xl": 72,
+          "8xl": 96,
+          "9xl": 128
+        }
+      },
+      "evidence": [
+        {
+          "bundle": "common",
+          "moduleId": 1901,
+          "bundleLine": 1906,
+          "source": "analysis\\assets\\extracted\\42856e26522e2704-index.android.bundle",
+          "extractedModule": "analysis/ui/rn-evidence/common-1901.js"
+        },
+        {
+          "bundle": "common",
+          "moduleId": 1902,
+          "bundleLine": 1907,
+          "source": "analysis\\assets\\extracted\\42856e26522e2704-index.android.bundle",
+          "extractedModule": "analysis/ui/rn-evidence/common-1902.js"
+        },
+        {
+          "bundle": "common",
+          "moduleId": 1912,
+          "bundleLine": 1917,
+          "source": "analysis\\assets\\extracted\\42856e26522e2704-index.android.bundle",
+          "extractedModule": "analysis/ui/rn-evidence/common-1912.js"
+        },
+        {
+          "bundle": "common",
+          "moduleId": 1913,
+          "bundleLine": 1918,
+          "source": "analysis\\assets\\extracted\\42856e26522e2704-index.android.bundle",
+          "extractedModule": "analysis/ui/rn-evidence/common-1913.js"
+        },
+        {
+          "bundle": "common",
+          "moduleId": 1914,
+          "bundleLine": 1919,
+          "source": "analysis\\assets\\extracted\\42856e26522e2704-index.android.bundle",
+          "extractedModule": "analysis/ui/rn-evidence/common-1914.js"
+        },
+        {
+          "bundle": "common",
+          "moduleId": 1910,
+          "bundleLine": 1915,
+          "source": "analysis\\assets\\extracted\\42856e26522e2704-index.android.bundle",
+          "extractedModule": "analysis/ui/rn-evidence/common-1910.js"
+        }
+      ]
+    },
+    "selectedDimensions": {
+      "screenBodyHorizontal": 12,
+      "largeTitlePaddingLeft": 26,
+      "largeTitlePaddingRight": 20,
+      "sectionCardRadius": 18,
+      "indicatorCardRadius": 14,
+      "toastRadius": 12,
+      "loginModalRadius": 28,
+      "loginModalButtonRadius": 16,
+      "evidence": [
+        {
+          "bundle": "sport",
+          "moduleId": "sp-724",
+          "bundleLine": 732,
+          "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+          "extractedModule": "analysis/ui/rn-evidence/sport-sp-724.js"
+        },
+        {
+          "bundle": "sport",
+          "moduleId": "sp-893",
+          "bundleLine": 901,
+          "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+          "extractedModule": "analysis/ui/rn-evidence/sport-sp-893.js"
+        },
+        {
+          "bundle": "sport",
+          "moduleId": "sp-175",
+          "bundleLine": 183,
+          "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+          "extractedModule": "analysis/ui/rn-evidence/sport-sp-175.js"
+        },
+        {
+          "bundle": "sport",
+          "moduleId": "sp-857",
+          "bundleLine": 865,
+          "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+          "extractedModule": "analysis/ui/rn-evidence/sport-sp-857.js"
+        },
+        {
+          "bundle": "sport",
+          "moduleId": "sp-292",
+          "bundleLine": 300,
+          "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+          "extractedModule": "analysis/ui/rn-evidence/sport-sp-292.js"
+        },
+        {
+          "bundle": "mine",
+          "moduleId": "mi-484",
+          "bundleLine": 492,
+          "source": "analysis\\assets\\extracted\\fc87206bd4201baa-index.android.bundle",
+          "extractedModule": "analysis/ui/rn-evidence/mine-mi-484.js"
+        }
+      ]
+    }
+  },
+  "interactionContracts": "interaction-contracts.json",
+  "limitations": [
+    "Keep original dp/sp/RN logical units and qualifier context.",
+    "Runtime render can load newer page bundles; capture identities are separate.",
+    "Chinese fallback is not proven by packaged MiSansLatin files."
+  ]
+}

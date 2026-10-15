@@ -1,0 +1,175 @@
+{
+  "id": "di-341",
+  "line": 349,
+  "bytes": 5326,
+  "deps": [
+    3,
+    27,
+    14,
+    18,
+    1113,
+    2010,
+    "di-141",
+    "di-128",
+    558,
+    "di-149",
+    "di-297",
+    "di-342",
+    "di-251",
+    "di-343",
+    "di-421"
+  ],
+  "exports": [
+    "default"
+  ],
+  "strings": [
+    "absolute",
+    "auto",
+    "#31302E",
+    "45%",
+    "flex",
+    "center",
+    "column",
+    "flex-start",
+    "100%",
+    "bold",
+    "#FFCFA8",
+    "left",
+    "#FFFFFF",
+    "row",
+    "#FFE2A8",
+    "MiSans",
+    "#583600",
+    "500",
+    "DialCategoryList",
+    "_",
+    "",
+    "hidden",
+    "membership bar source",
+    "56.82.1.1.50191",
+    "member_guidance_snackbar",
+    "continue",
+    "close",
+    "90deg",
+    "0deg",
+    "watchface_feed",
+    "DialMarket"
+  ],
+  "routes": [],
+  "styleSheets": [
+    {
+      "callee": "l.StyleSheet.create",
+      "styles": {
+        "container": {
+          "position": "absolute",
+          "left": 0,
+          "right": 0,
+          "height": "auto",
+          "minHeight": 69,
+          "backgroundColor": "#31302E",
+          "borderRadius": 18,
+          "marginHorizontal": 12,
+          "paddingHorizontal": 8
+        },
+        "memberBgImg": {
+          "position": "absolute",
+          "top": 0,
+          "bottom": 0,
+          "left": "45%",
+          "marginLeft": {
+            "$code": "-20"
+          },
+          "aspectRatio": 1.9264705882352942
+        },
+        "icon": {
+          "width": 40,
+          "height": 40,
+          "marginRight": 12
+        },
+        "closebg": {
+          "width": 24,
+          "height": 24,
+          "borderRadius": 24
+        },
+        "closeIcon": {
+          "width": 24,
+          "height": 24
+        },
+        "textContainer": {
+          "flex": 1,
+          "display": "flex",
+          "justifyContent": "center",
+          "flexDirection": "column",
+          "alignItems": "flex-start",
+          "paddingVertical": 8,
+          "height": "100%"
+        },
+        "title": {
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "color": "#FFCFA8",
+          "textAlign": "left",
+          "includeFontPadding": {
+            "$code": "!1"
+          },
+          "lineHeight": 18
+        },
+        "content": {
+          "fontSize": 10,
+          "color": "#FFFFFF",
+          "marginTop": 4,
+          "opacity": 0.6,
+          "textAlign": "left",
+          "includeFontPadding": {
+            "$code": "!1"
+          },
+          "lineHeight": 18
+        },
+        "nextgo": {
+          "flexDirection": "row",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "height": 36,
+          "backgroundColor": "#FFE2A8",
+          "borderRadius": 100
+        },
+        "nextgoText": {
+          "fontFamily": "MiSans",
+          "fontSize": 14,
+          "color": "#583600",
+          "fontWeight": "500",
+          "textAlign": "center"
+        }
+      },
+      "code": "l.StyleSheet.create({container:{position:\"absolute\",left:0,right:0,height:\"auto\",minHeight:69,backgroundColor:\"#31302E\",borderRadius:18,marginHorizontal:12,paddingHorizontal:8},memberBgImg:{position:\"absolute\",top:0,bottom:0,left:\"45%\",marginLeft:-20,aspectRatio:1.9264705882352942},icon:{width:40,height:40,marginRight:12},closebg:{width:24,height:24,borderRadius:24},closeIcon:{width:24,height:24},textContainer:{flex:1,display:\"flex\",justifyContent:\"center\",flexDirection:\"column\",alignItems:\"flex-start\",paddingVertical:8,height:\"100%\"},title:{fontSize:14,fontWeight:\"bold\",color:\"#FFCFA8\",textAlign:\"left\",includeFontPadding:!1,lineHeight:18},content:{fontSize:10,color:\"#FFFFFF\",marginTop:4,opacity:.6,textAlign:\"left\",includeFontPadding:!1,lineHeight:18},nextgo:{flexDirection:\"row\",alignItems:\"center\",justifyContent:\"center\",paddingHorizontal:12,height:36,backgroundColor:\"#FFE2A8\",borderRadius:100},nextgoText:{fontFamily:\"MiSans\",fontSize:14,color:\"#583600\",fontWeight:\"500\",textAlign:\"center\"}})"
+    }
+  ],
+  "assetNames": [],
+  "calls": [
+    {
+      "method": "parallel",
+      "code": "l.Animated.parallel([l.Animated.timing(Y,{toValue:-69-C-ne,duration:n?0:300,useNativeDriver:!0}),l.Animated.timing(q,{toValue:1,duration:n?0:300,useNativeDriver:!0})])"
+    },
+    {
+      "method": "timing",
+      "code": "l.Animated.timing(Y,{toValue:-69-C-ne,duration:n?0:300,useNativeDriver:!0})"
+    },
+    {
+      "method": "timing",
+      "code": "l.Animated.timing(q,{toValue:1,duration:n?0:300,useNativeDriver:!0})"
+    },
+    {
+      "method": "parallel",
+      "code": "l.Animated.parallel([l.Animated.timing(Y,{toValue:0,duration:n?0:300,useNativeDriver:!0}),l.Animated.timing(q,{toValue:0,duration:n?0:300,useNativeDriver:!0})])"
+    },
+    {
+      "method": "timing",
+      "code": "l.Animated.timing(Y,{toValue:0,duration:n?0:300,useNativeDriver:!0})"
+    },
+    {
+      "method": "timing",
+      "code": "l.Animated.timing(q,{toValue:0,duration:n?0:300,useNativeDriver:!0})"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.SplashScreen" parent="@style/Base.v27.Theme.SplashScreen" />
+    <style name="Base.Theme.SplashScreen.Light" parent="@style/Base.v27.Theme.SplashScreen.Light" />
+    <style name="Base.v27.Theme.SplashScreen" parent="@style/Base.v21.Theme.SplashScreen">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+    <style name="Base.v27.Theme.SplashScreen.Light" parent="@style/Base.v21.Theme.SplashScreen.Light">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+    <style name="Theme.DayNight.Detail" parent="@style/Theme.DayNight.Home">
+        <item name="android:statusBarColor">@color/base_background</item>
+        <item name="android:navigationBarColor">@color/base_background</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="actionBarBackground">@color/base_background</item>
+        <item name="actionModeBackground">@color/base_background</item>
+    </style>
+    <style name="Theme.DayNight.Home" parent="@style/Theme.DayNight">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@color/base_background</item>
+        <item name="android:navigationBarColor">@color/base_background</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="actionBarBackground">@color/base_background</item>
+        <item name="actionModeBackground">@color/base_background</item>
+        <item name="windowActionModeOverlay">false</item>
+    </style>
+    <style name="Theme.DayNight.Search" parent="@style/Theme.DayNight.NoTitle">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@color/base_background</item>
+        <item name="android:navigationBarColor">@color/base_background</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="actionBarBackground">@color/base_background</item>
+        <item name="actionModeBackground">@color/base_background</item>
+        <item name="windowActionModeOverlay">false</item>
+    </style>
+</resources>

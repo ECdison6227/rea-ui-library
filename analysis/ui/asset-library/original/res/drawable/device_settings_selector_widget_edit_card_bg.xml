@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:drawable="@drawable/device_settings_bg_white_radius_16" />
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="16.0dp" />
+                    <solid android:color="@color/common_card_pressed_mask_layer_color" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:drawable="@drawable/device_settings_bg_white_radius_16" />
+</selector>

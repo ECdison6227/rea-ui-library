@@ -1,0 +1,51 @@
+{
+  "bundle": "sport",
+  "id": "sp-710",
+  "line": 718,
+  "aliases": {
+    "t": 3,
+    "n": 27,
+    "o": 14,
+    "u": "sp-138",
+    "c": 558,
+    "f": "sp-144",
+    "l": "sp-271",
+    "s": "sp-711",
+    "h": "sp-266",
+    "p": "sp-712",
+    "y": "sp-717"
+  },
+  "elements": [
+    {
+      "type": "o.Suspense",
+      "module": 14,
+      "props": {
+        "fallback": {
+          "$code": "o.default.createElement(o.default.Fragment,null)"
+        }
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(y.SportHomeContent,{promise:j})"
+        }
+      ]
+    },
+    {
+      "type": "o.default.Fragment",
+      "props": null,
+      "children": []
+    },
+    {
+      "type": "y.SportHomeContent",
+      "module": "sp-717",
+      "props": {
+        "promise": {
+          "$code": "j"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": []
+}

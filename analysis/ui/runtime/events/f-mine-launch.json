@@ -1,0 +1,26 @@
+{
+  "id": "f-mine-launch",
+  "serial": "emulator-5580",
+  "avd": "rea_mihealth_ui_20261015",
+  "started": "2026-10-15T13:37:04.096Z",
+  "finished": "2026-10-15T13:37:06.038Z",
+  "args": [
+    "shell",
+    "am",
+    "start",
+    "-S",
+    "-W",
+    "-n",
+    "study.style.reference/.MainActivity",
+    "--es",
+    "scene",
+    "mine",
+    "--es",
+    "theme",
+    "day"
+  ],
+  "exitCode": 0,
+  "stdout": "Stopping: study.style.reference\r\nStarting: Intent { cmp=study.style.reference/.MainActivity (has extras) }\r\nStatus: ok\r\nLaunchState: COLD\r\nActivity: study.style.reference/.MainActivity\r\nTotalTime: 1507\r\nWaitTime: 1511\r\nComplete\r\n",
+  "stderr": "",
+  "error": null
+}

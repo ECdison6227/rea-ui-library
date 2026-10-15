@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/title_list" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_margin_10dp" android:layout_marginEnd="@dimen/dimen_margin_10dp" android:layout_marginVertical="@dimen/dimen_margin_20dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/header_view_iv_add" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/header_view_iv_add" android:layout_width="@dimen/dimen_margin_36dp" android:layout_height="@dimen/dimen_margin_36dp" android:src="@drawable/button_add_white" android:contentDescription="@string/health_add_new_device" android:layout_marginEnd="@dimen/dimen_margin_20dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

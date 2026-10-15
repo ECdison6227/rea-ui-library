@@ -1,0 +1,124 @@
+{
+  "at": "2026-10-15T12:07:47.124Z",
+  "serial": "emulator-5580",
+  "identity": "rea_mihealth_ui_20261015",
+  "appPid": "4271",
+  "command": [
+    "logcat",
+    "-d",
+    "--pid=4271",
+    "-v",
+    "threadtime"
+  ],
+  "allProcessLogLineCount": 6759,
+  "retainedMatchingLineCount": 26,
+  "fullOutputSha256": "0a60bbafee27dc7ea7e6e9b9155fbc28579d0cf6e26fb70c9a605b0ac3a73098",
+  "query": "skytree|bundleloader|moduleName.{0,30}mine|mine.{0,50}(bundle|contenthash)|contenthash|bundleInfo|cominfo|buzinfo|loadScriptFrom(File|Assets)",
+  "matching": [
+    {
+      "line": 2052,
+      "text": "10-15 11:47:48.585  4271  4816 E YRN_YRNV3_SDK_4271_4816: detail:YRNBundleRequestHelper.requestBusinessBundleInfo:onFailure:"
+    },
+    {
+      "line": 2054,
+      "text": "10-15 11:47:48.585  4271  4816 E YRN_YRNV3_SDK_4271_4816: errorMessage:BundleInfo list == null"
+    },
+    {
+      "line": 2085,
+      "text": "10-15 11:50:01.314  4271  4271 I YRNInstanceInfo_4271_4271: YRNInstanceInfo incrementCount: YRNInstanceInfo{dirty=false, count=0, bundleInfo={appName='miwear', bundlePath='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/common/05c1725d7b55d0563f4379ee800d760f', bundlePathFileName='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/common/05c1725d7b55d0563f4379ee800d760f/index.android.bundle', needUpdate=true, module='common', description='', version='11.183.36', md5='05c1725d7b55d0563f4379ee800d760f', maxNativeApiLevel=10, maxCommonJSApiLevel=3, url='https://skytree.gnr.mi-img.com/skytree/D6073112E1336DEE251FB89BE3E6A141_1782995877405.zip', maketime='20260702203459', moduleIdMapVersion='8', branch='release-202606-4', updateStrategy=2, residentMemory=true}}107564214"
+    },
+    {
+      "line": 2087,
+      "text": "10-15 11:50:01.382  4271  4271 I YRNInstanceInfo_4271_4271: YRNInstanceInfo incrementCount: YRNInstanceInfo{dirty=false, count=0, bundleInfo={appName='miwear', bundlePath='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/sport/a7621e5ce47c27785ef4570bff7702b4', bundlePathFileName='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/sport/a7621e5ce47c27785ef4570bff7702b4/index.android.bundle', needUpdate=true, module='sport', description='', version='11.190.10', md5='a7621e5ce47c27785ef4570bff7702b4', maxNativeApiLevel=10, maxCommonJSApiLevel=3, url='https://skytree.gnr.mi-img.com/skytree/B214135508A5A619451E4B1ED670ECA4_1783577132675.zip', maketime='20260709140138', moduleIdMapVersion='8', branch='null', updateStrategy=2, residentMemory=true}}188501862"
+    },
+    {
+      "line": 2111,
+      "text": "10-15 11:50:10.934  4271  4844 I RRLog_4271_4844: updateRnBundleInfo "
+    },
+    {
+      "line": 3288,
+      "text": "10-15 11:52:14.373  4271  4271 I YRNInstanceInfo_4271_4271: YRNInstanceInfo incrementCount: YRNInstanceInfo{dirty=false, count=1, bundleInfo={appName='miwear', bundlePath='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/common/05c1725d7b55d0563f4379ee800d760f', bundlePathFileName='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/common/05c1725d7b55d0563f4379ee800d760f/index.android.bundle', needUpdate=true, module='common', description='', version='11.183.36', md5='05c1725d7b55d0563f4379ee800d760f', maxNativeApiLevel=10, maxCommonJSApiLevel=3, url='https://skytree.gnr.mi-img.com/skytree/D6073112E1336DEE251FB89BE3E6A141_1782995877405.zip', maketime='20260702203459', moduleIdMapVersion='8', branch='release-202606-4', updateStrategy=2, residentMemory=true}}107564214"
+    },
+    {
+      "line": 3290,
+      "text": "10-15 11:52:14.407  4271  4271 I YRNInstanceInfo_4271_4271: YRNInstanceInfo incrementCount: YRNInstanceInfo{dirty=false, count=0, bundleInfo={appName='miwear', bundlePath='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/mine/31c9f454df8a88403912b6eeed02dc60', bundlePathFileName='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/mine/31c9f454df8a88403912b6eeed02dc60/index.android.bundle', needUpdate=true, module='mine', description='', version='11.190.11', md5='31c9f454df8a88403912b6eeed02dc60', maxNativeApiLevel=10, maxCommonJSApiLevel=3, url='https://skytree.gnr.mi-img.com/skytree/FCBA32FB3BA596F8CCDCA7CEC7F76D50_1783577122979.zip', maketime='20260709140144', moduleIdMapVersion='8', branch='null', updateStrategy=2, residentMemory=true}}266032206"
+    },
+    {
+      "line": 3297,
+      "text": "10-15 11:52:18.767  4271  4844 I RRLog_4271_4844: updateRnBundleInfo "
+    },
+    {
+      "line": 3298,
+      "text": "10-15 11:52:18.767  4271  4844 I RRLog_4271_4844: {\"appName\": \"miwear\", \"branch\": null, \"bundlePath\": \"/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/mine/31c9f454df8a88403912b6eeed02dc60\", \"bundlePathFileName\": \"/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/mine/31c9f454df8a88403912b6eeed02dc60/index.android.bundle\", \"description\": \"\", \"maketime\": \"20260709140144\", \"maxCommonApiLevel\": 3, \"maxCommonJSApiLevel\": 3, \"maxNativeApiLevel\": 10, \"md5\": \"31c9f454df8a88403912b6eeed02dc60\", \"memoryMode\": 1, \"module\": \"mine\", \"moduleIdMapVersion\": \"8\", \"needUpdate\": 1, \"platform\": \"Android\", \"residentMemory\": 1, \"rnEngineVersion\": \"610\", \"updateStrategy\": 2, \"version\": \"11.190.11\"} "
+    },
+    {
+      "line": 4318,
+      "text": "10-15 11:58:24.041  4271  5568 E YRN_YRNV3_SDK_4271_5568: detail:YRNBundleRequestHelper.requestBusinessBundleInfo:onFailure:"
+    },
+    {
+      "line": 4320,
+      "text": "10-15 11:58:24.041  4271  5568 E YRN_YRNV3_SDK_4271_5568: errorMessage:BundleInfo list == null"
+    },
+    {
+      "line": 4343,
+      "text": "10-15 11:58:57.808  4271  4271 I YRNInstanceInfo_4271_4271: YRNInstanceInfo decrementCount: YRNInstanceInfo{dirty=true, count=1, bundleInfo={appName='miwear', bundlePath='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/sport/a7621e5ce47c27785ef4570bff7702b4', bundlePathFileName='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/sport/a7621e5ce47c27785ef4570bff7702b4/index.android.bundle', needUpdate=true, module='sport', description='', version='11.190.10', md5='a7621e5ce47c27785ef4570bff7702b4', maxNativeApiLevel=10, maxCommonJSApiLevel=3, url='https://skytree.gnr.mi-img.com/skytree/B214135508A5A619451E4B1ED670ECA4_1783577132675.zip', maketime='20260709140138', moduleIdMapVersion='8', branch='null', updateStrategy=2, residentMemory=true}}188501862"
+    },
+    {
+      "line": 4344,
+      "text": "10-15 11:58:57.809  4271  4271 I YRN_YRNV3_SDK_4271_4271: YRNUpdateStrategy.unloadInstanceIfNeeded: YRNInstanceInfo{dirty=true, count=0, bundleInfo={appName='miwear', bundlePath='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/sport/a7621e5ce47c27785ef4570bff7702b4', bundlePathFileName='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/sport/a7621e5ce47c27785ef4570bff7702b4/index.android.bundle', needUpdate=true, module='sport', description='', version='11.190.10', md5='a7621e5ce47c27785ef4570bff7702b4', maxNativeApiLevel=10, maxCommonJSApiLevel=3, url='https://skytree.gnr.mi-img.com/skytree/B214135508A5A619451E4B1ED670ECA4_1783577132675.zip', maketime='20260709140138', moduleIdMapVersion='8', branch='null', updateStrategy=2, residentMemory=true}}"
+    },
+    {
+      "line": 4345,
+      "text": "10-15 11:58:57.809  4271  4271 I YRNInstanceInfo_4271_4271: YRNInstanceInfo decrementCount: YRNInstanceInfo{dirty=false, count=2, bundleInfo={appName='miwear', bundlePath='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/common/05c1725d7b55d0563f4379ee800d760f', bundlePathFileName='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/common/05c1725d7b55d0563f4379ee800d760f/index.android.bundle', needUpdate=true, module='common', description='', version='11.183.36', md5='05c1725d7b55d0563f4379ee800d760f', maxNativeApiLevel=10, maxCommonJSApiLevel=3, url='https://skytree.gnr.mi-img.com/skytree/D6073112E1336DEE251FB89BE3E6A141_1782995877405.zip', maketime='20260702203459', moduleIdMapVersion='8', branch='release-202606-4', updateStrategy=2, residentMemory=true}}107564214"
+    },
+    {
+      "line": 4346,
+      "text": "10-15 11:58:57.810  4271  4271 I YRN_YRNV3_SDK_4271_4271: YRNUpdateStrategy.unloadInstanceIfNeeded: YRNInstanceInfo{dirty=false, count=1, bundleInfo={appName='miwear', bundlePath='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/common/05c1725d7b55d0563f4379ee800d760f', bundlePathFileName='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/common/05c1725d7b55d0563f4379ee800d760f/index.android.bundle', needUpdate=true, module='common', description='', version='11.183.36', md5='05c1725d7b55d0563f4379ee800d760f', maxNativeApiLevel=10, maxCommonJSApiLevel=3, url='https://skytree.gnr.mi-img.com/skytree/D6073112E1336DEE251FB89BE3E6A141_1782995877405.zip', maketime='20260702203459', moduleIdMapVersion='8', branch='release-202606-4', updateStrategy=2, residentMemory=true}}"
+    },
+    {
+      "line": 4397,
+      "text": "10-15 11:58:57.821  4271  4271 I YRNInstanceInfo_4271_4271: YRNInstanceInfo decrementCount: YRNInstanceInfo{dirty=true, count=1, bundleInfo={appName='miwear', bundlePath='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/mine/31c9f454df8a88403912b6eeed02dc60', bundlePathFileName='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/mine/31c9f454df8a88403912b6eeed02dc60/index.android.bundle', needUpdate=true, module='mine', description='', version='11.190.11', md5='31c9f454df8a88403912b6eeed02dc60', maxNativeApiLevel=10, maxCommonJSApiLevel=3, url='https://skytree.gnr.mi-img.com/skytree/FCBA32FB3BA596F8CCDCA7CEC7F76D50_1783577122979.zip', maketime='20260709140144', moduleIdMapVersion='8', branch='null', updateStrategy=2, residentMemory=true}}266032206"
+    },
+    {
+      "line": 4398,
+      "text": "10-15 11:58:57.821  4271  4271 I YRN_YRNV3_SDK_4271_4271: YRNUpdateStrategy.unloadInstanceIfNeeded: YRNInstanceInfo{dirty=true, count=0, bundleInfo={appName='miwear', bundlePath='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/mine/31c9f454df8a88403912b6eeed02dc60', bundlePathFileName='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/mine/31c9f454df8a88403912b6eeed02dc60/index.android.bundle', needUpdate=true, module='mine', description='', version='11.190.11', md5='31c9f454df8a88403912b6eeed02dc60', maxNativeApiLevel=10, maxCommonJSApiLevel=3, url='https://skytree.gnr.mi-img.com/skytree/FCBA32FB3BA596F8CCDCA7CEC7F76D50_1783577122979.zip', maketime='20260709140144', moduleIdMapVersion='8', branch='null', updateStrategy=2, residentMemory=true}}"
+    },
+    {
+      "line": 4399,
+      "text": "10-15 11:58:57.821  4271  4271 I YRNInstanceInfo_4271_4271: YRNInstanceInfo decrementCount: YRNInstanceInfo{dirty=false, count=1, bundleInfo={appName='miwear', bundlePath='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/common/05c1725d7b55d0563f4379ee800d760f', bundlePathFileName='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/common/05c1725d7b55d0563f4379ee800d760f/index.android.bundle', needUpdate=true, module='common', description='', version='11.183.36', md5='05c1725d7b55d0563f4379ee800d760f', maxNativeApiLevel=10, maxCommonJSApiLevel=3, url='https://skytree.gnr.mi-img.com/skytree/D6073112E1336DEE251FB89BE3E6A141_1782995877405.zip', maketime='20260702203459', moduleIdMapVersion='8', branch='release-202606-4', updateStrategy=2, residentMemory=true}}107564214"
+    },
+    {
+      "line": 4400,
+      "text": "10-15 11:58:57.822  4271  4271 I YRN_YRNV3_SDK_4271_4271: YRNUpdateStrategy.unloadInstanceIfNeeded: YRNInstanceInfo{dirty=false, count=0, bundleInfo={appName='miwear', bundlePath='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/common/05c1725d7b55d0563f4379ee800d760f', bundlePathFileName='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/common/05c1725d7b55d0563f4379ee800d760f/index.android.bundle', needUpdate=true, module='common', description='', version='11.183.36', md5='05c1725d7b55d0563f4379ee800d760f', maxNativeApiLevel=10, maxCommonJSApiLevel=3, url='https://skytree.gnr.mi-img.com/skytree/D6073112E1336DEE251FB89BE3E6A141_1782995877405.zip', maketime='20260702203459', moduleIdMapVersion='8', branch='release-202606-4', updateStrategy=2, residentMemory=true}}"
+    },
+    {
+      "line": 5728,
+      "text": "10-15 12:01:34.012  4271  4271 I YRNInstanceInfo_4271_4271: YRNInstanceInfo incrementCount: YRNInstanceInfo{dirty=false, count=0, bundleInfo={appName='miwear', bundlePath='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/common/05c1725d7b55d0563f4379ee800d760f', bundlePathFileName='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/common/05c1725d7b55d0563f4379ee800d760f/index.android.bundle', needUpdate=true, module='common', description='', version='11.183.36', md5='05c1725d7b55d0563f4379ee800d760f', maxNativeApiLevel=10, maxCommonJSApiLevel=3, url='https://skytree.gnr.mi-img.com/skytree/D6073112E1336DEE251FB89BE3E6A141_1782995877405.zip', maketime='20260702203459', moduleIdMapVersion='8', branch='release-202606-4', updateStrategy=2, residentMemory=true}}107564214"
+    },
+    {
+      "line": 5729,
+      "text": "10-15 12:01:34.037  4271  4271 I YRNInstanceInfo_4271_4271: YRNInstanceInfo incrementCount: YRNInstanceInfo{dirty=false, count=0, bundleInfo={appName='miwear', bundlePath='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/mine/e5d8d3390f6109d6c50e9a27d0143a22', bundlePathFileName='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/mine/e5d8d3390f6109d6c50e9a27d0143a22/index.android.bundle', needUpdate=true, module='mine', description='', version='11.202.21', md5='e5d8d3390f6109d6c50e9a27d0143a22', maxNativeApiLevel=10, maxCommonJSApiLevel=3, url='https://skytree.gnr.mi-img.com/skytree/FCBA32FB3BA596F8CCDCA7CEC7F76D50_1784633943737.zip', maketime='20260721193548', moduleIdMapVersion='8', branch='null', updateStrategy=2, residentMemory=true}}82926935"
+    },
+    {
+      "line": 5734,
+      "text": "10-15 12:01:36.675  4271  4844 I RRLog_4271_4844: updateRnBundleInfo "
+    },
+    {
+      "line": 5735,
+      "text": "10-15 12:01:36.675  4271  4844 I RRLog_4271_4844: {\"appName\": \"miwear\", \"branch\": null, \"bundlePath\": \"/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/mine/e5d8d3390f6109d6c50e9a27d0143a22\", \"bundlePathFileName\": \"/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/mine/e5d8d3390f6109d6c50e9a27d0143a22/index.android.bundle\", \"description\": \"\", \"maketime\": \"20260721193548\", \"maxCommonApiLevel\": 3, \"maxCommonJSApiLevel\": 3, \"maxNativeApiLevel\": 10, \"md5\": \"e5d8d3390f6109d6c50e9a27d0143a22\", \"memoryMode\": 1, \"module\": \"mine\", \"moduleIdMapVersion\": \"8\", \"needUpdate\": 1, \"platform\": \"Android\", \"residentMemory\": 1, \"rnEngineVersion\": \"610\", \"updateStrategy\": 2, \"version\": \"11.202.21\"} "
+    },
+    {
+      "line": 6602,
+      "text": "10-15 12:05:38.330  4271  4271 I YRNInstanceInfo_4271_4271: YRNInstanceInfo incrementCount: YRNInstanceInfo{dirty=false, count=1, bundleInfo={appName='miwear', bundlePath='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/common/05c1725d7b55d0563f4379ee800d760f', bundlePathFileName='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/common/05c1725d7b55d0563f4379ee800d760f/index.android.bundle', needUpdate=true, module='common', description='', version='11.183.36', md5='05c1725d7b55d0563f4379ee800d760f', maxNativeApiLevel=10, maxCommonJSApiLevel=3, url='https://skytree.gnr.mi-img.com/skytree/D6073112E1336DEE251FB89BE3E6A141_1782995877405.zip', maketime='20260702203459', moduleIdMapVersion='8', branch='release-202606-4', updateStrategy=2, residentMemory=true}}107564214"
+    },
+    {
+      "line": 6603,
+      "text": "10-15 12:05:38.334  4271  4271 I YRNInstanceInfo_4271_4271: YRNInstanceInfo incrementCount: YRNInstanceInfo{dirty=false, count=0, bundleInfo={appName='miwear', bundlePath='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/sport/1b6ad180b1efadcaf363e527aeef5b34', bundlePathFileName='/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/sport/1b6ad180b1efadcaf363e527aeef5b34/index.android.bundle', needUpdate=true, module='sport', description='', version='11.222.10', md5='1b6ad180b1efadcaf363e527aeef5b34', maxNativeApiLevel=10, maxCommonJSApiLevel=3, url='https://skytree.gnr.mi-img.com/skytree/B214135508A5A619451E4B1ED670ECA4_1786360257799.zip', maketime='20260810190727', moduleIdMapVersion='8', branch='null', updateStrategy=2, residentMemory=true}}189303295"
+    },
+    {
+      "line": 6611,
+      "text": "10-15 12:05:44.052  4271  4844 I RRLog_4271_4844: updateRnBundleInfo "
+    }
+  ],
+  "scope": "Read-only logcat buffer for com.mi.health PID only. Unmatched process logs are not persisted. No UI interaction, process restart, adbd restart or log clearing."
+}

@@ -1,0 +1,2847 @@
+{
+  "schemaVersion": 1,
+  "id": "mihealth-popup-navigation-baseline",
+  "status": "final selected matrix through source b55; untested queue stress/theme/process paths remain unknown",
+  "generatedAt": "2026-10-15T13:26:17.984Z",
+  "sourceIdentity": {
+    "package": "com.mi.health",
+    "version": "3.57.0",
+    "mine": "11.202.21",
+    "mineSha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+    "mode": "ordinary CN guest no wearable",
+    "environment": "Android15 API35,1080x2400px,density2.75,fontScale1,zh-CN"
+  },
+  "classification": {
+    "A": "actual target observation; origin records current or historical",
+    "B": "captured/shipped source statement",
+    "C": "bounded inference",
+    "D": "independent reconstruction or target adaptation"
+  },
+  "rules": [
+    "Every popup/destination keeps separate close and state policy",
+    "An A cancel observation does not verify all close routes",
+    "Source code onRequestClose is B, not actual Back timing A",
+    "Unknown exact native stack is not replaced with invented depth",
+    "D secondary UI does not count as original popup reconstruction"
+  ],
+  "sources": {
+    "provider": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 639,
+      "module": "mi-631"
+    },
+    "maskStyle": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 640,
+      "module": "mi-632"
+    },
+    "loginSheet": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 492,
+      "module": "mi-484"
+    },
+    "guard": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 518,
+      "module": "mi-510"
+    },
+    "guestMenu": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 491,
+      "module": "mi-483"
+    },
+    "menuRow": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 498,
+      "module": "mi-490"
+    },
+    "mineMount": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 420,
+      "module": "mi-412"
+    },
+    "profileAutoLogin": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 632,
+      "module": "mi-624"
+    },
+    "weekly": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 537,
+      "module": "mi-529"
+    },
+    "shortcut": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 629,
+      "module": "mi-621"
+    },
+    "scrollExport": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 267,
+      "module": "mi-259"
+    },
+    "scrollView": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 277,
+      "module": "mi-269"
+    },
+    "scrollObserver": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 275,
+      "module": "mi-267"
+    },
+    "addIcon": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 423,
+      "module": "mi-415"
+    },
+    "anchoredMenu": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 424,
+      "module": "mi-416"
+    },
+    "regionFallback": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 430,
+      "module": "mi-422"
+    },
+    "userUpdate": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 644,
+      "module": "mi-636"
+    },
+    "privacy": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/native-sources/com/xiaomi/fitness/login/privacy/PrivacyActivity.java",
+      "sha256": "7da8622e282ec782e80c52a1fe220b10f9e1e0d86e8676225dfadc1b3bc237a7",
+      "line": 329,
+      "selector": "new CommonDialog.c(\"privacy_sure_dialog\")"
+    },
+    "privacyClick": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/native-sources/com/xiaomi/fitness/login/privacy/PrivacyActivity.java",
+      "sha256": "7da8622e282ec782e80c52a1fe220b10f9e1e0d86e8676225dfadc1b3bc237a7",
+      "line": 109,
+      "selector": "public void onDialogClick("
+    },
+    "sharePrepare": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/native-sources/com/xiaomi/fitness/homepage/view/DataHeaderV2View.java",
+      "sha256": "4ccf90d47fc66a96114024dec601602712e66e2b3a0b19bbcce8007ec6a21ed8",
+      "line": 263,
+      "selector": "private static final void createContentView$lambda$5("
+    },
+    "healthContext": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/native-sources/com/xiaomi/fitness/homepage/HealthV2Fragment.java",
+      "sha256": "7f5bc5113b2f26db0f25757cb8b1756f91b101f7ae2ed0c586818ff4175d5c60",
+      "line": 603,
+      "selector": "private final Bundle createBundle("
+    },
+    "mainTabs": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/native-sources/com/xiaomi/fitness/main/MainActivity.java",
+      "sha256": "dab438266986cf0c3c1014c2206997d9934e0718f848171c8a92330072376a3c",
+      "line": 374,
+      "selector": "public void onTabSelected("
+    },
+    "mainReselect": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/native-sources/com/xiaomi/fitness/main/MainActivity.java",
+      "sha256": "dab438266986cf0c3c1014c2206997d9934e0718f848171c8a92330072376a3c",
+      "line": 370,
+      "selector": "public void onTabReselected("
+    },
+    "mainBack": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/native-sources/com/xiaomi/fitness/main/MainActivity.java",
+      "sha256": "dab438266986cf0c3c1014c2206997d9934e0718f848171c8a92330072376a3c",
+      "line": 1725,
+      "selector": "public void onBackPressed()"
+    },
+    "taskCenter": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 631,
+      "module": "mi-623"
+    },
+    "consultation": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 554,
+      "module": "mi-546"
+    },
+    "appVersionItem": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 496,
+      "module": "mi-488"
+    },
+    "appUpgradeBridge": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 497,
+      "module": "mi-489"
+    }
+  },
+  "observations": {
+    "activity-sheet": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b34-activity-guard.json",
+      "eventSha256": "a11e5be44bad478c5ac831fb1d494727e17a5127cf9ff7f51804897cab8b1379",
+      "started": "2026-10-15T13:12:00.156Z",
+      "hierarchies": [
+        {
+          "path": "analysis/ui/runtime/hierarchy/b34-activity-guard.json",
+          "sha256": "30d38df1cf818dfeba5a934b5cb3f4865dab579c3ed54115e3c90b8d09fd4b7c",
+          "at": "2026-10-15T13:12:00.668Z"
+        }
+      ],
+      "result": "Guest My Activity press displays RN login confirmation, not AccountLoginActivity"
+    },
+    "explicit-cancel": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b35-cancel-explicit.json",
+      "eventSha256": "7a9cb0fc6de29b764fdee35f914e73aebbed86bdf7b1aede9468e7eb29ea8acd",
+      "started": "2026-10-15T13:12:04.421Z",
+      "hierarchies": [
+        {
+          "path": "analysis/ui/runtime/hierarchy/b35-guard-cancelled.json",
+          "sha256": "77cfb3f6018292546cac7483ea8186280369a2722496906ab1cb69380290b5a7",
+          "at": "2026-10-15T13:12:05.054Z"
+        }
+      ],
+      "result": "Explicit Cancel dismisses confirmation, returns to same top-of-Mine visible structure"
+    },
+    "weekly-sheet": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b36-weekly-guard.json",
+      "eventSha256": "5507680f9f292fb70b7e25341ec06272fba3407acd72c7711ad7e942b3c12e9d",
+      "started": "2026-10-15T13:12:08.180Z",
+      "hierarchies": [
+        {
+          "path": "analysis/ui/runtime/hierarchy/b36-weekly-guard.json",
+          "sha256": "e1971f00f2d8af1c9bfacca79bad14bacefa78d0437c9ee14a02a59c5c690f19",
+          "at": "2026-10-15T13:12:08.844Z"
+        }
+      ],
+      "result": "Guest weekly card displays same login confirmation"
+    },
+    "mask-dismiss": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b38-mask-tap.json",
+      "eventSha256": "14cc5bb42e513c578f19daf4a0721eb0673d03746be8f21f981e88e3f363feca",
+      "started": "2026-10-15T13:22:13.776Z",
+      "hierarchies": [
+        {
+          "path": "analysis/ui/runtime/hierarchy/b37-guard-resume.json",
+          "sha256": "a25fc69363ae262efe47a16b6c467fdcfa4178eab2c4815b914916deb072d0dc",
+          "at": "2026-10-15T13:22:11.237Z"
+        },
+        {
+          "path": "analysis/ui/runtime/hierarchy/b38-mask-result.json",
+          "sha256": "16e89e9c42a42f5b851236cbf6a738056a2be9f0fccaa725ba2c8540c6b4593b",
+          "at": "2026-10-15T13:22:14.301Z"
+        }
+      ],
+      "result": "Tap outside card at physical540,1000 dismisses confirmation; My profile/shortcut/weekly anchors unchanged"
+    },
+    "settings-return": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b16-settings-back.json",
+      "eventSha256": "79e178c5c30c1a710aab089b8937479b0181eb6e0c10003f9b25f62dc79f38bb",
+      "started": "2026-10-15T12:58:04.787Z",
+      "hierarchies": [
+        {
+          "path": "analysis/ui/runtime/hierarchy/b07-mine-menu.json",
+          "sha256": "983365edfb68e3189b4c81c7a51903d564741d492b2bca19015b5049125fae3e",
+          "at": "2026-10-15T12:52:30.385Z"
+        },
+        {
+          "path": "analysis/ui/runtime/hierarchy/b16-settings-return.json",
+          "sha256": "1ada04f76f16a417cac1777ff71910712dc7245b1c54100725e267ce440b7f0c",
+          "at": "2026-10-15T12:58:05.344Z"
+        }
+      ],
+      "result": "My App设置 label [143,831][943,906] before and after ordinary Settings Back"
+    },
+    "tab-reselect": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b17-reselect-mine.json",
+      "eventSha256": "884bd959508559ab79f720ec607b40c13737b612035d5eacf4d42bc495f7d4c9",
+      "started": "2026-10-15T12:58:50.054Z",
+      "hierarchies": [
+        {
+          "path": "analysis/ui/runtime/hierarchy/b16-settings-return.json",
+          "sha256": "1ada04f76f16a417cac1777ff71910712dc7245b1c54100725e267ce440b7f0c",
+          "at": "2026-10-15T12:58:05.344Z"
+        },
+        {
+          "path": "analysis/ui/runtime/hierarchy/b17-reselect-result.json",
+          "sha256": "9000cb22ead07c8efb3388ed8a4a13f4d6d901d27eb8ed3dd6c571d8e6f56b42",
+          "at": "2026-10-15T12:58:50.664Z"
+        }
+      ],
+      "result": "My current-tab reselection retains scrolled App设置 anchor"
+    },
+    "hero-open": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b19-hero-press.json",
+      "eventSha256": "d89f7ec61d32f939c3ec762c76314829c5abc2db23598991e562134736751f44",
+      "started": "2026-10-15T12:58:54.012Z",
+      "hierarchies": [
+        {
+          "path": "analysis/ui/runtime/hierarchy/b19-hero-result.json",
+          "sha256": "b17d641e264993010873d928da055ce4b8b87d6b90b86ff32ef02affbb1383a2",
+          "at": "2026-10-15T12:58:54.498Z"
+        }
+      ],
+      "result": "Health hero opens 活力指标 detail with date2026-10-15 and zero metrics"
+    },
+    "sleep-open": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b21-sleep-press.json",
+      "eventSha256": "dd578b41b9e3ff16bd1befffc601777b6cd6287810c78e10a9e3a55feb4e5e7d",
+      "started": "2026-10-15T12:59:19.137Z",
+      "hierarchies": [
+        {
+          "path": "analysis/ui/runtime/hierarchy/b21-sleep-result.json",
+          "sha256": "9e3084d0ff5a7f899df6788cf1401ac15c4f5feb5871e1bd72734fb1877721e0",
+          "at": "2026-10-15T12:59:19.739Z"
+        }
+      ],
+      "result": "Health empty sleep card opens 睡眠 detail, date2026-10-15, no-data explanation"
+    },
+    "privacy-back": {
+      "classification": "A",
+      "origin": "historical",
+      "eventPath": null,
+      "eventSha256": null,
+      "started": null,
+      "hierarchies": [
+        {
+          "path": "analysis/ui/runtime/hierarchy/03-privacy-confirm.json",
+          "sha256": "12c42e7d0bdf3b0fe38bffd92e8f16dec4813c45d390191f808ff43e98945f39",
+          "at": "2026-10-15T11:45:59.724Z"
+        },
+        {
+          "path": "analysis/ui/runtime/hierarchy/03b-confirm-back.json",
+          "sha256": "14387c456f8d4edabe654b12598746a25f8902c96ec97bbd0daf4161c209614b",
+          "at": "2026-10-15T11:46:24.885Z"
+        }
+      ],
+      "result": "Specific secondary privacy dialog unchanged by system Back"
+    },
+    "background-resume": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": null,
+      "eventSha256": null,
+      "started": null,
+      "hierarchies": [
+        {
+          "path": "analysis/ui/runtime/hierarchy/b36-weekly-guard.json",
+          "sha256": "e1971f00f2d8af1c9bfacca79bad14bacefa78d0437c9ee14a02a59c5c690f19",
+          "at": "2026-10-15T13:12:08.844Z",
+          "nodeCount": 14
+        },
+        {
+          "path": "analysis/ui/runtime/hierarchy/b37-guard-resume.json",
+          "sha256": "a25fc69363ae262efe47a16b6c467fdcfa4178eab2c4815b914916deb072d0dc",
+          "at": "2026-10-15T13:22:11.237Z",
+          "nodeCount": 14
+        }
+      ],
+      "result": "Same active weekly LoginModal remains after controller background/resume; snapshot captures retention, exact background event timestamp unavailable here"
+    },
+    "system-back-dismiss": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b40-guard-back.json",
+      "eventSha256": "7b61364c7917a29fea99bf4872f34bdb0b7a8155e0c563588a7a73f64d371efa",
+      "started": "2026-10-15T13:23:14.364Z",
+      "hierarchies": [
+        {
+          "path": "analysis/ui/runtime/hierarchy/b39-guard.json",
+          "sha256": "54f4518c6982ee0e7071ef65b49e73ce16af1469d177da7713102d4ec9bd78e1",
+          "at": "2026-10-15T13:23:11.688Z",
+          "nodeCount": 14
+        },
+        {
+          "path": "analysis/ui/runtime/hierarchy/b40-back-result.json",
+          "sha256": "39c001ecb0474f6ef7c4da4984c81153f87da8a7f7edb125ce4079e6d63d9485",
+          "at": "2026-10-15T13:23:14.869Z",
+          "nodeCount": 131
+        }
+      ],
+      "result": "Activity guard system Back dismisses into131-node Mine top; no remaining visible confirmation"
+    },
+    "repeat-tap-consumed": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b42-shortcut-repeat.json",
+      "eventSha256": "52943c1a8589fc0ba073d0c15a2c22a1656622d3f5a666d2e9c2f79d41e4bd44",
+      "started": "2026-10-15T13:23:17.898Z",
+      "hierarchies": [
+        {
+          "path": "analysis/ui/runtime/hierarchy/b42-repeat-result.json",
+          "sha256": "f7f11896a3d5f298732f2088a05779b96b732697a77448f23262aff5de85ebf4",
+          "at": "2026-10-15T13:23:18.699Z",
+          "nodeCount": 131
+        },
+        {
+          "path": "analysis/ui/runtime/hierarchy/b42-repeat-settled.json",
+          "sha256": "81f7012c7fb4516fb5bcb3dccdf14b305b3bd5133c02999eaff3de5e97d88b38",
+          "at": "2026-10-15T13:24:03.127Z",
+          "nodeCount": 131
+        }
+      ],
+      "result": "After b41 opens Activity confirmation, second original-shortcut-coordinate tap lands on overlay and dismisses; settled131-node Mine. No visible stacked dialog; not a concurrent openModal queue stress test"
+    },
+    "confirm-to-account": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b44-confirm-login.json",
+      "eventSha256": "0f319a4030c140ef1c1ae730c4316f6e23fc7a9472c0215b4fac1806d78eb31e",
+      "started": "2026-10-15T13:24:09.650Z",
+      "hierarchies": [
+        {
+          "path": "analysis/ui/runtime/hierarchy/b43-weekly-reopen.json",
+          "sha256": "67678b6d55b989722dfec6fe74ff4b801838b3c7519f2705217a89f96257a34f",
+          "at": "2026-10-15T13:24:06.752Z",
+          "nodeCount": 14
+        },
+        {
+          "path": "analysis/ui/runtime/hierarchy/b44-login-result.json",
+          "sha256": "e45daece67f5acd0bccbc79c114a1f0d95b42c225c20f5a74445127fe7fbe4cb",
+          "at": "2026-10-15T13:24:10.270Z",
+          "nodeCount": 31
+        },
+        {
+          "path": "analysis/ui/runtime/hierarchy/b45-login-settled.json",
+          "sha256": "23384fb006ff3366049b3c38b8d10cf6dcbc9484b8b07c020a9877802e9c31f1",
+          "at": "2026-10-15T13:25:04.085Z",
+          "nodeCount": 31
+        }
+      ],
+      "result": "Weekly LoginModal positive enters original Xiaomi-account login; settled31 nodes; no credentials entered. Failed initial dump output was not accepted as state"
+    },
+    "confirmed-account-back": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b46-login-back.json",
+      "eventSha256": "d53d25ce447741ca017d596b0a36a9ce0f32e1ed45e0fc5f1ab47d7996f66bcc",
+      "started": "2026-10-15T13:25:06.863Z",
+      "hierarchies": [
+        {
+          "path": "analysis/ui/runtime/hierarchy/b45-login-settled.json",
+          "sha256": "23384fb006ff3366049b3c38b8d10cf6dcbc9484b8b07c020a9877802e9c31f1",
+          "at": "2026-10-15T13:25:04.085Z",
+          "nodeCount": 31
+        },
+        {
+          "path": "analysis/ui/runtime/hierarchy/b46-login-return.json",
+          "sha256": "bbe24785b07d431c6b8d14a1b88556c0dad7e28127211b593bdff4d9222d3a84",
+          "at": "2026-10-15T13:25:07.358Z",
+          "nodeCount": 131
+        }
+      ],
+      "result": "System Back from account screen returns directly to131-node Mine top; no guard remains visible"
+    },
+    "add-menu-open": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b47-add-device.json",
+      "eventSha256": "7c9dba1398c33d5c93ff0e2f61cf00950b73d07d83606bd6430de28b383f414f",
+      "started": "2026-10-15T13:25:10.159Z",
+      "hierarchies": [
+        {
+          "path": "analysis/ui/runtime/hierarchy/b47-add-result.json",
+          "sha256": "7d44af8b2e8611a354260c1dd2f639999f319629aa38dc708bd260425a06d3bf",
+          "at": "2026-10-15T13:25:10.530Z",
+          "nodeCount": 14
+        }
+      ],
+      "result": "AddIcon opens anchored menu containing 添加设备 and 扫一扫,14 nodes"
+    },
+    "menu-resume": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": null,
+      "eventSha256": null,
+      "started": null,
+      "hierarchies": [
+        {
+          "path": "analysis/ui/runtime/hierarchy/b47-add-result.json",
+          "sha256": "7d44af8b2e8611a354260c1dd2f639999f319629aa38dc708bd260425a06d3bf",
+          "at": "2026-10-15T13:25:10.530Z",
+          "nodeCount": 14
+        },
+        {
+          "path": "analysis/ui/runtime/hierarchy/b48-add-menu-resume.json",
+          "sha256": "e4744729eff83f0bde0216421b0b33fb441d24e79e8314235bdd63b71a220ce5",
+          "at": "2026-10-15T13:30:19.142Z",
+          "nodeCount": 14
+        }
+      ],
+      "result": "AddIcon menu remains across this background/resume with identical two-item bounds"
+    },
+    "menu-system-back": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b49-menu-back.json",
+      "eventSha256": "98ac0052e8ef63e7e0671a1fdaf00c799e884785e570b420bc86beeaad593e0d",
+      "started": "2026-10-15T13:30:22.717Z",
+      "hierarchies": [
+        {
+          "path": "analysis/ui/runtime/hierarchy/b48-add-menu-resume.json",
+          "sha256": "e4744729eff83f0bde0216421b0b33fb441d24e79e8314235bdd63b71a220ce5",
+          "at": "2026-10-15T13:30:19.142Z",
+          "nodeCount": 14
+        },
+        {
+          "path": "analysis/ui/runtime/hierarchy/b49-menu-back.json",
+          "sha256": "ef9f46c80ff4268ab7c965a836041993a7f472acda4988cc20242263ca167d4b",
+          "at": "2026-10-15T13:30:23.335Z",
+          "nodeCount": 131
+        }
+      ],
+      "result": "System Back dismisses AddIcon menu to131-node Mine top"
+    },
+    "menu-outside": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b51-menu-outside.json",
+      "eventSha256": "5ff5179721d646baad5bc2879c19013b112d9abd53d6d42c0208b1e990677254",
+      "started": "2026-10-15T13:30:26.502Z",
+      "hierarchies": [
+        {
+          "path": "analysis/ui/runtime/hierarchy/b51-menu-outside.json",
+          "sha256": "c3db1d4c2d40892fe694def4a09f1ad1d63738660ffcc7345618968c915a16cb",
+          "at": "2026-10-15T13:30:27.319Z",
+          "nodeCount": 131
+        }
+      ],
+      "result": "After reopening, physical540,1000 outside tap dismisses menu to131-node Mine top"
+    },
+    "menu-add-guest": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b53-menu-add-device.json",
+      "eventSha256": "0a186600623509bc382e32da556debb8c409fa0d7097c42df498c806c6dbfa28",
+      "started": "2026-10-15T13:30:30.756Z",
+      "hierarchies": [
+        {
+          "path": "analysis/ui/runtime/hierarchy/b53-add-destination.json",
+          "sha256": "bfb5c4c3034fc7fb5606752f303b428ad757b5aebc2f90165fb85f029465d645",
+          "at": "2026-10-15T13:30:31.504Z",
+          "nodeCount": 31
+        }
+      ],
+      "result": "Guest selecting 添加设备 reaches31-node Xiaomi account login; actual add-device page not entered"
+    },
+    "add-account-return": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b55-add-return.json",
+      "eventSha256": "058bfcaf1fa8fc5cabe4b485f2c96728f95784043a136afc8bba21ea28cf7cd1",
+      "started": "2026-10-15T13:31:28.618Z",
+      "hierarchies": [
+        {
+          "path": "analysis/ui/runtime/hierarchy/b54-add-destination-settled.json",
+          "sha256": "cec7dd28f26a216c4b1f073af488ceb777bbc0993eb60c9d952a40d7c5290a25",
+          "at": "2026-10-15T13:31:25.762Z",
+          "nodeCount": 31
+        },
+        {
+          "path": "analysis/ui/runtime/hierarchy/b55-add-return.json",
+          "sha256": "18f8d0299f68a9c787f9e71c26209effc18c2497f077789249cc7416e22da90b",
+          "at": "2026-10-15T13:31:29.265Z",
+          "nodeCount": 131
+        }
+      ],
+      "result": "AddDevice guest destination is settled account-login31 nodes; system Back restores Mine131 nodes directly, not Add menu"
+    }
+  },
+  "popups": [
+    {
+      "id": "rn-login-confirmation",
+      "name": "My LoginModal confirmation",
+      "scope": "current mine11.202.21 guest CN profile; GlobalModalProvider instance inside MineTab",
+      "appears": {
+        "value": "Five ShortcutGrid actions and weekly report invoke useLoginStatusCheck; guest -> openModal(LoginModal), return without action. Guest menu restricted actions directly open same component.",
+        "classification": "B",
+        "evidence": [
+          "guard",
+          "weekly",
+          "guestMenu",
+          "shortcut"
+        ]
+      },
+      "observedTriggers": {
+        "value": "My Activity and SportsHealthWeekly display identical need-login confirmation",
+        "classification": "A",
+        "evidence": [
+          "activity-sheet",
+          "weekly-sheet"
+        ]
+      },
+      "explicitCancel": {
+        "value": "Cancel dismisses sheet and returns Mine; underlying visible top anchors unchanged",
+        "classification": "A",
+        "evidence": [
+          "explicit-cancel"
+        ]
+      },
+      "systemBack": {
+        "value": "Observed single visible guard dismissed by system Back; top Mine restored",
+        "classification": "A",
+        "evidence": [
+          "system-back-dismiss"
+        ]
+      },
+      "mask": {
+        "value": "Outside tap physical540,1000 dismisses; underlying profile/shortcuts/weekly positions unchanged",
+        "classification": "A",
+        "evidence": [
+          "mask-dismiss"
+        ]
+      },
+      "confirm": {
+        "classification": "B",
+        "value": "closeModal first; schedule CommonBridge.showLoginPage with1000ms timer; no original-action callback in this handler",
+        "evidence": [
+          "loginSheet"
+        ]
+      },
+      "overlayComposition": {
+        "value": "RN Modal transparent=true fade, mask rgba(0,0,0,0.5); card is content not native account page",
+        "classification": "B",
+        "evidence": [
+          "provider",
+          "maskStyle",
+          "loginSheet"
+        ]
+      },
+      "stackOrReplace": {
+        "value": "At most one current component visible in this provider; when another request arrives current/external-open -> queue.push, close -> FIFO shift. There is no request-key dedup or stack rendering here.",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "repeatedTrigger": {
+        "value": "Provider does not coalesce repeated open calls. SettingItem alone throttles leading300ms; shortcut/weekly guard has no shown shared throttle.",
+        "classification": "B",
+        "evidence": [
+          "provider",
+          "menuRow",
+          "guard"
+        ]
+      },
+      "crossPage": {
+        "value": "Provider is placed within MineTab, not global Android task. MineTab passes no checkExternalModalOpened so default resolvesfalse. No route/tab-leave clear is present in provider. This does not prove popup survives all route changes.",
+        "classification": "B",
+        "evidence": [
+          "mineMount",
+          "provider"
+        ]
+      },
+      "afterDismiss": {
+        "value": "Empty close nulls current ref and visible=false; next queued close replaces content while visible remains true. Render-state component field is not explicitly cleared on empty close.",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "afterExit": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No provider queue persistence or route/unmount cleanup found in this local module; actual native task/tab lifetime requires A. Login button timeout has no clearTimeout/unmount guard in component."
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No A of confirmation while Android theme recreation; no serialized queue state in inspected provider"
+      },
+      "stateOwner": {
+        "value": "Provider useState visible/current render state, useRef current and FIFO array; guarded action remains with caller, login confirmation does not save/execute it.",
+        "classification": "B",
+        "evidence": [
+          "provider",
+          "loginSheet",
+          "guard"
+        ]
+      },
+      "unknowns": [
+        "runtime queue of two same dialogs",
+        "rapid simultaneous guard opens",
+        "login-confirm then leaving within1000ms",
+        "pending queue on background/exit/recreation",
+        "logged-in continuation"
+      ],
+      "observedRepeatedTrigger": {
+        "value": "Second same-coordinate tap after dialog opened is consumed by overlay and dismisses; no visible stacking in this probe",
+        "classification": "A",
+        "evidence": [
+          "repeat-tap-consumed"
+        ]
+      },
+      "backgroundResume": {
+        "value": "Weekly guard persists across this background/resume",
+        "classification": "A",
+        "evidence": [
+          "background-resume"
+        ]
+      },
+      "observedConfirmation": {
+        "classification": "A",
+        "value": "Positive from weekly confirmation enters native account login; exact timer duration not measured",
+        "evidence": [
+          "confirm-to-account"
+        ]
+      },
+      "declaredSystemBackWhenQueued": {
+        "value": "onRequestClose calls closeModal; if pending exists the next FIFO item is rendered instead of hiding",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "additionalDeclaredTriggers": {
+        "value": "Guest UnLoginTaskCenterEntrance and UnLoginHealthConsultationNew directly open LoginModal; this is declaration, exact-entry runtime not collected",
+        "classification": "B",
+        "evidence": [
+          "taskCenter",
+          "consultation"
+        ]
+      }
+    },
+    {
+      "id": "native-account-login",
+      "name": "AccountLoginActivity / Xiaomi account SDK",
+      "scope": "separate native activity, protected screenshot; not the RN confirmation",
+      "appears": {
+        "value": "Guest profile useEffect calls CommonBridge.showLoginPage; profile press also calls directly. RN confirmation positive schedules same bridge after1000ms.",
+        "classification": "B",
+        "evidence": [
+          "profileAutoLogin",
+          "loginSheet"
+        ]
+      },
+      "explicitCancel": {
+        "value": null,
+        "status": "unknown",
+        "reason": "SDK cancel button was not structurally analyzed"
+      },
+      "systemBack": {
+        "value": "System Back returns to Mine top without previous RN confirmation or Add menu, in separately tested weekly and AddDevice paths",
+        "classification": "A",
+        "evidence": [
+          "confirmed-account-back",
+          "add-account-return"
+        ]
+      },
+      "mask": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "full native login activity; no outer popup mask semantics established"
+      },
+      "confirm": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No credentials entered; successful login not tested"
+      },
+      "overlayComposition": {
+        "value": "Original account window has SECURE flag; black frame excluded from visual samples",
+        "classification": "B",
+        "evidence": [
+          "analysis/ui/runtime/account-window-flags.txt"
+        ]
+      },
+      "stackOrReplace": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Exact task stack entries and activity launchMode not closed by selected B"
+      },
+      "repeatedTrigger": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Bridge/SDK coalescing not analyzed"
+      },
+      "crossPage": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Native launch can overlap pending RN work; no unified modal coordination established"
+      },
+      "afterDismiss": {
+        "value": "After positive-button login request then SDK Back, same guest top Mine restored; no confirmation remains visible",
+        "classification": "A",
+        "evidence": [
+          "confirmed-account-back"
+        ]
+      },
+      "afterExit": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Account input persistence/task relaunch not tested"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Account theme change not tested"
+      },
+      "stateOwner": {
+        "value": null,
+        "status": "unknown",
+        "reason": "SDK input/session internals deliberately untested"
+      },
+      "unknowns": [
+        "input restoration",
+        "multiple launches",
+        "login success original intent continuation",
+        "process restart",
+        "SDK animation"
+      ],
+      "observedEntry": {
+        "value": "b44/b45 positive-button path reached account login, no credentials entered",
+        "classification": "A",
+        "evidence": [
+          "confirm-to-account"
+        ]
+      }
+    },
+    {
+      "id": "rn-add-menu",
+      "name": "My AddIcon anchored menu",
+      "scope": "updated mine11.202.21 AddIcon; not global LoginModal queue",
+      "appears": {
+        "value": "Child press sets local isOpen=true; anchor measure supplies top, right20, width167.5",
+        "classification": "B",
+        "evidence": [
+          "addIcon",
+          "anchoredMenu"
+        ]
+      },
+      "explicitCancel": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No dedicated cancel item in selected component"
+      },
+      "systemBack": {
+        "value": "System Back dismisses to Mine top",
+        "classification": "A",
+        "evidence": [
+          "menu-system-back"
+        ]
+      },
+      "mask": {
+        "value": "Outside tap540,1000 dismisses to Mine top",
+        "classification": "A",
+        "evidence": [
+          "menu-outside"
+        ]
+      },
+      "confirm": {
+        "value": "Option press calls local close first, then onSelect; AddIcon awaits checkLogin, then checkerUserPrivacySetting or native route. iOS-only delay200ms is source evidence, not Android runtime timing.",
+        "classification": "B",
+        "evidence": [
+          "anchoredMenu",
+          "addIcon"
+        ]
+      },
+      "overlayComposition": {
+        "value": "Separate NativeBase Modal with useRNModal=true and accessibilityViewIsModal; theme popover background",
+        "classification": "B",
+        "evidence": [
+          "anchoredMenu"
+        ]
+      },
+      "stackOrReplace": {
+        "value": "One local boolean for this component; not the GlobalModalProvider FIFO. No cross-provider dedup shown.",
+        "classification": "B",
+        "evidence": [
+          "anchoredMenu"
+        ]
+      },
+      "repeatedTrigger": {
+        "value": "Opening assigns true again; source has no toggle/queue in this local component",
+        "classification": "B",
+        "evidence": [
+          "anchoredMenu"
+        ]
+      },
+      "crossPage": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Component route/tab lifetime not observed for this menu"
+      },
+      "afterDismiss": {
+        "value": "Selected AddDevice closes menu; SDK login Back returns Mine without reopening menu",
+        "classification": "A",
+        "evidence": [
+          "add-account-return"
+        ]
+      },
+      "afterExit": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No saved local isOpen across remount"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not tested"
+      },
+      "stateOwner": {
+        "value": "local React state; controlled show prop can synchronize it via useEffect",
+        "classification": "B",
+        "evidence": [
+          "anchoredMenu"
+        ]
+      },
+      "unknowns": [
+        "hit-testing during transition",
+        "cross-modal priority",
+        "recreation",
+        "Scan option runtime",
+        "after-auth actual device page"
+      ],
+      "observedEntry": {
+        "value": "b47 guest AddIcon displays two anchored items 添加设备/扫一扫",
+        "classification": "A",
+        "evidence": [
+          "add-menu-open"
+        ]
+      },
+      "backgroundResume": {
+        "value": "Menu retained across this background/resume",
+        "classification": "A",
+        "evidence": [
+          "menu-resume"
+        ]
+      },
+      "observedSelection": {
+        "value": "Guest AddDevice selection closes menu and reaches account login; no device page validated",
+        "classification": "A",
+        "evidence": [
+          "menu-add-guest"
+        ]
+      }
+    },
+    {
+      "id": "native-privacy-confirm",
+      "name": "Secondary privacy agreement confirmation",
+      "scope": "first-launch PrivacyActivity with agreement unchecked; historical A",
+      "appears": {
+        "value": "agreeClick unchecked -> showPrivacyDialog(privacy_sure_dialog)",
+        "classification": "B",
+        "evidence": [
+          "privacy"
+        ]
+      },
+      "explicitCancel": {
+        "value": "Negative callback dialog.dismiss; positive invokes handlePrivacyAgree then dismiss",
+        "classification": "B",
+        "evidence": [
+          "privacyClick"
+        ]
+      },
+      "systemBack": {
+        "value": "System Back does not dismiss this one confirmation",
+        "classification": "A",
+        "evidence": [
+          "privacy-back"
+        ]
+      },
+      "mask": {
+        "value": null,
+        "status": "unknown",
+        "reason": "setCanceledOnTouchOutside not in selected call; CommonDialog default not chased"
+      },
+      "confirm": {
+        "value": "handlePrivacyAgree then dismiss; downstream region/main route depends on configuration",
+        "classification": "B",
+        "evidence": [
+          "privacyClick"
+        ]
+      },
+      "overlayComposition": {
+        "value": "CommonDialog with linked description, positive/negative labels; setCanceledOnBackPressed(false)",
+        "classification": "B",
+        "evidence": [
+          "privacy"
+        ]
+      },
+      "stackOrReplace": {
+        "value": null,
+        "status": "unknown",
+        "reason": "CommonDialog.showIfNeed behavior and dialogName dedup internals not analyzed"
+      },
+      "repeatedTrigger": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No repeated-open A"
+      },
+      "crossPage": {
+        "value": "Positive continues first-run flow after handling agreement",
+        "classification": "B",
+        "evidence": [
+          "privacyClick"
+        ]
+      },
+      "afterDismiss": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Negative checkbox/focus state not separately measured"
+      },
+      "afterExit": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Dialog reappearance on process restart not measured"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not tested"
+      },
+      "stateOwner": {
+        "value": "privacy agreement state owned by PrivacyActivity/ViewModel; dialog cancel handler only dismisses",
+        "classification": "B",
+        "evidence": [
+          "privacyClick"
+        ]
+      },
+      "unknowns": [
+        "mask cancellation",
+        "repeat requests",
+        "focus restoration",
+        "theme/process recreation"
+      ]
+    },
+    {
+      "id": "share-resource-progress",
+      "name": "Health share prerequisite preparation dialog",
+      "scope": "DataHeaderV2View calorie share resource branch; B only for dialog",
+      "appears": {
+        "value": "If share-bg exists -> direct ShareCaloConsumActivity; otherwise CommonDialog download bg + async download",
+        "classification": "B",
+        "evidence": [
+          "sharePrepare"
+        ]
+      },
+      "explicitCancel": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No cancel handler in selected branch"
+      },
+      "systemBack": {
+        "value": null,
+        "status": "unknown",
+        "reason": "CommonDialog cancel default not chased"
+      },
+      "mask": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Unknown"
+      },
+      "confirm": {
+        "value": "Resource result true dismisses and enters share; null dismisses and short failure toast; false has no enter branch",
+        "classification": "B",
+        "evidence": [
+          "sharePrepare"
+        ]
+      },
+      "overlayComposition": {
+        "value": "CommonDialog custom layout id; no measured duration/easing",
+        "classification": "B",
+        "evidence": [
+          "sharePrepare"
+        ]
+      },
+      "stackOrReplace": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Dialog showIfNeed duplicate behavior not chased"
+      },
+      "repeatedTrigger": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No source dedup semantics confirmed at caller"
+      },
+      "crossPage": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Download result race after user leaves not tested"
+      },
+      "afterDismiss": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Retry and download cancellation semantics unknown"
+      },
+      "afterExit": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Observer/lifecycle result delivery needs further source/runtime analysis"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not tested"
+      },
+      "stateOwner": {
+        "value": "MutableLiveData result observed with FragmentActivity owner in selected branch",
+        "classification": "B",
+        "evidence": [
+          "sharePrepare"
+        ]
+      },
+      "unknowns": [
+        "user cancellation",
+        "duplicate share presses",
+        "late results",
+        "retry",
+        "activity recreation"
+      ]
+    },
+    {
+      "id": "reference-only-dialogs",
+      "name": "Independent reference adapters and transfer dialogs",
+      "scope": "D only; does not verify source dialogs",
+      "appears": {
+        "value": "Source-detail boundary; independent auth prompt; transfer edit/workspace/error-retry demonstrations",
+        "classification": "D",
+        "evidence": []
+      },
+      "explicitCancel": {
+        "value": "Reference owner defines cancel/close; verify in independent reference run",
+        "classification": "D",
+        "evidence": []
+      },
+      "systemBack": {
+        "value": "Android dialog/route adapter behavior; source popup rules must be applied per corresponding component",
+        "classification": "D",
+        "evidence": []
+      },
+      "mask": {
+        "value": "Explicitly chosen per reference popup; not inherited as a global source rule",
+        "classification": "D",
+        "evidence": []
+      },
+      "confirm": {
+        "value": "Target domain handler; local fixtures are not account/backend evidence",
+        "classification": "D",
+        "evidence": []
+      },
+      "overlayComposition": {
+        "value": "Native independent components; side-by-side divergence must remain documented",
+        "classification": "D",
+        "evidence": []
+      },
+      "stackOrReplace": {
+        "value": "Target should choose queue/dedup/priority as an explicit policy; original FIFO applies only where sourced",
+        "classification": "D",
+        "evidence": []
+      },
+      "repeatedTrigger": {
+        "value": "Choose duplicate-submission handling per operation; do not globalize menu300ms",
+        "classification": "D",
+        "evidence": []
+      },
+      "crossPage": {
+        "value": "Cancel pending UI work on owner exit where target requires; record deliberate differences from source",
+        "classification": "D",
+        "evidence": []
+      },
+      "afterDismiss": {
+        "value": "Restore appropriate target focus/scroll; verify",
+        "classification": "D",
+        "evidence": []
+      },
+      "afterExit": {
+        "value": "Invalidate local late results; persistence comes from target source",
+        "classification": "D",
+        "evidence": []
+      },
+      "themeRecreation": {
+        "value": "Use target save/restore requirements; source unknowns not automatically inherited",
+        "classification": "D",
+        "evidence": []
+      },
+      "stateOwner": {
+        "value": "Target state owners explicit",
+        "classification": "D",
+        "evidence": []
+      },
+      "unknowns": [
+        "no source equivalence for independent secondary UI"
+      ]
+    }
+  ],
+  "navigation": [
+    {
+      "id": "my-settings",
+      "from": "Mine scrolled menu",
+      "entry": {
+        "value": "App设置 press -> native SettingActivity; leading-only300ms",
+        "classification": "B",
+        "evidence": [
+          "guestMenu"
+        ]
+      },
+      "to": "SettingActivity",
+      "destinationKind": {
+        "value": "native route push",
+        "classification": "B",
+        "evidence": [
+          "guestMenu"
+        ]
+      },
+      "stackEffect": {
+        "value": "router.push(native) declaration; numeric Android task depth unknown",
+        "classification": "B",
+        "evidence": [
+          "guestMenu"
+        ]
+      },
+      "back": {
+        "value": "Back returns to same scrolled Mine",
+        "classification": "A",
+        "evidence": [
+          "settings-return"
+        ]
+      },
+      "scroll": {
+        "value": "App设置 anchor [143,831][943,906] before/after",
+        "classification": "A",
+        "evidence": [
+          "settings-return"
+        ]
+      },
+      "selection": {
+        "value": "Mine remains selected in returned hierarchy",
+        "classification": "A",
+        "evidence": [
+          "settings-return"
+        ]
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": "Historical system night switch in Settings led to Health on return; ordinary Back separately retains Mine",
+        "classification": "A",
+        "evidence": [
+          "analysis/ui/runtime/interaction-checks.json#themeRecreation"
+        ]
+      }
+    },
+    {
+      "id": "my-current-tab",
+      "from": "Mine scrolled",
+      "entry": {
+        "value": "press selected Mine tab",
+        "classification": "A",
+        "evidence": [
+          "tab-reselect"
+        ]
+      },
+      "to": "same Mine content",
+      "destinationKind": {
+        "value": "same root tab",
+        "classification": "A",
+        "evidence": [
+          "tab-reselect"
+        ]
+      },
+      "stackEffect": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No numeric task dump; no user-visible new route"
+      },
+      "back": {
+        "value": "Not an entered route; root-back behavior is separate",
+        "classification": "A",
+        "evidence": [
+          "analysis/ui/runtime/interaction-checks.json#rootBack"
+        ]
+      },
+      "scroll": {
+        "value": "same App设置 scroll anchor",
+        "classification": "A",
+        "evidence": [
+          "tab-reselect"
+        ]
+      },
+      "selection": {
+        "value": "Mine stays selected",
+        "classification": "A",
+        "evidence": [
+          "tab-reselect"
+        ]
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      },
+      "sourceHandler": {
+        "classification": "B",
+        "value": "onTabReselected body is empty",
+        "evidence": [
+          "mainReselect"
+        ]
+      }
+    },
+    {
+      "id": "my-activity-guard",
+      "from": "Mine top shortcuts",
+      "entry": {
+        "value": "My Activity press guest",
+        "classification": "A",
+        "evidence": [
+          "activity-sheet"
+        ]
+      },
+      "to": "LoginModal",
+      "destinationKind": {
+        "value": "RN confirmation",
+        "classification": "A",
+        "evidence": [
+          "activity-sheet"
+        ]
+      },
+      "stackEffect": {
+        "value": "provider overlay; may queue pending requests, not native route push",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "back": {
+        "value": "System Back closes guard to top Mine; explicit cancel/mask also observed via separate tests",
+        "classification": "A",
+        "evidence": [
+          "system-back-dismiss",
+          "explicit-cancel",
+          "mask-dismiss"
+        ]
+      },
+      "scroll": {
+        "value": "explicit cancel returns same top Mine anchors",
+        "classification": "A",
+        "evidence": [
+          "explicit-cancel"
+        ]
+      },
+      "selection": {
+        "value": "Mine remains visible/selected after explicit cancel",
+        "classification": "A",
+        "evidence": [
+          "explicit-cancel"
+        ]
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      }
+    },
+    {
+      "id": "my-weekly-guard",
+      "from": "Mine top functional cards",
+      "entry": {
+        "value": "SportsHealthWeekly guest press",
+        "classification": "A",
+        "evidence": [
+          "weekly-sheet"
+        ]
+      },
+      "to": "LoginModal",
+      "destinationKind": {
+        "value": "same RN confirmation",
+        "classification": "A",
+        "evidence": [
+          "weekly-sheet"
+        ]
+      },
+      "stackEffect": {
+        "value": "provider overlay; guarded route action not called while logout",
+        "classification": "B",
+        "evidence": [
+          "guard"
+        ]
+      },
+      "back": {
+        "value": "System Back closes guard to top Mine; explicit cancel/mask also observed via separate tests",
+        "classification": "A",
+        "evidence": [
+          "system-back-dismiss",
+          "explicit-cancel",
+          "mask-dismiss"
+        ]
+      },
+      "scroll": {
+        "value": "outside dismissal returns same profile/shortcut/weekly anchors",
+        "classification": "A",
+        "evidence": [
+          "mask-dismiss"
+        ]
+      },
+      "selection": {
+        "value": "Mine selected after outside dismissal",
+        "classification": "A",
+        "evidence": [
+          "mask-dismiss"
+        ]
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      }
+    },
+    {
+      "id": "guard-to-sdk",
+      "from": "RN LoginModal",
+      "entry": {
+        "classification": "A",
+        "value": "Positive Login pressed; account screen observed",
+        "evidence": [
+          "confirm-to-account"
+        ]
+      },
+      "to": "native Xiaomi account page",
+      "destinationKind": {
+        "value": "CommonBridge.showLoginPage native request",
+        "classification": "B",
+        "evidence": [
+          "loginSheet"
+        ]
+      },
+      "stackEffect": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Actual task stack and duplicate launch coalescing unknown"
+      },
+      "back": {
+        "value": "SDK system Back returns Mine without guard",
+        "classification": "A",
+        "evidence": [
+          "confirmed-account-back"
+        ]
+      },
+      "scroll": {
+        "value": "Top Mine profile/shortcut/weekly anchors restored in this exact path",
+        "classification": "A",
+        "evidence": [
+          "confirmed-account-back"
+        ]
+      },
+      "selection": {
+        "value": "My root remains selected after account Back",
+        "classification": "A",
+        "evidence": [
+          "confirmed-account-back"
+        ]
+      },
+      "input": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No credentials entered; restoration unknown"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      },
+      "declaredTiming": {
+        "classification": "B",
+        "value": "close then1000ms timer",
+        "evidence": [
+          "loginSheet"
+        ]
+      }
+    },
+    {
+      "id": "my-profile-sdk",
+      "from": "Mine guest ProfileHeader",
+      "entry": {
+        "value": "mount or direct ProfileHeader press calls bridge",
+        "classification": "B",
+        "evidence": [
+          "profileAutoLogin"
+        ]
+      },
+      "to": "native Xiaomi account page",
+      "destinationKind": {
+        "value": "direct bridge request; no RN confirmation required by caller",
+        "classification": "B",
+        "evidence": [
+          "profileAutoLogin"
+        ]
+      },
+      "stackEffect": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Exact stack unknown"
+      },
+      "back": {
+        "value": "SDK cancellation leaves guest browse possible",
+        "classification": "A",
+        "evidence": [
+          "analysis/ui/runtime/interaction-checks.json#accountLogin"
+        ]
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Actual remount versus ordinary return depends on host lifecycle"
+      },
+      "selection": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not measured on this path"
+      },
+      "input": {
+        "value": null,
+        "status": "unknown",
+        "reason": "SDK input unknown"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      }
+    },
+    {
+      "id": "health-hero-detail",
+      "from": "Health zero-data overview",
+      "entry": {
+        "value": "press hero",
+        "classification": "A",
+        "evidence": [
+          "hero-open"
+        ]
+      },
+      "to": "活力指标 detail",
+      "destinationKind": {
+        "value": "detail page observed",
+        "classification": "A",
+        "evidence": [
+          "hero-open"
+        ]
+      },
+      "stackEffect": {
+        "value": "perceived child destination above Health; numeric task depth not inspected",
+        "classification": "C",
+        "evidence": [
+          "hero-open"
+        ]
+      },
+      "back": {
+        "value": null,
+        "status": "unknown",
+        "reason": "b20 Back action sent; exact paired returned-state hierarchy not separately captured in this matrix yet"
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Health starting scroll top; precise restoration not paired"
+      },
+      "selection": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Detail selection/date change then return not tested"
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      }
+    },
+    {
+      "id": "health-sleep-detail",
+      "from": "Health empty sleep card",
+      "entry": {
+        "value": "press card",
+        "classification": "A",
+        "evidence": [
+          "sleep-open"
+        ]
+      },
+      "to": "睡眠 detail",
+      "destinationKind": {
+        "value": "detail page observed",
+        "classification": "A",
+        "evidence": [
+          "sleep-open"
+        ]
+      },
+      "stackEffect": {
+        "value": "perceived child destination above Health; numeric task depth unknown",
+        "classification": "C",
+        "evidence": [
+          "sleep-open"
+        ]
+      },
+      "back": {
+        "value": null,
+        "status": "unknown",
+        "reason": "b22 Back sent; precise state persistence not paired"
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not measured on this path"
+      },
+      "selection": {
+        "value": "entered detail displays source date2026-10-15; change/return persistence unknown",
+        "classification": "A",
+        "evidence": [
+          "sleep-open"
+        ]
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      }
+    },
+    {
+      "id": "my-switch-tab",
+      "from": "Mine/Health root",
+      "entry": {
+        "classification": "B",
+        "value": "Main onTabSelected gets Fragment, showFragment(current,previous), updates current fragment, conditionally checks invalid token, sets selected visuals; exact helper lifecycle not chased",
+        "evidence": [
+          "mainTabs"
+        ]
+      },
+      "to": "different root tab",
+      "destinationKind": {
+        "classification": "B",
+        "value": "root main navigation; no numeric task-history claim",
+        "evidence": [
+          "mainTabs"
+        ]
+      },
+      "stackEffect": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No claim each tab push adds history"
+      },
+      "back": {
+        "value": "Root Back focused NexusLauncher in historical test",
+        "classification": "A",
+        "evidence": [
+          "analysis/ui/runtime/interaction-checks.json#rootBack"
+        ]
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Cross-tab scroll retention not generalized from same-tab reselect"
+      },
+      "selection": {
+        "value": null,
+        "status": "unknown",
+        "reason": "theme/relaunch selection behavior varies; only ordinary observed paths reliable"
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      }
+    },
+    {
+      "id": "my-system-permissions",
+      "from": "Mine guest menu",
+      "entry": {
+        "value": "system permission entry native push",
+        "classification": "B",
+        "evidence": [
+          "guestMenu"
+        ]
+      },
+      "to": "SystemPermissionFragment",
+      "destinationKind": {
+        "value": "native route",
+        "classification": "B",
+        "evidence": [
+          "guestMenu"
+        ]
+      },
+      "stackEffect": {
+        "value": "router.push declaration, numeric depth unknown",
+        "classification": "B",
+        "evidence": [
+          "guestMenu"
+        ]
+      },
+      "back": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not runtime-tested for this destination"
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not measured on this path"
+      },
+      "selection": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not measured on this path"
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      }
+    },
+    {
+      "id": "my-about",
+      "from": "Mine guest menu",
+      "entry": {
+        "value": "About entry native push",
+        "classification": "B",
+        "evidence": [
+          "guestMenu"
+        ]
+      },
+      "to": "AboutActivity",
+      "destinationKind": {
+        "value": "native route",
+        "classification": "B",
+        "evidence": [
+          "guestMenu"
+        ]
+      },
+      "stackEffect": {
+        "value": "router.push declaration, numeric depth unknown",
+        "classification": "B",
+        "evidence": [
+          "guestMenu"
+        ]
+      },
+      "back": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not runtime-tested for this destination"
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not measured on this path"
+      },
+      "selection": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not measured on this path"
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      }
+    },
+    {
+      "id": "my-add-device-guest",
+      "from": "Mine header AddIcon",
+      "entry": {
+        "value": "选择添加设备 physical780,365",
+        "classification": "A",
+        "evidence": [
+          "menu-add-guest"
+        ]
+      },
+      "to": "Xiaomi account login (guest path)",
+      "destinationKind": {
+        "value": "Account login is observed; actual add-device destination remains gated",
+        "classification": "A",
+        "evidence": [
+          "menu-add-guest"
+        ]
+      },
+      "stackEffect": {
+        "value": "close local menu before checkLogin/native push",
+        "classification": "B",
+        "evidence": [
+          "anchoredMenu",
+          "addIcon"
+        ]
+      },
+      "back": {
+        "value": "b55 system Back from account returns directly Mine; Add menu not reopened",
+        "classification": "A",
+        "evidence": [
+          "add-account-return"
+        ]
+      },
+      "scroll": {
+        "value": "Mine top profile/shortcut/weekly anchors restored after this exact AddDevice-triggered account path",
+        "classification": "A",
+        "evidence": [
+          "add-account-return"
+        ]
+      },
+      "selection": {
+        "value": "Mine selected after SDK return",
+        "classification": "A",
+        "evidence": [
+          "add-account-return"
+        ]
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      }
+    },
+    {
+      "id": "first-privacy",
+      "from": "PrivacyActivity unchecked",
+      "entry": {
+        "value": "Agree -> secondary privacy dialog",
+        "classification": "B",
+        "evidence": [
+          "privacy"
+        ]
+      },
+      "to": "privacy_sure_dialog",
+      "destinationKind": {
+        "value": "CommonDialog",
+        "classification": "B",
+        "evidence": [
+          "privacy"
+        ]
+      },
+      "stackEffect": {
+        "value": null,
+        "status": "unknown",
+        "reason": "showIfNeed exact dedup/stack not chased"
+      },
+      "back": {
+        "value": "System Back leaves secondary dialog visible",
+        "classification": "A",
+        "evidence": [
+          "privacy-back"
+        ]
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not measured on this path"
+      },
+      "selection": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not measured on this path"
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      }
+    },
+    {
+      "id": "root-exit",
+      "from": "Main root Mine",
+      "entry": {
+        "value": "Android root Back",
+        "classification": "A",
+        "evidence": [
+          "analysis/ui/runtime/events/root-back-from-mine.json",
+          "analysis/ui/runtime/interaction-checks.json#rootBack"
+        ]
+      },
+      "to": "NexusLauncher",
+      "destinationKind": {
+        "value": "root return to launcher",
+        "classification": "A",
+        "evidence": [
+          "analysis/ui/runtime/interaction-checks.json#rootBack"
+        ]
+      },
+      "stackEffect": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Task removal versus backgrounding not resolved"
+      },
+      "back": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "External root destination"
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "relaunch scroll not paired"
+      },
+      "selection": {
+        "value": "historical relaunch reached Main rather than Welcome; exact tab restoration not generalized",
+        "classification": "A",
+        "evidence": [
+          "analysis/ui/runtime/运行验证.md"
+        ]
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable root fields"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      },
+      "sourceHandler": {
+        "classification": "B",
+        "value": "MainActivity.onBackPressed interacts with RN delegate conditionally then calls finish(); delegate details not expanded",
+        "evidence": [
+          "mainBack"
+        ]
+      }
+    },
+    {
+      "id": "my-scan-guest",
+      "from": "Mine header AddIcon",
+      "entry": {
+        "value": "Choose 扫一扫 option; close menu then checkLogin/privacy/native push",
+        "classification": "B",
+        "evidence": [
+          "addIcon"
+        ]
+      },
+      "to": "Scan native route if allowed; guest actual outcome unknown",
+      "destinationKind": {
+        "value": "declared native route after check; not observed",
+        "classification": "B",
+        "evidence": [
+          "addIcon"
+        ]
+      },
+      "stackEffect": {
+        "value": "close local menu before checkLogin/native push",
+        "classification": "B",
+        "evidence": [
+          "anchoredMenu",
+          "addIcon"
+        ]
+      },
+      "back": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Scan path not runtime-tested"
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Scan route return not observed"
+      },
+      "selection": {
+        "value": "local menu has no retained selected-item state",
+        "classification": "B",
+        "evidence": [
+          "anchoredMenu"
+        ]
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      }
+    },
+    {
+      "id": "my-add-menu-open",
+      "from": "Mine top header",
+      "entry": {
+        "value": "press AddIcon",
+        "classification": "A",
+        "evidence": [
+          "add-menu-open"
+        ]
+      },
+      "to": "local anchored AddIcon menu",
+      "destinationKind": {
+        "value": "two-item menu overlay",
+        "classification": "A",
+        "evidence": [
+          "add-menu-open"
+        ]
+      },
+      "stackEffect": {
+        "value": "component local isOpen; separate from global confirmation FIFO",
+        "classification": "B",
+        "evidence": [
+          "anchoredMenu"
+        ]
+      },
+      "back": {
+        "value": "system Back closes into Mine top",
+        "classification": "A",
+        "evidence": [
+          "menu-system-back"
+        ]
+      },
+      "scroll": {
+        "value": "Mine visible top anchors same after Back/outside",
+        "classification": "A",
+        "evidence": [
+          "menu-outside"
+        ]
+      },
+      "selection": {
+        "value": "My remains selected",
+        "classification": "A",
+        "evidence": [
+          "menu-outside"
+        ]
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No input in menu"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not tested"
+      }
+    },
+    {
+      "id": "my-restricted-track",
+      "from": "Mine scrolled menu / 我的路线库",
+      "entry": {
+        "value": "我的路线库 guest onPress directly openModal(LoginModal)",
+        "classification": "B",
+        "evidence": [
+          "guestMenu"
+        ]
+      },
+      "to": "LoginModal",
+      "destinationKind": {
+        "value": "RN confirmation",
+        "classification": "B",
+        "evidence": [
+          "guestMenu"
+        ]
+      },
+      "stackEffect": {
+        "value": "provider queue, not immediate feature route",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "back": {
+        "value": "provider onRequestClose",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No paired scrolled-menu cancel test; top-sheet cancel must not be generalized"
+      },
+      "selection": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not measured on this path"
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      }
+    },
+    {
+      "id": "my-restricted-third-party-data",
+      "from": "Mine scrolled menu / 三方数据管理",
+      "entry": {
+        "value": "三方数据管理 guest onPress directly openModal(LoginModal)",
+        "classification": "B",
+        "evidence": [
+          "guestMenu"
+        ]
+      },
+      "to": "LoginModal",
+      "destinationKind": {
+        "value": "RN confirmation",
+        "classification": "B",
+        "evidence": [
+          "guestMenu"
+        ]
+      },
+      "stackEffect": {
+        "value": "provider queue, not immediate feature route",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "back": {
+        "value": "provider onRequestClose",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No paired scrolled-menu cancel test; top-sheet cancel must not be generalized"
+      },
+      "selection": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not measured on this path"
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      }
+    },
+    {
+      "id": "my-restricted-device-authorization",
+      "from": "Mine scrolled menu / 设备授权管理",
+      "entry": {
+        "value": "设备授权管理 guest onPress directly openModal(LoginModal)",
+        "classification": "B",
+        "evidence": [
+          "guestMenu"
+        ]
+      },
+      "to": "LoginModal",
+      "destinationKind": {
+        "value": "RN confirmation",
+        "classification": "B",
+        "evidence": [
+          "guestMenu"
+        ]
+      },
+      "stackEffect": {
+        "value": "provider queue, not immediate feature route",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "back": {
+        "value": "provider onRequestClose",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No paired scrolled-menu cancel test; top-sheet cancel must not be generalized"
+      },
+      "selection": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not measured on this path"
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      }
+    },
+    {
+      "id": "my-restricted-help-feedback",
+      "from": "Mine scrolled menu / 帮助与反馈",
+      "entry": {
+        "value": "帮助与反馈 guest onPress directly openModal(LoginModal)",
+        "classification": "B",
+        "evidence": [
+          "guestMenu"
+        ]
+      },
+      "to": "LoginModal",
+      "destinationKind": {
+        "value": "RN confirmation",
+        "classification": "B",
+        "evidence": [
+          "guestMenu"
+        ]
+      },
+      "stackEffect": {
+        "value": "provider queue, not immediate feature route",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "back": {
+        "value": "provider onRequestClose",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No paired scrolled-menu cancel test; top-sheet cancel must not be generalized"
+      },
+      "selection": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not measured on this path"
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      }
+    },
+    {
+      "id": "my-restricted-device-sharing",
+      "from": "Mine scrolled menu / 设备共享",
+      "entry": {
+        "value": "设备共享 guest onPress directly openModal(LoginModal)",
+        "classification": "B",
+        "evidence": [
+          "guestMenu"
+        ]
+      },
+      "to": "LoginModal",
+      "destinationKind": {
+        "value": "RN confirmation",
+        "classification": "B",
+        "evidence": [
+          "guestMenu"
+        ]
+      },
+      "stackEffect": {
+        "value": "provider queue, not immediate feature route",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "back": {
+        "value": "provider onRequestClose",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No paired scrolled-menu cancel test; top-sheet cancel must not be generalized"
+      },
+      "selection": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not measured on this path"
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      }
+    },
+    {
+      "id": "my-shortcut-course",
+      "from": "Mine top shortcuts / 我的课程",
+      "entry": {
+        "value": "我的课程 uses shared login guard; logged-out -> confirmation before destination action",
+        "classification": "B",
+        "evidence": [
+          "shortcut",
+          "guard"
+        ]
+      },
+      "to": "LoginModal",
+      "destinationKind": {
+        "value": "RN confirmation by declaration; this exact shortcut not runtime-tested",
+        "classification": "B",
+        "evidence": [
+          "guard"
+        ]
+      },
+      "stackEffect": {
+        "value": "provider overlay; may queue pending requests, not native route push",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "back": {
+        "value": "provider onRequestClose closes or advances queue; exact source entry A not collected",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No cancellation pair for this exact shortcut"
+      },
+      "selection": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No runtime pair for this exact shortcut"
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      }
+    },
+    {
+      "id": "my-shortcut-friend",
+      "from": "Mine top shortcuts / 我的亲友",
+      "entry": {
+        "value": "我的亲友 uses shared login guard; logged-out -> confirmation before destination action",
+        "classification": "B",
+        "evidence": [
+          "shortcut",
+          "guard"
+        ]
+      },
+      "to": "LoginModal",
+      "destinationKind": {
+        "value": "RN confirmation by declaration; this exact shortcut not runtime-tested",
+        "classification": "B",
+        "evidence": [
+          "guard"
+        ]
+      },
+      "stackEffect": {
+        "value": "provider overlay; may queue pending requests, not native route push",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "back": {
+        "value": "provider onRequestClose closes or advances queue; exact source entry A not collected",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No cancellation pair for this exact shortcut"
+      },
+      "selection": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No runtime pair for this exact shortcut"
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      }
+    },
+    {
+      "id": "my-shortcut-prize",
+      "from": "Mine top shortcuts / 我的奖品",
+      "entry": {
+        "value": "我的奖品 uses shared login guard; logged-out -> confirmation before destination action",
+        "classification": "B",
+        "evidence": [
+          "shortcut",
+          "guard"
+        ]
+      },
+      "to": "LoginModal",
+      "destinationKind": {
+        "value": "RN confirmation by declaration; this exact shortcut not runtime-tested",
+        "classification": "B",
+        "evidence": [
+          "guard"
+        ]
+      },
+      "stackEffect": {
+        "value": "provider overlay; may queue pending requests, not native route push",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "back": {
+        "value": "provider onRequestClose closes or advances queue; exact source entry A not collected",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No cancellation pair for this exact shortcut"
+      },
+      "selection": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No runtime pair for this exact shortcut"
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      }
+    },
+    {
+      "id": "my-shortcut-order",
+      "from": "Mine top shortcuts / 我的订单",
+      "entry": {
+        "value": "我的订单 uses shared login guard; logged-out -> confirmation before destination action",
+        "classification": "B",
+        "evidence": [
+          "shortcut",
+          "guard"
+        ]
+      },
+      "to": "LoginModal",
+      "destinationKind": {
+        "value": "RN confirmation by declaration; this exact shortcut not runtime-tested",
+        "classification": "B",
+        "evidence": [
+          "guard"
+        ]
+      },
+      "stackEffect": {
+        "value": "provider overlay; may queue pending requests, not native route push",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "back": {
+        "value": "provider onRequestClose closes or advances queue; exact source entry A not collected",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No cancellation pair for this exact shortcut"
+      },
+      "selection": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No runtime pair for this exact shortcut"
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in this observed source state"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No configuration-change experiment for this path"
+      }
+    },
+    {
+      "id": "my-task-center-guest",
+      "from": "Mine service card / 任务中心",
+      "entry": {
+        "value": "UnLoginTaskCenterEntrance SettingItem.onPress opens LoginModal",
+        "classification": "B",
+        "evidence": [
+          "taskCenter"
+        ]
+      },
+      "to": "LoginModal",
+      "destinationKind": {
+        "value": "Guest confirmation, not task-center content",
+        "classification": "B",
+        "evidence": [
+          "taskCenter"
+        ]
+      },
+      "stackEffect": {
+        "value": "GlobalModalProvider overlay/FIFO; no business destination entered",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "back": {
+        "value": null,
+        "status": "unknown",
+        "reason": "This exact entry has no runtime Back pair"
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No before/after scroll pair for this exact entry"
+      },
+      "selection": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No before/after selection pair for this exact entry"
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in the source menu/card"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not tested"
+      }
+    },
+    {
+      "id": "my-consultation-guest",
+      "from": "Mine service card / 健康问诊",
+      "entry": {
+        "value": "UnLoginHealthConsultationNew HealthConsultationView.onPress opens LoginModal",
+        "classification": "B",
+        "evidence": [
+          "consultation"
+        ]
+      },
+      "to": "LoginModal",
+      "destinationKind": {
+        "value": "Guest confirmation, not consultation content",
+        "classification": "B",
+        "evidence": [
+          "consultation"
+        ]
+      },
+      "stackEffect": {
+        "value": "GlobalModalProvider overlay/FIFO; no business destination entered",
+        "classification": "B",
+        "evidence": [
+          "provider"
+        ]
+      },
+      "back": {
+        "value": null,
+        "status": "unknown",
+        "reason": "This exact entry has no runtime Back pair"
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No before/after scroll pair for this exact entry"
+      },
+      "selection": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No before/after selection pair for this exact entry"
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in the source menu/card"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not tested"
+      }
+    },
+    {
+      "id": "my-app-version",
+      "from": "Mine menu / App版本",
+      "entry": {
+        "value": "UpdateSettingItem.onPress -> click tracking -> checkAppUpgrade; selected chain has no login guard",
+        "classification": "B",
+        "evidence": [
+          "appVersionItem",
+          "appUpgradeBridge"
+        ]
+      },
+      "to": "CommonBridge.checkAppUpgrade",
+      "destinationKind": {
+        "value": "Native upgrade-check bridge; no LoginModal in the selected call chain",
+        "classification": "B",
+        "evidence": [
+          "appVersionItem",
+          "appUpgradeBridge"
+        ]
+      },
+      "stackEffect": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Native bridge outcome and task stack not traced"
+      },
+      "back": {
+        "value": null,
+        "status": "unknown",
+        "reason": "This exact entry has no runtime Back pair"
+      },
+      "scroll": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No before/after scroll pair for this exact entry"
+      },
+      "selection": {
+        "value": null,
+        "status": "unknown",
+        "reason": "No before/after selection pair for this exact entry"
+      },
+      "input": {
+        "value": null,
+        "status": "not-applicable",
+        "reason": "No editable fields in the source menu/card"
+      },
+      "themeRecreation": {
+        "value": null,
+        "status": "unknown",
+        "reason": "Not tested"
+      },
+      "details": {
+        "value": "On mount /app/v1/version/check_upgrade sets new-version dot; on press invokes bridge. Bridge catches error and resolvesfalse; popup/update destination outcome not validated",
+        "classification": "B",
+        "evidence": [
+          "appVersionItem",
+          "appUpgradeBridge"
+        ]
+      }
+    }
+  ],
+  "globalLimits": [
+    "numeric Android task/fragment stack depth not collected for all paths",
+    "IME/edit/input restoration not exercised",
+    "no original successful login",
+    "provider duplicate FIFO not runtime stress tested",
+    "theme/process recreation only one historical Settings experiment",
+    "IOScrollView observer contentOffset tracking is not persisted restoration logic"
+  ],
+  "transferRecommendations": [
+    {
+      "classification": "D",
+      "rule": "Use separate overlay owner, route stack owner, and business state owner; record cancellation and late-result policy"
+    },
+    {
+      "classification": "D",
+      "rule": "Preserve observed ordinary Settings return and same-tab reselect without generalizing to all routes"
+    },
+    {
+      "classification": "D",
+      "rule": "If dedup, exit cleanup, priority or cancellation differ from original FIFO/timer source, declare deliberate adaptation and test it"
+    }
+  ],
+  "updatedAt": "2026-10-15T13:47:25.508Z",
+  "validatedAt": "2026-10-15T13:47:26.044Z",
+  "scopeNote": "This registry is bounded to listed source entries/popups for three representative pages plus historical onboarding. Repeated patterns have separate entry rows; remaining lower health cards/remote offers/SDK routes are unknown rather than implied complete.",
+  "referenceCorrespondence": {
+    "classification": "D",
+    "implementation": [
+      {
+        "sourcePopup": "rn-login-confirmation",
+        "path": "analysis/ui/android-reference/src/study/style/reference/StyleKit.java",
+        "symbol": "confirmSheet",
+        "notes": "Independent native confirmation + FIFO no dedup. Runtime reference test does not become original queue stress A."
+      },
+      {
+        "sourcePopup": "rn-add-menu",
+        "path": "analysis/ui/android-reference/src/study/style/reference/MainActivity.java",
+        "symbol": "showAddMenu",
+        "notes": "Independent native PopupWindow; Android Back/outside close; AddDevice invokes authBoundary; Scan destination remains boundary only."
+      },
+      {
+        "sourcePopup": "native-account-login",
+        "path": "analysis/ui/android-reference/src/study/style/reference/MainActivity.java",
+        "symbol": "authBoundary",
+        "notes": "Independent adapter explanation, not Xiaomi Account SDK UI reproduction."
+      }
+    ],
+    "deliberateDifferences": [
+      "Reference externalModal pause/drain is a D reliability adapter; source MineTab did not pass an external-modal checker, defaultfalse.",
+      "Reference delayed account callback checks activity alive; original selected LoginModal has no local timeout cleanup/guard.",
+      "Reference secondary detail/scan screens are boundaries outside original-detail visual coverage."
+    ],
+    "verification": "Read baseline/coverage.json for reference-final and comparison/final results; this file does not assert implementation passed"
+  },
+  "validation": {
+    "utf8Safe": "ASCII-only repair script with Unicode escape literals; file written as utf8",
+    "repeatedQuestionReplacementCount": 0,
+    "evidencePaths": "all external evidence files exist; internal evidence ids resolve",
+    "sourceAnchors": "all recorded selector/module anchors resolve"
+  }
+}
