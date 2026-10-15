@@ -26,7 +26,7 @@
   },
   "acceptance": {
     "authoritativeIndex": "analysis/ui/baseline/coverage.json",
-    "comparison": "analysis/ui/baseline/comparison/index.html",
+    "comparison": "analysis/ui/baseline/comparison/final/index.html",
     "referenceTestsDoNotProveOriginal": true,
     "noInventedSimilarityPercent": true,
     "unknownsRemainUnknown": true
@@ -868,7 +868,7 @@
         "entry": "topBar",
         "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
       },
-      "comparison": "analysis/ui/baseline/comparison/index.html"
+      "comparison": "analysis/ui/baseline/comparison/final/index.html"
     },
     {
       "id": "BottomNav",
@@ -987,7 +987,7 @@
         "entry": "bottomNav",
         "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
       },
-      "comparison": "analysis/ui/baseline/comparison/index.html"
+      "comparison": "analysis/ui/baseline/comparison/final/index.html"
     },
     {
       "id": "ProgressHero",
@@ -1125,7 +1125,7 @@
           "coverage": "entry event and return only; second-level original detail visual/content not reconstructed; not a login gate"
         }
       },
-      "comparison": "analysis/ui/baseline/comparison/index.html"
+      "comparison": "analysis/ui/baseline/comparison/final/index.html"
     },
     {
       "id": "MetricCard",
@@ -1244,7 +1244,7 @@
           "coverage": "entry event and return only; second-level original detail visual/content not reconstructed; not a login gate"
         }
       },
-      "comparison": "analysis/ui/baseline/comparison/index.html"
+      "comparison": "analysis/ui/baseline/comparison/final/index.html"
     },
     {
       "id": "ProfileHeader",
@@ -1359,7 +1359,7 @@
         "entry": "profile",
         "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
       },
-      "comparison": "analysis/ui/baseline/comparison/index.html"
+      "comparison": "analysis/ui/baseline/comparison/final/index.html"
     },
     {
       "id": "ShortcutGrid",
@@ -1490,7 +1490,7 @@
         "entry": "shortcutGrid",
         "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
       },
-      "comparison": "analysis/ui/baseline/comparison/index.html"
+      "comparison": "analysis/ui/baseline/comparison/final/index.html"
     },
     {
       "id": "SurfaceCard",
@@ -1579,7 +1579,7 @@
         "entry": "surface",
         "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
       },
-      "comparison": "analysis/ui/baseline/comparison/index.html"
+      "comparison": "analysis/ui/baseline/comparison/final/index.html"
     },
     {
       "id": "ChevronRow",
@@ -1736,7 +1736,7 @@
         "entry": "chevronRow",
         "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
       },
-      "comparison": "analysis/ui/baseline/comparison/index.html"
+      "comparison": "analysis/ui/baseline/comparison/final/index.html"
     },
     {
       "id": "SwitchRow",
@@ -1855,7 +1855,7 @@
         "entry": "switchRow + setChecked(row, checked), owner commits",
         "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
       },
-      "comparison": "analysis/ui/baseline/comparison/index.html",
+      "comparison": "analysis/ui/baseline/comparison/final/index.html",
       "interfaceNotes": "Controlled requestChange/setChecked is an independent D adapter recommendation; original UI on/off observations do not establish its internal state ownership or persistence."
     },
     {
@@ -1969,7 +1969,7 @@
         "entry": "primaryButton",
         "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
       },
-      "comparison": "analysis/ui/baseline/comparison/index.html"
+      "comparison": "analysis/ui/baseline/comparison/final/index.html"
     }
   ],
   "platformUnknowns": [

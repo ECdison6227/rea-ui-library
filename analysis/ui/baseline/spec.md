@@ -1,6 +1,6 @@
 # 三页、十组件实现规格
 
-这是可迁移风格库的固定来源基线。先读 [README](../README.md)，运行和原版对照以 [对照入口](comparison/index.html) 与 [覆盖表](coverage.json) 为准。本文说明“应实现什么”，不以文档存在证明已还原。机器契约见 [contracts.json](contracts.json)，事件和业务边界见 [behaviors.md](behaviors.md)。
+这是可迁移风格库的固定来源基线。先读 [README](../README.md)，运行和原版对照以 [最终对照入口](comparison/final/index.html) 与 [覆盖表](coverage.json) 为准。本文说明“应实现什么”，不以文档存在证明已还原。机器契约见 [contracts.json](contracts.json)，事件和业务边界见 [behaviors.md](behaviors.md)。
 
 ## 身份与证据规则
 

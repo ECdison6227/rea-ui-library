@@ -9,7 +9,7 @@
 我的项目：<目标软件源码路径>
 目标平台与本次范围：<Android/iOS/Web/桌面；先改哪些模块>
 
-先读取研究库 README.md、baseline/spec.md、baseline/contracts.json、baseline/behaviors.md、baseline/popup-navigation.md、baseline/popup-navigation.json、baseline/coverage.json、baseline/comparison/index.html 和 migration-guide.md。运行库中的原生参考，查看三页原图对照与跨业务页。覆盖表为准：A运行事实、B代码、C推断、D独立适配不能混写；历史A不能当本次重新实测。
+先读取研究库 README.md、baseline/spec.md、baseline/contracts.json、baseline/behaviors.md、baseline/popup-navigation.md、baseline/popup-navigation.json、baseline/coverage.json、baseline/comparison/final/index.html 和 migration-guide.md。运行库中的原生参考，查看三页原图对照与跨业务页。覆盖表为准：A运行事实、B代码、C推断、D独立适配不能混写；历史A不能当本次重新实测。
 
 然后审查我的源码，找到实际框架、路由、主题、字体、基础组件、数据/权限/账号状态和现有测试。优先接入现有栈，保持我的业务、品牌、用户数据与已有正确性。
 

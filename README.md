@@ -2,7 +2,7 @@
 
 从这里开始：[独立交接入口](analysis/ui/README.md)。下一个 Agent 结合你的软件源码，可据此迁移视觉语言、交互策略与通用行为。
 
-- [三页、十组件原版对照](analysis/ui/baseline/comparison/index.html)
+- [三页、十组件最终原版对照](analysis/ui/baseline/comparison/final/index.html)
 - [Android 原生工程与 APK](analysis/ui/android-reference/README.md)
 - [实施规格与状态契约](analysis/ui/baseline/spec.md)
 - [跨业务资料管理示例](analysis/ui/transfer-example/README.md)
