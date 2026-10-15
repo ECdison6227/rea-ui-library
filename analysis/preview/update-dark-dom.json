@@ -1,0 +1,213 @@
+{
+  "text": "连接到你的电脑\n\n登录后选一个空间，首次登录自动注册\n\n网络不稳定，请稍后再试。\n\n发送验证码\n我已阅读并同意服务条款与隐私政策\n登录\n改用扫码或连接码\n设置\n当前连接\n连接新电脑\n尚未连接电脑\n通道协议\n自动\n仅旧版\n仅新版\n云端\n登录账号\n查看并进入账号下的空间\n已配对的电脑\n连接新电脑\n扫描二维码，或粘贴连接码\n连接\n代码托管\n外观\n主题\n浅色\n深色\n自动\n语言\nEN\n中\n字号\n标准\n较大\n通知\n任务提醒\n后台保持连接\n常驻通知，后台也能收到提醒\n提醒方式\n没声音或不弹横幅时，去这里打开\n解除电池优化\n避免后台被系统断开，提醒更可靠\n实验室\n游戏性功能\n在会话抽屉里加入德州扑克机台\n关于\n应用版本\nv0.0.497\n检查更新\n尚未检查\n立即检查\n自动检查更新\n启动及回到前台时自动检查\nBeta 更新\n跟随每个发布，而非仅正式版\n\n模型、插件与 IM 请在电脑上配置",
+  "theme": "dark",
+  "overflow": false,
+  "calls": [
+    {
+      "kind": "simulated-native",
+      "plugin": "Preferences",
+      "method": "get",
+      "args": {
+        "key": "mirasim.ui-store.v1"
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "Preferences",
+      "method": "get",
+      "args": {
+        "key": "mirasim.sessions-cache.v1"
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "SecureStorage",
+      "method": "internalGetItem",
+      "args": {
+        "prefixedKey": "capacitor-storage_mirasim.default-space.v1",
+        "sync": false
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "SecureStorage",
+      "method": "internalGetItem",
+      "args": {
+        "prefixedKey": "capacitor-storage_mirasim.hosts.v1",
+        "sync": false
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "SecureStorage",
+      "method": "internalGetItem",
+      "args": {
+        "prefixedKey": "capacitor-storage_mirasim.deviceKey.v1",
+        "sync": false
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "SecureStorage",
+      "method": "internalSetItem",
+      "args": {
+        "prefixedKey": "capacitor-storage_mirasim.deviceKey.v1",
+        "data": "\"bv32Bz90ZA6cSVY-QG-997bFjg63lx3d\"",
+        "sync": false,
+        "access": 0
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "Preferences",
+      "method": "get",
+      "args": {
+        "key": "mirasim.transcripts-cache.v1"
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "WindowFloor",
+      "method": "setColor",
+      "args": {
+        "color": "#eeeeee"
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "App",
+      "method": "getLaunchUrl",
+      "args": {}
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "App",
+      "method": "getInfo",
+      "args": {}
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "StatusBar",
+      "method": "setStyle",
+      "args": {
+        "style": "LIGHT"
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "App",
+      "method": "getState",
+      "args": {}
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "App",
+      "method": "getLaunchUrl",
+      "args": {}
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "App",
+      "method": "getLaunchUrl",
+      "args": {}
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "StatusBar",
+      "method": "setBackgroundColor",
+      "args": {
+        "color": "#ffffff"
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "ForegroundService",
+      "method": "batteryStatus",
+      "args": {}
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "StatusBar",
+      "method": "setStyle",
+      "args": {
+        "style": "DARK"
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "App",
+      "method": "removeListener",
+      "args": {
+        "eventName": "backButton",
+        "callbackId": "preview-listener"
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "StatusBar",
+      "method": "setBackgroundColor",
+      "args": {
+        "color": "#222120"
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "SecureStorage",
+      "method": "internalGetItem",
+      "args": {
+        "prefixedKey": "capacitor-storage_mirasim.account.v1",
+        "sync": false
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "SecureStorage",
+      "method": "internalGetItem",
+      "args": {
+        "prefixedKey": "capacitor-storage_mirasim.account.v1",
+        "sync": false
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "SecureStorage",
+      "method": "internalGetItem",
+      "args": {
+        "prefixedKey": "capacitor-storage_mirasim.account.v1",
+        "sync": false
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "SecureStorage",
+      "method": "internalGetItem",
+      "args": {
+        "prefixedKey": "capacitor-storage_mirasim.account.v1",
+        "sync": false
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "LocalNotifications",
+      "method": "checkPermissions",
+      "args": {}
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "WindowFloor",
+      "method": "setColor",
+      "args": {
+        "color": "#262626"
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "Preferences",
+      "method": "set",
+      "args": {
+        "key": "mirasim.ui-store.v1",
+        "value": "{\"mirasim-theme.v5\":\"dark\",\"mirasim-locale\":\"zh-CN\"}"
+      }
+    }
+  ]
+}

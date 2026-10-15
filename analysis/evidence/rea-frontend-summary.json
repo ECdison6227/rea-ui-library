@@ -1,0 +1,160 @@
+{
+  "evidence_id": "ev_c28a574aae3230d1a82c6d17f5cb9912d253b75362bb78c0863e3b7ad31efec6",
+  "subject": {
+    "name": "public",
+    "digest": {
+      "sha256": "4c1b7b516296bacddf2e6cbc0443a7c1eab9cfb7a86b042889845457f3210e5e"
+    },
+    "local_path": "/Users/cjr/Projects/ui-phone-mirasim/analysis/extracted/apk/assets/public",
+    "format": "directory",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-javascript-application",
+    "name": "REA JavaScript application analyzer",
+    "version": "1"
+  },
+  "operation": "analyze_javascript_application",
+  "parameters": {
+    "format": "auto",
+    "integrity_policy": "fail",
+    "max_semantic_nodes": 4096,
+    "max_semantic_nodes_per_file": 256
+  },
+  "limitations": [
+    "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+    "Graph coverage is incomplete; unavailable facts remain explicit and must not be read as absence.",
+    "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+    "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+    "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+    "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code."
+  ],
+  "statistics": {
+    "relevant_files": 92,
+    "nested_asar_containers": 0,
+    "text_bytes_read": 11210930,
+    "invalid_utf8_files": 0,
+    "parsed_javascript_files": 91,
+    "visited_ast_nodes": 2981638,
+    "findings": 3196,
+    "modules": 17,
+    "parse_failures": 0
+  },
+  "source_selection": null,
+  "semantic_graph_summary": {
+    "coverage": {
+      "status": "partial",
+      "truncated": true,
+      "omitted_nodes": null,
+      "omitted_relations": null,
+      "limits": [
+        {
+          "name": "semantic_graph_file_node_ceiling",
+          "value": 256,
+          "unit": "items"
+        },
+        {
+          "name": "semantic_graph_node_ceiling",
+          "value": 4096,
+          "unit": "items"
+        }
+      ],
+      "families": [
+        {
+          "family": "boundary",
+          "status": "partial",
+          "retained_relations": 1,
+          "omitted_relations": null
+        },
+        {
+          "family": "call-flow",
+          "status": "partial",
+          "retained_relations": 21,
+          "omitted_relations": null
+        },
+        {
+          "family": "child-process",
+          "status": "partial",
+          "retained_relations": 0,
+          "omitted_relations": null
+        },
+        {
+          "family": "closure",
+          "status": "partial",
+          "retained_relations": 618,
+          "omitted_relations": null
+        },
+        {
+          "family": "configuration",
+          "status": "partial",
+          "retained_relations": 0,
+          "omitted_relations": null
+        },
+        {
+          "family": "data-flow",
+          "status": "partial",
+          "retained_relations": 723,
+          "omitted_relations": null
+        },
+        {
+          "family": "event",
+          "status": "partial",
+          "retained_relations": 0,
+          "omitted_relations": null
+        },
+        {
+          "family": "object-flow",
+          "status": "partial",
+          "retained_relations": 61,
+          "omitted_relations": null
+        },
+        {
+          "family": "promise-ownership",
+          "status": "partial",
+          "retained_relations": 0,
+          "omitted_relations": null
+        },
+        {
+          "family": "request",
+          "status": "partial",
+          "retained_relations": 0,
+          "omitted_relations": null
+        },
+        {
+          "family": "resource-lifecycle",
+          "status": "partial",
+          "retained_relations": 0,
+          "omitted_relations": null
+        },
+        {
+          "family": "timer",
+          "status": "partial",
+          "retained_relations": 0,
+          "omitted_relations": null
+        }
+      ]
+    },
+    "limitations": [
+      "Boundary extraction covers unshadowed JSON/global coercions plus parse and validation method candidates.",
+      "Child-process extraction covers asynchronous node:child_process creation, literal argv/env/stdio options, exit/error listeners, and kill signals.",
+      "Configuration extraction covers process.env, process.argv, node:fs reads, and direct logical defaults.",
+      "Event extraction covers EventEmitter-style literal registrations, removals, and dispatch candidates; dynamic names remain unknown.",
+      "Function fingerprints are static candidates; equal digests can remain ambiguous and do not prove behavioral equivalence.",
+      "Local data flow does not claim control-flow-sensitive reaching definitions or arbitrary dynamic property resolution.",
+      "Promise ownership covers explicit unshadowed Promise construction, static factories, aggregation, chaining, and await syntax only.",
+      "Request extraction covers fetch, WebSocket, node:http/node:https construction, direct option fields, and exact local response consumers.",
+      "Resource extraction covers built-in filesystem/network acquisition and exact local close/destroy/end handles.",
+      "The semantic graph contains static syntax observations and conservative relationship candidates; it does not claim runtime execution.",
+      "Timer extraction covers global or node:timers scheduling and exact local-handle cancellation."
+    ]
+  },
+  "graph_keys": [
+    "schema",
+    "root_node_ids",
+    "nodes",
+    "edges",
+    "coverage",
+    "limitations",
+    "graph_id"
+  ]
+}

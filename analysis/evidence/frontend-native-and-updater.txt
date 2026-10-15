@@ -1,0 +1,2971 @@
+      n
+    );
+  },
+  Nbt = (e) => (e.Capacitor = jbt(e)),
+  Rt = Nbt(
+    typeof globalThis < "u"
+      ? globalThis
+      : typeof self < "u"
+        ? self
+        : typeof window < "u"
+          ? window
+          : typeof global < "u"
+            ? global
+            : {},
+  ),
+  Us = Rt.registerPlugin;
+class x8 {
+  constructor() {
+    ((this.listeners = {}),
+      (this.retainedEventArguments = {}),
+      (this.windowListeners = {}));
+  }
+  addListener(t, n) {
+    let r = !1;
+    (this.listeners[t] || ((this.listeners[t] = []), (r = !0)),
+      this.listeners[t].push(n));
+    const a = this.windowListeners[t];
+    (a && !a.registered && this.addWindowListener(a),
+      r && this.sendRetainedArgumentsForEvent(t));
+    const i = async () => this.removeListener(t, n);
+    return Promise.resolve({ remove: i });
+  }
+  async removeAllListeners() {
+    this.listeners = {};
+    for (const t in this.windowListeners)
+      this.removeWindowListener(this.windowListeners[t]);
+    this.windowListeners = {};
+  }
+  notifyListeners(t, n, r) {
+    const o = this.listeners[t];
+    if (!o) {
+      if (r) {
+        let a = this.retainedEventArguments[t];
+        (a || (a = []), a.push(n), (this.retainedEventArguments[t] = a));
+      }
+      return;
+    }
+    o.forEach((a) => a(n));
+  }
+  hasListeners(t) {
+    var n;
+    return !!(!((n = this.listeners[t]) === null || n === void 0) && n.length);
+  }
+  registerWindowListener(t, n) {
+    this.windowListeners[n] = {
+      registered: !1,
+      windowEventName: t,
+      pluginEventName: n,
+      handler: (r) => {
+        this.notifyListeners(n, r);
+      },
+    };
+  }
+  unimplemented(t = "not implemented") {
+    return new Rt.Exception(t, Nf.Unimplemented);
+  }
+  unavailable(t = "not available") {
+    return new Rt.Exception(t, Nf.Unavailable);
+  }
+  async removeListener(t, n) {
+    const r = this.listeners[t];
+    if (!r) return;
+    const o = r.indexOf(n);
+    (this.listeners[t].splice(o, 1),
+      this.listeners[t].length ||
+        this.removeWindowListener(this.windowListeners[t]));
+  }
+  addWindowListener(t) {
+    (window.addEventListener(t.windowEventName, t.handler),
+      (t.registered = !0));
+  }
+  removeWindowListener(t) {
+    t &&
+      (window.removeEventListener(t.windowEventName, t.handler),
+      (t.registered = !1));
+  }
+  sendRetainedArgumentsForEvent(t) {
+    const n = this.retainedEventArguments[t];
+    n &&
+      (delete this.retainedEventArguments[t],
+      n.forEach((r) => {
+        this.notifyListeners(t, r);
+      }));
+  }
+}
+const $z = (e) =>
+    encodeURIComponent(e)
+      .replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent)
+      .replace(/[()]/g, escape),
+  Fz = (e) => e.replace(/(%[\dA-F]{2})+/gi, decodeURIComponent);
+class Sbt extends x8 {
+  async getCookies() {
+    const t = document.cookie,
+      n = {};
+    return (
+      t.split(";").forEach((r) => {
+        if (r.length <= 0) return;
+        let [o, a] = r.replace(/=/, "CAP_COOKIE").split("CAP_COOKIE");
+        ((o = Fz(o).trim()), (a = Fz(a).trim()), (n[o] = a));
+      }),
+      n
+    );
+  }
+  async setCookie(t) {
+    try {
+      const n = $z(t.key),
+        r = $z(t.value),
+        o = t.expires ? `; expires=${t.expires.replace("expires=", "")}` : "",
+        a = (t.path || "/").replace("path=", ""),
+        i = t.url != null && t.url.length > 0 ? `domain=${t.url}` : "";
+      document.cookie = `${n}=${r || ""}${o}; path=${a}; ${i};`;
+    } catch (n) {
+      return Promise.reject(n);
+    }
+  }
+  async deleteCookie(t) {
+    try {
+      document.cookie = `${t.key}=; Max-Age=0`;
+    } catch (n) {
+      return Promise.reject(n);
+    }
+  }
+  async clearCookies() {
+    try {
+      const t = document.cookie.split(";") || [];
+      for (const n of t)
+        document.cookie = n
+          .replace(/^ +/, "")
+          .replace(/=.*/, `=;expires=${new Date().toUTCString()};path=/`);
+    } catch (t) {
+      return Promise.reject(t);
+    }
+  }
+  async clearAllCookies() {
+    try {
+      await this.clearCookies();
+    } catch (t) {
+      return Promise.reject(t);
+    }
+  }
+}
+Us("CapacitorCookies", { web: () => new Sbt() });
+const Cbt = async (e) =>
+    new Promise((t, n) => {
+      const r = new FileReader();
+      ((r.onload = () => {
+        const o = r.result;
+        t(o.indexOf(",") >= 0 ? o.split(",")[1] : o);
+      }),
+        (r.onerror = (o) => n(o)),
+        r.readAsDataURL(e));
+    }),
+  Ebt = (e = {}) => {
+    const t = Object.keys(e);
+    return Object.keys(e)
+      .map((o) => o.toLocaleLowerCase())
+      .reduce((o, a, i) => ((o[a] = e[t[i]]), o), {});
+  },
+  Abt = (e, t = !0) =>
+    e
+      ? Object.entries(e)
+          .reduce((r, o) => {
+            const [a, i] = o;
+            let l, c;
+            return (
+              Array.isArray(i)
+                ? ((c = ""),
+                  i.forEach((d) => {
+                    ((l = t ? encodeURIComponent(d) : d), (c += `${a}=${l}&`));
+                  }),
+                  c.slice(0, -1))
+                : ((l = t ? encodeURIComponent(i) : i), (c = `${a}=${l}`)),
+              `${r}&${c}`
+            );
+          }, "")
+          .substr(1)
+      : null,
+  Mbt = (e, t = {}) => {
+    const n = Object.assign(
+        { method: e.method || "GET", headers: e.headers },
+        t,
+      ),
+      o = Ebt(e.headers)["content-type"] || "";
+    if (typeof e.data == "string") n.body = e.data;
+    else if (o.includes("application/x-www-form-urlencoded")) {
+      const a = new URLSearchParams();
+      for (const [i, l] of Object.entries(e.data || {})) a.set(i, l);
+      n.body = a.toString();
+    } else if (
+      o.includes("multipart/form-data") ||
+      e.data instanceof FormData
+    ) {
+      const a = new FormData();
+      if (e.data instanceof FormData)
+        e.data.forEach((l, c) => {
+          a.append(c, l);
+        });
+      else for (const l of Object.keys(e.data)) a.append(l, e.data[l]);
+      n.body = a;
+      const i = new Headers(n.headers);
+      (i.delete("content-type"), (n.headers = i));
+    } else
+      (o.includes("application/json") || typeof e.data == "object") &&
+        (n.body = JSON.stringify(e.data));
+    return n;
+  };
+class Tbt extends x8 {
+  async request(t) {
+    const n = Mbt(t, t.webFetchExtra),
+      r = Abt(t.params, t.shouldEncodeUrlParams),
+      o = r ? `${t.url}?${r}` : t.url,
+      a = await fetch(o, n),
+      i = a.headers.get("content-type") || "";
+    let { responseType: l = "text" } = a.ok ? t : {};
+    i.includes("application/json") && (l = "json");
+    let c, d;
+    switch (l) {
+      case "arraybuffer":
+      case "blob":
+        ((d = await a.blob()), (c = await Cbt(d)));
+        break;
+      case "json":
+        c = await a.json();
+        break;
+      case "document":
+      case "text":
+      default:
+        c = await a.text();
+    }
+    const u = {};
+    return (
+      a.headers.forEach((f, p) => {
+        u[p] = f;
+      }),
+      { data: c, headers: u, status: a.status, url: a.url }
+    );
+  }
+  async get(t) {
+    return this.request(Object.assign(Object.assign({}, t), { method: "GET" }));
+  }
+  async post(t) {
+    return this.request(
+      Object.assign(Object.assign({}, t), { method: "POST" }),
+    );
+  }
+  async put(t) {
+    return this.request(Object.assign(Object.assign({}, t), { method: "PUT" }));
+  }
+  async patch(t) {
+    return this.request(
+      Object.assign(Object.assign({}, t), { method: "PATCH" }),
+    );
+  }
+  async delete(t) {
+    return this.request(
+      Object.assign(Object.assign({}, t), { method: "DELETE" }),
+    );
+  }
+}
+const b8 = Us("CapacitorHttp", { web: () => new Tbt() });
+var Bz;
+(function (e) {
+  ((e.Dark = "DARK"), (e.Light = "LIGHT"), (e.Default = "DEFAULT"));
+})(Bz || (Bz = {}));
+var Hz;
+(function (e) {
+  ((e.StatusBar = "StatusBar"), (e.NavigationBar = "NavigationBar"));
+})(Hz || (Hz = {}));
+class Rbt extends x8 {
+  async setStyle() {
+    this.unavailable("not available for web");
+  }
+  async setAnimation() {
+    this.unavailable("not available for web");
+  }
+  async show() {
+    this.unavailable("not available for web");
+  }
+  async hide() {
+    this.unavailable("not available for web");
+  }
+}
+Us("SystemBars", { web: () => new Rbt() });
+const Ms = Us("App", {
+    web: () =>
+      Sn(
+        () => import("./web-C-H_BTLk.js"),
+        __vite__mapDeps([10, 1, 4]),
+        import.meta.url,
+      ).then((e) => new e.AppWeb()),
+  }),
+  ip = Us("MirasimPush");
+function $r() {
+  return Rt.getPlatform() === "ios" && Rt.isPluginAvailable("MirasimPush");
+}
+async function Ibt() {
+  if (!$r()) return null;
+  try {
+    return await ip.identity();
+  } catch {
+    return null;
+  }
+}
+async function Lbt() {
+  if (!$r()) throw new Error("unsupported");
+  return (await ip.register()).token;
+}
+function _bt(e) {
+  $r() && ip.setContext(e).catch(() => {});
+}
+async function Obt() {
+  if (!$r()) return null;
+  try {
+    return await ip.diagnostics();
+  } catch {
+    return null;
+  }
+}
+async function Dbt() {
+  if ($r())
+    try {
+      await ip.openSettings();
+    } catch {}
+}
+function zz(e, t) {
+  if (!$r()) return () => {};
+  let n = null,
+    r = !1;
+  return (
+    ip
+      .addListener(e, t)
+      .then((o) => {
+        r ? o.remove() : (n = o);
+      })
+      .catch(() => {}),
+    () => {
+      ((r = !0), n?.remove());
+    }
+  );
+}
+const Gs = Us("ForegroundService");
+function zn() {
+  return Rt.getPlatform() === "android";
+}
+async function Pbt(e) {
+  if (zn())
+    try {
+      await Gs.start({ text: e });
+    } catch {}
+}
+async function kE() {
+  if (zn())
+    try {
+      await Gs.stop();
+    } catch {}
+}
+async function jE() {
+  if (!zn()) return null;
+  try {
+    return await Gs.batteryStatus();
+  } catch {
+    return null;
+  }
+}
+async function Fde() {
+  if (zn())
+    try {
+      await Gs.requestBatteryExemption();
+    } catch {}
+}
+async function $bt() {
+  if (!zn()) return !1;
+  try {
+    return (await Gs.vendorAutostartAvailable()).available;
+  } catch {
+    return !1;
+  }
+}
+async function Fbt() {
+  if (zn())
+    try {
+      await Gs.openVendorAutostart();
+    } catch {}
+}
+async function Bbt() {
+  if ($r()) return Dbt();
+  if (zn())
+    try {
+      await Gs.openNotificationSettings();
+    } catch {}
+}
+async function Hbt(e) {
+  if (zn())
+    try {
+      await Gs.syncChannelCredential(e);
+    } catch {}
+}
+async function zbt() {
+  if (zn())
+    try {
+      await Gs.clearChannelCredential();
+    } catch {}
+}
+async function Kbt(e) {
+  if (!zn()) return !1;
+  try {
+    return (await Gs.syncAttentionTicket(e), !0);
+  } catch {
+    return !1;
+  }
+}
+async function Bde() {
+  if (zn())
+    try {
+      await Gs.clearAttentionTicket();
+    } catch {}
+}
+async function Wbt() {
+  if (!zn()) return null;
+  try {
+    const e = await Gs.attentionTicket();
+    return typeof e.expiresAt != "number" || e.expiresAt <= 0
+      ? null
+      : {
+          expiresAt: e.expiresAt,
+          userId: e.userId ?? "",
+          account: e.account ?? "",
+        };
+  } catch {
+    return null;
+  }
+}
+function Hde(e) {
+  if (!zn()) return () => {};
+  let t = !1,
+    n = null;
+  try {
+    e()
+      .then((r) => {
+        ((n = () => void r.remove()), t && n());
+      })
+      .catch(() => {});
+  } catch {}
+  return () => {
+    ((t = !0), n?.());
+  };
+}
+function qbt(e) {
+  let t = !0;
+  const n = Hde(() =>
+    Gs.addListener("attentionTicketRefused", () => {
+      t && e();
+    }),
+  );
+  return () => {
+    ((t = !1), n());
+  };
+}
+const Ubt = new Set([
+  "mention",
+  "reply",
+  "thread",
+  "comment",
+  "reaction",
+  "session",
+  "keyword",
+  "dm",
+]);
+function Gbt(e) {
+  if (!e || typeof e != "object") return null;
+  const t = e,
+    { machine: n, kind: r, room: o, seq: a, by: i, byName: l, preview: c } = t;
+  if (
+    typeof n != "string" ||
+    !n ||
+    typeof o != "string" ||
+    !o ||
+    typeof i != "string" ||
+    typeof r != "string" ||
+    !Ubt.has(r) ||
+    typeof a != "number" ||
+    !(a > 0)
+  )
+    return null;
+  const d = c && typeof c == "object" && typeof c.text == "string" ? c : void 0;
+  return {
+    machine: n,
+    kind: r,
+    room: o,
+    seq: a,
+    by: i,
+    ...(typeof l == "string" && l ? { byName: l } : {}),
+    ...(d ? { preview: d } : {}),
+  };
+}
+function Vbt(e) {
+  let t = !0;
+  const n = Hde(() =>
+    Gs.addListener("machineAttention", (r) => {
+      const o = t ? Gbt(r) : null;
+      o && e(o);
+    }),
+  );
+  return () => {
+    ((t = !1), n());
+  };
+}
+const Ybt = 3e4;
+let Kz = 0;
+function Xbt() {
+  if (!zn()) return;
+  const e = Date.now();
+  e - Kz < Ybt || ((Kz = e), Gs.jsAlive().catch(() => {}));
+}
+function Qbt(e) {
+  if (!zn()) return () => {};
+  let t = !1,
+    n = null;
+  try {
+    Gs.addListener("systemWake", (r) => {
+      t || e(r);
+    }).then((r) => {
+      ((n = () => void r.remove()), t && n());
+    });
+  } catch {}
+  return () => {
+    ((t = !0), n?.());
+  };
+}
+function NE() {
+  const e = r2(),
+    t = new Set(),
+    n = new Set();
+  let r = null,
+    o = null,
+    a = null;
+  const i = (u) => {
+      r = u;
+      for (const f of [...n]) f();
+    },
+    l = () => {
+      i(e?.visibilityState === "hidden" ? "hidden" : "visible");
+    },
+    c = () => {
+      if (!Rt.isNativePlatform()) return () => {};
+      let u = !1;
+      const f = [],
+        p = (m) => {
+          m.then((g) => {
+            u ? g.remove() : f.push(() => void g.remove());
+          }).catch(() => {});
+        };
+      try {
+        (p(
+          Ms.addListener("pause", () => {
+            u || i("hidden");
+          }),
+        ),
+          p(
+            Ms.addListener("resume", () => {
+              u || i("visible");
+            }),
+          ),
+          p(
+            Ms.addListener("appStateChange", (m) => {
+              !u && m.isActive && i("visible");
+            }),
+          ),
+          Ms.getState()
+            .then((m) => {
+              !u && r === null && !m.isActive && i("hidden");
+            })
+            .catch(() => {}));
+      } catch {}
+      return () => {
+        u = !0;
+        for (const m of f.splice(0)) m();
+      };
+    },
+    d = () => {
+      if (
+        (t.size > 0 && !o
+          ? (o = Qbt(() => {
+              for (const u of [...t]) u();
+            }))
+          : t.size === 0 && o && (o(), (o = null)),
+        n.size > 0 && !a)
+      ) {
+        e?.addEventListener("visibilitychange", l);
+        const u = c();
+        a = () => {
+          (e?.removeEventListener("visibilitychange", l), u());
+        };
+      } else n.size === 0 && a && (a(), (a = null));
+    };
+  return {
+    get visibilityState() {
+      return r ?? e?.visibilityState;
+    },
+    addEventListener(u, f) {
+      (u === "visibilitychange"
+        ? n.add(f)
+        : (e?.addEventListener(u, f), u === "online" && t.add(f)),
+        d());
+    },
+    removeEventListener(u, f) {
+      (u === "visibilitychange"
+        ? n.delete(f)
+        : (e?.removeEventListener(u, f), u === "online" && t.delete(f)),
+        d());
+    },
+  };
+}
+function Jbt(e, t = {}) {
+  if (e.gatewayUrl && e.nodeId)
+    return t.gatewaySession
+      ? {
+          kind: "mirachannel",
+          client: wbt({
+            gatewayUrl: e.gatewayUrl,
+            nodeId: e.nodeId,
+            session: t.gatewaySession,
+            wakeTarget: NE(),
+          }),
+        }
+      : {
+          kind: "unavailable",
+          client: null,
+          detail: "no gateway session source",
+        };
+  try {
+    return {
+      kind: "mirachannel",
+      client: sWe({
+        strategy: t.v2Strategy ?? "auto",
+        createV1: QHe,
+        v2Cert: e.v2Cert,
+        v2Relay: e.v2Relay,
+        v2Lease: e.v2Lease,
+        v2Issuer: e.v2Issuer,
+        v2IssuerKey: e.v2IssuerKey,
+        ...(bP(e.v2Keys) ? { deviceKeys: bP(e.v2Keys) } : {}),
+        onDeviceKeys: (n) => t.onDeviceKeys?.(Gze(n)),
+        host: e.host,
+        hosts: e.hosts,
+        rendezvous: e.rendezvous,
+        nodeId: e.nodeId,
+        token: e.token,
+        e2e: e.e2e,
+        enroll: e.enroll,
+        grant: e.grant,
+        deviceName: e.name,
+        ...(t.installId ? { installId: t.installId } : {}),
+        lastGoodRoute: e.lastRoute,
+        onRoute: t.onRoute,
+        onRendezvous: t.onRendezvous,
+        onDeviceCredential: t.onDeviceCredential,
+        onV2Target: t.onV2Target,
+        directHostFilter: (n) => yE(n, !!e.e2e?.trim()),
+        wakeTarget: NE(),
+      }),
+    };
+  } catch (n) {
+    return {
+      kind: "unavailable",
+      client: null,
+      detail: n instanceof Error ? n.message : String(n),
+    };
+  }
+}
+function zde(e) {
+  const { host: t, read: n, commit: r, gatewaySession: o } = e,
+    a = (i) => {
+      const l = n(),
+        c = i(l);
+      c !== l && r(c);
+    };
+  return Jbt(t, {
+    onRoute: (i) => a((l) => hbt(l, t.id, i)),
+    onRendezvous: (i) => a((l) => fbt(l, t.id, i)),
+    onDeviceCredential: (i) => a((l) => pbt(l, t.id, i)),
+    onV2Target: (i) => a((l) => mbt(l, t.id, i)),
+    onDeviceKeys: (i) => a((l) => gbt(l, t.id, i)),
+    v2Strategy: dse(),
+    gatewaySession: o,
+    ...(e.installId ? { installId: e.installId } : {}),
+  });
+}
+function Zbt(e, t) {
+  const n = t.filter((u) => u.kind === "attached"),
+    r = new Set(n.map((u) => u.nodeId)),
+    o = new Map(e.map((u) => [u.nodeId, u])),
+    a = new Set(),
+    i = n.map(({ hostNodeId: u, ...f }) => {
+      const p = f.owned && u ? o.get(u) : void 0;
+      return !p || p.kind === "managed"
+        ? f
+        : (a.add(p.nodeId), { ...f, direct: p });
+    }),
+    l = (u, f) => `${u}
+${f.platform ?? ""}
+${f.name}`,
+    c = new Set([
+      ...i.map((u) => l(!u.owned, u)),
+      ...e.filter((u) => a.has(u.nodeId)).map((u) => l(!1, u)),
+    ]),
+    d = new Map();
+  for (const u of e) {
+    const f = u.shared === !0;
+    if (
+      u.kind === "managed" ||
+      r.has(u.nodeId) ||
+      a.has(u.nodeId) ||
+      c.has(l(f, u))
+    )
+      continue;
+    const p = f ? u.nodeId : l(!1, u),
+      m = d.get(p);
+    (!m || u.lastSeenAt > m.lastSeenAt) && d.set(p, u);
+  }
+  return {
+    cloud: [
+      ...e.filter(
+        (u) => u.kind === "managed" && u.shared === !0 && !r.has(u.nodeId),
+      ),
+      ...i,
+    ],
+    computers: [...d.values()],
+  };
+}
+function Wz(e) {
+  if (!Array.isArray(e)) return [];
+  const t = [];
+  for (const n of e) {
+    const r = n;
+    if (!r || typeof r.nodeId != "string" || !r.nodeId) continue;
+    const o = (a) => (typeof a == "string" && a ? a : void 0);
+    t.push({
+      nodeId: r.nodeId,
+      name: o(r.name) ?? r.nodeId,
+      ...(typeof r.title == "string" && r.title.trim()
+        ? { title: r.title.trim() }
+        : r.title === null
+          ? { title: null }
+          : {}),
+      platform: typeof r.platform == "string" ? r.platform : null,
+      appVersion: typeof r.appVersion == "string" ? r.appVersion : null,
+      e2e: o(r.e2e) ?? null,
+      v2: e0t(r.v2),
+      lastSeenAt: typeof r.lastSeenAt == "number" ? r.lastSeenAt : 0,
+      ...(r.kind === "managed" ||
+      r.kind === "self_hosted" ||
+      r.kind === "attached"
+        ? { kind: r.kind }
+        : {}),
+      ...(typeof r.shared == "boolean" ? { shared: r.shared } : {}),
+      ...(typeof r.online == "boolean" ? { online: r.online } : {}),
+      ...(r.kind === "attached" ? { owned: r.owned === !0 } : {}),
+      ...(r.kind === "attached" && o(r.ownerEmail)
+        ? { ownerEmail: o(r.ownerEmail) }
+        : {}),
+      ...(r.kind === "attached" && o(r.hostNodeId)
+        ? { hostNodeId: o(r.hostNodeId) }
+        : {}),
+      ...(z5(r.power) ? { power: z5(r.power) } : {}),
+    });
+  }
+  return t;
+}
+function e0t(e) {
+  if (!e || typeof e != "object") return null;
+  const t = e,
+    n = (i) => (typeof i == "string" && i ? i : null),
+    r = n(t.cert),
+    o = n(t.issuer),
+    a = n(t.lease);
+  return !r || !o || !a
+    ? null
+    : {
+        cert: r,
+        relay: n(t.relay) ?? "",
+        lease: a,
+        issuer: o,
+        ...(n(t.issuerKey) ? { issuerKey: n(t.issuerKey) } : {}),
+        generation: typeof t.generation == "number" ? t.generation : 0,
+      };
+}
+const v8 = "mirasim.account.v1";
+class Zt extends Error {
+  constructor(t, n, r = null) {
+    (super(t), (this.kind = n), (this.relay = r), (this.name = "AccountError"));
+  }
+}
+function xk(e) {
+  try {
+    const t = e.split(".")[1];
+    if (!t) return 0;
+    const n = atob(t.replace(/-/g, "+").replace(/_/g, "/")),
+      r = JSON.parse(n).exp;
+    return typeof r == "number" ? r : 0;
+  } catch {
+    return 0;
+  }
+}
+async function Wr(e) {
+  try {
+    const t = await e.get(v8);
+    if (!t) return null;
+    const n = JSON.parse(t);
+    return typeof n.token != "string" || !n.token || typeof n.email != "string"
+      ? null
+      : {
+          token: n.token,
+          ...(typeof n.refreshToken == "string" && n.refreshToken
+            ? { refreshToken: n.refreshToken }
+            : {}),
+          exp: typeof n.exp == "number" ? n.exp : xk(n.token),
+          email: n.email,
+        };
+  } catch {
+    return null;
+  }
+}
+async function y8(e, t) {
+  await e.set(v8, JSON.stringify(t));
+}
+const Kde = [];
+function Wde(e) {
+  Kde.push(e);
+}
+async function qde(e) {
+  for (const t of Kde) await t(e).catch(() => {});
+  (await e.remove(v8), await Bde());
+}
+function w8(e, t = Math.floor(Date.now() / 1e3)) {
+  return !!e && e.exp > t + 30;
+}
+function Ude(e, t, n, r) {
+  const o = Wq(e, t, n),
+    a = o.message || o.code;
+  return e === 401 || e === 403
+    ? new Zt(a || "sign-in required", "auth", o)
+    : e === 501 || e === 404
+      ? new Zt(a || "not available on this deployment", "unsupported", o)
+      : new Zt(a || `${r} (HTTP ${e})`, "server", o);
+}
+const Gde = 8e3,
+  Vde = 1e4;
+function t0t() {
+  const e = globalThis.AbortSignal;
+  return typeof e?.timeout == "function" ? e.timeout(Gde + Vde) : void 0;
+}
+function n0t(e) {
+  const t = e?.name;
+  return t === "TimeoutError" || t === "AbortError";
+}
+function s0t(e) {
+  try {
+    return new Headers(e ?? {});
+  } catch {
+    return new Headers();
+  }
+}
+function r0t(e) {
+  if (typeof e != "string") return e;
+  try {
+    return JSON.parse(e);
+  } catch {
+    return null;
+  }
+}
+async function En(e, t, n) {
+  if (Rt.isNativePlatform()) return o0t(e, t, n);
+  let r;
+  try {
+    r = await fetch(e, { ...t, signal: t.signal ?? t0t() });
+  } catch (o) {
+    throw new Zt(o?.message || "network unreachable", "network");
+  }
+  if (!r.ok) {
+    let o = null;
+    try {
+      o = await r.json();
+    } catch {}
+    throw Ude(r.status, o, r.headers, n);
+  }
+  try {
+    return await r.json();
+  } catch (o) {
+    throw n0t(o) ? new Zt(o?.message || "network unreachable", "network") : o;
+  }
+}
+async function o0t(e, t, n) {
+  let r, o, a;
+  try {
+    const i = await b8.request({
+      url: e,
+      method: t.method ?? "GET",
+      headers: t.headers ?? {},
+      ...(typeof t.body == "string" ? { data: JSON.parse(t.body) } : {}),
+      connectTimeout: Gde,
+      readTimeout: Vde,
+    });
+    ((r = i.status), (o = i.data), (a = s0t(i.headers)));
+  } catch (i) {
+    throw new Zt(i?.message || "network unreachable", "network");
+  }
+  if (r < 200 || r >= 300) throw Ude(r, r0t(o), a, n);
+  return typeof o == "string" ? JSON.parse(o) : o;
+}
+async function a0t(e, t) {
+  const n = await En(
+    `${e.replace(/\/+$/, "")}/v1/mirachannel/config`,
+    { headers: { authorization: `Bearer ${t}` } },
+    "could not read connection parameters",
+  );
+  return typeof n.rendezvous == "string" && n.rendezvous ? n.rendezvous : null;
+}
+async function i0t(e) {
+  try {
+    const t = await En(
+      `${e.replace(/\/+$/, "")}/auth/oauth/providers`,
+      {},
+      "could not list sign-in options",
+    );
+    return {
+      state: "ok",
+      providers: Array.isArray(t.providers)
+        ? t.providers.filter((r) => typeof r == "string" && !!r)
+        : [],
+    };
+  } catch (t) {
+    return t instanceof Zt && t.kind === "network"
+      ? { state: "offline" }
+      : t instanceof Zt && t.relay
+        ? { state: "refused", status: t.relay.status }
+        : { state: "ok", providers: [] };
+  }
+}
+async function l0t(e, t) {
+  try {
+    const n = await En(
+      `${e.replace(/\/+$/, "")}/auth/me`,
+      { headers: { authorization: `Bearer ${t}` } },
+      "could not read the profile",
+    );
+    if (typeof n.email == "string" && n.email) return n.email;
+  } catch {}
+  return c0t(t);
+}
+function c0t(e) {
+  try {
+    const t = e.split(".")[1];
+    if (!t) return "";
+    const n = atob(t.replace(/-/g, "+").replace(/_/g, "/")),
+      r = JSON.parse(n).email;
+    return typeof r == "string" ? r : "";
+  } catch {
+    return "";
+  }
+}
+async function Yde(e, t, n, r) {
+  return {
+    token: t,
+    ...(n ? { refreshToken: n } : {}),
+    exp: xk(t),
+    email: r || (await l0t(e, t)),
+  };
+}
+async function d0t(e, t) {
+  const n = await En(
+    `${e.replace(/\/+$/, "")}/auth/code`,
+    {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ email: t }),
+    },
+    "could not send the code",
+  );
+  return typeof n.dev_code == "string" && n.dev_code
+    ? { devCode: n.dev_code }
+    : {};
+}
+async function u0t(e, t, n) {
+  const r = await En(
+    `${e.replace(/\/+$/, "")}/auth/verify`,
+    {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ email: t, code: n }),
+    },
+    "could not verify the code",
+  );
+  if (typeof r.access_token != "string" || !r.access_token)
+    throw new Zt("sign-in response carried no token", "server");
+  return {
+    token: r.access_token,
+    ...(typeof r.refresh_token == "string" && r.refresh_token
+      ? { refreshToken: r.refresh_token }
+      : {}),
+    exp: xk(r.access_token),
+    email: t,
+  };
+}
+async function h0t(e, t) {
+  if (!t.refreshToken) return null;
+  try {
+    const n = await En(
+      `${e.replace(/\/+$/, "")}/auth/refresh`,
+      {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ refresh_token: t.refreshToken }),
+      },
+      "could not renew the session",
+    );
+    return typeof n.access_token != "string" || !n.access_token
+      ? null
+      : {
+          token: n.access_token,
+          refreshToken:
+            typeof n.refresh_token == "string" && n.refresh_token
+              ? n.refresh_token
+              : t.refreshToken,
+          exp: xk(n.access_token),
+          email: t.email,
+        };
+  } catch (n) {
+    return n instanceof Zt && n.relay?.status === 401 ? "refused" : null;
+  }
+}
+async function k8(e, t) {
+  const n = e.replace(/\/+$/, ""),
+    r = { headers: { authorization: `Bearer ${t}` } },
+    [o, a] = await Promise.all([
+      En(`${n}/v1/machines`, r, "could not list machines"),
+      En(`${n}/v2/machines`, r, "could not list machines").catch(() => null),
+    ]),
+    i = Wz(a?.machines),
+    l = new Map(i.map((d) => [d.nodeId, d.power])),
+    c = new Map(
+      i.filter((d) => d.title !== void 0).map((d) => [d.nodeId, d.title]),
+    );
+  return Zbt(
+    Wz(o.machines).map((d) => ({
+      ...d,
+      ...(d.power || !l.get(d.nodeId) ? {} : { power: l.get(d.nodeId) }),
+      ...(c.has(d.nodeId) ? { title: c.get(d.nodeId) ?? null } : {}),
+    })),
+    i,
+  );
+}
+async function f0t(e, t, n) {
+  await En(
+    `${e.replace(/\/+$/, "")}/v2/machines/${encodeURIComponent(n)}/attach`,
+    { method: "DELETE", headers: { authorization: `Bearer ${t}` } },
+    "could not remove that computer",
+  );
+}
+async function Ty(e, t, n) {
+  const r = await En(
+    `${e.replace(/\/+$/, "")}/v2/gateway/session`,
+    {
+      method: "POST",
+      headers: {
+        authorization: `Bearer ${t}`,
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({ nodeId: n }),
+    },
+    "could not open a cloud session",
+  );
+  if (
+    typeof r.session != "string" ||
+    !r.session ||
+    typeof r.gatewayUrl != "string" ||
+    !r.gatewayUrl
+  )
+    throw new Zt("no gateway session in the response", "server");
+  return { session: r.session, gatewayUrl: r.gatewayUrl };
+}
+async function p0t(e, t) {
+  const n = await En(
+      `${e.replace(/\/+$/, "")}/v2/gateway/attention`,
+      { method: "POST", headers: { authorization: `Bearer ${t}` } },
+      "could not open the background attention link",
+    ),
+    { ticket: r, url: o, expiresAt: a, userId: i } = n;
+  if (
+    typeof r != "string" ||
+    !r ||
+    typeof o != "string" ||
+    !o ||
+    typeof i != "string" ||
+    !i
+  )
+    throw new Zt("no attention ticket in the response", "server");
+  if (typeof a != "number" || !Number.isFinite(a))
+    throw new Zt("no attention ticket expiry in the response", "server");
+  return { ticket: r, url: o, expiresAt: a, userId: i };
+}
+async function m0t(e, t, n, r) {
+  const o = await En(
+    `${e.replace(/\/+$/, "")}/v1/machines/${encodeURIComponent(n)}/enroll`,
+    {
+      method: "POST",
+      headers: {
+        authorization: `Bearer ${t}`,
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(r),
+    },
+    "could not request pairing",
+  );
+  if (typeof o.grant != "string" || !o.grant)
+    throw new Zt("no grant in the response", "server");
+  return o.grant;
+}
+const qz = "mirasim.deviceKey.v1";
+async function Xde(e) {
+  const t = await e.get(qz);
+  if (t) return t;
+  const n = new Uint8Array(24);
+  globalThis.crypto.getRandomValues(n);
+  const r = btoa(String.fromCharCode(...n))
+    .replace(/\+/g, "-")
+    .replace(/\//g, "_")
+    .replace(/=+$/, "");
+  return (await e.set(qz, r), r);
+}
+async function g0t(e, t) {
+  const n = await En(
+      `${e.replace(/\/+$/, "")}/auth/git/connections`,
+      { headers: { authorization: `Bearer ${t}` } },
+      "could not list Git connections",
+    ),
+    r = (o) => (typeof o == "string" ? o : "");
+  return {
+    providers: (Array.isArray(n.providers) ? n.providers : [])
+      .map((o) => {
+        const a = o;
+        return {
+          id: r(a.id),
+          name: r(a.name),
+          host: r(a.host),
+          available: a.available === !0,
+        };
+      })
+      .filter((o) => o.id),
+    connections: (Array.isArray(n.connections) ? n.connections : [])
+      .map((o) => {
+        const a = o;
+        return {
+          id: r(a.id),
+          provider: r(a.provider),
+          host: r(a.host),
+          login: r(a.login),
+          status: a.status === "revoked" ? "revoked" : "active",
+          createdAt: r(a.created_at) || null,
+          manageUrl: r(a.manage_url),
+        };
+      })
+      .filter((o) => o.id),
+  };
+}
+async function x0t(e, t, n) {
+  const r = await En(
+    `${e.replace(/\/+$/, "")}/auth/git/connections/${encodeURIComponent(n)}/start`,
+    { method: "POST", headers: { authorization: `Bearer ${t}` } },
+    "could not start the connection",
+  );
+  if (
+    typeof r.authorize_url != "string" ||
+    !(
+      /^https:\/\//.test(r.authorize_url) ||
+      /^http:\/\/(127\.0\.0\.1|localhost)(:\d+)?\//.test(r.authorize_url)
+    )
+  )
+    throw new Zt("no authorization page in the response", "server");
+  return r.authorize_url;
+}
+async function b0t(e, t, n) {
+  await En(
+    `${e.replace(/\/+$/, "")}/auth/git/connections/${encodeURIComponent(n)}`,
+    { method: "DELETE", headers: { authorization: `Bearer ${t}` } },
+    "could not disconnect",
+  );
+}
+const ir = "https://auth.mirasim.ai",
+  Hs = "https://relay.mirasim.ai",
+  v0t = "wss://mirachannel.mirasim.ai/mirachannel/rendezvous";
+function bk() {
+  const e = globalThis.navigator?.userAgent ?? "";
+  return y0t(e) ?? w0t(e) ?? "Mobile device";
+}
+function y0t(e) {
+  const t = /Android[^;)]*;\s*([^;)]+)/.exec(e);
+  if (!t?.[1]) return null;
+  const n = t[1].replace(/\s+Build\/\S*/, "").trim();
+  return !n || n === "wv" || /^Build\//.test(n) ? null : n.slice(0, 48);
+}
+function w0t(e) {
+  return /iPhone/.test(e) ? "iPhone" : /iPad/.test(e) ? "iPad" : null;
+}
+const k0t = 15 * 60,
+  j0t = 10 * 60 * 1e3;
+async function zs(e) {
+  return (await Sf(e)).token;
+}
+const R0 = new WeakMap();
+function Sf(e, t) {
+  const n = R0.get(e);
+  if (n && t === void 0) return n;
+  const o = (n ?? Promise.resolve())
+    .catch(() => {})
+    .then(() => N0t(e, t))
+    .finally(() => {
+      R0.get(e) === o && R0.delete(e);
+    });
+  return (R0.set(e, o), o);
+}
+async function N0t(e, t) {
+  const n = await Wr(e);
+  if (!n) return { token: null, why: "signed-out" };
+  if (t !== void 0 && n.token !== t) return { token: n.token };
+  const r = Math.floor(Date.now() / 1e3);
+  if (t === void 0 && n.exp - r > k0t) return { token: n.token };
+  const o = t === void 0 && n.exp > r,
+    a = await h0t(ir, n);
+  if (a === "refused")
+    return o ? { token: n.token } : { token: null, why: "signed-out" };
+  if (!a)
+    return o
+      ? { token: n.token }
+      : { token: null, why: n.refreshToken ? "unavailable" : "signed-out" };
+  const i = await Wr(e);
+  return i
+    ? i.token !== n.token
+      ? { token: i.token }
+      : (await y8(e, a), { token: a.token })
+    : { token: null, why: "signed-out" };
+}
+function S0t(e, t) {
+  let n = !0;
+  const r = async () => {
+    const i = await t.getToken();
+    !n || !i || e.post({ type: "adoptAuth", accessToken: i });
+  };
+  r();
+  const o = e.onConnection?.((i) => {
+      i && r();
+    }),
+    a = setInterval(() => void r(), j0t);
+  return () => {
+    ((n = !1), o?.(), clearInterval(a));
+  };
+}
+function Qde(e) {
+  return async (t) => {
+    const n = await Sf(e);
+    if (n.token === null) throw Uz(n);
+    try {
+      return (await Ty(Hs, n.token, t)).session;
+    } catch (o) {
+      if (Zde(o) !== 401) throw Gz(o);
+    }
+    const r = await Sf(e, n.token);
+    if (r.token === null) throw Uz(r);
+    try {
+      return (await Ty(Hs, r.token, t)).session;
+    } catch (o) {
+      throw Gz(o);
+    }
+  };
+}
+function ch(e, t) {
+  return Object.assign(new Error(e), { linkFailure: t });
+}
+function Jde() {
+  return globalThis.navigator?.onLine === !1;
+}
+function Uz(e) {
+  return e.why === "signed-out"
+    ? ch("signed out", "signed-out")
+    : ch("could not renew the sign-in", Jde() ? "offline" : "unreachable");
+}
+function Zde(e) {
+  return e instanceof Zt ? (e.relay?.status ?? null) : null;
+}
+function Gz(e) {
+  const t = e instanceof Error ? e.message : String(e),
+    n = Zde(e);
+  return n === 401
+    ? ch(t, "signed-out")
+    : n === 403 || n === 404
+      ? ch(t, "no-access")
+      : n === 409 && e instanceof Zt && e.relay?.message === "powered_off"
+        ? ch(t, "powered-off")
+        : ch(t, Jde() ? "offline" : "unreachable");
+}
+const SE = 2,
+  C0t = 400,
+  E0t = 60,
+  Vz = 12;
+function eue(e) {
+  return {
+    ...(e?.sessions.length ? { sessions: e.sessions, sessionsLoaded: !0 } : {}),
+    ...(e?.workspaces.length ? { workspaces: e.workspaces } : {}),
+  };
+}
+function Yz(e, t) {
+  return [...e]
+    .sort((n, r) => (r.updatedAt || 0) - (n.updatedAt || 0))
+    .slice(0, t);
+}
+function em() {
+  return { v: SE, hosts: {} };
+}
+function A0t(e) {
+  if (!e) return em();
+  try {
+    const t = JSON.parse(e);
+    if (!t || typeof t != "object") return em();
+    const n = t;
+    return n.v !== SE || !n.hosts || typeof n.hosts != "object"
+      ? em()
+      : { v: SE, hosts: n.hosts };
+  } catch {
+    return em();
+  }
+}
+async function M0t(e, t = {}) {
+  const n = t.debounceMs ?? 1e4,
+    r = t.now ?? (() => Date.now());
+  let o;
+  try {
+    o = A0t(await e.load());
+  } catch {
+    o = em();
+  }
+  let a = null,
+    i = !1;
+  const l = async () => {
+      i = !1;
+      try {
+        await e.save(JSON.stringify(o));
+      } catch {}
+    },
+    c = () => {
+      ((i = !0),
+        a === null &&
+          (a = setTimeout(() => {
+            ((a = null), l());
+          }, n)));
+    },
+    d = (u) => {
+      let f = o.hosts[u];
+      return (
+        f ||
+          ((f = { at: r(), sessions: [], workspaces: [], byWorkspace: {} }),
+          (o.hosts[u] = f)),
+        f
+      );
+    };
+  return {
+    read: (u) => o.hosts[u] ?? null,
+    putGlobal: (u, f) => {
+      const p = d(u);
+      if (f.sessions) {
+        const m = Yz(f.sessions, C0t);
+        if (
+          !f.workspaces &&
+          m.length === p.sessions.length &&
+          m.every((g, x) => g === p.sessions[x])
+        )
+          return;
+        p.sessions = m;
+      }
+      (f.workspaces && (p.workspaces = f.workspaces), (p.at = r()), c());
+    },
+    putWorkspace: (u, f, p) => {
+      if (!f) return;
+      const m = d(u);
+      (delete m.byWorkspace[f], (m.byWorkspace[f] = Yz(p, E0t)));
+      const g = Object.keys(m.byWorkspace);
+      if (g.length > Vz)
+        for (const x of g.slice(0, g.length - Vz)) delete m.byWorkspace[x];
+      ((m.at = r()), c());
+    },
+    forget: (u) => {
+      u in o.hosts && (delete o.hosts[u], c());
+    },
+    flush: async () => {
+      (a !== null && (clearTimeout(a), (a = null)), i && (await l()));
+    },
+  };
+}
+var Ry;
+(function (e) {
+  ((e.Dark = "DARK"), (e.Light = "LIGHT"), (e.Default = "DEFAULT"));
+})(Ry || (Ry = {}));
+var Iy;
+(function (e) {
+  ((e.Body = "body"),
+    (e.Ionic = "ionic"),
+    (e.Native = "native"),
+    (e.None = "none"));
+})(Iy || (Iy = {}));
+const tm = Us("Keyboard");
+var Ly;
+(function (e) {
+  ((e.Dark = "DARK"), (e.Light = "LIGHT"), (e.Default = "DEFAULT"));
+})(Ly || (Ly = {}));
+var Xz;
+(function (e) {
+  ((e.None = "NONE"), (e.Slide = "SLIDE"), (e.Fade = "FADE"));
+})(Xz || (Xz = {}));
+const Qz = Us("StatusBar");
+function tue(e) {
+  let t = !1,
+    n = null;
+  try {
+    (Ms.addListener("appUrlOpen", (r) => {
+      !t && r?.url && e(r.url);
+    }).then((r) => {
+      ((n = () => void r.remove()), t && n());
+    }),
+      Ms.getLaunchUrl()
+        .then((r) => {
+          !t && r?.url && e(r.url);
+        })
+        .catch(() => {}));
+  } catch {}
+  return () => {
+    ((t = !0), n?.());
+  };
+}
+async function j8() {
+  if (!Rt.isNativePlatform()) return null;
+  try {
+    return (await Ms.getInfo()).version || null;
+  } catch {
+    return null;
+  }
+}
+function nue(e) {
+  let t = !1,
+    n = null;
+  try {
+    Ms.addListener("backButton", (r) => {
+      t ||
+        e() ||
+        (r?.canGoBack
+          ? window.history.back()
+          : Ms.minimizeApp().catch(() => {}));
+    }).then((r) => {
+      ((n = () => void r.remove()), t && n());
+    });
+  } catch {}
+  return () => {
+    ((t = !0), n?.());
+  };
+}
+function nl(e) {
+  let t = !1,
+    n = null;
+  try {
+    Ms.addListener("resume", () => {
+      t || e();
+    }).then((o) => {
+      ((n = () => void o.remove()), t && n());
+    });
+  } catch {}
+  const r = () => {
+    document.visibilityState === "visible" && e();
+  };
+  return (
+    document.addEventListener("visibilitychange", r),
+    () => {
+      ((t = !0), n?.(), document.removeEventListener("visibilitychange", r));
+    }
+  );
+}
+const T0t = [0, 400, 1500],
+  R0t = 50;
+function I0t() {
+  if (Rt.getPlatform() !== "android") return () => {};
+  const e = new Set(),
+    t = () => {
+      const r = document.documentElement;
+      ((r.style.outline = "1px solid transparent"),
+        (r.style.outlineOffset = "-1px"));
+      const o = setTimeout(() => {
+        (e.delete(o), (r.style.outline = ""), (r.style.outlineOffset = ""));
+      }, R0t);
+      e.add(o);
+    },
+    n = nl(() => {
+      for (const r of e) clearTimeout(r);
+      e.clear();
+      for (const r of T0t) {
+        const o = setTimeout(() => {
+          (e.delete(o), t());
+        }, r);
+        e.add(o);
+      }
+    });
+  return () => {
+    n();
+    for (const r of e) clearTimeout(r);
+    (e.clear(),
+      (document.documentElement.style.outline = ""),
+      (document.documentElement.style.outlineOffset = ""));
+  };
+}
+function L0t(e) {
+  let t = null;
+  try {
+    Ms.addListener("pause", e).then((r) => {
+      t = () => void r.remove();
+    });
+  } catch {}
+  const n = () => e();
+  return (
+    globalThis.addEventListener?.("pagehide", n),
+    () => {
+      (t?.(), globalThis.removeEventListener?.("pagehide", n));
+    }
+  );
+}
+const _0t = { light: "#ffffff", dark: "#222120" };
+async function O0t(e) {
+  if (Rt.isNativePlatform()) {
+    try {
+      await Qz.setStyle({ style: e === "dark" ? Ly.Dark : Ly.Light });
+    } catch {}
+    try {
+      await Qz.setBackgroundColor({ color: _0t[e] });
+    } catch {}
+  }
+}
+async function D0t(e) {
+  if (Rt.isNativePlatform())
+    try {
+      await tm.setStyle({ style: e === "dark" ? Ry.Dark : Ry.Light });
+    } catch {}
+}
+function sue() {
+  let e = typeof document > "u" || document.visibilityState !== "hidden",
+    t = !1,
+    n = null;
+  const r = (a) => {
+    e = a;
+  };
+  try {
+    (Ms.getState().then((a) => {
+      e = a.isActive;
+    }),
+      Ms.addListener("appStateChange", (a) => {
+        r(a.isActive);
+      }).then((a) => {
+        ((n = () => void a.remove()), t && n());
+      }));
+  } catch {}
+  const o = () => {
+    r(document.visibilityState !== "hidden");
+  };
+  return (
+    document.addEventListener("visibilitychange", o),
+    {
+      isForeground: () => e,
+      dispose: () => {
+        ((t = !0), n?.(), document.removeEventListener("visibilitychange", o));
+      },
+    }
+  );
+}
+const sl = Us("AttentionNotifier");
+function pl() {
+  return Rt.isNativePlatform();
+}
+async function P0t() {
+  if (!pl()) return null;
+  try {
+    const { LocalNotifications: e } = await Sn(
+        async () => {
+          const { LocalNotifications: n } = await import("./index-B0-35wco.js");
+          return { LocalNotifications: n };
+        },
+        __vite__mapDeps([11, 1, 4]),
+        import.meta.url,
+      ),
+      t = await e.checkPermissions();
+    return t.display === "granted"
+      ? "granted"
+      : t.display === "denied"
+        ? "denied"
+        : "prompt";
+  } catch {
+    return null;
+  }
+}
+async function N8() {
+  if (!pl()) return !1;
+  try {
+    const { LocalNotifications: e } = await Sn(
+        async () => {
+          const { LocalNotifications: r } = await import("./index-B0-35wco.js");
+          return { LocalNotifications: r };
+        },
+        __vite__mapDeps([11, 1, 4]),
+        import.meta.url,
+      ),
+      t = await e.checkPermissions();
+    return t.display === "granted"
+      ? !0
+      : t.display === "denied"
+        ? !1
+        : (await e.requestPermissions()).display === "granted";
+  } catch {
+    return !1;
+  }
+}
+function rue(e, t) {
+  return {
+    post(n) {
+      pl() &&
+        ((Rt.getPlatform() === "ios" && t?.()) ||
+          (async () => {
+            try {
+              if (Rt.getPlatform() === "android") {
+                await sl.post({
+                  id: n.id,
+                  title: n.title,
+                  body: n.body,
+                  sessionKey: n.sessionKey,
+                  channelName: e("mobile.notify.channel.attention"),
+                  channelDesc: e("mobile.notify.channel.attentionHint"),
+                });
+                return;
+              }
+              const { LocalNotifications: r } = await Sn(
+                async () => {
+                  const { LocalNotifications: o } =
+                    await import("./index-B0-35wco.js");
+                  return { LocalNotifications: o };
+                },
+                __vite__mapDeps([11, 1, 4]),
+                import.meta.url,
+              );
+              await r.schedule({
+                notifications: [
+                  {
+                    id: n.id,
+                    title: n.title,
+                    body: n.body,
+                    extra: n.sessionKey ? { sessionKey: n.sessionKey } : void 0,
+                  },
+                ],
+              });
+            } catch {}
+          })());
+    },
+  };
+}
+async function oue(e) {
+  if (Rt.getPlatform() === "android")
+    try {
+      await sl.openChannelSettings({
+        channelName: e("mobile.notify.channel.attention"),
+        channelDesc: e("mobile.notify.channel.attentionHint"),
+      });
+    } catch {}
+}
+async function $0t() {
+  if (Rt.getPlatform() !== "android") return !1;
+  try {
+    const { manufacturer: e } = await sl.deviceProfile();
+    return /xiaomi|redmi|poco/i.test(e);
+  } catch {
+    return !1;
+  }
+}
+function F0t(e, t) {
+  const n = dx(e);
+  return n
+    ? `chat:${n.machine ?? ""}:${n.room}${t && t > 0 ? `#t${t}` : ""}`
+    : null;
+}
+function B0t(e) {
+  pl() &&
+    (async () => {
+      try {
+        if (Rt.getPlatform() === "android") {
+          await sl.postChat({
+            id: e.id,
+            title: e.title,
+            body: e.body,
+            link: e.link,
+            sender: e.sender,
+            conversationTitle: e.conversationTitle,
+            thread: e.thread,
+            isGroup: e.isGroup,
+            machineName: e.machineName,
+          });
+          return;
+        }
+        const { LocalNotifications: t } = await Sn(
+          async () => {
+            const { LocalNotifications: n } =
+              await import("./index-B0-35wco.js");
+            return { LocalNotifications: n };
+          },
+          __vite__mapDeps([11, 1, 4]),
+          import.meta.url,
+        );
+        await t.schedule({
+          notifications: [
+            {
+              id: e.id,
+              title: e.title,
+              body: e.body,
+              extra: { chatLink: e.link },
+              threadIdentifier: F0t(e.link, e.thread) ?? e.group,
+            },
+          ],
+        });
+      } catch {}
+    })();
+}
+function H0t(e) {
+  !pl() ||
+    e.length === 0 ||
+    (async () => {
+      try {
+        if (Rt.getPlatform() === "android") {
+          for (const n of e) await sl.cancel({ id: n });
+          return;
+        }
+        const { LocalNotifications: t } = await Sn(
+          async () => {
+            const { LocalNotifications: n } =
+              await import("./index-B0-35wco.js");
+            return { LocalNotifications: n };
+          },
+          __vite__mapDeps([11, 1, 4]),
+          import.meta.url,
+        );
+        await t.removeDeliveredNotifications({
+          notifications: e.map((n) => ({ id: n, title: "", body: "" })),
+        });
+      } catch {}
+    })();
+}
+function z0t(e) {
+  if (Rt.getPlatform() === "android")
+    try {
+      sl.chatAttentionSeen(e).catch(() => {});
+    } catch {}
+}
+function K0t(e) {
+  if (Rt.getPlatform() === "android")
+    try {
+      sl.withdrawChat(e).catch(() => {});
+    } catch {}
+}
+const Mg = { subscribers: new Set(), pending: null },
+  _y = { subscribers: new Set(), pending: null };
+let Jz = !1;
+function dh(e, t) {
+  if (e.subscribers.size === 0) {
+    e.pending = t;
+    return;
+  }
+  for (const n of e.subscribers) n(t);
+}
+function S8() {
+  if (!(Jz || !pl())) {
+    if (((Jz = !0), Rt.getPlatform() === "android")) {
+      (sl
+        .addListener("attentionTap", (e) => {
+          e?.sessionKey && dh(Mg, e.sessionKey);
+        })
+        .catch(() => {}),
+        sl
+          .addListener("chatTap", (e) => {
+            e?.link && dh(_y, e.link);
+          })
+          .catch(() => {}));
+      return;
+    }
+    Sn(
+      async () => {
+        const { LocalNotifications: e } = await import("./index-B0-35wco.js");
+        return { LocalNotifications: e };
+      },
+      __vite__mapDeps([11, 1, 4]),
+      import.meta.url,
+    )
+      .then(({ LocalNotifications: e }) =>
+        e.addListener("localNotificationActionPerformed", (t) => {
+          const n = t.notification.extra;
+          n?.sessionKey
+            ? dh(Mg, n.sessionKey)
+            : n?.chatLink && dh(_y, n.chatLink);
+        }),
+      )
+      .catch(() => {});
+  }
+}
+function aue(e, t) {
+  if (!pl()) return () => {};
+  (S8(), e.subscribers.add(t));
+  const n = e.pending;
+  return (
+    n !== null && ((e.pending = null), t(n)),
+    () => {
+      e.subscribers.delete(t);
+    }
+  );
+}
+function W0t(e) {
+  (S8(), dh(Mg, e));
+}
+function q0t(e) {
+  Mg.pending = e;
+}
+function U0t(e) {
+  (S8(), dh(_y, e));
+}
+function G0t(e) {
+  return aue(Mg, e);
+}
+function V0t(e) {
+  return aue(_y, e);
+}
+function vk(e) {
+  let t;
+  try {
+    t = dx(e);
+  } catch {
+    return null;
+  }
+  return t
+    ? { room: t.room, seq: t.seq || null, machine: t.machine || null, link: e }
+    : null;
+}
+function Y0t(e) {
+  return vk(e) !== null;
+}
+const Oy = new Set();
+let Dy = null;
+function CE(e) {
+  if (Oy.size === 0) {
+    Dy = e;
+    return;
+  }
+  for (const t of Oy) t(e);
+}
+function X0t(e) {
+  Dy = e;
+}
+function Q0t(e) {
+  (lue(), Oy.add(e));
+  const t = Dy;
+  return (
+    t && ((Dy = null), e(t)),
+    () => {
+      Oy.delete(e);
+    }
+  );
+}
+const iue = "mobile.chat.launched-links",
+  J0t = 3e3;
+let I0 = null;
+function Z0t() {
+  try {
+    const e = JSON.parse(_e().getItem(iue) ?? "[]");
+    return Array.isArray(e) ? e.filter((t) => typeof t == "string") : [];
+  } catch {
+    return [];
+  }
+}
+function Zz(e, t) {
+  const n = vk(e);
+  if (!n) return;
+  const r = Date.now();
+  if (I0 && I0.link === e && r - I0.at < J0t) return;
+  const o = Z0t();
+  (t && o.includes(e)) ||
+    (o.includes(e) || _e().setItem(iue, JSON.stringify([...o, e].slice(-20))),
+    (I0 = { link: e, at: r }),
+    CE(n));
+}
+let eK = !1;
+function lue() {
+  if (
+    !eK &&
+    ((eK = !0),
+    kLe((e, t) =>
+      CE({ room: e.room, seq: e.seq, machine: e.machine, link: t }),
+    ),
+    V0t((e) => {
+      const t = vk(e);
+      t && CE(t);
+    }),
+    !!Rt.isNativePlatform())
+  )
+    try {
+      (Ms.addListener("appUrlOpen", (e) => {
+        e?.url && Zz(e.url, !1);
+      }).catch(() => {}),
+        Ms.getLaunchUrl()
+          .then((e) => {
+            e?.url && Zz(e.url, !0);
+          })
+          .catch(() => {}));
+    } catch {}
+}
+function cue(e) {
+  const t =
+    /^mirasim:\/\/machine\/([^/?#]{1,200})\/?(?:\?([^#]*))?(?:#.*)?$/i.exec(
+      e.trim(),
+    );
+  if (!t) return null;
+  let n;
+  try {
+    n = decodeURIComponent(t[1]);
+  } catch {
+    return null;
+  }
+  return /^[\w.:-]{1,200}$/.test(n)
+    ? {
+        nodeId: n,
+        members: new URLSearchParams(t[2] ?? "").get("panel") === "members",
+      }
+    : null;
+}
+function evt(e) {
+  return cue(e) !== null;
+}
+let EE = null,
+  Tv = null;
+function tK(e) {
+  if (((EE = e), e && Tv)) {
+    const t = Tv;
+    ((Tv = null), e(t));
+  }
+}
+function tvt(e) {
+  EE ? EE(e) : (Tv = e);
+}
+let AE = null;
+const ME = new Set();
+function Py(e) {
+  AE = e;
+  for (const t of ME) t();
+}
+function nvt(e) {
+  return !e || AE !== e ? !1 : ((AE = null), !0);
+}
+function svt(e) {
+  return (ME.add(e), () => ME.delete(e));
+}
+const due = "mirasim.machine-link.launched",
+  rvt = 3e3;
+let L0 = null;
+function ovt() {
+  try {
+    const e = JSON.parse(_e().getItem(due) || "[]");
+    return Array.isArray(e) ? e.filter((t) => typeof t == "string") : [];
+  } catch {
+    return [];
+  }
+}
+function nK(e, t) {
+  const n = cue(e);
+  if (!n) return;
+  const r = Date.now();
+  if (L0 && L0.link === e && r - L0.at < rvt) return;
+  const o = ovt();
+  (t && o.includes(e)) ||
+    (o.includes(e) || _e().setItem(due, JSON.stringify([...o, e].slice(-20))),
+    (L0 = { link: e, at: r }),
+    tvt(n));
+}
+let sK = !1;
+function avt() {
+  if (!(sK || !Rt.isNativePlatform())) {
+    sK = !0;
+    try {
+      (Ms.addListener("appUrlOpen", (e) => {
+        e?.url && nK(e.url, !1);
+      }).catch(() => {}),
+        Ms.getLaunchUrl()
+          .then((e) => {
+            e?.url && nK(e.url, !0);
+          })
+          .catch(() => {}));
+    } catch {}
+  }
+}
+const TE = "mobile.active-session.last",
+  RE = (e) => `mobile.active-session.${e}`,
+  IE = (e) => `mobile.active-session-workdir.${e}`;
+function ivt(e, t, n, r) {
+  (n ? e.setItem(RE(t), n) : e.removeItem(RE(t)),
+    r ? e.setItem(IE(t), r) : e.removeItem(IE(t)),
+    n
+      ? e.setItem(
+          TE,
+          JSON.stringify({ hostId: t, sessionKey: n, workdir: r ?? null }),
+        )
+      : e.removeItem(TE));
+}
+function lvt(e, t, n) {
+  const r = e.getItem(RE(t));
+  if (r) return { sessionKey: r, workdir: e.getItem(IE(t)) };
+  const o = e.getItem(TE);
+  if (!o) return { sessionKey: null, workdir: null };
+  try {
+    const a = JSON.parse(o);
+    if (!a || typeof a != "object") return { sessionKey: null, workdir: null };
+    const { hostId: i, sessionKey: l, workdir: c } = a;
+    return typeof l != "string" || !l
+      ? { sessionKey: null, workdir: null }
+      : i !== t && !n
+        ? { sessionKey: null, workdir: null }
+        : { sessionKey: l, workdir: typeof c == "string" && c ? c : null };
+  } catch {
+    return { sessionKey: null, workdir: null };
+  }
+}
+function yk(e) {
+  const [t] = h.useState(e),
+    [n, r] = h.useState(!1);
+  return (!n && !Object.is(e, t) && r(!0), n || !Object.is(e, t));
+}
+function lp(e) {
+  const t = yk(e),
+    { mounted: n, leaving: r } = ks(e, pa);
+  return {
+    mounted: n,
+    leaving: r,
+    className: r ? "animate-reveal-out" : t ? "animate-reveal" : void 0,
+  };
+}
+function gr(e, t) {
+  const [n, r] = h.useState({ scope: t, loader: e });
+  let o = n.loader;
+  return (
+    Object.is(n.scope, t)
+      ? e && !o && ((o = !0), r({ scope: t, loader: o }))
+      : ((o = e), r({ scope: t, loader: o })),
+    o && !e ? "animate-settle" : void 0
+  );
+}
+const cvt = 35,
+  dvt = 6;
+function wk(e, t) {
+  const r = h.useRef({ scope: t, baseline: null, arrived: new Map() }).current;
+  if (
+    (Object.is(r.scope, t) ||
+      ((r.scope = t), (r.baseline = null), (r.arrived = new Map())),
+    r.baseline === null)
+  )
+    e.length > 0 && (r.baseline = new Set(e));
+  else {
+    let a = 0;
+    for (const i of e)
+      r.baseline.has(i) ||
+        r.arrived.has(i) ||
+        r.arrived.set(i, Math.min(a++, dvt) * cvt);
+  }
+  const o = r.arrived;
+  return (a) => {
+    const i = o.get(a);
+    if (i !== void 0)
+      return {
+        className: "animate-settle",
+        style: i > 0 ? { animationDelay: `${i}ms` } : void 0,
+      };
+  };
+}
+function rl(e, t = !0) {
+  const [n, r] = h.useState({ depth: e, live: t, dir: void 0 });
+  if (n.depth !== e || n.live !== t) {
+    const o =
+      t && n.live && n.depth !== e
+        ? e > n.depth
+          ? "forward"
+          : "back"
+        : void 0;
+    return (r({ depth: e, live: t, dir: o }), o);
+  }
+  return n.dir;
+}
+function kk(e) {
+  const [t, n] = h.useState(e);
+  return (h.useEffect(() => n(e), [e]), t && e);
+}
+function Tg(e) {
+  return e === "forward"
+    ? "m-view-forward"
+    : e === "back"
+      ? "m-view-back"
+      : void 0;
+}
+function C8({ busy: e, spinner: t, children: n }) {
+  const r = yk(e);
+  return s.jsx(
+    "span",
+    {
+      className: k("grid place-items-center", r && "animate-pop"),
+      children: e ? t : n,
+    },
+    e ? "busy" : "idle",
+  );
+}
+const uvt = [0.62, 0.46, 0.54, 0.4];
+function uue({ rows: e = 3 }) {
+  return s.jsx("div", {
+    "aria-hidden": !0,
+    "data-sheet-skeleton": "",
+    children: uvt
+      .slice(0, e)
+      .map((t) =>
+        s.jsxs(
+          "div",
+          {
+            className: "flex min-h-[52px] items-center gap-3 px-4",
+            children: [
+              s.jsx(jn, { className: "h-4 w-4 shrink-0" }),
+              s.jsx(jn, {
+                className: "h-3.5",
+                style: { width: `${t * 100}%` },
+              }),
+            ],
+          },
+          t,
+        ),
+      ),
+  });
+}
+function hvt(e) {
+  return e === "offline"
+    ? "mobile.link.offline"
+    : e === "host-down"
+      ? "mobile.link.hostDown"
+      : e === "host-restarting"
+        ? "hub.restarting"
+        : e === "unreachable"
+          ? "mobile.link.unreachable"
+          : "hub.reconnecting";
+}
+function fvt({ shown: e, t, reason: n, retrying: r, onRetry: o }) {
+  const a = lp(e),
+    i = t(r ? "mobile.link.connecting" : hvt(n)),
+    l = h.useRef(i);
+  return (
+    e && (l.current = i),
+    a.mounted
+      ? s.jsxs("div", {
+          "data-mobile-link-bar": r ? "retrying" : (n ?? ""),
+          role: "status",
+          className: k(
+            "flex h-8 shrink-0 items-center gap-2 border-b border-edge-subtle bg-[var(--surface-1)] px-3",
+            a.leaving ? a.className : "animate-reveal",
+          ),
+          children: [
+            r
+              ? s.jsx(ke, { className: "h-3 w-3 shrink-0 text-fg-4" })
+              : s.jsx(fa, { tone: "warn", pulse: !0 }),
+            s.jsx("span", {
+              className: "m-sub min-w-0 flex-1 truncate text-fg-3",
+              children: e ? i : l.current,
+            }),
+            s.jsx("button", {
+              type: "button",
+              "data-pressable": "",
+              disabled: r,
+              className:
+                "m-sub shrink-0 rounded-lg px-2 py-1 font-medium text-fg-2 disabled:text-fg-5",
+              onClick: o,
+              children: t("mobile.link.retry"),
+            }),
+          ],
+        })
+      : null
+  );
+}
+const pvt = {
+  openInEditor: !1,
+  openWith: !1,
+  editorContext: !1,
+  fork: !0,
+  git: !1,
+  workspaces: !0,
+  fileTree: !1,
+  sidebar: !1,
+  workbenchTitlebar: !1,
+  connectionNotice: !1,
+  turnNavOverlay: !0,
+  guiPreviewPeek: !0,
+};
+function sc({
+  children: e,
+  onClick: t,
+  destructive: n = !1,
+  disabled: r = !1,
+}) {
+  return s.jsx("button", {
+    type: "button",
+    "data-pressable": "",
+    disabled: r,
+    onClick: t,
+    className: k(
+      "m-headline -my-2 shrink-0 rounded-md px-1 py-2 font-medium",
+      "min-h-[44px] disabled:pointer-events-none disabled:opacity-45",
+      n ? "text-err" : "text-[var(--accent-text)]",
+    ),
+    children: e,
+  });
+}
+function os({ children: e }) {
+  return s.jsx("div", {
+    className: "m-caption mt-6 px-1 text-fg-5 first:mt-0",
+    children: e,
+  });
+}
+const hue = h.createContext(null);
+function Ht({ children: e, className: t }) {
+  const n = h.useRef(!1);
+  return (
+    h.useEffect(() => {
+      n.current = !0;
+    }, []),
+    s.jsx(hue.Provider, {
+      value: n,
+      children: s.jsx("div", { className: k("m-group mt-2", t), children: e }),
+    })
+  );
+}
+function mvt() {
+  const e = h.useContext(hue),
+    [t] = h.useState(() => e?.current === !0);
+  return t;
+}
+const rK =
+  "m-row flex min-h-[52px] w-full items-center gap-3 px-3.5 py-2.5 text-left";
+function ot({
+  onClick: e,
+  disabled: t = !1,
+  destructive: n = !1,
+  ariaLabel: r,
+  lead: o,
+  selected: a = !1,
+  onLongPress: i,
+  children: l,
+  className: c,
+}) {
+  const d = mvt() && "m-row-enter";
+  return e
+    ? s.jsx("button", {
+        type: "button",
+        "aria-label": r,
+        "aria-current": a ? "true" : void 0,
+        "aria-disabled": t || void 0,
+        "data-lead": o,
+        "data-selected": a ? "" : void 0,
+        "data-pressable": t ? void 0 : "",
+        className: k(rK, d, n && "text-err", c),
+        onClick: t ? void 0 : e,
+        onContextMenu: i
+          ? (u) => {
+              (u.preventDefault(), i());
+            }
+          : void 0,
+        children: l,
+      })
+    : s.jsx("div", {
+        className: k(rK, d, c),
+        "data-lead": o,
+        "data-selected": a ? "" : void 0,
+        children: l,
+      });
+}
+function ko({ label: e, value: t, wrap: n = !1, mono: r = !0 }) {
+  return s.jsxs(ot, {
+    children: [
+      s.jsx("span", { className: "m-headline shrink-0 text-fg", children: e }),
+      s.jsx("span", {
+        className: k(
+          "m-sub min-w-0 flex-1 text-right text-fg-5",
+          r && "font-mono tabular-nums",
+          n ? "break-all leading-relaxed" : "truncate",
+        ),
+        children: t,
+      }),
+    ],
+  });
+}
+function sn() {
+  return s.jsx("svg", {
+    width: "14",
+    height: "14",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    className: "shrink-0 text-fg-5",
+    "aria-hidden": !0,
+    children: s.jsx("path", { d: "M9 18l6-6-6-6" }),
+  });
+}
+function $y({ size: e = 19 }) {
+  return s.jsxs("svg", {
+    width: e,
+    height: e,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "1.7",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    "aria-hidden": !0,
+    children: [
+      s.jsx("rect", { x: "4", y: "5", width: "16", height: "11", rx: "1.5" }),
+      s.jsx("path", { d: "M2 19h20" }),
+    ],
+  });
+}
+function fue({ size: e = 17 }) {
+  return s.jsxs("svg", {
+    width: e,
+    height: e,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "1.7",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    "aria-hidden": !0,
+    children: [
+      s.jsx("rect", { x: "3", y: "3", width: "7", height: "7", rx: "1" }),
+      s.jsx("rect", { x: "14", y: "3", width: "7", height: "7", rx: "1" }),
+      s.jsx("rect", { x: "3", y: "14", width: "7", height: "7", rx: "1" }),
+      s.jsx("path", { d: "M14 14h3v3h-3zM21 14v.01M14 21h.01M18 18h3v3h-3z" }),
+    ],
+  });
+}
+function pue({ size: e = 21 }) {
+  return s.jsxs("svg", {
+    width: e,
+    height: e,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "1.7",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    "aria-hidden": !0,
+    children: [
+      s.jsx("circle", { cx: "12", cy: "7.8", r: "3.9" }),
+      s.jsx("path", { d: "M4 20.1a8 8 0 0 1 16 0" }),
+    ],
+  });
+}
+function gvt(e) {
+  return e === "darwin"
+    ? "macOS"
+    : e === "win32"
+      ? "Windows"
+      : e === "linux"
+        ? "Linux"
+        : e;
+}
+const xvt = 2500,
+  bvt = 1e4,
+  mue = 9e4,
+  LE = mue;
+function _E(e) {
+  return e === "checking" || e === "downloading" || e === "installing";
+}
+function vvt(e, t) {
+  return !!e && _E(e.phase) && t > LE;
+}
+function Lm(e) {
+  return e === "available" || e === "downloaded" || e === "ready";
+}
+function yvt(e, t) {
+  return e ? t === "admin" : t === null || t === "admin";
+}
+function wvt(e) {
+  return e.phase === "error" && !e.currentVersion && e.channel === "payload";
+}
+function kvt(e) {
+  const t = e?.update;
+  return !!t && e.mayAct && Lm(t.phase) && !t.pendingIdle;
+}
+function jvt(e, t, n) {
+  return !Lm(e.phase) ||
+    e.blockedBusy != null ||
+    (t && e.currentVersion && e.currentVersion !== t)
+    ? !0
+    : n > mue;
+}
+function Nvt(e) {
+  const t = e.managed === !0,
+    n = yvt(
+      t,
+      bt((w) => w.you?.role ?? null),
+    ),
+    [r, o] = h.useState(null),
+    [a, i] = h.useState(!1),
+    [l, c] = h.useState(!1),
+    [d, u] = h.useState(!1),
+    f = h.useRef(null),
+    p = h.useRef({ from: "", at: 0 }),
+    m = h.useRef(0),
+    g = h.useCallback(
+      (w, N = {}) => {
+        (w !== "status" && i(!0),
+          e.post({
+            type: "hostUpdate",
+            action: w,
+            ...(w === "apply"
+              ? { whenIdle: !0, ...(N.force ? { force: !0 } : {}) }
+              : N.cancelWhenIdle
+                ? { cancelWhenIdle: !0 }
+                : { viewOnly: !0 }),
+          }));
+      },
+      [e],
+    );
+  (h.useEffect(() => {
+    const w = e.onFrame((N) => {
+      if (N.type === "hostUpdate") {
+        if ((i(!1), (m.current = Date.now()), u(!1), t && wvt(N.update))) {
+          o(null);
+          return;
+        }
+        (o(N.update),
+          c(
+            (j) =>
+              j && !jvt(N.update, p.current.from, Date.now() - p.current.at),
+          ));
+      }
+    });
+    return (g("status"), w);
+  }, [e, t, g]),
+    h.useEffect(
+      () =>
+        e.onConnection?.((w) => {
+          w && g("status");
+        }),
+      [e, g],
+    ));
+  const x = r?.pendingIdle === !0;
+  (h.useEffect(() => {
+    if (!(!l && !x && !(r && _E(r.phase))))
+      return (
+        (f.current = setInterval(() => g("status"), x && !l ? bvt : xvt)),
+        () => {
+          (f.current && clearInterval(f.current), (f.current = null));
+        }
+      );
+  }, [r, x, l, g]),
+    h.useEffect(() => {
+      if (!(r && _E(r.phase))) {
+        u(!1);
+        return;
+      }
+      let w;
+      const N = (j) => {
+        w = setTimeout(() => {
+          const S = Date.now() - m.current;
+          vvt(r, S) ? u(!0) : N(Math.max(1e3, LE - S));
+        }, j);
+      };
+      return (
+        N(Math.max(1e3, LE - (Date.now() - m.current))),
+        () => clearTimeout(w)
+      );
+    }, [r]));
+  const b = h.useCallback(() => g("check"), [g]),
+    y = h.useCallback(
+      (w = !1) => {
+        ((p.current = { from: r?.currentVersion ?? "", at: Date.now() }),
+          c(!0),
+          g("apply", { force: w }));
+      },
+      [g, r],
+    ),
+    v = h.useCallback(() => g("status", { cancelWhenIdle: !0 }), [g]);
+  return {
+    update: r,
+    check: b,
+    apply: y,
+    cancel: v,
+    mayAct: n,
+    busy: a,
+    applying: l,
+    stalled: d,
+  };
+}
+function Svt(e, t, n = !1, r = !1, o = !0) {
+  const a = e.latestVersion ? ` v${e.latestVersion}` : "";
+  if (e.pendingIdle && Lm(e.phase))
+    return {
+      text: `${t("mobile.hostUpdate.waitIdle")}${a}`,
+      detail: t("mobile.hostUpdate.waitIdleHint"),
+      ...(o ? { action: "cancel" } : {}),
+    };
+  if (o && e.blockedBusy != null && Lm(e.phase))
+    return {
+      text:
+        e.blockedBusy > 0
+          ? t("mobile.hostUpdate.busy")
+          : t("mobile.hostUpdate.busyPending"),
+      tone: "warn",
+      action: "force",
+    };
+  if (n && Lm(e.phase))
+    return { text: t("mobile.hostUpdate.updating"), spin: !0 };
+  if (r)
+    return {
+      text: t("mobile.hostUpdate.stalled"),
+      tone: "warn",
+      action: "recheck",
+    };
+  switch (e.phase) {
+    case "checking":
+      return { text: t("mobile.hostUpdate.checking"), spin: !0 };
+    case "available":
+    case "downloaded":
+    case "ready":
+      return e.manualInstall
+        ? { text: `${t("mobile.hostUpdate.manual")}${a}`, action: "check" }
+        : o
+          ? { text: `${t("mobile.hostUpdate.available")}${a}`, action: "apply" }
+          : {
+              text: `${t("mobile.hostUpdate.available")}${a}`,
+              detail: t("mobile.hostUpdate.byAdmin"),
+            };
+    case "downloading":
+      return {
+        text: `${t("mobile.hostUpdate.downloading")} ${Math.round(e.percent ?? 0)}%`,
+        spin: !0,
+      };
+    case "installing":
+      return { text: t("mobile.hostUpdate.installing"), spin: !0 };
+    case "up-to-date":
+      return { text: t("mobile.hostUpdate.upToDate"), action: "check" };
+    case "error":
+      return {
+        text: t(
+          e.latestVersion
+            ? "mobile.hostUpdate.failed"
+            : "mobile.hostUpdate.checkFailed",
+        ),
+        detail: e.error || void 0,
+        tone: "warn",
+        action: "recheck",
+      };
+    default:
+      return { text: t("mobile.hostUpdate.check"), action: "check" };
+  }
+}
+function Cvt({
+  t: e,
+  update: t,
+  busy: n,
+  applying: r,
+  stalled: o,
+  mayAct: a,
+  onCheck: i,
+  onApply: l,
+  onCancel: c,
+}) {
+  if (!t) return null;
+  if (t.phase === "unsupported")
+    return s.jsx(ot, {
+      children: s.jsx("span", {
+        className: "m-sub min-w-0 flex-1 text-fg-5",
+        children: t.unsupportedReason || e("mobile.hostUpdate.unsupported"),
+      }),
+    });
+  const d = Svt(t, e, r, o, a),
+    u =
+      d.action === "apply"
+        ? e("mobile.hostUpdate.updateNow")
+        : d.action === "force"
+          ? e("mobile.hostUpdate.restartAnyway")
+          : d.action === "cancel"
+            ? e("mobile.hostUpdate.cancel")
+            : d.action === "recheck"
+              ? e("mobile.hostUpdate.recheck")
+              : e("mobile.hostUpdate.checkNow"),
+    f =
+      d.action === "apply"
+        ? () => l()
+        : d.action === "force"
+          ? () => l(!0)
+          : d.action === "cancel"
+            ? c
+            : i;
+  return s.jsxs(ot, {
+    children: [
+      d.spin && s.jsx(ke, { className: "h-3.5 w-3.5 shrink-0 text-fg-5" }),
+      s.jsxs("span", {
+        className: "min-w-0 flex-1",
+        children: [
+          s.jsx("span", {
+            className: `m-headline block ${d.tone === "warn" ? "text-[var(--th-warn)]" : "text-fg"}`,
+            children: d.text,
+          }),
+          d.detail &&
+            s.jsx("span", {
+              className: "m-sub mt-0.5 block break-words text-fg-3",
+              children: d.detail,
+            }),
+        ],
+      }),
+      d.action &&
+        s.jsx(sc, {
+          disabled: n,
+          destructive: d.action === "force",
+          onClick: f,
+          children: u,
+        }),
+    ],
+  });
+}
+function Evt({ t: e, host: t }) {
+  return s.jsx(Cvt, {
+    t: e,
+    update: t.update,
+    busy: t.busy,
+    applying: t.applying,
+    stalled: t.stalled,
+    mayAct: t.mayAct,
+    onCheck: t.check,
+    onApply: t.apply,
+    onCancel: t.cancel,
+  });
+}
+const gue = [
+  "home",
+  "sessions",
+  "settings",
+  "new",
+  "changes",
+  "artifacts",
+  "files",
+  "schedules",
+];
+function Avt(e) {
+  return gue.includes(e);
+}
+function Mvt(e, t) {
+  switch (e.op) {
+    case "info":
+      return { ok: !0, info: t.info() };
+    case "navigate": {
+      const n = e.target ?? "";
+      return t.navigate(n)
+        ? { ok: !0 }
+        : {
+            ok: !1,
+            error: `unknown navigate target: '${n}' (mobile accepts ${gue.join("|")})`,
+          };
+    }
+    case "interact": {
+      if (!e.args) return { ok: !1, error: "interact requires args" };
+      const n = dve(e.args);
+      return { ok: n.ok, result: n, error: n.error };
+    }
+    case "capture":
+      return {
+        ok: !1,
+        error:
+          "the mobile shell cannot self-capture; capture from the host instead. Android: `adb exec-out screencap -p > shot.png`, iOS Simulator: `xcrun simctl io booted screenshot shot.png`",
+      };
+    default:
+      return { ok: !1, error: `unknown shell op: ${String(e.op)}` };
+  }
+}
+function Tvt(e, t, n) {
+  const r = h.useRef(n);
+  ((r.current = n),
+    h.useEffect(() => {
+      const o = () =>
+        e.post({
+          type: "shellRegister",
+          shell: "mobile",
+          platform: t,
+          capabilities: ["info", "navigate", "interact"],
+        });
+      o();
+      const a = e.onConnection?.((l) => {
+          l && o();
+        }),
+        i = e.onFrame((l) => {
+          if (l.type !== "shellOpRequest") return;
+          let c;
+          try {
+            c = Mvt(l, r.current);
+          } catch (d) {
+            c = { ok: !1, error: d.message };
+          }
+          e.post({ type: "shellOpResult", id: l.id, ...c });
+        });
+      return () => {
+        (i(), a?.());
+      };
+    }, [e, t]));
+}
+const OE = {
+  enabled: "mobile.notify.enabled",
+  keepalive: "mobile.notify.keepalive",
+};
+function Rvt(e) {
+  return {
+    enabled: e.getItem(OE.enabled) !== "0",
+    keepalive: e.getItem(OE.keepalive) !== "0",
+  };
+}
+function Ivt(e, t, n) {
+  e.setItem(OE[t], n ? "1" : "0");
+}
+const xue = "mobile.notify.channelNudged",
+  bue = "mobile.notify.setupNudged.v2";
+function Lvt(e) {
+  return e.getItem(xue) === "1";
+}
+function _vt(e) {
+  e.setItem(xue, "1");
+}
+function Ovt(e) {
+  return e.getItem(bue) === "1";
+}
+function Dvt(e) {
+  e.setItem(bue, "1");
+}
+function Pvt(e) {
+  if (!e.keepAliveSupported) return [];
+  const t = [];
+  return (
+    e.batteryExempt === !1 && t.push("battery"),
+    e.vendorAutostartAvailable && t.push("autostart"),
+    !e.channelAlreadyNudged &&
+      (e.channelSilencingAdvised || t.length > 0) &&
+      t.push("channel"),
+    t
+  );
+}
+const oK = Us("Preferences", {
+  web: () =>
+    Sn(
+      () => import("./web-DwMoh6gE.js"),
+      __vite__mapDeps([12, 1, 4]),
+      import.meta.url,
+    ).then((e) => new e.PreferencesWeb()),
+});
+function $vt() {
+  return Rt.isNativePlatform();
+}
+function XS(e) {
+  return {
+    load: async () => (await oK.get({ key: e })).value,
+    save: async (t) => {
+      await oK.set({ key: e, value: t });
+    },
+  };
+}
+function Fvt() {
+  return {
+    get: async (e) => {
+      try {
+        return globalThis.localStorage?.getItem(e) ?? null;
+      } catch {
+        return null;
+      }
+    },
+    set: async (e, t) => {
+      try {
+        globalThis.localStorage?.setItem(e, t);
+      } catch {}
+    },
+    remove: async (e) => {
+      try {
+        globalThis.localStorage?.removeItem(e);
+      } catch {}
+    },
+  };
+}
+function ml() {
+  return $vt()
+    ? {
+        get: async (e) => {
+          const { SecureStorage: t } = await Sn(
+              async () => {
+                const { SecureStorage: r } =
+                  await import("./index-B1vVfY0t.js");
+                return { SecureStorage: r };
+              },
+              __vite__mapDeps([13, 1, 4]),
+              import.meta.url,
+            ),
+            n = await t.get(e);
+          return typeof n == "string" ? n : null;
+        },
+        set: async (e, t) => {
+          const { SecureStorage: n } = await Sn(
+            async () => {
+              const { SecureStorage: r } = await import("./index-B1vVfY0t.js");
+              return { SecureStorage: r };
+            },
+            __vite__mapDeps([13, 1, 4]),
+            import.meta.url,
+          );
+          await n.set(e, t);
+        },
+        remove: async (e) => {
+          const { SecureStorage: t } = await Sn(
+            async () => {
+              const { SecureStorage: n } = await import("./index-B1vVfY0t.js");
+              return { SecureStorage: n };
+            },
+            __vite__mapDeps([13, 1, 4]),
+            import.meta.url,
+          );
+          await t.remove(e);
+        },
+      }
+    : Fvt();
+}
+const vue = "mobile.notify.push",
+  E8 = "mobile.notify.pushAsked",
+  A8 = "mirasim.push.registered.v1",
+  Bvt = 6 * 60 * 6e4;
+let au = { phase: $r() ? "off" : "unsupported" };
+const Vd = new Map(),
+  DE = new Set();
+let QS = null,
+  JS = !1,
+  aK = 0;
+function yue() {
+  for (const e of [...DE]) e();
+}
+function La(e) {
+  ((au = e), yue());
+}
+function wue(e) {
+  return (DE.add(e), () => DE.delete(e));
+}
+function iK() {
+  return au;
+}
+function kue() {
+  return h.useSyncExternalStore(wue, iK, iK);
+}
+function lK(e) {
+  return Vd.get(e);
+}
+function Hvt(e) {
+  return h.useSyncExternalStore(
+    wue,
+    () => (e ? Vd.get(e) : void 0),
+    () => {},
+  );
+}
+function ZS(e, t) {
+  Vd.get(e) !== t && (Vd.set(e, t), yue());
+}
+function zvt() {
+  return au.phase === "on";
+}
+function Kvt(e) {
+  return au.phase === "on" && !!e && Vd.get(e) === "ok";
+}
+function jk() {
+  return _e().getItem(vue) === "1";
+}
+function jue(e, t = ml()) {
+  (_e().setItem(vue, e ? "1" : "0"), _e().setItem(E8, "1"), Rg(t));
+}
+function cK() {
+  return _e().getItem(E8) === "1";
+}
+function Wvt() {
+  _e().setItem(E8, "1");
+}
+function Rg(e = ml()) {
+  if ($r()) {
+    if (QS) {
+      JS = !0;
+      return;
+    }
+    QS = qvt(e)
+      .catch((t) => La({ phase: "error", detail: t.message }))
+      .finally(() => {
+        ((QS = null), JS && ((JS = !1), Rg(e)));
+      });
+  }
+}
+async function Nue(e) {
+  try {
+    const t = await e.get(A8),
+      n = t ? JSON.parse(t) : null;
+    return n && typeof n.deviceId == "string" && typeof n.account == "string"
+      ? n
+      : null;
+  } catch {
+    return null;
+  }
+}
+function Sue(e) {
+  try {
+    const t = JSON.parse(
+      atob((e.split(".")[1] ?? "").replace(/-/g, "+").replace(/_/g, "/")),
+    ).sub;
+    return typeof t == "string" ? t : "";
+  } catch {
+    return "";
+  }
+}
+const Cue = (e) =>
+  `${Hs.replace(/\/+$/, "")}/v2/push/devices/${encodeURIComponent(e)}`;
+async function PE(e, t) {
+  const n = await Nue(e);
+  if (n) {
+    if (t && Sue(t) === n.account)
+      try {
+        await En(
+          Cue(n.deviceId),
+          { method: "DELETE", headers: { authorization: `Bearer ${t}` } },
+          "could not turn off background notifications",
+        );
+      } catch {}
+    await e.remove(A8);
+  }
+}
+async function qvt(e) {
+  const t = await Wr(e),
+    n = t ? await zs(e) : null;
+  if (!jk()) {
+    (await PE(e, n), Vd.clear(), La({ phase: "off" }));
+    return;
+  }
+  if (!t || !n) {
+    La({ phase: "signed-out" });
+    return;
+  }
+  if (Date.now() < aK) {
+    La({ phase: "unavailable" });
+    return;
+  }

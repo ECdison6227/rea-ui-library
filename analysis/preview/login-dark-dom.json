@@ -1,0 +1,174 @@
+{
+  "text": "连接到你的电脑\n\n登录后选一个空间，首次登录自动注册\n\n网络不稳定，请稍后再试。\n\n发送验证码\n我已阅读并同意服务条款与隐私政策\n登录\n改用扫码或连接码",
+  "theme": "dark",
+  "overflow": false,
+  "calls": [
+    {
+      "kind": "simulated-native",
+      "plugin": "Preferences",
+      "method": "get",
+      "args": {
+        "key": "mirasim.ui-store.v1"
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "Preferences",
+      "method": "get",
+      "args": {
+        "key": "mirasim.sessions-cache.v1"
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "SecureStorage",
+      "method": "internalGetItem",
+      "args": {
+        "prefixedKey": "capacitor-storage_mirasim.default-space.v1",
+        "sync": false
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "SecureStorage",
+      "method": "internalGetItem",
+      "args": {
+        "prefixedKey": "capacitor-storage_mirasim.deviceKey.v1",
+        "sync": false
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "SecureStorage",
+      "method": "internalGetItem",
+      "args": {
+        "prefixedKey": "capacitor-storage_mirasim.hosts.v1",
+        "sync": false
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "SecureStorage",
+      "method": "internalSetItem",
+      "args": {
+        "prefixedKey": "capacitor-storage_mirasim.deviceKey.v1",
+        "data": "\"xCtu85u_A7Bdaf-mkwlHoQhdM23fNwHG\"",
+        "sync": false,
+        "access": 0
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "Preferences",
+      "method": "get",
+      "args": {
+        "key": "mirasim.transcripts-cache.v1"
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "WindowFloor",
+      "method": "setColor",
+      "args": {
+        "color": "#eeeeee"
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "App",
+      "method": "getLaunchUrl",
+      "args": {}
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "App",
+      "method": "getInfo",
+      "args": {}
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "StatusBar",
+      "method": "setStyle",
+      "args": {
+        "style": "LIGHT"
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "App",
+      "method": "getState",
+      "args": {}
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "App",
+      "method": "getLaunchUrl",
+      "args": {}
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "App",
+      "method": "getLaunchUrl",
+      "args": {}
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "StatusBar",
+      "method": "setBackgroundColor",
+      "args": {
+        "color": "#ffffff"
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "StatusBar",
+      "method": "setStyle",
+      "args": {
+        "style": "DARK"
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "StatusBar",
+      "method": "setBackgroundColor",
+      "args": {
+        "color": "#222120"
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "SecureStorage",
+      "method": "internalGetItem",
+      "args": {
+        "prefixedKey": "capacitor-storage_mirasim.account.v1",
+        "sync": false
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "SecureStorage",
+      "method": "internalGetItem",
+      "args": {
+        "prefixedKey": "capacitor-storage_mirasim.account.v1",
+        "sync": false
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "WindowFloor",
+      "method": "setColor",
+      "args": {
+        "color": "#1b1b1b"
+      }
+    },
+    {
+      "kind": "simulated-native",
+      "plugin": "Preferences",
+      "method": "set",
+      "args": {
+        "key": "mirasim.ui-store.v1",
+        "value": "{\"mirasim-theme.v5\":\"dark\",\"mirasim-locale\":\"zh-CN\"}"
+      }
+    }
+  ]
+}

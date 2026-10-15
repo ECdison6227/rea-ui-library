@@ -1,0 +1,11 @@
+[main] INFO jadx.api.JadxArgsValidator - output directory: mirasim-0.0.497
+[main] INFO jadx.api.JadxDecompiler - loading ...
+[main] WARN jadx.core.dex.nodes.RootNode - Found duplicated class: kotlin.coroutines.jvm.internal.DebugProbesKt, count: 2, sources:
+  classes3.dex
+  mirasim-0.0.497.apk:DebugProbesKt.bin
+ Keep class with source: classes3.dex, others will be removed.
+[main] INFO jadx.core.dex.nodes.RootNode - Loaded classes: 21560, methods: 134297, instructions: 3575151
+[main] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[main] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[main] ERROR jadx.core.utils.ErrorsCounter - Type inference failed in method: ai.mirofish.mirasim.ApkUpdaterPlugin.lambda$download$0(java.lang.String, com.getcapacitor.PluginCall, java.lang.String, java.lang.String):void, file: classes.dex, details: Type inference error: updates count limit reached with updateSeq = 48500001. Try increasing type updates limit count.
+Exported 1 classes, inventoried 11367

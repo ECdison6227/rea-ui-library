@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- viewport-fit=cover: draw under the notch/home-indicator; the shell pads
+         with env(safe-area-inset-*). maximum-scale=1 disables pinch-zoom inside
+         the app chrome (the webview is an app surface, not a document). -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <!-- Both families, OS order — the default preference follows the system (#1893). -->
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#222120" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>Mirasim</title>
+    <style>
+      /* Pre-bundle paint, and the page's own floor afterwards (theme.css paints `body`).
+         The phone reads its stored pick ASYNCHRONOUSLY (Preferences blob), so the media
+         query owns the whole first frame — and the default preference follows the system
+         appearance (#1893), which on Android is the DayNight activity theme the webview's
+         media query already reflects. The attribute rules take over once the store writes
+         `data-theme`; family accuracy only, see the desktop shell's copy of this block. */
+      html {
+        background: #1c1b19;
+      }
+      @media (prefers-color-scheme: light) {
+        html {
+          background: #ffffff;
+        }
+      }
+      html[data-theme='dark'] {
+        background: #1c1b19;
+      }
+      html[data-theme='light'] {
+        background: #ffffff;
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-BCeL5nAW.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/react-vendor-BlDV3J9L.js">
+    <link rel="modulepreload" crossorigin href="./assets/markdown-BLdtTxHf.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-8QHVmC__.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

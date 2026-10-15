@@ -1,0 +1,24 @@
+{
+	"appId": "ai.mirofish.mirasim",
+	"appName": "Mirasim",
+	"webDir": "dist",
+	"backgroundColor": "#1c1b19",
+	"server": {
+		"androidScheme": "https"
+	},
+	"android": {
+		"allowMixedContent": true
+	},
+	"plugins": {
+		"Keyboard": {
+			"resize": "body",
+			"resizeOnFullScreen": true,
+			"style": "DARK"
+		},
+		"StatusBar": {
+			"overlaysWebView": false,
+			"style": "DARK",
+			"backgroundColor": "#222120"
+		}
+	}
+}
