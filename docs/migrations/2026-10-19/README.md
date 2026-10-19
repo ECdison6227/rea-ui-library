@@ -6,13 +6,13 @@
 
 | 旧仓库 | 总库入口 | 原文件数 | 历史标签 | 远端删除 |
 | --- | --- | --- | --- | --- |
-| hark-ui-research | [Hark](../../../platforms/web/hark/README.md) | 249 | legacy/hark/main | 403，未删除 |
-| ui-phone-mi-fitness | [小米运动健康](../../../platforms/mobile/mi-fitness/analysis/ui/README.md) | 8737 | legacy/mi-fitness/main | 403，未删除 |
-| ui-phone-mirasim | [Mirasim](../../../platforms/mobile/mirasim/README.md) | 1194 | legacy/mirasim/main | 403，未删除 |
+| hark-ui-research | [Hark](../../../platforms/web/hark/README.md) | 249 | legacy/hark/main | 用户手动删除，已核验 |
+| ui-phone-mi-fitness | [小米运动健康](../../../platforms/mobile/mi-fitness/analysis/ui/README.md) | 8737 | legacy/mi-fitness/main | 用户手动删除，已核验 |
+| ui-phone-mirasim | [Mirasim](../../../platforms/mobile/mirasim/README.md) | 1194 | legacy/mirasim/main | 用户手动删除，已核验 |
 
 Kimi的3430个已审分发文件继续随总库保存，不对应上述三个旧仓库。Skill原仓库、其他普通产品、本机原包/AVD/私有研究原件不在删除范围。
 
-用户已授权完整迁入后删除上述三个旧分析仓库。GitHub删除API均返回403；当前Git授权scope为gist、repo、workflow，缺少[删除仓库要求的delete_repo权限](https://docs.github.com/en/rest/repos/repos#delete-a-repository)。这不影响总库使用；需要账号所有者在各仓库Settings的Danger Zone完成删除，或为现有授权补足删除权限后再执行。未将失败记成已删除，详见[机器可读结果](imports.json)。
+用户已于2026-10-19手动删除上述三个旧分析仓库。2026-10-19 06:33:15 UTC以ECdison6227本人认证核验：三个仓库查询均返回404，完整的账号所有仓库列表中也不存在其名称及原仓库ID，排除了仅重命名或匿名不可见的情况。rea-ui-library与rea-style-library查询均返回200；总库继续为私有，skill原仓库继续为公开。删除前的API 403仅作为历史尝试保留，当前迁移与旧库清理已完成，详见[机器可读结果](imports.json)。
 
 删除前已建立完整bare镜像、独立git bundle并通过bundle verify/fsck；三个旧库均只有main分支，无标签、Issue、PR、Release附件、LFS或Wiki内容。备份位于原工作区.runtime/github-ui-inventory-20261019/consolidation-backup，bundle的SHA记录在imports.json；总库自身的legacy标签和合并历史也能独立回溯旧提交。原文中的历史GitHub地址保留为来源记录；活跃目录入口全部使用总库路径。
 

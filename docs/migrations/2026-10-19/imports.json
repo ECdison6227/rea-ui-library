@@ -48,40 +48,99 @@
       }
     }
   ],
-  "remoteDeletion": "requires-account-permission",
+  "remoteDeletion": "complete",
   "backupFormat": "Complete bare mirrors and independently verified git bundles; original branch tips also imported as legacy tags. GitHub metadata contains no issues/PRs/releases/attachments; no LFS or wiki content.",
   "deletionVerifiedAgainstLibraryCommit": "6fb5a216de30232c9a70d55c47863139ca2a1c84",
   "deletions": [
     {
       "id": "hark",
       "repository": "ECdison6227/hark-ui-research",
-      "status": "not-deleted",
-      "httpStatus": 403,
-      "reason": "Must have admin rights to Repository.",
-      "oauthScopes": "gist, repo, workflow",
-      "requiredOAuthScope": "delete_repo",
-      "manualSettingsUrl": "https://github.com/ECdison6227/hark-ui-research/settings"
+      "status": "deleted",
+      "method": "user-manual-deletion",
+      "userReportedDeleted": true,
+      "verificationHttpStatus": 404,
+      "absentFromAuthenticatedOwnerInventory": true,
+      "originalRepositoryId": 1420106374
     },
     {
       "id": "mi-fitness",
       "repository": "ECdison6227/ui-phone-mi-fitness",
-      "status": "not-deleted",
-      "httpStatus": 403,
-      "reason": "Must have admin rights to Repository.",
-      "oauthScopes": "gist, repo, workflow",
-      "requiredOAuthScope": "delete_repo",
-      "manualSettingsUrl": "https://github.com/ECdison6227/ui-phone-mi-fitness/settings"
+      "status": "deleted",
+      "method": "user-manual-deletion",
+      "userReportedDeleted": true,
+      "verificationHttpStatus": 404,
+      "absentFromAuthenticatedOwnerInventory": true,
+      "originalRepositoryId": 1420834687
     },
     {
       "id": "mirasim",
       "repository": "ECdison6227/ui-phone-mirasim",
-      "status": "not-deleted",
-      "httpStatus": 403,
-      "reason": "Must have admin rights to Repository.",
-      "oauthScopes": "gist, repo, workflow",
-      "requiredOAuthScope": "delete_repo",
-      "manualSettingsUrl": "https://github.com/ECdison6227/ui-phone-mirasim/settings"
+      "status": "deleted",
+      "method": "user-manual-deletion",
+      "userReportedDeleted": true,
+      "verificationHttpStatus": 404,
+      "absentFromAuthenticatedOwnerInventory": true,
+      "originalRepositoryId": 1420204675
     }
   ],
-  "deletionCheckedAt": "2026-10-19T06:22:49.974Z"
+  "deletionCheckedAt": "2026-10-19T06:33:15.281Z",
+  "deletionAttempts": [
+    {
+      "checkedAt": "2026-10-19T06:22:49.974Z",
+      "method": "agent-api-delete",
+      "results": [
+        {
+          "id": "hark",
+          "repository": "ECdison6227/hark-ui-research",
+          "status": "not-deleted",
+          "httpStatus": 403,
+          "reason": "Must have admin rights to Repository.",
+          "oauthScopes": "gist, repo, workflow",
+          "requiredOAuthScope": "delete_repo",
+          "manualSettingsUrl": "https://github.com/ECdison6227/hark-ui-research/settings"
+        },
+        {
+          "id": "mi-fitness",
+          "repository": "ECdison6227/ui-phone-mi-fitness",
+          "status": "not-deleted",
+          "httpStatus": 403,
+          "reason": "Must have admin rights to Repository.",
+          "oauthScopes": "gist, repo, workflow",
+          "requiredOAuthScope": "delete_repo",
+          "manualSettingsUrl": "https://github.com/ECdison6227/ui-phone-mi-fitness/settings"
+        },
+        {
+          "id": "mirasim",
+          "repository": "ECdison6227/ui-phone-mirasim",
+          "status": "not-deleted",
+          "httpStatus": 403,
+          "reason": "Must have admin rights to Repository.",
+          "oauthScopes": "gist, repo, workflow",
+          "requiredOAuthScope": "delete_repo",
+          "manualSettingsUrl": "https://github.com/ECdison6227/ui-phone-mirasim/settings"
+        }
+      ]
+    }
+  ],
+  "retainedRepositories": [
+    {
+      "repository": "ECdison6227/rea-ui-library",
+      "httpStatus": 200,
+      "present": true,
+      "private": true,
+      "defaultBranch": "main"
+    },
+    {
+      "repository": "ECdison6227/rea-style-library",
+      "httpStatus": 200,
+      "present": true,
+      "private": false,
+      "defaultBranch": "main"
+    }
+  ],
+  "deletionVerification": {
+    "authenticatedOwner": "ECdison6227",
+    "ownerInventoryChecked": true,
+    "originalRepositoryIdsChecked": true
+  }
 }
