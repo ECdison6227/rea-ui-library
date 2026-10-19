@@ -1,0 +1,169 @@
+{
+  "formatVersion": 1,
+  "kind": "motion",
+  "items": [
+    {
+      "id": "m-source-menu",
+      "classification": "C",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "e-5924ca1ffc68cc"
+      ],
+      "unknowns": [
+        "Exact source timing/curve is not established by a target implementation."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Video samples bound an entry/exit interval; do not convert sparse sample gap to exact duration."
+      },
+      "trigger": "原版模型菜单采样",
+      "properties": [
+        "opacity",
+        "backdrop appearance"
+      ],
+      "duration": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "easing": {
+        "value": null,
+        "basis": "unknown"
+      },
+      "delay": {
+        "value": 0,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "interruption": [
+        "Target D: cancel obsolete animation; start replacement from current visible value; remove callbacks on unmount."
+      ],
+      "exit": "Target D: reverse/dismiss once; commit business change only after explicit action.",
+      "reducedMotion": "Target D: remove translation/scale, reveal final state immediately; keep feedback and focus announcements."
+    },
+    {
+      "id": "m-target-menu",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "e-be71341e419331"
+      ],
+      "unknowns": [
+        "Exact source timing/curve is not established by a target implementation."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D target fallback. Preserve focus/draft, allow Back/outside dismissal, reverse from current state on interruption."
+      },
+      "trigger": "选项sheet进入/关闭",
+      "properties": [
+        "opacity0→1",
+        "translateY8dp→0"
+      ],
+      "duration": {
+        "value": 180,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "easing": {
+        "value": "cubic-bezier(0.2,0,0,1)",
+        "basis": "chosen"
+      },
+      "delay": {
+        "value": 0,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "interruption": [
+        "Target D: cancel obsolete animation; start replacement from current visible value; remove callbacks on unmount."
+      ],
+      "exit": "Target D: reverse/dismiss once; commit business change only after explicit action.",
+      "reducedMotion": "Target D: remove translation/scale, reveal final state immediately; keep feedback and focus announcements."
+    },
+    {
+      "id": "m-target-feedback",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "e-be71341e419331"
+      ],
+      "unknowns": [
+        "Exact source timing/curve is not established by a target implementation."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Keep retained text stable during loading; status changes belong to state model, not timer-completed fake networking."
+      },
+      "trigger": "消息/错误反馈出现",
+      "properties": [
+        "opacity0→1"
+      ],
+      "duration": {
+        "value": 160,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "easing": {
+        "value": "ease-out",
+        "basis": "chosen"
+      },
+      "delay": {
+        "value": 0,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "interruption": [
+        "Target D: cancel obsolete animation; start replacement from current visible value; remove callbacks on unmount."
+      ],
+      "exit": "Target D: reverse/dismiss once; commit business change only after explicit action.",
+      "reducedMotion": "Target D: remove translation/scale, reveal final state immediately; keep feedback and focus announcements."
+    },
+    {
+      "id": "m-target-selection",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "e-be71341e419331"
+      ],
+      "unknowns": [
+        "Exact source timing/curve is not established by a target implementation."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Font preview stays uncommitted until Save; transition does not commit data."
+      },
+      "trigger": "主题/选项选择反馈",
+      "properties": [
+        "selected marker opacity",
+        "surface color"
+      ],
+      "duration": {
+        "value": 120,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "easing": {
+        "value": "linear",
+        "basis": "chosen"
+      },
+      "delay": {
+        "value": 0,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "interruption": [
+        "Target D: cancel obsolete animation; start replacement from current visible value; remove callbacks on unmount."
+      ],
+      "exit": "Target D: reverse/dismiss once; commit business change only after explicit action.",
+      "reducedMotion": "Target D: remove translation/scale, reveal final state immediately; keep feedback and focus announcements."
+    }
+  ]
+}

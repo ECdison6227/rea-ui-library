@@ -1,0 +1,84 @@
+{
+  "format": "rea-design-package",
+  "formatVersion": 1,
+  "id": "kimi",
+  "name": "Kimi",
+  "source": {
+    "platform": "mobile",
+    "runtime": "Android native source and independent Java Views reference",
+    "version": "Android3.1.3(376) / Run03",
+    "identity": "com.moonshot.kimichat 3.1.3(376); APK SHA-256 9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+    "capturedAt": null,
+    "researchMethod": "Retained REA analysis and original runtime records, normalized without new source execution",
+    "researchEvidenceRefs": [
+      "e-b92cc374a83d09"
+    ]
+  },
+  "scope": {
+    "mode": "visual-design-and-core-interactions",
+    "goal": "Apply this product’s typography, surfaces, components, motion and user interaction logic to an existing working product.",
+    "excludedBusiness": [
+      "Original account/backend/services and full business-function cloning"
+    ]
+  },
+  "readiness": {
+    "status": "partial",
+    "supportedUses": [
+      "Chat/composer/model sheet, appearance preview/save and recoverable feedback",
+      "Fieldnotes document editor with independent cancellation/generation ownership",
+      "Source257 safe Run03 scenes,71D frames, scoped geometry and widget declarations"
+    ],
+    "coreGaps": [
+      "来源逐字字体、精确曲线/时长与参考视觉细节仍有差异；目标参数明确为D选择。",
+      "原参考部分重绘会影响焦点/选择；消费目标应保留组件状态并实测IME和长草稿。",
+      "语音、真实拍摄、系统权限等未完成部分按目标实际需要另验，不影响已明确UI样式/交互的使用。"
+    ],
+    "optionalGaps": [
+      "Unobserved original backend/device/account combinations remain outside default design application."
+    ]
+  },
+  "entries": {
+    "readme": "README.md",
+    "spec": "DESIGN_SPEC.md",
+    "tokens": "design/tokens.json",
+    "components": "design/components.json",
+    "layouts": "design/layouts.json",
+    "interactions": "design/interactions.json",
+    "motion": "design/motion.json",
+    "assets": "design/assets.json",
+    "evidence": "design/evidence.json",
+    "reference": "reference/README.md",
+    "comparison": "comparison/native-run03.md",
+    "adaptation": "ADAPTATION_GUIDE.md"
+  },
+  "validation": {
+    "reference": {
+      "status": "partial",
+      "evidenceRefs": [
+        "e-de4f2c48332d18",
+        "e-74d652a611cf41",
+        "e-002ab7d6cbf32b"
+      ]
+    },
+    "crossDomain": {
+      "status": "verified",
+      "evidenceRefs": [
+        "e-5d72c33efa1dd2"
+      ]
+    }
+  },
+  "distribution": {
+    "mode": "private",
+    "omissions": [
+      {
+        "item": "Original APK, private/incomplete source captures, unreviewed D frames, toolchains and device profiles",
+        "reason": "Existing reviewed distribution policy retained; use distributed checker."
+      }
+    ]
+  },
+  "consumer": {
+    "task": "Existing product already works; adapt its style and reusable UI behavior while retaining its own domain logic.",
+    "start": "ADAPTATION_GUIDE.md",
+    "visualGuide": "design-guide.html"
+  }
+}

@@ -41,8 +41,8 @@
       "snapshot": null,
       "integrity": {
         "manifest": "catalog/manifests/mi-fitness.json",
-        "files": 8737,
-        "treeSha256": "c9d6b75ac8f593e5b059131a110a8fa4340a7ce6b3872e65aadc228483f82d95"
+        "files": 8748,
+        "treeSha256": "3696c8c0491e6193879c290d4a7a115ea55d540dc5c678c7b7008a73144d0df8"
       },
       "origin": "historical",
       "workingTreeMutationPerformed": false
@@ -90,8 +90,28 @@
       },
       "integrity": {
         "manifest": "catalog/manifests/kimi.json",
-        "files": 3430,
-        "treeSha256": "1dc1c1b7dba3b778f005dfe2fd8619624a0ca378bbc11ecd11ba505b0ba44993"
+        "files": 3441,
+        "treeSha256": "d2c053185da609396fabdce1916ce5f59c88a8f1ae18f35073b5741390f4e48c"
+      },
+      "origin": "historical",
+      "workingTreeMutationPerformed": false
+    },
+    {
+      "id": "duolingo-android-6-80-6-china-2368",
+      "path": "platforms/mobile/duolingo-android-6-80-6-china-2368",
+      "storage": "monorepo",
+      "provenance": {
+        "kind": "rea-study",
+        "target": "com.duolingo 6.80.6-china (2368); APK SHA-256 ebdbcbdaa0d30f0141dbfc31953e650b28b5fd35b7faf7787751223661deaab8",
+        "method": "Retained REA inspect_android_package evidence, historical source Android capture, and independently implemented native reference. Consumer projection creates no new source evidence.",
+        "researchEntry": "README.md"
+      },
+      "revision": null,
+      "snapshot": null,
+      "integrity": {
+        "manifest": "catalog/manifests/duolingo-android-6-80-6-china-2368.json",
+        "files": 17983,
+        "treeSha256": "1582c878d82441d959ffdc068352a310b90908736377bca557a79567c73635f7"
       },
       "origin": "historical",
       "workingTreeMutationPerformed": false
@@ -122,6 +142,15 @@
       "target": "site/assets/thumbs/kimi.png",
       "sha256": "a9a9fcb241a17a714da3ce2627299042d56030c265bdf72d593f5ff0b6aaa1c6",
       "classification": "A · 原版外观页",
+      "reviewed": true,
+      "transformed": false
+    },
+    {
+      "id": "duolingo-android-6-80-6-china-2368",
+      "source": "platforms/mobile/duolingo-android-6-80-6-china-2368/evidence/runtime/05-course-picker/screen.png",
+      "target": "site/assets/thumbs/duolingo-android-6-80-6-china-2368.png",
+      "sha256": "6921a60791722bc5fb150c30f5a01e63f708c970e88659d8a3a0220be3408fdd",
+      "classification": "A · 原版课程选择",
       "reviewed": true,
       "transformed": false
     }

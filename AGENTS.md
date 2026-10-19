@@ -8,7 +8,9 @@
 
 private/、catalog/private.local.json、.runtime/ 不得进入公开构建或 Git 提交。Hark 原始证据包含既有聊天，默认不在总库公开导出。总入口只在127.0.0.1运行，不从浏览器启动来源应用、安装依赖、提交表单或调用原厂接口。
 
-新研究优先Design Package v1，固定design-package.json/DESIGN_SPEC.md及模块逻辑入口，格式见skills/rea-design-transfer/references/design-package.md。默认视觉设计和通用交互；原业务全测不作为设计入库的必要条件。旧研究可保留原格式，不自动重写platforms原件或把未知改verified。设计包声明不代替实际REA研究资格。
+新研究必须Design Package v1，并通过tools/consumer-contract.mjs的实施内容检查。固定design-package.json/DESIGN_SPEC.md及模块逻辑入口；核心组件必须有slots/events/states，交互有状态转移，核心动效有源参数或明确D替代。仅Hark/Mirasim以legacy-research保留旧格式；小米/Kimi/多邻国按标准包维护。原业务全测不作为设计门槛，原件与未知状态不改写。
+
+用户通常先完成功能，再选App让AI拉取本库应用风格。消费AI应读取标准入口，沿用目标技术栈，实际实现视觉、动画和通用用户状态逻辑并运行对照；保留目标业务、数据和品牌。见docs/apply-a-style.md。此次用户已明确授权多邻国入库、升级小米/Kimi、修改入库规则/README并提交推送；保持远端私有性。
 
 来源历史文档中的rea-style-library调用名映射到当前rea-design-transfer，不要求安装两份技能；不要为改名改写原研究证据。
 

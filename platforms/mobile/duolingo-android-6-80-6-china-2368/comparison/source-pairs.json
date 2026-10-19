@@ -1,0 +1,2727 @@
+{
+  "schemaVersion": 1,
+  "scope": "Four source course states compared with independent native reference; no global reconstruction claim",
+  "generatedAt": "2026-10-16T04:30:48.0725683Z",
+  "method": "Direct view_image inspection of all eight original PNGs; read-only System.Drawing pixel probes; XML UI-node attributes; SHA-256 checks. No image transforms, similarity score, REA reanalysis, network or new dependencies.",
+  "coordinateSystem": {
+    "pixelCoordinates": "Physical source PNG pixels, top-left origin",
+    "uiBounds": "[left,top][right,bottom] as reported by uiautomator",
+    "inkBounds": "Inclusive coordinate bounds of exact solid RGB pixels; antialiasing excluded",
+    "densityDpi": 320,
+    "pxPerDp": 2
+  },
+  "evidenceBoundary": {
+    "source": "Historical A captured 2026-10-15 and rechecked in this pass; recorded origin=current is preserved as capture-time metadata",
+    "reference": "Current A-of-D captured 2026-10-16; independent D implementation, local fixture, no network; not source-product evidence",
+    "noNewReaEvidenceId": true,
+    "sourceFontScale": null,
+    "referenceFontScale": 1,
+    "fontScaleMatch": "unknown; do not substitute 1.0 for source null",
+    "sameAvdDoesNotProveFullEnvironmentMatch": true,
+    "pngAndXmlCapturedSeparately": true
+  },
+  "excluded": [
+    {
+      "scene": "r01-source-course",
+      "reason": "Wrong foreground page, excluded by collector; not included in comparison",
+      "basis": "Parent investigator instruction"
+    }
+  ],
+  "matchedConditions": [
+    "AOSP Android 12 API31 x86_64, no Google Play Services",
+    "duolingo_research_api31 / emulator-5580",
+    "720x1280 PNG and 320 dpi",
+    "English/light/portrait, with source capture fields and reference configuration plus pixels",
+    "Progress bounds [96,112][688,144]",
+    "Primary bounds [32,1048][688,1152]"
+  ],
+  "limitations": [
+    "Source fontScale null; reference 1.0",
+    "Different application identity, target SDK and backend",
+    "Static frames do not establish animation duration or sound/haptics",
+    "No full-flow, TalkBack, keyboard, large-text, Chinese or dark comparison",
+    "No global similarity percentage or completion inference"
+  ],
+  "pairs": [
+    {
+      "id": "course-unselected",
+      "source": {
+        "scene": "05-course-picker",
+        "originUsedInComparison": "historical",
+        "classificationUsedInComparison": "A",
+        "recordedOrigin": "current",
+        "recordedClassification": "A",
+        "capturedStartedAt": "2026-10-15T15:23:09.6136290Z",
+        "capturedFinishedAt": "2026-10-15T15:23:21.4229890Z",
+        "recheckedAt": "2026-10-16T04:30:45.5116474Z",
+        "pixelInspection": "valid for stated scene; original PNG viewed directly with view_image",
+        "files": {
+          "png": "../evidence/runtime/05-course-picker/screen.png",
+          "ui": "../evidence/runtime/05-course-picker/ui.xml",
+          "capture": "../evidence/runtime/05-course-picker/capture.json"
+        },
+        "sha256": {
+          "screen.png": "6921a60791722bc5fb150c30f5a01e63f708c970e88659d8a3a0220be3408fdd",
+          "ui.xml": "43cba20ad459321e34a40667abbed1c367e575ee42c21deeb1e26ad8dd3c4469",
+          "capture.json": "deeceb16e6d98b2d982f62a40c9b8f79c14d961e6154e4278def1cec151be6ee"
+        },
+        "pngHashMatchesCapture": true,
+        "package": "com.duolingo",
+        "versionName": "6.80.6-china",
+        "versionCode": 2368,
+        "apkSha256": "ebdbcbdaa0d30f0141dbfc31953e650b28b5fd35b7faf7787751223661deaab8",
+        "environment": {
+          "avd": "duolingo_research_api31",
+          "serial": "emulator-5580",
+          "device": "AOSP Android 12 API31 x86_64 emulator; no Google Play Services",
+          "resolution": [
+            720,
+            1280
+          ],
+          "densityDpi": 320,
+          "fontScale": null,
+          "configuration": null,
+          "sourceReportedTheme": "light",
+          "sourceReportedLanguage": "English",
+          "sourceReportedLocale": "en-US",
+          "referenceReportedNightMode": null,
+          "backend": "Real app backend; no fixture"
+        },
+        "captureAction": "Continue from greeting and eight-question introduction into course choice; no course selected yet",
+        "observedScene": "课程选择：未选中",
+        "uiTreeTiming": "Separate capture after PNG; transient screen and hierarchy may differ. PNG identity takes precedence.",
+        "uiNodes": {
+          "back": {
+            "text": "",
+            "resourceId": "com.duolingo:id/back",
+            "class": "android.widget.ImageView",
+            "contentDescription": "Back",
+            "bounds": "[16,96][80,160]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "true",
+            "scrollable": "false"
+          },
+          "progress": {
+            "text": "",
+            "resourceId": "com.duolingo:id/actionBarProgressBar",
+            "class": "android.view.View",
+            "contentDescription": "",
+            "bounds": "[96,112][688,144]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "bubbleText": {
+            "text": "What would you like to learn?",
+            "resourceId": "com.duolingo:id/title",
+            "class": "android.widget.TextView",
+            "contentDescription": "",
+            "bounds": "[312,235][634,334]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "bubbleContainer": {
+            "text": "",
+            "resourceId": "com.duolingo:id/speechBubbleSide",
+            "class": "android.widget.LinearLayout",
+            "contentDescription": "",
+            "bounds": "[248,203][666,366]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "section": {
+            "text": "For English speakers",
+            "resourceId": "com.duolingo:id/sectionName",
+            "class": "android.widget.TextView",
+            "contentDescription": "",
+            "bounds": "[32,409][688,534]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "true",
+            "scrollable": "false"
+          },
+          "cards": [
+            {
+              "text": "",
+              "resourceId": "com.duolingo:id/languageItemCard",
+              "class": "android.widget.LinearLayout",
+              "contentDescription": "",
+              "bounds": "[32,534][688,662]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "false",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            },
+            {
+              "text": "",
+              "resourceId": "com.duolingo:id/languageItemCard",
+              "class": "android.widget.LinearLayout",
+              "contentDescription": "",
+              "bounds": "[32,686][688,814]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "false",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            },
+            {
+              "text": "",
+              "resourceId": "com.duolingo:id/languageItemCard",
+              "class": "android.widget.LinearLayout",
+              "contentDescription": "",
+              "bounds": "[32,838][688,966]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "false",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            },
+            {
+              "text": "",
+              "resourceId": "com.duolingo:id/languageItemCard",
+              "class": "android.widget.LinearLayout",
+              "contentDescription": "",
+              "bounds": "[32,990][688,1016]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "false",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            }
+          ],
+          "primary": {
+            "text": "CONTINUE",
+            "resourceId": "com.duolingo:id/primaryButton",
+            "class": "android.widget.TextView",
+            "contentDescription": "",
+            "bounds": "[32,1048][688,1152]",
+            "enabled": "false",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "true",
+            "scrollable": "false"
+          },
+          "spanishFlag": {
+            "bounds": "[64,564][146,628]",
+            "class": "android.widget.ImageView",
+            "resourceId": "com.duolingo:id/languageFlagImage"
+          }
+        },
+        "pixelSamples": [
+          {
+            "role": "background",
+            "xy": [
+              710,
+              500
+            ],
+            "rgbHex": "#fffffd"
+          },
+          {
+            "role": "progress_track",
+            "xy": [
+              400,
+              128
+            ],
+            "rgbHex": "#e5e5e5"
+          },
+          {
+            "role": "progress_fill",
+            "xy": [
+              120,
+              128
+            ],
+            "rgbHex": "#58cc02"
+          },
+          {
+            "role": "card_surface",
+            "xy": [
+              400,
+              550
+            ],
+            "rgbHex": "#fffffd"
+          },
+          {
+            "role": "card_top_border",
+            "xy": [
+              400,
+              535
+            ],
+            "rgbHex": "#e5e5e5"
+          },
+          {
+            "role": "primary_surface",
+            "xy": [
+              500,
+              1080
+            ],
+            "rgbHex": "#e5e5e5"
+          },
+          {
+            "role": "primary_lip_or_disabled",
+            "xy": [
+              500,
+              1148
+            ],
+            "rgbHex": "#e5e5e5"
+          }
+        ],
+        "pixelMeasurements": {
+          "sectionInk": {
+            "roiHalfOpen": [
+              32,
+              410,
+              600,
+              530
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              35,
+              457,
+              367,
+              490
+            ],
+            "solidPixels": 2812,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "spanishInk": {
+            "roiHalfOpen": [
+              170,
+              550,
+              650,
+              650
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              180,
+              581,
+              305,
+              614
+            ],
+            "solidPixels": 1128,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "frenchInk": {
+            "roiHalfOpen": [
+              170,
+              700,
+              650,
+              800
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              181,
+              733,
+              286,
+              759
+            ],
+            "solidPixels": 890,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "bubbleTextInk": {
+            "roiHalfOpen": [
+              300,
+              225,
+              640,
+              335
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              313,
+              244,
+              622,
+              323
+            ],
+            "solidPixels": 1878,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "primaryVertical": {
+            "direction": "y",
+            "fixedCoordinate": 500,
+            "rangeHalfOpen": [
+              1035,
+              1160
+            ],
+            "runs": [
+              {
+                "color": "#fffffd",
+                "position": 1035
+              },
+              {
+                "color": "#e5e5e5",
+                "position": 1056
+              },
+              {
+                "color": "#fffffd",
+                "position": 1152
+              }
+            ]
+          },
+          "cardVertical": {
+            "direction": "y",
+            "fixedCoordinate": 400,
+            "rangeHalfOpen": [
+              530,
+              667
+            ],
+            "runs": [
+              {
+                "color": "#fffffd",
+                "position": 530
+              },
+              {
+                "color": "#e5e5e5",
+                "position": 534
+              },
+              {
+                "color": "#fffffd",
+                "position": 538
+              },
+              {
+                "color": "#e5e5e5",
+                "position": 654
+              },
+              {
+                "color": "#fffffd",
+                "position": 662
+              }
+            ]
+          },
+          "bubbleBodyHorizontal": {
+            "direction": "x",
+            "fixedCoordinate": 320,
+            "rangeHalfOpen": [
+              248,
+              300
+            ],
+            "runs": [
+              {
+                "color": "#fffffd",
+                "position": 248
+              },
+              {
+                "color": "#e5e5e5",
+                "position": 280
+              },
+              {
+                "color": "#fffffd",
+                "position": 284
+              }
+            ]
+          }
+        }
+      },
+      "reference": {
+        "scene": "r02-source-course-valid",
+        "originUsedInComparison": "current",
+        "classificationUsedInComparison": "A-of-D",
+        "recordedOrigin": "current",
+        "recordedClassification": "A-of-D",
+        "capturedStartedAt": "2026-10-16T04:24:41.097Z",
+        "capturedFinishedAt": "2026-10-16T04:24:44.251Z",
+        "recheckedAt": "2026-10-16T04:30:45.8544033Z",
+        "pixelInspection": "valid for stated scene; original PNG viewed directly with view_image",
+        "files": {
+          "png": "../evidence/reference-runtime/r02-source-course-valid/screen.png",
+          "ui": "../evidence/reference-runtime/r02-source-course-valid/ui.xml",
+          "capture": "../evidence/reference-runtime/r02-source-course-valid/capture.json"
+        },
+        "sha256": {
+          "screen.png": "252ba09d2b8a85fb1c7e91da40c49c224c09574c0a4ce805d3719b482b2370c1",
+          "ui.xml": "febbcfd1ea8c35497ee9639278a95112e0e88f6722e1366a39958b37f0bc1805",
+          "capture.json": "4c23a399b3fcd7456c2a0139bf5c4be2917c995a42f749f2739e5331d77c1c3e"
+        },
+        "pngHashMatchesCapture": true,
+        "package": "org.reastyle.nativeexample",
+        "versionName": "1.0",
+        "versionCode": 1,
+        "apkSha256": "6e5e1e4882b4d5b19e91bdda0d89938f603b246d95c0c41db29a0163399953ca",
+        "environment": {
+          "avd": "duolingo_research_api31",
+          "serial": "emulator-5580",
+          "device": "AOSP Android12 API31 x86_64; no Google Play Services",
+          "resolution": [
+            720,
+            1280
+          ],
+          "densityDpi": 320,
+          "fontScale": 1,
+          "configuration": "config: mcc310-mnc260-en-rUS-ldltr-sw360dp-w360dp-h568dp-normal-notlong-notround-nowidecg-lowdr-port-notnight-xhdpi-finger-keysexposed-qwerty-navexposed-dpad-1184x720-v31\r\nabi: x86_64\r\n",
+          "sourceReportedTheme": null,
+          "sourceReportedLanguage": null,
+          "sourceReportedLocale": null,
+          "referenceReportedNightMode": "Night mode: no",
+          "backend": "Independent native reference; local deterministic fixture; no network"
+        },
+        "captureAction": "Final fixed APK launched; independent source course reference with no selection",
+        "observedScene": null,
+        "uiTreeTiming": "UI hierarchy captured after PNG; timestamps retained; dynamic content can differ",
+        "uiNodes": {
+          "back": {
+            "text": "‹",
+            "resourceId": "org.reastyle.nativeexample:id/backButton",
+            "class": "android.widget.TextView",
+            "contentDescription": "Back",
+            "bounds": "[8,80][88,176]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "true",
+            "scrollable": "false"
+          },
+          "progress": {
+            "text": "",
+            "resourceId": "",
+            "class": "android.widget.ProgressBar",
+            "contentDescription": "Progress",
+            "bounds": "[96,112][688,144]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "bubbleText": {
+            "text": "What would you like to learn?",
+            "resourceId": "",
+            "class": "android.widget.TextView",
+            "contentDescription": "",
+            "bounds": "[248,203][666,366]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "section": {
+            "text": "For English speakers",
+            "resourceId": "",
+            "class": "android.widget.TextView",
+            "contentDescription": "",
+            "bounds": "[32,410][688,535]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "cards": [
+            {
+              "text": "",
+              "resourceId": "org.reastyle.nativeexample:id/spanishCard",
+              "class": "android.widget.RadioButton",
+              "contentDescription": "Spanish",
+              "bounds": "[32,535][688,663]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "true",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            },
+            {
+              "text": "",
+              "resourceId": "org.reastyle.nativeexample:id/frenchCard",
+              "class": "android.widget.RadioButton",
+              "contentDescription": "French",
+              "bounds": "[32,687][688,815]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "true",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            },
+            {
+              "text": "",
+              "resourceId": "org.reastyle.nativeexample:id/germanCard",
+              "class": "android.widget.RadioButton",
+              "contentDescription": "German",
+              "bounds": "[32,839][688,967]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "true",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            },
+            {
+              "text": "",
+              "resourceId": "org.reastyle.nativeexample:id/italianCard",
+              "class": "android.widget.RadioButton",
+              "contentDescription": "Italian",
+              "bounds": "[32,991][688,1016]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "true",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            }
+          ],
+          "primary": {
+            "text": "CONTINUE",
+            "resourceId": "org.reastyle.nativeexample:id/primaryButton",
+            "class": "android.widget.Button",
+            "contentDescription": "",
+            "bounds": "[32,1048][688,1152]",
+            "enabled": "false",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "true",
+            "scrollable": "false"
+          },
+          "spanishFlag": {
+            "bounds": "[64,563][146,627]",
+            "class": "android.widget.ImageView",
+            "resourceId": ""
+          }
+        },
+        "pixelSamples": [
+          {
+            "role": "background",
+            "xy": [
+              710,
+              500
+            ],
+            "rgbHex": "#fffffd"
+          },
+          {
+            "role": "progress_track",
+            "xy": [
+              400,
+              128
+            ],
+            "rgbHex": "#e5e5e5"
+          },
+          {
+            "role": "progress_fill",
+            "xy": [
+              120,
+              128
+            ],
+            "rgbHex": "#58cc02"
+          },
+          {
+            "role": "card_surface",
+            "xy": [
+              400,
+              550
+            ],
+            "rgbHex": "#fffffd"
+          },
+          {
+            "role": "card_top_border",
+            "xy": [
+              400,
+              535
+            ],
+            "rgbHex": "#e5e5e5"
+          },
+          {
+            "role": "primary_surface",
+            "xy": [
+              500,
+              1080
+            ],
+            "rgbHex": "#e5e5e5"
+          },
+          {
+            "role": "primary_lip_or_disabled",
+            "xy": [
+              500,
+              1148
+            ],
+            "rgbHex": "#e5e5e5"
+          }
+        ],
+        "pixelMeasurements": {
+          "sectionInk": {
+            "roiHalfOpen": [
+              32,
+              410,
+              600,
+              530
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              35,
+              459,
+              400,
+              492
+            ],
+            "solidPixels": 3351,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "spanishInk": {
+            "roiHalfOpen": [
+              170,
+              550,
+              650,
+              650
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              180,
+              581,
+              316,
+              614
+            ],
+            "solidPixels": 1354,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "frenchInk": {
+            "roiHalfOpen": [
+              170,
+              700,
+              650,
+              800
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              181,
+              733,
+              295,
+              759
+            ],
+            "solidPixels": 1064,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "bubbleTextInk": {
+            "roiHalfOpen": [
+              300,
+              225,
+              640,
+              335
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              310,
+              245,
+              630,
+              323
+            ],
+            "solidPixels": 1998,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "primaryVertical": {
+            "direction": "y",
+            "fixedCoordinate": 500,
+            "rangeHalfOpen": [
+              1035,
+              1160
+            ],
+            "runs": [
+              {
+                "color": "#fffffd",
+                "position": 1035
+              },
+              {
+                "color": "#e5e5e5",
+                "position": 1048
+              },
+              {
+                "color": "#fffffd",
+                "position": 1152
+              }
+            ]
+          },
+          "cardVertical": {
+            "direction": "y",
+            "fixedCoordinate": 400,
+            "rangeHalfOpen": [
+              530,
+              667
+            ],
+            "runs": [
+              {
+                "color": "#fffffd",
+                "position": 530
+              },
+              {
+                "color": "#e5e5e5",
+                "position": 535
+              },
+              {
+                "color": "#fffffd",
+                "position": 539
+              },
+              {
+                "color": "#e5e5e5",
+                "position": 653
+              },
+              {
+                "color": "#fffffd",
+                "position": 663
+              }
+            ]
+          },
+          "bubbleBodyHorizontal": {
+            "direction": "x",
+            "fixedCoordinate": 320,
+            "rangeHalfOpen": [
+              248,
+              300
+            ],
+            "runs": [
+              {
+                "color": "#fffffd",
+                "position": 248
+              },
+              {
+                "color": "#e5e5e5",
+                "position": 274
+              },
+              {
+                "color": "#fffffd",
+                "position": 278
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "course-selected",
+      "source": {
+        "scene": "06-course-selected",
+        "originUsedInComparison": "historical",
+        "classificationUsedInComparison": "A",
+        "recordedOrigin": "current",
+        "recordedClassification": "A",
+        "capturedStartedAt": "2026-10-15T15:23:44.4587152Z",
+        "capturedFinishedAt": "2026-10-15T15:23:50.9653667Z",
+        "recheckedAt": "2026-10-16T04:30:46.1927241Z",
+        "pixelInspection": "valid for stated scene; original PNG viewed directly with view_image",
+        "files": {
+          "png": "../evidence/runtime/06-course-selected/screen.png",
+          "ui": "../evidence/runtime/06-course-selected/ui.xml",
+          "capture": "../evidence/runtime/06-course-selected/capture.json"
+        },
+        "sha256": {
+          "screen.png": "9682c2364a49eb9500c30c43acd35838eab0b3a73f0c5f33bee189fc3d053e06",
+          "ui.xml": "7dacab23c2d7674fc846c89a105019fd61025fc29c26bf05c743acf1c349700f",
+          "capture.json": "e473b85d6a407d8c83e376c60a10646e06ee24dbd4155afd1c3b8d7e914de223"
+        },
+        "pngHashMatchesCapture": true,
+        "package": "com.duolingo",
+        "versionName": "6.80.6-china",
+        "versionCode": 2368,
+        "apkSha256": "ebdbcbdaa0d30f0141dbfc31953e650b28b5fd35b7faf7787751223661deaab8",
+        "environment": {
+          "avd": "duolingo_research_api31",
+          "serial": "emulator-5580",
+          "device": "AOSP Android 12 API31 x86_64 emulator; no Google Play Services",
+          "resolution": [
+            720,
+            1280
+          ],
+          "densityDpi": 320,
+          "fontScale": null,
+          "configuration": null,
+          "sourceReportedTheme": "light",
+          "sourceReportedLanguage": "English",
+          "sourceReportedLocale": "en-US",
+          "referenceReportedNightMode": null,
+          "backend": "Real app backend; no fixture"
+        },
+        "captureAction": "Select Spanish card in unselected course picker; observe selected surface and Continue enabled state",
+        "observedScene": "课程选择：选中 Spanish",
+        "uiTreeTiming": "Separate capture after PNG; transient screen and hierarchy may differ. PNG identity takes precedence.",
+        "uiNodes": {
+          "back": {
+            "text": "",
+            "resourceId": "com.duolingo:id/back",
+            "class": "android.widget.ImageView",
+            "contentDescription": "Back",
+            "bounds": "[16,96][80,160]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "true",
+            "scrollable": "false"
+          },
+          "progress": {
+            "text": "",
+            "resourceId": "com.duolingo:id/actionBarProgressBar",
+            "class": "android.view.View",
+            "contentDescription": "",
+            "bounds": "[96,112][688,144]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "bubbleText": {
+            "text": "What would you like to learn?",
+            "resourceId": "com.duolingo:id/title",
+            "class": "android.widget.TextView",
+            "contentDescription": "",
+            "bounds": "[312,235][634,334]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "bubbleContainer": {
+            "text": "",
+            "resourceId": "com.duolingo:id/speechBubbleSide",
+            "class": "android.widget.LinearLayout",
+            "contentDescription": "",
+            "bounds": "[248,203][666,366]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "section": {
+            "text": "For English speakers",
+            "resourceId": "com.duolingo:id/sectionName",
+            "class": "android.widget.TextView",
+            "contentDescription": "",
+            "bounds": "[32,409][688,534]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "true",
+            "scrollable": "false"
+          },
+          "cards": [
+            {
+              "text": "",
+              "resourceId": "com.duolingo:id/languageItemCard",
+              "class": "android.widget.LinearLayout",
+              "contentDescription": "",
+              "bounds": "[32,534][688,662]",
+              "enabled": "true",
+              "selected": "true",
+              "checkable": "false",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            },
+            {
+              "text": "",
+              "resourceId": "com.duolingo:id/languageItemCard",
+              "class": "android.widget.LinearLayout",
+              "contentDescription": "",
+              "bounds": "[32,686][688,814]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "false",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            },
+            {
+              "text": "",
+              "resourceId": "com.duolingo:id/languageItemCard",
+              "class": "android.widget.LinearLayout",
+              "contentDescription": "",
+              "bounds": "[32,838][688,966]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "false",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            },
+            {
+              "text": "",
+              "resourceId": "com.duolingo:id/languageItemCard",
+              "class": "android.widget.LinearLayout",
+              "contentDescription": "",
+              "bounds": "[32,990][688,1016]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "false",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            }
+          ],
+          "primary": {
+            "text": "CONTINUE",
+            "resourceId": "com.duolingo:id/primaryButton",
+            "class": "android.widget.TextView",
+            "contentDescription": "",
+            "bounds": "[32,1048][688,1152]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "true",
+            "scrollable": "false"
+          },
+          "spanishFlag": {
+            "bounds": "[64,564][146,628]",
+            "class": "android.widget.ImageView",
+            "resourceId": "com.duolingo:id/languageFlagImage"
+          }
+        },
+        "pixelSamples": [
+          {
+            "role": "background",
+            "xy": [
+              710,
+              500
+            ],
+            "rgbHex": "#fffffd"
+          },
+          {
+            "role": "progress_track",
+            "xy": [
+              400,
+              128
+            ],
+            "rgbHex": "#e5e5e5"
+          },
+          {
+            "role": "progress_fill",
+            "xy": [
+              120,
+              128
+            ],
+            "rgbHex": "#58cc02"
+          },
+          {
+            "role": "card_surface",
+            "xy": [
+              400,
+              550
+            ],
+            "rgbHex": "#ddf4ff"
+          },
+          {
+            "role": "card_top_border",
+            "xy": [
+              400,
+              535
+            ],
+            "rgbHex": "#84d8ff"
+          },
+          {
+            "role": "primary_surface",
+            "xy": [
+              500,
+              1080
+            ],
+            "rgbHex": "#58cc02"
+          },
+          {
+            "role": "primary_lip_or_disabled",
+            "xy": [
+              500,
+              1148
+            ],
+            "rgbHex": "#58a700"
+          }
+        ],
+        "pixelMeasurements": {
+          "sectionInk": {
+            "roiHalfOpen": [
+              32,
+              410,
+              600,
+              530
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              35,
+              457,
+              367,
+              490
+            ],
+            "solidPixels": 2812,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "spanishInk": {
+            "roiHalfOpen": [
+              170,
+              550,
+              650,
+              650
+            ],
+            "exactSolidColor": "#1cb0f6",
+            "boundsInclusive": [
+              180,
+              581,
+              305,
+              614
+            ],
+            "solidPixels": 1128,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "frenchInk": {
+            "roiHalfOpen": [
+              170,
+              700,
+              650,
+              800
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              181,
+              733,
+              286,
+              759
+            ],
+            "solidPixels": 890,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "bubbleTextInk": {
+            "roiHalfOpen": [
+              300,
+              225,
+              640,
+              335
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              313,
+              244,
+              622,
+              323
+            ],
+            "solidPixels": 1878,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "primaryVertical": {
+            "direction": "y",
+            "fixedCoordinate": 500,
+            "rangeHalfOpen": [
+              1035,
+              1160
+            ],
+            "runs": [
+              {
+                "color": "#fffffd",
+                "position": 1035
+              },
+              {
+                "color": "#58cc02",
+                "position": 1048
+              },
+              {
+                "color": "#58a700",
+                "position": 1144
+              },
+              {
+                "color": "#fffffd",
+                "position": 1152
+              }
+            ]
+          },
+          "cardVertical": {
+            "direction": "y",
+            "fixedCoordinate": 400,
+            "rangeHalfOpen": [
+              530,
+              667
+            ],
+            "runs": [
+              {
+                "color": "#fffffd",
+                "position": 530
+              },
+              {
+                "color": "#84d8ff",
+                "position": 534
+              },
+              {
+                "color": "#ddf4ff",
+                "position": 538
+              },
+              {
+                "color": "#84d8ff",
+                "position": 654
+              },
+              {
+                "color": "#fffffd",
+                "position": 662
+              }
+            ]
+          },
+          "bubbleBodyHorizontal": {
+            "direction": "x",
+            "fixedCoordinate": 320,
+            "rangeHalfOpen": [
+              248,
+              300
+            ],
+            "runs": [
+              {
+                "color": "#fffffd",
+                "position": 248
+              },
+              {
+                "color": "#e5e5e5",
+                "position": 280
+              },
+              {
+                "color": "#fffffd",
+                "position": 284
+              }
+            ]
+          }
+        }
+      },
+      "reference": {
+        "scene": "r03-source-selected",
+        "originUsedInComparison": "current",
+        "classificationUsedInComparison": "A-of-D",
+        "recordedOrigin": "current",
+        "recordedClassification": "A-of-D",
+        "capturedStartedAt": "2026-10-16T04:24:46.919Z",
+        "capturedFinishedAt": "2026-10-16T04:24:49.993Z",
+        "recheckedAt": "2026-10-16T04:30:46.5479177Z",
+        "pixelInspection": "valid for stated scene; original PNG viewed directly with view_image",
+        "files": {
+          "png": "../evidence/reference-runtime/r03-source-selected/screen.png",
+          "ui": "../evidence/reference-runtime/r03-source-selected/ui.xml",
+          "capture": "../evidence/reference-runtime/r03-source-selected/capture.json"
+        },
+        "sha256": {
+          "screen.png": "c82e7331e1f73acb003e28457da927fe1feb00d0e8b77078cfa88eb2431d9c20",
+          "ui.xml": "42f7d4789714df77e5dc3701da5076b9859d4f841fa513505911255213c73bd6",
+          "capture.json": "9e4e8802f165593afc6e8397d4af355d7b838def04864f7cf4c9894e79dafc44"
+        },
+        "pngHashMatchesCapture": true,
+        "package": "org.reastyle.nativeexample",
+        "versionName": "1.0",
+        "versionCode": 1,
+        "apkSha256": "6e5e1e4882b4d5b19e91bdda0d89938f603b246d95c0c41db29a0163399953ca",
+        "environment": {
+          "avd": "duolingo_research_api31",
+          "serial": "emulator-5580",
+          "device": "AOSP Android12 API31 x86_64; no Google Play Services",
+          "resolution": [
+            720,
+            1280
+          ],
+          "densityDpi": 320,
+          "fontScale": 1,
+          "configuration": "config: mcc310-mnc260-en-rUS-ldltr-sw360dp-w360dp-h568dp-normal-notlong-notround-nowidecg-lowdr-port-notnight-xhdpi-finger-keysexposed-qwerty-navexposed-dpad-1184x720-v31\r\nabi: x86_64\r\n",
+          "sourceReportedTheme": null,
+          "sourceReportedLanguage": null,
+          "sourceReportedLocale": null,
+          "referenceReportedNightMode": "Night mode: no",
+          "backend": "Independent native reference; local deterministic fixture; no network"
+        },
+        "captureAction": "In same reference instance, select Spanish; Continue should enable",
+        "observedScene": null,
+        "uiTreeTiming": "UI hierarchy captured after PNG; timestamps retained; dynamic content can differ",
+        "uiNodes": {
+          "back": {
+            "text": "‹",
+            "resourceId": "org.reastyle.nativeexample:id/backButton",
+            "class": "android.widget.TextView",
+            "contentDescription": "Back",
+            "bounds": "[8,80][88,176]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "true",
+            "scrollable": "false"
+          },
+          "progress": {
+            "text": "",
+            "resourceId": "",
+            "class": "android.widget.ProgressBar",
+            "contentDescription": "Progress",
+            "bounds": "[96,112][688,144]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "bubbleText": {
+            "text": "What would you like to learn?",
+            "resourceId": "",
+            "class": "android.widget.TextView",
+            "contentDescription": "",
+            "bounds": "[248,203][666,366]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "section": {
+            "text": "For English speakers",
+            "resourceId": "",
+            "class": "android.widget.TextView",
+            "contentDescription": "",
+            "bounds": "[32,410][688,535]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "cards": [
+            {
+              "text": "",
+              "resourceId": "org.reastyle.nativeexample:id/spanishCard",
+              "class": "android.widget.RadioButton",
+              "contentDescription": "Spanish",
+              "bounds": "[32,535][688,663]",
+              "enabled": "true",
+              "selected": "true",
+              "checkable": "true",
+              "checked": "true",
+              "clickable": "true",
+              "scrollable": "false"
+            },
+            {
+              "text": "",
+              "resourceId": "org.reastyle.nativeexample:id/frenchCard",
+              "class": "android.widget.RadioButton",
+              "contentDescription": "French",
+              "bounds": "[32,687][688,815]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "true",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            },
+            {
+              "text": "",
+              "resourceId": "org.reastyle.nativeexample:id/germanCard",
+              "class": "android.widget.RadioButton",
+              "contentDescription": "German",
+              "bounds": "[32,839][688,967]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "true",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            },
+            {
+              "text": "",
+              "resourceId": "org.reastyle.nativeexample:id/italianCard",
+              "class": "android.widget.RadioButton",
+              "contentDescription": "Italian",
+              "bounds": "[32,991][688,1016]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "true",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            }
+          ],
+          "primary": {
+            "text": "CONTINUE",
+            "resourceId": "org.reastyle.nativeexample:id/primaryButton",
+            "class": "android.widget.Button",
+            "contentDescription": "",
+            "bounds": "[32,1048][688,1152]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "true",
+            "scrollable": "false"
+          },
+          "spanishFlag": {
+            "bounds": "[64,563][146,627]",
+            "class": "android.widget.ImageView",
+            "resourceId": ""
+          }
+        },
+        "pixelSamples": [
+          {
+            "role": "background",
+            "xy": [
+              710,
+              500
+            ],
+            "rgbHex": "#fffffd"
+          },
+          {
+            "role": "progress_track",
+            "xy": [
+              400,
+              128
+            ],
+            "rgbHex": "#e5e5e5"
+          },
+          {
+            "role": "progress_fill",
+            "xy": [
+              120,
+              128
+            ],
+            "rgbHex": "#58cc02"
+          },
+          {
+            "role": "card_surface",
+            "xy": [
+              400,
+              550
+            ],
+            "rgbHex": "#ddf4ff"
+          },
+          {
+            "role": "card_top_border",
+            "xy": [
+              400,
+              535
+            ],
+            "rgbHex": "#84d8ff"
+          },
+          {
+            "role": "primary_surface",
+            "xy": [
+              500,
+              1080
+            ],
+            "rgbHex": "#58cc02"
+          },
+          {
+            "role": "primary_lip_or_disabled",
+            "xy": [
+              500,
+              1148
+            ],
+            "rgbHex": "#58a700"
+          }
+        ],
+        "pixelMeasurements": {
+          "sectionInk": {
+            "roiHalfOpen": [
+              32,
+              410,
+              600,
+              530
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              35,
+              459,
+              400,
+              492
+            ],
+            "solidPixels": 3351,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "spanishInk": {
+            "roiHalfOpen": [
+              170,
+              550,
+              650,
+              650
+            ],
+            "exactSolidColor": "#1cb0f6",
+            "boundsInclusive": [
+              180,
+              581,
+              316,
+              614
+            ],
+            "solidPixels": 1354,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "frenchInk": {
+            "roiHalfOpen": [
+              170,
+              700,
+              650,
+              800
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              181,
+              733,
+              295,
+              759
+            ],
+            "solidPixels": 1064,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "bubbleTextInk": {
+            "roiHalfOpen": [
+              300,
+              225,
+              640,
+              335
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              310,
+              245,
+              630,
+              323
+            ],
+            "solidPixels": 1998,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "primaryVertical": {
+            "direction": "y",
+            "fixedCoordinate": 500,
+            "rangeHalfOpen": [
+              1035,
+              1160
+            ],
+            "runs": [
+              {
+                "color": "#fffffd",
+                "position": 1035
+              },
+              {
+                "color": "#58cc02",
+                "position": 1048
+              },
+              {
+                "color": "#58a700",
+                "position": 1144
+              },
+              {
+                "color": "#fffffd",
+                "position": 1152
+              }
+            ]
+          },
+          "cardVertical": {
+            "direction": "y",
+            "fixedCoordinate": 400,
+            "rangeHalfOpen": [
+              530,
+              667
+            ],
+            "runs": [
+              {
+                "color": "#fffffd",
+                "position": 530
+              },
+              {
+                "color": "#84d8ff",
+                "position": 535
+              },
+              {
+                "color": "#ddf4ff",
+                "position": 539
+              },
+              {
+                "color": "#84d8ff",
+                "position": 653
+              },
+              {
+                "color": "#fffffd",
+                "position": 663
+              }
+            ]
+          },
+          "bubbleBodyHorizontal": {
+            "direction": "x",
+            "fixedCoordinate": 320,
+            "rangeHalfOpen": [
+              248,
+              300
+            ],
+            "runs": [
+              {
+                "color": "#fffffd",
+                "position": 248
+              },
+              {
+                "color": "#e5e5e5",
+                "position": 274
+              },
+              {
+                "color": "#fffffd",
+                "position": 278
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "course-building",
+      "source": {
+        "scene": "07-after-course-choice",
+        "originUsedInComparison": "historical",
+        "classificationUsedInComparison": "A",
+        "recordedOrigin": "current",
+        "recordedClassification": "A",
+        "capturedStartedAt": "2026-10-15T15:24:06.9007403Z",
+        "capturedFinishedAt": "2026-10-15T15:24:13.7556752Z",
+        "recheckedAt": "2026-10-16T04:30:46.8943300Z",
+        "pixelInspection": "valid for stated scene; original PNG viewed directly with view_image",
+        "files": {
+          "png": "../evidence/runtime/07-after-course-choice/screen.png",
+          "ui": "../evidence/runtime/07-after-course-choice/ui.xml",
+          "capture": "../evidence/runtime/07-after-course-choice/capture.json"
+        },
+        "sha256": {
+          "screen.png": "e1cf7763cea700d2dd16dc88dcba2c8c4c546fdcb86bc6bf40e4e030327314a6",
+          "ui.xml": "4e70acd2e1cf4dd15ef8458a103710057c41efb62e988091425ada48e243c7b9",
+          "capture.json": "aa77687507a3233909b0126cd7c7e83cf4f81f3368fdf87566fec09dce109232"
+        },
+        "pngHashMatchesCapture": true,
+        "package": "com.duolingo",
+        "versionName": "6.80.6-china",
+        "versionCode": 2368,
+        "apkSha256": "ebdbcbdaa0d30f0141dbfc31953e650b28b5fd35b7faf7787751223661deaab8",
+        "environment": {
+          "avd": "duolingo_research_api31",
+          "serial": "emulator-5580",
+          "device": "AOSP Android 12 API31 x86_64 emulator; no Google Play Services",
+          "resolution": [
+            720,
+            1280
+          ],
+          "densityDpi": 320,
+          "fontScale": null,
+          "configuration": null,
+          "sourceReportedTheme": "light",
+          "sourceReportedLanguage": "English",
+          "sourceReportedLocale": "en-US",
+          "referenceReportedNightMode": null,
+          "backend": "Real app backend; no fixture"
+        },
+        "captureAction": "Continue after selecting Spanish; capture next onboarding question",
+        "observedScene": "课程构建：加载状态",
+        "uiTreeTiming": "Separate capture after PNG; transient screen and hierarchy may differ. PNG identity takes precedence.",
+        "uiNodes": {
+          "back": {
+            "text": "",
+            "resourceId": "com.duolingo:id/back",
+            "class": "android.widget.ImageView",
+            "contentDescription": "Back",
+            "bounds": "[16,96][80,160]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "true",
+            "scrollable": "false"
+          },
+          "progress": {
+            "text": "",
+            "resourceId": "com.duolingo:id/actionBarProgressBar",
+            "class": "android.view.View",
+            "contentDescription": "",
+            "bounds": "[96,112][688,144]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "status": {
+            "text": "COURSE BUILDING…",
+            "resourceId": "com.duolingo:id/loadingText",
+            "class": "android.widget.TextView",
+            "contentDescription": "",
+            "bounds": "[0,693][720,752]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "body": {
+            "text": "Get ready to join the 20 million people currently learning Spanish with Duolingo!",
+            "resourceId": "com.duolingo:id/middleMessageLabel",
+            "class": "android.widget.TextView",
+            "contentDescription": "",
+            "bounds": "[64,816][656,992]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          }
+        },
+        "pixelSamples": [
+          {
+            "role": "background",
+            "xy": [
+              710,
+              500
+            ],
+            "rgbHex": "#fffffd"
+          },
+          {
+            "role": "progress_track",
+            "xy": [
+              400,
+              128
+            ],
+            "rgbHex": "#e5e5e5"
+          },
+          {
+            "role": "progress_fill",
+            "xy": [
+              120,
+              128
+            ],
+            "rgbHex": "#58cc02"
+          }
+        ],
+        "pixelMeasurements": {
+          "statusInk": {
+            "roiHalfOpen": [
+              0,
+              630,
+              720,
+              770
+            ],
+            "exactSolidColor": "#afafaf",
+            "boundsInclusive": [
+              135,
+              705,
+              584,
+              738
+            ],
+            "solidPixels": 5501,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "bodyInk": {
+            "roiHalfOpen": [
+              64,
+              775,
+              656,
+              1000
+            ],
+            "exactSolidColor": "#777777",
+            "boundsInclusive": [
+              85,
+              827,
+              636,
+              988
+            ],
+            "solidPixels": 8785,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          }
+        }
+      },
+      "reference": {
+        "scene": "r04-source-building",
+        "originUsedInComparison": "current",
+        "classificationUsedInComparison": "A-of-D",
+        "recordedOrigin": "current",
+        "recordedClassification": "A-of-D",
+        "capturedStartedAt": "2026-10-16T04:24:52.632Z",
+        "capturedFinishedAt": "2026-10-16T04:24:55.758Z",
+        "recheckedAt": "2026-10-16T04:30:47.2657033Z",
+        "pixelInspection": "valid for stated scene; original PNG viewed directly with view_image",
+        "files": {
+          "png": "../evidence/reference-runtime/r04-source-building/screen.png",
+          "ui": "../evidence/reference-runtime/r04-source-building/ui.xml",
+          "capture": "../evidence/reference-runtime/r04-source-building/capture.json"
+        },
+        "sha256": {
+          "screen.png": "98edc0df32fafbeb221d77fc8280fb4ec0d9776bbfe3b133830479f2d7684178",
+          "ui.xml": "8e48295effd26479abc99163a1ff694ab22f8b30f7c7052f36eee54379a88ca3",
+          "capture.json": "997fac8638194b60deb3c716888a609bddcf2b142517a63639c8e9d65d485f1b"
+        },
+        "pngHashMatchesCapture": true,
+        "package": "org.reastyle.nativeexample",
+        "versionName": "1.0",
+        "versionCode": 1,
+        "apkSha256": "6e5e1e4882b4d5b19e91bdda0d89938f603b246d95c0c41db29a0163399953ca",
+        "environment": {
+          "avd": "duolingo_research_api31",
+          "serial": "emulator-5580",
+          "device": "AOSP Android12 API31 x86_64; no Google Play Services",
+          "resolution": [
+            720,
+            1280
+          ],
+          "densityDpi": 320,
+          "fontScale": 1,
+          "configuration": "config: mcc310-mnc260-en-rUS-ldltr-sw360dp-w360dp-h568dp-normal-notlong-notround-nowidecg-lowdr-port-notnight-xhdpi-finger-keysexposed-qwerty-navexposed-dpad-1184x720-v31\r\nabi: x86_64\r\n",
+          "sourceReportedTheme": null,
+          "sourceReportedLanguage": null,
+          "sourceReportedLocale": null,
+          "referenceReportedNightMode": "Night mode: no",
+          "backend": "Independent native reference; local deterministic fixture; no network"
+        },
+        "captureAction": "Same reference interaction continues to local source-building placeholder",
+        "observedScene": null,
+        "uiTreeTiming": "UI hierarchy captured after PNG; timestamps retained; dynamic content can differ",
+        "uiNodes": {
+          "back": {
+            "text": "‹",
+            "resourceId": "org.reastyle.nativeexample:id/backButton",
+            "class": "android.widget.TextView",
+            "contentDescription": "Back",
+            "bounds": "[8,80][88,176]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "true",
+            "scrollable": "false"
+          },
+          "progress": {
+            "text": "",
+            "resourceId": "",
+            "class": "android.widget.ProgressBar",
+            "contentDescription": "Progress",
+            "bounds": "[96,112][688,144]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "status": {
+            "text": "COURSE BUILDING…",
+            "resourceId": "org.reastyle.nativeexample:id/statusLabel",
+            "class": "android.widget.TextView",
+            "contentDescription": "",
+            "bounds": "[64,653][656,712]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "body": {
+            "text": "Get ready to join the 20 million people currently learning Spanish with Duolingo!",
+            "resourceId": "",
+            "class": "android.widget.TextView",
+            "contentDescription": "",
+            "bounds": "[64,776][656,974]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          }
+        },
+        "pixelSamples": [
+          {
+            "role": "background",
+            "xy": [
+              710,
+              500
+            ],
+            "rgbHex": "#fffffd"
+          },
+          {
+            "role": "progress_track",
+            "xy": [
+              400,
+              128
+            ],
+            "rgbHex": "#e5e5e5"
+          },
+          {
+            "role": "progress_fill",
+            "xy": [
+              120,
+              128
+            ],
+            "rgbHex": "#58cc02"
+          }
+        ],
+        "pixelMeasurements": {
+          "statusInk": {
+            "roiHalfOpen": [
+              0,
+              630,
+              720,
+              770
+            ],
+            "exactSolidColor": "#afafaf",
+            "boundsInclusive": [
+              130,
+              665,
+              591,
+              698
+            ],
+            "solidPixels": 5892,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "bodyInk": {
+            "roiHalfOpen": [
+              64,
+              775,
+              656,
+              1000
+            ],
+            "exactSolidColor": "#777777",
+            "boundsInclusive": [
+              71,
+              787,
+              648,
+              970
+            ],
+            "solidPixels": 8527,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          }
+        }
+      }
+    },
+    {
+      "id": "course-return-reset",
+      "source": {
+        "scene": "08-course-return",
+        "originUsedInComparison": "historical",
+        "classificationUsedInComparison": "A",
+        "recordedOrigin": "current",
+        "recordedClassification": "A",
+        "capturedStartedAt": "2026-10-15T15:24:55.0342763Z",
+        "capturedFinishedAt": "2026-10-15T15:25:05.4919383Z",
+        "recheckedAt": "2026-10-16T04:30:47.6832422Z",
+        "pixelInspection": "valid for stated scene; original PNG viewed directly with view_image",
+        "files": {
+          "png": "../evidence/runtime/08-course-return/screen.png",
+          "ui": "../evidence/runtime/08-course-return/ui.xml",
+          "capture": "../evidence/runtime/08-course-return/capture.json"
+        },
+        "sha256": {
+          "screen.png": "278c18540915e851ab6bb7238a497b0cdece36c517073e2507d29f6b2f10ab2a",
+          "ui.xml": "4b4d5d7b55850bf4f2726bb2c6923a58bd5ea83a5a627d09b2560302a18d0da7",
+          "capture.json": "ebb600db55329078ac41bce71124fa8f57bb48212dfee6050b5893429a0f5476"
+        },
+        "pngHashMatchesCapture": true,
+        "package": "com.duolingo",
+        "versionName": "6.80.6-china",
+        "versionCode": 2368,
+        "apkSha256": "ebdbcbdaa0d30f0141dbfc31953e650b28b5fd35b7faf7787751223661deaab8",
+        "environment": {
+          "avd": "duolingo_research_api31",
+          "serial": "emulator-5580",
+          "device": "AOSP Android 12 API31 x86_64 emulator; no Google Play Services",
+          "resolution": [
+            720,
+            1280
+          ],
+          "densityDpi": 320,
+          "fontScale": null,
+          "configuration": null,
+          "sourceReportedTheme": "light",
+          "sourceReportedLanguage": "English",
+          "sourceReportedLocale": "en-US",
+          "referenceReportedNightMode": null,
+          "backend": "Real app backend; no fixture"
+        },
+        "captureAction": "System Back from learning-reason question; observe selected Spanish card and Continue state",
+        "observedScene": "系统返回：选择已清空",
+        "uiTreeTiming": "Separate capture after PNG; transient screen and hierarchy may differ. PNG identity takes precedence.",
+        "uiNodes": {
+          "back": {
+            "text": "",
+            "resourceId": "com.duolingo:id/back",
+            "class": "android.widget.ImageView",
+            "contentDescription": "Back",
+            "bounds": "[16,96][80,160]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "true",
+            "scrollable": "false"
+          },
+          "progress": {
+            "text": "",
+            "resourceId": "com.duolingo:id/actionBarProgressBar",
+            "class": "android.view.View",
+            "contentDescription": "",
+            "bounds": "[96,112][688,144]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "bubbleText": {
+            "text": "What would you like to learn?",
+            "resourceId": "com.duolingo:id/title",
+            "class": "android.widget.TextView",
+            "contentDescription": "",
+            "bounds": "[312,235][634,334]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "bubbleContainer": {
+            "text": "",
+            "resourceId": "com.duolingo:id/speechBubbleSide",
+            "class": "android.widget.LinearLayout",
+            "contentDescription": "",
+            "bounds": "[248,203][666,366]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "section": {
+            "text": "For English speakers",
+            "resourceId": "com.duolingo:id/sectionName",
+            "class": "android.widget.TextView",
+            "contentDescription": "",
+            "bounds": "[32,409][688,534]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "true",
+            "scrollable": "false"
+          },
+          "cards": [
+            {
+              "text": "",
+              "resourceId": "com.duolingo:id/languageItemCard",
+              "class": "android.widget.LinearLayout",
+              "contentDescription": "",
+              "bounds": "[32,534][688,662]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "false",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            },
+            {
+              "text": "",
+              "resourceId": "com.duolingo:id/languageItemCard",
+              "class": "android.widget.LinearLayout",
+              "contentDescription": "",
+              "bounds": "[32,686][688,814]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "false",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            },
+            {
+              "text": "",
+              "resourceId": "com.duolingo:id/languageItemCard",
+              "class": "android.widget.LinearLayout",
+              "contentDescription": "",
+              "bounds": "[32,838][688,966]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "false",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            },
+            {
+              "text": "",
+              "resourceId": "com.duolingo:id/languageItemCard",
+              "class": "android.widget.LinearLayout",
+              "contentDescription": "",
+              "bounds": "[32,990][688,1016]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "false",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            }
+          ],
+          "primary": {
+            "text": "CONTINUE",
+            "resourceId": "com.duolingo:id/primaryButton",
+            "class": "android.widget.TextView",
+            "contentDescription": "",
+            "bounds": "[32,1048][688,1152]",
+            "enabled": "false",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "true",
+            "scrollable": "false"
+          },
+          "spanishFlag": {
+            "bounds": "[64,564][146,628]",
+            "class": "android.widget.ImageView",
+            "resourceId": "com.duolingo:id/languageFlagImage"
+          }
+        },
+        "pixelSamples": [
+          {
+            "role": "background",
+            "xy": [
+              710,
+              500
+            ],
+            "rgbHex": "#fffffd"
+          },
+          {
+            "role": "progress_track",
+            "xy": [
+              400,
+              128
+            ],
+            "rgbHex": "#e5e5e5"
+          },
+          {
+            "role": "progress_fill",
+            "xy": [
+              120,
+              128
+            ],
+            "rgbHex": "#58cc02"
+          },
+          {
+            "role": "card_surface",
+            "xy": [
+              400,
+              550
+            ],
+            "rgbHex": "#fffffd"
+          },
+          {
+            "role": "card_top_border",
+            "xy": [
+              400,
+              535
+            ],
+            "rgbHex": "#e5e5e5"
+          },
+          {
+            "role": "primary_surface",
+            "xy": [
+              500,
+              1080
+            ],
+            "rgbHex": "#e5e5e5"
+          },
+          {
+            "role": "primary_lip_or_disabled",
+            "xy": [
+              500,
+              1148
+            ],
+            "rgbHex": "#e5e5e5"
+          }
+        ],
+        "pixelMeasurements": {
+          "sectionInk": {
+            "roiHalfOpen": [
+              32,
+              410,
+              600,
+              530
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              35,
+              457,
+              367,
+              490
+            ],
+            "solidPixels": 2812,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "spanishInk": {
+            "roiHalfOpen": [
+              170,
+              550,
+              650,
+              650
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              180,
+              581,
+              305,
+              614
+            ],
+            "solidPixels": 1128,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "frenchInk": {
+            "roiHalfOpen": [
+              170,
+              700,
+              650,
+              800
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              181,
+              733,
+              286,
+              759
+            ],
+            "solidPixels": 890,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "bubbleTextInk": {
+            "roiHalfOpen": [
+              300,
+              225,
+              640,
+              335
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              313,
+              244,
+              622,
+              323
+            ],
+            "solidPixels": 1878,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "primaryVertical": {
+            "direction": "y",
+            "fixedCoordinate": 500,
+            "rangeHalfOpen": [
+              1035,
+              1160
+            ],
+            "runs": [
+              {
+                "color": "#fffffd",
+                "position": 1035
+              },
+              {
+                "color": "#e5e5e5",
+                "position": 1056
+              },
+              {
+                "color": "#fffffd",
+                "position": 1152
+              }
+            ]
+          },
+          "cardVertical": {
+            "direction": "y",
+            "fixedCoordinate": 400,
+            "rangeHalfOpen": [
+              530,
+              667
+            ],
+            "runs": [
+              {
+                "color": "#fffffd",
+                "position": 530
+              },
+              {
+                "color": "#e5e5e5",
+                "position": 534
+              },
+              {
+                "color": "#fffffd",
+                "position": 538
+              },
+              {
+                "color": "#e5e5e5",
+                "position": 654
+              },
+              {
+                "color": "#fffffd",
+                "position": 662
+              }
+            ]
+          },
+          "bubbleBodyHorizontal": {
+            "direction": "x",
+            "fixedCoordinate": 320,
+            "rangeHalfOpen": [
+              248,
+              300
+            ],
+            "runs": [
+              {
+                "color": "#fffffd",
+                "position": 248
+              },
+              {
+                "color": "#e5e5e5",
+                "position": 280
+              },
+              {
+                "color": "#fffffd",
+                "position": 284
+              }
+            ]
+          }
+        }
+      },
+      "reference": {
+        "scene": "r05-source-return-reset",
+        "originUsedInComparison": "current",
+        "classificationUsedInComparison": "A-of-D",
+        "recordedOrigin": "current",
+        "recordedClassification": "A-of-D",
+        "capturedStartedAt": "2026-10-16T04:25:56.739Z",
+        "capturedFinishedAt": "2026-10-16T04:25:59.916Z",
+        "recheckedAt": "2026-10-16T04:30:48.0725683Z",
+        "pixelInspection": "valid for stated scene; original PNG viewed directly with view_image",
+        "files": {
+          "png": "../evidence/reference-runtime/r05-source-return-reset/screen.png",
+          "ui": "../evidence/reference-runtime/r05-source-return-reset/ui.xml",
+          "capture": "../evidence/reference-runtime/r05-source-return-reset/capture.json"
+        },
+        "sha256": {
+          "screen.png": "9ecf660c33fbd11894bff402aadf8737ebe16dc9bee2a276c15c133990a1c88b",
+          "ui.xml": "febbcfd1ea8c35497ee9639278a95112e0e88f6722e1366a39958b37f0bc1805",
+          "capture.json": "d45395935b22e7ec1e9951a062f576ed9cc15237e4a818ed288fdf78b90f8f3a"
+        },
+        "pngHashMatchesCapture": true,
+        "package": "org.reastyle.nativeexample",
+        "versionName": "1.0",
+        "versionCode": 1,
+        "apkSha256": "6e5e1e4882b4d5b19e91bdda0d89938f603b246d95c0c41db29a0163399953ca",
+        "environment": {
+          "avd": "duolingo_research_api31",
+          "serial": "emulator-5580",
+          "device": "AOSP Android12 API31 x86_64; no Google Play Services",
+          "resolution": [
+            720,
+            1280
+          ],
+          "densityDpi": 320,
+          "fontScale": 1,
+          "configuration": "config: mcc310-mnc260-en-rUS-ldltr-sw360dp-w360dp-h568dp-normal-notlong-notround-nowidecg-lowdr-port-notnight-xhdpi-finger-keysexposed-qwerty-navexposed-dpad-1184x720-v31\r\nabi: x86_64\r\n",
+          "sourceReportedTheme": null,
+          "sourceReportedLanguage": null,
+          "sourceReportedLocale": null,
+          "referenceReportedNightMode": "Night mode: no",
+          "backend": "Independent native reference; local deterministic fixture; no network"
+        },
+        "captureAction": "Same reference instance: system Back from building clears selection and disables Continue",
+        "observedScene": null,
+        "uiTreeTiming": "UI hierarchy captured after PNG; timestamps retained; dynamic content can differ",
+        "uiNodes": {
+          "back": {
+            "text": "‹",
+            "resourceId": "org.reastyle.nativeexample:id/backButton",
+            "class": "android.widget.TextView",
+            "contentDescription": "Back",
+            "bounds": "[8,80][88,176]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "true",
+            "scrollable": "false"
+          },
+          "progress": {
+            "text": "",
+            "resourceId": "",
+            "class": "android.widget.ProgressBar",
+            "contentDescription": "Progress",
+            "bounds": "[96,112][688,144]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "bubbleText": {
+            "text": "What would you like to learn?",
+            "resourceId": "",
+            "class": "android.widget.TextView",
+            "contentDescription": "",
+            "bounds": "[248,203][666,366]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "section": {
+            "text": "For English speakers",
+            "resourceId": "",
+            "class": "android.widget.TextView",
+            "contentDescription": "",
+            "bounds": "[32,410][688,535]",
+            "enabled": "true",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "scrollable": "false"
+          },
+          "cards": [
+            {
+              "text": "",
+              "resourceId": "org.reastyle.nativeexample:id/spanishCard",
+              "class": "android.widget.RadioButton",
+              "contentDescription": "Spanish",
+              "bounds": "[32,535][688,663]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "true",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            },
+            {
+              "text": "",
+              "resourceId": "org.reastyle.nativeexample:id/frenchCard",
+              "class": "android.widget.RadioButton",
+              "contentDescription": "French",
+              "bounds": "[32,687][688,815]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "true",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            },
+            {
+              "text": "",
+              "resourceId": "org.reastyle.nativeexample:id/germanCard",
+              "class": "android.widget.RadioButton",
+              "contentDescription": "German",
+              "bounds": "[32,839][688,967]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "true",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            },
+            {
+              "text": "",
+              "resourceId": "org.reastyle.nativeexample:id/italianCard",
+              "class": "android.widget.RadioButton",
+              "contentDescription": "Italian",
+              "bounds": "[32,991][688,1016]",
+              "enabled": "true",
+              "selected": "false",
+              "checkable": "true",
+              "checked": "false",
+              "clickable": "true",
+              "scrollable": "false"
+            }
+          ],
+          "primary": {
+            "text": "CONTINUE",
+            "resourceId": "org.reastyle.nativeexample:id/primaryButton",
+            "class": "android.widget.Button",
+            "contentDescription": "",
+            "bounds": "[32,1048][688,1152]",
+            "enabled": "false",
+            "selected": "false",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "true",
+            "scrollable": "false"
+          },
+          "spanishFlag": {
+            "bounds": "[64,563][146,627]",
+            "class": "android.widget.ImageView",
+            "resourceId": ""
+          }
+        },
+        "pixelSamples": [
+          {
+            "role": "background",
+            "xy": [
+              710,
+              500
+            ],
+            "rgbHex": "#fffffd"
+          },
+          {
+            "role": "progress_track",
+            "xy": [
+              400,
+              128
+            ],
+            "rgbHex": "#e5e5e5"
+          },
+          {
+            "role": "progress_fill",
+            "xy": [
+              120,
+              128
+            ],
+            "rgbHex": "#58cc02"
+          },
+          {
+            "role": "card_surface",
+            "xy": [
+              400,
+              550
+            ],
+            "rgbHex": "#fffffd"
+          },
+          {
+            "role": "card_top_border",
+            "xy": [
+              400,
+              535
+            ],
+            "rgbHex": "#e5e5e5"
+          },
+          {
+            "role": "primary_surface",
+            "xy": [
+              500,
+              1080
+            ],
+            "rgbHex": "#e5e5e5"
+          },
+          {
+            "role": "primary_lip_or_disabled",
+            "xy": [
+              500,
+              1148
+            ],
+            "rgbHex": "#e5e5e5"
+          }
+        ],
+        "pixelMeasurements": {
+          "sectionInk": {
+            "roiHalfOpen": [
+              32,
+              410,
+              600,
+              530
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              35,
+              459,
+              400,
+              492
+            ],
+            "solidPixels": 3351,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "spanishInk": {
+            "roiHalfOpen": [
+              170,
+              550,
+              650,
+              650
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              180,
+              581,
+              316,
+              614
+            ],
+            "solidPixels": 1354,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "frenchInk": {
+            "roiHalfOpen": [
+              170,
+              700,
+              650,
+              800
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              181,
+              733,
+              295,
+              759
+            ],
+            "solidPixels": 1064,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "bubbleTextInk": {
+            "roiHalfOpen": [
+              300,
+              225,
+              640,
+              335
+            ],
+            "exactSolidColor": "#4b4b4b",
+            "boundsInclusive": [
+              310,
+              245,
+              630,
+              323
+            ],
+            "solidPixels": 1998,
+            "interpretation": "Diagnostic exact-color ink bounds; antialiased edge pixels excluded; not a font-family or weight measurement"
+          },
+          "primaryVertical": {
+            "direction": "y",
+            "fixedCoordinate": 500,
+            "rangeHalfOpen": [
+              1035,
+              1160
+            ],
+            "runs": [
+              {
+                "color": "#fffffd",
+                "position": 1035
+              },
+              {
+                "color": "#e5e5e5",
+                "position": 1048
+              },
+              {
+                "color": "#fffffd",
+                "position": 1152
+              }
+            ]
+          },
+          "cardVertical": {
+            "direction": "y",
+            "fixedCoordinate": 400,
+            "rangeHalfOpen": [
+              530,
+              667
+            ],
+            "runs": [
+              {
+                "color": "#fffffd",
+                "position": 530
+              },
+              {
+                "color": "#e5e5e5",
+                "position": 535
+              },
+              {
+                "color": "#fffffd",
+                "position": 539
+              },
+              {
+                "color": "#e5e5e5",
+                "position": 653
+              },
+              {
+                "color": "#fffffd",
+                "position": 663
+              }
+            ]
+          },
+          "bubbleBodyHorizontal": {
+            "direction": "x",
+            "fixedCoordinate": 320,
+            "rangeHalfOpen": [
+              248,
+              300
+            ],
+            "runs": [
+              {
+                "color": "#fffffd",
+                "position": 248
+              },
+              {
+                "color": "#e5e5e5",
+                "position": 274
+              },
+              {
+                "color": "#fffffd",
+                "position": 278
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "local-flow",
+      "status": "verified_local",
+      "statement": "Reference r02 to r03 to r04 to r05 shows none selected, Spanish selected and Continue enabled, building placeholder, system Back then selection cleared and Continue disabled; same limited source rule supported by historical 05-08"
+    },
+    {
+      "id": "colors",
+      "status": "matched_at_samples",
+      "statement": "White background, gray track/disabled, green face/lip, selected blue face/border match at listed sample positions; not a whole-image color claim"
+    },
+    {
+      "id": "missing-menu",
+      "status": "difference",
+      "statement": "Source section header has up arrow and clickable=true; reference lacks arrow and clickable=false"
+    },
+    {
+      "id": "list-offset",
+      "status": "difference",
+      "statement": "Reference header/cards down 1px, Spanish flag up 1px; source card lip 8px at x400, reference 10px"
+    },
+    {
+      "id": "disabled-face",
+      "status": "difference",
+      "statement": "At x500 source disabled face starts y1056; reference y1048, despite same reported bounds"
+    },
+    {
+      "id": "type-and-bubble",
+      "status": "difference",
+      "statement": "Reference text solid-ink extents wider; bubble body left border 6px left of source at y320; exact source typeface remains unknown"
+    },
+    {
+      "id": "building-layout",
+      "status": "difference",
+      "statement": "Reference status/body top shifted up40px, body taller22px; captured three-line breaks match after million/learning, while localized bold, text widths and line spacing differ"
+    },
+    {
+      "id": "character-back-accessibility",
+      "status": "difference",
+      "statement": "Static reference character/pose differ; Back is character chevron TextView versus arrow ImageView; selected RadioButton semantics differ from source LinearLayout"
+    },
+    {
+      "id": "return-frame",
+      "status": "difference",
+      "statement": "Reference r05 shows right scroll indicator; source08 does not in its PNG; timing persistence unknown"
+    }
+  ],
+  "links": {
+    "report": "source-reference.md",
+    "visual": "index.html",
+    "implementation": "../reference/README.md",
+    "actions": "../evidence/actions.jsonl"
+  }
+}

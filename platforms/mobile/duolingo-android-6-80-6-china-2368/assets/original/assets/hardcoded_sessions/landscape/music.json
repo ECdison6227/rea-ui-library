@@ -1,0 +1,536 @@
+{
+  "id": "hardcoded_music_skill",
+  "fromLanguage": "en",
+  "type": "MUSIC_LESSON",
+  "metadata": {},
+  "challenges": [
+    {
+      "id": "7d00aa44-b0cf-4818-b893-0bbe1fce3014",
+      "type": "musicMemoryLR",
+      "instructionText": "Repeat after Junior",
+      "musicPassage": {
+        "measures": [
+          {
+            "clef": "treble",
+            "timeSignature": "4/4",
+            "keySignature": {
+              "alteredPitches": []
+            },
+            "notes": [
+              {
+                "pitch": "F4",
+                "duration": "quarter",
+                "isRest": false
+              },
+              {
+                "pitch": "F4",
+                "duration": "quarter",
+                "isRest": false
+              },
+              {
+                "pitch": "F4",
+                "duration": "quarter",
+                "isRest": false
+              },
+              {
+                "pitch": "C4",
+                "duration": "quarter",
+                "isRest": false
+              }
+            ]
+          },
+          {
+            "notes": [
+              {
+                "pitch": "F4",
+                "duration": "quarter",
+                "isRest": false
+              },
+              {
+                "pitch": "F4",
+                "duration": "quarter",
+                "isRest": false
+              },
+              {
+                "pitch": "F4",
+                "duration": "quarter",
+                "isRest": false
+              },
+              {
+                "pitch": "C4",
+                "duration": "quarter",
+                "isRest": false
+              }
+            ]
+          }
+        ],
+        "tempo": 52
+      },
+      "labeledKeys": [
+        "C4",
+        "D4",
+        "E4",
+        "F4",
+        "G4"
+      ],
+      "keyboardRange": {
+        "low": "C4",
+        "high": "B4"
+      },
+      "tempo": 52,
+      "introNotesCount": 3,
+      "metadata": {
+        "scaffold": "medium"
+      },
+      "trackingName": "memory_jam"
+    },
+{
+      "id": "1a9a9e37-d450-472a-a49c-cc5b6fa02d76",
+      "type": "musicRhythmTokenET",
+      "instructionText": "Fill in the blank",
+      "musicPassage": {
+        "measures": [
+          {
+            "timeSignature": "4/4",
+            "keySignature": {
+              "alteredPitches": []
+            },
+            "notes": [
+              {
+                "pitch": "F5",
+                "duration": "eighth",
+                "beam": "begin",
+                "isRest": false
+              },
+              {
+                "pitch": "F5",
+                "duration": "eighth",
+                "beam": "continue",
+                "isRest": false
+              },
+              {
+                "pitch": "F5",
+                "duration": "eighth",
+                "beam": "continue",
+                "isRest": false
+              },
+              {
+                "pitch": "F5",
+                "duration": "eighth",
+                "beam": "end",
+                "isRest": false
+              },
+              {
+                "pitch": "E5",
+                "duration": "eighth",
+                "beam": "begin",
+                "isRest": false
+              },
+              {
+                "pitch": "D5",
+                "duration": "eighth",
+                "beam": "continue",
+                "isRest": false
+              },
+              {
+                "pitch": "F4",
+                "duration": "eighth",
+                "beam": "continue",
+                "isRest": false
+              },
+              {
+                "pitch": "G4",
+                "duration": "eighth",
+                "beam": "end",
+                "isRest": false
+              }
+            ]
+          }
+        ]
+      },
+      "noteTokenOptions": [
+        [
+          {
+            "duration": "quarter",
+            "isRest": false
+          }
+        ],
+        [
+          {
+            "duration": "quarter",
+            "isRest": true
+          }
+        ],
+        [
+          {
+            "duration": "eighth",
+            "beam": "begin",
+            "isRest": false
+          },
+          {
+            "duration": "eighth",
+            "beam": "end",
+            "isRest": false
+          }
+        ]
+      ],
+      "hiddenNoteIndices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "useMetronome": false,
+      "metadata": {
+        "scaffold": "medium"
+      }
+    },
+
+
+    {
+      "type": "musicAudioTokenEarTraining",
+      "id": "musicAudioTokenET1",
+      "instructionText": "Fill in the blank",
+      "metadata": {},
+      "musicPassages": [
+        {
+          "measures": [
+            {
+              "timeSignature": "4/4",
+              "keySignature": {
+                "alteredPitches": [
+                  "Bb4"
+                ]
+              },
+              "notes": [
+                {
+                  "pitch": "C4",
+                  "duration": "quarter",
+                  "isRest": false
+                },
+                {
+                  "duration": "eighth",
+                  "isRest": true
+                },
+                {
+                  "pitch": "C4",
+                  "duration": "eighth",
+                  "isRest": false
+                },
+                {
+                  "pitch": "C4",
+                  "duration": "eighth",
+                  "beam": "begin",
+                  "isRest": false
+                },
+                {
+                  "pitch": "D4",
+                  "duration": "eighth",
+                  "beam": "end",
+                  "isRest": false
+                },
+                {
+                  "pitch": "C4",
+                  "duration": "quarter",
+                  "isRest": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "measures": [
+            {
+              "timeSignature": "4/4",
+              "keySignature": {
+                "alteredPitches": [
+                  "Bb4"
+                ]
+              },
+              "notes": [
+                {
+                  "pitch": "C4",
+                  "duration": "quarter",
+                  "isRest": false
+                },
+                {
+                  "duration": "quarter",
+                  "isRest": true
+                },
+                {
+                  "duration": "quarter",
+                  "isRest": true
+                },
+                {
+                  "pitch": "G4",
+                  "duration": "quarter",
+                  "isRest": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "measures": [
+            {
+              "timeSignature": "4/4",
+              "keySignature": {
+                "alteredPitches": [
+                  "Bb4"
+                ]
+              },
+              "notes": [
+                {
+                  "pitch": "A4",
+                  "duration": "quarter",
+                  "isRest": false
+                },
+                {
+                  "duration": "quarter",
+                  "isRest": true
+                },
+                {
+                  "pitch": "C4",
+                  "duration": "eighth",
+                  "beam": "begin",
+                  "isRest": false
+                },
+                {
+                  "pitch": "G4",
+                  "duration": "eighth",
+                  "beam": "end",
+                  "isRest": false
+                },
+                {
+                  "pitch": "C4",
+                  "duration": "quarter",
+                  "isRest": false
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "correctIndex": 1,
+      "useMetronome": true
+    },
+    {
+      "type": "musicStaffPlay",
+      "id": "musicStaffPlay1",
+      "instructionText": "Play these notes",
+      "metadata": {},
+      "keyboardRange": {
+        "low": "C4",
+        "high": "E4"
+      },
+      "labeledKeys": ["C4", "D4", "E4"],
+      "showAudioButton": true,
+      "musicPassage": {
+        "measures": [
+          {
+            "timeSignature": "4/4",
+            "keySignature": {
+              "alteredPitches": [
+                "Bb4"
+              ]
+            },
+            "notes": [
+              {
+                "pitch": "C4",
+                "duration": "quarter",
+                "isRest": false
+              },
+              {
+                "duration": "eighth",
+                "isRest": true
+              },
+              {
+                "pitch": "C4",
+                "duration": "eighth",
+                "isRest": false
+              },
+              {
+                "pitch": "C4",
+                "duration": "eighth",
+                "beam": "begin",
+                "isRest": false
+              },
+              {
+                "pitch": "D4",
+                "duration": "eighth",
+                "beam": "end",
+                "isRest": false
+              },
+              {
+                "pitch": "C4",
+                "duration": "quarter",
+                "isRest": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "musicKeyId",
+      "id": "musicKeyIdNote",
+      "metadata": {},
+      "instructionText": "Drag the note to the key",
+      "pitches": [
+        "F4",
+        "G4",
+        "B4"
+      ],
+      "keyboardRange": {
+        "low": "C4",
+        "high": "B4"
+      },
+      "keySlots": [ "F4",
+        "G4",
+        "B4"],
+      "tokenType": "staff"
+    },
+    {
+      "type": "musicKeyId",
+      "id": "musicKeyIdNote",
+      "metadata": {},
+      "instructionText": "Drag the note to the key",
+      "pitches": [
+        "F4",
+        "G4",
+        "B4"
+      ],
+      "keyboardRange": {
+        "low": "C4",
+        "high": "B4"
+      },
+      "keySlots": [ "F4",
+        "G4",
+        "B4"],
+      "tokenType": "noteName"
+    },
+    {
+      "type": "musicPitchArrange",
+      "id": "musicPitchArrange",
+      "metadata": {},
+      "instructionText": "Arrange from low to high pitch",
+      "pitchSequence": [
+        "C4",
+        "D4",
+        "F4"
+      ],
+      "showAudioButton": true,
+      "tokenType": "key",
+      "prefilled": 1,
+      "autoplaySequence": false
+    },
+    {
+      "type": "musicPitchArrange",
+      "id": "musicPitchArrange",
+      "metadata": {},
+      "instructionText": "Arrange from low to high pitch",
+      "pitchSequence": [
+        "C4",
+        "D4",
+        "E4"
+      ],
+      "showAudioButton": false,
+      "tokenType": "noteName",
+      "autoplaySequence": false
+    },
+    {
+      "type": "musicPitchMatch",
+      "id": "musicMatchNoteStaff",
+      "metadata": {},
+      "instructionText": "Match the pairs",
+      "leftTokenType": "noteName",
+      "rightTokenType": "staff",
+      "pitches": ["C4", "D4", "E4", "F4"]
+    },
+    {
+      "type": "musicPitchMatch",
+      "id": "musicMatchNoteKey",
+      "metadata": {},
+      "instructionText": "Match the pairs",
+      "leftTokenType": "noteName",
+      "rightTokenType": "key",
+      "pitches": ["C4", "D4", "E4"]
+    },
+    {
+      "type": "musicSequenceMatch",
+      "id": "musicMatchIntervalAudio",
+      "metadata": {},
+      "instructionText": "Match the pairs",
+      "leftTokenType": "speaker",
+      "rightTokenType": "staff",
+      "pitchSequences": [["C4", "E4"], ["E4", "C4"], ["D4", "D4"]]
+    },
+    {
+      "type": "musicKeyPlay",
+      "id": "musicKeyPlay",
+      "instructionText": "Play the note <span>C</span>",
+      "metadata": {},
+      "targetPitch": "C4",
+      "labeledKeys": ["C4", "D4", "E4", "F4", "G4", "A4", "B4"],
+      "keyboardRange": {
+        "low": "C4",
+        "high": "B4"
+      }
+    },
+    {
+      "type": "musicKeyPlay",
+      "id": "musicKeyPlay",
+      "instructionText": "Play the note <span>C sharp</span>",
+      "metadata": {},
+      "targetPitch": "C#4",
+      "labeledKeys": ["C4", "C#4" ,"D4", "D#4", "E4", "F4", "G4", "A4", "B4"],
+      "keyboardRange": {
+        "low": "C4",
+        "high": "B4"
+      }
+    },
+    {
+      "type": "musicKeyPlayAll",
+      "id": "musicKeyPlayAll",
+      "instructionText": "Play all the notes <span>D</span>",
+      "metadata": {},
+      "targetPitch": "D4",
+      "keyboardRanges": [
+        {
+          "low": "C4",
+          "high": "E5"
+        },
+        {
+          "low": "C3",
+          "high": "E4"
+        }
+      ]
+    },
+    {
+      "type": "musicNoteTokenPlay",
+      "id": "musicNoteTokenPlay4",
+      "metadata": {},
+      "instructionText": "Play the following notes",
+      "pitchSequence": [
+        "D4",
+        "F#4",
+        "A4",
+        "D5"
+      ],
+      "keyboardRange": {
+        "low": "C4",
+        "high": "C5"
+      },
+      "labeledKeys": [
+        "D4",
+        "F#4",
+        "A4",
+        "D5"
+      ],
+      "showAudioButton": true
+    }
+  ],
+  "skillId": "e7edcd8a3bee8bf8d2da245d183af0e4",
+  "levelIndex": 3,
+  "levelSessionIndex": 3
+}

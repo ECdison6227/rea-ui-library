@@ -1,0 +1,84 @@
+{
+  "format": "rea-design-package",
+  "formatVersion": 1,
+  "id": "mi-fitness",
+  "name": "小米运动健康",
+  "source": {
+    "platform": "mobile",
+    "runtime": "Android native source and independent Java Views reference",
+    "version": "3.57.0 / Mine11.202.21",
+    "identity": "com.mi.health 3.57.0(357000); APK SHA-256 2a80fc5a87353c2c6ef3c01fa0085862fe45e4ddb9c2d272cb3780841b5889a6",
+    "capturedAt": null,
+    "researchMethod": "Retained REA analysis and original runtime records, normalized without new source execution",
+    "researchEvidenceRefs": [
+      "e-0890f1421f95be"
+    ]
+  },
+  "scope": {
+    "mode": "visual-design-and-core-interactions",
+    "goal": "Apply this product’s typography, surfaces, components, motion and user interaction logic to an existing working product.",
+    "excludedBusiness": [
+      "Original account/backend/services and full business-function cloning"
+    ]
+  },
+  "readiness": {
+    "status": "partial",
+    "supportedUses": [
+      "Android dashboard/cards, grouped settings and explicit guest gating",
+      "Three-page/ten-component native reference and neutral document-management transfer"
+    ],
+    "coreGaps": [
+      "精确OEM字体、平滑圆角和完整动效仍有差异；target-motion明确为D选择。",
+      "部分历史PNG未记录快门时间；旧A身份在原记录保留，新索引不伪造时间。",
+      "非零图表、完整编辑表单和所有尺寸/读屏状态未覆盖，目标需按实际用途适配。"
+    ],
+    "optionalGaps": [
+      "Unobserved original backend/device/account combinations remain outside default design application."
+    ]
+  },
+  "entries": {
+    "readme": "README.md",
+    "spec": "DESIGN_SPEC.md",
+    "tokens": "design/tokens.json",
+    "components": "design/components.json",
+    "layouts": "design/layouts.json",
+    "interactions": "design/interactions.json",
+    "motion": "design/motion.json",
+    "assets": "design/assets.json",
+    "evidence": "design/evidence.json",
+    "reference": "analysis/ui/android-reference/README.md",
+    "comparison": "analysis/ui/baseline/comparison/final/index.html",
+    "adaptation": "ADAPTATION_GUIDE.md"
+  },
+  "validation": {
+    "reference": {
+      "status": "partial",
+      "evidenceRefs": [
+        "e-8d89ee4525ea36",
+        "e-6293aa388d461a",
+        "e-c414c80424f549",
+        "e-ad0da45c094d40"
+      ]
+    },
+    "crossDomain": {
+      "status": "partial",
+      "evidenceRefs": [
+        "e-f2b3ed03cca2da"
+      ]
+    }
+  },
+  "distribution": {
+    "mode": "private",
+    "omissions": [
+      {
+        "item": "Source APK, local toolchains/device profiles and debug signing key",
+        "reason": "Not part of consumer study; build own reference with existing SDK/JDK."
+      }
+    ]
+  },
+  "consumer": {
+    "task": "Existing product already works; adapt its style and reusable UI behavior while retaining its own domain logic.",
+    "start": "ADAPTATION_GUIDE.md",
+    "visualGuide": "design-guide.html"
+  }
+}

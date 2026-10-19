@@ -1,0 +1,679 @@
+{
+  "formatVersion": 1,
+  "kind": "layouts",
+  "items": [
+    {
+      "id": "layout-guided-choice",
+      "name": "引导选择页",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-05-course-picker",
+        "ev-06-course-selected"
+      ],
+      "unknowns": [
+        "Original source fontScale unknown",
+        "Narrow/wide/keyboarding parity not established"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse native header/scroll-body/footer composition and preserve target safe areas."
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-pointing-card",
+        "component-choice-card",
+        "component-button",
+        "component-guidance"
+      ],
+      "rules": [
+        "Hierarchy: toolbar/progress → visual+question → section label → scrollable choices → primary action.",
+        "Sample canvas720×1280px at320dpi; 32px horizontal content inset.",
+        "CTA bounds[32,1048][688,1152]; footer startsy1016px; physical observations are condition-specific.",
+        "Domain illustration and choice contents are replaceable slots; preserve primary-action hierarchy."
+      ],
+      "responsive": "Target D: scroll body for long content, prevent footer/IME overlap; validate rather than treating sampled bounds as universal."
+    },
+    {
+      "id": "layout-form-recovery",
+      "name": "表单与可恢复提交",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-134-forgot-password-empty",
+        "ev-transfer-map"
+      ],
+      "unknowns": [
+        "Complete original editing/saving and keyboard layout family"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse Paperlane native input/error/CTA arrangement; keep target data policy."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-button",
+        "component-loading"
+      ],
+      "rules": [
+        "Explicit input label/hint and visible validation.",
+        "Keep primary action distinguishable; document disabled vs submit-time validation per form.",
+        "Use native input semantics and adjust scroll area for IME."
+      ],
+      "responsive": "Paperlane fixture is English/light; target CJK, large text and error wrapping require review."
+    },
+    {
+      "id": "layout-confirmation",
+      "name": "说明与双动作确认",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-static-layout-fragment-session-quit-dialog-xml",
+        "ev-17-lesson-quit-confirmation"
+      ],
+      "unknowns": [
+        "Runtime mask and exact drag/Back/outside-tap/focus rules"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Use target native sheet/dialog with explicitly chosen cancelability."
+      },
+      "componentRefs": [
+        "component-modal",
+        "component-button"
+      ],
+      "rules": [
+        "Illustration/title/body precede actions.",
+        "Primary continues; secondary exits in observed quit context.",
+        "Top-corner declaration16dp; do not infer every sheet uses this theme."
+      ]
+    },
+    {
+      "id": "layout-task-outcome",
+      "name": "等待—错误—完成",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-07-after-course-choice",
+        "ev-r23-final-paperlane-retry",
+        "ev-transfer-map"
+      ],
+      "unknowns": [
+        "Source motion and exact building-page typography alignment"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse Paperlane result layout and replace domain copy/art with target content."
+      },
+      "componentRefs": [
+        "component-loading",
+        "component-button",
+        "component-guidance"
+      ],
+      "rules": [
+        "Center explanatory illustration and title/body hierarchy.",
+        "Give one clear recover/return action.",
+        "1200ms fixture latency is not source motion or real service performance."
+      ]
+    },
+    {
+      "id": "layout-settings",
+      "name": "分组设置页",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-8357c5aefeb5",
+        "ev-capture-2b86a5a40223",
+        "ev-capture-045416d8b234"
+      ],
+      "unknowns": [
+        "Source-to-target reference comparison incomplete outside existing four course pairs."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：长标签增高行；开关/箭头不覆盖文字；大字与窄屏复核。"
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-settings-group",
+        "component-list-row"
+      ],
+      "rules": [
+        "工具栏标题与完成动作",
+        "分组标题→圆角行组→法律/次要入口",
+        "组内行分隔，组间留白"
+      ],
+      "responsive": "D：长标签增高行；开关/箭头不覆盖文字；大字与窄屏复核。",
+      "slots": [
+        "navigation",
+        "settings-group",
+        "list-row"
+      ],
+      "widthPolicy": "Target content/insets determine width; sample720×1280px/320dpi is not a universal breakpoint.",
+      "density": "Use explicit component dimensions and spacing roles; do not scale an entire screenshot."
+    },
+    {
+      "id": "layout-offers",
+      "name": "方案比较页",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-b962adc4330b",
+        "ev-capture-2c2076f01b49"
+      ],
+      "unknowns": [
+        "Source-to-target reference comparison incomplete outside existing four course pairs."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：权益换行，装饰插画缩小/移位；价格与确认条件不省略。"
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-offer-card"
+      ],
+      "rules": [
+        "顶部返回/标题",
+        "推荐方案在前，卡内权益与动作完整",
+        "第二方案保持同一标题/权益/动作层级"
+      ],
+      "responsive": "D：权益换行，装饰插画缩小/移位；价格与确认条件不省略。",
+      "slots": [
+        "navigation",
+        "offer-card"
+      ],
+      "widthPolicy": "Target content/insets determine width; sample720×1280px/320dpi is not a universal breakpoint.",
+      "density": "Use explicit component dimensions and spacing roles; do not scale an entire screenshot."
+    },
+    {
+      "id": "layout-results",
+      "name": "结果与领奖页",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-ea71cb603aa7",
+        "ev-capture-a4b06fb322a2",
+        "ev-capture-64e4d89930fa",
+        "ev-capture-f494780fd1c6"
+      ],
+      "unknowns": [
+        "Source-to-target reference comparison incomplete outside existing four course pairs."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：大字/窄屏把指标改纵排，不显示未提供的准确率。"
+      },
+      "componentRefs": [
+        "component-guidance",
+        "component-metric-card",
+        "component-button"
+      ],
+      "rules": [
+        "大插画与结果标题",
+        "并列指标卡按业务可得值显示",
+        "底部主动作及独立分享入口"
+      ],
+      "responsive": "D：大字/窄屏把指标改纵排，不显示未提供的准确率。",
+      "slots": [
+        "guidance",
+        "metric-card",
+        "button"
+      ],
+      "widthPolicy": "Target content/insets determine width; sample720×1280px/320dpi is not a universal breakpoint.",
+      "density": "Use explicit component dimensions and spacing roles; do not scale an entire screenshot."
+    },
+    {
+      "id": "layout-practice",
+      "name": "任务与能力入口",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-9610eb51f4db",
+        "ev-capture-a37f02fc36dd"
+      ],
+      "unknowns": [
+        "Source-to-target reference comparison incomplete outside existing four course pairs."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：徽标不截断，文字替代装饰优先，保证底栏inset。"
+      },
+      "componentRefs": [
+        "component-task-card",
+        "component-tab-list"
+      ],
+      "rules": [
+        "高对比hero区与首要任务",
+        "分组标题、图文卡和计数徽标",
+        "下方导航独立于可滚动内容"
+      ],
+      "responsive": "D：徽标不截断，文字替代装饰优先，保证底栏inset。",
+      "slots": [
+        "task-card",
+        "tab-list"
+      ],
+      "widthPolicy": "Target content/insets determine width; sample720×1280px/320dpi is not a universal breakpoint.",
+      "density": "Use explicit component dimensions and spacing roles; do not scale an entire screenshot."
+    },
+    {
+      "id": "layout-words",
+      "name": "有排序的双行列表",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-bf570d405733",
+        "ev-capture-bdd6d44e907b",
+        "ev-capture-d575acc50fbf",
+        "ev-capture-757b4b645e16"
+      ],
+      "unknowns": [
+        "Source-to-target reference comparison incomplete outside existing four course pairs."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：保留列表语义与稳定key；不从离开再进推断全局持久化。"
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-list-row",
+        "component-menu",
+        "component-button"
+      ],
+      "rules": [
+        "标题/插画与可用性明确的主动作",
+        "数量和排序入口并列",
+        "行内播放、词条、译文、尾状态"
+      ],
+      "responsive": "D：保留列表语义与稳定key；不从离开再进推断全局持久化。",
+      "slots": [
+        "navigation",
+        "list-row",
+        "menu",
+        "button"
+      ],
+      "widthPolicy": "Target content/insets determine width; sample720×1280px/320dpi is not a universal breakpoint.",
+      "density": "Use explicit component dimensions and spacing roles; do not scale an entire screenshot."
+    },
+    {
+      "id": "layout-home-path",
+      "name": "节点式首页",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-ed72a9d0a7e0",
+        "ev-capture-be8d88bb6945",
+        "ev-capture-9afda2c4a2b6",
+        "ev-capture-b91c6c788927"
+      ],
+      "unknowns": [
+        "Source-to-target reference comparison incomplete outside existing four course pairs."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：动态路径用数据布局，目标读屏可切线性顺序。"
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-learning-path",
+        "component-tab-list"
+      ],
+      "rules": [
+        "顶层资源/课程上下文",
+        "当前路径与节点提示",
+        "底部跨页面导航"
+      ],
+      "responsive": "D：动态路径用数据布局，目标读屏可切线性顺序。",
+      "slots": [
+        "navigation",
+        "learning-path",
+        "tab-list"
+      ],
+      "widthPolicy": "Target content/insets determine width; sample720×1280px/320dpi is not a universal breakpoint.",
+      "density": "Use explicit component dimensions and spacing roles; do not scale an entire screenshot."
+    },
+    {
+      "id": "layout-ranked-list",
+      "name": "排行与强调行",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-18fb04d31c30",
+        "ev-capture-bd3509b8c1a4",
+        "ev-capture-14f7ce64fa1b",
+        "ev-capture-b36e3086bfc1"
+      ],
+      "unknowns": [
+        "Source-to-target reference comparison incomplete outside existing four course pairs."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：使用合成内容；边界阈值由业务给出，长名称省略需可展开。"
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-list-row",
+        "component-tab-list"
+      ],
+      "rules": [
+        "周期/等级上下文",
+        "排行序号、头像/标识、名称与数值",
+        "强调本人行、当前cohort边界"
+      ],
+      "responsive": "D：使用合成内容；边界阈值由业务给出，长名称省略需可展开。",
+      "slots": [
+        "navigation",
+        "list-row",
+        "tab-list"
+      ],
+      "widthPolicy": "Target content/insets determine width; sample720×1280px/320dpi is not a universal breakpoint.",
+      "density": "Use explicit component dimensions and spacing roles; do not scale an entire screenshot."
+    },
+    {
+      "id": "layout-search",
+      "name": "查询与空错状态",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-6570e213209b",
+        "ev-capture-1de7140ac3ee",
+        "ev-capture-fc0ed88d8dc8",
+        "ev-capture-02d54f3085ba",
+        "ev-capture-f48d5b6713cd"
+      ],
+      "unknowns": [
+        "Source-to-target reference comparison incomplete outside existing four course pairs."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：键盘出现压缩结果区，取消不清掉用户输入除非目标明确要求。"
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-search-empty",
+        "component-list-row"
+      ],
+      "rules": [
+        "query/返回",
+        "未输入、加载、无结果、错误、结果分区互斥",
+        "保留查询与明确重试"
+      ],
+      "responsive": "D：键盘出现压缩结果区，取消不清掉用户输入除非目标明确要求。",
+      "slots": [
+        "navigation",
+        "search-empty",
+        "list-row"
+      ],
+      "widthPolicy": "Target content/insets determine width; sample720×1280px/320dpi is not a universal breakpoint.",
+      "density": "Use explicit component dimensions and spacing roles; do not scale an entire screenshot."
+    },
+    {
+      "id": "layout-profile-edit",
+      "name": "查看—编辑—保存",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-a1f5c86be4d0",
+        "ev-capture-13753f408586",
+        "ev-capture-19205e4ec72e",
+        "ev-capture-89560d75e07f"
+      ],
+      "unknowns": [
+        "Source-to-target reference comparison incomplete outside existing four course pairs."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：目标定义保存成功/失败与草稿生命周期；来源未完成真实保存。"
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-profile-form",
+        "component-input"
+      ],
+      "rules": [
+        "字段列表与编辑入口",
+        "必要门槛说明",
+        "草稿、保存、取消有明确状态"
+      ],
+      "responsive": "D：目标定义保存成功/失败与草稿生命周期；来源未完成真实保存。",
+      "slots": [
+        "navigation",
+        "profile-form",
+        "input"
+      ],
+      "widthPolicy": "Target content/insets determine width; sample720×1280px/320dpi is not a universal breakpoint.",
+      "density": "Use explicit component dimensions and spacing roles; do not scale an entire screenshot."
+    },
+    {
+      "id": "layout-exercise",
+      "name": "问题—作答—反馈",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-4d60de8625bb",
+        "ev-16-incorrect-panel-stable",
+        "ev-capture-5be788bbc809",
+        "ev-capture-c047135206f5",
+        "ev-capture-4a00b8ccfeac",
+        "ev-capture-4aa57b03593f"
+      ],
+      "unknowns": [
+        "Source-to-target reference comparison incomplete outside existing four course pairs."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：按题型更换作答组件，保留主次层级；缺题干不能作为正常空态。"
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-choice-card",
+        "component-choice-chip",
+        "component-feedback",
+        "component-button"
+      ],
+      "rules": [
+        "顶部进度/退出",
+        "题干与内容",
+        "答案区/候选区",
+        "底部提交随后被反馈/确认替换"
+      ],
+      "responsive": "D：按题型更换作答组件，保留主次层级；缺题干不能作为正常空态。",
+      "slots": [
+        "navigation",
+        "choice-card",
+        "choice-chip",
+        "feedback",
+        "button"
+      ],
+      "widthPolicy": "Target content/insets determine width; sample720×1280px/320dpi is not a universal breakpoint.",
+      "density": "Use explicit component dimensions and spacing roles; do not scale an entire screenshot."
+    },
+    {
+      "id": "layout-number-exercise",
+      "name": "数值输入任务",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-b8e8daf72df5",
+        "ev-capture-aed42050d394",
+        "ev-capture-60c6787dbde6",
+        "ev-capture-7b2a370567c7"
+      ],
+      "unknowns": [
+        "Source-to-target reference comparison incomplete outside existing four course pairs."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：range/step/键盘语法是目标规则；键盘区不等同OS IME。"
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-range-control",
+        "component-numeric-keypad",
+        "component-feedback"
+      ],
+      "rules": [
+        "问题文本",
+        "可访问数值输入器",
+        "检查/反馈"
+      ],
+      "responsive": "D：range/step/键盘语法是目标规则；键盘区不等同OS IME。",
+      "slots": [
+        "navigation",
+        "range-control",
+        "numeric-keypad",
+        "feedback"
+      ],
+      "widthPolicy": "Target content/insets determine width; sample720×1280px/320dpi is not a universal breakpoint.",
+      "density": "Use explicit component dimensions and spacing roles; do not scale an entire screenshot."
+    },
+    {
+      "id": "layout-board-exercise",
+      "name": "二维棋盘任务",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-c7dbd4e1973f",
+        "ev-capture-b5b9d90746e0",
+        "ev-capture-f323dc176a20",
+        "ev-capture-f494780fd1c6"
+      ],
+      "unknowns": [
+        "Source-to-target reference comparison incomplete outside existing four course pairs."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：按可用宽高保持格形，增加非拖动替代操作。"
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-board",
+        "component-feedback"
+      ],
+      "rules": [
+        "指令",
+        "棋盘与焦点/选中状态",
+        "反馈与下一步"
+      ],
+      "responsive": "D：按可用宽高保持格形，增加非拖动替代操作。",
+      "slots": [
+        "navigation",
+        "board",
+        "feedback"
+      ],
+      "widthPolicy": "Target content/insets determine width; sample720×1280px/320dpi is not a universal breakpoint.",
+      "density": "Use explicit component dimensions and spacing roles; do not scale an entire screenshot."
+    },
+    {
+      "id": "layout-localized-login",
+      "name": "主题/字号/IME表单",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-7fe42e1093e1",
+        "ev-capture-66d1eea68f44",
+        "ev-capture-322c55f5628d",
+        "ev-capture-f2951e6af943",
+        "ev-capture-e9ba6694e391",
+        "ev-capture-96abbb600ae0",
+        "ev-capture-128998d03639"
+      ],
+      "unknowns": [
+        "Source-to-target reference comparison incomplete outside existing four course pairs."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：继承平台IME，区分预编辑/已提交文本；主题按角色切换，字体放大后允许重排。"
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-input",
+        "component-button"
+      ],
+      "rules": [
+        "标题/退出",
+        "登录字段与次要恢复入口",
+        "主动作与键盘避让"
+      ],
+      "responsive": "D：继承平台IME，区分预编辑/已提交文本；主题按角色切换，字体放大后允许重排。",
+      "slots": [
+        "navigation",
+        "input",
+        "button"
+      ],
+      "widthPolicy": "Target content/insets determine width; sample720×1280px/320dpi is not a universal breakpoint.",
+      "density": "Use explicit component dimensions and spacing roles; do not scale an entire screenshot."
+    },
+    {
+      "id": "layout-permission-guidance",
+      "name": "说明与系统交接",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-81fcdf275459",
+        "ev-capture-f61e42e61d28",
+        "ev-capture-3e7a7bbe8442",
+        "ev-capture-d6e6c8db98e5"
+      ],
+      "unknowns": [
+        "Source-to-target reference comparison incomplete outside existing four course pairs."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：系统界面不作为自有组件复制；只在目标需要时请求权限。"
+      },
+      "componentRefs": [
+        "component-notice",
+        "component-button"
+      ],
+      "rules": [
+        "应用内解释",
+        "明确继续/延期",
+        "系统原生表面",
+        "返回后重新读状态"
+      ],
+      "responsive": "D：系统界面不作为自有组件复制；只在目标需要时请求权限。",
+      "slots": [
+        "notice",
+        "button"
+      ],
+      "widthPolicy": "Target content/insets determine width; sample720×1280px/320dpi is not a universal breakpoint.",
+      "density": "Use explicit component dimensions and spacing roles; do not scale an entire screenshot."
+    }
+  ]
+}

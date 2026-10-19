@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "classification": "D",
+  "purpose": "Independent semantic aliases derived from bounded source A/B evidence",
+  "conditions": {"platform":"Android","sourceVersion":"6.80.6-china (2368)","theme":"light","language":"English","densityDpi":320},
+  "limitations": ["Aliases are migration choices, not recovered source variable names","Only sampled source scenes support the roles","No dark semantic implementation or verified runtime typeface","Android dimensions remain dp/sp; no CSS pixel equivalence is implied"],
+  "color": {
+    "surface.page":{"value":"#fffffd","classification":"A+B→D alias","sourceResource":"juicySnow","evidence":["../evidence/pixel-samples.json","package-tokens.json"]},
+    "action.guide.face":{"value":"#58cc02","sourceResource":"juicyOwl","evidence":["../evidence/pixel-samples.json"]},
+    "action.guide.lip":{"value":"#58a700","sourceResource":"juicyTreeFrog","evidence":["../evidence/pixel-samples.json"]},
+    "action.modal.face":{"value":"#1cb0f6","classification":"B→D alias; A role appearance","sourceResource":"juicyMacaw","evidence":["package-tokens.json","../evidence/runtime/17-lesson-quit-confirmation/screen.png"]},
+    "selection.face":{"value":"#ddf4ff","evidence":["../evidence/pixel-samples.json"]},
+    "selection.border":{"value":"#84d8ff","evidence":["../evidence/pixel-samples.json"]},
+    "feedback.error.surface":{"value":"#ffdfe0","sourceResource":"juicyWalkingFish","evidence":["../evidence/round2/feedback-pixel-samples.json"]},
+    "feedback.success.surface":{"value":"#d7ffb8","sourceResource":"juicySeaSponge","evidence":["../evidence/round2/feedback-pixel-samples.json"]},
+    "feedback.alternative.surface":{"value":"#fff5d3","sourceResource":"juicyCanary","evidence":["../evidence/round2/feedback-pixel-samples.json"]}
+  },
+  "geometry": {
+    "primaryButton.height":{"value":52,"unit":"dp","classification":"A+B→D alias","evidence":["../evidence/runtime/06-course-selected/ui.xml","package-tokens.json"]},
+    "primaryButton.radius":{"value":16,"unit":"dp","classification":"B→D alias; runtime exact radius not measured","evidence":["package-tokens.json"]},
+    "primaryButton.lip":{"value":4,"unit":"dp","classification":"B→D alias","evidence":["package-tokens.json"]},
+    "page.gutter":{"value":16,"unit":"dp","classification":"A→D scoped alias","evidence":["../evidence/runtime/06-course-selected/ui.xml"],"scope":"Observed course cards and primary CTA; not a universal page rule"}
+  },
+  "behavior": {
+    "choiceToContinue":{"classification":"A→D rule","rule":"No course selection disables Continue; selecting a card enables it","evidence":["../spec/transitions.json"]},
+    "feedbackRequiresAcknowledgement":{"classification":"A→D rule","rule":"Check produces result; Continue or Got It advances observed exercises","evidence":["../spec/runtime-round2.md"]},
+    "asyncCancellation":{"classification":"D only","rule":"Reference Paperlane cancels local fixture callbacks and ignores late generations; not verified for source networking","implementation":"../reference/src/org/reastyle/nativeexample/FlowState.java"}
+  },
+  "implementations": {"native":"../reference/README.md","componentContracts":"../reference/component-contracts.json","crossBusiness":"../transfer-example/mapping.json"}
+}

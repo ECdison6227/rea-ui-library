@@ -1,0 +1,186 @@
+﻿{
+    "schemaVersion":  1,
+    "classification":  "D",
+    "builtAtUtc":  "2026-10-19T09:45:26.8664174Z",
+    "result":  "passed",
+    "packageName":  "org.reastyle.nativeexample",
+    "minSdk":  29,
+    "targetSdk":  31,
+    "compilePlatform":  "android-35",
+    "javaVersion":  "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)",
+    "javacVersion":  "javac 21.0.12.1",
+    "aapt2Version":  "Android Asset Packaging Tool (aapt) 2.19-11948202",
+    "d8Version":  "D8 8.6.2-dev (build abaab469b5ebd4dd2bb91ba0ed6f45277faae4ca from go/r8bot (luci-r8-custom-ci-archive-0-77gl))",
+    "buildToolsVersion":  "35.0.0",
+    "stateChecks":  "PASS 20 state-contract assertions",
+    "signatureVerification":  "signature-verification.txt",
+    "archiveVerification":  "apk-contents-verification.json",
+    "tools":  [
+                  {
+                      "name":  "java.exe",
+                      "path":  "C:\\Users\\edsjrcheng\\.rea\\toolchains\\android\\jdk-21\\bin\\java.exe",
+                      "sha256":  "82051fdab26319d77d20cc0065045d05ec00b3e3d05f44935d7c06b96b621d55"
+                  },
+                  {
+                      "name":  "javac.exe",
+                      "path":  "C:\\Users\\edsjrcheng\\.rea\\toolchains\\android\\jdk-21\\bin\\javac.exe",
+                      "sha256":  "00f7c6f9ec89ebba4bb96cf8760403cccf1268df2eae8685900ba38e58a7aff9"
+                  },
+                  {
+                      "name":  "jar.exe",
+                      "path":  "C:\\Users\\edsjrcheng\\.rea\\toolchains\\android\\jdk-21\\bin\\jar.exe",
+                      "sha256":  "63252d4bf24035ddba3d98fd23e0a2a414d5e860a49f180ce4ac35f52febe043"
+                  },
+                  {
+                      "name":  "keytool.exe",
+                      "path":  "C:\\Users\\edsjrcheng\\.rea\\toolchains\\android\\jdk-21\\bin\\keytool.exe",
+                      "sha256":  "3576ba983634afd753814ea089a98be965ac5da270b3b83deb1e9a5ac53fa3d7"
+                  },
+                  {
+                      "name":  "aapt2.exe",
+                      "path":  "C:\\Users\\edsjrcheng\\.rea\\toolchains\\android\\sdk\\build-tools\\35.0.0\\aapt2.exe",
+                      "sha256":  "cbfe5deda5f7074ce47b6f33818b456ee8046a076a11af13e29c837d3c80c564"
+                  },
+                  {
+                      "name":  "zipalign.exe",
+                      "path":  "C:\\Users\\edsjrcheng\\.rea\\toolchains\\android\\sdk\\build-tools\\35.0.0\\zipalign.exe",
+                      "sha256":  "aa2475ce201962b871fb8daec020da03fd6292c9c1f422cd0fe2e39b20d4f673"
+                  },
+                  {
+                      "name":  "d8.jar",
+                      "path":  "C:\\Users\\edsjrcheng\\.rea\\toolchains\\android\\sdk\\build-tools\\35.0.0\\lib\\d8.jar",
+                      "sha256":  "305622ad00535684534eb8f742cbf5e628a9abc09d8ea4d39d1babb95bf0cee5"
+                  },
+                  {
+                      "name":  "apksigner.jar",
+                      "path":  "C:\\Users\\edsjrcheng\\.rea\\toolchains\\android\\sdk\\build-tools\\35.0.0\\lib\\apksigner.jar",
+                      "sha256":  "00ef9948f843fe395d2440ae3ef41405b8040a6d5d46493bd1902ac0ee6deae7"
+                  },
+                  {
+                      "name":  "android.jar",
+                      "path":  "C:\\Users\\edsjrcheng\\.rea\\toolchains\\android\\sdk\\platforms\\android-35\\android.jar",
+                      "sha256":  "4566663c3876e022b4fa4ced8c8697c4ab1688267f090114fd92d027b32e619b"
+                  }
+              ],
+    "inputs":  [
+                   {
+                       "path":  "AndroidManifest.xml",
+                       "sha256":  "808ec33a5ca90d6318f849d627175296be5e2790fb1c8657ceeb56c4061880b3"
+                   },
+                   {
+                       "path":  "build.ps1",
+                       "sha256":  "22be70e5aa6150ed63ce3ac29e7af8719182ccd4dfcc41e842e97de092b733b3"
+                   },
+                   {
+                       "path":  "src/org/reastyle/nativeexample/Components.java",
+                       "sha256":  "1e9e3b2ce3c1678089e02998bf40a21b84eeed05d132cd8a3cd1b0fe770ee46b"
+                   },
+                   {
+                       "path":  "src/org/reastyle/nativeexample/FlowState.java",
+                       "sha256":  "303360f8d8460d0ab4176da046606152c3b334fb06f05c3d544c6985c23165ea"
+                   },
+                   {
+                       "path":  "src/org/reastyle/nativeexample/MainActivity.java",
+                       "sha256":  "5395461a3ce20e353152606a5bb68208a2c6b74e4597be8343ac3ed6f56d0ebc"
+                   },
+                   {
+                       "path":  "res/drawable/checkbox.xml",
+                       "sha256":  "f0b09d9f8df0e859886cbbb1f3f3b9391c0ab2008f76060c5a584bb7b1480c5b"
+                   },
+                   {
+                       "path":  "res/drawable/checkbox_disabled_checked.xml",
+                       "sha256":  "bb82e868d476abd2bc9b40a9ab49f79087bb828e400cee4e4b22566177498fde"
+                   },
+                   {
+                       "path":  "res/drawable/checkbox_disabled_unchecked.xml",
+                       "sha256":  "86229e80d939ade6a4bd386544385ffea236a76977375bdd6201d8348b20d27e"
+                   },
+                   {
+                       "path":  "res/drawable/checkbox_enabled_checked.xml",
+                       "sha256":  "6fab694da94b042498e6191467b069594d531c74722eb29cf21921547d4e2220"
+                   },
+                   {
+                       "path":  "res/drawable/checkbox_enabled_unchecked.xml",
+                       "sha256":  "2f50ccde2b94565f18252b1e1e98e45a8da33f87f707e698d6420503c3a259be"
+                   },
+                   {
+                       "path":  "res/drawable/duo_beginner.xml",
+                       "sha256":  "5bd4dbfb22d9ef8b18bb3e6421eefa352e004c3767643dbee51c69383728be9b"
+                   },
+                   {
+                       "path":  "res/drawable/duo_happy.xml",
+                       "sha256":  "234f0a553deaa3f13307476c13b3c8c01db60969a61b4badf2670d8267863f4e"
+                   },
+                   {
+                       "path":  "res/drawable/flag_de.xml",
+                       "sha256":  "b51166f0af0a8b9f3b9f5d73659d84e8bd7ddd0e987959fbdc91a4a4011e34ac"
+                   },
+                   {
+                       "path":  "res/drawable/flag_es.xml",
+                       "sha256":  "a2183abf0a161b7b4c5d5035ec4204f5c1b1680742e2c8164f46ec08640d8d6a"
+                   },
+                   {
+                       "path":  "res/drawable/flag_fr.xml",
+                       "sha256":  "5a6bd957e95f3a02abe941fc45fb9f95d5951aad40602dced992fe48c815c7c1"
+                   },
+                   {
+                       "path":  "res/drawable/flag_it.xml",
+                       "sha256":  "067f8153db9d63062d2672e4fd4c38bb7f44e6e22106c1dd0fa434fd1c81d15f"
+                   },
+                   {
+                       "path":  "res/drawable/flag_ja.xml",
+                       "sha256":  "d669d329ad717f88cfc3becb75a654f26f023448be984a3c69865d1820e36fc6"
+                   },
+                   {
+                       "path":  "res/values/ids.xml",
+                       "sha256":  "9379e43f8d8232805ee7d82b56a025693c5a64cd93e1012f2cec32246d0d062e"
+                   },
+                   {
+                       "path":  "res/values/source-colors.xml",
+                       "sha256":  "421a1d22a5d6b28e0e79f9203a580af195ad5029b6c579afffec17391316f6fa"
+                   },
+                   {
+                       "path":  "res/values/styles.xml",
+                       "sha256":  "ddd24586f4581c8749113c421dcd23c4909b93dc5ab4147aba5bae8bcea6790d"
+                   },
+                   {
+                       "path":  "assets/source-fonts/din_next_for_duolingo.otf",
+                       "sha256":  "e3a78e331410bf8c40325dd8215fcd3f890e78f0ec955a923098bf032f510a1e"
+                   },
+                   {
+                       "path":  "assets/source-fonts/din_next_for_duolingo_bold.otf",
+                       "sha256":  "af3816958aee96c291356afc4419750ec52c3233c752b36ab2d2bdfbe36a75d9"
+                   },
+                   {
+                       "path":  "assets/source-fonts/duolingosans_bold.otf",
+                       "sha256":  "23ce0a097d51fe7aa89a633fd26284703f1d9b90c25d47023393b280be693d20"
+                   },
+                   {
+                       "path":  "assets/source-fonts/duolingosans_regular.otf",
+                       "sha256":  "d0fb03f3128596d2ea8f3c9c5cd55c34ce934083403ce0ad4326a6de9380c613"
+                   },
+                   {
+                       "path":  "tests/org/reastyle/nativeexample/FlowStateTest.java",
+                       "sha256":  "bc9b7f4340df58d3af566689e54c5ee188ef9771f978a9b4e8d4e9b74eb721a5"
+                   },
+                   {
+                       "path":  "tools/PackageApk.java",
+                       "sha256":  "2070c8809eb3d364faf000e78dac63fc577ae7bb9d320f2e39ee8720a0508445"
+                   },
+                   {
+                       "path":  "../transfer-example/src/org/reastyle/nativeexample/PaperlaneContent.java",
+                       "sha256":  "2bc7f0ecab116930a12be8f2fa1509df06afb16de68a59887b3fdea61514be2e"
+                   }
+               ],
+    "apk":  {
+                "path":  "native-reference.apk",
+                "sha256":  "39c2ace67733c08f7124392e519fb4aa5014a6ccfd2fb7493bfcbba62cc59b11",
+                "bytes":  497305
+            },
+    "limitations":  [
+                        "Build and JVM state checks only; device runtime and source comparison are separate.",
+                        "Debug signing key is a public local sample identity.",
+                        "Source fonts and vectors are included only for private source-reference study; Paperlane scenes use no source brand assets.",
+                        "A fresh debug key and ZIP timestamps can change APK byte identity; reproducible here means a documented rebuild, not byte-identical output."
+                    ]
+}

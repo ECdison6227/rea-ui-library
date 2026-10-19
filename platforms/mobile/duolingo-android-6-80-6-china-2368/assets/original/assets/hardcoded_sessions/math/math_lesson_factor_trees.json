@@ -1,0 +1,349 @@
+{
+  "id": "hardcoded_math_lesson_factor_trees",
+  "fromLanguage": "en",
+  "type": "MATH_LESSON",
+  "metadata": {
+    "id": "shD17owuiZ1n587v",
+    "type": "math_lesson"
+  },
+  "challenges": [
+    {
+      "id": "rive-factor-tree-spec-sample",
+      "type": "mathFactorTree",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Fill in the <span>factors</span>"
+          },
+          "gradingFeedbackSpecification": {
+            "deferToOtherFeedbackSource": {}
+          }
+        },
+        "input": {
+          "riveInput": {
+            "riveType": {
+              "url": "https://math-stage-cdn.duolingo.com/assets/rive/factor_tree_v52_m.riv",
+              "urlByDeviceHeight": {
+                "urls": [
+                  {
+                    "url": "https://math-stage-cdn.duolingo.com/assets/rive/factor_tree_v52_s.riv",
+                    "requiredHeight": 0
+                  },
+                  {
+                    "url": "https://math-stage-cdn.duolingo.com/assets/rive/factor_tree_v52_m.riv",
+                    "requiredHeight": 775
+                  },
+                  {
+                    "url": "https://math-stage-cdn.duolingo.com/assets/rive/factor_tree_v52_l.riv",
+                    "requiredHeight": 840
+                  }
+                ]
+              }
+            },
+            "artboard": "factor_tree_artboard",
+            "inputArtboard": "factor_tree_nested",
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [
+                    {
+                      "exactAnswer": {
+                        "list": {
+                          "values": [
+                            {
+                              "integer": {
+                                "integer": 0
+                              }
+                            },
+                            {
+                              "integer": {
+                                "integer": 0
+                              }
+                            },
+                            {
+                              "integer": {
+                                "integer": 2
+                              }
+                            },
+                            {
+                              "integer": {
+                                "integer": 5
+                              }
+                            },
+                            {
+                              "integer": {
+                                "integer": 8
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "intervalGrading": []
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": false,
+              "answersMustBeOrdered": false,
+              "feedback": {
+                "factorTreeFeedback": {
+                  "feedbackOptions": [
+                    "Correct Answer: <span>30</span> × 2 = 60",
+                    "Correct Answer: 15 × <span>2</span> = 30",
+                    "Correct Answer: <span>3</span> × 5 = 15"
+                  ]
+                }
+              }
+            },
+            "width": 300,
+            "height": 500,
+            "answerFormat": {
+              "indexSequenceAnswer": {
+                "indexFields": [
+                  "tile_01_location_num",
+                  "tile_02_location_num",
+                  "tile_03_location_num",
+                  "tile_04_location_num",
+                  "tile_05_location_num"
+                ]
+              }
+            },
+            "boolConfiguration": {},
+            "numberConfiguration": {},
+            "textConfiguration": {},
+            "nestedArtBoards": [
+              {
+                "artboardPath": "factor_tree_nested",
+                "boolConfiguration": {
+                  "p_01_text_bool": true,
+                  "p_03_text_bool": true,
+                  "p_04_text_bool": true,
+                  "p_09_text_bool": true
+                },
+                "numberConfiguration": {
+                  "max_digit_num": 2,
+                  "tree_rows_num": 4,
+                  "number_of_tiles_num": 5
+                },
+                "textConfiguration": {}
+              },
+              {
+                "artboardPath": "factor_tree_nested/placement_01",
+                "boolConfiguration": {},
+                "numberConfiguration": {},
+                "textConfiguration": {
+                  "placement_text_digit01": "6",
+                  "placement_text_digit02": "0"
+                }
+              },
+              {
+                "artboardPath": "factor_tree_nested/placement_03",
+                "boolConfiguration": {},
+                "numberConfiguration": {},
+                "textConfiguration": {
+                  "placement_text_digit01": "2"
+                }
+              },
+              {
+                "artboardPath": "factor_tree_nested/placement_04",
+                "boolConfiguration": {},
+                "numberConfiguration": {},
+                "textConfiguration": {
+                  "placement_text_digit01": "1",
+                  "placement_text_digit02": "5"
+                }
+              },
+              {
+                "artboardPath": "factor_tree_nested/placement_09",
+                "boolConfiguration": {},
+                "numberConfiguration": {},
+                "textConfiguration": {
+                  "placement_text_digit01": "5"
+                }
+              },
+              {
+                "artboardPath": "factor_tree_nested/tile_01",
+                "boolConfiguration": {},
+                "numberConfiguration": {},
+                "textConfiguration": {
+                  "tile_text_digit01": "5"
+                }
+              },
+              {
+                "artboardPath": "factor_tree_nested/tile_02",
+                "boolConfiguration": {},
+                "numberConfiguration": {},
+                "textConfiguration": {
+                  "tile_text_digit01": "1",
+                  "tile_text_digit02": "6"
+                }
+              },
+              {
+                "artboardPath": "factor_tree_nested/tile_03",
+                "boolConfiguration": {},
+                "numberConfiguration": {},
+                "textConfiguration": {
+                  "tile_text_digit01": "3",
+                  "tile_text_digit02": "0"
+                }
+              },
+              {
+                "artboardPath": "factor_tree_nested/tile_04",
+                "boolConfiguration": {},
+                "numberConfiguration": {},
+                "textConfiguration": {
+                  "tile_text_digit01": "2"
+                }
+              },
+              {
+                "artboardPath": "factor_tree_nested/tile_05",
+                "boolConfiguration": {},
+                "numberConfiguration": {},
+                "textConfiguration": {
+                  "tile_text_digit01": "3"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "textExamplesHint": {
+        "text": {
+          "underlyingEntity": {
+            "noEntity": {
+            }
+          },
+          "taggedTextElement": {
+            "text": "List numbers that divide evenly into the target number."
+          }
+        },
+        "examples": [{
+          "underlyingEntity": {
+            "noEntity": {
+            }
+          },
+          "mathSequenceElement": {
+            "elements": [{
+              "underlyingEntity": {
+                "entity": {
+                  "integer": {
+                    "integer": 16
+                  }
+                }
+              },
+              "taggedTextElement": {
+                "text": "16"
+              }
+            }, {
+              "underlyingEntity": {
+                "entity": {
+                  "symbol": "RIGHT_ARROW"
+                }
+              },
+              "taggedTextElement": {
+                "text": "\u003cspan\u003e→\u003c/span\u003e"
+              }
+            }, {
+              "underlyingEntity": {
+                "entity": {
+                  "integer": {
+                    "integer": 1
+                  }
+                }
+              },
+              "taggedTextElement": {
+                "text": "1"
+              }
+            }, {
+              "underlyingEntity": {
+                "entity": {
+                  "symbol": "COMMA"
+                }
+              },
+              "taggedTextElement": {
+                "text": "\u003cspan\u003e,\u003c/span\u003e"
+              }
+            }, {
+              "underlyingEntity": {
+                "entity": {
+                  "integer": {
+                    "integer": 2
+                  }
+                }
+              },
+              "taggedTextElement": {
+                "text": "2"
+              }
+            }, {
+              "underlyingEntity": {
+                "entity": {
+                  "symbol": "COMMA"
+                }
+              },
+              "taggedTextElement": {
+                "text": "\u003cspan\u003e,\u003c/span\u003e"
+              }
+            }, {
+              "underlyingEntity": {
+                "entity": {
+                  "integer": {
+                    "integer": 4
+                  }
+                }
+              },
+              "taggedTextElement": {
+                "text": "4"
+              }
+            }, {
+              "underlyingEntity": {
+                "entity": {
+                  "symbol": "COMMA"
+                }
+              },
+              "taggedTextElement": {
+                "text": "\u003cspan\u003e,\u003c/span\u003e"
+              }
+            }, {
+              "underlyingEntity": {
+                "entity": {
+                  "integer": {
+                    "integer": 8
+                  }
+                }
+              },
+              "taggedTextElement": {
+                "text": "8"
+              }
+            }, {
+              "underlyingEntity": {
+                "entity": {
+                  "symbol": "COMMA"
+                }
+              },
+              "taggedTextElement": {
+                "text": "\u003cspan\u003e,\u003c/span\u003e"
+              }
+            }, {
+              "underlyingEntity": {
+                "entity": {
+                  "integer": {
+                    "integer": 16
+                  }
+                }
+              },
+              "taggedTextElement": {
+                "text": "16"
+              }
+            }],
+            "orientation": "HORIZONTAL"
+          }
+        }]
+      }
+    }
+  ],
+  "skillId": "e7edcd8a3bee8bf8d2da245d183af0e4",
+  "levelIndex": 1,
+  "levelSessionIndex": 1
+}

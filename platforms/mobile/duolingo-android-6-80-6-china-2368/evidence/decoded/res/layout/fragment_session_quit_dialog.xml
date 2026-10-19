@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/grabber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" app:srcCompat="@drawable/bottom_sheet_grabber" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" app:srcCompat="@drawable/duo_sad" />
+    <com.duolingo.core.design.juicy.ui.JuicyTextView android:gravity="center" android:id="@id/title" android:layout_margin="@dimen/duoSpacing16" android:text="@string/quit_title" style="@style/H1" />
+    <com.duolingo.core.design.juicy.ui.JuicyTextView android:gravity="center" android:id="@id/subtitle" android:layout_marginBottom="@dimen/duoSpacing16" android:text="@string/quit_message" android:layout_marginHorizontal="@dimen/duoSpacing16" style="@style/Caption1" />
+    <com.duolingo.core.design.juicy.ui.JuicyButton android:id="@id/primaryButton" android:layout_margin="@dimen/duoSpacing16" android:text="@string/keep_going" style="@style/SolidButton" />
+    <com.duolingo.core.design.juicy.ui.JuicyButton android:textColor="@color/juicyCardinal" android:id="@id/secondaryButton" android:layout_marginBottom="@dimen/duoSpacing16" android:text="@string/quit_end_session" style="@style/TransparentButton" />
+</LinearLayout>

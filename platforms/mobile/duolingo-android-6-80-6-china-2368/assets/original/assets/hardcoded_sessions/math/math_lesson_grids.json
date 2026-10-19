@@ -1,0 +1,1363 @@
+{
+  "id": "hardcoded_math_lesson_grids",
+  "fromLanguage": "en",
+  "type": "MATH_LESSON",
+  "metadata": {
+    "id": "shD17owuiZ1n587v",
+    "type": "math_lesson"
+  },
+  "challenges": [
+    {
+      "id": "productSelect-rive-shirt",
+      "type": "mathProductSelect",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Select the <span>area</span>"
+          },
+          "body": {
+            "underlyingEntity": {
+              "entity": {
+                "integer": {
+                  "integer": 8
+                }
+              }
+            },
+            "riveAssetElement": {
+              "riveType": {
+                "url": "https://math-cdn.duolingo.com/assets/rive/coordinate_grid_static_capri_test.riv"
+              },
+              "artboard": "Math_Grid",
+              "stateMachine": "math_grid_statemachine",
+              "width": 343,
+              "height": 225,
+              "boolConfiguration": {
+                "visibility_lines_bool": true,
+                "visibility_fill_bool": true
+              },
+              "numberConfiguration": {
+                "shape_01_num": 4.0,
+                "sh1_01_x_pos_num": 20.0,
+                "sh1_01_y_pos_num": 40.0,
+                "sh1_02_x_pos_num": 60.0,
+                "sh1_02_y_pos_num": 40.0,
+                "sh1_03_x_pos_num": 60.0,
+                "sh1_03_y_pos_num": 20.0,
+                "sh1_04_x_pos_num": 20.0,
+                "sh1_04_y_pos_num": 20.0,
+                "axis_type_num": 4.0
+              },
+              "textConfiguration": {},
+              "nestedArtBoards": [],
+              "accessibilityLabel": "A grid with 8 squares"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "staticFeedback": {
+              "gradingFeedback": {
+                "underlyingEntity": {
+                  "noEntity": {}
+                },
+                "mathSequenceElement": {
+                  "elements": [
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "Correct answer: "
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "8 squares"
+                      }
+                    }
+                  ],
+                  "orientation": "HORIZONTAL"
+                }
+              }
+            }
+          }
+        },
+        "input": {
+          "productSelectInput": {
+            "correctIndices": [
+              0
+            ],
+            "answerOptions": [
+              {
+                "choice": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "taggedTextElement": {
+                    "text": "8 square units"
+                  }
+                },
+                "choiceFeedbackRepresentation": {
+                  "gradingFeedback": {
+                    "underlyingEntity": {
+                      "noEntity": {}
+                    },
+                    "taggedTextElement": {
+                      "text": "8 square units"
+                    }
+                  }
+                }
+              },
+              {
+                "choice": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "taggedTextElement": {
+                    "text": "6 square units"
+                  }
+                },
+                "choiceFeedbackRepresentation": {
+                  "gradingFeedback": {
+                    "underlyingEntity": {
+                      "noEntity": {}
+                    },
+                    "taggedTextElement": {
+                      "text": "6 square units"
+                    }
+                  }
+                }
+              },
+              {
+                "choice": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "taggedTextElement": {
+                    "text": "4 square units"
+                  }
+                },
+                "choiceFeedbackRepresentation": {
+                  "gradingFeedback": {
+                    "underlyingEntity": {
+                      "noEntity": {}
+                    },
+                    "taggedTextElement": {
+                      "text": "4 square units"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "noHint": {},
+      "metadata": {
+        "specific_type": "product_select"
+      }
+    },
+    {
+      "id": "productSelect-rive-buttons",
+      "type": "mathProductSelect",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Select the match"
+          },
+          "body": {
+            "underlyingEntity": {
+              "noEntity": {}
+            },
+            "mathSequenceElement": {
+              "elements": [
+                {
+                  "underlyingEntity": {
+                    "entity": {
+                      "symbol": "OPEN_PARENTHESIS"
+                    }
+                  },
+                  "taggedTextElement": {
+                    "text": "<span>(</span>"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "entity": {
+                      "integer": {
+                        "integer": -3
+                      }
+                    }
+                  },
+                  "taggedTextElement": {
+                    "text": "<span>−</span>3"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "entity": {
+                      "symbol": "POINT_SEPARATOR"
+                    }
+                  },
+                  "taggedTextElement": {
+                    "text": "<span>, </span>"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "entity": {
+                      "integer": {
+                        "integer": 2
+                      }
+                    }
+                  },
+                  "taggedTextElement": {
+                    "text": "2"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "entity": {
+                      "symbol": "CLOSED_PARENTHESIS"
+                    }
+                  },
+                  "taggedTextElement": {
+                    "text": "<span>)</span>"
+                  }
+                }
+              ],
+              "orientation": "HORIZONTAL"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "staticFeedback": {
+              "gradingFeedback": {
+                "underlyingEntity": {
+                  "noEntity": {}
+                },
+                "mathSequenceElement": {
+                  "elements": [
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "Correct Answer: "
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "mathSequenceElement": {
+                        "elements": [
+                          {
+                            "underlyingEntity": {
+                              "entity": {
+                                "symbol": "OPEN_PARENTHESIS"
+                              }
+                            },
+                            "taggedTextElement": {
+                              "text": "<span>(</span>"
+                            }
+                          },
+                          {
+                            "underlyingEntity": {
+                              "noEntity": {}
+                            },
+                            "taggedTextElement": {
+                              "text": "<span>−</span>3"
+                            }
+                          },
+                          {
+                            "underlyingEntity": {
+                              "entity": {
+                                "symbol": "POINT_SEPARATOR"
+                              }
+                            },
+                            "taggedTextElement": {
+                              "text": "<span>, </span>"
+                            }
+                          },
+                          {
+                            "underlyingEntity": {
+                              "noEntity": {}
+                            },
+                            "taggedTextElement": {
+                              "text": "2"
+                            }
+                          },
+                          {
+                            "underlyingEntity": {
+                              "entity": {
+                                "symbol": "CLOSED_PARENTHESIS"
+                              }
+                            },
+                            "taggedTextElement": {
+                              "text": "<span>)</span>"
+                            }
+                          }
+                        ],
+                        "orientation": "HORIZONTAL"
+                      }
+                    }
+                  ],
+                  "orientation": "HORIZONTAL"
+                }
+              }
+            }
+          }
+        },
+        "input": {
+          "productSelectInput": {
+            "correctIndices": [
+              0
+            ],
+            "answerOptions": [
+              {
+                "choice": {
+                  "underlyingEntity": {
+                    "entity": {
+                      "point": {
+                        "x": {
+                          "integer": {
+                            "integer": -3
+                          }
+                        },
+                        "y": {
+                          "integer": {
+                            "integer": 2
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "riveAssetElement": {
+                    "riveType": {
+                      "url": "https://math-cdn.duolingo.com/assets/rive/coordinate_grid_static_capri_test.riv"
+                    },
+                    "artboard": "Math_Grid",
+                    "stateMachine": "math_grid_statemachine",
+                    "width": 120,
+                    "height": 100,
+                    "boolConfiguration": {
+                      "visibility_lines_bool": true,
+                      "visibility_fill_bool": true
+                    },
+                    "numberConfiguration": {
+                      "shape_01_num": 1.0,
+                      "sh1_01_x_pos_num": 40.0,
+                      "sh1_01_y_pos_num": 50.0,
+                      "axis_type_num": 11.0
+                    },
+                    "textConfiguration": {},
+                    "nestedArtBoards": [],
+                    "accessibilityLabel": "A grid with a point at -3, 2"
+                  }
+                },
+                "choiceFeedbackRepresentation": {
+                  "gradingFeedback": {
+                    "underlyingEntity": {
+                      "noEntity": {}
+                    },
+                    "mathSequenceElement": {
+                      "elements": [
+                        {
+                          "underlyingEntity": {
+                            "entity": {
+                              "symbol": "OPEN_PARENTHESIS"
+                            }
+                          },
+                          "taggedTextElement": {
+                            "text": "<span>(</span>"
+                          }
+                        },
+                        {
+                          "underlyingEntity": {
+                            "noEntity": {}
+                          },
+                          "taggedTextElement": {
+                            "text": "<span>−</span>3"
+                          }
+                        },
+                        {
+                          "underlyingEntity": {
+                            "entity": {
+                              "symbol": "POINT_SEPARATOR"
+                            }
+                          },
+                          "taggedTextElement": {
+                            "text": "<span>, </span>"
+                          }
+                        },
+                        {
+                          "underlyingEntity": {
+                            "noEntity": {}
+                          },
+                          "taggedTextElement": {
+                            "text": "2"
+                          }
+                        },
+                        {
+                          "underlyingEntity": {
+                            "entity": {
+                              "symbol": "CLOSED_PARENTHESIS"
+                            }
+                          },
+                          "taggedTextElement": {
+                            "text": "<span>)</span>"
+                          }
+                        }
+                      ],
+                      "orientation": "HORIZONTAL"
+                    }
+                  }
+                }
+              },
+              {
+                "choice": {
+                  "underlyingEntity": {
+                    "entity": {
+                      "point": {
+                        "x": {
+                          "integer": {
+                            "integer": -3
+                          }
+                        },
+                        "y": {
+                          "integer": {
+                            "integer": -2
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "riveAssetElement": {
+                    "riveType": {
+                      "url": "https://math-cdn.duolingo.com/assets/rive/coordinate_grid_static_capri_test.riv"
+                    },
+                    "artboard": "Math_Grid",
+                    "stateMachine": "math_grid_statemachine",
+                    "width": 120,
+                    "height": 100,
+                    "boolConfiguration": {
+                      "visibility_lines_bool": true,
+                      "visibility_fill_bool": true
+                    },
+                    "numberConfiguration": {
+                      "shape_01_num": 1.0,
+                      "sh1_01_x_pos_num": 40.0,
+                      "sh1_01_y_pos_num": 10.0,
+                      "axis_type_num": 11.0
+                    },
+                    "textConfiguration": {},
+                    "nestedArtBoards": [],
+                    "accessibilityLabel": "A grid with a point at -3, -2"
+                  }
+                },
+                "choiceFeedbackRepresentation": {
+                  "gradingFeedback": {
+                    "underlyingEntity": {
+                      "noEntity": {}
+                    },
+                    "mathSequenceElement": {
+                      "elements": [
+                        {
+                          "underlyingEntity": {
+                            "entity": {
+                              "symbol": "OPEN_PARENTHESIS"
+                            }
+                          },
+                          "taggedTextElement": {
+                            "text": "<span>(</span>"
+                          }
+                        },
+                        {
+                          "underlyingEntity": {
+                            "noEntity": {}
+                          },
+                          "taggedTextElement": {
+                            "text": "<span>−</span>3"
+                          }
+                        },
+                        {
+                          "underlyingEntity": {
+                            "entity": {
+                              "symbol": "POINT_SEPARATOR"
+                            }
+                          },
+                          "taggedTextElement": {
+                            "text": "<span>, </span>"
+                          }
+                        },
+                        {
+                          "underlyingEntity": {
+                            "noEntity": {}
+                          },
+                          "taggedTextElement": {
+                            "text": "<span>−</span>2"
+                          }
+                        },
+                        {
+                          "underlyingEntity": {
+                            "entity": {
+                              "symbol": "CLOSED_PARENTHESIS"
+                            }
+                          },
+                          "taggedTextElement": {
+                            "text": "<span>)</span>"
+                          }
+                        }
+                      ],
+                      "orientation": "HORIZONTAL"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "textExamplesHint": {
+        "text": {
+          "underlyingEntity": {
+            "noEntity": {}
+          },
+          "taggedTextElement": {
+            "text": "The x-value shows the horizontal distance and direction and the y-value shows the vertical distance and direction."
+          }
+        },
+        "examples": []
+      },
+      "metadata": {
+        "specific_type": "product_select"
+      }
+    },
+    {
+      "id": "coordinateGrid-plotLineSegment",
+      "type": "mathPlotLineSegment",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Create a \u003cspan\u003eline\u003c/span\u003e with points at"
+          },
+          "body": {
+            "underlyingEntity": {
+              "entity": {
+                "list": {
+                  "values": [
+                    {
+                      "point": {
+                        "x": {
+                          "integer": {
+                            "integer": 3
+                          }
+                        },
+                        "y": {
+                          "integer": {
+                            "integer": 6
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "point": {
+                        "x": {
+                          "integer": {
+                            "integer": 3
+                          }
+                        },
+                        "y": {
+                          "integer": {
+                            "integer": 6
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "headerTableElement": {
+              "headers": [
+                {
+                  "text": "x"
+                },
+                {
+                  "text": "y"
+                }
+              ],
+              "rows": [
+                {
+                  "columns": [
+                    {
+                      "underlyingEntity": {
+                        "entity": {
+                          "integer": {
+                            "integer": 0
+                          }
+                        }
+                      },
+                      "taggedTextElement": {
+                        "text": "0"
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "entity": {
+                          "integer": {
+                            "integer": 6
+                          }
+                        }
+                      },
+                      "taggedTextElement": {
+                        "text": "6"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "columns": [
+                    {
+                      "underlyingEntity": {
+                        "entity": {
+                          "integer": {
+                            "integer": 3
+                          }
+                        }
+                      },
+                      "taggedTextElement": {
+                        "text": "3"
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "entity": {
+                          "integer": {
+                            "integer": 6
+                          }
+                        }
+                      },
+                      "taggedTextElement": {
+                        "text": "6"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "orientation": "VERTICAL"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "deferToOtherFeedbackSource": {}
+          }
+        },
+        "input": {
+          "coordinateGridInput": {
+            "initialElements": [],
+            "elementModifiers": [
+              {
+                "addRemoveButtons": {
+                  "buttons": {
+                    "addLabel": {
+                      "text": "LINE"
+                    },
+                    "removeLabel": {
+                      "text": "LINE"
+                    },
+                    "maxAdditions": 2
+                  },
+                  "elementToAdd": {
+                    "underlyingEntity": {
+                      "lineSegment": {
+                        "start": {
+                          "x": {
+                            "integer": {
+                              "integer": 0
+                            }
+                          },
+                          "y": {
+                            "integer": {
+                              "integer": 0
+                            }
+                          }
+                        },
+                        "end": {
+                          "x": {
+                            "integer": {
+                              "integer": 2
+                            }
+                          },
+                          "y": {
+                            "integer": {
+                              "integer": 0
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "canMove": true,
+                    "showTranslation": false
+                  },
+                  "placementStrategy": "NEAREST_NON_OVERLAPPING"
+                }
+              }
+            ],
+            "visibleQuadrants": [
+              "TOP_RIGHT"
+            ],
+            "gridVariant": "UNLABELED",
+            "exerciseType": "EXERCISE_TYPE_UNKNOWN",
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [
+                    {
+                      "exactAnswer": {
+                        "list": {
+                          "values": [
+                            {
+                              "point": {
+                                "x": {
+                                  "integer": {
+                                    "integer": 0
+                                  }
+                                },
+                                "y": {
+                                  "integer": {
+                                    "integer": 6
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "point": {
+                                "x": {
+                                  "integer": {
+                                    "integer": 3
+                                  }
+                                },
+                                "y": {
+                                  "integer": {
+                                    "integer": 6
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "intervalGrading": []
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": true,
+              "answersMustBeOrdered": false
+            },
+            "gridSize": "PANTS"
+          }
+        }
+      },
+      "noHint": {
+      }
+    },
+    {
+      "id": "coordinateGrid-dragLineSegmentLength",
+      "type": "mathDragLineSegmentLength",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Create a line with the \u003cspan\u003elength\u003c/span\u003e"
+          },
+          "body": {
+            "underlyingEntity": {
+              "entity": {
+                "integer": {
+                  "integer": 6
+                }
+              }
+            },
+            "taggedTextElement": {
+              "text": "6"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "deferToOtherFeedbackSource": {}
+          }
+        },
+        "input": {
+          "coordinateGridInput": {
+            "initialElements": [
+              {
+                "underlyingEntity": {
+                  "lineSegment": {
+                    "start": {
+                      "x": {
+                        "integer": {
+                          "integer": -2
+                        }
+                      },
+                      "y": {
+                        "integer": {
+                          "integer": 0
+                        }
+                      }
+                    },
+                    "end": {
+                      "x": {
+                        "integer": {
+                          "integer": 2
+                        }
+                      },
+                      "y": {
+                        "integer": {
+                          "integer": 0
+                        }
+                      }
+                    }
+                  }
+                },
+                "canMove": true,
+                "showTranslation": true
+              }
+            ],
+            "elementModifiers": [],
+            "visibleQuadrants": [
+              "TOP_LEFT",
+              "TOP_RIGHT",
+              "BOTTOM_LEFT",
+              "BOTTOM_RIGHT"
+            ],
+            "gridVariant": "UNLABELED",
+            "exerciseType": "EXERCISE_TYPE_UNKNOWN",
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [
+                    {
+                      "exactAnswer": {
+                        "integer": {
+                          "integer": 6
+                        }
+                      }
+                    }
+                  ],
+                  "intervalGrading": []
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": true,
+              "answersMustBeOrdered": false
+            },
+            "gridSize": "PANTS"
+          }
+        }
+      },
+      "noHint": {
+      }
+    },
+    {
+      "id": "coordinateGrid-multiPlotCoordinates",
+      "type": "mathMultiPlotCoordinates",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Create a \u003cspan\u003egraph\u003c/span\u003e with points at"
+          },
+          "body": {
+            "underlyingEntity": {
+              "entity": {
+                "list": {
+                  "values": [
+                    {
+                      "point": {
+                        "x": {
+                          "integer": {
+                            "integer": 1
+                          }
+                        },
+                        "y": {
+                          "integer": {
+                            "integer": 2
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "point": {
+                        "x": {
+                          "integer": {
+                            "integer": 2
+                          }
+                        },
+                        "y": {
+                          "integer": {
+                            "integer": 4
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "point": {
+                        "x": {
+                          "integer": {
+                            "integer": 4
+                          }
+                        },
+                        "y": {
+                          "integer": {
+                            "integer": 6
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "point": {
+                        "x": {
+                          "integer": {
+                            "integer": 0
+                          }
+                        },
+                        "y": {
+                          "integer": {
+                            "integer": 0
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "headerTableElement": {
+              "headers": [
+                {
+                  "text": "x"
+                },
+                {
+                  "text": "y"
+                }
+              ],
+              "rows": [
+                {
+                  "columns": [
+                    {
+                      "underlyingEntity": {
+                        "entity": {
+                          "integer": {
+                            "integer": 1
+                          }
+                        }
+                      },
+                      "taggedTextElement": {
+                        "text": "1"
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "entity": {
+                          "integer": {
+                            "integer": 2
+                          }
+                        }
+                      },
+                      "taggedTextElement": {
+                        "text": "2"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "columns": [
+                    {
+                      "underlyingEntity": {
+                        "entity": {
+                          "integer": {
+                            "integer": 2
+                          }
+                        }
+                      },
+                      "taggedTextElement": {
+                        "text": "2"
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "entity": {
+                          "integer": {
+                            "integer": 4
+                          }
+                        }
+                      },
+                      "taggedTextElement": {
+                        "text": "4"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "columns": [
+                    {
+                      "underlyingEntity": {
+                        "entity": {
+                          "integer": {
+                            "integer": 4
+                          }
+                        }
+                      },
+                      "taggedTextElement": {
+                        "text": "4"
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "entity": {
+                          "integer": {
+                            "integer": 6
+                          }
+                        }
+                      },
+                      "taggedTextElement": {
+                        "text": "6"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "columns": [
+                    {
+                      "underlyingEntity": {
+                        "entity": {
+                          "integer": {
+                            "integer": 0
+                          }
+                        }
+                      },
+                      "taggedTextElement": {
+                        "text": "0"
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "entity": {
+                          "integer": {
+                            "integer": 0
+                          }
+                        }
+                      },
+                      "taggedTextElement": {
+                        "text": "0"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "orientation": "VERTICAL"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "deferToOtherFeedbackSource": {}
+          }
+        },
+        "input": {
+          "coordinateGridInput": {
+            "initialElements": [],
+            "elementModifiers": [
+              {
+                "addRemoveButtons": {
+                  "buttons": {
+                    "addLabel": {
+                      "text": "POINT"
+                    },
+                    "removeLabel": {
+                      "text": "POINT"
+                    },
+                    "maxAdditions": 4
+                  },
+                  "elementToAdd": {
+                    "underlyingEntity": {
+                      "point": {
+                        "x": {
+                          "integer": {
+                            "integer": 0
+                          }
+                        },
+                        "y": {
+                          "integer": {
+                            "integer": 0
+                          }
+                        }
+                      }
+                    },
+                    "canMove": true,
+                    "showTranslation": false
+                  },
+                  "placementStrategy": "NEAREST_NON_OVERLAPPING"
+                }
+              }
+            ],
+            "visibleQuadrants": [
+              "TOP_RIGHT"
+            ],
+            "gridVariant": "UNLABELED",
+            "exerciseType": "EXERCISE_TYPE_UNKNOWN",
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [
+                    {
+                      "exactAnswer": {
+                        "list": {
+                          "values": [
+                            {
+                              "point": {
+                                "x": {
+                                  "integer": {
+                                    "integer": 1
+                                  }
+                                },
+                                "y": {
+                                  "integer": {
+                                    "integer": 2
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "point": {
+                                "x": {
+                                  "integer": {
+                                    "integer": 2
+                                  }
+                                },
+                                "y": {
+                                  "integer": {
+                                    "integer": 4
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "point": {
+                                "x": {
+                                  "integer": {
+                                    "integer": 4
+                                  }
+                                },
+                                "y": {
+                                  "integer": {
+                                    "integer": 6
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "point": {
+                                "x": {
+                                  "integer": {
+                                    "integer": 0
+                                  }
+                                },
+                                "y": {
+                                  "integer": {
+                                    "integer": 0
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "intervalGrading": []
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": true,
+              "answersMustBeOrdered": false
+            },
+            "gridSize": "CAPRIS"
+          }
+        }
+      },
+      "noHint": {
+      }
+    },
+    {
+      "id": "coordinateGrid-plotCoordinate",
+      "type": "mathPlotCoordinate",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Place the point at"
+          },
+          "body": {
+            "underlyingEntity": {
+              "entity": {
+                "point": {
+                  "x": {
+                    "integer": {
+                      "integer": 1
+                    }
+                  },
+                  "y": {
+                    "integer": {
+                      "integer": -3
+                    }
+                  }
+                }
+              }
+            },
+            "mathSequenceElement": {
+              "elements": [
+                {
+                  "underlyingEntity": {
+                    "entity": {
+                      "symbol": "OPEN_PARENTHESIS"
+                    }
+                  },
+                  "taggedTextElement": {
+                    "text": "\u003cspan\u003e(\u003c/span\u003e"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "noEntity": {
+                    }
+                  },
+                  "mathSequenceElement": {
+                    "elements": [
+                      {
+                        "underlyingEntity": {
+                          "entity": {
+                            "integer": {
+                              "integer": 1
+                            }
+                          }
+                        },
+                        "taggedTextElement": {
+                          "text": "1"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "entity": {
+                            "symbol": "COMMA"
+                          }
+                        },
+                        "taggedTextElement": {
+                          "text": "\u003cspan\u003e,\u003c/span\u003e"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "entity": {
+                            "integer": {
+                              "integer": -3
+                            }
+                          }
+                        },
+                        "taggedTextElement": {
+                          "text": "−3"
+                        }
+                      }
+                    ],
+                    "orientation": "ORIENTATION_UNKNOWN"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "entity": {
+                      "symbol": "CLOSED_PARENTHESIS"
+                    }
+                  },
+                  "taggedTextElement": {
+                    "text": "\u003cspan\u003e)\u003c/span\u003e"
+                  }
+                }
+              ],
+              "orientation": "ORIENTATION_UNKNOWN"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "deferToOtherFeedbackSource": {}
+          }
+        },
+        "input": {
+          "coordinateGridInput": {
+            "initialElements": [
+              {
+                "underlyingEntity": {
+                  "point": {
+                    "x": {
+                      "integer": {
+                        "integer": 0
+                      }
+                    },
+                    "y": {
+                      "integer": {
+                        "integer": 0
+                      }
+                    }
+                  }
+                },
+                "canMove": true,
+                "showTranslation": true
+              }
+            ],
+            "elementModifiers": [],
+            "visibleQuadrants": [
+              "TOP_LEFT",
+              "TOP_RIGHT",
+              "BOTTOM_LEFT",
+              "BOTTOM_RIGHT"
+            ],
+            "gridVariant": "UNLABELED",
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [
+                    {
+                      "exactAnswer": {
+                        "point": {
+                          "x": {
+                            "integer": {
+                              "integer": 1
+                            }
+                          },
+                          "y": {
+                            "integer": {
+                              "integer": -3
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "intervalGrading": []
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": true,
+              "answersMustBeOrdered": false
+            },
+            "gridSize": "PANTS"
+          }
+        }
+      },
+      "noHint": {
+      }
+    }
+  ],
+  "skillId": "e7edcd8a3bee8bf8d2da245d183af0e4",
+  "levelIndex": 1,
+  "levelSessionIndex": 1
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:state_pressed="true" android:drawable="@drawable/select_btn_blue_outline_dblue_interior" />
+    <item android:state_selected="true" android:drawable="@drawable/select_btn_blue_outline_lblue_interior" />
+    <item android:state_pressed="true" android:drawable="@drawable/select_btn_gray_outline_lgray_interior" />
+    <item android:drawable="@drawable/select_btn_gray_outline_lgray_interior" android:state_hovered="true" />
+    <item android:state_focused="true" android:drawable="@drawable/select_btn_gray_outline_lgray_interior" />
+    <item android:state_enabled="false" android:drawable="@drawable/select_btn_gray_outline" />
+    <item android:drawable="@drawable/select_btn_gray_outline" />
+</selector>

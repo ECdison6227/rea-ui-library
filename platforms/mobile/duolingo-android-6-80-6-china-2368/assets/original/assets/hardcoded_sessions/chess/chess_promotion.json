@@ -1,0 +1,2965 @@
+{
+  "type": "CHESS_LESSON",
+  "id": "fe57b1ef-263d-4691-9e7c-d90eceb98b7f",
+  "challenges": [
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "f7f8q f7f8r f7f8n f7f8b"
+        ],
+        "enemyMoves": [],
+        "finalCorrectSpeechBubbleContent": {
+          "text": "Your pawn **promotes** when it reaches the end of the board.",
+          "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/4bb531b644a41ff3b9eb9cf2ed81a76c",
+          "visemes": "100\t0\t78\n108\t78\t70\n101\t148\t54\n107\t203\t101\n112\t304\t226\n105\t531\t109\n114\t640\t101\n107\t742\t62\n112\t804\t171\n115\t976\t125\n104\t1101\t125\n105\t1226\t46\n101\t1273\t62\n118\t1335\t70\n104\t1406\t62\n103\t1468\t78\n115\t1546\t93\n101\t1640\t46\n113\t1687\t101\n105\t1789\t39\n103\t1828\t93\n101\t1921\t70\n105\t1992\t70\n112\t2062\t62\n105\t2125\t62\n112\t2187\t46\n105\t2234\t70\n112\t2304\t289\n105\t2593\t226\n100\t2820\t117"
+        },
+        "finalHighlight": "",
+        "highlight": [
+          "f7f8 blue"
+        ],
+        "incorrectHighlight": [],
+        "incorrectMoves": [],
+        "incorrectSpeechBubbleContent": [],
+        "indicatorType": "NEW_CONCEPT",
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "Move here to **promote your pawn**.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/31c88a16863dfc7cb9d82642973c53e1",
+            "visemes": "105\t0\t109\n101\t109\t109\n113\t218\t85\n101\t304\t171\n105\t476\t46\n115\t523\t46\n101\t570\t31\n105\t601\t101\n105\t703\t125\n112\t828\t101\n105\t929\t109\n101\t1039\t109\n107\t1148\t85\n112\t1234\t148\n114\t1382\t109\n105\t1492\t62\n112\t1554\t156\n100\t1710\t179"
+          }
+        ],
+        "kcs": [
+          "pawnPromotion"
+        ],
+        "moveEvaluationsForPositions": {
+          "8/1k3P2/8/8/8/8/3K4/8 w": [
+            {
+              "enemyResponse": "b7a6",
+              "move": "d2e3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b7c6",
+              "move": "d2d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b7c6",
+              "move": "d2c3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b7a6",
+              "move": "d2e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b7a6",
+              "move": "d2c2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b7c6",
+              "move": "d2e1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b7c6",
+              "move": "d2d1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b7c6",
+              "move": "d2c1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b7b6",
+              "move": "f7f8q",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b7c7",
+              "move": "f7f8r",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b7c6",
+              "move": "f7f8b",
+              "moveCorrectness": "correct",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "b7c6",
+              "move": "f7f8n",
+              "moveCorrectness": "correct",
+              "wdl": 0.5
+            }
+          ]
+        }
+      },
+      "fen": "8/1k3P2/8/8/8/8/3K4/8 w - - 0 1",
+      "id": "183a46be",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "d7d8q d7d8r d7d8n d7d8b f7f8q f7f8n f7f8r f7f8b",
+          "f7f8q d7d8q"
+        ],
+        "enemyMoves": [
+          "b6b5"
+        ],
+        "finalHighlight": "",
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [],
+        "incorrectSpeechBubbleContent": [],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "You can even promote more than one.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/1f209c9108808ee9e7a6bed15c10035f",
+            "visemes": "100\t0\t62\n103\t62\t93\n108\t156\t39\n118\t195\t93\n101\t289\t39\n105\t328\t39\n103\t367\t93\n115\t460\t62\n101\t523\t46\n105\t570\t140\n104\t710\t62\n107\t773\t78\n112\t851\t140\n105\t992\t156\n112\t1148\t187\n105\t1335\t85\n105\t1421\t148\n112\t1570\t101\n114\t1671\t117\n105\t1789\t78\n112\t1867\t171\n100\t2039\t164"
+          }
+        ],
+        "kcs": [
+          "pawnPromotion"
+        ],
+        "moveEvaluationsForPositions": {
+          "3B4/5P2/8/1k6/8/8/8/5K2 w": [
+            {
+              "enemyResponse": "b5c6",
+              "move": "d8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "d8c7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "d8f6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b6",
+              "move": "d8b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "d8g5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a5",
+              "move": "d8a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "d8h4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "f1g2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f1f2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f1e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f1g1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "f1e1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "f7f8q",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "f7f8r",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "f7f8b",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.994
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "f7f8n",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9795
+            }
+          ],
+          "3N4/5P2/8/1k6/8/8/8/5K2 w": [
+            {
+              "enemyResponse": "b5c6",
+              "move": "d8b7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "d8e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "d8c6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f1g2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f1f2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "f1e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f1g1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f1e1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "f7f8q",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "f7f8r",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "f7f8b",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.979
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "f7f8n",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.4615
+            }
+          ],
+          "3Q4/5P2/8/1k6/8/8/8/5K2 w": [
+            {
+              "enemyResponse": "b5c4",
+              "move": "d8h8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "d8g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "d8f8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b4",
+              "move": "d8e8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b4",
+              "move": "d8c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "d8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b6",
+              "move": "d8a8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "d8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "d8d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "d8c7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "d8f6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "d8d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b6",
+              "move": "d8b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b4",
+              "move": "d8g5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "d8d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a5",
+              "move": "d8a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "d8h4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "d8d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "d8d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "d8d2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "d8d1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b4",
+              "move": "f1g2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "f1f2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "f1e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "f1g1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "f1e1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "f7f8q",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "f7f8r",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "f7f8b",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "f7f8n",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            }
+          ],
+          "3R4/5P2/8/1k6/8/8/8/5K2 w": [
+            {
+              "enemyResponse": "b5c6",
+              "move": "d8h8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "d8g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "d8f8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "d8e8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "d8c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "d8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "d8a8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "d8d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a5",
+              "move": "d8d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "d8d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "d8d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b4",
+              "move": "d8d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b4",
+              "move": "d8d2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b4",
+              "move": "d8d1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b4",
+              "move": "f1g2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "f1f2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "f1e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "f1g1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "f1e1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "f7f8q",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "f7f8r",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "f7f8b",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "f7f8n",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            }
+          ],
+          "5B2/3P4/8/1k6/8/8/8/5K2 w": [
+            {
+              "enemyResponse": "b5b4",
+              "move": "f8g7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b6",
+              "move": "f8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b4",
+              "move": "f8h6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "f8d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "f8c5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b4",
+              "move": "f8b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f8a3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "f1g2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "f1f2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b6",
+              "move": "f1e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b6",
+              "move": "f1g1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "f1e1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "d7d8q",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "d7d8r",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "d7d8b",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.994
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "d7d8n",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.979
+            }
+          ],
+          "5N2/3P4/8/1k6/8/8/8/5K2 w": [
+            {
+              "enemyResponse": "b5a4",
+              "move": "f8h7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b6",
+              "move": "f8g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b4",
+              "move": "f8e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f1g2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f1f2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f1e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f1g1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "f1e1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "d7d8q",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "d7d8r",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "d7d8b",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9795
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "d7d8n",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.4615
+            }
+          ],
+          "5Q2/3P4/8/1k6/8/8/8/5K2 w": [
+            {
+              "enemyResponse": "b5b4",
+              "move": "f8h8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f8g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f8e8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "f8d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b4",
+              "move": "f8c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "f8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b6",
+              "move": "f8a8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "f8g7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f8f7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "f8h6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "f8f6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "f8d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "f8f5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "f8c5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "f8f4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b4",
+              "move": "f8b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f8f3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "f8a3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b4",
+              "move": "f8f2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f1g2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f1f2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f1e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f1g1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f1e1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "d7d8q",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "d7d8r",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "d7d8b",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "d7d8n",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            }
+          ],
+          "5R2/3P4/8/1k6/8/8/8/5K2 w": [
+            {
+              "enemyResponse": "b5c4",
+              "move": "f8h8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "f8g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "f8e8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "f8d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f8c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "f8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "f8a8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f8f7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "f8f6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b6",
+              "move": "f8f5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "f8f4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5a4",
+              "move": "f8f3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "f8f2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "f1g2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "f1f2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5b6",
+              "move": "f1e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "f1g1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "f1e1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "d7d8q",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c4",
+              "move": "d7d8r",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c6",
+              "move": "d7d8b",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b5c5",
+              "move": "d7d8n",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            }
+          ],
+          "8/3P1P2/1k6/8/8/8/8/5K2 w": [
+            {
+              "enemyResponse": "b6c7",
+              "move": "f1g2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b6c7",
+              "move": "f1f2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b6c7",
+              "move": "f1e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b6c7",
+              "move": "f1g1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b6c7",
+              "move": "f1e1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b6a5",
+              "move": "f7f8q",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b6c7",
+              "move": "f7f8r",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b6c7",
+              "move": "f7f8b",
+              "moveCorrectness": "correct",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "b6c7",
+              "move": "f7f8n",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b6c6",
+              "move": "d7d8q",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b6c5",
+              "move": "d7d8r",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b6b7",
+              "move": "d7d8b",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b6b5",
+              "move": "d7d8n",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            }
+          ]
+        }
+      },
+      "fen": "8/3P1P2/1k6/8/8/8/8/5K2 w - - 0 1",
+      "id": "21966ac4",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "d7d8q d7d8r",
+          "d8h8"
+        ],
+        "enemyMoves": [
+          "h7h6"
+        ],
+        "finalHighlight": "",
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [],
+        "incorrectSpeechBubbleContent": [],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "Promote your pawn and find checkmate.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/bb889010057722d18d2570d6b4f46969",
+            "visemes": "100\t0\t62\n118\t62\t62\n112\t125\t46\n105\t171\t54\n112\t226\t117\n105\t343\t46\n103\t390\t85\n105\t476\t132\n112\t609\t273\n105\t882\t46\n112\t929\t54\n105\t984\t54\n109\t1039\t125\n112\t1164\t140\n105\t1304\t78\n115\t1382\t125\n101\t1507\t70\n118\t1578\t78\n105\t1656\t62\n101\t1718\t132\n105\t1851\t140\n100\t1992\t210"
+          }
+        ],
+        "kcs": [
+          "checkmate, pawnPromotion"
+        ],
+        "moveEvaluationsForPositions": {
+          "3Q4/8/5K1k/8/8/8/8/8 w": [
+            {
+              "move": "d8h8",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h5",
+              "move": "d8g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h5",
+              "move": "d8f8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8e8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8a8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h5",
+              "move": "d8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h5",
+              "move": "d8d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h5",
+              "move": "d8c7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h5",
+              "move": "d8d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8d2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8d1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h5",
+              "move": "f6f7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6g5",
+              "move": "f6e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6g6",
+              "move": "f6e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6g7",
+              "move": "f6f5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6g7",
+              "move": "f6e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            }
+          ],
+          "3R4/8/5K1k/8/8/8/8/8 w": [
+            {
+              "move": "d8h8",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h5",
+              "move": "d8g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h5",
+              "move": "d8f8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8e8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8a8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h5",
+              "move": "d8d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8d2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6h7",
+              "move": "d8d1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6g5",
+              "move": "f6f7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6g5",
+              "move": "f6e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6g5",
+              "move": "f6e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6g7",
+              "move": "f6f5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h6g6",
+              "move": "f6e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            }
+          ],
+          "8/3P3k/5K2/8/8/8/8/8 w": [
+            {
+              "enemyResponse": "h7h6",
+              "move": "f6f7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h7g6",
+              "move": "f6e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h7g6",
+              "move": "f6e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h7g7",
+              "move": "f6g5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h7h6",
+              "move": "f6f5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h7g6",
+              "move": "f6e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h7h6",
+              "move": "d7d8q",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h7h6",
+              "move": "d7d8r",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h7g8",
+              "move": "d7d8b",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "h7h6",
+              "move": "d7d8n",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            }
+          ]
+        }
+      },
+      "fen": "8/3P3k/5K2/8/8/8/8/8 w - - 0 1",
+      "id": "b2ccdea2",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "e6e7",
+          "e7e8q e7e8r"
+        ],
+        "enemyMoves": [
+          "h6h5"
+        ],
+        "finalHighlight": "",
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [],
+        "incorrectSpeechBubbleContent": [],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "Promote your pawn and find checkmate.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/bb889010057722d18d2570d6b4f46969",
+            "visemes": "100\t0\t62\n118\t62\t62\n112\t125\t46\n105\t171\t54\n112\t226\t117\n105\t343\t46\n103\t390\t85\n105\t476\t132\n112\t609\t273\n105\t882\t46\n112\t929\t54\n105\t984\t54\n109\t1039\t125\n112\t1164\t140\n105\t1304\t78\n115\t1382\t125\n101\t1507\t70\n118\t1578\t78\n105\t1656\t62\n101\t1718\t132\n105\t1851\t140\n100\t1992\t210"
+          }
+        ],
+        "kcs": [
+          "checkmate, pawnPromotion"
+        ],
+        "moveEvaluationsForPositions": {
+          "6k1/4P1p1/6K1/7p/8/8/8/8 w": [
+            {
+              "enemyResponse": "g8f7",
+              "move": "g6h5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.4995
+            },
+            {
+              "enemyResponse": "g8f7",
+              "move": "g6g5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "g8f7",
+              "move": "g6f5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "move": "e7e8q",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "move": "e7e8r",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h5h4",
+              "move": "e7e8b",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "h5h4",
+              "move": "e7e8n",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            }
+          ],
+          "6k1/6p1/4P1Kp/8/8/8/8/8 w": [
+            {
+              "enemyResponse": "g8f8",
+              "move": "g6h5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "g8f8",
+              "move": "g6f5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "h6h5",
+              "move": "e6e7",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            }
+          ]
+        }
+      },
+      "fen": "6k1/6p1/4P1Kp/8/8/8/8/8 w - - 1 89",
+      "id": "747ba52a",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "d6d7",
+          "d7d8q d7d8r"
+        ],
+        "enemyMoves": [
+          "e8f8"
+        ],
+        "finalCorrectSpeechBubbleContent": {
+          "text": "Promote AND checkmate!",
+          "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/952fcbb4d44a0098f0eb7b19c16580f4",
+          "visemes": "105\t0\t70\n104\t70\t101\n107\t171\t62\n112\t234\t179\n105\t414\t70\n105\t484\t109\n101\t593\t187\n105\t781\t132\n105\t914\t78\n115\t992\t109\n101\t1101\t70\n118\t1171\t85\n107\t1257\t62\n101\t1320\t179\n105\t1500\t187"
+        },
+        "finalHighlight": "",
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [],
+        "incorrectSpeechBubbleContent": [],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "Promote your pawn and find checkmate.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/bb889010057722d18d2570d6b4f46969",
+            "visemes": "100\t0\t62\n118\t62\t62\n112\t125\t46\n105\t171\t54\n112\t226\t117\n105\t343\t46\n103\t390\t85\n105\t476\t132\n112\t609\t273\n105\t882\t46\n112\t929\t54\n105\t984\t54\n109\t1039\t125\n112\t1164\t140\n105\t1304\t78\n115\t1382\t125\n101\t1507\t70\n118\t1578\t78\n105\t1656\t62\n101\t1718\t132\n105\t1851\t140\n100\t1992\t210"
+          }
+        ],
+        "kcs": [
+          "checkmate, pawnPromotion"
+        ],
+        "moveEvaluationsForPositions": {
+          "4k3/2K2p2/p2P1P1p/1p4p1/8/1r6/6bP/8 w": [
+            {
+              "enemyResponse": "b3c3",
+              "move": "c7c8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8d7",
+              "move": "c7b8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8d7",
+              "move": "c7b6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8f8",
+              "move": "d6d7",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b3c3",
+              "move": "h2h3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "b3c3",
+              "move": "h2h4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            }
+          ],
+          "5k2/2KP1p2/p4P1p/1p4p1/8/1r6/6bP/8 w": [
+            {
+              "enemyResponse": "b5b4",
+              "move": "c7d8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "b3c3",
+              "move": "c7c8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "b3d3",
+              "move": "c7b8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "b3d3",
+              "move": "c7d6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "b3d3",
+              "move": "c7b6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "move": "d7d8q",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "move": "d7d8r",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f8g8",
+              "move": "d7d8b",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "b3c3",
+              "move": "d7d8n",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "b3d3",
+              "move": "h2h3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "b3d3",
+              "move": "h2h4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            }
+          ]
+        }
+      },
+      "fen": "4k3/2K2p2/p2P1P1p/1p4p1/8/1r6/6bP/8 w - - 0 41",
+      "id": "a4eb4e7c",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "e1e8",
+          "d7e8q d7e8r"
+        ],
+        "enemyMoves": [
+          "d8e8"
+        ],
+        "finalHighlight": "",
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [],
+        "incorrectSpeechBubbleContent": [],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "Promote your pawn and find checkmate.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/bb889010057722d18d2570d6b4f46969",
+            "visemes": "100\t0\t62\n118\t62\t62\n112\t125\t46\n105\t171\t54\n112\t226\t117\n105\t343\t46\n103\t390\t85\n105\t476\t132\n112\t609\t273\n105\t882\t46\n112\t929\t54\n105\t984\t54\n109\t1039\t125\n112\t1164\t140\n105\t1304\t78\n115\t1382\t125\n101\t1507\t70\n118\t1578\t78\n105\t1656\t62\n101\t1718\t132\n105\t1851\t140\n100\t1992\t210"
+          }
+        ],
+        "kcs": [
+          "checkmate, pawnPromotion"
+        ],
+        "moveEvaluationsForPositions": {
+          "3r2k1/3P1ppp/8/p7/8/8/5P1P/4R1K1 w": [
+            {
+              "enemyResponse": "g8f8",
+              "move": "g1g2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.48
+            },
+            {
+              "enemyResponse": "g8f8",
+              "move": "g1h1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.4775
+            },
+            {
+              "enemyResponse": "g8f8",
+              "move": "g1f1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.479
+            },
+            {
+              "enemyResponse": "d8e8",
+              "move": "e1e8",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g8f8",
+              "move": "e1e7",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.479
+            },
+            {
+              "enemyResponse": "f7e6",
+              "move": "e1e6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "g8f8",
+              "move": "e1e5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.4815
+            },
+            {
+              "enemyResponse": "g8f8",
+              "move": "e1e4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.48
+            },
+            {
+              "enemyResponse": "g8f8",
+              "move": "e1e3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.4725
+            },
+            {
+              "enemyResponse": "g8f8",
+              "move": "e1e2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.4775
+            },
+            {
+              "enemyResponse": "d8d7",
+              "move": "e1f1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.002
+            },
+            {
+              "enemyResponse": "f7f6",
+              "move": "e1d1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.48
+            },
+            {
+              "enemyResponse": "g8f8",
+              "move": "e1c1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.48
+            },
+            {
+              "enemyResponse": "f7f6",
+              "move": "e1b1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.4775
+            },
+            {
+              "enemyResponse": "d8d7",
+              "move": "e1a1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.4815
+            },
+            {
+              "enemyResponse": "g8f8",
+              "move": "h2h3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.479
+            },
+            {
+              "enemyResponse": "g8f8",
+              "move": "f2f3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.463
+            },
+            {
+              "enemyResponse": "g8f8",
+              "move": "h2h4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.4835
+            },
+            {
+              "enemyResponse": "g8f8",
+              "move": "f2f4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0175
+            }
+          ],
+          "4r1k1/3P1ppp/8/p7/8/8/5P1P/6K1 w": [
+            {
+              "enemyResponse": "e8d8",
+              "move": "g1g2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8d8",
+              "move": "g1h1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8d8",
+              "move": "g1f1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "move": "d7e8q",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "move": "d7e8r",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f7f5",
+              "move": "d7e8b",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5605
+            },
+            {
+              "enemyResponse": "a5a4",
+              "move": "d7e8n",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8d8",
+              "move": "d7d8q",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8d8",
+              "move": "d7d8r",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8d8",
+              "move": "d7d8b",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8d8",
+              "move": "d7d8n",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8d8",
+              "move": "h2h3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8d8",
+              "move": "f2f3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8d8",
+              "move": "h2h4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8d8",
+              "move": "f2f4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            }
+          ]
+        }
+      },
+      "fen": "3r2k1/3P1ppp/8/p7/8/8/5P1P/4R1K1 w - - 0 35",
+      "id": "12652d0e",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "f1f8",
+          "e7f8q e7f8r"
+        ],
+        "enemyMoves": [
+          "b8f8"
+        ],
+        "finalHighlight": "",
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [
+          "e7e8q"
+        ],
+        "incorrectSpeechBubbleContent": [
+          {
+            "text": "HA YOU FELL FOR IT! I'll capture your queen.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/2bf7f72d747586bf1087e5416762f7bd",
+            "visemes": "102\t0\t101\n112\t101\t226\n103\t328\t132\n104\t460\t54\n109\t515\t171\n112\t687\t140\n109\t828\t132\n112\t960\t132\n105\t1093\t289\n100\t1382\t304\n112\t1687\t140\n118\t1828\t125\n112\t1953\t70\n105\t2023\t70\n115\t2093\t85\n103\t2179\t140\n112\t2320\t117\n118\t2437\t85\n104\t2523\t70\n101\t2593\t140\n105\t2734\t226\n100\t2960\t132"
+          }
+        ],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "Promote your pawn and find checkmate.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/bb889010057722d18d2570d6b4f46969",
+            "visemes": "100\t0\t62\n118\t62\t62\n112\t125\t46\n105\t171\t54\n112\t226\t117\n105\t343\t46\n103\t390\t85\n105\t476\t132\n112\t609\t273\n105\t882\t46\n112\t929\t54\n105\t984\t54\n109\t1039\t125\n112\t1164\t140\n105\t1304\t78\n115\t1382\t125\n101\t1507\t70\n118\t1578\t78\n105\t1656\t62\n101\t1718\t132\n105\t1851\t140\n100\t1992\t210"
+          }
+        ],
+        "kcs": [
+          "checkmate, pawnPromotion"
+        ],
+        "moveEvaluationsForPositions": {
+          "1r5k/b3P1p1/p5Pp/8/8/1p4P1/2r4P/5R1K w": [
+            {
+              "enemyResponse": "b8f8",
+              "move": "f1f8",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "a7c5",
+              "move": "f1f7",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "g7f6",
+              "move": "f1f6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "a7c5",
+              "move": "f1f5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "a7c5",
+              "move": "f1f4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c2c8",
+              "move": "f1f3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c2f2",
+              "move": "f1f2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "a7g1",
+              "move": "f1g1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "b8e8",
+              "move": "f1e1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c2c8",
+              "move": "f1d1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c2c1",
+              "move": "f1c1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "b3b2",
+              "move": "f1b1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "b3b2",
+              "move": "f1a1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "b8e8",
+              "move": "e7e8q",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "b8e8",
+              "move": "e7e8r",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "b8e8",
+              "move": "e7e8b",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "b8e8",
+              "move": "e7e8n",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "a7c5",
+              "move": "g3g4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "a7c5",
+              "move": "h2h3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "a7c5",
+              "move": "h2h4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            }
+          ],
+          "5r1k/b3P1p1/p5Pp/8/8/1p4P1/2r4P/7K w": [
+            {
+              "move": "e7f8q",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "move": "e7f8r",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b3b2",
+              "move": "e7f8b",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "b3b2",
+              "move": "e7f8n",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "f8e8",
+              "move": "e7e8q",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "f8e8",
+              "move": "e7e8r",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "f8f1",
+              "move": "e7e8b",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "f8f1",
+              "move": "e7e8n",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "f8f1",
+              "move": "g3g4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "f8f1",
+              "move": "h2h3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "f8f1",
+              "move": "h2h4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            }
+          ]
+        }
+      },
+      "fen": "1r5k/b3P1p1/p5Pp/8/8/1p4P1/2r4P/5R1K w - - 0 36",
+      "id": "f0a7a213",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "c5c2"
+        ],
+        "enemyMoves": [],
+        "finalHighlight": "",
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [],
+        "incorrectSpeechBubbleContent": [],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "Now, defend against my pawn promotions.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/e94f265a29f11ee27b01d90fa21d8ea0",
+            "visemes": "105\t0\t101\n112\t101\t312\n107\t414\t164\n105\t578\t85\n101\t664\t54\n109\t718\t125\n101\t843\t93\n105\t937\t117\n105\t1054\t101\n101\t1156\t78\n105\t1234\t39\n113\t1273\t85\n105\t1359\t85\n101\t1445\t109\n107\t1554\t101\n112\t1656\t140\n105\t1796\t117\n105\t1914\t125\n112\t2039\t109\n115\t2148\t93\n103\t2242\t54\n105\t2296\t93\n113\t2390\t218\n100\t2609\t148"
+          }
+        ],
+        "kcs": [
+          "pawnPromotion"
+        ],
+        "moveEvaluationsForPositions": {
+          "8/8/8/2R2K1k/8/8/2p5/8 w": [
+            {
+              "enemyResponse": "h5g4",
+              "move": "f5f6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "h5g4",
+              "move": "f5e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h5g4",
+              "move": "f5e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h5g6",
+              "move": "f5f4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "h5g6",
+              "move": "f5e4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h5h4",
+              "move": "c5c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h5h4",
+              "move": "c5c7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "h5h4",
+              "move": "c5c6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "c2c1q",
+              "move": "c5e5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.015
+            },
+            {
+              "enemyResponse": "c2c1q",
+              "move": "c5d5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0315
+            },
+            {
+              "enemyResponse": "c2c1q",
+              "move": "c5b5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0265
+            },
+            {
+              "enemyResponse": "c2c1q",
+              "move": "c5a5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.035
+            },
+            {
+              "enemyResponse": "h5h6",
+              "move": "c5c4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h5h4",
+              "move": "c5c3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h5h6",
+              "move": "c5c2",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            }
+          ]
+        }
+      },
+      "fen": "8/8/8/2R2K1k/8/8/2p5/8 w - - 0 1",
+      "id": "0492bc86",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "c7c8q",
+          "c8c1"
+        ],
+        "enemyMoves": [
+          "c2c1q"
+        ],
+        "finalHighlight": "",
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [],
+        "incorrectSpeechBubbleContent": [],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "Now, defend against my pawn promotions.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/e94f265a29f11ee27b01d90fa21d8ea0",
+            "visemes": "105\t0\t101\n112\t101\t312\n107\t414\t164\n105\t578\t85\n101\t664\t54\n109\t718\t125\n101\t843\t93\n105\t937\t117\n105\t1054\t101\n101\t1156\t78\n105\t1234\t39\n113\t1273\t85\n105\t1359\t85\n101\t1445\t109\n107\t1554\t101\n112\t1656\t140\n105\t1796\t117\n105\t1914\t125\n112\t2039\t109\n115\t2148\t93\n103\t2242\t54\n105\t2296\t93\n113\t2390\t218\n100\t2609\t148"
+          }
+        ],
+        "kcs": [
+          "pawnPromotion"
+        ],
+        "moveEvaluationsForPositions": {
+          "2Q5/8/5k2/8/8/8/6K1/2q5 w": [
+            {
+              "enemyResponse": "f6f5",
+              "move": "c8h8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "c1d2",
+              "move": "c8g8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "f6e5",
+              "move": "c8f8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "f6f5",
+              "move": "c8e8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "f6e5",
+              "move": "c8d8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "c1c2",
+              "move": "c8b8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "c1c2",
+              "move": "c8a8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "c1g5",
+              "move": "c8d7",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "c1c7",
+              "move": "c8c7",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1d2",
+              "move": "c8b7",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "f6e6",
+              "move": "c8e6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1c6",
+              "move": "c8c6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "f6f5",
+              "move": "c8a6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "f6f5",
+              "move": "c8f5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1c5",
+              "move": "c8c5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "f6e5",
+              "move": "c8g4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "c1c4",
+              "move": "c8c4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1d2",
+              "move": "c8h3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "c1c3",
+              "move": "c8c3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1c2",
+              "move": "c8c2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "f6e5",
+              "move": "c8c1",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "c1c8",
+              "move": "g2h3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1c8",
+              "move": "g2g3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1c8",
+              "move": "g2f3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1c8",
+              "move": "g2h2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1c8",
+              "move": "g2f2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            }
+          ],
+          "8/2P5/5k2/8/8/8/2p3K1/8 w": [
+            {
+              "enemyResponse": "c2c1q",
+              "move": "g2h3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c2c1q",
+              "move": "g2g3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c2c1q",
+              "move": "g2f3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c2c1q",
+              "move": "g2h2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c2c1q",
+              "move": "g2f2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c2c1q",
+              "move": "g2h1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c2c1q",
+              "move": "g2g1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c2c1q",
+              "move": "g2f1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "f6e5",
+              "move": "c7c8q",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f6e5",
+              "move": "c7c8r",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.999
+            },
+            {
+              "enemyResponse": "c2c1q",
+              "move": "c7c8b",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c2c1q",
+              "move": "c7c8n",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            }
+          ]
+        }
+      },
+      "fen": "8/2P5/5k2/8/8/8/2p3K1/8 w - - 0 1",
+      "id": "2d665625",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "e5c5 e5e1",
+          "e1c1 c5c1"
+        ],
+        "enemyMoves": [
+          "c2c1q"
+        ],
+        "finalCorrectSpeechBubbleContent": {
+          "text": "Now I should get promoted.",
+          "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/08ee69dc93ae309146b2b4f417cfd273",
+          "visemes": "105\t0\t101\n112\t101\t203\n104\t304\t85\n112\t390\t54\n115\t445\t125\n101\t570\t78\n105\t648\t39\n118\t687\t70\n101\t757\t78\n107\t835\t117\n104\t953\t70\n105\t1023\t54\n112\t1078\t125\n105\t1203\t54\n101\t1257\t85\n105\t1343\t156\n100\t1500\t109"
+        },
+        "finalHighlight": "",
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [
+          "e5e2"
+        ],
+        "incorrectSpeechBubbleContent": [
+          {
+            "text": "My pawn can promote and escape your rook.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/15fcb09dd089ef8f10ee6bd14cbf48ac",
+            "visemes": "107\t0\t109\n101\t109\t140\n105\t250\t125\n114\t375\t54\n101\t429\t179\n105\t609\t179\n101\t789\t39\n105\t828\t117\n105\t945\t132\n112\t1078\t156\n105\t1234\t93\n101\t1328\t62\n105\t1390\t101\n113\t1492\t140\n107\t1632\t46\n101\t1679\t156\n105\t1835\t140\n112\t1976\t117\n107\t2093\t78\n112\t2171\t148\n105\t2320\t195\n100\t2515\t164"
+          }
+        ],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "Now, defend against my pawn promotions.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/e94f265a29f11ee27b01d90fa21d8ea0",
+            "visemes": "105\t0\t101\n112\t101\t312\n107\t414\t164\n105\t578\t85\n101\t664\t54\n109\t718\t125\n101\t843\t93\n105\t937\t117\n105\t1054\t101\n101\t1156\t78\n105\t1234\t39\n113\t1273\t85\n105\t1359\t85\n101\t1445\t109\n107\t1554\t101\n112\t1656\t140\n105\t1796\t117\n105\t1914\t125\n112\t2039\t109\n115\t2148\t93\n103\t2242\t54\n105\t2296\t93\n113\t2390\t218\n100\t2609\t148"
+          }
+        ],
+        "kcs": [
+          "pawnPromotion"
+        ],
+        "moveEvaluationsForPositions": {
+          "8/8/8/2R2K1k/8/8/8/2q5 w": [
+            {
+              "enemyResponse": "c1c5",
+              "move": "f5f6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1c5",
+              "move": "f5e6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1c5",
+              "move": "f5e5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1c5",
+              "move": "f5e4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1c8",
+              "move": "c5c8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1c7",
+              "move": "c5c7",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1c6",
+              "move": "c5c6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1c6",
+              "move": "c5e5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.09
+            },
+            {
+              "enemyResponse": "c1c6",
+              "move": "c5d5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0655
+            },
+            {
+              "enemyResponse": "c1g5",
+              "move": "c5b5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1g5",
+              "move": "c5a5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1c4",
+              "move": "c5c4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1c3",
+              "move": "c5c3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1c2",
+              "move": "c5c2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "h5h6",
+              "move": "c5c1",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            }
+          ],
+          "8/8/8/4RK1k/8/8/2p5/8 w": [
+            {
+              "enemyResponse": "h5g4",
+              "move": "f5f6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.997
+            },
+            {
+              "enemyResponse": "h5g4",
+              "move": "f5e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9355
+            },
+            {
+              "enemyResponse": "h5g6",
+              "move": "f5f4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.999
+            },
+            {
+              "enemyResponse": "h5g6",
+              "move": "f5e4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "c2c1q",
+              "move": "e5e8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "c2c1q",
+              "move": "e5e7",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "c2c1q",
+              "move": "e5e6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0325
+            },
+            {
+              "enemyResponse": "c2c1q",
+              "move": "e5d5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0315
+            },
+            {
+              "enemyResponse": "h5h6",
+              "move": "e5c5",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "c2c1q",
+              "move": "e5b5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0265
+            },
+            {
+              "enemyResponse": "c2c1q",
+              "move": "e5a5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.035
+            },
+            {
+              "enemyResponse": "c2c1q",
+              "move": "e5e4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0375
+            },
+            {
+              "enemyResponse": "h5h4",
+              "move": "e5e3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "h5h4",
+              "move": "e5e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.996
+            },
+            {
+              "enemyResponse": "h5h4",
+              "move": "e5e1",
+              "moveCorrectness": "correct",
+              "wdl": 0.799
+            }
+          ],
+          "8/8/8/5K1k/8/8/8/2q1R3 w": [
+            {
+              "enemyResponse": "c1e1",
+              "move": "f5f6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1e1",
+              "move": "f5e6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1e1",
+              "move": "f5e5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1e1",
+              "move": "f5e4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1f1",
+              "move": "e1e8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.105
+            },
+            {
+              "enemyResponse": "c1g5",
+              "move": "e1e7",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0355
+            },
+            {
+              "enemyResponse": "c1f1",
+              "move": "e1e6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.055
+            },
+            {
+              "enemyResponse": "c1c6",
+              "move": "e1e5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.09
+            },
+            {
+              "enemyResponse": "c1g5",
+              "move": "e1e4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0505
+            },
+            {
+              "enemyResponse": "c1e3",
+              "move": "e1e3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1f1",
+              "move": "e1e2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1h1",
+              "move": "e1h1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1g1",
+              "move": "e1g1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1f1",
+              "move": "e1f1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c1d1",
+              "move": "e1d1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "h5h6",
+              "move": "e1c1",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            }
+          ]
+        }
+      },
+      "fen": "8/8/8/4RK1k/8/8/2p5/8 w - - 0 1",
+      "id": "d9ee5942",
+      "type": "normal"
+    }
+  ],
+  "courseId": "CHESS_CH",
+  "metadata": {
+    "chessJson": "{\"contentId\":\"Skill:pawnPromotion\",\"type\":\"CHESS_LESSON\"}",
+    "progressActionJson": "{\"type\":\"chess_lesson\",\"body\":{\"curriculumNodeId\":\"Skill:pawnPromotion\"}}"
+  },
+  "trackingProperties": {
+    "activity_uuid": "b2989502-4d9f-4693-bf31-4476c213e507"
+  },
+  "fromLanguage": "en"
+}

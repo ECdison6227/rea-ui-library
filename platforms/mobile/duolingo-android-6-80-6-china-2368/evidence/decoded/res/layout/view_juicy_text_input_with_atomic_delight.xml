@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.duolingo.core.design.juicy.ui.JuicyTextInput android:gravity="top" android:id="@id/textInput" android:layout_width="match_parent" android:layout_height="match_parent" android:minLines="1" android:inputType="textCapSentences|textMultiLine" app:styleDisabledState="false" style="@style/OutlineInput" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="start|top" android:id="@id/sparkleTopStart" android:visibility="gone" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginTop="8.0dp" android:src="@drawable/atomic_delight_sparkle" android:scaleX="0.0" android:scaleY="0.0" android:layout_marginStart="9.0dp" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|bottom" android:id="@id/sparkleBottomEnd1" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginBottom="@dimen/duoSpacing12" android:src="@drawable/atomic_delight_sparkle" android:scaleX="0.0" android:scaleY="0.0" android:layout_marginEnd="@dimen/duoSpacing32" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|bottom" android:id="@id/sparkleBottomEnd2" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginBottom="@dimen/duoSpacing32" android:src="@drawable/atomic_delight_sparkle" android:scaleX="0.0" android:scaleY="0.0" android:layout_marginEnd="@dimen/duoSpacing12" />
+</FrameLayout>

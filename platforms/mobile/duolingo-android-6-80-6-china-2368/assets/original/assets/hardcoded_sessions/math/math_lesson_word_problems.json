@@ -1,0 +1,1562 @@
+{
+  "id": "hardcoded_math_lesson_word_problems",
+  "fromLanguage": "en",
+  "type": "MATH_LESSON",
+  "metadata": {
+    "id": "shD17owuiZ1n587v",
+    "type": "math_lesson"
+  },
+  "challenges": [
+    {
+      "id": "math-token-drag-0",
+      "type": "mathWordProblemTokenDrag",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Help Eddy"
+          },
+          "body": {
+            "underlyingEntity": {
+              "noEntity": {}
+            },
+            "taggedTextElement": {
+              "text": "What is <b>9 g</b> + <b>6 g</b>?"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "staticFeedback": {
+              "gradingFeedback": {
+                "underlyingEntity": {
+                  "noEntity": {}
+                },
+                "mathSequenceElement": {
+                  "elements": [
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "Correct Answer: "
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "15 g"
+                      }
+                    }
+                  ],
+                  "orientation": "ORIENTATION_UNKNOWN"
+                }
+              }
+            }
+          }
+        },
+        "input": {
+          "tokenDragInput": {
+            "placeholderText": {
+              "text": "DRAG HERE"
+            },
+            "dragChoices": [
+              {
+                "underlyingEntity": {
+                  "entity": {
+                    "withUnit": {
+                      "entity": {
+                        "integer": {
+                          "integer": 1
+                        }
+                      },
+                      "massEntityUnit": {
+                        "massUnit": "MASS_GRAMS"
+                      }
+                    }
+                  }
+                },
+                "labeledAssetElement": {
+                  "assetElement": {
+                    "baseLightUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_1_base_light.svg",
+                    "selectedLightUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_1_selected_light.svg",
+                    "correctLightUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_1_correct_light.svg",
+                    "incorrectLightUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_1_incorrect_light.svg",
+                    "disabledLightUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_1_disabled_light.svg",
+                    "baseDarkUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_1_base_dark.svg",
+                    "selectedDarkUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_1_selected_dark.svg",
+                    "correctDarkUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_1_correct_dark.svg",
+                    "incorrectDarkUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_1_incorrect_dark.svg",
+                    "disabledDarkUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_1_disabled_dark.svg",
+                    "accessibilityLabel": "",
+                    "width": 100,
+                    "height": 70
+                  },
+                  "labelElement": {
+                    "fillColorBaseLight": "#ffffff",
+                    "fillColorSelectedLight": "#ffffff",
+                    "fillColorCorrectLight": "#ffffff",
+                    "fillColorIncorrectLight": "#ffffff",
+                    "fillColorDisabledLight": "#afafaf",
+                    "fillColorBaseDark": "#131f24",
+                    "fillColorSelectedDark": "#131f24",
+                    "fillColorCorrectDark": "#131f24",
+                    "fillColorIncorrectDark": "#131f24",
+                    "fillColorDisabledDark": "#131f24",
+                    "strokeColorBaseLight": "#000000",
+                    "strokeColorSelectedLight": "#000000",
+                    "strokeColorCorrectLight": "#000000",
+                    "strokeColorIncorrectLight": "#000000",
+                    "strokeColorDisabledLight": "#000000",
+                    "strokeColorBaseDark": "#000000",
+                    "strokeColorSelectedDark": "#000000",
+                    "strokeColorCorrectDark": "#000000",
+                    "strokeColorIncorrectDark": "#000000",
+                    "strokeColorDisabledDark": "#000000",
+                    "strokeWidth": 0,
+                    "fontSize": 24
+                  },
+                  "labelXLeftOffsetPercent": 50,
+                  "labelYTopOffsetPercent": 60,
+                  "labelText": "1 g"
+                }
+              },
+              {
+                "underlyingEntity": {
+                  "entity": {
+                    "withUnit": {
+                      "entity": {
+                        "integer": {
+                          "integer": 5
+                        }
+                      },
+                      "massEntityUnit": {
+                        "massUnit": "MASS_GRAMS"
+                      }
+                    }
+                  }
+                },
+                "labeledAssetElement": {
+                  "assetElement": {
+                    "baseLightUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_2_base_light.svg",
+                    "selectedLightUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_2_selected_light.svg",
+                    "correctLightUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_2_correct_light.svg",
+                    "incorrectLightUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_2_incorrect_light.svg",
+                    "disabledLightUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_2_disabled_light.svg",
+                    "baseDarkUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_2_base_dark.svg",
+                    "selectedDarkUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_2_selected_dark.svg",
+                    "correctDarkUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_2_correct_dark.svg",
+                    "incorrectDarkUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_2_incorrect_dark.svg",
+                    "disabledDarkUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_2_disabled_dark.svg",
+                    "accessibilityLabel": "",
+                    "width": 100,
+                    "height": 83
+                  },
+                  "labelElement": {
+                    "fillColorBaseLight": "#ffffff",
+                    "fillColorSelectedLight": "#ffffff",
+                    "fillColorCorrectLight": "#ffffff",
+                    "fillColorIncorrectLight": "#ffffff",
+                    "fillColorDisabledLight": "#afafaf",
+                    "fillColorBaseDark": "#131f24",
+                    "fillColorSelectedDark": "#131f24",
+                    "fillColorCorrectDark": "#131f24",
+                    "fillColorIncorrectDark": "#131f24",
+                    "fillColorDisabledDark": "#131f24",
+                    "strokeColorBaseLight": "#000000",
+                    "strokeColorSelectedLight": "#000000",
+                    "strokeColorCorrectLight": "#000000",
+                    "strokeColorIncorrectLight": "#000000",
+                    "strokeColorDisabledLight": "#000000",
+                    "strokeColorBaseDark": "#000000",
+                    "strokeColorSelectedDark": "#000000",
+                    "strokeColorCorrectDark": "#000000",
+                    "strokeColorIncorrectDark": "#000000",
+                    "strokeColorDisabledDark": "#000000",
+                    "strokeWidth": 0,
+                    "fontSize": 24
+                  },
+                  "labelXLeftOffsetPercent": 50,
+                  "labelYTopOffsetPercent": 60,
+                  "labelText": "5 g"
+                }
+              },
+              {
+                "underlyingEntity": {
+                  "entity": {
+                    "withUnit": {
+                      "entity": {
+                        "integer": {
+                          "integer": 10
+                        }
+                      },
+                      "massEntityUnit": {
+                        "massUnit": "MASS_GRAMS"
+                      }
+                    }
+                  }
+                },
+                "labeledAssetElement": {
+                  "assetElement": {
+                    "baseLightUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_3_base_light.svg",
+                    "selectedLightUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_3_selected_light.svg",
+                    "correctLightUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_3_correct_light.svg",
+                    "incorrectLightUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_3_incorrect_light.svg",
+                    "disabledLightUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_3_disabled_light.svg",
+                    "baseDarkUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_3_base_dark.svg",
+                    "selectedDarkUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_3_selected_dark.svg",
+                    "correctDarkUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_3_correct_dark.svg",
+                    "incorrectDarkUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_3_incorrect_dark.svg",
+                    "disabledDarkUrl": "https://math-cdn.duolingo.com/assets/mass_drag/mass_3_disabled_dark.svg",
+                    "accessibilityLabel": "",
+                    "width": 100,
+                    "height": 90
+                  },
+                  "labelElement": {
+                    "fillColorBaseLight": "#ffffff",
+                    "fillColorSelectedLight": "#ffffff",
+                    "fillColorCorrectLight": "#ffffff",
+                    "fillColorIncorrectLight": "#ffffff",
+                    "fillColorDisabledLight": "#afafaf",
+                    "fillColorBaseDark": "#131f24",
+                    "fillColorSelectedDark": "#131f24",
+                    "fillColorCorrectDark": "#131f24",
+                    "fillColorIncorrectDark": "#131f24",
+                    "fillColorDisabledDark": "#131f24",
+                    "strokeColorBaseLight": "#000000",
+                    "strokeColorSelectedLight": "#000000",
+                    "strokeColorCorrectLight": "#000000",
+                    "strokeColorIncorrectLight": "#000000",
+                    "strokeColorDisabledLight": "#000000",
+                    "strokeColorBaseDark": "#000000",
+                    "strokeColorSelectedDark": "#000000",
+                    "strokeColorCorrectDark": "#000000",
+                    "strokeColorIncorrectDark": "#000000",
+                    "strokeColorDisabledDark": "#000000",
+                    "strokeWidth": 0,
+                    "fontSize": 24
+                  },
+                  "labelXLeftOffsetPercent": 50,
+                  "labelYTopOffsetPercent": 60,
+                  "labelText": "10 g"
+                }
+              }
+            ],
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [
+                    {
+                      "exactAnswer": {
+                        "withUnit": {
+                          "entity": {
+                            "integer": {
+                              "integer": 15
+                            }
+                          },
+                          "massEntityUnit": {
+                            "massUnit": "MASS_GRAMS"
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "intervalGrading": []
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": false,
+              "answersMustBeOrdered": false
+            },
+            "alignment": "ALIGNMENT_BOTTOM"
+          }
+        }
+      },
+      "noHint": {},
+      "metadata": {
+        "specific_type": "word_problem_token_drag"
+      }
+    },
+    {
+      "id": "rive-pizza-0",
+      "type": "mathWordProblemRiveInteractive",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Help Lily"
+          },
+          "body": {
+            "underlyingEntity": {
+              "noEntity": {}
+            },
+            "characterSpeechElement": {
+              "text": {
+                "text": "What’s half of 1?"
+              },
+              "accessibilityLabel": "",
+              "worldCharacter": "LILY",
+              "wordProblemType": "ONELINER",
+              "exerciseType": "WORD_PROBLEM_EXERCISE_TYPE_PIZZA_INTERACTIVE",
+              "wordProblemTopics": [
+                "Fractions"
+              ]
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "staticFeedback": {
+              "gradingFeedback": {
+                "underlyingEntity": {
+                  "noEntity": {}
+                },
+                "mathSequenceElement": {
+                  "elements": [
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "Correct Answer: "
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "6 in"
+                      }
+                    }
+                  ],
+                  "orientation": "ORIENTATION_UNKNOWN"
+                }
+              }
+            }
+          }
+        },
+        "input": {
+          "riveInput": {
+            "riveType": {
+              "url": "https://math-cdn.duolingo.com/assets/rive/contextual_fraction_pie_fill.riv"
+            },
+            "artboard": "pie_chart",
+            "inputArtboard": "pie_chart",
+            "stateMachine": "frac_int_contextual_statemachine",
+            "configuration": {},
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [
+                    {
+                      "exactAnswer": {
+                        "rational": {
+                          "numerator": 3,
+                          "denominator": 6
+                        }
+                      }
+                    }
+                  ],
+                  "intervalGrading": []
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": false,
+              "answersMustBeOrdered": false,
+              "feedback": {
+                "noFeedback": {}
+              }
+            },
+            "width": 300,
+            "height": 200,
+            "answerFormat": {
+              "partsFillAnswer": {
+                "answerFields": [
+                  "prnt_pc_01_active_bool",
+                  "prnt_pc_02_active_bool",
+                  "prnt_pc_03_active_bool",
+                  "prnt_pc_04_active_bool",
+                  "prnt_pc_05_active_bool",
+                  "prnt_pc_06_active_bool"
+                ],
+                "accessibilitySelect": "select next piece",
+                "accessibilityDeselect": "unselect last piece"
+              }
+            },
+            "boolConfiguration": {},
+            "numberConfiguration": {
+              "food_type_num": 1.0,
+              "fraction_type_num": 6.0
+            },
+            "textConfiguration": {},
+            "nestedArtBoards": []
+          }
+        }
+      },
+      "noHint": {}
+    },
+    {
+      "id": "rive-thermometer-0",
+      "type": "mathWordProblemRiveInteractive",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Help Lily"
+          },
+          "body": {
+            "underlyingEntity": {
+              "noEntity": {}
+            },
+            "characterSpeechElement": {
+              "text": {
+                "text": "What’s 2\u003cspan\u003eº\u003c/span\u003e more than 4\u003cspan\u003eº\u003c/span\u003e?"
+              },
+              "accessibilityLabel": "",
+              "worldCharacter": "LILY",
+              "wordProblemType": "ONELINER",
+              "exerciseType": "WORD_PROBLEM_EXERCISE_TYPE_TEMP_INTERACTIVE",
+              "wordProblemTopics": [
+                "Add"
+              ]
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "staticFeedback": {
+              "gradingFeedback": {
+                "underlyingEntity": {
+                  "noEntity": {}
+                },
+                "mathSequenceElement": {
+                  "elements": [
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "Correct Answer: "
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "6 in"
+                      }
+                    }
+                  ],
+                  "orientation": "ORIENTATION_UNKNOWN"
+                }
+              }
+            }
+          }
+        },
+        "input": {
+          "riveInput": {
+            "riveType": {
+              "url": "https://math-cdn.duolingo.com/assets/rive/thermometer_slider.riv"
+            },
+            "artboard": "thermometer_artboard",
+            "inputArtboard": "thermometer_artboard",
+            "stateMachine": "thermometer_int_statemachine",
+            "configuration": {},
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [
+                    {
+                      "exactAnswer": {
+                        "integer": {
+                          "integer": 6
+                        }
+                      }
+                    }
+                  ],
+                  "intervalGrading": []
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": false,
+              "answersMustBeOrdered": false
+            },
+            "width": 540,
+            "height": 306,
+            "answerFormat": {
+              "numberLineAnswer": {
+                "answerField": "final_answer_num",
+                "notchValues": {
+                  "0": {
+                    "rational": {
+                      "numerator": 0,
+                      "denominator": 2
+                    }
+                  },
+                  "1": {
+                    "rational": {
+                      "numerator": 2,
+                      "denominator": 2
+                    }
+                  },
+                  "10": {
+                    "rational": {
+                      "numerator": 4,
+                      "denominator": 2
+                    }
+                  },
+                  "11": {
+                    "rational": {
+                      "numerator": 6,
+                      "denominator": 2
+                    }
+                  },
+                  "20": {
+                    "rational": {
+                      "numerator": 8,
+                      "denominator": 2
+                    }
+                  },
+                  "21": {
+                    "rational": {
+                      "numerator": 10,
+                      "denominator": 2
+                    }
+                  },
+                  "30": {
+                    "rational": {
+                      "numerator": 12,
+                      "denominator": 2
+                    }
+                  },
+                  "31": {
+                    "rational": {
+                      "numerator": 14,
+                      "denominator": 2
+                    }
+                  },
+                  "40": {
+                    "rational": {
+                      "numerator": 16,
+                      "denominator": 2
+                    }
+                  },
+                  "41": {
+                    "rational": {
+                      "numerator": 18,
+                      "denominator": 2
+                    }
+                  },
+                  "50": {
+                    "rational": {
+                      "numerator": 20,
+                      "denominator": 2
+                    }
+                  },
+                  "51": {
+                    "rational": {
+                      "numerator": 22,
+                      "denominator": 2
+                    }
+                  },
+                  "60": {
+                    "rational": {
+                      "numerator": 24,
+                      "denominator": 2
+                    }
+                  }
+                },
+                "accessibilityNextValue": "the next value on the ruler",
+                "accessibilityPrevValue": "the previous value on the ruler"
+              }
+            },
+            "boolConfiguration": {},
+            "numberConfiguration": {
+              "secondary_notches_num": 1,
+              "notch_variation_num": 1
+            },
+            "textConfiguration": {},
+            "nestedArtBoards": [
+              {
+                "artboardPath": "0_num",
+                "boolConfiguration": {},
+                "numberConfiguration": {
+                  "num_input_num": 0
+                }
+              },
+              {
+                "artboardPath": "1_num",
+                "boolConfiguration": {},
+                "numberConfiguration": {
+                  "num_input_num": 2
+                }
+              },
+              {
+                "artboardPath": "2_num",
+                "boolConfiguration": {},
+                "numberConfiguration": {
+                  "num_input_num": 4
+                }
+              },
+              {
+                "artboardPath": "3_num",
+                "boolConfiguration": {},
+                "numberConfiguration": {
+                  "num_input_num": 6
+                }
+              },
+              {
+                "artboardPath": "4_num",
+                "boolConfiguration": {},
+                "numberConfiguration": {
+                  "num_input_num": 8
+                }
+              },
+              {
+                "artboardPath": "5_num",
+                "boolConfiguration": {},
+                "numberConfiguration": {
+                  "num_input_num": 12
+                }
+              }
+            ]
+          }
+        }
+      },
+      "noHint": {}
+    },
+    {
+      "id": "rive-ruler-0",
+      "type": "mathWordProblemRiveInteractive",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Help Zari"
+          },
+          "body": {
+            "underlyingEntity": {
+              "noEntity": {}
+            },
+            "characterSpeechElement": {
+              "text": {
+                "text": "What’s 2 \u003cspan\u003ein\u003c/span\u003e more than 4 \u003cspan\u003ein\u003c/span\u003e?"
+              },
+              "accessibilityLabel": "",
+              "worldCharacter": "ZARI",
+              "wordProblemType": "ONELINER",
+              "exerciseType": "WORD_PROBLEM_EXERCISE_TYPE_RULER_INTERACTIVE",
+              "wordProblemTopics": [
+                "Add"
+              ]
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "staticFeedback": {
+              "gradingFeedback": {
+                "underlyingEntity": {
+                  "noEntity": {}
+                },
+                "mathSequenceElement": {
+                  "elements": [
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "Correct Answer: "
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "6 in"
+                      }
+                    }
+                  ],
+                  "orientation": "ORIENTATION_UNKNOWN"
+                }
+              }
+            }
+          }
+        },
+        "input": {
+          "riveInput": {
+            "riveType": {
+              "url": "https://math-cdn.duolingo.com/assets/rive/ruler_slider.riv"
+            },
+            "artboard": "ruler_artboard",
+            "inputArtboard": "ruler_artboard",
+            "stateMachine": "ruler_int_statemachine",
+            "configuration": {},
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [
+                    {
+                      "exactAnswer": {
+                        "integer": {
+                          "integer": 6
+                        }
+                      }
+                    }
+                  ],
+                  "intervalGrading": []
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": false,
+              "answersMustBeOrdered": false
+            },
+            "width": 472,
+            "height": 239,
+            "answerFormat": {
+              "numberLineAnswer": {
+                "answerField": "final_answer_num",
+                "notchValues": {
+                  "0": {
+                    "rational": {
+                      "numerator": 0,
+                      "denominator": 2
+                    }
+                  },
+                  "1": {
+                    "rational": {
+                      "numerator": 2,
+                      "denominator": 2
+                    }
+                  },
+                  "10": {
+                    "rational": {
+                      "numerator": 4,
+                      "denominator": 2
+                    }
+                  },
+                  "11": {
+                    "rational": {
+                      "numerator": 6,
+                      "denominator": 2
+                    }
+                  },
+                  "20": {
+                    "rational": {
+                      "numerator": 8,
+                      "denominator": 2
+                    }
+                  },
+                  "21": {
+                    "rational": {
+                      "numerator": 10,
+                      "denominator": 2
+                    }
+                  },
+                  "30": {
+                    "rational": {
+                      "numerator": 12,
+                      "denominator": 2
+                    }
+                  },
+                  "31": {
+                    "rational": {
+                      "numerator": 14,
+                      "denominator": 2
+                    }
+                  },
+                  "40": {
+                    "rational": {
+                      "numerator": 16,
+                      "denominator": 2
+                    }
+                  },
+                  "41": {
+                    "rational": {
+                      "numerator": 18,
+                      "denominator": 2
+                    }
+                  },
+                  "50": {
+                    "rational": {
+                      "numerator": 20,
+                      "denominator": 2
+                    }
+                  },
+                  "51": {
+                    "rational": {
+                      "numerator": 22,
+                      "denominator": 2
+                    }
+                  },
+                  "60": {
+                    "rational": {
+                      "numerator": 24,
+                      "denominator": 2
+                    }
+                  }
+                },
+                "accessibilityNextValue": "the next value on the ruler",
+                "accessibilityPrevValue": "the previous value on the ruler"
+              }
+            },
+            "boolConfiguration": {},
+            "numberConfiguration": {
+              "secondary_notches_num": 1,
+              "notch_variation_num": 1
+            },
+            "textConfiguration": {},
+            "nestedArtBoards": [
+              {
+                "artboardPath": "0_num",
+                "boolConfiguration": {},
+                "numberConfiguration": {
+                  "num_input_num": 0
+                }
+              },
+              {
+                "artboardPath": "1_num",
+                "boolConfiguration": {},
+                "numberConfiguration": {
+                  "num_input_num": 2
+                }
+              },
+              {
+                "artboardPath": "2_num",
+                "boolConfiguration": {},
+                "numberConfiguration": {
+                  "num_input_num": 4
+                }
+              },
+              {
+                "artboardPath": "3_num",
+                "boolConfiguration": {},
+                "numberConfiguration": {
+                  "num_input_num": 6
+                }
+              },
+              {
+                "artboardPath": "4_num",
+                "boolConfiguration": {},
+                "numberConfiguration": {
+                  "num_input_num": 8
+                }
+              },
+              {
+                "artboardPath": "5_num",
+                "boolConfiguration": {},
+                "numberConfiguration": {
+                  "num_input_num": 12
+                }
+              }
+            ]
+          }
+        }
+      },
+      "noHint": {}
+    },
+    {
+      "id": "rive-measuring-cup-0",
+      "type": "mathWordProblemRiveInteractive",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Help Oscar"
+          },
+          "body": {
+            "underlyingEntity": {
+              "noEntity": {}
+            },
+            "characterSpeechElement": {
+              "text": {
+                "text": "What’s 2 \u003cspan\u003emL\u003c/span\u003e more than 4 \u003cspan\u003emL\u003c/span\u003e?"
+              },
+              "accessibilityLabel": "",
+              "worldCharacter": "OSCAR",
+              "wordProblemType": "ONELINER",
+              "exerciseType": "WORD_PROBLEM_EXERCISE_TYPE_VOL_METRIC_INTERACTIVE",
+              "wordProblemTopics": [
+                "Add"
+              ]
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "staticFeedback": {
+              "gradingFeedback": {
+                "underlyingEntity": {
+                  "noEntity": {}
+                },
+                "mathSequenceElement": {
+                  "elements": [
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "Correct Answer: "
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "6 in"
+                      }
+                    }
+                  ],
+                  "orientation": "ORIENTATION_UNKNOWN"
+                }
+              }
+            }
+          }
+        },
+        "input": {
+          "riveInput": {
+            "riveType": {
+              "url": "https://math-cdn.duolingo.com/assets/rive/measuring_cup_slider.riv"
+            },
+            "artboard": "measuring_cup_artboard",
+            "inputArtboard": "measuring_cup_artboard",
+            "stateMachine": "measuring_cup_int_statemachine",
+            "configuration": {},
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [
+                    {
+                      "exactAnswer": {
+                        "integer": {
+                          "integer": 6
+                        }
+                      }
+                    }
+                  ],
+                  "intervalGrading": []
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": false,
+              "answersMustBeOrdered": false
+            },
+            "width": 363,
+            "height": 294,
+            "answerFormat": {
+              "numberLineAnswer": {
+                "answerField": "final_answer_num",
+                "notchValues": {
+                  "0": {
+                    "rational": {
+                      "numerator": 0,
+                      "denominator": 2
+                    }
+                  },
+                  "1": {
+                    "rational": {
+                      "numerator": 2,
+                      "denominator": 2
+                    }
+                  },
+                  "10": {
+                    "rational": {
+                      "numerator": 4,
+                      "denominator": 2
+                    }
+                  },
+                  "11": {
+                    "rational": {
+                      "numerator": 6,
+                      "denominator": 2
+                    }
+                  },
+                  "20": {
+                    "rational": {
+                      "numerator": 8,
+                      "denominator": 2
+                    }
+                  },
+                  "21": {
+                    "rational": {
+                      "numerator": 10,
+                      "denominator": 2
+                    }
+                  },
+                  "30": {
+                    "rational": {
+                      "numerator": 12,
+                      "denominator": 2
+                    }
+                  },
+                  "31": {
+                    "rational": {
+                      "numerator": 14,
+                      "denominator": 2
+                    }
+                  },
+                  "40": {
+                    "rational": {
+                      "numerator": 16,
+                      "denominator": 2
+                    }
+                  },
+                  "41": {
+                    "rational": {
+                      "numerator": 18,
+                      "denominator": 2
+                    }
+                  },
+                  "50": {
+                    "rational": {
+                      "numerator": 20,
+                      "denominator": 2
+                    }
+                  },
+                  "51": {
+                    "rational": {
+                      "numerator": 22,
+                      "denominator": 2
+                    }
+                  },
+                  "60": {
+                    "rational": {
+                      "numerator": 24,
+                      "denominator": 2
+                    }
+                  }
+                },
+                "accessibilityNextValue": "the next value on the ruler",
+                "accessibilityPrevValue": "the previous value on the ruler"
+              }
+            },
+            "boolConfiguration": {},
+            "numberConfiguration": {
+              "secondary_notches_num": 1,
+              "notch_variation_num": 1
+            },
+            "textConfiguration": {},
+            "nestedArtBoards": [
+              {
+                "artboardPath": "0_num",
+                "boolConfiguration": {},
+                "numberConfiguration": {
+                  "num_input_num": 0
+                }
+              },
+              {
+                "artboardPath": "1_num",
+                "boolConfiguration": {},
+                "numberConfiguration": {
+                  "num_input_num": 2
+                }
+              },
+              {
+                "artboardPath": "2_num",
+                "boolConfiguration": {},
+                "numberConfiguration": {
+                  "num_input_num": 4
+                }
+              },
+              {
+                "artboardPath": "3_num",
+                "boolConfiguration": {},
+                "numberConfiguration": {
+                  "num_input_num": 6
+                }
+              },
+              {
+                "artboardPath": "4_num",
+                "boolConfiguration": {},
+                "numberConfiguration": {
+                  "num_input_num": 8
+                }
+              },
+              {
+                "artboardPath": "5_num",
+                "boolConfiguration": {},
+                "numberConfiguration": {
+                  "num_input_num": 12
+                }
+              }
+            ]
+          }
+        }
+      },
+      "noHint": {}
+    },
+    {
+      "id": "rive-pie-0",
+      "type": "mathWordProblemRiveInteractive",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Help Bea"
+          },
+          "body": {
+            "underlyingEntity": {
+              "noEntity": {}
+            },
+            "characterSpeechElement": {
+              "text": {
+                "text": "What’s half of 1?"
+              },
+              "accessibilityLabel": "",
+              "worldCharacter": "BEA",
+              "wordProblemType": "ONELINER",
+              "exerciseType": "WORD_PROBLEM_EXERCISE_TYPE_PIE_INTERACTIVE",
+              "wordProblemTopics": [
+                "Fractions"
+              ]
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "staticFeedback": {
+              "gradingFeedback": {
+                "underlyingEntity": {
+                  "noEntity": {}
+                },
+                "mathSequenceElement": {
+                  "elements": [
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "Correct Answer: "
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "6 in"
+                      }
+                    }
+                  ],
+                  "orientation": "ORIENTATION_UNKNOWN"
+                }
+              }
+            }
+          }
+        },
+        "input": {
+          "riveInput": {
+            "riveType": {
+              "url": "https://math-cdn.duolingo.com/assets/rive/contextual_fraction_pie_fill.riv"
+            },
+            "artboard": "pie_chart",
+            "inputArtboard": "pie_chart",
+            "stateMachine": "frac_int_contextual_statemachine",
+            "configuration": {},
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [
+                    {
+                      "exactAnswer": {
+                        "rational": {
+                          "numerator": 3,
+                          "denominator": 6
+                        }
+                      }
+                    }
+                  ],
+                  "intervalGrading": []
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": false,
+              "answersMustBeOrdered": false
+            },
+            "width": 200,
+            "height": 200,
+            "answerFormat": {
+              "partsFillAnswer": {
+                "answerFields": [
+                  "prnt_pc_01_active_bool",
+                  "prnt_pc_02_active_bool",
+                  "prnt_pc_03_active_bool",
+                  "prnt_pc_04_active_bool",
+                  "prnt_pc_05_active_bool",
+                  "prnt_pc_06_active_bool"
+                ],
+                "accessibilitySelect": "select next piece",
+                "accessibilityDeselect": "unselect last piece"
+              }
+            },
+            "boolConfiguration": {},
+            "numberConfiguration": {
+              "food_type_num": 0.0,
+              "fraction_type_num": 6.0
+            },
+            "textConfiguration": {},
+            "nestedArtBoards": []
+          }
+        }
+      },
+      "noHint": {}
+    },
+    {
+      "id": "productSelect-0",
+      "type": "mathWordProblemProductSelect",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Help Junior"
+          },
+          "body": {
+            "underlyingEntity": {
+              "noEntity": {
+              }
+            },
+            "taggedTextElement": {
+              "text": "What’s 3 \u003cspan\u003ein\u003c/span\u003e more than 6 \u003cspan\u003ein\u003c/span\u003e?"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "staticFeedback": {
+              "gradingFeedback": {
+                "underlyingEntity": {
+                  "noEntity": {
+                  }
+                },
+                "mathSequenceElement": {
+                  "elements": [
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {
+                        }
+                      },
+                      "taggedTextElement": {
+                        "text": "Correct Answer: "
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {
+                        }
+                      },
+                      "taggedTextElement": {
+                        "text": "9 in"
+                      }
+                    }
+                  ],
+                  "orientation": "ORIENTATION_UNKNOWN"
+                }
+              }
+            }
+          }
+        },
+        "input": {
+          "productSelectInput": {
+            "correctIndices": [
+              1
+            ],
+            "answerOptions": [
+              {
+                "choice": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "labeledAssetElement": {
+                    "assetElement": {
+                      "baseLightUrl": "https://math-cdn.duolingo.com/assets/ruler/ruler_base_light.svg",
+                      "selectedLightUrl": "https://math-cdn.duolingo.com/assets/ruler/ruler_selected_light.svg",
+                      "correctLightUrl": "https://math-cdn.duolingo.com/assets/ruler/ruler_correct_light.svg",
+                      "incorrectLightUrl": "https://math-cdn.duolingo.com/assets/ruler/ruler_incorrect_light.svg",
+                      "disabledLightUrl": "https://math-cdn.duolingo.com/assets/ruler/ruler_disabled_light.svg",
+                      "baseDarkUrl": "https://math-cdn.duolingo.com/assets/ruler/ruler_base_dark.svg",
+                      "selectedDarkUrl": "https://math-cdn.duolingo.com/assets/ruler/ruler_selected_dark.svg",
+                      "correctDarkUrl": "https://math-cdn.duolingo.com/assets/ruler/ruler_correct_dark.svg",
+                      "incorrectDarkUrl": "https://math-cdn.duolingo.com/assets/ruler/ruler_incorrect_dark.svg",
+                      "disabledDarkUrl": "https://math-cdn.duolingo.com/assets/ruler/ruler_disabled_dark.svg",
+                      "accessibilityLabel": "",
+                      "width": 132,
+                      "height": 132
+                    },
+                    "labelElement": {
+                      "fillColorBaseLight": "#cd7900",
+                      "fillColorSelectedLight": "#1899d6",
+                      "fillColorCorrectLight": "#58a700",
+                      "fillColorIncorrectLight": "#ea2b2b",
+                      "fillColorDisabledLight": "#afafaf",
+                      "fillColorBaseDark": "#d79433",
+                      "fillColorSelectedDark": "#3f85a7",
+                      "fillColorCorrectDark": "#5f8428",
+                      "fillColorIncorrectDark": "#733838",
+                      "fillColorDisabledDark": "#52656d",
+                      "strokeColorBaseLight": "",
+                      "strokeColorSelectedLight": "",
+                      "strokeColorCorrectLight": "",
+                      "strokeColorIncorrectLight": "",
+                      "strokeColorDisabledLight": "",
+                      "strokeColorBaseDark": "",
+                      "strokeColorSelectedDark": "",
+                      "strokeColorCorrectDark": "",
+                      "strokeColorIncorrectDark": "",
+                      "strokeColorDisabledDark": "",
+                      "strokeWidth": 0,
+                      "fontSize": 22
+                    },
+                    "labelXLeftOffsetPercent": 50,
+                    "labelYTopOffsetPercent": 50,
+                    "labelText": "3 in"
+                  }
+                },
+                "choiceFeedbackRepresentation": {
+                  "gradingFeedback": {
+                    "underlyingEntity": {
+                      "noEntity": {
+                      }
+                    },
+                    "taggedTextElement": {
+                      "text": "3 in"
+                    }
+                  }
+                }
+              },
+              {
+                "choice": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "labeledAssetElement": {
+                    "assetElement": {
+                      "baseLightUrl": "https://math-cdn.duolingo.com/assets/ruler/ruler_base_light.svg",
+                      "selectedLightUrl": "https://math-cdn.duolingo.com/assets/ruler/ruler_selected_light.svg",
+                      "correctLightUrl": "https://math-cdn.duolingo.com/assets/ruler/ruler_correct_light.svg",
+                      "incorrectLightUrl": "https://math-cdn.duolingo.com/assets/ruler/ruler_incorrect_light.svg",
+                      "disabledLightUrl": "https://math-cdn.duolingo.com/assets/ruler/ruler_disabled_light.svg",
+                      "baseDarkUrl": "https://math-cdn.duolingo.com/assets/ruler/ruler_base_dark.svg",
+                      "selectedDarkUrl": "https://math-cdn.duolingo.com/assets/ruler/ruler_selected_dark.svg",
+                      "correctDarkUrl": "https://math-cdn.duolingo.com/assets/ruler/ruler_correct_dark.svg",
+                      "incorrectDarkUrl": "https://math-cdn.duolingo.com/assets/ruler/ruler_incorrect_dark.svg",
+                      "disabledDarkUrl": "https://math-cdn.duolingo.com/assets/ruler/ruler_disabled_dark.svg",
+                      "accessibilityLabel": "",
+                      "width": 132,
+                      "height": 132
+                    },
+                    "labelElement": {
+                      "fillColorBaseLight": "#cd7900",
+                      "fillColorSelectedLight": "#1899d6",
+                      "fillColorCorrectLight": "#58a700",
+                      "fillColorIncorrectLight": "#ea2b2b",
+                      "fillColorDisabledLight": "#afafaf",
+                      "fillColorBaseDark": "#d79433",
+                      "fillColorSelectedDark": "#3f85a7",
+                      "fillColorCorrectDark": "#5f8428",
+                      "fillColorIncorrectDark": "#733838",
+                      "fillColorDisabledDark": "#52656d",
+                      "strokeColorBaseLight": "",
+                      "strokeColorSelectedLight": "",
+                      "strokeColorCorrectLight": "",
+                      "strokeColorIncorrectLight": "",
+                      "strokeColorDisabledLight": "",
+                      "strokeColorBaseDark": "",
+                      "strokeColorSelectedDark": "",
+                      "strokeColorCorrectDark": "",
+                      "strokeColorIncorrectDark": "",
+                      "strokeColorDisabledDark": "",
+                      "strokeWidth": 0,
+                      "fontSize": 22
+                    },
+                    "labelXLeftOffsetPercent": 50,
+                    "labelYTopOffsetPercent": 50,
+                    "labelText": "9 in"
+                  }
+                },
+                "choiceFeedbackRepresentation": {
+                  "gradingFeedback": {
+                    "underlyingEntity": {
+                      "noEntity": {
+                      }
+                    },
+                    "taggedTextElement": {
+                      "text": "9 in"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "noHint": {}
+    },
+    {
+      "id": "math-token-drag-ratio-0",
+      "type": "mathWordProblemRatioTokenDrag",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Help Junior"
+          },
+          "body": {
+            "underlyingEntity": {
+              "noEntity": {}
+            },
+            "characterSpeechElement": {
+              "text": {
+                "text": "Show <b>3</b> water : <b>2</b> flour!"
+              },
+              "accessibilityLabel": "",
+              "ttsUrl": "",
+              "worldCharacter": "JUNIOR",
+              "wordProblemType": "ONELINER",
+              "exerciseType": "WORD_PROBLEM_EXERCISE_TYPE_UNSPECIFIED",
+              "wordProblemTopics": [],
+              "wordProblemId": "5e8dee2eff8f017d397f11f6e1cbf387"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "staticFeedback": {
+              "gradingFeedback": {
+                "underlyingEntity": {
+                  "noEntity": {}
+                },
+                "mathSequenceElement": {
+                  "elements": [
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "Correct Answer: "
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "3 : 2"
+                      }
+                    }
+                  ],
+                  "orientation": "HORIZONTAL"
+                }
+              }
+            }
+          }
+        },
+        "input": {
+          "tokenDragInput": {
+            "placeholderText": {
+              "text": "DRAG HERE"
+            },
+            "dragChoices": [
+              {
+                "underlyingEntity": {
+                  "entity": {
+                    "withUnit": {
+                      "entity": {
+                        "integer": {
+                          "integer": 1
+                        }
+                      },
+                      "contextualRatioTerm1Unit": {}
+                    }
+                  }
+                },
+                "assetElement": {
+                  "baseLightUrl": "https://math-stage-cdn.duolingo.com/assets/dry_wet_ratio_single/dry_base_light.svg",
+                  "selectedLightUrl": "https://math-stage-cdn.duolingo.com/assets/dry_wet_ratio_single/dry_selected_light.svg",
+                  "correctLightUrl": "https://math-stage-cdn.duolingo.com/assets/dry_wet_ratio_single/dry_correct_light.svg",
+                  "incorrectLightUrl": "https://math-stage-cdn.duolingo.com/assets/dry_wet_ratio_single/dry_incorrect_light.svg",
+                  "disabledLightUrl": "https://math-stage-cdn.duolingo.com/assets/dry_wet_ratio_single/dry_disabled_light.svg",
+                  "baseDarkUrl": "https://math-stage-cdn.duolingo.com/assets/dry_wet_ratio_single/dry_base_dark.svg",
+                  "selectedDarkUrl": "https://math-stage-cdn.duolingo.com/assets/dry_wet_ratio_single/dry_selected_dark.svg",
+                  "correctDarkUrl": "https://math-stage-cdn.duolingo.com/assets/dry_wet_ratio_single/dry_correct_dark.svg",
+                  "incorrectDarkUrl": "https://math-stage-cdn.duolingo.com/assets/dry_wet_ratio_single/dry_incorrect_dark.svg",
+                  "disabledDarkUrl": "https://math-stage-cdn.duolingo.com/assets/dry_wet_ratio_single/dry_disabled_dark.svg",
+                  "accessibilityLabel": "",
+                  "width": 87,
+                  "height": 100
+                }
+              },
+              {
+                "underlyingEntity": {
+                  "entity": {
+                    "withUnit": {
+                      "entity": {
+                        "integer": {
+                          "integer": 1
+                        }
+                      },
+                      "contextualRatioTerm2Unit": {}
+                    }
+                  }
+                },
+                "assetElement": {
+                  "baseLightUrl": "https://math-stage-cdn.duolingo.com/assets/dry_wet_ratio_single/wet_base_light.svg",
+                  "selectedLightUrl": "https://math-stage-cdn.duolingo.com/assets/dry_wet_ratio_single/wet_selected_light.svg",
+                  "correctLightUrl": "https://math-stage-cdn.duolingo.com/assets/dry_wet_ratio_single/wet_correct_light.svg",
+                  "incorrectLightUrl": "https://math-stage-cdn.duolingo.com/assets/dry_wet_ratio_single/wet_incorrect_light.svg",
+                  "disabledLightUrl": "https://math-stage-cdn.duolingo.com/assets/dry_wet_ratio_single/wet_disabled_light.svg",
+                  "baseDarkUrl": "https://math-stage-cdn.duolingo.com/assets/dry_wet_ratio_single/wet_base_dark.svg",
+                  "selectedDarkUrl": "https://math-stage-cdn.duolingo.com/assets/dry_wet_ratio_single/wet_selected_dark.svg",
+                  "correctDarkUrl": "https://math-stage-cdn.duolingo.com/assets/dry_wet_ratio_single/wet_correct_dark.svg",
+                  "incorrectDarkUrl": "https://math-stage-cdn.duolingo.com/assets/dry_wet_ratio_single/wet_incorrect_dark.svg",
+                  "disabledDarkUrl": "https://math-stage-cdn.duolingo.com/assets/dry_wet_ratio_single/wet_disabled_dark.svg",
+                  "accessibilityLabel": "",
+                  "width": 116,
+                  "height": 83
+                }
+              }
+            ],
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [
+                    {
+                      "exactAnswer": {
+                        "ratio": {
+                          "term1": {
+                            "withUnit": {
+                              "entity": {
+                                "integer": {
+                                  "integer": 3
+                                }
+                              },
+                              "contextualRatioTerm1Unit": {}
+                            }
+                          },
+                          "term2": {
+                            "withUnit": {
+                              "entity": {
+                                "integer": {
+                                  "integer": 2
+                                }
+                              },
+                              "contextualRatioTerm2Unit": {}
+                            }
+                          },
+                          "term3": {
+                            "noEntity": {}
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "intervalGrading": [],
+                  "coordinateGridFormulaGrading": []
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": false,
+              "answersMustBeOrdered": false,
+              "feedback": {
+                "noFeedback": {}
+              }
+            },
+            "alignment": "ALIGNMENT_CENTER"
+          }
+        }
+      },
+      "noHint": {}
+    }
+  ],
+  "skillId": "e7edcd8a3bee8bf8d2da245d183af0e4",
+  "levelIndex": 1,
+  "levelSessionIndex": 1
+}

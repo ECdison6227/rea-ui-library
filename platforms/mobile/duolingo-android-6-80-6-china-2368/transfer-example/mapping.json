@@ -1,0 +1,19 @@
+{
+  "schemaVersion":1,
+  "classification":"D",
+  "name":"Paperlane",
+  "business":"Document collection organization using local in-memory fixture data",
+  "runtime":{"apk":"../reference/build/native-reference.apk","package":"org.reastyle.nativeexample","activity":".MainActivity","scene":"transfer-home"},
+  "independentBrand":{"name":"Paperlane","art":"Components.PaperMark original Canvas drawing","font":"system sans-serif regular/bold","copySource":"src/org/reastyle/nativeexample/PaperlaneContent.java and MainActivity.showTransfer methods","sourceBrandAssetsUsed":false},
+  "mappings":[
+    {"sourceRule":"A/B52dp primary CTA,16dp radius and4dp lip","adoption":"Same shared native Button geometry with own action label","basis":"../reference/component-contracts.json#tokens"},
+    {"sourceRule":"A selected course changes face,border,text and enables CTA","adoption":"Document multiselect updates all visual channels and item count; zero selections disables CTA","adaptation":"Multiple instead of single selection; deselection is allowed"},
+    {"sourceRule":"A guide bubble and stable bottom Continue","adoption":"PaperMark and own guide above document choice, stable bottom Organize action","adaptation":"No character, narration or source onboarding sequence"},
+    {"sourceRule":"B Paragraph/H1 role hierarchy and structured input surface","adoption":"19sp body,25sp headings,Polar input face,2dp border","adaptation":"System font instead of unconfirmed source font"},
+    {"sourceRule":"A source course-building Back clears course selection","adoption":"Navigation is explicit, but Paperlane retains draft and selection on cancellation","adaptation":"Independent D behavior suits document editing; does not copy source domain rule"},
+    {"sourceRule":"B copy offers retry and concrete next steps; source retention unknown","adoption":"Inline name error, failure keeps draft, Retry starts fresh local generation","adaptation":"All validation and async policies are independently chosen D"}
+  ],
+  "states":["transfer-home","transfer-selected","transfer-empty","transfer-working","transfer-error","transfer-done"],
+  "validation":{"jvmChecks":"../reference/tests/org/reastyle/nativeexample/FlowStateTest.java","buildReport":"../reference/build/build-report.json","deviceObservation":"Separate parent-owned runtime capture; no A claim in this file"},
+  "unknowns":["Native source actual font/fallback","Source busy cancellation and retry behavior","Full source onboarding","Source and transfer visual comparison pending independent capture"]
+}

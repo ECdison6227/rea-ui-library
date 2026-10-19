@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "classification": "D",
+  "package": "org.reastyle.nativeexample",
+  "activity": ".MainActivity",
+  "intentExtra": "scene",
+  "defaultScene": "launcher",
+  "sceneIsolation": "Each direct Intent resets sample state. onSaveInstanceState retains current state across normal Activity recreation.",
+  "scenes": [
+    {
+      "id": "launcher",
+      "kind": "research-entry",
+      "description": "Entry points and scope notice"
+    },
+    {
+      "id": "source-privacy",
+      "kind": "source-reference",
+      "description": "Noncancelable bottom policy dialog; agree opens age gate",
+      "originEvidence": [
+        "../evidence/runtime/01-first-launch/screen.png",
+        "../spec/transitions.json#local.privacy.system-back"
+      ]
+    },
+    {
+      "id": "source-age",
+      "kind": "source-reference",
+      "description": "Separate age-policy dialog; adult choice opens greeting",
+      "originEvidence": [
+        "../evidence/runtime/03-welcome-confirmed/screen.png"
+      ]
+    },
+    {
+      "id": "source-welcome",
+      "kind": "source-reference",
+      "description": "Static source character, guide bubble and green Continue",
+      "originEvidence": [
+        "../evidence/runtime/04-welcome-after-age/screen.png"
+      ]
+    },
+    {
+      "id": "source-course",
+      "kind": "source-reference",
+      "description": "Course selection empty; Continue disabled",
+      "originEvidence": [
+        "../evidence/runtime/05-course-picker/screen.png"
+      ]
+    },
+    {
+      "id": "source-selected",
+      "kind": "source-reference",
+      "description": "Spanish selected; blue face/border/text and enabled green Continue",
+      "originEvidence": [
+        "../evidence/runtime/06-course-selected/screen.png"
+      ]
+    },
+    {
+      "id": "source-building",
+      "kind": "source-reference",
+      "description": "Static COURSE BUILDING state; Back clears selection",
+      "originEvidence": [
+        "../evidence/runtime/07-after-course-choice/screen.png",
+        "../evidence/runtime/08-course-return/screen.png"
+      ]
+    },
+    {
+      "id": "components",
+      "kind": "independent-component-gallery",
+      "description": "Ten native specimens, scroll to view all; no claim of source execution"
+    },
+    {
+      "id": "transfer-home",
+      "kind": "cross-business",
+      "description": "Paperlane, empty selection and name input"
+    },
+    {
+      "id": "transfer-selected",
+      "kind": "cross-business",
+      "description": "Paperlane, two selected items and enabled CTA"
+    },
+    {
+      "id": "transfer-empty",
+      "kind": "cross-business",
+      "description": "Paperlane, empty collection name; choose an item then submit for inline validation"
+    },
+    {
+      "id": "transfer-working",
+      "kind": "cross-business",
+      "description": "Paperlane local work fixture; add --ez hold true for stable capture"
+    },
+    {
+      "id": "transfer-error",
+      "kind": "cross-business",
+      "description": "Recoverable local error fixture; Retry preserves draft and completes"
+    },
+    {
+      "id": "transfer-done",
+      "kind": "cross-business",
+      "description": "Local success fixture; return to retained collection"
+    },
+    {
+      "id": "design-families",
+      "kind": "independent-component-gallery",
+      "description": "Native plan/metric/settings specimens; D neutral content"
+    },
+    {
+      "id": "motion-demo",
+      "kind": "independent-component-gallery",
+      "description": "Native progress/feedback/sheet controls; supports reduceMotion"
+    }
+  ],
+  "optionalExtras": {
+    "font": {
+      "type": "string",
+      "values": [
+        "duo",
+        "din",
+        "system"
+      ],
+      "default": "duo",
+      "effect": "Source-reference candidate; transfer-* keeps system sans"
+    },
+    "hold": {
+      "type": "boolean",
+      "value": true,
+      "effect": "Freeze Paperlane pending state for screenshots; source building is always held"
+    },
+    "fail": {
+      "type": "boolean",
+      "value": true,
+      "effect": "First Paperlane operation fails locally; Retry succeeds. No network or file access occurs"
+    },
+    "language": {
+      "type": "string",
+      "values": [
+        "en",
+        "zh"
+      ],
+      "effect": "D localized representative content, not complete source localization"
+    },
+    "reduceMotion": {
+      "type": "boolean",
+      "effect": "Independent reference skips motion while preserving final state"
+    }
+  },
+  "runtimeStatus": "Validated within documented scenes; per-capture build identities and limits retained",
+  "runtimeValidation": "../docs/reference-runtime.md",
+  "runtimeRevision": "revision.json"
+}

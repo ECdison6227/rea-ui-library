@@ -1,0 +1,931 @@
+{
+  "formatVersion": 1,
+  "kind": "motion",
+  "items": [
+    {
+      "id": "motion-button-press",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-contracts",
+        "ev-reference-code",
+        "ev-file-e691e96161d6"
+      ],
+      "trigger": "Reference touch pressed state",
+      "properties": [
+        "face translationY4dp",
+        "label translationY4dp"
+      ],
+      "duration": {
+        "value": 80,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "easing": {
+        "value": "linear",
+        "basis": "chosen"
+      },
+      "interruption": [
+        "Source interruption/reentry rules unverified"
+      ],
+      "delay": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "exit": "Source exit/cancel behavior unverified",
+      "reducedMotion": "Target D: retain state feedback, allow motion removal; source reduced-motion mapping unverified",
+      "unknowns": [
+        "Original pressed timing/easing and haptics"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Current reference implements80ms D press/release, reduced-motion immediate; original runtime timing remains unknown."
+      }
+    },
+    {
+      "id": "motion-loading-state-duo-ball",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-static-raw-loading-state-duo-ball-json"
+      ],
+      "trigger": "Candidate loading asset; actual runtime binding unknown",
+      "properties": [
+        "Lottie composition timeline"
+      ],
+      "duration": {
+        "value": 1.5833333333333333,
+        "unit": "s",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": null,
+        "basis": "unknown"
+      },
+      "interruption": [
+        "Source interruption/reentry rules unverified"
+      ],
+      "delay": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "exit": "Source exit/cancel behavior unverified",
+      "reducedMotion": "Target D: retain state feedback, allow motion removal; source reduced-motion mapping unverified",
+      "unknowns": [
+        "Runtime speed/segments/looping",
+        "Exact visible duration",
+        "Interruption",
+        "Source-to-frame asset binding"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse asset only after binding/playback review; current native reference is static and cannot claim animation fidelity."
+      }
+    },
+    {
+      "id": "motion-progress-bar-particle-yellow",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-static-raw-progress-bar-particle-yellow-json"
+      ],
+      "trigger": "ActionBar XML particle slot; exact display trigger unknown",
+      "properties": [
+        "Lottie composition timeline"
+      ],
+      "duration": {
+        "value": 1.5,
+        "unit": "s",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": null,
+        "basis": "unknown"
+      },
+      "interruption": [
+        "Source interruption/reentry rules unverified"
+      ],
+      "delay": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "exit": "Source exit/cancel behavior unverified",
+      "reducedMotion": "Target D: retain state feedback, allow motion removal; source reduced-motion mapping unverified",
+      "unknowns": [
+        "Runtime speed/segments/looping",
+        "Exact visible duration",
+        "Interruption",
+        "Source-to-frame asset binding"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse asset only after binding/playback review; current native reference is static and cannot claim animation fidelity."
+      }
+    },
+    {
+      "id": "motion-shake",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-static-animator-shake-xml"
+      ],
+      "trigger": "Unverified runtime caller",
+      "properties": [
+        "translationX:0→15→-12→9→-6→0dp"
+      ],
+      "duration": {
+        "value": 425,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": null,
+        "basis": "unknown"
+      },
+      "interruption": [
+        "Source interruption/reentry rules unverified"
+      ],
+      "delay": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "exit": "Source exit/cancel behavior unverified",
+      "reducedMotion": "Target D: retain state feedback, allow motion removal; source reduced-motion mapping unverified",
+      "unknowns": [
+        "Runtime trigger",
+        "Interpolator and interruption"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "425ms is sum of five85ms declarations, not measured screen time; do not enable globally."
+      }
+    },
+    {
+      "id": "motion-page-transition",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-static-anim-challenge-slide-in-left-xml"
+      ],
+      "trigger": "Candidate challenge entry; current runtime branch unverified",
+      "properties": [
+        "translationX parent -100%→0",
+        "alpha"
+      ],
+      "duration": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "easing": {
+        "value": "fast_out_slow_in",
+        "basis": "declared"
+      },
+      "interruption": [
+        "Source interruption/reentry rules unverified"
+      ],
+      "delay": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "exit": "Source exit/cancel behavior unverified",
+      "reducedMotion": "Target D: retain state feedback, allow motion removal; source reduced-motion mapping unverified",
+      "unknowns": [
+        "Resolved @android:integer/config_longAnimTime",
+        "Actual transition trigger",
+        "Reverse and interruption"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Resolve actual timing or choose documented D target transition, then compare representative entry/exit."
+      }
+    },
+    {
+      "id": "motion-declared-popup-in",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "optional",
+      "evidenceRefs": [
+        "ev-file-e33939f4d7b6"
+      ],
+      "unknowns": [
+        "Runtime binding, playback speed/segments, repeat and interrupt policy",
+        "Resolved system duration when referenced symbolically"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Preserve this candidate source asset/declaration; do not substitute its nominal timeline for observed screen duration."
+      },
+      "trigger": "Source runtime trigger unverified; popup_in",
+      "properties": [
+        "fromAlpha=\"0.0\"",
+        "toAlpha=\"1.0\""
+      ],
+      "duration": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "easing": {
+        "value": null,
+        "basis": "unknown"
+      },
+      "interruption": [
+        "Source cancellation/reentry unknown"
+      ],
+      "delay": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "exit": "See paired in/out declaration when present; runtime binding unverified",
+      "reducedMotion": "Source mapping unknown; target independent substitute required"
+    },
+    {
+      "id": "motion-declared-popup-out",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "optional",
+      "evidenceRefs": [
+        "ev-file-86c67fe3fab6"
+      ],
+      "unknowns": [
+        "Runtime binding, playback speed/segments, repeat and interrupt policy",
+        "Resolved system duration when referenced symbolically"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Preserve this candidate source asset/declaration; do not substitute its nominal timeline for observed screen duration."
+      },
+      "trigger": "Source runtime trigger unverified; popup_out",
+      "properties": [
+        "fromAlpha=\"1.0\"",
+        "toAlpha=\"0.0\""
+      ],
+      "duration": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "easing": {
+        "value": null,
+        "basis": "unknown"
+      },
+      "interruption": [
+        "Source cancellation/reentry unknown"
+      ],
+      "delay": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "exit": "See paired in/out declaration when present; runtime binding unverified",
+      "reducedMotion": "Source mapping unknown; target independent substitute required"
+    },
+    {
+      "id": "motion-declared-popup-scale-in",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "optional",
+      "evidenceRefs": [
+        "ev-file-44cb801c13c0"
+      ],
+      "unknowns": [
+        "Runtime binding, playback speed/segments, repeat and interrupt policy",
+        "Resolved system duration when referenced symbolically"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Preserve this candidate source asset/declaration; do not substitute its nominal timeline for observed screen duration."
+      },
+      "trigger": "Source runtime trigger unverified; popup_scale_in",
+      "properties": [
+        "fromXScale=\"0.0\"",
+        "toXScale=\"1.0\"",
+        "fromYScale=\"0.0\"",
+        "toYScale=\"1.0\""
+      ],
+      "duration": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "easing": {
+        "value": null,
+        "basis": "unknown"
+      },
+      "interruption": [
+        "Source cancellation/reentry unknown"
+      ],
+      "delay": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "exit": "See paired in/out declaration when present; runtime binding unverified",
+      "reducedMotion": "Source mapping unknown; target independent substitute required"
+    },
+    {
+      "id": "motion-declared-popup-scale-out",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "optional",
+      "evidenceRefs": [
+        "ev-file-b541a2ba3edc"
+      ],
+      "unknowns": [
+        "Runtime binding, playback speed/segments, repeat and interrupt policy",
+        "Resolved system duration when referenced symbolically"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Preserve this candidate source asset/declaration; do not substitute its nominal timeline for observed screen duration."
+      },
+      "trigger": "Source runtime trigger unverified; popup_scale_out",
+      "properties": [
+        "fromXScale=\"1.0\"",
+        "toXScale=\"0.0\"",
+        "fromYScale=\"1.0\"",
+        "toYScale=\"0.0\""
+      ],
+      "duration": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "easing": {
+        "value": null,
+        "basis": "unknown"
+      },
+      "interruption": [
+        "Source cancellation/reentry unknown"
+      ],
+      "delay": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "exit": "See paired in/out declaration when present; runtime binding unverified",
+      "reducedMotion": "Source mapping unknown; target independent substitute required"
+    },
+    {
+      "id": "motion-declared-challenge-slide-in-left",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "optional",
+      "evidenceRefs": [
+        "ev-static-anim-challenge-slide-in-left-xml"
+      ],
+      "unknowns": [
+        "Runtime binding, playback speed/segments, repeat and interrupt policy",
+        "Resolved system duration when referenced symbolically"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Preserve this candidate source asset/declaration; do not substitute its nominal timeline for observed screen duration."
+      },
+      "trigger": "Source runtime trigger unverified; challenge_slide_in_left",
+      "properties": [
+        "fromXDelta=\"-100.0%p\"",
+        "toXDelta=\"0.0\"",
+        "fromAlpha=\"0.0\"",
+        "toAlpha=\"1.0\""
+      ],
+      "duration": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "easing": {
+        "value": "@interpolator/fast_out_slow_in",
+        "basis": "declared"
+      },
+      "interruption": [
+        "Source cancellation/reentry unknown"
+      ],
+      "delay": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "exit": "See paired in/out declaration when present; runtime binding unverified",
+      "reducedMotion": "Source mapping unknown; target independent substitute required"
+    },
+    {
+      "id": "motion-declared-challenge-slide-out-left",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "optional",
+      "evidenceRefs": [
+        "ev-file-003101f842d1"
+      ],
+      "unknowns": [
+        "Runtime binding, playback speed/segments, repeat and interrupt policy",
+        "Resolved system duration when referenced symbolically"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Preserve this candidate source asset/declaration; do not substitute its nominal timeline for observed screen duration."
+      },
+      "trigger": "Source runtime trigger unverified; challenge_slide_out_left",
+      "properties": [
+        "fromXDelta=\"0.0\"",
+        "toXDelta=\"-100.0%p\"",
+        "fromAlpha=\"1.0\"",
+        "toAlpha=\"0.0\""
+      ],
+      "duration": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "easing": {
+        "value": "@interpolator/fast_out_slow_in",
+        "basis": "declared"
+      },
+      "interruption": [
+        "Source cancellation/reentry unknown"
+      ],
+      "delay": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "exit": "See paired in/out declaration when present; runtime binding unverified",
+      "reducedMotion": "Source mapping unknown; target independent substitute required"
+    },
+    {
+      "id": "motion-declared-ec-alpha-in",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "optional",
+      "evidenceRefs": [
+        "ev-file-8df0b0f57da2"
+      ],
+      "unknowns": [
+        "Runtime binding, playback speed/segments, repeat and interrupt policy",
+        "Resolved system duration when referenced symbolically"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Preserve this candidate source asset/declaration; do not substitute its nominal timeline for observed screen duration."
+      },
+      "trigger": "Source runtime trigger unverified; ec_alpha_in",
+      "properties": [
+        "fromAlpha=\"0.0\"",
+        "toAlpha=\"1.0\""
+      ],
+      "duration": {
+        "value": 300,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": null,
+        "basis": "unknown"
+      },
+      "interruption": [
+        "Source cancellation/reentry unknown"
+      ],
+      "delay": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "exit": "See paired in/out declaration when present; runtime binding unverified",
+      "reducedMotion": "Source mapping unknown; target independent substitute required"
+    },
+    {
+      "id": "motion-declared-ec-alpha-out",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "optional",
+      "evidenceRefs": [
+        "ev-file-2d1562513684"
+      ],
+      "unknowns": [
+        "Runtime binding, playback speed/segments, repeat and interrupt policy",
+        "Resolved system duration when referenced symbolically"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Preserve this candidate source asset/declaration; do not substitute its nominal timeline for observed screen duration."
+      },
+      "trigger": "Source runtime trigger unverified; ec_alpha_out",
+      "properties": [
+        "fromAlpha=\"1.0\"",
+        "toAlpha=\"0.0\""
+      ],
+      "duration": {
+        "value": 300,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": null,
+        "basis": "unknown"
+      },
+      "interruption": [
+        "Source cancellation/reentry unknown"
+      ],
+      "delay": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "exit": "See paired in/out declaration when present; runtime binding unverified",
+      "reducedMotion": "Source mapping unknown; target independent substitute required"
+    },
+    {
+      "id": "motion-declared-shake",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "optional",
+      "evidenceRefs": [
+        "ev-static-animator-shake-xml"
+      ],
+      "unknowns": [
+        "Runtime binding, playback speed/segments, repeat and interrupt policy",
+        "Resolved system duration when referenced symbolically"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Preserve this candidate source asset/declaration; do not substitute its nominal timeline for observed screen duration."
+      },
+      "trigger": "Source runtime trigger unverified; shake",
+      "properties": [
+        "propertyName=\"translationX\""
+      ],
+      "duration": {
+        "value": 425,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": null,
+        "basis": "unknown"
+      },
+      "interruption": [
+        "Source cancellation/reentry unknown"
+      ],
+      "delay": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "exit": "See paired in/out declaration when present; runtime binding unverified",
+      "reducedMotion": "Source mapping unknown; target independent substitute required"
+    },
+    {
+      "id": "motion-declared-duo-sad",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "optional",
+      "evidenceRefs": [
+        "ev-file-819d0ae216ab"
+      ],
+      "unknowns": [
+        "Runtime binding, playback speed/segments, repeat and interrupt policy",
+        "Resolved system duration when referenced symbolically"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Preserve this candidate source asset/declaration; do not substitute its nominal timeline for observed screen duration."
+      },
+      "trigger": "Source runtime trigger unverified; duo_sad",
+      "properties": [
+        "Composition layer timeline"
+      ],
+      "duration": {
+        "value": 2.8333333333333335,
+        "unit": "s",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": null,
+        "basis": "unknown"
+      },
+      "interruption": [
+        "Source cancellation/reentry unknown"
+      ],
+      "delay": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "exit": "See paired in/out declaration when present; runtime binding unverified",
+      "reducedMotion": "Source mapping unknown; target independent substitute required"
+    },
+    {
+      "id": "motion-declared-loading-state-duo-ball",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "optional",
+      "evidenceRefs": [
+        "ev-static-raw-loading-state-duo-ball-json"
+      ],
+      "unknowns": [
+        "Runtime binding, playback speed/segments, repeat and interrupt policy",
+        "Resolved system duration when referenced symbolically"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Preserve this candidate source asset/declaration; do not substitute its nominal timeline for observed screen duration."
+      },
+      "trigger": "Source runtime trigger unverified; loading_state_duo_ball",
+      "properties": [
+        "Composition layer timeline"
+      ],
+      "duration": {
+        "value": 1.5833333333333333,
+        "unit": "s",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": null,
+        "basis": "unknown"
+      },
+      "interruption": [
+        "Source cancellation/reentry unknown"
+      ],
+      "delay": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "exit": "See paired in/out declaration when present; runtime binding unverified",
+      "reducedMotion": "Source mapping unknown; target independent substitute required"
+    },
+    {
+      "id": "motion-declared-progress-bar-particle-yellow",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "optional",
+      "evidenceRefs": [
+        "ev-static-raw-progress-bar-particle-yellow-json"
+      ],
+      "unknowns": [
+        "Runtime binding, playback speed/segments, repeat and interrupt policy",
+        "Resolved system duration when referenced symbolically"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Preserve this candidate source asset/declaration; do not substitute its nominal timeline for observed screen duration."
+      },
+      "trigger": "Source runtime trigger unverified; progress_bar_particle_yellow",
+      "properties": [
+        "Composition layer timeline"
+      ],
+      "duration": {
+        "value": 1.5,
+        "unit": "s",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": null,
+        "basis": "unknown"
+      },
+      "interruption": [
+        "Source cancellation/reentry unknown"
+      ],
+      "delay": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "exit": "See paired in/out declaration when present; runtime binding unverified",
+      "reducedMotion": "Source mapping unknown; target independent substitute required"
+    },
+    {
+      "id": "motion-target-feedback",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-file-e691e96161d6"
+      ],
+      "unknowns": [
+        "Target choice has not been rendered and compared in the native reference."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Current D native implementation and screenrecord observation are documented in docs/reference-revision.md; source timing remains unverified."
+      },
+      "trigger": "目标校验完成，进入稳定反馈态",
+      "properties": [
+        "opacity0→1",
+        "translationY8dp→0"
+      ],
+      "duration": {
+        "value": 160,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "easing": {
+        "value": "cubic-bezier(0.2,0,0,1)",
+        "basis": "chosen"
+      },
+      "interruption": [
+        "新结果替换旧结果并从当前显示值开始；不积压动画"
+      ],
+      "delay": {
+        "value": 0,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "exit": "120ms淡出；确认后切下一题",
+      "reducedMotion": "立即显示最终状态，仍保留说明/操作",
+      "implementationStage": "implemented-and-observed-in-reference"
+    },
+    {
+      "id": "motion-target-sheet",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-file-e691e96161d6"
+      ],
+      "unknowns": [
+        "Target choice has not been rendered and compared in the native reference."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Current D native implementation and screenrecord observation are documented in docs/reference-revision.md; source timing remains unverified."
+      },
+      "trigger": "目标打开/关闭确认弹层",
+      "properties": [
+        "surface translationY100%→0",
+        "scrim alpha0→0.4"
+      ],
+      "duration": {
+        "value": 220,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "easing": {
+        "value": "cubic-bezier(0.2,0,0,1)",
+        "basis": "chosen"
+      },
+      "interruption": [
+        "同一时刻一个模态；从当前进度反向，关闭后还焦点"
+      ],
+      "delay": {
+        "value": 0,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "exit": "180ms向下退出；取消语义由目标业务决定",
+      "reducedMotion": "无位移，仅瞬时或短淡入，保留焦点与遮罩",
+      "implementationStage": "entry-observed-exit-still-unverified"
+    },
+    {
+      "id": "motion-target-progress",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-file-e691e96161d6"
+      ],
+      "unknowns": [
+        "Target choice has not been rendered and compared in the native reference."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Current D native implementation and screenrecord observation are documented in docs/reference-revision.md; source timing remains unverified."
+      },
+      "trigger": "目标任务进度值更新",
+      "properties": [
+        "fill fraction previous→next"
+      ],
+      "duration": {
+        "value": 180,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "easing": {
+        "value": "linear",
+        "basis": "chosen"
+      },
+      "interruption": [
+        "取消旧补间，从当前fill到最新value；重置立即生效"
+      ],
+      "delay": {
+        "value": 0,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "exit": "完成后保持最终值，庆祝为独立可选层",
+      "reducedMotion": "直接更新数值与fill",
+      "implementationStage": "implemented-and-observed-in-reference"
+    },
+    {
+      "id": "motion-target-page",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [],
+      "unknowns": [
+        "Target choice has not been rendered and compared in the native reference."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "建议D；需目标代表对照"
+      },
+      "trigger": "目标单步流程前进/返回",
+      "properties": [
+        "opacity",
+        "translationX16dp→0"
+      ],
+      "duration": {
+        "value": 200,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "easing": {
+        "value": "cubic-bezier(0.2,0,0,1)",
+        "basis": "chosen"
+      },
+      "interruption": [
+        "导航状态先提交，阻止重复导航；中断保留有效目标页"
+      ],
+      "delay": {
+        "value": 0,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "exit": "返回方向反转；主导航切换不必使用同动画",
+      "reducedMotion": "不平移，立即展示可访问的新页标题",
+      "implementationStage": "specified-only"
+    },
+    {
+      "id": "motion-target-loading",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [],
+      "unknowns": [
+        "Target choice has not been rendered and compared in the native reference."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "建议D循环周期，不是原等待时延；延迟出现由目标体验另定"
+      },
+      "trigger": "目标异步工作pending",
+      "properties": [
+        "indicator rotation or opacity"
+      ],
+      "duration": {
+        "value": 1000,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "easing": {
+        "value": "linear",
+        "basis": "chosen"
+      },
+      "interruption": [
+        "只在可见且pending时运行，离开页面取消定时器"
+      ],
+      "delay": {
+        "value": 0,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "exit": "结果/取消时立即停止循环",
+      "reducedMotion": "静态图标+正在处理文字；读屏状态节流",
+      "implementationStage": "specified-only"
+    }
+  ]
+}

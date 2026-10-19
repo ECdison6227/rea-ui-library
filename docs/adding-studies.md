@@ -1,18 +1,21 @@
-# 在总库新增设计研究
+# 入库标准：让AI能直接实施
 
-本库是统一维护入口，按原版平台放入`platforms/web|desktop|mobile/<id>/`。默认研究视觉设计、组件/状态、布局组合、关键动效与通用交互；原业务功能作样本。独特业务页的设计应提取，实际付款/同步算法等不成为默认验收。
+用户完成软件功能后，选定参考App，让AI拉取本库即可应用其UI风格、动画和用户逻辑。入库验收围绕这个用途，不以原业务全功能测试比例作为门槛。
 
-## 新研究：Design Package v1
+## 新增与升级要求
 
-先读根AGENTS及[格式协议](../skills/rea-design-transfer/references/design-package.md)。使用已安装`rea-design-transfer`或本库锁定副本。
+新来源必须采用 **Design Package v1**，放入`platforms/web|desktop|mobile/<id>/`。README先说明适合什么、怎么给AI用，再列证据和限制。平台按原版判断。
 
-```sh
-node skills/rea-design-transfer/scripts/design-package.mjs init platforms/mobile/my-product --id my-product --name "My Product" --platform mobile --runtime android --version "实际版本" --identity "实际包名/制品身份"
-```
+- 固定根入口、独立设计规范、身份/版本、真实REA来源及适用范围。
+- 非空核心tokens、组件/状态、布局、交互、动效。组件含slots/events/states，交互有from/event/to/result。
+- 可实施的视觉与动画选择。源未知保留unknown，同时给明确D替代；至少一个核心动效有数值时序与曲线。空模板、只有默认截图或只有调色板不通过。
+- 参考、原版对照和跨业务接入，说明实际运行范围。partial可入库，但须让AI知道能用什么以及如何实施。
+- 相对路径可解析、真实SHA、原单位、历史采集/复核时间及A/B/C/D边界。
+- 审查实际分发成员，排除凭据、账号profile、私人画面、AVD/SDK/JDK缓存、嵌套.git；原件遗漏保留原因/哈希。
 
-默认入口：design-package.json、DESIGN_SPEC.md，以及tokens、components、layouts、interactions、motion、assets、evidence和参考/对照/迁移指南。初始化是draft，无证据、无运行通过。研究后填实际原件/来源/SHA与A/B/C/D，保留历史采集时间和核心/可选缺口；不要把模板直接入库。
+Hark和Mirasim是明确登记的`legacy-research`，暂作旧研究参考；新增来源不再允许旧格式。小米、Kimi、多邻国从标准入口消费。历史事实与用户此前明确要求的业务清单保留，未测不改verified。
 
-有真实REA研究输出并完成本轮可支持研究后，导出profile并登记：
+## 注册与验证
 
 ```sh
 node skills/rea-design-transfer/scripts/design-package.mjs validate platforms/mobile/my-product/design-package.json
@@ -23,26 +26,8 @@ npm run build
 npm run verify
 ```
 
-profile导出要求included且可追溯的REA源研究声明/原件和实际方法；检查器不能认证作者声明或取代像素复核。partial可以如实入库，ready必须有可实施核心设计及对照/跨领域验证。用户接受某些业务边界不改变原coverage。
+`study:add`执行格式与消费者契约两层检查：前者核对引用/字节，后者检查是否有可用于实施的核心内容。它们不代替真实像素/动画/交互验收。空draft或缺实施内容的包应被拒绝。
 
-visibility:public只表示可在目录显示该profile，不代表原始证据获准公开，本仓库继续为私有。副本/原件不能带嵌套.git、凭据、账号profile、依赖缓存或未经审核的私人画面；封面选用实际查看且已审核的图。总库不会从浏览器启动来源应用。
+已有来源更新先审查变更，再显式`npm run study:lock -- --id <id>`。普通build/verify不自动接受字节变化。已获用户提交/推送授权则检查后执行，不重复确认。
 
-## 已有或旧格式研究
-
-原有来源保留自己的目录、技术栈和证据。无design-package.json时，按现有README、spec、tokens、对照和边界读取。可以新增标准适配入口/模块，但不重写原件、把聚合当新A或自动抬高readiness。
-
-旧格式profile可参照[catalog模板](../catalog/study.template.json)，保留实际研究入口与spec。不能仅因有普通UI代码就作为REA来源登记。迁移样例跟随来源，不增加原版数量；无桌面研究可保持空分类。
-
-## 修改与推送
-
-新增与更新都先检查Git差异、来源AGENTS、分类、入口与分享范围。修改已登记研究时显式执行：
-
-```sh
-npm run study:lock -- --id my-product
-npm run build
-npm run verify
-```
-
-普通启动/build/verify只核对已锁字节，不自动接受变化。确认后按已有授权提交推送；保持仓库私有性。界面计数动态来自登记表，无需改固定数量。
-
-历史迁入来源的完整Git历史在legacy/hark/main、legacy/mi-fitness/main、legacy/mirasim/main标签；旧URL只是出处，日常使用本总库platforms目录。
+`visibility:public`只表示可在本地目录展示，不改变总库私有性。封面需实际审核；迁移样例跟随来源，不独立增加App数量。不要创建子模块或新分析仓库。

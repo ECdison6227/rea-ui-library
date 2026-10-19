@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="sequentially"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:duration="85" android:valueFrom="0.0dp" android:valueTo="15.0dp" android:propertyName="translationX" />
+    <objectAnimator android:duration="85" android:valueFrom="15.0dp" android:valueTo="-12.0dp" android:propertyName="translationX" />
+    <objectAnimator android:duration="85" android:valueFrom="-12.0dp" android:valueTo="9.0dp" android:propertyName="translationX" />
+    <objectAnimator android:duration="85" android:valueFrom="9.0dp" android:valueTo="-6.0dp" android:propertyName="translationX" />
+    <objectAnimator android:duration="85" android:valueFrom="-6.0dp" android:valueTo="0.0dp" android:propertyName="translationX" />
+</set>

@@ -14,18 +14,49 @@
     "researchEntry": "README.md"
   },
   "summary": "填写可复用规则及研究边界",
-  "tags": ["填写关键词"],
-  "stack": ["填写技术栈"],
-  "readiness": "填写迁移可用范围",
+  "tags": [
+    "填写关键词"
+  ],
+  "stack": [
+    "填写技术栈"
+  ],
+  "readiness": "partial",
   "coverage": "填写实测范围、条件和历史/本轮证据边界",
-  "features": ["填写可参考的模式"],
-  "limits": ["填写未知和未测项，不能标为已验证"],
-  "palette": ["#e5e7eb", "#111827"],
+  "features": [
+    "填写可参考的模式"
+  ],
+  "limits": [
+    "填写未知和未测项，不能标为已验证"
+  ],
+  "palette": [
+    "#e5e7eb",
+    "#111827"
+  ],
   "cover": "generic",
   "paletteClassification": "D: catalog presentation only; use source tokens for implementation",
   "artifacts": [
-    {"label": "研究入口", "path": "README.md", "role": "readme"},
-    {"label": "设计与行为规则", "path": "spec.md", "role": "spec"}
+    {
+      "label": "开始使用",
+      "path": "README.md",
+      "role": "readme"
+    },
+    {
+      "label": "设计规范",
+      "path": "DESIGN_SPEC.md",
+      "role": "spec"
+    },
+    {
+      "label": "AI实施指南",
+      "path": "ADAPTATION_GUIDE.md",
+      "role": "adoption"
+    }
   ],
-  "run": {"cwd": "platforms/web/example-study", "command": "填写来源实际启动命令或阅读方式", "requires": "填写依赖和运行边界", "verifiedHere": false}
+  "run": {
+    "cwd": "platforms/web/example-study",
+    "command": "填写来源实际启动命令或阅读方式",
+    "requires": "填写依赖和运行边界",
+    "verifiedHere": false
+  },
+  "designPackage": "design-package.json",
+  "deliveryTier": "design-package"
 }

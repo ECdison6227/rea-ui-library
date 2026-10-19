@@ -1,0 +1,103 @@
+{
+  "formatVersion": 1,
+  "kind": "layouts",
+  "items": [
+    {
+      "id": "l-health",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "e-93708f1addce6e",
+        "e-ad0da45c094d40"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "overview before detail; single vertical scroll owner; detail context; replace health-domain content: metric algorithms; health thresholds; food equivalence; wearable gates"
+      },
+      "name": "health",
+      "componentRefs": [
+        "c-top-bar",
+        "c-bottom-nav",
+        "c-progress-hero",
+        "c-metric-card",
+        "c-surface-card"
+      ],
+      "rules": [
+        "title/actions",
+        "single main scroll",
+        "three-target visual",
+        "three-summary surface",
+        "guest sign-in surface",
+        "two-column empty metric grid"
+      ],
+      "responsive": "D: preserve one scroll owner, platform insets and content-driven card heights; large text wraps instead of scaled screenshot."
+    },
+    {
+      "id": "l-mine",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "e-93708f1addce6e",
+        "e-ad0da45c094d40"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "identity then shortcuts; ordered equal-width shortcuts; grouped services; return-scroll; replace health-domain content: Xiaomi identity; membership/medical offers; lottery/health routes"
+      },
+      "name": "mine",
+      "componentRefs": [
+        "c-top-bar",
+        "c-bottom-nav",
+        "c-profile-header",
+        "c-shortcut-grid",
+        "c-surface-card",
+        "c-chevron-row"
+      ],
+      "rules": [
+        "blank-space title/actions",
+        "profile",
+        "five shortcuts",
+        "membership",
+        "asymmetric feature cards",
+        "service surfaces",
+        "grouped menu"
+      ],
+      "responsive": "D: preserve one scroll owner, platform insets and content-driven card heights; large text wraps instead of scaled screenshot."
+    },
+    {
+      "id": "l-settings",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "e-93708f1addce6e",
+        "e-ad0da45c094d40"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "description under title; single setting per row; fixed bottom action; controlled toggle request; replace health-domain content: health cloud/dual-device authorization; Xiaomi session implementation"
+      },
+      "name": "settings",
+      "componentRefs": [
+        "c-top-bar",
+        "c-chevron-row",
+        "c-switch-row",
+        "c-primary-button"
+      ],
+      "rules": [
+        "expanded ActionBar/back",
+        "scrolling variable-height row group",
+        "separate fixed positive bottom button"
+      ],
+      "responsive": "D: preserve one scroll owner, platform insets and content-driven card heights; large text wraps instead of scaled screenshot."
+    }
+  ]
+}

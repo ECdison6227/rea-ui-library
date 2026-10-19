@@ -8,7 +8,7 @@
 |---|---|
 | 实际覆盖与未知 | [baseline/coverage.json](baseline/coverage.json) |
 | 原版与参考三页、十组件 | [最终离线对照](baseline/comparison/final/index.html) |
-| 构建/安装原生参考 | [工程说明](android-reference/README.md) · [调试 APK](android-reference/build/style-reference.apk) |
+| 构建/安装原生参考 | [工程说明](android-reference/README.md) · 调试APK需本地构建，未随Git分发 |
 | 视觉、事件、行为规格 | [规格](baseline/spec.md) · [机器契约](baseline/contracts.json) · [通用/业务行为](baseline/behaviors.md) |
 | 其他业务如何复用 | [资料管理示例](transfer-example/README.md) |
 | 图标、字体、插画与文案 | [资产库](asset-library/README.md) · [基线资产清单](android-reference/assets-manifest.json) |

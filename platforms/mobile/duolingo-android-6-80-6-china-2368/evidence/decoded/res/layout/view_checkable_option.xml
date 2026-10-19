@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duolingo.core.design.juicy.ui.CardView android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" style="@style/UnclickableCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.duolingo.core.design.juicy.ui.JuicyTextView android:id="@id/optionName" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/optionDescription" app:layout_constraintEnd_toStartOf="@id/check" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Paragraph" />
+        <com.duolingo.core.design.juicy.ui.JuicyTextView android:id="@id/optionDescription" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/check" app:layout_constraintStart_toStartOf="parent" style="@style/Caption1" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/check" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/blue_check" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.duolingo.core.design.juicy.ui.CardView>

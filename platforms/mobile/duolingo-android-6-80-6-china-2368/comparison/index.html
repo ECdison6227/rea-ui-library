@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>来源与原生参考：四个局部状态</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#243141;background:#f3f5f7}body{max-width:1120px;margin:0 auto;padding:28px 20px}h1{font-size:25px;line-height:1.4}p{line-height:1.75}a{color:#1264ad}article{margin:36px 0 52px;padding:22px;background:#fff;border:1px solid #dce2e7;border-radius:14px}h2{font-size:21px;margin-top:0}.pair{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}figure{margin:0}figcaption{font-weight:650;margin-bottom:12px;line-height:1.6}.detail{font-size:13px;color:#556578;font-weight:400}.pair img{display:block;width:100%;max-width:360px;height:auto;border:1px solid #dce2e7;margin:auto}.note{border-left:4px solid #d7aa38;padding:8px 14px;background:#fff9e9}.links{font-size:14px}@media(max-width:600px){body{padding:16px 10px}article{padding:12px}.pair{gap:10px}figcaption{font-size:13px}.detail{font-size:11px}}
+</style>
+<h1>来源与原生参考：四个局部状态</h1>
+<p>左侧为 2026-10-15 采集的来源 <strong>historical A</strong>，右侧为 2026-10-16 采集的独立参考 <strong>current A-of-D</strong>。每张图直接引用原 PNG，点击可查看原尺寸；没有修改原图。<a href="source-reference.md">完整差异与边界</a> · <a href="source-pairs.json">坐标、状态、色值与哈希</a> · <a href="../reference/README.md">原生实现说明</a></p>
+<p class="note">同为 Android 12 API31、720×1280、320 dpi、英文浅色。来源 fontScale=null／未知，参考为 1.0。相同位置与部分相同颜色只支持局部比较；静态角色、字体外观、缺少母语入口和构建排版仍有差异。r01 错页排除。</p>
+<article><h2>1 · 课程未选</h2><div class="pair">
+<figure><figcaption>来源 05-course-picker<br><span class="detail">com.duolingo 6.80.6-china · historical A</span></figcaption><a href="../evidence/runtime/05-course-picker/screen.png"><img src="../evidence/runtime/05-course-picker/screen.png" alt="来源课程列表：未选中，Continue 灰色禁用" loading="lazy"></a></figure>
+<figure><figcaption>参考 r02-source-course-valid<br><span class="detail">org.reastyle.nativeexample 1.0 · current A-of-D</span></figcaption><a href="../evidence/reference-runtime/r02-source-course-valid/screen.png"><img src="../evidence/reference-runtime/r02-source-course-valid/screen.png" alt="独立原生参考课程列表：未选中，Continue 禁用" loading="lazy"></a></figure>
+</div><p>双方 Continue 均禁用。参考缺少母语标题右侧箭头；角色、Back 图形和气泡主体不同；课程卡 bounds 向下偏 1px。来源禁用按钮可见面从 y=1056 起，参考从 y=1048 起。</p></article>
+<article><h2>2 · Spanish 选中</h2><div class="pair">
+<figure><figcaption>来源 06-course-selected<br><span class="detail">点击 Spanish 后 · historical A</span></figcaption><a href="../evidence/runtime/06-course-selected/screen.png"><img src="../evidence/runtime/06-course-selected/screen.png" alt="来源 Spanish 选中，卡片浅蓝，Continue 绿色启用" loading="lazy"></a></figure>
+<figure><figcaption>参考 r03-source-selected<br><span class="detail">同一实例点击 Spanish 后 · current A-of-D</span></figcaption><a href="../evidence/reference-runtime/r03-source-selected/screen.png"><img src="../evidence/reference-runtime/r03-source-selected/screen.png" alt="参考 Spanish 选中，卡片浅蓝，Continue 启用" loading="lazy"></a></figure>
+</div><p>选中面 #ddf4ff、边 #84d8ff 和启用按钮 #58cc02／#58a700 在所列采样点吻合。参考课程文字更宽，卡片下边厚度不同，无障碍节点语义也不同。</p></article>
+<article><h2>3 · 继续后构建状态</h2><div class="pair">
+<figure><figcaption>来源 07-after-course-choice<br><span class="detail">真实来源构建状态 · historical A</span></figcaption><a href="../evidence/runtime/07-after-course-choice/screen.png"><img src="../evidence/runtime/07-after-course-choice/screen.png" alt="来源课程构建：角色音符，标题与局部加粗正文" loading="lazy"></a></figure>
+<figure><figcaption>参考 r04-source-building<br><span class="detail">本地占位状态 · current A-of-D</span></figcaption><a href="../evidence/reference-runtime/r04-source-building/screen.png"><img src="../evidence/reference-runtime/r04-source-building/screen.png" alt="参考课程构建占位：固定角色和正文，没有真实构建" loading="lazy"></a></figure>
+</div><p>参考标题和正文顶部向上偏 40px；当前正文均三行且断行吻合，但行距、字宽与局部加粗不同。角色姿态、装饰、尺度及动态行为没有还原。此状态没有验证真实课程构建成功。</p></article>
+<article><h2>4 · 系统返回后清空</h2><div class="pair">
+<figure><figcaption>来源 08-course-return<br><span class="detail">系统 Back 后 · historical A</span></figcaption><a href="../evidence/runtime/08-course-return/screen.png"><img src="../evidence/runtime/08-course-return/screen.png" alt="来源系统返回课程列表，Spanish 未选中且 Continue 禁用" loading="lazy"></a></figure>
+<figure><figcaption>参考 r05-source-return-reset<br><span class="detail">同一实例系统 Back 后 · current A-of-D</span></figcaption><a href="../evidence/reference-runtime/r05-source-return-reset/screen.png"><img src="../evidence/reference-runtime/r05-source-return-reset/screen.png" alt="参考系统返回课程列表，选择清空且 Continue 禁用，右侧可见滚动条" loading="lazy"></a></figure>
+</div><p>局部返回清空规则得到运行支持。参考此帧右侧可见滚动条，来源原图没有。未验证请求取消、晚到结果、其他草稿或完整流程。</p></article>
+<p class="links">八张原图及其 UI 树、采集时刻、PNG SHA-256 可从 <a href="source-pairs.json">source-pairs.json</a> 定位。本页没有相似度百分比，不代表十组件与跨业务样本均已验证。</p>
+</html>

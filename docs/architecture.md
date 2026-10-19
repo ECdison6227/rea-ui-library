@@ -27,6 +27,6 @@ Kimi来源为已核SHA的Run03分发包，3430文件、257套安全A图、71套D
 
 新来源需要真实研究入口、可追溯来源身份和REA研究输出；填写platform、版本、spec/reference/comparison入口、覆盖、readiness和unknowns，不要求另建GitHub仓库。只有普通应用源码或UI实验时，保持在本库范围外。不要为了凑齐三端，把网页或独立示例改标为桌面原版研究。
 
-新来源使用Design Package v1逻辑入口；designPackage为profile中的可选兼容字段。已有四个来源仍读取原格式。目录读取仅核对入口/身份与索引一致；study:add和verify才执行设计包引用/字节检查，避免每次目录请求重复扫描所有原件。prepare/verify仍不接受研究字节变更。
+新来源必须使用Design Package v1，现有小米、Kimi、多邻国已标准化；仅Hark/Mirasim保留显式legacy-research。study:add和verify执行格式/字节及消费者契约检查；普通目录读取只核对入口/身份。消费者契约要求可实施的核心视觉、组件、布局、用户交互和动画选择。prepare/verify不自动接受研究字节变更。
 
 技能副本由skills/source.lock.json记录上游仓库、固定提交、路径和逐文件SHA；同步不依赖启动时联网。浏览器和服务端使用同一个迁移任务生成函数，携带来源仓库、ref、目录和新/旧入口；消费Agent读取后记录实际commit，不伪造main的固定提交。

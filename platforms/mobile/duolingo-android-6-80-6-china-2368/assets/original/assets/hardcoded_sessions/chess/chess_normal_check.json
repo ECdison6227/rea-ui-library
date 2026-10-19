@@ -1,0 +1,1485 @@
+{
+  "type": "CHESS_LESSON",
+  "id": "0c9fb112-76b2-475f-a198-4a6861e0df0e",
+  "challenges": [
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "c3e3"
+        ],
+        "enemyMoves": [],
+        "finalCorrectSpeechBubbleContent": {
+          "text": "An attack on a king is called a **check**.",
+          "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/1e982230d5184b08e5341b809774cd91",
+          "visemes": "100\t0\t54\n112\t54\t62\n105\t117\t39\n112\t156\t78\n105\t234\t78\n101\t312\t140\n118\t453\t78\n101\t531\t54\n107\t585\t46\n101\t632\t54\n118\t687\t101\n101\t789\t125\n105\t914\t164\n113\t1078\t93\n118\t1171\t70\n112\t1242\t171\n108\t1414\t62\n105\t1476\t93\n115\t1570\t140\n112\t1710\t164\n118\t1875\t187\n100\t2062\t195"
+        },
+        "finalHighlight": "",
+        "generalIncorrectSpeechBubbleContent": {
+          "text": "Find a move that attacks my king.",
+          "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/e8dd058ebc8ed3b51fb901d345edf3fa",
+          "visemes": "109\t0\t125\n101\t125\t140\n105\t265\t70\n101\t335\t39\n107\t375\t101\n104\t476\t179\n105\t656\t70\n112\t726\t54\n105\t781\t203\n112\t984\t109\n118\t1093\t54\n113\t1148\t54\n107\t1203\t70\n112\t1273\t109\n118\t1382\t125\n101\t1507\t148\n105\t1656\t242\n100\t1898\t179"
+        },
+        "highlight": [
+          "c3e3 blue"
+        ],
+        "incorrectHighlight": [],
+        "incorrectMoves": [
+          "h4h7"
+        ],
+        "incorrectSpeechBubbleContent": [
+          {
+            "text": "Find a move that attacks my king.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/e8dd058ebc8ed3b51fb901d345edf3fa",
+            "visemes": "109\t0\t125\n101\t125\t140\n105\t265\t70\n101\t335\t39\n107\t375\t101\n104\t476\t179\n105\t656\t70\n112\t726\t54\n105\t781\t203\n112\t984\t109\n118\t1093\t54\n113\t1148\t54\n107\t1203\t70\n112\t1273\t109\n118\t1382\t125\n101\t1507\t148\n105\t1656\t242\n100\t1898\t179"
+          }
+        ],
+        "indicatorType": "NEW_CONCEPT",
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "Move here to put my king into **check**.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/8526072a30a72a6b954ee827af3c76f2",
+            "visemes": "105\t0\t351\n101\t351\t132\n115\t484\t78\n101\t562\t31\n107\t593\t85\n112\t679\t62\n107\t742\t125\n103\t867\t101\n118\t968\t117\n101\t1085\t78\n105\t1164\t62\n101\t1226\t62\n105\t1289\t101\n101\t1390\t54\n115\t1445\t140\n112\t1585\t132\n118\t1718\t203\n100\t1921\t156"
+          }
+        ],
+        "kcs": [
+          "checkEnemy"
+        ],
+        "moveEvaluationsForPositions": {
+          "4k3/2pp4/8/8/2P5/1KR5/8/8 w": [
+            {
+              "enemyResponse": "d7d5",
+              "move": "c3h3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e8e7",
+              "move": "c3g3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e8e7",
+              "move": "c3f3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e8f7",
+              "move": "c3e3",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d7d6",
+              "move": "c3d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e8f7",
+              "move": "c3c2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e8f8",
+              "move": "c3c1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e8e7",
+              "move": "b3b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "c7c6",
+              "move": "b3a4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e8e7",
+              "move": "b3a3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e8d8",
+              "move": "b3c2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e8e7",
+              "move": "b3b2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "c7c6",
+              "move": "b3a2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d7d6",
+              "move": "c4c5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            }
+          ]
+        }
+      },
+      "fen": "4k3/2pp4/8/8/2P5/1KR5/8/8 w - - 0 1",
+      "id": "ba9df289",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "g4e6"
+        ],
+        "enemyMoves": [],
+        "finalHighlight": "",
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [],
+        "incorrectSpeechBubbleContent": [],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "Check my king from a safe square.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/2a7de7b5fc297f32053e40c8adead19a",
+            "visemes": "100\t0\t54\n115\t54\t78\n101\t132\t78\n118\t210\t85\n101\t296\t109\n118\t406\t78\n101\t484\t93\n105\t578\t148\n101\t726\t54\n107\t781\t54\n112\t835\t31\n113\t867\t132\n101\t1000\t117\n113\t1117\t132\n118\t1250\t54\n104\t1304\t93\n101\t1398\t273\n100\t1671\t218"
+          }
+        ],
+        "kcs": [
+          "checkEnemy"
+        ],
+        "moveEvaluationsForPositions": {
+          "6k1/8/8/3p4/6B1/8/5KP1/8 w": [
+            {
+              "enemyResponse": "g8f7",
+              "move": "g4c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d5d4",
+              "move": "g4d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g8g7",
+              "move": "g4e6",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d5d4",
+              "move": "g4h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g8f7",
+              "move": "g4f5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d5d4",
+              "move": "g4h3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g8g7",
+              "move": "g4f3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g8g7",
+              "move": "g4e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g8f7",
+              "move": "g4d1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g8h7",
+              "move": "f2g3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g8f7",
+              "move": "f2f3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d5d4",
+              "move": "f2e3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g8f8",
+              "move": "f2e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g8g7",
+              "move": "f2g1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g8f7",
+              "move": "f2f1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g8f7",
+              "move": "f2e1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d5d4",
+              "move": "g2g3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            }
+          ]
+        }
+      },
+      "fen": "6k1/8/8/3p4/6B1/8/5KP1/8 w - - 0 1",
+      "id": "8e66611e",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "g5f7"
+        ],
+        "enemyMoves": [],
+        "finalHighlight": "",
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [],
+        "incorrectSpeechBubbleContent": [],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "Check my king from a safe square.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/2a7de7b5fc297f32053e40c8adead19a",
+            "visemes": "100\t0\t54\n115\t54\t78\n101\t132\t78\n118\t210\t85\n101\t296\t109\n118\t406\t78\n101\t484\t93\n105\t578\t148\n101\t726\t54\n107\t781\t54\n112\t835\t31\n113\t867\t132\n101\t1000\t117\n113\t1117\t132\n118\t1250\t54\n104\t1304\t93\n101\t1398\t273\n100\t1671\t218"
+          }
+        ],
+        "kcs": [
+          "checkEnemy"
+        ],
+        "moveEvaluationsForPositions": {
+          "3k3r/3p4/8/6N1/8/8/8/3K4 w": [
+            {
+              "enemyResponse": "h8h7",
+              "move": "g5h7",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d8e7",
+              "move": "g5f7",
+              "moveCorrectness": "correct",
+              "wdl": 0.488
+            },
+            {
+              "enemyResponse": "d7e6",
+              "move": "g5e6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "h8h2",
+              "move": "g5e4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "h8h3",
+              "move": "g5h3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d8e7",
+              "move": "g5f3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d8e7",
+              "move": "d1e2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d8e7",
+              "move": "d1d2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d8e7",
+              "move": "d1c2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d8e7",
+              "move": "d1e1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d8e7",
+              "move": "d1c1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            }
+          ]
+        }
+      },
+      "fen": "3k3r/3p4/8/6N1/8/8/8/3K4 w - - 0 1",
+      "id": "7aac30c8",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "c4f4"
+        ],
+        "enemyMoves": [],
+        "finalHighlight": "",
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [],
+        "incorrectSpeechBubbleContent": [],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "Check my king from a safe square.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/2a7de7b5fc297f32053e40c8adead19a",
+            "visemes": "100\t0\t54\n115\t54\t78\n101\t132\t78\n118\t210\t85\n101\t296\t109\n118\t406\t78\n101\t484\t93\n105\t578\t148\n101\t726\t54\n107\t781\t54\n112\t835\t31\n113\t867\t132\n101\t1000\t117\n113\t1117\t132\n118\t1250\t54\n104\t1304\t93\n101\t1398\t273\n100\t1671\t218"
+          }
+        ],
+        "kcs": [
+          "checkEnemy"
+        ],
+        "moveEvaluationsForPositions": {
+          "5k2/8/4b3/8/2R5/5p2/1P6/2K5 w": [
+            {
+              "enemyResponse": "e6c8",
+              "move": "c4c8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "f3f2",
+              "move": "c4c7",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "f3f2",
+              "move": "c4c6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.001
+            },
+            {
+              "enemyResponse": "f3f2",
+              "move": "c4c5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "f8e7",
+              "move": "c4h4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e6g4",
+              "move": "c4g4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "f8e7",
+              "move": "c4f4",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e6d5",
+              "move": "c4e4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f8e7",
+              "move": "c4d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e6d5",
+              "move": "c4b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e6d5",
+              "move": "c4a4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e6d5",
+              "move": "c4c3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f8e7",
+              "move": "c4c2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e6c4",
+              "move": "c1d2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e6c4",
+              "move": "c1c2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e6c4",
+              "move": "c1d1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e6c4",
+              "move": "c1b1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e6c4",
+              "move": "b2b3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e6c4",
+              "move": "b2b4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            }
+          ]
+        }
+      },
+      "fen": "5k2/8/4b3/8/2R5/5p2/1P6/2K5 w - - 0 1",
+      "id": "02e2076b",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "d5c7"
+        ],
+        "enemyMoves": [],
+        "finalHighlight": "",
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [],
+        "incorrectSpeechBubbleContent": [],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "Let's try a few more check puzzles.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/219531405357f6752fd4627080adf6be",
+            "visemes": "100\t0\t54\n108\t54\t70\n101\t125\t78\n115\t203\t125\n105\t328\t78\n101\t406\t234\n109\t640\t109\n103\t750\t70\n104\t820\t54\n105\t875\t70\n112\t945\t164\n115\t1109\t101\n101\t1210\t117\n107\t1328\t109\n112\t1437\t109\n113\t1546\t78\n112\t1625\t140\n113\t1765\t179\n107\t1945\t46\n100\t1992\t109"
+          }
+        ],
+        "kcs": [
+          "checkEnemy"
+        ],
+        "moveEvaluationsForPositions": {
+          "k3b3/pp6/8/3N4/8/8/5PP1/3K4 w": [
+            {
+              "enemyResponse": "a8b8",
+              "move": "d5e7",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.4995
+            },
+            {
+              "enemyResponse": "a8b8",
+              "move": "d5c7",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e8f7",
+              "move": "d5f6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.504
+            },
+            {
+              "enemyResponse": "a7b6",
+              "move": "d5b6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "b7b5",
+              "move": "d5f4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.4985
+            },
+            {
+              "enemyResponse": "b7b5",
+              "move": "d5b4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.495
+            },
+            {
+              "enemyResponse": "b7b5",
+              "move": "d5e3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "e8c6",
+              "move": "d5c3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "e8c6",
+              "move": "d1e2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.502
+            },
+            {
+              "enemyResponse": "a8b8",
+              "move": "d1d2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.504
+            },
+            {
+              "enemyResponse": "a8b8",
+              "move": "d1c2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.504
+            },
+            {
+              "enemyResponse": "a8b8",
+              "move": "d1e1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "e8f7",
+              "move": "d1c1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "e8f7",
+              "move": "g2g3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "a8b8",
+              "move": "f2f3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "a8b8",
+              "move": "g2g4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.504
+            },
+            {
+              "enemyResponse": "a8b8",
+              "move": "f2f4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5055
+            }
+          ]
+        }
+      },
+      "fen": "k3b3/pp6/8/3N4/8/8/5PP1/3K4 w - - 0 1",
+      "id": "5be25fbb",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "g3d3"
+        ],
+        "enemyMoves": [],
+        "finalHighlight": "",
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [],
+        "incorrectSpeechBubbleContent": [],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "Let's try a few more check puzzles.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/219531405357f6752fd4627080adf6be",
+            "visemes": "100\t0\t54\n108\t54\t70\n101\t125\t78\n115\t203\t125\n105\t328\t78\n101\t406\t234\n109\t640\t109\n103\t750\t70\n104\t820\t54\n105\t875\t70\n112\t945\t164\n115\t1109\t101\n101\t1210\t117\n107\t1328\t109\n112\t1437\t109\n113\t1546\t78\n112\t1625\t140\n113\t1765\t179\n107\t1945\t46\n100\t1992\t109"
+          }
+        ],
+        "kcs": [
+          "checkEnemy"
+        ],
+        "moveEvaluationsForPositions": {
+          "8/5p2/3k4/2p1b3/8/6Q1/8/4K3 w": [
+            {
+              "enemyResponse": "d6e7",
+              "move": "g3g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e5g7",
+              "move": "g3g7",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "f7g6",
+              "move": "g3g6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d6e6",
+              "move": "g3g5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d6e5",
+              "move": "g3e5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d6d5",
+              "move": "g3h4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e5d4",
+              "move": "g3g4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e5f4",
+              "move": "g3f4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d6e7",
+              "move": "g3h3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f7f6",
+              "move": "g3f3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d6d5",
+              "move": "g3e3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d6e7",
+              "move": "g3d3",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e5c3",
+              "move": "g3c3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d6e7",
+              "move": "g3b3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e5d4",
+              "move": "g3a3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e5h2",
+              "move": "g3h2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d6e6",
+              "move": "g3g2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f7f6",
+              "move": "g3f2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e5c3",
+              "move": "g3g1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e5g3",
+              "move": "e1f2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e5g3",
+              "move": "e1e2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e5g3",
+              "move": "e1d2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e5g3",
+              "move": "e1f1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e5g3",
+              "move": "e1d1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            }
+          ]
+        }
+      },
+      "fen": "8/5p2/3k4/2p1b3/8/6Q1/8/4K3 w - - 0 1",
+      "id": "7de40e83",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "g2g8"
+        ],
+        "enemyMoves": [],
+        "finalHighlight": "",
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [],
+        "incorrectSpeechBubbleContent": [],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "Check, please.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/34ea22789aba05992c8c4f009ae666d8",
+            "visemes": "100\t0\t70\n115\t70\t78\n101\t148\t109\n118\t257\t117\n114\t375\t31\n101\t406\t109\n113\t515\t148\n107\t664\t156"
+          }
+        ],
+        "kcs": [
+          "checkEnemy"
+        ],
+        "moveEvaluationsForPositions": {
+          "8/8/8/3k4/4n3/8/K5Q1/8 w": [
+            {
+              "enemyResponse": "d5d4",
+              "move": "g2g8",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d5e6",
+              "move": "g2g7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d5d4",
+              "move": "g2g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e4g5",
+              "move": "g2g5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "d5e5",
+              "move": "g2g4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d5e4",
+              "move": "g2e4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "d5e5",
+              "move": "g2h3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e4g3",
+              "move": "g2g3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "d5e5",
+              "move": "g2f3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e4c5",
+              "move": "g2h2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e4f2",
+              "move": "g2f2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "e4c3",
+              "move": "g2e2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "e4d2",
+              "move": "g2d2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "d5d4",
+              "move": "g2c2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e4c5",
+              "move": "g2b2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d5e5",
+              "move": "g2h1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e4c5",
+              "move": "g2g1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d5e5",
+              "move": "g2f1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d5e5",
+              "move": "a2b3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d5d4",
+              "move": "a2a3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d5d4",
+              "move": "a2b2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d5e5",
+              "move": "a2b1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d5d4",
+              "move": "a2a1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            }
+          ]
+        }
+      },
+      "fen": "8/8/8/3k4/4n3/8/K5Q1/8 w - - 0 1",
+      "id": "97262353",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "d3d8",
+          "d8e8"
+        ],
+        "enemyMoves": [
+          "e2e8"
+        ],
+        "finalHighlight": "",
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [],
+        "incorrectSpeechBubbleContent": [],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "Check, please.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/34ea22789aba05992c8c4f009ae666d8",
+            "visemes": "100\t0\t70\n115\t70\t78\n101\t148\t109\n118\t257\t117\n114\t375\t31\n101\t406\t109\n113\t515\t148\n107\t664\t156"
+          }
+        ],
+        "kcs": [
+          "checkEnemy"
+        ],
+        "moveEvaluationsForPositions": {
+          "3Rr2k/6pp/8/1p6/8/6PK/7P/8 w": [
+            {
+              "move": "d8e8",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e8c8",
+              "move": "d8c8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8b8",
+              "move": "d8b8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8a8",
+              "move": "d8a8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8b8",
+              "move": "d8d7",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.061
+            },
+            {
+              "enemyResponse": "e8b8",
+              "move": "d8d6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.028
+            },
+            {
+              "enemyResponse": "e8b8",
+              "move": "d8d5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.022
+            },
+            {
+              "enemyResponse": "e8b8",
+              "move": "d8d4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.1495
+            },
+            {
+              "enemyResponse": "b5b4",
+              "move": "d8d3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0955
+            },
+            {
+              "enemyResponse": "e8b8",
+              "move": "d8d2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.02
+            },
+            {
+              "enemyResponse": "e8b8",
+              "move": "d8d1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0155
+            },
+            {
+              "enemyResponse": "e8d8",
+              "move": "h3h4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8d8",
+              "move": "h3g4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8d8",
+              "move": "h3g2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8d8",
+              "move": "g3g4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            }
+          ],
+          "7k/6pp/8/1p6/8/3R2PK/4r2P/8 w": [
+            {
+              "enemyResponse": "e2e8",
+              "move": "h3h4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.334
+            },
+            {
+              "enemyResponse": "e2e8",
+              "move": "h3g4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.3635
+            },
+            {
+              "enemyResponse": "e2e8",
+              "move": "d3d8",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h8g8",
+              "move": "d3d7",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.4695
+            },
+            {
+              "enemyResponse": "h8g8",
+              "move": "d3d6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.455
+            },
+            {
+              "enemyResponse": "h7h6",
+              "move": "d3d5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "e2e8",
+              "move": "d3d4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.322
+            },
+            {
+              "enemyResponse": "e2e8",
+              "move": "d3f3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.334
+            },
+            {
+              "enemyResponse": "e2e3",
+              "move": "d3e3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e2e8",
+              "move": "d3c3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.1665
+            },
+            {
+              "enemyResponse": "e2e5",
+              "move": "d3b3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.341
+            },
+            {
+              "enemyResponse": "e2e8",
+              "move": "d3a3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.145
+            },
+            {
+              "enemyResponse": "e2d2",
+              "move": "d3d2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e2e8",
+              "move": "d3d1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.1685
+            },
+            {
+              "enemyResponse": "e2e8",
+              "move": "g3g4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.105
+            }
+          ]
+        }
+      },
+      "fen": "7k/6pp/8/1p6/8/3R2PK/4r2P/8 w - - 0 38",
+      "id": "c35c843c",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "g7h8"
+        ],
+        "enemyMoves": [],
+        "finalHighlight": "",
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [],
+        "incorrectSpeechBubbleContent": [],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "Check, please.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/34ea22789aba05992c8c4f009ae666d8",
+            "visemes": "100\t0\t70\n115\t70\t78\n101\t148\t109\n118\t257\t117\n114\t375\t31\n101\t406\t109\n113\t515\t148\n107\t664\t156"
+          }
+        ],
+        "kcs": [
+          "checkEnemy"
+        ],
+        "moveEvaluationsForPositions": {
+          "k6r/6Q1/5pp1/8/8/8/8/4K3 w": [
+            {
+              "enemyResponse": "a8b7",
+              "move": "g7h8",
+              "moveCorrectness": "correct",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h8g8",
+              "move": "g7g8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "h8f8",
+              "move": "g7f8",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "h8h7",
+              "move": "g7h7",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "h8c8",
+              "move": "g7f7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h8c8",
+              "move": "g7e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "a8b8",
+              "move": "g7d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h8b8",
+              "move": "g7c7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "a8b7",
+              "move": "g7b7",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "a8a7",
+              "move": "g7a7",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "h8h6",
+              "move": "g7h6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "h8d8",
+              "move": "g7g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h8e8",
+              "move": "g7f6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h8d8",
+              "move": "e1f2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h8c8",
+              "move": "e1e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h8c8",
+              "move": "e1d2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h8h4",
+              "move": "e1f1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h8d8",
+              "move": "e1d1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            }
+          ]
+        }
+      },
+      "fen": "k6r/6Q1/5pp1/8/8/8/8/4K3 w - - 0 1",
+      "id": "e0b42ea3",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "c5b7"
+        ],
+        "enemyMoves": [],
+        "finalCorrectSpeechBubbleContent": {
+          "text": "That was some fineee checking.",
+          "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/524f1a3b495bacb1aadc112b104c1ceb",
+          "visemes": "100\t0\t54\n105\t54\t46\n112\t101\t132\n105\t234\t46\n104\t281\t93\n113\t375\t164\n112\t539\t101\n105\t640\t93\n109\t734\t179\n112\t914\t179\n103\t1093\t70\n105\t1164\t101\n115\t1265\t117\n101\t1382\t78\n118\t1460\t85\n108\t1546\t164\n112\t1710\t148\n100\t1859\t164"
+        },
+        "finalHighlight": "",
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [],
+        "incorrectSpeechBubbleContent": [],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "Check, please.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/34ea22789aba05992c8c4f009ae666d8",
+            "visemes": "100\t0\t70\n115\t70\t78\n101\t148\t109\n118\t257\t117\n114\t375\t31\n101\t406\t109\n113\t515\t148\n107\t664\t156"
+          }
+        ],
+        "kcs": [
+          "checkEnemy"
+        ],
+        "moveEvaluationsForPositions": {
+          "3q4/2n4n/1ppk4/2N5/7r/8/3PK3/8 w": [
+            {
+              "enemyResponse": "d8d7",
+              "move": "c5d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d6e7",
+              "move": "c5b7",
+              "moveCorrectness": "correct",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d6e6",
+              "move": "c5e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "h4h2",
+              "move": "c5a6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "h4e4",
+              "move": "c5e4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d6e5",
+              "move": "c5a4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "h4h2",
+              "move": "c5d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d8e8",
+              "move": "c5b3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d6c5",
+              "move": "e2f3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d6c5",
+              "move": "e2e3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d6c5",
+              "move": "e2d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d6c5",
+              "move": "e2f2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d6c5",
+              "move": "e2f1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d6c5",
+              "move": "e2e1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d6c5",
+              "move": "e2d1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d6c5",
+              "move": "d2d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "b6c5",
+              "move": "d2d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.0
+            }
+          ]
+        }
+      },
+      "fen": "3q4/2n4n/1ppk4/2N5/7r/8/3PK3/8 w - - 0 1",
+      "id": "e6eb6060",
+      "type": "normal"
+    }
+  ],
+  "courseId": "CHESS_CH",
+  "metadata": {
+    "chessJson": "{\"contentId\":\"Skill:learningToCheck\",\"type\":\"CHESS_LESSON\"}",
+    "progressActionJson": "{\"type\":\"chess_lesson\",\"body\":{\"curriculumNodeId\":\"Skill:learningToCheck\"}}"
+  },
+  "trackingProperties": {
+    "activity_uuid": "101fadab-28e4-404b-8598-345c875ea05f"
+  },
+  "fromLanguage": "en"
+}

@@ -4,7 +4,9 @@ import {ROOT,definitions,validateDefinitions,hash,contained,PLATFORMS} from './c
 import {verifyStudy} from './integrity.mjs';
 import {validateDesignPackage} from '../skills/rea-design-transfer/scripts/design-package.mjs';
 import {checkSkillSync} from './check-skill-sync.mjs';
+import {checkConsumerPackage} from './consumer-contract.mjs';
 const data=definitions(),errors=validateDefinitions(data),lock=JSON.parse(fs.readFileSync(path.join(ROOT,'catalog/imports.lock.json'),'utf8'));
+for(const s of data.sources){if(s.designPackage){const c=checkConsumerPackage(contained(contained(ROOT,s.root),s.designPackage));errors.push(...c.errors.map(e=>s.id+': '+e));}else if(!['hark','mirasim'].includes(s.id)||s.deliveryTier!=='legacy-research')errors.push('Unapproved legacy study: '+s.id);}
 errors.push(...checkSkillSync().errors);
 if(lock.sources.length!==data.sources.length)errors.push('Stale source registry lock');
 for(const s of data.sources){try{verifyStudy(s);if(s.designPackage){const r=validateDesignPackage(contained(contained(ROOT,s.root),s.designPackage),{forCatalog:true});errors.push(...r.errors.map(e=>s.id+': '+e));}const l=lock.sources.find(l=>l.id===s.id);if(l?.path!==s.root||JSON.stringify(l?.integrity)!==JSON.stringify(s.integrity))errors.push('Stale source lock: '+s.id);}catch(e){errors.push(e.message);}}

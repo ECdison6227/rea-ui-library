@@ -1,0 +1,145 @@
+{
+  "restoredAt": "2026-10-19T09:52:06.155Z",
+  "after": {
+    "fontScale": "1.0",
+    "size": "Physical size: 720x1280",
+    "density": "Physical density: 320",
+    "night": "Night mode: no",
+    "user": "0"
+  },
+  "sourceDataModified": false,
+  "sourceAccountIdentityRechecked": false,
+  "commands": [
+    {
+      "args": [
+        "shell",
+        "getprop",
+        "ro.boot.qemu.avd_name"
+      ],
+      "startedAt": "2026-10-19T09:52:04.373Z",
+      "finishedAt": "2026-10-19T09:52:04.462Z",
+      "status": 0,
+      "stderr": ""
+    },
+    {
+      "args": [
+        "shell",
+        "am",
+        "get-current-user"
+      ],
+      "startedAt": "2026-10-19T09:52:04.462Z",
+      "finishedAt": "2026-10-19T09:52:04.558Z",
+      "status": 0,
+      "stderr": ""
+    },
+    {
+      "args": [
+        "shell",
+        "settings",
+        "put",
+        "system",
+        "font_scale",
+        "1.0"
+      ],
+      "startedAt": "2026-10-19T09:52:04.558Z",
+      "finishedAt": "2026-10-19T09:52:04.652Z",
+      "status": 0,
+      "stderr": ""
+    },
+    {
+      "args": [
+        "shell",
+        "wm",
+        "size",
+        "reset"
+      ],
+      "startedAt": "2026-10-19T09:52:04.652Z",
+      "finishedAt": "2026-10-19T09:52:04.744Z",
+      "status": 0,
+      "stderr": ""
+    },
+    {
+      "args": [
+        "shell",
+        "cmd",
+        "uimode",
+        "night",
+        "no"
+      ],
+      "startedAt": "2026-10-19T09:52:04.744Z",
+      "finishedAt": "2026-10-19T09:52:04.834Z",
+      "status": 0,
+      "stderr": ""
+    },
+    {
+      "args": [
+        "shell",
+        "am",
+        "force-stop",
+        "org.reastyle.nativeexample"
+      ],
+      "startedAt": "2026-10-19T09:52:04.834Z",
+      "finishedAt": "2026-10-19T09:52:05.016Z",
+      "status": 0,
+      "stderr": ""
+    },
+    {
+      "args": [
+        "shell",
+        "settings",
+        "get",
+        "system",
+        "font_scale"
+      ],
+      "startedAt": "2026-10-19T09:52:05.016Z",
+      "finishedAt": "2026-10-19T09:52:05.144Z",
+      "status": 0,
+      "stderr": ""
+    },
+    {
+      "args": [
+        "shell",
+        "wm",
+        "size"
+      ],
+      "startedAt": "2026-10-19T09:52:05.144Z",
+      "finishedAt": "2026-10-19T09:52:05.299Z",
+      "status": 0,
+      "stderr": ""
+    },
+    {
+      "args": [
+        "shell",
+        "wm",
+        "density"
+      ],
+      "startedAt": "2026-10-19T09:52:05.299Z",
+      "finishedAt": "2026-10-19T09:52:05.606Z",
+      "status": 0,
+      "stderr": ""
+    },
+    {
+      "args": [
+        "shell",
+        "cmd",
+        "uimode",
+        "night"
+      ],
+      "startedAt": "2026-10-19T09:52:05.606Z",
+      "finishedAt": "2026-10-19T09:52:05.862Z",
+      "status": 0,
+      "stderr": ""
+    },
+    {
+      "args": [
+        "shell",
+        "am",
+        "get-current-user"
+      ],
+      "startedAt": "2026-10-19T09:52:05.862Z",
+      "finishedAt": "2026-10-19T09:52:06.155Z",
+      "status": 0,
+      "stderr": ""
+    }
+  ]
+}

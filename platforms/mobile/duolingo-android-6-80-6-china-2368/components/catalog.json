@@ -1,0 +1,4646 @@
+{
+  "formatVersion": 1,
+  "kind": "components",
+  "items": [
+    {
+      "id": "component-button",
+      "name": "主次动作按钮",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-05-course-picker",
+        "ev-06-course-selected",
+        "ev-contracts",
+        "ev-file-e691e96161d6"
+      ],
+      "unknowns": [
+        "pressed motion",
+        "touch target expansion",
+        "haptic feedback",
+        "busy indicator policy",
+        "All source pressed/focus/busy/long-text variants are not implied by a sampled default state."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse existing native reference: Components.Button. 80ms D press/release offset; reduced-motion immediate; Disabled surface begins4dp below button bounds, calibrated to course sample; Native focus semantics; no initial automatic focus rectangle"
+      },
+      "slots": [
+        "label",
+        "optional busy indicator"
+      ],
+      "tokenRefs": [
+        "token-button-height",
+        "token-radius",
+        "token-lip",
+        "token-button-size",
+        "token-tracking",
+        "token-action-guide-face",
+        "token-action-guide-lip"
+      ],
+      "states": [
+        {
+          "id": "default",
+          "appearance": "引导动作绿面、深绿底沿；实心蓝色为另一场景变体",
+          "classification": "A",
+          "evidenceRefs": [
+            "ev-06-course-selected"
+          ]
+        },
+        {
+          "id": "disabled",
+          "appearance": "未选课程时灰面和灰字，Continue禁用",
+          "classification": "A",
+          "evidenceRefs": [
+            "ev-05-course-picker"
+          ]
+        },
+        {
+          "id": "pressed",
+          "appearance": "D80ms按下/释放位移4dp；减少动画立即切换。原版时长未知。",
+          "classification": "D",
+          "evidenceRefs": [
+            "ev-contracts"
+          ]
+        },
+        {
+          "id": "focused",
+          "appearance": "参考内描边2dp蓝色；原版未测",
+          "classification": "D",
+          "evidenceRefs": [
+            "ev-contracts"
+          ]
+        },
+        {
+          "id": "loading",
+          "appearance": "按钮内加载呈现及防重复事件未知",
+          "classification": "C",
+          "evidenceRefs": []
+        }
+      ],
+      "geometry": "minHeight52dp/radius16dp/lip4dp；旧48dp家族分开。",
+      "inputs": [
+        "text",
+        "typeface",
+        "face",
+        "lip",
+        "transparent",
+        "enabled"
+      ],
+      "events": [
+        "Native View click invokes owner listener once per accepted click; owner validates screen/state"
+      ],
+      "usage": "主次动作依场景；业务校验决定enabled，不用颜色单独表达状态。",
+      "adaptation": {
+        "platform": "Android native Views; other platforms require D mapping",
+        "scaling": "sp follows target fontScale; dp respects density and safe insets",
+        "longText": "Reference only covers bounded English specimens; reflow and keyboard conditions require comparison."
+      },
+      "legacyContractId": "button",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "partial",
+          "evidenceRefs": [
+            "ev-06-course-selected"
+          ],
+          "reason": "引导动作绿面、深绿底沿；实心蓝色为另一场景变体"
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "partial",
+          "evidenceRefs": [
+            "ev-contracts"
+          ],
+          "reason": "D80ms按下/释放位移4dp；减少动画立即切换。原版时长未知。"
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "partial",
+          "evidenceRefs": [
+            "ev-05-course-picker"
+          ],
+          "reason": "未选课程时灰面和灰字，Continue禁用"
+        },
+        {
+          "state": "loading",
+          "status": "partial",
+          "evidenceRefs": [],
+          "reason": "按钮内加载呈现及防重复事件未知"
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      },
+      "referenceRevision": {
+        "status": "bounded-runtime-observed",
+        "report": "docs/reference-revision.md",
+        "limits": [
+          "原版运行字体绑定仍未知；采用Duolingo Sans19sp的D选择校准文字，像素锚吻合不证明原版Typeface内部绑定。",
+          "角色姿态/原版Lottie与Rive、全部组件族、全App深色/完整中文及真实读屏/触觉仍未完成同条件还原。",
+          "原版fontScale历史为未知；当前参考fontScale1.0，不能把画布匹配称所有条件完全相同。",
+          "四份录像分别保留录制构建SHA；部分前置适配样本是15f构建、录像为bb311/6794，最终39c只改输入焦点/IME流程并另做最终课程、IME与重试复核。",
+          "screenrecord编码时长小于宿主4秒录制窗口，解码采样只证明可见中间状态，不能当作原版动画时长或精确Android呈现时间。",
+          "r38/r47输入裁切、r48未保持输入焦点、r42/r43未命中控件、r55仍为错误页均保留，未计为通过。"
+        ]
+      }
+    },
+    {
+      "id": "component-navigation",
+      "name": "返回与进度工具栏",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-05-course-picker",
+        "ev-06-course-selected",
+        "ev-contracts",
+        "ev-file-e691e96161d6"
+      ],
+      "unknowns": [
+        "source screen Back and system Back equivalence",
+        "All source pressed/focus/busy/long-text variants are not implied by a sampled default state."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse existing native reference: MainActivity.addToolbar. Back uses a system-rendered chevron glyph and40x48dp target; Paperlane brand in toolbar"
+      },
+      "slots": [
+        "back",
+        "progress",
+        "optional title/menu"
+      ],
+      "tokenRefs": [
+        "token-toolbar-height",
+        "token-progress-height"
+      ],
+      "states": [
+        {
+          "id": "back",
+          "appearance": "来源左箭头；参考是字形‹，外观和bounds有差异",
+          "classification": "A",
+          "evidenceRefs": [
+            "ev-05-course-picker",
+            "ev-06-course-selected"
+          ]
+        }
+      ],
+      "geometry": "声明高48dp；来源图标32×32dp不等于真实触控范围。",
+      "inputs": [
+        "back",
+        "progress",
+        "optional title/menu"
+      ],
+      "events": [
+        "Back calls FlowState.back"
+      ],
+      "usage": "目标使用原生导航语义；系统返回/栏内返回一致性需按目标业务确定。",
+      "adaptation": {
+        "platform": "Android native Views; other platforms require D mapping",
+        "scaling": "sp follows target fontScale; dp respects density and safe insets",
+        "longText": "Reference only covers bounded English specimens; reflow and keyboard conditions require comparison."
+      },
+      "legacyContractId": "navigation",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "not_applicable",
+          "evidenceRefs": [],
+          "reason": "Page toolbar is not a selection control; tab selection is component-tab-list."
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      },
+      "referenceRevision": {
+        "status": "bounded-runtime-observed",
+        "report": "docs/reference-revision.md",
+        "limits": [
+          "原版运行字体绑定仍未知；采用Duolingo Sans19sp的D选择校准文字，像素锚吻合不证明原版Typeface内部绑定。",
+          "角色姿态/原版Lottie与Rive、全部组件族、全App深色/完整中文及真实读屏/触觉仍未完成同条件还原。",
+          "原版fontScale历史为未知；当前参考fontScale1.0，不能把画布匹配称所有条件完全相同。",
+          "四份录像分别保留录制构建SHA；部分前置适配样本是15f构建、录像为bb311/6794，最终39c只改输入焦点/IME流程并另做最终课程、IME与重试复核。",
+          "screenrecord编码时长小于宿主4秒录制窗口，解码采样只证明可见中间状态，不能当作原版动画时长或精确Android呈现时间。",
+          "r38/r47输入裁切、r48未保持输入焦点、r42/r43未命中控件、r55仍为错误页均保留，未计为通过。"
+        ]
+      }
+    },
+    {
+      "id": "component-choice-card",
+      "name": "图文选择卡",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-05-course-picker",
+        "ev-06-course-selected",
+        "ev-contracts",
+        "ev-file-e691e96161d6"
+      ],
+      "unknowns": [
+        "original reselection behavior",
+        "original keyboard or TalkBack contract",
+        "All source pressed/focus/busy/long-text variants are not implied by a sampled default state."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse existing native reference: Components.ChoiceCard. D19sp packaged Duolingo Sans; default64dp, content-driven height under large type/narrow width; Source-reference single choice; transfer multiple choice; Native RadioButton/CheckBox semantics remain D"
+      },
+      "slots": [
+        "leading icon",
+        "title",
+        "selection indicator"
+      ],
+      "tokenRefs": [
+        "token-radius",
+        "token-border",
+        "token-selection-face",
+        "token-selection-border",
+        "token-body-size"
+      ],
+      "states": [
+        {
+          "id": "unchecked",
+          "appearance": "近白面与灰边，标题深灰",
+          "classification": "A",
+          "evidenceRefs": [
+            "ev-05-course-picker"
+          ]
+        },
+        {
+          "id": "checked",
+          "appearance": "浅蓝面、蓝边与蓝标题联动，继续按钮启用",
+          "classification": "A",
+          "evidenceRefs": [
+            "ev-06-course-selected"
+          ]
+        }
+      ],
+      "geometry": "参考64dp卡高来自特定360dp画布；原版与参考卡片y有1px差。",
+      "inputs": [
+        "title",
+        "typeface",
+        "multiple",
+        "checked",
+        "icon"
+      ],
+      "events": [
+        "Owner sets course index or toggles transfer bit; then updates cards and CTA without recreating screen"
+      ],
+      "usage": "单选/多选是迁移接口；重选取消原版未测；参考原生RadioButton与来源树语义不同。",
+      "adaptation": {
+        "platform": "Android native Views; other platforms require D mapping",
+        "scaling": "sp follows target fontScale; dp respects density and safe insets",
+        "longText": "Reference only covers bounded English specimens; reflow and keyboard conditions require comparison."
+      },
+      "legacyContractId": "choice-card",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "partial",
+          "evidenceRefs": [
+            "ev-06-course-selected"
+          ],
+          "reason": "浅蓝面、蓝边与蓝标题联动，继续按钮启用"
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      },
+      "referenceRevision": {
+        "status": "bounded-runtime-observed",
+        "report": "docs/reference-revision.md",
+        "limits": [
+          "原版运行字体绑定仍未知；采用Duolingo Sans19sp的D选择校准文字，像素锚吻合不证明原版Typeface内部绑定。",
+          "角色姿态/原版Lottie与Rive、全部组件族、全App深色/完整中文及真实读屏/触觉仍未完成同条件还原。",
+          "原版fontScale历史为未知；当前参考fontScale1.0，不能把画布匹配称所有条件完全相同。",
+          "四份录像分别保留录制构建SHA；部分前置适配样本是15f构建、录像为bb311/6794，最终39c只改输入焦点/IME流程并另做最终课程、IME与重试复核。",
+          "screenrecord编码时长小于宿主4秒录制窗口，解码采样只证明可见中间状态，不能当作原版动画时长或精确Android呈现时间。",
+          "r38/r47输入裁切、r48未保持输入焦点、r42/r43未命中控件、r55仍为错误页均保留，未计为通过。"
+        ]
+      }
+    },
+    {
+      "id": "component-checkbox",
+      "name": "复选指示器",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-static-drawable-checkbox-xml",
+        "ev-contracts"
+      ],
+      "unknowns": [
+        "All source pressed/focus/busy/long-text variants are not implied by a sampled default state."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse existing native reference: Gallery native CheckBox plus packaged source selector. Native widget owns toggle and accessibility; No persistent preference"
+      },
+      "slots": [
+        "indicator",
+        "label"
+      ],
+      "tokenRefs": [
+        "token-action-alternative-face",
+        "token-border"
+      ],
+      "states": [
+        {
+          "id": "enabled-checked",
+          "appearance": "包内蓝色勾选矢量",
+          "classification": "B",
+          "evidenceRefs": [
+            "ev-static-drawable-checkbox-enabled-checked-xml"
+          ]
+        },
+        {
+          "id": "enabled-unchecked",
+          "appearance": "包内未选变体",
+          "classification": "B",
+          "evidenceRefs": [
+            "ev-static-drawable-checkbox-xml"
+          ]
+        },
+        {
+          "id": "disabled",
+          "appearance": "包内disabled checked/unchecked分支，运行绑定未确认",
+          "classification": "B",
+          "evidenceRefs": [
+            "ev-static-drawable-checkbox-xml"
+          ]
+        }
+      ],
+      "geometry": "checked矢量32×32dp，stroke3为viewport单位。",
+      "inputs": [
+        "indicator",
+        "label"
+      ],
+      "events": [
+        "Native checkable state; no source application preference is modified"
+      ],
+      "usage": "保留label和原生可访问性；静态selector四态不代表原版页面都已测试。",
+      "adaptation": {
+        "platform": "Android native Views; other platforms require D mapping",
+        "scaling": "sp follows target fontScale; dp respects density and safe insets",
+        "longText": "Reference only covers bounded English specimens; reflow and keyboard conditions require comparison."
+      },
+      "legacyContractId": "checkbox",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "partial",
+          "evidenceRefs": [
+            "ev-static-drawable-checkbox-xml"
+          ],
+          "reason": "包内disabled checked/unchecked分支，运行绑定未确认"
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      }
+    },
+    {
+      "id": "component-input",
+      "name": "描边文本输入",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-134-forgot-password-empty",
+        "ev-135-forgot-invalid-email-validation",
+        "ev-contracts",
+        "ev-file-e691e96161d6"
+      ],
+      "unknowns": [
+        "All source pressed/focus/busy/long-text variants are not implied by a sampled default state."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse existing native reference: Native EditText with Face drawable. On editing focus, collapse decorative guide after completed tap; show real IME and retain input/CTA; Source internal composing and save contracts are not inferred"
+      },
+      "slots": [
+        "label or hint",
+        "editable text",
+        "validation message"
+      ],
+      "tokenRefs": [
+        "token-input-padding",
+        "token-radius",
+        "token-border",
+        "token-body-size",
+        "token-surface-input"
+      ],
+      "states": [
+        {
+          "id": "empty",
+          "appearance": "找回表单空Email、Next禁用",
+          "classification": "A",
+          "evidenceRefs": [
+            "ev-134-forgot-password-empty"
+          ]
+        },
+        {
+          "id": "invalid",
+          "appearance": "无效合成邮箱反馈，限定该找回场景",
+          "classification": "A",
+          "evidenceRefs": [
+            "ev-135-forgot-invalid-email-validation"
+          ]
+        },
+        {
+          "id": "reentry",
+          "appearance": "返回再进为空Email并聚焦；不是通用草稿规则",
+          "classification": "A",
+          "evidenceRefs": [
+            "ev-141-forgot-reentry-draft"
+          ]
+        },
+        {
+          "id": "target-edited",
+          "appearance": "Paperlane保存草稿、空名提交内联错误、编辑清错",
+          "classification": "D",
+          "evidenceRefs": [
+            "ev-r11-paperlane-validation",
+            "ev-r12-paperlane-edited"
+          ]
+        }
+      ],
+      "geometry": "B OutlineInput面Polar、2dp边、16dp角与padding；并非证明找回表单直接绑定此样式。",
+      "inputs": [
+        "text",
+        "hint",
+        "singleLine for Paperlane"
+      ],
+      "events": [
+        "TextWatcher stores name; submit validates trim; invalid keeps selection and requests input focus"
+      ],
+      "usage": "目标沿用原生IME、选择和语义标签；键盘压缩、组合输入、错误关联仍须目标复核。",
+      "adaptation": {
+        "platform": "Android native Views; other platforms require D mapping",
+        "scaling": "sp follows target fontScale; dp respects density and safe insets",
+        "longText": "Reference only covers bounded English specimens; reflow and keyboard conditions require comparison."
+      },
+      "legacyContractId": "input",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "partial",
+          "evidenceRefs": [
+            "ev-134-forgot-password-empty"
+          ],
+          "reason": "找回表单空Email、Next禁用"
+        },
+        {
+          "state": "invalid",
+          "status": "partial",
+          "evidenceRefs": [
+            "ev-135-forgot-invalid-email-validation"
+          ],
+          "reason": "无效合成邮箱反馈，限定该找回场景"
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      },
+      "referenceRevision": {
+        "status": "bounded-runtime-observed",
+        "report": "docs/reference-revision.md",
+        "limits": [
+          "原版运行字体绑定仍未知；采用Duolingo Sans19sp的D选择校准文字，像素锚吻合不证明原版Typeface内部绑定。",
+          "角色姿态/原版Lottie与Rive、全部组件族、全App深色/完整中文及真实读屏/触觉仍未完成同条件还原。",
+          "原版fontScale历史为未知；当前参考fontScale1.0，不能把画布匹配称所有条件完全相同。",
+          "四份录像分别保留录制构建SHA；部分前置适配样本是15f构建、录像为bb311/6794，最终39c只改输入焦点/IME流程并另做最终课程、IME与重试复核。",
+          "screenrecord编码时长小于宿主4秒录制窗口，解码采样只证明可见中间状态，不能当作原版动画时长或精确Android呈现时间。",
+          "r38/r47输入裁切、r48未保持输入焦点、r42/r43未命中控件、r55仍为错误页均保留，未计为通过。"
+        ]
+      }
+    },
+    {
+      "id": "component-progress",
+      "name": "进度条",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-05-course-picker",
+        "ev-06-course-selected",
+        "ev-contracts",
+        "ev-file-e691e96161d6"
+      ],
+      "unknowns": [
+        "All source pressed/focus/busy/long-text variants are not implied by a sampled default state."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse existing native reference: Components.Progress. D180ms progress interpolation; zero draws no fill; Reduced-motion updates immediately"
+      },
+      "slots": [
+        "track",
+        "fill",
+        "optional particle/reward"
+      ],
+      "tokenRefs": [
+        "token-progress-height",
+        "token-action-guide-face"
+      ],
+      "states": [
+        {
+          "id": "partial",
+          "appearance": "顶部灰轨绿填充",
+          "classification": "A",
+          "evidenceRefs": [
+            "ev-05-course-picker",
+            "ev-06-course-selected"
+          ]
+        },
+        {
+          "id": "target-update",
+          "appearance": "D clamp0..1且暴露原生范围，无来源动画推断",
+          "classification": "D",
+          "evidenceRefs": [
+            "ev-contracts"
+          ]
+        }
+      ],
+      "geometry": "绿色默认16dp；带奖励挑战进度可为20dp。",
+      "inputs": [
+        "0..1 fraction"
+      ],
+      "events": [
+        "setProgress clamps and redraws; accessibility range is exposed"
+      ],
+      "usage": "值来自目标任务，不复用原产品进度算法。",
+      "adaptation": {
+        "platform": "Android native Views; other platforms require D mapping",
+        "scaling": "sp follows target fontScale; dp respects density and safe insets",
+        "longText": "Reference only covers bounded English specimens; reflow and keyboard conditions require comparison."
+      },
+      "legacyContractId": "progress",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "not_applicable",
+          "evidenceRefs": [],
+          "reason": "Read-only progress is not an input; sliders belong to range-control."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      },
+      "referenceRevision": {
+        "status": "bounded-runtime-observed",
+        "report": "docs/reference-revision.md",
+        "limits": [
+          "原版运行字体绑定仍未知；采用Duolingo Sans19sp的D选择校准文字，像素锚吻合不证明原版Typeface内部绑定。",
+          "角色姿态/原版Lottie与Rive、全部组件族、全App深色/完整中文及真实读屏/触觉仍未完成同条件还原。",
+          "原版fontScale历史为未知；当前参考fontScale1.0，不能把画布匹配称所有条件完全相同。",
+          "四份录像分别保留录制构建SHA；部分前置适配样本是15f构建、录像为bb311/6794，最终39c只改输入焦点/IME流程并另做最终课程、IME与重试复核。",
+          "screenrecord编码时长小于宿主4秒录制窗口，解码采样只证明可见中间状态，不能当作原版动画时长或精确Android呈现时间。",
+          "r38/r47输入裁切、r48未保持输入焦点、r42/r43未命中控件、r55仍为错误页均保留，未计为通过。"
+        ]
+      }
+    },
+    {
+      "id": "component-loading",
+      "name": "等待与占位面",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-07-after-course-choice",
+        "ev-contracts"
+      ],
+      "unknowns": [
+        "All source pressed/focus/busy/long-text variants are not implied by a sampled default state."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse existing native reference: Source building and Paperlane pending scenes. Static source character replaces animation; Paperlane1200ms local fixture; Back cancels pending callback and invalidates late completion; Foreground restart reschedules Paperlane fixture"
+      },
+      "slots": [
+        "illustration or indicator",
+        "title",
+        "supporting copy",
+        "optional return"
+      ],
+      "tokenRefs": [
+        "token-h1-size",
+        "token-body-size"
+      ],
+      "states": [
+        {
+          "id": "pending",
+          "appearance": "COURSE BUILDING标题、角色帧和说明",
+          "classification": "A",
+          "evidenceRefs": [
+            "ev-07-after-course-choice"
+          ]
+        },
+        {
+          "id": "target-error",
+          "appearance": "Paperlane可恢复错误及Try Again",
+          "classification": "D",
+          "evidenceRefs": [
+            "ev-r14-paperlane-error"
+          ]
+        },
+        {
+          "id": "target-done",
+          "appearance": "Paperlane两份资料整理成功，均为本地fixture",
+          "classification": "D",
+          "evidenceRefs": [
+            "ev-r23-final-paperlane-retry"
+          ]
+        }
+      ],
+      "geometry": "来源与参考构建文案位置相差40px；待校准。",
+      "inputs": [
+        "illustration or indicator",
+        "title",
+        "supporting copy",
+        "optional return"
+      ],
+      "events": [
+        "Source stays pending until Back; Paperlane local Handler completion uses generation token"
+      ],
+      "usage": "原版构建返回不证明网络取消；目标超时/取消与晚到结果策略独立定义。",
+      "adaptation": {
+        "platform": "Android native Views; other platforms require D mapping",
+        "scaling": "sp follows target fontScale; dp respects density and safe insets",
+        "longText": "Reference only covers bounded English specimens; reflow and keyboard conditions require comparison."
+      },
+      "legacyContractId": "loading",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      }
+    },
+    {
+      "id": "component-modal",
+      "name": "底部确认弹层",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-17-lesson-quit-confirmation",
+        "ev-static-layout-fragment-session-quit-dialog-xml",
+        "ev-contracts"
+      ],
+      "unknowns": [
+        "age Back",
+        "privacy outside tap",
+        "drag",
+        "focus trap",
+        "decline result",
+        "consent persistence",
+        "All source pressed/focus/busy/long-text variants are not implied by a sampled default state."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse existing native reference: Native Dialog bottom gravity. No drag gesture; Privacy/age outside tap and Back blocked; Age under14 and privacy decline finish independent sample; Gallery confirmation allows outside tap and Back; Privacy links are colored but inactive"
+      },
+      "slots": [
+        "illustration",
+        "title",
+        "body",
+        "primary",
+        "secondary"
+      ],
+      "tokenRefs": [
+        "token-radius",
+        "token-h1-size",
+        "token-body-size",
+        "token-action-alternative-face"
+      ],
+      "states": [
+        {
+          "id": "visible",
+          "appearance": "退出确认含继续与红色退出动作",
+          "classification": "A",
+          "evidenceRefs": [
+            "ev-17-lesson-quit-confirmation"
+          ]
+        },
+        {
+          "id": "target-dismissed",
+          "appearance": "参考Gallery可Back/外点关闭；隐私示例另有D不可取消策略",
+          "classification": "D",
+          "evidenceRefs": [
+            "ev-contracts"
+          ]
+        }
+      ],
+      "geometry": "RoundedCorner声明顶角16dp、dim0.4；此主题到所有运行弹层的绑定未知。",
+      "inputs": [
+        "title",
+        "body",
+        "primary",
+        "secondary",
+        "cancelable"
+      ],
+      "events": [
+        "One modal at a time; re-render dismisses prior instance; confirmation actions belong to Activity"
+      ],
+      "usage": "逐弹层声明可取消性、焦点恢复、关闭结果；不能用一个隐私弹层推全局。",
+      "adaptation": {
+        "platform": "Android native Views; other platforms require D mapping",
+        "scaling": "sp follows target fontScale; dp respects density and safe insets",
+        "longText": "Reference only covers bounded English specimens; reflow and keyboard conditions require comparison."
+      },
+      "legacyContractId": "modal",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      }
+    },
+    {
+      "id": "component-pointing-card",
+      "name": "指向气泡",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-05-course-picker",
+        "ev-06-course-selected",
+        "ev-contracts",
+        "ev-file-e691e96161d6"
+      ],
+      "unknowns": [
+        "All source pressed/focus/busy/long-text variants are not implied by a sampled default state."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse existing native reference: Components.Bubble. Static leading arrow and native text; no typewriter, auto-dismiss, frequency rule or anchoring engine"
+      },
+      "slots": [
+        "text",
+        "arrow anchor"
+      ],
+      "tokenRefs": [
+        "token-radius",
+        "token-border",
+        "token-input-padding",
+        "token-body-size"
+      ],
+      "states": [
+        {
+          "id": "visible",
+          "appearance": "角色右侧两行文本、左指向；参考主体左边偏6px",
+          "classification": "A",
+          "evidenceRefs": [
+            "ev-05-course-picker",
+            "ev-06-course-selected"
+          ]
+        }
+      ],
+      "geometry": "SpeechBubble左箭头16×12dp/offset20dp是B；Tooltip另有10dp角。",
+      "inputs": [
+        "native text content"
+      ],
+      "events": [
+        "Owner controls visible state; see component contract"
+      ],
+      "usage": "文字、箭头与角色独立插槽；长文本、避让与自动消失规则未完成。",
+      "adaptation": {
+        "platform": "Android native Views; other platforms require D mapping",
+        "scaling": "sp follows target fontScale; dp respects density and safe insets",
+        "longText": "Reference only covers bounded English specimens; reflow and keyboard conditions require comparison."
+      },
+      "legacyContractId": "pointing-card",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      },
+      "referenceRevision": {
+        "status": "bounded-runtime-observed",
+        "report": "docs/reference-revision.md",
+        "limits": [
+          "原版运行字体绑定仍未知；采用Duolingo Sans19sp的D选择校准文字，像素锚吻合不证明原版Typeface内部绑定。",
+          "角色姿态/原版Lottie与Rive、全部组件族、全App深色/完整中文及真实读屏/触觉仍未完成同条件还原。",
+          "原版fontScale历史为未知；当前参考fontScale1.0，不能把画布匹配称所有条件完全相同。",
+          "四份录像分别保留录制构建SHA；部分前置适配样本是15f构建、录像为bb311/6794，最终39c只改输入焦点/IME流程并另做最终课程、IME与重试复核。",
+          "screenrecord编码时长小于宿主4秒录制窗口，解码采样只证明可见中间状态，不能当作原版动画时长或精确Android呈现时间。",
+          "r38/r47输入裁切、r48未保持输入焦点、r42/r43未命中控件、r55仍为错误页均保留，未计为通过。"
+        ]
+      }
+    },
+    {
+      "id": "component-guidance",
+      "name": "解释—选择—继续组合",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-05-course-picker",
+        "ev-06-course-selected",
+        "ev-contracts"
+      ],
+      "unknowns": [
+        "All source pressed/focus/busy/long-text variants are not implied by a sampled default state."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse existing native reference: MainActivity guide/header + footer composition. Static package owl for source; independent PaperMark for Paperlane; No narration, typewriter, feature experiments or persistent completion marker"
+      },
+      "slots": [
+        "guide visual",
+        "question",
+        "options",
+        "primary",
+        "secondary"
+      ],
+      "tokenRefs": [
+        "token-page-gutter",
+        "token-h1-size",
+        "token-body-size"
+      ],
+      "states": [
+        {
+          "id": "unselected",
+          "appearance": "上方解释、中间选项、底部禁用主动作",
+          "classification": "A",
+          "evidenceRefs": [
+            "ev-05-course-picker"
+          ]
+        },
+        {
+          "id": "selected",
+          "appearance": "选择改变主动作可用性",
+          "classification": "A",
+          "evidenceRefs": [
+            "ev-06-course-selected"
+          ]
+        }
+      ],
+      "geometry": "课程页底部动作区y1016px；CTA bounds[32,1048][688,1152]，仅720×1280条件。",
+      "inputs": [
+        "guide visual",
+        "question",
+        "options",
+        "primary",
+        "secondary"
+      ],
+      "events": [
+        "Owner controls next screen; source and transfer copy/assets are separate"
+      ],
+      "usage": "业务内容和品牌用插槽替换；旁白/打字机/持久引导完成标记尚未还原。",
+      "adaptation": {
+        "platform": "Android native Views; other platforms require D mapping",
+        "scaling": "sp follows target fontScale; dp respects density and safe insets",
+        "longText": "Reference only covers bounded English specimens; reflow and keyboard conditions require comparison."
+      },
+      "legacyContractId": "guidance",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "partial",
+          "evidenceRefs": [
+            "ev-06-course-selected"
+          ],
+          "reason": "选择改变主动作可用性"
+        },
+        {
+          "state": "pressed",
+          "status": "not_applicable",
+          "evidenceRefs": [],
+          "reason": "Composition itself has no press state; child controls own actions."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      }
+    },
+    {
+      "id": "component-feedback",
+      "name": "状态反馈与确认动作",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-16-incorrect-panel-stable",
+        "ev-capture-5be788bbc809",
+        "ev-capture-9a0c30981b2c",
+        "ev-capture-121261540af1"
+      ],
+      "unknowns": [
+        "原版入场/退出时序",
+        "所有错误/成功变体"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "状态以图标/标题/说明共同表达，不仅换颜色。 纠错说明与下一步动作同时出现，目标保留相同信息层级。 D：反馈状态由目标校验结果驱动；保留输入直到用户确认。"
+      },
+      "slots": [
+        "status icon",
+        "heading",
+        "explanation",
+        "correction",
+        "acknowledge"
+      ],
+      "tokenRefs": [
+        "token-body-size",
+        "token-button-size",
+        "token-radius"
+      ],
+      "states": [
+        {
+          "id": "incorrect",
+          "appearance": "红色选项与纠正说明、GOT IT",
+          "evidenceRefs": [
+            "ev-16-incorrect-panel-stable",
+            "ev-capture-5be788bbc809",
+            "ev-capture-9a0c30981b2c",
+            "ev-capture-121261540af1"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "correct",
+          "appearance": "绿色反馈与Continue",
+          "evidenceRefs": [
+            "ev-16-incorrect-panel-stable",
+            "ev-capture-5be788bbc809",
+            "ev-capture-9a0c30981b2c",
+            "ev-capture-121261540af1"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "alternative",
+          "appearance": "黄色说明本节跳过听力、Continue",
+          "evidenceRefs": [
+            "ev-16-incorrect-panel-stable",
+            "ev-capture-5be788bbc809",
+            "ev-capture-9a0c30981b2c",
+            "ev-capture-121261540af1"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "transient",
+          "appearance": "15为入场中，不能替代16稳定帧",
+          "evidenceRefs": [
+            "ev-16-incorrect-panel-stable",
+            "ev-capture-5be788bbc809",
+            "ev-capture-9a0c30981b2c",
+            "ev-capture-121261540af1"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        }
+      ],
+      "geometry": "A像素：错误面#ffdfe0、正确面#d7ffb8、替代说明面#fff5d3；底部反馈覆盖动作区，内容保持上方可见。",
+      "inputs": [
+        "status icon",
+        "heading",
+        "explanation",
+        "correction",
+        "acknowledge"
+      ],
+      "events": [
+        "Target owner manages state; preserve source transitions only in their documented conditions."
+      ],
+      "usage": "状态以图标/标题/说明共同表达，不仅换颜色。 纠错说明与下一步动作同时出现，目标保留相同信息层级。 D：反馈状态由目标校验结果驱动；保留输入直到用户确认。",
+      "adaptation": {
+        "platform": "Android source; target mapping is D",
+        "scaling": "dp for geometry, sp for text; allow target safe-area and content-driven reflow",
+        "longText": "Target D: allow wrapped labels and larger hit regions; source full matrix unknown."
+      },
+      "sourceSceneNumbers": [
+        16,
+        18,
+        21,
+        308
+      ],
+      "referenceStatus": "specified-not-yet-added-to-native-reference",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "partial",
+          "evidenceRefs": [
+            "ev-16-incorrect-panel-stable",
+            "ev-capture-5be788bbc809",
+            "ev-capture-9a0c30981b2c",
+            "ev-capture-121261540af1"
+          ],
+          "reason": "红色选项与纠正说明、GOT IT"
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      }
+    },
+    {
+      "id": "component-tab-list",
+      "name": "底部导航栏",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-ed72a9d0a7e0",
+        "ev-capture-18fb04d31c30",
+        "ev-capture-9610eb51f4db",
+        "ev-capture-51ace32baa7d"
+      ],
+      "unknowns": [
+        "全局tab切换动画",
+        "所有返回栈/滚动保留规则"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：导航项由目标信息架构决定，不硬编码六个原业务入口。 每个图标给可访问名称，选中语义独立于图像颜色。 尊重底部inset；宽屏/文字标签作为目标适配规则。"
+      },
+      "slots": [
+        "tab icon",
+        "accessible label",
+        "selected indicator",
+        "overflow"
+      ],
+      "tokenRefs": [
+        "token-toolbar-height",
+        "token-border"
+      ],
+      "states": [
+        {
+          "id": "selected",
+          "appearance": "内容页切换与对应入口状态；图标可无常驻文字",
+          "evidenceRefs": [
+            "ev-capture-ed72a9d0a7e0",
+            "ev-capture-18fb04d31c30",
+            "ev-capture-9610eb51f4db",
+            "ev-capture-51ace32baa7d"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "reselected",
+          "appearance": "排行榜已见同tab重选保留顶部的限定记录",
+          "evidenceRefs": [
+            "ev-capture-ed72a9d0a7e0",
+            "ev-capture-18fb04d31c30",
+            "ev-capture-9610eb51f4db",
+            "ev-capture-51ace32baa7d"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "overflow",
+          "appearance": "More弹出可达菜单；不同学科图标/入口可能不同",
+          "evidenceRefs": [
+            "ev-capture-ed72a9d0a7e0",
+            "ev-capture-18fb04d31c30",
+            "ev-capture-9610eb51f4db",
+            "ev-capture-51ace32baa7d"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        }
+      ],
+      "geometry": "301树中前四项bounds约96×96px，中心间隔约116px；PNG底部栏y1012px起。均为720×1280/320dpi样本；树非原子。",
+      "inputs": [
+        "tab icon",
+        "accessible label",
+        "selected indicator",
+        "overflow"
+      ],
+      "events": [
+        "Target owner manages state; preserve source transitions only in their documented conditions."
+      ],
+      "usage": "D：导航项由目标信息架构决定，不硬编码六个原业务入口。 每个图标给可访问名称，选中语义独立于图像颜色。 尊重底部inset；宽屏/文字标签作为目标适配规则。",
+      "adaptation": {
+        "platform": "Android source; target mapping is D",
+        "scaling": "dp for geometry, sp for text; allow target safe-area and content-driven reflow",
+        "longText": "Target D: allow wrapped labels and larger hit regions; source full matrix unknown."
+      },
+      "sourceSceneNumbers": [
+        26,
+        73,
+        301,
+        275
+      ],
+      "referenceStatus": "specified-not-yet-added-to-native-reference",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "partial",
+          "evidenceRefs": [
+            "ev-capture-ed72a9d0a7e0",
+            "ev-capture-18fb04d31c30",
+            "ev-capture-9610eb51f4db",
+            "ev-capture-51ace32baa7d"
+          ],
+          "reason": "内容页切换与对应入口状态；图标可无常驻文字"
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      }
+    },
+    {
+      "id": "component-offer-card",
+      "name": "方案与权益卡",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-b962adc4330b",
+        "ev-capture-2c2076f01b49",
+        "ev-capture-aee5caa5117f",
+        "ev-file-e691e96161d6"
+      ],
+      "unknowns": [
+        "选中/已订阅/加载/购买错误视觉",
+        "精确渐变参数",
+        "所有价格文案和合同状态"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "权益逐项排列，推荐信息不覆盖方案名和价格/动作。 D：金额/周期/续费信息使用目标真实数据，按钮行为由目标业务实现。 长权益换行时保持勾对齐首行，插画可缩或下移，CTA全宽。"
+      },
+      "slots": [
+        "recommendation band",
+        "plan title",
+        "benefit list",
+        "illustration",
+        "plan action"
+      ],
+      "tokenRefs": [
+        "token-radius",
+        "token-border",
+        "token-body-size",
+        "token-button-size"
+      ],
+      "states": [
+        {
+          "id": "recommended",
+          "appearance": "渐变推荐条与主套餐；两条权益；描边主动作",
+          "evidenceRefs": [
+            "ev-capture-b962adc4330b",
+            "ev-capture-2c2076f01b49",
+            "ev-capture-aee5caa5117f",
+            "ev-file-e691e96161d6"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "family",
+          "appearance": "无推荐条、四条权益、群组插画与独立动作",
+          "evidenceRefs": [
+            "ev-capture-b962adc4330b",
+            "ev-capture-2c2076f01b49",
+            "ev-capture-aee5caa5117f",
+            "ev-file-e691e96161d6"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "scrolled",
+          "appearance": "297为滚动后样本，无当前可见恢复/条款入口",
+          "evidenceRefs": [
+            "ev-capture-b962adc4330b",
+            "ev-capture-2c2076f01b49",
+            "ev-capture-aee5caa5117f",
+            "ev-file-e691e96161d6"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "purchase",
+          "appearance": "未执行；目标不得因0元显示省略合同确认",
+          "evidenceRefs": [
+            "ev-capture-b962adc4330b",
+            "ev-capture-2c2076f01b49",
+            "ev-capture-aee5caa5117f",
+            "ev-file-e691e96161d6"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        }
+      ],
+      "geometry": "296像素：外框x32..688；推荐条约y176..246；Super标题左x66；权益勾/文案分列，文本x122；卡内CTA约x66..654。文本树坐标非原子且不当成字体ink。",
+      "inputs": [
+        "recommendation band",
+        "plan title",
+        "benefit list",
+        "illustration",
+        "plan action"
+      ],
+      "events": [
+        "Target owner manages state; preserve source transitions only in their documented conditions."
+      ],
+      "usage": "权益逐项排列，推荐信息不覆盖方案名和价格/动作。 D：金额/周期/续费信息使用目标真实数据，按钮行为由目标业务实现。 长权益换行时保持勾对齐首行，插画可缩或下移，CTA全宽。",
+      "adaptation": {
+        "platform": "Android source; target mapping is D",
+        "scaling": "dp for geometry, sp for text; allow target safe-area and content-driven reflow",
+        "longText": "长权益换行时保持勾对齐首行，插画可缩或下移，CTA全宽。"
+      },
+      "sourceSceneNumbers": [
+        296,
+        297,
+        60
+      ],
+      "referenceStatus": "specified-not-yet-added-to-native-reference",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      },
+      "referenceRevision": {
+        "status": "bounded-runtime-observed",
+        "report": "docs/reference-revision.md",
+        "limits": [
+          "原版运行字体绑定仍未知；采用Duolingo Sans19sp的D选择校准文字，像素锚吻合不证明原版Typeface内部绑定。",
+          "角色姿态/原版Lottie与Rive、全部组件族、全App深色/完整中文及真实读屏/触觉仍未完成同条件还原。",
+          "原版fontScale历史为未知；当前参考fontScale1.0，不能把画布匹配称所有条件完全相同。",
+          "四份录像分别保留录制构建SHA；部分前置适配样本是15f构建、录像为bb311/6794，最终39c只改输入焦点/IME流程并另做最终课程、IME与重试复核。",
+          "screenrecord编码时长小于宿主4秒录制窗口，解码采样只证明可见中间状态，不能当作原版动画时长或精确Android呈现时间。",
+          "r38/r47输入裁切、r48未保持输入焦点、r42/r43未命中控件、r55仍为错误页均保留，未计为通过。"
+        ]
+      }
+    },
+    {
+      "id": "component-text",
+      "name": "文字角色与数字",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-05-course-picker",
+        "ev-capture-ea71cb603aa7",
+        "ev-capture-f2951e6af943",
+        "ev-capture-e9ba6694e391"
+      ],
+      "unknowns": [
+        "原版Typeface、fallback及font padding",
+        "跨角色的完整测量"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "标题/正文/辅助/数字分开token，不把Caption名字直接解释为小字号。 D：优先目标许可字体或系统sans；逐角色对比字宽、行数、基线。 中文不强制大写或照搬拉丁字距；允许换行并随sp缩放。"
+      },
+      "slots": [
+        "heading",
+        "body",
+        "supporting text",
+        "number",
+        "action label"
+      ],
+      "tokenRefs": [
+        "token-h1-size",
+        "token-body-size",
+        "token-button-size",
+        "token-runtime-family"
+      ],
+      "states": [
+        {
+          "id": "default",
+          "appearance": "正文/标题分层；数字可与独立色彩指标结合",
+          "evidenceRefs": [
+            "ev-05-course-picker",
+            "ev-capture-ea71cb603aa7",
+            "ev-capture-f2951e6af943",
+            "ev-capture-e9ba6694e391"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "large",
+          "appearance": "字号2.0样本仅FORGOT可见，PASSWORD未见；不可称所有长文本适配通过",
+          "evidenceRefs": [
+            "ev-05-course-picker",
+            "ev-capture-ea71cb603aa7",
+            "ev-capture-f2951e6af943",
+            "ev-capture-e9ba6694e391"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "dark",
+          "appearance": "原版Login深色观察不推广全App",
+          "evidenceRefs": [
+            "ev-05-course-picker",
+            "ev-capture-ea71cb603aa7",
+            "ev-capture-f2951e6af943",
+            "ev-capture-e9ba6694e391"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        }
+      ],
+      "geometry": "B：H1 25sp/bold、Paragraph19sp、H2继承19sp、H3/动作17sp；字距0.05em仅动作基类。运行family/基线未知。",
+      "inputs": [
+        "heading",
+        "body",
+        "supporting text",
+        "number",
+        "action label"
+      ],
+      "events": [
+        "Target owner manages state; preserve source transitions only in their documented conditions."
+      ],
+      "usage": "标题/正文/辅助/数字分开token，不把Caption名字直接解释为小字号。 D：优先目标许可字体或系统sans；逐角色对比字宽、行数、基线。 中文不强制大写或照搬拉丁字距；允许换行并随sp缩放。",
+      "adaptation": {
+        "platform": "Android source; target mapping is D",
+        "scaling": "dp for geometry, sp for text; allow target safe-area and content-driven reflow",
+        "longText": "标题/正文/辅助/数字分开token，不把Caption名字直接解释为小字号。"
+      },
+      "sourceSceneNumbers": [
+        5,
+        56,
+        159,
+        170
+      ],
+      "referenceStatus": "specified-not-yet-added-to-native-reference",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "partial",
+          "evidenceRefs": [
+            "ev-05-course-picker",
+            "ev-capture-ea71cb603aa7",
+            "ev-capture-f2951e6af943",
+            "ev-capture-e9ba6694e391"
+          ],
+          "reason": "正文/标题分层；数字可与独立色彩指标结合"
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "not_applicable",
+          "evidenceRefs": [],
+          "reason": "Read-only text has no press action; interactive labels belong to buttons/links."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      }
+    },
+    {
+      "id": "component-list-row",
+      "name": "分组列表与词汇行",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-8357c5aefeb5",
+        "ev-capture-bf570d405733",
+        "ev-capture-d575acc50fbf"
+      ],
+      "unknowns": [
+        "所有行的触控区域",
+        "长文/错误/空列表状态"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "标题与辅助说明两层；行内动作不能吞掉整行导航语义。 D：最小行高依据内容，长文自动增高，最后一行不画多余分隔。 排序持久化由目标决定；原版重入重置只限Words样本。"
+      },
+      "slots": [
+        "leading action/icon",
+        "title",
+        "subtitle",
+        "trailing status/chevron"
+      ],
+      "tokenRefs": [
+        "token-body-size",
+        "token-border",
+        "token-radius"
+      ],
+      "states": [
+        {
+          "id": "default",
+          "appearance": "分组圆角外框、行间分隔、左标题、右箭头或状态",
+          "evidenceRefs": [
+            "ev-capture-8357c5aefeb5",
+            "ev-capture-bf570d405733",
+            "ev-capture-d575acc50fbf"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "twoLine",
+          "appearance": "词条主文深色，翻译次文浅色；独立播放入口",
+          "evidenceRefs": [
+            "ev-capture-8357c5aefeb5",
+            "ev-capture-bf570d405733",
+            "ev-capture-d575acc50fbf"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "sorted",
+          "appearance": "Words Alphabetically可见；返回重入后回Recently learned",
+          "evidenceRefs": [
+            "ev-capture-8357c5aefeb5",
+            "ev-capture-bf570d405733",
+            "ev-capture-d575acc50fbf"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        }
+      ],
+      "geometry": "设置样本左右32px，行标题x64px；标题y289/403/517…间隔114px。词汇标题x144px、译文下一行；外框x32..688px。",
+      "inputs": [
+        "leading action/icon",
+        "title",
+        "subtitle",
+        "trailing status/chevron"
+      ],
+      "events": [
+        "Target owner manages state; preserve source transitions only in their documented conditions."
+      ],
+      "usage": "标题与辅助说明两层；行内动作不能吞掉整行导航语义。 D：最小行高依据内容，长文自动增高，最后一行不画多余分隔。 排序持久化由目标决定；原版重入重置只限Words样本。",
+      "adaptation": {
+        "platform": "Android source; target mapping is D",
+        "scaling": "dp for geometry, sp for text; allow target safe-area and content-driven reflow",
+        "longText": "D：最小行高依据内容，长文自动增高，最后一行不画多余分隔。"
+      },
+      "sourceSceneNumbers": [
+        30,
+        316,
+        318
+      ],
+      "referenceStatus": "specified-not-yet-added-to-native-reference",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "partial",
+          "evidenceRefs": [
+            "ev-capture-8357c5aefeb5",
+            "ev-capture-bf570d405733",
+            "ev-capture-d575acc50fbf"
+          ],
+          "reason": "分组圆角外框、行间分隔、左标题、右箭头或状态"
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      }
+    },
+    {
+      "id": "component-settings-group",
+      "name": "设置分组与开关行",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-8357c5aefeb5",
+        "ev-capture-cdaeb78a0680",
+        "ev-capture-c345edeef02a",
+        "ev-capture-3edb6c2c9648",
+        "ev-capture-2b86a5a40223",
+        "ev-capture-045416d8b234",
+        "ev-capture-ceb15aedd5f6",
+        "ev-capture-f94505f155ad",
+        "ev-file-e691e96161d6"
+      ],
+      "unknowns": [
+        "真实设置持久化/同步",
+        "所有toggle的pending/error外观"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "导航行、立即生效开关与需保存编辑分开。 D：开关以真实状态驱动；保存中禁重复并呈现失败恢复。 不是每个设置都能由一个样本推断自动保存。"
+      },
+      "slots": [
+        "section heading",
+        "navigation row",
+        "toggle row",
+        "footer link"
+      ],
+      "tokenRefs": [
+        "token-body-size",
+        "token-border",
+        "token-action-alternative-face"
+      ],
+      "states": [
+        {
+          "id": "on",
+          "appearance": "Animations初始开启",
+          "evidenceRefs": [
+            "ev-capture-8357c5aefeb5",
+            "ev-capture-cdaeb78a0680",
+            "ev-capture-c345edeef02a",
+            "ev-capture-3edb6c2c9648",
+            "ev-capture-2b86a5a40223",
+            "ev-capture-045416d8b234",
+            "ev-capture-ceb15aedd5f6",
+            "ev-capture-f94505f155ad",
+            "ev-file-e691e96161d6"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "off",
+          "appearance": "正常关闭后可见off",
+          "evidenceRefs": [
+            "ev-capture-8357c5aefeb5",
+            "ev-capture-cdaeb78a0680",
+            "ev-capture-c345edeef02a",
+            "ev-capture-3edb6c2c9648",
+            "ev-capture-2b86a5a40223",
+            "ev-capture-045416d8b234",
+            "ev-capture-ceb15aedd5f6",
+            "ev-capture-f94505f155ad",
+            "ev-file-e691e96161d6"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "retained",
+          "appearance": "离开重入仍off有历史记录，旧树限制单独保留",
+          "evidenceRefs": [
+            "ev-capture-8357c5aefeb5",
+            "ev-capture-cdaeb78a0680",
+            "ev-capture-c345edeef02a",
+            "ev-capture-3edb6c2c9648",
+            "ev-capture-2b86a5a40223",
+            "ev-capture-045416d8b234",
+            "ev-capture-ceb15aedd5f6",
+            "ev-capture-f94505f155ad",
+            "ev-file-e691e96161d6"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "disabled",
+          "appearance": "原版禁用开关未验证；目标须给原因",
+          "evidenceRefs": [
+            "ev-capture-8357c5aefeb5",
+            "ev-capture-cdaeb78a0680",
+            "ev-capture-c345edeef02a",
+            "ev-capture-3edb6c2c9648",
+            "ev-capture-2b86a5a40223",
+            "ev-capture-045416d8b234",
+            "ev-capture-ceb15aedd5f6",
+            "ev-capture-f94505f155ad",
+            "ev-file-e691e96161d6"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        }
+      ],
+      "geometry": "分组标题与圆角行组分离；toggle/chevron位于尾部。B juicy_switch checked=Macaw/default=Swan，运行绑定仍需区分。",
+      "inputs": [
+        "section heading",
+        "navigation row",
+        "toggle row",
+        "footer link"
+      ],
+      "events": [
+        "Target owner manages state; preserve source transitions only in their documented conditions."
+      ],
+      "usage": "导航行、立即生效开关与需保存编辑分开。 D：开关以真实状态驱动；保存中禁重复并呈现失败恢复。 不是每个设置都能由一个样本推断自动保存。",
+      "adaptation": {
+        "platform": "Android source; target mapping is D",
+        "scaling": "dp for geometry, sp for text; allow target safe-area and content-driven reflow",
+        "longText": "Target D: allow wrapped labels and larger hit regions; source full matrix unknown."
+      },
+      "sourceSceneNumbers": [
+        30,
+        34,
+        36,
+        37,
+        40,
+        210,
+        211,
+        324
+      ],
+      "referenceStatus": "specified-not-yet-added-to-native-reference",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "partial",
+          "evidenceRefs": [
+            "ev-capture-8357c5aefeb5",
+            "ev-capture-cdaeb78a0680",
+            "ev-capture-c345edeef02a",
+            "ev-capture-3edb6c2c9648",
+            "ev-capture-2b86a5a40223",
+            "ev-capture-045416d8b234",
+            "ev-capture-ceb15aedd5f6",
+            "ev-capture-f94505f155ad",
+            "ev-file-e691e96161d6"
+          ],
+          "reason": "原版禁用开关未验证；目标须给原因"
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      },
+      "referenceRevision": {
+        "status": "bounded-runtime-observed",
+        "report": "docs/reference-revision.md",
+        "limits": [
+          "原版运行字体绑定仍未知；采用Duolingo Sans19sp的D选择校准文字，像素锚吻合不证明原版Typeface内部绑定。",
+          "角色姿态/原版Lottie与Rive、全部组件族、全App深色/完整中文及真实读屏/触觉仍未完成同条件还原。",
+          "原版fontScale历史为未知；当前参考fontScale1.0，不能把画布匹配称所有条件完全相同。",
+          "四份录像分别保留录制构建SHA；部分前置适配样本是15f构建、录像为bb311/6794，最终39c只改输入焦点/IME流程并另做最终课程、IME与重试复核。",
+          "screenrecord编码时长小于宿主4秒录制窗口，解码采样只证明可见中间状态，不能当作原版动画时长或精确Android呈现时间。",
+          "r38/r47输入裁切、r48未保持输入焦点、r42/r43未命中控件、r55仍为错误页均保留，未计为通过。"
+        ]
+      }
+    },
+    {
+      "id": "component-metric-card",
+      "name": "结果指标卡",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-ea71cb603aa7",
+        "ev-capture-a4b06fb322a2",
+        "ev-capture-64e4d89930fa",
+        "ev-capture-f494780fd1c6",
+        "ev-file-e691e96161d6"
+      ],
+      "unknowns": [
+        "计数增长动画",
+        "大数字与极长单位适配"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "值与标签来自目标业务，未知指标不填0或100%。 D：窄屏/大字改为纵排或两行，保留标签和值的对应。 读屏合并标签、值和单位，颜色不能独立承载好坏语义。"
+      },
+      "slots": [
+        "caption band",
+        "metric icon",
+        "value",
+        "unit"
+      ],
+      "tokenRefs": [
+        "token-h1-size",
+        "token-button-size",
+        "token-radius",
+        "token-border"
+      ],
+      "states": [
+        {
+          "id": "threeColumns",
+          "appearance": "XP/accuracy/time等三个角色",
+          "evidenceRefs": [
+            "ev-capture-ea71cb603aa7",
+            "ev-capture-a4b06fb322a2",
+            "ev-capture-64e4d89930fa",
+            "ev-capture-f494780fd1c6",
+            "ev-file-e691e96161d6"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "alternate",
+          "appearance": "Math显示COMBO与用时，没有accuracy百分比",
+          "evidenceRefs": [
+            "ev-capture-ea71cb603aa7",
+            "ev-capture-a4b06fb322a2",
+            "ev-capture-64e4d89930fa",
+            "ev-capture-f494780fd1c6",
+            "ev-file-e691e96161d6"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "localized",
+          "appearance": "中文结果文案与布局已有原图",
+          "evidenceRefs": [
+            "ev-capture-ea71cb603aa7",
+            "ev-capture-a4b06fb322a2",
+            "ev-capture-64e4d89930fa",
+            "ev-capture-f494780fd1c6",
+            "ev-file-e691e96161d6"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        }
+      ],
+      "geometry": "56原图三列卡约x49..243、263..457、477..671，顶y820、底y982；不同颜色标题条+近白内容。属于手工像素界线约值。",
+      "inputs": [
+        "caption band",
+        "metric icon",
+        "value",
+        "unit"
+      ],
+      "events": [
+        "Target owner manages state; preserve source transitions only in their documented conditions."
+      ],
+      "usage": "值与标签来自目标业务，未知指标不填0或100%。 D：窄屏/大字改为纵排或两行，保留标签和值的对应。 读屏合并标签、值和单位，颜色不能独立承载好坏语义。",
+      "adaptation": {
+        "platform": "Android source; target mapping is D",
+        "scaling": "dp for geometry, sp for text; allow target safe-area and content-driven reflow",
+        "longText": "D：窄屏/大字改为纵排或两行，保留标签和值的对应。"
+      },
+      "sourceSceneNumbers": [
+        56,
+        106,
+        200,
+        255
+      ],
+      "referenceStatus": "specified-not-yet-added-to-native-reference",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      },
+      "referenceRevision": {
+        "status": "bounded-runtime-observed",
+        "report": "docs/reference-revision.md",
+        "limits": [
+          "原版运行字体绑定仍未知；采用Duolingo Sans19sp的D选择校准文字，像素锚吻合不证明原版Typeface内部绑定。",
+          "角色姿态/原版Lottie与Rive、全部组件族、全App深色/完整中文及真实读屏/触觉仍未完成同条件还原。",
+          "原版fontScale历史为未知；当前参考fontScale1.0，不能把画布匹配称所有条件完全相同。",
+          "四份录像分别保留录制构建SHA；部分前置适配样本是15f构建、录像为bb311/6794，最终39c只改输入焦点/IME流程并另做最终课程、IME与重试复核。",
+          "screenrecord编码时长小于宿主4秒录制窗口，解码采样只证明可见中间状态，不能当作原版动画时长或精确Android呈现时间。",
+          "r38/r47输入裁切、r48未保持输入焦点、r42/r43未命中控件、r55仍为错误页均保留，未计为通过。"
+        ]
+      }
+    },
+    {
+      "id": "component-task-card",
+      "name": "任务入口卡与计数徽标",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-9610eb51f4db",
+        "ev-capture-a37f02fc36dd"
+      ],
+      "unknowns": [
+        "卡片按下/禁用/加载状态",
+        "计数更新动画"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "徽标与其入口一起读出，避免把动态数量写死为设计常量。 D：图片区可裁剪，文字区与命中区不被装饰覆盖。 缺资源时保留文字和操作，使用目标占位图。"
+      },
+      "slots": [
+        "title",
+        "trailing art",
+        "count badge",
+        "primary action"
+      ],
+      "tokenRefs": [
+        "token-radius",
+        "token-border",
+        "token-body-size"
+      ],
+      "states": [
+        {
+          "id": "default",
+          "appearance": "技能入口图文卡",
+          "evidenceRefs": [
+            "ev-capture-9610eb51f4db",
+            "ev-capture-a37f02fc36dd"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "count",
+          "appearance": "Mistakes3/Words14只代表该账号时刻显示",
+          "evidenceRefs": [
+            "ev-capture-9610eb51f4db",
+            "ev-capture-a37f02fc36dd"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "hero",
+          "appearance": "顶部蓝色区含白色任务面与START +20 XP",
+          "evidenceRefs": [
+            "ev-capture-9610eb51f4db",
+            "ev-capture-a37f02fc36dd"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        }
+      ],
+      "geometry": "301 Listen行bounds[48,597][672,731]，Mistakes[48,755][672,889]；右插画裁于卡边，红色计数徽标越出右上边缘。",
+      "inputs": [
+        "title",
+        "trailing art",
+        "count badge",
+        "primary action"
+      ],
+      "events": [
+        "Target owner manages state; preserve source transitions only in their documented conditions."
+      ],
+      "usage": "徽标与其入口一起读出，避免把动态数量写死为设计常量。 D：图片区可裁剪，文字区与命中区不被装饰覆盖。 缺资源时保留文字和操作，使用目标占位图。",
+      "adaptation": {
+        "platform": "Android source; target mapping is D",
+        "scaling": "dp for geometry, sp for text; allow target safe-area and content-driven reflow",
+        "longText": "Target D: allow wrapped labels and larger hit regions; source full matrix unknown."
+      },
+      "sourceSceneNumbers": [
+        301,
+        302
+      ],
+      "referenceStatus": "specified-not-yet-added-to-native-reference",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "partial",
+          "evidenceRefs": [
+            "ev-capture-9610eb51f4db",
+            "ev-capture-a37f02fc36dd"
+          ],
+          "reason": "技能入口图文卡"
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      }
+    },
+    {
+      "id": "component-menu",
+      "name": "锚定菜单与排序选项",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-a8c53b601aee",
+        "ev-capture-7b8dfb1463d4",
+        "ev-capture-51ace32baa7d",
+        "ev-capture-bdd6d44e907b",
+        "ev-capture-d575acc50fbf",
+        "ev-capture-757b4b645e16"
+      ],
+      "unknowns": [
+        "遮罩/系统Back完整规则",
+        "键盘焦点循环",
+        "所有菜单的几何"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：菜单对齐锚点并避让屏幕/键盘，关闭后把焦点还给入口。 选项全行可操作且暴露选择语义；导航型和选择型分开。"
+      },
+      "slots": [
+        "anchor",
+        "option label",
+        "selected marker"
+      ],
+      "tokenRefs": [
+        "token-body-size",
+        "token-radius",
+        "token-border"
+      ],
+      "states": [
+        {
+          "id": "closed",
+          "appearance": "仅显示入口",
+          "evidenceRefs": [
+            "ev-capture-a8c53b601aee",
+            "ev-capture-7b8dfb1463d4",
+            "ev-capture-51ace32baa7d",
+            "ev-capture-bdd6d44e907b",
+            "ev-capture-d575acc50fbf",
+            "ev-capture-757b4b645e16"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "open",
+          "appearance": "SORT展示排序选项",
+          "evidenceRefs": [
+            "ev-capture-a8c53b601aee",
+            "ev-capture-7b8dfb1463d4",
+            "ev-capture-51ace32baa7d",
+            "ev-capture-bdd6d44e907b",
+            "ev-capture-d575acc50fbf",
+            "ev-capture-757b4b645e16"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "selected",
+          "appearance": "Alphabetically更新可见顺序",
+          "evidenceRefs": [
+            "ev-capture-a8c53b601aee",
+            "ev-capture-7b8dfb1463d4",
+            "ev-capture-51ace32baa7d",
+            "ev-capture-bdd6d44e907b",
+            "ev-capture-d575acc50fbf",
+            "ev-capture-757b4b645e16"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "reentry",
+          "appearance": "Words重入恢复Recently learned",
+          "evidenceRefs": [
+            "ev-capture-a8c53b601aee",
+            "ev-capture-7b8dfb1463d4",
+            "ev-capture-51ace32baa7d",
+            "ev-capture-bdd6d44e907b",
+            "ev-capture-d575acc50fbf",
+            "ev-capture-757b4b645e16"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        }
+      ],
+      "geometry": "课程菜单与Words SORT是不同用途；记录选择、锚点、遮罩/关闭，不共用未经核验的固定高度。",
+      "inputs": [
+        "anchor",
+        "option label",
+        "selected marker"
+      ],
+      "events": [
+        "Target owner manages state; preserve source transitions only in their documented conditions."
+      ],
+      "usage": "D：菜单对齐锚点并避让屏幕/键盘，关闭后把焦点还给入口。 选项全行可操作且暴露选择语义；导航型和选择型分开。",
+      "adaptation": {
+        "platform": "Android source; target mapping is D",
+        "scaling": "dp for geometry, sp for text; allow target safe-area and content-driven reflow",
+        "longText": "Target D: allow wrapped labels and larger hit regions; source full matrix unknown."
+      },
+      "sourceSceneNumbers": [
+        41,
+        218,
+        275,
+        317,
+        318,
+        319
+      ],
+      "referenceStatus": "specified-not-yet-added-to-native-reference",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "partial",
+          "evidenceRefs": [
+            "ev-capture-a8c53b601aee",
+            "ev-capture-7b8dfb1463d4",
+            "ev-capture-51ace32baa7d",
+            "ev-capture-bdd6d44e907b",
+            "ev-capture-d575acc50fbf",
+            "ev-capture-757b4b645e16"
+          ],
+          "reason": "Alphabetically更新可见顺序"
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      }
+    },
+    {
+      "id": "component-search-empty",
+      "name": "搜索、空态与重试",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-6570e213209b",
+        "ev-capture-1de7140ac3ee",
+        "ev-capture-fc0ed88d8dc8",
+        "ev-capture-02d54f3085ba",
+        "ev-capture-f48d5b6713cd"
+      ],
+      "unknowns": [
+        "原版网络重试/去重机制",
+        "精确搜索debounce",
+        "完整错误外观"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：区分未输入、加载、无结果、网络错误四态。 保留查询供重试；取消请求/晚到结果策略由目标实现，不能从静帧推出。"
+      },
+      "slots": [
+        "query",
+        "clear/back",
+        "result list",
+        "empty or failure message"
+      ],
+      "tokenRefs": [
+        "token-body-size",
+        "token-radius"
+      ],
+      "states": [
+        {
+          "id": "empty",
+          "appearance": "无query等待输入",
+          "evidenceRefs": [
+            "ev-capture-6570e213209b",
+            "ev-capture-1de7140ac3ee",
+            "ev-capture-fc0ed88d8dc8",
+            "ev-capture-02d54f3085ba",
+            "ev-capture-f48d5b6713cd"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "noResult",
+          "appearance": "查询无结果不等于账号不存在",
+          "evidenceRefs": [
+            "ev-capture-6570e213209b",
+            "ev-capture-1de7140ac3ee",
+            "ev-capture-fc0ed88d8dc8",
+            "ev-capture-02d54f3085ba",
+            "ev-capture-f48d5b6713cd"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "results",
+          "appearance": "显示结果列表，仅限定采样",
+          "evidenceRefs": [
+            "ev-capture-6570e213209b",
+            "ev-capture-1de7140ac3ee",
+            "ev-capture-fc0ed88d8dc8",
+            "ev-capture-02d54f3085ba",
+            "ev-capture-f48d5b6713cd"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "offline",
+          "appearance": "离线可保留已渲染结果；在线手动重试后恢复",
+          "evidenceRefs": [
+            "ev-capture-6570e213209b",
+            "ev-capture-1de7140ac3ee",
+            "ev-capture-fc0ed88d8dc8",
+            "ev-capture-02d54f3085ba",
+            "ev-capture-f48d5b6713cd"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        }
+      ],
+      "geometry": "普通搜索入口、无结果与有结果研究已有；含真实身份画面仅私密保留，规范不转录账号名称/头像。",
+      "inputs": [
+        "query",
+        "clear/back",
+        "result list",
+        "empty or failure message"
+      ],
+      "events": [
+        "Target owner manages state; preserve source transitions only in their documented conditions."
+      ],
+      "usage": "D：区分未输入、加载、无结果、网络错误四态。 保留查询供重试；取消请求/晚到结果策略由目标实现，不能从静帧推出。",
+      "adaptation": {
+        "platform": "Android source; target mapping is D",
+        "scaling": "dp for geometry, sp for text; allow target safe-area and content-driven reflow",
+        "longText": "Target D: allow wrapped labels and larger hit regions; source full matrix unknown."
+      },
+      "sourceSceneNumbers": [
+        278,
+        281,
+        282,
+        286,
+        290
+      ],
+      "referenceStatus": "specified-not-yet-added-to-native-reference",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "partial",
+          "evidenceRefs": [
+            "ev-capture-6570e213209b",
+            "ev-capture-1de7140ac3ee",
+            "ev-capture-fc0ed88d8dc8",
+            "ev-capture-02d54f3085ba",
+            "ev-capture-f48d5b6713cd"
+          ],
+          "reason": "无query等待输入"
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      }
+    },
+    {
+      "id": "component-profile-form",
+      "name": "资料编辑与门槛表单",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-a1f5c86be4d0",
+        "ev-capture-13753f408586",
+        "ev-capture-19205e4ec72e",
+        "ev-capture-89560d75e07f"
+      ],
+      "unknowns": [
+        "原版保存成功/失败",
+        "资料校验和键盘适配"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：已有值/编辑草稿/保存结果分开建模；取消不隐式保存。 目标如有账户门槛说明原因与继续条件，避免把保存按钮当简单导航。"
+      },
+      "slots": [
+        "field label",
+        "value",
+        "editor action",
+        "gate explanation",
+        "save/cancel"
+      ],
+      "tokenRefs": [
+        "token-body-size",
+        "token-input-padding",
+        "token-border"
+      ],
+      "states": [
+        {
+          "id": "view",
+          "appearance": "显示字段入口",
+          "evidenceRefs": [
+            "ev-capture-a1f5c86be4d0",
+            "ev-capture-13753f408586",
+            "ev-capture-19205e4ec72e",
+            "ev-capture-89560d75e07f"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "gate",
+          "appearance": "编辑受正常手机号门槛",
+          "evidenceRefs": [
+            "ev-capture-a1f5c86be4d0",
+            "ev-capture-13753f408586",
+            "ev-capture-19205e4ec72e",
+            "ev-capture-89560d75e07f"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "cancel",
+          "appearance": "门槛退出，未实际保存资料",
+          "evidenceRefs": [
+            "ev-capture-a1f5c86be4d0",
+            "ev-capture-13753f408586",
+            "ev-capture-19205e4ec72e",
+            "ev-capture-89560d75e07f"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "saved",
+          "appearance": "原版未验证",
+          "evidenceRefs": [
+            "ev-capture-a1f5c86be4d0",
+            "ev-capture-13753f408586",
+            "ev-capture-19205e4ec72e",
+            "ev-capture-89560d75e07f"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        }
+      ],
+      "geometry": "字段列表、名字编辑入口与空手机号绑定门槛已见；真实身份页不加入通用图库。",
+      "inputs": [
+        "field label",
+        "value",
+        "editor action",
+        "gate explanation",
+        "save/cancel"
+      ],
+      "events": [
+        "Target owner manages state; preserve source transitions only in their documented conditions."
+      ],
+      "usage": "D：已有值/编辑草稿/保存结果分开建模；取消不隐式保存。 目标如有账户门槛说明原因与继续条件，避免把保存按钮当简单导航。",
+      "adaptation": {
+        "platform": "Android source; target mapping is D",
+        "scaling": "dp for geometry, sp for text; allow target safe-area and content-driven reflow",
+        "longText": "Target D: allow wrapped labels and larger hit regions; source full matrix unknown."
+      },
+      "sourceSceneNumbers": [
+        292,
+        293,
+        294,
+        295
+      ],
+      "referenceStatus": "specified-not-yet-added-to-native-reference",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      }
+    },
+    {
+      "id": "component-choice-chip",
+      "name": "词块与多选答案",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-c047135206f5",
+        "ev-capture-4aa57b03593f",
+        "ev-capture-b8e8daf72df5",
+        "ev-capture-26a0303cba66"
+      ],
+      "unknowns": [
+        "所有撤回/重排/空提交",
+        "实际focus顺序"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：候选和答案共享稳定ID；提交态和编辑态分开。 窄屏换行，避免固定词块总宽；keyboard/读屏可逐项访问。"
+      },
+      "slots": [
+        "prompt",
+        "answer region",
+        "available chips",
+        "submit"
+      ],
+      "tokenRefs": [
+        "token-radius",
+        "token-lip",
+        "token-border",
+        "token-button-size"
+      ],
+      "states": [
+        {
+          "id": "available",
+          "appearance": "词块库等待选择",
+          "evidenceRefs": [
+            "ev-capture-c047135206f5",
+            "ev-capture-4aa57b03593f",
+            "ev-capture-b8e8daf72df5",
+            "ev-capture-26a0303cba66"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "selected",
+          "appearance": "选中的词块进入答案区或多选标记",
+          "evidenceRefs": [
+            "ev-capture-c047135206f5",
+            "ev-capture-4aa57b03593f",
+            "ev-capture-b8e8daf72df5",
+            "ev-capture-26a0303cba66"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "feedback",
+          "appearance": "正确/错误后由反馈面说明",
+          "evidenceRefs": [
+            "ev-capture-c047135206f5",
+            "ev-capture-4aa57b03593f",
+            "ev-capture-b8e8daf72df5",
+            "ev-capture-26a0303cba66"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "remove",
+          "appearance": "撤回/重排仅按实际记录，未见不补造",
+          "evidenceRefs": [
+            "ev-capture-c047135206f5",
+            "ev-capture-4aa57b03593f",
+            "ev-capture-b8e8daf72df5",
+            "ev-capture-26a0303cba66"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        }
+      ],
+      "geometry": "词块有面/底沿；答案区与候选区分开，Math也有多选；同一题型不能推所有撤回与重排行为。",
+      "inputs": [
+        "prompt",
+        "answer region",
+        "available chips",
+        "submit"
+      ],
+      "events": [
+        "Target owner manages state; preserve source transitions only in their documented conditions."
+      ],
+      "usage": "D：候选和答案共享稳定ID；提交态和编辑态分开。 窄屏换行，避免固定词块总宽；keyboard/读屏可逐项访问。",
+      "adaptation": {
+        "platform": "Android source; target mapping is D",
+        "scaling": "dp for geometry, sp for text; allow target safe-area and content-driven reflow",
+        "longText": "窄屏换行，避免固定词块总宽；keyboard/读屏可逐项访问。"
+      },
+      "sourceSceneNumbers": [
+        19,
+        190,
+        98,
+        105
+      ],
+      "referenceStatus": "specified-not-yet-added-to-native-reference",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "partial",
+          "evidenceRefs": [
+            "ev-capture-c047135206f5",
+            "ev-capture-4aa57b03593f",
+            "ev-capture-b8e8daf72df5",
+            "ev-capture-26a0303cba66"
+          ],
+          "reason": "选中的词块进入答案区或多选标记"
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      }
+    },
+    {
+      "id": "component-range-control",
+      "name": "滑杆与数值选择",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-b8e8daf72df5",
+        "ev-capture-aed42050d394",
+        "ev-capture-60c6787dbde6"
+      ],
+      "unknowns": [
+        "精确手势阈值与连续/离散更新",
+        "触觉/动画"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：range/step由目标数据定义；显示当前值并提供可访问increment/decrement。 拖动命中区应覆盖拇指附近，值文本不被手指完全遮挡。"
+      },
+      "slots": [
+        "track",
+        "thumb",
+        "numeric value",
+        "question"
+      ],
+      "tokenRefs": [
+        "token-action-guide-face",
+        "token-body-size"
+      ],
+      "states": [
+        {
+          "id": "default",
+          "appearance": "问题与滑杆",
+          "evidenceRefs": [
+            "ev-capture-b8e8daf72df5",
+            "ev-capture-aed42050d394",
+            "ev-capture-60c6787dbde6"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "changed",
+          "appearance": "实际拖动/点选后显示新值",
+          "evidenceRefs": [
+            "ev-capture-b8e8daf72df5",
+            "ev-capture-aed42050d394",
+            "ev-capture-60c6787dbde6"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "boundary",
+          "appearance": "上界代表样本",
+          "evidenceRefs": [
+            "ev-capture-b8e8daf72df5",
+            "ev-capture-aed42050d394",
+            "ev-capture-60c6787dbde6"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        }
+      ],
+      "geometry": "Math温度/数字滑杆有选中值与边界采样；不能用截图反推完整range/step。",
+      "inputs": [
+        "track",
+        "thumb",
+        "numeric value",
+        "question"
+      ],
+      "events": [
+        "Target owner manages state; preserve source transitions only in their documented conditions."
+      ],
+      "usage": "D：range/step由目标数据定义；显示当前值并提供可访问increment/decrement。 拖动命中区应覆盖拇指附近，值文本不被手指完全遮挡。",
+      "adaptation": {
+        "platform": "Android source; target mapping is D",
+        "scaling": "dp for geometry, sp for text; allow target safe-area and content-driven reflow",
+        "longText": "Target D: allow wrapped labels and larger hit regions; source full matrix unknown."
+      },
+      "sourceSceneNumbers": [
+        98,
+        100,
+        102
+      ],
+      "referenceStatus": "specified-not-yet-added-to-native-reference",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "partial",
+          "evidenceRefs": [
+            "ev-capture-b8e8daf72df5",
+            "ev-capture-aed42050d394",
+            "ev-capture-60c6787dbde6"
+          ],
+          "reason": "问题与滑杆"
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      }
+    },
+    {
+      "id": "component-numeric-keypad",
+      "name": "应用内数字键盘",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-7b2a370567c7"
+      ],
+      "unknowns": [
+        "所有键盘变体",
+        "重复/长按删除"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：数字范围、小数/负号/退格由目标问题决定，保持明确按键命中区。 不因为有自绘按键就宣称系统组合输入验证。"
+      },
+      "slots": [
+        "display",
+        "digits",
+        "delete",
+        "submit"
+      ],
+      "tokenRefs": [
+        "token-button-height",
+        "token-button-size",
+        "token-radius"
+      ],
+      "states": [
+        {
+          "id": "empty",
+          "appearance": "未作答",
+          "evidenceRefs": [
+            "ev-capture-7b2a370567c7"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "entered",
+          "appearance": "数字输入显示",
+          "evidenceRefs": [
+            "ev-capture-7b2a370567c7"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "submitted",
+          "appearance": "提交后进入反馈",
+          "evidenceRefs": [
+            "ev-capture-7b2a370567c7"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        }
+      ],
+      "geometry": "103是应用内数字键盘，不是OS IME；分离输入显示、按键和检查动作。",
+      "inputs": [
+        "display",
+        "digits",
+        "delete",
+        "submit"
+      ],
+      "events": [
+        "Target owner manages state; preserve source transitions only in their documented conditions."
+      ],
+      "usage": "D：数字范围、小数/负号/退格由目标问题决定，保持明确按键命中区。 不因为有自绘按键就宣称系统组合输入验证。",
+      "adaptation": {
+        "platform": "Android source; target mapping is D",
+        "scaling": "dp for geometry, sp for text; allow target safe-area and content-driven reflow",
+        "longText": "Target D: allow wrapped labels and larger hit regions; source full matrix unknown."
+      },
+      "sourceSceneNumbers": [
+        103
+      ],
+      "referenceStatus": "specified-not-yet-added-to-native-reference",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "partial",
+          "evidenceRefs": [
+            "ev-capture-7b2a370567c7"
+          ],
+          "reason": "未作答"
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      }
+    },
+    {
+      "id": "component-media-control",
+      "name": "播放与替代输入入口",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-29a4410dbcfa",
+        "ev-capture-893731fa258a",
+        "ev-capture-d0d16afa9914",
+        "ev-capture-6dbe576230a6"
+      ],
+      "unknowns": [
+        "真实音频输出与慢速速度",
+        "录音权限及Speaking UI"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：播放状态必须可见并有可访问名称；静音/错误提供替代。 目标语音输入另定义权限、录音中、取消和结果，不复用未证实的源Speaking路径。"
+      },
+      "slots": [
+        "normal play",
+        "slow play",
+        "skip",
+        "prompt"
+      ],
+      "tokenRefs": [
+        "token-action-alternative-face",
+        "token-radius"
+      ],
+      "states": [
+        {
+          "id": "idle",
+          "appearance": "播放入口可见",
+          "evidenceRefs": [
+            "ev-capture-29a4410dbcfa",
+            "ev-capture-893731fa258a",
+            "ev-capture-d0d16afa9914",
+            "ev-capture-6dbe576230a6"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "alternative",
+          "appearance": "本节跳过听力的黄色说明",
+          "evidenceRefs": [
+            "ev-capture-29a4410dbcfa",
+            "ev-capture-893731fa258a",
+            "ev-capture-d0d16afa9914",
+            "ev-capture-6dbe576230a6"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "unavailable",
+          "appearance": "能量/服务门槛单独记录，不是麦克风权限",
+          "evidenceRefs": [
+            "ev-capture-29a4410dbcfa",
+            "ev-capture-893731fa258a",
+            "ev-capture-d0d16afa9914",
+            "ev-capture-6dbe576230a6"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        }
+      ],
+      "geometry": "普通/慢速播放按钮与Cannot Listen Now分开；来源实际听音并未因此完成。",
+      "inputs": [
+        "normal play",
+        "slow play",
+        "skip",
+        "prompt"
+      ],
+      "events": [
+        "Target owner manages state; preserve source transitions only in their documented conditions."
+      ],
+      "usage": "D：播放状态必须可见并有可访问名称；静音/错误提供替代。 目标语音输入另定义权限、录音中、取消和结果，不复用未证实的源Speaking路径。",
+      "adaptation": {
+        "platform": "Android source; target mapping is D",
+        "scaling": "dp for geometry, sp for text; allow target safe-area and content-driven reflow",
+        "longText": "Target D: allow wrapped labels and larger hit regions; source full matrix unknown."
+      },
+      "sourceSceneNumbers": [
+        20,
+        193,
+        303,
+        304
+      ],
+      "referenceStatus": "specified-not-yet-added-to-native-reference",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      }
+    },
+    {
+      "id": "component-board",
+      "name": "棋盘与二维操作面",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-c7dbd4e1973f",
+        "ev-capture-b5b9d90746e0",
+        "ev-capture-f323dc176a20",
+        "ev-capture-f494780fd1c6"
+      ],
+      "unknowns": [
+        "完整拖动阈值",
+        "无障碍操作",
+        "动画/触觉"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：目标格点坐标、选中/可达/错误状态与业务规则分开。 保留键盘/辅助选取替代路线的设计要求，未实现不标通过。"
+      },
+      "slots": [
+        "board cells",
+        "pieces",
+        "instruction",
+        "feedback",
+        "next"
+      ],
+      "tokenRefs": [
+        "token-border",
+        "token-radius"
+      ],
+      "states": [
+        {
+          "id": "idle",
+          "appearance": "指令与棋子布局",
+          "evidenceRefs": [
+            "ev-capture-c7dbd4e1973f",
+            "ev-capture-b5b9d90746e0",
+            "ev-capture-f323dc176a20",
+            "ev-capture-f494780fd1c6"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "attempt",
+          "appearance": "点按/长拖/短拖分别记录",
+          "evidenceRefs": [
+            "ev-capture-c7dbd4e1973f",
+            "ev-capture-b5b9d90746e0",
+            "ev-capture-f323dc176a20",
+            "ev-capture-f494780fd1c6"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "resolved",
+          "appearance": "代表首课实际结果",
+          "evidenceRefs": [
+            "ev-capture-c7dbd4e1973f",
+            "ev-capture-b5b9d90746e0",
+            "ev-capture-f323dc176a20",
+            "ev-capture-f494780fd1c6"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        }
+      ],
+      "geometry": "Chess代表棋盘与tap/drag尝试已记录；成功短拖与失败动作区别保留，不能推所有手势。",
+      "inputs": [
+        "board cells",
+        "pieces",
+        "instruction",
+        "feedback",
+        "next"
+      ],
+      "events": [
+        "Target owner manages state; preserve source transitions only in their documented conditions."
+      ],
+      "usage": "D：目标格点坐标、选中/可达/错误状态与业务规则分开。 保留键盘/辅助选取替代路线的设计要求，未实现不标通过。",
+      "adaptation": {
+        "platform": "Android source; target mapping is D",
+        "scaling": "dp for geometry, sp for text; allow target safe-area and content-driven reflow",
+        "longText": "Target D: allow wrapped labels and larger hit regions; source full matrix unknown."
+      },
+      "sourceSceneNumbers": [
+        228,
+        229,
+        242,
+        255
+      ],
+      "referenceStatus": "specified-not-yet-added-to-native-reference",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      }
+    },
+    {
+      "id": "component-learning-path",
+      "name": "路径式进度与节点提示",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-ed72a9d0a7e0",
+        "ev-capture-be8d88bb6945",
+        "ev-capture-9afda2c4a2b6",
+        "ev-capture-b91c6c788927"
+      ],
+      "unknowns": [
+        "完整节点/奖励状态族",
+        "路径滚动与自动定位",
+        "所有锁定触发"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：把路径拓扑作为目标数据，视觉节点独立于业务解锁算法。 大字、读屏和窄屏提供顺序列表替代，不依赖二维位置传达进度。"
+      },
+      "slots": [
+        "section header",
+        "path nodes",
+        "current marker",
+        "reward",
+        "tooltip"
+      ],
+      "tokenRefs": [
+        "token-radius",
+        "token-action-guide-face"
+      ],
+      "states": [
+        {
+          "id": "current",
+          "appearance": "当前可进入节点",
+          "evidenceRefs": [
+            "ev-capture-ed72a9d0a7e0",
+            "ev-capture-be8d88bb6945",
+            "ev-capture-9afda2c4a2b6",
+            "ev-capture-b91c6c788927"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "locked",
+          "appearance": "未解锁内容以不同节点态表示，全部条件未穷尽",
+          "evidenceRefs": [
+            "ev-capture-ed72a9d0a7e0",
+            "ev-capture-be8d88bb6945",
+            "ev-capture-9afda2c4a2b6",
+            "ev-capture-b91c6c788927"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "tooltip",
+          "appearance": "节点局部提示与动作",
+          "evidenceRefs": [
+            "ev-capture-ed72a9d0a7e0",
+            "ev-capture-be8d88bb6945",
+            "ev-capture-9afda2c4a2b6",
+            "ev-capture-b91c6c788927"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        }
+      ],
+      "geometry": "路径节点与顶部资源计数共同组织主页；具体节点数/位置是内容与进度，不是固定模板。",
+      "inputs": [
+        "section header",
+        "path nodes",
+        "current marker",
+        "reward",
+        "tooltip"
+      ],
+      "events": [
+        "Target owner manages state; preserve source transitions only in their documented conditions."
+      ],
+      "usage": "D：把路径拓扑作为目标数据，视觉节点独立于业务解锁算法。 大字、读屏和窄屏提供顺序列表替代，不依赖二维位置传达进度。",
+      "adaptation": {
+        "platform": "Android source; target mapping is D",
+        "scaling": "dp for geometry, sp for text; allow target safe-area and content-driven reflow",
+        "longText": "大字、读屏和窄屏提供顺序列表替代，不依赖二维位置传达进度。"
+      },
+      "sourceSceneNumbers": [
+        26,
+        62,
+        108,
+        204
+      ],
+      "referenceStatus": "specified-not-yet-added-to-native-reference",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      }
+    },
+    {
+      "id": "component-notice",
+      "name": "引导、权限说明与通知入口",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-b9d1e5abb0e7",
+        "ev-capture-81fcdf275459",
+        "ev-capture-f61e42e61d28",
+        "ev-capture-3e7a7bbe8442",
+        "ev-capture-d6e6c8db98e5"
+      ],
+      "unknowns": [
+        "实际通知送达",
+        "Android13+通知权限",
+        "所有首次/重入策略"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D：系统弹窗保持平台原生，App负责提前解释与返回后状态。 提醒开关与真实通知送达是不同结论；不能由入口证明系统已授权。"
+      },
+      "slots": [
+        "illustration",
+        "reason",
+        "primary",
+        "defer",
+        "system handoff"
+      ],
+      "tokenRefs": [
+        "token-h1-size",
+        "token-body-size",
+        "token-button-size"
+      ],
+      "states": [
+        {
+          "id": "education",
+          "appearance": "展示用途与下一步",
+          "evidenceRefs": [
+            "ev-capture-b9d1e5abb0e7",
+            "ev-capture-81fcdf275459",
+            "ev-capture-f61e42e61d28",
+            "ev-capture-3e7a7bbe8442",
+            "ev-capture-d6e6c8db98e5"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "confirmation",
+          "appearance": "改变界面语言前说明影响与取消",
+          "evidenceRefs": [
+            "ev-capture-b9d1e5abb0e7",
+            "ev-capture-81fcdf275459",
+            "ev-capture-f61e42e61d28",
+            "ev-capture-3e7a7bbe8442",
+            "ev-capture-d6e6c8db98e5"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        },
+        {
+          "id": "handoff",
+          "appearance": "系统权限/设置界面是外部表面",
+          "evidenceRefs": [
+            "ev-capture-b9d1e5abb0e7",
+            "ev-capture-81fcdf275459",
+            "ev-capture-f61e42e61d28",
+            "ev-capture-3e7a7bbe8442",
+            "ev-capture-d6e6c8db98e5"
+          ],
+          "classification": "D",
+          "basis": "Curated source observations and explicit target choices; exact state attribution follows source scenes and unknowns."
+        }
+      ],
+      "geometry": "原图11是三个月成果说明，不是Widget系统权限；182是Android系统pin弹窗，须与原App说明分开。",
+      "inputs": [
+        "illustration",
+        "reason",
+        "primary",
+        "defer",
+        "system handoff"
+      ],
+      "events": [
+        "Target owner manages state; preserve source transitions only in their documented conditions."
+      ],
+      "usage": "D：系统弹窗保持平台原生，App负责提前解释与返回后状态。 提醒开关与真实通知送达是不同结论；不能由入口证明系统已授权。",
+      "adaptation": {
+        "platform": "Android source; target mapping is D",
+        "scaling": "dp for geometry, sp for text; allow target safe-area and content-driven reflow",
+        "longText": "Target D: allow wrapped labels and larger hit regions; source full matrix unknown."
+      },
+      "sourceSceneNumbers": [
+        11,
+        42,
+        182,
+        214,
+        215
+      ],
+      "referenceStatus": "specified-not-yet-added-to-native-reference",
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "evidenceRefs": [],
+          "reason": "No complete source contract in retained samples; define target D behavior and verify when applicable.",
+          "targetDecision": "D: use target native semantics; do not fabricate a source visual. Add representative comparison before source-fidelity acceptance."
+        }
+      ],
+      "measurementUnits": {
+        "geometry": "dp unless explicitly labelled physical px",
+        "text": "sp unless source declaration says otherwise",
+        "tree": "physical px; separate channel from PNG"
+      }
+    }
+  ]
+}

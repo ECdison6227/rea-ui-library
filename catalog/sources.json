@@ -92,7 +92,8 @@
         "manifest": "catalog/manifests/hark.json",
         "files": 249,
         "treeSha256": "976e312f1acf738da9c062515ae66f38595ee81bd317a3413f83f5dfefbdeae5"
-      }
+      },
+      "deliveryTier": "legacy-research"
     },
     {
       "id": "mi-fitness",
@@ -117,7 +118,7 @@
         "Java View",
         "YRN来源证据"
       ],
-      "readiness": "可迁移的代表基线",
+      "readiness": "partial",
       "coverage": "Android15 / 中文浅色 / 未登录空数据",
       "features": [
         "三页与十组件原版对照",
@@ -140,6 +141,31 @@
         "reviewed": true
       },
       "artifacts": [
+        {
+          "label": "开始使用",
+          "path": "README.md",
+          "role": "readme"
+        },
+        {
+          "label": "设计规范",
+          "path": "DESIGN_SPEC.md",
+          "role": "spec"
+        },
+        {
+          "label": "AI实施指南",
+          "path": "ADAPTATION_GUIDE.md",
+          "role": "adoption"
+        },
+        {
+          "label": "组件、动画与截图",
+          "path": "design-guide.html",
+          "role": "preview"
+        },
+        {
+          "label": "标准包入口",
+          "path": "design-package.json",
+          "role": "design-package"
+        },
         {
           "label": "研究入口",
           "path": "analysis/ui/README.md",
@@ -184,9 +210,11 @@
       },
       "integrity": {
         "manifest": "catalog/manifests/mi-fitness.json",
-        "files": 8737,
-        "treeSha256": "c9d6b75ac8f593e5b059131a110a8fa4340a7ce6b3872e65aadc228483f82d95"
-      }
+        "files": 8748,
+        "treeSha256": "3696c8c0491e6193879c290d4a7a115ea55d540dc5c678c7b7008a73144d0df8"
+      },
+      "designPackage": "design-package.json",
+      "deliveryTier": "design-package"
     },
     {
       "id": "mirasim",
@@ -275,7 +303,8 @@
         "manifest": "catalog/manifests/mirasim.json",
         "files": 1194,
         "treeSha256": "34089e1561d85c81428066b5dce7ee19f763b80930363660ff69303701373ed9"
-      }
+      },
+      "deliveryTier": "legacy-research"
     },
     {
       "id": "kimi",
@@ -305,7 +334,7 @@
         "Android / Compose来源",
         "Java View参考"
       ],
-      "readiness": "UI与核心交互目标已由用户接受",
+      "readiness": "partial",
       "coverage": "37项技术清单20项verified；其余保留未测或部分验证",
       "acceptance": {
         "date": "2026-10-19",
@@ -335,9 +364,29 @@
       },
       "artifacts": [
         {
-          "label": "研究入口",
+          "label": "开始使用",
           "path": "README.md",
           "role": "readme"
+        },
+        {
+          "label": "设计规范",
+          "path": "DESIGN_SPEC.md",
+          "role": "spec"
+        },
+        {
+          "label": "AI实施指南",
+          "path": "ADAPTATION_GUIDE.md",
+          "role": "adoption"
+        },
+        {
+          "label": "组件、动画与截图",
+          "path": "design-guide.html",
+          "role": "preview"
+        },
+        {
+          "label": "标准包入口",
+          "path": "design-package.json",
+          "role": "design-package"
         },
         {
           "label": "行为与迁移规则",
@@ -381,8 +430,120 @@
       },
       "integrity": {
         "manifest": "catalog/manifests/kimi.json",
-        "files": 3430,
-        "treeSha256": "1dc1c1b7dba3b778f005dfe2fd8619624a0ca378bbc11ecd11ba505b0ba44993"
+        "files": 3441,
+        "treeSha256": "d2c053185da609396fabdce1916ce5f59c88a8f1ae18f35073b5741390f4e48c"
+      },
+      "designPackage": "design-package.json",
+      "deliveryTier": "design-package"
+    },
+    {
+      "id": "duolingo-android-6-80-6-china-2368",
+      "name": "多邻国",
+      "subtitle": "分步引导、状态反馈与轻快动效",
+      "platform": "mobile",
+      "kind": "research",
+      "root": "platforms/mobile/duolingo-android-6-80-6-china-2368",
+      "visibility": "public",
+      "sourceVersion": "6.80.6-china (2368)",
+      "provenance": {
+        "kind": "rea-study",
+        "target": "com.duolingo 6.80.6-china (2368); APK SHA-256 ebdbcbdaa0d30f0141dbfc31953e650b28b5fd35b7faf7787751223661deaab8",
+        "method": "Retained REA inspect_android_package evidence, historical source Android capture, and independently implemented native reference. Consumer projection creates no new source evidence.",
+        "researchEntry": "README.md"
+      },
+      "summary": "复用立体按钮、选择反馈、引导、进度与结果，含原生参考和Paperlane迁移。",
+      "tags": [
+        "引导",
+        "选择",
+        "反馈",
+        "动画",
+        "Android"
+      ],
+      "stack": [
+        "Android native; observed AOSP API31 x86_64"
+      ],
+      "readiness": "partial",
+      "coverage": "See design-package.json and per-record source coverage; catalog import creates no new runtime evidence.",
+      "features": [
+        "Android English/light guided selection and CTA state prototype",
+        "Scoped native face/lip/border, input/dialog and typography candidates with explicit D choices",
+        "Paperlane local cross-business fixture and documented source/reference comparison",
+        "D native representative Chinese, fontScale2.0,640/1080px,dark,IME and motion/reduced-motion samples; scope and per-build identities in reference/revision.json"
+      ],
+      "limits": [
+        "G1：主要课程文字/气泡/禁用面与构建排版已做原生校准及新对照；原版字体内部绑定、角色姿态/原版动画资产匹配和其他页面完整还原仍未知。",
+        "G2：原生方案/指标/设置样例已新增；完整28族九态仍未全部实现和配对，不能由代表样例泛化。",
+        "G3：D进度/反馈/sheet进入与减少动画有运行录屏；原版关键时序、退出/重入/复杂中断及角色动画尚未全部还原。",
+        "G4：D中文、大字2.0、640/1080px、深色与真实IME已运行；跨页全覆盖、完整读屏/触觉与所有目标业务仍未验证。",
+        "Original backend, real purchases, account mutations and complete course coverage are not needed to transfer the design. Original research-host business checklist remains outside this consumer package.",
+        "Original-platform/version boundaries remain; integrity check is not functional acceptance."
+      ],
+      "palette": [
+        "#58cc02",
+        "#1cb0f6",
+        "#fffffd"
+      ],
+      "cover": "generic",
+      "paletteClassification": "D: catalog presentation; implementation uses scoped source tokens",
+      "designPackage": "design-package.json",
+      "artifacts": [
+        {
+          "label": "研究入口",
+          "path": "README.md",
+          "role": "readme"
+        },
+        {
+          "label": "设计规范",
+          "path": "DESIGN_SPEC.md",
+          "role": "spec"
+        },
+        {
+          "label": "Design Package v1",
+          "path": "design-package.json",
+          "role": "design-package"
+        },
+        {
+          "label": "迁移指南",
+          "path": "ADAPTATION_GUIDE.md",
+          "role": "adoption"
+        },
+        {
+          "label": "组件、动画与截图",
+          "path": "design-preview.html",
+          "role": "preview"
+        },
+        {
+          "label": "参考资料",
+          "path": "comparison/native-revision.html",
+          "role": "comparison"
+        },
+        {
+          "label": "参考资料",
+          "path": "reference/README.md",
+          "role": "reference"
+        },
+        {
+          "label": "参考资料",
+          "path": "transfer-example/README.md",
+          "role": "transfer"
+        }
+      ],
+      "run": {
+        "cwd": "platforms/mobile/duolingo-android-6-80-6-china-2368",
+        "command": "Read DESIGN_SPEC.md; reference commands are documented in reference/README.md",
+        "requires": "See source-specific readiness and platform requirements",
+        "verifiedHere": false
+      },
+      "deliveryTier": "design-package",
+      "thumbnail": {
+        "path": "evidence/runtime/05-course-picker/screen.png",
+        "classification": "A · 原版课程选择",
+        "reviewed": true
+      },
+      "integrity": {
+        "manifest": "catalog/manifests/duolingo-android-6-80-6-china-2368.json",
+        "files": 17983,
+        "treeSha256": "1582c878d82441d959ffdc068352a310b90908736377bca557a79567c73635f7"
       }
     }
   ],

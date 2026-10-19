@@ -1,0 +1,4652 @@
+{
+  "type": "CHESS_LESSON",
+  "id": "df13ce2e-6e78-4574-9026-542e0fbfbf7e",
+  "challenges": [
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "e1g1"
+        ],
+        "enemyMoves": [],
+        "finalCorrectSpeechBubbleContent": {
+          "text": "**Castling** is a special move that protects your king.",
+          "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/4e82f1e78776e5ef76c14fbd91692922",
+          "visemes": "100\t0\t46\n118\t46\t54\n101\t101\t156\n113\t257\t117\n104\t375\t85\n105\t460\t70\n103\t531\t54\n113\t585\t93\n101\t679\t31\n113\t710\t117\n107\t828\t62\n112\t890\t70\n115\t960\t109\n112\t1070\t70\n105\t1140\t109\n104\t1250\t226\n105\t1476\t78\n101\t1554\t70\n118\t1625\t125\n105\t1750\t148\n101\t1898\t109\n118\t2007\t78\n113\t2085\t93\n103\t2179\t54\n101\t2234\t70\n118\t2304\t109\n101\t2414\t179\n105\t2593\t93\n112\t2687\t117\n100\t2804\t187"
+        },
+        "finalHighlight": "",
+        "generalIncorrectSpeechBubbleContent": {
+          "text": "Follow the arrow.",
+          "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/1cd46c06e8dcf6b17e534d926ddea43a",
+          "visemes": "109\t0\t132\n112\t132\t70\n105\t203\t46\n112\t250\t85\n105\t335\t39\n103\t375\t171\n105\t546\t101\n112\t648\t218\n100\t867\t187"
+        },
+        "highlight": [
+          "e1g1 blue"
+        ],
+        "incorrectHighlight": [],
+        "incorrectMoves": [
+          "e1f1"
+        ],
+        "incorrectSpeechBubbleContent": [
+          {
+            "text": "Move the king two squares over, not one.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/6636074a0abdddd32db841172558d442",
+            "visemes": "105\t0\t367\n101\t367\t46\n118\t414\t109\n101\t523\t117\n105\t640\t148\n115\t789\t54\n101\t843\t101\n113\t945\t109\n118\t1054\t54\n104\t1109\t62\n114\t1171\t132\n113\t1304\t93\n101\t1398\t117\n109\t1515\t78\n114\t1593\t234\n100\t1828\t101\n105\t1929\t46\n112\t1976\t109\n105\t2085\t46\n104\t2132\t125\n112\t2257\t367\n105\t2625\t31\n100\t2656\t101"
+          }
+        ],
+        "indicatorType": "NEW_CONCEPT",
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "**Castle your king** to safety.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/c8e649f4733daa4bf12af8d2e1b5d288",
+            "visemes": "100\t0\t54\n118\t54\t70\n101\t125\t109\n113\t234\t101\n112\t335\t93\n108\t429\t78\n112\t507\t132\n118\t640\t93\n101\t734\t125\n105\t859\t218\n101\t1078\t46\n113\t1125\t125\n101\t1250\t109\n109\t1359\t85\n105\t1445\t54\n101\t1500\t226\n100\t1726\t62"
+          }
+        ],
+        "kcs": [
+          "castling"
+        ],
+        "moveEvaluationsForPositions": {
+          "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w": [
+            {
+              "enemyResponse": "e8f7",
+              "move": "c4f7",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d7e6",
+              "move": "c4e6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "b7a6",
+              "move": "c4a6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "c4d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4595
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "c4b5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.475
+            },
+            {
+              "enemyResponse": "d7d6",
+              "move": "c4d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4595
+            },
+            {
+              "enemyResponse": "d7d6",
+              "move": "c4b3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4895
+            },
+            {
+              "enemyResponse": "d7d5",
+              "move": "c4e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4615
+            },
+            {
+              "enemyResponse": "f6g4",
+              "move": "c4f1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.1085
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "f3g5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4545
+            },
+            {
+              "enemyResponse": "c6e5",
+              "move": "f3e5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0005
+            },
+            {
+              "enemyResponse": "c5f2",
+              "move": "f3h4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "f3d4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "f3g1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.4085
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "c3d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5005
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3b5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.1265
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3a4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4235
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3e2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0045
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3b1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "h1g1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.207
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "h1f1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.354
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "e1e2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0775
+            },
+            {
+              "enemyResponse": "d7d6",
+              "move": "e1f1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.374
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "d1e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4845
+            },
+            {
+              "enemyResponse": "d7d6",
+              "move": "a1b1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4965
+            },
+            {
+              "enemyResponse": "d7d6",
+              "move": "e1g1",
+              "moveCorrectness": "correct",
+              "wdl": 0.505
+            },
+            {
+              "enemyResponse": "d7d6",
+              "move": "h2h3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.503
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "g2g3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.332
+            },
+            {
+              "enemyResponse": "h7h6",
+              "move": "d2d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.511
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "b2b3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.399
+            },
+            {
+              "enemyResponse": "d7d6",
+              "move": "a2a3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5035
+            },
+            {
+              "enemyResponse": "d7d6",
+              "move": "h2h4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.313
+            },
+            {
+              "enemyResponse": "f6g4",
+              "move": "g2g4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0135
+            },
+            {
+              "enemyResponse": "e5d4",
+              "move": "d2d4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.283
+            },
+            {
+              "enemyResponse": "c5b4",
+              "move": "b2b4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.268
+            },
+            {
+              "enemyResponse": "d7d6",
+              "move": "a2a4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.507
+            }
+          ]
+        }
+      },
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 0 1",
+      "id": "75b59dc2",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "e8g8"
+        ],
+        "enemyMoves": [],
+        "finalHighlight": "",
+        "generalIncorrectSpeechBubbleContent": {
+          "text": "Castle your king.",
+          "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/9c92885c299e491f2c0cd56c11145ab6",
+          "visemes": "118\t0\t109\n112\t109\t109\n113\t218\t101\n112\t320\t93\n108\t414\t85\n112\t500\t101\n118\t601\t70\n103\t671\t101\n101\t773\t70\n105\t843\t265\n100\t1109\t132"
+        },
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [
+          "e8f8"
+        ],
+        "incorrectSpeechBubbleContent": [
+          {
+            "text": "Move the king two squares over, not one.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/6636074a0abdddd32db841172558d442",
+            "visemes": "105\t0\t367\n101\t367\t46\n118\t414\t109\n101\t523\t117\n105\t640\t148\n115\t789\t54\n101\t843\t101\n113\t945\t109\n118\t1054\t54\n104\t1109\t62\n114\t1171\t132\n113\t1304\t93\n101\t1398\t117\n109\t1515\t78\n114\t1593\t234\n100\t1828\t101\n105\t1929\t46\n112\t1976\t109\n105\t2085\t46\n104\t2132\t125\n112\t2257\t367\n105\t2625\t31\n100\t2656\t101"
+          }
+        ],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "**Castle your king** to safety.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/c8e649f4733daa4bf12af8d2e1b5d288",
+            "visemes": "100\t0\t54\n118\t54\t70\n101\t125\t109\n113\t234\t101\n112\t335\t93\n108\t429\t78\n112\t507\t132\n118\t640\t93\n101\t734\t125\n105\t859\t218\n101\t1078\t46\n113\t1125\t125\n101\t1250\t109\n109\t1359\t85\n105\t1445\t54\n101\t1500\t226\n100\t1726\t62"
+          }
+        ],
+        "kcs": [
+          "castling"
+        ],
+        "moveEvaluationsForPositions": {
+          "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQ1RK1 b": [
+            {
+              "enemyResponse": "c3d5",
+              "move": "h8g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.997
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "h8f8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9975
+            },
+            {
+              "enemyResponse": "f3g5",
+              "move": "e8f8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9795
+            },
+            {
+              "enemyResponse": "f3g5",
+              "move": "e8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.999
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "d8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.831
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "a8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.634
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "f6g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9805
+            },
+            {
+              "enemyResponse": "c4f7",
+              "move": "f6h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "f6d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "f6g4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8695
+            },
+            {
+              "enemyResponse": "c3e4",
+              "move": "f6e4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "c6a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.986
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8445
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3g5",
+              "move": "c5f8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.997
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "c5e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.615
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "c5d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8655
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "c5b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.673
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "c5d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.742
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "c5b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9675
+            },
+            {
+              "enemyResponse": "f2e3",
+              "move": "c5e3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b2a3",
+              "move": "c5a3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f1f2",
+              "move": "c5f2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d2d3",
+              "move": "e8g8",
+              "moveCorrectness": "correct",
+              "wdl": 0.5105
+            },
+            {
+              "enemyResponse": "c3a4",
+              "move": "h7h6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5175
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "g7g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.997
+            },
+            {
+              "enemyResponse": "c3a4",
+              "move": "d7d6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.503
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "b7b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8075
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "a7a6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5595
+            },
+            {
+              "enemyResponse": "h2h3",
+              "move": "h7h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.93
+            },
+            {
+              "enemyResponse": "f3g5",
+              "move": "g7g5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "e4d5",
+              "move": "d7d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.965
+            },
+            {
+              "enemyResponse": "c4b5",
+              "move": "b7b5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.994
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "a7a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.604
+            }
+          ]
+        }
+      },
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQ1RK1 b kq - 0 1",
+      "id": "e3f4f23b",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "e1c1"
+        ],
+        "enemyMoves": [],
+        "finalHighlight": "",
+        "generalIncorrectSpeechBubbleContent": {
+          "text": "Castle your king.",
+          "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/9c92885c299e491f2c0cd56c11145ab6",
+          "visemes": "118\t0\t109\n112\t109\t109\n113\t218\t101\n112\t320\t93\n108\t414\t85\n112\t500\t101\n118\t601\t70\n103\t671\t101\n101\t773\t70\n105\t843\t265\n100\t1109\t132"
+        },
+        "highlight": [
+          "e1c1 blue"
+        ],
+        "incorrectHighlight": [],
+        "incorrectMoves": [
+          "e8d1"
+        ],
+        "incorrectSpeechBubbleContent": [
+          {
+            "text": "Move the king two squares over, not one.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/6636074a0abdddd32db841172558d442",
+            "visemes": "105\t0\t367\n101\t367\t46\n118\t414\t109\n101\t523\t117\n105\t640\t148\n115\t789\t54\n101\t843\t101\n113\t945\t109\n118\t1054\t54\n104\t1109\t62\n114\t1171\t132\n113\t1304\t93\n101\t1398\t117\n109\t1515\t78\n114\t1593\t234\n100\t1828\t101\n105\t1929\t46\n112\t1976\t109\n105\t2085\t46\n104\t2132\t125\n112\t2257\t367\n105\t2625\t31\n100\t2656\t101"
+          }
+        ],
+        "indicatorType": "NEW_CONCEPT",
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "You can **castle queenside** if the path is clear.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/d359e4952305d4dd6cf9328f65d3239d",
+            "visemes": "103\t0\t171\n112\t171\t46\n118\t218\t70\n103\t289\t46\n105\t335\t85\n118\t421\t109\n101\t531\t101\n115\t632\t109\n112\t742\t132\n118\t875\t93\n104\t968\t62\n103\t1031\t54\n105\t1085\t70\n113\t1156\t125\n112\t1281\t156\n101\t1437\t39\n105\t1476\t39\n101\t1515\t54\n105\t1570\t62\n116\t1632\t54\n101\t1687\t31\n107\t1718\t78\n101\t1796\t156\n109\t1953\t62\n101\t2015\t46\n113\t2062\t93\n118\t2156\t70\n104\t2226\t78\n108\t2304\t117\n101\t2421\t234\n100\t2656\t148"
+          }
+        ],
+        "kcs": [
+          "castling"
+        ],
+        "moveEvaluationsForPositions": {
+          "r3kb1r/pppqpppp/2n2n2/3p1b2/3P1B2/2N2N2/PPPQPPPP/R3KB1R w": [
+            {
+              "enemyResponse": "d7c7",
+              "move": "f4c7",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "g7h6",
+              "move": "f4h6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c7d6",
+              "move": "f4d6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "f4g5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.4115
+            },
+            {
+              "enemyResponse": "e8c8",
+              "move": "f4e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.431
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "f4g3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.447
+            },
+            {
+              "enemyResponse": "e8c8",
+              "move": "f4e3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.378
+            },
+            {
+              "enemyResponse": "e7e6",
+              "move": "f3g5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4545
+            },
+            {
+              "enemyResponse": "c6e5",
+              "move": "f3e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.508
+            },
+            {
+              "enemyResponse": "f5e6",
+              "move": "f3h4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4865
+            },
+            {
+              "enemyResponse": "f6h5",
+              "move": "f3g1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4235
+            },
+            {
+              "enemyResponse": "f6d5",
+              "move": "c3d5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3b5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.3925
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3e4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3a4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0015
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3d1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0125
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3b1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.008
+            },
+            {
+              "enemyResponse": "c6b4",
+              "move": "d2e3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.207
+            },
+            {
+              "enemyResponse": "f5d3",
+              "move": "d2d3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8c8",
+              "move": "d2d1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.467
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "d2c1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.4115
+            },
+            {
+              "enemyResponse": "e7e6",
+              "move": "h1g1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4815
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "e1d1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.151
+            },
+            {
+              "enemyResponse": "e8c8",
+              "move": "a1d1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4915
+            },
+            {
+              "enemyResponse": "f6h5",
+              "move": "a1c1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.453
+            },
+            {
+              "enemyResponse": "e8c8",
+              "move": "a1b1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.438
+            },
+            {
+              "enemyResponse": "e8c8",
+              "move": "e1c1",
+              "moveCorrectness": "correct",
+              "wdl": 0.5145
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "h2h3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "g2g3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.396
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "e2e3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.512
+            },
+            {
+              "enemyResponse": "f6h5",
+              "move": "b2b3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.426
+            },
+            {
+              "enemyResponse": "e8c8",
+              "move": "a2a3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5055
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "h2h4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5005
+            },
+            {
+              "enemyResponse": "f5g4",
+              "move": "g2g4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.3815
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "e2e4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.039
+            },
+            {
+              "enemyResponse": "e7e5",
+              "move": "b2b4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.2525
+            },
+            {
+              "enemyResponse": "e7e6",
+              "move": "a2a4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.474
+            }
+          ]
+        }
+      },
+      "fen": "r3kb1r/pppqpppp/2n2n2/3p1b2/3P1B2/2N2N2/PPPQPPPP/R3KB1R w KQkq - 8 6",
+      "id": "86a371e1",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "e8c8"
+        ],
+        "enemyMoves": [],
+        "finalHighlight": "",
+        "generalIncorrectSpeechBubbleContent": {
+          "text": "Castle your king.",
+          "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/9c92885c299e491f2c0cd56c11145ab6",
+          "visemes": "118\t0\t109\n112\t109\t109\n113\t218\t101\n112\t320\t93\n108\t414\t85\n112\t500\t101\n118\t601\t70\n103\t671\t101\n101\t773\t70\n105\t843\t265\n100\t1109\t132"
+        },
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [
+          "e8d8"
+        ],
+        "incorrectSpeechBubbleContent": [
+          {
+            "text": "Move the king two squares over, not one.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/6636074a0abdddd32db841172558d442",
+            "visemes": "105\t0\t367\n101\t367\t46\n118\t414\t109\n101\t523\t117\n105\t640\t148\n115\t789\t54\n101\t843\t101\n113\t945\t109\n118\t1054\t54\n104\t1109\t62\n114\t1171\t132\n113\t1304\t93\n101\t1398\t117\n109\t1515\t78\n114\t1593\t234\n100\t1828\t101\n105\t1929\t46\n112\t1976\t109\n105\t2085\t46\n104\t2132\t125\n112\t2257\t367\n105\t2625\t31\n100\t2656\t101"
+          }
+        ],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "You can **castle queenside** if the path is clear.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/d359e4952305d4dd6cf9328f65d3239d",
+            "visemes": "103\t0\t171\n112\t171\t46\n118\t218\t70\n103\t289\t46\n105\t335\t85\n118\t421\t109\n101\t531\t101\n115\t632\t109\n112\t742\t132\n118\t875\t93\n104\t968\t62\n103\t1031\t54\n105\t1085\t70\n113\t1156\t125\n112\t1281\t156\n101\t1437\t39\n105\t1476\t39\n101\t1515\t54\n105\t1570\t62\n116\t1632\t54\n101\t1687\t31\n107\t1718\t78\n101\t1796\t156\n109\t1953\t62\n101\t2015\t46\n113\t2062\t93\n118\t2156\t70\n104\t2226\t78\n108\t2304\t117\n101\t2421\t234\n100\t2656\t148"
+          }
+        ],
+        "kcs": [
+          "castling"
+        ],
+        "moveEvaluationsForPositions": {
+          "r3kb1r/pppqpppp/2n2n2/3p1b2/3P1B2/2N2N2/PPPQPPPP/2KR1B1R b": [
+            {
+              "enemyResponse": "f3e5",
+              "move": "h8g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.969
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "e8d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.999
+            },
+            {
+              "enemyResponse": "e2e3",
+              "move": "a8d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.582
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "a8c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.853
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "a8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.998
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "d7d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.7725
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "d7c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9225
+            },
+            {
+              "enemyResponse": "g2g4",
+              "move": "d7e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.905
+            },
+            {
+              "enemyResponse": "f4d6",
+              "move": "d7d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e2e4",
+              "move": "f6g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f4e3",
+              "move": "f6h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.857
+            },
+            {
+              "enemyResponse": "e2e3",
+              "move": "f6g4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.877
+            },
+            {
+              "enemyResponse": "c3e4",
+              "move": "f6e4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.513
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.998
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.999
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "c6d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.992
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f5g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9965
+            },
+            {
+              "enemyResponse": "e2e3",
+              "move": "f5e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8615
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f5g4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9905
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f5e4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g2h3",
+              "move": "f5h3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d2d3",
+              "move": "f5d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d2c2",
+              "move": "f5c2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h2h4",
+              "move": "e8c8",
+              "moveCorrectness": "correct",
+              "wdl": 0.5085
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "h7h6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9545
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "g7g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9675
+            },
+            {
+              "enemyResponse": "f3h4",
+              "move": "e7e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5185
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "b7b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.999
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "a7a6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.702
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "h7h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9455
+            },
+            {
+              "enemyResponse": "f4g5",
+              "move": "g7g5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9725
+            },
+            {
+              "enemyResponse": "d4e5",
+              "move": "e7e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.993
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "b7b5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.999
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "a7a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9665
+            }
+          ]
+        }
+      },
+      "fen": "r3kb1r/pppqpppp/2n2n2/3p1b2/3P1B2/2N2N2/PPPQPPPP/2KR1B1R b kq - 9 6",
+      "id": "5acc11bc",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "f1c4 f1b5",
+          "e1g1"
+        ],
+        "enemyMoves": [
+          "f8c5"
+        ],
+        "finalHighlight": "",
+        "generalIncorrectSpeechBubbleContent": {
+          "text": "Move your bishop to the center, then castle.",
+          "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/65475463ba04ba4ee94f2643e47667d4",
+          "visemes": "100\t0\t54\n105\t54\t46\n112\t101\t125\n105\t226\t101\n112\t328\t54\n107\t382\t78\n101\t460\t70\n115\t531\t109\n101\t640\t46\n105\t687\t109\n101\t796\t46\n105\t843\t46\n101\t890\t31\n113\t921\t132\n101\t1054\t78\n118\t1132\t78\n101\t1210\t156\n107\t1367\t101\n101\t1468\t85\n105\t1554\t78\n118\t1632\t101\n101\t1734\t117\n113\t1851\t101\n112\t1953\t210\n100\t2164\t171"
+        },
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [],
+        "incorrectSpeechBubbleContent": [],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "The path between your rook and king must be clear to castle.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/af65588ae6244ee5e1cac7f13b6cc42b",
+            "visemes": "100\t0\t70\n116\t70\t46\n101\t117\t23\n107\t140\t78\n101\t218\t156\n105\t375\t109\n101\t484\t46\n105\t531\t46\n104\t578\t93\n103\t671\t46\n105\t718\t78\n112\t796\t148\n107\t945\t93\n112\t1039\t132\n105\t1171\t101\n105\t1273\t203\n101\t1476\t148\n105\t1625\t164\n112\t1789\t78\n113\t1867\t70\n107\t1937\t101\n103\t2039\t85\n118\t2125\t93\n104\t2218\t54\n101\t2273\t132\n105\t2406\t46\n101\t2453\t46\n118\t2500\t101\n101\t2601\t148\n113\t2750\t109\n112\t2859\t171\n105\t3031\t46\n100\t3078\t148"
+          }
+        ],
+        "kcs": [
+          "castling"
+        ],
+        "moveEvaluationsForPositions": {
+          "r1bqk2r/pppp1ppp/2n2n2/1Bb1p3/4P3/2N2N2/PPPP1PPP/R1BQK2R w": [
+            {
+              "enemyResponse": "d7c6",
+              "move": "b5c6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.513
+            },
+            {
+              "enemyResponse": "b7a6",
+              "move": "b5a6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d7d6",
+              "move": "b5c4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.489
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "b5a4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4895
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "b5d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.466
+            },
+            {
+              "enemyResponse": "d7d5",
+              "move": "b5e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4765
+            },
+            {
+              "enemyResponse": "f6g4",
+              "move": "b5f1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.083
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "f3g5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.278
+            },
+            {
+              "enemyResponse": "c6e5",
+              "move": "f3e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5285
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "f3h4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.298
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "f3d4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "f3g1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.1975
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3d5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.431
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3a4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.49
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3e2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.313
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3b1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.1735
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "h1g1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.031
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "h1f1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.1265
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "e1e2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0115
+            },
+            {
+              "enemyResponse": "f6g4",
+              "move": "e1f1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.2475
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "d1e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.458
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "a1b1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.475
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "e1g1",
+              "moveCorrectness": "correct",
+              "wdl": 0.533
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "h2h3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4865
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "g2g3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.147
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "d2d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.495
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "b2b3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.458
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "a2a3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.488
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "h2h4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.2425
+            },
+            {
+              "enemyResponse": "f6g4",
+              "move": "g2g4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0025
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "d2d4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0675
+            },
+            {
+              "enemyResponse": "c5b4",
+              "move": "b2b4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0505
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "a2a4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.497
+            }
+          ],
+          "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w": [
+            {
+              "enemyResponse": "e8f7",
+              "move": "c4f7",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d7e6",
+              "move": "c4e6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "b7a6",
+              "move": "c4a6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "c4d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.463
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "c4b5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4715
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "c4d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.466
+            },
+            {
+              "enemyResponse": "d7d6",
+              "move": "c4b3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4935
+            },
+            {
+              "enemyResponse": "d7d5",
+              "move": "c4e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4765
+            },
+            {
+              "enemyResponse": "f6g4",
+              "move": "c4f1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.083
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "f3g5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.445
+            },
+            {
+              "enemyResponse": "c6e5",
+              "move": "f3e5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0005
+            },
+            {
+              "enemyResponse": "c5f2",
+              "move": "f3h4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "f3d4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "f3g1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4205
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4845
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3b5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.1265
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3a4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.418
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3e2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.005
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3b1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0005
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "h1g1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.2525
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "h1f1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.3815
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "e1e2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.119
+            },
+            {
+              "enemyResponse": "d7d6",
+              "move": "e1f1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.389
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "d1e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4865
+            },
+            {
+              "enemyResponse": "h7h6",
+              "move": "a1b1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4985
+            },
+            {
+              "enemyResponse": "d7d6",
+              "move": "e1g1",
+              "moveCorrectness": "correct",
+              "wdl": 0.507
+            },
+            {
+              "enemyResponse": "d7d6",
+              "move": "h2h3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5065
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "g2g3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.3495
+            },
+            {
+              "enemyResponse": "d7d6",
+              "move": "d2d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.512
+            },
+            {
+              "enemyResponse": "e8g8",
+              "move": "b2b3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.4115
+            },
+            {
+              "enemyResponse": "a7a6",
+              "move": "a2a3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.504
+            },
+            {
+              "enemyResponse": "d7d6",
+              "move": "h2h4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.362
+            },
+            {
+              "enemyResponse": "f6g4",
+              "move": "g2g4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0155
+            },
+            {
+              "enemyResponse": "e5d4",
+              "move": "d2d4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.3225
+            },
+            {
+              "enemyResponse": "c5b4",
+              "move": "b2b4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.2325
+            },
+            {
+              "enemyResponse": "d7d6",
+              "move": "a2a4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5065
+            }
+          ],
+          "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R w": [
+            {
+              "enemyResponse": "d7d5",
+              "move": "f3g5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.389
+            },
+            {
+              "enemyResponse": "c6e5",
+              "move": "f3e5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.021
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "f3h4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.002
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "f3d4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "d7d5",
+              "move": "f3g1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.2375
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4825
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3b5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0805
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3a4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0505
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3e2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.016
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "c3b1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0335
+            },
+            {
+              "enemyResponse": "f8c5",
+              "move": "h1g1",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.2275
+            },
+            {
+              "enemyResponse": "b7a6",
+              "move": "f1a6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0
+            },
+            {
+              "enemyResponse": "c6d4",
+              "move": "f1b5",
+              "moveCorrectness": "correct",
+              "wdl": 0.5065
+            },
+            {
+              "enemyResponse": "f6e4",
+              "move": "f1c4",
+              "moveCorrectness": "correct",
+              "wdl": 0.4945
+            },
+            {
+              "enemyResponse": "f8c5",
+              "move": "f1d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4915
+            },
+            {
+              "enemyResponse": "d7d5",
+              "move": "f1e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.498
+            },
+            {
+              "enemyResponse": "d7d5",
+              "move": "e1e2",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.049
+            },
+            {
+              "enemyResponse": "d7d5",
+              "move": "d1e2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4285
+            },
+            {
+              "enemyResponse": "f8b4",
+              "move": "a1b1",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4895
+            },
+            {
+              "enemyResponse": "f8b4",
+              "move": "h2h3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.504
+            },
+            {
+              "enemyResponse": "f8c5",
+              "move": "g2g3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.488
+            },
+            {
+              "enemyResponse": "d7d5",
+              "move": "d2d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.4775
+            },
+            {
+              "enemyResponse": "f8c5",
+              "move": "b2b3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.463
+            },
+            {
+              "enemyResponse": "d7d5",
+              "move": "a2a3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.497
+            },
+            {
+              "enemyResponse": "h7h6",
+              "move": "h2h4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.467
+            },
+            {
+              "enemyResponse": "d7d5",
+              "move": "g2g4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.0725
+            },
+            {
+              "enemyResponse": "e5d4",
+              "move": "d2d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5065
+            },
+            {
+              "enemyResponse": "f8b4",
+              "move": "b2b4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.015
+            },
+            {
+              "enemyResponse": "a7a6",
+              "move": "a2a4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.503
+            }
+          ]
+        }
+      },
+      "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R w KQkq - 4 4",
+      "id": "0f0e33c2",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "c8f5 c8g4",
+          "d8d7 d8d6",
+          "e8c8"
+        ],
+        "enemyMoves": [
+          "d1d2",
+          "e1c1"
+        ],
+        "finalHighlight": "",
+        "generalIncorrectSpeechBubbleContent": {
+          "text": "Bishop and queen to the center, then castle.",
+          "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/b840b85032dc74ca53b20fdec5092f8a",
+          "visemes": "100\t0\t62\n105\t62\t46\n101\t109\t70\n115\t179\t101\n101\t281\t93\n107\t375\t93\n101\t468\t85\n118\t554\t140\n104\t695\t93\n101\t789\t148\n105\t937\t125\n101\t1062\t54\n116\t1117\t62\n101\t1179\t23\n113\t1203\t132\n101\t1335\t93\n105\t1429\t85\n104\t1515\t148\n112\t1664\t164\n100\t1828\t437\n105\t2265\t62\n101\t2328\t140\n105\t2468\t132\n118\t2601\t101\n112\t2703\t132\n113\t2835\t101\n112\t2937\t234\n100\t3171\t187"
+        },
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [],
+        "incorrectSpeechBubbleContent": [],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "The path between your rook and king must be clear to castle.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/af65588ae6244ee5e1cac7f13b6cc42b",
+            "visemes": "100\t0\t70\n116\t70\t46\n101\t117\t23\n107\t140\t78\n101\t218\t156\n105\t375\t109\n101\t484\t46\n105\t531\t46\n104\t578\t93\n103\t671\t46\n105\t718\t78\n112\t796\t148\n107\t945\t93\n112\t1039\t132\n105\t1171\t101\n105\t1273\t203\n101\t1476\t148\n105\t1625\t164\n112\t1789\t78\n113\t1867\t70\n107\t1937\t101\n103\t2039\t85\n118\t2125\t93\n104\t2218\t54\n101\t2273\t132\n105\t2406\t46\n101\t2453\t46\n118\t2500\t101\n101\t2601\t148\n113\t2750\t109\n112\t2859\t171\n105\t3031\t46\n100\t3078\t148"
+          }
+        ],
+        "kcs": [
+          "castling"
+        ],
+        "moveEvaluationsForPositions": {
+          "r1bqkb1r/ppp1pppp/2n2n2/3p2B1/3P4/2N2N2/PPP1PPPP/R2QKB1R b": [
+            {
+              "enemyResponse": "e2e3",
+              "move": "h8g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.659
+            },
+            {
+              "enemyResponse": "g5f6",
+              "move": "e8d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9965
+            },
+            {
+              "enemyResponse": "e2e3",
+              "move": "d8d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.646
+            },
+            {
+              "enemyResponse": "a2a3",
+              "move": "d8d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5575
+            },
+            {
+              "enemyResponse": "g5f6",
+              "move": "c8d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5795
+            },
+            {
+              "enemyResponse": "e2e3",
+              "move": "c8e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.553
+            },
+            {
+              "enemyResponse": "e2e3",
+              "move": "c8f5",
+              "moveCorrectness": "correct",
+              "wdl": 0.5185
+            },
+            {
+              "enemyResponse": "g5h4",
+              "move": "c8g4",
+              "moveCorrectness": "correct",
+              "wdl": 0.507
+            },
+            {
+              "enemyResponse": "g2h3",
+              "move": "c8h3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e2e3",
+              "move": "a8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.549
+            },
+            {
+              "enemyResponse": "e2e4",
+              "move": "f6g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.7475
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "f6d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.994
+            },
+            {
+              "enemyResponse": "e2e4",
+              "move": "f6h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.908
+            },
+            {
+              "enemyResponse": "e2e3",
+              "move": "f6g4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.742
+            },
+            {
+              "enemyResponse": "g5d2",
+              "move": "f6e4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.4865
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5885
+            },
+            {
+              "enemyResponse": "d4e5",
+              "move": "c6e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.659
+            },
+            {
+              "enemyResponse": "d1d4",
+              "move": "c6d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "a2a3",
+              "move": "c6b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.793
+            },
+            {
+              "enemyResponse": "g5h4",
+              "move": "h7h6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5145
+            },
+            {
+              "enemyResponse": "e2e3",
+              "move": "g7g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5315
+            },
+            {
+              "enemyResponse": "e2e4",
+              "move": "e7e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.555
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "b7b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5975
+            },
+            {
+              "enemyResponse": "e2e3",
+              "move": "a7a6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5235
+            },
+            {
+              "enemyResponse": "d1d3",
+              "move": "h7h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5165
+            },
+            {
+              "enemyResponse": "d4e5",
+              "move": "e7e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.998
+            },
+            {
+              "enemyResponse": "g5f6",
+              "move": "b7b5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.93
+            },
+            {
+              "enemyResponse": "e2e3",
+              "move": "a7a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.6075
+            }
+          ],
+          "r2qkb1r/ppp1pppp/2n2n2/3p1bB1/3P4/2N2N2/PPPQPPPP/R3KB1R b": [
+            {
+              "enemyResponse": "e1c1",
+              "move": "h8g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.626
+            },
+            {
+              "enemyResponse": "g5f6",
+              "move": "e8d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.998
+            },
+            {
+              "enemyResponse": "g5f6",
+              "move": "d8c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9765
+            },
+            {
+              "enemyResponse": "g5f6",
+              "move": "d8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9945
+            },
+            {
+              "enemyResponse": "g5f6",
+              "move": "d8d7",
+              "moveCorrectness": "correct",
+              "wdl": 0.4915
+            },
+            {
+              "enemyResponse": "f3h4",
+              "move": "d8d6",
+              "moveCorrectness": "correct",
+              "wdl": 0.525
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "a8c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.562
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "a8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.555
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f6g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.7575
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "f6d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9865
+            },
+            {
+              "enemyResponse": "e2e4",
+              "move": "f6h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.551
+            },
+            {
+              "enemyResponse": "e2e3",
+              "move": "f6g4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.611
+            },
+            {
+              "enemyResponse": "c3e4",
+              "move": "f6e4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5035
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "c6b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.537
+            },
+            {
+              "enemyResponse": "d4e5",
+              "move": "c6e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5975
+            },
+            {
+              "enemyResponse": "f3d4",
+              "move": "c6d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "a1c1",
+              "move": "c6b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.504
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f5c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.634
+            },
+            {
+              "enemyResponse": "g5f6",
+              "move": "f5d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.7975
+            },
+            {
+              "enemyResponse": "h2h4",
+              "move": "f5g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.513
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "f5e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5165
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "f5g4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.611
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f5e4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.682
+            },
+            {
+              "enemyResponse": "g2h3",
+              "move": "f5h3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d2d3",
+              "move": "f5d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d2c2",
+              "move": "f5c2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g5f6",
+              "move": "h7h6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.504
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "g7g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.511
+            },
+            {
+              "enemyResponse": "e2e3",
+              "move": "e7e6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.4835
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "b7b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.977
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "a7a6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.503
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "h7h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5145
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "e7e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9845
+            },
+            {
+              "enemyResponse": "g5f6",
+              "move": "b7b5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9935
+            },
+            {
+              "enemyResponse": "a2a3",
+              "move": "a7a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5105
+            }
+          ],
+          "r2qkb1r/ppp1pppp/2n2n2/3p2B1/3P2b1/2N2N2/PPPQPPPP/R3KB1R b": [
+            {
+              "enemyResponse": "e1c1",
+              "move": "h8g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.697
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "e8d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "d8c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.737
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "d8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.964
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "d8d7",
+              "moveCorrectness": "correct",
+              "wdl": 0.51
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "d8d6",
+              "moveCorrectness": "correct",
+              "wdl": 0.7475
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "a8c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.659
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "a8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.7525
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f6g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.908
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "f6d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.925
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f6h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.727
+            },
+            {
+              "enemyResponse": "c3e4",
+              "move": "f6e4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5665
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.911
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9495
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "c6d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.951
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "g4c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.634
+            },
+            {
+              "enemyResponse": "g5f6",
+              "move": "g4d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.7975
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "g4e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5165
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "g4h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5405
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "g4f5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.534
+            },
+            {
+              "enemyResponse": "g2h3",
+              "move": "g4h3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e2f3",
+              "move": "g4f3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5165
+            },
+            {
+              "enemyResponse": "g5f6",
+              "move": "h7h6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.507
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "g7g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.668
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "e7e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.562
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "b7b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9735
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "a7a6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.533
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "h7h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.646
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "e7e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "g5f6",
+              "move": "b7b5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.7525
+            },
+            {
+              "enemyResponse": "e1c1",
+              "move": "a7a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.634
+            }
+          ],
+          "r3kb1r/ppp1pppp/2nq1n2/3p1bB1/3P4/2N2N2/PPPQPPPP/2KR1B1R b": [
+            {
+              "enemyResponse": "g5f4",
+              "move": "h8g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9545
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "e8d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "e8d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3h4",
+              "move": "a8d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.611
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "a8c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.822
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "a8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9475
+            },
+            {
+              "enemyResponse": "f3h4",
+              "move": "f6g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9945
+            },
+            {
+              "enemyResponse": "c3b5",
+              "move": "f6d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f6h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.992
+            },
+            {
+              "enemyResponse": "f3h4",
+              "move": "f6g4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.969
+            },
+            {
+              "enemyResponse": "c3e4",
+              "move": "f6e4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5155
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "d6d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.6635
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "d6d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.965
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "d6e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.659
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "d6e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d4c5",
+              "move": "d6c5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "d6f4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g5f6",
+              "move": "d6b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.908
+            },
+            {
+              "enemyResponse": "h2g3",
+              "move": "d6g3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b2a3",
+              "move": "d6a3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3h2",
+              "move": "d6h2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "c6d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9895
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "c6b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9845
+            },
+            {
+              "enemyResponse": "d4e5",
+              "move": "c6e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.971
+            },
+            {
+              "enemyResponse": "f3d4",
+              "move": "c6d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "a2a3",
+              "move": "c6b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.84
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "f5c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.997
+            },
+            {
+              "enemyResponse": "c3b5",
+              "move": "f5d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h2h4",
+              "move": "f5g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.687
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f5e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9665
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f5g4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.996
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f5e4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.994
+            },
+            {
+              "enemyResponse": "g2h3",
+              "move": "f5h3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d2d3",
+              "move": "f5d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d2c2",
+              "move": "f5c2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "e8c8",
+              "moveCorrectness": "correct",
+              "wdl": 0.5135
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "h7h6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5715
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "g7g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8845
+            },
+            {
+              "enemyResponse": "f3h4",
+              "move": "e7e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5405
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "b7b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "a7a6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.615
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "h7h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5575
+            },
+            {
+              "enemyResponse": "d4e5",
+              "move": "e7e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "c3b5",
+              "move": "b7b5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3h4",
+              "move": "a7a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8615
+            }
+          ],
+          "r3kb1r/ppp1pppp/2nq1n2/3p2B1/3P2b1/2N2N2/PPPQPPPP/2KR1B1R b": [
+            {
+              "enemyResponse": "f3e5",
+              "move": "h8g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9985
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "e8d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "e8d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "a8d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.999
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "a8c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9925
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "a8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.998
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f6g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "c3b5",
+              "move": "f6d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f6h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.989
+            },
+            {
+              "enemyResponse": "c3e4",
+              "move": "f6e4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.682
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "d6d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.992
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "d6d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9745
+            },
+            {
+              "enemyResponse": "g5f6",
+              "move": "d6e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.984
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "d6e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d4c5",
+              "move": "d6c5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "d6f4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "a2a3",
+              "move": "d6b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.99
+            },
+            {
+              "enemyResponse": "h2g3",
+              "move": "d6g3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b2a3",
+              "move": "d6a3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3h2",
+              "move": "d6h2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "c6d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.999
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.997
+            },
+            {
+              "enemyResponse": "d4e5",
+              "move": "c6e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.998
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "c6d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9945
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "g4c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.997
+            },
+            {
+              "enemyResponse": "c3b5",
+              "move": "g4d7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "g4e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9665
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "g4h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9545
+            },
+            {
+              "enemyResponse": "f3h4",
+              "move": "g4f5",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.8735
+            },
+            {
+              "enemyResponse": "g2h3",
+              "move": "g4h3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g2f3",
+              "move": "g4f3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.682
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "e8c8",
+              "moveCorrectness": "correct",
+              "wdl": 0.905
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "h7h6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.642
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "g7g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.982
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "e7e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9885
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "b7b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "a7a6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9735
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "h7h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9665
+            },
+            {
+              "enemyResponse": "d4e5",
+              "move": "e7e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "b7b5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "a7a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.999
+            }
+          ],
+          "r3kb1r/pppqpppp/2n2n2/3p1bB1/3P4/2N2N2/PPPQPPPP/2KR1B1R b": [
+            {
+              "enemyResponse": "f3e5",
+              "move": "h8g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9275
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "e8d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "a8d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5215
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "a8c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.687
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "a8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.978
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "d7d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.6635
+            },
+            {
+              "enemyResponse": "g5f6",
+              "move": "d7c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.997
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "d7e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.659
+            },
+            {
+              "enemyResponse": "f3h4",
+              "move": "d7d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8735
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f6g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.997
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f6h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.999
+            },
+            {
+              "enemyResponse": "e2e3",
+              "move": "f6g4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.682
+            },
+            {
+              "enemyResponse": "c3e4",
+              "move": "f6e4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.488
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.996
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9965
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "c6d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e2e4",
+              "move": "c6b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9735
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f5g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.982
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f5e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.7725
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f5g4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9745
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f5e4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g2h3",
+              "move": "f5h3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d2d3",
+              "move": "f5d3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d2c2",
+              "move": "f5c2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g5f6",
+              "move": "e8c8",
+              "moveCorrectness": "correct",
+              "wdl": 0.492
+            },
+            {
+              "enemyResponse": "g5f6",
+              "move": "h7h6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5065
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "g7g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9275
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "e7e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5105
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "b7b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.999
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "a7a6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.601
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "h7h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9325
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "e7e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9975
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "b7b5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9965
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "a7a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9435
+            }
+          ],
+          "r3kb1r/pppqpppp/2n2n2/3p2B1/3P2b1/2N2N2/PPPQPPPP/2KR1B1R b": [
+            {
+              "enemyResponse": "f3e5",
+              "move": "h8g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9225
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "e8d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "a2a3",
+              "move": "a8d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5715
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "a8c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.822
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "a8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.986
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "d7d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.992
+            },
+            {
+              "enemyResponse": "g5f6",
+              "move": "d7c8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.997
+            },
+            {
+              "enemyResponse": "g5f6",
+              "move": "d7e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.984
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "d7d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.996
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "d7f5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f6g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9945
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f6h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9915
+            },
+            {
+              "enemyResponse": "c3e4",
+              "move": "f6e4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.996
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6d8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "c6d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "g4e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.7725
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "g4h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.953
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "g4f5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.965
+            },
+            {
+              "enemyResponse": "g2h3",
+              "move": "g4h3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "g2f3",
+              "move": "g4f3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.555
+            },
+            {
+              "enemyResponse": "g5f4",
+              "move": "e8c8",
+              "moveCorrectness": "correct",
+              "wdl": 0.5085
+            },
+            {
+              "enemyResponse": "g5e3",
+              "move": "h7h6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5165
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "g7g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8915
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "e7e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9965
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "b7b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "a7a6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.831
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "h7h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8845
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "e7e5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "b7b5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "a2a3",
+              "move": "a7a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8075
+            }
+          ]
+        }
+      },
+      "fen": "r1bqkb1r/ppp1pppp/2n2n2/3p2B1/3P4/2N2N2/PPP1PPPP/R2QKB1R b KQkq - 5 4",
+      "id": "767136d6",
+      "type": "normal"
+    },
+    {
+      "chessPuzzleInfo": {
+        "correctMoves": [
+          "e7e5",
+          "b8c6 g8f6",
+          "b8c6 g8f6",
+          "f8c5 f8b4",
+          "e8g8"
+        ],
+        "enemyMoves": [
+          "b1c3",
+          "g1f3",
+          "f1c4",
+          "e1g1"
+        ],
+        "finalHighlight": "",
+        "generalIncorrectSpeechBubbleContent": {
+          "text": "Pawn, knights, then bishop to the center, then castle.",
+          "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/1d0580c424d2933a032b2a9357629022",
+          "visemes": "100\t0\t85\n112\t85\t312\n105\t398\t101\n112\t500\t132\n100\t632\t296\n105\t929\t62\n112\t992\t101\n103\t1093\t109\n105\t1203\t54\n113\t1257\t250\n100\t1507\t484\n105\t1992\t31\n101\t2023\t109\n105\t2132\t164\n101\t2296\t54\n115\t2351\t125\n101\t2476\t54\n105\t2531\t125\n101\t2656\t70\n105\t2726\t70\n115\t2796\t140\n101\t2937\t70\n105\t3007\t101\n114\t3109\t250\n100\t3359\t523\n105\t3882\t54\n101\t3937\t140\n105\t4078\t125\n118\t4203\t101\n112\t4304\t140\n113\t4445\t101\n112\t4546\t281\n100\t4828\t171"
+        },
+        "highlight": [],
+        "incorrectHighlight": [],
+        "incorrectMoves": [
+          "b1a3",
+          "g1h3",
+          "b8a6",
+          "g8h6",
+          "d7d5",
+          "e7e5",
+          "d2d4",
+          "b1c3",
+          "g1f3",
+          "g8f7",
+          "b8c6"
+        ],
+        "incorrectSpeechBubbleContent": [
+          {
+            "text": "Your knight reaches fewer squares from the edge.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/8906b0a703a1770ed0f0d32a0a2106d1",
+            "visemes": "100\t0\t70\n108\t70\t54\n112\t125\t125\n105\t250\t70\n112\t320\t156\n118\t476\t70\n104\t546\t93\n103\t640\t78\n115\t718\t93\n101\t812\t54\n113\t867\t132\n103\t1000\t101\n104\t1101\t93\n120\t1195\t62\n114\t1257\t23\n113\t1281\t93\n118\t1375\t62\n104\t1437\t78\n114\t1515\t156\n113\t1671\t148\n101\t1820\t39\n105\t1859\t101\n103\t1960\t101\n101\t2062\t203\n115\t2265\t257\n100\t2523\t203"
+          },
+          {
+            "text": "Your knight reaches fewer squares from the edge.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/8906b0a703a1770ed0f0d32a0a2106d1",
+            "visemes": "100\t0\t70\n108\t70\t54\n112\t125\t125\n105\t250\t70\n112\t320\t156\n118\t476\t70\n104\t546\t93\n103\t640\t78\n115\t718\t93\n101\t812\t54\n113\t867\t132\n103\t1000\t101\n104\t1101\t93\n120\t1195\t62\n114\t1257\t23\n113\t1281\t93\n118\t1375\t62\n104\t1437\t78\n114\t1515\t156\n113\t1671\t148\n101\t1820\t39\n105\t1859\t101\n103\t1960\t101\n101\t2062\t203\n115\t2265\t257\n100\t2523\t203"
+          },
+          {
+            "text": "Your knight reaches fewer squares from the edge.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/8906b0a703a1770ed0f0d32a0a2106d1",
+            "visemes": "100\t0\t70\n108\t70\t54\n112\t125\t125\n105\t250\t70\n112\t320\t156\n118\t476\t70\n104\t546\t93\n103\t640\t78\n115\t718\t93\n101\t812\t54\n113\t867\t132\n103\t1000\t101\n104\t1101\t93\n120\t1195\t62\n114\t1257\t23\n113\t1281\t93\n118\t1375\t62\n104\t1437\t78\n114\t1515\t156\n113\t1671\t148\n101\t1820\t39\n105\t1859\t101\n103\t1960\t101\n101\t2062\t203\n115\t2265\t257\n100\t2523\t203"
+          },
+          {
+            "text": "Your knight reaches fewer squares from the edge.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/8906b0a703a1770ed0f0d32a0a2106d1",
+            "visemes": "100\t0\t70\n108\t70\t54\n112\t125\t125\n105\t250\t70\n112\t320\t156\n118\t476\t70\n104\t546\t93\n103\t640\t78\n115\t718\t93\n101\t812\t54\n113\t867\t132\n103\t1000\t101\n104\t1101\t93\n120\t1195\t62\n114\t1257\t23\n113\t1281\t93\n118\t1375\t62\n104\t1437\t78\n114\t1515\t156\n113\t1671\t148\n101\t1820\t39\n105\t1859\t101\n103\t1960\t101\n101\t2062\t203\n115\t2265\t257\n100\t2523\t203"
+          },
+          {
+            "text": "Your pawn might get captured here.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/829af8c35d1ecec157c6736154cc9318",
+            "visemes": "100\t0\t78\n103\t78\t70\n101\t148\t62\n118\t210\t125\n112\t335\t195\n105\t531\t117\n112\t648\t101\n118\t750\t101\n101\t851\t62\n105\t914\t46\n118\t960\t109\n101\t1070\t109\n115\t1179\t125\n101\t1304\t78\n105\t1382\t46\n103\t1429\t125\n114\t1554\t289\n100\t1843\t125"
+          },
+          {
+            "text": "Your pawn is unprotected here.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/0c367c1bc54db77da9ad23bb67558ccb",
+            "visemes": "100\t0\t70\n103\t70\t62\n112\t132\t70\n107\t203\t101\n112\t304\t218\n105\t523\t62\n101\t585\t46\n113\t632\t85\n112\t718\t70\n105\t789\t101\n105\t890\t117\n101\t1007\t78\n105\t1085\t101\n101\t1187\t54\n105\t1242\t54\n103\t1296\t109\n114\t1406\t257\n100\t1664\t179"
+          },
+          {
+            "text": "Let's use the other pawn.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/ee2459dc2c44f2adba525bcbc30356e2",
+            "visemes": "100\t0\t85\n101\t85\t78\n105\t164\t62\n115\t226\t62\n103\t289\t93\n113\t382\t93\n101\t476\t117\n114\t593\t85\n116\t679\t39\n101\t718\t70\n107\t789\t78\n112\t867\t195\n114\t1062\t54\n105\t1117\t54\n112\t1171\t140\n100\t1312\t164"
+          },
+          {
+            "text": "Take the center with your pawn.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/9e83ffd8266b997ade7e62b0d5800749",
+            "visemes": "100\t0\t62\n115\t62\t70\n101\t132\t117\n118\t250\t156\n101\t406\t46\n113\t453\t140\n101\t593\t70\n105\t664\t125\n114\t789\t85\n104\t875\t148\n105\t1023\t70\n108\t1093\t54\n112\t1148\t93\n107\t1242\t93\n112\t1335\t250\n105\t1585\t85\n112\t1671\t140\n100\t1812\t156"
+          },
+          {
+            "text": "Take the center with your pawn.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/9e83ffd8266b997ade7e62b0d5800749",
+            "visemes": "100\t0\t62\n115\t62\t70\n101\t132\t117\n118\t250\t156\n101\t406\t46\n113\t453\t140\n101\t593\t70\n105\t664\t125\n114\t789\t85\n104\t875\t148\n105\t1023\t70\n108\t1093\t54\n112\t1148\t93\n107\t1242\t93\n112\t1335\t250\n105\t1585\t85\n112\t1671\t140\n100\t1812\t156"
+          },
+          {
+            "text": "This is fine, though activate a pawn first.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/0ec581b6461dcdcd1af96bdffa81bd56",
+            "visemes": "100\t0\t78\n105\t78\t31\n101\t109\t54\n113\t164\t117\n113\t281\t156\n101\t437\t257\n105\t695\t101\n107\t796\t171\n112\t968\t195\n105\t1164\t62\n101\t1226\t85\n105\t1312\t117\n101\t1429\t46\n109\t1476\t46\n101\t1523\t101\n105\t1625\t39\n112\t1664\t46\n107\t1710\t78\n112\t1789\t187\n105\t1976\t70\n109\t2046\t117\n101\t2164\t117\n105\t2281\t46\n115\t2328\t109\n105\t2437\t132\n100\t2570\t187"
+          },
+          {
+            "text": "This is fine, though activate a pawn first.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/0ec581b6461dcdcd1af96bdffa81bd56",
+            "visemes": "100\t0\t78\n105\t78\t31\n101\t109\t54\n113\t164\t117\n113\t281\t156\n101\t437\t257\n105\t695\t101\n107\t796\t171\n112\t968\t195\n105\t1164\t62\n101\t1226\t85\n105\t1312\t117\n101\t1429\t46\n109\t1476\t46\n101\t1523\t101\n105\t1625\t39\n112\t1664\t46\n107\t1710\t78\n112\t1789\t187\n105\t1976\t70\n109\t2046\t117\n101\t2164\t117\n105\t2281\t46\n115\t2328\t109\n105\t2437\t132\n100\t2570\t187"
+          }
+        ],
+        "instructionsSpeechBubbleContent": [
+          {
+            "text": "Develop and castle early to move your king out of danger.",
+            "ttsUrl": "https://dyvwhs7jlfw68.cloudfront.net/EN%20Oscar/577a579672cab5388b815bd4fccda298",
+            "visemes": "100\t0\t78\n101\t78\t62\n109\t140\t62\n101\t203\t101\n114\t304\t101\n116\t406\t101\n101\t507\t39\n118\t546\t179\n101\t726\t93\n115\t820\t117\n104\t937\t117\n101\t1054\t23\n105\t1078\t39\n101\t1117\t164\n104\t1281\t109\n101\t1390\t101\n105\t1492\t62\n113\t1554\t39\n101\t1593\t39\n105\t1632\t85\n104\t1718\t156\n108\t1875\t93\n112\t1968\t93\n118\t2062\t132\n101\t2195\t132\n105\t2328\t85\n112\t2414\t117\n105\t2531\t39\n112\t2570\t70\n105\t2640\t93\n101\t2734\t132\n105\t2867\t109\n114\t2976\t289\n100\t3265\t140"
+          }
+        ],
+        "kcs": [
+          "pieceDevelopment"
+        ],
+        "moveEvaluationsForPositions": {
+          "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQ1RK1 b": [
+            {
+              "enemyResponse": "c3d5",
+              "move": "h8g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.996
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "h8f8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9965
+            },
+            {
+              "enemyResponse": "f3g5",
+              "move": "e8f8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.982
+            },
+            {
+              "enemyResponse": "f3g5",
+              "move": "e8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9985
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "d8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.853
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "a8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.655
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "f6g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9745
+            },
+            {
+              "enemyResponse": "c4f7",
+              "move": "f6h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "f6d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "f6g4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.881
+            },
+            {
+              "enemyResponse": "c3e4",
+              "move": "f6e4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "c6a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9865
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8655
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "c5f8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.996
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "c5e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.611
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "c5d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.877
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "c5b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.697
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "c5d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.7725
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "c5b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.965
+            },
+            {
+              "enemyResponse": "f2e3",
+              "move": "c5e3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "b2a3",
+              "move": "c5a3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f1f2",
+              "move": "c5f2",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d2d3",
+              "move": "e8g8",
+              "moveCorrectness": "correct",
+              "wdl": 0.513
+            },
+            {
+              "enemyResponse": "f1e1",
+              "move": "h7h6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.512
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "g7g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9955
+            },
+            {
+              "enemyResponse": "d2d3",
+              "move": "d7d6",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.512
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "b7b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8075
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "a7a6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.547
+            },
+            {
+              "enemyResponse": "h2h3",
+              "move": "h7h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.914
+            },
+            {
+              "enemyResponse": "f3g5",
+              "move": "g7g5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.999
+            },
+            {
+              "enemyResponse": "e4d5",
+              "move": "d7d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9665
+            },
+            {
+              "enemyResponse": "c4b5",
+              "move": "b7b5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9945
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "a7a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5915
+            }
+          ],
+          "r1bqk2r/pppp1ppp/2n2n2/4p3/1bB1P3/2N2N2/PPPP1PPP/R1BQ1RK1 b": [
+            {
+              "enemyResponse": "c3d5",
+              "move": "h8g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9985
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "h8f8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.998
+            },
+            {
+              "enemyResponse": "f3g5",
+              "move": "e8f8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "e8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "d8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.997
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "a8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9765
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "f6g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "f6h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "f6d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h2h3",
+              "move": "f6g4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9925
+            },
+            {
+              "enemyResponse": "c3e4",
+              "move": "f6e4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.551
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "c6b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.965
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.783
+            },
+            {
+              "enemyResponse": "f3d4",
+              "move": "c6d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.997
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "b4f8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.996
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "b4e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.611
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "b4d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.877
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "b4c5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.682
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "b4a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.953
+            },
+            {
+              "enemyResponse": "b2c3",
+              "move": "b4c3",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.508
+            },
+            {
+              "enemyResponse": "b2a3",
+              "move": "b4a3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "e8g8",
+              "moveCorrectness": "correct",
+              "wdl": 0.5205
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "h7h6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.6185
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "g7g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.995
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "d7d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.551
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "b7b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9195
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "a7a6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.7725
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "h7h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.987
+            },
+            {
+              "enemyResponse": "f3g5",
+              "move": "g7g5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "d7d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9935
+            },
+            {
+              "enemyResponse": "c4b5",
+              "move": "b7b5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9985
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "a7a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.793
+            }
+          ],
+          "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R b": [
+            {
+              "enemyResponse": "f3g5",
+              "move": "h8g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9895
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "f8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5405
+            },
+            {
+              "enemyResponse": "d2d3",
+              "move": "f8d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5315
+            },
+            {
+              "enemyResponse": "d2d3",
+              "move": "f8c5",
+              "moveCorrectness": "correct",
+              "wdl": 0.51
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "f8b4",
+              "moveCorrectness": "correct",
+              "wdl": 0.5275
+            },
+            {
+              "enemyResponse": "b2a3",
+              "move": "f8a3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3g5",
+              "move": "e8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e1g1",
+              "move": "d8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8075
+            },
+            {
+              "enemyResponse": "f3g5",
+              "move": "a8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.717
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "f6g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.988
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "f6h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "e4d5",
+              "move": "f6d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h2h3",
+              "move": "f6g4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.969
+            },
+            {
+              "enemyResponse": "c3e4",
+              "move": "f6e4",
+              "moveCorrectness": "incorrect",
+              "wdl": 0.4995
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "c4e2",
+              "move": "c6a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5975
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.985
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "h7h6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.6075
+            },
+            {
+              "enemyResponse": "f3g5",
+              "move": "g7g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9765
+            },
+            {
+              "enemyResponse": "f3g5",
+              "move": "d7d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8845
+            },
+            {
+              "enemyResponse": "f3g5",
+              "move": "b7b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.998
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "a7a6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.6185
+            },
+            {
+              "enemyResponse": "f3g5",
+              "move": "h7h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.971
+            },
+            {
+              "enemyResponse": "f3g5",
+              "move": "g7g5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e4d5",
+              "move": "d7d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.911
+            },
+            {
+              "enemyResponse": "c4b5",
+              "move": "b7b5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9845
+            },
+            {
+              "enemyResponse": "f3g5",
+              "move": "a7a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.905
+            }
+          ],
+          "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R b": [
+            {
+              "enemyResponse": "d2d4",
+              "move": "g8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8615
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "g8h6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.925
+            },
+            {
+              "enemyResponse": "f1b5",
+              "move": "g8f6",
+              "moveCorrectness": "correct",
+              "wdl": 0.51
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "f8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5975
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "f8d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.707
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f8c5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.611
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "f8b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5945
+            },
+            {
+              "enemyResponse": "b2a3",
+              "move": "f8a3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "e8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9955
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "d8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9415
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "d8f6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8985
+            },
+            {
+              "enemyResponse": "f3g5",
+              "move": "d8g5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3h4",
+              "move": "d8h4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "a8b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.659
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6b8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.999
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9965
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6d4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9825
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c6b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9975
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "h7h6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.655
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "g7g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.783
+            },
+            {
+              "enemyResponse": "f1c4",
+              "move": "f7f6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8265
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "d7d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.604
+            },
+            {
+              "enemyResponse": "f1c4",
+              "move": "b7b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8355
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "a7a6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.622
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "h7h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.888
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "g7g5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "f7f5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9805
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "d7d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8025
+            },
+            {
+              "enemyResponse": "f1b5",
+              "move": "b7b5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9985
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "a7a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.849
+            }
+          ],
+          "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R b": [
+            {
+              "enemyResponse": "f3e5",
+              "move": "h8g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9015
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f8d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.7475
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f8c5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8655
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f8b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.534
+            },
+            {
+              "enemyResponse": "b2a3",
+              "move": "f8a3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "e8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f1c4",
+              "move": "d8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.712
+            },
+            {
+              "enemyResponse": "f1b5",
+              "move": "b8c6",
+              "moveCorrectness": "correct",
+              "wdl": 0.51
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "b8a6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9955
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f6g8",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9995
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "f6h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "f6d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "h2h3",
+              "move": "f6g4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9935
+            },
+            {
+              "enemyResponse": "c3e4",
+              "move": "f6e4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "h7h6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.917
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "g7g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9745
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "d7d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5665
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "c7c6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9545
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "b7b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.995
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "a7a6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.935
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "h7h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.998
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "g7g5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "e4d5",
+              "move": "d7d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.727
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "c7c5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9825
+            },
+            {
+              "enemyResponse": "f1b5",
+              "move": "b7b5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.997
+            },
+            {
+              "enemyResponse": "f3e5",
+              "move": "a7a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.881
+            }
+          ],
+          "rnbqkbnr/pppp1ppp/8/4p3/4P3/2N5/PPPP1PPP/R1BQKBNR b": [
+            {
+              "enemyResponse": "g1f3",
+              "move": "g8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.7725
+            },
+            {
+              "enemyResponse": "g1f3",
+              "move": "g8h6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.93
+            },
+            {
+              "enemyResponse": "g1f3",
+              "move": "g8f6",
+              "moveCorrectness": "correct",
+              "wdl": 0.5035
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "f8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.6185
+            },
+            {
+              "enemyResponse": "f2f4",
+              "move": "f8d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.673
+            },
+            {
+              "enemyResponse": "g1f3",
+              "move": "f8c5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.533
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "f8b4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5575
+            },
+            {
+              "enemyResponse": "b2a3",
+              "move": "f8a3",
+              "moveCorrectness": "suboptimal",
+              "wdl": 1.0
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "e8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9975
+            },
+            {
+              "enemyResponse": "g1f3",
+              "move": "d8e7",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.7525
+            },
+            {
+              "enemyResponse": "g1f3",
+              "move": "d8f6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.925
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "d8g5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.999
+            },
+            {
+              "enemyResponse": "g1f3",
+              "move": "d8h4",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.998
+            },
+            {
+              "enemyResponse": "g1f3",
+              "move": "b8c6",
+              "moveCorrectness": "correct",
+              "wdl": 0.507
+            },
+            {
+              "enemyResponse": "g1f3",
+              "move": "b8a6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.988
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "h7h6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.668
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "g7g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.914
+            },
+            {
+              "enemyResponse": "f2f4",
+              "move": "f7f6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.914
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "d7d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.562
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "c7c6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.634
+            },
+            {
+              "enemyResponse": "f2f4",
+              "move": "b7b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8655
+            },
+            {
+              "enemyResponse": "g1f3",
+              "move": "a7a6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.642
+            },
+            {
+              "enemyResponse": "g1f3",
+              "move": "h7h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.888
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "g7g5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.998
+            },
+            {
+              "enemyResponse": "e4f5",
+              "move": "f7f5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9915
+            },
+            {
+              "enemyResponse": "c3d5",
+              "move": "d7d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.857
+            },
+            {
+              "enemyResponse": "f1c4",
+              "move": "c7c5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.707
+            },
+            {
+              "enemyResponse": "f1b5",
+              "move": "b7b5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.996
+            },
+            {
+              "enemyResponse": "g1f3",
+              "move": "a7a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.742
+            }
+          ],
+          "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b": [
+            {
+              "enemyResponse": "d2d4",
+              "move": "g8h6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.881
+            },
+            {
+              "enemyResponse": "e4e5",
+              "move": "g8f6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.6075
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "b8c6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5665
+            },
+            {
+              "enemyResponse": "b1c3",
+              "move": "b8a6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.8615
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "h7h6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.6505
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "g7g6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.604
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "f7f6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.958
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "e7e6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5405
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "d7d6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.564
+            },
+            {
+              "enemyResponse": "c2c4",
+              "move": "c7c6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5435
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "b7b6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.722
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "a7a6",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.5915
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "h7h5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.905
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "g7g5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9895
+            },
+            {
+              "enemyResponse": "e4f5",
+              "move": "f7f5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9415
+            },
+            {
+              "enemyResponse": "g1f3",
+              "move": "e7e5",
+              "moveCorrectness": "correct",
+              "wdl": 0.5315
+            },
+            {
+              "enemyResponse": "e4d5",
+              "move": "d7d5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.615
+            },
+            {
+              "enemyResponse": "g1f3",
+              "move": "c7c5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.534
+            },
+            {
+              "enemyResponse": "f1b5",
+              "move": "b7b5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.9845
+            },
+            {
+              "enemyResponse": "d2d4",
+              "move": "a7a5",
+              "moveCorrectness": "suboptimal",
+              "wdl": 0.737
+            }
+          ]
+        }
+      },
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "id": "03bbb719",
+      "type": "normal"
+    }
+  ],
+  "courseId": "CHESS_CH",
+  "metadata": {
+    "chessJson": "{\"contentId\":\"Skill:castlingTheKing\",\"cacheKey\":\"8751e6e9\",\"type\":\"CHESS_LESSON\"}",
+    "progressActionJson": "{\"type\":\"chess_lesson\",\"body\":{\"curriculumNodeId\":\"Skill:castlingTheKing\"}}"
+  },
+  "trackingProperties": {
+    "activity_uuid": "445ce3aa-5f20-41aa-9434-d5aea381fef2"
+  },
+  "fromLanguage": "en"
+}

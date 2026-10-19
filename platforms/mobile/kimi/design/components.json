@@ -1,0 +1,1139 @@
+{
+  "formatVersion": 1,
+  "kind": "components",
+  "items": [
+    {
+      "id": "c-source-capacity-error-fixture",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "e-be71341e419331",
+        "e-a121ec79f6b8ab",
+        "e-1df63ca1447775",
+        "e-ebca36027fd5bd"
+      ],
+      "unknowns": [
+        "D View/font/spacing/shadow mapping requires paired device review",
+        "No network/model/subscription integration",
+        "The whole error TextView exposes the reference's explanatory click action",
+        "Local native reference footer remains visibly different from source"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse stated slots and visible state relationships; connect to target-owned services. Normal Stop output invalidates callback and preserves any new composer draft"
+      },
+      "name": "SourceCapacityErrorFixture",
+      "description": "失败气泡、红重试、容量说明与下一步",
+      "slots": [
+        "model",
+        "prompt",
+        "status",
+        "capacityError"
+      ],
+      "tokenRefs": [
+        "t-native-target-page",
+        "t-native-target-surface",
+        "t-native-target-text",
+        "t-native-target-secondary",
+        "t-native-target-line",
+        "t-native-target-accent",
+        "t-native-target-destructive",
+        "t-native-target-radius-group",
+        "t-native-target-radius-composer",
+        "t-native-target-radius-dialog"
+      ],
+      "states": [
+        {
+          "id": "default",
+          "appearance": "Header Kimi K2.8; no top More in this failed uncompleted scene; failed user bubble with red adjacent retry; gray capacity text and blue Upgrade; Ask me. Task me. composer placeholder",
+          "evidenceRefs": [
+            "e-be71341e419331",
+            "e-a121ec79f6b8ab",
+            "e-1df63ca1447775",
+            "e-ebca36027fd5bd"
+          ]
+        },
+        {
+          "id": "availability",
+          "appearance": "See inputs and event sequence",
+          "evidenceRefs": [
+            "e-be71341e419331",
+            "e-a121ec79f6b8ab",
+            "e-1df63ca1447775",
+            "e-ebca36027fd5bd"
+          ]
+        },
+        {
+          "id": "cancel",
+          "appearance": "Normal Stop output invalidates callback and preserves any new composer draft",
+          "evidenceRefs": [
+            "e-be71341e419331",
+            "e-a121ec79f6b8ab",
+            "e-1df63ca1447775",
+            "e-ebca36027fd5bd"
+          ]
+        },
+        {
+          "id": "reentry",
+          "appearance": "Target chooses persistence explicitly",
+          "evidenceRefs": [
+            "e-be71341e419331",
+            "e-a121ec79f6b8ab",
+            "e-1df63ca1447775",
+            "e-ebca36027fd5bd"
+          ]
+        }
+      ],
+      "inputs": {
+        "model": "K2.8",
+        "prompt": "Run03 mdel K2.8 test. Reply only RUN03-K28-OK.",
+        "status": "error",
+        "capacityError": true
+      },
+      "events": [
+        "source-capacity-error scene -> independent light/Follow System fixture with exact source content",
+        "Retry failed message -> busy -> local 6-second callback -> same retained capacity error",
+        "Upgrade text -> local fixture explanation",
+        "New chat -> clear failure fixture and message"
+      ],
+      "focusKeyboard": null,
+      "referenceContract": {
+        "id": "SourceCapacityErrorFixture",
+        "inputs": {
+          "model": "K2.8",
+          "prompt": "Run03 mdel K2.8 test. Reply only RUN03-K28-OK.",
+          "status": "error",
+          "capacityError": true
+        },
+        "eventsInOrder": [
+          "source-capacity-error scene -> independent light/Follow System fixture with exact source content",
+          "Retry failed message -> busy -> local 6-second callback -> same retained capacity error",
+          "Upgrade text -> local fixture explanation",
+          "New chat -> clear failure fixture and message"
+        ],
+        "visualStructure": "Header Kimi K2.8; no top More in this failed uncompleted scene; failed user bubble with red adjacent retry; gray capacity text and blue Upgrade; Ask me. Task me. composer placeholder",
+        "cancellation": "Normal Stop output invalidates callback and preserves any new composer draft",
+        "evidence": "docs/native-reference-capacity-pairing.json retains source A capture hashes and semantic bounds",
+        "limits": [
+          "D View/font/spacing/shadow mapping requires paired device review",
+          "No network/model/subscription integration",
+          "The whole error TextView exposes the reference's explanatory click action",
+          "Local native reference footer remains visibly different from source"
+        ]
+      },
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "partial",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        }
+      ],
+      "platform": "Android source; adapt insets, IME, focus, reduced-motion and text scale to target."
+    },
+    {
+      "id": "c-native-composer",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "e-be71341e419331",
+        "e-d58e74243dc88c",
+        "e-54b7fc9cdd14c4"
+      ],
+      "unknowns": [
+        "No real model service",
+        "No IME combination or keyboard-send source equivalence claim",
+        "Full rerender may lose selection/focus; device comparison must record this"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse stated slots and visible state relationships; connect to target-owned services. Stop invalidates chat epoch; callbacks from older requests cannot replace current output"
+      },
+      "name": "NativeComposer",
+      "description": "多行输入、草稿、附件/发送/停止，动作由非空/忙碌状态决定",
+      "slots": [
+        "draft",
+        "status",
+        "model",
+        "effort"
+      ],
+      "tokenRefs": [
+        "t-native-target-page",
+        "t-native-target-surface",
+        "t-native-target-text",
+        "t-native-target-secondary",
+        "t-native-target-line",
+        "t-native-target-accent",
+        "t-native-target-destructive",
+        "t-native-target-radius-group",
+        "t-native-target-radius-composer",
+        "t-native-target-radius-dialog"
+      ],
+      "states": [
+        {
+          "id": "default",
+          "appearance": "多行输入、草稿、附件/发送/停止，动作由非空/忙碌状态决定",
+          "evidenceRefs": [
+            "e-be71341e419331",
+            "e-d58e74243dc88c",
+            "e-54b7fc9cdd14c4"
+          ]
+        },
+        {
+          "id": "availability",
+          "appearance": "Empty tail is Voice input; nonempty tail is Send message; busy tail is Stop output. Voice is an explanatory unsupported-service dialog, not audio recording.",
+          "evidenceRefs": [
+            "e-be71341e419331",
+            "e-d58e74243dc88c",
+            "e-54b7fc9cdd14c4"
+          ]
+        },
+        {
+          "id": "cancel",
+          "appearance": "Stop invalidates chat epoch; callbacks from older requests cannot replace current output",
+          "evidenceRefs": [
+            "e-be71341e419331",
+            "e-d58e74243dc88c",
+            "e-54b7fc9cdd14c4"
+          ]
+        },
+        {
+          "id": "reentry",
+          "appearance": "Draft survives navigation and process restart; interrupted busy chat reloads as stopped (D)",
+          "evidenceRefs": [
+            "e-be71341e419331",
+            "e-d58e74243dc88c",
+            "e-54b7fc9cdd14c4"
+          ]
+        }
+      ],
+      "inputs": {
+        "draft": "String",
+        "status": "empty|busy|complete|error|stopped",
+        "model": "String",
+        "effort": "String"
+      },
+      "events": [
+        "onDraftChanged -> state.draft -> local persistence",
+        "onSend -> reject empty or busy -> move draft to prompt -> busy -> persist -> schedule local callback",
+        "onStop -> increment chat epoch -> stopped -> retain new draft -> persist"
+      ],
+      "focusKeyboard": "Native multiline EditText and system IME; sending hides keyboard; field is recreated on page render",
+      "referenceContract": {
+        "id": "NativeComposer",
+        "inputs": {
+          "draft": "String",
+          "status": "empty|busy|complete|error|stopped",
+          "model": "String",
+          "effort": "String"
+        },
+        "controlledState": "ReferenceState.draft is authoritative; EditText TextWatcher writes immediately",
+        "eventsInOrder": [
+          "onDraftChanged -> state.draft -> local persistence",
+          "onSend -> reject empty or busy -> move draft to prompt -> busy -> persist -> schedule local callback",
+          "onStop -> increment chat epoch -> stopped -> retain new draft -> persist"
+        ],
+        "focusKeyboard": "Native multiline EditText and system IME; sending hides keyboard; field is recreated on page render",
+        "availability": "Empty tail is Voice input; nonempty tail is Send message; busy tail is Stop output. Voice is an explanatory unsupported-service dialog, not audio recording.",
+        "cancellation": "Stop invalidates chat epoch; callbacks from older requests cannot replace current output",
+        "retry": "Retains failed prompt and any newer draft; explicit Retry creates a new epoch",
+        "reentry": "Draft survives navigation and process restart; interrupted busy chat reloads as stopped (D)",
+        "limits": [
+          "No real model service",
+          "No IME combination or keyboard-send source equivalence claim",
+          "Full rerender may lose selection/focus; device comparison must record this"
+        ]
+      },
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "partial",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        }
+      ],
+      "platform": "Android source; adapt insets, IME, focus, reduced-motion and text scale to target."
+    },
+    {
+      "id": "c-answer-and-feedback",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "e-be71341e419331"
+      ],
+      "unknowns": [
+        "Only Copy and Retry are operational reference answer actions",
+        "No feedback delivery, audio or share service",
+        "Local answer fixture is OK"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse stated slots and visible state relationships; connect to target-owned services. "
+      },
+      "name": "AnswerAndFeedback",
+      "description": "消息、生成、完成工具、失败与显式重试",
+      "slots": [
+        "prompt",
+        "answer",
+        "status"
+      ],
+      "tokenRefs": [
+        "t-native-target-page",
+        "t-native-target-surface",
+        "t-native-target-text",
+        "t-native-target-secondary",
+        "t-native-target-line",
+        "t-native-target-accent",
+        "t-native-target-destructive",
+        "t-native-target-radius-group",
+        "t-native-target-radius-composer",
+        "t-native-target-radius-dialog"
+      ],
+      "states": [
+        {
+          "id": "default",
+          "appearance": "消息、生成、完成工具、失败与显式重试",
+          "evidenceRefs": [
+            "e-be71341e419331"
+          ]
+        },
+        {
+          "id": "availability",
+          "appearance": "No message in empty; Thinking / Generating during busy; retained prompt and red error on failure",
+          "evidenceRefs": [
+            "e-be71341e419331"
+          ]
+        },
+        {
+          "id": "cancel",
+          "appearance": "See target-specific cancellation",
+          "evidenceRefs": [
+            "e-be71341e419331"
+          ]
+        },
+        {
+          "id": "reentry",
+          "appearance": "Target chooses persistence explicitly",
+          "evidenceRefs": [
+            "e-be71341e419331"
+          ]
+        }
+      ],
+      "inputs": {
+        "prompt": "String",
+        "answer": "String",
+        "status": "String"
+      },
+      "events": [
+        "completion callback -> check epoch and busy -> commit complete or error -> persist -> render",
+        "Copy -> Android ClipboardManager local text",
+        "Retry -> busy -> callback"
+      ],
+      "focusKeyboard": null,
+      "referenceContract": {
+        "id": "AnswerAndFeedback",
+        "inputs": {
+          "prompt": "String",
+          "answer": "String",
+          "status": "String"
+        },
+        "eventsInOrder": [
+          "completion callback -> check epoch and busy -> commit complete or error -> persist -> render",
+          "Copy -> Android ClipboardManager local text",
+          "Retry -> busy -> callback"
+        ],
+        "emptyBusyError": "No message in empty; Thinking / Generating during busy; retained prompt and red error on failure",
+        "limits": [
+          "Only Copy and Retry are operational reference answer actions",
+          "No feedback delivery, audio or share service",
+          "Local answer fixture is OK"
+        ]
+      },
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "partial",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        }
+      ],
+      "platform": "Android source; adapt insets, IME, focus, reduced-motion and text scale to target."
+    },
+    {
+      "id": "c-model-option-sheet",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "e-be71341e419331"
+      ],
+      "unknowns": [
+        "Effort choices are D placeholders, not an asserted source menu",
+        "No real routing or billing",
+        "Busy-time model changes are allowed by D policy"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse stated slots and visible state relationships; connect to target-owned services. Outside or system Back dismisses Dialog; unchanged draft is retained"
+      },
+      "name": "ModelOptionSheet",
+      "description": "当前模型/思考选项、选择与关闭，保留输入",
+      "slots": [
+        "model",
+        "effort"
+      ],
+      "tokenRefs": [
+        "t-native-target-page",
+        "t-native-target-surface",
+        "t-native-target-text",
+        "t-native-target-secondary",
+        "t-native-target-line",
+        "t-native-target-accent",
+        "t-native-target-destructive",
+        "t-native-target-radius-group",
+        "t-native-target-radius-composer",
+        "t-native-target-radius-dialog"
+      ],
+      "states": [
+        {
+          "id": "default",
+          "appearance": "当前模型/思考选项、选择与关闭，保留输入",
+          "evidenceRefs": [
+            "e-be71341e419331"
+          ]
+        },
+        {
+          "id": "availability",
+          "appearance": "See inputs and event sequence",
+          "evidenceRefs": [
+            "e-be71341e419331"
+          ]
+        },
+        {
+          "id": "cancel",
+          "appearance": "Outside or system Back dismisses Dialog; unchanged draft is retained",
+          "evidenceRefs": [
+            "e-be71341e419331"
+          ]
+        },
+        {
+          "id": "reentry",
+          "appearance": "Target chooses persistence explicitly",
+          "evidenceRefs": [
+            "e-be71341e419331"
+          ]
+        }
+      ],
+      "inputs": {
+        "model": "K3|K2.8|Instant",
+        "effort": "Low|High"
+      },
+      "events": [
+        "Model selector -> sheet",
+        "option -> update selected model -> dismiss -> return chat",
+        "Thinking effort -> secondary sheet -> update summary"
+      ],
+      "focusKeyboard": null,
+      "referenceContract": {
+        "id": "ModelOptionSheet",
+        "inputs": {
+          "model": "K3|K2.8|Instant",
+          "effort": "Low|High"
+        },
+        "eventsInOrder": [
+          "Model selector -> sheet",
+          "option -> update selected model -> dismiss -> return chat",
+          "Thinking effort -> secondary sheet -> update summary"
+        ],
+        "close": "Outside or system Back dismisses Dialog; unchanged draft is retained",
+        "limits": [
+          "Effort choices are D placeholders, not an asserted source menu",
+          "No real routing or billing",
+          "Busy-time model changes are allowed by D policy"
+        ]
+      },
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "partial",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        }
+      ],
+      "platform": "Android source; adapt insets, IME, focus, reduced-motion and text scale to target."
+    },
+    {
+      "id": "c-appearance-rows",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "e-be71341e419331"
+      ],
+      "unknowns": [
+        "Language row explains the reference's English-only boundary",
+        "Exact source font size/family/weight and per-glyph fallback unverified"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse stated slots and visible state relationships; connect to target-owned services. Applied theme/font persisted; preview remains transient and is discarded by Back/process death"
+      },
+      "name": "AppearanceRows",
+      "description": "分组设置、主题即时提交，字号预览后保存/取消",
+      "slots": [
+        "theme",
+        "font"
+      ],
+      "tokenRefs": [
+        "t-native-target-page",
+        "t-native-target-surface",
+        "t-native-target-text",
+        "t-native-target-secondary",
+        "t-native-target-line",
+        "t-native-target-accent",
+        "t-native-target-destructive",
+        "t-native-target-radius-group",
+        "t-native-target-radius-composer",
+        "t-native-target-radius-dialog"
+      ],
+      "states": [
+        {
+          "id": "default",
+          "appearance": "分组设置、主题即时提交，字号预览后保存/取消",
+          "evidenceRefs": [
+            "e-be71341e419331"
+          ]
+        },
+        {
+          "id": "availability",
+          "appearance": "Applied theme/font persisted; preview remains transient and is discarded by Back/process death",
+          "evidenceRefs": [
+            "e-be71341e419331"
+          ]
+        },
+        {
+          "id": "cancel",
+          "appearance": "See target-specific cancellation",
+          "evidenceRefs": [
+            "e-be71341e419331"
+          ]
+        },
+        {
+          "id": "reentry",
+          "appearance": "Target chooses persistence explicitly",
+          "evidenceRefs": [
+            "e-be71341e419331"
+          ]
+        }
+      ],
+      "inputs": {
+        "theme": "Follow System|Light mode|Dark mode",
+        "font": "Follow System|Small|Standard|Large|Extra Large"
+      },
+      "events": [
+        "row -> detail page",
+        "theme option -> immediate commit and redraw",
+        "open font -> copy applied font to pendingFont",
+        "font option -> preview only",
+        "Back -> abandon pendingFont -> Appearance",
+        "Save -> commit pendingFont -> chat home"
+      ],
+      "focusKeyboard": null,
+      "referenceContract": {
+        "id": "AppearanceRows",
+        "inputs": {
+          "theme": "Follow System|Light mode|Dark mode",
+          "font": "Follow System|Small|Standard|Large|Extra Large"
+        },
+        "eventsInOrder": [
+          "row -> detail page",
+          "theme option -> immediate commit and redraw",
+          "open font -> copy applied font to pendingFont",
+          "font option -> preview only",
+          "Back -> abandon pendingFont -> Appearance",
+          "Save -> commit pendingFont -> chat home"
+        ],
+        "state": "Applied theme/font persisted; preview remains transient and is discarded by Back/process death",
+        "longTextAndTheme": "Theme palettes and approximate scale factors are D; English only; native system font fallback",
+        "limits": [
+          "Language row explains the reference's English-only boundary",
+          "Exact source font size/family/weight and per-glyph fallback unverified"
+        ]
+      },
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "partial",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        }
+      ],
+      "platform": "Android source; adapt insets, IME, focus, reduced-motion and text scale to target."
+    },
+    {
+      "id": "c-destructive-confirmation",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "e-be71341e419331"
+      ],
+      "unknowns": [
+        "Outside-close policy is D until source path corroboration",
+        "No undo is implemented; this is not evidence of source undo absence"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse stated slots and visible state relationships; connect to target-owned services. No destructive mutation before confirmation; only reference local content can be removed"
+      },
+      "name": "DestructiveConfirmation",
+      "description": "遮罩、标题、确认/取消；确认前不删除",
+      "slots": [
+        "title",
+        "positiveLabel",
+        "onConfirm"
+      ],
+      "tokenRefs": [
+        "t-native-target-page",
+        "t-native-target-surface",
+        "t-native-target-text",
+        "t-native-target-secondary",
+        "t-native-target-line",
+        "t-native-target-accent",
+        "t-native-target-destructive",
+        "t-native-target-radius-group",
+        "t-native-target-radius-composer",
+        "t-native-target-radius-dialog"
+      ],
+      "states": [
+        {
+          "id": "default",
+          "appearance": "遮罩、标题、确认/取消；确认前不删除",
+          "evidenceRefs": [
+            "e-be71341e419331"
+          ]
+        },
+        {
+          "id": "availability",
+          "appearance": "No destructive mutation before confirmation; only reference local content can be removed",
+          "evidenceRefs": [
+            "e-be71341e419331"
+          ]
+        },
+        {
+          "id": "cancel",
+          "appearance": "See target-specific cancellation",
+          "evidenceRefs": [
+            "e-be71341e419331"
+          ]
+        },
+        {
+          "id": "reentry",
+          "appearance": "Target chooses persistence explicitly",
+          "evidenceRefs": [
+            "e-be71341e419331"
+          ]
+        }
+      ],
+      "inputs": {
+        "title": "String",
+        "positiveLabel": "String",
+        "onConfirm": "Runnable"
+      },
+      "events": [
+        "open -> dim background -> native Dialog focus",
+        "Cancel / Back / outside -> dismiss only",
+        "positive -> dismiss -> apply deletion -> render"
+      ],
+      "focusKeyboard": null,
+      "referenceContract": {
+        "id": "DestructiveConfirmation",
+        "inputs": {
+          "title": "String",
+          "positiveLabel": "String",
+          "onConfirm": "Runnable"
+        },
+        "eventsInOrder": [
+          "open -> dim background -> native Dialog focus",
+          "Cancel / Back / outside -> dismiss only",
+          "positive -> dismiss -> apply deletion -> render"
+        ],
+        "state": "No destructive mutation before confirmation; only reference local content can be removed",
+        "stacking": "Opening another Dialog dismisses the previous one; system Back closes the top Dialog first",
+        "limits": [
+          "Outside-close policy is D until source path corroboration",
+          "No undo is implemented; this is not evidence of source undo absence"
+        ]
+      },
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "partial",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        }
+      ],
+      "platform": "Android source; adapt insets, IME, focus, reduced-motion and text scale to target."
+    },
+    {
+      "id": "c-document-library-and-editor",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "e-be71341e419331"
+      ],
+      "unknowns": [
+        "Single-note neutral sample",
+        "Local SharedPreferences rather than sync/upload/database service",
+        "All note business rules are D"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse stated slots and visible state relationships; connect to target-owned services. Cancel saving invalidates document epoch, keeps draft, and restores library state without committing"
+      },
+      "name": "DocumentLibraryAndEditor",
+      "description": "中性文档库→编辑→保存，取消保留草稿",
+      "slots": [
+        "document",
+        "documentDraft",
+        "documentStatus"
+      ],
+      "tokenRefs": [
+        "t-native-target-page",
+        "t-native-target-surface",
+        "t-native-target-text",
+        "t-native-target-secondary",
+        "t-native-target-line",
+        "t-native-target-accent",
+        "t-native-target-destructive",
+        "t-native-target-radius-group",
+        "t-native-target-radius-composer",
+        "t-native-target-radius-dialog"
+      ],
+      "states": [
+        {
+          "id": "default",
+          "appearance": "中性文档库→编辑→保存，取消保留草稿",
+          "evidenceRefs": [
+            "e-be71341e419331"
+          ]
+        },
+        {
+          "id": "availability",
+          "appearance": "See inputs and event sequence",
+          "evidenceRefs": [
+            "e-be71341e419331"
+          ]
+        },
+        {
+          "id": "cancel",
+          "appearance": "Cancel saving invalidates document epoch, keeps draft, and restores library state without committing",
+          "evidenceRefs": [
+            "e-be71341e419331"
+          ]
+        },
+        {
+          "id": "reentry",
+          "appearance": "Editor draft persists across navigation/process restart; interrupted save reloads as error for explicit retry (D)",
+          "evidenceRefs": [
+            "e-be71341e419331"
+          ]
+        }
+      ],
+      "inputs": {
+        "document": "String",
+        "documentDraft": "String",
+        "documentStatus": "empty|busy|error|complete"
+      },
+      "events": [
+        "New / Add a note -> editor",
+        "typing -> retain draft locally",
+        "Save note -> reject blank with field error -> busy -> local callback -> commit or retain error draft",
+        "Return / Back -> library with draft retained",
+        "Edit -> restore saved title as new edit draft",
+        "Delete -> confirmation -> clear saved note"
+      ],
+      "focusKeyboard": null,
+      "referenceContract": {
+        "id": "DocumentLibraryAndEditor",
+        "inputs": {
+          "document": "String",
+          "documentDraft": "String",
+          "documentStatus": "empty|busy|error|complete"
+        },
+        "eventsInOrder": [
+          "New / Add a note -> editor",
+          "typing -> retain draft locally",
+          "Save note -> reject blank with field error -> busy -> local callback -> commit or retain error draft",
+          "Return / Back -> library with draft retained",
+          "Edit -> restore saved title as new edit draft",
+          "Delete -> confirmation -> clear saved note"
+        ],
+        "cancellation": "Cancel saving invalidates document epoch, keeps draft, and restores library state without committing",
+        "reentry": "Editor draft persists across navigation/process restart; interrupted save reloads as error for explicit retry (D)",
+        "busy": "Save action replaced by Saving and Cancel saving; chat and document epochs are independent",
+        "limits": [
+          "Single-note neutral sample",
+          "Local SharedPreferences rather than sync/upload/database service",
+          "All note business rules are D"
+        ]
+      },
+      "stateCoverage": [
+        {
+          "state": "default",
+          "status": "partial",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "selected",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "pressed",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "focus",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "disabled",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "loading",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "empty",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "invalid",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        },
+        {
+          "state": "error",
+          "status": "unverified",
+          "decision": "Original coverage comes only from explicitly recorded states below; this matrix does not upgrade source coverage. Use target-native D behavior for applicable missing states and validate it in the target.",
+          "classification": "D"
+        }
+      ],
+      "platform": "Android source; adapt insets, IME, focus, reduced-motion and text scale to target."
+    }
+  ]
+}

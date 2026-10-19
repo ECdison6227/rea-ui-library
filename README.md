@@ -1,67 +1,89 @@
 # REA UI Library
 
-按**网页、电脑端、手机端**组织的REA产品风格研究与参考项目库。每份来源保留自己的设计语言、原始资料、Git版本、技术栈和运行方式。
+**先把软件做好，再选一款 App 的风格，让 AI 拉取这里的设计包，直接应用到你的项目。**
 
-总仓库：[ECdison6227/rea-ui-library](https://github.com/ECdison6227/rea-ui-library)，当前为私有仓库，也是后续分析的唯一维护入口。已纳入资料直接存放在本库；无需旧仓库或子模块。旧历史随总库保留，迁移与删除结果见[迁移记录](docs/migrations/2026-10-19/imports.json)。
+这里保存可复用的视觉设计、组件、动画和用户交互规则。应用后仍使用你的业务、数据、品牌与技术栈；改变的是它们如何呈现、如何响应用户。
 
-## 打开统一入口
+## 选一套风格
 
-需要Node.js 22.13+和Git；总目录无第三方运行依赖。
+| 参考 App | 适合借鉴 | 入口 |
+| --- | --- | --- |
+| **多邻国** | 有厚度的按钮、明确选择反馈、分步引导、进度与结果、轻快动效 | [设计包](platforms/mobile/duolingo-android-6-80-6-china-2368/README.md) |
+| **小米运动健康** | 概览卡片、分组设置、层级留白、导航与弹层、受控开关 | [设计包](platforms/mobile/mi-fitness/README.md) |
+| **Kimi** | 多行输入、草稿、对话反馈、选项、保存取消、异步与重试 | [设计包](platforms/mobile/kimi/README.md) |
+| Hark | 玻璃材质、流式内容、富内容卡片与天空背景 | [研究参考](platforms/web/hark/README.md) |
+| Mirasim | 简洁分组、深浅主题、抽屉、混合应用平台边界 | [研究参考](platforms/mobile/mirasim/README.md) |
+
+前三份采用统一 **Design Package v1**，含实施选择与明确差异；Hark、Mirasim暂保留旧研究入口。`partial`表示原版仍有未确定参数或还原差异，使用时按包内适用范围实施，不等于只能看文档。
+
+## 直接复制给 AI
+
+替换选定 App 和项目路径即可：
+
+```text
+我的软件功能和基础界面已经完成。请从
+https://github.com/ECdison6227/rea-ui-library
+拉取设计规范，把【多邻国 / 小米运动健康 / Kimi】的UI风格、动画和通用用户交互应用到我的项目：【项目路径】。
+
+先读仓库AGENTS.md和选定App的design-package.json、DESIGN_SPEC.md、ADAPTATION_GUIDE.md，
+再按需读取tokens、components、layouts、interactions、motion、资产和对照。
+记录实际拉取的commit。沿用我的技术栈、业务、数据、品牌和接口。
+
+请实际修改代码，完成排版、配色、间距、形状、组件状态、布局和动画，
+以及返回、输入、草稿、保存取消、加载、错误和重试等用户逻辑。
+来源不确定的参数按包内明确D方案适配，不把目标选择当成原版事实。
+运行代表页面和交互，交付前后/来源对照与验证结果。不要只给计划、调色板或静态首页。
+```
+
+已安装技能时可加 `$rea-design-transfer 应用规范模式`；未安装时AI可以直接读取本库[skill](skills/rea-design-transfer/SKILL.md)。仓库为私有，使用已有GitHub访问权限，不把密码或令牌贴进聊天。
+
+## 只拉取选定风格
+
+AI可以稀疏检出该来源，避免下载其他研究。以小米为例：
 
 ```sh
-git -c core.longpaths=true clone https://github.com/ECdison6227/rea-ui-library.git
+git -c core.longpaths=true clone --filter=blob:none --sparse https://github.com/ECdison6227/rea-ui-library.git
 cd rea-ui-library
+git config --local core.longpaths true
+git sparse-checkout set platforms/mobile/mi-fitness skills/rea-design-transfer docs
+git rev-parse HEAD
+```
+
+多邻国目录：`platforms/mobile/duolingo-android-6-80-6-china-2368`；Kimi目录：`platforms/mobile/kimi`。先读规范，再查看原图、参考、源码和资产。Android的dp/sp不要直接套成网页px；原产品的支付、健康算法或模型服务不属于风格迁移。
+
+## 浏览与比较
+
+完整clone后，在仓库根执行：
+
+```sh
 npm run sources:init
 npm run dev
 ```
 
-打开 **http://127.0.0.1:4318/**。支持平台筛选、关键词搜索、研究文档、最多三个来源比较，以及复制给Agent的迁移任务。端口冲突会明确报错，可用 `npm run dev -- --port 4320` 指定空闲端口。
+打开 **http://127.0.0.1:4318/**。可按平台/关键词选型、查看资料、比较来源，并复制已填好来源路径的AI实施指令。需要Node.js 22.13+和Git，无第三方运行依赖。目录只读，不启动原App、模拟器或原厂服务。
 
-普通 clone 就带齐全部研究。`npm run sources:init` 仅设置本仓库的Git长路径并校验本地文件，不访问旧仓库，不修改全局Git配置或系统注册表。启动总入口不启动原应用、模拟器、来源后端或账号服务。
+## 设计包里有什么
 
-| 平台 | 当前来源 | 主要可复用内容 |
-| --- | --- | --- |
-| 网页 | [Hark](platforms/web/hark/README.md) | 流式内容、交互卡片、CSS变量、表格与图片交互 |
-| 电脑端 | [空分类说明](platforms/desktop/README.md) | 当前没有符合范围的独立桌面REA研究 |
-| 手机端 | [小米运动健康](platforms/mobile/mi-fitness/analysis/ui/README.md) | 卡片与设置、Android原生参考、逐项配对和迁移示例 |
-| 手机端 | [Mirasim](platforms/mobile/mirasim/README.md) | React/Capacitor前端、深浅主题、权限与更新接口边界 |
-| 手机端 | [Kimi](platforms/mobile/kimi/README.md) | 输入、草稿、异步、保存取消、原生参考与Fieldnotes迁移 |
+| 内容 | AI用它做什么 |
+| --- | --- |
+| design-package.json、DESIGN_SPEC.md | 确认来源、版本、适用范围和视觉原则 |
+| tokens、components、layouts | 实现文字、表面、几何、组件状态和页面组合 |
+| interactions、motion | 实现状态变化、时序、曲线、中断、取消与减少动画 |
+| assets、evidence、reference、comparison | 找素材、读原版依据、运行参考并检查差异 |
+| ADAPTATION_GUIDE.md | 把风格映射到已有产品，保留业务与平台习惯 |
 
-仅收REA研究产物。普通产品、单文件UI实验和单独迁移应用不纳入来源计数；研究自身的transfer-example仍保留。Mirasim属于手机混合应用，浏览器模拟桥接不证明Android系统行为。Hark即使有手机宽度截图，仍是网页研究。
+源观察、静态声明、推断、目标实现分别标为A/B/C/D。研究截图不等于目标已实现；AI应在你的软件里完成最后的运行验证。
 
-## 在自己的项目里使用
+## 维护与入库
 
-1. 在入口选择来源，检查版本、覆盖及保留边界。
-2. 阅读该来源的规范、状态契约、对照和参考。选中的来源独立使用，不默认混合全部设计语言。
-3. 点“复制迁移任务”，填写你的项目路径；让Agent先审查业务、品牌、目标平台与已有代码，再建立规则映射并实现。
-4. 在目标产品里验证代表页面的正常、空、忙碌、错误、取消和返回状态，再校准视觉细节。
-
-Kimi的“相似UI与核心用户流程”目标已由用户于2026-10-19接受；原始37项清单仍保留20项verified和剩余未测/部分验证。这是约定目标可收尾，不是把未测功能改成通过。
-
-## 设计提取与迁移技能
-
-技能名为 **`rea-design-transfer`（REA 设计提取与迁移）**，当前技能源仓库为[rea-design-transfer](https://github.com/ECdison6227/rea-design-transfer)。本库的[技能副本](skills/rea-design-transfer/SKILL.md)及同步锁用于离线读取，改动先回到技能源；[改进与验证边界](docs/skill-review.md)记录具体范围。
-
-默认围绕视觉元素、组件/状态、布局组合、关键动效和通用交互研究；不穷举原业务功能或恢复后端、支付、同步、播放内核。已有功能和普通UI的产品可以直接从目录复制迁移任务，按选定规范实施，保留自己的业务、数据、品牌和技术栈。
-
-新研究统一交付 **Design Package v1**：`design-package.json` → `DESIGN_SPEC.md` → tokens/组件/布局/交互/动效/资产/证据及参考/对照/接入入口。详见[格式协议](skills/rea-design-transfer/references/design-package.md)与[新增指南](docs/adding-studies.md)。原版coverage、迁移readiness和约定交付分别报告；空模板不成为ready，原业务未测比例也不替代设计验收。
-
-已有四份研究继续按原格式使用，不覆盖其原件或自动提高覆盖。按需新增适配入口后可登记designPackage字段。最初升级补丁保留在[历史记录](docs/history/skill-upgrade-initial.patch)，不再作为当前安装方法。
-
-## 验证与静态导出
+新来源必须提供可用于实施的标准包，不能只上传截图、报告、空JSON或调色板。小米和Kimi已升级；Hark/Mirasim作为明确的历史研究保留。总库直接维护资料和文件锁，无子模块。
 
 ```sh
 npm test
-npm run verify
 npm run build
+npm run verify
 ```
 
-`dist/`仅含统一目录、精选已审缩略图和技能审查说明，不复制来源的原始证据或私有项目。静态目录的文档链接统一指向本总库内的研究目录；本地服务器有文档查看功能，静态导出不提供本机API。各研究的完整文件清单与SHA保存在catalog/manifests，历史出处单独保存。
+[入库标准](docs/adding-studies.md) · [AI实施约定](docs/apply-a-style.md) · [格式协议](skills/rea-design-transfer/references/design-package.md) · [历史来源](docs/migrations/2026-10-19/imports.json)
 
-Hark原始截图/DOM含既有聊天，默认不开放原始证据查看器。需要在自己的电脑上查看时运行 `npm run dev:private`，仍仅监听127.0.0.1。不要把该模式直接绑定公网。
-
-## 后续新增UI分析
-
-直接把REA研究放进 `platforms/web/<id>/`、`platforms/desktop/<id>/` 或 `platforms/mobile/<id>/`，按[新增指南](docs/adding-studies.md)登记。以后不需要再创建单独分析仓库。
-
-[架构与更新](docs/architecture.md) · [来源盘点与入库依据](docs/inventory.md) · [验证](docs/validation.md) · [索引与版本锁](catalog/imports.lock.json)。技能与研究库独立维护，已选来源的版本与限制随迁移任务传递。
+总库保持私有。公开静态build只含目录与已审缩略图，不带原始证据；原包、设备profile、私密画面和工具缓存不自动随设计包分发。

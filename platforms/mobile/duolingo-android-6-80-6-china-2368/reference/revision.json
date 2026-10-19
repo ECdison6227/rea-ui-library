@@ -1,0 +1,1244 @@
+{
+  "updatedAt": "2026-10-19T09:55:46.659Z",
+  "classification": "D",
+  "status": "verified-within-reference-revision-scope",
+  "versionName": "0.2",
+  "versionCode": 2,
+  "apkPath": "reference/build/native-reference.apk",
+  "apkSha256": "39c2ace67733c08f7124392e519fb4aa5014a6ccfd2fb7493bfcbba62cc59b11",
+  "sourceExecuted": false,
+  "referenceExecuted": true,
+  "sourcePairs": [
+    "05-course-picker ↔ r54-delivery-course",
+    "06-course-selected ↔ r28-final-course-selected",
+    "07-after-course-choice ↔ r29-final-building",
+    "08-course-return ↔ r30-final-course-back"
+  ],
+  "captures": [
+    {
+      "scene": "r24-revised-course-empty",
+      "path": "evidence/reference-runtime/r24-revised-course-empty/screen.png",
+      "sha256": "d5e038eee5e89235abfb66287db8b191cbe81ec4d7637199a436540d12fead10",
+      "apkSha256": "032fe85ace790045fcd4fcdb29e9d2736df3b30e59098626a1dd6568332ea02f",
+      "observed": "???????????????????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r25-revised-course-selected",
+      "path": "evidence/reference-runtime/r25-revised-course-selected/screen.png",
+      "sha256": "327e0d833fb8d35ff8897ee6a0afd9ad52e9eb006672688958b22be0a6f9e7c1",
+      "apkSha256": "032fe85ace790045fcd4fcdb29e9d2736df3b30e59098626a1dd6568332ea02f",
+      "observed": "?????Spanish??????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r26-revised-building",
+      "path": "evidence/reference-runtime/r26-revised-building/screen.png",
+      "sha256": "4a5f79ee3fdd3c6ac8e69e086c1626f3c77ec505a06cfb72d2bcd9d93442a9f4",
+      "apkSha256": "032fe85ace790045fcd4fcdb29e9d2736df3b30e59098626a1dd6568332ea02f",
+      "observed": "????????????????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r27-final-course-empty",
+      "path": "evidence/reference-runtime/r27-final-course-empty/screen.png",
+      "sha256": "dfe95aa01fd260df0d058585cfff3ec3f04d64e107a6f5f9196dc83cf64d25dc",
+      "apkSha256": "15f80f6b9d3b1fc4958118830a14065ed35c7185910276ad40be6876738b04e4",
+      "observed": "???????????????????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r28-final-course-selected",
+      "path": "evidence/reference-runtime/r28-final-course-selected/screen.png",
+      "sha256": "c2af4cda8efe549ef39269c6ea684e93a262994c2670fbc179f37b95d3589890",
+      "apkSha256": "15f80f6b9d3b1fc4958118830a14065ed35c7185910276ad40be6876738b04e4",
+      "observed": "???Spanish????????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r29-final-building",
+      "path": "evidence/reference-runtime/r29-final-building/screen.png",
+      "sha256": "4346ed2fd40b5777f9af4c0b46c84c19344f796e7fa7c979303f5547aa7de257",
+      "apkSha256": "15f80f6b9d3b1fc4958118830a14065ed35c7185910276ad40be6876738b04e4",
+      "observed": "???????????????????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r30-final-course-back",
+      "path": "evidence/reference-runtime/r30-final-course-back/screen.png",
+      "sha256": "2056775b99acae76e8b9e43955bb45fcb76931b4ea710141c59e9edfc9bfb2fe",
+      "apkSha256": "15f80f6b9d3b1fc4958118830a14065ed35c7185910276ad40be6876738b04e4",
+      "observed": "?????Back??????Continue??",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r31-course-chinese",
+      "path": "evidence/reference-runtime/r31-course-chinese/screen.png",
+      "sha256": "2347b75601359fad4124900daf14a5ad58dc0e20da26083b59eda81f8d571f11",
+      "apkSha256": "15f80f6b9d3b1fc4958118830a14065ed35c7185910276ad40be6876738b04e4",
+      "observed": "D????????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r32-course-chinese-font2",
+      "path": "evidence/reference-runtime/r32-course-chinese-font2/screen.png",
+      "sha256": "7717739f4f934b277b468f3abddb0f2a492a1c7e1ac6e574d00625a30677cbd3",
+      "apkSha256": "15f80f6b9d3b1fc4958118830a14065ed35c7185910276ad40be6876738b04e4",
+      "observed": "D?????fontScale2.0??????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r33-course-narrow",
+      "path": "evidence/reference-runtime/r33-course-narrow/screen.png",
+      "sha256": "797c6e7d85bda221bb109979ec1824eab458bb5b3b33e43d2947d1a04ab7476c",
+      "apkSha256": "15f80f6b9d3b1fc4958118830a14065ed35c7185910276ad40be6876738b04e4",
+      "observed": "D640px????????????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r34-course-wide",
+      "path": "evidence/reference-runtime/r34-course-wide/screen.png",
+      "sha256": "e425553c75a6d60406f1e1dab16e691c34db766b530f8ad54d176701f25244f7",
+      "apkSha256": "15f80f6b9d3b1fc4958118830a14065ed35c7185910276ad40be6876738b04e4",
+      "observed": "D1080px???????????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r35-paperlane-dark-chinese",
+      "path": "evidence/reference-runtime/r35-paperlane-dark-chinese/screen.png",
+      "sha256": "1343bf0c1c9a9bf6fc70797b2ac47447f1f1b518198ee95471beca507776f32d",
+      "apkSha256": "15f80f6b9d3b1fc4958118830a14065ed35c7185910276ad40be6876738b04e4",
+      "observed": "D??night yes????Paperlane",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r36-families-chinese",
+      "path": "evidence/reference-runtime/r36-families-chinese/screen.png",
+      "sha256": "1e27a7f141beb9b4a1a7557fb868552dfbbd9a17d40eb8e7b035eb4767447450",
+      "apkSha256": "15f80f6b9d3b1fc4958118830a14065ed35c7185910276ad40be6876738b04e4",
+      "observed": "D??/??/???????????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r37-paperlane-form",
+      "path": "evidence/reference-runtime/r37-paperlane-form/screen.png",
+      "sha256": "b2736f76381ef208da61921cb1b3d999dcf75037c8be0236910e13d999988cb9",
+      "apkSha256": "15f80f6b9d3b1fc4958118830a14065ed35c7185910276ad40be6876738b04e4",
+      "observed": "Paperlane???????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r38-paperlane-keyboard",
+      "path": "evidence/reference-runtime/r38-paperlane-keyboard/screen.png",
+      "sha256": "7a38a580628f4691dc9e7c7a1352f1528d00a85befbbe5332b6a34029864fd34",
+      "apkSha256": "15f80f6b9d3b1fc4958118830a14065ed35c7185910276ad40be6876738b04e4",
+      "observed": "??IME???????????????",
+      "outcome": "failed-historical-attempt"
+    },
+    {
+      "scene": "r39-paperlane-error",
+      "path": "evidence/reference-runtime/r39-paperlane-error/screen.png",
+      "sha256": "593ed2ce13391d9999fa517d3aceb781d98029e4bbd1a5dd97ed6ae79eb2004e",
+      "apkSha256": "15f80f6b9d3b1fc4958118830a14065ed35c7185910276ad40be6876738b04e4",
+      "observed": "Paperlane?????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r40-paperlane-retry-result",
+      "path": "evidence/reference-runtime/r40-paperlane-retry-result/screen.png",
+      "sha256": "f1b8c596421e7d01a45420188db3baf29bcd477067f62a022537867a1f22fd07",
+      "apkSha256": "15f80f6b9d3b1fc4958118830a14065ed35c7185910276ad40be6876738b04e4",
+      "observed": "???Retry?????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r41-motion-default",
+      "path": "evidence/reference-runtime/r41-motion-default/screen.png",
+      "sha256": "f60fa638ab7d5ca3132e3ba55bdc95527916af1383df16e4b751e220693472a0",
+      "apkSha256": "15f80f6b9d3b1fc4958118830a14065ed35c7185910276ad40be6876738b04e4",
+      "observed": "??????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r42-motion-progress-final",
+      "path": "evidence/reference-runtime/r42-motion-progress-final/screen.png",
+      "sha256": "f60fa638ab7d5ca3132e3ba55bdc95527916af1383df16e4b751e220693472a0",
+      "apkSha256": "15f80f6b9d3b1fc4958118830a14065ed35c7185910276ad40be6876738b04e4",
+      "observed": "???????????????????",
+      "outcome": "input-missed-not-tested"
+    },
+    {
+      "scene": "r43-motion-feedback-final",
+      "path": "evidence/reference-runtime/r43-motion-feedback-final/screen.png",
+      "sha256": "f60fa638ab7d5ca3132e3ba55bdc95527916af1383df16e4b751e220693472a0",
+      "apkSha256": "15f80f6b9d3b1fc4958118830a14065ed35c7185910276ad40be6876738b04e4",
+      "observed": "????????????????????",
+      "outcome": "input-missed-not-tested"
+    },
+    {
+      "scene": "r44-motion-progress-actual",
+      "path": "evidence/reference-runtime/r44-motion-progress-actual/screen.png",
+      "sha256": "178f689facb8ea6d2af804cd6ebb34a9a2a9dff3487c310cbd96dfd494c52b30",
+      "apkSha256": "15f80f6b9d3b1fc4958118830a14065ed35c7185910276ad40be6876738b04e4",
+      "observed": "????????????????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r45-motion-feedback-actual",
+      "path": "evidence/reference-runtime/r45-motion-feedback-actual/screen.png",
+      "sha256": "b764319b05fa7319176384062453c94cf4a517f7b5df78d5f36e6dc39b46c008",
+      "apkSha256": "15f80f6b9d3b1fc4958118830a14065ed35c7185910276ad40be6876738b04e4",
+      "observed": "??????????????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r46-motion-sheet-actual",
+      "path": "evidence/reference-runtime/r46-motion-sheet-actual/screen.png",
+      "sha256": "1edb505faecd728e370bb5573431ea5ded835f410b1ba4b94023fba9b7240d34",
+      "apkSha256": "15f80f6b9d3b1fc4958118830a14065ed35c7185910276ad40be6876738b04e4",
+      "observed": "???????????????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r47-paperlane-keyboard-fixed",
+      "path": "evidence/reference-runtime/r47-paperlane-keyboard-fixed/screen.png",
+      "sha256": "10c1ecd2849b0fef2283a3015de007712ccb287141c2db98b3f5094e438d1e3b",
+      "apkSha256": "bb31166533d3a309a9974cce5f843bf06cee7f08c2a9c8b3775cca701d3a3c5b",
+      "observed": "??????????????????",
+      "outcome": "failed-historical-attempt"
+    },
+    {
+      "scene": "r48-paperlane-ime-layout",
+      "path": "evidence/reference-runtime/r48-paperlane-ime-layout/screen.png",
+      "sha256": "5cdce55f5b89655b2ab4e8c94385417e3ba1b28584fadfa6b78dc5a3d43984d3",
+      "apkSha256": "6794c1096bcf40e2dfb8d6a5e94e3e7074f17876c524260de0a8f04c72f09ba0",
+      "observed": "???????????????IME???????",
+      "outcome": "failed-historical-attempt"
+    },
+    {
+      "scene": "r49-current-course",
+      "path": "evidence/reference-runtime/r49-current-course/screen.png",
+      "sha256": "a17061817646aa1b78e0e55236586a44c65b29218c59f04d3ddf968a3a3c7042",
+      "apkSha256": "6794c1096bcf40e2dfb8d6a5e94e3e7074f17876c524260de0a8f04c72f09ba0",
+      "observed": "6794????????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r50-reduced-motion-before",
+      "path": "evidence/reference-runtime/r50-reduced-motion-before/screen.png",
+      "sha256": "ee3707673ff5039f41acc6f92340c543393895bd558c8598fc752a70efd63c79",
+      "apkSha256": "6794c1096bcf40e2dfb8d6a5e94e3e7074f17876c524260de0a8f04c72f09ba0",
+      "observed": "reduceMotion=true??",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r51-reduced-motion-after",
+      "path": "evidence/reference-runtime/r51-reduced-motion-after/screen.png",
+      "sha256": "58b517e3556d60d1c683e5f186ae41c9d6a66ae06fa0d56696d0bfb1727c2126",
+      "apkSha256": "6794c1096bcf40e2dfb8d6a5e94e3e7074f17876c524260de0a8f04c72f09ba0",
+      "observed": "reduceMotion=true????????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r52-paperlane-ime-settled",
+      "path": "evidence/reference-runtime/r52-paperlane-ime-settled/screen.png",
+      "sha256": "af88baecbbbf04d10f2e14c15840866c27d082e6cf806ab1d65641daa5a23edc",
+      "apkSha256": "39c2ace67733c08f7124392e519fb4aa5014a6ccfd2fb7493bfcbba62cc59b11",
+      "observed": "??39c2?????IME??????/???/???",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r53-paperlane-ime-later",
+      "path": "evidence/reference-runtime/r53-paperlane-ime-later/screen.png",
+      "sha256": "394b7579f5d40810a01e0deba05a95088811b102451fca427278191ffac8bbba",
+      "apkSha256": "39c2ace67733c08f7124392e519fb4aa5014a6ccfd2fb7493bfcbba62cc59b11",
+      "observed": "??39c2????????????IME??",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r54-delivery-course",
+      "path": "evidence/reference-runtime/r54-delivery-course/screen.png",
+      "sha256": "75f683752b75abfb8a7d3f05af5b2cd134ae4ef93158d4fc5d1549a7ebe9105e",
+      "apkSha256": "39c2ace67733c08f7124392e519fb4aa5014a6ccfd2fb7493bfcbba62cc59b11",
+      "observed": "????39c2????????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r55-delivery-paperlane-success",
+      "path": "evidence/reference-runtime/r55-delivery-paperlane-success/screen.png",
+      "sha256": "20d81702c32be522d823cc4eae8bd00dd11427860a9fc4a7a6e4a45f46209500",
+      "apkSha256": "39c2ace67733c08f7124392e519fb4aa5014a6ccfd2fb7493bfcbba62cc59b11",
+      "observed": "??????????????????????success????????",
+      "outcome": "no-visible-transition-not-passed"
+    },
+    {
+      "scene": "r56-delivery-error-stable",
+      "path": "evidence/reference-runtime/r56-delivery-error-stable/screen.png",
+      "sha256": "c10d898c950423e41f2553d1579bd6836574c6ffedb6c49d631bb4f65e3ee9ec",
+      "apkSha256": "39c2ace67733c08f7124392e519fb4aa5014a6ccfd2fb7493bfcbba62cc59b11",
+      "observed": "?????????????????",
+      "outcome": "observed-within-scope"
+    },
+    {
+      "scene": "r57-delivery-retry-success",
+      "path": "evidence/reference-runtime/r57-delivery-retry-success/screen.png",
+      "sha256": "2786fe7e6b0a7755b0a3f114382caf3d2743d7a28888416acac5bc3d727baad3",
+      "apkSha256": "39c2ace67733c08f7124392e519fb4aa5014a6ccfd2fb7493bfcbba62cc59b11",
+      "observed": "?????????TRY AGAIN?????????????",
+      "outcome": "observed-within-scope"
+    }
+  ],
+  "clips": [
+    {
+      "name": "progress-video",
+      "metadata": {
+        "duration": 0.699144,
+        "width": 720,
+        "height": 1280
+      },
+      "measurement": "fillRight",
+      "distinctMeasuredValues": [
+        "135",
+        "177",
+        "302",
+        "508"
+      ],
+      "classification": "D",
+      "subject": "reference",
+      "method": "Android screenrecord of independent native reference; exact-label UI target selected from fresh tree",
+      "actionAt": "2026-10-19T09:42:04.648Z",
+      "label": "ANIMATE PROGRESS",
+      "bounds": [
+        40,
+        403,
+        680,
+        507
+      ],
+      "video": "evidence/reference-revision/motion/progress-video/screenrecord.mp4",
+      "sha256": "2c31cf985cba9ae4cd1bde16c1eaf868120d87ffa162959a24813d08f78d0d17",
+      "target": {
+        "package": "org.reastyle.nativeexample",
+        "versionName": "0.2",
+        "versionCode": 2,
+        "apkSha256": "bb31166533d3a309a9974cce5f843bf06cee7f08c2a9c8b3775cca701d3a3c5b",
+        "deviceApk": "/data/app/~~ORUxVNvWlEK1R2CUR7CqLA==/org.reastyle.nativeexample-f-xWtNe_13adZ9Zn6G6YLA==/base.apk"
+      },
+      "commands": [
+        {
+          "args": [
+            "shell",
+            "getprop",
+            "ro.boot.qemu.avd_name"
+          ],
+          "startedAt": "2026-10-19T09:42:00.447Z",
+          "finishedAt": "2026-10-19T09:42:00.554Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "am",
+            "get-current-user"
+          ],
+          "startedAt": "2026-10-19T09:42:00.554Z",
+          "finishedAt": "2026-10-19T09:42:00.798Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "dumpsys",
+            "activity",
+            "activities"
+          ],
+          "startedAt": "2026-10-19T09:42:00.798Z",
+          "finishedAt": "2026-10-19T09:42:00.986Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "uiautomator",
+            "dump",
+            "/data/local/tmp/duolingo-reference-video-67312-1792402920986-e38f892112241b28.xml"
+          ],
+          "startedAt": "2026-10-19T09:42:00.987Z",
+          "finishedAt": "2026-10-19T09:42:03.475Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "test",
+            "-s",
+            "/data/local/tmp/duolingo-reference-video-67312-1792402920986-e38f892112241b28.xml"
+          ],
+          "startedAt": "2026-10-19T09:42:03.475Z",
+          "finishedAt": "2026-10-19T09:42:03.563Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "cat",
+            "/data/local/tmp/duolingo-reference-video-67312-1792402920986-e38f892112241b28.xml"
+          ],
+          "startedAt": "2026-10-19T09:42:03.563Z",
+          "finishedAt": "2026-10-19T09:42:03.676Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "rm",
+            "-f",
+            "/data/local/tmp/duolingo-reference-video-67312-1792402920986-e38f892112241b28.xml"
+          ],
+          "startedAt": "2026-10-19T09:42:03.676Z",
+          "finishedAt": "2026-10-19T09:42:03.812Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "dumpsys",
+            "activity",
+            "activities"
+          ],
+          "startedAt": "2026-10-19T09:42:04.533Z",
+          "finishedAt": "2026-10-19T09:42:04.647Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "input",
+            "tap",
+            "360",
+            "455"
+          ],
+          "startedAt": "2026-10-19T09:42:04.648Z",
+          "finishedAt": "2026-10-19T09:42:04.808Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "pull",
+            "/sdcard/rea-reference-progress-video.mp4",
+            "C:\\Users\\edsjrcheng\\Desktop\\dlguiphone\\research\\duolingo-android\\evidence\\reference-revision\\motion\\progress-video\\screenrecord.mp4"
+          ],
+          "startedAt": "2026-10-19T09:42:08.611Z",
+          "finishedAt": "2026-10-19T09:42:08.700Z",
+          "status": 0,
+          "stderr": "/sdcard/rea-reference-progress-video.mp4: 1 file pulled, 0 skipped. 8.6 MB/s (63130 bytes in 0.007s)\r\n"
+        },
+        {
+          "args": [
+            "shell",
+            "rm",
+            "-f",
+            "/sdcard/rea-reference-progress-video.mp4"
+          ],
+          "startedAt": "2026-10-19T09:42:08.700Z",
+          "finishedAt": "2026-10-19T09:42:08.793Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "dumpsys",
+            "package",
+            "org.reastyle.nativeexample"
+          ],
+          "startedAt": "2026-10-19T09:42:08.795Z",
+          "finishedAt": "2026-10-19T09:42:08.888Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "pm",
+            "path",
+            "org.reastyle.nativeexample"
+          ],
+          "startedAt": "2026-10-19T09:42:08.888Z",
+          "finishedAt": "2026-10-19T09:42:08.984Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "sha256sum",
+            "/data/app/~~ORUxVNvWlEK1R2CUR7CqLA==/org.reastyle.nativeexample-f-xWtNe_13adZ9Zn6G6YLA==/base.apk"
+          ],
+          "startedAt": "2026-10-19T09:42:08.985Z",
+          "finishedAt": "2026-10-19T09:42:09.098Z",
+          "status": 0,
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "name": "feedback-video",
+      "metadata": {
+        "duration": 1.084611,
+        "width": 720,
+        "height": 1280
+      },
+      "measurement": "feedbackPixel",
+      "distinctMeasuredValues": [
+        "[254,254,252]",
+        "[235,248,252]",
+        "[225,245,254]",
+        "[218,242,254]"
+      ],
+      "classification": "D",
+      "subject": "reference",
+      "method": "Android screenrecord of independent native reference; exact-label UI target selected from fresh tree",
+      "actionAt": "2026-10-19T09:42:12.685Z",
+      "label": "SHOW FEEDBACK",
+      "bounds": [
+        40,
+        696,
+        680,
+        800
+      ],
+      "video": "evidence/reference-revision/motion/feedback-video/screenrecord.mp4",
+      "sha256": "c6d86b214e4ee57ca5de31135c3d59c6f6a3f4921a50fe4cfde76acc293a60ea",
+      "target": {
+        "package": "org.reastyle.nativeexample",
+        "versionName": "0.2",
+        "versionCode": 2,
+        "apkSha256": "bb31166533d3a309a9974cce5f843bf06cee7f08c2a9c8b3775cca701d3a3c5b",
+        "deviceApk": "/data/app/~~ORUxVNvWlEK1R2CUR7CqLA==/org.reastyle.nativeexample-f-xWtNe_13adZ9Zn6G6YLA==/base.apk"
+      },
+      "commands": [
+        {
+          "args": [
+            "shell",
+            "getprop",
+            "ro.boot.qemu.avd_name"
+          ],
+          "startedAt": "2026-10-19T09:42:09.204Z",
+          "finishedAt": "2026-10-19T09:42:09.293Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "am",
+            "get-current-user"
+          ],
+          "startedAt": "2026-10-19T09:42:09.293Z",
+          "finishedAt": "2026-10-19T09:42:09.385Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "dumpsys",
+            "activity",
+            "activities"
+          ],
+          "startedAt": "2026-10-19T09:42:09.385Z",
+          "finishedAt": "2026-10-19T09:42:09.477Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "uiautomator",
+            "dump",
+            "/data/local/tmp/duolingo-reference-video-80064-1792402929478-6ff23f68557ee864.xml"
+          ],
+          "startedAt": "2026-10-19T09:42:09.478Z",
+          "finishedAt": "2026-10-19T09:42:11.579Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "test",
+            "-s",
+            "/data/local/tmp/duolingo-reference-video-80064-1792402929478-6ff23f68557ee864.xml"
+          ],
+          "startedAt": "2026-10-19T09:42:11.579Z",
+          "finishedAt": "2026-10-19T09:42:11.675Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "cat",
+            "/data/local/tmp/duolingo-reference-video-80064-1792402929478-6ff23f68557ee864.xml"
+          ],
+          "startedAt": "2026-10-19T09:42:11.675Z",
+          "finishedAt": "2026-10-19T09:42:11.766Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "rm",
+            "-f",
+            "/data/local/tmp/duolingo-reference-video-80064-1792402929478-6ff23f68557ee864.xml"
+          ],
+          "startedAt": "2026-10-19T09:42:11.767Z",
+          "finishedAt": "2026-10-19T09:42:11.858Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "dumpsys",
+            "activity",
+            "activities"
+          ],
+          "startedAt": "2026-10-19T09:42:12.570Z",
+          "finishedAt": "2026-10-19T09:42:12.685Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "input",
+            "tap",
+            "360",
+            "748"
+          ],
+          "startedAt": "2026-10-19T09:42:12.685Z",
+          "finishedAt": "2026-10-19T09:42:12.782Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "pull",
+            "/sdcard/rea-reference-feedback-video.mp4",
+            "C:\\Users\\edsjrcheng\\Desktop\\dlguiphone\\research\\duolingo-android\\evidence\\reference-revision\\motion\\feedback-video\\screenrecord.mp4"
+          ],
+          "startedAt": "2026-10-19T09:42:16.175Z",
+          "finishedAt": "2026-10-19T09:42:16.263Z",
+          "status": 0,
+          "stderr": "/sdcard/rea-reference-feedback-video.mp4: 1 file pulled, 0 skipped. 9.0 MB/s (47720 bytes in 0.005s)\r\n"
+        },
+        {
+          "args": [
+            "shell",
+            "rm",
+            "-f",
+            "/sdcard/rea-reference-feedback-video.mp4"
+          ],
+          "startedAt": "2026-10-19T09:42:16.263Z",
+          "finishedAt": "2026-10-19T09:42:16.357Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "dumpsys",
+            "package",
+            "org.reastyle.nativeexample"
+          ],
+          "startedAt": "2026-10-19T09:42:16.359Z",
+          "finishedAt": "2026-10-19T09:42:16.470Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "pm",
+            "path",
+            "org.reastyle.nativeexample"
+          ],
+          "startedAt": "2026-10-19T09:42:16.470Z",
+          "finishedAt": "2026-10-19T09:42:16.564Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "sha256sum",
+            "/data/app/~~ORUxVNvWlEK1R2CUR7CqLA==/org.reastyle.nativeexample-f-xWtNe_13adZ9Zn6G6YLA==/base.apk"
+          ],
+          "startedAt": "2026-10-19T09:42:16.564Z",
+          "finishedAt": "2026-10-19T09:42:16.658Z",
+          "status": 0,
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "name": "sheet-video",
+      "metadata": {
+        "duration": 2.061378,
+        "width": 720,
+        "height": 1280
+      },
+      "measurement": "sheetTop",
+      "distinctMeasuredValues": [
+        "null",
+        "651"
+      ],
+      "classification": "D",
+      "subject": "reference",
+      "method": "Android screenrecord of independent native reference; exact-label UI target selected from fresh tree",
+      "actionAt": "2026-10-19T09:42:20.269Z",
+      "label": "OPEN CONFIRMATION",
+      "bounds": [
+        40,
+        832,
+        680,
+        936
+      ],
+      "video": "evidence/reference-revision/motion/sheet-video/screenrecord.mp4",
+      "sha256": "3bdc973fff858a3a09b98859eb3ae6d1ab35389daaa9e6c759aba2ff1d0ca8ae",
+      "target": {
+        "package": "org.reastyle.nativeexample",
+        "versionName": "0.2",
+        "versionCode": 2,
+        "apkSha256": "bb31166533d3a309a9974cce5f843bf06cee7f08c2a9c8b3775cca701d3a3c5b",
+        "deviceApk": "/data/app/~~ORUxVNvWlEK1R2CUR7CqLA==/org.reastyle.nativeexample-f-xWtNe_13adZ9Zn6G6YLA==/base.apk"
+      },
+      "commands": [
+        {
+          "args": [
+            "shell",
+            "getprop",
+            "ro.boot.qemu.avd_name"
+          ],
+          "startedAt": "2026-10-19T09:42:16.759Z",
+          "finishedAt": "2026-10-19T09:42:16.852Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "am",
+            "get-current-user"
+          ],
+          "startedAt": "2026-10-19T09:42:16.852Z",
+          "finishedAt": "2026-10-19T09:42:16.949Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "dumpsys",
+            "activity",
+            "activities"
+          ],
+          "startedAt": "2026-10-19T09:42:16.950Z",
+          "finishedAt": "2026-10-19T09:42:17.043Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "uiautomator",
+            "dump",
+            "/data/local/tmp/duolingo-reference-video-75696-1792402937043-8c4dc5e7c555b8bf.xml"
+          ],
+          "startedAt": "2026-10-19T09:42:17.043Z",
+          "finishedAt": "2026-10-19T09:42:19.170Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "test",
+            "-s",
+            "/data/local/tmp/duolingo-reference-video-75696-1792402937043-8c4dc5e7c555b8bf.xml"
+          ],
+          "startedAt": "2026-10-19T09:42:19.171Z",
+          "finishedAt": "2026-10-19T09:42:19.255Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "cat",
+            "/data/local/tmp/duolingo-reference-video-75696-1792402937043-8c4dc5e7c555b8bf.xml"
+          ],
+          "startedAt": "2026-10-19T09:42:19.255Z",
+          "finishedAt": "2026-10-19T09:42:19.351Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "rm",
+            "-f",
+            "/data/local/tmp/duolingo-reference-video-75696-1792402937043-8c4dc5e7c555b8bf.xml"
+          ],
+          "startedAt": "2026-10-19T09:42:19.351Z",
+          "finishedAt": "2026-10-19T09:42:19.442Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "dumpsys",
+            "activity",
+            "activities"
+          ],
+          "startedAt": "2026-10-19T09:42:20.164Z",
+          "finishedAt": "2026-10-19T09:42:20.269Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "input",
+            "tap",
+            "360",
+            "884"
+          ],
+          "startedAt": "2026-10-19T09:42:20.269Z",
+          "finishedAt": "2026-10-19T09:42:20.375Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "pull",
+            "/sdcard/rea-reference-sheet-video.mp4",
+            "C:\\Users\\edsjrcheng\\Desktop\\dlguiphone\\research\\duolingo-android\\evidence\\reference-revision\\motion\\sheet-video\\screenrecord.mp4"
+          ],
+          "startedAt": "2026-10-19T09:42:23.867Z",
+          "finishedAt": "2026-10-19T09:42:23.973Z",
+          "status": 0,
+          "stderr": "/sdcard/rea-reference-sheet-video.mp4: 1 file pulled, 0 skipped. 19.3 MB/s (319146 bytes in 0.016s)\r\n"
+        },
+        {
+          "args": [
+            "shell",
+            "rm",
+            "-f",
+            "/sdcard/rea-reference-sheet-video.mp4"
+          ],
+          "startedAt": "2026-10-19T09:42:23.973Z",
+          "finishedAt": "2026-10-19T09:42:24.090Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "dumpsys",
+            "package",
+            "org.reastyle.nativeexample"
+          ],
+          "startedAt": "2026-10-19T09:42:24.093Z",
+          "finishedAt": "2026-10-19T09:42:24.186Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "pm",
+            "path",
+            "org.reastyle.nativeexample"
+          ],
+          "startedAt": "2026-10-19T09:42:24.186Z",
+          "finishedAt": "2026-10-19T09:42:24.300Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "sha256sum",
+            "/data/app/~~ORUxVNvWlEK1R2CUR7CqLA==/org.reastyle.nativeexample-f-xWtNe_13adZ9Zn6G6YLA==/base.apk"
+          ],
+          "startedAt": "2026-10-19T09:42:24.300Z",
+          "finishedAt": "2026-10-19T09:42:24.387Z",
+          "status": 0,
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "name": "reduced-progress-video",
+      "metadata": {
+        "duration": 0.822656,
+        "width": 720,
+        "height": 1280
+      },
+      "measurement": "fillRight",
+      "distinctMeasuredValues": [
+        "135",
+        "583"
+      ],
+      "classification": "D",
+      "subject": "reference",
+      "method": "Android screenrecord of independent native reference; exact-label UI target selected from fresh tree",
+      "actionAt": "2026-10-19T09:44:26.061Z",
+      "label": "ANIMATE PROGRESS",
+      "bounds": [
+        40,
+        403,
+        680,
+        507
+      ],
+      "video": "evidence/reference-revision/motion/reduced-progress-video/screenrecord.mp4",
+      "sha256": "9e3563698409aed32916aa2f4c48236041232178fe88d38087f766bf8a979ea2",
+      "target": {
+        "package": "org.reastyle.nativeexample",
+        "versionName": "0.2",
+        "versionCode": 2,
+        "apkSha256": "6794c1096bcf40e2dfb8d6a5e94e3e7074f17876c524260de0a8f04c72f09ba0",
+        "deviceApk": "/data/app/~~s3eJ09_sfU7_pMx88EsDcA==/org.reastyle.nativeexample-BSvVctzXOyyicLbQGNwHOw==/base.apk"
+      },
+      "commands": [
+        {
+          "args": [
+            "shell",
+            "getprop",
+            "ro.boot.qemu.avd_name"
+          ],
+          "startedAt": "2026-10-19T09:44:22.509Z",
+          "finishedAt": "2026-10-19T09:44:22.633Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "am",
+            "get-current-user"
+          ],
+          "startedAt": "2026-10-19T09:44:22.633Z",
+          "finishedAt": "2026-10-19T09:44:22.733Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "dumpsys",
+            "activity",
+            "activities"
+          ],
+          "startedAt": "2026-10-19T09:44:22.733Z",
+          "finishedAt": "2026-10-19T09:44:22.818Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "uiautomator",
+            "dump",
+            "/data/local/tmp/duolingo-reference-video-68660-1792403062819-8556a34d156874f4.xml"
+          ],
+          "startedAt": "2026-10-19T09:44:22.819Z",
+          "finishedAt": "2026-10-19T09:44:24.965Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "test",
+            "-s",
+            "/data/local/tmp/duolingo-reference-video-68660-1792403062819-8556a34d156874f4.xml"
+          ],
+          "startedAt": "2026-10-19T09:44:24.965Z",
+          "finishedAt": "2026-10-19T09:44:25.063Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "cat",
+            "/data/local/tmp/duolingo-reference-video-68660-1792403062819-8556a34d156874f4.xml"
+          ],
+          "startedAt": "2026-10-19T09:44:25.063Z",
+          "finishedAt": "2026-10-19T09:44:25.156Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "rm",
+            "-f",
+            "/data/local/tmp/duolingo-reference-video-68660-1792403062819-8556a34d156874f4.xml"
+          ],
+          "startedAt": "2026-10-19T09:44:25.156Z",
+          "finishedAt": "2026-10-19T09:44:25.248Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "dumpsys",
+            "activity",
+            "activities"
+          ],
+          "startedAt": "2026-10-19T09:44:25.960Z",
+          "finishedAt": "2026-10-19T09:44:26.061Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "input",
+            "tap",
+            "360",
+            "455"
+          ],
+          "startedAt": "2026-10-19T09:44:26.061Z",
+          "finishedAt": "2026-10-19T09:44:26.158Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "pull",
+            "/sdcard/rea-reference-reduced-progress-video.mp4",
+            "C:\\Users\\edsjrcheng\\Desktop\\dlguiphone\\research\\duolingo-android\\evidence\\reference-revision\\motion\\reduced-progress-video\\screenrecord.mp4"
+          ],
+          "startedAt": "2026-10-19T09:44:29.570Z",
+          "finishedAt": "2026-10-19T09:44:29.655Z",
+          "status": 0,
+          "stderr": "/sdcard/rea-reference-reduced-progress-video.mp4: 1 file pulled, 0 skipped. 5.8 MB/s (31454 bytes in 0.005s)\r\n"
+        },
+        {
+          "args": [
+            "shell",
+            "rm",
+            "-f",
+            "/sdcard/rea-reference-reduced-progress-video.mp4"
+          ],
+          "startedAt": "2026-10-19T09:44:29.656Z",
+          "finishedAt": "2026-10-19T09:44:29.768Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "dumpsys",
+            "package",
+            "org.reastyle.nativeexample"
+          ],
+          "startedAt": "2026-10-19T09:44:29.770Z",
+          "finishedAt": "2026-10-19T09:44:29.861Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "pm",
+            "path",
+            "org.reastyle.nativeexample"
+          ],
+          "startedAt": "2026-10-19T09:44:29.861Z",
+          "finishedAt": "2026-10-19T09:44:29.960Z",
+          "status": 0,
+          "stderr": ""
+        },
+        {
+          "args": [
+            "shell",
+            "sha256sum",
+            "/data/app/~~s3eJ09_sfU7_pMx88EsDcA==/org.reastyle.nativeexample-BSvVctzXOyyicLbQGNwHOw==/base.apk"
+          ],
+          "startedAt": "2026-10-19T09:44:29.960Z",
+          "finishedAt": "2026-10-19T09:44:30.055Z",
+          "status": 0,
+          "stderr": ""
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "course": {
+      "source.Spanish": [
+        180,
+        581,
+        305,
+        614
+      ],
+      "source.French": [
+        181,
+        733,
+        286,
+        759
+      ],
+      "source.Heading": [
+        35,
+        457,
+        367,
+        490
+      ],
+      "source.Bubble": [
+        313,
+        244,
+        622,
+        323
+      ],
+      "revised.Spanish": [
+        180,
+        581,
+        305,
+        614
+      ],
+      "revised.French": [
+        181,
+        733,
+        286,
+        759
+      ],
+      "revised.Heading": [
+        35,
+        457,
+        367,
+        490
+      ],
+      "revised.Bubble": [
+        313,
+        244,
+        622,
+        323
+      ]
+    },
+    "building": {
+      "source.title": [
+        135,
+        705,
+        584,
+        738
+      ],
+      "source.body": [
+        85,
+        827,
+        636,
+        988
+      ],
+      "revised.title": [
+        135,
+        705,
+        584,
+        738
+      ],
+      "revised.body": [
+        85,
+        827,
+        635,
+        988
+      ]
+    }
+  },
+  "tests": [
+    {
+      "name": "current-build-and-signature",
+      "pass": true
+    },
+    {
+      "name": "20-state-contract-assertions",
+      "pass": true
+    },
+    {
+      "name": "course-selected-ui",
+      "pass": true
+    },
+    {
+      "name": "course-back-reset",
+      "pass": true
+    },
+    {
+      "name": "course-text-ink-anchors",
+      "pass": true
+    },
+    {
+      "name": "building-title-ink-anchor",
+      "pass": true
+    },
+    {
+      "name": "chinese-font2-runtime",
+      "pass": true
+    },
+    {
+      "name": "640-and1080-runtime",
+      "pass": true
+    },
+    {
+      "name": "dark-runtime",
+      "pass": true
+    },
+    {
+      "name": "final-ime-focused-input",
+      "pass": true
+    },
+    {
+      "name": "final-retry-real-success",
+      "pass": true
+    },
+    {
+      "name": "progress-intermediate-frames",
+      "pass": true
+    },
+    {
+      "name": "feedback-intermediate-frames",
+      "pass": true
+    },
+    {
+      "name": "reduced-progress-direct-states",
+      "pass": true
+    },
+    {
+      "name": "restored-scoped-environment",
+      "pass": true
+    }
+  ],
+  "limits": [
+    "原版运行字体绑定仍未知；采用Duolingo Sans19sp的D选择校准文字，像素锚吻合不证明原版Typeface内部绑定。",
+    "角色姿态/原版Lottie与Rive、全部组件族、全App深色/完整中文及真实读屏/触觉仍未完成同条件还原。",
+    "原版fontScale历史为未知；当前参考fontScale1.0，不能把画布匹配称所有条件完全相同。",
+    "四份录像分别保留录制构建SHA；部分前置适配样本是15f构建、录像为bb311/6794，最终39c只改输入焦点/IME流程并另做最终课程、IME与重试复核。",
+    "screenrecord编码时长小于宿主4秒录制窗口，解码采样只证明可见中间状态，不能当作原版动画时长或精确Android呈现时间。",
+    "r38/r47输入裁切、r48未保持输入焦点、r42/r43未命中控件、r55仍为错误页均保留，未计为通过。"
+  ],
+  "restoration": "evidence/reference-revision/restoration.json",
+  "comparison": "comparison/native-revision.html",
+  "report": "docs/reference-revision.md"
+}

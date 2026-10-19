@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "implementationClassification": "D",
+  "source": {
+    "package": "com.duolingo",
+    "version": "6.80.6-china",
+    "versionCode": 2368,
+    "apkSha256": "ebdbcbdaa0d30f0141dbfc31953e650b28b5fd35b7faf7787751223661deaab8"
+  },
+  "units": {
+    "geometry": "dp",
+    "type": "sp",
+    "letterSpacing": "Android em",
+    "colors": "Android ARGB; all implementation palette literals here are opaque"
+  },
+  "tokens": {
+    "page": {
+      "value": "#fffffd",
+      "basis": "A pixel and B juicySnow; tokens/package-tokens.json"
+    },
+    "primaryFace": {
+      "value": "#58cc02",
+      "basis": "A source course CTA / B juicyOwl"
+    },
+    "primaryLip": {
+      "value": "#58a700",
+      "basis": "A sampled CTA lip / B juicyTreeFrog"
+    },
+    "modalFace": {
+      "value": "#1cb0f6",
+      "basis": "A modal action role / B juicyMacaw"
+    },
+    "selectedFace": {
+      "value": "#ddf4ff",
+      "basis": "A sampled course card / B juicyIguana"
+    },
+    "selectedBorder": {
+      "value": "#84d8ff",
+      "basis": "A sampled course card / B juicyBlueJay"
+    },
+    "buttonHeight": {
+      "value": 52,
+      "unit": "dp",
+      "basis": "A 104px at320dpi and B TransparentButton"
+    },
+    "buttonRadius": {
+      "value": 16,
+      "unit": "dp",
+      "basis": "B TransparentButton; not independently measured at runtime"
+    },
+    "lipHeight": {
+      "value": 4,
+      "unit": "dp",
+      "basis": "B juicyLipHeight"
+    },
+    "text": {
+      "value": "Duolingo Sans packaged19sp source-reference candidate / system sans for transfer-*",
+      "basis": "D visual calibration, not source runtime Typeface recovery"
+    }
+  },
+  "components": [
+    {
+      "id": "button",
+      "implementation": "Components.Button",
+      "inputs": [
+        "text",
+        "typeface",
+        "face",
+        "lip",
+        "transparent",
+        "enabled"
+      ],
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "event": "Native View click invokes owner listener once per accepted click; owner validates screen/state",
+      "sourceBasis": "B geometry and A disabled/enabled course linkage",
+      "independentChoices": [
+        "80ms D press/release offset; reduced-motion immediate",
+        "Disabled surface begins4dp below button bounds, calibrated to course sample",
+        "Native focus semantics; no initial automatic focus rectangle"
+      ],
+      "unknownSource": [
+        "pressed motion",
+        "touch target expansion",
+        "haptic feedback",
+        "busy indicator policy"
+      ]
+    },
+    {
+      "id": "navigation",
+      "implementation": "MainActivity.addToolbar",
+      "states": [
+        "back",
+        "progress",
+        "Paperlane brand"
+      ],
+      "event": "Back calls FlowState.back",
+      "sourceBasis": "A/B48dp toolbar and source Back reset case",
+      "independentChoices": [
+        "Back uses a system-rendered chevron glyph and40x48dp target",
+        "Paperlane brand in toolbar"
+      ],
+      "unknownSource": [
+        "source screen Back and system Back equivalence"
+      ]
+    },
+    {
+      "id": "choice-card",
+      "implementation": "Components.ChoiceCard",
+      "inputs": [
+        "title",
+        "typeface",
+        "multiple",
+        "checked",
+        "icon"
+      ],
+      "states": [
+        "unchecked",
+        "checked"
+      ],
+      "event": "Owner sets course index or toggles transfer bit; then updates cards and CTA without recreating screen",
+      "sourceBasis": "A selected card synchronizes face,border,text and CTA",
+      "independentChoices": [
+        "D19sp packaged Duolingo Sans; default64dp, content-driven height under large type/narrow width",
+        "Source-reference single choice; transfer multiple choice",
+        "Native RadioButton/CheckBox semantics remain D"
+      ],
+      "unknownSource": [
+        "original reselection behavior",
+        "original keyboard or TalkBack contract"
+      ]
+    },
+    {
+      "id": "checkbox",
+      "implementation": "Gallery native CheckBox plus packaged source selector",
+      "states": [
+        "unchecked",
+        "checked"
+      ],
+      "event": "Native checkable state; no source application preference is modified",
+      "sourceBasis": "B selector has enabled/checked variants",
+      "independentChoices": [
+        "Native widget owns toggle and accessibility",
+        "No persistent preference"
+      ]
+    },
+    {
+      "id": "input",
+      "implementation": "Native EditText with Face drawable",
+      "inputs": [
+        "text",
+        "hint",
+        "singleLine for Paperlane"
+      ],
+      "states": [
+        "empty",
+        "focused",
+        "edited",
+        "invalid Paperlane name"
+      ],
+      "event": "TextWatcher stores name; submit validates trim; invalid keeps selection and requests input focus",
+      "sourceBasis": "B Polar face,2dp stroke,16dp padding/radius",
+      "independentChoices": [
+        "On editing focus, collapse decorative guide after completed tap; show real IME and retain input/CTA",
+        "Source internal composing and save contracts are not inferred"
+      ]
+    },
+    {
+      "id": "progress",
+      "implementation": "Components.Progress",
+      "inputs": [
+        "0..1 fraction"
+      ],
+      "event": "setProgress clamps and redraws; accessibility range is exposed",
+      "sourceBasis": "B16dp green progress and source A toolbar presence",
+      "independentChoices": [
+        "D180ms progress interpolation; zero draws no fill",
+        "Reduced-motion updates immediately"
+      ]
+    },
+    {
+      "id": "loading",
+      "implementation": "Source building and Paperlane pending scenes",
+      "event": "Source stays pending until Back; Paperlane local Handler completion uses generation token",
+      "sourceBasis": "A source building visible, completion unknown",
+      "independentChoices": [
+        "Static source character replaces animation",
+        "Paperlane1200ms local fixture",
+        "Back cancels pending callback and invalidates late completion",
+        "Foreground restart reschedules Paperlane fixture"
+      ]
+    },
+    {
+      "id": "modal",
+      "implementation": "Native Dialog bottom gravity",
+      "inputs": [
+        "title",
+        "body",
+        "primary",
+        "secondary",
+        "cancelable"
+      ],
+      "event": "One modal at a time; re-render dismisses prior instance; confirmation actions belong to Activity",
+      "sourceBasis": "A privacy system Back remains; B top corners16dp / dim0.4",
+      "independentChoices": [
+        "No drag gesture",
+        "Privacy/age outside tap and Back blocked",
+        "Age under14 and privacy decline finish independent sample",
+        "Gallery confirmation allows outside tap and Back",
+        "Privacy links are colored but inactive"
+      ],
+      "unknownSource": [
+        "age Back",
+        "privacy outside tap",
+        "drag",
+        "focus trap",
+        "decline result",
+        "consent persistence"
+      ]
+    },
+    {
+      "id": "pointing-card",
+      "implementation": "Components.Bubble",
+      "inputs": [
+        "native text content"
+      ],
+      "states": [
+        "visible static"
+      ],
+      "sourceBasis": "B PointingCard border/corner and A guide layout",
+      "independentChoices": [
+        "Static leading arrow and native text; no typewriter, auto-dismiss, frequency rule or anchoring engine"
+      ]
+    },
+    {
+      "id": "guidance",
+      "implementation": "MainActivity guide/header + footer composition",
+      "event": "Owner controls next screen; source and transfer copy/assets are separate",
+      "sourceBasis": "A visible role/bubble/options/footer grouping and B underlying layouts",
+      "independentChoices": [
+        "Static package owl for source; independent PaperMark for Paperlane",
+        "No narration, typewriter, feature experiments or persistent completion marker"
+      ]
+    }
+  ],
+  "transitions": [
+    {
+      "from": "source-course empty",
+      "event": "Continue",
+      "to": "unchanged",
+      "implementedAs": "disabled CTA and state guard",
+      "sourceClassification": "A/B"
+    },
+    {
+      "from": "source-course empty",
+      "event": "Spanish card",
+      "to": "course selected + Continue enabled",
+      "sourceClassification": "A"
+    },
+    {
+      "from": "source-course selected",
+      "event": "Continue",
+      "to": "building",
+      "sourceClassification": "A",
+      "sideEffect": "D local state only; no source backend"
+    },
+    {
+      "from": "source-building",
+      "event": "Back",
+      "to": "source-course empty + Continue disabled",
+      "sourceClassification": "A",
+      "limitation": "No claim of source request cancellation"
+    },
+    {
+      "from": "source-privacy",
+      "event": "system Back",
+      "to": "source-privacy",
+      "sourceClassification": "A",
+      "extraD": "Outside tap also blocked by implementation; source outside behavior unknown"
+    },
+    {
+      "from": "source-age",
+      "event": "adult choice",
+      "to": "source-welcome",
+      "sourceClassification": "A",
+      "extraD": "Gate state is not persisted"
+    },
+    {
+      "from": "transfer edited",
+      "event": "organize valid form",
+      "to": "local pending -> done/error",
+      "sourceClassification": "D"
+    },
+    {
+      "from": "transfer pending",
+      "event": "Back",
+      "to": "transfer with draft + selections retained",
+      "sourceClassification": "D",
+      "sideEffect": "Cancels local callback, invalidates generation"
+    },
+    {
+      "from": "transfer error",
+      "event": "Retry",
+      "to": "new local pending -> done",
+      "sourceClassification": "D",
+      "sideEffect": "Old generation cannot complete retry"
+    }
+  ],
+  "currentRevision": "revision.json"
+}

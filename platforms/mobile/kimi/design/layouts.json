@@ -1,0 +1,111 @@
+{
+  "formatVersion": 1,
+  "kind": "layouts",
+  "items": [
+    {
+      "id": "l-chat",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "e-be71341e419331"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse composition, replace original model/document services and brand."
+      },
+      "name": "聊天与结果",
+      "componentRefs": [
+        "c-native-composer",
+        "c-answer-and-feedback",
+        "c-model-option-sheet"
+      ],
+      "rules": [
+        "顶部上下文/导航",
+        "可滚动消息和反馈",
+        "独立底部多行输入；键盘不遮操作"
+      ],
+      "responsive": "Target D: respect safe areas, content reflow and native IME; no fixed screenshot scaling."
+    },
+    {
+      "id": "l-appearance",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "e-be71341e419331"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse composition, replace original model/document services and brand."
+      },
+      "name": "外观设置",
+      "componentRefs": [
+        "c-appearance-rows",
+        "c-destructive-confirmation"
+      ],
+      "rules": [
+        "分组行",
+        "选项预览",
+        "保存/取消与已提交值分离"
+      ],
+      "responsive": "Target D: respect safe areas, content reflow and native IME; no fixed screenshot scaling."
+    },
+    {
+      "id": "l-document-editor",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "e-be71341e419331"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse composition, replace original model/document services and brand."
+      },
+      "name": "跨业务文档编辑",
+      "componentRefs": [
+        "c-document-library-and-editor",
+        "c-destructive-confirmation"
+      ],
+      "rules": [
+        "资料库→编辑",
+        "草稿/保存忙碌/失败",
+        "取消与返回不隐式提交"
+      ],
+      "responsive": "Target D: respect safe areas, content reflow and native IME; no fixed screenshot scaling."
+    },
+    {
+      "id": "l-error",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "e-be71341e419331"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse composition, replace original model/document services and brand."
+      },
+      "name": "容量/网络错误",
+      "componentRefs": [
+        "c-source-capacity-error-fixture",
+        "c-native-composer"
+      ],
+      "rules": [
+        "保留失败输入",
+        "具体错误与下一步",
+        "显式重试，仍可编辑新草稿"
+      ],
+      "responsive": "Target D: respect safe areas, content reflow and native IME; no fixed screenshot scaling."
+    }
+  ]
+}

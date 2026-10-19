@@ -1,0 +1,3336 @@
+{
+  "formatVersion": 1,
+  "kind": "interactions",
+  "items": [
+    {
+      "id": "interaction-choice-continue-back",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-05-course-picker",
+        "ev-06-course-selected",
+        "ev-07-after-course-choice",
+        "ev-08-course-return"
+      ],
+      "componentRefs": [
+        "component-choice-card",
+        "component-button",
+        "component-navigation",
+        "component-loading"
+      ],
+      "transitions": [
+        {
+          "from": "unselected",
+          "event": "tap Spanish",
+          "to": "selected",
+          "result": "Blue selection and Continue enabled",
+          "evidenceRefs": [
+            "ev-06-course-selected"
+          ]
+        },
+        {
+          "from": "selected",
+          "event": "Continue",
+          "to": "building",
+          "result": "Building page visible",
+          "evidenceRefs": [
+            "ev-07-after-course-choice"
+          ]
+        },
+        {
+          "from": "building",
+          "event": "system Back",
+          "to": "unselected",
+          "result": "Returns with selection cleared and Continue disabled",
+          "evidenceRefs": [
+            "ev-08-course-return"
+          ]
+        }
+      ],
+      "unknowns": [
+        "Request cancellation",
+        "Late result",
+        "Toolbar Back equivalence",
+        "Reselection"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Preserve visible linkage; target cancellation/draft policies are separate D decisions."
+      }
+    },
+    {
+      "id": "interaction-invalid-form-reentry",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-134-forgot-password-empty",
+        "ev-135-forgot-invalid-email-validation",
+        "ev-141-forgot-reentry-draft"
+      ],
+      "componentRefs": [
+        "component-input",
+        "component-button"
+      ],
+      "transitions": [
+        {
+          "from": "empty",
+          "event": "enter invalid synthetic email and submit",
+          "to": "feedback",
+          "result": "Invalid/no-account UI in bounded recovery case",
+          "evidenceRefs": [
+            "ev-135-forgot-invalid-email-validation"
+          ]
+        },
+        {
+          "from": "recovery draft",
+          "event": "Back then reopen recovery",
+          "to": "empty focused Email",
+          "result": "Old draft absent in observed reentry",
+          "evidenceRefs": [
+            "ev-141-forgot-reentry-draft"
+          ]
+        }
+      ],
+      "unknowns": [
+        "Real email delivery",
+        "Account existence service",
+        "Generic save/cancel semantics"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "For target forms choose retention explicitly; do not inherit original account workflow or send email."
+      }
+    },
+    {
+      "id": "interaction-feedback-acknowledge",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-16-incorrect-panel-stable"
+      ],
+      "componentRefs": [
+        "component-feedback",
+        "component-button"
+      ],
+      "transitions": [
+        {
+          "from": "incorrect feedback",
+          "event": "Got It",
+          "to": "next exercise",
+          "result": "Historical runtime-round2 documents acknowledgement before advancement",
+          "evidenceRefs": [
+            "ev-16-incorrect-panel-stable"
+          ]
+        }
+      ],
+      "unknowns": [
+        "Timing and all result variants",
+        "Scoring/retry algorithm"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Use explicit acknowledgement or retry matching target task; add representative comparison."
+      }
+    },
+    {
+      "id": "interaction-transfer-cancel-retry",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-reference-flow",
+        "ev-transfer-map",
+        "ev-r13-paperlane-after-cancel",
+        "ev-r23-final-paperlane-retry"
+      ],
+      "componentRefs": [
+        "component-input",
+        "component-loading",
+        "component-button"
+      ],
+      "transitions": [
+        {
+          "from": "edited",
+          "event": "valid submit",
+          "to": "local pending",
+          "result": "Schedules local fixture; no real file operation",
+          "evidenceRefs": [
+            "ev-reference-flow"
+          ]
+        },
+        {
+          "from": "pending",
+          "event": "Back",
+          "to": "edited",
+          "result": "Preserves draft/selections; invalidates local generation",
+          "evidenceRefs": [
+            "ev-r13-paperlane-after-cancel",
+            "ev-reference-flow"
+          ]
+        },
+        {
+          "from": "local error",
+          "event": "Try Again",
+          "to": "done",
+          "result": "Retry success in same final-reference instance",
+          "evidenceRefs": [
+            "ev-r23-final-paperlane-retry"
+          ]
+        }
+      ],
+      "unknowns": [
+        "Real target networking/files and process-death persistence"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Keep target business semantics; sample generation cancellation is independent D, not source evidence."
+      }
+    },
+    {
+      "id": "interaction-legacy-local-privacy-system-back",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-7ff7e9c8e8f6",
+        "ev-file-22e2064c91e0",
+        "ev-file-27798ee4cc57"
+      ],
+      "unknowns": [
+        "focus trap",
+        "outside tap",
+        "drag",
+        "links",
+        "decline outcome",
+        "consent persistence",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-modal",
+        "component-navigation"
+      ],
+      "transitions": [
+        {
+          "from": "privacy-overlay",
+          "event": "system Back",
+          "to": "privacy-overlay",
+          "result": "Same policy title/body/actions remain in the post-action UI hierarchy",
+          "evidenceRefs": [
+            "ev-capture-7ff7e9c8e8f6",
+            "ev-file-22e2064c91e0",
+            "ev-file-27798ee4cc57"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.privacy.system-back"
+    },
+    {
+      "id": "interaction-legacy-local-age-adult-test-choice",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-66c2a99ff6e6",
+        "ev-capture-91cd2045caf2",
+        "ev-file-27798ee4cc57"
+      ],
+      "unknowns": [
+        "under-14 branch",
+        "age-state persistence",
+        "repeat gate conditions",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-button"
+      ],
+      "transitions": [
+        {
+          "from": "underage-policy-overlay",
+          "event": "tap I AM 14 AND ABOVE for test profile",
+          "to": "duo-greeting",
+          "result": "Age-gate PNG followed by action and greeting PNG",
+          "evidenceRefs": [
+            "ev-capture-66c2a99ff6e6",
+            "ev-capture-91cd2045caf2",
+            "ev-file-27798ee4cc57"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.age.adult-test-choice"
+    },
+    {
+      "id": "interaction-legacy-local-course-select",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-05-course-picker",
+        "ev-06-course-selected"
+      ],
+      "unknowns": [
+        "reselect toggling",
+        "other courses",
+        "keyboard selection",
+        "network effects",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-choice-card",
+        "component-guidance"
+      ],
+      "transitions": [
+        {
+          "from": "course-list-unselected",
+          "event": "tap Spanish card",
+          "to": "course-list-spanish-selected",
+          "result": "[\"card and descendants selected=true\",\"primaryButton enabled=true\",\"blue selected card and green CTA\"]",
+          "evidenceRefs": [
+            "ev-05-course-picker",
+            "ev-06-course-selected"
+          ],
+          "preconditions": [
+            "Spanish card visible"
+          ],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "card and descendants selected=true",
+            "primaryButton enabled=true",
+            "blue selected card and green CTA"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.course.select"
+    },
+    {
+      "id": "interaction-legacy-local-course-continue",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-06-course-selected",
+        "ev-07-after-course-choice",
+        "ev-file-27798ee4cc57"
+      ],
+      "unknowns": [
+        "request identity",
+        "completion",
+        "duplicate submission",
+        "errors",
+        "retry",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-choice-card",
+        "component-guidance"
+      ],
+      "transitions": [
+        {
+          "from": "course-list-spanish-selected",
+          "event": "tap Continue",
+          "to": "course-building",
+          "result": "[\"COURSE BUILDING screen appears\"]",
+          "evidenceRefs": [
+            "ev-06-course-selected",
+            "ev-07-after-course-choice",
+            "ev-file-27798ee4cc57"
+          ],
+          "preconditions": [
+            "Continue enabled"
+          ],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "COURSE BUILDING screen appears"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.course.continue"
+    },
+    {
+      "id": "interaction-legacy-local-course-loading-back",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-07-after-course-choice",
+        "ev-08-course-return",
+        "ev-file-27798ee4cc57"
+      ],
+      "unknowns": [
+        "underlying request cancellation",
+        "late result behavior",
+        "toolbar Back equivalence",
+        "behavior after course construction completes",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-choice-card",
+        "component-guidance"
+      ],
+      "transitions": [
+        {
+          "from": "course-building",
+          "event": "system Back",
+          "to": "course-list-unselected",
+          "result": "[\"Spanish no longer selected\",\"Continue disabled\"]",
+          "evidenceRefs": [
+            "ev-07-after-course-choice",
+            "ev-08-course-return",
+            "ev-file-27798ee4cc57"
+          ],
+          "preconditions": [],
+          "stateRetention": {
+            "courseSelection": "reset",
+            "scroll": "not tested",
+            "focus": "unknown",
+            "draft": "not applicable to observed selection"
+          },
+          "sideEffectsObserved": [
+            "Spanish no longer selected",
+            "Continue disabled"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.course.loading-back"
+    },
+    {
+      "id": "interaction-legacy-local-exercise-incorrect",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-16-incorrect-panel-stable",
+        "ev-file-4d3481dc1bb0"
+      ],
+      "unknowns": [
+        "scoring internals",
+        "full retry schedule",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-button"
+      ],
+      "transitions": [
+        {
+          "from": "image-answer-selected",
+          "event": "Check deliberately wrong answer",
+          "to": "incorrect-feedback",
+          "result": "[\"red card and error surface\",\"correct answer displayed\",\"Got It advances to next observed exercise\"]",
+          "evidenceRefs": [
+            "ev-16-incorrect-panel-stable",
+            "ev-file-4d3481dc1bb0"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "red card and error surface",
+            "correct answer displayed",
+            "Got It advances to next observed exercise"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.exercise.incorrect"
+    },
+    {
+      "id": "interaction-legacy-local-exercise-skip-listening",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-29a4410dbcfa",
+        "ev-capture-9a0c30981b2c",
+        "ev-capture-cdaeb78a0680"
+      ],
+      "unknowns": [
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-media-control",
+        "component-feedback"
+      ],
+      "transitions": [
+        {
+          "from": "listening-exercise",
+          "event": "Cannot Listen Now",
+          "to": "skip-listening-feedback",
+          "result": "[\"scope copy says this lesson\",\"Continue reaches translation exercise\",\"later global Listening exercises toggle still true\"]",
+          "evidenceRefs": [
+            "ev-capture-29a4410dbcfa",
+            "ev-capture-9a0c30981b2c",
+            "ev-capture-cdaeb78a0680"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "scope copy says this lesson",
+            "Continue reaches translation exercise",
+            "later global Listening exercises toggle still true"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.exercise.skip-listening"
+    },
+    {
+      "id": "interaction-legacy-local-preference-animation-retention",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-cdaeb78a0680",
+        "ev-capture-c345edeef02a",
+        "ev-capture-3edb6c2c9648",
+        "ev-capture-3bd4a674db0d"
+      ],
+      "unknowns": [
+        "backend persistence timing",
+        "cross-device sync",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-settings-group",
+        "component-notice"
+      ],
+      "transitions": [
+        {
+          "from": "Animations=true",
+          "event": "toggle off, leave page, re-enter",
+          "to": "Animations=false",
+          "result": "[\"state retained without explicit Save\",\"test later restored true\"]",
+          "evidenceRefs": [
+            "ev-capture-cdaeb78a0680",
+            "ev-capture-c345edeef02a",
+            "ev-capture-3edb6c2c9648",
+            "ev-capture-3bd4a674db0d"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "state retained without explicit Save",
+            "test later restored true"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.preference.animation-retention"
+    },
+    {
+      "id": "interaction-legacy-local-language-chinese-confirmation",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-81fcdf275459",
+        "ev-capture-143c217738f6",
+        "ev-capture-f974dd4a37ec"
+      ],
+      "unknowns": [
+        "complete Chinese course",
+        "all-language combinations",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-choice-card",
+        "component-guidance"
+      ],
+      "transitions": [
+        {
+          "from": "English interface new-course picker",
+          "event": "select English for Chinese speakers and Continue",
+          "to": "explicit UI-language warning",
+          "result": "[\"confirm changes localized introduction to Chinese while device en-US\",\"cancel new-course setup and ordinary relaunch restores original English Spanish home\"]",
+          "evidenceRefs": [
+            "ev-capture-81fcdf275459",
+            "ev-capture-143c217738f6",
+            "ev-capture-f974dd4a37ec"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "confirm changes localized introduction to Chinese while device en-US",
+            "cancel new-course setup and ordinary relaunch restores original English Spanish home"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.language.chinese-confirmation"
+    },
+    {
+      "id": "interaction-legacy-local-account-saved-signin",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-file-7bbd00b4a6ce",
+        "ev-capture-8ef451416fd2",
+        "ev-capture-1168269640d7"
+      ],
+      "unknowns": [
+        "fresh password validation",
+        "real rankings until prerequisite met",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-button"
+      ],
+      "transitions": [
+        {
+          "from": "signed-out saved-account chooser",
+          "event": "choose user-authorized saved account",
+          "to": "account accepted",
+          "result": "[\"home available\",\"leaderboard gate changes from identity to Finish2lessons\"]",
+          "evidenceRefs": [
+            "ev-file-7bbd00b4a6ce",
+            "ev-capture-8ef451416fd2",
+            "ev-capture-1168269640d7"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "home available",
+            "leaderboard gate changes from identity to Finish2lessons"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.account.saved-signin"
+    },
+    {
+      "id": "interaction-legacy-local-results-normal-wait",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-760e65fc081d",
+        "ev-capture-ea71cb603aa7",
+        "ev-file-2b2f3101b40e"
+      ],
+      "unknowns": [
+        "score and duration algorithms",
+        "cause of the historical first-lesson celebration stall",
+        "submission endpoint and exact loading latency",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-metric-card",
+        "component-feedback"
+      ],
+      "transitions": [
+        {
+          "from": "second-Spanish-lesson-three-dot-loading",
+          "event": "wait after normal lesson completion",
+          "to": "actual-lesson-results",
+          "result": "[\"Lesson complete, TOTAL XP 22, GOOD 87%, COMMITTED 35:58, CLAIM XP and share control visible\",\"Actual results appeared without force-stop or clearing data\"]",
+          "evidenceRefs": [
+            "ev-capture-760e65fc081d",
+            "ev-capture-ea71cb603aa7",
+            "ev-file-2b2f3101b40e"
+          ],
+          "preconditions": [
+            "User-authorized saved account; original backend; API31 English/light",
+            "Normal lesson completed with two acknowledged incorrect choice answers"
+          ],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "Lesson complete, TOTAL XP 22, GOOD 87%, COMMITTED 35:58, CLAIM XP and share control visible",
+            "Actual results appeared without force-stop or clearing data"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.results.normal-wait"
+    },
+    {
+      "id": "interaction-legacy-local-results-claim-xp",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-ea71cb603aa7",
+        "ev-capture-c84fbc6f8301",
+        "ev-file-283c0d29b0d8",
+        "ev-file-27798ee4cc57"
+      ],
+      "unknowns": [
+        "share action outcome",
+        "reward continuation variants for other accounts or lessons",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-metric-card",
+        "component-feedback"
+      ],
+      "transitions": [
+        {
+          "from": "actual-lesson-results",
+          "event": "tap CLAIM XP",
+          "to": "streak-reminder",
+          "result": "Normal reward continuation reached the streak reminder with I’LL BE BACK CTA",
+          "evidenceRefs": [
+            "ev-capture-ea71cb603aa7",
+            "ev-capture-c84fbc6f8301",
+            "ev-file-283c0d29b0d8",
+            "ev-file-27798ee4cc57"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.results.claim-xp"
+    },
+    {
+      "id": "interaction-legacy-local-results-streak-system-back",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-c84fbc6f8301",
+        "ev-file-58a05867e093",
+        "ev-file-ab5c29c1d17c",
+        "ev-file-27798ee4cc57"
+      ],
+      "unknowns": [
+        "whether Back was consumed internally",
+        "outside-tap and repeated-Back policy",
+        "Post-Back retention was supported by legacy fixed-remote trees; freshness is unverified and this no-transition claim needs fresh-file or independent post-action pixel corroboration under evidence/round3/ui-freshness-integrity.json. The original streak PNG remains valid pixel evidence.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-metric-card",
+        "component-feedback"
+      ],
+      "transitions": [
+        {
+          "from": "streak-reminder",
+          "event": "system Back",
+          "to": "streak-reminder",
+          "result": "The same streak reminder remained in repeated post-action hierarchies",
+          "evidenceRefs": [
+            "ev-capture-c84fbc6f8301",
+            "ev-file-58a05867e093",
+            "ev-file-ab5c29c1d17c",
+            "ev-file-27798ee4cc57"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.results.streak-system-back"
+    },
+    {
+      "id": "interaction-legacy-local-results-streak-cta",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-c84fbc6f8301",
+        "ev-capture-749d46747b15",
+        "ev-file-0d2b634941f8",
+        "ev-file-27798ee4cc57"
+      ],
+      "unknowns": [
+        "relationship between achievement count and the displayed 87% lesson accuracy",
+        "system dark-theme activation; this contextual dark-green page does not establish it",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-metric-card",
+        "component-feedback"
+      ],
+      "transitions": [
+        {
+          "from": "streak-reminder",
+          "event": "tap I’LL BE BACK and wait for the next stable page",
+          "to": "daily-achievement",
+          "result": "[\"Daily achievement page displays 1 and the source most-perfect-lessons copy\",\"CONTINUE is available\"]",
+          "evidenceRefs": [
+            "ev-capture-c84fbc6f8301",
+            "ev-capture-749d46747b15",
+            "ev-file-0d2b634941f8",
+            "ev-file-27798ee4cc57"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "Daily achievement page displays 1 and the source most-perfect-lessons copy",
+            "CONTINUE is available"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.results.streak-cta"
+    },
+    {
+      "id": "interaction-legacy-local-results-achievement-continue",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-749d46747b15",
+        "ev-file-4439001d8835",
+        "ev-file-27798ee4cc57"
+      ],
+      "unknowns": [
+        "ADD FRIENDS branch and its external effects",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-metric-card",
+        "component-feedback"
+      ],
+      "transitions": [
+        {
+          "from": "daily-achievement",
+          "event": "tap CONTINUE and wait",
+          "to": "add-friends-promo",
+          "result": "Source friend introduction shows ADD FRIENDS and MAYBE LATER",
+          "evidenceRefs": [
+            "ev-capture-749d46747b15",
+            "ev-file-4439001d8835",
+            "ev-file-27798ee4cc57"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.results.achievement-continue"
+    },
+    {
+      "id": "interaction-legacy-local-results-defer-friends-promo",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-file-4439001d8835",
+        "ev-capture-aee5caa5117f",
+        "ev-file-27798ee4cc57",
+        "ev-file-2b2f3101b40e"
+      ],
+      "unknowns": [
+        "trial eligibility, renewal price and full terms",
+        "purchase or trial activation; CTA was not pressed",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-metric-card",
+        "component-feedback"
+      ],
+      "transitions": [
+        {
+          "from": "add-friends-promo",
+          "event": "tap MAYBE LATER and wait",
+          "to": "super-promo",
+          "result": "Normal reward continuation shows Super promotion with TRY FOR CN¥0.00",
+          "evidenceRefs": [
+            "ev-file-4439001d8835",
+            "ev-capture-aee5caa5117f",
+            "ev-file-27798ee4cc57",
+            "ev-file-2b2f3101b40e"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.results.defer-friends-promo"
+    },
+    {
+      "id": "interaction-legacy-local-results-super-system-back",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-aee5caa5117f",
+        "ev-file-3055b8e14797",
+        "ev-capture-be8d88bb6945",
+        "ev-file-27798ee4cc57"
+      ],
+      "unknowns": [
+        "exact dismissal latency",
+        "universal Back behavior for subscription pages",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-metric-card",
+        "component-feedback"
+      ],
+      "transitions": [
+        {
+          "from": "super-promo",
+          "event": "system Back and wait for delayed navigation",
+          "to": "Spanish-home-after-claimed-lesson",
+          "result": "[\"Source home returned without activating the trial\",\"Home retains 500 gems and one-day streak; energy shows 15 and path nodes have advanced\"]",
+          "evidenceRefs": [
+            "ev-capture-aee5caa5117f",
+            "ev-file-3055b8e14797",
+            "ev-capture-be8d88bb6945",
+            "ev-file-27798ee4cc57"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "Source home returned without activating the trial",
+            "Home retains 500 gems and one-day streak; energy shows 15 and path nodes have advanced"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.results.super-system-back"
+    },
+    {
+      "id": "interaction-legacy-local-league-one-required-lesson-completed",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-1168269640d7",
+        "ev-capture-3dc389548323",
+        "ev-file-27798ee4cc57"
+      ],
+      "unknowns": [
+        "actual leaderboard list, self placement, refresh and cycle rules",
+        "remaining required lesson is still in progress",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-tab-list",
+        "component-list-row"
+      ],
+      "transitions": [
+        {
+          "from": "Spanish-home-after-claimed-lesson",
+          "event": "open normal leaderboard entry",
+          "to": "leaderboard-one-lesson-remaining",
+          "result": "[\"Previous Finish 2 lessons gate now requires one lesson\",\"The actual leaderboard list has not been entered\"]",
+          "evidenceRefs": [
+            "ev-capture-1168269640d7",
+            "ev-capture-3dc389548323",
+            "ev-file-27798ee4cc57"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "Previous Finish 2 lessons gate now requires one lesson",
+            "The actual leaderboard list has not been entered"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.league.one-required-lesson-completed"
+    },
+    {
+      "id": "interaction-legacy-local-exercise-missing-prompt-reproduced",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-ea1894f27f2b",
+        "ev-file-27798ee4cc57"
+      ],
+      "unknowns": [
+        "intended original prompt and rendering failure cause",
+        "readability is not passed; options and later correction do not recover the absent prompt",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-button"
+      ],
+      "transitions": [
+        {
+          "from": "third-lesson-translation-choice-without-visible-prompt",
+          "event": "inspect pixels and hierarchy, then exploratory chao selection and CHECK",
+          "to": "incorrect-feedback-correct-answer-helado",
+          "result": "[\"Select-correct-translation instruction and chao / helado / perfecto choices were visible, but the translation prompt was absent in pixels and hierarchy\",\"Exploratory answer received Correct Answer: helado\"]",
+          "evidenceRefs": [
+            "ev-capture-ea1894f27f2b",
+            "ev-file-27798ee4cc57"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "Select-correct-translation instruction and chao / helado / perfecto choices were visible, but the translation prompt was absent in pixels and hierarchy",
+            "Exploratory answer received Correct Answer: helado"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.exercise.missing-prompt-reproduced"
+    },
+    {
+      "id": "interaction-legacy-local-exercise-complete-sentence-cafe",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-6987b8337963",
+        "ev-file-c9fc6022475c",
+        "ev-file-48a51e0edecd",
+        "ev-file-27798ee4cc57"
+      ],
+      "unknowns": [
+        "validation for other blanks or arbitrary typed text",
+        "this observed question does not complete all later-course exercise coverage",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-button"
+      ],
+      "transitions": [
+        {
+          "from": "Complete the sentence: Perfecto, un blank. ¡Chao!",
+          "event": "choose café from café / y / gracias / o, then CHECK",
+          "to": "sentence-completion-positive-feedback",
+          "result": "[\"Blank now contains café\",\"Feedback says Nicely done. Meaning: Perfect, a coffee. Bye! and offers CONTINUE\"]",
+          "evidenceRefs": [
+            "ev-capture-6987b8337963",
+            "ev-file-c9fc6022475c",
+            "ev-file-48a51e0edecd",
+            "ev-file-27798ee4cc57"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "Blank now contains café",
+            "Feedback says Nicely done. Meaning: Perfect, a coffee. Bye! and offers CONTINUE"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.exercise.complete-sentence-cafe"
+    },
+    {
+      "id": "interaction-legacy-local-exercise-custom-bank-open",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-4276dce115d5",
+        "ev-capture-2f0a3c58a8f5",
+        "ev-file-dc70cc6ffa67",
+        "ev-file-27798ee4cc57"
+      ],
+      "unknowns": [
+        "native IME input, arbitrary text entry and composition are not established",
+        "65 filename free-input was a pre-inspection hypothesis, not the observed control type",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-button"
+      ],
+      "transitions": [
+        {
+          "from": "collapsed-custom-token-input-empty",
+          "event": "tap Tap to see word bank",
+          "to": "expanded-custom-token-bank",
+          "result": "[\"separateTokenKeyboardContainer appears\",\"Prompt relocates to the top and CHECK sits above the custom token choices\"]",
+          "evidenceRefs": [
+            "ev-capture-4276dce115d5",
+            "ev-capture-2f0a3c58a8f5",
+            "ev-file-dc70cc6ffa67",
+            "ev-file-27798ee4cc57"
+          ],
+          "preconditions": [
+            "Prompt is ¿Quieres un vaso de agua?",
+            "Empty answer has CHECK disabled"
+          ],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "separateTokenKeyboardContainer appears",
+            "Prompt relocates to the top and CHECK sits above the custom token choices"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.exercise.custom-bank-open"
+    },
+    {
+      "id": "interaction-legacy-local-exercise-custom-bank-back-retains-token",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-2f0a3c58a8f5",
+        "ev-file-fff507a08cec",
+        "ev-file-27798ee4cc57"
+      ],
+      "unknowns": [
+        "behavior of another Back while collapsed",
+        "retention after leaving the exercise or process restart",
+        "The post-Back collapsed bank and retained Do were recorded with a legacy fixed-remote UI tree. Treat this stateRetention as pending freshness revalidation; do not infer no navigation or retention from an unchanged old tree alone. The separately inspected original 65/66 PNGs remain valid for their captured states.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-button"
+      ],
+      "transitions": [
+        {
+          "from": "expanded-custom-token-bank-with-Do-selected",
+          "event": "system Back",
+          "to": "collapsed-custom-token-input-with-Do-selected",
+          "result": "collapsed-custom-token-input-with-Do-selected",
+          "evidenceRefs": [
+            "ev-capture-2f0a3c58a8f5",
+            "ev-file-fff507a08cec",
+            "ev-file-27798ee4cc57"
+          ],
+          "preconditions": [],
+          "stateRetention": {
+            "answerTokens": "Do retained",
+            "wordBank": "collapsed",
+            "exercise": "same exercise remains"
+          },
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.exercise.custom-bank-back-retains-token"
+    },
+    {
+      "id": "interaction-legacy-local-exercise-custom-bank-reopen-retains-token",
+      "classification": "C",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-file-fff507a08cec",
+        "ev-file-f1e80b081fd9",
+        "ev-file-27798ee4cc57"
+      ],
+      "unknowns": [
+        "native keyboard focus and IME composition",
+        "The intermediate answer-retention comparison uses legacy fixed-remote trees and needs fresh-path or independent pixel corroboration under the integrity sidecar.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-button"
+      ],
+      "transitions": [
+        {
+          "from": "collapsed-custom-token-input-with-Do-selected",
+          "event": "tap tapInputViewContainer",
+          "to": "expanded-custom-token-bank-with-Do-selected",
+          "result": "The custom word bank reopens and the selected Do answer remains",
+          "evidenceRefs": [
+            "ev-file-fff507a08cec",
+            "ev-file-f1e80b081fd9",
+            "ev-file-27798ee4cc57"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.exercise.custom-bank-reopen-retains-token"
+    },
+    {
+      "id": "interaction-legacy-local-exercise-custom-bank-submit",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-2f0a3c58a8f5",
+        "ev-file-ec5874e5dee6",
+        "ev-file-27798ee4cc57"
+      ],
+      "unknowns": [
+        "arbitrary text input, alternate correct answers and IME composition",
+        "this answer transition alone does not establish lesson completion; later completion is separately documented",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-button"
+      ],
+      "transitions": [
+        {
+          "from": "expanded-custom-token-bank-with-Do-selected",
+          "event": "select remaining tokens for Do you want a glass of water, then CHECK",
+          "to": "custom-token-answer-positive-feedback",
+          "result": "[\"Completed answer remains visible\",\"Source feedback says Awesome! and offers CONTINUE\"]",
+          "evidenceRefs": [
+            "ev-capture-2f0a3c58a8f5",
+            "ev-file-ec5874e5dee6",
+            "ev-file-27798ee4cc57"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "Completed answer remains visible",
+            "Source feedback says Awesome! and offers CONTINUE"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.exercise.custom-bank-submit"
+    },
+    {
+      "id": "interaction-legacy-local-math-normal-onboarding",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-e3c875d1ff6c",
+        "ev-capture-b9b821bc0a49",
+        "ev-capture-35389c949cf8",
+        "ev-capture-79550a21f4e7"
+      ],
+      "unknowns": [
+        "other study stages and starting levels",
+        "time estimate is not measured completion duration",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-range-control",
+        "component-numeric-keypad"
+      ],
+      "transitions": [
+        {
+          "from": "normal-New-Courses-menu-Math",
+          "event": "select Math, adult studies, Beginner and the first lesson through normal UI",
+          "to": "Math-first-lesson-pattern-question",
+          "result": "[\"Study question initially has disabled Continue before selection\",\"First lesson shows a two-minute estimate; visible 5+2 pattern answer7 is accepted Good job\"]",
+          "evidenceRefs": [
+            "ev-capture-e3c875d1ff6c",
+            "ev-capture-b9b821bc0a49",
+            "ev-capture-35389c949cf8",
+            "ev-capture-79550a21f4e7"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "Study question initially has disabled Continue before selection",
+            "First lesson shows a two-minute estimate; visible 5+2 pattern answer7 is accepted Good job"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.math.normal-onboarding"
+    },
+    {
+      "id": "interaction-legacy-local-math-keep-learning-current-question",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-090e8e0b9dce",
+        "ev-capture-3cea262172a2",
+        "ev-file-5b5860be06be"
+      ],
+      "unknowns": [
+        "cross-restart draft retention",
+        "other exit-confirmation branches",
+        "Fresh-file capture and inspected source pixels support this Math branch; it does not retroactively verify legacy reminder/word-bank Back observations.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-range-control",
+        "component-numeric-keypad"
+      ],
+      "transitions": [
+        {
+          "from": "Math-exit-confirmation-one-minute-remaining",
+          "event": "tap Keep Learning",
+          "to": "same-Help-Junior-3in-plus-6in-question",
+          "result": "[\"Normal9in selection and Check received Awesome\"]",
+          "evidenceRefs": [
+            "ev-capture-090e8e0b9dce",
+            "ev-capture-3cea262172a2",
+            "ev-file-5b5860be06be"
+          ],
+          "preconditions": [],
+          "stateRetention": {
+            "question": "3in+6in retained",
+            "exercise": "resumed without quitting"
+          },
+          "sideEffectsObserved": [
+            "Normal9in selection and Check received Awesome"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.math.keep-learning-current-question"
+    },
+    {
+      "id": "interaction-legacy-local-math-quit-and-back-loading",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-95096323f1f1",
+        "ev-capture-df5c588e53ce",
+        "ev-capture-3bc81ba8b7fe",
+        "ev-capture-dac6cfd31acf"
+      ],
+      "unknowns": [
+        "loading cause",
+        "automatic UI recovery",
+        "request cancellation, cache and late results",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-range-control",
+        "component-numeric-keypad"
+      ],
+      "transitions": [
+        {
+          "from": "Math-incomplete-first-lesson",
+          "event": "close, Quit, Back through starting point/study/course picker and return to task",
+          "to": "source-three-dot-loading-after-cancel",
+          "result": "[\"Quit returns to starting-point selection with Beginner still blue selected\",\"88/89 original PNGs show loading; later fresh hierarchy Math-home titles are not simultaneous rendered-home evidence\",\"Confirmed network loss/restoration sample90-92 also remains loading\"]",
+          "evidenceRefs": [
+            "ev-capture-95096323f1f1",
+            "ev-capture-df5c588e53ce",
+            "ev-capture-3bc81ba8b7fe",
+            "ev-capture-dac6cfd31acf"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "Quit returns to starting-point selection with Beginner still blue selected",
+            "88/89 original PNGs show loading; later fresh hierarchy Math-home titles are not simultaneous rendered-home evidence",
+            "Confirmed network loss/restoration sample90-92 also remains loading"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.math.quit-and-back-loading"
+    },
+    {
+      "id": "interaction-legacy-local-math-number-line-eleven",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-6c37ec32bf58",
+        "ev-capture-b8e8daf72df5",
+        "ev-file-e6932cc08b7c"
+      ],
+      "unknowns": [
+        "arbitrary continuous drag precision",
+        "screen-reader slider controls",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-range-control",
+        "component-numeric-keypad"
+      ],
+      "transitions": [
+        {
+          "from": "Math-number-line-6plus5-initial0",
+          "event": "drag handle to11, then Check",
+          "to": "Excellent-number-line-feedback",
+          "result": "[\"Selected blue tick11 and Check enabled before submission\"]",
+          "evidenceRefs": [
+            "ev-capture-6c37ec32bf58",
+            "ev-capture-b8e8daf72df5",
+            "ev-file-e6932cc08b7c"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "Selected blue tick11 and Check enabled before submission"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.math.number-line-eleven"
+    },
+    {
+      "id": "interaction-legacy-local-math-thermometer-ten",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-062fd38f8ad0",
+        "ev-capture-aed42050d394",
+        "ev-file-77b2a943dd07"
+      ],
+      "unknowns": [
+        "other scale ranges and units",
+        "accessible increment actions",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-range-control",
+        "component-numeric-keypad"
+      ],
+      "transitions": [
+        {
+          "from": "Math-thermometer-6degrees-plus4degrees-initial0",
+          "event": "drag to10, then Check",
+          "to": "Great-job-thermometer-feedback",
+          "result": "[\"Red fill and selected10 visible before Check\"]",
+          "evidenceRefs": [
+            "ev-capture-062fd38f8ad0",
+            "ev-capture-aed42050d394",
+            "ev-file-77b2a943dd07"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "Red fill and selected10 visible before Check"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.math.thermometer-ten"
+    },
+    {
+      "id": "interaction-legacy-local-math-number-line-upper-bound-four",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-a4e666de8d11",
+        "ev-capture-60c6787dbde6",
+        "ev-file-5d01786a6328"
+      ],
+      "unknowns": [
+        "out-of-range dragging",
+        "other endpoint validation",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-range-control",
+        "component-numeric-keypad"
+      ],
+      "transitions": [
+        {
+          "from": "Math-6plusBlank-equals10-slider-range0to4",
+          "event": "drag0 to rightmost4, then Check",
+          "to": "Great-job-upper-bound-feedback",
+          "result": "[\"Rightmost selected4 and enabled Check visible before submission\"]",
+          "evidenceRefs": [
+            "ev-capture-a4e666de8d11",
+            "ev-capture-60c6787dbde6",
+            "ev-file-5d01786a6328"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "Rightmost selected4 and enabled Check visible before submission"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.math.number-line-upper-bound-four"
+    },
+    {
+      "id": "interaction-legacy-local-math-app-numeric-keypad-edit",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-7b2a370567c7",
+        "ev-file-de882c9dc7dc",
+        "ev-file-15345ef2aa9b",
+        "ev-file-0160f4b47cf3"
+      ],
+      "unknowns": [
+        "OS IME composition",
+        "arbitrary textual input and alternate answers",
+        "Fresh-file post-fix probes document this app-keypad draft sequence; it is not an OS IME/composing or arbitrary-text-input test.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-range-control",
+        "component-numeric-keypad"
+      ],
+      "transitions": [
+        {
+          "from": "Math-Type-the-answer-Blank-plus3-equals4",
+          "event": "app keypad2, Backspace, keypad1, then Check",
+          "to": "Excellent-numeric-answer-feedback",
+          "result": "[\"Backspace clears actual draft; example2 is placeholder text, not retained typed2\"]",
+          "evidenceRefs": [
+            "ev-capture-7b2a370567c7",
+            "ev-file-de882c9dc7dc",
+            "ev-file-15345ef2aa9b",
+            "ev-file-0160f4b47cf3"
+          ],
+          "preconditions": [],
+          "stateRetention": {
+            "draftSequence": "2 -> empty/example placeholder ->1",
+            "inputSurface": "application numeric keypad"
+          },
+          "sideEffectsObserved": [
+            "Backspace clears actual draft; example2 is placeholder text, not retained typed2"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.math.app-numeric-keypad-edit"
+    },
+    {
+      "id": "interaction-legacy-local-math-multiselect-hard-exercises",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-ef840f3d4eee",
+        "ev-capture-26a0303cba66",
+        "ev-file-11d98a5397ff",
+        "ev-file-f58e5752bf77"
+      ],
+      "unknowns": [
+        "partial-answer scoring",
+        "Check-disable policy for every selection combination",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-range-control",
+        "component-numeric-keypad"
+      ],
+      "transitions": [
+        {
+          "from": "Math-Hard-exercise-select-all-matches",
+          "event": "select all visible valid sums for current target, then Check",
+          "to": "positive-multiselect-feedback",
+          "result": "positive-multiselect-feedback",
+          "evidenceRefs": [
+            "ev-capture-ef840f3d4eee",
+            "ev-capture-26a0303cba66",
+            "ev-file-11d98a5397ff",
+            "ev-file-f58e5752bf77"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.math.multiselect-hard-exercises"
+    },
+    {
+      "id": "interaction-legacy-local-math-normal-lesson-results",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-a4b06fb322a2"
+      ],
+      "unknowns": [
+        "internal scoring/time algorithm",
+        "do not infer100percent accuracy from combo copy",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-metric-card",
+        "component-feedback"
+      ],
+      "transitions": [
+        {
+          "from": "normally-completed-Math-intro-lesson",
+          "event": "Continue from final accepted answer",
+          "to": "actual-Math-combo-results",
+          "result": "[\"Actual25XP, COMBOx12,42:39 and12rightanswersinarow visible\",\"No accuracy percentage is displayed\"]",
+          "evidenceRefs": [
+            "ev-capture-a4b06fb322a2"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "Actual25XP, COMBOx12,42:39 and12rightanswersinarow visible",
+            "No accuracy percentage is displayed"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.math.normal-lesson-results"
+    },
+    {
+      "id": "interaction-legacy-local-math-claim-and-rendered-home",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-a4b06fb322a2",
+        "ev-capture-95a724def519"
+      ],
+      "unknowns": [
+        "normal completion does not repair or explain earlier cancelled-route spinner88-92",
+        "global navigation variant cause",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-metric-card",
+        "component-feedback"
+      ],
+      "transitions": [
+        {
+          "from": "actual-Math-combo-results",
+          "event": "tap CLAIM XP and continue normal completion route",
+          "to": "rendered-Math-home-with-progressed-path",
+          "result": "[\"Actual PNG renders ARITHMETIC1/Followpatterns and advanced path\",\"Gems500,energy7 and blue Profile entry visible\"]",
+          "evidenceRefs": [
+            "ev-capture-a4b06fb322a2",
+            "ev-capture-95a724def519"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "Actual PNG renders ARITHMETIC1/Followpatterns and advanced path",
+            "Gems500,energy7 and blue Profile entry visible"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.math.claim-and-rendered-home"
+    },
+    {
+      "id": "interaction-legacy-local-math-restore-preserved-spanish",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "optional",
+      "evidenceRefs": [
+        "ev-capture-95a724def519",
+        "ev-capture-9afda2c4a2b6"
+      ],
+      "unknowns": [
+        "Music/Chess and complete Chinese flows",
+        "reason for observed blue Profile versus purple More variants",
+        "Fresh-file and inspected pixels support this normal switch; not proof of cross-device sync, cancelled-route repair, or a universal navigation change.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-range-control",
+        "component-numeric-keypad"
+      ],
+      "transitions": [
+        {
+          "from": "rendered-Math-home-with-progressed-path",
+          "event": "select preserved Spanish through normal course menu",
+          "to": "original-Spanish-home-rendered",
+          "result": "[\"Actual108PNG renders original Spanish path and purple More entry\"]",
+          "evidenceRefs": [
+            "ev-capture-95a724def519",
+            "ev-capture-9afda2c4a2b6"
+          ],
+          "preconditions": [],
+          "stateRetention": {
+            "coursePath": "SECTION1 UNIT1 Order at a cafe retained",
+            "streakDays": 1,
+            "gems": 500,
+            "energy": 7
+          },
+          "sideEffectsObserved": [
+            "Actual108PNG renders original Spanish path and purple More entry"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.math.restore-preserved-Spanish"
+    },
+    {
+      "id": "interaction-legacy-local-music-normal-entry-landscape-keyboard",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-4ad0262f29d7",
+        "ev-capture-227c06b3c859",
+        "ev-capture-e9d6ab251480",
+        "ev-capture-a0d569dc3316",
+        "ev-capture-5c2b850611bc"
+      ],
+      "unknowns": [
+        "exact initialization/animation duration",
+        "audible note playback and successful input; blank/loading is not a rendered question",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-media-control",
+        "component-feedback"
+      ],
+      "transitions": [
+        {
+          "from": "normal-New-Courses-Music-card",
+          "event": "normal experience selection and one-minute Intro Continue; inspect successive surfaces",
+          "to": "rendered-landscape-C-D-E-keyboard",
+          "result": "[\"109 question has three experience levels and Continue disabled before selection\",\"110/111 white landscape surfaces, then112 LOADING, then113 Your turn keyboard with X/progress\",\"113 green check bubble was present before this operator pressed any key\"]",
+          "evidenceRefs": [
+            "ev-capture-4ad0262f29d7",
+            "ev-capture-227c06b3c859",
+            "ev-capture-e9d6ab251480",
+            "ev-capture-a0d569dc3316",
+            "ev-capture-5c2b850611bc"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "109 question has three experience levels and Continue disabled before selection",
+            "110/111 white landscape surfaces, then112 LOADING, then113 Your turn keyboard with X/progress",
+            "113 green check bubble was present before this operator pressed any key"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.music.normal-entry-landscape-keyboard"
+    },
+    {
+      "id": "interaction-legacy-local-music-single-c-and-negative-feedback",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-5c2b850611bc",
+        "ev-capture-7be04cec0d4d",
+        "ev-file-0b1251427eda"
+      ],
+      "unknowns": [
+        "correct expected full melody",
+        "audible pitch or correct completion",
+        "do not infer a C-to-D input mapping defect from sequential phases",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-media-control",
+        "component-feedback"
+      ],
+      "transitions": [
+        {
+          "from": "inspected-landscape-C-D-E-keyboard",
+          "event": "one C key tap from inspected current pixels after failed fresh dump did not tap",
+          "to": "repeat-demonstration-and-later-Oops-feedback",
+          "result": "[\"114PNG shows Repeat after Duo with D orange\",\"Later fresh hierarchy shows Oops retry text; image and hierarchy represent different phases\"]",
+          "evidenceRefs": [
+            "ev-capture-5c2b850611bc",
+            "ev-capture-7be04cec0d4d",
+            "ev-file-0b1251427eda"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "114PNG shows Repeat after Duo with D orange",
+            "Later fresh hierarchy shows Oops retry text; image and hierarchy represent different phases"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.music.single-C-and-negative-feedback"
+    },
+    {
+      "id": "interaction-legacy-local-music-x-return-portrait-intro",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-fad487e46274"
+      ],
+      "unknowns": [
+        "other Music exit variants",
+        "normal completed Music return",
+        "115 crossed an activity transition and is invalid; it is excluded as confirmation/return evidence.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-media-control",
+        "component-feedback"
+      ],
+      "transitions": [
+        {
+          "from": "incomplete-landscape-Music-first-session",
+          "event": "normal X and independent stable follow-up",
+          "to": "portrait-one-minute-Music-Intro",
+          "result": "[\"116PNG renders first-music Intro and Continue\",\"No Music completion result or Math-style Quit confirmation was observed\"]",
+          "evidenceRefs": [
+            "ev-capture-fad487e46274"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "116PNG renders first-music Intro and Continue",
+            "No Music completion result or Math-style Quit confirmation was observed"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.music.X-return-portrait-intro"
+    },
+    {
+      "id": "interaction-legacy-local-music-cancel-onboarding-loading",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-2740a72f0809",
+        "ev-capture-d9dfd929426b"
+      ],
+      "unknowns": [
+        "loading cause and automatic UI recovery",
+        "normal restored home/menu has not been observed in this branch",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-media-control",
+        "component-feedback"
+      ],
+      "transitions": [
+        {
+          "from": "Music-experience-questionnaire-after-Intro-Back",
+          "event": "system Back cancellation through normal onboarding route",
+          "to": "portrait-three-dot-loading",
+          "result": "[\"117/118 original PNGs remain spinner\",\"Later Spanish labels/menu actions in a sequential fresh hierarchy do not prove rendered Spanish home\"]",
+          "evidenceRefs": [
+            "ev-capture-2740a72f0809",
+            "ev-capture-d9dfd929426b"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "117/118 original PNGs remain spinner",
+            "Later Spanish labels/menu actions in a sequential fresh hierarchy do not prove rendered Spanish home"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.music.cancel-onboarding-loading"
+    },
+    {
+      "id": "interaction-legacy-local-music-cold-launch-questionnaire-tree",
+      "classification": "C",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-file-e36568a5b049"
+      ],
+      "unknowns": [
+        "completed Music home and Spanish restoration",
+        "119PNG caught splash while activity changed and is invalid. This transition records the later fresh-tree questionnaire state only; it does not treat119 as rendered recovery or claim a same-frame PNG.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-media-control",
+        "component-feedback"
+      ],
+      "transitions": [
+        {
+          "from": "Music-cancel-loading",
+          "event": "normal force-stop and launcher restart preserving app data/account",
+          "to": "post-cold-launch-Music-questionnaire-in-fresh-tree",
+          "result": "post-cold-launch-Music-questionnaire-in-fresh-tree",
+          "evidenceRefs": [
+            "ev-file-e36568a5b049"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.music.cold-launch-questionnaire-tree"
+    },
+    {
+      "id": "interaction-legacy-local-music-public-course-switcher-questionnaire",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-61711c4b5caf",
+        "ev-file-a39dcaef67e8",
+        "ev-file-2b2f3101b40e"
+      ],
+      "unknowns": [
+        "later recovery route and completed Music flow",
+        "Historical PNG independently pixel-reviewed for this documentation; capture metadata was not modified. Public Manifest matching does not guarantee recovery or bypass onboarding.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "Music-onboarding-recovery-route",
+          "event": "ACTION_VIEW public duolingo://course_switcher, without private component",
+          "to": "unselected-portrait-Music-experience-questionnaire",
+          "result": "[\"120PNG independently viewed by this document worker: all three choices unselected and Continue gray disabled\",\"No course menu or rendered Spanish home in this capture\"]",
+          "evidenceRefs": [
+            "ev-capture-61711c4b5caf",
+            "ev-file-a39dcaef67e8",
+            "ev-file-2b2f3101b40e"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "120PNG independently viewed by this document worker: all three choices unselected and Continue gray disabled",
+            "No course menu or rendered Spanish home in this capture"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.music.public-course-switcher-questionnaire"
+    },
+    {
+      "id": "interaction-legacy-local-recovery-user10-empty-entry",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-7fe42e1093e1",
+        "ev-134-forgot-password-empty"
+      ],
+      "unknowns": [
+        "Chinese composition, screen reader and arbitrary IME behavior",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "user10-blank-login",
+          "event": "normal Forgot Password",
+          "to": "empty-focused-Email-with-AOSP-IME",
+          "result": "[\"Empty Next disabled; source recovery form and real OS keyboard visible\"]",
+          "evidenceRefs": [
+            "ev-capture-7fe42e1093e1",
+            "ev-134-forgot-password-empty"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "Empty Next disabled; source recovery form and real OS keyboard visible"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.recovery.user10-empty-entry"
+    },
+    {
+      "id": "interaction-legacy-local-recovery-invalid-synthetic-feedback",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-135-forgot-invalid-email-validation"
+      ],
+      "unknowns": [
+        "client syntax versus server account-existence mechanism",
+        "actual reset email or delivery; no valid recipient supplied",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "recovery-form-nonempty-synthetic-not-an-email",
+          "event": "ordinary Next with no valid recipient",
+          "to": "red-no-account-feedback-retained-input",
+          "result": "[\"Invalid synthetic draft retained; Next disabled after feedback\"]",
+          "evidenceRefs": [
+            "ev-135-forgot-invalid-email-validation"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "Invalid synthetic draft retained; Next disabled after feedback"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.recovery.invalid-synthetic-feedback"
+    },
+    {
+      "id": "interaction-legacy-local-recovery-offline-two-ui-taps",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-file-eab622514741",
+        "ev-capture-ffa34a1d5182",
+        "ev-capture-ae0253bcd498",
+        "ev-capture-ce2e21893c9e"
+      ],
+      "unknowns": [
+        "request count and actual requests",
+        "cache, timeout, internal retry and cancellation",
+        "Two UI taps do not establish two network requests or deduplication. Same no-account text offline may be local validation/cache/other path; no explicit network error was observed.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "confirmed-no-default-network-not-an-emailx-draft-Next-blue",
+          "event": "two ordinary Next taps",
+          "to": "same-no-account-copy-draft-retained-Next-gray",
+          "result": "same-no-account-copy-draft-retained-Next-gray",
+          "evidenceRefs": [
+            "ev-file-eab622514741",
+            "ev-capture-ffa34a1d5182",
+            "ev-capture-ae0253bcd498",
+            "ev-capture-ce2e21893c9e"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.recovery.offline-two-UI-taps"
+    },
+    {
+      "id": "interaction-legacy-local-recovery-offline-back",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-6587d135f03f"
+      ],
+      "unknowns": [
+        "Back does not prove cancellation of an internal request",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "offline-no-account-recovery-feedback",
+          "event": "system Back",
+          "to": "blank-login-form",
+          "result": "blank-login-form",
+          "evidenceRefs": [
+            "ev-capture-6587d135f03f"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.recovery.offline-Back"
+    },
+    {
+      "id": "interaction-legacy-local-recovery-network-restored-login-remains",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "optional",
+      "evidenceRefs": [
+        "ev-file-eab622514741",
+        "ev-capture-cff573ae8f0e"
+      ],
+      "unknowns": [
+        "late server result ownership and cache behavior",
+        "140 original PNG independently viewed by document worker; this sampled blank login does not rule out all future late results.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "blank-login-after-recovery-Back",
+          "event": "finally restore original network configuration and active default, then inspect pixels",
+          "to": "blank-login-form-in-captured-frame",
+          "result": "blank-login-form-in-captured-frame",
+          "evidenceRefs": [
+            "ev-file-eab622514741",
+            "ev-capture-cff573ae8f0e"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.recovery.network-restored-login-remains"
+    },
+    {
+      "id": "interaction-legacy-local-recovery-normal-reentry-clears-draft",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-141-forgot-reentry-draft"
+      ],
+      "unknowns": [
+        "other session lifetimes and valid-recipient recovery success",
+        "141 original PNG independently viewed; this is same-profile normal reentry only, not reset-mail or cross-device sync verification.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "blank-login-after-network-restoration",
+          "event": "normal Forgot Password reentry",
+          "to": "empty-focused-Email-with-AOSP-IME",
+          "result": "empty-focused-Email-with-AOSP-IME",
+          "evidenceRefs": [
+            "ev-141-forgot-reentry-draft"
+          ],
+          "preconditions": [],
+          "stateRetention": {
+            "previousDraft": "not retained on this reentry",
+            "previousError": "not displayed",
+            "focus": "Email",
+            "Next": "disabled"
+          },
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.recovery.normal-reentry-clears-draft"
+    },
+    {
+      "id": "interaction-legacy-local-login-synthetic-required-field-gating",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-c80bed2ffdf8",
+        "ev-capture-6f95357eaf1a"
+      ],
+      "unknowns": [
+        "real credential authentication remains blocked",
+        "long single-line horizontal scrolling does not prove stored value truncation",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "user10-synthetic-username-only",
+          "event": "enter masked dummy password without real credentials",
+          "to": "Sign-In-enabled",
+          "result": "Sign-In-enabled",
+          "evidenceRefs": [
+            "ev-capture-c80bed2ffdf8",
+            "ev-capture-6f95357eaf1a"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.login.synthetic-required-field-gating"
+    },
+    {
+      "id": "interaction-legacy-local-login-offline-later-connection-text",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-file-e62884dee530",
+        "ev-capture-04c11980f721",
+        "ev-capture-74d090b99d58",
+        "ev-capture-cc97dfd9a5c0"
+      ],
+      "unknowns": [
+        "actual request count, cache and late-result ownership",
+        "PNG145/146 independently viewed by documentation worker. Sequential samples do not establish toast duration, two HTTP requests, server response or deduplication.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "confirmed-no-default-network-synthetic-login-draft",
+          "event": "two ordinary Sign In taps, then sequential PNG/fresh-tree inspection",
+          "to": "input-retained-and-later-connection-trouble-text",
+          "result": "[\"145PNG has input and enabled Sign In but no connection text\",\"Subsequent fresh145hierarchy contains connection-trouble text;146later PNG retains input/action and its tree has no prompt\"]",
+          "evidenceRefs": [
+            "ev-file-e62884dee530",
+            "ev-capture-04c11980f721",
+            "ev-capture-74d090b99d58",
+            "ev-capture-cc97dfd9a5c0"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "145PNG has input and enabled Sign In but no connection text",
+            "Subsequent fresh145hierarchy contains connection-trouble text;146later PNG retains input/action and its tree has no prompt"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.login.offline-later-connection-text"
+    },
+    {
+      "id": "interaction-legacy-local-login-offline-back-welcome",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-c8f75d982f1a"
+      ],
+      "unknowns": [
+        "request cancellation and future late results",
+        "147PNG independently viewed; no underlying request-cancellation claim.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "offline-synthetic-login-form",
+          "event": "system Back",
+          "to": "Welcome-Get-Started-and-existing-account-entry",
+          "result": "Welcome-Get-Started-and-existing-account-entry",
+          "evidenceRefs": [
+            "ev-capture-c8f75d982f1a"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.login.offline-Back-Welcome"
+    },
+    {
+      "id": "interaction-legacy-local-ime-trime-visible-preedit",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-cab04cd23f16",
+        "ev-capture-66d1eea68f44"
+      ],
+      "unknowns": [
+        "internal InputConnection/composing-span callbacks",
+        "TalkBack traversal/output",
+        "Trime is an auxiliary OS IME, not Duolingo UI design. No adb text injection; visible preedit does not establish app internal composing spans.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "source-Login-empty-username-with-auxiliary-Trime-Chinese",
+          "event": "actual screen n then i key taps",
+          "to": "IME-ni-preedit-candidates-source-field-still-empty",
+          "result": "IME-ni-preedit-candidates-source-field-still-empty",
+          "evidenceRefs": [
+            "ev-capture-cab04cd23f16",
+            "ev-capture-66d1eea68f44"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.ime.trime-visible-preedit"
+    },
+    {
+      "id": "interaction-legacy-local-ime-trime-candidate-commit",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-66d1eea68f44",
+        "ev-capture-7ddbd7f46b2c"
+      ],
+      "unknowns": [
+        "other candidates or source internal spans",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "IME-ni-preedit-source-field-empty",
+          "event": "tap visible candidate你",
+          "to": "source-username-committed你",
+          "result": "[\"Preedit/candidates clear; empty password keeps Sign In disabled\"]",
+          "evidenceRefs": [
+            "ev-capture-66d1eea68f44",
+            "ev-capture-7ddbd7f46b2c"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "Preedit/candidates clear; empty password keeps Sign In disabled"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.ime.trime-candidate-commit"
+    },
+    {
+      "id": "interaction-legacy-local-ime-trime-password-focus-discard",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-3f0e7e5651df"
+      ],
+      "unknowns": [
+        "source internal focus/composition callbacks",
+        "No password entered. Observed auxiliary IME mode, not a universal source-app password policy.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-list-row",
+        "component-menu"
+      ],
+      "transitions": [
+        {
+          "from": "committed你-and-second-uncommitted-ni",
+          "event": "focus empty source password field",
+          "to": "committed你-retained-preedit-discarded-Trime-ASCII",
+          "result": "committed你-retained-preedit-discarded-Trime-ASCII",
+          "evidenceRefs": [
+            "ev-capture-3f0e7e5651df"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.ime.trime-password-focus-discard"
+    },
+    {
+      "id": "interaction-legacy-local-ime-trime-ascii-back-not-composition",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-fab749a0e819",
+        "ev-capture-7d13b2c01734"
+      ],
+      "unknowns": [
+        "general IME Back policy",
+        "152filename/action expectation was composing, actual pixels were ASCII direct text. This branch is not composition cancellation.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "username-refocused-with-Trime-ASCII",
+          "event": "screen n/i commits plain ni, then system Back",
+          "to": "keyboard-hidden-committed你ni-retained",
+          "result": "keyboard-hidden-committed你ni-retained",
+          "evidenceRefs": [
+            "ev-capture-fab749a0e819",
+            "ev-capture-7d13b2c01734"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.ime.trime-ASCII-Back-not-composition"
+    },
+    {
+      "id": "interaction-legacy-local-ime-trime-actual-chinese-preedit-back",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-322c55f5628d",
+        "ev-capture-1bcf50f4c3ed"
+      ],
+      "unknowns": [
+        "other IME implementations and span callbacks",
+        "Visible preedit/commit outcome only, no claim about internal Android spans.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "source-committed你ni",
+          "event": "explicitly toggle Trime Chinese, screen n/i, then system Back",
+          "to": "IME-hidden-uncommitted-ni-discarded-committed你ni-retained",
+          "result": "IME-hidden-uncommitted-ni-discarded-committed你ni-retained",
+          "evidenceRefs": [
+            "ev-capture-322c55f5628d",
+            "ev-capture-1bcf50f4c3ed"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.ime.trime-actual-Chinese-preedit-Back"
+    },
+    {
+      "id": "interaction-legacy-local-ime-trime-three-backspaces-clear",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-e717c8fef809"
+      ],
+      "unknowns": [
+        "grapheme deletion for other scripts or compound emoji",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "source-username-committed你ni",
+          "event": "three actual screen Backspace taps",
+          "to": "empty-username-caret-Sign-In-disabled",
+          "result": "empty-username-caret-Sign-In-disabled",
+          "evidenceRefs": [
+            "ev-capture-e717c8fef809"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.ime.trime-three-Backspaces-clear"
+    },
+    {
+      "id": "interaction-legacy-local-ime-restore-original-eight-settings",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "optional",
+      "evidenceRefs": [
+        "ev-capture-6a1140e4de0a",
+        "ev-file-86d2d952e8d5"
+      ],
+      "unknowns": [
+        "TalkBack/read-screen and actual speech output",
+        "IME disabled is not package uninstall/disable. Original Owner0 did not use auxiliary IME; real credentials were not typed.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "auxiliary-Trime-user10-testing",
+          "event": "restore each recorded original IME setting and disable Trime IME",
+          "to": "original-LatinIME-and-eight-settings-matched",
+          "result": "[\"157source field empty, LatinIME returned\",\"Owner0anduser10eachfour recorded settings match originals; Trime package remains installed only foruser10\"]",
+          "evidenceRefs": [
+            "ev-capture-6a1140e4de0a",
+            "ev-file-86d2d952e8d5"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "157source field empty, LatinIME returned",
+            "Owner0anduser10eachfour recorded settings match originals; Trime package remains installed only foruser10"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.ime.restore-original-eight-settings"
+    },
+    {
+      "id": "interaction-legacy-local-adaptation-font1p5-to2-visible-labels",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-17368c094df8",
+        "ev-capture-f2951e6af943"
+      ],
+      "unknowns": [
+        "layout measurement/cropping cause",
+        "other pages and real-device accessibility scaling",
+        "159 independently viewed; visible missing PASSWORD word is not proof of underlying string loss or a known layout mechanism.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "User10-empty-Login-default-scale",
+          "event": "explicit font1.5 then2.0 sampling",
+          "to": "font2-enlarged-Login-recovery-only-FORGOT-visible",
+          "result": "font2-enlarged-Login-recovery-only-FORGOT-visible",
+          "evidenceRefs": [
+            "ev-capture-17368c094df8",
+            "ev-capture-f2951e6af943"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.adaptation.font1p5-to2-visible-labels"
+    },
+    {
+      "id": "interaction-legacy-local-adaptation-font-delete-normalization",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-file-4a86dad7fcaa",
+        "ev-capture-4e88d92a59f1"
+      ],
+      "unknowns": [
+        "system normalization mechanism",
+        "Later restorationResolution records observed normalization; this is not byte/raw-exact restoration like the8 IME settings.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "temporary-user10-font-override",
+          "event": "delete temporary setting and inspect readback/normal pixels",
+          "to": "effective-default1.0-with-raw-mismatch",
+          "result": "[\"Original user10 raw null becomes1.0, restorationMatches remainsfalse\",\"160normal source pixels; Owner0 original1.0 unchanged\"]",
+          "evidenceRefs": [
+            "ev-file-4a86dad7fcaa",
+            "ev-capture-4e88d92a59f1"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "Original user10 raw null becomes1.0, restorationMatches remainsfalse",
+            "160normal source pixels; Owner0 original1.0 unchanged"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.adaptation.font-delete-normalization"
+    },
+    {
+      "id": "interaction-legacy-local-adaptation-rotation-preference-portrait",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-433e19e64efe"
+      ],
+      "unknowns": [
+        "all-page orientation policy; no forced Activity rotation performed",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "source-Login-portrait",
+          "event": "system user_rotation1 and accelerometer0 preference request",
+          "to": "source-Login-still-portrait720x1280",
+          "result": "source-Login-still-portrait720x1280",
+          "evidenceRefs": [
+            "ev-capture-433e19e64efe"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.adaptation.rotation-preference-portrait"
+    },
+    {
+      "id": "interaction-legacy-local-adaptation-sizecompat-before-restart",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-46da08fdd38a",
+        "ev-capture-a240c80038e8",
+        "ev-capture-e0a60bb2609d",
+        "ev-capture-0a746bfdb0a8",
+        "ev-capture-283d823c7828"
+      ],
+      "unknowns": [
+        "real-device behavior and arbitrary display sizes",
+        "System canvas/global dp does not establish the source client width. Restart circle/hint is Android system UI, not source-product component.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "original-Login-client-under-display-size-change",
+          "event": "controlled research-AVD640or1080 canvas override",
+          "to": "source-client-scaled-or-letterboxed-with-system-restart-affordance",
+          "result": "source-client-scaled-or-letterboxed-with-system-restart-affordance",
+          "evidenceRefs": [
+            "ev-capture-46da08fdd38a",
+            "ev-capture-a240c80038e8",
+            "ev-capture-e0a60bb2609d",
+            "ev-capture-0a746bfdb0a8",
+            "ev-capture-283d823c7828"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.adaptation.sizecompat-before-restart"
+    },
+    {
+      "id": "interaction-legacy-local-adaptation-normal-system-dark-route",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-6afaa79be60d",
+        "ev-capture-bf34d24471aa",
+        "ev-capture-e9ba6694e391",
+        "ev-file-0ce4c96bf695"
+      ],
+      "unknowns": [
+        "all-app/manual in-app theme selector and other-account/page applicability",
+        "168/169 are system surfaces.170source PNG independently viewed. Failed earlier scripted reentry did not create166 and is not used.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "Android-Settings-Display-Dark-theme-off",
+          "event": "ordinary visible Dark theme toggle on, then normal return to source",
+          "to": "actual-source-dark-Login",
+          "result": "actual-source-dark-Login",
+          "evidenceRefs": [
+            "ev-capture-6afaa79be60d",
+            "ev-capture-bf34d24471aa",
+            "ev-capture-e9ba6694e391",
+            "ev-file-0ce4c96bf695"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.adaptation.normal-system-dark-route"
+    },
+    {
+      "id": "interaction-legacy-local-adaptation-dark-normal-source-reentry",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-f76986f2c5b7",
+        "ev-file-0ce4c96bf695"
+      ],
+      "unknowns": [
+        "logged-in home/course themes; old Owner0 Preferences stayed light and remains valid",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "source-dark-Login-under-night-yes",
+          "event": "normal source X to Welcome and existing-account Login reentry",
+          "to": "source-Login-still-dark",
+          "result": "source-Login-still-dark",
+          "evidenceRefs": [
+            "ev-capture-f76986f2c5b7",
+            "ev-file-0ce4c96bf695"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.adaptation.dark-normal-source-reentry"
+    },
+    {
+      "id": "interaction-legacy-local-adaptation-restore-night-no-light",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "optional",
+      "evidenceRefs": [
+        "ev-capture-23e98b2dd3da",
+        "ev-file-0ce4c96bf695"
+      ],
+      "unknowns": [
+        "other app pages",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "source-dark-Login",
+          "event": "restore original system night no",
+          "to": "source-Login-light",
+          "result": "source-Login-light",
+          "evidenceRefs": [
+            "ev-capture-23e98b2dd3da",
+            "ev-file-0ce4c96bf695"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.adaptation.restore-night-no-light"
+    },
+    {
+      "id": "interaction-legacy-local-adaptation-system-restart-actual-narrow-client",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-0a746bfdb0a8",
+        "ev-capture-96abbb600ae0"
+      ],
+      "unknowns": [
+        "other pages and physical devices",
+        "176 independently viewed; actual320dp-width specimen only after client re-creation, not proof of all responsive layouts.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "640canvas-source-compatibility-scaling",
+          "event": "normal Android restart affordance",
+          "to": "complete-source-Login-client640px-at320dpi",
+          "result": "[\"176root[0,0][640,1040], full main labels, no compatibility margins/icon\"]",
+          "evidenceRefs": [
+            "ev-capture-0a746bfdb0a8",
+            "ev-capture-96abbb600ae0"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "176root[0,0][640,1040], full main labels, no compatibility margins/icon"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.adaptation.system-restart-actual-narrow-client"
+    },
+    {
+      "id": "interaction-legacy-local-adaptation-original-size-reset-welcome",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-32e7ea6e102f",
+        "ev-file-274ba3c5d7eb"
+      ],
+      "unknowns": [
+        "OS compatibility behavior on other pages/devices",
+        "180 independently viewed; physical size restored separately from font raw-null normalization mismatch.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-button"
+      ],
+      "transitions": [
+        {
+          "from": "temporary-dynamic-display-size-sampling",
+          "event": "wm reset and normal user10 cold source start",
+          "to": "complete-Welcome-at-original720x1280",
+          "result": "complete-Welcome-at-original720x1280",
+          "evidenceRefs": [
+            "ev-capture-32e7ea6e102f",
+            "ev-file-274ba3c5d7eb"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "local.adaptation.original-size-reset-Welcome"
+    },
+    {
+      "id": "interaction-legacy-local-adaptation-normal-restart-actual-wide-client",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-e0a60bb2609d",
+        "ev-capture-05323d73fd51",
+        "ev-capture-fcf129dca0a6",
+        "ev-capture-128998d03639",
+        "ev-file-94ab92169207"
+      ],
+      "unknowns": [
+        "other source pages and real-device compatibility",
+        "Earlier missing-label reading was corrected; no retained rendering/animation defect or tool-cause claim. This is dynamic-AVD540dp-width sampling, not every physical device.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-input",
+        "component-text"
+      ],
+      "transitions": [
+        {
+          "from": "1080canvas-with-centered-source-sizecompat-client",
+          "event": "normal Android compatibility restart and later normal user10 cold source launch",
+          "to": "complete-source-Login-client1080px-at320dpi",
+          "result": "[\"174/178/179 full title, Sign In, Forgot Password and Google visible\",\"Independent wide-label-pixel-audit confirms matching title/Sign In/Forgot rectangles in all three PNGs\"]",
+          "evidenceRefs": [
+            "ev-capture-e0a60bb2609d",
+            "ev-capture-05323d73fd51",
+            "ev-capture-fcf129dca0a6",
+            "ev-capture-128998d03639",
+            "ev-file-94ab92169207"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": [
+            "174/178/179 full title, Sign In, Forgot Password and Google visible",
+            "Independent wide-label-pixel-audit confirms matching title/Sign In/Forgot rectangles in all three PNGs"
+          ]
+        }
+      ],
+      "legacyRecordId": "local.adaptation.normal-restart-actual-wide-client"
+    },
+    {
+      "id": "interaction-legacy-round3-practice-optional-energy-decline",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-6dbe576230a6",
+        "ev-capture-cf9e684a10cb"
+      ],
+      "unknowns": [
+        "Listen label does not establish all challenge types.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-media-control",
+        "component-feedback"
+      ],
+      "transitions": [
+        {
+          "from": "Practice Hub Listen",
+          "event": "NO THANKS on optional energy offer",
+          "to": "Actual Spanish image challenge",
+          "result": "Actual Spanish image challenge",
+          "evidenceRefs": [
+            "ev-capture-6dbe576230a6",
+            "ev-capture-cf9e684a10cb"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "round3.practice.optional-energy-decline"
+    },
+    {
+      "id": "interaction-legacy-round3-practice-loaded-offline-answer",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-eb8cf178e099",
+        "ev-capture-121261540af1"
+      ],
+      "unknowns": [
+        "Persistent cache, server acknowledgement and sync.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-button"
+      ],
+      "transitions": [
+        {
+          "from": "Already loaded dad translation, active default none",
+          "event": "papá then CHECK",
+          "to": "Great positive feedback offline",
+          "result": "Great positive feedback offline",
+          "evidenceRefs": [
+            "ev-capture-eb8cf178e099",
+            "ev-capture-121261540af1"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "round3.practice.loaded-offline-answer"
+    },
+    {
+      "id": "interaction-legacy-round3-practice-missing-prompt-return",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-0985c03e03ba",
+        "ev-capture-e37d2954c0b1",
+        "ev-capture-d14f8009d9d4",
+        "ev-capture-d4285b659d8e"
+      ],
+      "unknowns": [
+        "Network cause, continuous timing and HTTP cancellation.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-modal",
+        "component-navigation"
+      ],
+      "transitions": [
+        {
+          "from": "Missing-prompt challenge after offline Continue/network restore",
+          "event": "X then KEEP LEARNING, later X then QUIT",
+          "to": "Keep Learning still missing; Quit returns Practice Hub",
+          "result": "Keep Learning still missing; Quit returns Practice Hub",
+          "evidenceRefs": [
+            "ev-capture-0985c03e03ba",
+            "ev-capture-e37d2954c0b1",
+            "ev-capture-d14f8009d9d4",
+            "ev-capture-d4285b659d8e"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "round3.practice.missing-prompt-return"
+    },
+    {
+      "id": "interaction-legacy-round3-words-order-reset-on-reentry",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-capture-bdd6d44e907b",
+        "ev-capture-d575acc50fbf",
+        "ev-capture-757b4b645e16"
+      ],
+      "unknowns": [
+        "Cross-process persistence and all14-word sorting.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-list-row",
+        "component-menu"
+      ],
+      "transitions": [
+        {
+          "from": "Recently learned Words",
+          "event": "SORT Alphabetically, Back and normal Words reentry",
+          "to": "Alphabetical visible then recently-learned visible after reentry",
+          "result": "Alphabetical visible then recently-learned visible after reentry",
+          "evidenceRefs": [
+            "ev-capture-bdd6d44e907b",
+            "ev-capture-d575acc50fbf",
+            "ev-capture-757b4b645e16"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "round3.words.order-reset-on-reentry"
+    },
+    {
+      "id": "interaction-legacy-round3-settings-external-terms-return",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-file-f5c4bff23fc4",
+        "ev-capture-ad21256ed9d8",
+        "ev-file-d8d904d91154"
+      ],
+      "unknowns": [
+        "Exact current China trial contract and checkout provider.",
+        "Normalization does not revalidate the original transition or remove legacy UI freshness limitations."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse visible state relationship only where it serves target business; data persistence, side effects and cancellation remain explicit target choices."
+      },
+      "componentRefs": [
+        "component-settings-group",
+        "component-notice"
+      ],
+      "transitions": [
+        {
+          "from": "Settings footer TERMS",
+          "event": "Normal Terms entry, read-only document, system Back",
+          "to": "External WebViewBrowserTester Terms, then original Settings",
+          "result": "External WebViewBrowserTester Terms, then original Settings",
+          "evidenceRefs": [
+            "ev-file-f5c4bff23fc4",
+            "ev-capture-ad21256ed9d8",
+            "ev-file-d8d904d91154"
+          ],
+          "preconditions": [],
+          "stateRetention": null,
+          "sideEffectsObserved": []
+        }
+      ],
+      "legacyRecordId": "round3.settings.external-terms-return"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.duolingo.onboarding.WelcomeDuoSideView android:id="@id/welcomeDuo" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <androidx.core.widget.NestedScrollView android:id="@id/scrollRoot" android:paddingTop="@dimen/duoSpacing8" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" android:overScrollMode="never">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/contentContainer" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.duolingo.onboarding.CoursePickerRecyclerView android:gravity="center" android:id="@id/courseList" android:background="@color/juicySnow" android:paddingBottom="@dimen/duoSpacing8" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/duoSpacing16" android:paddingEnd="@dimen/duoSpacing16" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <androidx.compose.ui.platform.ComposeView android:gravity="center" android:id="@id/subjectPicker" android:background="@color/juicySnow" android:paddingBottom="@dimen/duoSpacing8" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/duoSpacing16" android:paddingEnd="@dimen/duoSpacing16" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.duolingo.onboarding.OnboardingButtonsView android:id="@id/buttonsContainer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" />
+</LinearLayout>

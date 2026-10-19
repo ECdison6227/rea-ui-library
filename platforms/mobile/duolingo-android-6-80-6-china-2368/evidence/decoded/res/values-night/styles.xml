@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.DayNight">
+        <item name="android:colorBackground">@color/juicySnow</item>
+        <item name="android:textColorPrimary">@color/black_text</item>
+        <item name="android:clipChildren">false</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:colorControlHighlight">@color/black10</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="actionBarStyle">@style/App_ActionBar</item>
+        <item name="actionBarTabBarStyle">@style/App_ActionBarTabBarTheme</item>
+        <item name="actionBarTabStyle">@style/App_ActionBarTabTheme</item>
+        <item name="actionBarTabTextStyle">@style/App_ActionBarTabBarTextAppearance</item>
+        <item name="actionMenuTextAppearance">@style/App_ActionTextStyle</item>
+        <item name="actionMenuTextColor">@color/action_text_color</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <item name="colorAccent">@color/juicyMacaw</item>
+    </style>
+    <style name="Base.Theme.SplashScreen.DayNight" parent="@style/Base.Theme.SplashScreen" />
+    <style name="BettaOutlineButton" parent="@style/OutlineButton">
+        <item name="faceColor">@color/juicySnow</item>
+        <item name="lipColor">@color/juicySwan</item>
+    </style>
+    <style name="CompleteProfile.Card" parent="@style/SelectableBlueCard">
+        <item name="android:focusable">false</item>
+        <item name="android:descendantFocusability">afterDescendants</item>
+        <item name="faceColor">@color/juicyHare</item>
+        <item name="lipHeight">0.0dp</item>
+        <item name="selectable">false</item>
+    </style>
+    <style name="CompleteProfile.Card.ProgressRing" parent="@style/CompleteProfile.Card">
+        <item name="android:clickable">true</item>
+        <item name="backgroundFillColor">@color/juicySnow</item>
+        <item name="capFillColor">@color/juicyWhite</item>
+        <item name="ringFillColor">@color/juicyWhite</item>
+        <item name="startDegrees">90.0</item>
+    </style>
+    <style name="CompleteProfile.Card.Text" parent="@style/App_TextViewStyle">
+        <item name="android:textColor">@color/juicyEel</item>
+    </style>
+    <style name="CompleteProfile.Card.Title" parent="@style/H2">
+        <item name="android:textColor">@color/juicyEel</item>
+    </style>
+    <style name="CompleteProfileCard.Button" parent="@style/SolidWhiteButton">
+        <item name="android:textColor">@color/juicyHare</item>
+        <item name="faceColor">@color/juicyWhite</item>
+        <item name="lipColor">@color/juicyWhite50</item>
+    </style>
+    <style name="FullScreenPracticeHubAnnouncementDialog" parent="@style/FullScreenDialog">
+        <item name="android:windowBackground">@color/juicySnow</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="addSystemBarPadding">false</item>
+    </style>
+    <style name="LevelOval.Locked" parent="@style/LevelOval">
+        <item name="adventuresIconColor">#52656d</item>
+        <item name="adventuresIconFaceColor">#6e848e</item>
+        <item name="duoRadioHeadbandColor">#52656d</item>
+        <item name="duoRadioIconBaseColor">#52656d</item>
+        <item name="duoRadioIconHighlightColor">#5d717a</item>
+        <item name="faceColor">@color/juicySwan</item>
+        <item name="licensedSongShineColor">#52656d</item>
+        <item name="licensedSongStylusColor">@color/juicySwan</item>
+        <item name="licensedSongTonearmColor">#52656d</item>
+        <item name="mathMatchPracticeIconBackgroundColor">#6e848e</item>
+        <item name="mathMatchPracticeIconInnerColor">#637881</item>
+        <item name="mathMatchPracticeIconOuterColor">#52656d</item>
+        <item name="mathStoryIconBaseColor">#52656d</item>
+        <item name="mathStoryIconBulbColor">#6e848e</item>
+        <item name="mathStoryIconHighlightColor">#637781</item>
+        <item name="mathTutorIconBackgroundColor">#4f656f</item>
+        <item name="mathTutorIconStripesColor">#5d757e</item>
+        <item name="pathIconColor">@color/juicyHare</item>
+        <item name="practiceIconDumbbellColor">#52656d</item>
+        <item name="practiceIconDumbbellShineColor">#6d7c82</item>
+        <item name="practiceIconDumbbellStemColor">#52656d</item>
+        <item name="storyIconCoverColor">#52656d</item>
+        <item name="storyIconMiddleColor">#637881</item>
+        <item name="storyIconPaperColor">#6e848e</item>
+        <item name="trophyIconColor">@color/juicyHare</item>
+        <item name="videoCallIconBaseColor">#52656d</item>
+        <item name="videoCallIconFaceColor">#6e848e</item>
+        <item name="videoCallIconShadowColor">#637881</item>
+    </style>
+    <style name="MusicRecord.Locked" parent="@style/MusicRecord">
+        <item name="musicRecordAccentColor">#37464f</item>
+        <item name="musicRecordHighlightColor">#6f8b9d</item>
+        <item name="musicRecordPrimaryColor">#4f6471</item>
+        <item name="musicRecordSecondaryColor">#5f7888</item>
+        <item name="musicRecordShadowColor">#4f6471</item>
+    </style>
+    <style name="ReactionCard" parent="@style/UnclickableCard">
+        <item name="faceColor">@color/juicyEel</item>
+    </style>
+    <style name="Theme.AppCompat.DayNight" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.Dialog" parent="@style/Theme.AppCompat.Dialog" />
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="@style/Theme.AppCompat.Dialog.Alert" />
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="@style/Theme.AppCompat.Dialog.MinWidth" />
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="@style/Theme.AppCompat.DialogWhenLarge" />
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar" />
+    <style name="Theme.MaterialComponents.DayNight" parent="@style/Theme.MaterialComponents" />
+    <style name="Theme.MaterialComponents.DayNight.BottomSheetDialog" parent="@style/Theme.MaterialComponents.BottomSheetDialog" />
+    <style name="Theme.MaterialComponents.DayNight.Bridge" parent="@style/Theme.MaterialComponents.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar" parent="@style/Theme.MaterialComponents" />
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge" parent="@style/Theme.MaterialComponents.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog" parent="@style/Theme.MaterialComponents.Dialog" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert" parent="@style/Theme.MaterialComponents.Dialog.Alert" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert.Bridge" parent="@style/Theme.MaterialComponents.Dialog.Alert.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Bridge" parent="@style/Theme.MaterialComponents.Dialog.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize" parent="@style/Theme.MaterialComponents.Dialog.FixedSize" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize.Bridge" parent="@style/Theme.MaterialComponents.Dialog.FixedSize.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth" parent="@style/Theme.MaterialComponents.Dialog.MinWidth" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth.Bridge" parent="@style/Theme.MaterialComponents.Dialog.MinWidth.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.DialogWhenLarge" parent="@style/Theme.MaterialComponents.DialogWhenLarge" />
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar" parent="@style/Theme.MaterialComponents.NoActionBar" />
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar.Bridge" parent="@style/Theme.MaterialComponents.NoActionBar.Bridge" />
+    <style name="ThemeOverlay.AppCompat.DayNight" parent="@style/ThemeOverlay.AppCompat.Dark" />
+    <style name="Widget.MaterialComponents.ActionBar.PrimarySurface" parent="@style/Widget.MaterialComponents.ActionBar.Surface" />
+    <style name="Widget.MaterialComponents.AppBarLayout.PrimarySurface" parent="@style/Widget.MaterialComponents.AppBarLayout.Surface" />
+    <style name="Widget.MaterialComponents.BottomAppBar.PrimarySurface" parent="@style/Widget.MaterialComponents.BottomAppBar" />
+    <style name="Widget.MaterialComponents.BottomNavigationView.PrimarySurface" parent="@style/Widget.MaterialComponents.BottomNavigationView" />
+    <style name="Widget.MaterialComponents.NavigationRailView.PrimarySurface" parent="@style/Widget.MaterialComponents.NavigationRailView" />
+    <style name="Widget.MaterialComponents.TabLayout.PrimarySurface" parent="@style/Widget.MaterialComponents.TabLayout" />
+    <style name="Widget.MaterialComponents.Toolbar.PrimarySurface" parent="@style/Widget.MaterialComponents.Toolbar.Surface" />
+</resources>

@@ -1,0 +1,2666 @@
+{
+  "id": "hardcoded_math_lesson",
+  "fromLanguage": "en",
+  "type": "MATH_LESSON",
+  "metadata": {
+    "id": "shD17owuiZ1n587v",
+    "type": "math_lesson"
+  },
+  "challenges": [
+    {
+      "id": "mathMatch-labels",
+      "type": "mathMatch",
+      "matchChallenge": {
+        "instruction": {
+          "text": "Round to the \u003cspan\u003enearest 10\u003c/span\u003e"
+        },
+        "pairs": [
+          {
+            "left": {
+              "underlyingEntity": {
+                "noEntity": {}
+              },
+              "taggedTextElement": {
+                "text": "78"
+              }
+            },
+            "right": {
+              "underlyingEntity": {
+                "noEntity": {}
+              },
+              "labeledButton": {
+                "underlyingEntity": {
+                  "noEntity": {}
+                },
+                "headerLabel": {
+                  "text": "NEAREST 10"
+                },
+                "label": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "taggedTextElement": {
+                    "text": "80"
+                  }
+                },
+                "accessibilityLabel": "nearest 10 is 80"
+              }
+            }
+          },
+          {
+            "left": {
+              "underlyingEntity": {
+                "noEntity": {}
+              },
+              "taggedTextElement": {
+                "text": "62"
+              }
+            },
+            "right": {
+              "underlyingEntity": {
+                "noEntity": {}
+              },
+              "labeledButton": {
+                "underlyingEntity": {
+                  "noEntity": {}
+                },
+                "headerLabel": {
+                  "text": "NEAREST 10"
+                },
+                "label": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "taggedTextElement": {
+                    "text": "60"
+                  }
+                },
+                "accessibilityLabel": "nearest 10 is 60"
+              }
+            }
+          },
+          {
+            "left": {
+              "underlyingEntity": {
+                "noEntity": {}
+              },
+              "taggedTextElement": {
+                "text": "29"
+              }
+            },
+            "right": {
+              "underlyingEntity": {
+                "noEntity": {}
+              },
+              "labeledButton": {
+                "underlyingEntity": {
+                  "noEntity": {}
+                },
+                "headerLabel": {
+                  "text": "NEAREST 10"
+                },
+                "label": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "taggedTextElement": {
+                    "text": "30"
+                  }
+                },
+                "accessibilityLabel": "nearest 10 is 30"
+              }
+            }
+          }
+        ]
+      },
+      "challengeGeneratorIdentifier": {
+        "specificType": "match",
+        "generatorId": "-286590677"
+      },
+      "noHint": {}
+    },
+    {
+      "id": "decimalFill-tape",
+      "type": "mathDecimalFill",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Fill in the amount"
+          },
+          "body": {
+            "underlyingEntity": {
+              "entity": {
+                "rational": {
+                  "numerator": 3,
+                  "denominator": 10
+                }
+              }
+            },
+            "fractionElement": {
+              "numerator": {
+                "underlyingEntity": {
+                  "noEntity": {}
+                },
+                "taggedTextElement": {
+                  "text": "3"
+                }
+              },
+              "denominator": {
+                "underlyingEntity": {
+                  "noEntity": {}
+                },
+                "taggedTextElement": {
+                  "text": "10"
+                }
+              },
+              "accessibilityLabel": "3 over 10"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "dynamicFeedback": {
+              "fractionFeedback": {
+                "denominator": {
+                  "entity": {
+                    "integer": {
+                      "integer": 10
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "input": {
+          "decimalFillInput": {
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [
+                    {
+                      "exactAnswer": {
+                        "rational": {
+                          "numerator": 3,
+                          "denominator": 10
+                        }
+                      }
+                    }
+                  ],
+                  "intervalGrading": []
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": false,
+              "answersMustBeOrdered": false
+            },
+            "totalNumber": 10
+          }
+        }
+      },
+      "challengeGeneratorIdentifier": {
+        "specificType": "decimal_fill",
+        "generatorId": "-286590677"
+      },
+      "noHint": {}
+    },
+    {
+      "id": "decimalFill-grid",
+      "type": "mathDecimalFill",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Fill in the amount"
+          },
+          "body": {
+            "underlyingEntity": {
+              "entity": {
+                "rational": {
+                  "numerator": 15,
+                  "denominator": 100
+                }
+              }
+            },
+            "taggedTextElement": {
+              "text": "0\u003cspan\u003e.\u003c/span\u003e15"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "dynamicFeedback": {
+              "decimalFeedback": {
+                "decimalPlaces": 2
+              }
+            }
+          }
+        },
+        "input": {
+          "decimalFillInput": {
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [
+                    {
+                      "exactAnswer": {
+                        "rational": {
+                          "numerator": 15,
+                          "denominator": 100
+                        }
+                      }
+                    }
+                  ],
+                  "intervalGrading": []
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": false,
+              "answersMustBeOrdered": false
+            },
+            "totalNumber": 100
+          }
+        }
+      },
+      "challengeGeneratorIdentifier": {
+        "specificType": "decimal_fill",
+        "generatorId": "-286590677"
+      },
+      "noHint": {}
+    },
+    {
+      "id": "fractionFill-eighths",
+      "type": "mathFractionFill",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Fill in the amount"
+          },
+          "body": {
+            "underlyingEntity": {
+              "entity": {
+                "rational": {
+                  "numerator": 2,
+                  "denominator": 8
+                }
+              }
+            },
+            "fractionElement": {
+              "numerator": {
+                "underlyingEntity": {
+                  "noEntity": {}
+                },
+                "taggedTextElement": {
+                  "text": "2"
+                }
+              },
+              "denominator": {
+                "underlyingEntity": {
+                  "noEntity": {}
+                },
+                "taggedTextElement": {
+                  "text": "8"
+                }
+              },
+              "accessibilityLabel": "2 over 8"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "dynamicFeedback": {
+              "fractionFeedback": {
+                "denominator": {
+                  "entity": {
+                    "integer": {
+                      "integer": 8
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "input": {
+          "fractionFillInput": {
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [
+                    {
+                      "exactAnswer": {
+                        "rational": {
+                          "numerator": 2,
+                          "denominator": 8
+                        }
+                      }
+                    }
+                  ],
+                  "intervalGrading": []
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": false,
+              "answersMustBeOrdered": false
+            },
+            "totalNumber": 8
+          }
+        }
+      },
+      "challengeGeneratorIdentifier": {
+        "specificType": "fraction_fill",
+        "generatorId": "-286590677"
+      },
+      "noHint": {}
+    },
+    {
+      "id": "typeFill-symbol",
+      "type": "mathTypeFill",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Type the answer"
+          },
+          "body": {
+            "underlyingEntity": {
+              "noEntity": {}
+            },
+            "mathSequenceElement": {
+              "elements": [
+                {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "blankElement": {
+                    "size": 1,
+                    "text": {
+                      "text": ""
+                    },
+                    "accessibilityLabel": "blank"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "entity": {
+                      "symbol": "EQUALITY"
+                    }
+                  },
+                  "taggedTextElement": {
+                    "text": "\u003cspan\u003e=\u003c/span\u003e"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "fractionElement": {
+                    "numerator": {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "7"
+                      }
+                    },
+                    "denominator": {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "5"
+                      }
+                    },
+                    "accessibilityLabel": "7 over 5"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "entity": {
+                      "symbol": "SUBTRACTION"
+                    }
+                  },
+                  "taggedTextElement": {
+                    "text": "\u003cspan\u003e−\u003c/span\u003e"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "fractionElement": {
+                    "numerator": {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "3"
+                      }
+                    },
+                    "denominator": {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "5"
+                      }
+                    },
+                    "accessibilityLabel": "3 over 5"
+                  }
+                }
+              ],
+              "orientation": "HORIZONTAL"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "staticFeedback": {
+              "gradingFeedback": {
+                "mathSequenceElement": {
+                  "elements": [
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "One possible answer: "
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "4/5"
+                      }
+                    }
+                  ],
+                  "orientation": "HORIZONTAL"
+                },
+                "underlyingEntity": {
+                  "entity": {
+                    "rational": {
+                      "numerator": 4,
+                      "denominator": 5
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "input": {
+          "typeFillInput": {
+            "placeholderText": {
+              "text": "Type the answer"
+            },
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [
+                    {
+                      "exactAnswer": {
+                        "rational": {
+                          "numerator": 4,
+                          "denominator": 5
+                        }
+                      }
+                    }
+                  ],
+                  "intervalGrading": []
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": false,
+              "answersMustBeOrdered": false
+            },
+            "symbols": [
+              {
+                "underlyingEntity": {
+                  "entity": {
+                    "symbol": "FRACTION_DIVIDER"
+                  }
+                },
+                "taggedTextElement": {
+                  "text": "/"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "challengeGeneratorIdentifier": {
+        "specificType": "sequence_type_fill",
+        "generatorId": "-286590677"
+      },
+      "noHint": {}
+    },
+    {
+      "id": "estimateNumberLine-decimal",
+      "type": "mathEstimateNumberLine",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Drag to show on the line"
+          },
+          "body": {
+            "underlyingEntity": {
+              "entity": {
+                "rational": {
+                  "numerator": 15,
+                  "denominator": 100
+                }
+              }
+            },
+            "taggedTextElement": {
+              "text": "0\u003cspan\u003e.\u003c/span\u003e15"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "dynamicFeedback": {
+              "decimalFeedback": {
+                "decimalPlaces": 2
+              }
+            }
+          }
+        },
+        "input": {
+          "continuousNumberLineInput": {
+            "solutionNotchPosition": 0.25,
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [],
+                  "intervalGrading": [
+                    {
+                      "minimumEndpointOpen": {
+                        "entity": {
+                          "rational": {
+                            "numerator": 13,
+                            "denominator": 100
+                          }
+                        }
+                      },
+                      "maximumEndpointOpen": {
+                        "entity": {
+                          "rational": {
+                            "numerator": 17,
+                            "denominator": 100
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": false,
+              "answersMustBeOrdered": false
+            },
+            "segments": [
+              {
+                "label": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "taggedTextElement": {
+                    "text": "0\u003cspan\u003e.\u003c/span\u003e1"
+                  }
+                },
+                "value": {
+                  "entity": {
+                    "rational": {
+                      "numerator": 1,
+                      "denominator": 10
+                    }
+                  }
+                }
+              },
+              {
+                "label": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "taggedTextElement": {
+                    "text": "0\u003cspan\u003e.\u003c/span\u003e3"
+                  }
+                },
+                "value": {
+                  "entity": {
+                    "rational": {
+                      "numerator": 3,
+                      "denominator": 10
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "challengeGeneratorIdentifier": {
+        "specificType": "sequence_estimate_number_line",
+        "generatorId": "-286590677"
+      },
+      "noHint": {}
+    },
+    {
+      "id": "estimateNumberLine-fraction",
+      "type": "mathEstimateNumberLine",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Drag to show on the line"
+          },
+          "body": {
+            "underlyingEntity": {
+              "noEntity": {}
+            },
+            "fractionElement": {
+              "numerator": {
+                "underlyingEntity": {
+                  "noEntity": {}
+                },
+                "taggedTextElement": {
+                  "text": "7"
+                }
+              },
+              "denominator": {
+                "underlyingEntity": {
+                  "noEntity": {}
+                },
+                "taggedTextElement": {
+                  "text": "5"
+                }
+              },
+              "accessibilityLabel": "7 over 5"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "dynamicFeedback": {
+              "fractionFeedback": {
+                "denominator": {
+                  "entity": {
+                    "integer": {
+                      "integer": 5
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "input": {
+          "continuousNumberLineInput": {
+            "solutionNotchPosition": 0.75,
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [
+                  ],
+                  "intervalGrading": [
+                    {
+                      "minimumEndpointOpen": {
+                        "entity": {
+                          "rational": {
+                            "numerator": 132,
+                            "denominator": 100
+                          }
+                        }
+                      },
+                      "maximumEndpointOpen": {
+                        "entity": {
+                          "rational": {
+                            "numerator": 148,
+                            "denominator": 100
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": false,
+              "answersMustBeOrdered": false
+            },
+            "segments": [
+              {
+                "label": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "fractionElement": {
+                    "numerator": {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "4"
+                      }
+                    },
+                    "denominator": {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "5"
+                      }
+                    },
+                    "accessibilityLabel": "4 over 5"
+                  }
+                },
+                "value": {
+                  "entity": {
+                    "rational": {
+                      "numerator": 4,
+                      "denominator": 5
+                    }
+                  }
+                }
+              },
+              {
+                "label": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "fractionElement": {
+                    "numerator": {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "8"
+                      }
+                    },
+                    "denominator": {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "5"
+                      }
+                    },
+                    "accessibilityLabel": "8 over 5"
+                  }
+                },
+                "value": {
+                  "entity": {
+                    "rational": {
+                      "numerator": 8,
+                      "denominator": 5
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "challengeGeneratorIdentifier": {
+        "specificType": "sequence_estimate_number_line",
+        "generatorId": "-286590677"
+      }
+    },
+    {
+      "id": "numberLine-fraction",
+      "type": "mathIntegerNumberLineFill",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Answer on the line"
+          },
+          "body": {
+            "underlyingEntity": {
+              "noEntity": {}
+            },
+            "mathSequenceElement": {
+              "elements": [
+                {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "fractionElement": {
+                    "numerator": {
+                      "underlyingEntity": {
+                        "entity": {
+                          "integer": {
+                            "integer": 3
+                          }
+                        }
+                      },
+                      "taggedTextElement": {
+                        "text": "3"
+                      }
+                    },
+                    "denominator": {
+                      "underlyingEntity": {
+                        "entity": {
+                          "integer": {
+                            "integer": 2
+                          }
+                        }
+                      },
+                      "taggedTextElement": {
+                        "text": "2"
+                      }
+                    },
+                    "accessibilityLabel": "3 over 2"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "entity": {
+                      "symbol": "MULTIPLICATION"
+                    }
+                  },
+                  "taggedTextElement": {
+                    "text": "\u003cspan\u003e×\u003c/span\u003e"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "fractionElement": {
+                    "numerator": {
+                      "underlyingEntity": {
+                        "entity": {
+                          "integer": {
+                            "integer": 2
+                          }
+                        }
+                      },
+                      "taggedTextElement": {
+                        "text": "2"
+                      }
+                    },
+                    "denominator": {
+                      "underlyingEntity": {
+                        "entity": {
+                          "integer": {
+                            "integer": 5
+                          }
+                        }
+                      },
+                      "taggedTextElement": {
+                        "text": "5"
+                      }
+                    },
+                    "accessibilityLabel": "2 over 5"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "entity": {
+                      "symbol": "EQUALITY"
+                    }
+                  },
+                  "taggedTextElement": {
+                    "text": "\u003cspan\u003e=\u003c/span\u003e"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "blankElement": {
+                    "size": 1,
+                    "text": {
+                      "text": ""
+                    },
+                    "accessibilityLabel": "blank"
+                  }
+                }
+              ],
+              "orientation": "HORIZONTAL"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "staticFeedback": {
+              "gradingFeedback": {
+                "mathSequenceElement": {
+                  "elements": [
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "Correct answer: "
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "3/5"
+                      }
+                    }
+                  ],
+                  "orientation": "HORIZONTAL"
+                },
+                "underlyingEntity": {
+                  "entity": {
+                    "rational": {
+                      "numerator": 4,
+                      "denominator": 5
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "input": {
+          "discreteNumberLineInput": {
+            "correctIndices": [
+              3
+            ],
+            "segments": [
+              {
+                "label": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "taggedTextElement": {
+                    "text": "0"
+                  }
+                },
+                "value": {
+                  "noEntity": {}
+                }
+              },
+              {
+                "label": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "blankElement": {
+                    "size": 1,
+                    "text": {
+                      "text": ""
+                    },
+                    "accessibilityLabel": "blank"
+                  }
+                },
+                "value": {
+                  "noEntity": {}
+                }
+              },
+              {
+                "label": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "blankElement": {
+                    "size": 1,
+                    "text": {
+                      "text": ""
+                    },
+                    "accessibilityLabel": "blank"
+                  }
+                },
+                "value": {
+                  "noEntity": {}
+                }
+              },
+              {
+                "label": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "blankElement": {
+                    "size": 1,
+                    "text": {
+                      "text": ""
+                    },
+                    "accessibilityLabel": "blank"
+                  }
+                },
+                "value": {
+                  "noEntity": {}
+                }
+              },
+              {
+                "label": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "blankElement": {
+                    "size": 1,
+                    "text": {
+                      "text": ""
+                    },
+                    "accessibilityLabel": "blank"
+                  }
+                },
+                "value": {
+                  "noEntity": {}
+                }
+              },
+              {
+                "label": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "taggedTextElement": {
+                    "text": "1"
+                  }
+                },
+                "value": {
+                  "noEntity": {}
+                }
+              }
+            ]
+          }
+        }
+      },
+      "challengeGeneratorIdentifier": {
+        "specificType": "sequence_number_line_fill",
+        "generatorId": "-286590677"
+      },
+      "noHint": {}
+    },
+    {
+      "id": "expressionBuild-integer",
+      "type": "mathExpressionBuild",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Complete the equation"
+          },
+          "body": {
+            "underlyingEntity": {
+              "noEntity": {}
+            },
+            "mathSequenceElement": {
+              "elements": [
+                {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "taggedTextElement": {
+                    "text": "8"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "entity": {
+                      "symbol": "EQUALITY"
+                    }
+                  },
+                  "taggedTextElement": {
+                    "text": "\u003cspan\u003e=\u003c/span\u003e"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "blankElement": {
+                    "size": 3,
+                    "text": {
+                      "text": ""
+                    },
+                    "accessibilityLabel": "blank"
+                  }
+                }
+              ],
+              "orientation": "HORIZONTAL"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "staticFeedback": {
+              "gradingFeedback": {
+                "mathSequenceElement": {
+                  "elements": [
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "Correct answer: "
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "2"
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "entity": {
+                          "symbol": "MULTIPLICATION"
+                        }
+                      },
+                      "taggedTextElement": {
+                        "text": "\u00d7"
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "4"
+                      }
+                    }
+                  ],
+                  "orientation": "HORIZONTAL"
+                },
+                "underlyingEntity": {
+                  "entity": {
+                    "integer": {
+                      "integer": 8
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "input": {
+          "expressionBuildInput": {
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [
+                    {
+                      "exactAnswer": {
+                        "integer": {
+                          "integer": 8
+                        }
+                      }
+                    }
+                  ],
+                  "intervalGrading": []
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": false,
+              "answersMustBeOrdered": false
+            },
+            "slotCount": 3,
+            "dragChoices": [
+              {
+                "underlyingEntity": {
+                  "entity": {
+                    "integer": {
+                      "integer": 1
+                    }
+                  }
+                },
+                "taggedTextElement": {
+                  "text": "1"
+                }
+              },
+              {
+                "underlyingEntity": {
+                  "entity": {
+                    "integer": {
+                      "integer": 2
+                    }
+                  }
+                },
+                "taggedTextElement": {
+                  "text": "2"
+                }
+              },
+              {
+                "underlyingEntity": {
+                  "entity": {
+                    "symbol": "MULTIPLICATION"
+                  }
+                },
+                "taggedTextElement": {
+                  "text": "\u003cspan\u003e×\u003c/span\u003e"
+                }
+              },
+              {
+                "underlyingEntity": {
+                  "entity": {
+                    "integer": {
+                      "integer": 3
+                    }
+                  }
+                },
+                "taggedTextElement": {
+                  "text": "3"
+                }
+              },
+              {
+                "underlyingEntity": {
+                  "entity": {
+                    "integer": {
+                      "integer": 4
+                    }
+                  }
+                },
+                "taggedTextElement": {
+                  "text": "4"
+                }
+              },
+              {
+                "underlyingEntity": {
+                  "entity": {
+                    "integer": {
+                      "integer": 5
+                    }
+                  }
+                },
+                "taggedTextElement": {
+                  "text": "5"
+                }
+              },
+              {
+                "underlyingEntity": {
+                  "entity": {
+                    "integer": {
+                      "integer": 6
+                    }
+                  }
+                },
+                "taggedTextElement": {
+                  "text": "6"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "challengeGeneratorIdentifier": {
+        "specificType": "sequence_token_drag",
+        "generatorId": "-286590677"
+      },
+      "noHint": {}
+    },
+    {
+      "id": "multiSelect-integer",
+      "type": "mathMultiSelect",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "\u003cspan\u003eSelect all\u003c/span\u003e correct answers"
+          },
+          "body": {
+            "underlyingEntity": {
+              "noEntity": {}
+            },
+            "mathSequenceElement": {
+              "elements": [
+                {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "taggedTextElement": {
+                    "text": "15"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "entity": {
+                      "symbol": "EQUALITY"
+                    }
+                  },
+                  "taggedTextElement": {
+                    "text": "\u003cspan\u003e=\u003c/span\u003e"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "blankElement": {
+                    "size": 3,
+                    "text": {
+                      "text": ""
+                    },
+                    "accessibilityLabel": "blank"
+                  }
+                }
+              ],
+              "orientation": "HORIZONTAL"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "deferToOtherFeedbackSource": {}
+          }
+        },
+        "input": {
+          "productSelectInput": {
+            "correctIndices": [
+              0,
+              1
+            ],
+            "answerOptions": [
+              {
+                "choice": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "mathSequenceElement": {
+                    "elements": [
+                      {
+                        "underlyingEntity": {
+                          "noEntity": {}
+                        },
+                        "taggedTextElement": {
+                          "text": "5"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "entity": {
+                            "symbol": "ADDITION"
+                          }
+                        },
+                        "taggedTextElement": {
+                          "text": "\u003cspan\u003e+\u003c/span\u003e"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "noEntity": {}
+                        },
+                        "taggedTextElement": {
+                          "text": "5"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "entity": {
+                            "symbol": "ADDITION"
+                          }
+                        },
+                        "taggedTextElement": {
+                          "text": "\u003cspan\u003e+\u003c/span\u003e"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "noEntity": {}
+                        },
+                        "taggedTextElement": {
+                          "text": "5"
+                        }
+                      }
+                    ],
+                    "orientation": "HORIZONTAL"
+                  }
+                },
+                "choiceFeedbackRepresentation": {
+                  "gradingFeedback": {
+                    "underlyingEntity": {
+                      "noEntity": {}
+                    },
+                    "taggedTextElement": {
+                      "text": "15"
+                    }
+                  }
+                }
+              },
+              {
+                "choice": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "mathSequenceElement": {
+                    "elements": [
+                      {
+                        "underlyingEntity": {
+                          "noEntity": {}
+                        },
+                        "taggedTextElement": {
+                          "text": "3"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "entity": {
+                            "symbol": "ADDITION"
+                          }
+                        },
+                        "taggedTextElement": {
+                          "text": "\u003cspan\u003e+\u003c/span\u003e"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "noEntity": {}
+                        },
+                        "taggedTextElement": {
+                          "text": "3"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "entity": {
+                            "symbol": "ADDITION"
+                          }
+                        },
+                        "taggedTextElement": {
+                          "text": "\u003cspan\u003e+\u003c/span\u003e"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "noEntity": {}
+                        },
+                        "taggedTextElement": {
+                          "text": "3"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "entity": {
+                            "symbol": "ADDITION"
+                          }
+                        },
+                        "taggedTextElement": {
+                          "text": "\u003cspan\u003e+\u003c/span\u003e"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "noEntity": {}
+                        },
+                        "taggedTextElement": {
+                          "text": "3"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "entity": {
+                            "symbol": "ADDITION"
+                          }
+                        },
+                        "taggedTextElement": {
+                          "text": "\u003cspan\u003e+\u003c/span\u003e"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "noEntity": {}
+                        },
+                        "taggedTextElement": {
+                          "text": "3"
+                        }
+                      }
+                    ],
+                    "orientation": "HORIZONTAL"
+                  }
+                },
+                "choiceFeedbackRepresentation": {
+                  "gradingFeedback": {
+                    "underlyingEntity": {
+                      "noEntity": {}
+                    },
+                    "taggedTextElement": {
+                      "text": "15"
+                    }
+                  }
+                }
+              },
+              {
+                "choice": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "mathSequenceElement": {
+                    "elements": [
+                      {
+                        "underlyingEntity": {
+                          "noEntity": {}
+                        },
+                        "taggedTextElement": {
+                          "text": "2"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "entity": {
+                            "symbol": "ADDITION"
+                          }
+                        },
+                        "taggedTextElement": {
+                          "text": "\u003cspan\u003e+\u003c/span\u003e"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "noEntity": {}
+                        },
+                        "taggedTextElement": {
+                          "text": "2"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "entity": {
+                            "symbol": "ADDITION"
+                          }
+                        },
+                        "taggedTextElement": {
+                          "text": "\u003cspan\u003e+\u003c/span\u003e"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "noEntity": {}
+                        },
+                        "taggedTextElement": {
+                          "text": "2"
+                        }
+                      }
+                    ],
+                    "orientation": "HORIZONTAL"
+                  }
+                },
+                "choiceFeedbackRepresentation": {
+                  "gradingFeedback": {
+                    "underlyingEntity": {
+                      "noEntity": {}
+                    },
+                    "taggedTextElement": {
+                      "text": "6"
+                    }
+                  }
+                }
+              },
+              {
+                "choice": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "mathSequenceElement": {
+                    "elements": [
+                      {
+                        "underlyingEntity": {
+                          "noEntity": {}
+                        },
+                        "taggedTextElement": {
+                          "text": "4"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "entity": {
+                            "symbol": "ADDITION"
+                          }
+                        },
+                        "taggedTextElement": {
+                          "text": "\u003cspan\u003e+\u003c/span\u003e"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "noEntity": {}
+                        },
+                        "taggedTextElement": {
+                          "text": "4"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "entity": {
+                            "symbol": "ADDITION"
+                          }
+                        },
+                        "taggedTextElement": {
+                          "text": "\u003cspan\u003e+\u003c/span\u003e"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "noEntity": {}
+                        },
+                        "taggedTextElement": {
+                          "text": "4"
+                        }
+                      }
+                    ],
+                    "orientation": "HORIZONTAL"
+                  }
+                },
+                "choiceFeedbackRepresentation": {
+                  "gradingFeedback": {
+                    "underlyingEntity": {
+                      "noEntity": {}
+                    },
+                    "taggedTextElement": {
+                      "text": "12"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "challengeGeneratorIdentifier": {
+        "specificType": "sequence_multi_select",
+        "generatorId": "-286590677"
+      },
+      "noHint": {}
+    },
+    {
+      "id": "tokenDrag-block",
+      "type": "mathWordProblemTokenDrag",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Create the number"
+          },
+          "body": {
+            "underlyingEntity": {
+              "noEntity": {}
+            },
+            "mathSequenceElement": {
+              "elements": [
+                {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "taggedTextElement": {
+                    "text": "2"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "entity": {
+                      "symbol": "MULTIPLICATION"
+                    }
+                  },
+                  "taggedTextElement": {
+                    "text": "\u003cspan\u003e×\u003c/span\u003e"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "taggedTextElement": {
+                    "text": "5"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "entity": {
+                      "symbol": "EQUALITY"
+                    }
+                  },
+                  "taggedTextElement": {
+                    "text": "\u003cspan\u003e=\u003c/span\u003e"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "blankElement": {
+                    "size": 1,
+                    "text": {
+                      "text": ""
+                    },
+                    "accessibilityLabel": "blank"
+                  }
+                }
+              ],
+              "orientation": "HORIZONTAL"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "dynamicFeedback": {
+              "integerFeedback": {}
+            }
+          }
+        },
+        "input": {
+          "tokenDragInput": {
+            "placeholderText": {
+              "text": "Drag here"
+            },
+            "dragChoices": [
+              {
+                "underlyingEntity": {
+                  "entity": {
+                    "integer": {
+                      "integer": 10
+                    }
+                  }
+                },
+                "assetElement": {
+                  "baseLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/10_small_base_light.svg",
+                  "selectedLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/10_small_selected_light.svg",
+                  "correctLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/10_small_correct_light.svg",
+                  "incorrectLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/10_small_incorrect_light.svg",
+                  "disabledLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/10_small_disabled_light.svg",
+                  "baseDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/10_small_base_dark.svg",
+                  "selectedDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/10_small_selected_dark.svg",
+                  "correctDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/10_small_correct_dark.svg",
+                  "incorrectDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/10_small_incorrect_dark.svg",
+                  "disabledDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/10_small_disabled_dark.svg",
+                  "accessibilityLabel": "10 blocks",
+                  "width": 0,
+                  "height": 0
+                }
+              },
+              {
+                "underlyingEntity": {
+                  "entity": {
+                    "integer": {
+                      "integer": 5
+                    }
+                  }
+                },
+                "assetElement": {
+                  "baseLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/5_small_base_light.svg",
+                  "selectedLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/5_small_selected_light.svg",
+                  "correctLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/5_small_correct_light.svg",
+                  "incorrectLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/5_small_incorrect_light.svg",
+                  "disabledLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/5_small_disabled_light.svg",
+                  "baseDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/5_small_base_dark.svg",
+                  "selectedDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/5_small_selected_dark.svg",
+                  "correctDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/5_small_correct_dark.svg",
+                  "incorrectDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/5_small_incorrect_dark.svg",
+                  "disabledDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/5_small_disabled_dark.svg",
+                  "accessibilityLabel": "5 blocks",
+                  "width": 0,
+                  "height": 0
+                }
+              },
+              {
+                "underlyingEntity": {
+                  "entity": {
+                    "integer": {
+                      "integer": 1
+                    }
+                  }
+                },
+                "assetElement": {
+                  "baseLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/1_small_base_light.svg",
+                  "selectedLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/1_small_selected_light.svg",
+                  "correctLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/1_small_correct_light.svg",
+                  "incorrectLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/1_small_incorrect_light.svg",
+                  "disabledLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/1_small_disabled_light.svg",
+                  "baseDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/1_small_base_dark.svg",
+                  "selectedDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/1_small_selected_dark.svg",
+                  "correctDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/1_small_correct_dark.svg",
+                  "incorrectDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/1_small_incorrect_dark.svg",
+                  "disabledDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/1_small_disabled_dark.svg",
+                  "accessibilityLabel": "1 block",
+                  "width": 0,
+                  "height": 0
+                }
+              }
+            ],
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [
+                    {
+                      "exactAnswer": {
+                        "integer": {
+                          "integer": 10
+                        }
+                      }
+                    }
+                  ],
+                  "intervalGrading": []
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": false,
+              "answersMustBeOrdered": false
+            },
+            "alignment": "ALIGNMENT_CENTER"
+          }
+        }
+      },
+      "challengeGeneratorIdentifier": {
+        "specificType": "sequence_token_drag",
+        "generatorId": "-286590677"
+      },
+      "noHint": {}
+    },
+    {
+      "id": "productSelect-header-table",
+      "type": "mathProductSelect",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Select the answer"
+          },
+          "body": {
+            "underlyingEntity": {
+              "noEntity": {}
+            },
+            "headerTableElement": {
+              "headers": [
+                {
+                  "text": "HOURLY WAGE"
+                },
+                {
+                  "text": "HOURS WORKED"
+                }
+              ],
+              "rows": [
+                {
+                  "columns": [
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "\u003cspan\u003e$\u003c/span\u003e5"
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "2"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "orientation": "VERTICAL"
+            }
+          },
+          "gradingFeedback": {
+            "elements": [
+              {
+                "underlyingEntity": {
+                  "noEntity": {}
+                },
+                "taggedTextElement": {
+                  "text": "Correct answer: "
+                }
+              },
+              {
+                "underlyingEntity": {
+                  "noEntity": {}
+                },
+                "taggedTextElement": {
+                  "text": "$10"
+                }
+              }
+            ],
+            "underlyingEntity": {
+              "entity": {
+                "withUnit": {
+                  "entity": {
+                    "integer": {
+                      "integer": 10
+                    }
+                  },
+                  "currencyUnit": {
+                    "currencyType": "DOLLARS"
+                  }
+                }
+              }
+            }
+          },
+          "responseFeedbackRepresentation": {
+            "noEntity": {}
+          },
+          "gradingFeedbackSpecification": {
+            "staticFeedback": {
+              "gradingFeedback": {
+                "mathSequenceElement": {
+                  "elements": [
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "Correct answer: "
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "$10"
+                      }
+                    }
+                  ],
+                  "orientation": "HORIZONTAL"
+                },
+                "underlyingEntity": {
+                  "entity": {
+                    "withUnit": {
+                      "entity": {
+                        "integer": {
+                          "integer": 10
+                        }
+                      },
+                      "currencyUnit": {
+                        "currencyType": "DOLLARS"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "input": {
+          "productSelectInput": {
+            "correctIndices": [
+              2
+            ],
+            "answerOptions": [
+              {
+                "choice": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "taggedTextElement": {
+                    "text": "\u003cspan\u003e$\u003c/span\u003e20"
+                  }
+                },
+                "choiceFeedbackRepresentation": {
+                  "gradingFeedback": {
+                    "underlyingEntity": {
+                      "noEntity": {}
+                    },
+                    "taggedTextElement": {
+                      "text": "$20"
+                    }
+                  }
+                }
+              },
+              {
+                "choice": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "taggedTextElement": {
+                    "text": "\u003cspan\u003e$\u003c/span\u003e15"
+                  }
+                },
+                "choiceFeedbackRepresentation": {
+                  "gradingFeedback": {
+                    "underlyingEntity": {
+                      "noEntity": {}
+                    },
+                    "taggedTextElement": {
+                      "text": "$15"
+                    }
+                  }
+                }
+              },
+              {
+                "choice": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "taggedTextElement": {
+                    "text": "\u003cspan\u003e$\u003c/span\u003e10"
+                  }
+                },
+                "choiceFeedbackRepresentation": {
+                  "gradingFeedback": {
+                    "underlyingEntity": {
+                      "noEntity": {}
+                    },
+                    "taggedTextElement": {
+                      "text": "$10"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "challengeGeneratorIdentifier": {
+        "specificType": "header_table_product_select",
+        "generatorId": "-286590677"
+      },
+      "noHint": {}
+    },
+    {
+      "id": "typeFill-no-symbol",
+      "type": "mathTypeFill",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Type the answer"
+          },
+          "body": {
+            "underlyingEntity": {
+              "noEntity": {}
+            },
+            "mathSequenceElement": {
+              "elements": [
+                {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "blankElement": {
+                    "size": 1,
+                    "text": {
+                      "text": ""
+                    },
+                    "accessibilityLabel": "blank"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "entity": {
+                      "symbol": "EQUALITY"
+                    }
+                  },
+                  "taggedTextElement": {
+                    "text": "\u003cspan\u003e=\u003c/span\u003e"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "taggedTextElement": {
+                    "text": "78"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "entity": {
+                      "symbol": "SUBTRACTION"
+                    }
+                  },
+                  "taggedTextElement": {
+                    "text": "\u003cspan\u003e−\u003c/span\u003e"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "taggedTextElement": {
+                    "text": "22"
+                  }
+                }
+              ],
+              "orientation": "HORIZONTAL"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "staticFeedback": {
+              "gradingFeedback": {
+                "mathSequenceElement": {
+                  "elements": [
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "Correct answer: "
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "56"
+                      }
+                    }
+                  ],
+                  "orientation": "HORIZONTAL"
+                },
+                "underlyingEntity": {
+                  "entity": {
+                    "integer": {
+                      "integer": 56
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "input": {
+          "typeFillInput": {
+            "placeholderText": {
+              "text": "Type the answer"
+            },
+            "gradingSpecification": {
+              "gradingRules": [
+                {
+                  "gradingMethod": "VALUE",
+                  "exactGrading": [
+                    {
+                      "exactAnswer": {
+                        "integer": {
+                          "integer": 56
+                        }
+                      }
+                    }
+                  ],
+                  "intervalGrading": []
+                }
+              ],
+              "numCorrectAnswersRequired": 1,
+              "answersMustBeDistinct": false,
+              "answersMustBeOrdered": false
+            },
+            "symbols": []
+          }
+        }
+      },
+      "challengeGeneratorIdentifier": {
+        "specificType": "sequence_type_fill",
+        "generatorId": "-286590677"
+      },
+      "noHint": {}
+    },
+    {
+      "id": "productSelect-long-blank",
+      "type": "mathProductSelect",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Select the answer"
+          },
+          "body": {
+            "underlyingEntity": {
+              "noEntity": {}
+            },
+            "mathSequenceElement": {
+              "elements": [
+                {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "taggedTextElement": {
+                    "text": "22"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "entity": {
+                      "symbol": "EQUALITY"
+                    }
+                  },
+                  "taggedTextElement": {
+                    "text": "\u003cspan\u003e=\u003c/span\u003e"
+                  }
+                },
+                {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "blankElement": {
+                    "size": 3,
+                    "text": {
+                      "text": ""
+                    },
+                    "accessibilityLabel": "blank"
+                  }
+                }
+              ],
+              "orientation": "HORIZONTAL"
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "staticFeedback": {
+              "gradingFeedback": {
+                "mathSequenceElement": {
+                  "elements": [
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "Correct answer: "
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "78"
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "entity": {
+                          "symbol": "SUBTRACTION"
+                        }
+                      },
+                      "taggedTextElement": {
+                        "text": "\u003cspan\u003e−\u003c/span\u003e"
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "taggedTextElement": {
+                        "text": "56"
+                      }
+                    }
+                  ],
+                  "orientation": "HORIZONTAL"
+                },
+                "underlyingEntity": {
+                  "entity": {
+                    "integer": {
+                      "integer": 78
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "input": {
+          "productSelectInput": {
+            "correctIndices": [
+              0
+            ],
+            "answerOptions": [
+              {
+                "choice": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "mathSequenceElement": {
+                    "elements": [
+                      {
+                        "underlyingEntity": {
+                          "noEntity": {}
+                        },
+                        "taggedTextElement": {
+                          "text": "78"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "entity": {
+                            "symbol": "SUBTRACTION"
+                          }
+                        },
+                        "taggedTextElement": {
+                          "text": "\u003cspan\u003e−\u003c/span\u003e"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "noEntity": {}
+                        },
+                        "taggedTextElement": {
+                          "text": "56"
+                        }
+                      }
+                    ],
+                    "orientation": "HORIZONTAL"
+                  }
+                },
+                "choiceFeedbackRepresentation": {
+                  "gradingFeedback": {
+                    "underlyingEntity": {
+                      "noEntity": {}
+                    },
+                    "taggedTextElement": {
+                      "text": "22"
+                    }
+                  }
+                }
+              },
+              {
+                "choice": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "mathSequenceElement": {
+                    "elements": [
+                      {
+                        "underlyingEntity": {
+                          "noEntity": {}
+                        },
+                        "taggedTextElement": {
+                          "text": "56"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "entity": {
+                            "symbol": "ADDITION"
+                          }
+                        },
+                        "taggedTextElement": {
+                          "text": "\u003cspan\u003e+\u003c/span\u003e"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "noEntity": {}
+                        },
+                        "taggedTextElement": {
+                          "text": "78"
+                        }
+                      }
+                    ],
+                    "orientation": "HORIZONTAL"
+                  }
+                },
+                "choiceFeedbackRepresentation": {
+                  "gradingFeedback": {
+                    "underlyingEntity": {
+                      "noEntity": {}
+                    },
+                    "taggedTextElement": {
+                      "text": "134"
+                    }
+                  }
+                }
+              },
+              {
+                "choice": {
+                  "underlyingEntity": {
+                    "noEntity": {}
+                  },
+                  "mathSequenceElement": {
+                    "elements": [
+                      {
+                        "underlyingEntity": {
+                          "noEntity": {}
+                        },
+                        "taggedTextElement": {
+                          "text": "56"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "entity": {
+                            "symbol": "SUBTRACTION"
+                          }
+                        },
+                        "taggedTextElement": {
+                          "text": "\u003cspan\u003e−\u003c/span\u003e"
+                        }
+                      },
+                      {
+                        "underlyingEntity": {
+                          "noEntity": {}
+                        },
+                        "taggedTextElement": {
+                          "text": "78"
+                        }
+                      }
+                    ],
+                    "orientation": "HORIZONTAL"
+                  }
+                },
+                "choiceFeedbackRepresentation": {
+                  "gradingFeedback": {
+                    "underlyingEntity": {
+                      "noEntity": {}
+                    },
+                    "taggedTextElement": {
+                      "text": "-22"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "challengeGeneratorIdentifier": {
+        "specificType": "sequence_long_blank_product_select",
+        "generatorId": "-286590677"
+      },
+      "noHint": {}
+    },
+    {
+      "id": "patternTable-block",
+      "type": "mathProductSelect",
+      "promptInputChallenge": {
+        "prompt": {
+          "instruction": {
+            "text": "Follow the pattern"
+          },
+          "body": {
+            "underlyingEntity": {
+              "noEntity": {}
+            },
+            "tableElement": {
+              "rows": [
+                {
+                  "columns": [
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "mathSequenceElement": {
+                        "elements": [
+                          {
+                            "underlyingEntity": {
+                              "noEntity": {}
+                            },
+                            "taggedTextElement": {
+                              "text": "5"
+                            }
+                          }
+                        ],
+                        "orientation": "HORIZONTAL"
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "entity": {
+                          "integer": {
+                            "integer": 5
+                          }
+                        }
+                      },
+                      "assetElement": {
+                        "baseLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/5_small_base_light.svg",
+                        "selectedLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/5_small_selected_light.svg",
+                        "correctLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/5_small_correct_light.svg",
+                        "incorrectLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/5_small_incorrect_light.svg",
+                        "disabledLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/5_small_disabled_light.svg",
+                        "baseDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/5_small_base_dark.svg",
+                        "selectedDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/5_small_selected_dark.svg",
+                        "correctDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/5_small_correct_dark.svg",
+                        "incorrectDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/5_small_incorrect_dark.svg",
+                        "disabledDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/5_small_disabled_dark.svg",
+                        "accessibilityLabel": "5 blocks",
+                        "width": 0,
+                        "height": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "columns": [
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "mathSequenceElement": {
+                        "elements": [
+                          {
+                            "underlyingEntity": {
+                              "noEntity": {}
+                            },
+                            "taggedTextElement": {
+                              "text": "10"
+                            }
+                          }
+                        ],
+                        "orientation": "HORIZONTAL"
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "entity": {
+                          "integer": {
+                            "integer": 10
+                          }
+                        }
+                      },
+                      "assetElement": {
+                        "baseLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/10_small_base_light.svg",
+                        "selectedLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/10_small_selected_light.svg",
+                        "correctLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/10_small_correct_light.svg",
+                        "incorrectLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/10_small_incorrect_light.svg",
+                        "disabledLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/10_small_disabled_light.svg",
+                        "baseDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/10_small_base_dark.svg",
+                        "selectedDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/10_small_selected_dark.svg",
+                        "correctDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/10_small_correct_dark.svg",
+                        "incorrectDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/10_small_incorrect_dark.svg",
+                        "disabledDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/10_small_disabled_dark.svg",
+                        "accessibilityLabel": "10 blocks",
+                        "width": 0,
+                        "height": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "columns": [
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "mathSequenceElement": {
+                        "elements": [
+                          {
+                            "underlyingEntity": {
+                              "noEntity": {}
+                            },
+                            "taggedTextElement": {
+                              "text": "15"
+                            }
+                          }
+                        ],
+                        "orientation": "HORIZONTAL"
+                      }
+                    },
+                    {
+                      "underlyingEntity": {
+                        "noEntity": {}
+                      },
+                      "blankElement": {
+                        "size": 1,
+                        "text": {
+                          "text": "\u003cspan\u003e???\u003c/span\u003e"
+                        },
+                        "accessibilityLabel": "???"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "gradingFeedbackSpecification": {
+            "deferToOtherFeedbackSource": {}
+          }
+        },
+        "input": {
+          "productSelectInput": {
+            "correctIndices": [
+              1
+            ],
+            "answerOptions": [
+              {
+                "choice": {
+                  "underlyingEntity": {
+                    "entity": {
+                      "integer": {
+                        "integer": 14
+                      }
+                    }
+                  },
+                  "assetElement": {
+                    "baseLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/14_small_base_light.svg",
+                    "selectedLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/14_small_selected_light.svg",
+                    "correctLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/14_small_correct_light.svg",
+                    "incorrectLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/14_small_incorrect_light.svg",
+                    "disabledLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/14_small_disabled_light.svg",
+                    "baseDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/14_small_base_dark.svg",
+                    "selectedDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/14_small_selected_dark.svg",
+                    "correctDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/14_small_correct_dark.svg",
+                    "incorrectDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/14_small_incorrect_dark.svg",
+                    "disabledDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/14_small_disabled_dark.svg",
+                    "accessibilityLabel": "14 blocks",
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                "choiceFeedbackRepresentation": {
+                  "gradingFeedback": {
+                    "underlyingEntity": {
+                      "noEntity": {}
+                    },
+                    "taggedTextElement": {
+                      "text": "14"
+                    }
+                  }
+                }
+              },
+              {
+                "choice": {
+                  "underlyingEntity": {
+                    "entity": {
+                      "integer": {
+                        "integer": 15
+                      }
+                    }
+                  },
+                  "assetElement": {
+                    "baseLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/15_small_base_light.svg",
+                    "selectedLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/15_small_selected_light.svg",
+                    "correctLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/15_small_correct_light.svg",
+                    "incorrectLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/15_small_incorrect_light.svg",
+                    "disabledLightUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/15_small_disabled_light.svg",
+                    "baseDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/15_small_base_dark.svg",
+                    "selectedDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/15_small_selected_dark.svg",
+                    "correctDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/15_small_correct_dark.svg",
+                    "incorrectDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/15_small_incorrect_dark.svg",
+                    "disabledDarkUrl": "https://math-cdn.duolingo.com/assets/place_value_blocks/15_small_disabled_dark.svg",
+                    "accessibilityLabel": "15 blocks",
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                "choiceFeedbackRepresentation": {
+                  "gradingFeedback": {
+                    "underlyingEntity": {
+                      "noEntity": {}
+                    },
+                    "taggedTextElement": {
+                      "text": "15"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "challengeGeneratorIdentifier": {
+        "specificType": "pattern_fill",
+        "generatorId": "-286590677"
+      },
+      "noHint": {}
+    }
+  ],
+  "skillId": "e7edcd8a3bee8bf8d2da245d183af0e4",
+  "levelIndex": 1,
+  "levelSessionIndex": 1
+}

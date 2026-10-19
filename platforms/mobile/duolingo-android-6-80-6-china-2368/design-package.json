@@ -1,0 +1,765 @@
+{
+  "format": "rea-design-package",
+  "formatVersion": 1,
+  "id": "duolingo-android-6-80-6-china-2368",
+  "name": "多邻国 Android 可迁移设计研究",
+  "source": {
+    "platform": "mobile",
+    "runtime": "Android native; observed AOSP API31 x86_64",
+    "version": "6.80.6-china (2368)",
+    "identity": "com.duolingo 6.80.6-china (2368); APK SHA-256 ebdbcbdaa0d30f0141dbfc31953e650b28b5fd35b7faf7787751223661deaab8",
+    "capturedAt": null,
+    "researchMethod": "Retained REA inspect_android_package evidence, historical source Android capture, and independently implemented native reference. Consumer projection creates no new source evidence.",
+    "researchEvidenceRefs": [
+      "ev-rea-package"
+    ],
+    "legacyIdentityEntry": "evidence/source.json"
+  },
+  "scope": {
+    "mode": "visual-design-and-core-interactions",
+    "goal": "Normalize every retained design collection into Design Package v1; provide implementable visual/state/layout/motion choices and traceable full indexes while preserving historical evidence and remaining fidelity gaps.",
+    "excludedBusiness": [
+      "Default all-feature acceptance or original backend reconstruction",
+      "Actual payment, account mutations and complete course coverage; preserve separately requested historical checks in docs/remaining-validation.json"
+    ]
+  },
+  "readiness": {
+    "status": "partial",
+    "supportedUses": [
+      "Android English/light guided selection and CTA state prototype",
+      "Scoped native face/lip/border, input/dialog and typography candidates with explicit D choices",
+      "Paperlane local cross-business fixture and documented source/reference comparison",
+      "D native representative Chinese, fontScale2.0,640/1080px,dark,IME and motion/reduced-motion samples; scope and per-build identities in reference/revision.json"
+    ],
+    "coreGaps": [
+      "G1：主要课程文字/气泡/禁用面与构建排版已做原生校准及新对照；原版字体内部绑定、角色姿态/原版动画资产匹配和其他页面完整还原仍未知。",
+      "G2：原生方案/指标/设置样例已新增；完整28族九态仍未全部实现和配对，不能由代表样例泛化。",
+      "G3：D进度/反馈/sheet进入与减少动画有运行录屏；原版关键时序、退出/重入/复杂中断及角色动画尚未全部还原。",
+      "G4：D中文、大字2.0、640/1080px、深色与真实IME已运行；跨页全覆盖、完整读屏/触觉与所有目标业务仍未验证。"
+    ],
+    "optionalGaps": [
+      "Original backend, real purchases, account mutations and complete course coverage are not needed to transfer the design. Original research-host business checklist remains outside this consumer package."
+    ]
+  },
+  "entries": {
+    "readme": "README.md",
+    "spec": "DESIGN_SPEC.md",
+    "tokens": "tokens/tokens.json",
+    "components": "components/catalog.json",
+    "layouts": "patterns/layouts.json",
+    "interactions": "patterns/interactions.json",
+    "motion": "motion/catalog.json",
+    "assets": "assets/design-manifest.json",
+    "evidence": "evidence/design-index.json",
+    "reference": "reference/README.md",
+    "comparison": "comparison/source-reference.md",
+    "adaptation": "ADAPTATION_GUIDE.md"
+  },
+  "validation": {
+    "reference": {
+      "status": "partial",
+      "evidenceRefs": [
+        "ev-05-course-picker",
+        "ev-06-course-selected",
+        "ev-r02-source-course-valid",
+        "ev-r03-source-selected",
+        "ev-comparison",
+        "ev-file-e691e96161d6",
+        "ev-capture-61414ca970f5"
+      ],
+      "scope": "Current bounded typography/geometry comparison and D motion/adaptation tests added; historical conditions and remaining source-art/full-component gaps retained."
+    },
+    "crossDomain": {
+      "status": "verified",
+      "evidenceRefs": [
+        "ev-r22-final-paperlane-entry",
+        "ev-r23-final-paperlane-retry",
+        "ev-transfer-map",
+        "ev-reference-runtime",
+        "ev-capture-9ae8141a4b77"
+      ],
+      "scope": "Historical and current final native Paperlane local retry flow verified; no real file/backend claim."
+    }
+  },
+  "distribution": {
+    "mode": "private",
+    "omissions": [
+      {
+        "id": "ev-source-identity",
+        "sha256": "40df3839bacc673acdeab23450d9fb8d9ad764f39bc19d2974c4adada4f4587d",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-reference-runtime",
+        "sha256": "dda05510e74a411d434933d40670355012b4405a75de42123ae64f39e96334be",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-c509b5a1df6c",
+        "sha256": "36d52cdc913943e94326a9276ab7790c9060158b542463c054276c93f746e797",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-d05bf592edd3",
+        "sha256": "3c392808d485a4711a92a04fa01ec34cd171bd65708710cab713d08a02cd9ec9",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-5be788bbc809",
+        "sha256": "58c12dced84f91a49dcedb7141d12316f281511513423654934f73c454458906",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-9a0c30981b2c",
+        "sha256": "61ec24f098715a1e1fe66c3a7bb4975f1dcb3717d54246c1eb0e930d486a7773",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-cc70459a62aa",
+        "sha256": "c408a9ba1463a9a994b9b3c2151cf9fcdc19953a717edeeaab28490a396c63cc",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-c6d92e6cad97",
+        "sha256": "5bb4a1081aab2f3eb08a5c3ed669725505cb1d4f16f343d6efa672419932d1ee",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-581eea157b39",
+        "sha256": "3326288acaf3153e5a6f7d2fa7a0e96d4b1bf18fdcfb37f738a99cde49456e37",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-1a7f05717426",
+        "sha256": "1bcea76b040d934b527bd7e96c44e7d304975c91a63aa5a148e77a8d36087f0f",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-f7b47e8e278e",
+        "sha256": "ede5a53df0a6a00a0bb0b1ff7dd0024d5456a8cd1da1a6ac4bf051d89547b87b",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-f4b7417310c9",
+        "sha256": "c7f5e9c702e6674b8949bb5fcbb4022a6aebb790268bc523ac90ecc56a1d9fe1",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-176d5896a65c",
+        "sha256": "532ad443d2a6f1994fb65ec27e64d1b1bd5aef08e400a87fe17281992f3f6e45",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-79550a21f4e7",
+        "sha256": "4f8c6fe4278bafca568ea89731709f28cfe6c01498a0c94b080d431d70349a24",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-7be04cec0d4d",
+        "sha256": "878ccc5f307c5ef1537d3beafff15414cdd5e33fba3ce163dbe4bcd57a14b8e0",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-b5d22809f28b",
+        "sha256": "70785a950d224c36b9879ebe9c68abc1f4a1c579544062b8cf5e5201961b67c1",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-ffe7becd2243",
+        "sha256": "0d1be57f0af8f2a887fc0a17db1f35e3685a58f8cea17611c83014a82dc42f8c",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-6f7923610108",
+        "sha256": "c9f340679db4051353e601fccfae6353b6394f9f3c5e2484adf780f722797b6c",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-aec97af395e1",
+        "sha256": "f7b9e95f40fcf5b00cbf1ea1489f4ec1521251a5b23d020dc39970c38c76782a",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-548f7819d0fb",
+        "sha256": "b9965922ae3ad50f8fff896b2c7c006be5bc3e90b92e9ecbfed6a6a196aa1c45",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-6afaa79be60d",
+        "sha256": "d42a7284851e7c1185d3b69fadf674f9347a2b5d4efb8454e010345d826602f2",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-bf34d24471aa",
+        "sha256": "c45c13d8559e6fdef390d85535d8c10a4030b94d39d86cdcc33b8e3ee9515ab3",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-f61e42e61d28",
+        "sha256": "2ac04397564ad616b9f65ec41a6863f9325df91c2f7885f3e86fd96d84ac0a5a",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-6cf465f4e451",
+        "sha256": "dd328bfca8035f714597fc8317a42690c93c444c6853f126371aa641eded6eaa",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-bc1f88742834",
+        "sha256": "ea145fae4042d9c8e3acae1e7610a75082db21831e036bfe8392f0f166ffa16f",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-d10bfc6b3f22",
+        "sha256": "0df3766643c9bf7ebb70b33fd424e66c8c8ff7d2ca9ef3ba9bab1dec41feda08",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-6291dd57f17c",
+        "sha256": "c54256baccca8c18557f3568e1faf13c0585a8042c1b723923531b456c13375d",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-d6e6c8db98e5",
+        "sha256": "26323019d09aa4cee2258d5dd055f347e04ad4c4bf53be4113582a867e305cc9",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-05b2daecd608",
+        "sha256": "0d6a895248e0fc944a9c0dff23e544c8ba00050bc837270148e8bb554aa90769",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-78e01211ae87",
+        "sha256": "998e93bb8ca35a727bd2ebac3b37f144f17629197783107a85cd2de30168838a",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-93884ab2e05f",
+        "sha256": "5964385c6a86786e18160ca0aa52082c1b9ce8b0132c3cb01766533b3de939a5",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-37c594d0fe49",
+        "sha256": "fabb180d6d59daf536eb9650d772746c933c0ef888e651fc865dc3682e8b1e03",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-51ace32baa7d",
+        "sha256": "6c3eae81152491fa1557e0967c40a297dacfa00482be45704ff647b56f909033",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-6243b801792c",
+        "sha256": "3de3285ed291254abf19403cf6795ee5127b037b36dda3a46d4c812ef366c0a2",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-2deee1d19354",
+        "sha256": "f9593b50ffff060ac2ed22cb1fd6ee806fc4c0ba2a0903675df450670440240c",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-6570e213209b",
+        "sha256": "114dc44219cd3186067ef84e7e1f91e1bb53f0948ba8eb5247eb4e087f4afd07",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-92885b306ad3",
+        "sha256": "fd5f6f46e34acb15f90a9a308933ea0713bac4aaabd37cb4d85eb644601e8440",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-7ad211990c3d",
+        "sha256": "316413c2d0cd1c0a711f7a5b784b279fe82d06266cd6b1c9b32b342e6004588b",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-1de7140ac3ee",
+        "sha256": "910fe71291108690aa4e00162ef0b51132b2cde9b6a6de29446ea4b844fde0f5",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-fc0ed88d8dc8",
+        "sha256": "71f0c545a534c2fe96b1b0134b034fe7f104c9fb7e7c0279188886f23399ed80",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-407ebf048ae3",
+        "sha256": "7fe406640ed1e4c4da9623f9160be79ef95a087a514bf2e603c9d1c2ab37e245",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-b33d2f4cdd58",
+        "sha256": "f1ec1cd4bd9a7aa199a9fa71fed729eb2acad994544d37d2bde742ea95334b2f",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-7cea491f2d17",
+        "sha256": "bb8c2a5b38bddbe03a0c377ac0d099f03e4cab62fbf26cc9699883714cd82d6f",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-02d54f3085ba",
+        "sha256": "57cf0f9ca30799fa8182cac3511ce91cfa0795615c9cf72db0c5db7f701dc9b4",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-ec6d2a09775c",
+        "sha256": "5bbbcec7b241dcad259eea19c7147300f8314c0ae6869e846cb350de43c81d2d",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-edd07719dbd1",
+        "sha256": "40b5a29fe755de59836efe5c01339fc30b64ca2ac11719628daf7a39d40da9c8",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-26100ad6a63e",
+        "sha256": "2afb423a3445cc9968b9d35b619bd48c5331e427fb07529a6dafb2d0826c8534",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-f48d5b6713cd",
+        "sha256": "98e475d35460dce0d15aabe4cb4c203bf87c956b87df1c1055cc8eef049158a5",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-a1f5c86be4d0",
+        "sha256": "e9d023d26f67c548ccf02b53d0f22d8258ec0575f991f9ca39a1309f21cf2b15",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-13753f408586",
+        "sha256": "c966e2cdd1461aa2fe1068818e3c233922bc97e60ab80de6918352d9ebfa3247",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-19205e4ec72e",
+        "sha256": "c135d5a69acdc8714ba7ece8cc9124c0e5e310bb6d5adf47a45bb2dfa9d21275",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-89560d75e07f",
+        "sha256": "017532f9249f53911841e0232ff54cd67dfb91cba40471fc59d0770ea87a6c9e",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-f66b99920b40",
+        "sha256": "35053d2eec7655dfb6be8662ace9b04757929b4fcb20ea543d714f50c59c2e05",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-e2d596f4231b",
+        "sha256": "e019dbe63c4d9cd3ebfe4b35f54203624330df7447380621e085684fc2e14f15",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-5c03b6a35a42",
+        "sha256": "e019dbe63c4d9cd3ebfe4b35f54203624330df7447380621e085684fc2e14f15",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-121261540af1",
+        "sha256": "b5ea88e2efc74040fe8a4aaa99b5548519bf97455edcb526753326fe00fd26cc",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-e37d2954c0b1",
+        "sha256": "3efdd7219eeb737f0743a1c592c650b7f0cd457939a5a51a1d03e1277944c453",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-8fbffe25bc5e",
+        "sha256": "96ca62c4e829e0de247883721cab9ffac6bbabc98984bae8aeaa34c5015ffcba",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-b7f923aa4a3e",
+        "sha256": "4f589876bf13bff2060ed6887b4b6cdbc5e99cca92cc54b441544c533d294cb7",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-731ab918d1ea",
+        "sha256": "c2e9a4a0fb9ed8fc74e7eb056d7d547b83ec6209ade6ba9fe91604fc32210053",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-fa671a118b13",
+        "sha256": "02f8242760edaf77bdffa724a416660942d71f9b502e405f66b99cbef1a1c46d",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-66665f3e4c48",
+        "sha256": "f126d6b2e364c8bd62dfde7220437969e7285e69a81a3c193f3f47c393c1977d",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-00e75d397ee1",
+        "sha256": "5538f00feedc952d9c238fae8a151fe0c93065862b768417ddfac9ed4be1e88b",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-18c9c70e0fdd",
+        "sha256": "13c97b154576f055827c75dc3e0c05e1ef1947d00bea0044c87f8a57a9bf4927",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-f998e49a8515",
+        "sha256": "df808e6cbe33a0faa2c641ff6e44a1cd2825dccfd67fbca423d5849d55f7c541",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-b5f561e8a1f6",
+        "sha256": "b45d99bb37f675beae4acc627d9a6e7f019846adc01ba883fe976eafcc0b8282",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-a7a0b63a04f7",
+        "sha256": "a6a5c12ae7d8223d33507242c5522641ecc90710bc5154125bec0cfa7b857d52",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-4d75dc39dcc4",
+        "sha256": "e25130d22988cce4f5422c076d280dc4f781102ab53cd7eae4d54b418dcc059c",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-646a3682689f",
+        "sha256": "9dd37e247d63f486d11bb57fca5113a4aaa9bb5a19fe80579e90483e2a4a9f12",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-e39e0527e298",
+        "sha256": "53ef0cf681831b44d6d70941b73351c42847f1898a102e0ed0417dbaba971a31",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-4432c439f081",
+        "sha256": "99e29d977ca46f8b3a434c33f789ea07a87c569c921106e551bac4d6335d1d72",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-7d8509237af3",
+        "sha256": "5ae800492114bb808c8df5b753d70f043471b276832e72cc370ec1880fbaedb6",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-86f6df855b1d",
+        "sha256": "46ec6486ed23133850dd5307a3a545dd424b3560d668c173c33af797055b6baf",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-2dd9cc984612",
+        "sha256": "b2d8f63dbce58a310f409fa532320d47faf85437010d1180be1175da851d5608",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-42b671dab4a2",
+        "sha256": "fe9fd21a1352e10533f7adfa3f12b2a4b84b5de83e262a8896e888fb48648c89",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-4c42410c0a09",
+        "sha256": "d898da5e93581d4c74c5b1bc31aecd28d3ec93afedb9bbb3ed120e2d0a585029",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-6020e0ee1315",
+        "sha256": "54fcf5795b247ece0ab28fe9bf5b3d2c9ba24fb488061ca594636eb920e6be3e",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-c9b46e7a40f6",
+        "sha256": "e13e329a6bfcd7d750833ccddbd24c22c5e1d4ef3f94792c598d0fa16ef5e1e0",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-capture-b5e8d2c15197",
+        "sha256": "ea813e76743d924291c35799e8e6859d463dbb44634cf51047b2a9da0e4e8569",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-capture-eceb7c32cc18",
+        "sha256": "a58834499ea9f2c5d366ed1f53bb76ca322dd9513f506133fbc43409094713cf",
+        "reason": "Private original intentionally not distributed"
+      },
+      {
+        "id": "ev-file-85df13e8b35a",
+        "sha256": "8249da8912c0a17d886d6f221a6bbc4e04d39bc99180d909f46528161272cdd0",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-867a348dfd24",
+        "sha256": "f8bde03690810b42c9b818e45097dfae25935a06185813de1acf24eced890476",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-8bb34235ef81",
+        "sha256": "0ac2fff7f0c8750a00458065f84d5a9a4b228a77a3b84cc91b856c8fe58d7fe5",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-22e2064c91e0",
+        "sha256": "7db4d899ce96e6e5350b81a54448c29291bd7d3abb0fa587253c5f349cc7e4ca",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-27798ee4cc57",
+        "sha256": "eb684ba1b415cfbe4b9873a00e25157c0882542ad9a5338994616317ecbf1393",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-4d3481dc1bb0",
+        "sha256": "668404df907c9d771a7ce7409142d63935f7752dfde3a5649300f505c6d6fb4f",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-7bbd00b4a6ce",
+        "sha256": "dfeb95d139f24e21227a6b7b9ea57c73a99ff808ee9db47b1809a875a9a5c662",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-2b2f3101b40e",
+        "sha256": "bb7cd088ac381ddaf958693d1ee51b9f51bd63e2e49fde5afcabc086acfa1459",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-283c0d29b0d8",
+        "sha256": "6f31cc4bc8cc2303eabf26ac118f1f6ca26192019279e6406e11b378ef2be3ca",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-58a05867e093",
+        "sha256": "a83bfed8bf23f0bc330de6428a079559de5ba54185f93f4602b4dd02979fefc4",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-ab5c29c1d17c",
+        "sha256": "a83bfed8bf23f0bc330de6428a079559de5ba54185f93f4602b4dd02979fefc4",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-0d2b634941f8",
+        "sha256": "4d87385fc76bf30de1daebf7e1dc15348ce1e4064ba1b253e4f6c89696de5d5f",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-4439001d8835",
+        "sha256": "0f47aa3ae6776c47d14e8f0bf56d7a93c79090e257700b0f9b8193030bed0096",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-3055b8e14797",
+        "sha256": "3a2a5d3c29b310d36af759fa5133d28d3b7120fccbc85ffe6ff08e539fb2908d",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-c9fc6022475c",
+        "sha256": "3b66393189d7ff202f9959f2b6f1ac2b25a5dba24f7be6084cff8b79bf804b54",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-48a51e0edecd",
+        "sha256": "3b66393189d7ff202f9959f2b6f1ac2b25a5dba24f7be6084cff8b79bf804b54",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-dc70cc6ffa67",
+        "sha256": "13045040b485e3240b6dbaf0e7bb4587d0b8c997a2f683272f331bfaacb6bb6b",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-fff507a08cec",
+        "sha256": "33f795dad2d9d2348f004ee329e3412eb30786673b0d43b37728da5b635fdcd2",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-f1e80b081fd9",
+        "sha256": "91f597e4c6fa070922e211c4a3cd4c96f4f1f438c25fb29de1d70324e58e3d45",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-ec5874e5dee6",
+        "sha256": "8ed20911707ca1232747163cf9141283cb89ac6d9b307fb9fe4b7fb69891f9d7",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-5b5860be06be",
+        "sha256": "f92d4b2f8de0fdbd836ba7b4abdda985ced8fc3dd85131df80157259e7c2c978",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-e6932cc08b7c",
+        "sha256": "b499ef41b297ed4a38162fbcae1adb87fae55bb9a5cbb4d4e7087e83e682f853",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-77b2a943dd07",
+        "sha256": "e839b22de8b19f3662a9358768b1bab0f73700dbbe1e6099044a123932702004",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-5d01786a6328",
+        "sha256": "357fa34f28a5df6dbdca497b70f36fc3a08ab523e1cd84d31efc582d1bd16f4a",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-de882c9dc7dc",
+        "sha256": "6ddcee97d261c6846c7cdf4dbfae6eed4d76e5e9d7beb333999b4a8130098184",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-15345ef2aa9b",
+        "sha256": "3744ca907464099cc488b066191c714d9d75b83689e03147df89f098c0090382",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-0160f4b47cf3",
+        "sha256": "a69029abc2e9e0052e1537ae5dacd740b18ce1b59fd548784e6062e43a5a1fe9",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-11d98a5397ff",
+        "sha256": "b3937f7da1dc366d6b3fd1c8c385b45e8debc31c8acaf8d0b6456f60ede90038",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-f58e5752bf77",
+        "sha256": "c833c738d9589083d03c515bfd115b842635094b1e4aae450d0526e254bc9b91",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-0b1251427eda",
+        "sha256": "1e568e264f51e45e05b018eb16845ee07e13507f2e9315897c8a99dd23e744f2",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-e36568a5b049",
+        "sha256": "e311a6ed47fdb31124a13a22c3a026f5fd7010178f3c7b91cee0993f3025f831",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-a39dcaef67e8",
+        "sha256": "d4e9cf62752ba6b416a7417d8170f87a95e38d55efa5031399914b3b18b8ce38",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-eab622514741",
+        "sha256": "8c4a4bc666903c692771c6ec8114c77c6ccb37fded9ee58881944c128563b2f9",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-e62884dee530",
+        "sha256": "e66d1722437e8c23355ab598f7d82683a4723ec0540bb72ab5b226d802356992",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-86d2d952e8d5",
+        "sha256": "d5b0ae2f110caa73061286503ce9e3a9c26ea4ea390a4afec6051f6c11a964e0",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-4a86dad7fcaa",
+        "sha256": "65f492d86f77c7dbdbb2c4b12f02178dee7e74a47080a701bb847663f39040d2",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-0ce4c96bf695",
+        "sha256": "c9dc274fc279d8f89c34bcbecc812b1aabfb504a8d787193920c963d5985628e",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-274ba3c5d7eb",
+        "sha256": "a9615332cf3462c4661805417723e31ecc88172c616b964bbb298c6ef361c4df",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-94ab92169207",
+        "sha256": "4eefbe7110bf9da3b862db69349f5e66b843593dd556fdab6143d2b7450b44a6",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-f5c4bff23fc4",
+        "sha256": "a97323158c3383fe8ba073c1de9512f6691f97f9f38f88266eff69362b332649",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-d8d904d91154",
+        "sha256": "e1a183a4a5a37611aee91fbd554873079154b6064c7e37b95f4de98aba5137b3",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-2266cfc96291",
+        "sha256": "a468257cb927818fcf8270d03bf7eb14063b2c65b7acba57ec519530f7163086",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-c0d18b42374f",
+        "sha256": "3c9f33f522265dfbf09e98f7e8c310c05579dc863e3b42dfdebdaaaeef83ba6c",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-013d2f8536d2",
+        "sha256": "42e46ac2fa9d029c7cb51c75cfa3782e3647594e0e65037a7bee70301df5d2e7",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-f82105849755",
+        "sha256": "95d9913ed8923c94ae71c6ee34c861e80a702d7eb1601cc19ed040ba1b5ab61b",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-5c02b2fe6365",
+        "sha256": "8e737b68e1986b9aa542c55dbc017c34fdfdf46aa44beef14f8c187334e88104",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-dc8ab2bdb837",
+        "sha256": "8414c9c00aeb70a4c10bb78a0583dedbcebde0b909e5d5fa6e489d5040af32ff",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-78a20b2f15a4",
+        "sha256": "1dc3fa8cfecd5dedf5696ec7ad6b56cbe486a1c57ce91e97fac413ffe9c6ff87",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-40d9370a33e6",
+        "sha256": "944a242cb5e6f489ec7bef70fa74975a094abe8ac87eaa8cd4cd59ef91832b2b",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-89c5302d8444",
+        "sha256": "5848e506936ac17603943ba58cb38817dfea25c65bab75152e8821372d328f56",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-77170e413bdf",
+        "sha256": "74d6e9de6a97dda92369a39d93d4ad8b48f6bc929295d0a1f5296d2a2dd48e28",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-4701b578c48c",
+        "sha256": "2ec5d1b0318cdafadc820c7edcd8a8fcf0c16a98e74a2a205eeb8f223e0a1214",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-a9cc1dd51053",
+        "sha256": "74cf791299f4ff893e68e0d1c0141a02eeeb7e668e135cb0042a82cec1237150",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      },
+      {
+        "id": "ev-file-08c4f05e895a",
+        "sha256": "4f29d52dbaaa7704e374c4831844628c782b6cad40259ce3b93a8b5701a2ab32",
+        "reason": "Research-only diagnostic/context record retained on research host"
+      }
+    ],
+    "review": "Explicit member projection: original APK, private captures, raw action logs, AVD/SDK/JDK, credentials and signing intermediates excluded. Source pictures/assets copied byte-identically; reduced capture metadata explicitly D."
+  },
+  "normalization": {
+    "status": "distributed-consumer-projection",
+    "report": "docs/DISTRIBUTION.md",
+    "preview": "design-preview.html"
+  }
+}
