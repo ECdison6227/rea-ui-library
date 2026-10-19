@@ -12,4 +12,4 @@ private/、catalog/private.local.json、.runtime/ 不得进入公开构建或 Gi
 
 来源历史文档中的rea-style-library调用名映射到当前rea-design-transfer，不要求安装两份技能；不要为改名改写原研究证据。
 
-验证：npm test、npm run build、npm run verify。总库远端ECdison6227/rea-ui-library为私有；不擅自改公开。此前用户授权迁入后删除三个旧分析仓库的结果见docs/migrations/2026-10-19，当前任务不再删除任何仓库。新技能名rea-design-transfer，技能源仍在ECdison6227/rea-style-library；本库vendor副本与skills/source.lock.json保持一致，当前用户已明确授权升级本机及同步这两个仓库。
+验证：npm test、npm run build、npm run verify。总库远端ECdison6227/rea-ui-library为私有；不擅自改公开。此前用户授权迁入后删除三个旧分析仓库的结果见docs/migrations/2026-10-19，当前任务不再删除任何仓库。新技能名rea-design-transfer，技能源现为ECdison6227/rea-design-transfer；本库vendor副本与skills/source.lock.json保持一致，当前用户已明确授权升级本机及同步这两个仓库。

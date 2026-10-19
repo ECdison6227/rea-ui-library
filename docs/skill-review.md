@@ -4,7 +4,7 @@
 
 ## 当前技能
 
-调用名为 **rea-design-transfer**，展示名“REA 设计提取与迁移”。技能源保留在[ECdison6227/rea-style-library](https://github.com/ECdison6227/rea-style-library)；本库保存[版本锁定副本](../skills/rea-design-transfer/SKILL.md)，同步元数据在skills/source.lock.json。原rea-style-library名称停止作为当前安装目录，旧调用需要迁移；不要同时安装两个会自动触发的副本。
+调用名为 **rea-design-transfer**，展示名“REA 设计提取与迁移”。技能源现为[ECdison6227/rea-design-transfer](https://github.com/ECdison6227/rea-design-transfer)；本库保存[版本锁定副本](../skills/rea-design-transfer/SKILL.md)，同步元数据在skills/source.lock.json。原rea-style-library名称停止作为当前安装目录，旧调用需要迁移；不要同时安装两个会自动触发的副本。
 
 此前草案的三条状态轴、阶段停止条件、有界依赖复试、早期参考配对、真实REA入库及原件/分发边界继续保留。[初始补丁](history/skill-upgrade-initial.patch)仅作历史，不是当前安装方式。
 

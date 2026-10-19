@@ -40,7 +40,7 @@ Kimi的“相似UI与核心用户流程”目标已由用户于2026-10-19接受�
 
 ## 设计提取与迁移技能
 
-新技能名为 **`rea-design-transfer`（REA 设计提取与迁移）**，技能源仓库地址保留为[rea-style-library](https://github.com/ECdison6227/rea-style-library)。本库的[技能副本](skills/rea-design-transfer/SKILL.md)及同步锁用于离线读取，改动先回到技能源；[改进与验证边界](docs/skill-review.md)记录具体范围。
+技能名为 **`rea-design-transfer`（REA 设计提取与迁移）**，当前技能源仓库为[rea-design-transfer](https://github.com/ECdison6227/rea-design-transfer)。本库的[技能副本](skills/rea-design-transfer/SKILL.md)及同步锁用于离线读取，改动先回到技能源；[改进与验证边界](docs/skill-review.md)记录具体范围。
 
 默认围绕视觉元素、组件/状态、布局组合、关键动效和通用交互研究；不穷举原业务功能或恢复后端、支付、同步、播放内核。已有功能和普通UI的产品可以直接从目录复制迁移任务，按选定规范实施，保留自己的业务、数据、品牌和技术栈。
 
