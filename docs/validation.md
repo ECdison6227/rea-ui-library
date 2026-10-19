@@ -17,9 +17,19 @@ npm test
 npm run build
 npm run verify
 node tools/browser-qa.mjs
-node --test skills/rea-style-library/scripts/check-manifest.test.mjs
+node --test skills/rea-design-transfer/scripts/*.test.mjs
 ```
 
 浏览器检查使用本机已有Chromium和独立临时profile；其他电脑可用环境变量REA_QA_CHROME指定已安装浏览器。不会安装或更新浏览器。报告和截图保存在总库.runtime，不随Git提交。
 
 来源自己的原生工程没有在本次分类任务中重新编译；macOS、Android权限/真实服务、逐字字体、所有原始交互等仍按来源报告的覆盖与未知处理。静态目录链接到本总库，完整本地资料随普通clone提供。
+
+## Design Package v1与新skill联动
+
+本次新技能名rea-design-transfer，增加标准设计包校验/profile导出和新旧入口兼容。浏览器/服务端共用迁移任务生成函数，传递规范仓库、ref、来源目录、设计入口、实际取得commit的记录要求以及原覆盖边界。
+
+38项本地测试通过，包含原catalog/HTTP/导出检查、新格式draft不能登记、partial登记保留旧来源、modern/legacy迁移入口、技能副本提交/SHA锁以及27项技能契约测试。build与verify通过，原有4来源的13,610个研究文件逐文件核验一致；未修改它们的coverage或运行原App。后续新增测试数量以实际npm test为准。
+
+本次另运行隔离headless浏览器检查，1440/390px目录、分类、真实文档、叠层Esc、比较和新技能说明入口通过，无横向溢出；未触及用户前台窗口、原App或模拟器。
+
+技能独立前向试用和4个漏检修正见上游验证说明。检查通过只支持声明结构、引用和字节一致，不认证作者提供的REA元数据、不证明全平台UI还原。技能副本用skills/source.lock.json锁定上游提交和SHA，普通启动不自动联网更新。

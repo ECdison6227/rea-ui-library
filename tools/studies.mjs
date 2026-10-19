@@ -3,6 +3,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {ROOT,definitions,validateDefinitions} from './catalog.mjs';
 import {lockStudy,verifyStudy} from './integrity.mjs';
+import {validateDesignPackage} from '../skills/rea-design-transfer/scripts/design-package.mjs';
 export function addStudy(profile){
  const data=definitions(),s=structuredClone(profile);
  if(data.sources.some(x=>x.id===s.id||x.root===s.root))throw Error('Study id/root already registered');
@@ -10,6 +11,7 @@ export function addStudy(profile){
  s.integrity={manifest:'catalog/manifests/'+s.id+'.json',files:1,treeSha256:'0'.repeat(64)};
  const candidate={...data,sources:[...data.sources,s]},errors=validateDefinitions(candidate);if(errors.length)throw Error(errors.join('\n'));
  if(!s.artifacts.some(a=>a.path===s.provenance.researchEntry&&a.role==='readme')||!s.artifacts.some(a=>a.role==='spec'))throw Error('Research entry and specification artifacts are required');
+ if(s.designPackage){const result=validateDesignPackage(path.join(ROOT,s.root,s.designPackage),{forCatalog:true});if(result.errors.length)throw Error('Design Package: '+result.errors.join('\n'));}
  s.integrity=lockStudy(s);fs.writeFileSync(path.join(ROOT,'catalog/sources.json'),JSON.stringify(candidate,null,2)+'\n');return s;
 }
 export function relockStudies(id){

@@ -9,6 +9,9 @@ import {filterSources,migrationPrompt,comparisonRows} from '../site/logic.js';
 import {buildPublic} from '../tools/build.mjs';
 import {addStudy} from '../tools/studies.mjs';
 import {verifyStudy} from '../tools/integrity.mjs';
+import {makePrompt} from '../tools/catalog.mjs';
+import {initDesignPackage,catalogProfile,validateDesignPackage} from '../skills/rea-design-transfer/scripts/design-package.mjs';
+import crypto from 'node:crypto';
 
 test('source catalog contains traceable REA research with dynamically counted platforms',()=>{
  const data=definitions();assert.deepEqual(validateDefinitions(data),[]);const c=getCatalog();assert.equal(c.sources.length,data.sources.length);for(const p of c.platforms)assert.equal(p.count,c.sources.filter(s=>s.platform===p.id).length);assert.ok(c.sources.every(s=>s.kind==='research'&&s.origin==='historical'));assert.ok(!fs.existsSync(path.join(ROOT,'.gitmodules')));
@@ -56,4 +59,21 @@ test('new research registers without an external repository; subsequent byte cha
   const s=addStudy(profile);assert.equal(verifyStudy(s).files,2);assert.ok(getCatalog().sources.some(s=>s.id===id));assert.equal(getCatalog().platforms.find(p=>p.id==='desktop').count,definitions().sources.filter(s=>s.platform==='desktop').length);assert.throws(()=>addStudy(profile),/already registered/);
   fs.appendFileSync(path.join(folder,'spec.md'),'Unreviewed change\n');assert.throws(()=>verifyStudy(s),/Study files changed/);
  }finally{fs.writeFileSync(registry,before);if(path.dirname(folder)!==path.join(ROOT,'platforms/desktop'))throw Error('Unsafe fixture cleanup');if(fs.existsSync(folder))fs.rmSync(folder,{recursive:true,force:true});if(fs.existsSync(manifest))fs.unlinkSync(manifest);}
+});
+
+test('client/server migration tasks carry repository, ref, source boundary and modern/legacy entry',()=>{
+ const s=getCatalog().sources[0],a=migrationPrompt(s),b=makePrompt(s);assert.equal(a,b);for(const value of ['$rea-design-transfer',s.sourceRepositoryUrl,s.sourceRef,s.root,s.coverage,s.limits[0]])assert.ok(a.includes(value));assert.ok(a.includes(s.artifacts.find(x=>x.role==='readme').path));const modern={...s,designPackage:'design-package.json'};assert.ok(migrationPrompt(modern).includes('设计入口：design-package.json'));assert.ok(migrationPrompt(modern).includes('实际取得的commit'));
+});
+
+test('standard draft cannot auto-register; an explicit partial fixture preserves old sources',()=>{
+ const id='design-fixture-'+process.pid,relative='platforms/desktop/'+id,folder=path.resolve(ROOT,relative),manifest=path.join(ROOT,'catalog/manifests',id+'.json'),registry=path.join(ROOT,'catalog/sources.json'),before=fs.readFileSync(registry);
+ if(fs.existsSync(folder)||fs.existsSync(manifest))throw Error('Unexpected existing fixture');
+ try{
+  const file=initDesignPackage(folder,{id,name:'Synthetic catalog contract fixture',platform:'desktop',runtime:'synthetic',version:'fixture',identity:'synthetic-only'});
+  assert.throws(()=>catalogProfile(file,{root:relative}),/research/);
+  const legacy=JSON.parse(fs.readFileSync(path.join(ROOT,'catalog/study.template.json'),'utf8'));Object.assign(legacy,{id,root:relative,platform:'desktop',readiness:'draft',designPackage:'design-package.json'});legacy.artifacts=[{label:'entry',path:'README.md',role:'readme'},{label:'spec',path:'DESIGN_SPEC.md',role:'spec'}];legacy.run.cwd=relative;assert.throws(()=>addStudy(legacy),/Design Package/);assert.deepEqual(fs.readFileSync(registry),before);assert.equal(fs.existsSync(manifest),false);
+  const p=JSON.parse(fs.readFileSync(file,'utf8')),receipt=Buffer.from('Synthetic checker fixture, not a real REA invocation');fs.writeFileSync(path.join(folder,'receipt.txt'),receipt);p.source.researchMethod='Synthetic contract test only';p.source.researchEvidenceRefs=['receipt'];p.readiness.status='partial';fs.writeFileSync(file,JSON.stringify(p,null,2)+'\n');fs.writeFileSync(path.join(folder,p.entries.evidence),JSON.stringify({formatVersion:1,kind:'evidence',items:[{id:'receipt',classification:'B',origin:'historical',subject:'source',kind:'static',sourceIdentity:'synthetic-only',capturedAt:null,provider:'REA',sharing:'included',path:'receipt.txt',sha256:crypto.createHash('sha256').update(receipt).digest('hex')}]}));
+  const profile=catalogProfile(file,{root:relative}),s=addStudy(profile);assert.equal(s.readiness,'partial');assert.equal(s.designPackage,'design-package.json');assert.ok(s.integrity.files>10);assert.equal(getCatalog().sources.find(x=>x.id===id).readiness,'partial');
+  p.readiness.status='ready';fs.writeFileSync(file,JSON.stringify(p));assert.ok(validateDefinitions(definitions()).some(e=>e.includes('readiness differs')));assert.equal(validateDesignPackage(file).status,'failed');assert.throws(()=>verifyStudy(s),/changed/);
+ }finally{fs.writeFileSync(registry,before);if(path.dirname(folder)!==path.join(ROOT,'platforms/desktop')||!path.basename(folder).startsWith('design-fixture-'))throw Error('Unsafe fixture cleanup');if(fs.existsSync(folder))fs.rmSync(folder,{recursive:true,force:true});if(fs.existsSync(manifest))fs.unlinkSync(manifest);}
 });

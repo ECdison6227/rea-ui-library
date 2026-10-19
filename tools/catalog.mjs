@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';
+import {migrationPrompt} from '../site/logic.js';
 export const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 export const PLATFORMS={web:'网页',desktop:'电脑端',mobile:'手机端'};
 export const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
@@ -23,14 +24,14 @@ export function validateDefinitions(data){
   if(s.integrity?.manifest!=='catalog/manifests/'+s.id+'.json'||!Number.isInteger(s.integrity?.files)||s.integrity.files<1||!/^[a-f0-9]{64}$/.test(s.integrity?.treeSha256||''))errors.push('Missing/invalid content integrity: '+s.id);
   if(!s.sourceVersion||!s.provenance||!Array.isArray(s.tags)||!Array.isArray(s.stack)||!Array.isArray(s.features)||!Array.isArray(s.palette)||!s.run)errors.push('Missing study profile: '+s.id);
   if(s.revision&&!/^[a-f0-9]{40}$/.test(s.revision))errors.push('Invalid historical revision: '+s.id);
-  try{const base=contained(ROOT,s.root);for(const a of s.artifacts){if(!a.label||!a.role)errors.push('Incomplete artifact: '+s.id);const f=contained(base,a.path);if(!fs.existsSync(f))errors.push('Missing artifact: '+s.id+'/'+a.path);}if(s.thumbnail){if(s.thumbnail.reviewed!==true||!fs.existsSync(contained(base,s.thumbnail.path)))errors.push('Unreviewed/missing thumbnail: '+s.id);}}catch(e){errors.push(s.id+': '+e.message);}
+  try{const base=contained(ROOT,s.root);for(const a of s.artifacts){if(!a.label||!a.role)errors.push('Incomplete artifact: '+s.id);const f=contained(base,a.path);if(!fs.existsSync(f))errors.push('Missing artifact: '+s.id+'/'+a.path);}if(s.thumbnail){if(s.thumbnail.reviewed!==true||!fs.existsSync(contained(base,s.thumbnail.path)))errors.push('Unreviewed/missing thumbnail: '+s.id);}if(s.designPackage){const p=JSON.parse(fs.readFileSync(contained(base,s.designPackage),'utf8').replace(/^\uFEFF/,''));if(p.format!=='rea-design-package'||p.formatVersion!==1||p.id!==s.id||p.source?.platform!==s.platform||p.readiness?.status!==s.readiness)errors.push('Design package identity/platform/readiness differs: '+s.id);for(const key of ['readme','spec'])if(!fs.existsSync(contained(base,p.entries?.[key])))errors.push('Design package entry missing: '+s.id+'/'+key);}}catch(e){errors.push(s.id+': '+e.message);}
  }
  return errors;
 }
 export function getCatalog({privateMode=false,staticMode=false}={}){
  const raw=definitions(),errors=validateDefinitions(raw);if(errors.length)throw Error(errors.join('\n'));
  const sources=raw.sources.map(s=>({
-  ...s,origin:'historical',aggregationDoesNotCreateRuntimeEvidence:true,
+  ...s,origin:'historical',aggregationDoesNotCreateRuntimeEvidence:true,sourceRepositoryUrl:raw.repository.url,sourceRef:raw.repository.ref,
   thumbnail:s.thumbnail?{...s.thumbnail,url:'./assets/thumbs/'+s.id+path.extname(s.thumbnail.path)}:null,
   artifacts:s.artifacts.map(a=>({...a,available:!a.restricted||privateMode,
    url:staticMode?raw.repository.url+'/blob/'+raw.repository.ref+'/'+s.root+'/'+a.path.split('/').map(encodeURIComponent).join('/'):'/source/'+s.id+'/'+a.path.split('/').map(encodeURIComponent).join('/'),
@@ -53,4 +54,4 @@ export function sourceFile(id,relative,{privateMode=false}={}){
  if(/\.(apk|dmg|exe|zip|img|qcow2|jks|keystore|key|pem|log)$/i.test(relative))throw Error('This binary or local file is not served by the catalog');
  return contained(contained(ROOT,s.root),relative);
 }
-export function makePrompt(s){return `使用 rea-style-library 的迁移模式。\n来源：${s.name}（${s.sourceVersion}）\n研究目录：${s.root}\n研究入口：${s.artifacts.find(a=>a.role==='readme')?.path||'README.md'}\n我的项目：[填写项目路径]\n目标：迁移视觉语言和核心交互，保留我的业务、数据与品牌。\n先读来源规范、状态契约、对照和未知，再审查目标源码并建立规则映射，推进实现。\n来源未测的行为按目标需求作独立D决策；不要重新全量分析或默认穷举所有原业务功能。\n本来源范围：${s.coverage}\n已知边界：${s.limits.join('；')}`;}
+export function makePrompt(s){const repo=definitions().repository;return migrationPrompt({...s,sourceRepositoryUrl:repo.url,sourceRef:repo.ref});}

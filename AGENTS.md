@@ -8,4 +8,8 @@
 
 private/、catalog/private.local.json、.runtime/ 不得进入公开构建或 Git 提交。Hark 原始证据包含既有聊天，默认不在总库公开导出。总入口只在127.0.0.1运行，不从浏览器启动来源应用、安装依赖、提交表单或调用原厂接口。
 
-验证：npm test、npm run build、npm run verify。总库远端ECdison6227/rea-ui-library为私有；不擅自改公开。本次用户授权迁入后删除三个旧分析仓库，具体结果见 docs/migrations/2026-10-19；其他仓库不在删除范围。原skill升级保留为草案，未推到原skill仓库。
+新研究优先Design Package v1，固定design-package.json/DESIGN_SPEC.md及模块逻辑入口，格式见skills/rea-design-transfer/references/design-package.md。默认视觉设计和通用交互；原业务全测不作为设计入库的必要条件。旧研究可保留原格式，不自动重写platforms原件或把未知改verified。设计包声明不代替实际REA研究资格。
+
+来源历史文档中的rea-style-library调用名映射到当前rea-design-transfer，不要求安装两份技能；不要为改名改写原研究证据。
+
+验证：npm test、npm run build、npm run verify。总库远端ECdison6227/rea-ui-library为私有；不擅自改公开。此前用户授权迁入后删除三个旧分析仓库的结果见docs/migrations/2026-10-19，当前任务不再删除任何仓库。新技能名rea-design-transfer，技能源仍在ECdison6227/rea-style-library；本库vendor副本与skills/source.lock.json保持一致，当前用户已明确授权升级本机及同步这两个仓库。

@@ -38,11 +38,15 @@ npm run dev
 
 Kimi的“相似UI与核心用户流程”目标已由用户于2026-10-19接受；原始37项清单仍保留20项verified和剩余未测/部分验证。这是约定目标可收尾，不是把未测功能改成通过。
 
-## 技能升级草案
+## 设计提取与迁移技能
 
-[升级技能](skills/rea-style-library/SKILL.md) · [具体改进与验证边界](docs/skill-review.md) · [针对原GitHub仓库的补丁](docs/skill-upgrade.patch)。
+新技能名为 **`rea-design-transfer`（REA 设计提取与迁移）**，技能源仓库地址保留为[rea-style-library](https://github.com/ECdison6227/rea-style-library)。本库的[技能副本](skills/rea-design-transfer/SKILL.md)及同步锁用于离线读取，改动先回到技能源；[改进与验证边界](docs/skill-review.md)记录具体范围。
 
-保留A观察/B声明/C推断/D独立实现，新增目标/研究覆盖/迁移就绪/交付接受的区分、阶段停止条件、有界依赖复试、早期参考配对以及严格REA入库。原仓库：[rea-style-library](https://github.com/ECdison6227/rea-style-library)，补丁基线 `42c82c4ac70a6a92e3748897051d70b883d29fac`。本机全局安装的技能尚未修改，GitHub原仓库未推送改动。
+默认围绕视觉元素、组件/状态、布局组合、关键动效和通用交互研究；不穷举原业务功能或恢复后端、支付、同步、播放内核。已有功能和普通UI的产品可以直接从目录复制迁移任务，按选定规范实施，保留自己的业务、数据、品牌和技术栈。
+
+新研究统一交付 **Design Package v1**：`design-package.json` → `DESIGN_SPEC.md` → tokens/组件/布局/交互/动效/资产/证据及参考/对照/接入入口。详见[格式协议](skills/rea-design-transfer/references/design-package.md)与[新增指南](docs/adding-studies.md)。原版coverage、迁移readiness和约定交付分别报告；空模板不成为ready，原业务未测比例也不替代设计验收。
+
+已有四份研究继续按原格式使用，不覆盖其原件或自动提高覆盖。按需新增适配入口后可登记designPackage字段。最初升级补丁保留在[历史记录](docs/history/skill-upgrade-initial.patch)，不再作为当前安装方法。
 
 ## 验证与静态导出
 
@@ -60,4 +64,4 @@ Hark原始截图/DOM含既有聊天，默认不开放原始证据查看器。需
 
 直接把REA研究放进 `platforms/web/<id>/`、`platforms/desktop/<id>/` 或 `platforms/mobile/<id>/`，按[新增指南](docs/adding-studies.md)登记。以后不需要再创建单独分析仓库。
 
-[架构与更新](docs/architecture.md) · [来源盘点与入库依据](docs/inventory.md) · [验证](docs/validation.md) · [索引与版本锁](catalog/imports.lock.json)。原skill仓库继续独立，改进以可审查补丁交付。
+[架构与更新](docs/architecture.md) · [来源盘点与入库依据](docs/inventory.md) · [验证](docs/validation.md) · [索引与版本锁](catalog/imports.lock.json)。技能与研究库独立维护，已选来源的版本与限制随迁移任务传递。
