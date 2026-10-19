@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "classification": "D",
+  "operation": "write-synthetic-guest-clipboard",
+  "startedAt": "2026-10-16T09:45:22.066Z",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "org.research.kimistyle",
+  "artifact": "reference/build/native-reference.apk",
+  "artifactSha256": "b07ca5879a3c01c467d91fa4508d52f36686d87a4c3ead435016f7bf34a0d611",
+  "fixtureSha256": "13af89adf2b38bb866cf70ab8a7d5b84cf7adb8bc0fcab9845d963066600b898",
+  "characters": 21,
+  "utf8Bytes": 21,
+  "clipboardRead": false,
+  "hostClipboardAccess": false,
+  "contentsRecorded": false,
+  "backend": "independent helper; no account/network/model service",
+  "status": "written",
+  "helperStatus": {
+    "classification": "D",
+    "helper": "ClipboardFixtureActivity",
+    "attemptId": "9b704b5c-7784-4f66-bb86-442553e7fec7",
+    "status": "written",
+    "characters": 21,
+    "utf8Bytes": 21,
+    "sha256": "13af89adf2b38bb866cf70ab8a7d5b84cf7adb8bc0fcab9845d963066600b898",
+    "recordedAtDeviceMillis": 1792143924004,
+    "pid": 15147,
+    "clipboardRead": false,
+    "hostClipboardAccess": false
+  },
+  "previousTop": [
+    "topResumedActivity=ActivityRecord{c005120 u0 com.moonshot.kimichat/.MainActivity t19}"
+  ],
+  "returnedTop": [
+    "topResumedActivity=ActivityRecord{c005120 u0 com.moonshot.kimichat/.MainActivity t19}"
+  ],
+  "returnedFromHelper": true,
+  "previousComponent": "com.moonshot.kimichat/.MainActivity",
+  "returnedComponent": "com.moonshot.kimichat/.MainActivity",
+  "returnedToPreviousActivity": true,
+  "completedAt": "2026-10-16T09:45:26.357Z"
+}

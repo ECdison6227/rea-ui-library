@@ -1,0 +1,874 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-15T15:49:46.049Z",
+  "method": "view_image inspection by root or scoped research workers; exact PNG hash-bound notes; original pixels unchanged",
+  "scenes": [
+    {
+      "id": "01-first-launch",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/01-first-launch/screen.png",
+        "sha256": "ad82e8542591873fbcd647aa90d7580f125fcc685ece1f0c1cadc9bda06f643e",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": null,
+      "validity": "excluded-from-stable-Kimi-design-evidence",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "02-kimi-initial",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/02-kimi-initial/screen.png",
+        "sha256": "328678e966a0faa0d8cf83008535e4e69d249c47cd9c9110fe008f524e234fb5",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": null,
+      "validity": "excluded-from-stable-Kimi-design-evidence",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "03-kimi-privacy",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/03-kimi-privacy/screen.png",
+        "sha256": "bb571ebaa5e6d8298838e4d4afceba5d792b653127811206c75c76f0acbe1c3c",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "bb571ebaa5e6d8298838e4d4afceba5d792b653127811206c75c76f0acbe1c3c",
+        "title": "首次隐私协议",
+        "kind": "app-ui",
+        "state": "环境恢复后，Kimi 显示 Welcome to Kimi 协议弹窗。",
+        "observations": [
+          "灰色遮罩上有白色圆角协议框，标题居中。",
+          "正文含蓝色协议链接；底部是左右并列的 Disagree / Agree。",
+          "本文案的英文链接与相邻文字间距按原图保留，不用浏览器重排替代。"
+        ],
+        "behavior": "后续 04 记录点击 Disagree 后回到系统桌面；05 记录重新启动后协议再次出现。",
+        "limitations": [
+          "系统状态栏与底部手势条属于 Android。",
+          "单帧不证明字号、原生布局单位、圆角源码值或弹出动画。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "04-privacy-disagree",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/04-privacy-disagree/screen.png",
+        "sha256": "75ce124652ce9b4d4b0bcf1dfa77477ab731fa90ffa11f39ec3e74d796f1f60f",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "75ce124652ce9b4d4b0bcf1dfa77477ab731fa90ffa11f39ec3e74d796f1f60f",
+        "title": "拒绝协议 → 系统桌面",
+        "kind": "system-result",
+        "state": "操作记录为点击 Disagree；这一帧显示 Android launcher。",
+        "observations": [
+          "可见系统桌面壁纸、应用图标与搜索栏。",
+          "这是拒绝协议后的外部结果，不是 Kimi 页面或 Kimi 视觉样式。"
+        ],
+        "behavior": "本次安装条件下，拒绝后采集到 launcher；随后重新启动 Kimi，再次出现协议框。",
+        "limitations": [
+          "只支持本次条件下的前台结果；不据此断言进程是否终止。",
+          "系统桌面样式不纳入 Kimi 设计语言。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "05-privacy-reentry",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/05-privacy-reentry/screen.png",
+        "sha256": "3f79972e9b2cbdf63454b3c3e7c9920f0793e4aa98d5f62f85fc088670936cfa",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "3f79972e9b2cbdf63454b3c3e7c9920f0793e4aa98d5f62f85fc088670936cfa",
+        "title": "重新进入 → 协议仍需确认",
+        "kind": "app-ui",
+        "state": "在拒绝后重新启动 MainActivity，协议框再次出现。",
+        "observations": [
+          "与首次协议框相同的标题、链接与双操作布局。",
+          "这一帧用于验证拒绝后的重新进入路径，不作为新的独立组件凑数。"
+        ],
+        "behavior": "后续操作点击 Agree；07 捕获到 Android 通知权限请求。",
+        "limitations": [
+          "未验证卸载重装、升级、账号切换或其他系统版本下的协议状态。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "06-after-agree",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/06-after-agree/screen.png",
+        "sha256": "fa3e3b0bd8c3e990843bff41f48aee3d39d318848f7aac888fde3a5bb45b97f0",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": null,
+      "validity": "excluded-from-stable-Kimi-design-evidence",
+      "hierarchyUsability": "different-transition-state-than-screenshot"
+    },
+    {
+      "id": "07-notification-permission",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/07-notification-permission/screen.png",
+        "sha256": "fb60dd0a19b90c83d9df0d8bc94c66d2b6c4840994f3d59c65ca506511a03ebb",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "fb60dd0a19b90c83d9df0d8bc94c66d2b6c4840994f3d59c65ca506511a03ebb",
+        "title": "同意后 → Android 通知权限",
+        "kind": "system-permission",
+        "state": "Kimi 主页被遮罩，前方是 Android 的通知权限对话框。",
+        "observations": [
+          "权限框写有 Allow Kimi to send you notifications?，提供 Allow / Don’t allow。",
+          "窗口记录指向 Android permissioncontroller；该权限框样式属于系统。",
+          "后方可见 Kimi 主页顶栏、能力入口和底部输入器。"
+        ],
+        "behavior": "本次新安装在同意协议后提出通知权限；拒绝通知权限后仍可进入 08 的主页。",
+        "limitations": [
+          "权限框的颜色、图标和按钮形态不纳入 Kimi 自有组件规范。",
+          "只观察拒绝通知权限路径，未据此推定允许后的行为。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "08-guest-home",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/08-guest-home/screen.png",
+        "sha256": "703c79852b3c0ea6d7793610e28a2ee0bba2022d5ea7cfa242cd35372091e144",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "703c79852b3c0ea6d7793610e28a2ee0bba2022d5ea7cfa242cd35372091e144",
+        "title": "未登录主页 · 欢迎与输入器",
+        "kind": "app-ui",
+        "state": "拒绝通知权限后进入 Kimi 主页；尚未登录或发送内容。",
+        "observations": [
+          "白色主体，顶部有菜单按钮、Instant High 切换入口和扬声器图标。",
+          "中间可见蓝色圆环与欢迎语；底部是横向能力入口、圆角输入器及淡色生成说明。",
+          "按钮和输入器周围可见柔和阴影；原图保留真实字形与像素。"
+        ],
+        "behavior": "通知权限拒绝没有阻止这一帧主页出现。",
+        "limitations": [
+          "本帧圆环未见眼睛；后续 22 / 23 帧可见眼睛，属于欢迎区头像动效候选。不得把本帧蓝环当作已证实的加载指示或网络受阻。",
+          "动画触发、是否循环、旋转或时长未由此帧确定。",
+          "聊天发送、真实后端结果、输入焦点与账号功能未由此帧验证。"
+        ],
+        "pixelSamples": [
+          {
+            "id": "home-white-patch",
+            "purpose": "主页上部空白区域的合成像素",
+            "x": 480,
+            "y": 400,
+            "width": 120,
+            "height": 120
+          }
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "09-navigation-drawer",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/09-navigation-drawer/screen.png",
+        "sha256": "b617a268e5fddd60c09c4aea7795944f0b8a40aff91a95c27ab237ec22a2ccca",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "b617a268e5fddd60c09c4aea7795944f0b8a40aff91a95c27ab237ec22a2ccca",
+        "title": "菜单点击后的主页帧 · 抽屉待证",
+        "kind": "unconfirmed-result",
+        "state": "记录有菜单位置点击，但原图仍显示主页，没有可见抽屉。",
+        "observations": [
+          "当前截图仍可见顶栏、蓝色圆环、欢迎语和底部输入器。",
+          "目录名 navigation-drawer 不是抽屉已显示的证据。"
+        ],
+        "behavior": "这一帧没有可见抽屉；后续 10 的原图已显示抽屉。保留两帧之间的操作顺序，不把较早截图反写为抽屉已打开。",
+        "limitations": [
+          "不能据此断言菜单点击失败、被忽略、发生跳转或抽屉不存在。",
+          "此帧不计为已观察到的导航抽屉。",
+          "UIAutomator曾报告null-root，可能读到前次文件；此帧层级不用于同帧控件证明。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "unreliable-null-root-possible-stale-file"
+    },
+    {
+      "id": "10-composer-focus",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/10-composer-focus/screen.png",
+        "sha256": "cb21eca3b643c3307c82f009bb60f5eb473e5ec4c7b5ceeb3ba07131da3612c9",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "cb21eca3b643c3307c82f009bb60f5eb473e5ec4c7b5ceeb3ba07131da3612c9",
+        "title": "导航抽屉 · 未登录状态",
+        "kind": "app-ui",
+        "state": "实际像素显示左侧导航抽屉，右侧仍露出主页；不是输入焦点或键盘画面。",
+        "observations": [
+          "顶部是默认头像、Log in 与圆形齿轮入口。",
+          "列表包含 Scheduled tasks、Kimi Claw、Project / New project、Chat history 分组。",
+          "历史区显示登录后跨平台同步的说明与黑色 Log in 按钮。",
+          "主页向右退开并保留圆角边缘和阴影，形成抽屉层级。"
+        ],
+        "behavior": "前序 09 为菜单点击后的较早主页帧；本帧已见抽屉。随后点击可见齿轮进入 11 设置页。",
+        "limitations": [
+          "保留原目录名 10-composer-focus，但不沿用其键盘或焦点假设。",
+          "捕获之间发生过另一点击，不能由这两帧反推抽屉精确延迟或其原因。",
+          "未验证抽屉的外部点击关闭、滑动关闭、登录后的列表或历史保留。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "11-settings",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/11-settings/screen.png",
+        "sha256": "f014884c0cf6572cac3d608914cf99674c3b45afd2a122d43a1ea4d5f5e2f10f",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "f014884c0cf6572cac3d608914cf99674c3b45afd2a122d43a1ea4d5f5e2f10f",
+        "title": "设置 · 分组列表",
+        "kind": "app-ui",
+        "state": "从抽屉齿轮进入 Settings。",
+        "observations": [
+          "左上圆形返回按钮与居中标题；浅灰页面上放白色圆角分组。",
+          "首组是 Notifications、Appearance、Feature management，行首线性图标、行末浅色箭头。",
+          "Help Center 区含 Help Center、Send Feedback、About Kimi、Check for updates；更新行尾显示 3.1.3。",
+          "组间有灰色小标题，页底是宽圆角 Log In 与淡色备案信息。"
+        ],
+        "behavior": "点击 Appearance 后进入 12 外观页。",
+        "limitations": [
+          "本帧只验证设置列表与外观入口，不能证明其他行的目的页或完整功能。",
+          "版本 3.1.3 是该帧行尾显示，包身份以主报告与 APK 哈希为准。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "12-appearance",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/12-appearance/screen.png",
+        "sha256": "2bbbc1139dde80e17209224259b900e98eb152ae6dc46a341c14b48253c8c646",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "2bbbc1139dde80e17209224259b900e98eb152ae6dc46a341c14b48253c8c646",
+        "title": "外观 · 右侧当前值",
+        "kind": "app-ui",
+        "state": "Appearance 列表显示主题、字体大小与语言的当前值。",
+        "observations": [
+          "单个白色圆角分组包含 Theme settings、Font size、Language。",
+          "右侧浅色值分别为 Follow System、Follow System、English，末尾均有箭头。",
+          "当前值与行标签分开对齐，分隔线位于组内。"
+        ],
+        "behavior": "点击 Theme settings 进入 13 的主题选择页。",
+        "limitations": [
+          "字体大小与语言入口在此帧可见，其选择结果须由对应后续截图单独验证。",
+          "Follow System 的实际系统跟随逻辑不能由列表文字推定。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "13-theme-selector",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/13-theme-selector/screen.png",
+        "sha256": "73efbd23fd3cc55097fca09d2d862c9eed02b1caa8347df1765fca3aaccc247a",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "73efbd23fd3cc55097fca09d2d862c9eed02b1caa8347df1765fca3aaccc247a",
+        "title": "主题选择 · 跟随系统已选",
+        "kind": "app-ui",
+        "state": "Theme settings 页面中，Follow System 行末显示蓝色勾选。",
+        "observations": [
+          "三行选项分别是 Follow System、Light mode、Dark mode，左侧图标各不相同。",
+          "当前选择使用行尾蓝色勾选，其余行尾留空。",
+          "选项装在一个圆角分组中，沿用返回按钮与居中标题。"
+        ],
+        "behavior": "点击 Dark mode 后，14 在同页显示深色外观并将勾选移到 Dark mode。",
+        "limitations": [
+          "未由本帧证明主题选择的持久化时长、跨进程恢复或系统主题切换行为。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "14-dark-theme",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/14-dark-theme/screen.png",
+        "sha256": "14f62fe13be1ba4d25697c9c1608fae18de182f7b5129e78c194920b7ba5baad",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "14f62fe13be1ba4d25697c9c1608fae18de182f7b5129e78c194920b7ba5baad",
+        "title": "主题选择 · 深色立即可见",
+        "kind": "app-ui",
+        "state": "点击 Dark mode 后仍停留在 Theme settings，整页外观已变深。",
+        "observations": [
+          "深色背景与略浅的分组面；标签和图标转为浅色。",
+          "蓝色勾选现在位于 Dark mode，选项顺序与浅色帧一致。",
+          "状态栏和底部手势条也在本帧呈现适配后的对比。"
+        ],
+        "behavior": "选择后当前页即呈现深色，未自动返回；执行返回操作后见 15 外观页。",
+        "limitations": [
+          "只支持当前设置页的可见变化；不据此推定所有页面已适配。",
+          "截图中的合成颜色不等于源码 token。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "15-dark-appearance",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/15-dark-appearance/screen.png",
+        "sha256": "9453b17c74c7eec062054403ca220879bc218b9e1d77e8288ba72a8b38c536b3",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "9453b17c74c7eec062054403ca220879bc218b9e1d77e8288ba72a8b38c536b3",
+        "title": "返回外观 · 深色值保留",
+        "kind": "app-ui",
+        "state": "选择深色后返回 Appearance；当前主题值显示 Dark mode。",
+        "observations": [
+          "Appearance 分组、标题与返回按钮均维持深色外观。",
+          "Theme settings 行末由 Follow System 变为 Dark mode。",
+          "Font size 仍为 Follow System，Language 仍为 English。"
+        ],
+        "behavior": "这次返回保留了所选主题及列表中的对应值。",
+        "limitations": [
+          "仅验证同一进程内的选择后返回，不等于重启持久化验证。",
+          "当前画面未展示聊天主体的深色布局。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "16-font-size",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/16-font-size/screen.png",
+        "sha256": "ed0d26a95a08841b3d954e24c15bca8c507dff9dede25b52000d873d6f17c9d8",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "ed0d26a95a08841b3d954e24c15bca8c507dff9dede25b52000d873d6f17c9d8",
+        "title": "外观停留帧 · 尚未进入字体页",
+        "kind": "unconfirmed-result",
+        "state": "实际原图仍是深色 Appearance，不是字体大小选择页。",
+        "observations": [
+          "仍显示 Theme settings / Dark mode、Font size / Follow System、Language / English 三行。",
+          "没有可见字号选项或字号预览。"
+        ],
+        "behavior": "本帧只证明仍停留在外观页；主采集者已指出预期的字体入口点击未执行。",
+        "limitations": [
+          "保留原目录名 16-font-size，不据其命名声称已验证字体设置。",
+          "动作是否成功以原始动作记录与主报告复核为准。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "17-language-selector",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/17-language-selector/screen.png",
+        "sha256": "c31fb271fcf31431a6c999e5f962404a4f4aa67ca9937d0fe2fc3f7c952d7455",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "c31fb271fcf31431a6c999e5f962404a4f4aa67ca9937d0fe2fc3f7c952d7455",
+        "title": "功能管理 · 开关与次级说明",
+        "kind": "app-ui",
+        "state": "实际页面标题是 Feature management；不是语言选择页。",
+        "observations": [
+          "深色圆角分组中有 Vibration feedback 与 Use keyboard send button。",
+          "两行右侧都是蓝色轨道与右置白色拇指，表示截图中的开启外观。",
+          "第二行下方有灰色说明，在当前宽度下显示省略号。"
+        ],
+        "behavior": "点击到设置中的功能管理入口后，显示这组可切换偏好；本帧没有切换开关。",
+        "limitations": [
+          "保留原目录名 17-language-selector，但不把动作描述或目录名当作实际页面。",
+          "截图只证明当前开关外观，不证明触觉反馈、键盘发送行为或持久化。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "18-font-size-options",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/18-font-size-options/screen.png",
+        "sha256": "7afe20e751f3d648c99805a399c5ee4cdaec00d8e41ed08e3127c975ad757661",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "7afe20e751f3d648c99805a399c5ee4cdaec00d8e41ed08e3127c975ad757661",
+        "title": "字体大小 · 预览、指导与显式保存",
+        "kind": "app-ui",
+        "state": "实际 Font size 页面，Follow System 开启，滑块位于 Standard 附近。",
+        "observations": [
+          "顶部左侧返回、居中 Font size、右侧圆形勾选保存入口。",
+          "蓝色聊天气泡与下方示例正文构成字号预览，并说明拖动滑块、跟随系统以及右上保存。",
+          "底部圆角面板包含 Follow System 开关、灰色说明，以及 Small / Standard / Large / Extra Large 四档标注。",
+          "当前滑轨和档位呈灰色；白色滑块拇指保留可见。"
+        ],
+        "behavior": "本次只进入页面观察，没有修改字号或执行保存。页面文字说明了编辑后的保存位置。",
+        "limitations": [
+          "不能从灰色外观直接断言滑块禁用，触摸行为未验证。",
+          "档位具体 sp、缩放比例、预览是否应用到所有页面及保存/取消结果仍未知。",
+          "单帧只能证明指导与保存入口存在，不能证明其状态机已验证。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "19-language-options",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/19-language-options/screen.png",
+        "sha256": "1dc2848f390b46177d9492e601467cc833ad25bd571848aff3caf6aca718d6f4",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "1dc2848f390b46177d9492e601467cc833ad25bd571848aff3caf6aca718d6f4",
+        "title": "语言选择 · 自称名称与勾选",
+        "kind": "app-ui",
+        "state": "Language Selection 列表中 English 行右侧显示蓝色勾选。",
+        "observations": [
+          "各语言使用其自身文字显示，包括 العربية、简体中文、繁體中文、日本語、한국어 等。",
+          "列表沿用深色圆角分组与行分隔；选中值用蓝勾单独表示。",
+          "当前视口还可见 Français、Deutsch、Bahasa Indonesia、Italiano、Português (Brasil)、Русский、Español (Latinoamérica)、ไทย。"
+        ],
+        "behavior": "从 Appearance 的 Language 入口进入；这一帧尚未选择其他语言。",
+        "limitations": [
+          "当前可见范围不是完整语言数量或滚动边界的证明。",
+          "语言切换后的即时生效、返回、重启与字体回退需要后续观察。",
+          "不能把包内 17 个资源目录直接等同为这里全部可选择的语言。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "20-language-change",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/20-language-change/screen.png",
+        "sha256": "7eac87fcf7c1bc1007793dd42b69b7b166b21007c770ee23edb8131669466d45",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "7eac87fcf7c1bc1007793dd42b69b7b166b21007c770ee23edb8131669466d45",
+        "title": "选择简体中文 · 当页即时更新",
+        "kind": "app-ui",
+        "state": "点击简体中文后，仍停留在语言列表，标题已变为「语言切换」。",
+        "observations": [
+          "蓝色勾选由 English 移到简体中文。",
+          "页面标题由 Language Selection 变为「语言切换」，语言自称名称继续保留原文。",
+          "深色主题和列表结构在这次语言切换中保持。"
+        ],
+        "behavior": "选择后的本页可见文本与选中标记即时更新；没有自动返回。",
+        "limitations": [
+          "这一帧不能证明所有页面完成翻译或字形回退的来源。",
+          "返回后的当前语言值与重启持久化需要各自记录支持。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "21-chinese-return",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/21-chinese-return/screen.png",
+        "sha256": "dd954967fe68f5661c267e980f13047489d29fc7d42ecda345e53b1ab41b516e",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "dd954967fe68f5661c267e980f13047489d29fc7d42ecda345e53b1ab41b516e",
+        "title": "中文深色抽屉 · 返回后的偏好保留",
+        "kind": "app-ui",
+        "state": "从设置返回抽屉，当前界面为简体中文且维持深色。",
+        "observations": [
+          "登录入口、定时任务、项目、新建项目、历史会话与同步说明已显示中文，Kimi Claw 仍保留品牌名称。",
+          "抽屉本体为深色，按钮与图标采用浅色；右侧露出的主页面板仍有圆角边缘。",
+          "历史空态的「去登录」采用浅色实心胶囊按钮。"
+        ],
+        "behavior": "同一运行中从语言选择依次返回后，抽屉显示中文与深色；22 记录系统返回键关闭抽屉后露出主页。",
+        "limitations": [
+          "这只验证同一进程内的返回结果，不能等同于重启或账号切换后的持久化。",
+          "当前未登录，不由空历史区推断登录后数据或同步行为。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "22-chinese-home",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/22-chinese-home/screen.png",
+        "sha256": "095c8dda1ebd3e287c553c1037ef29bf4edae8aa93fbc1753ce6ffaf5749cf7e",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "095c8dda1ebd3e287c553c1037ef29bf4edae8aa93fbc1753ce6ffaf5749cf7e",
+        "title": "中文深色主页 · 欢迎头像与底部输入",
+        "kind": "app-ui",
+        "state": "系统返回键关闭抽屉后，可见完整中文深色主页。",
+        "observations": [
+          "顶部菜单、快速 / 进阶入口与扬声器图标沿用浅色主页的操作位置。",
+          "中央蓝色轮廓内有两只白色眼睛，下方是中文欢迎语；此处属于欢迎区头像动效候选，不能当作网络加载证据。",
+          "底部能力入口为新建项目、PPT、集群、构建应用；下方是单行圆角输入器，左右分别为加号与语音图标。",
+          "输入器下面有淡色「内容由 AI 生成」说明，中文与深色在主页仍保留。"
+        ],
+        "behavior": "返回键关闭抽屉后仍是原主页。后续 23 点击空输入器，出现可见光标和增高后的编辑区。",
+        "limitations": [
+          "眼睛和轮廓的单帧外观不能确定动画触发、循环、速度或 duration。",
+          "未发送文字，不据此判断后端请求、模型结果或网络状态。",
+          "单帧不反推字号、圆角或阴影源码参数。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "23-composer-keyboard",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/23-composer-keyboard/screen.png",
+        "sha256": "4bc7a898e014f2f9214a624e5603d7394237cd70d5e4f887d6bda29a4dbe4f88",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "4bc7a898e014f2f9214a624e5603d7394237cd70d5e4f887d6bda29a4dbe4f88",
+        "title": "空输入器聚焦 · 高度与布局变化",
+        "kind": "app-ui",
+        "state": "点击空输入器后，左侧出现蓝色插入光标，编辑区明显增高；这一帧未见软键盘。",
+        "observations": [
+          "相比 22，提示文字和蓝色光标位于增高编辑框上部，加号与语音按钮落在编辑框底部两侧。",
+          "能力入口一行随更高的编辑框上移；底部生成说明在这一帧没有显示。",
+          "中心蓝色头像轮廓与两只白眼仍可见，上一帧的欢迎语在当前帧未显示。",
+          "屏幕中没有可见的系统软键盘，也没有已输入内容或发送结果。"
+        ],
+        "behavior": "点击空输入器后，捕获到聚焦光标与编辑区布局变化；只验证这一可见状态。",
+        "limitations": [
+          "保留目录名 23-composer-keyboard，但不能据此声称键盘已经弹出。",
+          "不据单帧判断软键盘是否随后出现、被隐藏或受环境设置影响。",
+          "中央形象仍只作欢迎区头像动效候选，不解释为加载或请求受阻。",
+          "输入、发送、取消聚焦与恢复高度的结果尚需对应操作记录支持。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "24-input-options",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/24-input-options/screen.png",
+        "sha256": "ec4f7597766531942b1545e6fd43c72afcf665226df45406d48006560c0995c9",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "ec4f7597766531942b1545e6fd43c72afcf665226df45406d48006560c0995c9",
+        "title": "输入能力面板",
+        "kind": "app-ui",
+        "state": "空白输入器退出焦点后点击“+”，出现底部能力面板。",
+        "observations": [
+          "暗色主页前方有遮罩与大圆角底部面板。",
+          "拍照、照片、本地文件、微信文件横向排列；技能说明与联网搜索/自动作为下方入口。"
+        ],
+        "behavior": "后续点拍照进入25登录页；没有完成拍照或上传。",
+        "limitations": [
+          "其他入口、拖拽关闭、外侧点击、嵌套与动画参数未测。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "25-camera-entry",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/25-camera-entry/screen.png",
+        "sha256": "2972a14146ddebe07dbee4a7fc6c11dceb6dcd85fb426a37c46a598bd3d406a0",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "2972a14146ddebe07dbee4a7fc6c11dceb6dcd85fb426a37c46a598bd3d406a0",
+        "title": "拍照入口 → 登录门槛",
+        "kind": "app-ui",
+        "state": "未登录条件下，从附件面板点拍照后出现登录页。",
+        "observations": [
+          "深色背景、字符图形月面与KIMI标识；下方微信登录和手机号登录。",
+          "协议选择控件为未选择状态，顶部有返回和反馈入口。"
+        ],
+        "behavior": "没有输入手机号或调用第三方登录，系统Back回到26主页。",
+        "limitations": [
+          "没有请求或授予相机权限。",
+          "不能推定所有附件入口都采用同一门槛。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "26-back-from-login",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/26-back-from-login/screen.png",
+        "sha256": "81eeb96b093f04a9e9ac76899ec6713d043bc251a014c13d89b5bbc7aa4e6087",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "81eeb96b093f04a9e9ac76899ec6713d043bc251a014c13d89b5bbc7aa4e6087",
+        "title": "登录页返回 → 空白主页",
+        "kind": "app-ui",
+        "state": "从25使用系统Back，回到中文深色主页。",
+        "observations": [
+          "欢迎头像与文案、模型胶囊、能力chips和单行空白输入器可见。",
+          "附件面板当前帧未保留。"
+        ],
+        "behavior": "没有身份认证，原版基础主页仍可浏览。",
+        "limitations": [
+          "登录完成后的返回与原动作续执行未知。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "27-relaunch-persistence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/27-relaunch-persistence/screen.png",
+        "sha256": "6d9f67a902f1a693be8009ae27a1ff44fed791b6b12b353ee591c14b820a2c59",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "6d9f67a902f1a693be8009ae27a1ff44fed791b6b12b353ee591c14b820a2c59",
+        "title": "进程重启 · 启动帧",
+        "kind": "app-ui",
+        "state": "force-stop后再次启动MainActivity，采到白底K启动画面。",
+        "observations": [
+          "白底、黑色K与蓝色点状品牌元素。",
+          "此帧不是Dark mode偏好失效的证明；后续28仍为深色。"
+        ],
+        "behavior": "启动后在28采到中文深色主页。",
+        "limitations": [
+          "UIAutomator曾报告null-root，该层级不用于此帧控件证明。",
+          "稀疏采样不能测量启动动画或白帧持续时间。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "unreliable-null-root-possible-stale-file"
+    },
+    {
+      "id": "28-relaunch-settled",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/28-relaunch-settled/screen.png",
+        "sha256": "ef2bf6b23a117b2f08550d213d7bd74867d32933dafaccb99bb7e3c9ef3af2b4",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "ef2bf6b23a117b2f08550d213d7bd74867d32933dafaccb99bb7e3c9ef3af2b4",
+        "title": "进程重启后 · 中文深色主页",
+        "kind": "app-ui",
+        "state": "同一次force-stop/launch之后，主页仍为简体中文与深色。",
+        "observations": [
+          "蓝环头像带眼睛，欢迎语下方出现去登录动作。",
+          "底部保留能力chips与空白输入器。"
+        ],
+        "behavior": "应用语言与深色偏好跨本次进程重启保留，隐私协议本次未重现。",
+        "limitations": [
+          "没有设备重启、升级、清数据或账号变更测试。",
+          "去登录动作较早帧未出现，不泛化为所有主页始终可见。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "29-theme-restored",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/29-theme-restored/screen.png",
+        "sha256": "765422b1fd36a5656791d62a743a68c37316150ebb2bf373ecac9e65d7ce8911",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "765422b1fd36a5656791d62a743a68c37316150ebb2bf373ecac9e65d7ce8911",
+        "title": "恢复尝试的实际结果 · 登录页",
+        "kind": "unconfirmed-result",
+        "state": "文件名为theme-restored，但像素仍是中文深色登录页，未完成主题恢复。",
+        "observations": [
+          "微信登录、手机号登录与未选择的协议控件仍可见。"
+        ],
+        "behavior": "本帧不用于声称恢复成功；最终恢复证据是32/33/34。",
+        "limitations": [
+          "多步坐标点击未实现预期路径；后续改用可见文字校验点击。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "30-restore-home",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/30-restore-home/screen.png",
+        "sha256": "4e8abca41710214dc867748f6929f1ff78481ebaad6c1f9e44d68205b0643356",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "4e8abca41710214dc867748f6929f1ff78481ebaad6c1f9e44d68205b0643356",
+        "title": "恢复阶段 · 中文深色抽屉",
+        "kind": "app-ui",
+        "state": "文件名为restore-home，实际原图是打开的中文深色抽屉。",
+        "observations": [
+          "用户头像/去登录、齿轮、定时任务、项目和历史会话空态可见。"
+        ],
+        "behavior": "随后从已实际确认的齿轮进入31设置。",
+        "limitations": [
+          "不将文件名当完整主页证明。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "31-restore-settings",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/31-restore-settings/screen.png",
+        "sha256": "5c7e529e366d10fecd605e83b5cc3ba4f265841826d303e5eaed2fd762dfdb17",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "5c7e529e366d10fecd605e83b5cc3ba4f265841826d303e5eaed2fd762dfdb17",
+        "title": "恢复阶段 · 中文深色设置",
+        "kind": "app-ui",
+        "state": "在已确认抽屉内点齿轮，进入设置。",
+        "observations": [
+          "通知、外观、功能管理与帮助中心等分组列表。",
+          "检查更新行显示3.1.3，与包内和安装后版本一致。"
+        ],
+        "behavior": "随后使用可见文字查询进入外观及主题选择。",
+        "limitations": [
+          "未点击更新、反馈或帮助外链。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "32-theme-restored",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/32-theme-restored/screen.png",
+        "sha256": "57c70444c055e10fde2f71c700a16ea00f5cccd1c9c918c6e32bb5cc9a890dd4",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "57c70444c055e10fde2f71c700a16ea00f5cccd1c9c918c6e32bb5cc9a890dd4",
+        "title": "恢复成功 · 跟随系统主题",
+        "kind": "app-ui",
+        "state": "通过新鲜UIA文本查找点击跟随系统，当前页回到浅色并有蓝色选择勾。",
+        "observations": [
+          "跟随系统选中；另外两项为月之亮面和月之暗面。"
+        ],
+        "behavior": "恢复到本次初始主题设置，系统night始终为no。",
+        "limitations": [
+          "没有测试系统night自动联动。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "33-language-restored",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/33-language-restored/screen.png",
+        "sha256": "a6283298e33d1c2a6df808ac3867100ea4f76d7a8bf01af1c82a09014721c405",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "a6283298e33d1c2a6df808ac3867100ea4f76d7a8bf01af1c82a09014721c405",
+        "title": "恢复成功 · English",
+        "kind": "app-ui",
+        "state": "使用可见语言名称恢复English，当前标题为Language Selection，English蓝勾。",
+        "observations": [
+          "页面为浅色。",
+          "语言列表当前顺序与19不同，不能把固定行号作为选择键。"
+        ],
+        "behavior": "恢复到本次初始应用语言，34再核对摘要。",
+        "limitations": [
+          "其他语言与列表排序原因未研究。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    },
+    {
+      "id": "34-restored-appearance",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/34-restored-appearance/screen.png",
+        "sha256": "a050949e78237ca9d9afca4848e39e27a2426164665d6add61659cc8565d20aa",
+        "width": 1080,
+        "height": 2400
+      },
+      "review": {
+        "screenshotSha256": "a050949e78237ca9d9afca4848e39e27a2426164665d6add61659cc8565d20aa",
+        "title": "最终恢复核对",
+        "kind": "app-ui",
+        "state": "外观设置摘要同时显示Follow System主题、Follow System字号与English语言。",
+        "observations": [
+          "浅色分组列表、右侧摘要与箭头，字号跟随系统保持原值。"
+        ],
+        "behavior": "随后停止Kimi并关闭专用AVD，保留新测试安装记录。",
+        "limitations": [
+          "协议同意和通知拒绝历史保留；没有清除测试数据。"
+        ]
+      },
+      "validity": "visually-reviewed-with-limitations",
+      "hierarchyUsability": "non-atomic-review-required"
+    }
+  ]
+}

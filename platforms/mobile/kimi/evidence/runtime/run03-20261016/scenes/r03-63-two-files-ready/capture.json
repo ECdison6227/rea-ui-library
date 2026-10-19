@@ -1,0 +1,43 @@
+{
+  "id": "r03-63-two-files-ready",
+  "description": "Reselected PDF alongside own Office; actual typed phrase must be recorded exactly",
+  "classification": "A",
+  "origin": "current",
+  "runId": "run03-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-16T07:34:49.620Z",
+  "capturedAt": "2026-10-16T07:34:54.674Z",
+  "screenshotCapturedAt": "2026-10-16T07:34:51.831Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-63-two-files-ready/screen.png",
+    "sha256": "8c3e9f6c990efdf16644f82e5dd281e34ffa9360246819cb0278405810614298",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-63-two-files-ready/hierarchy.xml",
+    "sha256": "5a64e77db83af9666d4c38c496379dd035c69ef02d9f26a35c56f9a85f9d0329"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 138,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "systemLocales": "null",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{c005120 u0 com.moonshot.kimichat/.MainActivity t19}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen",
+  "captureSettlingDelayMs": 1500,
+  "accountMode": "normal retained user-assisted login verified by authenticated home and actual submitted self-created request; credentials excluded"
+}

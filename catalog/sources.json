@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 1,
+  "owner": "ECdison6227",
+  "goal": "只整合REA研究产物，按网页、桌面和手机分类，保留各来源风格与运行方式",
+  "evidencePolicy": "聚合、重新阅读和启动目录均不产生新的原版运行证据。来源事实沿用各自时间与边界。",
+  "sources": [
+    {
+      "id": "hark",
+      "name": "Hark",
+      "subtitle": "流式内容与交互卡片",
+      "platform": "web",
+      "kind": "research",
+      "root": "platforms/web/hark",
+      "visibility": "public",
+      "sourceUrl": "https://github.com/ECdison6227/hark-ui-research",
+      "revision": "b5b49eb46494b86d56c21654ea585ad379d9b9d7",
+      "sourceVersion": "hark.com/chat · 2026-10-15",
+      "summary": "从真实聊天页面理解流式文本、表格、图片堆叠与卡片动作。保留浏览器观察、前端声明和推断的边界。",
+      "tags": [
+        "聊天",
+        "流式响应",
+        "卡片",
+        "表格",
+        "WebGL"
+      ],
+      "stack": [
+        "Web",
+        "CSS",
+        "已发布前端资源"
+      ],
+      "readiness": "可用于规则参考",
+      "coverage": "所选页面与交互；未提供独立完整产品实现",
+      "features": [
+        "544项有作用域的CSS变量",
+        "表格排序、菜单和导出",
+        "图片展开/收起与流式时序"
+      ],
+      "limits": [
+        "原始截图/DOM包含既有聊天与文件内容，证据查看器只在本地私有模式开放",
+        "未验证的账号态、完整后端与其他页面不由本报告推断"
+      ],
+      "palette": [
+        "#c8d8ec",
+        "#f5f4f0",
+        "#536a87"
+      ],
+      "cover": "hark",
+      "artifacts": [
+        {
+          "label": "研究入口",
+          "path": "README.md",
+          "role": "readme"
+        },
+        {
+          "label": "设计规则",
+          "path": "reports/design-analysis.md",
+          "role": "spec"
+        },
+        {
+          "label": "运行与交互",
+          "path": "reports/runtime-analysis.md",
+          "role": "behavior"
+        },
+        {
+          "label": "CSS变量",
+          "path": "reports/design-tokens.json",
+          "role": "tokens"
+        },
+        {
+          "label": "原始证据查看器",
+          "path": "reports/evidence-gallery.html",
+          "role": "preview",
+          "restricted": true
+        }
+      ],
+      "run": {
+        "cwd": "platforms/web/hark",
+        "command": "直接查看 reports/evidence-gallery.html；原始内容仅供本地私有查看",
+        "requires": "浏览器",
+        "verifiedHere": false
+      }
+    },
+    {
+      "id": "mi-fitness",
+      "name": "小米运动健康",
+      "subtitle": "卡片层级与轻量设置",
+      "platform": "mobile",
+      "kind": "research",
+      "root": "platforms/mobile/mi-fitness",
+      "visibility": "public",
+      "sourceUrl": "https://github.com/ECdison6227/ui-phone-mi-fitness",
+      "revision": "c78748d5296522da30f3348c82482c05b54d1483",
+      "sourceVersion": "3.57.0 · Mine 11.202.21",
+      "summary": "Android三页、十组件基线，覆盖卡片、分组设置、引导与页面状态保留，并提供原生参考和跨业务资料管理示例。",
+      "tags": [
+        "Android",
+        "卡片",
+        "设置",
+        "状态保留",
+        "原生参考"
+      ],
+      "stack": [
+        "Android",
+        "Java View",
+        "YRN来源证据"
+      ],
+      "readiness": "可迁移的代表基线",
+      "coverage": "Android15 / 中文浅色 / 未登录空数据",
+      "features": [
+        "三页与十组件原版对照",
+        "原生Android参考与资料管理迁移",
+        "图标、字体、文案及状态契约"
+      ],
+      "limits": [
+        "精确OEM字体、完整动效及平滑圆角仍有差异",
+        "登录、非零图表、穿戴设备和其他尺寸不是该验收范围"
+      ],
+      "palette": [
+        "#ff6c22",
+        "#f4f5f9",
+        "#b8e5fa"
+      ],
+      "cover": "mi-fitness",
+      "thumbnail": {
+        "path": "analysis/ui/baseline/runtime/health-day/screen.png",
+        "classification": "A · 原版未登录空态",
+        "reviewed": true
+      },
+      "artifacts": [
+        {
+          "label": "研究入口",
+          "path": "analysis/ui/README.md",
+          "role": "readme"
+        },
+        {
+          "label": "规格与状态",
+          "path": "analysis/ui/baseline/spec.md",
+          "role": "spec"
+        },
+        {
+          "label": "原版配对",
+          "path": "analysis/ui/baseline/comparison/final/index.html",
+          "role": "comparison"
+        },
+        {
+          "label": "原生工程",
+          "path": "analysis/ui/android-reference/README.md",
+          "role": "reference"
+        },
+        {
+          "label": "跨业务迁移",
+          "path": "analysis/ui/transfer-example/README.md",
+          "role": "transfer"
+        }
+      ],
+      "run": {
+        "cwd": "platforms/mobile/mi-fitness/analysis/ui",
+        "command": "powershell -NoProfile -File android-reference/build.ps1",
+        "requires": "Android SDK / JDK；装机前核对自己的设备",
+        "verifiedHere": false
+      }
+    },
+    {
+      "id": "mirasim",
+      "name": "Mirasim",
+      "subtitle": "混合应用与平台能力边界",
+      "platform": "mobile",
+      "kind": "research",
+      "root": "platforms/mobile/mirasim",
+      "visibility": "public",
+      "sourceUrl": "https://github.com/ECdison6227/ui-phone-mirasim",
+      "revision": "1f99dd16b8945875f2d0971396be2e75e0c6ef41",
+      "sourceVersion": "0.0.497",
+      "summary": "React + Capacitor手机应用的界面、主题和平台接口研究，提供原提取前端的离线预览与更新/权限参考策略。",
+      "tags": [
+        "React",
+        "Capacitor",
+        "混合应用",
+        "深色",
+        "平台接口"
+      ],
+      "stack": [
+        "React",
+        "Capacitor",
+        "Android插件"
+      ],
+      "readiness": "前端和接口规则可参考",
+      "coverage": "浏览器运行提取前端；Android桥接使用模拟数据",
+      "features": [
+        "浅/深主题变量",
+        "更新与权限策略参考代码",
+        "隔离原厂网络的前端研究台"
+      ],
+      "limits": [
+        "没有Android装机运行验证",
+        "登录、系统权限、后台送达和安装升级未由离线预览验证"
+      ],
+      "palette": [
+        "#1b1b1b",
+        "#7593ed",
+        "#f0efeb"
+      ],
+      "cover": "mirasim",
+      "thumbnail": {
+        "path": "analysis/preview/01-start-dark.png",
+        "classification": "提取前端 · 浏览器空登录页",
+        "reviewed": true
+      },
+      "artifacts": [
+        {
+          "label": "研究入口",
+          "path": "README.md",
+          "role": "readme"
+        },
+        {
+          "label": "UI设计拆解",
+          "path": "analysis/reports/02-ui-design.md",
+          "role": "spec"
+        },
+        {
+          "label": "平台接口参考",
+          "path": "analysis/reference/README.md",
+          "role": "reference"
+        },
+        {
+          "label": "运行与证据边界",
+          "path": "analysis/reports/06-evidence-and-reproduction.md",
+          "role": "behavior"
+        }
+      ],
+      "run": {
+        "cwd": "platforms/mobile/mirasim",
+        "command": "python3 analysis/scripts/preview-server.py",
+        "requires": "Python3；独立预览默认127.0.0.1:4174",
+        "verifiedHere": false
+      }
+    },
+    {
+      "id": "kimi",
+      "name": "Kimi",
+      "subtitle": "聊天、输入与异步状态",
+      "platform": "mobile",
+      "kind": "research",
+      "root": "platforms/mobile/kimi",
+      "visibility": "public",
+      "sourceUrl": null,
+      "revision": null,
+      "sourceVersion": "Android 3.1.3 / 376 · Run03",
+      "snapshot": {
+        "archive": "Kimi-3.1.3-research-run03-20261016.zip",
+        "sha256": "5ea98712b198278e0602cf485a5f642fe5cb90f80d9f30bf1f028b0a5077c42c",
+        "files": 3430,
+        "sourceApkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332"
+      },
+      "summary": "从真实Android应用提炼输入、草稿、保存取消、消息队列与错误恢复，配有独立Java原生参考和Fieldnotes迁移验收。",
+      "tags": [
+        "聊天",
+        "输入法",
+        "草稿",
+        "异步",
+        "原生参考"
+      ],
+      "stack": [
+        "Android / Compose来源",
+        "Java View参考"
+      ],
+      "readiness": "UI与核心交互目标已由用户接受",
+      "coverage": "37项技术清单20项verified；其余保留未测或部分验证",
+      "acceptance": {
+        "date": "2026-10-19",
+        "goal": "相似UI与主要用户流程",
+        "acceptedByUser": true,
+        "technicalCoverageUnchanged": true
+      },
+      "features": [
+        "275原版场景中的257套安全分发",
+        "71套D参考场景与具体差异报告",
+        "项目、定时任务、文件与输入行为规则"
+      ],
+      "limits": [
+        "语音、真实拍摄、双端和受账号限制的高级能力保留未完成",
+        "精确字体/动效与后端取消语义保持未知；未测项未改成verified"
+      ],
+      "palette": [
+        "#2585ff",
+        "#f5f5f5",
+        "#191919"
+      ],
+      "cover": "kimi",
+      "thumbnail": {
+        "path": "evidence/runtime/run03-20261016/scenes/r03-265-full-display-restored/screen.png",
+        "classification": "A · 原版外观页",
+        "reviewed": true
+      },
+      "artifacts": [
+        {
+          "label": "研究入口",
+          "path": "README.md",
+          "role": "readme"
+        },
+        {
+          "label": "行为与迁移规则",
+          "path": "spec/run03-behavior-and-transfer.md",
+          "role": "spec"
+        },
+        {
+          "label": "安全原版画廊",
+          "path": "run03.html",
+          "role": "preview"
+        },
+        {
+          "label": "原版配对",
+          "path": "comparison/native-run03.md",
+          "role": "comparison"
+        },
+        {
+          "label": "原生工程",
+          "path": "reference/README.md",
+          "role": "reference"
+        },
+        {
+          "label": "Fieldnotes迁移",
+          "path": "transfer-example/run03-acceptance.md",
+          "role": "transfer"
+        }
+      ],
+      "run": {
+        "cwd": "platforms/mobile/kimi",
+        "command": "powershell -NoProfile -File tools/build-native-reference.ps1",
+        "requires": "Android SDK35 / JDK21；原始APK和私有AVD不在总库",
+        "verifiedHere": false
+      }
+    }
+  ]
+}

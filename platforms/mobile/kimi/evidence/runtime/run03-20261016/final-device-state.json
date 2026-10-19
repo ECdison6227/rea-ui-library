@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "kind": "run03-final-read-only-state",
+  "runId": "run03-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "startedAt": "2026-10-16T13:09:04.660Z",
+  "settings": {
+    "accelerometer_rotation": "1",
+    "user_rotation": "0",
+    "font_scale": "1.0",
+    "window_animation_scale": "1.0",
+    "transition_animation_scale": "1.0",
+    "animator_duration_scale": "null",
+    "wifi_on": "1",
+    "mobile_data": "1"
+  },
+  "size": "Physical size: 1080x2400",
+  "density": "Physical density: 420",
+  "night": "Night mode: no",
+  "wmUserRotation": "free",
+  "wmFixedToUserRotation": "default",
+  "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+  "ime": "com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME",
+  "locale": {
+    "systemLocalesGet": "null",
+    "systemLocalesKeyPresent": false,
+    "systemLocalesStoredValue": null,
+    "buildLocale": "en-US",
+    "persistedLocale": ""
+  },
+  "network": {
+    "wifi": "1",
+    "data": "1",
+    "defaultNetworkLine": "Active default network: 107",
+    "activeDefaultNetworkValidated": true,
+    "validationMethod": "Exact active network id must occur on a NetworkAgentInfo line with VALIDATED; no fallback to an unrelated network"
+  },
+  "permissions": [
+    {
+      "permission": "android.permission.POST_NOTIFICATIONS",
+      "granted": false,
+      "flags": [
+        "USER_SENSITIVE_WHEN_DENIED",
+        "USER_SENSITIVE_WHEN_GRANTED",
+        "USER_SET"
+      ]
+    },
+    {
+      "permission": "android.permission.CAMERA",
+      "granted": false,
+      "flags": [
+        "USER_SENSITIVE_WHEN_DENIED",
+        "USER_SENSITIVE_WHEN_GRANTED"
+      ]
+    },
+    {
+      "permission": "android.permission.RECORD_AUDIO",
+      "granted": false,
+      "flags": [
+        "USER_SENSITIVE_WHEN_DENIED",
+        "USER_SENSITIVE_WHEN_GRANTED",
+        "USER_SET"
+      ]
+    }
+  ],
+  "foreground": [
+    "topResumedActivity=ActivityRecord{aa5bd55 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t16}"
+  ],
+  "limitation": "Read-only shell observations are sequential, not atomic. App UI preferences and source APK bytes require separate retained evidence.",
+  "completedAt": "2026-10-16T13:09:09.612Z"
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "runId": "run03-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "recordedAt": "2026-10-16T13:10:05.275Z",
+  "finalState": "evidence/runtime/run03-20261016/final-device-state.json",
+  "shutdownVerification": "evidence/runtime/run03-20261016/shutdown-verification-retry2.json",
+  "sourceArtifactProof": "evidence/runtime/run03-20261016/artifact-identity-final.json",
+  "network": {
+    "settingsMatch": true,
+    "activeNetworkVerified": true,
+    "wifi": "1",
+    "mobileData": "1",
+    "activeDefaultNetwork": "107"
+  },
+  "locale": {
+    "initialGet": "null",
+    "initialKeyPresenceKnown": false,
+    "exactStorageRestorationClaim": false,
+    "limitation": "初始仅记录get=null，未记录key是否存在；最终删除后来写入的en-US键，恢复get观测值，不证明初始存储状态精确一致。",
+    "operationEvidence": "evidence/runtime/run03-20261016/locale-observed-value-restoration.json"
+  },
+  "appPreferences": {
+    "theme": "Follow System",
+    "fontSize": "Follow System",
+    "language": "English",
+    "model": "Instant",
+    "thinking": "High",
+    "webSearch": "Auto",
+    "reviewed": true,
+    "evidenceSceneIds": [
+      "r03-84-search-auto-summary",
+      "r03-265-full-display-restored",
+      "r03-267-own-life-before-delete"
+    ],
+    "observationScope": "Explicit pixel review of the retained source states and action history. Original Kimi stayed stopped throughout independent D testing; final shell state separately checks source app locale. Rereading retained frames is not a new source capture.",
+    "additionalRestoration": {
+      "voice": "Tintin, Auto-play OFF; playback restored to1.0x and player closed (217,234,235,226)",
+      "keyboard": "Keyboard Send ON; vibration/recommendation stayed ON (214); temporary Pinyin removed, only original English US QWERTY (213)",
+      "documentsUi": "Original grid restored (79a)",
+      "ownedDrafts": "Long and mixed RTL test drafts cleared in retained source evidence; later search clear/Back actions have no post-action state frame and are not asserted as a verified clear result"
+    }
+  },
+  "account": {
+    "loggedOut": false,
+    "credentialsRecorded": false,
+    "preservation": "No logout, original-package reinstall, data clearing or AVD recreation. Retained login remains local; a future session must check actual validity."
+  },
+  "permissions": {
+    "scope": "POST_NOTIFICATIONS, CAMERA, RECORD_AUDIO grant and full flags compared with permission-baseline.json by the verifier",
+    "newGrantPerformed": false,
+    "realSpeechOrCameraVerified": false
+  },
+  "ownedResearchData": {
+    "deleted": "Research Run03 Life, after exact title/body rebinding; both owned scheduled tasks removed and final task list empty",
+    "retained": "Research Run03 Lab project/file/rule and Run03图像形状 chat, for later device-sync samples",
+    "exportedAlbumImage": "Identity-bearing owned export was deleted from device MediaStore; pulled original remains local-only under private runtime storage"
+  },
+  "clipboard": {
+    "hostClipboardRead": false,
+    "guestPriorClipboardRead": false,
+    "limitation": "Only owned synthetic guest clipboard values were written. The prior guest value was never read and exact restoration is not claimed."
+  },
+  "nativeReference": {
+    "classification": "D",
+    "finalRestoredScenes": ["nr03-070-restored-preferences", "nr03-071-restored-empty"],
+    "lastAction": "stop",
+    "sourceAcceptanceReplaced": false
+  },
+  "shutdown": {
+    "firstProbe": "shutdown-verification.json observed asynchronous shutdown still in progress",
+    "finalProbe": "shutdown-verification-retry2.json confirms serial absent and no owned emulator processes",
+    "otherEmulatorsStopped": false,
+    "sharedAdbServerStopped": false
+  },
+  "scopeComplete": false
+}

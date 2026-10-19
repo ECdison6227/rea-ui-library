@@ -1,0 +1,3540 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "LOCAL-RUN02-ATTACHMENT-PERMISSION-001",
+  "origin": "current",
+  "reviewedAtUtc": "2026-10-16T04:03:25.197Z",
+  "runId": "run02-20261016",
+  "sourceApkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "method": "Read-only pixel inspection and UIA/capture review of safe retained scenes 27..40, exact safe action records 60..84, local synthetic fixture and retained push/network records, plus at most 10 observed-copy matches. No device/GUI action or session mutation; identity scenes 18/19 not opened.",
+  "command": "node tools/review-run02-attachments.mjs",
+  "evidencePolicy": {
+    "A": "Observed pixels, retained UIA and bounded before/after states; trigger provenance separately stated",
+    "B": "Packaged CVR texts and source identities",
+    "C": "Research interpretation and unresolved mappings; no unique call-site attribution",
+    "D": "Any later migration decision must be explicit and must adapt system-owned UI"
+  },
+  "sourceIntegrity": {
+    "screenshotsAndHierarchiesChecked": 14,
+    "allSha256MatchCapture": true,
+    "scene30And31HierarchyBytesIdentical": true
+  },
+  "fixtureBoundary": {
+    "nameFromSystemPickerUia": "kimi-ui-research-upload.txt",
+    "nameFromKimiCard": "kimi-ui-research-upload",
+    "systemMetadata": "408 B",
+    "kimiMetadata": "TXT, 408.0 B",
+    "sourcePath": "assets/derived/test-fixtures/research-upload.txt",
+    "fixtureOriginClassification": "D: operator-created synthetic test data",
+    "bytes": 408,
+    "sha256": "80457db5c02ca9764712d9ba87bcb7989aa3a2499961bd3595d8eda2f019463f",
+    "fixtureId": "KIMI-UI-20261016",
+    "identifierSourceLine": 2,
+    "pushEvidence": {
+      "sourcePath": "evidence/rea/run02-push-fixture.json",
+      "sourceFileSha256": "beac26d7bf911a0a4ede33720319cd470420953d22262a18d19ae284c810fc3b",
+      "evidenceId": "ev_bf69dc0bfce8ac8a334b466d6f6548be395a323b032083f00cadef39e9ab267b",
+      "operation": "push_adb_file",
+      "normalizedResult": {
+        "client": {
+          "binary_path": "adb",
+          "path_source": "path",
+          "version": "37.0.1-15733141",
+          "installed_path": "C:\\Users\\edsjrcheng\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\platform-tools\\adb.exe"
+        },
+        "serial": "emulator-5596",
+        "local_path": "C:\\Users\\edsjrcheng\\Desktop\\kimiuiphone\\research\\kimi-android\\assets\\derived\\test-fixtures\\research-upload.txt",
+        "device_path": "/sdcard/Download/kimi-ui-research-upload.txt",
+        "bytes": 408,
+        "sha256": "80457db5c02ca9764712d9ba87bcb7989aa3a2499961bd3595d8eda2f019463f",
+        "device_sha256": "80457db5c02ca9764712d9ba87bcb7989aa3a2499961bd3595d8eda2f019463f",
+        "overwritten": false,
+        "device_digest_source": "device_sha256sum"
+      },
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Push writes the caller's file to the device"
+      ]
+    },
+    "matchesRetainedPushLocalAndDeviceSha256": true,
+    "actualObservedPrompt": "Reply with the Fixture ID from te attached file.",
+    "stableAnswer": "KIMI-UI-20261016",
+    "answerMatchesSyntheticFixtureIdentifier": true,
+    "provenance": "Only the explicitly selected operator-created local fixture was read; no personal file or identity page inspected.",
+    "transmissionBoundary": "Scenes 27..34 alone show card selection/readiness/removal. Scenes 35..38 additionally verify one original-app send-and-answer workflow matching a synthetic TXT identifier. Backend extraction/storage internals and general accuracy remain unknown."
+  },
+  "networkExperiment": {
+    "records": [
+      {
+        "sourcePath": "evidence/runtime/run02-20261016/network-baseline.json",
+        "sourceFileSha256": "fd3b7d75140b5fbcf7ac7c6ea721cae8ed115a7019ed5b738058aab633a8f9e8",
+        "record": {
+          "serial": "emulator-5596",
+          "avd": "rea_kimi_ui_20261015",
+          "recordedAt": "2026-10-16T03:53:51.906Z",
+          "wifi": "1",
+          "data": "1"
+        }
+      },
+      {
+        "sourcePath": "evidence/runtime/run02-20261016/network-restored.json",
+        "sourceFileSha256": "a93ffe31b8a28546727ab66e9f23b656faa705f008310161129d34b1734e2a36",
+        "record": {
+          "restoredAt": "2026-10-16T03:55:53.483Z",
+          "baseline": {
+            "serial": "emulator-5596",
+            "avd": "rea_kimi_ui_20261015",
+            "recordedAt": "2026-10-16T03:53:51.906Z",
+            "wifi": "1",
+            "data": "1"
+          },
+          "wifi": "1",
+          "data": "1"
+        }
+      }
+    ],
+    "baselineAndRestoredSwitchesMatch": true,
+    "actions": {
+      "wifiDisable": 79,
+      "mobileDataDisable": 80,
+      "submitOffline": 81,
+      "wifiRestore": 82,
+      "mobileDataRestore": 83,
+      "tapRedRetryMarker": 84
+    },
+    "indexConvention": "zero-based session.actions array index",
+    "noDefaultNetworkObservation": {
+      "exactText": "Active default network: none",
+      "source": "Root operator observation relayed in task handoff",
+      "independentSavedDumpReviewedHere": false,
+      "limitation": "Baseline/restored JSON contain switch values only; this review does not claim independent connectivity-dump verification."
+    },
+    "result": "After failed offline submission, own text is retained; after restore plus red-marker tap, exact requested answer appears.",
+    "restorationBoundary": "network-restored.json records Wi-Fi/data at baseline values at that step; final environment verification is a separate root responsibility, not asserted complete here.",
+    "unknowns": [
+      "HTTP request/response details and actual server receipt of failed send",
+      "backend network/request cancellation",
+      "automatic retry scheduling",
+      "request identity, deduplication and billing",
+      "offline queue durability and process-restart behavior"
+    ]
+  },
+  "nonAtomicPolicy": "Every scene declares atomicCapture=false. Screenshot is earlier than subsequent UIA/window. Preserve different states in 28, 29, 30; even consistent scenes do not prove exact timing.",
+  "scenes": [
+    {
+      "id": "r02-27-auth-attachments",
+      "classification": "A",
+      "origin": "current",
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-27-auth-attachments/capture.json",
+      "captureFileSha256": "2f9287493b44eab08c123c290fe534f671b63970fe0fe4682b0bb3e07b07692b",
+      "screenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-27-auth-attachments/screen.png",
+        "sha256": "f88252f17e1b107dd2dee427607534dd749f2afd946f6cca60fbe9e980cfe6a2",
+        "width": 1080,
+        "height": 2400
+      },
+      "screenshotCapturedAt": "2026-10-16T03:40:33.767Z",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-27-auth-attachments/hierarchy.xml",
+        "sha256": "82e2967db80eb493c2f91e0fde72f5f826443793d9c6d8e90a7b1903a92ff0af"
+      },
+      "hierarchyReadCompletedAt": "2026-10-16T03:40:36.784Z",
+      "screenshotToCaptureCompletionMs": 3017,
+      "atomicCapture": false,
+      "actionsBeforeCapture": 61,
+      "accountMode": "authenticated according to operator report and capture description; no identity pages read",
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "windowAfterCapture": [
+        "    topResumedActivity=ActivityRecord{c090514 u0 com.moonshot.kimichat/.MainActivity t15}"
+      ],
+      "layerOwnership": "kimi",
+      "consistencyAssessment": "matching-panel-state",
+      "pixelReview": {
+        "method": "Agent directly inspected original screen.png via view_image; original unchanged",
+        "observations": [
+          "Original screenshot shows bottom rounded attachment sheet over dimmed existing chat.",
+          "Camera, Photos and Local file tiles are visible; a WeChat tile is partly clipped horizontally.",
+          "Web search row shows Auto and a right chevron."
+        ]
+      },
+      "hierarchyReview": {
+        "observations": [
+          "UIA package is com.moonshot.kimichat and text labels agree with attachment sheet.",
+          "HorizontalScrollView exposes Camera / Photos / Local file / WeChat files; actual WeChat interaction not tested."
+        ],
+        "observedPackages": [
+          "com.moonshot.kimichat"
+        ],
+        "selectedNodes": [
+          {
+            "ordinal": 17,
+            "text": "Camera",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[121,1925][247,1978]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 19,
+            "text": "Photos",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[410,1925][526,1978]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 21,
+            "text": "Local file",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[680,1925][825,1978]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 23,
+            "text": "WeChat files",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[935,1925][1064,1978]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 26,
+            "text": "Web search",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[163,2136][384,2199]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          }
+        ]
+      },
+      "limitations": [
+        "Does not establish camera/photo/WeChat behavior, horizontal-swipe outcome or Web search value changes."
+      ]
+    },
+    {
+      "id": "r02-28-file-picker",
+      "classification": "A",
+      "origin": "current",
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-28-file-picker/capture.json",
+      "captureFileSha256": "9b67058ebbc22dbde9921799bfc336f70b4e0ae66f3988119559ced2ae5e4985",
+      "screenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-28-file-picker/screen.png",
+        "sha256": "9fe92c28690ffae672fa7724c3bd394aff5bfa6368f256be84f9214d58f1de35",
+        "width": 1080,
+        "height": 2400
+      },
+      "screenshotCapturedAt": "2026-10-16T03:42:18.722Z",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-28-file-picker/hierarchy.xml",
+        "sha256": "c401cab865079e1428a190b8479635116397023e2b5de05ea2690f6c27ce475d"
+      },
+      "hierarchyReadCompletedAt": "2026-10-16T03:42:23.690Z",
+      "screenshotToCaptureCompletionMs": 4968,
+      "atomicCapture": false,
+      "actionsBeforeCapture": 62,
+      "accountMode": "authenticated according to operator report and capture description; no identity pages read",
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "windowAfterCapture": [
+        "    topResumedActivity=ActivityRecord{e857aaf u0 com.google.android.documentsui/com.android.documentsui.picker.PickActivity t15}"
+      ],
+      "layerOwnership": "mixed-capture",
+      "consistencyAssessment": "screenshot-uia-different-package-state",
+      "pixelReview": {
+        "method": "Agent directly inspected original screen.png via view_image; original unchanged",
+        "observations": [
+          "Original screenshot still shows Kimi chat and composer; Android file picker is not in this earlier screenshot."
+        ]
+      },
+      "hierarchyReview": {
+        "observations": [
+          "Subsequent UIA and resumed activity identify com.google.android.documentsui PickActivity, Recent / Recent files / No items.",
+          "This supports system picker handoff at the later observation, not a same-frame system-picker screenshot."
+        ],
+        "observedPackages": [
+          "com.google.android.documentsui"
+        ],
+        "selectedNodes": [
+          {
+            "ordinal": 20,
+            "text": "Recent files",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.google.android.documentsui",
+            "resourceId": "com.google.android.documentsui:id/header_title",
+            "boundsPhysicalPx": "[63,388][890,546]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 25,
+            "text": "Recent",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.google.android.documentsui",
+            "resourceId": "",
+            "boundsPhysicalPx": "[189,163][354,234]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 38,
+            "text": "No items",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.google.android.documentsui",
+            "resourceId": "com.google.android.documentsui:id/message",
+            "boundsPhysicalPx": "[0,1334][1080,1391]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          }
+        ]
+      },
+      "limitations": [
+        "Do not use screenshot to illustrate DocumentsUI, or UIA as simultaneous semantics of Kimi screenshot."
+      ]
+    },
+    {
+      "id": "r02-29-downloads-picker",
+      "classification": "A",
+      "origin": "current",
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-29-downloads-picker/capture.json",
+      "captureFileSha256": "88fbdfa0e831964e5b87e2bd1a3baed438e6b25ae33fd7f6df3e8cbf2cbfc1a7",
+      "screenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-29-downloads-picker/screen.png",
+        "sha256": "a5f0de6f77edd42103b086e440b9a88554a5c300bede3935982203eb034d5730",
+        "width": 1080,
+        "height": 2400
+      },
+      "screenshotCapturedAt": "2026-10-16T03:44:00.387Z",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-29-downloads-picker/hierarchy.xml",
+        "sha256": "cd803418e3140c4824eae68ee8fcfcccb0e8866b5241b9df3673955d875e5b4e"
+      },
+      "hierarchyReadCompletedAt": "2026-10-16T03:44:03.565Z",
+      "screenshotToCaptureCompletionMs": 3178,
+      "atomicCapture": false,
+      "actionsBeforeCapture": 64,
+      "accountMode": "authenticated according to operator report and capture description; no identity pages read",
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "windowAfterCapture": [
+        "    topResumedActivity=ActivityRecord{e857aaf u0 com.google.android.documentsui/com.android.documentsui.picker.PickActivity t15}"
+      ],
+      "layerOwnership": "android-documentsui",
+      "consistencyAssessment": "same-owner-different-loading-state",
+      "pixelReview": {
+        "method": "Agent directly inspected original screen.png via view_image; original unchanged",
+        "observations": [
+          "Original screenshot shows system Downloads picker with type chips and an apparently empty visible file area."
+        ]
+      },
+      "hierarchyReview": {
+        "observations": [
+          "Later UIA contains kimi-ui-research-upload.txt, 408 B and a preview description in com.google.android.documentsui.",
+          "File entry is UIA evidence at a later time; no claim it is visible in the earlier image."
+        ],
+        "observedPackages": [
+          "com.google.android.documentsui"
+        ],
+        "selectedNodes": [
+          {
+            "ordinal": 14,
+            "text": "Downloads",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.google.android.documentsui",
+            "resourceId": "com.google.android.documentsui:id/breadcrumb_text",
+            "boundsPhysicalPx": "[0,262][288,388]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 23,
+            "text": "Files in Downloads",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.google.android.documentsui",
+            "resourceId": "com.google.android.documentsui:id/header_title",
+            "boundsPhysicalPx": "[63,514][890,672]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 28,
+            "text": "Downloads",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.google.android.documentsui",
+            "resourceId": "",
+            "boundsPhysicalPx": "[189,163][453,234]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 45,
+            "text": "",
+            "contentDescription": "Preview the file kimi-ui-research-upload.txt",
+            "class": "android.widget.FrameLayout",
+            "package": "com.google.android.documentsui",
+            "resourceId": "com.google.android.documentsui:id/preview_icon",
+            "boundsPhysicalPx": "[403,683][529,809]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 51,
+            "text": "kimi-ui-research-upload.txt",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.google.android.documentsui",
+            "resourceId": "android:id/title",
+            "boundsPhysicalPx": "[196,1169][497,1220]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 52,
+            "text": "408 B",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.google.android.documentsui",
+            "resourceId": "com.google.android.documentsui:id/details",
+            "boundsPhysicalPx": "[196,1220][278,1263]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          }
+        ]
+      },
+      "limitations": [
+        "Do not interpret earlier empty area as permanent empty state or failed file discovery.",
+        "Downloads layout, filters and file cards belong to Android DocumentsUI, not Kimi."
+      ]
+    },
+    {
+      "id": "r02-30-attachment-selected",
+      "classification": "A",
+      "origin": "current",
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-30-attachment-selected/capture.json",
+      "captureFileSha256": "062d41ac3800dc7ae406bf46964edb9cd224a0691c1bf51a451bcbcb023bc9cd",
+      "screenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-30-attachment-selected/screen.png",
+        "sha256": "49d51b3060ad5becdf4ade6fbe44041717cf1ec9d010a30372fab10c7cb61e7b",
+        "width": 1080,
+        "height": 2400
+      },
+      "screenshotCapturedAt": "2026-10-16T03:44:44.348Z",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-30-attachment-selected/hierarchy.xml",
+        "sha256": "c1cea8ceb4cd922007b1871dbc45bcbd2fcb78c9fb187ccd79e8c68c59b64028"
+      },
+      "hierarchyReadCompletedAt": "2026-10-16T03:44:47.047Z",
+      "screenshotToCaptureCompletionMs": 2699,
+      "atomicCapture": false,
+      "actionsBeforeCapture": 65,
+      "accountMode": "authenticated according to operator report and capture description; no identity pages read",
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "windowAfterCapture": [
+        "    topResumedActivity=ActivityRecord{c090514 u0 com.moonshot.kimichat/.MainActivity t15}"
+      ],
+      "layerOwnership": "kimi-with-external-system-keyboard-overlay",
+      "consistencyAssessment": "screenshot-uia-different-attachment-status",
+      "pixelReview": {
+        "method": "Agent directly inspected original screen.png via view_image; original unchanged",
+        "observations": [
+          "Original screenshot shows pending file chip kimi-ui-research-upload and Parsing, with close X and black send arrow in Kimi composer.",
+          "A separate vertical floating system keyboard strip is visible on the left. Root confirmed system/Gboard ownership in a separate pixel review; this agent did not access the private supporting image. Excluded from Kimi style rules."
+        ]
+      },
+      "hierarchyReview": {
+        "observations": [
+          "Later Kimi UIA already reports TXT, 408.0 B, same file title, Off description and Send message semantics.",
+          "Parsing was seen in screenshot only, not in this later hierarchy."
+        ],
+        "observedPackages": [
+          "com.moonshot.kimichat"
+        ],
+        "selectedNodes": [
+          {
+            "ordinal": 17,
+            "text": "Count 1 to 1000, one per line.",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[464,357][1006,426]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 29,
+            "text": "Output stopped",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[42,742][333,811]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 44,
+            "text": "kimi-ui-research-upload",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[211,1844][526,1950]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 45,
+            "text": "TXT, 408.0 B",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[211,1955][568,2001]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 54,
+            "text": "",
+            "contentDescription": "More input options",
+            "class": "android.widget.Button",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[42,2168][168,2294]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 55,
+            "text": "",
+            "contentDescription": "Switch to voice input",
+            "class": "android.widget.Button",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[785,2168][911,2294]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 57,
+            "text": "",
+            "contentDescription": "Send message",
+            "class": "android.view.View",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[922,2179][1027,2284]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          }
+        ]
+      },
+      "limitations": [
+        "No parse duration or completed server upload can be inferred from this scene alone.",
+        "Do not combine Parsing pixels with TXT metadata semantics into one instant."
+      ]
+    },
+    {
+      "id": "r02-31-attachment-ready",
+      "classification": "A",
+      "origin": "current",
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-31-attachment-ready/capture.json",
+      "captureFileSha256": "b57dfc95bbd2e3221c81548df6c8890f01b62f99ad6a2656481e2af3e0be4bb4",
+      "screenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-31-attachment-ready/screen.png",
+        "sha256": "1d64f2e107706aaf3952452811965f33e1493369b575707ac0bb16e70373d9df",
+        "width": 1080,
+        "height": 2400
+      },
+      "screenshotCapturedAt": "2026-10-16T03:46:26.652Z",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-31-attachment-ready/hierarchy.xml",
+        "sha256": "c1cea8ceb4cd922007b1871dbc45bcbd2fcb78c9fb187ccd79e8c68c59b64028"
+      },
+      "hierarchyReadCompletedAt": "2026-10-16T03:46:29.272Z",
+      "screenshotToCaptureCompletionMs": 2620,
+      "atomicCapture": false,
+      "actionsBeforeCapture": 65,
+      "accountMode": "authenticated-after-user-assisted-phone-login",
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "windowAfterCapture": [
+        "    topResumedActivity=ActivityRecord{c090514 u0 com.moonshot.kimichat/.MainActivity t15}"
+      ],
+      "layerOwnership": "kimi-with-external-system-keyboard-overlay",
+      "consistencyAssessment": "matching-file-metadata-state",
+      "pixelReview": {
+        "method": "Agent directly inspected original screen.png via view_image; original unchanged",
+        "observations": [
+          "Original screenshot shows same pending file chip with TXT, 408.0 B, close X and black send arrow.",
+          "Input placeholder remains; existing conversation remains above; left system keyboard strip is excluded from Kimi ownership."
+        ]
+      },
+      "hierarchyReview": {
+        "observations": [
+          "Kimi UIA reports title kimi-ui-research-upload, metadata TXT, 408.0 B and Send message.",
+          "Hierarchy bytes match scene 30 later hierarchy, while screenshot is a later metadata state."
+        ],
+        "observedPackages": [
+          "com.moonshot.kimichat"
+        ],
+        "selectedNodes": [
+          {
+            "ordinal": 17,
+            "text": "Count 1 to 1000, one per line.",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[464,357][1006,426]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 29,
+            "text": "Output stopped",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[42,742][333,811]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 44,
+            "text": "kimi-ui-research-upload",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[211,1844][526,1950]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 45,
+            "text": "TXT, 408.0 B",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[211,1955][568,2001]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 54,
+            "text": "",
+            "contentDescription": "More input options",
+            "class": "android.widget.Button",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[42,2168][168,2294]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 55,
+            "text": "",
+            "contentDescription": "Switch to voice input",
+            "class": "android.widget.Button",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[785,2168][911,2294]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 57,
+            "text": "",
+            "contentDescription": "Send message",
+            "class": "android.view.View",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[922,2179][1027,2284]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          }
+        ]
+      },
+      "limitations": [
+        "A metadata-ready composer card is confirmed in this scene; later scene 38 separately tests identifier reading.",
+        "Send message semantic child is enabled=true and clickable=false; parent-based gesture handling is not established by this flag."
+      ]
+    },
+    {
+      "id": "r02-32-attachment-removed",
+      "classification": "A",
+      "origin": "current",
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-32-attachment-removed/capture.json",
+      "captureFileSha256": "9d5831f5120ce83ed60e96959714e1e3f3758956096815309cab9df73343b083",
+      "screenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-32-attachment-removed/screen.png",
+        "sha256": "69052f584aa9ecf3ad470a578eca75fb3b493b68b61cbd32b1c9e1db7dbe1adf",
+        "width": 1080,
+        "height": 2400
+      },
+      "screenshotCapturedAt": "2026-10-16T03:46:36.732Z",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-32-attachment-removed/hierarchy.xml",
+        "sha256": "e0e3159eb0bc3b1f4a799d20206c393089e13d45cdf418d4363d27ed93216050"
+      },
+      "hierarchyReadCompletedAt": "2026-10-16T03:46:39.514Z",
+      "screenshotToCaptureCompletionMs": 2782,
+      "atomicCapture": false,
+      "actionsBeforeCapture": 66,
+      "accountMode": "authenticated-after-user-assisted-phone-login",
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "windowAfterCapture": [
+        "    topResumedActivity=ActivityRecord{c090514 u0 com.moonshot.kimichat/.MainActivity t15}"
+      ],
+      "layerOwnership": "kimi",
+      "consistencyAssessment": "matching-no-pending-card-state",
+      "pixelReview": {
+        "method": "Agent directly inspected original screen.png via view_image; original unchanged",
+        "observations": [
+          "Original screenshot shows pending file chip and black send arrow gone; existing chat and empty-input placeholder remain.",
+          "No confirmation dialog is visible in this retained result frame."
+        ]
+      },
+      "hierarchyReview": {
+        "observations": [
+          "Kimi UIA has no file title / TXT metadata / Send message node, and retains existing safe chat markers plus More input options / Switch to voice input.",
+          "This is absence within this hierarchy and corresponding result image only."
+        ],
+        "observedPackages": [
+          "com.moonshot.kimichat"
+        ],
+        "selectedNodes": [
+          {
+            "ordinal": 17,
+            "text": "Count 1 to 1000, one per line.",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[464,357][1006,426]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 29,
+            "text": "Output stopped",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[42,742][333,811]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 47,
+            "text": "",
+            "contentDescription": "More input options",
+            "class": "android.widget.Button",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[42,2168][168,2294]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 48,
+            "text": "",
+            "contentDescription": "Switch to voice input",
+            "class": "android.widget.Button",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[911,2168][1037,2294]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          }
+        ]
+      },
+      "limitations": [
+        "Does not prove remote upload deletion, file removal from device, undo availability or no transient confirmation at any earlier moment."
+      ]
+    },
+    {
+      "id": "r02-33-microphone-gate",
+      "classification": "A",
+      "origin": "current",
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-33-microphone-gate/capture.json",
+      "captureFileSha256": "b9227b9ba4e1a8bff7e28cb35267006f6089e88f31ae0b2837274c3a6f075f53",
+      "screenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-33-microphone-gate/screen.png",
+        "sha256": "3457a7b6f1915dd69e928409d23172c777de036b89ae8c4e407f019ce3b419c7",
+        "width": 1080,
+        "height": 2400
+      },
+      "screenshotCapturedAt": "2026-10-16T03:47:04.530Z",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-33-microphone-gate/hierarchy.xml",
+        "sha256": "0d3671155e9cf19fd039f703b608e76c05e8080a885d4d3f4d0b2547223bb3bf"
+      },
+      "hierarchyReadCompletedAt": "2026-10-16T03:47:07.260Z",
+      "screenshotToCaptureCompletionMs": 2730,
+      "atomicCapture": false,
+      "actionsBeforeCapture": 69,
+      "accountMode": "authenticated-after-user-assisted-phone-login",
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "windowAfterCapture": [
+        "    topResumedActivity=ActivityRecord{999d06d u0 com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity t15}"
+      ],
+      "layerOwnership": "kimi-purpose-layer-and-android-permissioncontroller",
+      "consistencyAssessment": "same-screenshot-coexisting-layers-uia-top-system-only",
+      "pixelReview": {
+        "method": "Agent directly inspected original screen.png via view_image; original unchanged",
+        "observations": [
+          "One original screenshot simultaneously shows black Kimi microphone-purpose explanation near the top and Android record-audio authorization dialog in front.",
+          "Product explanation reads Kimi Requests Microphone Permission and full voice-input usage / refusal-consequence sentence.",
+          "Android dialog reads Allow Kimi to record audio? with While using the app / Only this time / Don’t allow.",
+          "Hold to talk remains visible in underlying Kimi composer."
+        ]
+      },
+      "hierarchyReview": {
+        "observations": [
+          "UIA contains only com.google.android.permissioncontroller grant dialog with exact system message and three resource-id-bearing options.",
+          "Product explanation pixels are not exposed by this top-window UIA; their copy match uses manual screenshot reading."
+        ],
+        "observedPackages": [
+          "com.google.android.permissioncontroller"
+        ],
+        "selectedNodes": [
+          {
+            "ordinal": 9,
+            "text": "Allow Kimi to record audio?",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.google.android.permissioncontroller",
+            "resourceId": "com.android.permissioncontroller:id/permission_message",
+            "boundsPhysicalPx": "[133,994][947,1065]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 11,
+            "text": "While using the app",
+            "contentDescription": "",
+            "class": "android.widget.Button",
+            "package": "com.google.android.permissioncontroller",
+            "resourceId": "com.android.permissioncontroller:id/permission_allow_foreground_only_button",
+            "boundsPhysicalPx": "[133,1133][947,1280]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 12,
+            "text": "Only this time",
+            "contentDescription": "",
+            "class": "android.widget.Button",
+            "package": "com.google.android.permissioncontroller",
+            "resourceId": "com.android.permissioncontroller:id/permission_allow_one_time_button",
+            "boundsPhysicalPx": "[133,1290][947,1437]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 13,
+            "text": "Don’t allow",
+            "contentDescription": "",
+            "class": "android.widget.Button",
+            "package": "com.google.android.permissioncontroller",
+            "resourceId": "com.android.permissioncontroller:id/permission_deny_button",
+            "boundsPhysicalPx": "[133,1447][947,1594]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          }
+        ]
+      },
+      "limitations": [
+        "Coexistence does not establish start ordering or delay between product explanation and system request.",
+        "Do not transfer Android dialog icon, colors, radii or button stack as Kimi design tokens.",
+        "No permission grant, recording or transcription success observed here."
+      ]
+    },
+    {
+      "id": "r02-34-microphone-denied",
+      "classification": "A",
+      "origin": "current",
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-34-microphone-denied/capture.json",
+      "captureFileSha256": "b3d8bc588e5053868a6e82a70ffde9badbbf1f987595b63d8047676c4e98def7",
+      "screenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-34-microphone-denied/screen.png",
+        "sha256": "b59edf26d4e4c6e78b0b5400f80e983f596351fef3ab3a1936a2628c8c5328bb",
+        "width": 1080,
+        "height": 2400
+      },
+      "screenshotCapturedAt": "2026-10-16T03:48:44.469Z",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-34-microphone-denied/hierarchy.xml",
+        "sha256": "25251e8d4fe4edb7277205f03f8210dadf10e375f9f1242257742d9b4b08d76d"
+      },
+      "hierarchyReadCompletedAt": "2026-10-16T03:48:47.034Z",
+      "screenshotToCaptureCompletionMs": 2565,
+      "atomicCapture": false,
+      "actionsBeforeCapture": 70,
+      "accountMode": "authenticated-after-user-assisted-phone-login",
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "windowAfterCapture": [
+        "    topResumedActivity=ActivityRecord{c090514 u0 com.moonshot.kimichat/.MainActivity t15}"
+      ],
+      "layerOwnership": "kimi",
+      "consistencyAssessment": "matching-return-to-hold-to-talk-state",
+      "pixelReview": {
+        "method": "Agent directly inspected original screen.png via view_image; original unchanged",
+        "observations": [
+          "Original screenshot shows original Kimi chat with Hold to talk and keyboard/text-mode icon; both permission layers are gone.",
+          "No recognized text or microphone recording progress is visible."
+        ]
+      },
+      "hierarchyReview": {
+        "observations": [
+          "Kimi UIA contains Hold to talk and Switch to text input, retains safe chat markers, and contains no permissioncontroller nodes.",
+          "Captured result follows operator-reported Don’t allow action."
+        ],
+        "observedPackages": [
+          "com.moonshot.kimichat"
+        ],
+        "selectedNodes": [
+          {
+            "ordinal": 17,
+            "text": "Count 1 to 1000, one per line.",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[464,357][1006,426]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 29,
+            "text": "Output stopped",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[42,742][333,811]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 43,
+            "text": "",
+            "contentDescription": "More input options",
+            "class": "android.widget.Button",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[53,2122][179,2248]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 44,
+            "text": "",
+            "contentDescription": "Switch to text input",
+            "class": "android.widget.Button",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[900,2122][1026,2248]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 45,
+            "text": "Hold to talk",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[432,2161][649,2210]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          }
+        ]
+      },
+      "limitations": [
+        "Only one refusal path is represented; repeated refusal, permanent denial, settings recovery, recording and transcription remain unverified."
+      ]
+    },
+    {
+      "id": "r02-35-attachment-reselected",
+      "classification": "A",
+      "origin": "current",
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-35-attachment-reselected/capture.json",
+      "captureFileSha256": "494354a131bf55f391bb370f1d128c54e6d99e346b97a2867acf2139219a2cb6",
+      "screenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-35-attachment-reselected/screen.png",
+        "sha256": "003227139cdc9c272b38654fe26c504bd0c619422efa49a64be928a99379e3ad",
+        "width": 1080,
+        "height": 2400
+      },
+      "screenshotCapturedAt": "2026-10-16T03:49:08.905Z",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-35-attachment-reselected/hierarchy.xml",
+        "sha256": "c1cea8ceb4cd922007b1871dbc45bcbd2fcb78c9fb187ccd79e8c68c59b64028"
+      },
+      "hierarchyReadCompletedAt": "2026-10-16T03:49:12.264Z",
+      "screenshotToCaptureCompletionMs": 3359,
+      "atomicCapture": false,
+      "actionsBeforeCapture": 74,
+      "accountMode": "authenticated-after-user-assisted-phone-login",
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "windowAfterCapture": [
+        "    topResumedActivity=ActivityRecord{c090514 u0 com.moonshot.kimichat/.MainActivity t15}"
+      ],
+      "layerOwnership": "kimi-with-external-system-keyboard-overlay",
+      "consistencyAssessment": "matching-file-metadata-state",
+      "pixelReview": {
+        "method": "Agent directly inspected original screen.png via view_image; original unchanged",
+        "observations": [
+          "Original screenshot shows the synthetic file selected again as TXT, 408.0 B in composer, with close X and send icon.",
+          "Existing conversation remains and text field is still placeholder. External system keyboard strip remains outside Kimi style scope."
+        ]
+      },
+      "hierarchyReview": {
+        "observations": [
+          "Kimi UIA gives same fixture title and TXT metadata as scenes 30/31; Send message semantic description is present."
+        ],
+        "observedPackages": [
+          "com.moonshot.kimichat"
+        ],
+        "selectedNodes": [
+          {
+            "ordinal": 17,
+            "text": "Count 1 to 1000, one per line.",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[464,357][1006,426]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 29,
+            "text": "Output stopped",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[42,742][333,811]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 44,
+            "text": "kimi-ui-research-upload",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[211,1844][526,1950]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 45,
+            "text": "TXT, 408.0 B",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[211,1955][568,2001]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 54,
+            "text": "",
+            "contentDescription": "More input options",
+            "class": "android.widget.Button",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[42,2168][168,2294]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 55,
+            "text": "",
+            "contentDescription": "Switch to voice input",
+            "class": "android.widget.Button",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[785,2168][911,2294]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 57,
+            "text": "",
+            "contentDescription": "Send message",
+            "class": "android.view.View",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[922,2179][1027,2284]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          }
+        ]
+      },
+      "limitations": [
+        "Reselection itself does not prove new upload or server reuse strategy."
+      ]
+    },
+    {
+      "id": "r02-36-attachment-prompt",
+      "classification": "A",
+      "origin": "current",
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-36-attachment-prompt/capture.json",
+      "captureFileSha256": "fa785d6f40717ff0e7a1e50712653e91d96742235b6413bec5a94ac04e4c5611",
+      "screenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-36-attachment-prompt/screen.png",
+        "sha256": "540d431ecd94cd7fae2d7d1d6dbf6172d2a64f9370ad109c3eb3e2368800283e",
+        "width": 1080,
+        "height": 2400
+      },
+      "screenshotCapturedAt": "2026-10-16T03:52:11.751Z",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-36-attachment-prompt/hierarchy.xml",
+        "sha256": "5105b91f0bece0304912bccd5c48add1c52ff1b3fa1d9d1ed78df6eeae62a0c5"
+      },
+      "hierarchyReadCompletedAt": "2026-10-16T03:52:14.574Z",
+      "screenshotToCaptureCompletionMs": 2823,
+      "atomicCapture": false,
+      "actionsBeforeCapture": 75,
+      "accountMode": "authenticated-after-user-assisted-phone-login",
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "windowAfterCapture": [
+        "    topResumedActivity=ActivityRecord{c090514 u0 com.moonshot.kimichat/.MainActivity t15}"
+      ],
+      "layerOwnership": "kimi-with-external-system-keyboard-overlay",
+      "consistencyAssessment": "matching-observed-typo-prompt",
+      "pixelReview": {
+        "method": "Agent directly inspected original screen.png via view_image; original unchanged",
+        "observations": [
+          "Original screenshot shows file chip plus exact typed prompt Reply with the Fixture ID from te attached file.",
+          "The observed word is te, not the; retain the input as displayed rather than silently correcting it."
+        ]
+      },
+      "hierarchyReview": {
+        "observations": [
+          "UIA exact input text is Reply with the Fixture ID from te attached file.; synthetic file metadata remains."
+        ],
+        "observedPackages": [
+          "com.moonshot.kimichat"
+        ],
+        "selectedNodes": [
+          {
+            "ordinal": 17,
+            "text": "Count 1 to 1000, one per line.",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[464,357][1006,426]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 29,
+            "text": "Output stopped",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[42,742][333,811]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 44,
+            "text": "kimi-ui-research-upload",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[211,1844][526,1950]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 45,
+            "text": "TXT, 408.0 B",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[211,1955][568,2001]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 50,
+            "text": "Reply with the Fixture ID from te attached file.",
+            "contentDescription": "",
+            "class": "android.widget.EditText",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[74,2053][1006,2179]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 53,
+            "text": "",
+            "contentDescription": "More input options",
+            "class": "android.widget.Button",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[42,2168][168,2294]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 54,
+            "text": "",
+            "contentDescription": "Switch to voice input",
+            "class": "android.widget.Button",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[785,2168][911,2294]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 56,
+            "text": "",
+            "contentDescription": "Send message",
+            "class": "android.view.View",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[922,2179][1027,2284]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          }
+        ]
+      },
+      "limitations": [
+        "Action 74 requested the word the, but observed input omitted h. No product text limit, IME defect or cause is inferred."
+      ]
+    },
+    {
+      "id": "r02-37-attachment-submitted",
+      "classification": "A",
+      "origin": "current",
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-37-attachment-submitted/capture.json",
+      "captureFileSha256": "5b40ea65ab57a54da2ed0e384393d92377f273a30569448e994522d1b1ac2001",
+      "screenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-37-attachment-submitted/screen.png",
+        "sha256": "6d95be80a4ae160cd35585d12f6a4c4d4d510ae1fdfdd87cdbe5f1e3f28c2b05",
+        "width": 1080,
+        "height": 2400
+      },
+      "screenshotCapturedAt": "2026-10-16T03:52:23.742Z",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-37-attachment-submitted/hierarchy.xml",
+        "sha256": "6f182fa51ba3eb6e74401d7553394cc9f759b4a36914bb86ac01784bd0b27f32"
+      },
+      "hierarchyReadCompletedAt": "2026-10-16T03:52:26.583Z",
+      "screenshotToCaptureCompletionMs": 2841,
+      "atomicCapture": false,
+      "actionsBeforeCapture": 76,
+      "accountMode": "authenticated-after-user-assisted-phone-login",
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "windowAfterCapture": [
+        "    topResumedActivity=ActivityRecord{c090514 u0 com.moonshot.kimichat/.MainActivity t15}"
+      ],
+      "layerOwnership": "kimi",
+      "consistencyAssessment": "matching-submitted-fixture-and-answer",
+      "pixelReview": {
+        "method": "Agent directly inspected original screen.png via view_image; original unchanged",
+        "observations": [
+          "Original screenshot already shows file card and typo-containing prompt in conversation, Thinking complete and KIMI-UI-20261016 response.",
+          "Composer is reset to placeholder."
+        ]
+      },
+      "hierarchyReview": {
+        "observations": [
+          "Later UIA reports identical safe prompt, file metadata and exact fixture identifier answer."
+        ],
+        "observedPackages": [
+          "com.moonshot.kimichat"
+        ],
+        "selectedNodes": [
+          {
+            "ordinal": 17,
+            "text": "Count 1 to 1000, one per line.",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[464,357][1006,426]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 29,
+            "text": "Output stopped",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[42,742][333,811]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 40,
+            "text": "kimi-ui-research-upload",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[555,991][937,1044]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 41,
+            "text": "TXT, 408.0 B",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[555,1044][726,1092]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 43,
+            "text": "Reply with the Fixture ID from te attached file.",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[190,1159][1006,1297]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 46,
+            "text": "Thinking complete",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[148,1397][445,1450]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 49,
+            "text": "KIMI-UI-20261016",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[42,1518][381,1587]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 56,
+            "text": "",
+            "contentDescription": "Retry",
+            "class": "android.widget.ImageView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[290,1593][416,1719]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 66,
+            "text": "",
+            "contentDescription": "More input options",
+            "class": "android.widget.Button",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[53,2122][179,2248]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 67,
+            "text": "",
+            "contentDescription": "Switch to voice input",
+            "class": "android.widget.Button",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[900,2122][1026,2248]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          }
+        ]
+      },
+      "limitations": [
+        "No response latency or stream timing can be measured from this capture; answer correspondence does not reveal backend extraction pipeline."
+      ]
+    },
+    {
+      "id": "r02-38-file-id-complete",
+      "classification": "A",
+      "origin": "current",
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-38-file-id-complete/capture.json",
+      "captureFileSha256": "785ea3715c59bc9138dff6101fc4c55363c37d0bd083691dce1ccbcb2159f18b",
+      "screenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-38-file-id-complete/screen.png",
+        "sha256": "623b621049d135058af97edcce92183b5b8430302d6c8f2a88fb45de132aedf0",
+        "width": 1080,
+        "height": 2400
+      },
+      "screenshotCapturedAt": "2026-10-16T03:53:40.433Z",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-38-file-id-complete/hierarchy.xml",
+        "sha256": "6f182fa51ba3eb6e74401d7553394cc9f759b4a36914bb86ac01784bd0b27f32"
+      },
+      "hierarchyReadCompletedAt": "2026-10-16T03:53:43.288Z",
+      "screenshotToCaptureCompletionMs": 2855,
+      "atomicCapture": false,
+      "actionsBeforeCapture": 76,
+      "accountMode": "authenticated-after-user-assisted-phone-login",
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "windowAfterCapture": [
+        "    topResumedActivity=ActivityRecord{c090514 u0 com.moonshot.kimichat/.MainActivity t15}"
+      ],
+      "layerOwnership": "kimi",
+      "consistencyAssessment": "matching-stable-fixture-answer",
+      "pixelReview": {
+        "method": "Agent directly inspected original screen.png via view_image; original unchanged",
+        "observations": [
+          "Original screenshot again shows KIMI-UI-20261016 answer with the synthetic file card and same observed prompt.",
+          "Read/copy/rate/retry/share icons appear below the answer."
+        ]
+      },
+      "hierarchyReview": {
+        "observations": [
+          "UIA exact answer equals Fixture ID and Expected identifier in locally retained synthetic fixture."
+        ],
+        "observedPackages": [
+          "com.moonshot.kimichat"
+        ],
+        "selectedNodes": [
+          {
+            "ordinal": 17,
+            "text": "Count 1 to 1000, one per line.",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[464,357][1006,426]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 29,
+            "text": "Output stopped",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[42,742][333,811]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 40,
+            "text": "kimi-ui-research-upload",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[555,991][937,1044]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 41,
+            "text": "TXT, 408.0 B",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[555,1044][726,1092]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 43,
+            "text": "Reply with the Fixture ID from te attached file.",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[190,1159][1006,1297]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 46,
+            "text": "Thinking complete",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[148,1397][445,1450]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 49,
+            "text": "KIMI-UI-20261016",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[42,1518][381,1587]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 56,
+            "text": "",
+            "contentDescription": "Retry",
+            "class": "android.widget.ImageView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[290,1593][416,1719]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 66,
+            "text": "",
+            "contentDescription": "More input options",
+            "class": "android.widget.Button",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[53,2122][179,2248]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 67,
+            "text": "",
+            "contentDescription": "Switch to voice input",
+            "class": "android.widget.Button",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[900,2122][1026,2248]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          }
+        ]
+      },
+      "limitations": [
+        "This verifies one synthetic TXT identifier-reading workflow under this runtime, not arbitrary document extraction accuracy or backend internals."
+      ]
+    },
+    {
+      "id": "r02-39-offline-submit",
+      "classification": "A",
+      "origin": "current",
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-39-offline-submit/capture.json",
+      "captureFileSha256": "86e9c8d288f518a92ec9bb8027008c31003dc7adccff7f534726f4f4a271f759",
+      "screenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-39-offline-submit/screen.png",
+        "sha256": "26b3f1e6a13b86a28c32647c2d49b87f03dd1a9db15fe4df6f1d3602018c027d",
+        "width": 1080,
+        "height": 2400
+      },
+      "screenshotCapturedAt": "2026-10-16T03:54:56.286Z",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-39-offline-submit/hierarchy.xml",
+        "sha256": "f2f682fc27d3c0f76ab82debef05ecb2655265870a95f3055342c65071605059"
+      },
+      "hierarchyReadCompletedAt": "2026-10-16T03:54:58.770Z",
+      "screenshotToCaptureCompletionMs": 2484,
+      "atomicCapture": false,
+      "actionsBeforeCapture": 82,
+      "accountMode": "authenticated-after-user-assisted-phone-login",
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "windowAfterCapture": [
+        "    topResumedActivity=ActivityRecord{c090514 u0 com.moonshot.kimichat/.MainActivity t15}"
+      ],
+      "layerOwnership": "kimi",
+      "consistencyAssessment": "matching-offline-message-retention",
+      "pixelReview": {
+        "method": "Agent directly inspected original screen.png via view_image; original unchanged",
+        "observations": [
+          "Original screenshot shows user bubble Reply only offline-test-OK retained with red circular retry marker at its left.",
+          "Composer area shows Network is unavailable… and no new successful reply to this request."
+        ]
+      },
+      "hierarchyReview": {
+        "observations": [
+          "Kimi UIA retains the exact own-message text and Network is unavailable…; red retry marker has no separately labeled Retry semantics in this dump.",
+          "Recorded actions 79/80 disabled only this dedicated AVD Wi-Fi/mobile data before action 81 submission."
+        ],
+        "observedPackages": [
+          "com.moonshot.kimichat"
+        ],
+        "selectedNodes": [
+          {
+            "ordinal": 17,
+            "text": "Count 1 to 1000, one per line.",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[464,357][1006,426]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 29,
+            "text": "Output stopped",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[42,742][333,811]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 40,
+            "text": "kimi-ui-research-upload",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[555,991][937,1044]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 41,
+            "text": "TXT, 408.0 B",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[555,1044][726,1092]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 43,
+            "text": "Reply with the Fixture ID from te attached file.",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[190,1159][1006,1297]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 46,
+            "text": "Thinking complete",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[148,1397][445,1450]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 49,
+            "text": "KIMI-UI-20261016",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[42,1518][381,1587]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 56,
+            "text": "",
+            "contentDescription": "Retry",
+            "class": "android.widget.ImageView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[290,1593][416,1719]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 61,
+            "text": "Reply only offline-test-OK",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[541,1767][1006,1836]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 67,
+            "text": "Network is unavailable…",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[211,2161][879,2210]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 70,
+            "text": "",
+            "contentDescription": "More input options",
+            "class": "android.widget.Button",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[53,2122][179,2248]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 71,
+            "text": "",
+            "contentDescription": "Switch to voice input",
+            "class": "android.widget.Button",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[900,2122][1026,2248]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          }
+        ]
+      },
+      "limitations": [
+        "Message bubble retention is not proof of unsent composer draft persistence or server receipt.",
+        "No HTTP status, request ID, backend cancellation, retry deduplication or automatic retry policy is established."
+      ]
+    },
+    {
+      "id": "r02-40-retry-after-network",
+      "classification": "A",
+      "origin": "current",
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-40-retry-after-network/capture.json",
+      "captureFileSha256": "060667a4690fc556fe641cedf9b52bef2797e2cd276a5534191f4bf10350ff71",
+      "screenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-40-retry-after-network/screen.png",
+        "sha256": "4ff301c0697861511a9fd2d9642aea26027c1a111684428da58502c4f3056973",
+        "width": 1080,
+        "height": 2400
+      },
+      "screenshotCapturedAt": "2026-10-16T03:55:58.127Z",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-40-retry-after-network/hierarchy.xml",
+        "sha256": "90ac124d76d05710d1e701ed678f976a6cf486ed664ae0fa43b6aa35946f9ef5"
+      },
+      "hierarchyReadCompletedAt": "2026-10-16T03:56:00.844Z",
+      "screenshotToCaptureCompletionMs": 2717,
+      "atomicCapture": false,
+      "actionsBeforeCapture": 85,
+      "accountMode": "authenticated-after-user-assisted-phone-login",
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "windowAfterCapture": [
+        "    topResumedActivity=ActivityRecord{c090514 u0 com.moonshot.kimichat/.MainActivity t15}"
+      ],
+      "layerOwnership": "kimi",
+      "consistencyAssessment": "matching-recovered-answer",
+      "pixelReview": {
+        "method": "Agent directly inspected original screen.png via view_image; original unchanged",
+        "observations": [
+          "Original screenshot shows same own-message text followed by Thinking complete and offline-test-OK response.",
+          "Red failed-message marker is no longer visible; ordinary composer placeholder returns."
+        ]
+      },
+      "hierarchyReview": {
+        "observations": [
+          "UIA contains offline-test-OK as response and retains the earlier synthetic-file conversation.",
+          "Actions 82/83 restore recorded network switches and action 84 taps observed red retry marker before capture."
+        ],
+        "observedPackages": [
+          "com.moonshot.kimichat"
+        ],
+        "selectedNodes": [
+          {
+            "ordinal": 17,
+            "text": "Count 1 to 1000, one per line.",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[483,170][806,239]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 29,
+            "text": "Output stopped",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[42,555][333,624]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 40,
+            "text": "kimi-ui-research-upload",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[555,804][937,857]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 41,
+            "text": "TXT, 408.0 B",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[555,857][726,905]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 43,
+            "text": "Reply with the Fixture ID from te attached file.",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[190,972][1006,1110]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 46,
+            "text": "Thinking complete",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[148,1210][445,1263]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 49,
+            "text": "KIMI-UI-20261016",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[42,1331][381,1400]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 56,
+            "text": "",
+            "contentDescription": "Retry",
+            "class": "android.widget.ImageView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[290,1406][416,1532]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 59,
+            "text": "Reply only offline-test-OK",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[541,1580][1006,1649]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 62,
+            "text": "Thinking complete",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[148,1749][445,1802]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 65,
+            "text": "offline-test-OK",
+            "contentDescription": "",
+            "class": "android.widget.TextView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[42,1870][308,1939]",
+            "enabled": true,
+            "clickableOnThisNode": false
+          },
+          {
+            "ordinal": 72,
+            "text": "",
+            "contentDescription": "Retry",
+            "class": "android.widget.ImageView",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[290,1945][416,2071]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 82,
+            "text": "",
+            "contentDescription": "More input options",
+            "class": "android.widget.Button",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[53,2122][179,2248]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          },
+          {
+            "ordinal": 83,
+            "text": "",
+            "contentDescription": "Switch to voice input",
+            "class": "android.widget.Button",
+            "package": "com.moonshot.kimichat",
+            "resourceId": "",
+            "boundsPhysicalPx": "[900,2122][1026,2248]",
+            "enabled": true,
+            "clickableOnThisNode": true
+          }
+        ]
+      },
+      "limitations": [
+        "A successful response after restore-and-tap is confirmed; cannot determine whether an automatic retry also occurred, request identity/deduplication, or backend cancellation.",
+        "Final environment restoration audit remains separate from these per-step network snapshots."
+      ]
+    }
+  ],
+  "transitions": [
+    {
+      "id": "RUN02-ATTACH-T01",
+      "from": "r02-27-auth-attachments",
+      "trigger": "Local file selection (operator report; later capture.description states document picker after Local file)",
+      "to": "r02-28-file-picker",
+      "observedResult": "Later UIA/resumed activity is system DocumentsUI; screenshot is still earlier Kimi frame",
+      "classification": "A",
+      "triggerProvenance": "Reviewed exact selected action record(s), screenshot/UIA and capture metadata; actionsBeforeCapture is a count, not an index",
+      "unknowns": [
+        "exact launch intent and MIME filter",
+        "same-frame system picker appearance in scene 28"
+      ],
+      "actionIndicesZeroBased": [
+        61
+      ],
+      "actionReferences": [
+        "evidence/runtime/run02-20261016/session.json#/actions/61"
+      ]
+    },
+    {
+      "id": "RUN02-ATTACH-T02",
+      "from": "r02-29-downloads-picker",
+      "trigger": "Select operator-created synthetic kimi-ui-research-upload.txt in system picker",
+      "to": "r02-30-attachment-selected",
+      "observedResult": "Kimi pending card appears; earlier screenshot Parsing, later hierarchy TXT, 408.0 B",
+      "classification": "A",
+      "triggerProvenance": "Reviewed exact selected action record(s), screenshot/UIA and capture metadata; actionsBeforeCapture is a count, not an index",
+      "unknowns": [
+        "picker MIME/content URI handling",
+        "upload completion and server processing",
+        "parse elapsed time"
+      ],
+      "actionIndicesZeroBased": [
+        64
+      ],
+      "actionReferences": [
+        "evidence/runtime/run02-20261016/session.json#/actions/64"
+      ]
+    },
+    {
+      "id": "RUN02-ATTACH-T03",
+      "from": "r02-30-attachment-selected",
+      "trigger": "No additional action between captures; actionsBeforeCapture remains 65",
+      "to": "r02-31-attachment-ready",
+      "observedResult": "Later screenshot has TXT, 408.0 B, matching later hierarchy already present in scene 30",
+      "classification": "A",
+      "triggerProvenance": "No new action between bounded retained captures; count and screenshot/UIA checked",
+      "unknowns": [
+        "exact transition moment and duration",
+        "backend processing status"
+      ],
+      "actionIndicesZeroBased": [],
+      "actionReferences": []
+    },
+    {
+      "id": "RUN02-ATTACH-T04",
+      "from": "r02-31-attachment-ready",
+      "trigger": "Close X on pending file card (operator report)",
+      "to": "r02-32-attachment-removed",
+      "observedResult": "Card, metadata and send icon/semantics absent; conversation and placeholder remain",
+      "classification": "A",
+      "triggerProvenance": "Reviewed exact selected action record(s), screenshot/UIA and capture metadata; actionsBeforeCapture is a count, not an index",
+      "unknowns": [
+        "remote file cleanup",
+        "undo",
+        "transient prompts outside retained frames"
+      ],
+      "actionIndicesZeroBased": [
+        65
+      ],
+      "actionReferences": [
+        "evidence/runtime/run02-20261016/session.json#/actions/65"
+      ]
+    },
+    {
+      "id": "RUN02-ATTACH-T05",
+      "from": "r02-32-attachment-removed",
+      "trigger": "Switch voice mode then hold to talk (operator report; intermediate mode-switch frame not retained in reviewed set)",
+      "to": "r02-33-microphone-gate",
+      "observedResult": "One screenshot co-shows Kimi purpose explanation and system audio request",
+      "classification": "A",
+      "triggerProvenance": "Reviewed exact selected action record(s), screenshot/UIA and capture metadata; actionsBeforeCapture is a count, not an index",
+      "unknowns": [
+        "precise ordering between purpose explanation and system dialog",
+        "all intermediate frame contents",
+        "grant behavior"
+      ],
+      "actionIndicesZeroBased": [
+        66,
+        67,
+        68
+      ],
+      "actionReferences": [
+        "evidence/runtime/run02-20261016/session.json#/actions/66",
+        "evidence/runtime/run02-20261016/session.json#/actions/67",
+        "evidence/runtime/run02-20261016/session.json#/actions/68"
+      ]
+    },
+    {
+      "id": "RUN02-ATTACH-T06",
+      "from": "r02-33-microphone-gate",
+      "trigger": "Don’t allow system permission option (operator report)",
+      "to": "r02-34-microphone-denied",
+      "observedResult": "System request and purpose explanation gone; Kimi Hold to talk mode and same visible chat retained",
+      "classification": "A",
+      "triggerProvenance": "Reviewed exact selected action record(s), screenshot/UIA and capture metadata; actionsBeforeCapture is a count, not an index",
+      "unknowns": [
+        "next attempt/permanent denial",
+        "system-settings recovery",
+        "recording/transcription success"
+      ],
+      "actionIndicesZeroBased": [
+        69
+      ],
+      "actionReferences": [
+        "evidence/runtime/run02-20261016/session.json#/actions/69"
+      ]
+    },
+    {
+      "id": "RUN02-ATTACH-T07",
+      "from": "r02-34-microphone-denied",
+      "trigger": "Switch to text, reopen options/Local file, select same synthetic fixture",
+      "to": "r02-35-attachment-reselected",
+      "observedResult": "Same fixture card again displays TXT, 408.0 B",
+      "classification": "A",
+      "unknowns": [
+        "upload/cache reuse internals"
+      ],
+      "actionIndicesZeroBased": [
+        70,
+        71,
+        72,
+        73
+      ],
+      "actionReferences": [
+        "evidence/runtime/run02-20261016/session.json#/actions/70",
+        "evidence/runtime/run02-20261016/session.json#/actions/71",
+        "evidence/runtime/run02-20261016/session.json#/actions/72",
+        "evidence/runtime/run02-20261016/session.json#/actions/73"
+      ],
+      "triggerProvenance": "Reviewed exact selected action record(s), screenshot/UIA and capture metadata; actionsBeforeCapture is a count, not an index"
+    },
+    {
+      "id": "RUN02-ATTACH-T08",
+      "from": "r02-35-attachment-reselected",
+      "trigger": "Type attachment identifier prompt",
+      "to": "r02-36-attachment-prompt",
+      "observedResult": "Actual input is Reply with the Fixture ID from te attached file.; preserve typo despite action text containing the",
+      "classification": "A",
+      "unknowns": [
+        "cause of missing input character"
+      ],
+      "actionIndicesZeroBased": [
+        74
+      ],
+      "actionReferences": [
+        "evidence/runtime/run02-20261016/session.json#/actions/74"
+      ],
+      "triggerProvenance": "Reviewed exact selected action record(s), screenshot/UIA and capture metadata; actionsBeforeCapture is a count, not an index"
+    },
+    {
+      "id": "RUN02-ATTACH-T09",
+      "from": "r02-36-attachment-prompt",
+      "trigger": "Tap Send message",
+      "to": "r02-37-attachment-submitted",
+      "observedResult": "File and exact actual prompt appear in conversation; screenshot and UIA already show fixture ID response",
+      "classification": "A",
+      "unknowns": [
+        "backend document pipeline",
+        "response latency"
+      ],
+      "actionIndicesZeroBased": [
+        75
+      ],
+      "actionReferences": [
+        "evidence/runtime/run02-20261016/session.json#/actions/75"
+      ],
+      "triggerProvenance": "Reviewed exact selected action record(s), screenshot/UIA and capture metadata; actionsBeforeCapture is a count, not an index"
+    },
+    {
+      "id": "RUN02-ATTACH-T10",
+      "from": "r02-37-attachment-submitted",
+      "trigger": "No additional recorded action before later stable capture",
+      "to": "r02-38-file-id-complete",
+      "observedResult": "KIMI-UI-20261016 remains and exactly matches locally retained synthetic fixture identifier",
+      "classification": "A",
+      "unknowns": [
+        "general document-extraction accuracy",
+        "network protocol details"
+      ],
+      "actionIndicesZeroBased": [],
+      "actionReferences": [],
+      "triggerProvenance": "No new action between bounded retained captures; count and screenshot/UIA checked"
+    },
+    {
+      "id": "RUN02-ATTACH-T11",
+      "from": "r02-38-file-id-complete",
+      "trigger": "Type neutral request; hide IME; disable this test AVD Wi-Fi/data; submit",
+      "to": "r02-39-offline-submit",
+      "observedResult": "Own message retained with red retry marker and Network is unavailable…; prior conversation retained",
+      "classification": "A",
+      "unknowns": [
+        "request dispatch/receipt",
+        "backend cancellation",
+        "retry idempotency"
+      ],
+      "actionIndicesZeroBased": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ],
+      "actionReferences": [
+        "evidence/runtime/run02-20261016/session.json#/actions/76",
+        "evidence/runtime/run02-20261016/session.json#/actions/77",
+        "evidence/runtime/run02-20261016/session.json#/actions/78",
+        "evidence/runtime/run02-20261016/session.json#/actions/79",
+        "evidence/runtime/run02-20261016/session.json#/actions/80",
+        "evidence/runtime/run02-20261016/session.json#/actions/81"
+      ],
+      "triggerProvenance": "Reviewed exact selected action record(s), screenshot/UIA and capture metadata; actionsBeforeCapture is a count, not an index"
+    },
+    {
+      "id": "RUN02-ATTACH-T12",
+      "from": "r02-39-offline-submit",
+      "trigger": "Restore Wi-Fi/data switches to baseline then tap observed red retry marker",
+      "to": "r02-40-retry-after-network",
+      "observedResult": "offline-test-OK answer appears for retained own-message text and ordinary composer returns",
+      "classification": "A",
+      "unknowns": [
+        "whether any automatic retry also occurred",
+        "request identity/deduplication",
+        "final restoration audit status"
+      ],
+      "actionIndicesZeroBased": [
+        82,
+        83,
+        84
+      ],
+      "actionReferences": [
+        "evidence/runtime/run02-20261016/session.json#/actions/82",
+        "evidence/runtime/run02-20261016/session.json#/actions/83",
+        "evidence/runtime/run02-20261016/session.json#/actions/84"
+      ],
+      "triggerProvenance": "Reviewed exact selected action record(s), screenshot/UIA and capture metadata; actionsBeforeCapture is a count, not an index"
+    }
+  ],
+  "actionEvidence": [
+    {
+      "zeroBasedIndex": 60,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/60",
+      "actionRecordSha256CanonicalUtf8": "21fa3e683d86320ab0023e7fa289fbb856c3df77bda8a704a300c834f670bd8b",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "tap-label",
+        "arguments": [
+          "shell",
+          "input",
+          "tap",
+          "105",
+          "2231"
+        ],
+        "description": "Observed label More input options; Open attachment capabilities in logged-in test chat",
+        "startedAt": "2026-10-16T03:40:27.547Z",
+        "completedAt": "2026-10-16T03:40:31.424Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 61,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/61",
+      "actionRecordSha256CanonicalUtf8": "3733243fc25e648c91619bf02480b249b64642d358699a96f72b804755ace419",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "tap-label",
+        "arguments": [
+          "shell",
+          "input",
+          "tap",
+          "752",
+          "1951"
+        ],
+        "description": "Observed label Local file; Open system picker for artificial TXT fixture only",
+        "startedAt": "2026-10-16T03:42:14.219Z",
+        "completedAt": "2026-10-16T03:42:17.037Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 62,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/62",
+      "actionRecordSha256CanonicalUtf8": "e42ae7297342e1a87eda2680eb7749c267dec1b7628a95d9030e4693f39bd8a9",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "tap-label",
+        "arguments": [
+          "shell",
+          "input",
+          "tap",
+          "73",
+          "199"
+        ],
+        "description": "Observed label Show roots; Choose Downloads root instead of empty Recent",
+        "startedAt": "2026-10-16T03:43:52.182Z",
+        "completedAt": "2026-10-16T03:43:55.316Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 63,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/63",
+      "actionRecordSha256CanonicalUtf8": "2a4148cecd729fe803c55c49c6644d214d9a9f68fb9bd183f999409516033fc1",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "tap-label",
+        "arguments": [
+          "shell",
+          "input",
+          "tap",
+          "441",
+          "650"
+        ],
+        "description": "Observed label Downloads; Open root containing the artificial research fixture",
+        "startedAt": "2026-10-16T03:43:55.780Z",
+        "completedAt": "2026-10-16T03:43:59.206Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 64,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/64",
+      "actionRecordSha256CanonicalUtf8": "fe7aec788b654544aa6f843db343efc44100ddc2c5c4fc25cb8ca01ca1503292",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "tap-label",
+        "arguments": [
+          "shell",
+          "input",
+          "tap",
+          "346",
+          "1194"
+        ],
+        "description": "Observed label kimi-ui-research-upload.txt; Select only artificial research TXT file",
+        "startedAt": "2026-10-16T03:44:37.541Z",
+        "completedAt": "2026-10-16T03:44:41.364Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 65,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/65",
+      "actionRecordSha256CanonicalUtf8": "71d1e9aa9741ee87d260df48f0744adf53cdea384151e98657f9332d3b57876c",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "tap-label",
+        "arguments": [
+          "shell",
+          "input",
+          "tap",
+          "557",
+          "1859"
+        ],
+        "description": "Observed label Off; Remove only the unsent artificial fixture attachment",
+        "startedAt": "2026-10-16T03:46:30.528Z",
+        "completedAt": "2026-10-16T03:46:33.448Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 66,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/66",
+      "actionRecordSha256CanonicalUtf8": "35ded150394d15586af8d0dadf110ea80d82d686f90f38db13194fef4d44135b",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "back",
+        "arguments": [
+          "shell",
+          "input",
+          "keyevent",
+          "4"
+        ],
+        "description": "Leave empty composer focus after fixture removal",
+        "startedAt": "2026-10-16T03:46:56.652Z",
+        "completedAt": "2026-10-16T03:46:56.814Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 67,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/67",
+      "actionRecordSha256CanonicalUtf8": "31d8edd2f336ea73476662cb66a431a05e6a34b807848daa77e2eb9e25705444",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "tap-label",
+        "arguments": [
+          "shell",
+          "input",
+          "tap",
+          "963",
+          "2185"
+        ],
+        "description": "Observed label Switch to voice input; Open voice input after authentication",
+        "startedAt": "2026-10-16T03:46:57.613Z",
+        "completedAt": "2026-10-16T03:47:00.250Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 68,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/68",
+      "actionRecordSha256CanonicalUtf8": "b847a8d890078d434ff1a64819137c6a5a87cbacf1b5383f0a29a1faa3154885",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "swipe",
+        "arguments": [
+          "shell",
+          "input",
+          "swipe",
+          "540",
+          "2185",
+          "540",
+          "2185",
+          "900"
+        ],
+        "description": "Hold voice input to inspect system microphone request without granting",
+        "startedAt": "2026-10-16T03:47:00.503Z",
+        "completedAt": "2026-10-16T03:47:01.547Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 69,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/69",
+      "actionRecordSha256CanonicalUtf8": "0dffd70c71933fbfb05d43b41a0c6ae6a04f5bd344697b3ba89e3b95a14b4fd8",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "tap-label",
+        "arguments": [
+          "shell",
+          "input",
+          "tap",
+          "540",
+          "1520"
+        ],
+        "description": "Observed label Don’t allow; Reject first microphone permission request in dedicated test instance",
+        "startedAt": "2026-10-16T03:48:38.619Z",
+        "completedAt": "2026-10-16T03:48:41.521Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 70,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/70",
+      "actionRecordSha256CanonicalUtf8": "87be4590342ac03344792b533575d67c55e592b6a13417c9aed08aa55cc2882e",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "tap-label",
+        "arguments": [
+          "shell",
+          "input",
+          "tap",
+          "963",
+          "2185"
+        ],
+        "description": "Observed label Switch to text input; Recover to text input after microphone refusal",
+        "startedAt": "2026-10-16T03:48:48.362Z",
+        "completedAt": "2026-10-16T03:48:51.253Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 71,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/71",
+      "actionRecordSha256CanonicalUtf8": "df512f42c05ebdbbd5891fe1fd716ebc09f77e71d0a5ae3ffb84d95c952fc69b",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "tap-label",
+        "arguments": [
+          "shell",
+          "input",
+          "tap",
+          "105",
+          "2231"
+        ],
+        "description": "Observed label More input options; Reopen input capabilities for fixture attachment",
+        "startedAt": "2026-10-16T03:48:52.233Z",
+        "completedAt": "2026-10-16T03:48:55.266Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 72,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/72",
+      "actionRecordSha256CanonicalUtf8": "926e1f77494c98fb908e92e917f779720b73434b4a6ece9088493955b6ad7a49",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "tap-label",
+        "arguments": [
+          "shell",
+          "input",
+          "tap",
+          "752",
+          "1951"
+        ],
+        "description": "Observed label Local file; Reopen Android picker for known artificial TXT",
+        "startedAt": "2026-10-16T03:48:56.011Z",
+        "completedAt": "2026-10-16T03:48:59.067Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 73,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/73",
+      "actionRecordSha256CanonicalUtf8": "7d7a4e79ffc8f049517d3c2fe675cc85fff861d89d409af381ce316cb14b246e",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "tap-label",
+        "arguments": [
+          "shell",
+          "input",
+          "tap",
+          "346",
+          "1194"
+        ],
+        "description": "Observed label kimi-ui-research-upload.txt; Select known artificial file again",
+        "startedAt": "2026-10-16T03:48:59.737Z",
+        "completedAt": "2026-10-16T03:49:05.283Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 74,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/74",
+      "actionRecordSha256CanonicalUtf8": "713e87cc3f8aba0516ddfe1c0b62f4e619d08ced6fdadcc1ba22be0cbb94ca2e",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "type-text",
+        "arguments": [
+          "shell",
+          "input",
+          "text",
+          "Reply%swith%sthe%sFixture%sID%sfrom%sthe%sattached%sfile."
+        ],
+        "description": "Read-only artificial attachment identity test",
+        "startedAt": "2026-10-16T03:50:25.659Z",
+        "completedAt": "2026-10-16T03:50:33.614Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 75,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/75",
+      "actionRecordSha256CanonicalUtf8": "0477bc78f88cc7c0d3773098a442ac7d32c022a25354ddebd57b27de557514af",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "tap-label",
+        "arguments": [
+          "shell",
+          "input",
+          "tap",
+          "974",
+          "2231"
+        ],
+        "description": "Observed label Send message; Submit artificial file and verified identifier-read request",
+        "startedAt": "2026-10-16T03:52:16.563Z",
+        "completedAt": "2026-10-16T03:52:19.830Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 76,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/76",
+      "actionRecordSha256CanonicalUtf8": "c0dd2a1ea939477ff5c6142d40518bb0eda1d61db72243fc5f6faed48290612a",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "tap",
+        "arguments": [
+          "shell",
+          "input",
+          "tap",
+          "500",
+          "2185"
+        ],
+        "description": "Focus composer for controlled offline test",
+        "startedAt": "2026-10-16T03:53:45.083Z",
+        "completedAt": "2026-10-16T03:53:45.291Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 77,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/77",
+      "actionRecordSha256CanonicalUtf8": "05e974e218dca46825f33356ef821a31ac1a5c629b9ec43a60d07cd35422c855",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "type-text",
+        "arguments": [
+          "shell",
+          "input",
+          "text",
+          "Reply%sonly%soffline-test-OK"
+        ],
+        "description": "Short neutral request to observe offline failure and retry",
+        "startedAt": "2026-10-16T03:53:46.754Z",
+        "completedAt": "2026-10-16T03:53:50.504Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 78,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/78",
+      "actionRecordSha256CanonicalUtf8": "cdba8fab9392a2b80efbf8e1611528c543b4765a05b1cf47e65547339152796a",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "back",
+        "arguments": [
+          "shell",
+          "input",
+          "keyevent",
+          "4"
+        ],
+        "description": "Hide IME before per-AVD offline experiment",
+        "startedAt": "2026-10-16T03:53:50.828Z",
+        "completedAt": "2026-10-16T03:53:51.057Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 79,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/79",
+      "actionRecordSha256CanonicalUtf8": "aebacb0936526a0992df90b748acd1e878468f85331f9c49f5041b7953e2d23c",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "disable-test-avd-wifi",
+        "arguments": [
+          "shell",
+          "svc",
+          "wifi",
+          "disable"
+        ],
+        "description": "Only dedicated Kimi AVD; original state recorded for restoration",
+        "startedAt": "2026-10-16T03:53:51.903Z",
+        "completedAt": "2026-10-16T03:53:52.850Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 80,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/80",
+      "actionRecordSha256CanonicalUtf8": "27a1e11968f8ee73232f586b9a6b1e83865947a5420ce86f2cd5fd06fdfa2448",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "disable-test-avd-mobile-data",
+        "arguments": [
+          "shell",
+          "svc",
+          "data",
+          "disable"
+        ],
+        "description": "Only dedicated Kimi AVD; do not change host or other emulator networking",
+        "startedAt": "2026-10-16T03:53:51.903Z",
+        "completedAt": "2026-10-16T03:53:53.140Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 81,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/81",
+      "actionRecordSha256CanonicalUtf8": "d2100675ab5af14919116fffde864177f1ef8cdefad595ea47fa24ec455ec3f9",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "tap-label",
+        "arguments": [
+          "shell",
+          "input",
+          "tap",
+          "974",
+          "2195"
+        ],
+        "description": "Observed label Send message; Attempt neutral request after dedicated AVD network disabled",
+        "startedAt": "2026-10-16T03:54:50.615Z",
+        "completedAt": "2026-10-16T03:54:53.276Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 82,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/82",
+      "actionRecordSha256CanonicalUtf8": "e2ef2d8d5c80d185f7c9d965b1c02faf531968baed28a6e788452d27d33365ee",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "restore-test-avd-wifi",
+        "arguments": [
+          "shell",
+          "svc",
+          "wifi",
+          "enable"
+        ],
+        "description": "Restore dedicated AVD Wi-Fi to recorded baseline",
+        "startedAt": "2026-10-16T03:55:53.215Z",
+        "completedAt": "2026-10-16T03:55:53.346Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 83,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/83",
+      "actionRecordSha256CanonicalUtf8": "87abe796ec53adc371b9902e9903e4c91bd60bdbe3b94bbafb35de8e2420ace8",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "restore-test-avd-mobile-data",
+        "arguments": [
+          "shell",
+          "svc",
+          "data",
+          "enable"
+        ],
+        "description": "Restore dedicated AVD data setting to recorded baseline",
+        "startedAt": "2026-10-16T03:55:53.215Z",
+        "completedAt": "2026-10-16T03:55:53.481Z",
+        "stdout": ""
+      }
+    },
+    {
+      "zeroBasedIndex": 84,
+      "sourcePath": "evidence/runtime/run02-20261016/session.json",
+      "sourceJsonPointer": "/actions/84",
+      "actionRecordSha256CanonicalUtf8": "bb0c22ff52a4f7445207b9456b035fc56f52ca82b1c39847c0cfa5c7e1caa96b",
+      "canonicalEncoding": "JSON.stringify(record), UTF-8, no trailing newline",
+      "record": {
+        "operation": "tap",
+        "arguments": [
+          "shell",
+          "input",
+          "tap",
+          "456",
+          "1804"
+        ],
+        "description": "Tap observed red retry marker on failed own message after restoring network",
+        "startedAt": "2026-10-16T03:55:54.420Z",
+        "completedAt": "2026-10-16T03:55:54.605Z",
+        "stdout": ""
+      }
+    }
+  ],
+  "additionalFindings": [
+    {
+      "id": "RUN02-ATTACH-A35",
+      "scene": "r02-35-attachment-reselected",
+      "classification": "A",
+      "actionIndicesZeroBased": [
+        70,
+        71,
+        72,
+        73
+      ],
+      "statement": "Synthetic TXT reselected into pending composer as TXT, 408.0 B; no user text yet."
+    },
+    {
+      "id": "RUN02-ATTACH-A36",
+      "scene": "r02-36-attachment-prompt",
+      "classification": "A",
+      "actionIndicesZeroBased": [
+        74
+      ],
+      "statement": "Actual displayed and UIA prompt is Reply with the Fixture ID from te attached file.; no silent correction or product-limit attribution."
+    },
+    {
+      "id": "RUN02-ATTACH-A37",
+      "scene": "r02-37-attachment-submitted",
+      "classification": "A",
+      "actionIndicesZeroBased": [
+        75
+      ],
+      "statement": "After send, file metadata and exact actual prompt are in conversation; original screenshot and later UIA already display KIMI-UI-20261016 answer."
+    },
+    {
+      "id": "RUN02-ATTACH-A38",
+      "scene": "r02-38-file-id-complete",
+      "classification": "A",
+      "actionIndicesZeroBased": [],
+      "statement": "Stable answer equals local synthetic fixture identifier; local fixture SHA matches retained REA push local/device SHA.",
+      "fixtureEvidence": "ev_bf69dc0bfce8ac8a334b466d6f6548be395a323b032083f00cadef39e9ab267b"
+    },
+    {
+      "id": "RUN02-ATTACH-A39",
+      "scene": "r02-39-offline-submit",
+      "classification": "A",
+      "actionIndicesZeroBased": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ],
+      "statement": "After recorded per-AVD network disable, failed own-message bubble remains with red retry marker and Network is unavailable…."
+    },
+    {
+      "id": "RUN02-ATTACH-A40",
+      "scene": "r02-40-retry-after-network",
+      "classification": "A",
+      "actionIndicesZeroBased": [
+        82,
+        83,
+        84
+      ],
+      "statement": "Recorded network-switch restoration plus red-marker tap is followed by offline-test-OK response for retained own-message text."
+    }
+  ],
+  "copyMatches": [
+    {
+      "id": "RUN02-ATTACH-COPY-01",
+      "observedEnglish": "Camera",
+      "scenes": [
+        "r02-27-auth-attachments"
+      ],
+      "observedModality": "screenshot-and-uia",
+      "observedDisplayClassification": "A",
+      "textCorrespondenceClassification": "A",
+      "correspondenceMeaning": "Observed original UI text or accessibility description can be exactly matched to these packaged original text candidates. Unique code/resource usage is not established.",
+      "resourceCandidateCountInDefaultCvr": 1,
+      "sourceRecords": [
+        {
+          "key": "more_actions_camera",
+          "sourceClassification": "B",
+          "default": {
+            "locale": "default",
+            "key": "more_actions_camera",
+            "text": "Camera",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+            "sourceLine": 950,
+            "rawSourceLine": "string|more_actions_camera|Q2FtZXJh",
+            "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+            "sourceLineSha256Utf8": "131629fcb7eb7864a9c97f494043c0b6f8f7c19fd95b7183dfde40406662245c",
+            "decodedTextSha256Utf8": "03494b0d1f803522a3497d751eaaf6f987883cd4fe0b0e66baf67a662ae231b2",
+            "classification": "B"
+          },
+          "zh": {
+            "locale": "zh",
+            "key": "more_actions_camera",
+            "text": "拍照",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+            "sourceLine": 950,
+            "rawSourceLine": "string|more_actions_camera|5ouN54Wn",
+            "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+            "sourceLineSha256Utf8": "19fca32b29bd21d48624a1b54342094c04aa9c7abe500818e5ae23789036c69d",
+            "decodedTextSha256Utf8": "6e3a10ade7c74955ddb8875c3b94adb88aa94cc9ad4b6abe8de082156659c1a6",
+            "classification": "B"
+          },
+          "actualResourceBinding": "unknown; exact text correspondence does not prove call-site binding"
+        }
+      ],
+      "ambiguousKeyAttribution": false
+    },
+    {
+      "id": "RUN02-ATTACH-COPY-02",
+      "observedEnglish": "Photos",
+      "scenes": [
+        "r02-27-auth-attachments"
+      ],
+      "observedModality": "screenshot-and-uia",
+      "observedDisplayClassification": "A",
+      "textCorrespondenceClassification": "A",
+      "correspondenceMeaning": "Observed original UI text or accessibility description can be exactly matched to these packaged original text candidates. Unique code/resource usage is not established.",
+      "resourceCandidateCountInDefaultCvr": 2,
+      "sourceRecords": [
+        {
+          "key": "album",
+          "sourceClassification": "B",
+          "default": {
+            "locale": "default",
+            "key": "album",
+            "text": "Photos",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+            "sourceLine": 153,
+            "rawSourceLine": "string|album|UGhvdG9z",
+            "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+            "sourceLineSha256Utf8": "577ec7a302998b522b6bf2d9a3824482e92ac629122e9166dd18551552b3d363",
+            "decodedTextSha256Utf8": "5e3147ab51e0084c3c817707f1aed1510260c13f45697bfe380dc51f6c179151",
+            "classification": "B"
+          },
+          "zh": {
+            "locale": "zh",
+            "key": "album",
+            "text": "照片",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+            "sourceLine": 153,
+            "rawSourceLine": "string|album|54Wn54mH",
+            "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+            "sourceLineSha256Utf8": "5f8612c6502d1b3d0ba13c0c39baf7a6ca421f64c4b580bb2e2ed133e329f1f7",
+            "decodedTextSha256Utf8": "7b50017ae47eca327bf1f92c1afb647811242711589b51de5c6009817d042310",
+            "classification": "B"
+          },
+          "actualResourceBinding": "unknown; exact text correspondence does not prove call-site binding"
+        },
+        {
+          "key": "remote_file_upload_source_photo",
+          "sourceClassification": "B",
+          "default": {
+            "locale": "default",
+            "key": "remote_file_upload_source_photo",
+            "text": "Photos",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+            "sourceLine": 1645,
+            "rawSourceLine": "string|remote_file_upload_source_photo|UGhvdG9z",
+            "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+            "sourceLineSha256Utf8": "ff5f23798b3a8661a10425fce843cd08a95e2f38ba32ae5abfe5bfa04f02afce",
+            "decodedTextSha256Utf8": "5e3147ab51e0084c3c817707f1aed1510260c13f45697bfe380dc51f6c179151",
+            "classification": "B"
+          },
+          "zh": {
+            "locale": "zh",
+            "key": "remote_file_upload_source_photo",
+            "text": "相册",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+            "sourceLine": 1645,
+            "rawSourceLine": "string|remote_file_upload_source_photo|55u45YaM",
+            "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+            "sourceLineSha256Utf8": "34dbf7ac1a8401bf0d33fec2266d681c63cd60faf7a9cc66e339a09d1d2f335d",
+            "decodedTextSha256Utf8": "38793c1c1c23437eb2648d0cf99d854594932c7c58ed994d746030e50c7cb99b",
+            "classification": "B"
+          },
+          "actualResourceBinding": "unknown; exact text correspondence does not prove call-site binding"
+        }
+      ],
+      "ambiguousKeyAttribution": true
+    },
+    {
+      "id": "RUN02-ATTACH-COPY-03",
+      "observedEnglish": "Local file",
+      "scenes": [
+        "r02-27-auth-attachments"
+      ],
+      "observedModality": "screenshot-and-uia",
+      "observedDisplayClassification": "A",
+      "textCorrespondenceClassification": "A",
+      "correspondenceMeaning": "Observed original UI text or accessibility description can be exactly matched to these packaged original text candidates. Unique code/resource usage is not established.",
+      "resourceCandidateCountInDefaultCvr": 2,
+      "sourceRecords": [
+        {
+          "key": "more_actions_local_files",
+          "sourceClassification": "B",
+          "default": {
+            "locale": "default",
+            "key": "more_actions_local_files",
+            "text": "Local file",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+            "sourceLine": 951,
+            "rawSourceLine": "string|more_actions_local_files|TG9jYWwgZmlsZQ==",
+            "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+            "sourceLineSha256Utf8": "6a73aed76b3f2945d248557a5ee4be0b2650c5066c647df20ea8f6b8df9e37dc",
+            "decodedTextSha256Utf8": "f6ecab8105350004d1c9be288b7a35b9ee7b80cd9f6e77303384788cb540f5f8",
+            "classification": "B"
+          },
+          "zh": {
+            "locale": "zh",
+            "key": "more_actions_local_files",
+            "text": "本地文件",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+            "sourceLine": 951,
+            "rawSourceLine": "string|more_actions_local_files|5pys5Zyw5paH5Lu2",
+            "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+            "sourceLineSha256Utf8": "d03d779ebc3c96469f00a6558fd4270311bd718fb7b39694a55cbd6ba7e42b22",
+            "decodedTextSha256Utf8": "57e88a43ef2b00ba934fcf1736687a604f4d98a3cbb6c5fce7de2990fc143d3a",
+            "classification": "B"
+          },
+          "actualResourceBinding": "unknown; exact text correspondence does not prove call-site binding"
+        },
+        {
+          "key": "project_upload_type_file",
+          "sourceClassification": "B",
+          "default": {
+            "locale": "default",
+            "key": "project_upload_type_file",
+            "text": "Local file",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+            "sourceLine": 1429,
+            "rawSourceLine": "string|project_upload_type_file|TG9jYWwgZmlsZQ==",
+            "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+            "sourceLineSha256Utf8": "c1743d2a194c99a52acf9d9768924e3cf7bf5fd80f81ab2e47410009fae7a56e",
+            "decodedTextSha256Utf8": "f6ecab8105350004d1c9be288b7a35b9ee7b80cd9f6e77303384788cb540f5f8",
+            "classification": "B"
+          },
+          "zh": {
+            "locale": "zh",
+            "key": "project_upload_type_file",
+            "text": "本地文件",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+            "sourceLine": 1429,
+            "rawSourceLine": "string|project_upload_type_file|5pys5Zyw5paH5Lu2",
+            "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+            "sourceLineSha256Utf8": "673ee0bbe2ea3bae5859c6898e10071936302303b13a51cbf7aec3830de8e90b",
+            "decodedTextSha256Utf8": "57e88a43ef2b00ba934fcf1736687a604f4d98a3cbb6c5fce7de2990fc143d3a",
+            "classification": "B"
+          },
+          "actualResourceBinding": "unknown; exact text correspondence does not prove call-site binding"
+        }
+      ],
+      "ambiguousKeyAttribution": true
+    },
+    {
+      "id": "RUN02-ATTACH-COPY-04",
+      "observedEnglish": "Web search",
+      "scenes": [
+        "r02-27-auth-attachments"
+      ],
+      "observedModality": "screenshot-and-uia",
+      "observedDisplayClassification": "A",
+      "textCorrespondenceClassification": "A",
+      "correspondenceMeaning": "Observed original UI text or accessibility description can be exactly matched to these packaged original text candidates. Unique code/resource usage is not established.",
+      "resourceCandidateCountInDefaultCvr": 2,
+      "sourceRecords": [
+        {
+          "key": "more_actions_search",
+          "sourceClassification": "B",
+          "default": {
+            "locale": "default",
+            "key": "more_actions_search",
+            "text": "Web search",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+            "sourceLine": 956,
+            "rawSourceLine": "string|more_actions_search|V2ViIHNlYXJjaA==",
+            "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+            "sourceLineSha256Utf8": "66528bea5783f238fa34f22d8c40e550407aa90f9bf5131b1f2a7ccd1f3981cc",
+            "decodedTextSha256Utf8": "7711faa74a10416c7a2bccf9a9ce8442808f2d7ff9609be154625f8566bc732e",
+            "classification": "B"
+          },
+          "zh": {
+            "locale": "zh",
+            "key": "more_actions_search",
+            "text": "联网搜索",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+            "sourceLine": 956,
+            "rawSourceLine": "string|more_actions_search|6IGU572R5pCc57Si",
+            "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+            "sourceLineSha256Utf8": "dbdab154b37cf7ca48bc85da11d08addb125d0495af80420f8fa99eccca0108e",
+            "decodedTextSha256Utf8": "f30b4fa151f2516db75d827df987623084ff04e522f31fe07b00234172683c3b",
+            "classification": "B"
+          },
+          "actualResourceBinding": "unknown; exact text correspondence does not prove call-site binding"
+        },
+        {
+          "key": "okc_tool_name_web_search",
+          "sourceClassification": "B",
+          "default": {
+            "locale": "default",
+            "key": "okc_tool_name_web_search",
+            "text": "Web search",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+            "sourceLine": 1138,
+            "rawSourceLine": "string|okc_tool_name_web_search|V2ViIHNlYXJjaA==",
+            "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+            "sourceLineSha256Utf8": "8216588c178035a5b6fda250cdc6a33216b8947f02279e206b732a1006ac7e39",
+            "decodedTextSha256Utf8": "7711faa74a10416c7a2bccf9a9ce8442808f2d7ff9609be154625f8566bc732e",
+            "classification": "B"
+          },
+          "zh": {
+            "locale": "zh",
+            "key": "okc_tool_name_web_search",
+            "text": "网页搜索",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+            "sourceLine": 1138,
+            "rawSourceLine": "string|okc_tool_name_web_search|572R6aG15pCc57Si",
+            "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+            "sourceLineSha256Utf8": "28e3cdd2d4de261796d2250493de1343f8bcaa932d4a2072a241bb9f63abbc97",
+            "decodedTextSha256Utf8": "e369180d1c13449e881371f1199045510115164c3a67cd185e812539816fd80b",
+            "classification": "B"
+          },
+          "actualResourceBinding": "unknown; exact text correspondence does not prove call-site binding"
+        }
+      ],
+      "ambiguousKeyAttribution": true
+    },
+    {
+      "id": "RUN02-ATTACH-COPY-05",
+      "observedEnglish": "Auto",
+      "scenes": [
+        "r02-27-auth-attachments"
+      ],
+      "observedModality": "screenshot-and-uia",
+      "observedDisplayClassification": "A",
+      "textCorrespondenceClassification": "A",
+      "correspondenceMeaning": "Observed original UI text or accessibility description can be exactly matched to these packaged original text candidates. Unique code/resource usage is not established.",
+      "resourceCandidateCountInDefaultCvr": 1,
+      "sourceRecords": [
+        {
+          "key": "more_actions_search_auto",
+          "sourceClassification": "B",
+          "default": {
+            "locale": "default",
+            "key": "more_actions_search_auto",
+            "text": "Auto",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+            "sourceLine": 953,
+            "rawSourceLine": "string|more_actions_search_auto|QXV0bw==",
+            "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+            "sourceLineSha256Utf8": "78348a9055c37515a9e5a65fac4772acaa06384eb61c443b882b34b499ff1d0d",
+            "decodedTextSha256Utf8": "0286249762f7c94349cdc0ba3bb2255baf9a80036e2193ead1d77696f888582f",
+            "classification": "B"
+          },
+          "zh": {
+            "locale": "zh",
+            "key": "more_actions_search_auto",
+            "text": "自动",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+            "sourceLine": 953,
+            "rawSourceLine": "string|more_actions_search_auto|6Ieq5Yqo",
+            "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+            "sourceLineSha256Utf8": "87aab4e83f803d8db8474f9ec7d861376d88e91d376180b4ff40501c4c7fcf55",
+            "decodedTextSha256Utf8": "7eb336e42cb5076b0eac0305418ecd8ff2833ad84645aedbe0d315ac017c798b",
+            "classification": "B"
+          },
+          "actualResourceBinding": "unknown; exact text correspondence does not prove call-site binding"
+        }
+      ],
+      "ambiguousKeyAttribution": false
+    },
+    {
+      "id": "RUN02-ATTACH-COPY-06",
+      "observedEnglish": "Parsing",
+      "scenes": [
+        "r02-30-attachment-selected"
+      ],
+      "observedModality": "screenshot-only; later UIA already metadata-ready",
+      "observedDisplayClassification": "A",
+      "textCorrespondenceClassification": "A",
+      "correspondenceMeaning": "Observed original UI text or accessibility description can be exactly matched to these packaged original text candidates. Unique code/resource usage is not established.",
+      "resourceCandidateCountInDefaultCvr": 2,
+      "sourceRecords": [
+        {
+          "key": "parsing",
+          "sourceClassification": "B",
+          "default": {
+            "locale": "default",
+            "key": "parsing",
+            "text": "Parsing",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+            "sourceLine": 1251,
+            "rawSourceLine": "string|parsing|UGFyc2luZw==",
+            "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+            "sourceLineSha256Utf8": "0200393d6835f31a4e67d7c22a146428fbf3cb2ef830248bda80d3fc4e161fd6",
+            "decodedTextSha256Utf8": "3bdead7639232d651717ab7c8ce736711791d28f61e158d9c3a5f9a160bb832e",
+            "classification": "B"
+          },
+          "zh": {
+            "locale": "zh",
+            "key": "parsing",
+            "text": "解析中",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+            "sourceLine": 1251,
+            "rawSourceLine": "string|parsing|6Kej5p6Q5Lit",
+            "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+            "sourceLineSha256Utf8": "08d528233b2df4e9ae3f9bcb16cf52ebe3672c3d95e276903db9336ff79d4754",
+            "decodedTextSha256Utf8": "d6b9b28de2c8b06cddf867740826cd323eb42f5335fba08cac64e4a58b78c3ee",
+            "classification": "B"
+          },
+          "actualResourceBinding": "unknown; exact text correspondence does not prove call-site binding"
+        },
+        {
+          "key": "remote_file_upload_status_parsing",
+          "sourceClassification": "B",
+          "default": {
+            "locale": "default",
+            "key": "remote_file_upload_status_parsing",
+            "text": "Parsing",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+            "sourceLine": 1648,
+            "rawSourceLine": "string|remote_file_upload_status_parsing|UGFyc2luZw==",
+            "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+            "sourceLineSha256Utf8": "bc2f8ede8a3d77276797c169685fe5a3c5768c89b5e6aed9e4d89462406287db",
+            "decodedTextSha256Utf8": "3bdead7639232d651717ab7c8ce736711791d28f61e158d9c3a5f9a160bb832e",
+            "classification": "B"
+          },
+          "zh": {
+            "locale": "zh",
+            "key": "remote_file_upload_status_parsing",
+            "text": "解析中",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+            "sourceLine": 1648,
+            "rawSourceLine": "string|remote_file_upload_status_parsing|6Kej5p6Q5Lit",
+            "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+            "sourceLineSha256Utf8": "1e9dacd1e2186e109562703c8ca507f978c27516e59c409157cc84c6cb9b7d66",
+            "decodedTextSha256Utf8": "d6b9b28de2c8b06cddf867740826cd323eb42f5335fba08cac64e4a58b78c3ee",
+            "classification": "B"
+          },
+          "actualResourceBinding": "unknown; exact text correspondence does not prove call-site binding"
+        }
+      ],
+      "ambiguousKeyAttribution": true
+    },
+    {
+      "id": "RUN02-ATTACH-COPY-07",
+      "observedEnglish": "Kimi Requests Microphone Permission",
+      "scenes": [
+        "r02-33-microphone-gate"
+      ],
+      "observedModality": "screenshot-only; top-window UIA exposes Android dialog instead",
+      "observedDisplayClassification": "A",
+      "textCorrespondenceClassification": "A",
+      "correspondenceMeaning": "Observed original UI text or accessibility description can be exactly matched to these packaged original text candidates. Unique code/resource usage is not established.",
+      "resourceCandidateCountInDefaultCvr": 1,
+      "sourceRecords": [
+        {
+          "key": "permission_popup_audio_title",
+          "sourceClassification": "B",
+          "default": {
+            "locale": "default",
+            "key": "permission_popup_audio_title",
+            "text": "Kimi Requests Microphone Permission",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+            "sourceLine": 1256,
+            "rawSourceLine": "string|permission_popup_audio_title|S2ltaSBSZXF1ZXN0cyBNaWNyb3Bob25lIFBlcm1pc3Npb24=",
+            "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+            "sourceLineSha256Utf8": "8e52a481d56c6422a221f03e082ce8c18ec5b43e19763980b39c9e4de5bfb1e9",
+            "decodedTextSha256Utf8": "0922e6c0289bc087b77ced78de29da6aa2c712b77c997656a3aa47cd6da9bd28",
+            "classification": "B"
+          },
+          "zh": {
+            "locale": "zh",
+            "key": "permission_popup_audio_title",
+            "text": "Kimi 申请麦克风权限说明",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+            "sourceLine": 1256,
+            "rawSourceLine": "string|permission_popup_audio_title|S2ltaSDnlLPor7fpuqblhYvpo47mnYPpmZDor7TmmI4=",
+            "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+            "sourceLineSha256Utf8": "30631948f2fb73e5f0d95309b089cc07907f71ce3f6cce0cd3d8b2b85035b492",
+            "decodedTextSha256Utf8": "b53cda3f42bb8fd44bdb558755200e09792102e37dde4888db9b930bd3fb3388",
+            "classification": "B"
+          },
+          "actualResourceBinding": "unknown; exact text correspondence does not prove call-site binding"
+        }
+      ],
+      "ambiguousKeyAttribution": false
+    },
+    {
+      "id": "RUN02-ATTACH-COPY-08",
+      "observedEnglish": "For voice input recognition. If you do not grant this permission, you will not be able to use this feature",
+      "scenes": [
+        "r02-33-microphone-gate"
+      ],
+      "observedModality": "screenshot-only; manual multiline reading",
+      "observedDisplayClassification": "A",
+      "textCorrespondenceClassification": "A",
+      "correspondenceMeaning": "Observed original UI text or accessibility description can be exactly matched to these packaged original text candidates. Unique code/resource usage is not established.",
+      "resourceCandidateCountInDefaultCvr": 1,
+      "sourceRecords": [
+        {
+          "key": "permission_popup_audio_content",
+          "sourceClassification": "B",
+          "default": {
+            "locale": "default",
+            "key": "permission_popup_audio_content",
+            "text": "For voice input recognition. If you do not grant this permission, you will not be able to use this feature",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+            "sourceLine": 1255,
+            "rawSourceLine": "string|permission_popup_audio_content|Rm9yIHZvaWNlIGlucHV0IHJlY29nbml0aW9uLiBJZiB5b3UgZG8gbm90IGdyYW50IHRoaXMgcGVybWlzc2lvbiwgeW91IHdpbGwgbm90IGJlIGFibGUgdG8gdXNlIHRoaXMgZmVhdHVyZQ==",
+            "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+            "sourceLineSha256Utf8": "efd7d2300bdb0ba1cc9c1e3f44c002c03255d9edc9f77bc157f5317076953c3c",
+            "decodedTextSha256Utf8": "d09721f752bae1616a3a2e2eea0b6f95ac5d8008d9a9495dc832c4aa63c75405",
+            "classification": "B"
+          },
+          "zh": {
+            "locale": "zh",
+            "key": "permission_popup_audio_content",
+            "text": "用于语音输入识别场景，若不授予该权限，你将无法使用该功能",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+            "sourceLine": 1255,
+            "rawSourceLine": "string|permission_popup_audio_content|55So5LqO6K+t6Z+z6L6T5YWl6K+G5Yir5Zy65pmv77yM6Iul5LiN5o6I5LqI6K+l5p2D6ZmQ77yM5L2g5bCG5peg5rOV5L2/55So6K+l5Yqf6IO9",
+            "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+            "sourceLineSha256Utf8": "9b661968ae5b00ffa84403a796fd09b3ca3311c06c0bdb0e4fdc0a9861066c55",
+            "decodedTextSha256Utf8": "4717ff3099d5c218d911a76707ceca9751b87cea0f1eca68502c259f2a9ddf0f",
+            "classification": "B"
+          },
+          "actualResourceBinding": "unknown; exact text correspondence does not prove call-site binding"
+        }
+      ],
+      "ambiguousKeyAttribution": false
+    },
+    {
+      "id": "RUN02-ATTACH-COPY-09",
+      "observedEnglish": "Hold to talk",
+      "scenes": [
+        "r02-33-microphone-gate",
+        "r02-34-microphone-denied"
+      ],
+      "observedModality": "screenshot on both, UIA on scene 34",
+      "observedDisplayClassification": "A",
+      "textCorrespondenceClassification": "A",
+      "correspondenceMeaning": "Observed original UI text or accessibility description can be exactly matched to these packaged original text candidates. Unique code/resource usage is not established.",
+      "resourceCandidateCountInDefaultCvr": 1,
+      "sourceRecords": [
+        {
+          "key": "press_and_speak",
+          "sourceClassification": "B",
+          "default": {
+            "locale": "default",
+            "key": "press_and_speak",
+            "text": "Hold to talk",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+            "sourceLine": 1338,
+            "rawSourceLine": "string|press_and_speak|SG9sZCB0byB0YWxr",
+            "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+            "sourceLineSha256Utf8": "c0956aeda361999be0c55159f725a5ef089058e9db108a4813176451deeed9f3",
+            "decodedTextSha256Utf8": "988091e671531b950d226cc84d673665484110dd84c265356b4f8aa86cef0ac6",
+            "classification": "B"
+          },
+          "zh": {
+            "locale": "zh",
+            "key": "press_and_speak",
+            "text": "按住说话",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+            "sourceLine": 1338,
+            "rawSourceLine": "string|press_and_speak|5oyJ5L2P6K+06K+d",
+            "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+            "sourceLineSha256Utf8": "aeaf8af090a39b2fb534b1541010851e3c96c552741fbf159618e693aa5a05a5",
+            "decodedTextSha256Utf8": "e4947a64758afba771b847a2613ae1f2000947c8ca2b34e969ea089c36f34dbc",
+            "classification": "B"
+          },
+          "actualResourceBinding": "unknown; exact text correspondence does not prove call-site binding"
+        }
+      ],
+      "ambiguousKeyAttribution": false
+    },
+    {
+      "id": "RUN02-ATTACH-COPY-10",
+      "observedEnglish": "Network is unavailable…",
+      "scenes": [
+        "r02-39-offline-submit"
+      ],
+      "observedModality": "screenshot-and-uia; exact Unicode ellipsis in UIA",
+      "observedDisplayClassification": "A",
+      "textCorrespondenceClassification": "A",
+      "correspondenceMeaning": "Observed original UI text or accessibility description can be exactly matched to these packaged original text candidates. Unique code/resource usage is not established.",
+      "resourceCandidateCountInDefaultCvr": 1,
+      "sourceRecords": [
+        {
+          "key": "network_unavailable",
+          "sourceClassification": "B",
+          "default": {
+            "locale": "default",
+            "key": "network_unavailable",
+            "text": "Network is unavailable…",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+            "sourceLine": 990,
+            "rawSourceLine": "string|network_unavailable|TmV0d29yayBpcyB1bmF2YWlsYWJsZeKApg==",
+            "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+            "sourceLineSha256Utf8": "866e24b94f288971db2662e2d13cd68cd4c5382d465b54af80aa79da05c07999",
+            "decodedTextSha256Utf8": "5f45ca494a5ac1228da1efabf7d0f94094e563f03767649fe3194bc510a9be30",
+            "classification": "B"
+          },
+          "zh": {
+            "locale": "zh",
+            "key": "network_unavailable",
+            "text": "当前网络不可用…",
+            "placeholders": [],
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+            "sourceLine": 990,
+            "rawSourceLine": "string|network_unavailable|5b2T5YmN572R57uc5LiN5Y+v55So4oCm",
+            "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+            "sourceLineSha256Utf8": "b042bea74aadc5b21b16625ab607a64e5cdba02c074f63dc8b818419bafca8a9",
+            "decodedTextSha256Utf8": "d7d8ec8bba39d56c6d8cb3270461d5cb8aea240c9a366a20f9ab41e1bcc0ef69",
+            "classification": "B"
+          },
+          "actualResourceBinding": "unknown; exact text correspondence does not prove call-site binding"
+        }
+      ],
+      "ambiguousKeyAttribution": false
+    }
+  ],
+  "systemOwnedUi": [
+    {
+      "package": "com.google.android.documentsui",
+      "scenes": [
+        "r02-28-file-picker",
+        "r02-29-downloads-picker"
+      ],
+      "owner": "Android system document picker",
+      "transferBoundary": "Use target-platform picker integration; do not treat its typography/chips/navigation/file-list design as Kimi style."
+    },
+    {
+      "package": "com.google.android.permissioncontroller",
+      "scenes": [
+        "r02-33-microphone-gate"
+      ],
+      "owner": "Android system microphone permission dialog",
+      "transferBoundary": "Use target-platform permission request and actual settings; do not copy its modal appearance as Kimi UI."
+    },
+    {
+      "owner": "external system keyboard / Gboard floating strip",
+      "scenes": [
+        "r02-30-attachment-selected",
+        "r02-31-attachment-ready",
+        "r02-35-attachment-reselected",
+        "r02-36-attachment-prompt"
+      ],
+      "ownershipEvidence": "Root operator confirmed from a separate private pixel review; delegated reviewer did not access that private image.",
+      "transferBoundary": "Not Kimi components; excluded from Kimi design tokens and migration rules."
+    }
+  ],
+  "coverage": {
+    "bottomAttachmentSheet": "verified for retained logged-in light English scene; untested options remain unverified",
+    "systemPickerHandoff": "verified later UIA, not scene28 screenshot",
+    "pendingCardParsingToMetadata": "verified two displayed statuses; no timing/upload claim from metadata alone",
+    "removePendingCard": "verified bounded before/after",
+    "microphoneProductAndSystemLayers": "verified coexisting in one screenshot; ordering unknown",
+    "refuseMicrophone": "verified one refusal result",
+    "grantMicrophoneAndRecognition": "unverified",
+    "cameraPhotosWechatAndWebSearchChanges": "unverified",
+    "attachmentSendAndIdentifierRead": "verified one synthetic 408-byte TXT workflow and exact expected identifier",
+    "offlineFailureAndManualRetry": "verified one dedicated-AVD disable/send/restore/tap/answer path; no backend-cancellation or automatic-retry conclusion"
+  },
+  "unknowns": [
+    "Camera/photo/WeChat sources and actual Web search menu behavior",
+    "MIME/size/count constraints, upload failure, retry and cancellation of in-flight parse",
+    "Backend extraction/storage/network internals and general document-reading accuracy",
+    "Remote uploaded-file removal and privacy side effects",
+    "Backend request cancellation, automatic retry, request identity and deduplication",
+    "Microphone permission grant/one-time grant, repeated denial and settings recovery",
+    "Actual recording/transcription/voice gesture cancellation",
+    "Precise component colors/radii/dp dimensions, runtime font selection, animation durations and focus order",
+    "Other locales/themes/font scales/OS versions and account modes",
+    "Final environment restoration audit, beyond the reviewed per-step switch snapshot"
+  ]
+}

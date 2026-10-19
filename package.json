@@ -1,0 +1,16 @@
+{
+  "name": "rea-ui-library",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "按网页、桌面和手机分类的产品风格研究与参考实现库",
+  "engines": {"node": ">=22.13"},
+  "scripts": {
+    "dev": "node tools/serve.mjs",
+    "dev:private": "node tools/serve.mjs --private",
+    "build": "node tools/build.mjs",
+    "verify": "node tools/verify.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "sources:status": "git submodule status"
+  }
+}

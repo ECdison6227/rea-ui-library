@@ -1,0 +1,576 @@
+{
+  "schemaVersion": 1,
+  "runId": "run02-20261016",
+  "kind": "independent-authenticated-runtime-review",
+  "package": "com.moonshot.kimichat",
+  "version": "3.1.3 (376)",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "authenticationContext": {
+    "mode": "authenticated",
+    "basis": "Controller reports user completed normal login; no credential or account-identifier samples read or copied by this review"
+  },
+  "sourceSession": "evidence/runtime/run02-20261016/session.json",
+  "actionIndexBase": 1,
+  "scope": {
+    "reviewedSceneIds": [
+      "r02-20-first-submit",
+      "r02-21-first-complete",
+      "r02-22-conversation-menu",
+      "r02-24-generating-sequence",
+      "r02-25-stop-result",
+      "r02-26-checked-stop"
+    ],
+    "identityCapturesExcluded": [
+      "r02-18-post-login-guide",
+      "r02-19-prompt-ready"
+    ],
+    "deviceControlledByReviewer": false
+  },
+  "scenes": [
+    {
+      "id": "r02-20-first-submit",
+      "classification": "A",
+      "origin": "current",
+      "review": {
+        "originalImageViewed": true,
+        "sourceHierarchyRead": true,
+        "observation": "Screenshot: full Reply only OK user bubble, generating appearance and white square control; later UIA: already Thinking complete / OK / toolbar",
+        "qualification": "State advanced between screenshot and UIA"
+      },
+      "capture": "evidence/runtime/run02-20261016/scenes/r02-20-first-submit/capture.json",
+      "screenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-20-first-submit/screen.png",
+        "sha256": "7f4e38a9672358f12eb992ed468e660231079f2c667cc7cd265c7fa1b8d36212",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-20-first-submit/hierarchy.xml",
+        "sha256": "e20086e3ba277232438c16357caac27cf4bbc6a952a92911071ebc7d8ab9f349"
+      },
+      "hierarchyError": null,
+      "screenshotCapturedAt": "2026-10-16T03:32:19.330Z",
+      "captureStartedAt": "2026-10-16T03:32:17.905Z",
+      "captureCompletedAt": "2026-10-16T03:32:31.145Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "actionsBeforeCapture": 51
+    },
+    {
+      "id": "r02-21-first-complete",
+      "classification": "A",
+      "origin": "current",
+      "review": {
+        "originalImageViewed": true,
+        "sourceHierarchyRead": true,
+        "observation": "Screenshot and UIA: Thinking complete, OK, answer toolbar, empty ordinary composer",
+        "qualification": null
+      },
+      "capture": "evidence/runtime/run02-20261016/scenes/r02-21-first-complete/capture.json",
+      "screenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-21-first-complete/screen.png",
+        "sha256": "2081de3d6d9c33845042b19462110a2703bfcfe5cb5129986d7053a776f04dd6",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-21-first-complete/hierarchy.xml",
+        "sha256": "e20086e3ba277232438c16357caac27cf4bbc6a952a92911071ebc7d8ab9f349"
+      },
+      "hierarchyError": null,
+      "screenshotCapturedAt": "2026-10-16T03:33:31.085Z",
+      "captureStartedAt": "2026-10-16T03:33:30.074Z",
+      "captureCompletedAt": "2026-10-16T03:33:34.948Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "actionsBeforeCapture": 51
+    },
+    {
+      "id": "r02-22-conversation-menu",
+      "classification": "A",
+      "origin": "current",
+      "review": {
+        "originalImageViewed": true,
+        "sourceHierarchyRead": true,
+        "observation": "After More click, screenshot and UIA still show chat; menu contents not visible",
+        "qualification": "Filename is not proof of menu opening"
+      },
+      "capture": "evidence/runtime/run02-20261016/scenes/r02-22-conversation-menu/capture.json",
+      "screenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-22-conversation-menu/screen.png",
+        "sha256": "fb5e56b0b4c3870021b3e3f2cecc34fba3726b620ed81ea408f4f6bebd921486",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-22-conversation-menu/hierarchy.xml",
+        "sha256": "e20086e3ba277232438c16357caac27cf4bbc6a952a92911071ebc7d8ab9f349"
+      },
+      "hierarchyError": null,
+      "screenshotCapturedAt": "2026-10-16T03:33:46.716Z",
+      "captureStartedAt": "2026-10-16T03:33:45.922Z",
+      "captureCompletedAt": "2026-10-16T03:33:53.362Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "actionsBeforeCapture": 52
+    },
+    {
+      "id": "r02-24-generating-sequence",
+      "classification": "A",
+      "origin": "current",
+      "review": {
+        "originalImageViewed": true,
+        "sourceHierarchyRead": true,
+        "observation": "Full Count 1 to 1000, one per line. request, Thinking, Send messages anytime… placeholder and square appearance; UIA control desc remains Send message",
+        "qualification": "Visual/semantic label mismatch"
+      },
+      "capture": "evidence/runtime/run02-20261016/scenes/r02-24-generating-sequence/capture.json",
+      "screenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-24-generating-sequence/screen.png",
+        "sha256": "7b10f3a05f6d464f56ed8e13285af9a80ba917670bebcfc18d743359e2da3f8d",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-24-generating-sequence/hierarchy.xml",
+        "sha256": "6e5b0a649cd0bea65324e3c34f0924697995368fd6512032d9d4d5d4bab0ba4a"
+      },
+      "hierarchyError": null,
+      "screenshotCapturedAt": "2026-10-16T03:37:06.263Z",
+      "captureStartedAt": "2026-10-16T03:37:05.335Z",
+      "captureCompletedAt": "2026-10-16T03:37:11.065Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "actionsBeforeCapture": 56
+    },
+    {
+      "id": "r02-25-stop-result",
+      "classification": "A",
+      "origin": "current",
+      "review": {
+        "originalImageViewed": true,
+        "sourceHierarchyRead": true,
+        "observation": "Answer result card with only 1 through 20 visible in viewport, answer toolbar and Hold to talk composer",
+        "qualification": "Late stop attempt is not a successful stop; voice standby visible, no recording established"
+      },
+      "capture": "evidence/runtime/run02-20261016/scenes/r02-25-stop-result/capture.json",
+      "screenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-25-stop-result/screen.png",
+        "sha256": "2ec2469e45f6d79c0c8fcacf946b8c3a1b73016999066085eb0862274b0af6ad",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-25-stop-result/hierarchy.xml",
+        "sha256": "a3c36bc23de880c643b11960fcb266ad53dc44d4b918daae1dd88d4689ebc2cf"
+      },
+      "hierarchyError": null,
+      "screenshotCapturedAt": "2026-10-16T03:37:50.719Z",
+      "captureStartedAt": "2026-10-16T03:37:49.879Z",
+      "captureCompletedAt": "2026-10-16T03:37:53.790Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "actionsBeforeCapture": 57
+    },
+    {
+      "id": "r02-26-checked-stop",
+      "classification": "A",
+      "origin": "current",
+      "review": {
+        "originalImageViewed": true,
+        "sourceHierarchyRead": true,
+        "observation": "Output stopped, tool panel contains Failed to execute Python code, ordinary empty text composer",
+        "qualification": "Tool error causality unknown; left floating Gboard strip is system input UI by controller identification"
+      },
+      "capture": "evidence/runtime/run02-20261016/scenes/r02-26-checked-stop/capture.json",
+      "screenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-26-checked-stop/screen.png",
+        "sha256": "bc4c8eadb739a03c3ce2f678b1a125f87689517d5a28a32d817a028574b81f0b",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-26-checked-stop/hierarchy.xml",
+        "sha256": "e0e3159eb0bc3b1f4a799d20206c393089e13d45cdf418d4363d27ed93216050"
+      },
+      "hierarchyError": null,
+      "screenshotCapturedAt": "2026-10-16T03:39:30.658Z",
+      "captureStartedAt": "2026-10-16T03:39:29.402Z",
+      "captureCompletedAt": "2026-10-16T03:39:33.646Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "actionsBeforeCapture": 60
+    }
+  ],
+  "transitions": [
+    {
+      "id": "AUTH-T01",
+      "fromScene": null,
+      "actionIndexes": [
+        51
+      ],
+      "toScene": "r02-20-first-submit",
+      "result": "Full Reply only OK request is visible in user bubble; screenshot is generating; later same-capture UIA is already complete",
+      "verification": "observed-submission-result-with-nonatomic-state-advance",
+      "unknowns": [
+        "Exact completion instant",
+        "Pre-submit identity-containing samples intentionally not inspected"
+      ],
+      "classification": "A for reviewed captured results; controller-only reports explicitly marked",
+      "recordedActions": [
+        {
+          "index": 51,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "974",
+            "2195"
+          ],
+          "description": "Observed label Send message; Submit verified neutral test prompt Reply only OK",
+          "startedAt": "2026-10-16T03:32:07.851Z",
+          "completedAt": "2026-10-16T03:32:15.988Z",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "id": "AUTH-T02",
+      "fromScene": "r02-20-first-submit",
+      "actionIndexes": [],
+      "toScene": "r02-21-first-complete",
+      "result": "Thinking complete and OK with toolbar, empty ordinary composer",
+      "verification": "observed-answer-completion",
+      "unknowns": [
+        "Generation duration",
+        "Backend model identity",
+        "Additional send during generation"
+      ],
+      "classification": "A for reviewed captured results; controller-only reports explicitly marked",
+      "recordedActions": []
+    },
+    {
+      "id": "AUTH-T03",
+      "fromScene": "r02-21-first-complete",
+      "actionIndexes": [
+        52
+      ],
+      "toScene": "r02-22-conversation-menu",
+      "result": "Early frame still shows chat; no menu contents are visible",
+      "verification": "menu-not-verified",
+      "unknowns": [
+        "Whether menu later opened",
+        "Menu contents",
+        "Outside or Back close semantics"
+      ],
+      "classification": "A for reviewed captured results; controller-only reports explicitly marked",
+      "recordedActions": [
+        {
+          "index": 52,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "964",
+            "195"
+          ],
+          "description": "Observed label More; Open current test conversation menu without applying actions",
+          "startedAt": "2026-10-16T03:33:40.030Z",
+          "completedAt": "2026-10-16T03:33:45.326Z",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "id": "AUTH-T04",
+      "fromScene": "r02-22-conversation-menu",
+      "actionIndexes": [
+        53
+      ],
+      "toScene": null,
+      "result": "Controller reports Back returned to blank home; Copy lookup found no match and did not execute",
+      "verification": "controller-report-without-reviewed-target-frame",
+      "copyVerification": {
+        "attemptedLookup": true,
+        "actionExecuted": false,
+        "sessionActionIndex": null,
+        "result": "No matching target; no clipboard result verified"
+      },
+      "unknowns": [
+        "Uncaptured blank home details",
+        "Whether any menu existed before Back"
+      ],
+      "classification": "A for reviewed captured results; controller-only reports explicitly marked",
+      "recordedActions": [
+        {
+          "index": 53,
+          "operation": "back",
+          "arguments": [
+            "shell",
+            "input",
+            "keyevent",
+            "4"
+          ],
+          "description": "Close conversation More menu without changing conversation",
+          "startedAt": "2026-10-16T03:34:31.979Z",
+          "completedAt": "2026-10-16T03:34:32.606Z",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "id": "AUTH-T05",
+      "fromScene": null,
+      "actionIndexes": [
+        54,
+        55,
+        56
+      ],
+      "toScene": "r02-24-generating-sequence",
+      "result": "Full Count 1 to 1000, one per line. request in bubble; Thinking and square generating control visible",
+      "verification": "observed-full-request-and-generating-state",
+      "unknowns": [
+        "Backend task implementation",
+        "Whether 1000 numbers eventually exist"
+      ],
+      "classification": "A for reviewed captured results; controller-only reports explicitly marked",
+      "recordedActions": [
+        {
+          "index": 54,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "500",
+            "2185"
+          ],
+          "description": "Focus blank new chat for controlled stop test",
+          "startedAt": "2026-10-16T03:35:47.695Z",
+          "completedAt": "2026-10-16T03:35:48.303Z",
+          "stdout": ""
+        },
+        {
+          "index": 55,
+          "operation": "type-text",
+          "arguments": [
+            "shell",
+            "input",
+            "text",
+            "Count%s1%sto%s1000,%sone%sper%sline."
+          ],
+          "description": "Neutral sequence prompt for generation-stop test",
+          "startedAt": "2026-10-16T03:35:50.513Z",
+          "completedAt": "2026-10-16T03:35:58.889Z",
+          "stdout": ""
+        },
+        {
+          "index": 56,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "974",
+            "2231"
+          ],
+          "description": "Observed label Send message; Submit verified count prompt to test stopping generation",
+          "startedAt": "2026-10-16T03:36:54.395Z",
+          "completedAt": "2026-10-16T03:37:04.256Z",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "id": "AUTH-T06",
+      "fromScene": "r02-24-generating-sequence",
+      "actionIndexes": [
+        57
+      ],
+      "toScene": "r02-25-stop-result",
+      "result": "Settled result card and toolbar visible; composer is Hold to talk",
+      "verification": "late-stop-attempt-not-success",
+      "stopSuccessVerified": false,
+      "recordingVerified": false,
+      "unknowns": [
+        "Exact instant answer finished",
+        "Input target at instant before tap",
+        "Any backend cancellation"
+      ],
+      "classification": "A for reviewed captured results; controller-only reports explicitly marked",
+      "recordedActions": [
+        {
+          "index": 57,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "963",
+            "2185"
+          ],
+          "description": "Press observed square stop control during count generation; accessible label still Send message",
+          "startedAt": "2026-10-16T03:37:49.161Z",
+          "completedAt": "2026-10-16T03:37:49.431Z",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "id": "AUTH-T07",
+      "fromScene": "r02-25-stop-result",
+      "actionIndexes": [
+        58,
+        59,
+        60
+      ],
+      "toScene": "r02-26-checked-stop",
+      "result": "Output stopped shown after Retry, fresh generating-state guard and stop tap; Python execution failure also visible",
+      "verification": "ui-output-stop-verified",
+      "uiStopVerified": true,
+      "networkCancellationVerified": false,
+      "toolFailure": {
+        "text": "Failed to execute Python code",
+        "causedByStop": "unknown",
+        "timingRelativeToStop": "unknown"
+      },
+      "unknowns": [
+        "Network/server task cancellation",
+        "Billing effect",
+        "Late-result handling",
+        "Tool error cause"
+      ],
+      "classification": "A for reviewed captured results; controller-only reports explicitly marked",
+      "recordedActions": [
+        {
+          "index": 58,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "963",
+            "2185"
+          ],
+          "description": "Observed label Switch to text input; Return composer to text mode after late stop attempt toggled voice",
+          "startedAt": "2026-10-16T03:39:11.371Z",
+          "completedAt": "2026-10-16T03:39:15.195Z",
+          "stdout": ""
+        },
+        {
+          "index": 59,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "353",
+            "1956"
+          ],
+          "description": "Observed label Retry; Retry only the self-created count test answer",
+          "startedAt": "2026-10-16T03:39:17.140Z",
+          "completedAt": "2026-10-16T03:39:21.604Z",
+          "stdout": ""
+        },
+        {
+          "index": 60,
+          "operation": "stop-generation-checked",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "974",
+            "2231"
+          ],
+          "description": "Observed live generating placeholder + square-control semantic node; UI cancellation only, network cancellation unknown",
+          "startedAt": "2026-10-16T03:39:23.329Z",
+          "completedAt": "2026-10-16T03:39:28.185Z",
+          "stdout": ""
+        }
+      ]
+    }
+  ],
+  "stopGuard": {
+    "path": "evidence/runtime/run02-20261016/stop-check-1792121967622.xml",
+    "sha256": "e36e5059243c32d099785e2924d083fd164045469c63dd3307a18e1ec06dee20",
+    "basis": "Fresh UIA source retained before action 60; runner rejects unless generating placeholder and exactly one ImageView with Send message description exist",
+    "matchedText": [
+      "Thinking",
+      "Send messages anytime…"
+    ],
+    "candidate": {
+      "contentDescription": "Send message",
+      "class": "android.widget.ImageView",
+      "bounds": "[911,2168][1037,2294]",
+      "tapCenterPhysicalPx": [
+        974,
+        2231
+      ]
+    },
+    "unknowns": [
+      "Read-to-click race is reduced, not eliminated"
+    ]
+  },
+  "limitations": [
+    "No credentials, default nickname or account identifier captured in this review.",
+    "This review does not inspect identity-containing samples 18 or 19; it does not inspect private input-state.png.",
+    "Gboard stylus teaching overlay identification is a controller report; its private source image is not copied.",
+    "Earlier incomplete Re input may have environmental interference, but a unique causal attribution is not established.",
+    "Screenshot and subsequent UIA are non-atomic; sample 20 visibly advances from generating screenshot to completed UIA.",
+    "Copy, Share, rating, read-aloud and More-menu contents are not verified by visible entry points.",
+    "A stale stop coordinate that toggled voice standby is not a successful stop test.",
+    "Output stopped verifies UI output cancellation only; tool error co-occurrence does not establish causality.",
+    "Sparse screenshot intervals and tool runtimes are not animation or generation durations.",
+    "Local AUTH-T identifiers are research labels, not REA Evidence IDs."
+  ]
+}

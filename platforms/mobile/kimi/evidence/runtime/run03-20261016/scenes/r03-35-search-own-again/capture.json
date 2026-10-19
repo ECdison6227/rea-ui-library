@@ -1,0 +1,43 @@
+{
+  "id": "r03-35-search-own-again",
+  "description": "Own unique title after clearing and repeating search",
+  "classification": "A",
+  "origin": "current",
+  "runId": "run03-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-16T07:10:10.945Z",
+  "capturedAt": "2026-10-16T07:10:16.796Z",
+  "screenshotCapturedAt": "2026-10-16T07:10:13.392Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-35-search-own-again/screen.png",
+    "sha256": "a0bd09e4f8079227a92c90e60c7e53524e7a9b76739eeb1f20b52823c27a04b2",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-35-search-own-again/hierarchy.xml",
+    "sha256": "0e86e5c9a779405aa511230928fa64ed1ff212d3b57bea97dc46552368dc6e81"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 85,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "systemLocales": "null",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{c005120 u0 com.moonshot.kimichat/.MainActivity t19}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen",
+  "captureSettlingDelayMs": 1500,
+  "accountMode": "normal retained user-assisted login verified by authenticated home and actual submitted self-created request; credentials excluded"
+}

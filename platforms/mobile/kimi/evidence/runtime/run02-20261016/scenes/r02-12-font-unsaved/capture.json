@@ -1,0 +1,41 @@
+{
+  "id": "r02-12-font-unsaved",
+  "description": "Font preview after disabling Follow System and adjusting slider",
+  "classification": "A",
+  "origin": "current",
+  "runId": "run02-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-16T03:08:21.622Z",
+  "capturedAt": "2026-10-16T03:08:24.695Z",
+  "screenshotCapturedAt": "2026-10-16T03:08:22.123Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/run02-20261016/scenes/r02-12-font-unsaved/screen.png",
+    "sha256": "8e3b8c87ecadf8312afa24d0b3dd9c975438bea993b801985a1fbab7d527a073",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/run02-20261016/scenes/r02-12-font-unsaved/hierarchy.xml",
+    "sha256": "593e3add349ad78c980565c45b9a02c0d2921abfebe724af460266e58462d3d7"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 17,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "systemLocales": "null",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{693f763 u0 com.moonshot.kimichat/.MainActivity t13}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+}

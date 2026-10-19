@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "nr03-018-font-cancel-reenter",
+  "description": "D preview canceled Follow System remains selected",
+  "classification": "D",
+  "origin": "current independent reference runtime",
+  "runId": "run03-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "org.research.kimistyle",
+  "artifact": "reference/build/native-reference.apk",
+  "artifactSha256": "57b8be74b7a7fa482baca0c6ea8a3e154a95efe0cd49b9a0b797adfb209caa29",
+  "installedArtifact": {
+    "package": "org.research.kimistyle",
+    "sha256": "57b8be74b7a7fa482baca0c6ea8a3e154a95efe0cd49b9a0b797adfb209caa29",
+    "checkedAt": "2026-10-16T12:46:56.474Z",
+    "matchesLocalArtifact": true
+  },
+  "sourceApkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "sourceApkIsDifferentArtifact": true,
+  "backend": "local fixture; no real model/network/account service",
+  "accountMode": "none",
+  "startedAt": "2026-10-16T12:46:56.652Z",
+  "screenshotCapturedAt": "2026-10-16T12:46:59.380Z",
+  "hierarchyStartedAt": "2026-10-16T12:46:59.559Z",
+  "hierarchyCompletedAt": "2026-10-16T12:47:02.492Z",
+  "capturedAt": "2026-10-16T12:47:02.684Z",
+  "settlingDelayMs": 1000,
+  "atomicCapture": false,
+  "method": "ADB PNG first; fresh UIA second; separate shell observations; not REA Evidence",
+  "screenshot": {
+    "path": "evidence/reference/run03-20261016/scenes/nr03-018-font-cancel-reenter/screen.png",
+    "sha256": "cef2b979d42fdae374a4705e175a3489f3f41f31befb657138819dc551494e11",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/reference/run03-20261016/scenes/nr03-018-font-cancel-reenter/hierarchy.xml",
+    "sha256": "7ce0d0e41cb9a2029afaa64b8c773cb24e519934eb177f417dfb887ca3197e44",
+    "rotation": "0"
+  },
+  "hierarchyError": null,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "systemFontScale": "1.0",
+    "systemLocales": "en-US",
+    "systemNightMode": "Night mode: no",
+    "referenceAppTheme": "not introspected; verify pixels and selected settings independently"
+  },
+  "window": {
+    "beforeScreenshot": [
+      "topResumedActivity=ActivityRecord{6a691da u0 org.research.kimistyle/.MainActivity t66}"
+    ],
+    "afterHierarchy": [
+      "topResumedActivity=ActivityRecord{6a691da u0 org.research.kimistyle/.MainActivity t66}"
+    ]
+  },
+  "actionsBeforeCapture": 37,
+  "visualReview": "pending pixel and hierarchy inspection; command success does not verify behavior"
+}

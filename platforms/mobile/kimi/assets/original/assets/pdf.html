@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDF</title>
+
+  <style>
+    html,
+    body{
+      height:100%;
+      width:100%;
+    }
+
+        #viewerContainer {
+          overflow:auto;
+          position:absolute;
+          width: 100%;
+          inset:var(--toolbar-height) 0 0;
+          outline:none;
+          z-index:0;
+        }
+    /*
+        #viewer {
+          width: 100%;
+          box-sizing: border-box;
+          position: relative;
+        }  */
+
+        .highlight {
+          background-color: yellow !important;
+        }
+
+    /* Loading 容器样式 */
+    #loading {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    /* 简单的旋转动画 */
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid #ccc;
+      border-top: 4px solid #5280FD;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    #load_error {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+
+</head>
+<body>
+<!-- Loading 元素 -->
+<div id="loading">
+  <div class="spinner"></div>
+</div>
+<div id="load_error" >
+  <div class="error_text">PDF加载失败</div>
+</div>
+<div id="outerContainer">
+  <div id="mainContainer">
+
+    <div id="viewerContainer" tabindex="0">
+      <div id="viewer" class="pdfViewer"></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- 加载 PDF.js  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.mjs" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf_viewer.mjs" type="module"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf_viewer.css" />
+</body>
+<script type="module">
+
+  import {
+    EventBus,
+    PDFViewer,
+    TextLayerBuilder
+  } from 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf_viewer.mjs';
+
+  const queryString = window.location.search;
+  // console.log(queryString);
+
+  const urlParams = new URLSearchParams(queryString);
+  const urlStr = urlParams.get('url').toString();
+  var url = urlStr;
+
+
+  // 初始化 PDF.js
+  pdfjsLib.GlobalWorkerOptions.workerSrc =
+    'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.worker.mjs';
+
+  const container = document.getElementById('viewerContainer');
+  const viewer = document.getElementById('viewer');
+
+  const eventBus = new EventBus();
+
+  const pdfViewer = new PDFViewer({
+    container,
+    viewer,
+    eventBus,
+    textLayerMode: 1, // 启用文字层
+  });
+
+  const loadingTask = pdfjsLib.getDocument({
+    url: url,
+    cMapUrl: 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.0.379/cmaps/',
+    cMapPacked: true
+  });
+  loadingTask.promise.then(pdf => {
+    pdfViewer.setDocument(pdf);
+
+    // pdfViewer.currentScale = 1.0;
+    // 强制设置缩放
+    // pdfViewer.currentScaleValue = 'page-width'; // 适应页面宽度
+
+  }).catch(error => {
+    console.error('pdf_load_failed');
+    document.getElementById('loading').style.display = 'none';
+    // document.getElementById('load_error').style.display = 'flex';
+
+});;
+
+  eventBus.on('pagesinit', () => {
+    console.log('PDF pages initialized');
+    console.log('实际缩放比例：', pdfViewer.currentScale);
+
+    pdfViewer.currentScaleValue = 'page-width';
+    // 页面加载完成后隐藏 loading
+    document.getElementById('loading').style.display = 'none';
+  });
+
+</script>
+</html>

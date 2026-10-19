@@ -1,0 +1,43 @@
+{
+  "id": "r03-59-files-picker",
+  "description": "System file picker for own PDF/Office fixtures, no existing private files selected",
+  "classification": "A",
+  "origin": "current",
+  "runId": "run03-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-16T07:31:59.303Z",
+  "capturedAt": "2026-10-16T07:32:06.206Z",
+  "screenshotCapturedAt": "2026-10-16T07:32:01.438Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-59-files-picker/screen.png",
+    "sha256": "bcc84fe61958cd48e8c7afaabdd048b3a2b65ca2a6a9e2fd5e380ccd0a70598f",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-59-files-picker/hierarchy.xml",
+    "sha256": "a3fd71ef93dcecc1d0c8d3fbc5dd4861b995e0497a69395067a6166449b82f2c"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 129,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "systemLocales": "null",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{1ec3de1 u0 com.google.android.documentsui/com.android.documentsui.picker.PickActivity t19}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen",
+  "captureSettlingDelayMs": 1500,
+  "accountMode": "normal retained user-assisted login verified by authenticated home and actual submitted self-created request; credentials excluded"
+}

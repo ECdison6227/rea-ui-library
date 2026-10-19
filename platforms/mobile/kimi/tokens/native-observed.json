@@ -1,0 +1,963 @@
+{
+  "schemaVersion": 1,
+  "kind": "scoped-native-semantic-geometry-observations",
+  "sourcePackage": "com.moonshot.kimichat",
+  "sourceVersion": "3.1.3 (376)",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "classification": "A",
+  "origin": "current",
+  "conversion": {
+    "formula": "dp = physicalPx / (densityDpi / 160)",
+    "densityDpi": 420,
+    "densityFactor": 2.625,
+    "scope": "Only retained captures for this 1080x2400 device at recorded density",
+    "rounding": "JSON decimal dp values rounded to 6 decimal places; additional decimals do not imply new measurement precision"
+  },
+  "measurements": [
+    {
+      "id": "privacy.disagree",
+      "classification": "A",
+      "origin": "current",
+      "scene": "03-kimi-privacy",
+      "visibleContext": "Disagree",
+      "source": {
+        "hierarchy": "evidence/runtime/scenes/03-kimi-privacy/hierarchy.xml",
+        "hierarchySha256": "5340b794cfbbe10331c76d4f36d57fb39de5609ac8f3a45340deefc52cf6948c",
+        "capture": "evidence/runtime/scenes/03-kimi-privacy/capture.json",
+        "screenshot": "evidence/runtime/scenes/03-kimi-privacy/screen.png",
+        "screenshotSha256": "bb571ebaa5e6d8298838e4d4afceba5d792b653127811206c75c76f0acbe1c3c",
+        "screenshotCapturedAt": null,
+        "captureCompletedAt": "2026-10-15T15:16:30.556Z",
+        "atomicCapture": false
+      },
+      "node": {
+        "class": "android.view.View",
+        "text": "",
+        "contentDescription": "",
+        "package": "com.moonshot.kimichat",
+        "originalBounds": "[186,1354][540,1480]",
+        "clickable": true,
+        "enabled": true,
+        "focusable": true,
+        "focused": false,
+        "checkable": false,
+        "checked": false
+      },
+      "physicalPx": {
+        "left": 186,
+        "top": 1354,
+        "right": 540,
+        "bottom": 1480,
+        "width": 354,
+        "height": 126
+      },
+      "densityDpi": 420,
+      "densityFactor": 2.625,
+      "dpFromBounds": {
+        "left": 70.857143,
+        "top": 515.809524,
+        "right": 205.714286,
+        "bottom": 563.809524,
+        "width": 134.857143,
+        "height": 48
+      },
+      "promotedToGlobalToken": false
+    },
+    {
+      "id": "privacy.agree",
+      "classification": "A",
+      "origin": "current",
+      "scene": "03-kimi-privacy",
+      "visibleContext": "Agree",
+      "source": {
+        "hierarchy": "evidence/runtime/scenes/03-kimi-privacy/hierarchy.xml",
+        "hierarchySha256": "5340b794cfbbe10331c76d4f36d57fb39de5609ac8f3a45340deefc52cf6948c",
+        "capture": "evidence/runtime/scenes/03-kimi-privacy/capture.json",
+        "screenshot": "evidence/runtime/scenes/03-kimi-privacy/screen.png",
+        "screenshotSha256": "bb571ebaa5e6d8298838e4d4afceba5d792b653127811206c75c76f0acbe1c3c",
+        "screenshotCapturedAt": null,
+        "captureCompletedAt": "2026-10-15T15:16:30.556Z",
+        "atomicCapture": false
+      },
+      "node": {
+        "class": "android.view.View",
+        "text": "",
+        "contentDescription": "",
+        "package": "com.moonshot.kimichat",
+        "originalBounds": "[541,1354][895,1480]",
+        "clickable": true,
+        "enabled": true,
+        "focusable": true,
+        "focused": false,
+        "checkable": false,
+        "checked": false
+      },
+      "physicalPx": {
+        "left": 541,
+        "top": 1354,
+        "right": 895,
+        "bottom": 1480,
+        "width": 354,
+        "height": 126
+      },
+      "densityDpi": 420,
+      "densityFactor": 2.625,
+      "dpFromBounds": {
+        "left": 206.095238,
+        "top": 515.809524,
+        "right": 340.952381,
+        "bottom": 563.809524,
+        "width": 134.857143,
+        "height": 48
+      },
+      "promotedToGlobalToken": false
+    },
+    {
+      "id": "home.navigation",
+      "classification": "A",
+      "origin": "current",
+      "scene": "08-guest-home",
+      "visibleContext": "Navigation button",
+      "source": {
+        "hierarchy": "evidence/runtime/scenes/08-guest-home/hierarchy.xml",
+        "hierarchySha256": "b8021dc154ddf2d3dde2222d25d0e0a48f95a3c28dc166856ada07bc55a1385a",
+        "capture": "evidence/runtime/scenes/08-guest-home/capture.json",
+        "screenshot": "evidence/runtime/scenes/08-guest-home/screen.png",
+        "screenshotSha256": "703c79852b3c0ea6d7793610e28a2ee0bba2022d5ea7cfa242cd35372091e144",
+        "screenshotCapturedAt": "2026-10-15T15:19:52.139Z",
+        "captureCompletedAt": "2026-10-15T15:19:56.504Z",
+        "atomicCapture": false
+      },
+      "node": {
+        "class": "android.widget.Button",
+        "text": "",
+        "contentDescription": "Navigation button",
+        "package": "com.moonshot.kimichat",
+        "originalBounds": "[37,131][163,257]",
+        "clickable": true,
+        "enabled": true,
+        "focusable": true,
+        "focused": false,
+        "checkable": false,
+        "checked": false
+      },
+      "physicalPx": {
+        "left": 37,
+        "top": 131,
+        "right": 163,
+        "bottom": 257,
+        "width": 126,
+        "height": 126
+      },
+      "densityDpi": 420,
+      "densityFactor": 2.625,
+      "dpFromBounds": {
+        "left": 14.095238,
+        "top": 49.904762,
+        "right": 62.095238,
+        "bottom": 97.904762,
+        "width": 48,
+        "height": 48
+      },
+      "promotedToGlobalToken": false
+    },
+    {
+      "id": "home.announcement",
+      "classification": "A",
+      "origin": "current",
+      "scene": "08-guest-home",
+      "visibleContext": "Enable voice announcement",
+      "source": {
+        "hierarchy": "evidence/runtime/scenes/08-guest-home/hierarchy.xml",
+        "hierarchySha256": "b8021dc154ddf2d3dde2222d25d0e0a48f95a3c28dc166856ada07bc55a1385a",
+        "capture": "evidence/runtime/scenes/08-guest-home/capture.json",
+        "screenshot": "evidence/runtime/scenes/08-guest-home/screen.png",
+        "screenshotSha256": "703c79852b3c0ea6d7793610e28a2ee0bba2022d5ea7cfa242cd35372091e144",
+        "screenshotCapturedAt": "2026-10-15T15:19:52.139Z",
+        "captureCompletedAt": "2026-10-15T15:19:56.504Z",
+        "atomicCapture": false
+      },
+      "node": {
+        "class": "android.widget.Button",
+        "text": "",
+        "contentDescription": "Enable voice announcement",
+        "package": "com.moonshot.kimichat",
+        "originalBounds": "[917,131][1043,257]",
+        "clickable": true,
+        "enabled": true,
+        "focusable": true,
+        "focused": false,
+        "checkable": false,
+        "checked": false
+      },
+      "physicalPx": {
+        "left": 917,
+        "top": 131,
+        "right": 1043,
+        "bottom": 257,
+        "width": 126,
+        "height": 126
+      },
+      "densityDpi": 420,
+      "densityFactor": 2.625,
+      "dpFromBounds": {
+        "left": 349.333333,
+        "top": 49.904762,
+        "right": 397.333333,
+        "bottom": 97.904762,
+        "width": 48,
+        "height": 48
+      },
+      "promotedToGlobalToken": false
+    },
+    {
+      "id": "home.model-capsule",
+      "classification": "A",
+      "origin": "current",
+      "scene": "08-guest-home",
+      "visibleContext": "Instant / High",
+      "source": {
+        "hierarchy": "evidence/runtime/scenes/08-guest-home/hierarchy.xml",
+        "hierarchySha256": "b8021dc154ddf2d3dde2222d25d0e0a48f95a3c28dc166856ada07bc55a1385a",
+        "capture": "evidence/runtime/scenes/08-guest-home/capture.json",
+        "screenshot": "evidence/runtime/scenes/08-guest-home/screen.png",
+        "screenshotSha256": "703c79852b3c0ea6d7793610e28a2ee0bba2022d5ea7cfa242cd35372091e144",
+        "screenshotCapturedAt": "2026-10-15T15:19:52.139Z",
+        "captureCompletedAt": "2026-10-15T15:19:56.504Z",
+        "atomicCapture": false
+      },
+      "node": {
+        "class": "android.view.View",
+        "text": "",
+        "contentDescription": "",
+        "package": "com.moonshot.kimichat",
+        "originalBounds": "[190,131][483,257]",
+        "clickable": true,
+        "enabled": true,
+        "focusable": true,
+        "focused": false,
+        "checkable": false,
+        "checked": false
+      },
+      "physicalPx": {
+        "left": 190,
+        "top": 131,
+        "right": 483,
+        "bottom": 257,
+        "width": 293,
+        "height": 126
+      },
+      "densityDpi": 420,
+      "densityFactor": 2.625,
+      "dpFromBounds": {
+        "left": 72.380952,
+        "top": 49.904762,
+        "right": 184,
+        "bottom": 97.904762,
+        "width": 111.619048,
+        "height": 48
+      },
+      "promotedToGlobalToken": false
+    },
+    {
+      "id": "home.new-project-chip",
+      "classification": "A",
+      "origin": "current",
+      "scene": "08-guest-home",
+      "visibleContext": "New project",
+      "source": {
+        "hierarchy": "evidence/runtime/scenes/08-guest-home/hierarchy.xml",
+        "hierarchySha256": "b8021dc154ddf2d3dde2222d25d0e0a48f95a3c28dc166856ada07bc55a1385a",
+        "capture": "evidence/runtime/scenes/08-guest-home/capture.json",
+        "screenshot": "evidence/runtime/scenes/08-guest-home/screen.png",
+        "screenshotSha256": "703c79852b3c0ea6d7793610e28a2ee0bba2022d5ea7cfa242cd35372091e144",
+        "screenshotCapturedAt": "2026-10-15T15:19:52.139Z",
+        "captureCompletedAt": "2026-10-15T15:19:56.504Z",
+        "atomicCapture": false
+      },
+      "node": {
+        "class": "android.view.View",
+        "text": "",
+        "contentDescription": "",
+        "package": "com.moonshot.kimichat",
+        "originalBounds": "[42,1948][372,2074]",
+        "clickable": true,
+        "enabled": true,
+        "focusable": true,
+        "focused": false,
+        "checkable": false,
+        "checked": false
+      },
+      "physicalPx": {
+        "left": 42,
+        "top": 1948,
+        "right": 372,
+        "bottom": 2074,
+        "width": 330,
+        "height": 126
+      },
+      "densityDpi": 420,
+      "densityFactor": 2.625,
+      "dpFromBounds": {
+        "left": 16,
+        "top": 742.095238,
+        "right": 141.714286,
+        "bottom": 790.095238,
+        "width": 125.714286,
+        "height": 48
+      },
+      "promotedToGlobalToken": false
+    },
+    {
+      "id": "home.slides-chip",
+      "classification": "A",
+      "origin": "current",
+      "scene": "08-guest-home",
+      "visibleContext": "Slides",
+      "source": {
+        "hierarchy": "evidence/runtime/scenes/08-guest-home/hierarchy.xml",
+        "hierarchySha256": "b8021dc154ddf2d3dde2222d25d0e0a48f95a3c28dc166856ada07bc55a1385a",
+        "capture": "evidence/runtime/scenes/08-guest-home/capture.json",
+        "screenshot": "evidence/runtime/scenes/08-guest-home/screen.png",
+        "screenshotSha256": "703c79852b3c0ea6d7793610e28a2ee0bba2022d5ea7cfa242cd35372091e144",
+        "screenshotCapturedAt": "2026-10-15T15:19:52.139Z",
+        "captureCompletedAt": "2026-10-15T15:19:56.504Z",
+        "atomicCapture": false
+      },
+      "node": {
+        "class": "android.view.View",
+        "text": "",
+        "contentDescription": "",
+        "package": "com.moonshot.kimichat",
+        "originalBounds": "[393,1948][627,2074]",
+        "clickable": true,
+        "enabled": true,
+        "focusable": true,
+        "focused": false,
+        "checkable": false,
+        "checked": false
+      },
+      "physicalPx": {
+        "left": 393,
+        "top": 1948,
+        "right": 627,
+        "bottom": 2074,
+        "width": 234,
+        "height": 126
+      },
+      "densityDpi": 420,
+      "densityFactor": 2.625,
+      "dpFromBounds": {
+        "left": 149.714286,
+        "top": 742.095238,
+        "right": 238.857143,
+        "bottom": 790.095238,
+        "width": 89.142857,
+        "height": 48
+      },
+      "promotedToGlobalToken": false
+    },
+    {
+      "id": "home.swarm-chip",
+      "classification": "A",
+      "origin": "current",
+      "scene": "08-guest-home",
+      "visibleContext": "Swarm",
+      "source": {
+        "hierarchy": "evidence/runtime/scenes/08-guest-home/hierarchy.xml",
+        "hierarchySha256": "b8021dc154ddf2d3dde2222d25d0e0a48f95a3c28dc166856ada07bc55a1385a",
+        "capture": "evidence/runtime/scenes/08-guest-home/capture.json",
+        "screenshot": "evidence/runtime/scenes/08-guest-home/screen.png",
+        "screenshotSha256": "703c79852b3c0ea6d7793610e28a2ee0bba2022d5ea7cfa242cd35372091e144",
+        "screenshotCapturedAt": "2026-10-15T15:19:52.139Z",
+        "captureCompletedAt": "2026-10-15T15:19:56.504Z",
+        "atomicCapture": false
+      },
+      "node": {
+        "class": "android.view.View",
+        "text": "",
+        "contentDescription": "",
+        "package": "com.moonshot.kimichat",
+        "originalBounds": "[648,1948][897,2074]",
+        "clickable": true,
+        "enabled": true,
+        "focusable": true,
+        "focused": false,
+        "checkable": false,
+        "checked": false
+      },
+      "physicalPx": {
+        "left": 648,
+        "top": 1948,
+        "right": 897,
+        "bottom": 2074,
+        "width": 249,
+        "height": 126
+      },
+      "densityDpi": 420,
+      "densityFactor": 2.625,
+      "dpFromBounds": {
+        "left": 246.857143,
+        "top": 742.095238,
+        "right": 341.714286,
+        "bottom": 790.095238,
+        "width": 94.857143,
+        "height": 48
+      },
+      "promotedToGlobalToken": false
+    },
+    {
+      "id": "home.composer-container",
+      "classification": "A",
+      "origin": "current",
+      "scene": "08-guest-home",
+      "visibleContext": "Composer container",
+      "source": {
+        "hierarchy": "evidence/runtime/scenes/08-guest-home/hierarchy.xml",
+        "hierarchySha256": "b8021dc154ddf2d3dde2222d25d0e0a48f95a3c28dc166856ada07bc55a1385a",
+        "capture": "evidence/runtime/scenes/08-guest-home/capture.json",
+        "screenshot": "evidence/runtime/scenes/08-guest-home/screen.png",
+        "screenshotSha256": "703c79852b3c0ea6d7793610e28a2ee0bba2022d5ea7cfa242cd35372091e144",
+        "screenshotCapturedAt": "2026-10-15T15:19:52.139Z",
+        "captureCompletedAt": "2026-10-15T15:19:56.504Z",
+        "atomicCapture": false
+      },
+      "node": {
+        "class": "android.view.View",
+        "text": "",
+        "contentDescription": "",
+        "package": "com.moonshot.kimichat",
+        "originalBounds": "[32,2101][1048,2269]",
+        "clickable": true,
+        "enabled": true,
+        "focusable": true,
+        "focused": false,
+        "checkable": false,
+        "checked": false
+      },
+      "physicalPx": {
+        "left": 32,
+        "top": 2101,
+        "right": 1048,
+        "bottom": 2269,
+        "width": 1016,
+        "height": 168
+      },
+      "densityDpi": 420,
+      "densityFactor": 2.625,
+      "dpFromBounds": {
+        "left": 12.190476,
+        "top": 800.380952,
+        "right": 399.238095,
+        "bottom": 864.380952,
+        "width": 387.047619,
+        "height": 64
+      },
+      "promotedToGlobalToken": false
+    },
+    {
+      "id": "home.composer-editor",
+      "classification": "A",
+      "origin": "current",
+      "scene": "08-guest-home",
+      "visibleContext": "Empty EditText",
+      "source": {
+        "hierarchy": "evidence/runtime/scenes/08-guest-home/hierarchy.xml",
+        "hierarchySha256": "b8021dc154ddf2d3dde2222d25d0e0a48f95a3c28dc166856ada07bc55a1385a",
+        "capture": "evidence/runtime/scenes/08-guest-home/capture.json",
+        "screenshot": "evidence/runtime/scenes/08-guest-home/screen.png",
+        "screenshotSha256": "703c79852b3c0ea6d7793610e28a2ee0bba2022d5ea7cfa242cd35372091e144",
+        "screenshotCapturedAt": "2026-10-15T15:19:52.139Z",
+        "captureCompletedAt": "2026-10-15T15:19:56.504Z",
+        "atomicCapture": false
+      },
+      "node": {
+        "class": "android.widget.EditText",
+        "text": "",
+        "contentDescription": "",
+        "package": "com.moonshot.kimichat",
+        "originalBounds": "[211,2122][900,2248]",
+        "clickable": true,
+        "enabled": true,
+        "focusable": true,
+        "focused": false,
+        "checkable": false,
+        "checked": false
+      },
+      "physicalPx": {
+        "left": 211,
+        "top": 2122,
+        "right": 900,
+        "bottom": 2248,
+        "width": 689,
+        "height": 126
+      },
+      "densityDpi": 420,
+      "densityFactor": 2.625,
+      "dpFromBounds": {
+        "left": 80.380952,
+        "top": 808.380952,
+        "right": 342.857143,
+        "bottom": 856.380952,
+        "width": 262.47619,
+        "height": 48
+      },
+      "promotedToGlobalToken": false
+    },
+    {
+      "id": "home.more-input",
+      "classification": "A",
+      "origin": "current",
+      "scene": "08-guest-home",
+      "visibleContext": "More input options",
+      "source": {
+        "hierarchy": "evidence/runtime/scenes/08-guest-home/hierarchy.xml",
+        "hierarchySha256": "b8021dc154ddf2d3dde2222d25d0e0a48f95a3c28dc166856ada07bc55a1385a",
+        "capture": "evidence/runtime/scenes/08-guest-home/capture.json",
+        "screenshot": "evidence/runtime/scenes/08-guest-home/screen.png",
+        "screenshotSha256": "703c79852b3c0ea6d7793610e28a2ee0bba2022d5ea7cfa242cd35372091e144",
+        "screenshotCapturedAt": "2026-10-15T15:19:52.139Z",
+        "captureCompletedAt": "2026-10-15T15:19:56.504Z",
+        "atomicCapture": false
+      },
+      "node": {
+        "class": "android.widget.Button",
+        "text": "",
+        "contentDescription": "More input options",
+        "package": "com.moonshot.kimichat",
+        "originalBounds": "[53,2122][179,2248]",
+        "clickable": true,
+        "enabled": true,
+        "focusable": true,
+        "focused": false,
+        "checkable": false,
+        "checked": false
+      },
+      "physicalPx": {
+        "left": 53,
+        "top": 2122,
+        "right": 179,
+        "bottom": 2248,
+        "width": 126,
+        "height": 126
+      },
+      "densityDpi": 420,
+      "densityFactor": 2.625,
+      "dpFromBounds": {
+        "left": 20.190476,
+        "top": 808.380952,
+        "right": 68.190476,
+        "bottom": 856.380952,
+        "width": 48,
+        "height": 48
+      },
+      "promotedToGlobalToken": false
+    },
+    {
+      "id": "home.voice-input",
+      "classification": "A",
+      "origin": "current",
+      "scene": "08-guest-home",
+      "visibleContext": "Switch to voice input",
+      "source": {
+        "hierarchy": "evidence/runtime/scenes/08-guest-home/hierarchy.xml",
+        "hierarchySha256": "b8021dc154ddf2d3dde2222d25d0e0a48f95a3c28dc166856ada07bc55a1385a",
+        "capture": "evidence/runtime/scenes/08-guest-home/capture.json",
+        "screenshot": "evidence/runtime/scenes/08-guest-home/screen.png",
+        "screenshotSha256": "703c79852b3c0ea6d7793610e28a2ee0bba2022d5ea7cfa242cd35372091e144",
+        "screenshotCapturedAt": "2026-10-15T15:19:52.139Z",
+        "captureCompletedAt": "2026-10-15T15:19:56.504Z",
+        "atomicCapture": false
+      },
+      "node": {
+        "class": "android.widget.Button",
+        "text": "",
+        "contentDescription": "Switch to voice input",
+        "package": "com.moonshot.kimichat",
+        "originalBounds": "[900,2122][1026,2248]",
+        "clickable": true,
+        "enabled": true,
+        "focusable": true,
+        "focused": false,
+        "checkable": false,
+        "checked": false
+      },
+      "physicalPx": {
+        "left": 900,
+        "top": 2122,
+        "right": 1026,
+        "bottom": 2248,
+        "width": 126,
+        "height": 126
+      },
+      "densityDpi": 420,
+      "densityFactor": 2.625,
+      "dpFromBounds": {
+        "left": 342.857143,
+        "top": 808.380952,
+        "right": 390.857143,
+        "bottom": 856.380952,
+        "width": 48,
+        "height": 48
+      },
+      "promotedToGlobalToken": false
+    },
+    {
+      "id": "drawer.settings",
+      "classification": "A",
+      "origin": "current",
+      "scene": "10-composer-focus",
+      "visibleContext": "Gear icon",
+      "source": {
+        "hierarchy": "evidence/runtime/scenes/10-composer-focus/hierarchy.xml",
+        "hierarchySha256": "d895b14033e8f95ff84bf1f257f6e862b95232b86ec43ccfeb1f4ca119c49535",
+        "capture": "evidence/runtime/scenes/10-composer-focus/capture.json",
+        "screenshot": "evidence/runtime/scenes/10-composer-focus/screen.png",
+        "screenshotSha256": "cb21eca3b643c3307c82f009bb60f5eb473e5ec4c7b5ceeb3ba07131da3612c9",
+        "screenshotCapturedAt": "2026-10-15T15:21:55.115Z",
+        "captureCompletedAt": "2026-10-15T15:21:58.892Z",
+        "atomicCapture": false
+      },
+      "node": {
+        "class": "android.widget.Button",
+        "text": "",
+        "contentDescription": "",
+        "package": "com.moonshot.kimichat",
+        "originalBounds": "[754,163][880,289]",
+        "clickable": true,
+        "enabled": true,
+        "focusable": true,
+        "focused": false,
+        "checkable": false,
+        "checked": false
+      },
+      "physicalPx": {
+        "left": 754,
+        "top": 163,
+        "right": 880,
+        "bottom": 289,
+        "width": 126,
+        "height": 126
+      },
+      "densityDpi": 420,
+      "densityFactor": 2.625,
+      "dpFromBounds": {
+        "left": 287.238095,
+        "top": 62.095238,
+        "right": 335.238095,
+        "bottom": 110.095238,
+        "width": 48,
+        "height": 48
+      },
+      "promotedToGlobalToken": false
+    },
+    {
+      "id": "drawer.login-cta",
+      "classification": "A",
+      "origin": "current",
+      "scene": "10-composer-focus",
+      "visibleContext": "Log in",
+      "source": {
+        "hierarchy": "evidence/runtime/scenes/10-composer-focus/hierarchy.xml",
+        "hierarchySha256": "d895b14033e8f95ff84bf1f257f6e862b95232b86ec43ccfeb1f4ca119c49535",
+        "capture": "evidence/runtime/scenes/10-composer-focus/capture.json",
+        "screenshot": "evidence/runtime/scenes/10-composer-focus/screen.png",
+        "screenshotSha256": "cb21eca3b643c3307c82f009bb60f5eb473e5ec4c7b5ceeb3ba07131da3612c9",
+        "screenshotCapturedAt": "2026-10-15T15:21:55.115Z",
+        "captureCompletedAt": "2026-10-15T15:21:58.892Z",
+        "atomicCapture": false
+      },
+      "node": {
+        "class": "android.view.View",
+        "text": "",
+        "contentDescription": "",
+        "package": "com.moonshot.kimichat",
+        "originalBounds": "[354,1537][564,1663]",
+        "clickable": true,
+        "enabled": true,
+        "focusable": true,
+        "focused": false,
+        "checkable": false,
+        "checked": false
+      },
+      "physicalPx": {
+        "left": 354,
+        "top": 1537,
+        "right": 564,
+        "bottom": 1663,
+        "width": 210,
+        "height": 126
+      },
+      "densityDpi": 420,
+      "densityFactor": 2.625,
+      "dpFromBounds": {
+        "left": 134.857143,
+        "top": 585.52381,
+        "right": 214.857143,
+        "bottom": 633.52381,
+        "width": 80,
+        "height": 48
+      },
+      "promotedToGlobalToken": false
+    },
+    {
+      "id": "settings.notifications-row",
+      "classification": "A",
+      "origin": "current",
+      "scene": "11-settings",
+      "visibleContext": "Notifications",
+      "source": {
+        "hierarchy": "evidence/runtime/scenes/11-settings/hierarchy.xml",
+        "hierarchySha256": "4ef8cc81b4748e3498bb70c18379dcdbb899417cbb54c6692a96891912475aa6",
+        "capture": "evidence/runtime/scenes/11-settings/capture.json",
+        "screenshot": "evidence/runtime/scenes/11-settings/screen.png",
+        "screenshotSha256": "f014884c0cf6572cac3d608914cf99674c3b45afd2a122d43a1ea4d5f5e2f10f",
+        "screenshotCapturedAt": "2026-10-15T15:22:58.295Z",
+        "captureCompletedAt": "2026-10-15T15:23:01.507Z",
+        "atomicCapture": false
+      },
+      "node": {
+        "class": "android.view.View",
+        "text": "",
+        "contentDescription": "",
+        "package": "com.moonshot.kimichat",
+        "originalBounds": "[42,318][1038,465]",
+        "clickable": true,
+        "enabled": true,
+        "focusable": true,
+        "focused": false,
+        "checkable": false,
+        "checked": false
+      },
+      "physicalPx": {
+        "left": 42,
+        "top": 318,
+        "right": 1038,
+        "bottom": 465,
+        "width": 996,
+        "height": 147
+      },
+      "densityDpi": 420,
+      "densityFactor": 2.625,
+      "dpFromBounds": {
+        "left": 16,
+        "top": 121.142857,
+        "right": 395.428571,
+        "bottom": 177.142857,
+        "width": 379.428571,
+        "height": 56
+      },
+      "promotedToGlobalToken": false
+    },
+    {
+      "id": "settings.appearance-row",
+      "classification": "A",
+      "origin": "current",
+      "scene": "11-settings",
+      "visibleContext": "Appearance",
+      "source": {
+        "hierarchy": "evidence/runtime/scenes/11-settings/hierarchy.xml",
+        "hierarchySha256": "4ef8cc81b4748e3498bb70c18379dcdbb899417cbb54c6692a96891912475aa6",
+        "capture": "evidence/runtime/scenes/11-settings/capture.json",
+        "screenshot": "evidence/runtime/scenes/11-settings/screen.png",
+        "screenshotSha256": "f014884c0cf6572cac3d608914cf99674c3b45afd2a122d43a1ea4d5f5e2f10f",
+        "screenshotCapturedAt": "2026-10-15T15:22:58.295Z",
+        "captureCompletedAt": "2026-10-15T15:23:01.507Z",
+        "atomicCapture": false
+      },
+      "node": {
+        "class": "android.view.View",
+        "text": "",
+        "contentDescription": "",
+        "package": "com.moonshot.kimichat",
+        "originalBounds": "[42,466][1038,613]",
+        "clickable": true,
+        "enabled": true,
+        "focusable": true,
+        "focused": false,
+        "checkable": false,
+        "checked": false
+      },
+      "physicalPx": {
+        "left": 42,
+        "top": 466,
+        "right": 1038,
+        "bottom": 613,
+        "width": 996,
+        "height": 147
+      },
+      "densityDpi": 420,
+      "densityFactor": 2.625,
+      "dpFromBounds": {
+        "left": 16,
+        "top": 177.52381,
+        "right": 395.428571,
+        "bottom": 233.52381,
+        "width": 379.428571,
+        "height": 56
+      },
+      "promotedToGlobalToken": false
+    },
+    {
+      "id": "settings.features-row",
+      "classification": "A",
+      "origin": "current",
+      "scene": "11-settings",
+      "visibleContext": "Feature management",
+      "source": {
+        "hierarchy": "evidence/runtime/scenes/11-settings/hierarchy.xml",
+        "hierarchySha256": "4ef8cc81b4748e3498bb70c18379dcdbb899417cbb54c6692a96891912475aa6",
+        "capture": "evidence/runtime/scenes/11-settings/capture.json",
+        "screenshot": "evidence/runtime/scenes/11-settings/screen.png",
+        "screenshotSha256": "f014884c0cf6572cac3d608914cf99674c3b45afd2a122d43a1ea4d5f5e2f10f",
+        "screenshotCapturedAt": "2026-10-15T15:22:58.295Z",
+        "captureCompletedAt": "2026-10-15T15:23:01.507Z",
+        "atomicCapture": false
+      },
+      "node": {
+        "class": "android.view.View",
+        "text": "",
+        "contentDescription": "",
+        "package": "com.moonshot.kimichat",
+        "originalBounds": "[42,614][1038,761]",
+        "clickable": true,
+        "enabled": true,
+        "focusable": true,
+        "focused": false,
+        "checkable": false,
+        "checked": false
+      },
+      "physicalPx": {
+        "left": 42,
+        "top": 614,
+        "right": 1038,
+        "bottom": 761,
+        "width": 996,
+        "height": 147
+      },
+      "densityDpi": 420,
+      "densityFactor": 2.625,
+      "dpFromBounds": {
+        "left": 16,
+        "top": 233.904762,
+        "right": 395.428571,
+        "bottom": 289.904762,
+        "width": 379.428571,
+        "height": 56
+      },
+      "promotedToGlobalToken": false
+    },
+    {
+      "id": "settings.login-row",
+      "classification": "A",
+      "origin": "current",
+      "scene": "11-settings",
+      "visibleContext": "Log In",
+      "source": {
+        "hierarchy": "evidence/runtime/scenes/11-settings/hierarchy.xml",
+        "hierarchySha256": "4ef8cc81b4748e3498bb70c18379dcdbb899417cbb54c6692a96891912475aa6",
+        "capture": "evidence/runtime/scenes/11-settings/capture.json",
+        "screenshot": "evidence/runtime/scenes/11-settings/screen.png",
+        "screenshotSha256": "f014884c0cf6572cac3d608914cf99674c3b45afd2a122d43a1ea4d5f5e2f10f",
+        "screenshotCapturedAt": "2026-10-15T15:22:58.295Z",
+        "captureCompletedAt": "2026-10-15T15:23:01.507Z",
+        "atomicCapture": false
+      },
+      "node": {
+        "class": "android.view.View",
+        "text": "",
+        "contentDescription": "",
+        "package": "com.moonshot.kimichat",
+        "originalBounds": "[42,1505][1038,1631]",
+        "clickable": true,
+        "enabled": true,
+        "focusable": true,
+        "focused": false,
+        "checkable": false,
+        "checked": false
+      },
+      "physicalPx": {
+        "left": 42,
+        "top": 1505,
+        "right": 1038,
+        "bottom": 1631,
+        "width": 996,
+        "height": 126
+      },
+      "densityDpi": 420,
+      "densityFactor": 2.625,
+      "dpFromBounds": {
+        "left": 16,
+        "top": 573.333333,
+        "right": 395.428571,
+        "bottom": 621.333333,
+        "width": 379.428571,
+        "height": 48
+      },
+      "promotedToGlobalToken": false
+    },
+    {
+      "id": "theme.dark-option",
+      "classification": "A",
+      "origin": "current",
+      "scene": "14-dark-theme",
+      "visibleContext": "Dark mode",
+      "source": {
+        "hierarchy": "evidence/runtime/scenes/14-dark-theme/hierarchy.xml",
+        "hierarchySha256": "6cc014b0bf72e0973dfbaf5c3651bf8ce8e64ffd320ae01c0c9e083d2b8df229",
+        "capture": "evidence/runtime/scenes/14-dark-theme/capture.json",
+        "screenshot": "evidence/runtime/scenes/14-dark-theme/screen.png",
+        "screenshotSha256": "14f62fe13be1ba4d25697c9c1608fae18de182f7b5129e78c194920b7ba5baad",
+        "screenshotCapturedAt": "2026-10-15T15:25:24.811Z",
+        "captureCompletedAt": "2026-10-15T15:25:27.794Z",
+        "atomicCapture": false
+      },
+      "node": {
+        "class": "android.view.View",
+        "text": "",
+        "contentDescription": "",
+        "package": "com.moonshot.kimichat",
+        "originalBounds": "[42,593][996,740]",
+        "clickable": false,
+        "enabled": true,
+        "focusable": true,
+        "focused": false,
+        "checkable": true,
+        "checked": true
+      },
+      "physicalPx": {
+        "left": 42,
+        "top": 593,
+        "right": 996,
+        "bottom": 740,
+        "width": 954,
+        "height": 147
+      },
+      "densityDpi": 420,
+      "densityFactor": 2.625,
+      "dpFromBounds": {
+        "left": 16,
+        "top": 225.904762,
+        "right": 379.428571,
+        "bottom": 281.904762,
+        "width": 363.428571,
+        "height": 56
+      },
+      "promotedToGlobalToken": false
+    }
+  ],
+  "unknowns": [
+    "App UI colors as native tokens",
+    "Font family, sp size, font weight and line height",
+    "Visual circle radius, corner radius, shadow extent and touch feedback",
+    "Other devices, density, font scale, orientation or app versions"
+  ],
+  "limitations": [
+    "Bounds are runtime UIAutomator semantic node rectangles, not glyph extents or visual shape sizes.",
+    "An enabled/clickable node does not prove its action result or full interaction state machine.",
+    "Screenshot and hierarchy were captured sequentially; bounds are not guaranteed to describe the exact screenshot instant.",
+    "A repeated 48dp or 56dp semantic dimension in these instances is not automatically a global product token.",
+    "No colors are inferred from binary-resource defaults or filled into this file.",
+    "visibleContext is an analyst-readable component locator; node.text and node.contentDescription preserve the actual node values."
+  ]
+}

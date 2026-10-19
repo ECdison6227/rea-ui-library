@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "id": "kimi-android-3.1.3-376",
+  "name": "Kimi Android · 产品风格研究",
+  "status": "partial-research-with-native-reference",
+  "source": {
+    "kind": "user-supplied-apk",
+    "package": "com.moonshot.kimichat",
+    "versionName": "3.1.3",
+    "versionCode": 376,
+    "sha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+    "skill": "https://github.com/ECdison6227/rea-style-library"
+  },
+  "versions": [
+    "3.1.3 (376)"
+  ],
+  "platforms": [
+    "Android"
+  ],
+  "deploymentModes": [
+    "original APK / dedicated Android15 API35 emulator / retained normal login / real backend / self-created disposable data",
+    "independent native Android View reference / local fixtures / no account or network service"
+  ],
+  "traits": [
+    {
+      "axis": "navigation",
+      "statement": "Edge tool buttons, navigation drawer, grouped settings pages",
+      "classification": "A",
+      "evidence": [
+        "08-guest-home",
+        "10-composer-focus",
+        "11-settings"
+      ],
+      "origin": "historical",
+      "observedInRun": "first-pass-20261015"
+    },
+    {
+      "axis": "surfaces",
+      "statement": "Circle actions, capsule composer/chips, grouped rounded settings surfaces",
+      "classification": "A",
+      "evidence": [
+        "08-guest-home",
+        "11-settings",
+        "24-input-options"
+      ],
+      "origin": "historical",
+      "observedInRun": "first-pass-20261015"
+    },
+    {
+      "axis": "guidance",
+      "statement": "Guest empty-state explanation with login action; capability disclosure through bottom sheet",
+      "classification": "A",
+      "evidence": [
+        "10-composer-focus",
+        "24-input-options",
+        "25-camera-entry"
+      ],
+      "origin": "historical",
+      "observedInRun": "first-pass-20261015"
+    },
+    {
+      "axis": "preferences",
+      "statement": "Theme/language update immediately in tested choices and survive one process relaunch; font preview exposes explicit Save",
+      "classification": "A",
+      "evidence": [
+        "14-dark-theme",
+        "18-font-size-options",
+        "20-language-change",
+        "28-relaunch-settled"
+      ],
+      "origin": "historical",
+      "observedInRun": "first-pass-20261015"
+    },
+    {
+      "axis": "family-fit",
+      "statement": "Candidate fit for focused content assistants and lightweight grouped configuration",
+      "classification": "C",
+      "evidence": [
+        "spec/components-and-behavior.md"
+      ],
+      "origin": "historical",
+      "observedInRun": "first-pass-20261015"
+    },
+    {
+      "axis": "input-retention",
+      "statement": "Owned long drafts survive tested navigation/process restart; new-chat context is separate",
+      "classification": "A",
+      "evidence": [
+        "spec/run03-behavior-and-transfer.md",
+        "F04"
+      ],
+      "origin": "current",
+      "observedInRun": "run03-20261016"
+    },
+    {
+      "axis": "asynchronous-feedback",
+      "statement": "Retained failed content, explicit retry and a distinct queued-message state are observed; backend cancellation remains unknown",
+      "classification": "A",
+      "evidence": [
+        "spec/run03-behavior-and-transfer.md",
+        "F12",
+        "F29"
+      ],
+      "origin": "current",
+      "observedInRun": "run03-20261016"
+    },
+    {
+      "axis": "transfer-boundary",
+      "statement": "Native Android View and neutral Fieldnotes demonstrate independent D mappings; source equivalence is evaluated separately",
+      "classification": "D",
+      "evidence": [
+        "reference/source-mapping.json",
+        "comparison/native-run03.md",
+        "transfer-example/run03-acceptance.md"
+      ],
+      "origin": "current",
+      "observedInRun": "run03-20261016"
+    }
+  ],
+  "goodFit": [
+    {
+      "classification": "D",
+      "suggestion": "Content-first mobile tools with progressive capability discovery"
+    }
+  ],
+  "needsAdaptation": [
+    "Own product branding, domain content and assets",
+    "Target platform navigation, IME, permissions and RTL policy",
+    "System/native font metrics and per-glyph fallback",
+    "Unavailable model/entitlement paths, physical devices and backend semantics"
+  ],
+  "artifacts": {
+    "readme": "README.md",
+    "runtime": "runtime.html",
+    "assets": "index.html",
+    "assetManifest": "assets/manifest.json",
+    "tokens": [
+      "tokens/native-observed.json",
+      "tokens/widget-foundation.json"
+    ],
+    "spec": [
+      "spec/components-and-behavior.md",
+      "spec/architecture-and-resources.md",
+      "spec/content-guidance.md",
+      "spec/widget-foundation.md",
+      "spec/run02-behavior-verification.md",
+      "spec/run02-authenticated-behavior.md",
+      "spec/run02-attachments-and-permissions.md"
+    ],
+    "evidence": "evidence/index.json",
+    "transfer": "docs/transfer-guide.md",
+    "coverage": "docs/run03-coverage.md",
+    "recovery": "evidence/runtime/run03-20261016/restore.json",
+    "nextAgent": "docs/next-agent-prompt.md",
+    "reference": "reference/README.md",
+    "comparison": "comparison/native-run03.md",
+    "transferExample": "transfer-example/run03-acceptance.md",
+    "runtimeCurrent": "run03.html",
+    "latestSummary": "docs/run03-results.md",
+    "sharingScope": "docs/sharing-scope.md",
+    "continuation": "docs/session-handoff.md",
+    "remainingValidation": "docs/remaining-validation.json",
+    "continuationCheckpoint": "docs/run03-live-checkpoint.json",
+    "behavior": "spec/run03-behavior-and-transfer.md",
+    "stateTransitions": "spec/run03-observed-transitions.json",
+    "referenceAcceptance": "reference/run03-acceptance.json",
+    "motion": "docs/run03-motion-research.md"
+  },
+  "counts": {
+    "packagedAssetFiles": 1430,
+    "assetTypes": {
+      "other": 32,
+      "renderer-code": 77,
+      "xml-resource": 821,
+      "image": 410,
+      "animation": 21,
+      "font": 52,
+      "localized-copy": 17
+    },
+    "capturedFrames": 34,
+    "visuallyAnnotatedFrames": 31,
+    "transitionRecords": 24,
+    "scope": "Retained first-pass extraction/runtime counts; current runtime is listed in currentRunCounts and runs"
+  },
+  "coverage": {
+    "artifactIdentity": "verified",
+    "resourceExtraction": "verified-static",
+    "runtimeScenes": "partial",
+    "nativeComponentEvents": "partial",
+    "nativeTypography": "partial",
+    "widgetTokens": "verified-static-scoped",
+    "loggedInFlows": "partial-run03-authenticated",
+    "reference": "verified",
+    "originalComparison": "verified",
+    "crossBusinessTransfer": "verified",
+    "generationLifecycle": "partial-queue-observed-stop-late-paths-outstanding",
+    "attachments": "verified-bounded-synthetic-PNG-PDF-DOCX-large-TXT-samples",
+    "networkRecovery": "verified-bounded-message-and-upload-retry",
+    "taskStatuses": {
+      "needs_user": 15,
+      "verified": 20,
+      "needs_authorization": 1,
+      "partial": 1
+    },
+    "scopeComplete": false
+  },
+  "unknowns": [
+    "Exact global native typography, per-glyph fallback, token usage and animation duration/easing/spring",
+    "Physical speech recognition, conversation interruption, camera capture, haptics and sound",
+    "Cross-device sync and actual remote connection",
+    "K3/K2.8, Slides, Build, Swarm and skill execution under an actually available account",
+    "Actual web citations/source cards",
+    "Queue pause/resume and stop/late-result/backend cancellation semantics",
+    "Claw isolated instance and authorization for a concrete task"
+  ],
+  "updatedAt": "2026-10-16T13:20:50.884Z",
+  "runs": [
+    {
+      "id": "first-pass-20261015",
+      "origin": "historical",
+      "session": "evidence/runtime/session.json",
+      "readme": "README.md",
+      "capturedFrames": 34,
+      "accountMode": "no-login",
+      "restore": "docs/restore.json"
+    },
+    {
+      "id": "run02-20261016",
+      "origin": "historical",
+      "session": "evidence/runtime/run02-20261016/session.json",
+      "summary": "docs/run02-results.md",
+      "accountMode": "no-login then normal user-assisted phone login; credential flow excluded",
+      "capturedFrames": 45,
+      "actions": 102,
+      "restoration": "evidence/runtime/run02-20261016/restore.json",
+      "preview": "run02.html",
+      "scope": [
+        "Model selector and K3 selection",
+        "Keyboard and unsent draft",
+        "Font preview/Back/Save",
+        "Normal generation, Retry and UI Stop",
+        "Artificial TXT upload/removal/read",
+        "Microphone refusal and text recovery",
+        "Offline failure and successful retry",
+        "Android copy/paste",
+        "Rename/Delete confirmation cancellation"
+      ]
+    },
+    {
+      "id": "run03-20261016",
+      "origin": "current",
+      "session": "evidence/runtime/run03-20261016/session.json",
+      "summary": "docs/run03-results.md",
+      "preview": "run03.html",
+      "accountMode": "normal retained user-assisted login verified by authenticated home and actual submitted self-created request; credentials excluded",
+      "backend": "original app network; no fixtures",
+      "capturedFrames": 275,
+      "safeFrames": 257,
+      "actions": 649,
+      "restoration": "evidence/runtime/run03-20261016/restore.json",
+      "referenceSession": "evidence/reference/run03-20261016/session.json",
+      "referenceFrames": 71,
+      "referenceReviewedFrames": 71,
+      "scopeComplete": false
+    }
+  ],
+  "continuation": {
+    "status": "outstanding-dependencies-retained",
+    "remainingTaskCount": 17,
+    "currentRun": "run03-20261016",
+    "nextRun": "new unique run after run03; never append historical captures",
+    "scopeComplete": false,
+    "userRequest": "Continue remaining original-product functional verification, then complete native reference, paired comparison and cross-business transfer without claiming untested work complete."
+  },
+  "currentRunCounts": {
+    "sourceFrames": 275,
+    "safeSourceFrames": 257,
+    "withheldSourceFrames": 18,
+    "referenceFrames": 71,
+    "reviewedReferenceFrames": 71
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "runId": "run02-20261016",
+  "reviewedAt": "2026-10-16T04:13:40.575Z",
+  "method": "Root inspected original PNGs and later UIA; separate time scopes kept",
+  "observations": [
+    {
+      "id": "R02-O41",
+      "from": "r02-40-retry-after-network",
+      "to": "r02-41-copy-paste",
+      "observed": "Newest test answer Copy followed by Android paste places offline-test-OK in unsent composer",
+      "limits": [
+        "Screenshot text partly obscured by Android paste toast; later UIA confirms complete text",
+        "Host clipboard untouched"
+      ],
+      "classification": "A",
+      "origin": "current",
+      "fromScreenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-40-retry-after-network/screen.png",
+        "sha256": "4ff301c0697861511a9fd2d9642aea26027c1a111684428da58502c4f3056973",
+        "width": 1080,
+        "height": 2400
+      },
+      "toScreenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-41-copy-paste/screen.png",
+        "sha256": "392aa80623fa6ecfd58dc4069592db952768f140059d42253bce555cedad6fa0",
+        "width": 1080,
+        "height": 2400
+      },
+      "actionIndexBase": 1,
+      "actionIndexes": [
+        86,
+        87,
+        88
+      ],
+      "atomicCapture": false
+    },
+    {
+      "id": "R02-O42",
+      "from": "r02-41-copy-paste",
+      "to": "r02-42-conversation-menu-settled",
+      "observed": "Research paste draft cleared; top conversation menu visible with Read aloud/Pin/Rename/Delete",
+      "limits": [
+        "Intermediate fresh UIA did not expose popup; use original PNG for menu shape"
+      ],
+      "classification": "A",
+      "origin": "current",
+      "fromScreenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-41-copy-paste/screen.png",
+        "sha256": "392aa80623fa6ecfd58dc4069592db952768f140059d42253bce555cedad6fa0",
+        "width": 1080,
+        "height": 2400
+      },
+      "toScreenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-42-conversation-menu-settled/screen.png",
+        "sha256": "7c94880937179c17ea3686fbb534272c1f1cc69510ac2d1febb0c7918e8cf36c",
+        "width": 1080,
+        "height": 2400
+      },
+      "actionIndexBase": 1,
+      "actionIndexes": [
+        89,
+        90,
+        91
+      ],
+      "atomicCapture": false
+    },
+    {
+      "id": "R02-O43",
+      "from": "r02-42-conversation-menu-settled",
+      "to": "r02-43-rename-dialog",
+      "observed": "Rename opens prefilled Edit chat name dialog for self-created test conversation",
+      "limits": [
+        "No text change or Done commit performed",
+        "Label query had no match; exact observed menu position used"
+      ],
+      "classification": "A",
+      "origin": "current",
+      "fromScreenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-42-conversation-menu-settled/screen.png",
+        "sha256": "7c94880937179c17ea3686fbb534272c1f1cc69510ac2d1febb0c7918e8cf36c",
+        "width": 1080,
+        "height": 2400
+      },
+      "toScreenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-43-rename-dialog/screen.png",
+        "sha256": "017f316f009ed05fe6bf98b3444e7c932bc3083bd9d3e0a3133a7d540dc60b62",
+        "width": 1080,
+        "height": 2400
+      },
+      "actionIndexBase": 1,
+      "actionIndexes": [
+        92
+      ],
+      "atomicCapture": false
+    },
+    {
+      "id": "R02-O44",
+      "from": "r02-43-rename-dialog",
+      "to": "r02-44-menu-after-cancel",
+      "observed": "Cancel rename and reopen top menu; current test conversation retained",
+      "limits": [
+        "No dirty edit tested"
+      ],
+      "classification": "A",
+      "origin": "current",
+      "fromScreenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-43-rename-dialog/screen.png",
+        "sha256": "017f316f009ed05fe6bf98b3444e7c932bc3083bd9d3e0a3133a7d540dc60b62",
+        "width": 1080,
+        "height": 2400
+      },
+      "toScreenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-44-menu-after-cancel/screen.png",
+        "sha256": "0b494c4336b703148d336e1ee4020425ae6d50912b013e1b2a9588a24aa48828",
+        "width": 1080,
+        "height": 2400
+      },
+      "actionIndexBase": 1,
+      "actionIndexes": [
+        93,
+        94
+      ],
+      "atomicCapture": false
+    },
+    {
+      "id": "R02-O45",
+      "from": "r02-44-menu-after-cancel",
+      "to": "r02-45-delete-confirmation",
+      "observed": "Delete opens confirmation for selected 1 chat with Cancel/Delete",
+      "limits": [
+        "Confirmation preview only; deletion not executed"
+      ],
+      "classification": "A",
+      "origin": "current",
+      "fromScreenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-44-menu-after-cancel/screen.png",
+        "sha256": "0b494c4336b703148d336e1ee4020425ae6d50912b013e1b2a9588a24aa48828",
+        "width": 1080,
+        "height": 2400
+      },
+      "toScreenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-45-delete-confirmation/screen.png",
+        "sha256": "e3d4893a9b95b1c377923ff0a6d8b8a00dbfaf74353c73376a092847975c2b9c",
+        "width": 1080,
+        "height": 2400
+      },
+      "actionIndexBase": 1,
+      "actionIndexes": [
+        95
+      ],
+      "atomicCapture": false
+    },
+    {
+      "id": "R02-O46",
+      "from": "r02-45-delete-confirmation",
+      "to": "r02-46-restored-appearance",
+      "observed": "Cancel deletion; reach appearance through signed-in avatar/settings entry; theme/font Follow System and language English",
+      "limits": [
+        "Signed-in drawer differs from guest gear entry; intermediate unsuccessful coordinate attempt retained",
+        "No prior private history item opened"
+      ],
+      "classification": "A",
+      "origin": "current",
+      "fromScreenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-45-delete-confirmation/screen.png",
+        "sha256": "e3d4893a9b95b1c377923ff0a6d8b8a00dbfaf74353c73376a092847975c2b9c",
+        "width": 1080,
+        "height": 2400
+      },
+      "toScreenshot": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-46-restored-appearance/screen.png",
+        "sha256": "cfb54b9129ae7d2c19a702e206b017adaea5f931b93090aec6a75b7dbb50abd3",
+        "width": 1080,
+        "height": 2400
+      },
+      "actionIndexBase": 1,
+      "actionIndexes": [
+        96,
+        97,
+        98,
+        99,
+        100
+      ],
+      "atomicCapture": false
+    }
+  ]
+}

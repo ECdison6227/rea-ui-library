@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "nr03-009-empty-final",
+  "description": "D final empty state",
+  "classification": "D",
+  "origin": "current independent reference runtime",
+  "runId": "run03-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "org.research.kimistyle",
+  "artifact": "reference/build/native-reference.apk",
+  "artifactSha256": "3723551d198091595ad1c78fd264fdc1690e53c947b4d661b7459cd6514adba3",
+  "installedArtifact": {
+    "package": "org.research.kimistyle",
+    "sha256": "3723551d198091595ad1c78fd264fdc1690e53c947b4d661b7459cd6514adba3",
+    "checkedAt": "2026-10-16T12:41:58.357Z",
+    "matchesLocalArtifact": true
+  },
+  "sourceApkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "sourceApkIsDifferentArtifact": true,
+  "backend": "local fixture; no real model/network/account service",
+  "accountMode": "none",
+  "startedAt": "2026-10-16T12:41:58.548Z",
+  "screenshotCapturedAt": "2026-10-16T12:42:01.199Z",
+  "hierarchyStartedAt": "2026-10-16T12:42:01.357Z",
+  "hierarchyCompletedAt": "2026-10-16T12:42:04.168Z",
+  "capturedAt": "2026-10-16T12:42:04.361Z",
+  "settlingDelayMs": 1000,
+  "atomicCapture": false,
+  "method": "ADB PNG first; fresh UIA second; separate shell observations; not REA Evidence",
+  "screenshot": {
+    "path": "evidence/reference/run03-20261016/scenes/nr03-009-empty-final/screen.png",
+    "sha256": "7b21eb32ea849c3a7e2d43af6482cd3ad055894f1f754a34d7150c559a41c288",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/reference/run03-20261016/scenes/nr03-009-empty-final/hierarchy.xml",
+    "sha256": "138fa68d8f1cf9887ac3544bfc0ebc377b657c5515e2414d87bd57d19d9b7960",
+    "rotation": "0"
+  },
+  "hierarchyError": null,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "systemFontScale": "1.0",
+    "systemLocales": "en-US",
+    "systemNightMode": "Night mode: no",
+    "referenceAppTheme": "not introspected; verify pixels and selected settings independently"
+  },
+  "window": {
+    "beforeScreenshot": [
+      "topResumedActivity=ActivityRecord{e0a04fc u0 org.research.kimistyle/.MainActivity t65}"
+    ],
+    "afterHierarchy": [
+      "topResumedActivity=ActivityRecord{e0a04fc u0 org.research.kimistyle/.MainActivity t65}"
+    ]
+  },
+  "actionsBeforeCapture": 18,
+  "visualReview": "pending pixel and hierarchy inspection; command success does not verify behavior"
+}

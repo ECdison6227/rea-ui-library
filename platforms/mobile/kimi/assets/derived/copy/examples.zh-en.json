@@ -1,0 +1,1366 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "LOCAL-COPY-001",
+  "sourceApkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "classification": "B",
+  "selectionClassification": "C",
+  "origin": "current",
+  "method": "Manually selected semantic examples from decoded keys; categories are research labels, not observed UI grouping",
+  "occurrenceConditions": "unknown for every example; no runtime trigger or state transition is established",
+  "examples": [
+    {
+      "category": "onboarding",
+      "key": "onboarding_welcome_description",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "onboarding_welcome_description",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1232,
+          "rawSourceLine": "string|onboarding_welcome_description|5qyi6L+O5p2l5YiwIEtpbWnvvIznnIvnnIvmiJHog73lgZrku4DkuYg=",
+          "sourceLineSha256Utf8": "b933e7d1b17486b7ff66ac7abcae867529c549c279001601a5fc7a422dffcdda",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "onboarding"
+          ],
+          "text": "欢迎来到 Kimi，看看我能做什么",
+          "placeholders": [],
+          "sha256Utf8": "1bfbccb8269256fa2cd9a10147434654035bace7f535d1e752b300a6fe58c99c"
+        },
+        "default": {
+          "kind": "string",
+          "key": "onboarding_welcome_description",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1232,
+          "rawSourceLine": "string|onboarding_welcome_description|V2VsY29tZSB0byBLaW1pLiBTZWUgd2hhdCBJIGNhbiBkby4=",
+          "sourceLineSha256Utf8": "2fe711685582c26dff205e8bdca4289a8443ab3b50d5ca0cb96ee37eba696daf",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "onboarding"
+          ],
+          "text": "Welcome to Kimi. See what I can do.",
+          "placeholders": [],
+          "sha256Utf8": "103656d1d9fb7be21647a0b4c749264e87af7d649323a404f5ac232983dc088f"
+        }
+      }
+    },
+    {
+      "category": "onboarding",
+      "key": "onboarding_bn02_occupation_title",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "onboarding_bn02_occupation_title",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1195,
+          "rawSourceLine": "string|onboarding_bn02_occupation_title|5L2g55qE6IGM5Lia5piv5LuA5LmI",
+          "sourceLineSha256Utf8": "c39dc25bed5cd0fcb655839b4e7f96c605b1ea7236ee67cb8c5da3671f22cbe5",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "onboarding"
+          ],
+          "text": "你的职业是什么",
+          "placeholders": [],
+          "sha256Utf8": "4fc99f02c9e2e8c3708486593919d8523cad3b971983c7753fdf70fd09c0220d"
+        },
+        "default": {
+          "kind": "string",
+          "key": "onboarding_bn02_occupation_title",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1195,
+          "rawSourceLine": "string|onboarding_bn02_occupation_title|V2hhdCB3b3VsZCB5b3UgbGlrZSB0byB1c2UgS2ltaSBmb3I/",
+          "sourceLineSha256Utf8": "17b30fca11dc2012b412cc7e7a9b46f222731d2df13a3f074b5a4dbd30e8ca73",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "onboarding"
+          ],
+          "text": "What would you like to use Kimi for?",
+          "placeholders": [],
+          "sha256Utf8": "848add1483aaf623ce0382c65a6069dee475d4624c72c62c86e1e385622e3880"
+        }
+      }
+    },
+    {
+      "category": "onboarding",
+      "key": "onboarding_bn04_skip",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "onboarding_bn04_skip",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1212,
+          "rawSourceLine": "string|onboarding_bn04_skip|6Lez6L+H",
+          "sourceLineSha256Utf8": "d873ad794ee4d039640e15dea87d71a569fd59db0e72a638b003bfe29f2809d7",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "onboarding"
+          ],
+          "text": "跳过",
+          "placeholders": [],
+          "sha256Utf8": "fc50a99caae0cddc10e0d3f953c48b08c35f1139fcefcc83f01a81bf92124aa1"
+        },
+        "default": {
+          "kind": "string",
+          "key": "onboarding_bn04_skip",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1212,
+          "rawSourceLine": "string|onboarding_bn04_skip|U2tpcA==",
+          "sourceLineSha256Utf8": "ce1f250c3fade5e78d433647f6a71b7744697d0b8a57e92006ecb8cfb425bde1",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "onboarding"
+          ],
+          "text": "Skip",
+          "placeholders": [],
+          "sha256Utf8": "28d03596d24eeb4eab2d6fe21ca1cb95be7cb1fa6f92933db05e2cc4f4cdfa06"
+        }
+      }
+    },
+    {
+      "category": "onboarding",
+      "key": "onboarding_bn05_saved_message",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "onboarding_bn05_saved_message",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1213,
+          "rawSourceLine": "string|onboarding_bn05_saved_message|6K6+572u5bey5L+d5a2Y77yM6K+35qOA5p+l6L6T5YWl5qGG5Lit55qE5YaF5a655bm25Y+R6YCB44CC",
+          "sourceLineSha256Utf8": "6e14bbf21625c7fe5da3cd936bdc522078bf318bc92c9b6a26e51251ecd426e8",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "onboarding"
+          ],
+          "text": "设置已保存，请检查输入框中的内容并发送。",
+          "placeholders": [],
+          "sha256Utf8": "ca303156ece41910decd996549d721917132def13bb19a3988458e515ea65fed"
+        },
+        "default": {
+          "kind": "string",
+          "key": "onboarding_bn05_saved_message",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1213,
+          "rawSourceLine": "string|onboarding_bn05_saved_message|WW91ciBwcmVmZXJlbmNlcyBhcmUgc2F2ZWQuIFJldmlldyB0aGUgbWVzc2FnZSBiZWxvdyBhbmQgc2VuZCBpdCB3aGVuIHlvdeKAmXJlIHJlYWR5Lg==",
+          "sourceLineSha256Utf8": "ba2ceb470ef6c70ecd4056cad028e5a571a23110e6f3860c653b9e6e0419f605",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "onboarding"
+          ],
+          "text": "Your preferences are saved. Review the message below and send it when you’re ready.",
+          "placeholders": [],
+          "sha256Utf8": "f8c31a9d1d2f0de47d3518a07a3f7f6ef11e9af02fba61b7674437b0414be25d"
+        }
+      }
+    },
+    {
+      "category": "onboarding",
+      "key": "onboarding_bn07_prefilled_message",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "onboarding_bn07_prefilled_message",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1218,
+          "rawSourceLine": "string|onboarding_bn07_prefilled_message|5bey5pS+5YWl6L6T5YWl5qGG77yM5L2g5Y+v5Lul5L+u5pS55ZCO5Y+R6YCB44CC",
+          "sourceLineSha256Utf8": "8da901345f865d467e6fdde7c9e4713fdbf0c359c09d686542f6ca878823cc30",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "onboarding"
+          ],
+          "text": "已放入输入框，你可以修改后发送。",
+          "placeholders": [],
+          "sha256Utf8": "3546f3c1cf143ca8dca93c9204ac0a36f5f80142f4fe11fda153cf111eff7a91"
+        },
+        "default": {
+          "kind": "string",
+          "key": "onboarding_bn07_prefilled_message",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1218,
+          "rawSourceLine": "string|onboarding_bn07_prefilled_message|QWRkZWQgdG8gdGhlIG1lc3NhZ2UgYm94LiBZb3UgY2FuIGVkaXQgaXQgYmVmb3JlIHNlbmRpbmcu",
+          "sourceLineSha256Utf8": "a1888105ee146653e2af94b777f00fed58c2837f0713e753586de0783d89d883",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "onboarding"
+          ],
+          "text": "Added to the message box. You can edit it before sending.",
+          "placeholders": [],
+          "sha256Utf8": "4adb3c879a1e2ee7c81fb62697b60db248d919b09ab0e5dcc8db1a918f45878e"
+        }
+      }
+    },
+    {
+      "category": "empty",
+      "key": "memory_space_empty",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "memory_space_empty",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 862,
+          "rawSourceLine": "string|memory_space_empty|5aSa6IGK6IGK77yMS2ltaSDmraPlnKjliqrlipvorrDkvY/kvaDnmoTkuJbnlYw=",
+          "sourceLineSha256Utf8": "129ce26e92421ead3cdce8f2f96182a6ee96d59d506686e840f03ff0bbb27659",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "empty"
+          ],
+          "text": "多聊聊，Kimi 正在努力记住你的世界",
+          "placeholders": [],
+          "sha256Utf8": "43493082b1c8307d92f3e0aa4e9ed7834461e73078553f0d53d78f90fc3cf10e"
+        },
+        "default": {
+          "kind": "string",
+          "key": "memory_space_empty",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 862,
+          "rawSourceLine": "string|memory_space_empty|S2VlcCBjaGF0dGluZy4gS2ltaSBpcyBnZXR0aW5nIHRvIGtub3cgeW91ciB3b3JsZC4=",
+          "sourceLineSha256Utf8": "16129ea647f6a2cc9a2c2d5758f3db42f5e1d24e2c977e28f380509c1efffffb",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "empty"
+          ],
+          "text": "Keep chatting. Kimi is getting to know your world.",
+          "placeholders": [],
+          "sha256Utf8": "2115230e84306d2882e6169bda4fdca2285958dd80ae7d7108e6547f58314ab7"
+        }
+      }
+    },
+    {
+      "category": "empty",
+      "key": "project_empty_chat",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "project_empty_chat",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1390,
+          "rawSourceLine": "string|project_empty_chat|57uZ6aG555uu5Yqg54K56IOM5pmv5L+h5oGvCua3u+WKoOaMh+S7pOaIluaWh+S7tu+8jOavj+S4quWvueivnemDveS8muWPguiAgw==",
+          "sourceLineSha256Utf8": "14d35fb9f6b176447c256c1cf65b88a2e58205d82ef14bac548e01d1640644be",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "empty"
+          ],
+          "text": "给项目加点背景信息\n添加指令或文件，每个对话都会参考",
+          "placeholders": [],
+          "sha256Utf8": "14fdca34e95c88e4c56d15897e4e648efa20d8778ee4699ea5f7d37c435acd94"
+        },
+        "default": {
+          "kind": "string",
+          "key": "project_empty_chat",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1390,
+          "rawSourceLine": "string|project_empty_chat|QWRkIHNvbWUgY29udGV4dCB0byB5b3VyIHByb2plY3QKQWRkIGluc3RydWN0aW9ucyBvciBmaWxlcyBmb3IgS2ltaSB0byByZWZlcmVuY2UgaW4gZXZlcnkgY29udmVyc2F0aW9uLg==",
+          "sourceLineSha256Utf8": "e0b2a3c108c781d04ad4d3671592974ce42a3519023f522b35f20fcf2b21ccab",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "empty"
+          ],
+          "text": "Add some context to your project\nAdd instructions or files for Kimi to reference in every conversation.",
+          "placeholders": [],
+          "sha256Utf8": "64afa3590398691704065bdde9db63a784704f8a3c8fc097c011c339286eca48"
+        }
+      }
+    },
+    {
+      "category": "empty",
+      "key": "remote_device_add_empty_title",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "remote_device_add_empty_title",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1595,
+          "rawSourceLine": "string|remote_device_add_empty_title|5pqC5pyq5Y+R546w5Y+v6YWN5a+555qE5paw6K6+5aSH",
+          "sourceLineSha256Utf8": "0f189bff792d077ecc0d11c0e54eccc7ffbd871f8c4b3ba95fda7f727dff3741",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "empty"
+          ],
+          "text": "暂未发现可配对的新设备",
+          "placeholders": [],
+          "sha256Utf8": "d3439778bf1329fa88b7c4fc3fc7f6b37dec7a3af0964372cc191a76306165a9"
+        },
+        "default": {
+          "kind": "string",
+          "key": "remote_device_add_empty_title",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1595,
+          "rawSourceLine": "string|remote_device_add_empty_title|Tm8gYXZhaWxhYmxlIGRldmljZXMgZm91bmQ=",
+          "sourceLineSha256Utf8": "e629bb66b1f91742494a101a0af7f148240d13b22fc75234e25bafdfd6b2e401",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "empty"
+          ],
+          "text": "No available devices found",
+          "placeholders": [],
+          "sha256Utf8": "18c987dea4d58613333145efc9acc4ed762c368c06c1c9695914829040da3d70"
+        }
+      }
+    },
+    {
+      "category": "empty",
+      "key": "remote_device_add_empty_description",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "remote_device_add_empty_description",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1593,
+          "rawSourceLine": "string|remote_device_add_empty_description|6K+356Gu5L+d5bey5L2/55So5ZCM5LiA6LSm5Y+355m75b2VIEtpbWkgV29ya++8jOW5tuWcqCBLaW1pIFdvcmsg5LiK5byA5ZCv5LqG6L+c56iL5o6n5Yi2",
+          "sourceLineSha256Utf8": "ed565e29733b3b8beb0e495ab5ddbe6a1ca84cffd348c386f98f0735636b6f07",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "empty"
+          ],
+          "text": "请确保已使用同一账号登录 Kimi Work，并在 Kimi Work 上开启了远程控制",
+          "placeholders": [],
+          "sha256Utf8": "b0874f4e4f83201ede50a777a247d1fd8fca44bf8c38038c1de2a23c6d13b4aa"
+        },
+        "default": {
+          "kind": "string",
+          "key": "remote_device_add_empty_description",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1593,
+          "rawSourceLine": "string|remote_device_add_empty_description|TWFrZSBzdXJlIHlvdSBhcmUgc2lnbmVkIGluIHRvIEtpbWkgV29yayB3aXRoIHRoZSBzYW1lIGFjY291bnQgYW5kIGhhdmUgZW5hYmxlZCByZW1vdGUgY29udHJvbCBpbiBLaW1pIFdvcms=",
+          "sourceLineSha256Utf8": "6586e8d1dae4313420db1458d49e2af62dd0624c50b4f7cb7144897f400ba2cf",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "empty"
+          ],
+          "text": "Make sure you are signed in to Kimi Work with the same account and have enabled remote control in Kimi Work",
+          "placeholders": [],
+          "sha256Utf8": "2d2a254a2297c612e346f02d7f705ee15dcd0752c3f34d220412894d71f4de80"
+        }
+      }
+    },
+    {
+      "category": "empty",
+      "key": "remote_device_add_empty_refresh",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "remote_device_add_empty_refresh",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1594,
+          "rawSourceLine": "string|remote_device_add_empty_refresh|5Yi35paw",
+          "sourceLineSha256Utf8": "1453fa095225fc858e38f9cb3a6ba9a293dbfc294ec8525a36d3a659586462c3",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "empty"
+          ],
+          "text": "刷新",
+          "placeholders": [],
+          "sha256Utf8": "aee88743413144a2ec6c48e348628142cd063832fdb5f1e91242ce7808cee96a"
+        },
+        "default": {
+          "kind": "string",
+          "key": "remote_device_add_empty_refresh",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1594,
+          "rawSourceLine": "string|remote_device_add_empty_refresh|UmVmcmVzaA==",
+          "sourceLineSha256Utf8": "361e0fde53630c115a79a693f48c66266c2f23417256660ff600699d2b390ba8",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "empty"
+          ],
+          "text": "Refresh",
+          "placeholders": [],
+          "sha256Utf8": "0e91610117029a62a478b7fa7df0b8598bebe3ab1e192d4b1882e310719c9671"
+        }
+      }
+    },
+    {
+      "category": "empty",
+      "key": "task_center_empty_title",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "task_center_empty_title",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 2070,
+          "rawSourceLine": "string|task_center_empty_title|5Yib5bu65a6a5pe25Lu75Yqh",
+          "sourceLineSha256Utf8": "db1d5e5fb470f7d977abaf3e92214b03aecb83d05e0aa4236213b734a4f55226",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "empty"
+          ],
+          "text": "创建定时任务",
+          "placeholders": [],
+          "sha256Utf8": "edd706c30eb4e6b008350b855dc088ea1123eb478265e8bfffa4e95762f5b662"
+        },
+        "default": {
+          "kind": "string",
+          "key": "task_center_empty_title",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 2070,
+          "rawSourceLine": "string|task_center_empty_title|Q3JlYXRlIGEgc2NoZWR1bGVkIHRhc2s=",
+          "sourceLineSha256Utf8": "431a29c65238c9f50a32657ba2cd7e83089e6deb155c180b0e108ddf6d9c645c",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "empty"
+          ],
+          "text": "Create a scheduled task",
+          "placeholders": [],
+          "sha256Utf8": "afc9537f6ebd396978defd3f42ed6b5763e043e6c38f1a155e7c179f0e7d77f1"
+        }
+      }
+    },
+    {
+      "category": "empty",
+      "key": "task_center_empty_desc",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "task_center_empty_desc",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 2068,
+          "rawSourceLine": "string|task_center_empty_desc|6Kej5pS+5Y+M5omL77yMS2ltaSDmjInpooTorr7ml7bpl7Toh6rliqjmiafooYzku7vliqEK6IKh56Wo5Y+Y5Yqo5a6a5pe25oqT5Y+W44CB5paw6Ze75a6a5pe25pS26ZuG44CB5Lmg5oOv5YW75oiQ5o+Q6YaS",
+          "sourceLineSha256Utf8": "209b6537e9e7cfad6777d7f4140848a92f0f34c2e86322eeff7cf07cba8be711",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "empty"
+          ],
+          "text": "解放双手，Kimi 按预设时间自动执行任务\n股票变动定时抓取、新闻定时收集、习惯养成提醒",
+          "placeholders": [],
+          "sha256Utf8": "d268cbc7f57abefe1e17f1002dd0d0a10644d4c48aab73fd8392689fddd22413"
+        },
+        "default": {
+          "kind": "string",
+          "key": "task_center_empty_desc",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 2068,
+          "rawSourceLine": "string|task_center_empty_desc|R28gaGFuZHMtZnJlZSDigJQgS2ltaSBydW5zIHRhc2tzIGF1dG9tYXRpY2FsbHkgYXQgcHJlc2V0IHRpbWVzClNjaGVkdWxlIHN0b2NrIHRyYWNraW5nLCBjb2xsZWN0IG5ld3MgYXV0b21hdGljYWxseSwgYW5kIGdldCBoYWJpdC1idWlsZGluZyByZW1pbmRlcnM=",
+          "sourceLineSha256Utf8": "27668af5d0156e8d2994f52162959e0a666047286a0293871015e96184fd8cb4",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "empty"
+          ],
+          "text": "Go hands-free — Kimi runs tasks automatically at preset times\nSchedule stock tracking, collect news automatically, and get habit-building reminders",
+          "placeholders": [],
+          "sha256Utf8": "03eeba148e6ba657805bb3b65aab316dd7008ad6e216f95a4f89a756b51179e2"
+        }
+      }
+    },
+    {
+      "category": "empty",
+      "key": "task_center_empty_via_chat",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "task_center_empty_via_chat",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 2071,
+          "rawSourceLine": "string|task_center_empty_via_chat|6YCa6L+H5Lya6K+d5Yib5bu6",
+          "sourceLineSha256Utf8": "0de21586b71656c773e73bf33ac3d29efb53aa007a044e1fbad477431f702857",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "empty"
+          ],
+          "text": "通过会话创建",
+          "placeholders": [],
+          "sha256Utf8": "322cf4107e45b4ae3b74068ded86010a1d70095e04fe94ee613d7c33eb885d60"
+        },
+        "default": {
+          "kind": "string",
+          "key": "task_center_empty_via_chat",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 2071,
+          "rawSourceLine": "string|task_center_empty_via_chat|Q3JlYXRlIHZpYSBjaGF0",
+          "sourceLineSha256Utf8": "aa2ede23af394cee604ac0d950a88a3daaacfd7d36425124414e760ebb2f8540",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "empty"
+          ],
+          "text": "Create via chat",
+          "placeholders": [],
+          "sha256Utf8": "b1df15a3d6e9d9251e18b0b752432b90f83ecba7c9be916faefde410f81955de"
+        }
+      }
+    },
+    {
+      "category": "permission",
+      "key": "permission_popup_audio_title",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "permission_popup_audio_title",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1256,
+          "rawSourceLine": "string|permission_popup_audio_title|S2ltaSDnlLPor7fpuqblhYvpo47mnYPpmZDor7TmmI4=",
+          "sourceLineSha256Utf8": "30631948f2fb73e5f0d95309b089cc07907f71ce3f6cce0cd3d8b2b85035b492",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "permission"
+          ],
+          "text": "Kimi 申请麦克风权限说明",
+          "placeholders": [],
+          "sha256Utf8": "b53cda3f42bb8fd44bdb558755200e09792102e37dde4888db9b930bd3fb3388"
+        },
+        "default": {
+          "kind": "string",
+          "key": "permission_popup_audio_title",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1256,
+          "rawSourceLine": "string|permission_popup_audio_title|S2ltaSBSZXF1ZXN0cyBNaWNyb3Bob25lIFBlcm1pc3Npb24=",
+          "sourceLineSha256Utf8": "8e52a481d56c6422a221f03e082ce8c18ec5b43e19763980b39c9e4de5bfb1e9",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "permission"
+          ],
+          "text": "Kimi Requests Microphone Permission",
+          "placeholders": [],
+          "sha256Utf8": "0922e6c0289bc087b77ced78de29da6aa2c712b77c997656a3aa47cd6da9bd28"
+        }
+      }
+    },
+    {
+      "category": "permission",
+      "key": "permission_popup_audio_content",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "permission_popup_audio_content",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1255,
+          "rawSourceLine": "string|permission_popup_audio_content|55So5LqO6K+t6Z+z6L6T5YWl6K+G5Yir5Zy65pmv77yM6Iul5LiN5o6I5LqI6K+l5p2D6ZmQ77yM5L2g5bCG5peg5rOV5L2/55So6K+l5Yqf6IO9",
+          "sourceLineSha256Utf8": "9b661968ae5b00ffa84403a796fd09b3ca3311c06c0bdb0e4fdc0a9861066c55",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "permission"
+          ],
+          "text": "用于语音输入识别场景，若不授予该权限，你将无法使用该功能",
+          "placeholders": [],
+          "sha256Utf8": "4717ff3099d5c218d911a76707ceca9751b87cea0f1eca68502c259f2a9ddf0f"
+        },
+        "default": {
+          "kind": "string",
+          "key": "permission_popup_audio_content",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1255,
+          "rawSourceLine": "string|permission_popup_audio_content|Rm9yIHZvaWNlIGlucHV0IHJlY29nbml0aW9uLiBJZiB5b3UgZG8gbm90IGdyYW50IHRoaXMgcGVybWlzc2lvbiwgeW91IHdpbGwgbm90IGJlIGFibGUgdG8gdXNlIHRoaXMgZmVhdHVyZQ==",
+          "sourceLineSha256Utf8": "efd7d2300bdb0ba1cc9c1e3f44c002c03255d9edc9f77bc157f5317076953c3c",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "permission"
+          ],
+          "text": "For voice input recognition. If you do not grant this permission, you will not be able to use this feature",
+          "placeholders": [],
+          "sha256Utf8": "d09721f752bae1616a3a2e2eea0b6f95ac5d8008d9a9495dc832c4aa63c75405"
+        }
+      }
+    },
+    {
+      "category": "permission",
+      "key": "permission_popup_camera_content",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "permission_popup_camera_content",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1259,
+          "rawSourceLine": "string|permission_popup_camera_content|55So5LqO5ouN54Wn6K+G5Yir5Zy65pmv77yM6Iul5LiN5o6I5LqI6K+l5p2D6ZmQ77yM5L2g5bCG5peg5rOV5L2/55So6K+l5Yqf6IO9",
+          "sourceLineSha256Utf8": "328d1bc7cdb7233c40e333ce2ca66b388395dff31508bb68b45ce13a918514e2",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "permission"
+          ],
+          "text": "用于拍照识别场景，若不授予该权限，你将无法使用该功能",
+          "placeholders": [],
+          "sha256Utf8": "0145157e9540b3687430f6e34739de863c57e17459320032133ce1a9db375e94"
+        },
+        "default": {
+          "kind": "string",
+          "key": "permission_popup_camera_content",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1259,
+          "rawSourceLine": "string|permission_popup_camera_content|Rm9yIHBob3RvIHJlY29nbml0aW9uLiBJZiB5b3UgZG8gbm90IGdyYW50IHRoaXMgcGVybWlzc2lvbiwgeW91IHdpbGwgbm90IGJlIGFibGUgdG8gdXNlIHRoaXMgZmVhdHVyZQ==",
+          "sourceLineSha256Utf8": "12e49034519b1e2470b56a6052b5775483d754d5b4e056c80c7472a4511ee298",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "permission"
+          ],
+          "text": "For photo recognition. If you do not grant this permission, you will not be able to use this feature",
+          "placeholders": [],
+          "sha256Utf8": "72c82a78601d99317cdad76f3831df5faaadb8a8306ad5cf1403a4d56ce0272c"
+        }
+      }
+    },
+    {
+      "category": "permission",
+      "key": "permission_popup_lbs_content",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "permission_popup_lbs_content",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1261,
+          "rawSourceLine": "string|permission_popup_lbs_content|55So5LqO5o+Q5L6b5Z+65LqO5Zyw55CG5L2N572u55qE5pyN5Yqh77yM5q+U5aaC77ya5pCc57Si5ZGo6L655L+h5oGv77yM6Lev57q/6KeE5YiS77yM5o+Q5L6b5Z+65LqO5Zyw55CG5L2N572u55qE5YaF5a65",
+          "sourceLineSha256Utf8": "d928c8190042bc7889995fafcbfa209639fa1fc1b55536fc0eec196f3b8c4349",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "permission"
+          ],
+          "text": "用于提供基于地理位置的服务，比如：搜索周边信息，路线规划，提供基于地理位置的内容",
+          "placeholders": [],
+          "sha256Utf8": "4319840400dd77d2b4a92915fea2a93a8ffa23e44d16fb9063a3d27473ba93ea"
+        },
+        "default": {
+          "kind": "string",
+          "key": "permission_popup_lbs_content",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1261,
+          "rawSourceLine": "string|permission_popup_lbs_content|VXNlZCB0byBvZmZlciBsb2NhdGlvbi1iYXNlZCBzZXJ2aWNlcyBsaWtlIG5lYXJieSBzZWFyY2gsIHJvdXRlIHBsYW5uaW5nLCBhbmQgcGVyc29uYWxpemVkIGNvbnRlbnQgYmFzZWQgb24geW91ciBsb2NhdGlvbg==",
+          "sourceLineSha256Utf8": "8ba5b8485fcd3567eea56a193f3c6c253a6234c7b372acc02c03849d2c2ffaac",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "permission"
+          ],
+          "text": "Used to offer location-based services like nearby search, route planning, and personalized content based on your location",
+          "placeholders": [],
+          "sha256Utf8": "f087a6ccfd4b53b26694a78e2f74cb5ca4d6ef76f0e000f4fce968aaa5ddd632"
+        }
+      }
+    },
+    {
+      "category": "permission",
+      "key": "open_notification_settings_description",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "open_notification_settings_description",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1237,
+          "rawSourceLine": "string|open_notification_settings_description|5omT5byA57O757uf6YCa55+l77yM5Lu75Yqh5a6M5oiQ5ZCO5bCG56ys5LiA5pe26Ze06YCa55+l5L2g",
+          "sourceLineSha256Utf8": "9ff8540d8a4174413d17f133c344f642685e7d4dacdbad72abd6b48a280f97c4",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "permission"
+          ],
+          "text": "打开系统通知，任务完成后将第一时间通知你",
+          "placeholders": [],
+          "sha256Utf8": "57e01004df0b40d06e6e358aa0b9f20076ec65e96a7bc3ce7e3fce6480995bca"
+        },
+        "default": {
+          "kind": "string",
+          "key": "open_notification_settings_description",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1237,
+          "rawSourceLine": "string|open_notification_settings_description|VHVybiBvbiBub3RpZmljYXRpb25zIHRvIGJlIGFsZXJ0ZWQgYXMgc29vbiBhcyB5b3VyIHRhc2sgaXMgZG9uZQ==",
+          "sourceLineSha256Utf8": "eda9aa6e959208c7c17ecf8528b2a538eb672621ee289a3a906dbfc6bdf04cdf",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "permission"
+          ],
+          "text": "Turn on notifications to be alerted as soon as your task is done",
+          "placeholders": [],
+          "sha256Utf8": "0c5f7555779e1f89595d69ac22214ab6c57805d3e3964c6caae03c1cfe0ff8bb"
+        }
+      }
+    },
+    {
+      "category": "error",
+      "key": "chat_error_screen_title",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "chat_error_screen_title",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 262,
+          "rawSourceLine": "string|chat_error_screen_title|572R57uc5Yqg6L295aSx6LSlCuivt+ajgOafpee9kee7nOWQjuWGjemHjeivlQ==",
+          "sourceLineSha256Utf8": "05ec7ca4a707c5fd412ee62ec4706836cdfe2c630bc3e30a47dd9640c5a78eaf",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "error"
+          ],
+          "text": "网络加载失败\n请检查网络后再重试",
+          "placeholders": [],
+          "sha256Utf8": "3112274877022106f97c53174c14df22465c13f73fc492dfa1ab5f07c0869667"
+        },
+        "default": {
+          "kind": "string",
+          "key": "chat_error_screen_title",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 262,
+          "rawSourceLine": "string|chat_error_screen_title|TmV0d29yayBsb2FkaW5nIGZhaWxlZApQbGVhc2UgY2hlY2sgeW91ciBuZXR3b3JrIGFuZCB0cnkgYWdhaW4=",
+          "sourceLineSha256Utf8": "a4d0f609e6f8d20799e48222c2849fcf3546c2cad63b9f9ca53b2216f2c2137c",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "error"
+          ],
+          "text": "Network loading failed\nPlease check your network and try again",
+          "placeholders": [],
+          "sha256Utf8": "2de551793efbf18671e83e95fc98114ffc4e3a02c0bfbb265d99ea1ae46d7c4f"
+        }
+      }
+    },
+    {
+      "category": "error",
+      "key": "connection_error_and_retry",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "connection_error_and_retry",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 450,
+          "rawSourceLine": "string|connection_error_and_retry|6L+e5o6l5byC5bi477yM6K+354K55Ye76YeN6K+V",
+          "sourceLineSha256Utf8": "3c041f9f7255a5cdcbe0537a33b0119fe83c58b86bd3f7dfa1fd850f45e0d1bc",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "error"
+          ],
+          "text": "连接异常，请点击重试",
+          "placeholders": [],
+          "sha256Utf8": "5c5cc874f05fe201f6601fd81355913d4d57aca9d63c888851fbf911e83e1121"
+        },
+        "default": {
+          "kind": "string",
+          "key": "connection_error_and_retry",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 450,
+          "rawSourceLine": "string|connection_error_and_retry|Q29ubmVjdGlvbiBlcnJvci4gVGFwIHRvIHJldHJ5",
+          "sourceLineSha256Utf8": "db98ca10601bf3516583286261cf2c9cbc6aeeda9785b1b1ddc87251421479dd",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "error"
+          ],
+          "text": "Connection error. Tap to retry",
+          "placeholders": [],
+          "sha256Utf8": "5077fe10e98e697fc7a1f5a96772d0bf9fc61b04850b2c84cea7fa330251fd52"
+        }
+      }
+    },
+    {
+      "category": "error",
+      "key": "onboarding_bn06_save_failed",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "onboarding_bn06_save_failed",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1216,
+          "rawSourceLine": "string|onboarding_bn06_save_failed|5rKh6IO95L+d5a2Y77yM6K+36YeN6K+V44CC",
+          "sourceLineSha256Utf8": "fc1f5b9046e8c84e63776e43c0452889cc8c642bdacd02b481c2159282bcdaee",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "onboarding",
+            "error"
+          ],
+          "text": "没能保存，请重试。",
+          "placeholders": [],
+          "sha256Utf8": "7b5266ca5bc0f583e48bdda69cc3e7e2ba14735dfdd1ce20af0fa34b79e28c52"
+        },
+        "default": {
+          "kind": "string",
+          "key": "onboarding_bn06_save_failed",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1216,
+          "rawSourceLine": "string|onboarding_bn06_save_failed|Q291bGRu4oCZdCBzYXZlIHlvdXIgcHJlZmVyZW5jZXMuIFBsZWFzZSB0cnkgYWdhaW4u",
+          "sourceLineSha256Utf8": "35b247f8e7917c29f6061b0cb980a069514a720ec395ba72e01e837eeb5dea0e",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "onboarding",
+            "error"
+          ],
+          "text": "Couldn’t save your preferences. Please try again.",
+          "placeholders": [],
+          "sha256Utf8": "e59fda0eee8b5c2ec661731f1c6c348cb75383c2a1a66b72afa74005394c4c92"
+        }
+      }
+    },
+    {
+      "category": "error",
+      "key": "profile_name_update_empty",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "profile_name_update_empty",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1363,
+          "rawSourceLine": "string|profile_name_update_empty|5pi156ew5LiN6IO95Li656m6",
+          "sourceLineSha256Utf8": "f40fbe3fc888ea56e1bdd5d42a07af6237c4f3b685a1f8982ebe3e57ae33b9ec",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "empty"
+          ],
+          "text": "昵称不能为空",
+          "placeholders": [],
+          "sha256Utf8": "702f83ff44f34ece602a79c60b6e4810e0193aeca715f71f315389fc4c503e41"
+        },
+        "default": {
+          "kind": "string",
+          "key": "profile_name_update_empty",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1363,
+          "rawSourceLine": "string|profile_name_update_empty|Tmlja25hbWUgY2Fubm90IGJlIGVtcHR5",
+          "sourceLineSha256Utf8": "8ea52730f7dfccde1a9b570c6ff3dfd885dc7b547dd77c6e6bca53f9a8248251",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "empty"
+          ],
+          "text": "Nickname cannot be empty",
+          "placeholders": [],
+          "sha256Utf8": "8587e583cc9cc401e89e24948f076ac5ea75f47b14e3bbd42587e5dbaf3701bf"
+        }
+      }
+    },
+    {
+      "category": "error",
+      "key": "account_delete_verify_error_inline",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "account_delete_verify_error_inline",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 82,
+          "rawSourceLine": "string|account_delete_verify_error_inline|6K+36L6T5YWl5q2j56Gu55qE6aqM6K+B56CB",
+          "sourceLineSha256Utf8": "c2e3de0274752e8e39196e25ad68becfa6ec1ad264cebb3b1c6bcdfe307ee502",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "error",
+            "destructive"
+          ],
+          "text": "请输入正确的验证码",
+          "placeholders": [],
+          "sha256Utf8": "5429edf21879e989a7f521283e8abb934a2439b9b45898c7f9f3a300e6cadeb2"
+        },
+        "default": {
+          "kind": "string",
+          "key": "account_delete_verify_error_inline",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 82,
+          "rawSourceLine": "string|account_delete_verify_error_inline|UGxlYXNlIGVudGVyIHRoZSBjb3JyZWN0IGNvZGU=",
+          "sourceLineSha256Utf8": "34c28472ba355d7888ce15fabbca1f4da44178bf200e8ba6346d6b0c10c2701a",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "error",
+            "destructive"
+          ],
+          "text": "Please enter the correct code",
+          "placeholders": [],
+          "sha256Utf8": "d86893178225101283d71c3de249a5572b8165be114ef7df0c0a732ce14ec92b"
+        }
+      }
+    },
+    {
+      "category": "destructive",
+      "key": "delete_chat_tip",
+      "locales": {
+        "zh": {
+          "kind": "plurals",
+          "key": "delete_chat_tip",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 12,
+          "rawSourceLine": "plurals|delete_chat_tip|OTHER:5Yig6Zmk6YCJ5Lit55qEICUxJGQg5Liq5Lya6K+d",
+          "sourceLineSha256Utf8": "092191fe32fae0ee836552338d2b97f6c3f3964f5d4ba05cd40d2aa089d900f6",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "destructive"
+          ],
+          "quantities": [
+            {
+              "quantity": "OTHER",
+              "text": "删除选中的 %1$d 个会话",
+              "placeholders": [
+                {
+                  "token": "%1$d",
+                  "offsetUtf16": 6,
+                  "kind": "printf-candidate"
+                }
+              ],
+              "sha256Utf8": "44a2af626f9cac99600b150f3404e8a0685562afff74da2ba8683046fe275529"
+            }
+          ]
+        },
+        "default": {
+          "kind": "plurals",
+          "key": "delete_chat_tip",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 12,
+          "rawSourceLine": "plurals|delete_chat_tip|ONE:RGVsZXRlIHRoZSBzZWxlY3RlZCAlMSRkIGNoYXQ=,OTHER:RGVsZXRlIHRoZSBzZWxlY3RlZCAlMSRkIGNoYXRz",
+          "sourceLineSha256Utf8": "5387c5faf286b3799e824cfa72c7b45d0fb3f58c42ce8eea8e1b415011346d7a",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "destructive"
+          ],
+          "quantities": [
+            {
+              "quantity": "ONE",
+              "text": "Delete the selected %1$d chat",
+              "placeholders": [
+                {
+                  "token": "%1$d",
+                  "offsetUtf16": 20,
+                  "kind": "printf-candidate"
+                }
+              ],
+              "sha256Utf8": "b4c2e22e57ca6c269f94c17f8488550e09e600be52b8ee6772849476d692e56f"
+            },
+            {
+              "quantity": "OTHER",
+              "text": "Delete the selected %1$d chats",
+              "placeholders": [
+                {
+                  "token": "%1$d",
+                  "offsetUtf16": 20,
+                  "kind": "printf-candidate"
+                }
+              ],
+              "sha256Utf8": "a49aed9a843a741fc6f860b8f3033ba59b04173dde046a2a0c4e696781ecbe7b"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "category": "destructive",
+      "key": "queue_management_description_clear_consequence",
+      "locales": {
+        "zh": {
+          "kind": "plurals",
+          "key": "queue_management_description_clear_consequence",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 31,
+          "rawSourceLine": "plurals|queue_management_description_clear_consequence|OTHER:5piv5ZCm5riF56m6ICUxJGQg5p2h5o6S6Zif5raI5oGv77yf5riF56m65ZCO5LiN5Y+v5oGi5aSN",
+          "sourceLineSha256Utf8": "6cbe0ee735d714115e971a93319b967db40844ba29685dcda9a797286b5e2c25",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "destructive"
+          ],
+          "quantities": [
+            {
+              "quantity": "OTHER",
+              "text": "是否清空 %1$d 条排队消息？清空后不可恢复",
+              "placeholders": [
+                {
+                  "token": "%1$d",
+                  "offsetUtf16": 5,
+                  "kind": "printf-candidate"
+                }
+              ],
+              "sha256Utf8": "25b68c74db1670bb999fad600d74893944c74fb6f46ea091c9afeb402d026b53"
+            }
+          ]
+        },
+        "default": {
+          "kind": "plurals",
+          "key": "queue_management_description_clear_consequence",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 31,
+          "rawSourceLine": "plurals|queue_management_description_clear_consequence|ONE:Q2xlYXIgMSBxdWV1ZWQgbWVzc2FnZT8gVGhpcyBjYW4ndCBiZSB1bmRvbmU=,OTHER:Q2xlYXIgJTEkZCBxdWV1ZWQgbWVzc2FnZXM/IFRoaXMgY2FuJ3QgYmUgdW5kb25l",
+          "sourceLineSha256Utf8": "8ee951cb58529a06768985ef2370e5f440917e7e8da32a1a83c3fac001e0e311",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "destructive"
+          ],
+          "quantities": [
+            {
+              "quantity": "ONE",
+              "text": "Clear 1 queued message? This can't be undone",
+              "placeholders": [],
+              "sha256Utf8": "55e5fb62fe1df6007de30f1bf8efe9f310a12baa2fa074460a4ea28376cfc9b8"
+            },
+            {
+              "quantity": "OTHER",
+              "text": "Clear %1$d queued messages? This can't be undone",
+              "placeholders": [
+                {
+                  "token": "%1$d",
+                  "offsetUtf16": 6,
+                  "kind": "printf-candidate"
+                }
+              ],
+              "sha256Utf8": "e385bb638ed41691902cbbd7c337c7a39904ebdd8bfc66f48bd42ddcab6005a1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "category": "destructive",
+      "key": "close_will_be_invalid",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "close_will_be_invalid",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 415,
+          "rawSourceLine": "string|close_will_be_invalid|5YWz6Zet5ZCO5omA5pyJ57yW6L6R5YaF5a655bCG5Lya5aSx5pWI",
+          "sourceLineSha256Utf8": "1de257e74bf2b057e26bf9b86dcb1bb28dbb5aa28c5c80ad8173e676d7389c86",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "error"
+          ],
+          "text": "关闭后所有编辑内容将会失效",
+          "placeholders": [],
+          "sha256Utf8": "3849f96135beba64a8f2567c5e82854fd39970b5590753e2b99ff0eb2e4a4420"
+        },
+        "default": {
+          "kind": "string",
+          "key": "close_will_be_invalid",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 415,
+          "rawSourceLine": "string|close_will_be_invalid|QWxsIGVkaXRzIHdpbGwgYmUgbG9zdCBpZiB5b3UgY2xvc2U=",
+          "sourceLineSha256Utf8": "51f8f239485e8b39df6850c12de9481d31228afe503e28f6e853bcdbc26a519e",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "error"
+          ],
+          "text": "All edits will be lost if you close",
+          "placeholders": [],
+          "sha256Utf8": "09f56f896d0a10a203f7b6a6f034f5b4184f0fffeb59f78e558513eda8654fdf"
+        }
+      }
+    },
+    {
+      "category": "destructive",
+      "key": "account_delete_confirm_content",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "account_delete_confirm_content",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 60,
+          "rawSourceLine": "string|account_delete_confirm_content|54K55Ye75rOo6ZSA5ZCO77yM6LSm5Y+35bCG5ZyoJTEkc+WujOaIkOazqOmUgOOAguacn+mXtOiLpeWGjeasoeeZu+W9le+8jOazqOmUgOa1geeoi+WwhuiHquWKqOe7iOatouOAgue7p+e7reazqOmUgO+8jOWNs+inhuS4uuS9oOW3sumYheivu+W5tuWQjOaEjzxobD7jgIpLaW1pIOi0puWPt+azqOmUgOWNj+iuruOAizwvaGw+",
+          "sourceLineSha256Utf8": "709fef5137983603d6fe8912e45beb556ff560fb27668275c0f8a8725b037e66",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "destructive"
+          ],
+          "text": "点击注销后，账号将在%1$s完成注销。期间若再次登录，注销流程将自动终止。继续注销，即视为你已阅读并同意<hl>《Kimi 账号注销协议》</hl>",
+          "placeholders": [
+            {
+              "token": "%1$s",
+              "offsetUtf16": 10,
+              "kind": "printf-candidate"
+            }
+          ],
+          "sha256Utf8": "927c5cc6b45d36b0248e724f437ed8596d3edf8d47aada981266dcd2d4086519"
+        },
+        "default": {
+          "kind": "string",
+          "key": "account_delete_confirm_content",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 60,
+          "rawSourceLine": "string|account_delete_confirm_content|T25jZSB5b3UgY29uZmlybSwgeW91ciBhY2NvdW50IHdpbGwgYmUgZGVsZXRlZCBvbiAlMSRzLiBMb2dnaW5nIGluIGFnYWluIGJlZm9yZSB0aGF0IGRhdGUgd2lsbCBjYW5jZWwgdGhlIGRlbGV0aW9uLiBCeSBjb250aW51aW5nLCB5b3UgY29uZmlybSB0aGF0IHlvdSBoYXZlIHJlYWQgYW5kIGFncmVlIHRvIHRoZSA8aGw+S2ltaSBBY2NvdW50IERlbGV0aW9uIEFncmVlbWVudDwvaGw+Lg==",
+          "sourceLineSha256Utf8": "5c42ba8192a594c253d42ceef940bc799ea4a167522c504d3ac45793c8a40a17",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "destructive"
+          ],
+          "text": "Once you confirm, your account will be deleted on %1$s. Logging in again before that date will cancel the deletion. By continuing, you confirm that you have read and agree to the <hl>Kimi Account Deletion Agreement</hl>.",
+          "placeholders": [
+            {
+              "token": "%1$s",
+              "offsetUtf16": 50,
+              "kind": "printf-candidate"
+            }
+          ],
+          "sha256Utf8": "6cab55ecc71c5b03a8844fef7371a060a1c6c87bb286677095d5049fd90a6d5f"
+        }
+      }
+    },
+    {
+      "category": "destructive",
+      "key": "account_delete_confirm_desc",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "account_delete_confirm_desc",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 61,
+          "rawSourceLine": "string|account_delete_confirm_desc|5rOo6ZSA6LSm5Y+35ZCO77yM5YWo6YOo5L+h5oGv5bCG5Lya6KKr56e76Zmk77yM5LiU5peg5rOV5om+5Zue44CC5piv5ZCm56Gu6K6k6KaB5rOo6ZSA6LSm5Y+377yf6Iul56Gu6K6k5rOo6ZSA77yM6K+35Zyo5LiL5pa56L6T5YWl5qGG5Lit6L6T5YWl4oCc5bey55+l5pmT5bm256Gu6K6k5rOo6ZSA4oCd44CC",
+          "sourceLineSha256Utf8": "a958e5b363e91aee06634e116b1cbc1f63b24e76c2e624f88ec39e5552067731",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "destructive"
+          ],
+          "text": "注销账号后，全部信息将会被移除，且无法找回。是否确认要注销账号？若确认注销，请在下方输入框中输入“已知晓并确认注销”。",
+          "placeholders": [],
+          "sha256Utf8": "7109b5718b77eff6043316c1f4549d6736a3a824b7ae0a5c27f3656801eb8ec9"
+        },
+        "default": {
+          "kind": "string",
+          "key": "account_delete_confirm_desc",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 61,
+          "rawSourceLine": "string|account_delete_confirm_desc|QWxsIHlvdXIgZGF0YSB3aWxsIGJlIHBlcm1hbmVudGx5IGRlbGV0ZWQgYW5kIGNhbm5vdCBiZSByZWNvdmVyZWQuIERlbGV0ZSB5b3VyIGFjY291bnQ/IFR5cGUgIkkgdW5kZXJzdGFuZCBhbmQgY29uZmlybSBkZWxldGlvbiIgYmVsb3cgdG8gcHJvY2VlZC4=",
+          "sourceLineSha256Utf8": "7d5cc42e70202a07480860d9afb4a0bd75dd327db49584791fa51d8e1a89928a",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "destructive"
+          ],
+          "text": "All your data will be permanently deleted and cannot be recovered. Delete your account? Type \"I understand and confirm deletion\" below to proceed.",
+          "placeholders": [],
+          "sha256Utf8": "2ddc4d221c3596fb767210bee930f44030dceeb22449f94a91c82ef25c968f66"
+        }
+      }
+    },
+    {
+      "category": "destructive",
+      "key": "account_delete_pending_dialog_keep",
+      "locales": {
+        "zh": {
+          "kind": "string",
+          "key": "account_delete_pending_dialog_keep",
+          "locale": "zh",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 67,
+          "rawSourceLine": "string|account_delete_pending_dialog_keep|5L+d5oyB5rOo6ZSA",
+          "sourceLineSha256Utf8": "343b554a638c6e22149cf9062fb77e69ce43a5fa17536fd985c2fa69c856405e",
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "destructive"
+          ],
+          "text": "保持注销",
+          "placeholders": [],
+          "sha256Utf8": "e135a956c756d840e3466eccb87ef8bba01b2514c4c418b52af4b908bdc9ef86"
+        },
+        "default": {
+          "kind": "string",
+          "key": "account_delete_pending_dialog_keep",
+          "locale": "default",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 67,
+          "rawSourceLine": "string|account_delete_pending_dialog_keep|Q2FuY2Vs",
+          "sourceLineSha256Utf8": "1d6857fcf8a624f417af7e2586fbc8b765ecddf17f2a8c64b13914174cb8679a",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "classification": "B",
+          "origin": "current",
+          "occurrenceConditions": "unknown; packaged resource, runtime use and trigger not verified",
+          "categoryCandidates": [
+            "destructive"
+          ],
+          "text": "Cancel",
+          "placeholders": [],
+          "sha256Utf8": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27"
+        }
+      }
+    }
+  ]
+}

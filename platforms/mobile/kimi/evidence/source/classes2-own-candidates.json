@@ -1,0 +1,5074 @@
+{
+  "source": "classes2.dex",
+  "evidenceLevel": "C: feature candidates inferred only from class/method names; B: identifiers and source offsets",
+  "classes": [
+    {
+      "descriptor": "Lcom/moonshot/kimichat/KimiApplication;",
+      "super": "Landroid/app/Application;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000001",
+      "classDefOffset": 1516624,
+      "classDataOffset": 12384817,
+      "methods": [
+        {
+          "index": 16173,
+          "class": "Lcom/moonshot/kimichat/KimiApplication;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040504,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3778896
+        },
+        {
+          "index": 16174,
+          "class": "Lcom/moonshot/kimichat/KimiApplication;",
+          "name": "getSystemService",
+          "prototype": {
+            "returnType": "Ljava/lang/Object;",
+            "parameters": [
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1040512,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3778724
+        },
+        {
+          "index": 16175,
+          "class": "Lcom/moonshot/kimichat/KimiApplication;",
+          "name": "onConfigurationChanged",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/res/Configuration;"
+            ]
+          },
+          "sourceOffset": 1040520,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3778920
+        },
+        {
+          "index": 16176,
+          "class": "Lcom/moonshot/kimichat/KimiApplication;",
+          "name": "onCreate",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040528,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3779024
+        },
+        {
+          "index": 16177,
+          "class": "Lcom/moonshot/kimichat/KimiApplication;",
+          "name": "onTrimMemory",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "I"
+            ]
+          },
+          "sourceOffset": 1040536,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3783048
+        },
+        {
+          "index": 16178,
+          "class": "Lcom/moonshot/kimichat/KimiApplication;",
+          "name": "startActivities",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "[Landroid/content/Intent;"
+            ]
+          },
+          "sourceOffset": 1040544,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3783224
+        },
+        {
+          "index": 16179,
+          "class": "Lcom/moonshot/kimichat/KimiApplication;",
+          "name": "startActivities",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "[Landroid/content/Intent;",
+              "Landroid/os/Bundle;"
+            ]
+          },
+          "sourceOffset": 1040552,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3783284
+        },
+        {
+          "index": 16180,
+          "class": "Lcom/moonshot/kimichat/KimiApplication;",
+          "name": "startActivity",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Intent;"
+            ]
+          },
+          "sourceOffset": 1040560,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3783344
+        },
+        {
+          "index": 16181,
+          "class": "Lcom/moonshot/kimichat/KimiApplication;",
+          "name": "startActivity",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Intent;",
+              "Landroid/os/Bundle;"
+            ]
+          },
+          "sourceOffset": 1040568,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3783384
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/MainActivity;",
+      "super": "Lns/a;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1516688,
+      "classDataOffset": 12384952,
+      "methods": [
+        {
+          "index": 16182,
+          "class": "Lcom/moonshot/kimichat/MainActivity;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040576,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3783424
+        },
+        {
+          "index": 16183,
+          "class": "Lcom/moonshot/kimichat/MainActivity;",
+          "name": "F",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lu9/a0;",
+              "Lcom/moonshot/kimichat/MainActivity;",
+              "Lo10/t1;"
+            ]
+          },
+          "sourceOffset": 1040584,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3783468
+        },
+        {
+          "index": 16184,
+          "class": "Lcom/moonshot/kimichat/MainActivity;",
+          "name": "onCreate",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/os/Bundle;"
+            ]
+          },
+          "sourceOffset": 1040592,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3783584
+        },
+        {
+          "index": 16185,
+          "class": "Lcom/moonshot/kimichat/MainActivity;",
+          "name": "onNewIntent",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Intent;"
+            ]
+          },
+          "sourceOffset": 1040600,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3784188
+        },
+        {
+          "index": 16186,
+          "class": "Lcom/moonshot/kimichat/MainActivity;",
+          "name": "onPause",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040608,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3784304
+        },
+        {
+          "index": 16187,
+          "class": "Lcom/moonshot/kimichat/MainActivity;",
+          "name": "onResume",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040616,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3784336
+        },
+        {
+          "index": 16188,
+          "class": "Lcom/moonshot/kimichat/MainActivity;",
+          "name": "onSaveInstanceState",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/os/Bundle;"
+            ]
+          },
+          "sourceOffset": 1040624,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3784392
+        },
+        {
+          "index": 16189,
+          "class": "Lcom/moonshot/kimichat/MainActivity;",
+          "name": "onStart",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040632,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3784608
+        },
+        {
+          "index": 16190,
+          "class": "Lcom/moonshot/kimichat/MainActivity;",
+          "name": "setRequestedOrientation",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "I"
+            ]
+          },
+          "sourceOffset": 1040640,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3784656
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+      "super": "Ljava/lang/Object;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000401",
+      "classDefOffset": 1516720,
+      "classDataOffset": 12385025,
+      "methods": [
+        {
+          "index": 16248,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "<clinit>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1041104,
+          "accessFlags": "0x00010008",
+          "codeOffset": 3789072
+        },
+        {
+          "index": 16249,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Ljava/lang/String;",
+              "Z",
+              "Ljava/lang/Object;",
+              "Ljava/lang/String;",
+              "Lbs/a;",
+              "Lh80/w;"
+            ]
+          },
+          "sourceOffset": 1041112,
+          "accessFlags": "0x00010002",
+          "codeOffset": 3789184
+        },
+        {
+          "index": 16250,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Ljava/lang/String;",
+              "Z",
+              "Ljava/lang/Object;",
+              "Ljava/lang/String;",
+              "Lbs/a;",
+              "Lh80/w;",
+              "I",
+              "Lkotlin/jvm/internal/g;"
+            ]
+          },
+          "sourceOffset": 1041120,
+          "accessFlags": "0x00011001",
+          "codeOffset": 3789284
+        },
+        {
+          "index": 16251,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Ljava/lang/String;",
+              "Z",
+              "Ljava/lang/Object;",
+              "Ljava/lang/String;",
+              "Lbs/a;",
+              "Lh80/w;",
+              "Lkotlin/jvm/internal/g;"
+            ]
+          },
+          "sourceOffset": 1041128,
+          "accessFlags": "0x00011001",
+          "codeOffset": 3789356
+        },
+        {
+          "index": 16252,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "a",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lbs/a;",
+              "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1041136,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3788108
+        },
+        {
+          "index": 16253,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "access$getEntries$cp",
+          "prototype": {
+            "returnType": "Ljava/util/List;",
+            "parameters": []
+          },
+          "sourceOffset": 1041144,
+          "accessFlags": "0x00001019",
+          "codeOffset": 3789048
+        },
+        {
+          "index": 16257,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "debugValueText$shared_release$default",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+              "Ljava/lang/Object;",
+              "I",
+              "Ljava/lang/Object;"
+            ]
+          },
+          "sourceOffset": 1041176,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3788176
+        },
+        {
+          "index": 16266,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "setData$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lbs/a;",
+              "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1041248,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3788656
+        },
+        {
+          "index": 16254,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "asState",
+          "prototype": {
+            "returnType": "Lb3/j1;",
+            "parameters": []
+          },
+          "sourceOffset": 1041152,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3787988
+        },
+        {
+          "index": 16255,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "cacheKey",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1041160,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3788136
+        },
+        {
+          "index": 16256,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "debugValueText$shared_release",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Ljava/lang/Object;"
+            ]
+          },
+          "sourceOffset": 1041168,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3788244
+        },
+        {
+          "index": 16258,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "debugValueType$shared_release",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": []
+          },
+          "sourceOffset": 1041184,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3788456
+        },
+        {
+          "index": 16259,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "getDefaultValue",
+          "prototype": {
+            "returnType": "Ljava/lang/Object;",
+            "parameters": []
+          },
+          "sourceOffset": 1041192,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3788084
+        },
+        {
+          "index": 16260,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "getDescription",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": []
+          },
+          "sourceOffset": 1041200,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3788608
+        },
+        {
+          "index": 16261,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "getDiskCache",
+          "prototype": {
+            "returnType": "Z",
+            "parameters": []
+          },
+          "sourceOffset": 1041208,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3788012
+        },
+        {
+          "index": 16262,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "getKType",
+          "prototype": {
+            "returnType": "Lh80/w;",
+            "parameters": []
+          },
+          "sourceOffset": 1041216,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3788060
+        },
+        {
+          "index": 16263,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "getKey",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": []
+          },
+          "sourceOffset": 1041224,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3788632
+        },
+        {
+          "index": 16264,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "getSource",
+          "prototype": {
+            "returnType": "Lbs/a;",
+            "parameters": []
+          },
+          "sourceOffset": 1041232,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3788036
+        },
+        {
+          "index": 16265,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "setData",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Ljava/lang/String;",
+              "Lbs/a;"
+            ]
+          },
+          "sourceOffset": 1041240,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3789380
+        },
+        {
+          "index": 16267,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "setSource",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lbs/a;"
+            ]
+          },
+          "sourceOffset": 1041256,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3789736
+        },
+        {
+          "index": 16268,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+          "name": "validateDebugValue$shared_release",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1041264,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3788740
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$APMSwitch;",
+      "super": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1516752,
+      "classDataOffset": 12385192,
+      "methods": [
+        {
+          "index": 16191,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$APMSwitch;",
+          "name": "<clinit>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040648,
+          "accessFlags": "0x00010008",
+          "codeOffset": 3785836
+        },
+        {
+          "index": 16192,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$APMSwitch;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040656,
+          "accessFlags": "0x00010002",
+          "codeOffset": 3785876
+        },
+        {
+          "index": 16193,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$APMSwitch;",
+          "name": "equals",
+          "prototype": {
+            "returnType": "Z",
+            "parameters": [
+              "Ljava/lang/Object;"
+            ]
+          },
+          "sourceOffset": 1040664,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3785748
+        },
+        {
+          "index": 16194,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$APMSwitch;",
+          "name": "hashCode",
+          "prototype": {
+            "returnType": "I",
+            "parameters": []
+          },
+          "sourceOffset": 1040672,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3785788
+        },
+        {
+          "index": 16195,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$APMSwitch;",
+          "name": "toString",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": []
+          },
+          "sourceOffset": 1040680,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3785812
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$CameraHint;",
+      "super": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1516784,
+      "classDataOffset": 12385237,
+      "methods": [
+        {
+          "index": 16196,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$CameraHint;",
+          "name": "<clinit>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040688,
+          "accessFlags": "0x00010008",
+          "codeOffset": 3786016
+        },
+        {
+          "index": 16197,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$CameraHint;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040696,
+          "accessFlags": "0x00010002",
+          "codeOffset": 3786056
+        },
+        {
+          "index": 16198,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$CameraHint;",
+          "name": "equals",
+          "prototype": {
+            "returnType": "Z",
+            "parameters": [
+              "Ljava/lang/Object;"
+            ]
+          },
+          "sourceOffset": 1040704,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3785928
+        },
+        {
+          "index": 16199,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$CameraHint;",
+          "name": "hashCode",
+          "prototype": {
+            "returnType": "I",
+            "parameters": []
+          },
+          "sourceOffset": 1040712,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3785968
+        },
+        {
+          "index": 16200,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$CameraHint;",
+          "name": "toString",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": []
+          },
+          "sourceOffset": 1040720,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3785992
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$Companion;",
+      "super": "Ljava/lang/Object;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1516816,
+      "classDataOffset": 12385282,
+      "methods": [
+        {
+          "index": 16201,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$Companion;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040728,
+          "accessFlags": "0x00010002",
+          "codeOffset": 3786168
+        },
+        {
+          "index": 16202,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$Companion;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lkotlin/jvm/internal/g;"
+            ]
+          },
+          "sourceOffset": 1040736,
+          "accessFlags": "0x00011001",
+          "codeOffset": 3786192
+        },
+        {
+          "index": 16203,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$Companion;",
+          "name": "getEntries",
+          "prototype": {
+            "returnType": "Ljava/util/List;",
+            "parameters": []
+          },
+          "sourceOffset": 1040744,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3786140
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$DisablePlugin;",
+      "super": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1516848,
+      "classDataOffset": 12385310,
+      "methods": [
+        {
+          "index": 16204,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$DisablePlugin;",
+          "name": "<clinit>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040752,
+          "accessFlags": "0x00010008",
+          "codeOffset": 3786304
+        },
+        {
+          "index": 16205,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$DisablePlugin;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040760,
+          "accessFlags": "0x00010002",
+          "codeOffset": 3786344
+        },
+        {
+          "index": 16206,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$DisablePlugin;",
+          "name": "equals",
+          "prototype": {
+            "returnType": "Z",
+            "parameters": [
+              "Ljava/lang/Object;"
+            ]
+          },
+          "sourceOffset": 1040768,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3786216
+        },
+        {
+          "index": 16207,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$DisablePlugin;",
+          "name": "hashCode",
+          "prototype": {
+            "returnType": "I",
+            "parameters": []
+          },
+          "sourceOffset": 1040776,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3786256
+        },
+        {
+          "index": 16208,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$DisablePlugin;",
+          "name": "toString",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": []
+          },
+          "sourceOffset": 1040784,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3786280
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$DomainBlock;",
+      "super": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1516880,
+      "classDataOffset": 12385355,
+      "methods": [
+        {
+          "index": 16209,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$DomainBlock;",
+          "name": "<clinit>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040792,
+          "accessFlags": "0x00010008",
+          "codeOffset": 3786488
+        },
+        {
+          "index": 16210,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$DomainBlock;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040800,
+          "accessFlags": "0x00010002",
+          "codeOffset": 3786528
+        },
+        {
+          "index": 16211,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$DomainBlock;",
+          "name": "equals",
+          "prototype": {
+            "returnType": "Z",
+            "parameters": [
+              "Ljava/lang/Object;"
+            ]
+          },
+          "sourceOffset": 1040808,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3786400
+        },
+        {
+          "index": 16212,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$DomainBlock;",
+          "name": "hashCode",
+          "prototype": {
+            "returnType": "I",
+            "parameters": []
+          },
+          "sourceOffset": 1040816,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3786440
+        },
+        {
+          "index": 16213,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$DomainBlock;",
+          "name": "toString",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": []
+          },
+          "sourceOffset": 1040824,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3786464
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$HasClawGroup;",
+      "super": "Lcom/moonshot/kimichat/abconfig/KimiABVariables;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1516912,
+      "classDataOffset": 12385400,
+      "methods": [
+        {
+          "index": 16214,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$HasClawGroup;",
+          "name": "<clinit>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040832,
+          "accessFlags": "0x00010008",
+          "codeOffset": 3786668
+        },
+        {
+          "index": 16215,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$HasClawGroup;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040840,
+          "accessFlags": "0x00010002",
+          "codeOffset": 3786708
+        },
+        {
+          "index": 16216,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$HasClawGroup;",
+          "name": "equals",
+          "prototype": {
+            "returnType": "Z",
+            "parameters": [
+              "Ljava/lang/Object;"
+            ]
+          },
+          "sourceOffset": 1040848,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3786580
+        },
+        {
+          "index": 16217,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$HasClawGroup;",
+          "name": "hashCode",
+          "prototype": {
+            "returnType": "I",
+            "parameters": []
+          },
+          "sourceOffset": 1040856,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3786620
+        },
+        {
+          "index": 16218,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$HasClawGroup;",
+          "name": "toString",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": []
+          },
+          "sourceOffset": 1040864,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3786644
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig$$serializer;",
+      "super": "Ljava/lang/Object;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00001011",
+      "classDefOffset": 1516944,
+      "classDataOffset": 12385445,
+      "methods": [
+        {
+          "index": 16219,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig$$serializer;",
+          "name": "<clinit>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040872,
+          "accessFlags": "0x00010008",
+          "codeOffset": 3786952
+        },
+        {
+          "index": 16220,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig$$serializer;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040880,
+          "accessFlags": "0x00010002",
+          "codeOffset": 3787036
+        },
+        {
+          "index": 16221,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig$$serializer;",
+          "name": "childSerializers",
+          "prototype": {
+            "returnType": "[Lzb0/a;",
+            "parameters": []
+          },
+          "sourceOffset": 1040888,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3787152
+        },
+        {
+          "index": 16222,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig$$serializer;",
+          "name": "deserialize",
+          "prototype": {
+            "returnType": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+            "parameters": [
+              "Lcc0/c;"
+            ]
+          },
+          "sourceOffset": 1040896,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3786784
+        },
+        {
+          "index": 16223,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig$$serializer;",
+          "name": "deserialize",
+          "prototype": {
+            "returnType": "Ljava/lang/Object;",
+            "parameters": [
+              "Lcc0/c;"
+            ]
+          },
+          "sourceOffset": 1040904,
+          "accessFlags": "0x00001041",
+          "codeOffset": 3786924
+        },
+        {
+          "index": 16224,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig$$serializer;",
+          "name": "getDescriptor",
+          "prototype": {
+            "returnType": "Lbc0/g;",
+            "parameters": []
+          },
+          "sourceOffset": 1040912,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3786760
+        },
+        {
+          "index": 16225,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig$$serializer;",
+          "name": "serialize",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lcc0/d;",
+              "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;"
+            ]
+          },
+          "sourceOffset": 1040920,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3787060
+        },
+        {
+          "index": 16226,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig$$serializer;",
+          "name": "serialize",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lcc0/d;",
+              "Ljava/lang/Object;"
+            ]
+          },
+          "sourceOffset": 1040928,
+          "accessFlags": "0x00001041",
+          "codeOffset": 3787124
+        },
+        {
+          "index": 16227,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig$$serializer;",
+          "name": "typeParametersSerializers",
+          "prototype": {
+            "returnType": "[Lzb0/a;",
+            "parameters": []
+          },
+          "sourceOffset": 1040936,
+          "accessFlags": "0x00000041",
+          "codeOffset": 3787192
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig$Companion;",
+      "super": "Ljava/lang/Object;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1516976,
+      "classDataOffset": 12385518,
+      "methods": [
+        {
+          "index": 16228,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig$Companion;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040944,
+          "accessFlags": "0x00010002",
+          "codeOffset": 3787216
+        },
+        {
+          "index": 16229,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig$Companion;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lkotlin/jvm/internal/g;"
+            ]
+          },
+          "sourceOffset": 1040952,
+          "accessFlags": "0x00011001",
+          "codeOffset": 3787240
+        },
+        {
+          "index": 16230,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig$Companion;",
+          "name": "serializer",
+          "prototype": {
+            "returnType": "Lzb0/a;",
+            "parameters": []
+          },
+          "sourceOffset": 1040960,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3787264
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+      "super": "Ljava/lang/Object;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1517008,
+      "classDataOffset": 12385546,
+      "methods": [
+        {
+          "index": 16231,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+          "name": "<clinit>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040968,
+          "accessFlags": "0x00010008",
+          "codeOffset": 3787648
+        },
+        {
+          "index": 16232,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1040976,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3787684
+        },
+        {
+          "index": 16233,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "I",
+              "I"
+            ]
+          },
+          "sourceOffset": 1040984,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3787716
+        },
+        {
+          "index": 16234,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "I",
+              "I",
+              "I",
+              "Ldc0/n1;"
+            ]
+          },
+          "sourceOffset": 1040992,
+          "accessFlags": "0x00011001",
+          "codeOffset": 3787748
+        },
+        {
+          "index": 16235,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "I",
+              "I",
+              "I",
+              "Lkotlin/jvm/internal/g;"
+            ]
+          },
+          "sourceOffset": 1041000,
+          "accessFlags": "0x00011001",
+          "codeOffset": 3787812
+        },
+        {
+          "index": 16239,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+          "name": "copy$default",
+          "prototype": {
+            "returnType": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+            "parameters": [
+              "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+              "I",
+              "I",
+              "I",
+              "Ljava/lang/Object;"
+            ]
+          },
+          "sourceOffset": 1041032,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3787360
+        },
+        {
+          "index": 16242,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+          "name": "getCustomPopupCycleDays$annotations",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1041056,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3787860
+        },
+        {
+          "index": 16244,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+          "name": "getIntervalDays$annotations",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1041072,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3787880
+        },
+        {
+          "index": 16247,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+          "name": "write$Self$shared_release",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+              "Lcc0/b;",
+              "Lbc0/g;"
+            ]
+          },
+          "sourceOffset": 1041096,
+          "accessFlags": "0x00001019",
+          "codeOffset": 3787900
+        },
+        {
+          "index": 16236,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+          "name": "component1",
+          "prototype": {
+            "returnType": "I",
+            "parameters": []
+          },
+          "sourceOffset": 1041008,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3787440
+        },
+        {
+          "index": 16237,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+          "name": "component2",
+          "prototype": {
+            "returnType": "I",
+            "parameters": []
+          },
+          "sourceOffset": 1041016,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3787464
+        },
+        {
+          "index": 16238,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+          "name": "copy",
+          "prototype": {
+            "returnType": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+            "parameters": [
+              "I",
+              "I"
+            ]
+          },
+          "sourceOffset": 1041024,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3787412
+        },
+        {
+          "index": 16240,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+          "name": "equals",
+          "prototype": {
+            "returnType": "Z",
+            "parameters": [
+              "Ljava/lang/Object;"
+            ]
+          },
+          "sourceOffset": 1041040,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3787288
+        },
+        {
+          "index": 16241,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+          "name": "getCustomPopupCycleDays",
+          "prototype": {
+            "returnType": "I",
+            "parameters": []
+          },
+          "sourceOffset": 1041048,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3787488
+        },
+        {
+          "index": 16243,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+          "name": "getIntervalDays",
+          "prototype": {
+            "returnType": "I",
+            "parameters": []
+          },
+          "sourceOffset": 1041064,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3787512
+        },
+        {
+          "index": 16245,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+          "name": "hashCode",
+          "prototype": {
+            "returnType": "I",
+            "parameters": []
+          },
+          "sourceOffset": 1041080,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3787536
+        },
+        {
+          "index": 16246,
+          "class": "Lcom/moonshot/kimichat/abconfig/KimiABVariables$PopupConfig;",
+          "name": "toString",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": []
+          },
+          "sourceOffset": 1041088,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3787584
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/abconfig/a;",
+      "super": "Ljava/lang/Object;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000401",
+      "classDefOffset": 1517040,
+      "classDataOffset": 12385678,
+      "methods": [
+        {
+          "index": 16269,
+          "class": "Lcom/moonshot/kimichat/abconfig/a;",
+          "name": "<clinit>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1041272,
+          "accessFlags": "0x00010008",
+          "codeOffset": 3784864
+        },
+        {
+          "index": 16270,
+          "class": "Lcom/moonshot/kimichat/abconfig/a;",
+          "name": "a",
+          "prototype": {
+            "returnType": "Z",
+            "parameters": []
+          },
+          "sourceOffset": 1041280,
+          "accessFlags": "0x00000009",
+          "codeOffset": 3784688
+        },
+        {
+          "index": 16271,
+          "class": "Lcom/moonshot/kimichat/abconfig/a;",
+          "name": "b",
+          "prototype": {
+            "returnType": "Z",
+            "parameters": []
+          },
+          "sourceOffset": 1041288,
+          "accessFlags": "0x00000009",
+          "codeOffset": 3784752
+        },
+        {
+          "index": 16272,
+          "class": "Lcom/moonshot/kimichat/abconfig/a;",
+          "name": "c",
+          "prototype": {
+            "returnType": "Z",
+            "parameters": []
+          },
+          "sourceOffset": 1041296,
+          "accessFlags": "0x00000009",
+          "codeOffset": 3784812
+        },
+        {
+          "index": 16273,
+          "class": "Lcom/moonshot/kimichat/abconfig/a;",
+          "name": "d",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1041304,
+          "accessFlags": "0x00000009",
+          "codeOffset": 3784908
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/abconfig/b;",
+      "super": "Ljava/lang/Object;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000401",
+      "classDefOffset": 1517072,
+      "classDataOffset": 12385718,
+      "methods": [
+        {
+          "index": 16274,
+          "class": "Lcom/moonshot/kimichat/abconfig/b;",
+          "name": "a",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1041312,
+          "accessFlags": "0x00000009",
+          "codeOffset": 3785112
+        },
+        {
+          "index": 16275,
+          "class": "Lcom/moonshot/kimichat/abconfig/b;",
+          "name": "b",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Ljava/lang/String;",
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1041320,
+          "accessFlags": "0x00000009",
+          "codeOffset": 3785320
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/auth/AuthActivity3;",
+      "super": "Lns/a;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1517104,
+      "classDataOffset": 12385735,
+      "methods": [
+        {
+          "index": 16276,
+          "class": "Lcom/moonshot/kimichat/auth/AuthActivity3;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1041328,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3789960
+        },
+        {
+          "index": 16277,
+          "class": "Lcom/moonshot/kimichat/auth/AuthActivity3;",
+          "name": "F",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "I",
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1041336,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3791276
+        },
+        {
+          "index": 16278,
+          "class": "Lcom/moonshot/kimichat/auth/AuthActivity3;",
+          "name": "G",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Ljava/lang/String;",
+              "Z"
+            ]
+          },
+          "sourceOffset": 1041344,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3791448
+        },
+        {
+          "index": 16279,
+          "class": "Lcom/moonshot/kimichat/auth/AuthActivity3;",
+          "name": "H",
+          "prototype": {
+            "returnType": "Z",
+            "parameters": [
+              "[Landroid/content/pm/Signature;"
+            ]
+          },
+          "sourceOffset": 1041352,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3789768
+        },
+        {
+          "index": 16280,
+          "class": "Lcom/moonshot/kimichat/auth/AuthActivity3;",
+          "name": "onCreate",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/os/Bundle;"
+            ]
+          },
+          "sourceOffset": 1041360,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3789984
+        },
+        {
+          "index": 16281,
+          "class": "Lcom/moonshot/kimichat/auth/AuthActivity3;",
+          "name": "onDestroy",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1041368,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3791212
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/chat/rtc/service/KimiCallService;",
+      "super": "Landroid/app/Service;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1517136,
+      "classDataOffset": 12385792,
+      "methods": [
+        {
+          "index": 16282,
+          "class": "Lcom/moonshot/kimichat/chat/rtc/service/KimiCallService;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1041376,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3792132
+        },
+        {
+          "index": 16283,
+          "class": "Lcom/moonshot/kimichat/chat/rtc/service/KimiCallService;",
+          "name": "onBind",
+          "prototype": {
+            "returnType": "Landroid/os/IBinder;",
+            "parameters": [
+              "Landroid/content/Intent;"
+            ]
+          },
+          "sourceOffset": 1041384,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3791784
+        },
+        {
+          "index": 16284,
+          "class": "Lcom/moonshot/kimichat/chat/rtc/service/KimiCallService;",
+          "name": "onDestroy",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1041392,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3792216
+        },
+        {
+          "index": 16285,
+          "class": "Lcom/moonshot/kimichat/chat/rtc/service/KimiCallService;",
+          "name": "onStartCommand",
+          "prototype": {
+            "returnType": "I",
+            "parameters": [
+              "Landroid/content/Intent;",
+              "I",
+              "I"
+            ]
+          },
+          "sourceOffset": 1041400,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3791808
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/common/db/KimiDatabase;",
+      "super": "Lca/v;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000401",
+      "classDefOffset": 1517168,
+      "classDataOffset": 12385839,
+      "methods": [
+        {
+          "index": 16286,
+          "class": "Lcom/moonshot/kimichat/common/db/KimiDatabase;",
+          "name": "<clinit>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1041408,
+          "accessFlags": "0x00010008",
+          "codeOffset": 3792756
+        },
+        {
+          "index": 16287,
+          "class": "Lcom/moonshot/kimichat/common/db/KimiDatabase;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1041416,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3792804
+        },
+        {
+          "index": 16288,
+          "class": "Lcom/moonshot/kimichat/common/db/KimiDatabase;",
+          "name": "r",
+          "prototype": {
+            "returnType": "Lbx/e;",
+            "parameters": []
+          },
+          "sourceOffset": 1041424,
+          "accessFlags": "0x00000401",
+          "codeOffset": 0
+        },
+        {
+          "index": 16289,
+          "class": "Lcom/moonshot/kimichat/common/db/KimiDatabase;",
+          "name": "s",
+          "prototype": {
+            "returnType": "Lbx/f;",
+            "parameters": []
+          },
+          "sourceOffset": 1041432,
+          "accessFlags": "0x00000401",
+          "codeOffset": 0
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/common/db/KimiDatabase_Impl;",
+      "super": "Lcom/moonshot/kimichat/common/db/KimiDatabase;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1517200,
+      "classDataOffset": 12385876,
+      "methods": [
+        {
+          "index": 16290,
+          "class": "Lcom/moonshot/kimichat/common/db/KimiDatabase_Impl;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1041440,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3792668
+        },
+        {
+          "index": 16291,
+          "class": "Lcom/moonshot/kimichat/common/db/KimiDatabase_Impl;",
+          "name": "c",
+          "prototype": {
+            "returnType": "Ljava/util/List;",
+            "parameters": [
+              "Ljava/util/LinkedHashMap;"
+            ]
+          },
+          "sourceOffset": 1041448,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3792612
+        },
+        {
+          "index": 16292,
+          "class": "Lcom/moonshot/kimichat/common/db/KimiDatabase_Impl;",
+          "name": "d",
+          "prototype": {
+            "returnType": "Lca/g;",
+            "parameters": []
+          },
+          "sourceOffset": 1041456,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3792412
+        },
+        {
+          "index": 16293,
+          "class": "Lcom/moonshot/kimichat/common/db/KimiDatabase_Impl;",
+          "name": "e",
+          "prototype": {
+            "returnType": "Lca/z;",
+            "parameters": []
+          },
+          "sourceOffset": 1041464,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3792492
+        },
+        {
+          "index": 16294,
+          "class": "Lcom/moonshot/kimichat/common/db/KimiDatabase_Impl;",
+          "name": "i",
+          "prototype": {
+            "returnType": "Ljava/util/Set;",
+            "parameters": []
+          },
+          "sourceOffset": 1041472,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3792640
+        },
+        {
+          "index": 16295,
+          "class": "Lcom/moonshot/kimichat/common/db/KimiDatabase_Impl;",
+          "name": "j",
+          "prototype": {
+            "returnType": "Ljava/util/LinkedHashMap;",
+            "parameters": []
+          },
+          "sourceOffset": 1041480,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3792520
+        },
+        {
+          "index": 16296,
+          "class": "Lcom/moonshot/kimichat/common/db/KimiDatabase_Impl;",
+          "name": "r",
+          "prototype": {
+            "returnType": "Lbx/e;",
+            "parameters": []
+          },
+          "sourceOffset": 1041488,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3792340
+        },
+        {
+          "index": 16297,
+          "class": "Lcom/moonshot/kimichat/common/db/KimiDatabase_Impl;",
+          "name": "s",
+          "prototype": {
+            "returnType": "Lbx/f;",
+            "parameters": []
+          },
+          "sourceOffset": 1041496,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3792376
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/common/permission/PermissionActivity;",
+      "super": "Lj/i;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1517264,
+      "classDataOffset": 12385981,
+      "methods": [
+        {
+          "index": 16298,
+          "class": "Lcom/moonshot/kimichat/common/permission/PermissionActivity;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1041504,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3792828
+        },
+        {
+          "index": 16299,
+          "class": "Lcom/moonshot/kimichat/common/permission/PermissionActivity;",
+          "name": "b",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1041512,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3793148
+        },
+        {
+          "index": 16300,
+          "class": "Lcom/moonshot/kimichat/common/permission/PermissionActivity;",
+          "name": "c",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1041520,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3793244
+        },
+        {
+          "index": 16301,
+          "class": "Lcom/moonshot/kimichat/common/permission/PermissionActivity;",
+          "name": "e",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Z"
+            ]
+          },
+          "sourceOffset": 1041528,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3793284
+        },
+        {
+          "index": 16302,
+          "class": "Lcom/moonshot/kimichat/common/permission/PermissionActivity;",
+          "name": "finish",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1041536,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3792852
+        },
+        {
+          "index": 16303,
+          "class": "Lcom/moonshot/kimichat/common/permission/PermissionActivity;",
+          "name": "onCreate",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/os/Bundle;"
+            ]
+          },
+          "sourceOffset": 1041544,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3792912
+        },
+        {
+          "index": 16304,
+          "class": "Lcom/moonshot/kimichat/common/permission/PermissionActivity;",
+          "name": "onRequestPermissionsResult",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "I",
+              "[Ljava/lang/String;",
+              "[I"
+            ]
+          },
+          "sourceOffset": 1041552,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3793316
+        },
+        {
+          "index": 16305,
+          "class": "Lcom/moonshot/kimichat/common/permission/PermissionActivity;",
+          "name": "u",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1041560,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3793196
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/community/track/MSStainWrapper;",
+      "super": "Ljava/lang/Object;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1517296,
+      "classDataOffset": 12386040,
+      "methods": [
+        {
+          "index": 16306,
+          "class": "Lcom/moonshot/kimichat/community/track/MSStainWrapper;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1041568,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3793600
+        },
+        {
+          "index": 16307,
+          "class": "Lcom/moonshot/kimichat/community/track/MSStainWrapper;",
+          "name": "createMSStainService",
+          "prototype": {
+            "returnType": "J",
+            "parameters": []
+          },
+          "sourceOffset": 1041576,
+          "accessFlags": "0x00000112",
+          "codeOffset": 0
+        },
+        {
+          "index": 16308,
+          "class": "Lcom/moonshot/kimichat/community/track/MSStainWrapper;",
+          "name": "generateChainWithExtraParams",
+          "prototype": {
+            "returnType": "Ljava/util/List;",
+            "parameters": [
+              "J",
+              "Ljava/lang/String;",
+              "Ljava/lang/String;",
+              "Ljava/lang/String;",
+              "Ljava/lang/String;",
+              "Ljava/util/Map;"
+            ]
+          },
+          "sourceOffset": 1041584,
+          "accessFlags": "0x00000111",
+          "codeOffset": 0
+        },
+        {
+          "index": 16309,
+          "class": "Lcom/moonshot/kimichat/community/track/MSStainWrapper;",
+          "name": "generateRawChain",
+          "prototype": {
+            "returnType": "Ljava/util/List;",
+            "parameters": [
+              "J",
+              "Ljava/lang/String;",
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1041592,
+          "accessFlags": "0x00000111",
+          "codeOffset": 0
+        },
+        {
+          "index": 16310,
+          "class": "Lcom/moonshot/kimichat/community/track/MSStainWrapper;",
+          "name": "pop",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "J",
+              "Z"
+            ]
+          },
+          "sourceOffset": 1041600,
+          "accessFlags": "0x00000111",
+          "codeOffset": 0
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/media/MediaSelectActivity;",
+      "super": "Lj/i;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1517328,
+      "classDataOffset": 12386073,
+      "methods": [
+        {
+          "index": 16311,
+          "class": "Lcom/moonshot/kimichat/media/MediaSelectActivity;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1041608,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3794228
+        },
+        {
+          "index": 16312,
+          "class": "Lcom/moonshot/kimichat/media/MediaSelectActivity;",
+          "name": "E",
+          "prototype": {
+            "returnType": "Ljava/lang/Object;",
+            "parameters": [
+              "Lcom/moonshot/kimichat/media/MediaSelectActivity;",
+              "Landroid/net/Uri;",
+              "Ls70/i;"
+            ]
+          },
+          "sourceOffset": 1041616,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3793764
+        },
+        {
+          "index": 16314,
+          "class": "Lcom/moonshot/kimichat/media/MediaSelectActivity;",
+          "name": "G",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1041632,
+          "accessFlags": "0x00000009",
+          "codeOffset": 3793816
+        },
+        {
+          "index": 16315,
+          "class": "Lcom/moonshot/kimichat/media/MediaSelectActivity;",
+          "name": "H",
+          "prototype": {
+            "returnType": "Lm70/k;",
+            "parameters": [
+              "Lcom/moonshot/kimichat/media/MediaSelectActivity;",
+              "Landroid/net/Uri;"
+            ]
+          },
+          "sourceOffset": 1041640,
+          "accessFlags": "0x00000009",
+          "codeOffset": 3793988
+        },
+        {
+          "index": 16313,
+          "class": "Lcom/moonshot/kimichat/media/MediaSelectActivity;",
+          "name": "F",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1041624,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3794280
+        },
+        {
+          "index": 16316,
+          "class": "Lcom/moonshot/kimichat/media/MediaSelectActivity;",
+          "name": "I",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lb80/m;"
+            ]
+          },
+          "sourceOffset": 1041648,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3794352
+        },
+        {
+          "index": 16317,
+          "class": "Lcom/moonshot/kimichat/media/MediaSelectActivity;",
+          "name": "J",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Ljava/util/List;"
+            ]
+          },
+          "sourceOffset": 1041656,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3795672
+        },
+        {
+          "index": 16318,
+          "class": "Lcom/moonshot/kimichat/media/MediaSelectActivity;",
+          "name": "K",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "I"
+            ]
+          },
+          "sourceOffset": 1041664,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3795912
+        },
+        {
+          "index": 16319,
+          "class": "Lcom/moonshot/kimichat/media/MediaSelectActivity;",
+          "name": "L",
+          "prototype": {
+            "returnType": "Z",
+            "parameters": []
+          },
+          "sourceOffset": 1041672,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3793688
+        },
+        {
+          "index": 16320,
+          "class": "Lcom/moonshot/kimichat/media/MediaSelectActivity;",
+          "name": "onActivityResult",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "I",
+              "I",
+              "Landroid/content/Intent;"
+            ]
+          },
+          "sourceOffset": 1041680,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3794440
+        },
+        {
+          "index": 16321,
+          "class": "Lcom/moonshot/kimichat/media/MediaSelectActivity;",
+          "name": "onConfigurationChanged",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/res/Configuration;"
+            ]
+          },
+          "sourceOffset": 1041688,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3794492
+        },
+        {
+          "index": 16322,
+          "class": "Lcom/moonshot/kimichat/media/MediaSelectActivity;",
+          "name": "onCreate",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/os/Bundle;"
+            ]
+          },
+          "sourceOffset": 1041696,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3794556
+        },
+        {
+          "index": 16323,
+          "class": "Lcom/moonshot/kimichat/media/MediaSelectActivity;",
+          "name": "startActivityForResult",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Intent;",
+              "I",
+              "Landroid/os/Bundle;"
+            ]
+          },
+          "sourceOffset": 1041704,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3796028
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+      "super": "Lcn/jpush/android/service/JPushMessageReceiver;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1517360,
+      "classDataOffset": 12386192,
+      "methods": [
+        {
+          "index": 16324,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1041712,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3798028
+        },
+        {
+          "index": 16325,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "a",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Landroid/content/Intent;"
+            ]
+          },
+          "sourceOffset": 1041720,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796200
+        },
+        {
+          "index": 16326,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "b",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/JPushMessage;"
+            ]
+          },
+          "sourceOffset": 1041728,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796228
+        },
+        {
+          "index": 16327,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "c",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1041736,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796256
+        },
+        {
+          "index": 16328,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "d",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/NotificationMessage;",
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1041744,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796284
+        },
+        {
+          "index": 16329,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "e",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/JPushMessage;"
+            ]
+          },
+          "sourceOffset": 1041752,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796312
+        },
+        {
+          "index": 16330,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "f",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1041760,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796340
+        },
+        {
+          "index": 16331,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "g",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/CmdMessage;"
+            ]
+          },
+          "sourceOffset": 1041768,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796368
+        },
+        {
+          "index": 16333,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "getNotification$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1041784,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3796816
+        },
+        {
+          "index": 16334,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "h",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/CustomMessage;"
+            ]
+          },
+          "sourceOffset": 1041792,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796396
+        },
+        {
+          "index": 16335,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "i",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1041800,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796424
+        },
+        {
+          "index": 16337,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "isNeedShowNotification$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/NotificationMessage;",
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1041816,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3796872
+        },
+        {
+          "index": 16338,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "j",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Ljava/lang/String;",
+              "D",
+              "D"
+            ]
+          },
+          "sourceOffset": 1041824,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796452
+        },
+        {
+          "index": 16339,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "k",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/JPushMessage;"
+            ]
+          },
+          "sourceOffset": 1041832,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796480
+        },
+        {
+          "index": 16340,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "l",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/JPushMessage;"
+            ]
+          },
+          "sourceOffset": 1041840,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796508
+        },
+        {
+          "index": 16341,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "m",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1041848,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796536
+        },
+        {
+          "index": 16342,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "n",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1041856,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796564
+        },
+        {
+          "index": 16343,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "o",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1041864,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796592
+        },
+        {
+          "index": 16345,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onAliasOperatorResult$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/JPushMessage;"
+            ]
+          },
+          "sourceOffset": 1041880,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3796944
+        },
+        {
+          "index": 16347,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onCheckTagOperatorResult$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/JPushMessage;"
+            ]
+          },
+          "sourceOffset": 1041896,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3797000
+        },
+        {
+          "index": 16349,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onCommandResult$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/CmdMessage;"
+            ]
+          },
+          "sourceOffset": 1041912,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3797056
+        },
+        {
+          "index": 16351,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onConnected$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Z"
+            ]
+          },
+          "sourceOffset": 1041928,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3797112
+        },
+        {
+          "index": 16353,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onGeofenceReceived$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1041944,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3797148
+        },
+        {
+          "index": 16355,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onGeofenceRegion$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Ljava/lang/String;",
+              "D",
+              "D"
+            ]
+          },
+          "sourceOffset": 1041960,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3797184
+        },
+        {
+          "index": 16357,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onInAppMessageClick$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1041976,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3797272
+        },
+        {
+          "index": 16359,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onInAppMessageShow$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1041992,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3797328
+        },
+        {
+          "index": 16361,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onMessage$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/CustomMessage;"
+            ]
+          },
+          "sourceOffset": 1042008,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3797384
+        },
+        {
+          "index": 16362,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onMessage$lambda$1",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1042016,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3797440
+        },
+        {
+          "index": 16364,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onMobileNumberOperatorResult$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/JPushMessage;"
+            ]
+          },
+          "sourceOffset": 1042032,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3797472
+        },
+        {
+          "index": 16366,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onMultiActionClicked$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Landroid/content/Intent;"
+            ]
+          },
+          "sourceOffset": 1042048,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3797528
+        },
+        {
+          "index": 16368,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onNotificationSettingsCheck$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Z",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042064,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3797584
+        },
+        {
+          "index": 16370,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onNotifyMessageArrived$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1042080,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3797656
+        },
+        {
+          "index": 16372,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onNotifyMessageDismiss$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1042096,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3797712
+        },
+        {
+          "index": 16374,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onNotifyMessageOpened$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1042112,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3797768
+        },
+        {
+          "index": 16376,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onNotifyMessageUnShow$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1042128,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3797824
+        },
+        {
+          "index": 16378,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onPropertyOperatorResult$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/JPushMessage;"
+            ]
+          },
+          "sourceOffset": 1042144,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3797880
+        },
+        {
+          "index": 16380,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onRegister$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1042160,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3797936
+        },
+        {
+          "index": 16382,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onTagOperatorResult$lambda$0",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/JPushMessage;"
+            ]
+          },
+          "sourceOffset": 1042176,
+          "accessFlags": "0x0000001a",
+          "codeOffset": 3797972
+        },
+        {
+          "index": 16383,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "p",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1042184,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796620
+        },
+        {
+          "index": 16384,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "q",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1042192,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796648
+        },
+        {
+          "index": 16385,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "r",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "I",
+              "Z"
+            ]
+          },
+          "sourceOffset": 1042200,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796676
+        },
+        {
+          "index": 16386,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "s",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/JPushMessage;"
+            ]
+          },
+          "sourceOffset": 1042208,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796704
+        },
+        {
+          "index": 16387,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "t",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1042216,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796732
+        },
+        {
+          "index": 16388,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "u",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1042224,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796760
+        },
+        {
+          "index": 16389,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "v",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Z"
+            ]
+          },
+          "sourceOffset": 1042232,
+          "accessFlags": "0x00001009",
+          "codeOffset": 3796788
+        },
+        {
+          "index": 16332,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "getNotification",
+          "prototype": {
+            "returnType": "Landroid/app/Notification;",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1041776,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3796088
+        },
+        {
+          "index": 16336,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "isNeedShowNotification",
+          "prototype": {
+            "returnType": "Z",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Lcn/jpush/android/api/NotificationMessage;",
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1041808,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3796148
+        },
+        {
+          "index": 16344,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onAliasOperatorResult",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Lcn/jpush/android/api/JPushMessage;"
+            ]
+          },
+          "sourceOffset": 1041872,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3798052
+        },
+        {
+          "index": 16346,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onCheckTagOperatorResult",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Lcn/jpush/android/api/JPushMessage;"
+            ]
+          },
+          "sourceOffset": 1041888,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3798100
+        },
+        {
+          "index": 16348,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onCommandResult",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Lcn/jpush/android/api/CmdMessage;"
+            ]
+          },
+          "sourceOffset": 1041904,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3798148
+        },
+        {
+          "index": 16350,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onConnected",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Z"
+            ]
+          },
+          "sourceOffset": 1041920,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3798196
+        },
+        {
+          "index": 16352,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onGeofenceReceived",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1041936,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3798244
+        },
+        {
+          "index": 16354,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onGeofenceRegion",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Ljava/lang/String;",
+              "D",
+              "D"
+            ]
+          },
+          "sourceOffset": 1041952,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3798292
+        },
+        {
+          "index": 16356,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onInAppMessageClick",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1041968,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3798344
+        },
+        {
+          "index": 16358,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onInAppMessageShow",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1041984,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3798392
+        },
+        {
+          "index": 16360,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onMessage",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Lcn/jpush/android/api/CustomMessage;"
+            ]
+          },
+          "sourceOffset": 1042000,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3798440
+        },
+        {
+          "index": 16363,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onMobileNumberOperatorResult",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Lcn/jpush/android/api/JPushMessage;"
+            ]
+          },
+          "sourceOffset": 1042024,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3798904
+        },
+        {
+          "index": 16365,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onMultiActionClicked",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Landroid/content/Intent;"
+            ]
+          },
+          "sourceOffset": 1042040,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3798952
+        },
+        {
+          "index": 16367,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onNotificationSettingsCheck",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Z",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042056,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3799000
+        },
+        {
+          "index": 16369,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onNotifyMessageArrived",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1042072,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3799084
+        },
+        {
+          "index": 16371,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onNotifyMessageDismiss",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1042088,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3799216
+        },
+        {
+          "index": 16373,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onNotifyMessageOpened",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1042104,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3799264
+        },
+        {
+          "index": 16375,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onNotifyMessageUnShow",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Lcn/jpush/android/api/NotificationMessage;"
+            ]
+          },
+          "sourceOffset": 1042120,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3799312
+        },
+        {
+          "index": 16377,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onPropertyOperatorResult",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Lcn/jpush/android/api/JPushMessage;"
+            ]
+          },
+          "sourceOffset": 1042136,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3799360
+        },
+        {
+          "index": 16379,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onRegister",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1042152,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3799408
+        },
+        {
+          "index": 16381,
+          "class": "Lcom/moonshot/kimichat/push/PushMessageReceiver;",
+          "name": "onTagOperatorResult",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Lcn/jpush/android/api/JPushMessage;"
+            ]
+          },
+          "sourceOffset": 1042168,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3799528
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/push/PushService;",
+      "super": "Lcn/jpush/android/service/JCommonService;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1517392,
+      "classDataOffset": 12386621,
+      "methods": [
+        {
+          "index": 16390,
+          "class": "Lcom/moonshot/kimichat/push/PushService;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1042240,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3799576
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/remotecontrol/RcReadOnlyImageActivity;",
+      "super": "Lns/a;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1517424,
+      "classDataOffset": 12386635,
+      "methods": [
+        {
+          "index": 16391,
+          "class": "Lcom/moonshot/kimichat/remotecontrol/RcReadOnlyImageActivity;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1042248,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3799600
+        },
+        {
+          "index": 16392,
+          "class": "Lcom/moonshot/kimichat/remotecontrol/RcReadOnlyImageActivity;",
+          "name": "onCreate",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/os/Bundle;"
+            ]
+          },
+          "sourceOffset": 1042256,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3799624
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/route/ExternalLinkActivity;",
+      "super": "Lns/a;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1517456,
+      "classDataOffset": 12386661,
+      "methods": [
+        {
+          "index": 16393,
+          "class": "Lcom/moonshot/kimichat/route/ExternalLinkActivity;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1042264,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3799984
+        },
+        {
+          "index": 16394,
+          "class": "Lcom/moonshot/kimichat/route/ExternalLinkActivity;",
+          "name": "onCreate",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/os/Bundle;"
+            ]
+          },
+          "sourceOffset": 1042272,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3800076
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/table/KimiLandscapeTableActivity;",
+      "super": "Lns/a;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1517488,
+      "classDataOffset": 12386690,
+      "methods": [
+        {
+          "index": 16395,
+          "class": "Lcom/moonshot/kimichat/table/KimiLandscapeTableActivity;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1042280,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3800172
+        },
+        {
+          "index": 16396,
+          "class": "Lcom/moonshot/kimichat/table/KimiLandscapeTableActivity;",
+          "name": "F",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "I",
+              "Lb3/p;",
+              "Ljava/lang/String;",
+              "Lkw/ha;"
+            ]
+          },
+          "sourceOffset": 1042288,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3800196
+        },
+        {
+          "index": 16397,
+          "class": "Lcom/moonshot/kimichat/table/KimiLandscapeTableActivity;",
+          "name": "onCreate",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/os/Bundle;"
+            ]
+          },
+          "sourceOffset": 1042296,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3803144
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/ui/KimiFilePreviewActivity;",
+      "super": "Lns/a;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1517520,
+      "classDataOffset": 12386722,
+      "methods": [
+        {
+          "index": 16398,
+          "class": "Lcom/moonshot/kimichat/ui/KimiFilePreviewActivity;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1042304,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3803936
+        },
+        {
+          "index": 16402,
+          "class": "Lcom/moonshot/kimichat/ui/KimiFilePreviewActivity;",
+          "name": "I",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": [
+              "Ljava/io/File;"
+            ]
+          },
+          "sourceOffset": 1042336,
+          "accessFlags": "0x00000009",
+          "codeOffset": 3803552
+        },
+        {
+          "index": 16399,
+          "class": "Lcom/moonshot/kimichat/ui/KimiFilePreviewActivity;",
+          "name": "F",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Ljava/lang/String;",
+              "Ljava/lang/String;",
+              "Lkotlin/jvm/functions/Function0;",
+              "Lb3/p;",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042312,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3803968
+        },
+        {
+          "index": 16400,
+          "class": "Lcom/moonshot/kimichat/ui/KimiFilePreviewActivity;",
+          "name": "G",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Ljava/lang/String;",
+              "Lkotlin/jvm/functions/Function0;",
+              "Lkotlin/jvm/functions/Function0;",
+              "Lb3/p;",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042320,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3805276
+        },
+        {
+          "index": 16401,
+          "class": "Lcom/moonshot/kimichat/ui/KimiFilePreviewActivity;",
+          "name": "H",
+          "prototype": {
+            "returnType": "Ljava/io/File;",
+            "parameters": [
+              "Landroid/net/Uri;",
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1042328,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3803284
+        },
+        {
+          "index": 16403,
+          "class": "Lcom/moonshot/kimichat/ui/KimiFilePreviewActivity;",
+          "name": "onCreate",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/os/Bundle;"
+            ]
+          },
+          "sourceOffset": 1042344,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3806972
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/ui/OnGloballyPositionedElement;",
+      "super": "Lo4/y0;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000010",
+      "classDefOffset": 1517552,
+      "classDataOffset": 12386779,
+      "methods": [
+        {
+          "index": 16404,
+          "class": "Lcom/moonshot/kimichat/ui/OnGloballyPositionedElement;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "I",
+              "Lb80/j;"
+            ]
+          },
+          "sourceOffset": 1042352,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3807804
+        },
+        {
+          "index": 16405,
+          "class": "Lcom/moonshot/kimichat/ui/OnGloballyPositionedElement;",
+          "name": "a",
+          "prototype": {
+            "returnType": "Lo3/q;",
+            "parameters": []
+          },
+          "sourceOffset": 1042360,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3807748
+        },
+        {
+          "index": 16406,
+          "class": "Lcom/moonshot/kimichat/ui/OnGloballyPositionedElement;",
+          "name": "b",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lo3/q;"
+            ]
+          },
+          "sourceOffset": 1042368,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3807848
+        },
+        {
+          "index": 16407,
+          "class": "Lcom/moonshot/kimichat/ui/OnGloballyPositionedElement;",
+          "name": "equals",
+          "prototype": {
+            "returnType": "Z",
+            "parameters": [
+              "Ljava/lang/Object;"
+            ]
+          },
+          "sourceOffset": 1042376,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3807636
+        },
+        {
+          "index": 16408,
+          "class": "Lcom/moonshot/kimichat/ui/OnGloballyPositionedElement;",
+          "name": "hashCode",
+          "prototype": {
+            "returnType": "I",
+            "parameters": []
+          },
+          "sourceOffset": 1042384,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3807704
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/ui/a;",
+      "super": "Ljava/lang/Object;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000401",
+      "classDefOffset": 1517584,
+      "classDataOffset": 12386824,
+      "methods": [
+        {
+          "index": 16409,
+          "class": "Lcom/moonshot/kimichat/ui/a;",
+          "name": "<clinit>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1042392,
+          "accessFlags": "0x00010008",
+          "codeOffset": 3809880
+        },
+        {
+          "index": 16410,
+          "class": "Lcom/moonshot/kimichat/ui/a;",
+          "name": "a",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lo3/r;",
+              "J",
+              "Lp1/y1;",
+              "F",
+              "F",
+              "F",
+              "Lb3/p;",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042400,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3809912
+        },
+        {
+          "index": 16411,
+          "class": "Lcom/moonshot/kimichat/ui/a;",
+          "name": "b",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lkotlin/jvm/functions/Function0;",
+              "Lo3/r;",
+              "Lq5/s;",
+              "Lj3/c;",
+              "Lb3/p;",
+              "I",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042408,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3810304
+        },
+        {
+          "index": 16412,
+          "class": "Lcom/moonshot/kimichat/ui/a;",
+          "name": "c",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Ldl/k;",
+              "Ldl/i;",
+              "Lkotlin/jvm/functions/Function0;",
+              "Lj3/c;",
+              "Lb3/p;",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042416,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3810644
+        },
+        {
+          "index": 16413,
+          "class": "Lcom/moonshot/kimichat/ui/a;",
+          "name": "d",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lq5/y;",
+              "Lkotlin/jvm/functions/Function0;",
+              "Lq5/z;",
+              "Lj3/c;",
+              "Lb3/p;",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042424,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3811020
+        },
+        {
+          "index": 16414,
+          "class": "Lcom/moonshot/kimichat/ui/a;",
+          "name": "e",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lo3/e;",
+              "J",
+              "Lkotlin/jvm/functions/Function0;",
+              "Lq5/z;",
+              "Lj3/c;",
+              "Lb3/p;",
+              "I",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042432,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3811344
+        },
+        {
+          "index": 16415,
+          "class": "Lcom/moonshot/kimichat/ui/a;",
+          "name": "f",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lo3/r;",
+              "Lv1/s;",
+              "J",
+              "F",
+              "Lo3/e;",
+              "Lb3/p;",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042440,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3811832
+        },
+        {
+          "index": 16416,
+          "class": "Lcom/moonshot/kimichat/ui/a;",
+          "name": "g",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lo3/r;",
+              "Lw1/w;",
+              "J",
+              "F",
+              "Lo3/e;",
+              "Lb3/p;",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042448,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3812516
+        },
+        {
+          "index": 16417,
+          "class": "Lcom/moonshot/kimichat/ui/a;",
+          "name": "h",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lo3/r;",
+              "Lv1/s;",
+              "J",
+              "F",
+              "Lo3/e;",
+              "Lb3/p;",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042456,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3813752
+        },
+        {
+          "index": 16418,
+          "class": "Lcom/moonshot/kimichat/ui/a;",
+          "name": "i",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lo3/r;",
+              "Lv1/s;",
+              "Z",
+              "J",
+              "F",
+              "Lo3/e;",
+              "Lb3/p;",
+              "I",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042464,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3815032
+        },
+        {
+          "index": 16419,
+          "class": "Lcom/moonshot/kimichat/ui/a;",
+          "name": "j",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Ljava/util/List;",
+              "Lo3/r;",
+              "Lz4/r0;",
+              "J",
+              "Z",
+              "Z",
+              "Z",
+              "Ljava/lang/Integer;",
+              "Ljava/util/List;",
+              "Lb3/p;",
+              "I",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042472,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3815656
+        },
+        {
+          "index": 16420,
+          "class": "Lcom/moonshot/kimichat/ui/a;",
+          "name": "k",
+          "prototype": {
+            "returnType": "Ljava/lang/Object;",
+            "parameters": [
+              "Lv1/s;",
+              "I",
+              "Ls70/i;"
+            ]
+          },
+          "sourceOffset": 1042480,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3807908
+        },
+        {
+          "index": 16421,
+          "class": "Lcom/moonshot/kimichat/ui/a;",
+          "name": "l",
+          "prototype": {
+            "returnType": "Lns/g;",
+            "parameters": [
+              "Lns/j;",
+              "Lb3/p;",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042488,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3808100
+        },
+        {
+          "index": 16422,
+          "class": "Lcom/moonshot/kimichat/ui/a;",
+          "name": "m",
+          "prototype": {
+            "returnType": "Lo3/r;",
+            "parameters": [
+              "Lo3/r;",
+              "J",
+              "F",
+              "F",
+              "F",
+              "F",
+              "Lb3/p;",
+              "I",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042496,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3808232
+        },
+        {
+          "index": 16423,
+          "class": "Lcom/moonshot/kimichat/ui/a;",
+          "name": "n",
+          "prototype": {
+            "returnType": "Lo3/r;",
+            "parameters": [
+              "I",
+              "J",
+              "Lb3/p;",
+              "Lo3/r;"
+            ]
+          },
+          "sourceOffset": 1042504,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3808636
+        },
+        {
+          "index": 16424,
+          "class": "Lcom/moonshot/kimichat/ui/a;",
+          "name": "o",
+          "prototype": {
+            "returnType": "Lo3/r;",
+            "parameters": [
+              "Lo3/r;",
+              "Lv3/q0;",
+              "J",
+              "Z",
+              "J",
+              "Z",
+              "Lb3/p;",
+              "I",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042512,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3808792
+        },
+        {
+          "index": 16425,
+          "class": "Lcom/moonshot/kimichat/ui/a;",
+          "name": "p",
+          "prototype": {
+            "returnType": "Lo3/r;",
+            "parameters": [
+              "Lo3/r;",
+              "Low/y2;",
+              "Lb80/j;",
+              "Lb3/p;",
+              "I",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042520,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3809176
+        },
+        {
+          "index": 16426,
+          "class": "Lcom/moonshot/kimichat/ui/a;",
+          "name": "q",
+          "prototype": {
+            "returnType": "Lo3/r;",
+            "parameters": [
+              "Lo3/r;",
+              "I",
+              "Lb80/j;"
+            ]
+          },
+          "sourceOffset": 1042528,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3809824
+        },
+        {
+          "index": 16427,
+          "class": "Lcom/moonshot/kimichat/ui/a;",
+          "name": "r",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lt3/i;",
+              "Z"
+            ]
+          },
+          "sourceOffset": 1042536,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3817244
+        },
+        {
+          "index": 16428,
+          "class": "Lcom/moonshot/kimichat/ui/a;",
+          "name": "s",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lt3/p;"
+            ]
+          },
+          "sourceOffset": 1042544,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3817328
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/ui/components/pullrefresh/PullToRefreshElement;",
+      "super": "Lo4/y0;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1517616,
+      "classDataOffset": 12386955,
+      "methods": [
+        {
+          "index": 16429,
+          "class": "Lcom/moonshot/kimichat/ui/components/pullrefresh/PullToRefreshElement;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Z",
+              "Lkotlin/jvm/functions/Function0;",
+              "Lz2/h;",
+              "F"
+            ]
+          },
+          "sourceOffset": 1042552,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3817792
+        },
+        {
+          "index": 16430,
+          "class": "Lcom/moonshot/kimichat/ui/components/pullrefresh/PullToRefreshElement;",
+          "name": "a",
+          "prototype": {
+            "returnType": "Lo3/q;",
+            "parameters": []
+          },
+          "sourceOffset": 1042560,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3817748
+        },
+        {
+          "index": 16431,
+          "class": "Lcom/moonshot/kimichat/ui/components/pullrefresh/PullToRefreshElement;",
+          "name": "b",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lo3/q;"
+            ]
+          },
+          "sourceOffset": 1042568,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3817852
+        },
+        {
+          "index": 16432,
+          "class": "Lcom/moonshot/kimichat/ui/components/pullrefresh/PullToRefreshElement;",
+          "name": "equals",
+          "prototype": {
+            "returnType": "Z",
+            "parameters": [
+              "Ljava/lang/Object;"
+            ]
+          },
+          "sourceOffset": 1042576,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3817408
+        },
+        {
+          "index": 16433,
+          "class": "Lcom/moonshot/kimichat/ui/components/pullrefresh/PullToRefreshElement;",
+          "name": "hashCode",
+          "prototype": {
+            "returnType": "I",
+            "parameters": []
+          },
+          "sourceOffset": 1042584,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3817532
+        },
+        {
+          "index": 16434,
+          "class": "Lcom/moonshot/kimichat/ui/components/pullrefresh/PullToRefreshElement;",
+          "name": "toString",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": []
+          },
+          "sourceOffset": 1042592,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3817620
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/ui/components/scrollbar/ScrollThumbElement;",
+      "super": "Lo4/y0;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000010",
+      "classDefOffset": 1517648,
+      "classDataOffset": 12387010,
+      "methods": [
+        {
+          "index": 16435,
+          "class": "Lcom/moonshot/kimichat/ui/components/scrollbar/ScrollThumbElement;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lv3/v;"
+            ]
+          },
+          "sourceOffset": 1042600,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3819252
+        },
+        {
+          "index": 16436,
+          "class": "Lcom/moonshot/kimichat/ui/components/scrollbar/ScrollThumbElement;",
+          "name": "a",
+          "prototype": {
+            "returnType": "Lo3/q;",
+            "parameters": []
+          },
+          "sourceOffset": 1042608,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3819220
+        },
+        {
+          "index": 16437,
+          "class": "Lcom/moonshot/kimichat/ui/components/scrollbar/ScrollThumbElement;",
+          "name": "b",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lo3/q;"
+            ]
+          },
+          "sourceOffset": 1042616,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3819292
+        },
+        {
+          "index": 16438,
+          "class": "Lcom/moonshot/kimichat/ui/components/scrollbar/ScrollThumbElement;",
+          "name": "equals",
+          "prototype": {
+            "returnType": "Z",
+            "parameters": [
+              "Ljava/lang/Object;"
+            ]
+          },
+          "sourceOffset": 1042624,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3819064
+        },
+        {
+          "index": 16439,
+          "class": "Lcom/moonshot/kimichat/ui/components/scrollbar/ScrollThumbElement;",
+          "name": "hashCode",
+          "prototype": {
+            "returnType": "I",
+            "parameters": []
+          },
+          "sourceOffset": 1042632,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3819128
+        },
+        {
+          "index": 16440,
+          "class": "Lcom/moonshot/kimichat/ui/components/scrollbar/ScrollThumbElement;",
+          "name": "toString",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": []
+          },
+          "sourceOffset": 1042640,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3819160
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/ui/components/scrollbar/a;",
+      "super": "Ljava/lang/Object;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000401",
+      "classDefOffset": 1517680,
+      "classDataOffset": 12387059,
+      "methods": [
+        {
+          "index": 16441,
+          "class": "Lcom/moonshot/kimichat/ui/components/scrollbar/a;",
+          "name": "a",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lp1/t2;",
+              "La40/s;",
+              "Lo3/r;",
+              "Lb3/p;",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042648,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3817976
+        },
+        {
+          "index": 16442,
+          "class": "Lcom/moonshot/kimichat/ui/components/scrollbar/a;",
+          "name": "b",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lp1/t2;",
+              "Lr1/k;",
+              "Lb3/p;",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042656,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3818344
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/webview/KimiVideoWebViewActivity;",
+      "super": "Ls40/m;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1517776,
+      "classDataOffset": 12387103,
+      "methods": [
+        {
+          "index": 16443,
+          "class": "Lcom/moonshot/kimichat/webview/KimiVideoWebViewActivity;",
+          "name": "<clinit>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1042664,
+          "accessFlags": "0x00010008",
+          "codeOffset": 3819348
+        },
+        {
+          "index": 16444,
+          "class": "Lcom/moonshot/kimichat/webview/KimiVideoWebViewActivity;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1042672,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3819388
+        },
+        {
+          "index": 16445,
+          "class": "Lcom/moonshot/kimichat/webview/KimiVideoWebViewActivity;",
+          "name": "F",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lcom/moonshot/kimichat/webview/KimiVideoWebViewActivity;",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042680,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3819420
+        },
+        {
+          "index": 16446,
+          "class": "Lcom/moonshot/kimichat/webview/KimiVideoWebViewActivity;",
+          "name": "G",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Z"
+            ]
+          },
+          "sourceOffset": 1042688,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3820220
+        },
+        {
+          "index": 16447,
+          "class": "Lcom/moonshot/kimichat/webview/KimiVideoWebViewActivity;",
+          "name": "onConfigurationChanged",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/res/Configuration;"
+            ]
+          },
+          "sourceOffset": 1042696,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3819560
+        },
+        {
+          "index": 16448,
+          "class": "Lcom/moonshot/kimichat/webview/KimiVideoWebViewActivity;",
+          "name": "onCreate",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/os/Bundle;"
+            ]
+          },
+          "sourceOffset": 1042704,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3819640
+        },
+        {
+          "index": 16449,
+          "class": "Lcom/moonshot/kimichat/webview/KimiVideoWebViewActivity;",
+          "name": "onDestroy",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1042712,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3820080
+        },
+        {
+          "index": 16450,
+          "class": "Lcom/moonshot/kimichat/webview/KimiVideoWebViewActivity;",
+          "name": "onStart",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1042720,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3820148
+        },
+        {
+          "index": 16451,
+          "class": "Lcom/moonshot/kimichat/webview/KimiVideoWebViewActivity;",
+          "name": "onStop",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1042728,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3820188
+        },
+        {
+          "index": 16452,
+          "class": "Lcom/moonshot/kimichat/webview/KimiVideoWebViewActivity;",
+          "name": "s",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1042736,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3819528
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+      "super": "Landroid/webkit/WebView;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000001",
+      "classDefOffset": 1517840,
+      "classDataOffset": 12387205,
+      "methods": [
+        {
+          "index": 16453,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;"
+            ]
+          },
+          "sourceOffset": 1042744,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3824712
+        },
+        {
+          "index": 16454,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Landroid/util/AttributeSet;"
+            ]
+          },
+          "sourceOffset": 1042752,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3824764
+        },
+        {
+          "index": 16455,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Landroid/util/AttributeSet;",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042760,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3824816
+        },
+        {
+          "index": 16456,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Landroid/util/AttributeSet;",
+              "I",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042768,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3824868
+        },
+        {
+          "index": 16457,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/content/Context;",
+              "Landroid/util/AttributeSet;",
+              "I",
+              "I",
+              "I",
+              "Lkotlin/jvm/internal/g;"
+            ]
+          },
+          "sourceOffset": 1042776,
+          "accessFlags": "0x00011001",
+          "codeOffset": 3825552
+        },
+        {
+          "index": 16458,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "a",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Ljava/lang/String;",
+              "Lb80/j;"
+            ]
+          },
+          "sourceOffset": 1042784,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3825708
+        },
+        {
+          "index": 16459,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "b",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Z"
+            ]
+          },
+          "sourceOffset": 1042792,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3826152
+        },
+        {
+          "index": 16460,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "c",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1042800,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3826244
+        },
+        {
+          "index": 16461,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "destroy",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1042808,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3825608
+        },
+        {
+          "index": 16462,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "dispatchTouchEvent",
+          "prototype": {
+            "returnType": "Z",
+            "parameters": [
+              "Landroid/view/MotionEvent;"
+            ]
+          },
+          "sourceOffset": 1042816,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3824468
+        },
+        {
+          "index": 16463,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "getAssetLoader",
+          "prototype": {
+            "returnType": "Lya/c;",
+            "parameters": []
+          },
+          "sourceOffset": 1042824,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3826444
+        },
+        {
+          "index": 16464,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "getCustomUA",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": []
+          },
+          "sourceOffset": 1042832,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3824620
+        },
+        {
+          "index": 16465,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "getEnableClickRotate",
+          "prototype": {
+            "returnType": "Z",
+            "parameters": []
+          },
+          "sourceOffset": 1042840,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3824512
+        },
+        {
+          "index": 16466,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "getJsBridge",
+          "prototype": {
+            "returnType": "Ls40/e0;",
+            "parameters": []
+          },
+          "sourceOffset": 1042848,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3824668
+        },
+        {
+          "index": 16467,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "getLastTouchEvent",
+          "prototype": {
+            "returnType": "I",
+            "parameters": []
+          },
+          "sourceOffset": 1042856,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3824596
+        },
+        {
+          "index": 16468,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "getScope",
+          "prototype": {
+            "returnType": "Lgb0/a0;",
+            "parameters": []
+          },
+          "sourceOffset": 1042864,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3824536
+        },
+        {
+          "index": 16469,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "getWebPageState",
+          "prototype": {
+            "returnType": "Ls40/d3;",
+            "parameters": []
+          },
+          "sourceOffset": 1042872,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3824692
+        },
+        {
+          "index": 16470,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "getWebViewId",
+          "prototype": {
+            "returnType": "Ljava/lang/String;",
+            "parameters": []
+          },
+          "sourceOffset": 1042880,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3824644
+        },
+        {
+          "index": 16471,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "onAttachedToWindow",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1042888,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3825768
+        },
+        {
+          "index": 16472,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "onDetachedFromWindow",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1042896,
+          "accessFlags": "0x00000001",
+          "codeOffset": 3825820
+        },
+        {
+          "index": 16473,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "onMeasure",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "I",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042904,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3825872
+        },
+        {
+          "index": 16474,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "onPause",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1042912,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3825924
+        },
+        {
+          "index": 16475,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "onResume",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1042920,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3826040
+        },
+        {
+          "index": 16476,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "setCanPlay",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Z"
+            ]
+          },
+          "sourceOffset": 1042928,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3826316
+        },
+        {
+          "index": 16477,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "setEnableClickRotate",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Z"
+            ]
+          },
+          "sourceOffset": 1042936,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3826340
+        },
+        {
+          "index": 16478,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "setFakeClick",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Z"
+            ]
+          },
+          "sourceOffset": 1042944,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3826396
+        },
+        {
+          "index": 16479,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebView;",
+          "name": "setLastTouchEvent",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "I"
+            ]
+          },
+          "sourceOffset": 1042952,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3826420
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/webview/KimiWebViewActivity;",
+      "super": "Ls40/m;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1517872,
+      "classDataOffset": 12387408,
+      "methods": [
+        {
+          "index": 16480,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebViewActivity;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1042960,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3820400
+        },
+        {
+          "index": 16485,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebViewActivity;",
+          "name": "J",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lcom/moonshot/kimichat/webview/KimiWebViewActivity;",
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1043000,
+          "accessFlags": "0x00000019",
+          "codeOffset": 3823088
+        },
+        {
+          "index": 16481,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebViewActivity;",
+          "name": "F",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lb3/p;",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042968,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3820528
+        },
+        {
+          "index": 16482,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebViewActivity;",
+          "name": "G",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "J",
+              "Lux/d;",
+              "Lb3/p;",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042976,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3821368
+        },
+        {
+          "index": 16483,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebViewActivity;",
+          "name": "H",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "J",
+              "Lux/d;",
+              "Lb3/p;",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042984,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3821892
+        },
+        {
+          "index": 16484,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebViewActivity;",
+          "name": "I",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lb3/p;",
+              "I"
+            ]
+          },
+          "sourceOffset": 1042992,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3822488
+        },
+        {
+          "index": 16486,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebViewActivity;",
+          "name": "K",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lcom/moonshot/kimichat/webview/KimiWebViewActivity;",
+              "Landroid/widget/FrameLayout;",
+              "Lcom/moonshot/kimichat/webview/KimiWebView;",
+              "Landroidx/compose/ui/platform/ComposeView;",
+              "Landroidx/compose/ui/platform/ComposeView;",
+              "Lux/d;",
+              "Lux/b;",
+              "Ljava/lang/String;"
+            ]
+          },
+          "sourceOffset": 1043008,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3823192
+        },
+        {
+          "index": 16487,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebViewActivity;",
+          "name": "dispatchTouchEvent",
+          "prototype": {
+            "returnType": "Z",
+            "parameters": [
+              "Landroid/view/MotionEvent;"
+            ]
+          },
+          "sourceOffset": 1043016,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3820356
+        },
+        {
+          "index": 16488,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebViewActivity;",
+          "name": "onCreate",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/os/Bundle;"
+            ]
+          },
+          "sourceOffset": 1043024,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3823384
+        },
+        {
+          "index": 16489,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebViewActivity;",
+          "name": "onDestroy",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1043032,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3824144
+        },
+        {
+          "index": 16490,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebViewActivity;",
+          "name": "onPause",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1043040,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3824276
+        },
+        {
+          "index": 16491,
+          "class": "Lcom/moonshot/kimichat/webview/KimiWebViewActivity;",
+          "name": "onResume",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1043048,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3824372
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/webview/WebPageFullScreenModeActivity;",
+      "super": "Ls40/m;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1517904,
+      "classDataOffset": 12387519,
+      "methods": [
+        {
+          "index": 16492,
+          "class": "Lcom/moonshot/kimichat/webview/WebPageFullScreenModeActivity;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1043056,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3826468
+        },
+        {
+          "index": 16493,
+          "class": "Lcom/moonshot/kimichat/webview/WebPageFullScreenModeActivity;",
+          "name": "onCreate",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/os/Bundle;"
+            ]
+          },
+          "sourceOffset": 1043064,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3826544
+        },
+        {
+          "index": 16494,
+          "class": "Lcom/moonshot/kimichat/webview/WebPageFullScreenModeActivity;",
+          "name": "s",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1043072,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3826512
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/wxapi/WXEntryActivity;",
+      "super": "Lj/i;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1517936,
+      "classDataOffset": 12387556,
+      "methods": [
+        {
+          "index": 16495,
+          "class": "Lcom/moonshot/kimichat/wxapi/WXEntryActivity;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1043080,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3826840
+        },
+        {
+          "index": 16496,
+          "class": "Lcom/moonshot/kimichat/wxapi/WXEntryActivity;",
+          "name": "E",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lb3/p;",
+              "I"
+            ]
+          },
+          "sourceOffset": 1043088,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3826864
+        },
+        {
+          "index": 16497,
+          "class": "Lcom/moonshot/kimichat/wxapi/WXEntryActivity;",
+          "name": "F",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lcom/tencent/mm/opensdk/modelbase/BaseResp;"
+            ]
+          },
+          "sourceOffset": 1043096,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3827676
+        },
+        {
+          "index": 16498,
+          "class": "Lcom/moonshot/kimichat/wxapi/WXEntryActivity;",
+          "name": "onCreate",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/os/Bundle;"
+            ]
+          },
+          "sourceOffset": 1043104,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3827240
+        },
+        {
+          "index": 16499,
+          "class": "Lcom/moonshot/kimichat/wxapi/WXEntryActivity;",
+          "name": "onReq",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lcom/tencent/mm/opensdk/modelbase/BaseReq;"
+            ]
+          },
+          "sourceOffset": 1043112,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3827384
+        },
+        {
+          "index": 16500,
+          "class": "Lcom/moonshot/kimichat/wxapi/WXEntryActivity;",
+          "name": "onResp",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lcom/tencent/mm/opensdk/modelbase/BaseResp;"
+            ]
+          },
+          "sourceOffset": 1043120,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3827608
+        }
+      ]
+    },
+    {
+      "descriptor": "Lcom/moonshot/kimichat/wxapi/WXPayEntryActivity;",
+      "super": "Lj/i;",
+      "sourceFile": "r8-map-id-7db2cb3dbf759e5531859f69e8e6a8f19723e4601d6df5403f01551e5fc58dc4",
+      "accessFlags": "0x00000011",
+      "classDefOffset": 1517968,
+      "classDataOffset": 12387606,
+      "methods": [
+        {
+          "index": 16501,
+          "class": "Lcom/moonshot/kimichat/wxapi/WXPayEntryActivity;",
+          "name": "<init>",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1043128,
+          "accessFlags": "0x00010001",
+          "codeOffset": 3828288
+        },
+        {
+          "index": 16502,
+          "class": "Lcom/moonshot/kimichat/wxapi/WXPayEntryActivity;",
+          "name": "E",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lb3/p;",
+              "I"
+            ]
+          },
+          "sourceOffset": 1043136,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3828312
+        },
+        {
+          "index": 16503,
+          "class": "Lcom/moonshot/kimichat/wxapi/WXPayEntryActivity;",
+          "name": "onCreate",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Landroid/os/Bundle;"
+            ]
+          },
+          "sourceOffset": 1043144,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3828688
+        },
+        {
+          "index": 16504,
+          "class": "Lcom/moonshot/kimichat/wxapi/WXPayEntryActivity;",
+          "name": "onDestroy",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1043152,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3828860
+        },
+        {
+          "index": 16505,
+          "class": "Lcom/moonshot/kimichat/wxapi/WXPayEntryActivity;",
+          "name": "onReq",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lcom/tencent/mm/opensdk/modelbase/BaseReq;"
+            ]
+          },
+          "sourceOffset": 1043160,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3828916
+        },
+        {
+          "index": 16506,
+          "class": "Lcom/moonshot/kimichat/wxapi/WXPayEntryActivity;",
+          "name": "onResp",
+          "prototype": {
+            "returnType": "V",
+            "parameters": [
+              "Lcom/tencent/mm/opensdk/modelbase/BaseResp;"
+            ]
+          },
+          "sourceOffset": 1043168,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3828964
+        },
+        {
+          "index": 16507,
+          "class": "Lcom/moonshot/kimichat/wxapi/WXPayEntryActivity;",
+          "name": "onResume",
+          "prototype": {
+            "returnType": "V",
+            "parameters": []
+          },
+          "sourceOffset": 1043176,
+          "accessFlags": "0x00000011",
+          "codeOffset": 3829176
+        }
+      ]
+    }
+  ]
+}

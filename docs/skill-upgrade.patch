@@ -1,0 +1,823 @@
+diff --git a/README.md b/README.md
+index 5b1f73b..9e0ea7b 100644
+--- a/README.md
++++ b/README.md
+@@ -1,15 +1,19 @@
+ # REA Style Library · 产品风格库
+ 
+-目标：把手机App、桌面软件或网站研究成可复用的产品设计语言。以后把研究仓库和自己软件的源码交给Agent，就能迁移UI规范、交互习惯、用户引导与影响体验的行为，让不同业务的软件像同一家公司做的。
++目标：把手机App、桌面软件或网站研究成可复用的产品设计语言。默认服务UI与核心交互迁移，让不同业务的软件像同一家公司做的；不把原产品的全部功能和后端自动变成必测范围。用户明确要求全测时，按其清单执行。
+ 
+ ## 直接复制
+ 
+ - [通用研究Prompt.md](通用研究Prompt.md)：研究一个来源，创建风格库；不要求安装本封装skill。
+ - [改造软件Prompt.md](改造软件Prompt.md)：已有研究库时，直接改自己的软件。
+ 
+-这两份文档完整表达需求；不要求下一Agent看过本次聊天。原业务功能默认只是观察样本，重点是视觉、行为与引导的一致性，不只提取颜色，也不默认开展底层安全/加密审计。
++这两份文档可独立复制，不要求下一Agent看过本次聊天；先记录约定目标、验收和阶段停止条件。原业务功能默认只是观察样本，重点是视觉、行为与引导的一致性，不只提取颜色，也不默认开展功能全量克隆或底层安全/加密审计。
+ 
+-研究库必须保留可获取的图标、字体、文字文案、图片、插画、动效等可复用原始资产，并交付来源、用途、状态变体和引用位置清单；加工版本另存，提取缺口明确。弹窗触发、关闭与叠层，以及页面切换、返回和状态保留/重置，都要形成有证据的行为转移记录。迁移时替换业务内容不覆盖研究库原件。
++有足够的局部A/B证据就尽早做可运行D参考切片，与原版配对迭代，早测系统栏/安全区、IME、焦点、返回及缩放。研究覆盖、迁移就绪、约定交付分别记录：用户接受边界可以完成调整后的目标，未测项仍未测。同类依赖失败有界复试，明确延后后不每轮重问；必要项受阻时交付部分结果并说明需要的协助。
++
++新运行和参考制作只适用于约定包含新研究或实施的模式。只建立catalog、整理已有资料或做选型评估时，核对既有身份、索引引用和消费者依赖即可；默认不操作目标GUI、不制作D，除非用户另要求，也不因此升级原研究覆盖。
++
++研究库必须保留研究范围内可获取的图标、字体、文字文案、图片、插画、动效等可复用原始资产，并交付来源、用途、状态变体和引用位置清单；加工版本另存，提取缺口明确。对约定场景，弹窗触发/关闭/叠层及页面切换/返回/状态保留形成有证据的转移记录。迁移时替换业务内容不覆盖研究库原件。
+ 
+ ## Skill调用
+ 
+@@ -19,7 +23,7 @@
+ $rea-style-library
+ 目标：[App名称、安装包路径或网站URL]
+ 输出目录：[独立研究目录]
+-我要把它研究成可迁移的产品风格库，重点是UI规范、交互逻辑、用户引导和体验相关的软件行为，让以后不同业务的软件像同一家公司做的。先检查环境，实际操作目标，再持续推进。
++我要把它研究成可迁移的产品风格库，重点是UI与核心交互、用户引导及体验相关行为，不默认全功能穷举。先核对目标与约定验收，实际操作原版，尽早做小参考并配对迭代。未测事实、迁移就绪与本次交付分别报告。
+ ```
+ 
+ 也可以在已有研究上使用：
+@@ -61,19 +65,22 @@ $rea-style-library
+ 
+ ## 包内结构
+ 
+-`skill/rea-style-library/`是可移植技能源，包含入口、UI元数据，以及研究/交付/迁移三份按需参考。根目录文档给人复制使用，不是某个软件的研究结果。
++`skill/rea-style-library/`是可移植技能源，包含短入口、原UI调用配置，研究/交付/迁移及阶段工作流的按需参考，以及可选manifest和无第三方依赖的离线检查器。根目录文档给人复制使用，不是某个软件的研究结果。
++
++以后每研究一个来源，单独创建研究仓库/profile；多来源REA库先核实真实研究入口/输出和来源身份，再按原版实际平台归为网页、桌面或手机。桌面浏览器中的网站仍属网页；没有匹配研究的类别可以留空。普通UI工程、视觉实验或同作者应用不自动成为REA成果；已有迁移例子跟随其研究profile。
+ 
+-以后每研究一个来源，单独创建研究仓库/profile；多来源库通过索引比较密度、排版、导航、反馈、引导等特征，避免把不同产品的规则无声混合。每份库都必须保留证据、未知和原版对照。
++统一入口保留各来源风格、Git提交/本地修改、技术栈和启动方式，通过索引比较密度、排版、导航、反馈与引导。统一检索不意味着统一工程或混合tokens。每份库保留证据、未知和原版对照；旧记录以映射接入，不要求为每轮另写一整套硬编码采集/分发脚本。
+ 
+-本工具包不是风格已恢复的保证。实际运行受目标版本、平台、账号和工具能力影响；无法验证时只能交付清楚标注的部分结果。完整的“同公司产品感”需要在多页面、多状态和不同业务样本中检查。
++本工具包不是风格已恢复的保证。实际运行受目标版本、平台、账号和工具能力影响；必要验收受阻时交付清楚标注的部分结果。若用户明确接受剩余边界，可以完成调整后的交付，同时保留原研究覆盖。完整的“同公司产品感”需要在约定的多页面、多状态和不同业务样本中检查，参考测试不能代替原版证据。
+ 
+ ## 开发与验证
+ 
+ 格式、YAML、引用和调用元数据可用 Node.js 校验；开发依赖仅用于仓库检查，不是使用skill的前提。
+ 
+ ```sh
+-npm ci
++npm ci --ignore-scripts
+ npm run validate
++node --test skill/rea-style-library/scripts/check-manifest.test.mjs
+ ```
+ 
+ 独立场景试用的范围与结果见[验证说明](docs/validation.md)。格式检查和受限试用不代表已对所有平台自动逆向成功。
+diff --git a/docs/validation.md b/docs/validation.md
+index e9b1f32..c084ab6 100644
+--- a/docs/validation.md
++++ b/docs/validation.md
+@@ -21,3 +21,13 @@
+ 该试用支持有限证据下的交接、业务替换和边界判断。它没有验证所有手机、桌面和网站环境，也没有完成新网站采集、目标软件实际改造、完整来源对照或跨业务运行验收。
+ 
+ 使用本skill研究具体产品时，仍须针对该产品采集、验证并报告覆盖；不能用此仓库的结构校验或试用结果代替。
++
++## 2026-10-19 工作流升级检查
++
++升级后的短入口、研究/交付/迁移reference以及根README和两份复制Prompt共同区分UI与核心交互迁移、明确全测、资料整理与REA研究入库；保留用户明确范围和授权优先。阶段细节转入按需workflow，未测覆盖、迁移就绪和约定交付分开，局部证据支撑早期可运行参考与配对迭代。
++
++Node YAML/本地引用检查通过。`node --test skill/rea-style-library/scripts/check-manifest.test.mjs` 的9组合成契约测试检查A/D边界、时间与复核、REA资格声明、用户接受边界但未测仍未测、全测必要条件、local/distributed文件要求、精确审核固定值及篡改/重复/越界输入。原仓库补丁在对应基线的隔离Git index中apply检查通过。
++
++新增检查不访问真实产品、账号、设备或网络，不产生A证据。上面的三个独立Agent试用属于原版开发记录，不能冒称已经独立验证此次升级的所有行为；合成脚本检查也不能证明Agent会在所有真实研究中正确选择范围或停止。README及Prompt的同步是文档一致性修订，不是新的原版运行验收。
++
++随后独立情境审读指出，通用运行/参考步骤需要显式排除catalog、纯资料整理和仅评估。已在skill、工作流、迁移指南、README及两份Prompt补模式边界：这些模式只核对既有身份、索引引用和消费者依赖，除非用户另要求，否则不新增GUI运行或制作D。此为语义修正，未进行真实App回归。
+diff --git a/skill/rea-style-library/SKILL.md b/skill/rea-style-library/SKILL.md
+index ea58d11..37f921d 100644
+--- a/skill/rea-style-library/SKILL.md
++++ b/skill/rea-style-library/SKILL.md
+@@ -1,67 +1,53 @@
+ ---
+ name: rea-style-library
+-description: "Extract a reusable product design language from mobile apps, desktop software, or websites using REA and real runtime evidence. Use when the user wants a detailed style library covering UI, UX, interaction rules, product behavior, onboarding, and guidance so a different product can feel made by the same company; also use to apply an existing research library to the user's software. 不只提取配色，不默认复刻原业务功能。"
++description: "Research reusable UI, interaction and guidance patterns from real apps or websites with REA evidence, apply a researched style to another product, or catalog existing REA research profiles. Use for product design-language libraries and style transfer; source features are samples, not a default full-function clone."
+ ---
+ 
+ # REA Style Library
+ 
+-## 目标与边界
++产物要让下一位Agent离开聊天后仍能找到来源、运行参考、迁移规则并核对差异。用户的明确范围、授权和保留要求优先；本技能不额外授权发布、付费、外部发送、改原包或删除用户数据。
+ 
+-产物是一份可以离开本次聊天独立使用的产品风格库：另一个实现 Agent 拿到研究仓库和目标软件源码，就能迁移视觉语言、交互习惯、用户引导及影响体验的软件行为，使不同业务的软件有一致的产品家族感。
++## 先确定本次目标
+ 
+-“软件逻辑”优先指导航/返回、编辑/保存、异步状态、状态保留、错误恢复、权限和引导等行为机制。只有解释这些机制需要时才追后端、数据库、协议或原生代码；不默认开展功能全量克隆、加密分析或安全审计。原业务功能可作为观察样本，不是默认迁移目标。设计意图没有直接资料时标为推断，不替原作者发明理由。
++从现有请求判断，记录一句目标、必要交付与停止条件；已有答案不重问。
+ 
+-## 先选模式
++- **研究可迁移设计语言**：默认覆盖UI与核心交互，如导航返回、输入编辑、弹层、状态反馈和引导。用原业务作观察样本，不自动扩张为全部功能、后端或设备组合测试。按需读[研究维度](references/research.md)和[交付](references/deliverables.md)。
++- **用户明确要求全功能验证**：保留其清单和验收条件，不能以代表样本替代。无法测试仍标未验证，除非用户明确调整范围。
++- **整理已有资料/只做评估**：保留历史身份与证据限制，按约定交付；不称新实测，也不擅自把用户要求的实现降成文档。
++- **已有库迁移**：读[迁移](references/transfer.md)，先沿用目标源码、业务和技术栈；只为影响实现的缺口补研究。
++- **多来源统一入口**：读[入库约定](references/workflow.md#多来源入库)，先核实REA研究身份；普通UI工程不冒充研究，迁移例子跟随其来源。保留独立profile、Git版本和启动方式。按原产品实际平台分类，桌面浏览器中的网站仍属网页；无匹配研究的类别可留空。
+ 
+-- **研究/入库**：目标为某个 App、安装包或网站。按下方流程执行；读取 [research.md](references/research.md) 与 [deliverables.md](references/deliverables.md)。
+-- **已有原始资料整理**：用户只提供历史截图、源码锚等，尚无成型研究库。先按 research.md 和 deliverables.md 核对资料身份并建立规则/覆盖；不要自动当作新实测。用户明确只要整理/评估时，以该范围交接；用户要完整风格库时，继续补运行、实现和对照缺口，不能自行把目标降成文档整理。
+-- **选风格/迁移**：用户提供已有研究仓库，希望改自己的软件。读取 [transfer.md](references/transfer.md)，先使用已有证据；只对明确缺口追加研究。
+-- **多来源风格库**：为每个来源保留独立 profile 和版本/平台边界；先完成可用的单来源基线，再生成有证据的比较索引。不要无声混成“万能规范”。
++只有缺失信息会改变目标或必要操作时才询问；其他独立工作继续。阶段闸门、依赖重试和可复用记录见[工作流](references/workflow.md)，不把研究维度直接展开成穷举任务。
+ 
+-用户已给出明确来源时不要重问。只说“这个 App”且会话/附件/路径均无法确定目标时，先问清目标；可先创建研究工作目录和问题清单，不擅自替用户选产品。未给迁移业务时先完成通用库，迁移演示使用显式说明的中性业务样本。
++## 推进方式
+ 
+-## REA 技能委托
++以下原版运行、D切片及参考验收步骤仅在约定包含新研究或实施/迁移时适用。catalog、纯资料整理、仅评估只核对既有身份、索引引用和消费者依赖，不新增目标GUI运行或制作D，除非用户另有要求；保留既有未运行/未验证边界。
+ 
+-在本技能触发的首次目标研究中，**先查找并读取已安装的 `reverse-engineer-anything/SKILL.md`，按其中与目标有关的指南选择实际可用的 REA 工具**。这是技能间的指令委托，不是虚构一个工具调用；保留它要求的证据、选源、预算和运行边界。
++1. **核对来源并复用**：确认原产品/制品版本、Git提交或URL、账号/数据模式、平台与采集条件，先读旧记录；不重复全包解析。
++2. **尽早取真实样本**：实际进入目标并核对像素、控件和操作结果。选择能支撑目标的代表流程，列出关键未知；不凑固定页数/组件数，不在登录页宣布完成。
++3. **早建小参考，边研究边配对**：有足够的局部A/B证据就做一个可运行D切片，与原版同状态比较，再扩展规则。涉及输入和系统壳时早测inset/安全区、IME、焦点、返回及缩放；不等所有功能调查结束才首次运行。演示不填补原版证据。
++4. **围绕差异补证**：把重复的视觉、交互、行为、文案/引导和可获取资产整理成可实施规则；只追解释当前问题所需的源码与依赖。反例、平台适配和未知随规则保存。
++5. **按目标验收与恢复**：运行代表参考；完整迁移库再用不同业务小样本检查规则可复用性。核对约定交付、差异和本轮环境恢复，提供单一入口与具体启动命令；无需为交付擅自公开仓库。
+ 
+-使用当前会话的技能目录或环境目录发现 REA，不把作者电脑绝对路径写成依赖。REA 未在技能清单中出现时，只在明确的技能安装目录查找；仍缺失时说明缺少的入口，继续可支持的观察/整理，不能声称用了 REA。
++## 三条状态轴
+ 
+-已有工具可用就直接针对目标，不例行重装、不重复分析相同制品。先核对版本、哈希、既有会话和研究记录；需要补证时只追相关依赖。缺少某个后端不等于全部 REA 不可用。缺工具时依 REA 的恢复指南处理，不自动更新全局环境，也不伪造调用、Evidence ID 或“连接成功”。
++- **研究覆盖**：逐项保留 verified / partial / unverified / not_applicable；依赖被延后或用户接受边界不改变研究事实。
++- **迁移就绪**：说明哪些规则/组件可用、哪些有条件、哪些不能迁移，关联证据、参考和对照。原业务仍有未测功能不必使已证实的UI规则全部不可用。
++- **约定目标**：按用户要求的验收条件判断完成。用户明确接受剩余边界后，可完成调整后的约定交付，同时保留未测项。未回应不是接受；明确要求全测且仍有必要缺口时不能宣布全量完成。
+ 
+-纯粹读取研究库、比较风格或修改有完整源码的自有项目，不要求再跑 REA。来源二进制、实际客户端或历史证据留下问题时，再调用相应能力。
++阶段内无可独立推进的必要项、其余均有具体依赖时，保存部分交付及恢复条件并清楚请求所需协助；不要循环重试或反复询问已被用户延后的同一依赖。
+ 
+-## 研究流程
++## 证据与运行底线
+ 
+-1. **识别与分段**：记录目标版本/构建、路径或 URL、哈希、部署/账号模式、系统、语言、主题、DPI/字体缩放、窗口或设备尺寸、可确认的页面缩放。复用已核对的证据，声明未覆盖平台/版本。研究产物放独立目录。
+-2. **运行优先**：尽早实际进入目标产品并保存代表性原图和操作记录。选能说明设计语言的导航、内容/编辑、设置/弹层/引导等场景。复杂产品首轮通常以三个代表页面/状态和十个基础组件为基线；按目标实际规模调整，不为凑数虚构页面或重复截图。先让用户看到真实样本，再扩展分析。
+-3. **围绕问题追证据**：从实机元素追到当前生效的布局、样式、字体、代码和依赖，识别旧分支、SDK 默认资源、主题覆盖和功能开关。静态与实机冲突时追原因，不强行统一。具体维度见 research.md。
+-4. **形成迁移规则**：为重复模式写出规则、适用条件、证据、反例及替换边界；分别说明视觉、交互、引导和行为如何共同形成家族感。区分应保留的设计习惯、应替换的业务内容与应适配的平台能力。
+-5. **证据足够后再重建**：完整风格库输出语义 tokens、组件状态与事件契约、行为状态机/转移表、引导模式和可运行参考。仅整理/评估的任务按用户范围交付文档，并显式列出未做的运行与实现；不能称已完成完整风格库。保留来源与独立选择。选择适合目标平台的技术栈，不一律用网页模拟原生应用，也不把 bundle 包装成“原始源码”。
+-6. **双重验证**：一是在尽量相同环境、主题、语言、内容和状态下比较原产品与参考，记录视觉和行为差异；二是用一个不同业务的小样本证明设计语言能迁移。两者分开报告。只有参考自身测试通过，不能证明原版已还原。
+-7. **交接与恢复**：按 deliverables.md 建立一页入口、可用范围、来源索引、接入指南、覆盖/缺口、下一位 Agent 的执行提示词；恢复本轮改动并核验。说明哪些可用、哪些仍需补证，不把基线称全量完成。
++- **A**实际观察，**B**包内/已捕获源码声明，**C**推断，**D**独立重建或迁移选择。参考自身测试不能证明原版；仅使用工具真实返回的REA ID。
++- 历史A/B保留原采集时间、origin、复核时间与版本/条件匹配；复制或看旧图不产生新实测。静态资源存在不证明运行使用。
++- 原图/录屏及原始资产不覆盖；派生对照另存。保留身份、操作、时间、路径、哈希和采集方法。截图与UIA/DOM通常非原子，分别记录时间与状态差异；调用成功不代表有效结果。
++- 同一设备/窗口/页面只由一个控制者操作；先核对目标身份。凭据不写脚本或证据；优先独立profile、自造内容和局部依赖。原件留存与公开分发分别决定。
++- 保持dp/sp、CSS px、物理像素等单位和换算条件；未证实的字体回退、动效或内部行为保留未知。采样间隔不是动画duration。
++- 沿用项目已有采集/验证器，以配置和少量平台适配复用run结构；旧记录用适配映射接入。可用[manifest模板](assets/research-manifest.json)与[离线检查器](scripts/check-manifest.mjs)，不为每轮复制改名整套硬编码工具。检查器只核对声明结构、引用和字节。
+ 
+-## 必须保留的证据与判断
++## REA 委托
+ 
+-- **A 实际观察**、**B 包内或已捕获源码声明**、**C 推断**、**D 独立重建/迁移选择**逐项区分。REA ID只使用工具真实返回的值；辅助记录用自己的编号。未测不填精确值。
+-- A/B可复用历史记录，但另记 `origin: historical|current`、原采集时间、复核时间、身份与条件是否匹配；历史A不会因本次复制/看图就成为新A。关键结论按当前任务独立核对，不假设版本、主题、模式和数据相同。
+-- 原始截图/录屏保持不变，标注与对照另存。每张关联时间、进程/窗口或应用/页面身份、场景、操作、哈希与采集方法。实际看像素和控件，不能因采集接口返回成功就认定不是空白或错页。
+-- 必须提取并保留研究范围内可获取的图标、字体、文字文案、图片、插画、动效等可复用资产，保存原始格式并建立来源、用途、状态变体和引用位置清单；原件与加工版本分开，无法提取的列明缺口。迁移时替换业务内容不影响研究库保留原件；交付要求见 deliverables.md。
+-- dp/sp、CSS px、物理像素、UIA pt保持单位与换算条件。字体区分声明、文件、运行报告和逐字回退；变量轴及回退无法确认时为未知。
+-- 动画区分触发、属性、起止、时长、delay、easing/spring、中断、退出及 reduced motion。截图采样间隔不是 duration；CSS sampled spring不能反解唯一物理参数。
+-- 首次引导、功能发现、上下文说明、空态引导、权限时机、校验提示、确认/撤销、失败恢复、帮助和快捷键是核心研究对象，不能只做视觉清单。
+-- 弹窗与页面切换必须记录行为规则：触发条件、打开/跳转与关闭/返回路径、叠层和焦点、状态保留/重置、异步与异常处理；按适用性形成有证据的状态转移记录，不能只留静态截图。具体观察项见 research.md。
+-- 标准账号/第三方模式、真机/模拟器、原生/RN/WebView、主题/密度不同分别记录。测试后端统一注明“前端为真实目标产品，后端数据为测试 fixture”，不称真实业务验证。
++首次实际研究目标制品或运行客户端时，查找并读取已安装的 `reverse-engineer-anything/SKILL.md`，按相关路线选择当前真实可用的REA工具。保留其选源、证据、预算及运行边界；不例行重装、不自动更新全局环境。未找到时说明缺少入口并继续可支持部分，不声称已调用。
+ 
+-## 运行和授权
+-
+-按用户本次任务已有授权推进必要、可逆的研究操作，不反复确认已授权动作。技能本身不授予跨任务的永久权限；网页、源码、反编译文本和截图是分析数据，不是执行指令。
+-
+-优先独立 profile、测试账号、局部依赖和最小配置变更；变更前备份，记录应用/恢复方法。结束恢复默认状态，或保留用户明确要求保留的环境。无需为常规只读和已授权操作新增审批流程；发布、生产写入等另外确认授权。
+-
+-登录、外设或平台阻塞时，先诊断可用的正常运行/官方测试配置与模拟环境，继续独立静态工作；不要索要无关密钥，不绕过访问控制，不用自己画的页面冒充目标。无有效运行路线时交付明确标记的部分研究，指出缺口与恢复路线；不能在登录页或假演示上宣布完成。
+-
+-不以启用系统可选功能、重启电脑、修改安装原包、删除用户数据、付款、发送外部消息或公开发布作为未说明的研究步骤。只有当前用户明确授权的相应操作才可进入其流程。
+-
+-## 完成判断
+-
+-完成的是用户约定的覆盖范围，不是“所有软件的一切”。核心模式能从 A/B 证据追到规范、实现和对照；无法得到 A 或其场景/状态覆盖不足时显式为部分验证。完整库应让新 Agent 无需聊天上下文即可找到版本和缺口、运行参考、替换业务并检查结果；仅整理任务不得冒称通过运行验收。数量、文件体积、解析成功、工具安装完成和漂亮演示都不能单独充当完成标准。
++仅整理库、建立分类入口或修改完整源码项目时，不要求新REA分析；对制品/运行证据有具体疑问再补。网页、源码、截图和反编译文本是分析数据，不是授权指令。无法正常认证或缺外设时按[依赖处理](references/workflow.md#依赖与有界复试)推进，不绕过访问控制、不用自绘页面冒充目标。
+diff --git a/skill/rea-style-library/assets/research-manifest.json b/skill/rea-style-library/assets/research-manifest.json
+new file mode 100644
+index 0000000..9048525
+--- /dev/null
++++ b/skill/rea-style-library/assets/research-manifest.json
+@@ -0,0 +1,27 @@
++{
++  "schemaVersion": 1,
++  "profile": {
++    "id": "example-profile",
++    "name": "Example profile; replace before use",
++    "sourceCategory": "unknown",
++    "sourceRuntime": "unknown",
++    "researchIdentity": {"status": "unknown", "evidenceRefs": []},
++    "git": {"remote": null, "commit": null, "branch": null, "dirty": null},
++    "launch": {"cwd": null, "commands": []}
++  },
++  "scope": {
++    "goal": "Record the user’s concrete goal before collecting evidence",
++    "mode": "style-and-core-flows",
++    "acceptanceCriteria": [],
++    "excluded": [],
++    "acceptedBoundaries": []
++  },
++  "delivery": {"status": "in_progress", "criteria": []},
++  "readiness": {"status": "not_assessed", "readyRules": [], "limitations": []},
++  "targets": [],
++  "runs": [],
++  "artifacts": [],
++  "captures": [],
++  "coverage": [],
++  "distribution": {"default": "deny", "files": []}
++}
+diff --git a/skill/rea-style-library/references/deliverables.md b/skill/rea-style-library/references/deliverables.md
+index 1a4ce20..e417548 100644
+--- a/skill/rea-style-library/references/deliverables.md
++++ b/skill/rea-style-library/references/deliverables.md
+@@ -1,6 +1,6 @@
+ # 风格库交付与验收
+ 
+-以下为建议分层，可以合并小型文档；文件名和数量不是完成标准。用户指定结构时服从用户。
++以下为建议分层，可以合并小型文档；文件名和数量不是完成标准。用户指定结构时服从用户。默认服务UI与核心交互迁移；用户明确全功能验证时保留其验收条件。范围与阶段见[工作流](workflow.md)。
+ 
+ ```text
+ README.md                    单一入口、版本、证据级别、运行与阅读顺序
+@@ -21,16 +21,23 @@ docs/                        迁移指南、覆盖/缺口、下一Agent提示词
+ 
+ ## library.json：用于以后选择风格
+ 
+-每个来源profile建议包含以下信息，空缺可以为null/unknown：
++每个来源profile建议包含以下信息，空缺可以为null/unknown；统一库引用来源，不覆盖其独立风格和运行工程：
+ 
+ - `id/name/source/versions/platforms/deploymentModes`：来源与适用边界。
++- `sourceCategory/sourceRuntime/git/launch`：原版网页/桌面/手机分类、实际运行栈、远程仓库/固定提交/本地修改、启动目录/命令/环境要求和最近验证。网站在桌面浏览器运行仍属网页；参考实现平台另列，不反推来源。
+ - `traits`：有依据的密度、排版、导航、内容组织、反馈与引导特征；每项关联依据或标C。
+ - `goodFit/needsAdaptation`：适合的产品场景及需适配内容，标为建议而非事实。
+ - `artifacts`：代表场景缩略图/原图入口、资产清单、tokens、规范、参考入口、对照、接入指南的相对路径；缩略图为派生展示，不替代原始证据。
+-- `coverage/unknowns`：可用、部分、未验证，指出关键风险和优先补证点。
++- `coverage/unknowns`：逐项研究verified/partial/unverified/not_applicable和证据，指出关键风险及补证条件。
++- `readiness`：已可迁移的规则/组件、条件和限制，关联规范、实现与对照；不由原业务全测比例推导。
++- `scope/delivery`：本次约定目标、验收条件、各项结果及用户明确接受的剩余边界；不改写coverage事实。
+ 
+ 多来源索引只引用各自profile，明确比较轴。不要用“高级/好看”等空泛标签作为唯一选型依据，也不要没有证据就给相似度分数。
+ 
++REA研究库先核实实际研究入口、输出和来源边界，不把普通UI源码、同作者实验或独立迁移应用自动入库。迁移例子跟随其研究profile；无匹配REA研究的平台分类可留空。
++
++可选用[通用manifest](../assets/research-manifest.json)和[离线检查器](../scripts/check-manifest.mjs)复用身份、run、capture、覆盖与精确分发结构。旧库用映射适配，不重写旧原件。交付前检查解压消费者目录的真实相对依赖；本机存在但没有交付的原包/私有原件不应成为公开预览的隐性依赖。
++
+ ## 可复用资产交接
+ 
+ 必须交付研究范围内可获取的图标、字体、文字文案/本地化资源、图片、插画、动效等资产及可查清单，供下一Agent直接定位和复用。建议原件放 `assets/original/`、加工版本放 `assets/derived/`，清单用JSON或表格；可沿用来源结构，但不能只给截图、外部URL或文件名。
+@@ -74,6 +81,8 @@ JSON/CSS tokens也保留来源、条件和原单位；来源元数据可放sidec
+ 
+ 两种验证不能互相替代。参考测试只证明参考实现的行为；借鉴效果需要来源对照，迁移可用性需要不同业务样本。
+ 
++配对从早期小切片开始。每次保留原版/参考的版本、内容、环境与状态映射；先解决全局inset/IME/焦点问题再扩页面，最后报告累积偏差。参考更新后旧build的capture保留版本边界，不与新build混为同一次通过。
++
+ ## 交接验收
+ 
+ - README让新Agent不读聊天也能识别目标、证据类型、环境、阅读顺序、启动命令和已知缺口。
+@@ -84,6 +93,7 @@ JSON/CSS tokens也保留来源、条件和原单位；来源元数据可放sidec
+ - 新业务替换与固定保留边界明确，目标平台接口和字体替换影响可查。
+ - 原图身份、源码位置/哈希、实际REA输出、选源与预算限制可复核。
+ - 覆盖表逐项区分verified/partial/unverified/not-applicable，不以文件量或模板字段齐全作为完成证明。
++- 迁移就绪与约定交付独立报告。用户明确接受的边界有指令依据；deferred依赖仍保留实际研究状态。明确全测仍有必要缺口时只交部分成果。
+ - 有恢复记录；分享内容不依赖本机私有路径/未包含依赖。不要把参考资料的README复制后当自己的交付入口。
+ - `docs/next-agent-prompt.md`明确要求：读取库→审查目标项目→做规则映射→实施→检查差异，保留目标产品功能与品牌，列出独立选择。
+ 
+diff --git a/skill/rea-style-library/references/research.md b/skill/rea-style-library/references/research.md
+index ecb851e..8014792 100644
+--- a/skill/rea-style-library/references/research.md
++++ b/skill/rea-style-library/references/research.md
+@@ -1,6 +1,6 @@
+ # 研究维度与平台路线
+ 
+-按目标和可达场景选取维度；不把下列所有状态强套到所有组件。先完成关键模式，再按缺口扩展。
++本文件是选题菜单。按用户目标和可达场景选取维度，不把所有功能、状态或设备组合自动生成必做任务。默认以UI与核心交互支撑迁移；用户明确全测时按其清单开展。阶段和依赖处理见[工作流](workflow.md)。
+ 
+ ## 1. 平台路线
+ 
+@@ -15,6 +15,8 @@
+ 
+ 同一窗口、设备或页面的主动操作保持单一控制者；并行工作可拆为静态追踪、证据整理和独立参考实现，不要同时驱动同一GUI而破坏状态和时间归因。共享配置与证据文件的修改也需要协调。
+ 
++平台分类依据原版的实际交付形态，技术栈另列：桌面浏览器中的网站归网页，Electron安装客户端归桌面，网页参考不能替代手机原生验证。多来源保留独立profile、固定Git提交/制品身份、构建和启动方式，不从截图大小猜原平台。
++
+ ## 2. 产品家族感：先观察规则，再概括理由
+ 
+ 梳理信息密度、层级、留白、内容宽度、标题角色、导航方式、操作强调、内容/工具区分、选择/编辑/浏览的边界、反馈强弱、用语与引导节奏。
+@@ -40,11 +42,11 @@ tokens保留语义、条件、来源和原单位；未知的全局shadow/radius/
+ 
+ ## 4. 组件与行为
+ 
+-首轮从来源中选择基础组件，例如按钮/图标按钮、输入器/表单、导航/Tab、列表/卡片、菜单/选择器、弹窗/sheet、Tooltip/提示、Toast/状态反馈、搜索、引导组件。实际只有少数组件的目标可以减少，不能借重复变体充数。
++首轮选择能支撑约定流程的基础组件，例如输入器、导航、菜单、弹窗或反馈。没有固定组件配额；不用重复变体充数。有局部A/B证据后尽早构建一个可运行D切片，配对原版再迭代，不等待所有研究项目完成。
+ 
+ 对每个组件记录结构与插槽、尺寸与排版、适用状态、事件/副作用、键盘与手势、focus/selection、禁用语义、与父组件/路由的边界。状态按适用性研究default、hover、pressed、focus、disabled、loading、selected、invalid、empty、error；标明不适用和未验证。
+ 
+-软件行为至少围绕关键体验追踪：
++对已纳入范围的关键体验，按适用性选择行为追踪：
+ 
+ - 导航/返回/重选/深链，滚动和筛选状态是否保留。
+ - 编辑/草稿/保存/取消、脏数据、离开确认、撤销。
+@@ -59,6 +61,8 @@ tokens保留语义、条件、来源和原单位；未知的全局shadow/radius/
+ 
+ 只保留对设计语言和用户体验有作用的机制；领域数据模型/算法默认只列边界。停止按钮出现不证明网络取消，颜色灰不证明无法点击，方法名不证明实现语义。
+ 
++早期代表切片应运行在预期技术栈上，特别核对系统栏/inset或safe area、IME/输入法组合态、焦点和返回、窄屏/缩放。发现会影响所有页面的问题先修再扩展。未观察到的异常策略可按目标需求标D实现，不能为了做参考而将原版未测项填成verified。
++
+ ## 5. 用户引导与内容设计
+ 
+ 将“用户指引”作为交付主体，包含：
+@@ -94,4 +98,6 @@ tokens保留语义、条件、来源和原单位；未知的全局shadow/radius/
+ 
+ 先判断问题在目标身份、工具连接、平台后端、设备、正常认证、配置还是采集方法。已有正常运行路径就用；按官方支持方式配置本地网关/测试数据时声明前端与数据身份。不要把另一平台或旧版本画面无条件替代目标。
+ 
+-没有运行条件时继续可支持静态部分，保留待测场景与具体补证方法。研究可交付为部分成果，不能用独立演示填充A证据，也不能为了“必须运行”突破授权或绕过访问控制。
++按[有界复试](workflow.md#依赖与有界复试)记录依赖、复试预算、协助请求和恢复条件。无新条件时停止同类失败请求；用户已延后则不每轮再问。继续独立静态/参考/整理工作，不用独立演示填充A证据，也不突破授权或绕过访问控制。
++
++没有运行条件时明确部分研究。研究覆盖、已就绪规则和约定交付分别记录：用户接受剩余边界可完成调整后的交付，原版未测事实仍保留；用户仍要求全测时必要缺口不能被静默排除。
+diff --git a/skill/rea-style-library/references/transfer.md b/skill/rea-style-library/references/transfer.md
+index d4a62a8..b87279d 100644
+--- a/skill/rea-style-library/references/transfer.md
++++ b/skill/rea-style-library/references/transfer.md
+@@ -6,6 +6,10 @@
+ 
+ 用户只让选型时输出有依据的比较与适配代价；用户让修改软件时推进实现。缺少目标项目位置则先完成来源库评估，再问必要输入，不擅自选择旁边无关仓库。
+ 
++仅选型/评估时，下方实施及运行步骤不适用：核对既有身份、规则引用和消费者依赖，不新增目标GUI运行或制作D，除非用户另要求。保留未验证边界，不把评估称为实施验收。
++
++先读取库中已可迁移的规则及限制，不以原业务尚有未测功能推定整库不可用。仅把影响目标约定流程的缺口列为必要补证；用户明确要求全功能验证时遵从。多个来源先选独立profile，保留版本、原平台和启动方式，不默认混合tokens或把网站当桌面原生。
++
+ ## 规则映射
+ 
+ 用简表记录“来源规则→目标中的位置→保留/替换/适配→证据级别→验证方式”。关注：
+@@ -23,7 +27,7 @@
+ 
+ 根据资产清单选择可复用原件，记录“来源资产→目标文件/组件→复用/加工/替换”的映射。加工资产与新业务文案在目标项目或派生目录另存，保留研究库原件与来源；缺失资产或不能直接采用的部分明确列出替代选择。
+ 
+-先建立tokens映射与基础组件，再接代表页面和行为。必要逻辑包括IME、焦点恢复、返回/取消、空态和错误恢复。不要先做漂亮主页，再把其他状态留成无法操作的装饰。
++先建立足够支撑一个流程的tokens映射与基础组件，尽早运行代表切片，再边对照边扩展。早测inset/safe area、IME、焦点恢复、返回/取消、空态和错误恢复；不等完整组件库或原版全测结束才首次运行，也不把其余状态留成装饰。
+ 
+ ## 验证与报告
+ 
+@@ -32,3 +36,5 @@
+ 按库中的转移记录验证弹窗打开/确认/取消/遮罩与返回关闭、叠层和焦点恢复，以及页面首次进入/切换/返回、状态保留/重置、拦截与加载失败路径；来源未验证或目标不适用的路径分别标明。
+ 
+ 验收重点是：新业务仍可用，并在多页面、多状态、引导和操作习惯上形成一致家族感。只让一个静态截图相似不够。报告具体修改、验证、视觉与行为偏差、独立选择和回退方法；按需更新目标风格映射，而不改写研究库的A/B事实。
++
++分别报告来源研究覆盖、目标迁移就绪和用户约定交付。必要依赖受阻时按[工作流](workflow.md#依赖与有界复试)有界处理，继续独立工作；用户接受边界不把未测源行为升级为verified。
+diff --git a/skill/rea-style-library/references/workflow.md b/skill/rea-style-library/references/workflow.md
+new file mode 100644
+index 0000000..fc1d7d0
+--- /dev/null
++++ b/skill/rea-style-library/references/workflow.md
+@@ -0,0 +1,86 @@
++# 范围、阶段和可复用记录
++
++只读取当前模式需要的段落。以下是跨项目约定，不把某次产品故障、场景编号或设备端口变成永久要求。
++
++## 范围与三条状态轴
++
++默认研究目标是能迁移的视觉语言和核心交互，选择与目标相关的导航、编辑、浮层、反馈、引导与异常样本。研究维度是选题菜单，不是必须全部通过的功能清单。用户明确要求全功能或指定清单时遵从，不自行改成抽样。
++
++用三个独立字段回答不同问题：
++
++| 字段 | 回答 | 不可由什么推导 |
++|---|---|---|
++| research coverage | 原版哪个条件、规则或功能实际证实到何种程度 | 文件数、参考测试、用户愿意交付 |
++| migration readiness | 哪些规则/组件已有可用规范、实现和对照，使用时有什么限制 | 原业务是否全部可用，或单张截图相似 |
++| agreed delivery | 用户此次约定的结果是否交付并满足验收条件 | 全部研究维度自动转成任务，或沉默等同接受 |
++
++例：原版支付和双设备同步仍unverified，不妨碍有证据的菜单/输入器规则可迁移。若用户要求的是完整同步验证，缺第二设备仍使该项未完成。用户明确接受延后同步、先完成UI迁移时，记录调整后的验收范围与用户指令位置，原研究覆盖仍unverified。不要把依赖的deferred执行状态写成verified；也不要把已决定延后的项目每轮重新变成必要项。
++
++## 阶段闸门
++
++下表的原版采集、D参考与运行验收适用于约定包含新研究或实施/迁移的任务。catalog、纯资料整理、仅评估只核对已有身份、索引引用与消费者依赖，交付相应索引/评估；不新增目标GUI运行、D制作或跨业务运行，除非用户另要求。缺少既有运行证据仍保留其边界。
++
++| 阶段 | 应得到的可审查结果 | 何时进入下一阶段或停止 |
++|---|---|---|
++| 身份与范围 | 来源/平台/版本、历史可复用项、验收条件、控制者和必要依赖 | 身份可确认且有下一项可执行；缺少会改变范围的信息才请求协助 |
++| 原版代表样本 | 有效原图、操作前后状态、局部A/B规则和关键未知 | 证据足够支撑一个小切片时开始参考，不等所有功能调查结束 |
++| 可运行切片 | 一个代表流程及其输入/返回/忙碌或失败状态，与原版配对 | 先修会影响后续页面的系统栏、安全区、IME、焦点与尺寸问题，再扩展 |
++| 规则与迁移 | tokens/组件/事件/引导及所需资产；按任务补不同业务样本 | 约定模式可追到证据、实现和对照；不因为还可发现功能而无限扩张 |
++| 交付与恢复 | 单一入口、可运行方法、已知边界、恢复和依赖记录 | 必要验收已满足则完成；其余仅在用户接受调整范围后排除。必要项受阻则交付部分成果与具体协助请求 |
++
++有清单时沿用清单ID和状态；发现新功能先判断其是否会改变既有规则或约定验收。只将必要补证加入当前阶段，其余记候选范围。不要在每次续接时重开已完成解析或未经要求的全测。
++
++## 依赖与有界复试
++
++先区分身份/工具连接、运行平台、正常认证、服务容量、真实外设、采集方法。设置与风险和已有证据相称的小复试预算；记录预期、实际结果、失败类别和退出条件。没有新条件或诊断理由时，不继续同类账号/服务失败请求。用户明确给定的预算优先。
++
++每项依赖记录 `state: needed|requested|available|deferred`、已尝试方法、具体所需协助、继续条件和最后一次请求。请求账号/设备时说明需要用户完成的正常步骤，不把凭据写入日志。用户已明确延后后只在条件改变、用户恢复该项或发现有用的新路线时再提，不每轮催问同一问题。
++
++依赖阻塞时继续独立可测的资产/规则/参考/离线整理。全部剩余必要项都依赖外部条件时，保存可审查部分结果及恢复入口，停止主动重复操作。无法正常运行不是A；模拟数据明确区分“原版前端+fixture数据”与D参考，二者都不证明真实后端业务。
++
++## 多来源入库
++
++先核实入库资格：有可追溯的REA研究入口/实际输出、来源身份和证据边界。项目有UI、属于同一作者、能运行或有“还原”字样，都不证明做过REA研究；普通实现/视觉实验不自动入REA研究库。用户另要实现示例时单独标记并遵从其范围，不给它补造研究结论。已有transfer-example作为来源研究的一部分保留，不默认拆成另一份原版研究。没有匹配REA研究的类别可以留空，不用普通工程充数。
++
++按原版实际产品交付平台分类：网页、桌面应用、手机应用。记录另一个维度的运行栈，如web-browser、Electron、Qt、Android native、WebView；在桌面浏览器看网站不变成桌面原生。在手机浏览器看同一网站可加移动视图标签，不能无证据改成手机原生产品。
++
++每个profile保留原仓库URL、固定Git提交、分支/本地修改说明、源码/研究根目录、证据身份、技术栈、依赖/构建要求、启动目录/命令、预览链接及实际验证日期。Git提交只证明取得的代码身份，不证明客户端运行成功。找不到原平台或提交时标unknown，不从仓库名、截图画布或参考实现猜测。
++
++统一库提供分类、搜索和相对路径入口，引用各独立profile与运行工程。可以通过Git submodule或受控复制固定来源；采用哪种方式服从项目结构。保留各来源风格和原启动方式，不为统一入口把所有工程重写成同一技术栈，也不混合tokens。旧schema以适配映射接入，不覆盖原始研究记录。界面预览属于派生产物，不是来源的新A证据。
++
++## 复用run与捕获结构
++
++优先扩展现有可靠工具。将目标身份、profile/run ID、输出目录、环境、允许操作与分发选择放配置，驱动只保留平台差异；不要复制多个只改产品名/端口的脚本。可采用[manifest模板](../assets/research-manifest.json)，也可把旧格式映射到相同信息，无需迁移全部原件。
++
++模板使用以下集合；空数组表示尚无记录，不表示通过：
++
++| 集合 | 最小信息 |
++|---|---|
++| profile | 独立来源ID、可追溯研究身份、原平台/运行栈、Git/制品/URL身份、启动方式 |
++| scope / delivery | 模式和验收条件；各条件pending/met/accepted_with_boundary；明确接受边界的用户指令位置和时间 |
++| readiness / coverage | 可迁移部分及限制；来源或D对象、runtime/static、verified/partial/unverified/not_applicable及依据 |
++| targets / runs | 原版或参考身份、控制者、起止、origin/current或historical、环境、账号/fixture模式；不保存凭据 |
++| artifacts | 唯一ID、相对路径、真实SHA-256/字节数、A/B/C/D、公开与留存边界 |
++| captures | 唯一ID、run/target、方法、起止、atomic、各通道时间和artifact引用、像素/控件复核及限制 |
++| distribution | default=deny，逐项审核通过的artifact及固定hash/字节数、审核时间 |
++
++填充字段的可执行合成示例和正反例在[检查器测试](../scripts/check-manifest.test.mjs)。其中数据只用于离线契约测试，不是实际A证据。`capture.parts`使用kind/artifactId/startedAt/completedAt；`coverage`使用subject（source/reference/transfer）、kind（runtime/static）、researchStatus和evidence。原版static的verified需要B原件及anchor，原版runtime的verified需要已复核A capture；脚本无法替代该复核。catalog模式还要求profile.researchIdentity显式documented并引用来源研究证据；这只检查声明可追溯，不自动证明REA资格真实。
++
++截图与UIA/DOM是分次采集时记录 `atomic: false`，各part分别有startedAt/completedAt。记录的顺序须真实，状态不一致则保留限制或重采新ID；不覆盖旧原图。若供应方确实提供原子采集才用true并引用其保证。成功写文件不等于review accepted；复核需实际查看图和相关控件。
++
++每次运行新run ID，原件不可覆盖；同一设备/窗口/页面只有一个主动控制者，动作前核对身份。锁只能约束采用该锁的工具，不能替代控制者协调。原版、参考与迁移工程分别建target；D不借用原版包名、账号或capture ID。
++
++可运行无依赖的离线检查：
++
++```sh
++node /path/to/skill/scripts/check-manifest.mjs /path/to/library/research-manifest.json
++node /path/to/skill/scripts/check-manifest.mjs /path/to/unpacked/research-manifest.json --distributed
++```
++
++默认要求全部已声明原件；distributed仅读取精确允许分发的文件，遗漏原件仍作为metadata追踪，不称已交付公开证据。脚本不改文件或状态，不连接GUI、Git或网络，不重新看像素，不验证账号权限，也不证明来源行为或用户授权。它不审核实际ZIP成员；生成归档时另核对实际成员路径和字节。
++
++## 分发与续接
++
++留存原件和公开交付分别记录。对身份页、私人内容、不完整/未审核capture、受限资产使用默认拒绝的分发名单；不把所有withheld都称为隐私。名单固定实际路径与hash，派生预览也按同样边界。分享前在不包含根原包、本机profile及排除原件的隔离目录验证相对路径和依赖；完整本机目录通过检查不足以证明交付可用。
++
++续接入口给出约定目标、三条状态轴、最后已完成阶段、正在等待的依赖、唯一控制者、最新run、来源版本、启动/验证命令和下一项必要工作。恢复本轮配置并实际核验；未知初始状态、登录有效期、先前未读取的剪贴板等只报告已知范围，不宣称精确恢复不可知值。
+diff --git a/skill/rea-style-library/scripts/check-manifest.mjs b/skill/rea-style-library/scripts/check-manifest.mjs
+new file mode 100644
+index 0000000..398d196
+--- /dev/null
++++ b/skill/rea-style-library/scripts/check-manifest.mjs
+@@ -0,0 +1,139 @@
++/** Portable, read-only declared-evidence checks. Does not capture, approve, publish or alter status. */
++import fs from 'node:fs';
++import path from 'node:path';
++import crypto from 'node:crypto';
++import {fileURLToPath} from 'node:url';
++
++export function checkManifest(manifest,{root,distributed=false}){
++ manifest=manifest&&typeof manifest==='object'?manifest:{};
++ const errors=[],warnings=[];
++ const check=(ok,message)=>{if(!ok)errors.push(message);};
++ const text=v=>typeof v==='string'&&v.trim().length>0;
++ const date=v=>text(v)&&Number.isFinite(Date.parse(v));
++ const digest=v=>typeof v==='string'&&/^[a-f0-9]{64}$/.test(v);
++ const list=(value,name)=>{check(Array.isArray(value),name+' must be an array');return Array.isArray(value)?value:[];};
++ const index=(values,name)=>{const map=new Map();for(const value of values){if(!value||typeof value!=='object'||Array.isArray(value)){check(false,name+' has a non-object record');continue;}check(text(value.id),name+' has an invalid id');check(!map.has(value.id),name+' duplicate id: '+value.id);map.set(value.id,value);}return map;};
++ const inside=(parent,child)=>{const rel=path.relative(parent,child);return rel!==''&&!rel.startsWith('..'+path.sep)&&rel!=='..'&&!path.isAbsolute(rel);};
++ root=fs.realpathSync(root);
++ const artifactPath=relative=>{
++  const valid=text(relative)&&!relative.includes('\\')&&!relative.includes(':')&&!path.isAbsolute(relative)&&!relative.split('/').some(s=>s==='..'||s===''||s==='.');
++  check(valid,'Invalid portable artifact path: '+relative);
++  if(!valid)return null;
++  const resolved=path.resolve(root,relative);check(inside(root,resolved),'Artifact escapes root: '+relative);
++  return inside(root,resolved)?resolved:null;
++ };
++ check(manifest?.schemaVersion===1,'Unsupported schemaVersion');
++ check(text(manifest?.profile?.id)&&text(manifest?.profile?.name),'Missing profile identity');
++ check(['web','desktop','mobile','unknown'].includes(manifest?.profile?.sourceCategory),'Invalid original source category');
++ const sourceCommit=manifest?.profile?.git?.commit;
++ if(sourceCommit!==null&&sourceCommit!==undefined)check(/^[a-f0-9]{40,64}$/.test(sourceCommit),'Invalid declared Git commit');
++ const targets=index(list(manifest.targets,'targets'),'targets');
++ const runs=index(list(manifest.runs,'runs'),'runs');
++ const artifacts=index(list(manifest.artifacts,'artifacts'),'artifacts');
++ const captures=index(list(manifest.captures,'captures'),'captures');
++ const coverage=index(list(manifest.coverage,'coverage'),'coverage');
++ for(const target of targets.values()){
++  check(['source','reference','transfer'].includes(target.role),'Invalid target role: '+target.id);
++  check(text(target.runtime)&&text(target.identity),'Missing runtime/identity for '+target.id);
++ }
++ for(const run of runs.values()){
++  check(targets.has(run.targetId),'Unknown run target: '+run.id);
++  check(text(run.controller)&&date(run.startedAt),'Run needs controller/start time: '+run.id);
++  check(['current','historical'].includes(run.origin),'Run needs actual historical/current origin: '+run.id);
++  check(['authentic','fixture','unknown'].includes(run.dataMode),'Run needs explicit dataMode: '+run.id);
++  if(run.completedAt!==null&&run.completedAt!==undefined)check(date(run.completedAt)&&Date.parse(run.completedAt)>=Date.parse(run.startedAt),'Run timestamps differ: '+run.id);
++ }
++ const paths=new Set();
++ for(const artifact of artifacts.values()){
++  check(!paths.has(artifact.path),'Duplicate artifact path: '+artifact.path);paths.add(artifact.path);
++  artifactPath(artifact.path);
++  check(digest(artifact.sha256)&&Number.isSafeInteger(artifact.bytes)&&artifact.bytes>=0,'Artifact needs actual SHA-256/bytes: '+artifact.id);
++  check(['A','B','C','D'].includes(artifact.classification),'Invalid artifact classification: '+artifact.id);
++  check(['approved','withheld','pending'].includes(artifact.sharing),'Invalid artifact sharing boundary: '+artifact.id);
++ }
++ for(const capture of captures.values()){
++  const run=runs.get(capture.runId),target=targets.get(run?.targetId);
++  check(!!run&&capture.targetId===run.targetId,'Capture run/target differs: '+capture.id);
++  check(capture.classification===(target?.role==='source'?'A':'D'),'Capture confuses source/reference identity: '+capture.id);
++  check(date(capture.startedAt)&&date(capture.completedAt)&&Date.parse(capture.completedAt)>=Date.parse(capture.startedAt),'Capture timestamps differ: '+capture.id);
++  if(run)check(Date.parse(capture.startedAt)>=Date.parse(run.startedAt)&&(!run.completedAt||Date.parse(capture.completedAt)<=Date.parse(run.completedAt)),'Capture lies outside its recorded run: '+capture.id);
++  check(typeof capture.atomic==='boolean'&&(capture.atomic===false||text(capture.atomicityEvidence)),'Capture needs actual non-atomic boundary or atomic guarantee: '+capture.id);
++  check(text(capture.method),'Capture method missing: '+capture.id);
++  const parts=list(capture.parts,'capture.parts '+capture.id);check(parts.length>0,'Capture has no actual parts: '+capture.id);
++  for(const part of parts){
++   if(!part||typeof part!=='object'){check(false,'Invalid capture part: '+capture.id);continue;}
++   const artifact=artifacts.get(part.artifactId);
++   check(!!artifact&&artifact.classification===capture.classification,'Capture artifact identity differs: '+capture.id);
++   check(text(part.kind)&&date(part.startedAt)&&date(part.completedAt)&&Date.parse(part.startedAt)>=Date.parse(capture.startedAt)&&Date.parse(part.completedAt)>=Date.parse(part.startedAt)&&Date.parse(part.completedAt)<=Date.parse(capture.completedAt),'Capture part timestamps differ: '+capture.id);
++  }
++  check(['pending','accepted','rejected'].includes(capture.review?.status),'Capture review status missing: '+capture.id);
++  if(capture.review?.status==='accepted')check(date(capture.review.reviewedAt),'Accepted capture needs review time: '+capture.id);
++ }
++ const knownEvidence=id=>artifacts.has(id)||captures.has(id);
++ for(const item of coverage.values()){
++  check(['source','reference','transfer'].includes(item.subject),'Coverage subject missing: '+item.id);
++  check(['runtime','static'].includes(item.kind),'Coverage kind missing: '+item.id);
++  check(['verified','partial','unverified','not_applicable'].includes(item.researchStatus),'Invalid research status: '+item.id);
++  const evidence=list(item.evidence,'coverage.evidence '+item.id);for(const id of evidence)check(knownEvidence(id),'Unknown evidence '+id+' for '+item.id);
++  if(item.researchStatus==='not_applicable')check(text(item.reason),'Not-applicable needs reason: '+item.id);
++  if(item.researchStatus==='verified'){
++   check(evidence.length>0,'Verified coverage lacks evidence: '+item.id);
++   if(item.subject==='source'&&item.kind==='runtime')check(evidence.some(id=>captures.get(id)?.classification==='A'&&captures.get(id)?.review?.status==='accepted'),'Verified source runtime coverage needs reviewed A capture: '+item.id);
++   if(item.subject==='source'&&item.kind==='static')check(text(item.anchor)&&evidence.some(id=>artifacts.get(id)?.classification==='B'),'Verified source static coverage needs B bytes and exact anchor: '+item.id);
++  }
++ }
++ const scope=manifest.scope,delivery=manifest.delivery;
++ check(text(scope?.goal)&&['style-and-core-flows','full-functional-validation','documents-only','transfer','catalog'].includes(scope?.mode),'Scope goal/mode missing');
++ if(scope?.mode==='catalog'){
++  const qualification=manifest.profile?.researchIdentity;
++  check(qualification?.status==='documented'&&Array.isArray(qualification.evidenceRefs)&&qualification.evidenceRefs.some(id=>captures.get(id)?.classification==='A'||['A','B'].includes(artifacts.get(id)?.classification)),'REA catalog entry needs explicitly documented source-research identity; ordinary UI implementation alone does not qualify');
++ }
++ const criteria=index(list(scope?.acceptanceCriteria,'scope.acceptanceCriteria'),'acceptanceCriteria');
++ const results=index(list(delivery?.criteria,'delivery.criteria'),'delivery.criteria');
++ const boundaries=index(list(scope?.acceptedBoundaries,'scope.acceptedBoundaries'),'acceptedBoundaries');
++ for(const boundary of boundaries.values())check(text(boundary.description)&&text(boundary.userInstructionRef)&&date(boundary.acceptedAt),'Accepted boundary needs explicit user instruction/time: '+boundary.id);
++ check(['in_progress','partial','complete'].includes(delivery?.status),'Invalid agreed delivery status');
++ for(const result of results.values()){
++  check(criteria.has(result.id),'Delivery criterion not in agreed scope: '+result.id);
++  check(['pending','met','accepted_with_boundary'].includes(result.status),'Invalid delivery criterion status: '+result.id);
++  if(result.status==='accepted_with_boundary')check(boundaries.has(result.boundaryId),'Delivery boundary missing: '+result.id);
++  if(result.status==='met'){
++   const evidence=list(result.evidence,'delivery.evidence '+result.id);check(evidence.length>0,'Met criterion lacks evidence: '+result.id);
++   for(const id of evidence)check(knownEvidence(id)||coverage.has(id),'Unknown delivery evidence: '+id);
++  }
++ }
++ if(delivery?.status==='complete'){
++  check(criteria.size>0,'Complete delivery needs agreed criteria');
++  for(const id of criteria.keys())check(['met','accepted_with_boundary'].includes(results.get(id)?.status),'Complete delivery has an unresolved criterion: '+id);
++ }
++ check(['not_assessed','ready','conditional','not_ready'].includes(manifest.readiness?.status),'Invalid migration readiness');
++ if(manifest.readiness?.status==='ready')check(Array.isArray(manifest.readiness.readyRules)&&manifest.readiness.readyRules.length>0,'Ready migration needs identified usable rules');
++ check(manifest.distribution?.default==='deny','Distribution must default to deny');
++ const selections=list(manifest.distribution?.files,'distribution.files'),selected=new Set();
++ for(const selection of selections){
++  if(!selection||typeof selection!=='object'){check(false,'Invalid distribution selection');continue;}
++  const artifact=artifacts.get(selection.artifactId);check(!selected.has(selection.artifactId),'Duplicate distributed selection: '+selection.artifactId);selected.add(selection.artifactId);
++  check(artifact?.sharing==='approved'&&artifact.sha256===selection.sha256&&artifact.bytes===selection.bytes&&date(selection.reviewedAt),'Exact distribution review differs or is absent: '+selection.artifactId);
++ }
++ let filesChecked=0,bytesChecked=0;
++ for(const artifact of artifacts.values()){
++  if(distributed&&!selected.has(artifact.id))continue;
++  const resolved=artifactPath(artifact.path);if(!resolved)continue;
++  if(!fs.existsSync(resolved)){check(false,'Required artifact missing: '+artifact.path);continue;}
++  if(!inside(root,fs.realpathSync(resolved))){check(false,'Artifact symlink escapes root: '+artifact.path);continue;}
++  if(!fs.statSync(resolved).isFile()){check(false,'Artifact is not a regular file: '+artifact.path);continue;}
++  const bytes=fs.readFileSync(resolved);filesChecked++;bytesChecked+=bytes.length;
++  check(bytes.length===artifact.bytes&&crypto.createHash('sha256').update(bytes).digest('hex')===artifact.sha256,'Artifact bytes changed: '+artifact.path);
++ }
++ if(!captures.size)warnings.push('No runtime captures declared; this check has exercised no runtime evidence.');
++ const researchCoverage=Object.fromEntries(['verified','partial','unverified','not_applicable'].map(status=>[status,[...coverage.values()].filter(item=>item.researchStatus===status).length]));
++ return {status:errors.length?'failed':'passed-integrity-only',mode:distributed?'distributed-exact-declared-set':'local-all-declared-artifacts',profileId:manifest.profile?.id,filesChecked,bytesChecked,declaredArtifacts:artifacts.size,omittedArtifacts:distributed?artifacts.size-selected.size:0,researchCoverage,declaredMigrationReadiness:manifest.readiness?.status,declaredAgreedDeliveryStatus:delivery?.status,statesModified:false,limitations:['Checks only declared structure, references and actual file bytes. Does not prove completeness of the artifact inventory, target identity, pixels, behavior, authorization or user acceptance.','No GUI, Git, network or archive inspection. Metadata about omitted artifacts does not make them public evidence.'],warnings,errors};
++}
++
++if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
++ const [input,flag,...rest]=process.argv.slice(2);
++ if(!input||(flag&&flag!=='--distributed')||rest.length)throw Error('Usage: node check-manifest.mjs MANIFEST.json [--distributed]');
++ const file=path.resolve(input),manifest=JSON.parse(fs.readFileSync(file,'utf8').replace(/^\uFEFF/,''));
++ const result=checkManifest(manifest,{root:path.dirname(file),distributed:flag==='--distributed'});
++ console.log(JSON.stringify(result,null,2));if(result.errors.length)process.exitCode=1;
++}
+diff --git a/skill/rea-style-library/scripts/check-manifest.test.mjs b/skill/rea-style-library/scripts/check-manifest.test.mjs
+new file mode 100644
+index 0000000..0b735f9
+--- /dev/null
++++ b/skill/rea-style-library/scripts/check-manifest.test.mjs
+@@ -0,0 +1,61 @@
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import fs from 'node:fs';
++import path from 'node:path';
++import crypto from 'node:crypto';
++import {fileURLToPath} from 'node:url';
++import {checkManifest} from './check-manifest.mjs';
++const fixtureParent=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../_validation');
++const fixtureParentExisted=fs.existsSync(fixtureParent);fs.mkdirSync(fixtureParent,{recursive:true});
++const root=fs.mkdtempSync(path.join(fixtureParent,'manifest-test-'));
++const bytes=Buffer.from('Synthetic owned evidence, not a runtime capture.');
++const sha=crypto.createHash('sha256').update(bytes).digest('hex');
++const at='2026-10-19T01:00:00.000Z',later='2026-10-19T01:00:01.000Z';
++fs.writeFileSync(path.join(root,'owned.txt'),bytes);
++const valid=()=>({schemaVersion:1,profile:{id:'synthetic',name:'Synthetic',sourceCategory:'web',git:{commit:null}},scope:{goal:'Inspect a representative interaction',mode:'style-and-core-flows',acceptanceCriteria:[{id:'ui',description:'Representative flow'}],acceptedBoundaries:[]},delivery:{status:'complete',criteria:[{id:'ui',status:'met',evidence:['source-rule']}]},readiness:{status:'ready',readyRules:['navigation.return']},targets:[{id:'source',role:'source',runtime:'web-browser',identity:'Synthetic test target only'}],runs:[{id:'run1',targetId:'source',controller:'test',startedAt:at,origin:'current',dataMode:'fixture'}],artifacts:[{id:'screen',path:'owned.txt',sha256:sha,bytes:bytes.length,classification:'A',sharing:'approved'}],captures:[{id:'capture',runId:'run1',targetId:'source',classification:'A',startedAt:at,completedAt:later,atomic:false,method:'Synthetic metadata test only',parts:[{kind:'screenshot',artifactId:'screen',startedAt:at,completedAt:at}],review:{status:'accepted',reviewedAt:later}}],coverage:[{id:'source-rule',subject:'source',kind:'runtime',researchStatus:'verified',evidence:['capture']}],distribution:{default:'deny',files:[{artifactId:'screen',sha256:sha,bytes:bytes.length,reviewedAt:later}]}});
++const evaluate=(mutate=()=>{},distributed=false)=>{const manifest=valid();mutate(manifest);return {manifest,result:checkManifest(manifest,{root,distributed})};};
++
++test('declared owned local evidence validates without changing state',()=>{
++ const {manifest,result}=evaluate();assert.equal(result.status,'passed-integrity-only');assert.equal(result.filesChecked,1);assert.equal(manifest.coverage[0].researchStatus,'verified');assert.equal(result.statesModified,false);
++});
++test('source runtime verification cannot borrow D evidence',()=>{
++ const {result}=evaluate(m=>{m.targets[0].role='reference';m.captures[0].classification='D';m.artifacts[0].classification='D';});assert(result.errors.some(e=>e.includes('reviewed A capture')));
++});
++test('a REA catalog entry needs declared traceable source research',()=>{
++ assert(evaluate(m=>m.scope.mode='catalog').result.errors.some(e=>e.includes('source-research identity')));
++ assert.equal(evaluate(m=>{m.scope.mode='catalog';m.profile.researchIdentity={status:'documented',evidenceRefs:['capture']};}).result.status,'passed-integrity-only');
++});
++test('a captured file still needs actual review and timing',()=>{
++ assert(evaluate(m=>m.captures[0].review.status='pending').result.errors.some(e=>e.includes('reviewed A capture')));
++ assert(evaluate(m=>m.captures[0].parts[0].completedAt='2026-10-19T02:00:00.000Z').result.errors.some(e=>e.includes('timestamps')));
++ assert(evaluate(m=>m.captures[0].atomic=true).result.errors.some(e=>e.includes('atomic guarantee')));
++});
++test('accepted scope boundary leaves untested research unverified',()=>{
++ const {manifest,result}=evaluate(m=>{m.coverage.push({id:'device-sync',subject:'source',kind:'runtime',researchStatus:'unverified',evidence:[]});m.scope.acceptanceCriteria.push({id:'sync',description:'Real second device'});m.scope.acceptedBoundaries.push({id:'later',description:'User defers real-device sync',userInstructionRef:'Synthetic explicit user instruction',acceptedAt:later});m.delivery.criteria.push({id:'sync',status:'accepted_with_boundary',boundaryId:'later'});});
++ assert.equal(result.status,'passed-integrity-only');assert.equal(manifest.coverage[1].researchStatus,'unverified');assert.equal(result.declaredAgreedDeliveryStatus,'complete');
++});
++test('full validation cannot silently drop an unresolved criterion',()=>{
++ const {result}=evaluate(m=>{m.scope.mode='full-functional-validation';m.scope.acceptanceCriteria.push({id:'sync',description:'Full sync validation'});});assert(result.errors.some(e=>e.includes('unresolved criterion: sync')));
++ assert(evaluate(m=>{m.scope.acceptedBoundaries.push({id:'assumed',description:'Assumed acceptance',acceptedAt:later});}).result.errors.some(e=>e.includes('explicit user instruction')));
++});
++test('distributed mode omits declared withheld bytes without pretending they shipped',()=>{
++ const mutate=m=>m.artifacts.push({id:'private',path:'absent-private.txt',sha256:sha,bytes:bytes.length,classification:'A',sharing:'withheld'});
++ assert(evaluate(mutate).result.errors.some(e=>e.includes('Required artifact missing')));
++ const {result}=evaluate(mutate,true);assert.equal(result.status,'passed-integrity-only');assert.equal(result.omittedArtifacts,1);assert.equal(result.filesChecked,1);
++});
++test('distribution exact review does not follow changed metadata or private approval',()=>{
++ assert(evaluate(m=>m.artifacts[0].sharing='withheld',true).result.errors.some(e=>e.includes('Exact distribution review')));
++ assert(evaluate(m=>m.artifacts[0].sha256='b'.repeat(64),true).result.errors.some(e=>e.includes('Exact distribution review')));
++});
++test('bytes, duplicate IDs and traversal fail explicitly',()=>{
++ assert(evaluate(m=>m.artifacts[0].bytes++).result.errors.some(e=>e.includes('bytes changed')));
++ assert(evaluate(m=>m.artifacts.push({...m.artifacts[0]})).result.errors.some(e=>e.includes('duplicate id')));
++ assert(evaluate(m=>m.artifacts[0].path='../outside.txt').result.errors.some(e=>e.includes('Invalid portable artifact path')));
++ assert(evaluate(m=>m.targets.push(null)).result.errors.some(e=>e.includes('non-object')));
++});
++test.after(()=>{
++ const resolved=path.resolve(root),allowed=path.resolve(fixtureParent)+path.sep;
++ assert(resolved.startsWith(allowed)&&path.basename(resolved).startsWith('manifest-test-'));
++ fs.rmSync(resolved,{recursive:true});
++ if(!fixtureParentExisted&&fs.readdirSync(fixtureParent).length===0)fs.rmdirSync(fixtureParent);
++});
+diff --git a/tools/validate-skill.mjs b/tools/validate-skill.mjs
+index b6f7f6d..e978b8b 100644
+--- a/tools/validate-skill.mjs
++++ b/tools/validate-skill.mjs
+@@ -19,7 +19,9 @@ if(typeof meta.name!=='string'||meta.name.length>64||!(/^[a-z0-9]+(?:-[a-z0-9]+)
+ if(meta.name!==path.basename(target))errors.push('Folder/name mismatch');
+ if(typeof meta.description!=='string'||!meta.description.trim()||meta.description.length>1024||/[<>]/.test(meta.description))errors.push('Invalid description');
+ if(/\[TODO:|\bTODO\b|\bFIXME\b/.test(raw))errors.push('Unfinished scaffold marker');
+-const files=['SKILL.md','agents/openai.yaml','references/research.md','references/deliverables.md','references/transfer.md'];
++const required=['SKILL.md','agents/openai.yaml','references/research.md','references/deliverables.md','references/transfer.md'];
++const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()?walk(path.join(dir,entry.name)):[path.relative(target,path.join(dir,entry.name)).replaceAll('\\','/')]);
++const files=[...new Set([...required,...walk(target).filter(f=>f.endsWith('.md'))])];
+ for(const f of files){const abs=path.join(target,f);if(!fs.existsSync(abs)){errors.push('Missing '+f);continue}const text=fs.readFileSync(abs,'utf8');for(const [,href]of text.matchAll(/\[[^\]]*\]\(([^)]+)\)/g)){if(/^(https?:|#)/.test(href))continue;if(!fs.existsSync(path.resolve(path.dirname(abs),href.split('#')[0])))errors.push('Broken reference '+f+' -> '+href)}}
+ let ui;try{ui=parse(fs.readFileSync(path.join(target,'agents/openai.yaml'),'utf8'));const short=ui.interface?.short_description;if(typeof short!=='string'||short.length<25||short.length>64)errors.push('UI short description must be 25..64 characters');if(!ui.interface?.default_prompt?.includes('$'+meta.name))errors.push('Default prompt missing explicit skill invocation');if(ui.policy?.allow_implicit_invocation===false)errors.push('Implicit invocation unexpectedly disabled')}catch(e){errors.push(e.message)}
+ const result={at:new Date().toISOString(),target,status:errors.length?'failed':'passed',method:'Node.js + YAML parser; structural checks for this skill, local references and UI metadata',officialPythonValidator:'Not invoked by this Node.js validator. See docs/validation.md for the original local validation scope.',limitations:['Format and reference validity do not prove runtime research quality. See docs/validation.md for the bounded behavior evaluation.'],errors};
+diff --git "a/\346\224\271\351\200\240\350\275\257\344\273\266Prompt.md" "b/\346\224\271\351\200\240\350\275\257\344\273\266Prompt.md"
+index dba1b57..dbe7c37 100644
+--- "a/\346\224\271\351\200\240\350\275\257\344\273\266Prompt.md"
++++ "b/\346\224\271\351\200\240\350\275\257\344\273\266Prompt.md"
+@@ -9,8 +9,13 @@
+ 研究风格库：[研究仓库链接/路径；多个来源时指定profile]
+ 目标平台与主要页面：[填写或先从项目识别]
+ 必须保留的约束：[可留空]
++本次验收范围：[默认UI与主要流程迁移；如果要全功能验证，请给出明确清单]
+ 
+-若安装了 $rea-style-library，请使用它的迁移模式。先读研究库README、风格profile、资产清单、覆盖/缺口、原版对照、接入指南和相关规范，再审查我的项目。已有研究足够时不要重新运行REA；遇到目标制品/实机问题再读取REA技能定点补证。
++如果我只委托选型/评估、catalog或资料整理，下方实施与运行步骤不适用：只核对既有身份、索引引用和消费者依赖，不新增目标GUI运行或制作D，除非我另要求；保留未验证边界，不冒称实施验收。
++
++若安装了 $rea-style-library，请使用它的迁移模式。先读研究库入口、独立profile、迁移就绪与覆盖边界，再按本次目标查相关资产、规则和对照，并审查我的项目。已有研究足够时不要重新运行REA；遇到影响实现的制品/实机缺口再读取REA技能定点补证。不把研究维度扩成原业务的全功能穷举；若我明确要求全测则保留我的验收条件。
++
++多个来源时先核实真实REA研究身份并选独立profile；普通UI工程不冒充REA成果，来源的transfer-example仍附属于该研究。按原版实际平台区分网页/桌面/手机，保留Git版本、技术栈与原启动方式；网页在桌面浏览器运行不变成桌面原生。选型不默认混合所有风格或统一所有工程。
+ 
+ 先建立“来源规则→我的页面/组件/行为→保留/替换/平台适配→验证方式”的映射，再实施修改。重点包括：
+ - 配色以外的完整视觉语言：字体角色、信息层级、留白密度、形状、图标、布局、组件状态与响应式。
+@@ -21,7 +26,11 @@
+ 
+ 按资产清单复用适合的图标、字体、图片、插画、动效和文案结构，记录来源资产到目标文件/组件的复用、加工或替换映射。新业务文案与加工版本另存，不删除、不覆盖研究库中的原始资产和原文；缺失资产与替代选择明确列出。
+ 
+-先统一tokens与基础组件，再接代表页面、状态和引导。运行适当检查，并在相同环境/内容/状态下比较改造前后；对照来源原图时保留来源条件。报告具体视觉和行为偏差、仍未实现部分及回退方法。不以一张漂亮截图或仅自身测试通过宣称完整还原。
++先映射足够支撑一个流程的tokens与组件，尽早运行代表切片、对照并扩展，不等全部组件或原版全测完成才首次运行。早测系统栏/inset或safe area、IME、焦点、返回与缩放，再接后续页面、状态和引导。在相同环境/内容/状态下比较改造前后；对照来源原图时保留来源条件。不以一张漂亮截图或仅自身测试通过宣称完整还原。
++
++分别报告来源研究coverage、目标迁移readiness和本次agreed delivery。未测行为不改verified；我明确接受剩余边界时可以完成调整后的目标，原事实保留。我的全测条件仍有效且必要项受阻时只能报告部分完成，沉默不代表接受。
++
++沿用已有run/捕获/覆盖/分发结构，通过配置或少量平台适配补充，不每轮重写整套硬编码脚本。原图和资产不覆盖，截图与UIA/DOM非原子时分别记录时间；同一GUI保持单一控制者。账号/设备/服务失败设有界复试；我已延后的依赖不反复催问，有新条件再恢复，独立工作继续。
+ 
+-请持续完成已授权的修改，不只给建议或静态mockup；必要输入缺失时先推进不依赖它的工作。最终交付应能构建运行，已有功能保持可用，并在多个页面和状态中体现一致产品家族感。
++请持续完成已授权的修改，不只给建议或静态mockup；必要输入缺失时先推进不依赖它的工作。按本次验收和阶段停止条件交付，说明具体修改、偏差、剩余边界和回退方法。最终交付应能构建运行，已有功能保持可用，并在约定页面和状态中体现一致产品家族感。未授权时不创建远端仓库、提交生产写入或公开发布。
+ ```
+diff --git "a/\351\200\232\347\224\250\347\240\224\347\251\266Prompt.md" "b/\351\200\232\347\224\250\347\240\224\347\251\266Prompt.md"
+index 32be042..3379eb6 100644
+--- "a/\351\200\232\347\224\250\347\240\224\347\251\266Prompt.md"
++++ "b/\351\200\232\347\224\250\347\240\224\347\251\266Prompt.md"
+@@ -1,67 +1,69 @@
+ # 通用研究 Prompt
+ 
+-复制下方整段，将“目标”和“输出目录”换成实际内容。支持手机App、电脑软件、网站；已有研究可作为输入，不必从头重扫。
++复制下方整段，将输入换成实际内容。支持手机App、电脑软件、网站或已有REA研究；已有证据不从头重扫。
+ 
+ ```text
+-请把我提供的产品研究成一份可跨业务迁移的“产品风格库”。
++请把我提供的产品研究成可跨业务迁移的“产品风格库”。
+ 
+ 目标：[App名称/安装路径/APK/IPA/网站URL/已有研究目录]
+-输出目录：[一个独立目录]
++输出目录：[独立目录]
+ 可选目标平台或业务：[可留空]
++本次验收：[默认UI与核心交互迁移；如要全功能验证，在此写明确清单]
++已接受延后或排除的边界：[可留空，不能据此假造已验证]
++
++若本次只委托catalog、纯资料整理或仅评估，则只核对既有身份、索引引用与消费者依赖，跳过下方新GUI采集、D参考制作和跨业务运行，除非我另要求；未运行/未验证边界仍保留。不要把我的实现要求自行降为这种文档模式。
+ 
+ 我的目的
+-以后我做出另一个软件的雏形后，把这个研究仓库和我自己的源码交给另一个Agent，即使它没看过本次聊天，也能按参考产品的设计语言改造我的软件，让不同业务的软件在UI、交互习惯和用户引导上，像同一家公司做的产品。
++以后把研究仓库和我自己的源码交给另一位Agent，让它离开本次聊天也能迁移视觉语言、交互习惯、反馈与用户引导，使不同业务的软件像同一家公司做的。
++
++原业务功能是观察设计规则的样本，不默认复刻全部领域功能、后端或设备组合。先记录本次目标、必要验收和阶段停止条件；下面维度供按目标取样，不要自动展开成穷举任务。我明确要求全测时仍按我的清单完成或如实报告必要缺口。
++
++技能、身份与授权
++若可用，使用 $rea-style-library。首次研究目标制品/实际客户端时先查找并读取已安装的 reverse-engineer-anything（REA）SKILL.md，按真实工具能力选路线并保留实际输出；仅整理已有库或迁移完整源码时不要求重跑REA。工具已可用就沿用，不例行重装、更新全局环境或重复全包解析。
++
++先核对来源、版本/制品hash或Git提交、账号/数据模式和旧证据。旧截图保留原时间与historical身份，本轮复核不称新采集。目标或验收已明确时不重问；缺失信息会改变必要工作时再请求协助，其他独立工作继续。
++
++仅在约定包含原版运行研究时，允许启动目标，在独立研究环境做必要点击、自造测试输入、滚动、尺寸/主题/设置切换及采集。优先独立profile、自造内容和局部依赖；先记录本轮改动的基线与恢复方式。同一设备/窗口/页面只有一个主动控制者，动作前核对身份。不擅自删除原有用户数据、修改安装原包、启用系统可选功能、重启电脑、付费、对外发送或公开发布。凭据不写入脚本、日志、截图或报告。
+ 
+-我最在意的是完整设计语言：视觉与排版、布局密度、组件规范、交互和反馈、影响体验的软件行为、用户指引，以及它们之间的关系。原App的具体业务功能不是复刻重点；只把功能作为研究这些规则的样本，不默认复制原领域业务或后端。
++先运行样本，再小步配对
++尽早实际进入目标并核对原图和控件。选能支撑目标的导航、内容/编辑、设置/浮层、状态反馈或引导流程，先让我看到真实样本；不凑固定页数或组件数，也不停在登录页宣布完成。
+ 
+-必须提取并保留研究范围内可获取的图标、字体、文字文案/本地化资源、图片、插画、动效等可复用资产，保存原始格式并建立资产清单，记录来源、哈希、用途、主题/尺寸/状态变体及页面/组件引用位置。文案保留原文、资源键、语言、占位符和出现条件；原件与加工版本分开保存，无法提取的列明缺口与补取方法。迁移时改写业务文案或替换品牌内容，不删除、不覆盖研究库原件。
++有足够的局部A/B证据就做一个可运行D参考切片，与原版同状态配对再扩展，不等待所有功能研究结束。早期就测试系统栏/inset或safe area、IME、焦点、返回及缩放；先修影响所有页面的问题。演示不能填补原版A证据，参考自身测试不证明来源行为。
+ 
+-技能与工具
+-若可用，使用 $rea-style-library；无论是否安装该封装技能，研究目标制品/实际客户端时请先查找并读取已安装的 reverse-engineer-anything（REA）SKILL.md，再按实际工具能力操作。不要仅声称“调用REA”，要保存真实输出与限制。工具可用就直接工作，不例行重装、更新全局环境或反复分析同一制品。
++选题维度
++- 视觉与排版：信息密度、层级、留白、背景/容器/浮层、语义色、字体角色、尺度、形状、图标、布局及适用响应式条件。
++- 组件与核心交互：输入/导航/列表/菜单/弹窗等实际相关组件的结构、状态、事件与副作用；导航返回、编辑保存取消、状态保留、焦点和平台操作习惯。
++- 异步与恢复：按目标选提交/加载/停止/完成、重复触发、取消/重试、错误/离线和晚到结果；未验证的内部取消、缓存或后端语义保持未知。
++- 用户引导：首次使用、功能发现、空态下一步、权限解释、校验/错误文案、确认/撤销和帮助。记录相关触发、关闭与状态保存，不只抄文案。
++- 动画与反馈：对研究中的动作记录可证实的属性、起止、时序、退出/中断和reduced motion；采样间隔不是duration，未知参数不补造。
+ 
+-先检查目标身份、现有工具、运行环境和旧证据。旧报告可以提供线索，关键结论需要复核。只读、已授权和可逆的常规研究持续推进，不反复询问已明确的信息。缺能力时诊断具体问题，继续可独立进行的工作，不虚构工具能力或成功结果。
++弹窗和页面切换用适用的转移记录串起“状态→动作/前置条件→目标→副作用→关闭/返回→保留/重置结果→证据/未知”。不要把所有可能的异常路径无条件变成新任务；发现会改变约定规则或验收的问题再定点补证。
+ 
+-运行与证据优先
+-尽早运行并实际操作原产品，手机可用合适的真机/模拟器，桌面使用实际安装客户端，网站使用真实页面。先选能代表导航、内容/编辑、设置/弹层/引导的页面，发送原始截图让我看，再继续研究。复杂产品首轮以约三个代表页面/状态和十个基础组件建立可靠基线；按目标实际规模调整，数量不代表完整程度。
++保留研究范围内可获取的图标、字体、文字文案/本地化、图片、插画和动效原件；建立来源、版本/hash、用途、变体与引用清单。文案保留资源键、语言、占位符和条件。加工、重绘和新业务文案另存；缺失资产列明原因及补取方法。研究留存与公开分发分别决定，私有内容不因被研究就允许公开。
+ 
+-为本次目标研究，允许启动/唤起目标、在独立研究环境中进行必要的点击、测试输入、滚动、窗口调整、主题与设置切换、截图和有时间记录的采集。优先使用独立profile、测试数据及项目局部依赖。涉及配置变更先备份，记录应用与恢复方法；结束默认恢复本轮之前的配置与运行状态，并如实报告无法完全恢复的瞬时状态。
++证据与复用
++逐项区分A实际观察、B包内/捕获源码声明、C推断、D独立重建/迁移选择。仅使用工具真实返回的REA ID；辅助编号不冒充REA。静态声明不等于运行使用，设计意图无直接资料时只能标推断。
+ 
+-不要删除用户数据、擅自改安装原包、启用系统可选功能、重启电脑、付费、向他人发送消息或公开发布。不要读取或索要密码、验证码、无关密钥。登录/外设受限时，先核实正常运行、官方测试配置和模拟环境的可行性；不能用自己绘制的页面冒充原产品，也不能停在登录页就宣称完成。需要进一步授权的具体操作应单独说明。
++原图/录屏不覆盖；标注、裁切、对照另存。保留目标身份、场景/操作、原采集/复核时间、环境、路径、SHA-256、方法、有效性和限制。截图与UIA/DOM通常非原子，分别记录时间和不一致状态；调用成功不等于像素有效或行为验证。保留dp/sp、CSS px、物理像素等原单位与换算条件，不伪造精确字体回退或动效值。
+ 
+-需要研究的内容
+-1. 产品设计原则：信息层级、密度、留白、内容组织、主次动作、导航结构、操作节奏和用语习惯。每条原则注明适用条件和例外。没有直接资料的设计意图只能标推断。
+-2. 视觉与字体：背景/容器/浮层层级、语义色、品牌与系统强调色、边框/阴影/焦点、间距、圆角形状、图标、内容宽度、响应式；字体声明与文件、运行报告、字号/字重/行高/字距、中西文与数字分工、系统回退与变量轴边界。
+-3. 组件规范：结构、插槽、布局、props/数据输入、状态所有者、事件和副作用；按适用性检查default、hover、pressed、focus、disabled、loading、selected、invalid、empty、error，以及键盘、手势、可访问性和平台差异。
+-4. 体验相关的软件逻辑：导航/返回/重选、编辑/草稿/保存/取消、状态保留、刷新/缓存/离线、提交/加载/停止/成功、重复触发、失败重试、晚到结果、搜索、IME、菜单/弹窗焦点、账号/权限变化。用状态机或转移表说明；只有解释这些行为需要时才深入底层，不把任务偏成接口或加密审计。
+-   弹窗按适用性记录触发条件、重复提示、背景可操作性、叠加/互斥、默认焦点；确认/取消/关闭、遮罩点击、Escape/系统返回的效果和优先级；提交中关闭限制、失败恢复、关闭后的焦点/数据与切页后的浮层状态。
+-   页面/Tab/路由切换按适用性记录入口、目标/参数、校验/权限/未保存拦截、返回栈、重选/深链、加载/过渡与失败；首次进入、重复进入和返回时滚动/筛选/选中项/草稿/焦点的保留或重置，以及请求继续/取消和晚到结果。未验证的内部机制明确标未知。
+-5. 用户指引：首次使用、第一步价值、渐进披露、功能发现、上下文说明、空态下一步、权限时机与拒绝恢复、校验和错误文案、确认/撤销、帮助入口、快捷键和熟练用户路径；记录触发、退出、频率和状态保存，而非只抄文案。
+-6. 动画与反馈：逐动作记录触发、属性、起止、时长、延迟、缓动/spring、重入/中断、退出、手势阈值、触觉/声音和reduced motion。用有时间记录的实际采集结合源码验证，采样间隔不能冒充动画时长。
++沿用已有run、捕获、覆盖及分发结构，以配置和少量平台适配复用；旧schema可做映射，不为每轮复制一整套硬编码脚本。每轮新run ID，原版、参考和迁移工程身份分开。精确分发名单默认拒绝未审/不完整/私有原件；检查器只验证声明结构与字节，不代替像素、行为、用户授权或实际归档成员审查。
+ 
+-证据规则
+-逐项区分：A实际观察；B包内/捕获源码声明；C推断；D独立重建或迁移选择。关键规则关联真实运行，或准确文件/选择器/函数/位置与哈希。REA Evidence ID只用工具实际返回值，辅助脚本编号不能冒充REA ID。
++依赖与停止
++正常认证、服务或外设受限时诊断具体依赖，按风险和已有证据设有界复试预算。无新条件不重复同类失败请求，不绕过访问控制或用自绘页面冒充目标。需要我协助时说清正常步骤、所需设备或人工样本，不索要无关密钥；我已明确延后后不每轮催问，记录恢复条件，继续独立可做项目。
+ 
+-保留原始PNG/录屏，标注和对照另存；每项关联时间、目标/窗口或页面身份、场景、操作、采集方法和哈希。确认采集不是白屏/错窗口。记录版本、平台、部署/账号模式、语言、主题、密度、窗口/设备尺寸、DPI/字体缩放及可确认的页面zoom。
++分别报告三条状态：
++1. research coverage：verified/partial/unverified/not_applicable，依赖deferred不等于verified。
++2. migration readiness：哪些规则/组件可用，有哪些条件、偏差和限制。
++3. agreed delivery：本次验收是否满足；我明确接受剩余边界后可完成调整后的交付，未测事实仍保留。沉默不等于接受；明确全测仍有必要缺口时不可宣布全量完成。
+ 
+-dp/sp、CSS px、物理像素、UIA pt保持单位与换算条件；无法确认的逐字字体回退、变量轴和动效参数标未知。区分当前生效页面、旧布局、SDK资源和功能开关。静态与实机不一致时追原因，不强行合并。测试后端注明“前端为真实目标产品，后端数据为测试fixture”，不称真实模型/生产业务验证。
++本阶段必要验收满足即进入交付，不因还能发现功能而无限扩展；全部剩余必要项依赖外部条件时保存可审查部分成果、具体协助请求和恢复入口，停止主动循环。
+ 
+-记录选源、未分析部分、解析与语义预算限制。按问题追相关依赖，不盲扫全包；不以文件数、截图数、反编译量、安装工具成功或模板字段齐全证明完成。
++交付与入库
++按本次模式交付可独立使用的入口：来源/profile与版本、规则及来源、所需原始资产、语义tokens、组件/事件/行为/引导规范、可运行参考与原版配对、覆盖/就绪/交付状态和启动/恢复指南。完整迁移库再用不同业务的小样本验证可复用性；我只要资料整理或选型时按该范围交付，不冒称运行验收，也不自行把实现要求降成文档。
+ 
+-交付
+-请形成可以作为GitHub仓库交接的独立项目，至少包括：
+-- README：下一Agent的阅读顺序、版本/平台边界、启动、复现与配置恢复。
+-- 风格profile和library索引：有依据的设计特征、适用场景、需适配部分和缺口，供以后选择风格。
+-- 原始证据及索引：截图/必要录屏、操作记录、REA输出、源码锚与哈希。
+-- 可复用资产原件、加工版本与清单：图标、字体、文案/本地化资源、图片、插画、动效，关联来源、用途、变体、引用位置和提取缺口，提供下一Agent直接接入的入口。
+-- 设计原则、视觉/字体/布局、组件状态与事件契约、行为状态机、用户引导和动画规范。
+-- 弹窗与页面切换的状态机/转移表：当前状态、动作/条件、目标、副作用、关闭/返回结果与保留/重置状态、证据和未知，覆盖已研究的正常与异常路径。
+-- 可直接接入的语义tokens及来源元数据，CSS+JSON或目标平台等价映射。
+-- 可运行、可复制的独立组件与代表页面，按适合的平台选择技术栈；不把压缩bundle包装成原始源码。
+-- 原产品与参考实现的视觉/行为对照：尽量保持相同尺寸、主题、语言、内容和状态；差异如实记录。
+-- 一个不同业务的小样本，说明如何保留设计语言、替换领域功能，验证它能用于“另一款软件”。
+-- 迁移指南、已验证/部分/未验证覆盖、已知缺口、给下一实现Agent的执行prompt。
++统一多个已有REA研究时，先核实真实研究入口/输出与来源身份。普通UI工程、视觉实验和同作者应用不自动加入REA成果库；transfer-example跟随其来源研究。按原版实际平台归为网页/桌面/手机，运行栈另列；桌面浏览器中的网站仍属网页，无匹配研究的类别可留空。各来源保留独立风格、Git版本、技术栈和启动方式，不为了统一目录重写工程或混合tokens。
+ 
+-先做好约定基线再扩展；不要过早做漂亮演示替代研究。只有新实现自身测试通过不能证明原版已恢复。验收应证明：不靠本次聊天，下一Agent能找到依据、运行参考、替换业务并检查结果。无法实测的内容可以明确交付为部分成果，不编造精确规则，也不宣称全量完成。
++结束恢复本轮已改配置并实际核验，或保留我明确要求的环境。无法知道初始值时说明精确恢复的限制。下一Agent应不读聊天也能定位依据、运行参考、替换业务并检查结果。不用文件数量、解析成功或漂亮截图证明完成。未明确授权时准备本地可审查项目，不创建远端仓库或推送发布。
+ 
+-请先检查环境与目标，再实际推进。进度说明真实发现、证据缺口和下一步。未明确要求时先准备本地仓库，不自动发布GitHub。
++请检查后实际推进，不只给计划；进度说明真实发现、证据缺口及下一步要解决的问题。
+ ```

@@ -1,0 +1,43 @@
+{
+  "id": "r02-34-microphone-denied",
+  "description": "UI after refusing microphone permission",
+  "classification": "A",
+  "origin": "current",
+  "runId": "run02-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-16T03:48:42.025Z",
+  "capturedAt": "2026-10-16T03:48:47.034Z",
+  "screenshotCapturedAt": "2026-10-16T03:48:44.469Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/run02-20261016/scenes/r02-34-microphone-denied/screen.png",
+    "sha256": "b59edf26d4e4c6e78b0b5400f80e983f596351fef3ab3a1936a2628c8c5328bb",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/run02-20261016/scenes/r02-34-microphone-denied/hierarchy.xml",
+    "sha256": "25251e8d4fe4edb7277205f03f8210dadf10e375f9f1242257742d9b4b08d76d"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 70,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "systemLocales": "null",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{c090514 u0 com.moonshot.kimichat/.MainActivity t15}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen",
+  "captureSettlingDelayMs": 2000,
+  "accountMode": "authenticated-after-user-assisted-phone-login"
+}

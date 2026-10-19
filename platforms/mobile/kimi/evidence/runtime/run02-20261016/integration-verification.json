@@ -1,0 +1,30 @@
+{
+  "verifiedAt": "2026-10-16T06:29:23.083Z",
+  "status": "passed",
+  "scope": "Retained artifact identity, source image/XML bytes, fixture consistency, specific expected UI outcomes, current document links and restoration; no new device execution",
+  "runId": "run02-20261016",
+  "capturedFrames": 45,
+  "recordedActions": 102,
+  "screenshotHashesVerified": 45,
+  "hierarchyHashesVerified": 44,
+  "semanticLimitation": "Byte-hash validity is separate from screenshot/UIA simultaneity; see independent reviews for early frames and system overlays.",
+  "fixtureBytes": 408,
+  "fixtureHashMatchesLocalAndDevice": true,
+  "uiResultChecks": [
+    "File identifier",
+    "Offline retry answer",
+    "Android clipboard paste into draft",
+    "Output stopped"
+  ],
+  "documentLinksChecked": 59,
+  "networkSettingsRestored": true,
+  "effectiveNetworkObservedBeforeShutdown": true,
+  "ownedAvdShutdownVerified": true,
+  "credentialsRecorded": false,
+  "withheldIdentityScenes": [
+    "r02-18-post-login-guide",
+    "r02-19-prompt-ready"
+  ],
+  "galleryVerification": "evidence/runtime/run02-20261016/gallery-verification.json",
+  "noFullProductValidation": true
+}

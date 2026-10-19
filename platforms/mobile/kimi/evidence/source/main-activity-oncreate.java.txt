@@ -1,0 +1,72 @@
+    @Override // ns.a, androidx.fragment.app.i0, d.l, android.app.Activity
+    public final void onCreate(Bundle bundle) {
+        b bVar;
+        Object objB;
+        boolean z11 = kx.a.f42089a;
+        int i5 = 6;
+        c cVar = null;
+        kx.a.a(this.f48727z, null, new p1(i5));
+        try {
+            bVar = new b(this);
+            ((dj.a) bVar.f48641b).C();
+        } catch (Throwable unused) {
+            bVar = null;
+        }
+        super.onCreate(bundle);
+        int i11 = 3;
+        p.a(zw.a.f77297a, new s2(this, i11));
+        Vibrator vibrator = s.f73350a;
+        int i12 = 0;
+        boolean z12 = (getResources().getConfiguration().screenLayout & 15) >= 3;
+        s.f73351b = z12;
+        int i13 = z12 ? -1 : 1;
+        this.A = i13;
+        setRequestedOrientation(i13);
+        androidx.lifecycle.s sVarF = x0.f(this);
+        try {
+            g.f24205a.getClass();
+            objB = f.a(this);
+        } catch (Throwable th) {
+            objB = ie.b(th);
+        }
+        Throwable thA = n.a(objB);
+        if (thA != null) {
+            boolean z13 = kx.a.f42089a;
+            kx.a.b("PhoneUtils", null, new i(i11, thA));
+        }
+        if (objB instanceof m70.m) {
+            objB = null;
+        }
+        g gVar = (g) objB;
+        if (gVar != null) {
+            d0.B(sVarF, null, null, new h(gVar, this, cVar, 22), 3);
+        }
+        float f11 = 0;
+        w wVar = p2.f5358a;
+        h40.a aVar = h40.a.f30826a;
+        try {
+            Field declaredField = u5.class.getDeclaredField("ScrollableTabRowMinimumTabWidth");
+            declaredField.setAccessible(true);
+            declaredField.set(aVar, Float.valueOf(f11));
+        } catch (Exception unused2) {
+            i1 i1Var = ww.b.f71317a;
+        }
+        try {
+            float f12 = i5.f68451a;
+            Field declaredField2 = i5.class.getDeclaredField("HorizontalTextPadding");
+            declaredField2.setAccessible(true);
+            declaredField2.set(aVar, Float.valueOf(f11));
+        } catch (Exception e11) {
+            boolean z14 = kx.a.f42089a;
+            kx.a.b("TabRowCompat", e11, new gy.s(16));
+        }
+        if (bVar != null) {
+            ((dj.a) bVar.f48641b).G(new u2(i12));
+        }
+        d0.B(x0.f(this), null, null, new a60.i(2, i5, cVar), 3);
+        d0.B(x0.f(this), null, null, new a00.g(this, cVar, i11), 3);
+        ln.n.h(this, new j3.c(new v2(i12, this), true, 1927369060));
+        Intent intent = getIntent();
+        m.f(intent, "getIntent(...)");
+        p.a(zw.a.f77297a, new a00.a(i11, intent, this));
+    }

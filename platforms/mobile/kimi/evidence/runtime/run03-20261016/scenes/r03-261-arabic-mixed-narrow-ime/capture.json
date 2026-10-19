@@ -1,0 +1,43 @@
+{
+  "id": "r03-261-arabic-mixed-narrow-ime",
+  "description": "Actual mixed Latin/Arabic own draft after prefix-trim transport failed; no Arabic-first claim, no Send",
+  "classification": "A",
+  "origin": "current",
+  "runId": "run03-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-16T11:51:46.072Z",
+  "capturedAt": "2026-10-16T11:51:51.304Z",
+  "screenshotCapturedAt": "2026-10-16T11:51:48.176Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-261-arabic-mixed-narrow-ime/screen.png",
+    "sha256": "b711569ab2b4871787375554521c44a25eca629785ae93b89966ccd6d18e3f20",
+    "width": 800,
+    "height": 1800
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-261-arabic-mixed-narrow-ime/hierarchy.xml",
+    "sha256": "f7701374cf41d2af509f23ea005617f2985c883f50d6dcc47ad11dcd97d9b614"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 608,
+  "conditions": {
+    "size": "Physical size: 1080x2400\r\nOverride size: 800x1800",
+    "density": "Physical density: 420",
+    "fontScale": "1.3",
+    "systemLocales": "en-US",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [ar]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{6a1ce2a u0 com.moonshot.kimichat/.MainActivity t60}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen",
+  "captureSettlingDelayMs": 1500,
+  "accountMode": "normal retained user-assisted login verified by authenticated home and actual submitted self-created request; credentials excluded"
+}

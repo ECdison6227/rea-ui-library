@@ -1,0 +1,38 @@
+{
+  "id": "r02-04-model-menu",
+  "description": "Guest model menu after capsule tap",
+  "classification": "A",
+  "origin": "current",
+  "runId": "run02-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-16T02:59:09.174Z",
+  "capturedAt": "2026-10-16T02:59:13.120Z",
+  "screenshotCapturedAt": "2026-10-16T02:59:10.084Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/run02-20261016/scenes/r02-04-model-menu/screen.png",
+    "sha256": "0033f7261ad962cc7602617a73b4095b2308759b0b423107201d2e464d9b9725",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": null,
+  "hierarchyError": "UIAutomator did not confirm a newly written hierarchy; old device file was removed before dump",
+  "actionsBeforeCapture": 5,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "systemLocales": "null",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{693f763 u0 com.moonshot.kimichat/.MainActivity t13}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+}

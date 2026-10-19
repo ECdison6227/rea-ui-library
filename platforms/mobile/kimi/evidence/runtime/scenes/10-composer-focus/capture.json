@@ -1,0 +1,40 @@
+{
+  "id": "10-composer-focus",
+  "description": "Guest composer focus attempt and resulting keyboard or overlay",
+  "classification": "A",
+  "origin": "current",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-15T15:21:53.479Z",
+  "capturedAt": "2026-10-15T15:21:58.892Z",
+  "screenshotCapturedAt": "2026-10-15T15:21:55.115Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/scenes/10-composer-focus/screen.png",
+    "sha256": "cb21eca3b643c3307c82f009bb60f5eb473e5ec4c7b5ceeb3ba07131da3612c9",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/scenes/10-composer-focus/hierarchy.xml",
+    "sha256": "d895b14033e8f95ff84bf1f257f6e862b95232b86ec43ccfeb1f4ca119c49535"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 8,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "systemLocales": "null",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+}

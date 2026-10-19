@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "id": "motion-01",
+  "reviewedAt": "2026-10-16T10:32:43.346Z",
+  "reviewer": "native_reference independent offline worker",
+  "origin": "review of retained original A video; no new device action",
+  "source": {
+    "video": "evidence/runtime/run03-20261016/motion/motion-01/screenrecord.mp4",
+    "bytes": 634791,
+    "sha256": "658942ddf94449eb6d30d4f87abd3f18265a7693cbbb6dc6b1ebf30ff0096340",
+    "capture": "evidence/runtime/run03-20261016/motion/motion-01/capture.json",
+    "captureSha256": "ae142363d44756c323098754ab2decba6c6ac1d113e508429a334f0a1f7320dc",
+    "frameIndex": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-index.json",
+    "frameIndexSha256": "cde4b3dbfbfb16c3da21e89ba880395c367d55b8f380777afb0fd841b13fcc94"
+  },
+  "decode": {
+    "codec": "avc1.42c032",
+    "width": 1080,
+    "height": 2400,
+    "sourceVideoSamples": 28,
+    "decodedFrames": 28,
+    "everyVideoSampleDecoded": true,
+    "originalMediaTimebase": {
+      "numerator": 1,
+      "denominator": 90000
+    },
+    "firstPtsTicks": 0,
+    "lastPtsTicks": 314381,
+    "lastSampleDurationTicks": 15683,
+    "sttsSampleSpanSeconds": 3.667377777777778,
+    "minConsecutivePtsGapSeconds": 0.014544444444444471,
+    "maxConsecutivePtsGapSeconds": 0.48965555555555573,
+    "constantFpsAssumed": false
+  },
+  "pixelReview": {
+    "everyDecodedFrameReviewedInContactSheets": true,
+    "contactSheets": [
+      {
+        "path": "evidence/runtime/run03-20261016/motion/motion-01/review-sheets/sheet-1.png",
+        "sha256": "b1cca2f778c64ac68fca83ab257fef45c57fda33c0c61712242c8cbfcb36f90f",
+        "frameNumbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "derived": true,
+        "originalPixelsUnmodified": true
+      },
+      {
+        "path": "evidence/runtime/run03-20261016/motion/motion-01/review-sheets/sheet-2.png",
+        "sha256": "6982c7a8b5852122cfa500339a5510bb75017865e075ad3259b6bc17f06c97fb",
+        "frameNumbers": [
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "derived": true,
+        "originalPixelsUnmodified": true
+      }
+    ],
+    "nativeResolutionFramesReviewed": [
+      1,
+      2,
+      4,
+      6,
+      10,
+      11,
+      15,
+      18,
+      22,
+      23,
+      24,
+      26,
+      28
+    ],
+    "method": "Every video sample appears once in separately labelled derived contact sheets; listed key frames additionally inspected at full original decoded resolution. Raw MP4, source PNGs and capture metadata are unchanged."
+  },
+  "privacy": {
+    "status": "no-identity-or-private-history-observed-in-reviewed-video-pixels",
+    "observations": "Only self-created Research Run03 test chat/output and, in concurrency clip, generic Android Gboard controls are visible. No drawer, account greeting, personal avatar, QR code or unrelated conversation was observed.",
+    "limit": "Review applies to decoded visible video samples. It is not a new pixel capture or a proof about data outside the supplied recording.",
+    "distributionReview": "clear"
+  },
+  "distribution": {
+    "status": "allow-reviewed-exact-files",
+    "currentlyPackaged": false,
+    "allowlist": "docs/run03-motion-safe-files.json",
+    "reason": "Only exact approved bytes may be packaged. New recordings, altered files, logs, HTML intermediates and browser profiles remain excluded. No archive is created by this script."
+  },
+  "animationParameters": {
+    "duration": null,
+    "easing": null,
+    "spring": null,
+    "triggerToPixelLatency": null,
+    "reducedMotion": null
+  },
+  "timeBasisLimit": "Host UTC/monotonic call intervals, guest uptime and MP4 video-media PTS are distinct. Sparse encoded samples and absence of a common synchronization marker prevent an exact action-to-frame mapping.",
+  "containerHeaders": {
+    "movie": {
+      "timescale": 10000,
+      "durationTicks": 36674,
+      "seconds": 3.6674
+    },
+    "videoMedia": {
+      "timescale": 90000,
+      "durationTicks": 330064,
+      "seconds": 3.667377777777778
+    }
+  },
+  "keyFrames": [
+    {
+      "frame": 10,
+      "ptsSeconds": 0.9181333333333334,
+      "classification": "A",
+      "observation": "Model menu absent; same self-created completed chat and empty composer."
+    },
+    {
+      "frame": 11,
+      "ptsSeconds": 1.1210777777777778,
+      "classification": "A",
+      "observation": "First sampled semi-transparent menu appearance over chat; model labels and blue current check visible."
+    },
+    {
+      "frame": 15,
+      "ptsSeconds": 1.3321222222222222,
+      "classification": "A",
+      "observation": "Menu clearly visible, background beneath visibly softened; Instant remains selected."
+    },
+    {
+      "frame": 21,
+      "ptsSeconds": 2.0487777777777776,
+      "classification": "A",
+      "observation": "Menu still clearly visible."
+    },
+    {
+      "frame": 22,
+      "ptsSeconds": 2.2849333333333335,
+      "classification": "A",
+      "observation": "Menu in partial fade/scale exit state; chat showing through."
+    },
+    {
+      "frame": 23,
+      "ptsSeconds": 2.4637777777777776,
+      "classification": "A",
+      "observation": "Menu absent again; same chat and model capsule remain."
+    },
+    {
+      "frame": 28,
+      "ptsSeconds": 3.493122222222222,
+      "classification": "A",
+      "observation": "Final sampled frame remains closed with Instant/High and self-created queued D completion."
+    }
+  ],
+  "hostSequence": [
+    {
+      "name": "first-open-dispatch",
+      "hostMonotonicNs": "705015317994400",
+      "hostElapsedMs": 9548.6421,
+      "hostUtc": "2026-10-16T10:24:09.156Z",
+      "point": [
+        336,
+        195
+      ],
+      "requestedOffsetMs": 750
+    },
+    {
+      "name": "first-open-adb-complete",
+      "hostMonotonicNs": "705015503366600",
+      "hostElapsedMs": 9734.0166,
+      "hostUtc": "2026-10-16T10:24:09.341Z"
+    },
+    {
+      "name": "first-outside-close-dispatch",
+      "hostMonotonicNs": "705016070025100",
+      "hostElapsedMs": 10300.6832,
+      "hostUtc": "2026-10-16T10:24:09.908Z",
+      "point": [
+        540,
+        1680
+      ],
+      "requestedOffsetMs": 1500
+    },
+    {
+      "name": "first-outside-close-adb-complete",
+      "hostMonotonicNs": "705017045929100",
+      "hostElapsedMs": 11276.5805,
+      "hostUtc": "2026-10-16T10:24:10.884Z"
+    },
+    {
+      "name": "reopen-dispatch",
+      "hostMonotonicNs": "705017046124700",
+      "hostElapsedMs": 11276.7703,
+      "hostUtc": "2026-10-16T10:24:10.884Z",
+      "point": [
+        336,
+        195
+      ],
+      "requestedOffsetMs": 2300
+    },
+    {
+      "name": "reopen-adb-complete",
+      "hostMonotonicNs": "705018229011900",
+      "hostElapsedMs": 12459.6566,
+      "hostUtc": "2026-10-16T10:24:12.067Z"
+    },
+    {
+      "name": "rapid-outside-close-dispatch",
+      "hostMonotonicNs": "705018229053400",
+      "hostElapsedMs": 12459.6952,
+      "hostUtc": "2026-10-16T10:24:12.067Z",
+      "point": [
+        540,
+        1680
+      ],
+      "requestedOffsetMs": null
+    },
+    {
+      "name": "rapid-outside-close-adb-complete",
+      "hostMonotonicNs": "705019770797600",
+      "hostElapsedMs": 14001.4432,
+      "hostUtc": "2026-10-16T10:24:13.609Z"
+    }
+  ],
+  "rapidClose": {
+    "requestedHostDispatchGapMs": 80,
+    "observedHostDispatchGapMs": 1182.9249,
+    "target80msAchieved": false,
+    "onScreenInterruptionVerified": false
+  },
+  "conclusions": {
+    "visibleMenuAppearanceObserved": true,
+    "visibleMenuDismissalObserved": true,
+    "distinctVisibleOpenCloseIntervals": 1,
+    "secondOpenCloseIntervalSeparatelyResolved": false,
+    "midTransitionReversalVerified": false,
+    "modelSelectionUnchangedInVisibleSamples": true,
+    "statement": "One visible menu appearance and exit interval is supported. Requested open/outside/reopen/rapid-outside host actions do not establish two separate visible cycles or a mid-animation interruption. The nominal 80 ms host gap became about 1183 ms and is not an animation duration."
+  },
+  "metadataReview": {
+    "capture": "all fields reviewed; source task/device/timing metadata only",
+    "decoderIndex": "browser/codec/sample/PTS/hash metadata only; no user browser profile or account data"
+  },
+  "guardReview": {
+    "status": "reviewed",
+    "privacyReview": "clear",
+    "screenshotSha256": "f7b2de11bfc50710d5e55ee6a93cd5ae9c405c4e3584f34b82ca4a917ad0b725",
+    "hierarchySha256": "9cc24557ad5591127664e7806de58f0d23f284c78a606674ae01abbb11df38b9",
+    "atomic": false,
+    "observation": "Original-size guard PNG plus every nonempty guard.xml text/description inspected: only own C/D test output, generic model/control labels and original package. No identity greeting, avatar, QR or private history."
+  }
+}

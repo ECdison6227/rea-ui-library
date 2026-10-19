@@ -1,0 +1,43 @@
+{
+  "id": "r03-134-swarm-entry",
+  "description": "Actual Swarm entry, capability disclosure and current account gate",
+  "classification": "A",
+  "origin": "current",
+  "runId": "run03-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-16T09:06:35.135Z",
+  "capturedAt": "2026-10-16T09:06:40.519Z",
+  "screenshotCapturedAt": "2026-10-16T09:06:37.697Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-134-swarm-entry/screen.png",
+    "sha256": "6d2bf7fea42c88a25ddb2f9818800978fc183ce85aa2b4fbb913615df1449c65",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-134-swarm-entry/hierarchy.xml",
+    "sha256": "a65d920491e8d193e786b1a91b82be7f24584bea84b84a5b1298adefba64187a"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 283,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "systemLocales": "null",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{c005120 u0 com.moonshot.kimichat/.MainActivity t19}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen",
+  "captureSettlingDelayMs": 1500,
+  "accountMode": "normal retained user-assisted login verified by authenticated home and actual submitted self-created request; credentials excluded"
+}

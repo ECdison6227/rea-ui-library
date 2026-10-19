@@ -1,0 +1,43 @@
+{
+  "id": "r03-262-arabic-options",
+  "description": "Arabic attachment/options sheet at narrow width and large text",
+  "classification": "A",
+  "origin": "current",
+  "runId": "run03-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-16T11:51:56.760Z",
+  "capturedAt": "2026-10-16T11:52:01.657Z",
+  "screenshotCapturedAt": "2026-10-16T11:51:58.807Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-262-arabic-options/screen.png",
+    "sha256": "3290b7ac6c27a98495a4ff7b7596e12e7b1af745fbf6fec0b59133f42e0d1663",
+    "width": 800,
+    "height": 1800
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-262-arabic-options/hierarchy.xml",
+    "sha256": "05d240f62a496c90bb5d7e071db6cb70c189bcba49d8c5566e3312afb459b4ef"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 609,
+  "conditions": {
+    "size": "Physical size: 1080x2400\r\nOverride size: 800x1800",
+    "density": "Physical density: 420",
+    "fontScale": "1.3",
+    "systemLocales": "en-US",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [ar]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{6a1ce2a u0 com.moonshot.kimichat/.MainActivity t60}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen",
+  "captureSettlingDelayMs": 1500,
+  "accountMode": "normal retained user-assisted login verified by authenticated home and actual submitted self-created request; credentials excluded"
+}

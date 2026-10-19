@@ -1,0 +1,40 @@
+{
+  "id": "25-camera-entry",
+  "description": "Camera entry gate from attachment sheet",
+  "classification": "A",
+  "origin": "current",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-15T15:36:11.801Z",
+  "capturedAt": "2026-10-15T15:36:15.421Z",
+  "screenshotCapturedAt": "2026-10-15T15:36:12.628Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/scenes/25-camera-entry/screen.png",
+    "sha256": "2972a14146ddebe07dbee4a7fc6c11dceb6dcd85fb426a37c46a598bd3d406a0",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/scenes/25-camera-entry/hierarchy.xml",
+    "sha256": "5bf340afc9017d36deb17210006ad1f3cd9e935792cd6f3f7f31dddb76d92d8e"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 29,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "systemLocales": "null",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [zh-CN]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+}

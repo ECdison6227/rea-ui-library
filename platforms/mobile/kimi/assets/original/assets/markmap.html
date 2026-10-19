@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Markmap</title>
+  <!-- Set global styles -->
+  <style>
+
+    .markmap {
+      position: relative;
+    }
+    .markmap > svg {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Wrap Markdown source in .markmap elements -->
+  <script>
+        const queryString = window.location.search;
+        // console.log(queryString);
+
+        const urlParams = new URLSearchParams(queryString);
+        const markmapStr = urlParams.get('markmap').toString();
+        // console.log(markmapStr);
+        const darkMode = urlParams.get('darkMode').toString() == 'true';
+
+        // 从 URL 中获取高度参数，如果不存在则默认 600
+        const heightParam = urlParams.get('height') || '600';
+        const initExpandLevel = urlParams.get('initialExpandLevel') || '-1';
+        const fitMaxLength = (urlParams.get('fitMaxLength') || 'false') == 'true';
+        const fitRatio = urlParams.get('fitRatio') || '0.95';
+        console.log('heightParam: ', heightParam);
+        console.log('initExpandLevel: ', initExpandLevel);
+        console.log('fitMaxLength: ', fitMaxLength);
+        // 动态添加一个样式标签，用于设置 markmap svg 的高度
+        const dynamicStyle = document.createElement('style');
+        if (darkMode) {
+          dynamicStyle.textContent = `
+            .markmap > svg {
+              height: ${heightParam}px;
+            }
+            div {
+              color: #eee;
+            }
+            code {
+              color: #ddd;
+              background-color: #444;
+            }
+            table {
+              border: 1px solid #eee;
+            }
+            a {
+              color: #0097e6;
+            }
+          `;
+        } else {
+          dynamicStyle.textContent = `
+            .markmap > svg {
+              height: ${heightParam}px;
+            }
+          `;
+        }
+
+        document.head.appendChild(dynamicStyle);
+
+        var div = document.createElement('div');
+        div.className = 'markmap';
+        var script = document.createElement('script');
+        script.type = 'text/template';
+        script.innerHTML = `${markmapStr}`;
+        div.appendChild(script);
+        document.body.appendChild(div);
+
+        window.markmap = {
+            /** @type AutoLoaderOptions */
+            autoLoader: {
+                initialExpandLevel: initExpandLevel,
+                fitMaxLength: fitMaxLength,
+                fitRatio: fitRatio,
+                onRenderComplete: function(result) {
+                    // 这里可以添加渲染完成后的回调逻辑
+                    console.log('MarkmapRendered:' + result?.content);
+                    if (result?.content) {
+                        document.title = result.content;
+                    }
+                },
+            },
+        };
+  </script>
+
+  <!-- Load Markmap -->
+  <script src="./npm/markmap-autoloader-0.13.5/dist/index.js"></script>
+
+  <script type="module">
+    import { triggerCapture } from './capture.js'; // Ensure path is correct
+    window.triggerCapture = triggerCapture;
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,448 @@
+{
+  "schemaVersion": 1,
+  "target": {
+    "package": "com.moonshot.kimichat",
+    "versionName": "3.1.3",
+    "versionCode": 376,
+    "sha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332"
+  },
+  "rea": [
+    {
+      "path": "evidence/rea/activity-content-class.json",
+      "sha256": "e993e2c7279dfe17e517bcd81df79dfe20a6c171de946fc6120818c09154fd68",
+      "evidenceId": "ev_3536671d8f0399f53e9cc5f323197a4241357a69e06fb753103f24ad8e0605ad",
+      "operation": "inspect_android_class",
+      "status": "returned-evidence",
+      "scope": "target-or-dedicated-Kimi-device",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ]
+    },
+    {
+      "path": "evidence/rea/activity-content-setcontent.json",
+      "sha256": "fefcc0cf018e979bfebfd9aa5c957b66582949ad65e238fa2334e6527d9e6415",
+      "evidenceId": "ev_1352896304865e17159c34c6878abfd2ab52c39a56381f10ae065567c24dd8a0",
+      "operation": "inspect_android_method",
+      "status": "returned-evidence",
+      "scope": "target-or-dedicated-Kimi-device",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ]
+    },
+    {
+      "path": "evidence/rea/android-package.json",
+      "sha256": "8c75fb08cb5c28f3129e1e405694ccf291ef918c2722cddf703314a7c81a0cc2",
+      "evidenceId": "ev_f54862ab42ec203f39f537bb2c0380f5944c173f698f357002a896e29718b04e",
+      "operation": "inspect_android_package",
+      "status": "returned-evidence",
+      "scope": "target-or-dedicated-Kimi-device",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ]
+    },
+    {
+      "path": "evidence/rea/artifact.json",
+      "sha256": "c9193121bd1ec2cd9e4cbf48c15337f1baad12fae372603087afe32565d873cc",
+      "evidenceId": "ev_ff45ac4bc0a7c4d6a89d60ec3185be6897bf2a34f108368af50f4d8d5eb8848c",
+      "operation": "inspect_artifact",
+      "status": "returned-evidence",
+      "scope": "target-or-dedicated-Kimi-device",
+      "limitations": [
+        "Inspection derives bounded static hypotheses and next probes; it does not execute the artifact or claim format-specific semantics.",
+        "Logical archive names collide under English (en-US) Unicode case folding; a case-insensitive destination cannot store both spellings. This comparison is not a filesystem observation.",
+        "ZIP inventory lists central-directory entries only. Non-entry bytes, including an APK Signing Block before the central directory or a ZIP comment after it, are not occurrences."
+      ]
+    },
+    {
+      "path": "evidence/rea/content-entry-class.json",
+      "sha256": "a6b45b28516a4da527b7b6e9f7829f4da7d5fd89ea7b4c96c870be57e21da701",
+      "evidenceId": "ev_da9fe71e2aea83a9b02d539788346998937885508b1457afd54a6ac7a658a655",
+      "operation": "inspect_android_class",
+      "status": "returned-evidence",
+      "scope": "target-or-dedicated-Kimi-device",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ]
+    },
+    {
+      "path": "evidence/rea/content-entry-setcontent.json",
+      "sha256": "2d7b87c86d4ce49a8f6d6dd5f3fb62b1f995df5a1cc88cc243bb87b555a22934",
+      "evidenceId": "ev_263ec29b0e00173a87fd75c912f8f1f09b8d0019efe5c9812173360e05f31eef",
+      "operation": "inspect_android_method",
+      "status": "returned-evidence",
+      "scope": "target-or-dedicated-Kimi-device",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ]
+    },
+    {
+      "path": "evidence/rea/device.json",
+      "sha256": "292224ff4cd32d5eef45cd8780bf7de6e52f2a30b3307972872296874824ebbf",
+      "evidenceId": "ev_fd412e96a74fec9c14a05fb542551fa2b74ad640cbc3cfa17452fb2982382237",
+      "operation": "inspect_adb_device",
+      "status": "returned-evidence",
+      "scope": "diagnostic-not-proof-of-Kimi-runtime",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Properties are a fixed whitelist of build identity facts, not the full getprop dump",
+        "emulator_observed is null when the build does not report ro.kernel.qemu"
+      ]
+    },
+    {
+      "path": "evidence/rea/devices.json",
+      "sha256": "cb30c251ab5431f2c4cacebb6c4b6c19cb55e3563481a076dd76001c5a4dc523",
+      "evidenceId": "ev_a4165d62aaa49756ca0ea49b596ab1d994764bf0422d3c87079bac874d185ccb",
+      "operation": "list_adb_devices",
+      "status": "returned-evidence",
+      "scope": "diagnostic-not-proof-of-Kimi-runtime",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Device kind is inferred from the emulator serial prefix and USB transport metadata, not from device attestation",
+        "Kind stays unknown for TCP transports unless the serial is an emulator port"
+      ]
+    },
+    {
+      "path": "evidence/rea/display.json",
+      "sha256": "354f220d3177e84191dc7b045d23c75dcfe98850c7e2031edb4ba50b7cae3f96",
+      "evidenceId": null,
+      "operation": null,
+      "status": "recorded-error",
+      "scope": "diagnostic-not-proof-of-Kimi-runtime",
+      "limitations": [
+        "Analysis returned an unreadable result. Run `rea doctor` and review the reported details; repeating the unchanged request is not expected to succeed."
+      ]
+    },
+    {
+      "path": "evidence/rea/extraction.json",
+      "sha256": "bccfcb240c9d292f90d62f36a82acf3f497cc0447b0f4473ca5ce174fd191093",
+      "evidenceId": null,
+      "operation": "extract_artifact",
+      "status": "recorded-error",
+      "scope": "diagnostic-not-proof-of-Kimi-runtime",
+      "limitations": [
+        "Destination filesystem cannot store both res/7p.xml and res/7P.xml; inventory retains both logical names."
+      ]
+    },
+    {
+      "path": "evidence/rea/install.json",
+      "sha256": "354f220d3177e84191dc7b045d23c75dcfe98850c7e2031edb4ba50b7cae3f96",
+      "evidenceId": null,
+      "operation": null,
+      "status": "recorded-error",
+      "scope": "diagnostic-not-proof-of-Kimi-runtime",
+      "limitations": [
+        "Analysis returned an unreadable result. Run `rea doctor` and review the reported details; repeating the unchanged request is not expected to succeed."
+      ]
+    },
+    {
+      "path": "evidence/rea/kimi-device.json",
+      "sha256": "ae54c9f31e358a945e5d220bbcd7dc50cb21a994b8ef5512fa3088b53cda97d2",
+      "evidenceId": "ev_450327be514e990ff35264b16f7c66e0a221599a98784320ce85824fc35bdb60",
+      "operation": "inspect_adb_device",
+      "status": "returned-evidence",
+      "scope": "target-or-dedicated-Kimi-device",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Properties are a fixed whitelist of build identity facts, not the full getprop dump",
+        "emulator_observed is null when the build does not report ro.kernel.qemu"
+      ]
+    },
+    {
+      "path": "evidence/rea/kimi-display.json",
+      "sha256": "024a30423852081fe282737e22dfc967a3690b0a7bdee1d2780a5dcde5c6266b",
+      "evidenceId": "ev_aed9f38f1a656cb76d5ad7d0f4f99d71f78779c054c174be8b99d723783f1cbc",
+      "operation": "inspect_adb_display",
+      "status": "returned-evidence",
+      "scope": "target-or-dedicated-Kimi-device",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Override values are present only when a build has overridden the physical values"
+      ]
+    },
+    {
+      "path": "evidence/rea/kimi-install.json",
+      "sha256": "a8493acfb35d6bc4e4070362c613a49f39bb95fd78b545cd7d22ca8b886dfa57",
+      "evidenceId": null,
+      "operation": "install_adb_package",
+      "status": "recorded-error",
+      "scope": "diagnostic-not-proof-of-Kimi-runtime",
+      "limitations": [
+        "Unsupported target for install_adb_package at emulator-5596: the device refused the installation"
+      ]
+    },
+    {
+      "path": "evidence/rea/kimi-installed-package.json",
+      "sha256": "e3efe84305d4d3112fe279d8bd2b4bfb42f7f48ba9563d52e87bd3533625800c",
+      "evidenceId": "ev_b4ec47f812e0f56a4062a6423ec5a27ea56e521d72ef28d785b582f48d39dce0",
+      "operation": "inspect_adb_package",
+      "status": "returned-evidence",
+      "scope": "target-or-dedicated-Kimi-device",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Fields are a fixed projection of dumpsys package output; version-dependent sections are ignored rather than guessed",
+        "requested_permissions_count counts the listed requested permissions section only"
+      ]
+    },
+    {
+      "path": "evidence/rea/kimi-screen.json",
+      "sha256": "79ba6c75dc0a99ccd3772a05156a9ef22043938aaabcdbb34b5b281a6fe08cea",
+      "evidenceId": "ev_c06799ccfb293933fd1020800b4715866da4777e0c32fb48f6ab1eb7895f40bd",
+      "operation": "capture_adb_screen",
+      "status": "returned-evidence",
+      "scope": "target-or-dedicated-Kimi-device",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "The capture is one frame at read time; no recording or interaction occurred"
+      ]
+    },
+    {
+      "path": "evidence/rea/main-activity-class.json",
+      "sha256": "6ccf09764f4a8d057fb06d0c8e401248c3da7284e2100a40b30665aa659b975d",
+      "evidenceId": "ev_fe47d402e256ace59096aba220301b23b588ea636c302885a2f980c8c3648baa",
+      "operation": "inspect_android_class",
+      "status": "returned-evidence",
+      "scope": "target-or-dedicated-Kimi-device",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ]
+    },
+    {
+      "path": "evidence/rea/main-activity-oncreate.json",
+      "sha256": "63a346f028eacc3b4f3507ffb2ae043e7f3a0f1e74f7fed008e7e30a7e058a07",
+      "evidenceId": "ev_6a94a0cef894d2a9637a894c900d26cc48773427e5effead1165efc25298f222",
+      "operation": "inspect_android_method",
+      "status": "returned-evidence",
+      "scope": "target-or-dedicated-Kimi-device",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ]
+    },
+    {
+      "path": "evidence/rea/run02-push-fixture.json",
+      "sha256": "beac26d7bf911a0a4ede33720319cd470420953d22262a18d19ae284c810fc3b",
+      "evidenceId": "ev_bf69dc0bfce8ac8a334b466d6f6548be395a323b032083f00cadef39e9ab267b",
+      "operation": "push_adb_file",
+      "scope": "Dedicated Kimi AVD artificial attachment fixture; no backend substitution",
+      "status": "returned-evidence",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Push writes the caller's file to the device"
+      ]
+    },
+    {
+      "path": "evidence/rea/run03-pull-share-image.json",
+      "sha256": "87cdb6f9842aeb73ad3057265f328f1d13f037bccfd4078b84ed927a960ea705",
+      "evidenceId": "ev_53f07b323ac5c37050d7a5047713fe3be1583dd32fa0d4a4ad31ea80a568cf40",
+      "operation": "pull_adb_file",
+      "status": "retained-actual-tool-output",
+      "scope": "Run03 synthetic fixture file transfer; see full output for actual success/failure and Evidence ID",
+      "limitations": [
+        "File transfer does not prove parsing or UI result",
+        "Pull-share output is metadata only; identity-bearing exported image remains local-only"
+      ]
+    },
+    {
+      "path": "evidence/rea/run03-push-cancel-large.json",
+      "sha256": "587d3dd9fb4042182b59474e4dc9ead220d394f966d31322dbfb9608b8ad923b",
+      "evidenceId": "ev_d099c4015b439e9ea14d667ab274a154638dc1d90a0ab39b21bb293ec062d469",
+      "operation": "push_adb_file",
+      "status": "retained-actual-tool-output",
+      "scope": "Run03 synthetic fixture file transfer; see full output for actual success/failure and Evidence ID",
+      "limitations": [
+        "File transfer does not prove parsing or UI result",
+        "Pull-share output is metadata only; identity-bearing exported image remains local-only"
+      ]
+    },
+    {
+      "path": "evidence/rea/run03-push-document-attempt.json",
+      "sha256": "ca07f9f7b474b76b48d90240fff48e3f839b6d036e4027712bb0a67b8144d76f",
+      "evidenceId": null,
+      "operation": null,
+      "status": "retained-actual-tool-output",
+      "scope": "Run03 synthetic fixture file transfer; see full output for actual success/failure and Evidence ID",
+      "limitations": [
+        "File transfer does not prove parsing or UI result",
+        "Pull-share output is metadata only; identity-bearing exported image remains local-only"
+      ]
+    },
+    {
+      "path": "evidence/rea/run03-push-image.json",
+      "sha256": "16a4a25b7454ebb48dbd3325e7c6dc5bb2529b814d499b2f49e924eaf9b9f15a",
+      "evidenceId": "ev_0ecbb1669cb53f89690f343ae32f2d076a4918eab752e2eb91ceca58cf3e45a8",
+      "operation": "push_adb_file",
+      "status": "retained-actual-tool-output",
+      "scope": "Run03 synthetic fixture file transfer; see full output for actual success/failure and Evidence ID",
+      "limitations": [
+        "File transfer does not prove parsing or UI result",
+        "Pull-share output is metadata only; identity-bearing exported image remains local-only"
+      ]
+    },
+    {
+      "path": "evidence/rea/run03-push-project-data.json",
+      "sha256": "44379d65511ae8f6cc2a60b430b7b6add410bfa8d95568d9d5cc05ba235257ae",
+      "evidenceId": "ev_9b03cdffe0cbd12577d7171333199e74ede538570319db5f30221131c40d06cb",
+      "operation": "push_adb_file",
+      "status": "retained-actual-tool-output",
+      "scope": "Run03 synthetic fixture file transfer; see full output for actual success/failure and Evidence ID",
+      "limitations": [
+        "File transfer does not prove parsing or UI result",
+        "Pull-share output is metadata only; identity-bearing exported image remains local-only"
+      ]
+    },
+    {
+      "path": "evidence/rea/run03-push-run03-corrupt.pdf.json",
+      "sha256": "29bc61248fb89d35aa90f003ddd6e83d66b068b9d18451aeb732f2e2df55c480",
+      "evidenceId": "ev_1dc0633eb6cc42c7d26a71bc980ef74f73bb36c7ffeef552ccaf5d260ef9635b",
+      "operation": "push_adb_file",
+      "status": "retained-actual-tool-output",
+      "scope": "Run03 synthetic fixture file transfer; see full output for actual success/failure and Evidence ID",
+      "limitations": [
+        "File transfer does not prove parsing or UI result",
+        "Pull-share output is metadata only; identity-bearing exported image remains local-only"
+      ]
+    },
+    {
+      "path": "evidence/rea/run03-push-run03-document.pdf.json",
+      "sha256": "4f5b3f866af07a1aba6331cc6d00484cc39f2184c957ecec256c21e3fcb4daa3",
+      "evidenceId": "ev_6db554f8ca81cfa632104d5bd94445929ed6c179dfddf85b97bb57703f8a10d7",
+      "operation": "push_adb_file",
+      "status": "retained-actual-tool-output",
+      "scope": "Run03 synthetic fixture file transfer; see full output for actual success/failure and Evidence ID",
+      "limitations": [
+        "File transfer does not prove parsing or UI result",
+        "Pull-share output is metadata only; identity-bearing exported image remains local-only"
+      ]
+    },
+    {
+      "path": "evidence/rea/run03-push-run03-large.txt.json",
+      "sha256": "473b44535c94ad5e7dc97a0548dbcef67fef124d7ed8bcc90890a5ec38994049",
+      "evidenceId": "ev_1e72cf00774e5c0d9f83ae8fd4679033a297d38ea69b9ef76d48e7fc375e8bf7",
+      "operation": "push_adb_file",
+      "status": "retained-actual-tool-output",
+      "scope": "Run03 synthetic fixture file transfer; see full output for actual success/failure and Evidence ID",
+      "limitations": [
+        "File transfer does not prove parsing or UI result",
+        "Pull-share output is metadata only; identity-bearing exported image remains local-only"
+      ]
+    },
+    {
+      "path": "evidence/rea/run03-push-run03-office.docx.json",
+      "sha256": "5d6277fc0ac8356ccb6ba86c7fae9b3b660ed78ac733a92ca6e30b1a4fddc228",
+      "evidenceId": "ev_60dbd6112928cf4142b6af96b777552528697cddd1b5c772e725c2bfd9e09a88",
+      "operation": "push_adb_file",
+      "status": "retained-actual-tool-output",
+      "scope": "Run03 synthetic fixture file transfer; see full output for actual success/failure and Evidence ID",
+      "limitations": [
+        "File transfer does not prove parsing or UI result",
+        "Pull-share output is metadata only; identity-bearing exported image remains local-only"
+      ]
+    }
+  ],
+  "localEvidence": {
+    "runtime": "evidence/runtime/session.json",
+    "reviewedScenes": "evidence/runtime/reviewed-scenes.json",
+    "transitions": "evidence/runtime/observed-transitions.json",
+    "manifest": "evidence/source/manifest-identity.json",
+    "assets": "assets/manifest.json",
+    "tokens": "tokens/widget-foundation.json",
+    "runtimeCurrent": "evidence/runtime/run03-20261016/session.json",
+    "reviewedScenesCurrent": "docs/run03-evidence-audit.json",
+    "distributionAllowlist": "docs/run03-safe-scenes.json",
+    "transitionsCurrent": "spec/run03-observed-transitions.json",
+    "observationsCurrent": "evidence/runtime/run03-20261016/observations.json",
+    "incidentsCurrent": "evidence/runtime/run03-20261016/incidents.json",
+    "nativeReference": "evidence/reference/run03-20261016/session.json",
+    "nativeReferenceAllowlist": "docs/native-reference-safe-scenes.json",
+    "nativeReferenceAcceptance": "reference/run03-acceptance.json",
+    "comparison": "comparison/native-run03.md",
+    "crossBusinessTransfer": "transfer-example/run03-acceptance.md",
+    "motion": "docs/run03-motion-safe-files.json",
+    "restorationCurrent": "evidence/runtime/run03-20261016/restore.json"
+  },
+  "evidenceTaxonomy": {
+    "A": "original product runtime observation; origin/time belongs to its original run, not the date of rereading",
+    "B": "packaged or decompiled declarations",
+    "C": "bounded inference",
+    "D": "research tooling, transformed previews or independent implementation choice"
+  },
+  "runs": [
+    {
+      "id": "first-pass-20261015",
+      "origin": "historical",
+      "session": "evidence/runtime/session.json",
+      "readme": "README.md",
+      "capturedFrames": 34,
+      "accountMode": "no-login",
+      "restore": "docs/restore.json"
+    },
+    {
+      "id": "run02-20261016",
+      "origin": "historical",
+      "session": "evidence/runtime/run02-20261016/session.json",
+      "summary": "docs/run02-results.md",
+      "accountMode": "no-login then normal user-assisted phone login; credential flow excluded",
+      "capturedFrames": 45,
+      "actions": 102,
+      "restoration": "evidence/runtime/run02-20261016/restore.json",
+      "preview": "run02.html",
+      "scope": [
+        "Model selector and K3 selection",
+        "Keyboard and unsent draft",
+        "Font preview/Back/Save",
+        "Normal generation, Retry and UI Stop",
+        "Artificial TXT upload/removal/read",
+        "Microphone refusal and text recovery",
+        "Offline failure and successful retry",
+        "Android copy/paste",
+        "Rename/Delete confirmation cancellation"
+      ]
+    },
+    {
+      "id": "run03-20261016",
+      "origin": "current",
+      "session": "evidence/runtime/run03-20261016/session.json",
+      "summary": "docs/run03-results.md",
+      "preview": "run03.html",
+      "accountMode": "normal retained user-assisted login verified by authenticated home and actual submitted self-created request; credentials excluded",
+      "backend": "original app network; no fixtures",
+      "capturedFrames": 275,
+      "safeFrames": 257,
+      "actions": 649,
+      "restoration": "evidence/runtime/run03-20261016/restore.json",
+      "referenceSession": "evidence/reference/run03-20261016/session.json",
+      "referenceFrames": 71,
+      "referenceReviewedFrames": 71,
+      "scopeComplete": false
+    }
+  ],
+  "updatedAt": "2026-10-16T13:20:50.884Z",
+  "scopeComplete": false
+}

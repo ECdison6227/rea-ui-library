@@ -1,0 +1,43 @@
+{
+  "id": "r03-15-own-rename",
+  "description": "Rename dialog for confirmed Run03 own chat",
+  "classification": "A",
+  "origin": "current",
+  "runId": "run03-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-16T06:53:45.403Z",
+  "capturedAt": "2026-10-16T06:53:50.061Z",
+  "screenshotCapturedAt": "2026-10-16T06:53:47.404Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-15-own-rename/screen.png",
+    "sha256": "ee479d40b626bf206369640498322a2dcb64139ea21c57e7271beb18520811df",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-15-own-rename/hierarchy.xml",
+    "sha256": "fbe19f9710974b0ed0716c7b07d1822bacbf5a4df59b6927af4462ee49aaab88"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 43,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "systemLocales": "null",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{3d60979 u0 com.moonshot.kimichat/.MainActivity t18}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen",
+  "captureSettlingDelayMs": 1500,
+  "accountMode": "normal retained user-assisted login verified by authenticated home and actual submitted self-created request; credentials excluded"
+}

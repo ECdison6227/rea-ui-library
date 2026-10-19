@@ -1,0 +1,4515 @@
+{
+  "schemaVersion": 1,
+  "runId": "run02-20261016",
+  "generatedAt": "2026-10-16T04:12:09.189Z",
+  "output": {
+    "path": "run02.html",
+    "bytes": 7353635,
+    "sha256": "9edb91f9c5b800692153595ff3a37b5d3b0999c6fc6362edf3dcea940774617a"
+  },
+  "generator": {
+    "path": "tools/build-run02-gallery.mjs",
+    "sha256": "f90b354172e019790bbd8bcfe5406d25a805918afc04546b2c34cb1cecdf75b6"
+  },
+  "sources": {
+    "session": {
+      "path": "evidence/runtime/run02-20261016/session.json",
+      "sha256": "832a9e5817969cc05e2a4e6da90db36553aaccac409623434e9ba2a691de5c2c"
+    },
+    "notes": {
+      "path": "evidence/runtime/run02-20261016/gallery-notes.json",
+      "sha256": "4c2d7165277bca978e2f2339160f5b73cddbd49b92958031c48288340b503bd4"
+    },
+    "transitions": {
+      "path": "evidence/runtime/run02-20261016/reviewed-transitions.json",
+      "sha256": "df201a9678c012748fc8e0a19678ac003984331106cf6cf353375ffcc8eef14e"
+    },
+    "authTransitions": {
+      "path": "evidence/runtime/run02-20261016/auth-reviewed-transitions.json",
+      "sha256": "fe40cec81a1427475888dc58c840017e74e8dd5a8ef6a0c971d191b01f8d022b"
+    },
+    "attachmentReview": {
+      "path": "evidence/runtime/run02-20261016/attachment-permission-review.json",
+      "sha256": "91e6dff016dda676ccbb47c6d6a32dd99b2ca474e92b2d786635b97812264f0b"
+    }
+  },
+  "reviewMethod": "Independent agent viewed the original 17 PNGs and the explicitly permitted safe scenes 20,21,22,24,25,26,27-46 using view_image, then compared session and independent review records. Scenes 18/19 were not read. Scene names and command intentions were not treated as observed results.",
+  "inclusionPolicy": "Only an exactSha256 match with approvedForGallery=true and personalDataReview=clear may be embedded. Unknown/new/changed captures are not read or embedded. Login identifiers and verification codes must not be included.",
+  "summary": {
+    "sessionScenes": 45,
+    "exactReviewedScenes": 43,
+    "embeddedScenes": 41,
+    "excludedScenes": 2,
+    "pendingScenes": 0,
+    "withheldScenes": 2,
+    "sourceScreenshotHashesVerified": 43,
+    "sourceHierarchyHashesVerified": 42,
+    "embeddedPngHashesVerified": 41,
+    "categoryCounts": {
+      "model": 4,
+      "draft": 4,
+      "font": 7,
+      "voice": 1,
+      "conversation": 10,
+      "attachment": 10,
+      "permission": 2,
+      "recovery": 2,
+      "clipboard": 1
+    }
+  },
+  "included": [
+    {
+      "id": "r02-03-after-system-recovery",
+      "title": "恢复后主页 · 模型入口基线",
+      "category": "model",
+      "exactSha256": "fdbbf8ae17b42738ac10f48cb7103ec57dfd49ae109604dee90208276a7fb451",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-03-after-system-recovery/screen.png",
+      "screenshotBytes": 109855,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-03-after-system-recovery/capture.json",
+      "captureSha256": "bf7f08ec913845c5d013e3d8bd8a98f9f4c124d7fbd4fe74905de47352638043",
+      "screenshotCapturedAt": "2026-10-16T02:58:17.145Z",
+      "captureStartedAt": "2026-10-16T02:58:15.314Z",
+      "captureCompletedAt": "2026-10-16T02:58:23.001Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "no-login",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-03-after-system-recovery/hierarchy.xml",
+        "sha256": "c5d7fbb00166d04ff2510a84a92af29de0dafe25e0801a665aeb02a89d7afba5"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 3,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "540",
+            "1367"
+          ],
+          "description": "Observed label Wait; Recover Android System UI ANR before testing app",
+          "startedAt": "2026-10-16T02:58:06.813Z",
+          "completedAt": "2026-10-16T02:58:12.838Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 4,
+          "operation": "launch",
+          "arguments": [
+            "shell",
+            "am",
+            "start",
+            "-n",
+            "com.moonshot.kimichat/.MainActivity"
+          ],
+          "description": "Launch original Kimi MainActivity",
+          "startedAt": "2026-10-16T02:58:13.827Z",
+          "completedAt": "2026-10-16T02:58:14.733Z",
+          "stdout": "Starting: Intent { cmp=com.moonshot.kimichat/.MainActivity }\r\n"
+        }
+      ],
+      "actionsBeforeCapture": 4,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[211,2122][900,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[900,2122][1026,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "顶部胶囊显示 Instant / High，菜单和扬声器图标分居两侧。",
+        "中央蓝环下方有欢迎语和 Log in；底部空输入器为 Ask anything. Images work too.。",
+        "页面没有系统 ANR 弹窗；此帧还未出现模型菜单。"
+      ],
+      "state": "System UI 恢复后，可见英文浅色 Kimi 主页。",
+      "behavior": "记录动作 3 Wait、4 launch 后采到此主页；这是环境恢复后的产品观察。",
+      "limits": [
+        "本帧的蓝环不能认定为加载、请求受阻或网络失败。",
+        "不由启动时英文浅色推断首轮中文/深色偏好重启丢失，中间状态未知。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-04-model-menu",
+      "title": "点击后的早帧 · 模型菜单尚不可见",
+      "category": "model",
+      "exactSha256": "0033f7261ad962cc7602617a73b4095b2308759b0b423107201d2e464d9b9725",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-04-model-menu/screen.png",
+      "screenshotBytes": 109391,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-04-model-menu/capture.json",
+      "captureSha256": "dcd04b09c935773f142bad1adfdc2390a41e664ded7816fa8bb0232c6beca57a",
+      "screenshotCapturedAt": "2026-10-16T02:59:10.084Z",
+      "captureStartedAt": "2026-10-16T02:59:09.174Z",
+      "captureCompletedAt": "2026-10-16T02:59:13.120Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "no-login",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": null,
+      "hierarchyError": "UIAutomator did not confirm a newly written hierarchy; old device file was removed before dump",
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 5,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "340",
+            "194"
+          ],
+          "description": "Model capsule on recovered original home",
+          "startedAt": "2026-10-16T02:59:08.371Z",
+          "completedAt": "2026-10-16T02:59:08.772Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 5,
+      "uiaSamples": [],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "仍显示 Instant / High、欢迎区、Log in 和空输入器。",
+        "没有可见模型列表；本次没有成功取得新的 UI 层级。"
+      ],
+      "state": "记录中已有模型胶囊点击，但原图仍为主页。",
+      "behavior": "动作 5 后的较早帧；同一动作之后的 05 才可确认菜单可见。",
+      "limits": [
+        "hierarchy=null，不引用其他场景 XML 补作本帧层级。",
+        "早帧没有菜单不能证明点击失败；两帧间隔也不是动画 duration。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-05-model-menu-settled",
+      "title": "真实模型菜单 · 说明、选中值与层级",
+      "category": "model",
+      "exactSha256": "a0f21027161759882ea3923ba16fe2125718fefef01bb0813287159abaf2bd14",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-05-model-menu-settled/screen.png",
+      "screenshotBytes": 150583,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-05-model-menu-settled/capture.json",
+      "captureSha256": "bc4cd61967e33266742094f4a206435e327bcdc699f4202333084b51c179b05d",
+      "screenshotCapturedAt": "2026-10-16T03:00:12.513Z",
+      "captureStartedAt": "2026-10-16T03:00:10.050Z",
+      "captureCompletedAt": "2026-10-16T03:00:20.261Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "no-login",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-05-model-menu-settled/hierarchy.xml",
+        "sha256": "1a7c0ba9bad14d1be9254b80f4047d9c8b3ea0ae567d089d5ab19972a3b5ef27"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [],
+      "actionsBeforeCapture": 5,
+      "uiaSamples": [],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "列表包含 K3、K2.8 和 Instant，每项都有灰色次级说明；K2.8 另有蓝色 Preview。",
+        "Instant 右侧为蓝色勾选；分隔线下是 Thinking effort、当前 High 和行尾箭头。",
+        "菜单叠在欢迎主页前方，留有圆角和柔和阴影。"
+      ],
+      "state": "后续原图显示大圆角模型菜单，Instant 行带蓝色勾选。",
+      "behavior": "与 04 相比没有新增动作，均属于动作 5 后的采样；菜单最终可见，精确出现时刻未知。",
+      "limits": [
+        "只观察当前 Instant 选中和后续选择 K3 路径，其他模型和 Thinking effort 子页未验证。",
+        "UI 层级对号仅报告 icon，不补造 radio 语义。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-06-after-k3",
+      "title": "选择 K3 · 常驻入口与输入提示同步",
+      "category": "model",
+      "exactSha256": "b10001efc144e4e4b3d964100e901ccc433337247a912628863b65b4493a6242",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-06-after-k3/screen.png",
+      "screenshotBytes": 103444,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-06-after-k3/capture.json",
+      "captureSha256": "fe1a0bfa5017eb6ec8c5501992fc4439ce1c7de0f8973c4ae0bf57b4d1b7032e",
+      "screenshotCapturedAt": "2026-10-16T03:01:11.983Z",
+      "captureStartedAt": "2026-10-16T03:01:09.146Z",
+      "captureCompletedAt": "2026-10-16T03:01:22.055Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "no-login",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-06-after-k3/hierarchy.xml",
+        "sha256": "8530356b80215eef64d2a0e541c454e22e42ac5130740be2cbaebadcd7814b9c"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 6,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "131",
+            "233"
+          ],
+          "description": "Observed label K3; Choose K3 from verified menu",
+          "startedAt": "2026-10-16T03:00:28.861Z",
+          "completedAt": "2026-10-16T03:00:38.677Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 6,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[211,2122][900,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[900,2122][1026,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "模型菜单已经关闭；胶囊显示 Kimi K3。",
+        "空输入提示由原来的 Ask anything. Images work too. 变为 Ask me. Task me.。",
+        "欢迎语和 Log in 仍在；尚未出现额度说明卡。"
+      ],
+      "state": "选择菜单中 K3 后，回到主页，顶部变为 Kimi K3。",
+      "behavior": "动作 6 点击已定位 K3 文本后，观察到入口和占位文字两处更新。",
+      "limits": [
+        "没有发送请求，不证明服务端实际使用哪个模型。",
+        "当前选择的跨新会话、重启或账号持久化未知。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-07-unsent-draft",
+      "title": "实际仅 Re · 软键盘、发送入口与额度提醒",
+      "category": "draft",
+      "exactSha256": "82148bb0b5ffdd7cadd0c609c60507bf9902ce49cb1964317129dafc8c1d6cb8",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-07-unsent-draft/screen.png",
+      "screenshotBytes": 159224,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-07-unsent-draft/capture.json",
+      "captureSha256": "3be736342885348478430d58b7158b28c436a266a8c31eba38d2292c96a7eaf5",
+      "screenshotCapturedAt": "2026-10-16T03:02:13.678Z",
+      "captureStartedAt": "2026-10-16T03:02:10.774Z",
+      "captureCompletedAt": "2026-10-16T03:02:23.132Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "no-login",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-07-unsent-draft/hierarchy.xml",
+        "sha256": "df68b0289130a14d6576b6bfa44e06e9117903ad19ec3e5e51f686de81af9c60"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 7,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "500",
+            "2185"
+          ],
+          "description": "Focus composer for local unsent draft test",
+          "startedAt": "2026-10-16T03:01:52.359Z",
+          "completedAt": "2026-10-16T03:01:53.944Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 8,
+          "operation": "type-text",
+          "arguments": [
+            "shell",
+            "input",
+            "text",
+            "Research%sdraft%s20261016"
+          ],
+          "description": "Local harmless draft only; do not send",
+          "startedAt": "2026-10-16T03:01:55.161Z",
+          "completedAt": "2026-10-16T03:02:09.315Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 8,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "Re",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[74,1234][1006,1359]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "true"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[785,1348][911,1474]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "输入器增高，底部有加号、语音和黑底向上箭头；实际输入只有两字符 Re。",
+        "上方独立说明卡提示此模型消耗额度更快，右侧 Got it。",
+        "系统软键盘占据屏幕下方；欢迎语在当前帧未显示。"
+      ],
+      "state": "软键盘明确可见；编辑器内只有 Re 和蓝色光标，没有完整长句。",
+      "behavior": "动作 7 聚焦、8 尝试输入长句；像素和后续层级只支持 Re，未按发送。",
+      "limits": [
+        "长输入未完成的原因未知，不推断产品限制、网络或自动截断。",
+        "额度提示出现与聚焦/输入没有隔离，不断言只由第一个字符触发。",
+        "采集期间存在重叠操作；下一帧键盘隐藏相关 Back 没有 session action 条目。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-08-draft-back",
+      "title": "键盘隐藏 · 两字符草稿仍在",
+      "category": "draft",
+      "exactSha256": "9c7099b1512d92f82c183e981469791db8609973ba066728d4fbb8dd1b293604",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-08-draft-back/screen.png",
+      "screenshotBytes": 111383,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-08-draft-back/capture.json",
+      "captureSha256": "7feb8c75c9b74d46bfda23e03d2dbb4485d598aa05981f53a0e2aac20fccd837",
+      "screenshotCapturedAt": "2026-10-16T03:02:37.092Z",
+      "captureStartedAt": "2026-10-16T03:02:34.290Z",
+      "captureCompletedAt": "2026-10-16T03:02:46.621Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "no-login",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-08-draft-back/hierarchy.xml",
+        "sha256": "9a17f104084ca2764ca6ec68551b5389b8391ffb60b87e425a51d98f99979356"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [],
+      "actionsBeforeCapture": 8,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "Re",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[74,2017][1006,2143]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[785,2132][911,2258]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "Re 没有被清空，向上箭头发送入口仍可见。",
+        "额度说明卡和 Got it 仍在，卡片随输入器降至底部。",
+        "中央欢迎区重新可见；编辑器未见蓝色光标。"
+      ],
+      "state": "这一帧没有软键盘，欢迎语和 Log in 回来，输入器仍为 Re。",
+      "behavior": "观察到键盘隐藏、焦点取消和 Re 保留；操作者报告过 Back，但 session 中没有该条动作。",
+      "limits": [
+        "actionsBeforeCapture 仍为 8；不能把最后一条输入命令当作隐藏键盘的动作。",
+        "没有完整时间归因，不虚构 Back 序号、时间或全部布局变化的单一原因。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-09-draft-settled",
+      "title": "后续采样 · Re 与提示保持",
+      "category": "draft",
+      "exactSha256": "8b5efc6bfdc9c46c54f1b1e7bcbd6931931121cf5465ac6288e25f3bcc92a1ef",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-09-draft-settled/screen.png",
+      "screenshotBytes": 111047,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-09-draft-settled/capture.json",
+      "captureSha256": "0594dac9032a7d1e891456cc71c568b262398676834d3df15926be6a505bc417",
+      "screenshotCapturedAt": "2026-10-16T03:03:09.647Z",
+      "captureStartedAt": "2026-10-16T03:03:07.034Z",
+      "captureCompletedAt": "2026-10-16T03:03:17.135Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "no-login",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-09-draft-settled/hierarchy.xml",
+        "sha256": "9a17f104084ca2764ca6ec68551b5389b8391ffb60b87e425a51d98f99979356"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [],
+      "actionsBeforeCapture": 8,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "Re",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[74,2017][1006,2143]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[785,2132][911,2258]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "输入器仍只有 Re；没有出现原命令计划输入的完整长句。",
+        "Kimi K3、欢迎区、额度提示和 Got it 保持可见。"
+      ],
+      "state": "后续画面仍为同一主页草稿状态，键盘隐藏。",
+      "behavior": "08 后没有新增已记录动作；这一帧补充后续状态保持。",
+      "limits": [
+        "稀疏截图不能测量保持时限或草稿持久化策略。",
+        "同样保留未记入 session 的 Back 与重叠操作缺口。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-10-draft-after-drawer",
+      "title": "提示消失后的主页 · Re 留存",
+      "category": "draft",
+      "exactSha256": "627a39cdf05d5f975e7c0e785321fb7dd45d95a29869787a38784c1e5c51343f",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-10-draft-after-drawer/screen.png",
+      "screenshotBytes": 85200,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-10-draft-after-drawer/capture.json",
+      "captureSha256": "a641a55a7a61d7042bec01e62062a151f0f97061ffdaf7c21f4a14dc8653892c",
+      "screenshotCapturedAt": "2026-10-16T03:05:59.826Z",
+      "captureStartedAt": "2026-10-16T03:05:57.643Z",
+      "captureCompletedAt": "2026-10-16T03:06:08.708Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "no-login",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-10-draft-after-drawer/hierarchy.xml",
+        "sha256": "679d0b4661adcd8c4c2a831d07d3f87f04daec65716533e1e40bc50e3b03236c"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 9,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "946",
+            "1897"
+          ],
+          "description": "Observed label Got it; Dismiss K3 credit-use guidance",
+          "startedAt": "2026-10-16T03:04:35.153Z",
+          "completedAt": "2026-10-16T03:04:45.449Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 10,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "100",
+            "194"
+          ],
+          "description": "Observed label Navigation button; Open drawer with unsent draft present",
+          "startedAt": "2026-10-16T03:05:01.766Z",
+          "completedAt": "2026-10-16T03:05:15.722Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 11,
+          "operation": "back",
+          "arguments": [
+            "shell",
+            "input",
+            "keyevent",
+            "4"
+          ],
+          "description": "Close drawer and test draft retention",
+          "startedAt": "2026-10-16T03:05:51.465Z",
+          "completedAt": "2026-10-16T03:05:52.278Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 11,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "Re",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[74,2017][1006,2143]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[785,2132][911,2258]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "输入器仍为 Re，顶部仍是 Kimi K3。",
+        "上一帧的额度说明卡不再显示，欢迎语与 Log in 仍在。",
+        "当前画面不是抽屉开态。"
+      ],
+      "state": "Got it、导航和返回序列结束后，回到主页，额度卡已不可见。",
+      "behavior": "动作 9 Got it、10 导航、11 Back 后的最终帧；本次序列没有清除 Re。",
+      "limits": [
+        "没有分别拍下 Got it 之后与抽屉开启时的中间帧，不拆成已经隔离的逐动作结果。",
+        "未证明跨进程或跨账号草稿持久化。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-11-font-baseline",
+      "title": "字号基线 · 跟随系统开启",
+      "category": "font",
+      "exactSha256": "92de4fa21cfaab544d811274aa6e5a55bcbe6b90152eb206d9818153811d8d45",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-11-font-baseline/screen.png",
+      "screenshotBytes": 130179,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-11-font-baseline/capture.json",
+      "captureSha256": "0411eea171e78d9044d54e9d59d8697d67af748dc0384d9523b2ed9a4ed37587",
+      "screenshotCapturedAt": "2026-10-16T03:06:49.486Z",
+      "captureStartedAt": "2026-10-16T03:06:48.264Z",
+      "captureCompletedAt": "2026-10-16T03:06:54.006Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "no-login",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-11-font-baseline/hierarchy.xml",
+        "sha256": "8ea1e972ea2101a40ad1a2d7b7905eeac6cb9b1b152ca9b8734add57c4ae39f7"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 12,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "100",
+            "194"
+          ],
+          "description": "Observed label Navigation button; Open drawer to test draft across settings",
+          "startedAt": "2026-10-16T03:06:25.456Z",
+          "completedAt": "2026-10-16T03:06:32.937Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 13,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "815",
+            "225"
+          ],
+          "description": "Open observed drawer settings gear",
+          "startedAt": "2026-10-16T03:06:34.142Z",
+          "completedAt": "2026-10-16T03:06:35.074Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 14,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "260",
+            "539"
+          ],
+          "description": "Observed label Appearance; Open appearance via verified text",
+          "startedAt": "2026-10-16T03:06:36.203Z",
+          "completedAt": "2026-10-16T03:06:41.287Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 15,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "168",
+            "518"
+          ],
+          "description": "Observed label Font size; Open font settings for save/cancel verification",
+          "startedAt": "2026-10-16T03:06:42.219Z",
+          "completedAt": "2026-10-16T03:06:47.243Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 15,
+      "uiaSamples": [
+        {
+          "class": "android.view.View",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[917,134][1043,260]",
+          "enabled": "true",
+          "clickable": "false",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.view.View",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[876,1896][979,1991]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "true",
+          "checked": "true",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.SeekBar",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[58,2158][1022,2232]",
+          "enabled": "true",
+          "clickable": "false",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "顶部保存对号承载为浅灰色；示例气泡和说明文字以基线大小排布。",
+        "底部圆角面板含跟随系统开关、次级说明和四档字号标注。"
+      ],
+      "state": "进入 Font size；Follow System 蓝色开启，滑块拇指在 Standard 附近。",
+      "behavior": "动作 12–15 经导航、齿轮、Appearance、Font size 到达此页；中间路由没有逐页截图。",
+      "limits": [
+        "不能凭灰色就称保存按钮 disabled；UIA 的 enabled 与 clickable 需分开读。",
+        "Standard 附近只是视觉位置，不换算具体 sp 或系统缩放值。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-12-font-unsaved",
+      "title": "未保存 Extra Large · 局部预览已变化",
+      "category": "font",
+      "exactSha256": "8e3b8c87ecadf8312afa24d0b3dd9c975438bea993b801985a1fbab7d527a073",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-12-font-unsaved/screen.png",
+      "screenshotBytes": 147585,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-12-font-unsaved/capture.json",
+      "captureSha256": "c0e45d42bea80a94bee3d01e216c82c6589fa8a0db6653a4d6ea9c2a151dc7a9",
+      "screenshotCapturedAt": "2026-10-16T03:08:22.123Z",
+      "captureStartedAt": "2026-10-16T03:08:21.622Z",
+      "captureCompletedAt": "2026-10-16T03:08:24.695Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "no-login",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-12-font-unsaved/hierarchy.xml",
+        "sha256": "593e3add349ad78c980565c45b9a02c0d2921abfebe724af460266e58462d3d7"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 16,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "928",
+            "1943"
+          ],
+          "description": "Disable Follow System in font editor",
+          "startedAt": "2026-10-16T03:08:19.041Z",
+          "completedAt": "2026-10-16T03:08:19.152Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 17,
+          "operation": "swipe",
+          "arguments": [
+            "shell",
+            "input",
+            "swipe",
+            "400",
+            "2194",
+            "960",
+            "2194",
+            "800"
+          ],
+          "description": "Preview Extra Large without Save",
+          "startedAt": "2026-10-16T03:08:19.398Z",
+          "completedAt": "2026-10-16T03:08:20.461Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 17,
+      "uiaSamples": [
+        {
+          "class": "android.view.View",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[917,134][1043,260]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.view.View",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[876,1896][979,1991]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "true",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.SeekBar",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[58,2158][1022,2232]",
+          "enabled": "true",
+          "clickable": "false",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "预览气泡与说明文字变大、换行变化。",
+        "滑块拇指在 Extra Large 端；保存按钮变为黑底白勾。",
+        "开关变灰且拇指在左侧。"
+      ],
+      "state": "Follow System 关闭，滑块移至最右端，当前还在编辑页。",
+      "behavior": "动作 16 关闭 Follow System、17 向右拖动后，只观察到本地预览。",
+      "limits": [
+        "此时未执行 Save，不能称字号偏好已提交。",
+        "不从预览字形估算字号、缩放比例或全部页面适配。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-13-font-back-result",
+      "title": "Back 放弃 · 摘要仍为 Follow System",
+      "category": "font",
+      "exactSha256": "8b912a82513d10a20d4f3ff4204d6c0b6baeb1ee3f86e7c51bb3da6335fd214d",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-13-font-back-result/screen.png",
+      "screenshotBytes": 60952,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-13-font-back-result/capture.json",
+      "captureSha256": "dfcaf960aae79c6d74422f9c1cd3df9f8592d9cbd60f4d7946417a24830711f2",
+      "screenshotCapturedAt": "2026-10-16T03:09:01.128Z",
+      "captureStartedAt": "2026-10-16T03:09:00.613Z",
+      "captureCompletedAt": "2026-10-16T03:09:03.769Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "no-login",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-13-font-back-result/hierarchy.xml",
+        "sha256": "ba0711d3a701b312127d283ee68101e4200f03927ab11c28a5792a18ff682948"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 18,
+          "operation": "back",
+          "arguments": [
+            "shell",
+            "input",
+            "keyevent",
+            "4"
+          ],
+          "description": "Leave modified font editor without Save",
+          "startedAt": "2026-10-16T03:08:59.812Z",
+          "completedAt": "2026-10-16T03:09:00.053Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 18,
+      "uiaSamples": [],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "Font size 右侧摘要仍是 Follow System，未显示 Extra Large。",
+        "主题与语言仍显示 Follow System / English。"
+      ],
+      "state": "未按 Save 而系统返回后，到达 Appearance。",
+      "behavior": "动作 18 Back 后的摘要没有提交刚才预览值；14 再次进入后确认基线恢复。",
+      "limits": [
+        "本次后续帧没有丢弃确认弹窗，不据稀疏截图断言所有退出路径都从不确认。",
+        "只验证本次系统返回路径。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-14-font-reenter",
+      "title": "重入字号页 · 未保存改动已放弃",
+      "category": "font",
+      "exactSha256": "3507658166add0c3b6292c59d37fc0216c1dc98a2f55c4a82a554b528a0fe5e9",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-14-font-reenter/screen.png",
+      "screenshotBytes": 130117,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-14-font-reenter/capture.json",
+      "captureSha256": "342e64b995f8e9be804087c6d9a68ca34d0cdc311ea82f78f2ffb26e0125d8fc",
+      "screenshotCapturedAt": "2026-10-16T03:09:29.823Z",
+      "captureStartedAt": "2026-10-16T03:09:29.277Z",
+      "captureCompletedAt": "2026-10-16T03:09:32.274Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "no-login",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-14-font-reenter/hierarchy.xml",
+        "sha256": "8ea1e972ea2101a40ad1a2d7b7905eeac6cb9b1b152ca9b8734add57c4ae39f7"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 19,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "168",
+            "518"
+          ],
+          "description": "Observed label Font size; Reenter font editor after abandoning changes",
+          "startedAt": "2026-10-16T03:09:26.330Z",
+          "completedAt": "2026-10-16T03:09:28.866Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 19,
+      "uiaSamples": [
+        {
+          "class": "android.view.View",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[917,134][1043,260]",
+          "enabled": "true",
+          "clickable": "false",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.view.View",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[876,1896][979,1991]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "true",
+          "checked": "true",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.SeekBar",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[58,2158][1022,2232]",
+          "enabled": "true",
+          "clickable": "false",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "示例文字恢复基线的大小与换行，右上保存承载重新为浅灰。",
+        "前次关闭开关和最右预览没有保留在编辑页。"
+      ],
+      "state": "重新进入后，Follow System 再次开启，滑块回 Standard 附近。",
+      "behavior": "动作 19 重开 Font size；与 13 摘要共同验证此次未保存修改被放弃。",
+      "limits": [
+        "不验证重启后的偏好读取，也不推内部缓存或状态所有者实现。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-15-font-save-result",
+      "title": "Save 后直接主页 · 字变大且 Re 留存",
+      "category": "font",
+      "exactSha256": "5c3ee44cb2341c9bd951bdd22fde4c16014fb952ed22c6996d64ab3cebcad0b7",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-15-font-save-result/screen.png",
+      "screenshotBytes": 85804,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-15-font-save-result/capture.json",
+      "captureSha256": "99aa2539b4cf778ed823e0857ce4fa5218476459e15e0b3d56620e242c3f4d3f",
+      "screenshotCapturedAt": "2026-10-16T03:10:02.196Z",
+      "captureStartedAt": "2026-10-16T03:10:01.388Z",
+      "captureCompletedAt": "2026-10-16T03:10:05.708Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "no-login",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-15-font-save-result/hierarchy.xml",
+        "sha256": "a7702a0cf2164c9567018f76523dba13f4466b63ce636f38d3c805e43ec61a5a"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 20,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "928",
+            "1943"
+          ],
+          "description": "Disable Follow System before saving Extra Large",
+          "startedAt": "2026-10-16T03:09:58.905Z",
+          "completedAt": "2026-10-16T03:09:59.070Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 21,
+          "operation": "swipe",
+          "arguments": [
+            "shell",
+            "input",
+            "swipe",
+            "400",
+            "2194",
+            "960",
+            "2194",
+            "800"
+          ],
+          "description": "Choose Extra Large preview",
+          "startedAt": "2026-10-16T03:09:59.536Z",
+          "completedAt": "2026-10-16T03:10:00.771Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 22,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "980",
+            "197"
+          ],
+          "description": "Save font choice using observed top-right checkmark",
+          "startedAt": "2026-10-16T03:10:00.987Z",
+          "completedAt": "2026-10-16T03:10:01.116Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 22,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "Re",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[74,2012][1006,2138]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[785,2132][911,2258]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "欢迎语与 Log in 的字形明显变大，欢迎语换行位置改变。",
+        "顶部仍为 Kimi K3；未发送草稿仍为 Re，发送入口也仍可见。",
+        "保存后去向不是 Appearance。"
+      ],
+      "state": "再次关闭 Follow System、拖至最右并保存后，实际原图是主页。",
+      "behavior": "动作 20–22 关闭跟随、拖动、点击对号 Save 后直接见主页；16 将验证摘要为 Extra Large。",
+      "limits": [
+        "不把未记录的 Activity 重建、页面重挂载或返回栈变化当作原因。",
+        "未证明全部页面适配、重启保持或模型后端行为。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-16-font-saved-summary",
+      "title": "重访外观 · Extra Large 已回写",
+      "category": "font",
+      "exactSha256": "69feb3deaf07a990022b75607ca7bb714e447ef42342ab313f5584d8a72d5274",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-16-font-saved-summary/screen.png",
+      "screenshotBytes": 63034,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-16-font-saved-summary/capture.json",
+      "captureSha256": "4edef50068d22fb40ce8433b1bfe3c86958a96cbd8a5e22edd24f5c2c09d3e0f",
+      "screenshotCapturedAt": "2026-10-16T03:11:13.703Z",
+      "captureStartedAt": "2026-10-16T03:11:13.315Z",
+      "captureCompletedAt": "2026-10-16T03:11:16.681Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "no-login",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-16-font-saved-summary/hierarchy.xml",
+        "sha256": "f338bacfddc7e4368c1b0cdbbb410e976bd67557fdb5afd158e2f0c629ca4080"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 23,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "100",
+            "194"
+          ],
+          "description": "Observed label Navigation button; Open drawer after font save",
+          "startedAt": "2026-10-16T03:11:02.685Z",
+          "completedAt": "2026-10-16T03:11:07.581Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 24,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "815",
+            "225"
+          ],
+          "description": "Open Settings after font save",
+          "startedAt": "2026-10-16T03:11:08.189Z",
+          "completedAt": "2026-10-16T03:11:08.551Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 25,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "284",
+            "560"
+          ],
+          "description": "Observed label Appearance; Read saved font summary",
+          "startedAt": "2026-10-16T03:11:09.209Z",
+          "completedAt": "2026-10-16T03:11:12.055Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 25,
+      "uiaSamples": [],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "字号摘要已由 Follow System 变成 Extra Large。",
+        "本页标题和行文字也比基线外观页更大。",
+        "主题仍 Follow System，语言仍 English。"
+      ],
+      "state": "再次经设置打开 Appearance，Font size 摘要显示 Extra Large。",
+      "behavior": "动作 23–25 经导航、齿轮和 Appearance 后确认已保存的值跨这次导航保留。",
+      "limits": [
+        "系统 fontScale 仍记录 1.0，不把变化归因于系统字体比例。",
+        "这里只验证同一进程导航后摘要，不是跨进程持久化。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-17-voice-entry",
+      "title": "恢复字号后 · Hold to talk 待操作入口",
+      "category": "voice",
+      "exactSha256": "466558b98a8d7e8946d23867d1a6a0af056c53fccf27d43eb0c39ea138e3eaec",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-17-voice-entry/screen.png",
+      "screenshotBytes": 86641,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-17-voice-entry/capture.json",
+      "captureSha256": "03cc62a0d37143e900c6528c604390f7b77a283fdf57d0bbb97dcf77bbf96ae9",
+      "screenshotCapturedAt": "2026-10-16T03:12:27.083Z",
+      "captureStartedAt": "2026-10-16T03:12:25.061Z",
+      "captureCompletedAt": "2026-10-16T03:12:32.691Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "no-login",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-17-voice-entry/hierarchy.xml",
+        "sha256": "052c559ac403ee987fe749bf553966a2204d516862ae370fd4cf851f69e29886"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 26,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "186",
+            "539"
+          ],
+          "description": "Observed label Font size; Reopen saved Extra Large setting for baseline restoration",
+          "startedAt": "2026-10-16T03:11:49.454Z",
+          "completedAt": "2026-10-16T03:11:52.541Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 27,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "928",
+            "1911"
+          ],
+          "description": "Restore Follow System font setting",
+          "startedAt": "2026-10-16T03:12:16.188Z",
+          "completedAt": "2026-10-16T03:12:16.549Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 28,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "980",
+            "197"
+          ],
+          "description": "Save restored Follow System font setting",
+          "startedAt": "2026-10-16T03:12:17.344Z",
+          "completedAt": "2026-10-16T03:12:17.636Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 29,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "848",
+            "2195"
+          ],
+          "description": "Observed label Switch to voice input; Open voice input to inspect guest permission or login gate",
+          "startedAt": "2026-10-16T03:12:18.266Z",
+          "completedAt": "2026-10-16T03:12:24.178Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 29,
+      "uiaSamples": [
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to text input",
+          "boundsPhysicalPx": "[774,2122][900,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.TextView",
+          "text": "Hold to talk",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[421,2161][638,2210]",
+          "enabled": "true",
+          "clickable": "false",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "输入区域中央显示 Hold to talk，右侧有切回文字键盘图标与向上箭头。",
+        "没有可见录音进行中标记、权限框或识别结果。",
+        "当前模式下不显示 Re 文本，不能据此认定草稿被清除。"
+      ],
+      "state": "恢复 Follow System 并保存回主页后，切到语音输入模式。",
+      "behavior": "动作 26–29 进入字号、恢复跟随、保存，再切语音；本帧只验证语音模式入口。",
+      "limits": [
+        "未按住说话，不声称开始录音、请求麦克风权限或成功识别。",
+        "未切回文字检查，所以草稿在语音模式中的存储状态未知。",
+        "恢复 Follow System 没有再拍摘要；该命令与主页结果不替代新的摘要核验。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-20-first-submit",
+      "title": "提交早帧 · 完整测试消息与生成控件",
+      "category": "conversation",
+      "exactSha256": "7f4e38a9672358f12eb992ed468e660231079f2c667cc7cd265c7fa1b8d36212",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-20-first-submit/screen.png",
+      "screenshotBytes": 82651,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-20-first-submit/capture.json",
+      "captureSha256": "5e1c358d3083f775e0af4f1a78594144c9bfe5f386e1a19b53be1941a01d9cba",
+      "screenshotCapturedAt": "2026-10-16T03:32:19.330Z",
+      "captureStartedAt": "2026-10-16T03:32:17.905Z",
+      "captureCompletedAt": "2026-10-16T03:32:31.145Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; neutral research chat",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-20-first-submit/hierarchy.xml",
+        "sha256": "e20086e3ba277232438c16357caac27cf4bbc6a952a92911071ebc7d8ab9f349"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 50,
+          "operation": "back",
+          "arguments": [
+            "shell",
+            "input",
+            "keyevent",
+            "4"
+          ],
+          "description": "Dismiss residual Gboard handwriting toolbar before submission",
+          "startedAt": "2026-10-16T03:32:01.533Z",
+          "completedAt": "2026-10-16T03:32:02.638Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 51,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "974",
+            "2195"
+          ],
+          "description": "Observed label Send message; Submit verified neutral test prompt Reply only OK",
+          "startedAt": "2026-10-16T03:32:07.851Z",
+          "completedAt": "2026-10-16T03:32:15.988Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 51,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[211,2122][900,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[900,2122][1026,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "右侧浅色用户气泡完整保留提交内容。",
+        "底部右侧黑圆内为白方块，输入占位是 Send messages anytime...。",
+        "回答位置只有小型等待形态；本张截图还没有 OK 正文。"
+      ],
+      "state": "用户气泡完整为 Reply only OK，回答区仍是生成早帧。",
+      "behavior": "动作 51 提交本次中性请求；随后 UIA 已推进为完成，21 原图单独确认 OK。",
+      "limits": [
+        "同一 capture 的后采 UIA 已出现 Thinking complete / OK，不能把整组文件当成同一生成时刻。",
+        "截图间隔不是生成时长，未验证生成中再次提交或后台请求标识。",
+        "登录由主采集者交接确认；未读取凭据或身份页。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-21-first-complete",
+      "title": "完成回答 · OK 与就近操作栏",
+      "category": "conversation",
+      "exactSha256": "2081de3d6d9c33845042b19462110a2703bfcfe5cb5129986d7053a776f04dd6",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-21-first-complete/screen.png",
+      "screenshotBytes": 98462,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-21-first-complete/capture.json",
+      "captureSha256": "cefe27cc94cb92c1baf4ed801556d573f38b3662af34bb393c0b8a9bf3408a5f",
+      "screenshotCapturedAt": "2026-10-16T03:33:31.085Z",
+      "captureStartedAt": "2026-10-16T03:33:30.074Z",
+      "captureCompletedAt": "2026-10-16T03:33:34.948Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; neutral research chat",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-21-first-complete/hierarchy.xml",
+        "sha256": "e20086e3ba277232438c16357caac27cf4bbc6a952a92911071ebc7d8ab9f349"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [],
+      "actionsBeforeCapture": 51,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[211,2122][900,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[900,2122][1026,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "细边框圆角思考摘要行带灯泡与箭头，正文回答单独置于下方。",
+        "回答下有朗读、复制、反馈、重试与分享样式图标。",
+        "输入器恢复普通空占位，方块停止外观不再显示。"
+      ],
+      "state": "Thinking complete 行下方显示回答 OK。",
+      "behavior": "20 后无新增记录动作，后续原图确认这次请求已得到可见回答。",
+      "limits": [
+        "本帧只证明操作入口可见；复制粘贴结果由后续 41 独立验证。",
+        "未由图标推定反馈弹层、分享完成或朗读播放。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-22-conversation-menu",
+      "title": "More 点击早帧 · 菜单未证实",
+      "category": "conversation",
+      "exactSha256": "fb5e56b0b4c3870021b3e3f2cecc34fba3726b620ed81ea408f4f6bebd921486",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-22-conversation-menu/screen.png",
+      "screenshotBytes": 102035,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-22-conversation-menu/capture.json",
+      "captureSha256": "782e62e86ef323dac959c80cc7af839b58e53136710e97a8c59189490ca54784",
+      "screenshotCapturedAt": "2026-10-16T03:33:46.716Z",
+      "captureStartedAt": "2026-10-16T03:33:45.922Z",
+      "captureCompletedAt": "2026-10-16T03:33:53.362Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; neutral research chat",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-22-conversation-menu/hierarchy.xml",
+        "sha256": "e20086e3ba277232438c16357caac27cf4bbc6a952a92911071ebc7d8ab9f349"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 52,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "964",
+            "195"
+          ],
+          "description": "Observed label More; Open current test conversation menu without applying actions",
+          "startedAt": "2026-10-16T03:33:40.030Z",
+          "completedAt": "2026-10-16T03:33:45.326Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 52,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[211,2122][900,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[900,2122][1026,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "右上三点承载有浅色按压外观。",
+        "没有可见菜单面板或菜单项；聊天内容与完成操作栏仍在。"
+      ],
+      "state": "点击右上 More 后，原图仍是已有 OK 回答。",
+      "behavior": "动作 52 后捕获的早帧；不按 conversation-menu 目录名宣称菜单已打开。",
+      "limits": [
+        "此样本没有验证 More 菜单内容或最终打开状态。",
+        "后续动作说明中的 Close menu 不反向证明本帧已见菜单。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-24-generating-sequence",
+      "title": "计数请求 · Thinking 与方块停止外观",
+      "category": "conversation",
+      "exactSha256": "7b10f3a05f6d464f56ed8e13285af9a80ba917670bebcfc18d743359e2da3f8d",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-24-generating-sequence/screen.png",
+      "screenshotBytes": 87139,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-24-generating-sequence/capture.json",
+      "captureSha256": "2d2a92885bab9b77ecf3bfb14c8a52c026c41ac2296d01911c5f7fb5a98d1222",
+      "screenshotCapturedAt": "2026-10-16T03:37:06.263Z",
+      "captureStartedAt": "2026-10-16T03:37:05.335Z",
+      "captureCompletedAt": "2026-10-16T03:37:11.065Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; neutral research chat",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-24-generating-sequence/hierarchy.xml",
+        "sha256": "6e5b0a649cd0bea65324e3c34f0924697995368fd6512032d9d4d5d4bab0ba4a"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 53,
+          "operation": "back",
+          "arguments": [
+            "shell",
+            "input",
+            "keyevent",
+            "4"
+          ],
+          "description": "Close conversation More menu without changing conversation",
+          "startedAt": "2026-10-16T03:34:31.979Z",
+          "completedAt": "2026-10-16T03:34:32.606Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 54,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "500",
+            "2185"
+          ],
+          "description": "Focus blank new chat for controlled stop test",
+          "startedAt": "2026-10-16T03:35:47.695Z",
+          "completedAt": "2026-10-16T03:35:48.303Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 55,
+          "operation": "type-text",
+          "arguments": [
+            "shell",
+            "input",
+            "text",
+            "Count%s1%sto%s1000,%sone%sper%sline."
+          ],
+          "description": "Neutral sequence prompt for generation-stop test",
+          "startedAt": "2026-10-16T03:35:50.513Z",
+          "completedAt": "2026-10-16T03:35:58.889Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 56,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "974",
+            "2231"
+          ],
+          "description": "Observed label Send message; Submit verified count prompt to test stopping generation",
+          "startedAt": "2026-10-16T03:36:54.395Z",
+          "completedAt": "2026-10-16T03:37:04.256Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 56,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[211,2122][774,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[774,2122][900,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "用户消息为 Count 1 to 1000, one per line.。",
+        "思考摘要行尚为 Thinking；底部占位是生成中的 Send messages anytime...。",
+        "尾部黑色圆形控件内是白色方块。"
+      ],
+      "state": "完整计数请求已进入用户气泡，回答处显示 Thinking。",
+      "behavior": "动作 54–56 输入并提交计数测试；后续 25 的旧坐标点击没有验证停止成功。",
+      "limits": [
+        "UIA 仍把白方块控件描述为 Send message，视觉功能和可访问性描述不一致。",
+        "不能依据旧坐标或旧描述断言点击时仍在生成，也不测精确时长。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-25-stop-result",
+      "title": "晚到点击 · 已是结果卡与语音待操作态",
+      "category": "conversation",
+      "exactSha256": "2ec2469e45f6d79c0c8fcacf946b8c3a1b73016999066085eb0862274b0af6ad",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-25-stop-result/screen.png",
+      "screenshotBytes": 125871,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-25-stop-result/capture.json",
+      "captureSha256": "e8e97c2d5ff8268e1995365972eeb6b0e5d0260590c8ddabe42e6759ddd8895e",
+      "screenshotCapturedAt": "2026-10-16T03:37:50.719Z",
+      "captureStartedAt": "2026-10-16T03:37:49.879Z",
+      "captureCompletedAt": "2026-10-16T03:37:53.790Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; neutral research chat",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-25-stop-result/hierarchy.xml",
+        "sha256": "a3c36bc23de880c643b11960fcb266ad53dc44d4b918daae1dd88d4689ebc2cf"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 57,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "963",
+            "2185"
+          ],
+          "description": "Press observed square stop control during count generation; accessible label still Send message",
+          "startedAt": "2026-10-16T03:37:49.161Z",
+          "completedAt": "2026-10-16T03:37:49.431Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 57,
+      "uiaSamples": [
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to text input",
+          "boundsPhysicalPx": "[900,2122][1026,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.TextView",
+          "text": "Hold to talk",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[432,2161][649,2210]",
+          "enabled": "true",
+          "clickable": "false",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "可滚动代码式结果卡当前视口显示数字 1–20，顶部有 text 标签和操作图标。",
+        "回答操作栏已出现；底部是 Hold to talk 与键盘图标。",
+        "没有录音进行中或权限弹窗，也没有停止输出文字。"
+      ],
+      "state": "原图已显示 text 结果卡和 Hold to talk，没有 Output stopped。",
+      "behavior": "动作 57 对旧尾部坐标的点击晚到；最后看到语音输入待按住模式。",
+      "limits": [
+        "这次 stop 没有验证成功，不能把结果卡当成被取消的部分输出。",
+        "只见前 20 项，不能声称完整 1000 项都已产生。",
+        "未按住录音，未验证语音识别。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-26-checked-stop",
+      "title": "当前状态核对后停止 · Output stopped",
+      "category": "conversation",
+      "exactSha256": "bc4c8eadb739a03c3ce2f678b1a125f87689517d5a28a32d817a028574b81f0b",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-26-checked-stop/screen.png",
+      "screenshotBytes": 140639,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-26-checked-stop/capture.json",
+      "captureSha256": "94203aa7702314fabf6c6b82f223e6b16f6c04112995d9185467e1e1eb022cff",
+      "screenshotCapturedAt": "2026-10-16T03:39:30.658Z",
+      "captureStartedAt": "2026-10-16T03:39:29.402Z",
+      "captureCompletedAt": "2026-10-16T03:39:33.646Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; neutral research chat",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-26-checked-stop/hierarchy.xml",
+        "sha256": "e0e3159eb0bc3b1f4a799d20206c393089e13d45cdf418d4363d27ed93216050"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 58,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "963",
+            "2185"
+          ],
+          "description": "Observed label Switch to text input; Return composer to text mode after late stop attempt toggled voice",
+          "startedAt": "2026-10-16T03:39:11.371Z",
+          "completedAt": "2026-10-16T03:39:15.195Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 59,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "353",
+            "1956"
+          ],
+          "description": "Observed label Retry; Retry only the self-created count test answer",
+          "startedAt": "2026-10-16T03:39:17.140Z",
+          "completedAt": "2026-10-16T03:39:21.604Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 60,
+          "operation": "stop-generation-checked",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "974",
+            "2231"
+          ],
+          "description": "Observed live generating placeholder + square-control semantic node; UI cancellation only, network cancellation unknown",
+          "startedAt": "2026-10-16T03:39:23.329Z",
+          "completedAt": "2026-10-16T03:39:28.185Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 60,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[74,2053][1006,2179]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "true"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[911,2168][1037,2294]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "过程框同时列出 Create a file containing numbers 1 to 1000 与 Failed to execute Python code。",
+        "过程框下方是灰色 Output stopped，输入器回空文字态。",
+        "左侧竖向输入法浮条属于环境层，不纳入 Kimi 工具栏样式。"
+      ],
+      "state": "重试并核对当前生成状态后，原图明确显示 Output stopped。",
+      "behavior": "动作 58 回文字、59 Retry、60 新层级核对生成状态后点击；本次 UI 输出停止可确认。",
+      "limits": [
+        "Python 失败与停止同帧并存，但发生顺序和因果未捕获。",
+        "不证明网络请求取消、计费停止、服务端任务停止或晚到结果处理。",
+        "检查到点击间仍可能有竞态；稀疏帧不测取消延迟。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-27-auth-attachments",
+      "title": "附件能力面板 · 来源块与搜索设置",
+      "category": "attachment",
+      "exactSha256": "f88252f17e1b107dd2dee427607534dd749f2afd946f6cca60fbe9e980cfe6a2",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-27-auth-attachments/screen.png",
+      "screenshotBytes": 117624,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-27-auth-attachments/capture.json",
+      "captureSha256": "2f9287493b44eab08c123c290fe534f671b63970fe0fe4682b0bb3e07b07692b",
+      "screenshotCapturedAt": "2026-10-16T03:40:33.767Z",
+      "captureStartedAt": "2026-10-16T03:40:32.809Z",
+      "captureCompletedAt": "2026-10-16T03:40:36.784Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; neutral research chat",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-27-auth-attachments/hierarchy.xml",
+        "sha256": "82e2967db80eb493c2f91e0fde72f5f826443793d9c6d8e90a7b1903a92ff0af"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 61,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "105",
+            "2231"
+          ],
+          "description": "Observed label More input options; Open attachment capabilities in logged-in test chat",
+          "startedAt": "2026-10-16T03:40:27.547Z",
+          "completedAt": "2026-10-16T03:40:31.424Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 61,
+      "uiaSamples": [],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "上方横向图标块为 Camera、Photos、Local file 和部分可见的 WeChat。",
+        "下方独立一行为 Web search / Auto / 箭头。",
+        "先前测试消息和停止反馈保留在遮罩后。"
+      ],
+      "state": "既有会话变暗，底部出现白色大圆角能力面板。",
+      "behavior": "动作 61 点击 More input options 后可见输入扩展面板。",
+      "limits": [
+        "只测试 Local file 路径，不补造 Camera、Photos、WeChat 或搜索子页行为。",
+        "面板显示的来源不代表对应系统权限已授权。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-28-file-picker",
+      "title": "文件入口早帧 · 仍是 Kimi 会话",
+      "category": "attachment",
+      "exactSha256": "9fe92c28690ffae672fa7724c3bd394aff5bfa6368f256be84f9214d58f1de35",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-28-file-picker/screen.png",
+      "screenshotBytes": 116366,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-28-file-picker/capture.json",
+      "captureSha256": "9b67058ebbc22dbde9921799bfc336f70b4e0ae66f3988119559ced2ae5e4985",
+      "screenshotCapturedAt": "2026-10-16T03:42:18.722Z",
+      "captureStartedAt": "2026-10-16T03:42:17.639Z",
+      "captureCompletedAt": "2026-10-16T03:42:23.690Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; neutral research chat",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-28-file-picker/hierarchy.xml",
+        "sha256": "c401cab865079e1428a190b8479635116397023e2b5de05ea2690f6c27ce475d"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 62,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "752",
+            "1951"
+          ],
+          "description": "Observed label Local file; Open system picker for artificial TXT fixture only",
+          "startedAt": "2026-10-16T03:42:14.219Z",
+          "completedAt": "2026-10-16T03:42:17.037Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 62,
+      "uiaSamples": [],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "可见已有计数消息、Output stopped 与空输入器。",
+        "这一帧没有系统文件列表。"
+      ],
+      "state": "Local file 点击后早截图仍为 App 会话，附件面板已收起。",
+      "behavior": "动作 62 后较晚 UIA / 窗口已进入 DocumentsUI PickActivity，交接由后层级支持。",
+      "limits": [
+        "不能将后采 Recent / No items 层级文字画回此截图。",
+        "该图不是系统选择器的视觉样本，不据此认定选择器未启动。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-29-downloads-picker",
+      "title": "Android Downloads · 早帧尚无文件行",
+      "category": "attachment",
+      "exactSha256": "a5f0de6f77edd42103b086e440b9a88554a5c300bede3935982203eb034d5730",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-29-downloads-picker/screen.png",
+      "screenshotBytes": 59750,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-29-downloads-picker/capture.json",
+      "captureSha256": "88fbdfa0e831964e5b87e2bd1a3baed438e6b25ae33fd7f6df3e8cbf2cbfc1a7",
+      "screenshotCapturedAt": "2026-10-16T03:44:00.387Z",
+      "captureStartedAt": "2026-10-16T03:43:59.676Z",
+      "captureCompletedAt": "2026-10-16T03:44:03.565Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; Android system picker",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-29-downloads-picker/hierarchy.xml",
+        "sha256": "cd803418e3140c4824eae68ee8fcfcccb0e8866b5241b9df3673955d875e5b4e"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 63,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "73",
+            "199"
+          ],
+          "description": "Observed label Show roots; Choose Downloads root instead of empty Recent",
+          "startedAt": "2026-10-16T03:43:52.182Z",
+          "completedAt": "2026-10-16T03:43:55.316Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 64,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "441",
+            "650"
+          ],
+          "description": "Observed label Downloads; Open root containing the artificial research fixture",
+          "startedAt": "2026-10-16T03:43:55.780Z",
+          "completedAt": "2026-10-16T03:43:59.206Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 64,
+      "uiaSamples": [],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "顶部为 Downloads、搜索和三点操作，下方有文件类型 chips。",
+        "Files in Downloads 区域尚未绘出可见文件行。",
+        "该选择器属于 Android 系统，不能作为 Kimi 自有组件配色。"
+      ],
+      "state": "系统 Downloads 选择器已可见；文件区在截图中尚未显示条目。",
+      "behavior": "动作 63/64 切到 Downloads；较晚 UIA 已暴露 kimi-ui-research-upload.txt 和 408 B。",
+      "limits": [
+        "早图和后层级存在状态差异，不称最终空态或文件发现失败。",
+        "不测条目出现耗时，也不由系统界面推断 App MIME filter 或文件权限策略。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-30-attachment-selected",
+      "title": "待发文件卡 · Parsing 早帧",
+      "category": "attachment",
+      "exactSha256": "49d51b3060ad5becdf4ade6fbe44041717cf1ec9d010a30372fab10c7cb61e7b",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-30-attachment-selected/screen.png",
+      "screenshotBytes": 158027,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-30-attachment-selected/capture.json",
+      "captureSha256": "062d41ac3800dc7ae406bf46964edb9cd224a0691c1bf51a451bcbcb023bc9cd",
+      "screenshotCapturedAt": "2026-10-16T03:44:44.348Z",
+      "captureStartedAt": "2026-10-16T03:44:43.540Z",
+      "captureCompletedAt": "2026-10-16T03:44:47.047Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; artificial TXT fixture",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-30-attachment-selected/hierarchy.xml",
+        "sha256": "c1cea8ceb4cd922007b1871dbc45bcbd2fcb78c9fb187ccd79e8c68c59b64028"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 65,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "346",
+            "1194"
+          ],
+          "description": "Observed label kimi-ui-research-upload.txt; Select only artificial research TXT file",
+          "startedAt": "2026-10-16T03:44:37.541Z",
+          "completedAt": "2026-10-16T03:44:41.364Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 65,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[74,2053][1006,2179]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "true"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[785,2168][911,2294]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "文件卡有文件图形、分行标题、Parsing 与右上角移除 ×。",
+        "输入区增高，空文字占位与黑色发送箭头同时可见。",
+        "左侧环境浮条不登记为 Kimi 控件。"
+      ],
+      "state": "选取自造 TXT 后，文件卡出现在输入区，状态为 Parsing。",
+      "behavior": "动作 65 选中测试文件；后采 UIA 已推进为 TXT, 408.0 B。",
+      "limits": [
+        "Parsing 来自早截图，元数据来自较晚层级，不合成同一时刻。",
+        "文件卡出现不证明已发送、服务端已提取正文或全部上传阶段完成。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-31-attachment-ready",
+      "title": "文件卡稳态 · TXT, 408.0 B",
+      "category": "attachment",
+      "exactSha256": "1d64f2e107706aaf3952452811965f33e1493369b575707ac0bb16e70373d9df",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-31-attachment-ready/screen.png",
+      "screenshotBytes": 159415,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-31-attachment-ready/capture.json",
+      "captureSha256": "b57dfc95bbd2e3221c81548df6c8890f01b62f99ad6a2656481e2af3e0be4bb4",
+      "screenshotCapturedAt": "2026-10-16T03:46:26.652Z",
+      "captureStartedAt": "2026-10-16T03:46:24.188Z",
+      "captureCompletedAt": "2026-10-16T03:46:29.272Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; artificial TXT fixture",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-31-attachment-ready/hierarchy.xml",
+        "sha256": "c1cea8ceb4cd922007b1871dbc45bcbd2fcb78c9fb187ccd79e8c68c59b64028"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [],
+      "actionsBeforeCapture": 65,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[74,2053][1006,2179]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "true"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[785,2168][911,2294]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "卡片显示 TXT, 408.0 B；标题与移除 × 保留。",
+        "当前没有输入请求文字，黑色发送箭头仍显示。"
+      ],
+      "state": "同一待发文件卡的状态文字已由 Parsing 变为类型和大小。",
+      "behavior": "30 后无新增动作，后续原图与 UIA 均确认元数据态。",
+      "limits": [
+        "这只证明前端待发卡元数据可见，不证明全文抽取或已发消息。",
+        "不从采样间隔计算解析 duration；不把子语义节点 clickable=false 直接解释成整个发送按钮禁用。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-32-attachment-removed",
+      "title": "移除待发卡 · 既有会话保留",
+      "category": "attachment",
+      "exactSha256": "69052f584aa9ecf3ad470a578eca75fb3b493b68b61cbd32b1c9e1db7dbe1adf",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-32-attachment-removed/screen.png",
+      "screenshotBytes": 141218,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-32-attachment-removed/capture.json",
+      "captureSha256": "9d5831f5120ce83ed60e96959714e1e3f3758956096815309cab9df73343b083",
+      "screenshotCapturedAt": "2026-10-16T03:46:36.732Z",
+      "captureStartedAt": "2026-10-16T03:46:34.143Z",
+      "captureCompletedAt": "2026-10-16T03:46:39.514Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; artificial TXT fixture",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-32-attachment-removed/hierarchy.xml",
+        "sha256": "e0e3159eb0bc3b1f4a799d20206c393089e13d45cdf418d4363d27ed93216050"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 66,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "557",
+            "1859"
+          ],
+          "description": "Observed label Off; Remove only the unsent artificial fixture attachment",
+          "startedAt": "2026-10-16T03:46:30.528Z",
+          "completedAt": "2026-10-16T03:46:33.448Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 66,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[74,2053][1006,2179]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "true"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[911,2168][1037,2294]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "输入器回到空占位和语音入口；原会话消息及 Output stopped 仍在。",
+        "没有可见文件卡、文件大小或移除后的撤销提示。"
+      ],
+      "state": "点击卡片 × 后，待发文件卡与发送箭头均不再显示。",
+      "behavior": "动作 66 只移除本次待发测试附件，得到空输入状态。",
+      "limits": [
+        "不等于删除设备文件或远端已上传文件。",
+        "本次文字输入为空，不能推广为移除附件总会保留非空草稿。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-33-microphone-gate",
+      "title": "麦克风请求 · 产品用途层与系统权限同帧",
+      "category": "permission",
+      "exactSha256": "3457a7b6f1915dd69e928409d23172c777de036b89ae8c4e407f019ce3b419c7",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-33-microphone-gate/screen.png",
+      "screenshotBytes": 123699,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-33-microphone-gate/capture.json",
+      "captureSha256": "b9227b9ba4e1a8bff7e28cb35267006f6089e88f31ae0b2837274c3a6f075f53",
+      "screenshotCapturedAt": "2026-10-16T03:47:04.530Z",
+      "captureStartedAt": "2026-10-16T03:47:02.102Z",
+      "captureCompletedAt": "2026-10-16T03:47:07.260Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; Android microphone permission",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-33-microphone-gate/hierarchy.xml",
+        "sha256": "0d3671155e9cf19fd039f703b608e76c05e8080a885d4d3f4d0b2547223bb3bf"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 67,
+          "operation": "back",
+          "arguments": [
+            "shell",
+            "input",
+            "keyevent",
+            "4"
+          ],
+          "description": "Leave empty composer focus after fixture removal",
+          "startedAt": "2026-10-16T03:46:56.652Z",
+          "completedAt": "2026-10-16T03:46:56.814Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 68,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "963",
+            "2185"
+          ],
+          "description": "Observed label Switch to voice input; Open voice input after authentication",
+          "startedAt": "2026-10-16T03:46:57.613Z",
+          "completedAt": "2026-10-16T03:47:00.250Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 69,
+          "operation": "swipe",
+          "arguments": [
+            "shell",
+            "input",
+            "swipe",
+            "540",
+            "2185",
+            "540",
+            "2185",
+            "900"
+          ],
+          "description": "Hold voice input to inspect system microphone request without granting",
+          "startedAt": "2026-10-16T03:47:00.503Z",
+          "completedAt": "2026-10-16T03:47:01.547Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 69,
+      "uiaSamples": [],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "上方产品说明标题为 Kimi Requests Microphone Permission，解释语音输入识别用途与拒绝后的限制。",
+        "前景系统框为 Allow Kimi to record audio?，提供 While using the app、Only this time、Don’t allow。",
+        "底层输入仍是 Hold to talk；原会话保留在遮罩后。"
+      ],
+      "state": "Kimi 黑色用途说明与前景 Android 录音权限框在同一截图共存。",
+      "behavior": "动作 67–69 离开空输入焦点、切语音并按住，随后出现权限请求；70 选择拒绝。",
+      "limits": [
+        "UIA 顶层仅暴露 Android permissioncontroller，不能因此否定截图中的产品用途说明。",
+        "不推两层精确出现顺序；系统浅紫表面、按钮和图标不导出为 Kimi token。",
+        "出现请求不代表已录音、已授权或已转写。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-34-microphone-denied",
+      "title": "拒绝麦克风 · 会话与语音模式保留",
+      "category": "permission",
+      "exactSha256": "b59edf26d4e4c6e78b0b5400f80e983f596351fef3ab3a1936a2628c8c5328bb",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-34-microphone-denied/screen.png",
+      "screenshotBytes": 111001,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-34-microphone-denied/capture.json",
+      "captureSha256": "b3d8bc588e5053868a6e82a70ffde9badbbf1f987595b63d8047676c4e98def7",
+      "screenshotCapturedAt": "2026-10-16T03:48:44.469Z",
+      "captureStartedAt": "2026-10-16T03:48:42.025Z",
+      "captureCompletedAt": "2026-10-16T03:48:47.034Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; microphone denied once",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-34-microphone-denied/hierarchy.xml",
+        "sha256": "25251e8d4fe4edb7277205f03f8210dadf10e375f9f1242257742d9b4b08d76d"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 70,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "540",
+            "1520"
+          ],
+          "description": "Observed label Don’t allow; Reject first microphone permission request in dedicated test instance",
+          "startedAt": "2026-10-16T03:48:38.619Z",
+          "completedAt": "2026-10-16T03:48:41.521Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 70,
+      "uiaSamples": [
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to text input",
+          "boundsPhysicalPx": "[900,2122][1026,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.TextView",
+          "text": "Hold to talk",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[432,2161][649,2210]",
+          "enabled": "true",
+          "clickable": "false",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "原计数消息、过程框、Output stopped 与操作栏保留。",
+        "底部仍为 Hold to talk，右侧可切回文字的键盘图标。",
+        "没有录音进度或识别文字。"
+      ],
+      "state": "拒绝后两个权限层消失，仍在原会话和 Hold to talk 模式。",
+      "behavior": "动作 70 Don’t allow 后，恢复这一可继续操作的会话状态。",
+      "limits": [
+        "只验证首次拒绝后的恢复；允许、永久拒绝、再次请求和系统设置恢复未测。",
+        "保留语音模式不等于录音能力可用。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-35-attachment-reselected",
+      "title": "重新选择 fixture · 元数据卡回来",
+      "category": "attachment",
+      "exactSha256": "003227139cdc9c272b38654fe26c504bd0c619422efa49a64be928a99379e3ad",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-35-attachment-reselected/screen.png",
+      "screenshotBytes": 159304,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-35-attachment-reselected/capture.json",
+      "captureSha256": "494354a131bf55f391bb370f1d128c54e6d99e346b97a2867acf2139219a2cb6",
+      "screenshotCapturedAt": "2026-10-16T03:49:08.905Z",
+      "captureStartedAt": "2026-10-16T03:49:06.038Z",
+      "captureCompletedAt": "2026-10-16T03:49:12.264Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; artificial TXT fixture",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-35-attachment-reselected/hierarchy.xml",
+        "sha256": "c1cea8ceb4cd922007b1871dbc45bcbd2fcb78c9fb187ccd79e8c68c59b64028"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 71,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "963",
+            "2185"
+          ],
+          "description": "Observed label Switch to text input; Recover to text input after microphone refusal",
+          "startedAt": "2026-10-16T03:48:48.362Z",
+          "completedAt": "2026-10-16T03:48:51.253Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 72,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "105",
+            "2231"
+          ],
+          "description": "Observed label More input options; Reopen input capabilities for fixture attachment",
+          "startedAt": "2026-10-16T03:48:52.233Z",
+          "completedAt": "2026-10-16T03:48:55.266Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 73,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "752",
+            "1951"
+          ],
+          "description": "Observed label Local file; Reopen Android picker for known artificial TXT",
+          "startedAt": "2026-10-16T03:48:56.011Z",
+          "completedAt": "2026-10-16T03:48:59.067Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 74,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "346",
+            "1194"
+          ],
+          "description": "Observed label kimi-ui-research-upload.txt; Select known artificial file again",
+          "startedAt": "2026-10-16T03:48:59.737Z",
+          "completedAt": "2026-10-16T03:49:05.283Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 74,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[74,2053][1006,2179]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "true"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[785,2168][911,2294]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "输入区再次出现 kimi-ui-research-upload 文件卡与 TXT, 408.0 B。",
+        "×、空文字占位和黑色发送箭头可见，原会话仍保留。"
+      ],
+      "state": "从拒绝麦克风后的语音模式切回文字，并重新选择同一自造 TXT。",
+      "behavior": "动作 71–74 经文字模式、附件入口、系统文件选择器重新挂上该测试文件。",
+      "limits": [
+        "本帧没有拍下中间选择器每一步，也未把卡片元数据当作正文已抽取。",
+        "环境浮条不纳入 Kimi 自有组件。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-36-attachment-prompt",
+      "title": "附件草稿 · 保留实际 te 拼写",
+      "category": "attachment",
+      "exactSha256": "540d431ecd94cd7fae2d7d1d6dbf6172d2a64f9370ad109c3eb3e2368800283e",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-36-attachment-prompt/screen.png",
+      "screenshotBytes": 162458,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-36-attachment-prompt/capture.json",
+      "captureSha256": "fa785d6f40717ff0e7a1e50712653e91d96742235b6413bec5a94ac04e4c5611",
+      "screenshotCapturedAt": "2026-10-16T03:52:11.751Z",
+      "captureStartedAt": "2026-10-16T03:52:09.121Z",
+      "captureCompletedAt": "2026-10-16T03:52:14.574Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; artificial TXT fixture",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-36-attachment-prompt/hierarchy.xml",
+        "sha256": "5105b91f0bece0304912bccd5c48add1c52ff1b3fa1d9d1ed78df6eeae62a0c5"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 75,
+          "operation": "type-text",
+          "arguments": [
+            "shell",
+            "input",
+            "text",
+            "Reply%swith%sthe%sFixture%sID%sfrom%sthe%sattached%sfile."
+          ],
+          "description": "Read-only artificial attachment identity test",
+          "startedAt": "2026-10-16T03:50:25.659Z",
+          "completedAt": "2026-10-16T03:50:33.614Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 75,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "Reply with the Fixture ID from te attached file.",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[74,2053][1006,2179]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "true"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[785,2168][911,2294]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "当前文字为 Reply with the Fixture ID from te attached file.，蓝色光标在句末。",
+        "文件卡继续显示 TXT, 408.0 B，发送箭头可见。"
+      ],
+      "state": "文件卡下方已输入测试请求，实际文本含 from te attached file.。",
+      "behavior": "动作 75 计划输入含 the 的命令，但画面实际为 te；以原图文字为准。",
+      "limits": [
+        "不修写原图、用户气泡或研究记录中的拼写。",
+        "当前仍是待发组合，不能仅据草稿声称附件消息提交完成。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-37-attachment-submitted",
+      "title": "附件提交采样 · 原图已出现测试 ID",
+      "category": "attachment",
+      "exactSha256": "6d95be80a4ae160cd35585d12f6a4c4d4d510ae1fdfdd87cdbe5f1e3f28c2b05",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-37-attachment-submitted/screen.png",
+      "screenshotBytes": 170189,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-37-attachment-submitted/capture.json",
+      "captureSha256": "5b40ea65ab57a54da2ed0e384393d92377f273a30569448e994522d1b1ac2001",
+      "screenshotCapturedAt": "2026-10-16T03:52:23.742Z",
+      "captureStartedAt": "2026-10-16T03:52:20.770Z",
+      "captureCompletedAt": "2026-10-16T03:52:26.583Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; artificial TXT fixture",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-37-attachment-submitted/hierarchy.xml",
+        "sha256": "6f182fa51ba3eb6e74401d7553394cc9f759b4a36914bb86ac01784bd0b27f32"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 76,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "974",
+            "2231"
+          ],
+          "description": "Observed label Send message; Submit artificial file and verified identifier-read request",
+          "startedAt": "2026-10-16T03:52:16.563Z",
+          "completedAt": "2026-10-16T03:52:19.830Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 76,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[211,2122][900,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[900,2122][1026,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "右侧先是文件卡，再是含 te 拼写的用户文本气泡。",
+        "下方已有 Thinking complete、测试 ID 回答和操作栏。",
+        "输入器恢复空占位，待发附件已不在编辑区。"
+      ],
+      "state": "文件与请求已进入会话；本张原图本身已显示 KIMI-UI-20261016。",
+      "behavior": "动作 76 提交自造附件请求后采样；虽然目录叫 submitted，实际图已为可见完成结果。",
+      "limits": [
+        "本帧不能重建尚未拍到的上传/生成中时刻。",
+        "只验证这个中性 TXT 的识别回答，不推广到任意文件、解析准确率或后台实现。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-38-file-id-complete",
+      "title": "附件回答后续帧 · 测试 ID 保持",
+      "category": "attachment",
+      "exactSha256": "623b621049d135058af97edcce92183b5b8430302d6c8f2a88fb45de132aedf0",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-38-file-id-complete/screen.png",
+      "screenshotBytes": 169739,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-38-file-id-complete/capture.json",
+      "captureSha256": "785ea3715c59bc9138dff6101fc4c55363c37d0bd083691dce1ccbcb2159f18b",
+      "screenshotCapturedAt": "2026-10-16T03:53:40.433Z",
+      "captureStartedAt": "2026-10-16T03:53:37.928Z",
+      "captureCompletedAt": "2026-10-16T03:53:43.288Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; artificial TXT fixture",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-38-file-id-complete/hierarchy.xml",
+        "sha256": "6f182fa51ba3eb6e74401d7553394cc9f759b4a36914bb86ac01784bd0b27f32"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [],
+      "actionsBeforeCapture": 76,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[211,2122][900,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[900,2122][1026,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "文件卡、带 te 的请求、Thinking complete、测试 ID 和回答操作栏均保留。",
+        "编辑区为空，先前 Output stopped 属于更早计数请求，不属于这个附件回答。"
+      ],
+      "state": "后续采样继续显示自造文件请求及 KIMI-UI-20261016 回答。",
+      "behavior": "37 后无新增记录动作，此帧确认后续答案状态。",
+      "limits": [
+        "不可把会话中相邻但属于不同请求的停止/工具错误归到附件响应。",
+        "没有验证跨会话重开或重启保存。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-39-offline-submit",
+      "title": "受控断网 · 消息保留与红色重试",
+      "category": "recovery",
+      "exactSha256": "26b3f1e6a13b86a28c32647c2d49b87f03dd1a9db15fe4df6f1d3602018c027d",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-39-offline-submit/screen.png",
+      "screenshotBytes": 180616,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-39-offline-submit/capture.json",
+      "captureSha256": "86e9c8d288f518a92ec9bb8027008c31003dc7adccff7f534726f4f4a271f759",
+      "screenshotCapturedAt": "2026-10-16T03:54:56.286Z",
+      "captureStartedAt": "2026-10-16T03:54:53.881Z",
+      "captureCompletedAt": "2026-10-16T03:54:58.770Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; dedicated AVD offline experiment",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-39-offline-submit/hierarchy.xml",
+        "sha256": "f2f682fc27d3c0f76ab82debef05ecb2655265870a95f3055342c65071605059"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 77,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "500",
+            "2185"
+          ],
+          "description": "Focus composer for controlled offline test",
+          "startedAt": "2026-10-16T03:53:45.083Z",
+          "completedAt": "2026-10-16T03:53:45.291Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 78,
+          "operation": "type-text",
+          "arguments": [
+            "shell",
+            "input",
+            "text",
+            "Reply%sonly%soffline-test-OK"
+          ],
+          "description": "Short neutral request to observe offline failure and retry",
+          "startedAt": "2026-10-16T03:53:46.754Z",
+          "completedAt": "2026-10-16T03:53:50.504Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 79,
+          "operation": "back",
+          "arguments": [
+            "shell",
+            "input",
+            "keyevent",
+            "4"
+          ],
+          "description": "Hide IME before per-AVD offline experiment",
+          "startedAt": "2026-10-16T03:53:50.828Z",
+          "completedAt": "2026-10-16T03:53:51.057Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 80,
+          "operation": "disable-test-avd-wifi",
+          "arguments": [
+            "shell",
+            "svc",
+            "wifi",
+            "disable"
+          ],
+          "description": "Only dedicated Kimi AVD; original state recorded for restoration",
+          "startedAt": "2026-10-16T03:53:51.903Z",
+          "completedAt": "2026-10-16T03:53:52.850Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 81,
+          "operation": "disable-test-avd-mobile-data",
+          "arguments": [
+            "shell",
+            "svc",
+            "data",
+            "disable"
+          ],
+          "description": "Only dedicated Kimi AVD; do not change host or other emulator networking",
+          "startedAt": "2026-10-16T03:53:51.903Z",
+          "completedAt": "2026-10-16T03:53:53.140Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 82,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "974",
+            "2195"
+          ],
+          "description": "Observed label Send message; Attempt neutral request after dedicated AVD network disabled",
+          "startedAt": "2026-10-16T03:54:50.615Z",
+          "completedAt": "2026-10-16T03:54:53.276Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 82,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[211,2122][900,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[900,2122][1026,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "新用户气泡完整为 Reply only offline-test-OK，左侧有红色圆形重试图标。",
+        "输入器显示 Network is unavailable...；消息没有从会话消失。",
+        "已有附件回答和之前计数停止反馈保持在上方。"
+      ],
+      "state": "关闭专用模拟器网络后提交测试消息，消息旁显示红色重试标记。",
+      "behavior": "动作 77–82 输入中性测试、隐藏键盘，仅关闭本 AVD Wi-Fi 和移动数据后提交；40 再恢复并重试。",
+      "limits": [
+        "只验证本次受控网络失败外观，不从红色图标推定所有错误类型或自动重试策略。",
+        "本次网络变更限定专用 AVD，不是电脑或其他设备的网络设置。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-40-retry-after-network",
+      "title": "恢复网络后重试 · 回答 offline-test-OK",
+      "category": "recovery",
+      "exactSha256": "4ff301c0697861511a9fd2d9642aea26027c1a111684428da58502c4f3056973",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-40-retry-after-network/screen.png",
+      "screenshotBytes": 195780,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-40-retry-after-network/capture.json",
+      "captureSha256": "060667a4690fc556fe641cedf9b52bef2797e2cd276a5534191f4bf10350ff71",
+      "screenshotCapturedAt": "2026-10-16T03:55:58.127Z",
+      "captureStartedAt": "2026-10-16T03:55:55.411Z",
+      "captureCompletedAt": "2026-10-16T03:56:00.844Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; dedicated AVD network restored",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-40-retry-after-network/hierarchy.xml",
+        "sha256": "90ac124d76d05710d1e701ed678f976a6cf486ed664ae0fa43b6aa35946f9ef5"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 83,
+          "operation": "restore-test-avd-wifi",
+          "arguments": [
+            "shell",
+            "svc",
+            "wifi",
+            "enable"
+          ],
+          "description": "Restore dedicated AVD Wi-Fi to recorded baseline",
+          "startedAt": "2026-10-16T03:55:53.215Z",
+          "completedAt": "2026-10-16T03:55:53.346Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 84,
+          "operation": "restore-test-avd-mobile-data",
+          "arguments": [
+            "shell",
+            "svc",
+            "data",
+            "enable"
+          ],
+          "description": "Restore dedicated AVD data setting to recorded baseline",
+          "startedAt": "2026-10-16T03:55:53.215Z",
+          "completedAt": "2026-10-16T03:55:53.481Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 85,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "456",
+            "1804"
+          ],
+          "description": "Tap observed red retry marker on failed own message after restoring network",
+          "startedAt": "2026-10-16T03:55:54.420Z",
+          "completedAt": "2026-10-16T03:55:54.605Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 85,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[211,2122][900,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[900,2122][1026,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "保留原用户消息，后面已有 Thinking complete 和 offline-test-OK。",
+        "原红色失败标记不再可见；输入器恢复普通空占位。",
+        "旧附件与计数会话内容仍在。"
+      ],
+      "state": "恢复本 AVD 网络并点击失败消息重试后，出现预期测试回答。",
+      "behavior": "动作 83/84 恢复记录的网络设置、85 点击原失败消息标记后获得可见回答。",
+      "limits": [
+        "只验证这一失败到恢复序列，不推重试请求幂等性、后台队列或全部网络错误。",
+        "不以截图间隔作为网络恢复或生成时长。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-41-copy-paste",
+      "title": "复制自己的测试回答 · 粘贴到未发草稿",
+      "category": "clipboard",
+      "exactSha256": "392aa80623fa6ecfd58dc4069592db952768f140059d42253bce555cedad6fa0",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-41-copy-paste/screen.png",
+      "screenshotBytes": 224577,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-41-copy-paste/capture.json",
+      "captureSha256": "939469f6c3e2824bb025d03e6352c7b8a3af77e8b8e1aaa199d02e7c6c23e163",
+      "screenshotCapturedAt": "2026-10-16T03:57:30.104Z",
+      "captureStartedAt": "2026-10-16T03:57:27.470Z",
+      "captureCompletedAt": "2026-10-16T03:57:33.286Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; own test answer clipboard round trip",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-41-copy-paste/hierarchy.xml",
+        "sha256": "e7525acb54fc3e58011c0e0fea2161f0477d39440c834a370f33e2daebb73621"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 86,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "147",
+            "2008"
+          ],
+          "description": "Observed label Copy; Copy only newest self-created offline recovery test answer",
+          "startedAt": "2026-10-16T03:57:19.975Z",
+          "completedAt": "2026-10-16T03:57:23.002Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 87,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "500",
+            "2185"
+          ],
+          "description": "Focus empty research composer for Android clipboard round trip",
+          "startedAt": "2026-10-16T03:57:23.698Z",
+          "completedAt": "2026-10-16T03:57:24.073Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 88,
+          "operation": "key",
+          "arguments": [
+            "shell",
+            "input",
+            "keyevent",
+            "KEYCODE_PASTE"
+          ],
+          "description": "Paste own test answer into unsent draft; no host clipboard use",
+          "startedAt": "2026-10-16T03:57:25.356Z",
+          "completedAt": "2026-10-16T03:57:26.416Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 88,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "offline-test-OK",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[74,2053][1006,2179]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "true"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[785,2168][911,2294]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "上一条回答 offline-test-OK 仍可见；输入区出现相同文本的开头和光标。",
+        "系统粘贴提示遮住输入行一部分，完整文本不从被遮像素猜测。",
+        "后采 EditText 明确为 offline-test-OK 且 focused=true；发送箭头可见。"
+      ],
+      "state": "复制最新测试回答后粘贴到输入器，系统显示 Kimi pasted from your clipboard。",
+      "behavior": "动作 86 Copy 最新自建回答、87 聚焦、88 Android KEYCODE_PASTE；完成本次测试内容的系统剪贴板往返，未发送粘贴草稿。",
+      "limits": [
+        "只涉及当前自建测试答案和 Android 剪贴板，没有使用宿主机剪贴板或私人内容。",
+        "系统粘贴提示和左侧输入法浮条不登记为 Kimi 自有组件。",
+        "不推剪贴板格式、富文本、长期保留或其他应用互操作。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-42-conversation-menu-settled",
+      "title": "真实 More 菜单 · 分层动作与红色删除",
+      "category": "conversation",
+      "exactSha256": "7c94880937179c17ea3686fbb534272c1f1cc69510ac2d1febb0c7918e8cf36c",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-42-conversation-menu-settled/screen.png",
+      "screenshotBytes": 219059,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-42-conversation-menu-settled/capture.json",
+      "captureSha256": "f37a3a6bd6377df8c32c2259af574b80629d72e39515ec79f354279d7410743c",
+      "screenshotCapturedAt": "2026-10-16T04:00:23.198Z",
+      "captureStartedAt": "2026-10-16T04:00:20.295Z",
+      "captureCompletedAt": "2026-10-16T04:00:26.580Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; neutral research chat",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-42-conversation-menu-settled/hierarchy.xml",
+        "sha256": "64b87f3dfe430deb0ba6dbc49cc4a15c5934507cfdb013eb7d5f40e1e12e0575"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 89,
+          "operation": "clear-research-draft",
+          "arguments": [
+            "shell",
+            "input",
+            "keyevent",
+            "67"
+          ],
+          "description": "Select all and delete only a recognized local research draft",
+          "startedAt": "2026-10-16T04:00:11.186Z",
+          "completedAt": "2026-10-16T04:00:14.165Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 90,
+          "operation": "back",
+          "arguments": [
+            "shell",
+            "input",
+            "keyevent",
+            "4"
+          ],
+          "description": "Dismiss keyboard toolbar after clearing only research paste draft",
+          "startedAt": "2026-10-16T04:00:14.731Z",
+          "completedAt": "2026-10-16T04:00:14.878Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 91,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "964",
+            "194"
+          ],
+          "description": "Open current test conversation top More menu",
+          "startedAt": "2026-10-16T04:00:15.476Z",
+          "completedAt": "2026-10-16T04:00:15.678Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 91,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[211,2122][900,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[900,2122][1026,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "白色圆角菜单含 Read aloud · Off、Pin to top、Rename、Delete。",
+        "每行左侧为线性图标；Delete 的图标和文字均为红色。",
+        "背景会话保持可见，底部输入器为空，没有前一粘贴草稿。"
+      ],
+      "state": "本次顶部 More 菜单真实可见，覆盖会话右上区域。",
+      "behavior": "41 后清除本次未发测试草稿，再开启 More，当前采样确认菜单内容。",
+      "limits": [
+        "此图独立补充真实菜单，不能把早期 22 反写为菜单已显示。",
+        "Read aloud 与 Pin to top 只是入口可见，没有执行其状态变更。",
+        "不测菜单出现时长、外部关闭或焦点循环。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-43-rename-dialog",
+      "title": "编辑会话名 · 预填标题与取消 / 完成",
+      "category": "conversation",
+      "exactSha256": "017f316f009ed05fe6bf98b3444e7c932bc3083bd9d3e0a3133a7d540dc60b62",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-43-rename-dialog/screen.png",
+      "screenshotBytes": 183559,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-43-rename-dialog/capture.json",
+      "captureSha256": "c8d7f8e334325dd669233e7b648829b5902d90b778ee8318dc4933857e993dc5",
+      "screenshotCapturedAt": "2026-10-16T04:03:07.966Z",
+      "captureStartedAt": "2026-10-16T04:03:05.506Z",
+      "captureCompletedAt": "2026-10-16T04:03:10.545Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; auto-title of neutral research chat",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-43-rename-dialog/hierarchy.xml",
+        "sha256": "07f50a3377bea570757c4a0d7ba4d5b49c8016aeae6051a804b5b8312b65c689"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 92,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "790",
+            "474"
+          ],
+          "description": "Rename position in visually observed conversation popup; UIA did not expose popup text",
+          "startedAt": "2026-10-16T04:03:04.312Z",
+          "completedAt": "2026-10-16T04:03:04.748Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 92,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "Count 1-1000 & Fixtu",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[293,1150][786,1276]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "true"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "白色大圆角模态覆盖灰色遮罩，标题上置，内部是浅色圆角输入框。",
+        "标题内容在当前视口内部分显示，蓝色光标可见；完整值以同期层级原件为准。",
+        "下方左侧浅色 Cancel，右侧黑色 Done；系统输入法浮条独立存在。"
+      ],
+      "state": "选择 Rename 后出现 Edit chat name 模态，输入框预填本次自建会话的自动标题。",
+      "behavior": "动作 92 点 Rename 后采样；本次没有编辑或按 Done，随后选择 Cancel。",
+      "limits": [
+        "这里是中性自建会话标题，不是账号昵称或私人会话数据。",
+        "只验证打开和后续取消，未验证修改提交、长度校验、重名或错误恢复。",
+        "不能由半截可见标题猜测全部字符串；浮条不纳入 Kimi 模态规范。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-44-menu-after-cancel",
+      "title": "取消重命名后 · 菜单可再次打开",
+      "category": "conversation",
+      "exactSha256": "0b494c4336b703148d336e1ee4020425ae6d50912b013e1b2a9588a24aa48828",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-44-menu-after-cancel/screen.png",
+      "screenshotBytes": 219071,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-44-menu-after-cancel/capture.json",
+      "captureSha256": "4317afa0392a0db31207b515cdf25b6fd11c871da5774dd259d64e335691c13c",
+      "screenshotCapturedAt": "2026-10-16T04:04:16.557Z",
+      "captureStartedAt": "2026-10-16T04:04:13.646Z",
+      "captureCompletedAt": "2026-10-16T04:04:20.041Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; neutral research chat",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-44-menu-after-cancel/hierarchy.xml",
+        "sha256": "64b87f3dfe430deb0ba6dbc49cc4a15c5934507cfdb013eb7d5f40e1e12e0575"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 93,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "369",
+            "1376"
+          ],
+          "description": "Observed label Cancel; Cancel rename without committing any title change",
+          "startedAt": "2026-10-16T04:04:09.884Z",
+          "completedAt": "2026-10-16T04:04:12.565Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 94,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "964",
+            "194"
+          ],
+          "description": "Reopen same test conversation menu after cancel",
+          "startedAt": "2026-10-16T04:04:13.013Z",
+          "completedAt": "2026-10-16T04:04:13.143Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 94,
+      "uiaSamples": [
+        {
+          "class": "android.widget.EditText",
+          "text": "",
+          "contentDescription": "",
+          "boundsPhysicalPx": "[211,2122][900,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        },
+        {
+          "class": "android.widget.Button",
+          "text": "",
+          "contentDescription": "Switch to voice input",
+          "boundsPhysicalPx": "[900,2122][1026,2248]",
+          "enabled": "true",
+          "clickable": "true",
+          "checkable": "false",
+          "checked": "false",
+          "focused": "false"
+        }
+      ],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "Rename 模态已不在，Read aloud · Off、Pin to top、Rename、Delete 再次可见。",
+        "本次测试对话、文件卡及回答继续保留；空输入器保持。"
+      ],
+      "state": "取消 Edit chat name 后再次打开 More，仍是四项会话菜单。",
+      "behavior": "动作 93 Cancel、94 重新打开 More；没有执行 Done 或提交标题变更。",
+      "limits": [
+        "本帧没有直接显示完整会话标题；取消未提交的结论来自动作序列，不由菜单文本推定标题内容。",
+        "不由这一返回路径概括所有模态的取消行为。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-45-delete-confirmation",
+      "title": "删除确认预览 · 本次选择取消",
+      "category": "conversation",
+      "exactSha256": "e3d4893a9b95b1c377923ff0a6d8b8a00dbfaf74353c73376a092847975c2b9c",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-45-delete-confirmation/screen.png",
+      "screenshotBytes": 164883,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-45-delete-confirmation/capture.json",
+      "captureSha256": "35990a046b98422aaceb775850977adfbf51a2deb22b01c1d74d3f82a262acf0",
+      "screenshotCapturedAt": "2026-10-16T04:05:24.649Z",
+      "captureStartedAt": "2026-10-16T04:05:21.269Z",
+      "captureCompletedAt": "2026-10-16T04:05:27.945Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; neutral research chat",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-45-delete-confirmation/hierarchy.xml",
+        "sha256": "f9d9c18d0dfc356ca0af08019ceded3a18a5b4f591af0e5b11a6d08190e8ea64"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 95,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "790",
+            "600"
+          ],
+          "description": "Open Delete confirmation for self-created test conversation only; do not confirm deletion",
+          "startedAt": "2026-10-16T04:05:19.906Z",
+          "completedAt": "2026-10-16T04:05:20.380Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 95,
+      "uiaSamples": [],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "白色圆角确认框覆盖遮罩，底部是两枚浅色胶囊操作。",
+        "Cancel 文字为深色，Delete 文字为红色；原会话仍在后方。",
+        "该帧是确认前预览，不是删除后的结果。"
+      ],
+      "state": "菜单 Delete 打开确认框，标题为 Delete the selected 1 chat。",
+      "behavior": "动作 95 打开确认；主采集者随后执行 Cancel，没有执行 Delete，也没有删除本次测试会话。",
+      "limits": [
+        "只验证确认框与取消路径，不能声称删除成功、撤销、同步删除或历史消失已测。",
+        "不会以删除操作作为本图库的验证步骤。"
+      ],
+      "personalDataReview": "clear"
+    },
+    {
+      "id": "r02-46-restored-appearance",
+      "title": "结束前核对 · 字号恢复 Follow System",
+      "category": "font",
+      "exactSha256": "cfb54b9129ae7d2c19a702e206b017adaea5f931b93090aec6a75b7dbb50abd3",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-46-restored-appearance/screen.png",
+      "screenshotBytes": 62455,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-46-restored-appearance/capture.json",
+      "captureSha256": "1bf6cc5c10b148b7289575289134ffa17a7f1c959eca59d8887d8df97746ad9a",
+      "screenshotCapturedAt": "2026-10-16T04:09:42.439Z",
+      "captureStartedAt": "2026-10-16T04:09:39.521Z",
+      "captureCompletedAt": "2026-10-16T04:09:45.054Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "user-assisted-authenticated; restoration check",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-46-restored-appearance/hierarchy.xml",
+        "sha256": "ba0711d3a701b312127d283ee68101e4200f03927ab11c28a5792a18ff682948"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 96,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "369",
+            "1302"
+          ],
+          "description": "Observed label Cancel; Cancel deletion confirmation; retain self-created test conversation",
+          "startedAt": "2026-10-16T04:06:08.513Z",
+          "completedAt": "2026-10-16T04:06:11.273Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 97,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "100",
+            "194"
+          ],
+          "description": "Observed label Navigation button; Open navigation solely to reach settings restoration check",
+          "startedAt": "2026-10-16T04:06:11.695Z",
+          "completedAt": "2026-10-16T04:06:14.386Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 98,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "815",
+            "225"
+          ],
+          "description": "Open settings gear without opening any existing history item",
+          "startedAt": "2026-10-16T04:06:14.791Z",
+          "completedAt": "2026-10-16T04:06:15.284Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 99,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "260",
+            "225"
+          ],
+          "description": "Open signed-in account/settings entry for preference restoration only",
+          "startedAt": "2026-10-16T04:09:01.062Z",
+          "completedAt": "2026-10-16T04:09:01.188Z",
+          "stdout": ""
+        },
+        {
+          "index1Based": 100,
+          "operation": "tap-label",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "260",
+            "687"
+          ],
+          "description": "Observed label Appearance; Verify baseline appearance after authenticated testing",
+          "startedAt": "2026-10-16T04:09:35.661Z",
+          "completedAt": "2026-10-16T04:09:38.589Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 100,
+      "uiaSamples": [],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [
+        "外观列表回到基线文字大小和浅色页面。",
+        "Font size 右侧明确为 Follow System，补充了先前恢复命令后的摘要验证。",
+        "当前没有更名、删除确认或会话编辑草稿。"
+      ],
+      "state": "最终安全原图是 Appearance，主题与字号摘要均为 Follow System，语言为 English。",
+      "behavior": "动作 96 Cancel 删除确认后，经导航、齿轮和外观入口到达恢复摘要；没有执行删除。",
+      "limits": [
+        "只核对当前会话内设置摘要，不等于跨进程恢复或全部偏好审计。",
+        "原会话和清空测试草稿的状态由此前动作与安全截图分别支持，不由设置页推断所有数据。"
+      ],
+      "personalDataReview": "clear"
+    }
+  ],
+  "excluded": [
+    {
+      "id": "r02-01-resume",
+      "title": "系统 ANR · launcher 被系统弹窗覆盖",
+      "category": "environment",
+      "exactSha256": "0bb1252f879455fcceb61509da534f48541512ee20363e634b1203fe4b9af218",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-01-resume/screen.png",
+      "screenshotBytes": 546890,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-01-resume/capture.json",
+      "captureSha256": "90f4ea2282eafdca2a6996a2f3780107442d74b12cab6bb3e244dddb53702927",
+      "screenshotCapturedAt": "2026-10-16T02:56:53.753Z",
+      "captureStartedAt": "2026-10-16T02:56:48.860Z",
+      "captureCompletedAt": "2026-10-16T02:57:02.622Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "no-login",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-01-resume/hierarchy.xml",
+        "sha256": "56bbe2294e19e95ea2cf4f9923e850917a5a99a3c7cb1fe21dc6366d47c9dcca"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 1,
+          "operation": "launch",
+          "arguments": [
+            "shell",
+            "am",
+            "start",
+            "-n",
+            "com.moonshot.kimichat/.MainActivity"
+          ],
+          "description": "Launch original Kimi MainActivity",
+          "startedAt": "2026-10-16T02:56:45.175Z",
+          "completedAt": "2026-10-16T02:56:47.457Z",
+          "stdout": "Starting: Intent { cmp=com.moonshot.kimichat/.MainActivity }\r\n"
+        }
+      ],
+      "actionsBeforeCapture": 1,
+      "uiaSamples": [],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [],
+      "state": "可见 Android 桌面和 System UI isn't responding，提供 Close app / Wait。",
+      "limits": [],
+      "personalDataReview": "clear",
+      "reason": "Android 系统环境 ANR，不是 Kimi 组件或恢复范式；只列审计摘要，不内嵌设计样本。"
+    },
+    {
+      "id": "r02-02-model-entry",
+      "title": "系统 ANR · 仍覆盖 Kimi 主页",
+      "category": "environment",
+      "exactSha256": "f04988fbb67badfc33662749d224c25dd1c29e85408bae2a38f776bd1ce742fb",
+      "screenshotPath": "evidence/runtime/run02-20261016/scenes/r02-02-model-entry/screen.png",
+      "screenshotBytes": 107044,
+      "dimensions": {
+        "width": 1080,
+        "height": 2400,
+        "unit": "physical screenshot px",
+        "bitDepth": 8,
+        "colorType": 6
+      },
+      "capturePath": "evidence/runtime/run02-20261016/scenes/r02-02-model-entry/capture.json",
+      "captureSha256": "12a90597c200b28a541d00f253a9b2d638327be8e41778206ca31b6662a442bf",
+      "screenshotCapturedAt": "2026-10-16T02:57:41.749Z",
+      "captureStartedAt": "2026-10-16T02:57:38.257Z",
+      "captureCompletedAt": "2026-10-16T02:57:50.315Z",
+      "atomicCapture": false,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "accountModeAtCapture": "no-login",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "hierarchy": {
+        "path": "evidence/runtime/run02-20261016/scenes/r02-02-model-entry/hierarchy.xml",
+        "sha256": "56bbe2294e19e95ea2cf4f9923e850917a5a99a3c7cb1fe21dc6366d47c9dcca"
+      },
+      "hierarchyError": null,
+      "recordedActionsSincePreviousCapture": [
+        {
+          "index1Based": 2,
+          "operation": "tap",
+          "arguments": [
+            "shell",
+            "input",
+            "tap",
+            "340",
+            "194"
+          ],
+          "description": "Open model choice from verified home top capsule",
+          "startedAt": "2026-10-16T02:57:36.412Z",
+          "completedAt": "2026-10-16T02:57:37.241Z",
+          "stdout": ""
+        }
+      ],
+      "actionsBeforeCapture": 2,
+      "uiaSamples": [],
+      "observationClassification": "A",
+      "origin": "current",
+      "observations": [],
+      "state": "后面可见 Kimi 顶栏和输入器，前方仍是 System UI isn't responding。",
+      "limits": [],
+      "personalDataReview": "clear",
+      "reason": "系统弹窗仍覆盖主页，模型点击未验证；不把该帧当作模型菜单或 Kimi 错误样式。"
+    }
+  ],
+  "pending": [],
+  "withheld": [
+    {
+      "id": "r02-18-post-login-guide",
+      "reason": "按授权范围不读取账号场景原图、层级或采集文件，也不纳入预览。"
+    },
+    {
+      "id": "r02-19-prompt-ready",
+      "reason": "按授权范围不读取账号场景原图、层级或采集文件，也不纳入预览。"
+    }
+  ],
+  "checks": {
+    "pngDimensions": true,
+    "exactShaBindings": true,
+    "captureSessionIdentity": true,
+    "reviewedTransitionIdentity": true,
+    "embeddedOriginalBytes": true,
+    "allLocalLinksExist": true,
+    "browserScriptSyntax": true,
+    "browserScriptFixture": [
+      "all categories filter",
+      "reset filter",
+      "open original viewer",
+      "close viewer",
+      "embedded download byte reuse"
+    ],
+    "protectedFirstRunFiles": [
+      {
+        "path": "index.html",
+        "sha256": "724836afe349cfc619ca25e24170405d6b0ba4d28cc84dda208fb4ae401280e0",
+        "unchanged": true
+      },
+      {
+        "path": "runtime.html",
+        "sha256": "71c54fea7f7b235971eeaa96dea7554d0726227a8b6f9bb63e4d36d5377c3861",
+        "unchanged": true
+      }
+    ],
+    "sourceScreenshotsWritten": 0,
+    "sourceRecordsWritten": 0,
+    "sourceAssetReadCount": 128,
+    "withheldSceneSourceReads": 0,
+    "guiOrDeviceOperations": false,
+    "realBrowserVisualValidation": false
+  },
+  "scopeNotes": [
+    "Scenes 01-17 are no-login observations; the explicitly permitted later neutral test chats follow user-assisted login. Login/credentials/account identifiers were not reviewed or embedded.",
+    "Original app network is used, without backend fixtures. A self-authored 408-byte TXT fixture is an attachment test input; it is not a replacement backend.",
+    "Screenshots and UIA dumps are sequential, non-atomic captures. A capture action count is not a precise event timing measurement.",
+    "Only Re was inserted in the early guest draft test; later safe captures separately prove complete test messages. Command intentions never replace the actual inserted text, including the literal te in the attachment request.",
+    "The Back reported around 07/08 is absent from session.actions; no action index or timestamp is invented.",
+    "The blue ring is a sampled welcome/avatar visual candidate, not confirmed loading or evidence of network failure.",
+    "App locale/theme at the start differs from the first run; intermediate state is unknown, so no cross-run preference loss is inferred.",
+    "20,28,29,30 have screenshot/later-UIA differences; no later state is painted back onto the early screenshot.",
+    "25 does not validate Stop. 26 validates visible Output stopped, while Failed to execute Python code coexists without a proven causal order.",
+    "33 includes a Kimi purpose explanation and Android system permission in one frame; the system layer is not a Kimi styling token. 34 verifies one refusal result, not recording/transcription.",
+    "39-40 verify a dedicated-AVD network disable/restore and retry sequence only. 41 uses the current self-created test answer for an Android clipboard round trip, never a host clipboard."
+  ]
+}

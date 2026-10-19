@@ -1,0 +1,34 @@
+{
+  "id": "02-kimi-initial",
+  "description": "Original Kimi after successful installation and launch",
+  "classification": "A",
+  "origin": "current",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-15T15:15:18.950Z",
+  "capturedAt": "2026-10-15T15:15:24.188Z",
+  "method": "Android adb exec-out screencap -p; uiautomator dump; independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/scenes/02-kimi-initial/screen.png",
+    "sha256": "328678e966a0faa0d8cf83008535e4e69d249c47cd9c9110fe008f524e234fb5",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/scenes/02-kimi-initial/hierarchy.xml",
+    "sha256": "56bbe2294e19e95ea2cf4f9923e850917a5a99a3c7cb1fe21dc6366d47c9dcca"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 1,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "systemLocales": "null",
+    "nightMode": "Night mode: no"
+  },
+  "window": [],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+}

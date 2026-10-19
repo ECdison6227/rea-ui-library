@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "runId": "run03-20261016",
+  "createdAt": "2026-10-16T07:59:27.152Z",
+  "corrections": [
+    {
+      "scope": "r03-01 through r03-04",
+      "field": "accountMode",
+      "instrumentDefault": "no-login",
+      "correctInterpretation": "Original app was already normally authenticated, verified via retained local home and actual requests. Initial helper default was not set until after these captures; retain original metadata and apply this sidecar correction. No credentials recorded."
+    },
+    {
+      "scope": "r03-51-image-attached / r03-53-image-actually-attached",
+      "field": "description/intended name",
+      "correctInterpretation": "51 is system cloud-media settings, 53 is selected PhotoPicker before Add(1). 54 is first actual returned image attachment. Names describe intent and are not result evidence."
+    },
+    {
+      "scope": "r03-72-large-recovered",
+      "field": "progress",
+      "correctInterpretation": "Retained screenshot49%, subsequent retained UIA62%; later tool UI inspection93% was a different observation. Ready card first retained in73. Do not combine these times."
+    },
+    {
+      "scope": "exported PNG and scenes43/45",
+      "field": "distribution",
+      "correctInterpretation": "Generated share image includes account identity/QR and is withheld locally. 43 associated preview and45 identity home are withheld.44 is safe own-chat save-success observation. Never package .runtime or the pulled private image."
+    },
+    {
+      "scope": "r03-186-live-model-menu / r03-187-lifecycle-return",
+      "field": "generation and result ownership",
+      "correctInterpretation": "186 pixels independently show a stop-square and busy placeholder under the menu; a fresh generating-placeholder guard exists before the model tap. Its UIA is menu-only and cannot establish underlying generation. 187 separately shows the original A-RUN03-6842 answer retained through row 240 after exact own-chat reentry. No inference of uninterrupted network execution."
+    },
+    {
+      "scope": "r03-188-background-generating",
+      "field": "Thinking complete and non-atomic capture",
+      "correctInterpretation": "Earlier pixels show prior A answer, newly submitted Q request, Thinking complete and a stop-square; later UIA shows Q output rows 1-22. Thinking-stage completion is not whole-answer completion. Retained actions show actual Android Home followed by Kimi launch."
+    },
+    {
+      "scope": "r03-189-busy-second-draft / r03-190-second-submitted",
+      "field": "description/intended queue timing",
+      "correctInterpretation": "189 is B still in EditText; the eventual actual Send was tens of seconds later, so this frame cannot prove Q active at submission. 190 pixels show Q through 240 and sent B still Thinking; subsequent UIA shows B completed with QUEUE-RUN03-4016. Visible order is supported; actual queue admission and internal scheduling remain unverified."
+    },
+    {
+      "scope": "r03-191-busy-guard-refused",
+      "field": "guard refusal subject and submission state",
+      "correctInterpretation": "Thinking-only guard refusal belongs to local automation, not the original app. D remains an unsent EditText with enabled send affordance. No application refusal, D submission or active-generation-at-eventual-send conclusion follows from this scene."
+    },
+    {
+      "scope": "r03-192-concurrency-video / r03-193-concurrency-after-stop",
+      "field": "queue evidence and Stop confirmation",
+      "correctInterpretation": "192 pixels and independent UIA show Queue | 1 message queued with busy composer; this supports original queue presentation. The associated video is not cleared by reviewing scene files. 193 is still the Stop generating confirmation dialog with Cancel and Stop, not a post-stop result. Filename and action success cannot establish generation stopped or queue paused."
+    },
+    {
+      "scope": "r03-194-queue-paused",
+      "field": "observed stop result and queued-message retention",
+      "correctInterpretation": "After retained Stop confirmation, the composer is visibly idle, the dialog is gone and Queue pill is not visible. The viewport remains near pair rows 1-18. This supports UI stopping but does not establish final answer length, D retention, queue pause/clear, or backend cancellation; those require subsequent inspection."
+    },
+    {
+      "scope": "r03-195-queue-stopped-tail",
+      "field": "intended paused tail versus actual completed C and D",
+      "correctInterpretation": "The exact PNG and later UIA show C through requested row 500 followed by sent D and completed QUEUE-RUN03-9072 answer, with idle composer. There are no queue-paused controls. The Stop dialog was open for over two minutes before confirmation, so completion may have preceded Stop. Do not claim C interrupted or D paused on this evidence."
+    },
+    {
+      "scope": "r03-196-pause-guard-refused",
+      "field": "capacity failure versus local guard result",
+      "correctInterpretation": "Actual PNG and later UIA show E and F each failed with capacity/subscription-priority error; prior D remains completed. The composer is idle and no paused queue is shown. The local null/stop guard refusal is not an app pause or Stop result."
+    },
+    {
+      "scope": "r03-202-ime-language-picker",
+      "field": "intended language picker versus actual page",
+      "correctInterpretation": "Pixels contain no language picker: Kimi chat and Gboard remain, composer appears blank. The later Kimi hierarchy records one ordinary space in EditText and no language selector/options. Do not claim a successful input-language popup."
+    },
+    {
+      "scope": "r03-203-gboard-settings",
+      "field": "actual page identity versus capture.package",
+      "correctInterpretation": "Actual pixels, Gboard SettingsActivity window and UIA package identify com.google.android.inputmethod.latin settings. capture.package remains fixed target com.moonshot.kimichat and is not current-page proof. Generic keyboard settings must not be attributed to Kimi UI."
+    },
+    {
+      "scope": "r03-205-pinyin-keyboard",
+      "field": "intended Pinyin keyboard versus observed preparation",
+      "correctInterpretation": "Actual pixels show Latin QWERTY keys, English candidates and artificial Research Run03 Pinyin prefix; Kimi-only UIA records prefix plus trailing space and no active input-language identity. Done on the preceding configuration is recorded, but Pinyin active/composing/commit requires later visible evidence."
+    },
+    {
+      "scope": "r03-208-pinyin-preedit",
+      "field": "intended Pinyin preedit versus English keyboard",
+      "correctInterpretation": "Exact screenshot spacebar says English with candidates ceshi/Cheshire/crushing. Kimi UIA records plain Research Run03 Pinyin ceshi, without composing-span metadata. This frame does not establish Pinyin preedit, Chinese candidate selection or commit, despite source naming and207 inline setting."
+    },
+    {
+      "scope": "r03-220-playback-speed / r03-221-playback-paused-fast / r03-223-playback-rate-restored",
+      "field": "numeric playback rate and non-atomic popup state",
+      "correctInterpretation": "220 screenshot contains five speed options, but its later UIA has already returned to the ordinary player. The alleged1.5x coordinate tap occurs over a minute later without an intervening recorded speed-open; the same coordinate overlaps ordinary forward15.221 proves paused player but shows no1.5x rate.223 screenshot explicitly confirms Switched to 1.0x, while later UIA lacks the toast. Treat fast-rate selection as unverified and do not infer audio speed."
+    },
+    {
+      "scope": "r03-225-speed-change-live",
+      "field": "expected1.5x feedback versus retained pixels",
+      "correctInterpretation": "Even with zero capture settling, exact225 PNG still shows the five speed options, no rate selection marker and no Switched to 1.5x toast. Later UIA is ordinary player 00:12/Speed. This is not retained successful 1.5x result verification."
+    },
+    {
+      "scope": "r03-227-landscape-chat / r03-228-landscape-model-menu / r03-229-landscape-settings",
+      "field": "requested orientation versus actual rendered orientation",
+      "correctInterpretation": "All three PNGs remain portrait 1080x2400, UIA rotation 0.227 PNG and hierarchy are byte-identical to 226. Existing decoded MainActivity declaration at AndroidManifest.decoded.xml:283 has no screenOrientation attribute. Do not claim a manifest portrait declaration, landscape rendering, or a proven runtime lock cause."
+    },
+    {
+      "scope": "r03-233-conditions-restored",
+      "field": "scope of visible and metadata restoration",
+      "correctInterpretation": "233 restores actual 1080x2400 PNG, UIA rotation 0, captured density 420/fontScale 1.0 and English app locale. Animation-scale and user-rotation setting values are not in capture.json and need the separate condition ledger. Earlier systemLocales null is unknown, not evidence of a different known language."
+    },
+    {
+      "scope": "r03-236-german-settings",
+      "field": "attempted German locale versus observed English",
+      "correctInterpretation": "236 remains English in exact pixels and byte-identical English UIA to 197; captured appLocales is still en-US. Filename and description do not establish German activation. No German translation/long-text/layout acceptance may use this frame as a successful language change."
+    },
+    {
+      "scope": "r03-237-wm-landscape-appearance / r03-238-wm-landscape-chat / r03-239-wm-landscape-popup",
+      "field": "actual system compatibility overlay versus intended app landscape screens",
+      "correctInterpretation": "The exact2400x1080 PNGs are covered by Android See and do more compatibility/split-screen introduction over a narrow portrait app window. Later rotation 1 UIA exposes only underlying Kimi controls, omitting the system overlay.237 is not a clear Appearance result,238 not a fully visible owned chat,239 equals238 and no model popup is established. Do not claim full-width landscape reflow or popup acceptance."
+    },
+    {
+      "scope": "r03-253-rotation-wait",
+      "field": "missing UIA and partial rendering after rotation",
+      "correctInterpretation": "253 has no hierarchy.xml; capture.hierarchy=null and helper reports no newly-written UIA. Exact pixels show a reduced upper-left German loading home with black remainder, without visible identity. Entire incomplete set withheld; do not mark UIA reviewed, reuse earlier hierarchy or claim full recovery from this frame."
+    },
+    {
+      "scope": "r03-273-deleted-title-search",
+      "field": "query text versus settled exact no-results claim",
+      "correctInterpretation": "273 pixels and UIA contain query Research Run03 Life but a different own Run03 image-shapes result with neutral file/image fixtures is still displayed. Highlighting is partial Run03 text. No No results message or settled exact-search semantics is established; only Life absent from this retained result. Do not use this frame alone as deletion absence verification."
+    },
+    {
+      "scope": "r03-274-deleted-search-committed",
+      "field": "submitted search visible result versus empty-results/exact-match claim",
+      "correctInterpretation": "274 follows an explicit IME search and the keyboard is hidden, but another self-created Run03 image-shapes result and neutral fixture cards remain under the Life query. No Life-title row is visible; no No results message or exact-match search semantics is established. Treat as bounded visible absence corroboration, not empty-results proof."
+    }
+  ],
+  "updatedAt": "2026-10-16T12:36:46.439Z"
+}

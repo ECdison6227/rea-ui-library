@@ -1,0 +1,22 @@
+{
+  "verifiedAt": "2026-10-16T13:21:34.757Z",
+  "status": "passed",
+  "scope": "New integration documents, current screenshot/hierarchy hashes, transition references, dedicated AVD cleanup and changed Node scripts; original runtime behavior beyond documented paths not asserted",
+  "jsonFiles": [
+    "library.json",
+    "evidence/index.json",
+    "docs/restore.json",
+    "docs/shutdown-verification.json",
+    "evidence/runtime/reviewed-scenes.json",
+    "evidence/runtime/observed-transitions.json"
+  ],
+  "markdownLinksChecked": 379,
+  "missingLinks": [],
+  "originalScreenshotsVerified": 34,
+  "hierarchyByteHashesVerified": 34,
+  "hierarchySemanticLimits": "Hash verification does not prove fresh/current hierarchy. See reviewed-scenes for null-root and nonatomic exclusions.",
+  "transitionsVerified": 24,
+  "originalApkUnchanged": true,
+  "dedicatedAvdShutdownVerified": true,
+  "referenceOrCrossBusinessValidation": false
+}

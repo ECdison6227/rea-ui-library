@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "runId": "run03-20261016",
+  "defaultAllow": false,
+  "scope": "Distribution omission declarations only; not source pixel/UIA privacy approval and not a task status change",
+  "sourceReviewSidecarsModified": false,
+  "omissions": [
+    {
+      "path": "evidence/runtime/run03-20261016/upload-check-1792136960922.xml",
+      "sha256": "b753d307c359e0d49e9a73619d15de72ba298abb917d5c00b70d6fa8cc2fa982",
+      "bytes": 24971,
+      "category": "unreviewed-auxiliary",
+      "distribution": "exclude-local-only",
+      "referencedByTasks": [
+        "F12"
+      ],
+      "reason": "Transient fresh upload guard UIA is not an exact-reviewed scene and is already excluded by the package policy for run03 side XML. The retained task reference remains traceable metadata; this raw helper is not shipped and cannot be counted as an independently inspectable public source artifact."
+    }
+  ]
+}

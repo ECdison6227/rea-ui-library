@@ -1,0 +1,3658 @@
+{
+  "schemaVersion": 1,
+  "classification": "D",
+  "origin": "current independent reference runtime",
+  "runId": "run03-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "org.research.kimistyle",
+  "sourceApkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "sourceApkIsDifferentArtifact": true,
+  "backend": "independent local fixture; no model/network/account service",
+  "accountMode": "none",
+  "createdAt": "2026-10-16T07:44:54.692Z",
+  "artifact": "reference/build/native-reference.apk",
+  "artifactHistory": [
+    {
+      "artifact": "reference/build/native-reference.apk",
+      "sha256": "b07ca5879a3c01c467d91fa4508d52f36686d87a4c3ead435016f7bf34a0d611",
+      "firstSeenAt": "2026-10-16T07:44:54.692Z"
+    },
+    {
+      "artifact": "reference/build/native-reference.apk",
+      "sha256": "eb14f24d558ee0ba14b927f2dbd677c25acecf0b8b351255da0b72fad87fde3f",
+      "firstSeenAt": "2026-10-16T12:38:39.540Z"
+    },
+    {
+      "artifact": "reference/build/native-reference.apk",
+      "sha256": "3723551d198091595ad1c78fd264fdc1690e53c947b4d661b7459cd6514adba3",
+      "firstSeenAt": "2026-10-16T12:40:37.237Z"
+    },
+    {
+      "artifact": "reference/build/native-reference.apk",
+      "sha256": "57b8be74b7a7fa482baca0c6ea8a3e154a95efe0cd49b9a0b797adfb209caa29",
+      "firstSeenAt": "2026-10-16T12:44:49.625Z"
+    },
+    {
+      "artifact": "reference/build/native-reference.apk",
+      "sha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "firstSeenAt": "2026-10-16T12:48:43.942Z"
+    }
+  ],
+  "actions": [
+    {
+      "operation": "install",
+      "description": "Install/update independent native reference only",
+      "startedAt": "2026-10-16T07:44:55.041Z",
+      "completedAt": "2026-10-16T07:44:55.939Z",
+      "arguments": [
+        "install",
+        "-r",
+        "reference/build/native-reference.apk"
+      ],
+      "stdout": "Performing Incremental Install\r\nPerforming Streamed Install\r\nSuccess\r\n",
+      "artifactSha256": "b07ca5879a3c01c467d91fa4508d52f36686d87a4c3ead435016f7bf34a0d611"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:35:46.792Z",
+      "completedAt": "2026-10-16T12:35:47.015Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "restore"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "restore",
+      "artifactSha256": "b07ca5879a3c01c467d91fa4508d52f36686d87a4c3ead435016f7bf34a0d611"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:35:49.080Z",
+      "completedAt": "2026-10-16T12:35:49.301Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "chat-empty"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "chat-empty",
+      "artifactSha256": "b07ca5879a3c01c467d91fa4508d52f36686d87a4c3ead435016f7bf34a0d611"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:36:30.853Z",
+      "completedAt": "2026-10-16T12:36:31.063Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "source-capacity-error"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "source-capacity-error",
+      "artifactSha256": "b07ca5879a3c01c467d91fa4508d52f36686d87a4c3ead435016f7bf34a0d611"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:36:39.564Z",
+      "completedAt": "2026-10-16T12:36:39.790Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "settings"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "settings",
+      "artifactSha256": "b07ca5879a3c01c467d91fa4508d52f36686d87a4c3ead435016f7bf34a0d611"
+    },
+    {
+      "operation": "stop",
+      "description": "Stop only the independent reference package; preserve local reference data",
+      "startedAt": "2026-10-16T12:37:38.372Z",
+      "completedAt": "2026-10-16T12:37:38.619Z",
+      "arguments": [
+        "shell",
+        "am",
+        "force-stop",
+        "org.research.kimistyle"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "install",
+      "description": "Install/update independent native reference only",
+      "startedAt": "2026-10-16T12:38:40.055Z",
+      "completedAt": "2026-10-16T12:38:41.582Z",
+      "arguments": [
+        "install",
+        "-r",
+        "reference/build/native-reference.apk"
+      ],
+      "stdout": "Performing Incremental Install\r\nPerforming Streamed Install\r\nSuccess\r\n",
+      "artifactSha256": "eb14f24d558ee0ba14b927f2dbd677c25acecf0b8b351255da0b72fad87fde3f"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:38:43.300Z",
+      "completedAt": "2026-10-16T12:38:43.769Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "source-capacity-error"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "source-capacity-error",
+      "artifactSha256": "eb14f24d558ee0ba14b927f2dbd677c25acecf0b8b351255da0b72fad87fde3f"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:38:53.424Z",
+      "completedAt": "2026-10-16T12:38:53.609Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "restore"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "restore",
+      "artifactSha256": "eb14f24d558ee0ba14b927f2dbd677c25acecf0b8b351255da0b72fad87fde3f"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:38:55.723Z",
+      "completedAt": "2026-10-16T12:38:55.928Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "settings"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "settings",
+      "artifactSha256": "eb14f24d558ee0ba14b927f2dbd677c25acecf0b8b351255da0b72fad87fde3f"
+    },
+    {
+      "operation": "stop",
+      "description": "Stop only the independent reference package; preserve local reference data",
+      "startedAt": "2026-10-16T12:39:39.345Z",
+      "completedAt": "2026-10-16T12:39:39.599Z",
+      "arguments": [
+        "shell",
+        "am",
+        "force-stop",
+        "org.research.kimistyle"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "install",
+      "description": "Install/update independent native reference only",
+      "startedAt": "2026-10-16T12:40:37.508Z",
+      "completedAt": "2026-10-16T12:40:38.450Z",
+      "arguments": [
+        "install",
+        "-r",
+        "reference/build/native-reference.apk"
+      ],
+      "stdout": "Performing Incremental Install\r\nPerforming Streamed Install\r\nSuccess\r\n",
+      "artifactSha256": "3723551d198091595ad1c78fd264fdc1690e53c947b4d661b7459cd6514adba3"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:40:39.851Z",
+      "completedAt": "2026-10-16T12:40:40.074Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "source-capacity-error"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "source-capacity-error",
+      "artifactSha256": "3723551d198091595ad1c78fd264fdc1690e53c947b4d661b7459cd6514adba3"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:40:52.376Z",
+      "completedAt": "2026-10-16T12:40:52.569Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "640"
+      ],
+      "stdout": "",
+      "label": "Too many people are chatting with Kimi; a subscription will grant you priority access. Upgrade",
+      "bounds": "[42,571][1038,710]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "58e3b10964aaed000988e0e5f3e197b47d1f3eaf7d2f82cd5409ac62fbc8cedf"
+    },
+    {
+      "operation": "back",
+      "description": "Android Back in foreground independent reference",
+      "startedAt": "2026-10-16T12:41:00.646Z",
+      "completedAt": "2026-10-16T12:41:00.879Z",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:41:04.948Z",
+      "completedAt": "2026-10-16T12:41:05.125Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "100",
+        "455"
+      ],
+      "stdout": "",
+      "label": "Retry failed message",
+      "bounds": "[42,392][158,518]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "58e3b10964aaed000988e0e5f3e197b47d1f3eaf7d2f82cd5409ac62fbc8cedf"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:41:53.797Z",
+      "completedAt": "2026-10-16T12:41:53.995Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "restore"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "restore",
+      "artifactSha256": "3723551d198091595ad1c78fd264fdc1690e53c947b4d661b7459cd6514adba3"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:41:56.069Z",
+      "completedAt": "2026-10-16T12:41:56.316Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "chat-empty"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "chat-empty",
+      "artifactSha256": "3723551d198091595ad1c78fd264fdc1690e53c947b4d661b7459cd6514adba3"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:42:05.216Z",
+      "completedAt": "2026-10-16T12:42:05.444Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "chat-draft"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "chat-draft",
+      "artifactSha256": "3723551d198091595ad1c78fd264fdc1690e53c947b4d661b7459cd6514adba3"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:42:10.797Z",
+      "completedAt": "2026-10-16T12:42:11.023Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "2184"
+      ],
+      "stdout": "",
+      "label": "Message draft",
+      "bounds": "[179,2156][901,2213]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "48d498df29e499ec76331a5be2b7c34c3ab0f5fd74ad13bcc2ea64d6b130583e"
+    },
+    {
+      "operation": "back",
+      "description": "Android Back in foreground independent reference",
+      "startedAt": "2026-10-16T12:42:19.646Z",
+      "completedAt": "2026-10-16T12:42:19.995Z",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:42:24.241Z",
+      "completedAt": "2026-10-16T12:42:24.424Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "964",
+        "2185"
+      ],
+      "stdout": "",
+      "label": "Send message",
+      "bounds": "[901,2122][1027,2248]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "5fe9517d3569d2be4824cb4b3a286080d4ddf842022e7443bb475dddb890cd77"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:42:43.314Z",
+      "completedAt": "2026-10-16T12:42:43.556Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "325",
+        "792"
+      ],
+      "stdout": "",
+      "label": "Retry",
+      "bounds": "[231,734][420,850]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "5f833c2ed026c0422d1559a8efcf5e9d40c7c130351821395f9ab326b15bc9cd"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:42:48.231Z",
+      "completedAt": "2026-10-16T12:42:48.450Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "964",
+        "2185"
+      ],
+      "stdout": "",
+      "label": "Stop output",
+      "bounds": "[901,2122][1027,2248]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "80049cb2540df728fd2f7b56ebd1804a4e768d50113d10728e7ccbc7ca7f8091"
+    },
+    {
+      "operation": "stop",
+      "description": "Stop only the independent reference package; preserve local reference data",
+      "startedAt": "2026-10-16T12:44:14.973Z",
+      "completedAt": "2026-10-16T12:44:15.314Z",
+      "arguments": [
+        "shell",
+        "am",
+        "force-stop",
+        "org.research.kimistyle"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "install",
+      "description": "Install/update independent native reference only",
+      "startedAt": "2026-10-16T12:44:49.915Z",
+      "completedAt": "2026-10-16T12:44:50.948Z",
+      "arguments": [
+        "install",
+        "-r",
+        "reference/build/native-reference.apk"
+      ],
+      "stdout": "Performing Incremental Install\r\nPerforming Streamed Install\r\nSuccess\r\n",
+      "artifactSha256": "57b8be74b7a7fa482baca0c6ea8a3e154a95efe0cd49b9a0b797adfb209caa29"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:44:52.416Z",
+      "completedAt": "2026-10-16T12:44:52.685Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "restore"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "restore",
+      "artifactSha256": "57b8be74b7a7fa482baca0c6ea8a3e154a95efe0cd49b9a0b797adfb209caa29"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:44:54.992Z",
+      "completedAt": "2026-10-16T12:44:55.252Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "chat-draft"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "chat-draft",
+      "artifactSha256": "57b8be74b7a7fa482baca0c6ea8a3e154a95efe0cd49b9a0b797adfb209caa29"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:45:00.831Z",
+      "completedAt": "2026-10-16T12:45:01.074Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "2184"
+      ],
+      "stdout": "",
+      "label": "Message draft",
+      "bounds": "[179,2156][901,2213]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "48d498df29e499ec76331a5be2b7c34c3ab0f5fd74ad13bcc2ea64d6b130583e"
+    },
+    {
+      "operation": "back",
+      "description": "Android Back in foreground independent reference",
+      "startedAt": "2026-10-16T12:45:09.995Z",
+      "completedAt": "2026-10-16T12:45:10.197Z",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:46:12.380Z",
+      "completedAt": "2026-10-16T12:46:12.600Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "source-capacity-error"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "source-capacity-error",
+      "artifactSha256": "57b8be74b7a7fa482baca0c6ea8a3e154a95efe0cd49b9a0b797adfb209caa29"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:46:22.169Z",
+      "completedAt": "2026-10-16T12:46:22.424Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "restore"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "restore",
+      "artifactSha256": "57b8be74b7a7fa482baca0c6ea8a3e154a95efe0cd49b9a0b797adfb209caa29"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:46:24.572Z",
+      "completedAt": "2026-10-16T12:46:24.779Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "settings"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "settings",
+      "artifactSha256": "57b8be74b7a7fa482baca0c6ea8a3e154a95efe0cd49b9a0b797adfb209caa29"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:46:37.643Z",
+      "completedAt": "2026-10-16T12:46:37.913Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "519"
+      ],
+      "stdout": "",
+      "label": "Font size",
+      "bounds": "[84,446][996,593]",
+      "observedExactMatches": 2,
+      "resolution": "unique-clickable-exact-match",
+      "guardHierarchySha256": "42952be4950e525f61260153a896fd00e43154c0affe966fc092d4f6cf1aff33"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:46:42.544Z",
+      "completedAt": "2026-10-16T12:46:42.726Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "1307"
+      ],
+      "stdout": "",
+      "label": "Extra Large",
+      "bounds": "[42,1247][1038,1368]",
+      "observedExactMatches": 2,
+      "resolution": "unique-clickable-exact-match",
+      "guardHierarchySha256": "7ce0d0e41cb9a2029afaa64b8c773cb24e519934eb177f417dfb887ca3197e44"
+    },
+    {
+      "operation": "back",
+      "description": "Android Back in foreground independent reference",
+      "startedAt": "2026-10-16T12:46:51.025Z",
+      "completedAt": "2026-10-16T12:46:51.202Z",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:46:55.447Z",
+      "completedAt": "2026-10-16T12:46:55.652Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "519"
+      ],
+      "stdout": "",
+      "label": "Font size",
+      "bounds": "[84,446][996,593]",
+      "observedExactMatches": 2,
+      "resolution": "unique-clickable-exact-match",
+      "guardHierarchySha256": "42952be4950e525f61260153a896fd00e43154c0affe966fc092d4f6cf1aff33"
+    },
+    {
+      "operation": "stop",
+      "description": "Stop only the independent reference package; preserve local reference data",
+      "startedAt": "2026-10-16T12:47:27.859Z",
+      "completedAt": "2026-10-16T12:47:28.271Z",
+      "arguments": [
+        "shell",
+        "am",
+        "force-stop",
+        "org.research.kimistyle"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "install",
+      "description": "Install/update independent native reference only",
+      "startedAt": "2026-10-16T12:48:44.433Z",
+      "completedAt": "2026-10-16T12:48:45.632Z",
+      "arguments": [
+        "install",
+        "-r",
+        "reference/build/native-reference.apk"
+      ],
+      "stdout": "Performing Incremental Install\r\nPerforming Streamed Install\r\nSuccess\r\n",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:48:47.313Z",
+      "completedAt": "2026-10-16T12:48:47.739Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "restore"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "restore",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:48:50.561Z",
+      "completedAt": "2026-10-16T12:48:50.931Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "chat-draft"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "chat-draft",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:48:56.815Z",
+      "completedAt": "2026-10-16T12:48:57.115Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "2184"
+      ],
+      "stdout": "",
+      "label": "Message draft",
+      "bounds": "[179,2156][901,2213]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "48d498df29e499ec76331a5be2b7c34c3ab0f5fd74ad13bcc2ea64d6b130583e"
+    },
+    {
+      "operation": "back",
+      "description": "Android Back in foreground independent reference",
+      "startedAt": "2026-10-16T12:49:06.859Z",
+      "completedAt": "2026-10-16T12:49:07.146Z",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:49:08.234Z",
+      "completedAt": "2026-10-16T12:49:08.515Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "source-capacity-error"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "source-capacity-error",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:49:18.423Z",
+      "completedAt": "2026-10-16T12:49:18.746Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "restore"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "restore",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:49:21.013Z",
+      "completedAt": "2026-10-16T12:49:21.273Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "settings"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "settings",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:49:33.786Z",
+      "completedAt": "2026-10-16T12:49:33.968Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "519"
+      ],
+      "stdout": "",
+      "label": "Font size",
+      "bounds": "[84,446][996,593]",
+      "observedExactMatches": 2,
+      "resolution": "unique-clickable-exact-match",
+      "guardHierarchySha256": "42952be4950e525f61260153a896fd00e43154c0affe966fc092d4f6cf1aff33"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:49:38.150Z",
+      "completedAt": "2026-10-16T12:49:38.346Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "1307"
+      ],
+      "stdout": "",
+      "label": "Extra Large",
+      "bounds": "[42,1247][1038,1368]",
+      "observedExactMatches": 2,
+      "resolution": "unique-clickable-exact-match",
+      "guardHierarchySha256": "7ce0d0e41cb9a2029afaa64b8c773cb24e519934eb177f417dfb887ca3197e44"
+    },
+    {
+      "operation": "back",
+      "description": "Android Back in foreground independent reference",
+      "startedAt": "2026-10-16T12:49:46.542Z",
+      "completedAt": "2026-10-16T12:49:46.759Z",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:49:50.845Z",
+      "completedAt": "2026-10-16T12:49:51.023Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "519"
+      ],
+      "stdout": "",
+      "label": "Font size",
+      "bounds": "[84,446][996,593]",
+      "observedExactMatches": 2,
+      "resolution": "unique-clickable-exact-match",
+      "guardHierarchySha256": "42952be4950e525f61260153a896fd00e43154c0affe966fc092d4f6cf1aff33"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:50:02.293Z",
+      "completedAt": "2026-10-16T12:50:02.492Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "1307"
+      ],
+      "stdout": "",
+      "label": "Extra Large",
+      "bounds": "[42,1247][1038,1368]",
+      "observedExactMatches": 2,
+      "resolution": "unique-clickable-exact-match",
+      "guardHierarchySha256": "7ce0d0e41cb9a2029afaa64b8c773cb24e519934eb177f417dfb887ca3197e44"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:50:06.668Z",
+      "completedAt": "2026-10-16T12:50:06.842Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "954",
+        "194"
+      ],
+      "stdout": "",
+      "label": "Save",
+      "bounds": "[870,136][1038,252]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "8971d1013b1dcc76e4725ae4609b623dcf362cc0c99ca03c9ab5ff597fb4275f"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:50:49.165Z",
+      "completedAt": "2026-10-16T12:50:49.415Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "100",
+        "194"
+      ],
+      "stdout": "",
+      "label": "Navigation button",
+      "bounds": "[37,131][163,257]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "4bb38ac965ac9e5e1c92e3681bc0d954a3e83f0e0ec70558e163e74a7de3ecd9"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:50:53.801Z",
+      "completedAt": "2026-10-16T12:50:54.030Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "539",
+        "1357"
+      ],
+      "stdout": "",
+      "label": "Appearance",
+      "bounds": "[130,1289][949,1426]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "65d6eb937abf6a0c4b5300f4335333b7182472254da438b873a7f55dd46ef951"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:51:05.643Z",
+      "completedAt": "2026-10-16T12:51:05.834Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "369"
+      ],
+      "stdout": "",
+      "label": "Theme settings",
+      "bounds": "[84,296][996,443]",
+      "observedExactMatches": 2,
+      "resolution": "unique-clickable-exact-match",
+      "guardHierarchySha256": "cea6c7cb5c4b351e02fffc06a887db3b73be71bc9fa7d26da0e1708284ec0987"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:51:09.915Z",
+      "completedAt": "2026-10-16T12:51:10.097Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "646"
+      ],
+      "stdout": "",
+      "label": "Dark mode",
+      "bounds": "[42,579][1038,714]",
+      "observedExactMatches": 2,
+      "resolution": "unique-clickable-exact-match",
+      "guardHierarchySha256": "60b4e90f8416b4e2c4599c981e609b361cb2e4c5a20cd6e0144767db804c1116"
+    },
+    {
+      "operation": "back",
+      "description": "Android Back in foreground independent reference",
+      "startedAt": "2026-10-16T12:51:17.159Z",
+      "completedAt": "2026-10-16T12:51:17.299Z",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:51:26.293Z",
+      "completedAt": "2026-10-16T12:51:26.414Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "369"
+      ],
+      "stdout": "",
+      "label": "Theme settings",
+      "bounds": "[84,296][996,443]",
+      "observedExactMatches": 2,
+      "resolution": "unique-clickable-exact-match",
+      "guardHierarchySha256": "884c81dbed2372c436d871d08e17fa43c1a8c4e354e131840d190fe41cb4a572"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:51:31.774Z",
+      "completedAt": "2026-10-16T12:51:31.908Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "363"
+      ],
+      "stdout": "",
+      "label": "Follow System",
+      "bounds": "[42,296][1038,431]",
+      "observedExactMatches": 2,
+      "resolution": "unique-clickable-exact-match",
+      "guardHierarchySha256": "61bbe1bf2046a6bd6ec43d8b7b3956e929bb30597789e2499c5073382264804e"
+    },
+    {
+      "operation": "back",
+      "description": "Android Back in foreground independent reference",
+      "startedAt": "2026-10-16T12:51:32.637Z",
+      "completedAt": "2026-10-16T12:51:32.747Z",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:51:36.187Z",
+      "completedAt": "2026-10-16T12:51:36.298Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "519"
+      ],
+      "stdout": "",
+      "label": "Font size",
+      "bounds": "[84,446][996,593]",
+      "observedExactMatches": 2,
+      "resolution": "unique-clickable-exact-match",
+      "guardHierarchySha256": "cea6c7cb5c4b351e02fffc06a887db3b73be71bc9fa7d26da0e1708284ec0987"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:51:39.590Z",
+      "completedAt": "2026-10-16T12:51:39.722Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "861"
+      ],
+      "stdout": "",
+      "label": "Follow System",
+      "bounds": "[42,794][1038,929]",
+      "observedExactMatches": 2,
+      "resolution": "unique-clickable-exact-match",
+      "guardHierarchySha256": "84265b7275a0ce2a240a244694bd0713f5e2ad5750afbbf90cbdf217986e9bb8"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:51:43.084Z",
+      "completedAt": "2026-10-16T12:51:43.221Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "954",
+        "194"
+      ],
+      "stdout": "",
+      "label": "Save",
+      "bounds": "[870,136][1038,252]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "42a8206b6acdc1b473362abaa4f1c9a507f40155d45637a8f4e4a6ecb6d1837a"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:51:43.773Z",
+      "completedAt": "2026-10-16T12:51:43.910Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "chat-draft"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "chat-draft",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:51:48.482Z",
+      "completedAt": "2026-10-16T12:51:48.626Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "100",
+        "194"
+      ],
+      "stdout": "",
+      "label": "Navigation button",
+      "bounds": "[37,131][163,257]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "48d498df29e499ec76331a5be2b7c34c3ab0f5fd74ad13bcc2ea64d6b130583e"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:51:52.274Z",
+      "completedAt": "2026-10-16T12:51:52.392Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "539",
+        "1349"
+      ],
+      "stdout": "",
+      "label": "Appearance",
+      "bounds": "[130,1281][949,1418]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "de33f775645d84833f25ef144cffd6fcaf190cf1f62695c62f142d00e5e328bc"
+    },
+    {
+      "operation": "back",
+      "description": "Android Back in foreground independent reference",
+      "startedAt": "2026-10-16T12:51:53.117Z",
+      "completedAt": "2026-10-16T12:51:53.263Z",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "stop",
+      "description": "Stop only the independent reference package; preserve local reference data",
+      "startedAt": "2026-10-16T12:51:59.452Z",
+      "completedAt": "2026-10-16T12:51:59.665Z",
+      "arguments": [
+        "shell",
+        "am",
+        "force-stop",
+        "org.research.kimistyle"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "launch",
+      "description": "Launch independent reference without a fixture extra; preserve stored local state",
+      "startedAt": "2026-10-16T12:52:00.495Z",
+      "completedAt": "2026-10-16T12:52:00.673Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity }\r\n",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:52:40.695Z",
+      "completedAt": "2026-10-16T12:52:40.829Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "964",
+        "2185"
+      ],
+      "stdout": "",
+      "label": "Send message",
+      "bounds": "[901,2122][1027,2248]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "48d498df29e499ec76331a5be2b7c34c3ab0f5fd74ad13bcc2ea64d6b130583e"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:52:57.126Z",
+      "completedAt": "2026-10-16T12:52:57.243Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "325",
+        "792"
+      ],
+      "stdout": "",
+      "label": "Retry",
+      "bounds": "[231,734][420,850]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "5f833c2ed026c0422d1559a8efcf5e9d40c7c130351821395f9ab326b15bc9cd"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:53:00.486Z",
+      "completedAt": "2026-10-16T12:53:00.605Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "964",
+        "2185"
+      ],
+      "stdout": "",
+      "label": "Stop output",
+      "bounds": "[901,2122][1027,2248]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "80049cb2540df728fd2f7b56ebd1804a4e768d50113d10728e7ccbc7ca7f8091"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:53:13.685Z",
+      "completedAt": "2026-10-16T12:53:13.820Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "chat-busy"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "chat-busy",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:53:23.873Z",
+      "completedAt": "2026-10-16T12:53:23.997Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "964",
+        "2185"
+      ],
+      "stdout": "",
+      "label": "Stop output",
+      "bounds": "[901,2122][1027,2248]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "c3a8deafd9d16ea23a5686b2fe425ff3212e61f0807a410a8afc7f048704b4c4"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:53:30.294Z",
+      "completedAt": "2026-10-16T12:53:30.438Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "chat-error"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "chat-error",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:53:40.397Z",
+      "completedAt": "2026-10-16T12:53:40.536Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "325",
+        "792"
+      ],
+      "stdout": "",
+      "label": "Retry",
+      "bounds": "[231,734][420,850]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "d70e2300f99665d56e0072befa39fdef5357424546e11b10a6500768334d8953"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:53:53.759Z",
+      "completedAt": "2026-10-16T12:53:53.913Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "chat-complete"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "chat-complete",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:54:38.423Z",
+      "completedAt": "2026-10-16T12:54:38.551Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "delete-dialog"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "delete-dialog",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:54:48.521Z",
+      "completedAt": "2026-10-16T12:54:48.648Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "329",
+        "1297"
+      ],
+      "stdout": "",
+      "label": "Cancel",
+      "bounds": "[130,1234][529,1360]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "fa137cd0bff152ad0f0cdca04f5efd01cb4f7399a5c0b40fa336ea3e14270a43"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:54:55.032Z",
+      "completedAt": "2026-10-16T12:54:55.192Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "delete-dialog"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "delete-dialog",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "back",
+      "description": "Android Back in foreground independent reference",
+      "startedAt": "2026-10-16T12:54:57.190Z",
+      "completedAt": "2026-10-16T12:54:57.325Z",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:55:03.652Z",
+      "completedAt": "2026-10-16T12:55:03.788Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "delete-dialog"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "delete-dialog",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap",
+      "description": "Coordinate tap within foreground independent reference",
+      "startedAt": "2026-10-16T12:55:05.838Z",
+      "completedAt": "2026-10-16T12:55:05.963Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "500"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:55:12.250Z",
+      "completedAt": "2026-10-16T12:55:12.396Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "delete-dialog"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "delete-dialog",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:55:16.940Z",
+      "completedAt": "2026-10-16T12:55:17.059Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "749",
+        "1297"
+      ],
+      "stdout": "",
+      "label": "Delete",
+      "bounds": "[550,1234][949,1360]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "fa137cd0bff152ad0f0cdca04f5efd01cb4f7399a5c0b40fa336ea3e14270a43"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:55:23.290Z",
+      "completedAt": "2026-10-16T12:55:23.424Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "chat-draft"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "chat-draft",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:55:28.141Z",
+      "completedAt": "2026-10-16T12:55:28.275Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "964",
+        "2185"
+      ],
+      "stdout": "",
+      "label": "Send message",
+      "bounds": "[901,2122][1027,2248]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "48d498df29e499ec76331a5be2b7c34c3ab0f5fd74ad13bcc2ea64d6b130583e"
+    },
+    {
+      "operation": "stop",
+      "description": "Stop only the independent reference package; preserve local reference data",
+      "startedAt": "2026-10-16T12:55:28.934Z",
+      "completedAt": "2026-10-16T12:55:29.172Z",
+      "arguments": [
+        "shell",
+        "am",
+        "force-stop",
+        "org.research.kimistyle"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "launch",
+      "description": "Launch independent reference without a fixture extra; preserve stored local state",
+      "startedAt": "2026-10-16T12:55:30.150Z",
+      "completedAt": "2026-10-16T12:55:30.315Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity }\r\n",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:56:20.583Z",
+      "completedAt": "2026-10-16T12:56:20.788Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "documents-empty"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "documents-empty",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:56:33.505Z",
+      "completedAt": "2026-10-16T12:56:33.732Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "1385"
+      ],
+      "stdout": "",
+      "label": "Add a note",
+      "bounds": "[330,1322][750,1448]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "17e839e455f921d47481dd676547976d98f543750ae7b554e91a7c5ffebe8f8b"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:56:37.973Z",
+      "completedAt": "2026-10-16T12:56:38.168Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "682"
+      ],
+      "stdout": "",
+      "label": "Save note",
+      "bounds": "[42,619][1038,745]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "aa4e7ae2dd6b87299b83b3106e659f4d159512cba713e5e852d76ab046306120"
+    },
+    {
+      "operation": "back",
+      "description": "Android Back in foreground independent reference",
+      "startedAt": "2026-10-16T12:56:46.113Z",
+      "completedAt": "2026-10-16T12:56:46.283Z",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:56:53.899Z",
+      "completedAt": "2026-10-16T12:56:54.176Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "documents-edit"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "documents-edit",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:56:59.318Z",
+      "completedAt": "2026-10-16T12:56:59.513Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "829"
+      ],
+      "stdout": "",
+      "label": "Return to notes",
+      "bounds": "[42,766][1038,892]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "98f52db6d7ba3550dafede2c0ffd4db3f8754365e8fdee0e30180650250c1b86"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:57:03.646Z",
+      "completedAt": "2026-10-16T12:57:03.818Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "954",
+        "194"
+      ],
+      "stdout": "",
+      "label": "New",
+      "bounds": "[870,136][1038,252]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "17e839e455f921d47481dd676547976d98f543750ae7b554e91a7c5ffebe8f8b"
+    },
+    {
+      "operation": "stop",
+      "description": "Stop only the independent reference package; preserve local reference data",
+      "startedAt": "2026-10-16T12:57:11.739Z",
+      "completedAt": "2026-10-16T12:57:12.002Z",
+      "arguments": [
+        "shell",
+        "am",
+        "force-stop",
+        "org.research.kimistyle"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "launch",
+      "description": "Launch independent reference without a fixture extra; preserve stored local state",
+      "startedAt": "2026-10-16T12:57:13.069Z",
+      "completedAt": "2026-10-16T12:57:13.318Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity }\r\n",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:57:19.095Z",
+      "completedAt": "2026-10-16T12:57:19.308Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "100",
+        "194"
+      ],
+      "stdout": "",
+      "label": "Navigation button",
+      "bounds": "[37,131][163,257]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "67ada730b322cce98123b6caa5139d387532886f7273e68192175918c5ed73ce"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:57:23.610Z",
+      "completedAt": "2026-10-16T12:57:23.809Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "539",
+        "1212"
+      ],
+      "stdout": "",
+      "label": "Fieldnotes · Documents",
+      "bounds": "[130,1144][949,1281]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "de33f775645d84833f25ef144cffd6fcaf190cf1f62695c62f142d00e5e328bc"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:57:28.497Z",
+      "completedAt": "2026-10-16T12:57:28.743Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "954",
+        "194"
+      ],
+      "stdout": "",
+      "label": "New",
+      "bounds": "[870,136][1038,252]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "17e839e455f921d47481dd676547976d98f543750ae7b554e91a7c5ffebe8f8b"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:57:40.642Z",
+      "completedAt": "2026-10-16T12:57:40.829Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "682"
+      ],
+      "stdout": "",
+      "label": "Save note",
+      "bounds": "[42,619][1038,745]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "98f52db6d7ba3550dafede2c0ffd4db3f8754365e8fdee0e30180650250c1b86"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:57:52.101Z",
+      "completedAt": "2026-10-16T12:57:52.296Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "829"
+      ],
+      "stdout": "",
+      "label": "Return to notes",
+      "bounds": "[42,766][1038,892]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "aa4e7ae2dd6b87299b83b3106e659f4d159512cba713e5e852d76ab046306120"
+    },
+    {
+      "operation": "stop",
+      "description": "Stop only the independent reference package; preserve local reference data",
+      "startedAt": "2026-10-16T12:58:00.529Z",
+      "completedAt": "2026-10-16T12:58:00.843Z",
+      "arguments": [
+        "shell",
+        "am",
+        "force-stop",
+        "org.research.kimistyle"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "launch",
+      "description": "Launch independent reference without a fixture extra; preserve stored local state",
+      "startedAt": "2026-10-16T12:58:01.989Z",
+      "completedAt": "2026-10-16T12:58:02.249Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity }\r\n",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:58:08.228Z",
+      "completedAt": "2026-10-16T12:58:08.534Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "100",
+        "194"
+      ],
+      "stdout": "",
+      "label": "Navigation button",
+      "bounds": "[37,131][163,257]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "67ada730b322cce98123b6caa5139d387532886f7273e68192175918c5ed73ce"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:58:12.947Z",
+      "completedAt": "2026-10-16T12:58:13.123Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "539",
+        "1212"
+      ],
+      "stdout": "",
+      "label": "Fieldnotes · Documents",
+      "bounds": "[130,1144][949,1281]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "de33f775645d84833f25ef144cffd6fcaf190cf1f62695c62f142d00e5e328bc"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:59:15.692Z",
+      "completedAt": "2026-10-16T12:59:15.988Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "documents-normal"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "documents-normal",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:59:18.034Z",
+      "completedAt": "2026-10-16T12:59:18.259Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "documents-busy"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "documents-busy",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:59:30.760Z",
+      "completedAt": "2026-10-16T12:59:30.960Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "808"
+      ],
+      "stdout": "",
+      "label": "Cancel saving",
+      "bounds": "[42,745][1038,871]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "0fff4c8f6dfb64fdb2749d9743fbc1d7dd382e542fe3c428e97db10aa1989d4b"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:59:42.751Z",
+      "completedAt": "2026-10-16T12:59:42.972Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "829"
+      ],
+      "stdout": "",
+      "label": "Return to notes",
+      "bounds": "[42,766][1038,892]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "98f52db6d7ba3550dafede2c0ffd4db3f8754365e8fdee0e30180650250c1b86"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T12:59:50.945Z",
+      "completedAt": "2026-10-16T12:59:51.184Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "documents-edit"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "documents-edit",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T12:59:56.636Z",
+      "completedAt": "2026-10-16T12:59:56.841Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "682"
+      ],
+      "stdout": "",
+      "label": "Save note",
+      "bounds": "[42,619][1038,745]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "98f52db6d7ba3550dafede2c0ffd4db3f8754365e8fdee0e30180650250c1b86"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:00:01.114Z",
+      "completedAt": "2026-10-16T13:00:01.300Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "808"
+      ],
+      "stdout": "",
+      "label": "Cancel saving",
+      "bounds": "[42,745][1038,871]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "0fff4c8f6dfb64fdb2749d9743fbc1d7dd382e542fe3c428e97db10aa1989d4b"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:00:20.394Z",
+      "completedAt": "2026-10-16T13:00:20.617Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "829"
+      ],
+      "stdout": "",
+      "label": "Return to notes",
+      "bounds": "[42,766][1038,892]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "98f52db6d7ba3550dafede2c0ffd4db3f8754365e8fdee0e30180650250c1b86"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:00:34.296Z",
+      "completedAt": "2026-10-16T13:00:34.529Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "954",
+        "194"
+      ],
+      "stdout": "",
+      "label": "New",
+      "bounds": "[870,136][1038,252]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "0bdffcd37183cc3de9c8d58a56836e10e510c7af8e19dcee8172445bd20ae1db"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T13:00:42.526Z",
+      "completedAt": "2026-10-16T13:00:42.735Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "documents-error"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "documents-error",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:00:55.438Z",
+      "completedAt": "2026-10-16T13:00:55.635Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "808"
+      ],
+      "stdout": "",
+      "label": "Retry saving",
+      "bounds": "[42,745][1038,871]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "4f84303bd579621abf497be404bfdb587fecf95f34c870aaea3177963d2152fd"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:01:07.052Z",
+      "completedAt": "2026-10-16T13:01:07.260Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "829"
+      ],
+      "stdout": "",
+      "label": "Return to notes",
+      "bounds": "[42,766][1038,892]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "aa4e7ae2dd6b87299b83b3106e659f4d159512cba713e5e852d76ab046306120"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:02:32.144Z",
+      "completedAt": "2026-10-16T13:02:32.347Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "436",
+        "693"
+      ],
+      "stdout": "",
+      "label": "Delete",
+      "bounds": "[305,630][568,756]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "564629facf3bb9fbe3fc05a84bd540a0cdccd8f7e6d73bc11a696404c560355e"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:02:44.114Z",
+      "completedAt": "2026-10-16T13:02:44.379Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "329",
+        "1297"
+      ],
+      "stdout": "",
+      "label": "Cancel",
+      "bounds": "[130,1234][529,1360]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "5372beaefb48de632e87c673120eea5d2799bbce46d494f5bd96a964eda27b5b"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:02:56.150Z",
+      "completedAt": "2026-10-16T13:02:56.404Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "436",
+        "693"
+      ],
+      "stdout": "",
+      "label": "Delete",
+      "bounds": "[305,630][568,756]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "564629facf3bb9fbe3fc05a84bd540a0cdccd8f7e6d73bc11a696404c560355e"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:03:00.940Z",
+      "completedAt": "2026-10-16T13:03:01.132Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "749",
+        "1297"
+      ],
+      "stdout": "",
+      "label": "Delete",
+      "bounds": "[550,1234][949,1360]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "5372beaefb48de632e87c673120eea5d2799bbce46d494f5bd96a964eda27b5b"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T13:03:08.970Z",
+      "completedAt": "2026-10-16T13:03:09.180Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "documents-edit"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "documents-edit",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:03:14.550Z",
+      "completedAt": "2026-10-16T13:03:14.761Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "682"
+      ],
+      "stdout": "",
+      "label": "Save note",
+      "bounds": "[42,619][1038,745]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "98f52db6d7ba3550dafede2c0ffd4db3f8754365e8fdee0e30180650250c1b86"
+    },
+    {
+      "operation": "stop",
+      "description": "Stop only the independent reference package; preserve local reference data",
+      "startedAt": "2026-10-16T13:03:15.615Z",
+      "completedAt": "2026-10-16T13:03:15.908Z",
+      "arguments": [
+        "shell",
+        "am",
+        "force-stop",
+        "org.research.kimistyle"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "launch",
+      "description": "Launch independent reference without a fixture extra; preserve stored local state",
+      "startedAt": "2026-10-16T13:03:17.114Z",
+      "completedAt": "2026-10-16T13:03:17.338Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity }\r\n",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:03:23.355Z",
+      "completedAt": "2026-10-16T13:03:23.547Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "100",
+        "194"
+      ],
+      "stdout": "",
+      "label": "Navigation button",
+      "bounds": "[37,131][163,257]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "67ada730b322cce98123b6caa5139d387532886f7273e68192175918c5ed73ce"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:03:27.850Z",
+      "completedAt": "2026-10-16T13:03:28.033Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "539",
+        "1212"
+      ],
+      "stdout": "",
+      "label": "Fieldnotes · Documents",
+      "bounds": "[130,1144][949,1281]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "de33f775645d84833f25ef144cffd6fcaf190cf1f62695c62f142d00e5e328bc"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:03:32.479Z",
+      "completedAt": "2026-10-16T13:03:32.652Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "954",
+        "194"
+      ],
+      "stdout": "",
+      "label": "New",
+      "bounds": "[870,136][1038,252]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "17e839e455f921d47481dd676547976d98f543750ae7b554e91a7c5ffebe8f8b"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:03:43.766Z",
+      "completedAt": "2026-10-16T13:03:43.951Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "808"
+      ],
+      "stdout": "",
+      "label": "Retry saving",
+      "bounds": "[42,745][1038,871]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "4f84303bd579621abf497be404bfdb587fecf95f34c870aaea3177963d2152fd"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:03:55.143Z",
+      "completedAt": "2026-10-16T13:03:55.334Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "829"
+      ],
+      "stdout": "",
+      "label": "Return to notes",
+      "bounds": "[42,766][1038,892]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "aa4e7ae2dd6b87299b83b3106e659f4d159512cba713e5e852d76ab046306120"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T13:04:03.133Z",
+      "completedAt": "2026-10-16T13:04:03.314Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "documents-empty"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "documents-empty",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:04:08.654Z",
+      "completedAt": "2026-10-16T13:04:08.859Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "1385"
+      ],
+      "stdout": "",
+      "label": "Add a note",
+      "bounds": "[330,1322][750,1448]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "17e839e455f921d47481dd676547976d98f543750ae7b554e91a7c5ffebe8f8b"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:04:12.939Z",
+      "completedAt": "2026-10-16T13:04:13.121Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "682"
+      ],
+      "stdout": "",
+      "label": "Save note",
+      "bounds": "[42,619][1038,745]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "aa4e7ae2dd6b87299b83b3106e659f4d159512cba713e5e852d76ab046306120"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:04:17.176Z",
+      "completedAt": "2026-10-16T13:04:17.451Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "503"
+      ],
+      "stdout": "",
+      "label": "Note draft",
+      "bounds": "[42,430][1038,577]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "aa4e7ae2dd6b87299b83b3106e659f4d159512cba713e5e852d76ab046306120"
+    },
+    {
+      "operation": "back",
+      "description": "Android Back in foreground independent reference",
+      "startedAt": "2026-10-16T13:04:26.171Z",
+      "completedAt": "2026-10-16T13:04:26.353Z",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T13:04:27.221Z",
+      "completedAt": "2026-10-16T13:04:27.431Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "source-capacity-error"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "source-capacity-error",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:04:33.011Z",
+      "completedAt": "2026-10-16T13:04:33.238Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "640"
+      ],
+      "stdout": "",
+      "label": "Too many people are chatting with Kimi; a subscription will grant you priority access. Upgrade",
+      "bounds": "[42,571][1038,710]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "58e3b10964aaed000988e0e5f3e197b47d1f3eaf7d2f82cd5409ac62fbc8cedf"
+    },
+    {
+      "operation": "back",
+      "description": "Android Back in foreground independent reference",
+      "startedAt": "2026-10-16T13:04:41.998Z",
+      "completedAt": "2026-10-16T13:04:42.214Z",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:04:46.428Z",
+      "completedAt": "2026-10-16T13:04:46.620Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "100",
+        "455"
+      ],
+      "stdout": "",
+      "label": "Retry failed message",
+      "bounds": "[42,392][158,518]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "58e3b10964aaed000988e0e5f3e197b47d1f3eaf7d2f82cd5409ac62fbc8cedf"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T13:05:49.812Z",
+      "completedAt": "2026-10-16T13:05:50.056Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "restore"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "restore",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T13:05:52.240Z",
+      "completedAt": "2026-10-16T13:05:52.440Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "chat-draft"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "chat-draft",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:05:57.861Z",
+      "completedAt": "2026-10-16T13:05:58.071Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "335",
+        "194"
+      ],
+      "stdout": "",
+      "label": "Model selector",
+      "bounds": "[189,131][482,257]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "48d498df29e499ec76331a5be2b7c34c3ab0f5fd74ad13bcc2ea64d6b130583e"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:06:09.690Z",
+      "completedAt": "2026-10-16T13:06:09.903Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "539",
+        "1726"
+      ],
+      "stdout": "",
+      "label": "K3",
+      "bounds": "[91,1644][988,1808]",
+      "observedExactMatches": 2,
+      "resolution": "unique-clickable-exact-match",
+      "guardHierarchySha256": "80f50acd6d29eb8aa30670e6c59a6ae9b30191f4a4bf2200d7d855095da5c6ba"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:06:21.732Z",
+      "completedAt": "2026-10-16T13:06:22.011Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "292",
+        "194"
+      ],
+      "stdout": "",
+      "label": "Model selector",
+      "bounds": "[189,131][396,257]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "48bf7cb65ad46479c22fb30a2079796ecda23805cd366e24f89530dfcb67a588"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:06:26.593Z",
+      "completedAt": "2026-10-16T13:06:26.776Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "539",
+        "2218"
+      ],
+      "stdout": "",
+      "label": "Thinking effort",
+      "bounds": "[91,2136][988,2300]",
+      "observedExactMatches": 2,
+      "resolution": "unique-clickable-exact-match",
+      "guardHierarchySha256": "ccba3e4a1826acdd632fb49e00eac50f0c63c82e21c90d766260429c52ac643f"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:06:38.470Z",
+      "completedAt": "2026-10-16T13:06:38.687Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "539",
+        "2054"
+      ],
+      "stdout": "",
+      "label": "Low",
+      "bounds": "[91,1972][988,2136]",
+      "observedExactMatches": 2,
+      "resolution": "unique-clickable-exact-match",
+      "guardHierarchySha256": "3933465d06a7c0cf116dea84cfc5d6ce0dfda65ebe370b2da7262bc32c3499a2"
+    },
+    {
+      "operation": "tap-label",
+      "description": "Tap one freshly observed reference label",
+      "startedAt": "2026-10-16T13:06:43.252Z",
+      "completedAt": "2026-10-16T13:06:43.444Z",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "292",
+        "194"
+      ],
+      "stdout": "",
+      "label": "Model selector",
+      "bounds": "[189,131][396,257]",
+      "observedExactMatches": 1,
+      "resolution": "unique-exact-match",
+      "guardHierarchySha256": "48bf7cb65ad46479c22fb30a2079796ecda23805cd366e24f89530dfcb67a588"
+    },
+    {
+      "operation": "back",
+      "description": "Android Back in foreground independent reference",
+      "startedAt": "2026-10-16T13:06:51.859Z",
+      "completedAt": "2026-10-16T13:06:52.059Z",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T13:06:53.009Z",
+      "completedAt": "2026-10-16T13:06:53.250Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "restore"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "restore",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "scene",
+      "description": "Load disposable independent reference fixture",
+      "startedAt": "2026-10-16T13:06:55.394Z",
+      "completedAt": "2026-10-16T13:06:55.636Z",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-f",
+        "0x20000000",
+        "-n",
+        "org.research.kimistyle/.MainActivity",
+        "--es",
+        "scene",
+        "settings"
+      ],
+      "stdout": "Starting: Intent { flg=0x20000000 cmp=org.research.kimistyle/.MainActivity (has extras) }\r\n",
+      "scene": "settings",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140"
+    },
+    {
+      "operation": "back",
+      "description": "Android Back in foreground independent reference",
+      "startedAt": "2026-10-16T13:07:06.249Z",
+      "completedAt": "2026-10-16T13:07:06.491Z",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "stdout": ""
+    },
+    {
+      "operation": "stop",
+      "description": "Stop only the independent reference package; preserve local reference data",
+      "startedAt": "2026-10-16T13:07:15.424Z",
+      "completedAt": "2026-10-16T13:07:15.745Z",
+      "arguments": [
+        "shell",
+        "am",
+        "force-stop",
+        "org.research.kimistyle"
+      ],
+      "stdout": ""
+    }
+  ],
+  "scenes": [
+    {
+      "id": "nr03-001-empty",
+      "description": "D baseline empty native chat",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-001-empty/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-001-empty/screen.png",
+      "screenshotSha256": "82b424239b1bc06973ab8281f606c87f2a9ed4ad841bdbae78ee36d18eab0a80",
+      "hierarchySha256": "5bb6d12ca6c2e7d14881e51ffe393ddb47d5b9df643ef7ad3dd2b59bfa058e15",
+      "artifactSha256": "b07ca5879a3c01c467d91fa4508d52f36686d87a4c3ead435016f7bf34a0d611",
+      "screenshotCapturedAt": "2026-10-16T12:35:54.120Z"
+    },
+    {
+      "id": "nr03-002-capacity-before",
+      "description": "D same exact source capacity content initial comparison",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-002-capacity-before/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-002-capacity-before/screen.png",
+      "screenshotSha256": "08607302adce35fedb46d82438606a7e2f216cbf68f261fda803fb9649a87ae3",
+      "hierarchySha256": "86bf7bb6877d6f0af70ca5dec77ec3686a6e069ff6188c70bf444bee3af9ace8",
+      "artifactSha256": "b07ca5879a3c01c467d91fa4508d52f36686d87a4c3ead435016f7bf34a0d611",
+      "screenshotCapturedAt": "2026-10-16T12:36:35.781Z"
+    },
+    {
+      "id": "nr03-003-appearance-before",
+      "description": "D Appearance initial comparison",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-003-appearance-before/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-003-appearance-before/screen.png",
+      "screenshotSha256": "814f81cb3bb369a20ab42ec439dd644b3f9b6b63d9b9bc477005aac3d791d475",
+      "hierarchySha256": "eb18d0ab6c55c42c93442b360863bbc32d4447452678f76f4f05f7a63620b2b9",
+      "artifactSha256": "b07ca5879a3c01c467d91fa4508d52f36686d87a4c3ead435016f7bf34a0d611",
+      "screenshotCapturedAt": "2026-10-16T12:36:44.771Z"
+    },
+    {
+      "id": "nr03-004-capacity-after",
+      "description": "D capacity pairing after system inset and clipping repair",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-004-capacity-after/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-004-capacity-after/screen.png",
+      "screenshotSha256": "63937486e851974d7bc38f2915cb595696375ff9bc6e773f3262d7ba86298e48",
+      "hierarchySha256": "12d2e980b4ef41c09a55fef889e60133034c89cc9864a4ea24e7b5568fa56d91",
+      "artifactSha256": "eb14f24d558ee0ba14b927f2dbd677c25acecf0b8b351255da0b72fad87fde3f",
+      "screenshotCapturedAt": "2026-10-16T12:38:49.310Z"
+    },
+    {
+      "id": "nr03-005-appearance-after",
+      "description": "D Appearance Follow System after inset repair",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-005-appearance-after/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-005-appearance-after/screen.png",
+      "screenshotSha256": "6288304baa380fd8ed6dc76363a4a3f078ca544ea65891eed430ffcda25bb903",
+      "hierarchySha256": "42952be4950e525f61260153a896fd00e43154c0affe966fc092d4f6cf1aff33",
+      "artifactSha256": "eb14f24d558ee0ba14b927f2dbd677c25acecf0b8b351255da0b72fad87fde3f",
+      "screenshotCapturedAt": "2026-10-16T12:39:00.645Z"
+    },
+    {
+      "id": "nr03-006-capacity-final",
+      "description": "D final build exact source capacity pairing",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-006-capacity-final/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-006-capacity-final/screen.png",
+      "screenshotSha256": "c92b5c69b4699fa797dc67ce7bed515fda1ea215ff187834ed3d7ff5888a53fe",
+      "hierarchySha256": "58e3b10964aaed000988e0e5f3e197b47d1f3eaf7d2f82cd5409ac62fbc8cedf",
+      "artifactSha256": "3723551d198091595ad1c78fd264fdc1690e53c947b4d661b7459cd6514adba3",
+      "screenshotCapturedAt": "2026-10-16T12:40:45.137Z"
+    },
+    {
+      "id": "nr03-007-upgrade-local",
+      "description": "D Upgrade opens only local explanation",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-007-upgrade-local/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-007-upgrade-local/screen.png",
+      "screenshotSha256": "302757f6d93acdc23b646f1ab54df7e828ae4cd29b4664f31b582d10175ce4d1",
+      "hierarchySha256": "6a555d1fabded6a53326fb2f8498577e92d4e578ca85ae6253aaffc867288381",
+      "artifactSha256": "3723551d198091595ad1c78fd264fdc1690e53c947b4d661b7459cd6514adba3",
+      "screenshotCapturedAt": "2026-10-16T12:40:56.597Z"
+    },
+    {
+      "id": "nr03-008-capacity-retry",
+      "description": "D local capacity retry repeats error after callback",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-008-capacity-retry/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-008-capacity-retry/screen.png",
+      "screenshotSha256": "1db89a152d9e699f557827f79b5908190febc71068fa18fd72e9e05586d23a99",
+      "hierarchySha256": "58e3b10964aaed000988e0e5f3e197b47d1f3eaf7d2f82cd5409ac62fbc8cedf",
+      "artifactSha256": "3723551d198091595ad1c78fd264fdc1690e53c947b4d661b7459cd6514adba3",
+      "screenshotCapturedAt": "2026-10-16T12:41:16.535Z"
+    },
+    {
+      "id": "nr03-009-empty-final",
+      "description": "D final empty state",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-009-empty-final/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-009-empty-final/screen.png",
+      "screenshotSha256": "7b21eb32ea849c3a7e2d43af6482cd3ad055894f1f754a34d7150c559a41c288",
+      "hierarchySha256": "138fa68d8f1cf9887ac3544bfc0ebc377b657c5515e2414d87bd57d19d9b7960",
+      "artifactSha256": "3723551d198091595ad1c78fd264fdc1690e53c947b4d661b7459cd6514adba3",
+      "screenshotCapturedAt": "2026-10-16T12:42:01.199Z"
+    },
+    {
+      "id": "nr03-010-keyboard-draft",
+      "description": "D native keyboard focused synthetic draft",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-010-keyboard-draft/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-010-keyboard-draft/screen.png",
+      "screenshotSha256": "56bb6b0b732ca4a919affe60a99aa9061df79312850108ac522f6567765e3efb",
+      "hierarchySha256": "5fe9517d3569d2be4824cb4b3a286080d4ddf842022e7443bb475dddb890cd77",
+      "artifactSha256": "3723551d198091595ad1c78fd264fdc1690e53c947b4d661b7459cd6514adba3",
+      "screenshotCapturedAt": "2026-10-16T12:42:14.923Z"
+    },
+    {
+      "id": "nr03-011-submit-complete",
+      "description": "D real local Send completes after 6-second callback",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-011-submit-complete/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-011-submit-complete/screen.png",
+      "screenshotSha256": "999e3554713b792c4b418083ec2ff9c030a4a2a006bce86aeccce7a421be24a5",
+      "hierarchySha256": "5f833c2ed026c0422d1559a8efcf5e9d40c7c130351821395f9ab326b15bc9cd",
+      "artifactSha256": "3723551d198091595ad1c78fd264fdc1690e53c947b4d661b7459cd6514adba3",
+      "screenshotCapturedAt": "2026-10-16T12:42:35.806Z"
+    },
+    {
+      "id": "nr03-012-real-stop-late",
+      "description": "D actual Retry stopped before callback stays stopped after late callback",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-012-real-stop-late/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-012-real-stop-late/screen.png",
+      "screenshotSha256": "c4801ae385f56cf66d9ec0ff9f77e89f862282a71eb7d42eab7737d9aaac9532",
+      "hierarchySha256": "67ada730b322cce98123b6caa5139d387532886f7273e68192175918c5ed73ce",
+      "artifactSha256": "3723551d198091595ad1c78fd264fdc1690e53c947b4d661b7459cd6514adba3",
+      "screenshotCapturedAt": "2026-10-16T12:43:00.246Z"
+    },
+    {
+      "id": "nr03-013-keyboard-repaired",
+      "description": "D native keyboard with visible composer after IME inset repair",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-013-keyboard-repaired/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-013-keyboard-repaired/screen.png",
+      "screenshotSha256": "cfff41058ebe711c0d4ad137fb07f526e2dc999a19d9b22b56dcc90354165232",
+      "hierarchySha256": "a955fbad9480c373cd8c40fca8282572427ad3b072d322ee1c1345845db2e858",
+      "artifactSha256": "57b8be74b7a7fa482baca0c6ea8a3e154a95efe0cd49b9a0b797adfb209caa29",
+      "screenshotCapturedAt": "2026-10-16T12:45:05.654Z"
+    },
+    {
+      "id": "nr03-014-keyboard-back",
+      "description": "D first Back hides keyboard and retains same draft",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-014-keyboard-back/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-014-keyboard-back/screen.png",
+      "screenshotSha256": "5c8d320783bb885c879854b6d2b4909f07f25135c847a2d6e67d3132555d6805",
+      "hierarchySha256": "5fe9517d3569d2be4824cb4b3a286080d4ddf842022e7443bb475dddb890cd77",
+      "artifactSha256": "57b8be74b7a7fa482baca0c6ea8a3e154a95efe0cd49b9a0b797adfb209caa29",
+      "screenshotCapturedAt": "2026-10-16T12:45:14.546Z"
+    },
+    {
+      "id": "nr03-015-capacity-paired",
+      "description": "D final build source capacity pair",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-015-capacity-paired/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-015-capacity-paired/screen.png",
+      "screenshotSha256": "9d6abc23ab447193d95759ff3ad8238ca2c347047a23bdbb16f949392982037f",
+      "hierarchySha256": "58e3b10964aaed000988e0e5f3e197b47d1f3eaf7d2f82cd5409ac62fbc8cedf",
+      "artifactSha256": "57b8be74b7a7fa482baca0c6ea8a3e154a95efe0cd49b9a0b797adfb209caa29",
+      "screenshotCapturedAt": "2026-10-16T12:46:17.779Z"
+    },
+    {
+      "id": "nr03-016-appearance-paired",
+      "description": "D final build Appearance Follow System pair",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-016-appearance-paired/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-016-appearance-paired/screen.png",
+      "screenshotSha256": "c736d9e82f9a2e20b295179400be6afe3ea3a95ebd7583beba29a45201475aee",
+      "hierarchySha256": "42952be4950e525f61260153a896fd00e43154c0affe966fc092d4f6cf1aff33",
+      "artifactSha256": "57b8be74b7a7fa482baca0c6ea8a3e154a95efe0cd49b9a0b797adfb209caa29",
+      "screenshotCapturedAt": "2026-10-16T12:46:30.065Z"
+    },
+    {
+      "id": "nr03-017-font-preview",
+      "description": "D font preview Extra Large before Back",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-017-font-preview/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-017-font-preview/screen.png",
+      "screenshotSha256": "fa84bd87c6b39ec1243b86bb6861438d37952e963f360f1d822cf9c3ea025e3b",
+      "hierarchySha256": "8971d1013b1dcc76e4725ae4609b623dcf362cc0c99ca03c9ab5ff597fb4275f",
+      "artifactSha256": "57b8be74b7a7fa482baca0c6ea8a3e154a95efe0cd49b9a0b797adfb209caa29",
+      "screenshotCapturedAt": "2026-10-16T12:46:46.767Z"
+    },
+    {
+      "id": "nr03-018-font-cancel-reenter",
+      "description": "D preview canceled Follow System remains selected",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-018-font-cancel-reenter/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-018-font-cancel-reenter/screen.png",
+      "screenshotSha256": "cef2b979d42fdae374a4705e175a3489f3f41f31befb657138819dc551494e11",
+      "hierarchySha256": "7ce0d0e41cb9a2029afaa64b8c773cb24e519934eb177f417dfb887ca3197e44",
+      "artifactSha256": "57b8be74b7a7fa482baca0c6ea8a3e154a95efe0cd49b9a0b797adfb209caa29",
+      "screenshotCapturedAt": "2026-10-16T12:46:59.380Z"
+    },
+    {
+      "id": "nr03-019-keyboard-final",
+      "description": "D final keyboard composer above IME",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-019-keyboard-final/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-019-keyboard-final/screen.png",
+      "screenshotSha256": "37e75af4fa7e4bfb1d406dd31b1565c04ca5a77bf1a184e6cf69265c068778b2",
+      "hierarchySha256": "a955fbad9480c373cd8c40fca8282572427ad3b072d322ee1c1345845db2e858",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:49:02.074Z"
+    },
+    {
+      "id": "nr03-020-capacity-final",
+      "description": "D final capacity exact-content pair",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-020-capacity-final/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-020-capacity-final/screen.png",
+      "screenshotSha256": "cc9a5e5edd69957566eb1cfb97dcbfd3f5566b70a7d69989d78505aba876ec5b",
+      "hierarchySha256": "58e3b10964aaed000988e0e5f3e197b47d1f3eaf7d2f82cd5409ac62fbc8cedf",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:49:13.833Z"
+    },
+    {
+      "id": "nr03-021-appearance-final",
+      "description": "D final Appearance same Follow System values",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-021-appearance-final/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-021-appearance-final/screen.png",
+      "screenshotSha256": "e8269e793dbf0cc2266297230807cd88580279fc9703379945f418ccb413fe81",
+      "hierarchySha256": "42952be4950e525f61260153a896fd00e43154c0affe966fc092d4f6cf1aff33",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:49:26.420Z"
+    },
+    {
+      "id": "nr03-022-font-preview-final",
+      "description": "D final font preview Save label single line",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-022-font-preview-final/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-022-font-preview-final/screen.png",
+      "screenshotSha256": "02a7f67bd3ed51d655a6cf7f47877557bdd32410d641194a43abc62d371b6b66",
+      "hierarchySha256": "8971d1013b1dcc76e4725ae4609b623dcf362cc0c99ca03c9ab5ff597fb4275f",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:49:42.118Z"
+    },
+    {
+      "id": "nr03-023-font-abandoned-final",
+      "description": "D final reentry proves preview abandoned",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-023-font-abandoned-final/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-023-font-abandoned-final/screen.png",
+      "screenshotSha256": "f7034faef672653d9d037e9904ae718a3c936b298825df2e8c7573d2acdda522",
+      "hierarchySha256": "7ce0d0e41cb9a2029afaa64b8c773cb24e519934eb177f417dfb887ca3197e44",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:49:54.853Z"
+    },
+    {
+      "id": "nr03-024-font-saved-home",
+      "description": "D font Save applies and returns chat home",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-024-font-saved-home/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-024-font-saved-home/screen.png",
+      "screenshotSha256": "7f67a07452a87aa4c24b459b9e405854ab97fade9b0587f81cc2fbb1e28e2c42",
+      "hierarchySha256": "4bb38ac965ac9e5e1c92e3681bc0d954a3e83f0e0ec70558e163e74a7de3ecd9",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:50:11.418Z"
+    },
+    {
+      "id": "nr03-025-font-applied-summary",
+      "description": "D applied Extra Large summary after Save",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-025-font-applied-summary/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-025-font-applied-summary/screen.png",
+      "screenshotSha256": "f626716528343a31ed94d6adadb15d7be5bbf749c7724b073cc71b5ad0862806",
+      "hierarchySha256": "cea6c7cb5c4b351e02fffc06a887db3b73be71bc9fa7d26da0e1708284ec0987",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:50:58.061Z"
+    },
+    {
+      "id": "nr03-026-theme-dark",
+      "description": "D theme changes immediately",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-026-theme-dark/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-026-theme-dark/screen.png",
+      "screenshotSha256": "edaac8bd4ffecd3b18ffd75de4311904c6c7e70743c288282ca55440d63f3ff0",
+      "hierarchySha256": "61bbe1bf2046a6bd6ec43d8b7b3956e929bb30597789e2499c5073382264804e",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:51:13.747Z"
+    },
+    {
+      "id": "nr03-027-dark-summary",
+      "description": "D Dark mode current value after Back",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-027-dark-summary/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-027-dark-summary/screen.png",
+      "screenshotSha256": "7a90bb2b7c071cad769e9b44ccad2e98e805d24c19d6e616851179edaf6c1474",
+      "hierarchySha256": "884c81dbed2372c436d871d08e17fa43c1a8c4e354e131840d190fe41cb4a572",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:51:20.193Z"
+    },
+    {
+      "id": "nr03-028-chat-draft-navigation",
+      "description": "D draft retained after Appearance return",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-028-chat-draft-navigation/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-028-chat-draft-navigation/screen.png",
+      "screenshotSha256": "6fe48319af53d8dba38ec3329248bf04d431a33e0fae74ab9489742a099bb2e3",
+      "hierarchySha256": "48d498df29e499ec76331a5be2b7c34c3ab0f5fd74ad13bcc2ea64d6b130583e",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:51:56.138Z"
+    },
+    {
+      "id": "nr03-029-chat-draft-process",
+      "description": "D draft retained across stop and launch without scene",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-029-chat-draft-process/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-029-chat-draft-process/screen.png",
+      "screenshotSha256": "cfe78d4ec83f064065a39a0cac2bc6be7ba2df24bcd44ea414234088b3e322a2",
+      "hierarchySha256": "48d498df29e499ec76331a5be2b7c34c3ab0f5fd74ad13bcc2ea64d6b130583e",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:52:04.766Z"
+    },
+    {
+      "id": "nr03-030-local-submit",
+      "description": "D final actual local Send completion OK",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-030-local-submit/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-030-local-submit/screen.png",
+      "screenshotSha256": "127e716f5e6149bb45150ac53a588d1dbb3f47f05b585d2c178e126c72311865",
+      "hierarchySha256": "5f833c2ed026c0422d1559a8efcf5e9d40c7c130351821395f9ab326b15bc9cd",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:52:50.918Z"
+    },
+    {
+      "id": "nr03-031-real-stop-late-final",
+      "description": "D final actual Retry Stop stays stopped after callback deadline",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-031-real-stop-late-final/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-031-real-stop-late-final/screen.png",
+      "screenshotSha256": "88d1568189f0948e57cded000ed901281d44f74fab5625bde568656e24164908",
+      "hierarchySha256": "67ada730b322cce98123b6caa5139d387532886f7273e68192175918c5ed73ce",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:53:10.405Z"
+    },
+    {
+      "id": "nr03-032-held-busy",
+      "description": "D held generation visible Stop output",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-032-held-busy/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-032-held-busy/screen.png",
+      "screenshotSha256": "e952a11cb7f13bd723e1c34027a14634c8f417599e1efc7337fd3191c2448786",
+      "hierarchySha256": "c3a8deafd9d16ea23a5686b2fe425ff3212e61f0807a410a8afc7f048704b4c4",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:53:17.730Z"
+    },
+    {
+      "id": "nr03-033-held-stop",
+      "description": "D held generation stop result",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-033-held-stop/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-033-held-stop/screen.png",
+      "screenshotSha256": "a660cd8edbbe05a68219f1e14cd00678143e6d896ab4eb4fb911b6c3044e734e",
+      "hierarchySha256": "e3f1aa092dee2d205aa1ed63f0b862d4480911eeee0dfe6c2012d62ed8e9d13e",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:53:27.002Z"
+    },
+    {
+      "id": "nr03-034-chat-error",
+      "description": "D failed message retained with error and Retry",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-034-chat-error/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-034-chat-error/screen.png",
+      "screenshotSha256": "17e5fe3f20a252eb9c2f42278c157e0ef7e260a45c44848cc05e80991061e2ef",
+      "hierarchySha256": "d70e2300f99665d56e0072befa39fdef5357424546e11b10a6500768334d8953",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:53:34.428Z"
+    },
+    {
+      "id": "nr03-035-chat-retry-recovered",
+      "description": "D Retry local failure recovers OK",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-035-chat-retry-recovered/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-035-chat-retry-recovered/screen.png",
+      "screenshotSha256": "10a2c6596038ea25136a8842ccf333ce63a4b75e9f5978cc5ccec9ed947735cd",
+      "hierarchySha256": "24367950ec45028524290ccd7b9b56233523af00f7e85d65f970da99602c57c0",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:53:50.343Z"
+    },
+    {
+      "id": "nr03-036-complete-source-content",
+      "description": "D same Reply only OK and OK content as historical A",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-036-complete-source-content/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-036-complete-source-content/screen.png",
+      "screenshotSha256": "ef65b4ef05be6f02ac921c9636ea8f0581822a19d53d338a8cde9068e0f1ec28",
+      "hierarchySha256": "713eee4bebed436c3808f6cd16f4c9190329e9b196afe49f50dc4e1a752484a0",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:53:58.105Z"
+    },
+    {
+      "id": "nr03-037-delete-dialog",
+      "description": "D same deletion title and two actions",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-037-delete-dialog/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-037-delete-dialog/screen.png",
+      "screenshotSha256": "dff18035b8cb014ce07d8399407ceb37afaaef945a5f5f1c49322329cd246f80",
+      "hierarchySha256": "fa137cd0bff152ad0f0cdca04f5efd01cb4f7399a5c0b40fa336ea3e14270a43",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:54:42.545Z"
+    },
+    {
+      "id": "nr03-038-delete-cancel",
+      "description": "D Cancel preserves completed reference chat",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-038-delete-cancel/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-038-delete-cancel/screen.png",
+      "screenshotSha256": "0eeefcba25c5b47aa0eb4544c14123d3084211d36ec1a6716576191520ee9b47",
+      "hierarchySha256": "713eee4bebed436c3808f6cd16f4c9190329e9b196afe49f50dc4e1a752484a0",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:54:51.512Z"
+    },
+    {
+      "id": "nr03-039-delete-back",
+      "description": "D Back dismisses only confirmation",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-039-delete-back/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-039-delete-back/screen.png",
+      "screenshotSha256": "0eeefcba25c5b47aa0eb4544c14123d3084211d36ec1a6716576191520ee9b47",
+      "hierarchySha256": "713eee4bebed436c3808f6cd16f4c9190329e9b196afe49f50dc4e1a752484a0",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:55:00.241Z"
+    },
+    {
+      "id": "nr03-040-delete-outside",
+      "description": "D outside tap dismisses only confirmation",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-040-delete-outside/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-040-delete-outside/screen.png",
+      "screenshotSha256": "f157cfc70476a6a853d1536c64d7b2277b02f4a9ba03061ab7d71c1778207919",
+      "hierarchySha256": "713eee4bebed436c3808f6cd16f4c9190329e9b196afe49f50dc4e1a752484a0",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:55:08.821Z"
+    },
+    {
+      "id": "nr03-041-delete-confirm",
+      "description": "D positive confirmation clears own reference chat",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-041-delete-confirm/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-041-delete-confirm/screen.png",
+      "screenshotSha256": "4baebb0af3274b64ba857674c7d07e59d7c52c4d32e029792176db310414b85b",
+      "hierarchySha256": "138fa68d8f1cf9887ac3544bfc0ebc377b657c5515e2414d87bd57d19d9b7960",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:55:20.020Z"
+    },
+    {
+      "id": "nr03-042-interrupted-chat",
+      "description": "D interrupted busy process reload policy is stopped",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-042-interrupted-chat/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-042-interrupted-chat/screen.png",
+      "screenshotSha256": "132068e13024eda9b6b3030c8a109234a82dfade8cb20c2d72319f02b819563f",
+      "hierarchySha256": "67ada730b322cce98123b6caa5139d387532886f7273e68192175918c5ed73ce",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:55:34.878Z"
+    },
+    {
+      "id": "nr03-043-notes-empty",
+      "description": "D neutral Fieldnotes empty guidance",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-043-notes-empty/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-043-notes-empty/screen.png",
+      "screenshotSha256": "2198b651d57bc01ead70f8b8ff4f0193fc9b5a5d0205e011ff728b3fd7482db4",
+      "hierarchySha256": "17e839e455f921d47481dd676547976d98f543750ae7b554e91a7c5ffebe8f8b",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:56:26.073Z"
+    },
+    {
+      "id": "nr03-044-note-validation",
+      "description": "D blank title field validation",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-044-note-validation/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-044-note-validation/screen.png",
+      "screenshotSha256": "2bcb20990af87a8e085a612eb484517108de16c690c2caa8734d10e5752b5507",
+      "hierarchySha256": "aa4e7ae2dd6b87299b83b3106e659f4d159512cba713e5e852d76ab046306120",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:56:41.897Z"
+    },
+    {
+      "id": "nr03-045-note-back-library",
+      "description": "D Back from blank note returns library",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-045-note-back-library/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-045-note-back-library/screen.png",
+      "screenshotSha256": "2198b651d57bc01ead70f8b8ff4f0193fc9b5a5d0205e011ff728b3fd7482db4",
+      "hierarchySha256": "17e839e455f921d47481dd676547976d98f543750ae7b554e91a7c5ffebe8f8b",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:56:49.856Z"
+    },
+    {
+      "id": "nr03-046-note-draft-navigation",
+      "description": "D note draft survives library and New reentry",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-046-note-draft-navigation/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-046-note-draft-navigation/screen.png",
+      "screenshotSha256": "95609132d7c3fa66118c3425eaaf337d577abdd3762058bfdced8e33070a0c32",
+      "hierarchySha256": "98f52db6d7ba3550dafede2c0ffd4db3f8754365e8fdee0e30180650250c1b86",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:57:07.613Z"
+    },
+    {
+      "id": "nr03-047-note-draft-process",
+      "description": "D note draft survives process restart without scene",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-047-note-draft-process/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-047-note-draft-process/screen.png",
+      "screenshotSha256": "95609132d7c3fa66118c3425eaaf337d577abdd3762058bfdced8e33070a0c32",
+      "hierarchySha256": "98f52db6d7ba3550dafede2c0ffd4db3f8754365e8fdee0e30180650250c1b86",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:57:32.849Z"
+    },
+    {
+      "id": "nr03-048-note-saved",
+      "description": "D real local save commits title in Fieldnotes library",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-048-note-saved/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-048-note-saved/screen.png",
+      "screenshotSha256": "db14dd363267963196c9dce7972960ec72c08f2d9dc7b1f07a5cbc607fbbc017",
+      "hierarchySha256": "564629facf3bb9fbe3fc05a84bd540a0cdccd8f7e6d73bc11a696404c560355e",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:57:56.489Z"
+    },
+    {
+      "id": "nr03-049-note-saved-process",
+      "description": "D saved note survives process restart without scene",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-049-note-saved-process/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-049-note-saved-process/screen.png",
+      "screenshotSha256": "c29a3dcac10262487c341f79e917389067b4aa0a826597f0ab1d9682f5387eb3",
+      "hierarchySha256": "564629facf3bb9fbe3fc05a84bd540a0cdccd8f7e6d73bc11a696404c560355e",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:58:17.111Z"
+    },
+    {
+      "id": "nr03-050-note-held-busy",
+      "description": "D held saving and Cancel saving",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-050-note-held-busy/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-050-note-held-busy/screen.png",
+      "screenshotSha256": "fd0634ed6d8c7bd8eb979fd1b610151ec6b2289d17c891b8cf0de3eebba38d6d",
+      "hierarchySha256": "0fff4c8f6dfb64fdb2749d9743fbc1d7dd382e542fe3c428e97db10aa1989d4b",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:59:23.392Z"
+    },
+    {
+      "id": "nr03-051-note-held-cancel",
+      "description": "D held saving cancellation retains title",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-051-note-held-cancel/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-051-note-held-cancel/screen.png",
+      "screenshotSha256": "6c51a3864bc1565a250ca962a7c4240f57b7ccccf41f28be19cd510f0663a30b",
+      "hierarchySha256": "98f52db6d7ba3550dafede2c0ffd4db3f8754365e8fdee0e30180650250c1b86",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:59:35.096Z"
+    },
+    {
+      "id": "nr03-052-note-cancel-existing",
+      "description": "D cancellation keeps prior Research reading list note",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-052-note-cancel-existing/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-052-note-cancel-existing/screen.png",
+      "screenshotSha256": "5ef9b9cfabc06694709896f31a80959da189bb529876ccd5c1facb292ee4ff2d",
+      "hierarchySha256": "0bdffcd37183cc3de9c8d58a56836e10e510c7af8e19dcee8172445bd20ae1db",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T12:59:46.667Z"
+    },
+    {
+      "id": "nr03-053-note-real-cancel-late",
+      "description": "D actual 6-second save canceled retains draft after deadline",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-053-note-real-cancel-late/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-053-note-real-cancel-late/screen.png",
+      "screenshotSha256": "53ff685b6ea68d9648fc743b3dadbd2eaf16305669bb9253ba8afbd693f8569d",
+      "hierarchySha256": "98f52db6d7ba3550dafede2c0ffd4db3f8754365e8fdee0e30180650250c1b86",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T13:00:12.333Z"
+    },
+    {
+      "id": "nr03-054-note-not-committed",
+      "description": "D late callback did not replace prior saved Research reading list",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-054-note-not-committed/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-054-note-not-committed/screen.png",
+      "screenshotSha256": "b9c7c3f43990aa210ef7f995e1a75817f3a08c51c2fcaa68964b63c080d30ff6",
+      "hierarchySha256": "0bdffcd37183cc3de9c8d58a56836e10e510c7af8e19dcee8172445bd20ae1db",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T13:00:27.003Z"
+    },
+    {
+      "id": "nr03-055-note-cancel-reenter",
+      "description": "D canceled draft remains on New reentry",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-055-note-cancel-reenter/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-055-note-cancel-reenter/screen.png",
+      "screenshotSha256": "42a7885b5acceacc6152648c9cca8172214dacf8851d870eb5440f04b90b32f3",
+      "hierarchySha256": "98f52db6d7ba3550dafede2c0ffd4db3f8754365e8fdee0e30180650250c1b86",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T13:00:38.339Z"
+    },
+    {
+      "id": "nr03-056-note-error",
+      "description": "D failed save retains input and explicit Retry saving",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-056-note-error/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-056-note-error/screen.png",
+      "screenshotSha256": "18a3f462a0fc18849b6f5a3ca981d352ac49265e1c9e87112a142973fa535e51",
+      "hierarchySha256": "4f84303bd579621abf497be404bfdb587fecf95f34c870aaea3177963d2152fd",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T13:00:47.681Z"
+    },
+    {
+      "id": "nr03-057-note-retry-saved",
+      "description": "D Retry saving recovers and commits retained note",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-057-note-retry-saved/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-057-note-retry-saved/screen.png",
+      "screenshotSha256": "6e27b71df02edc74362581652c1d43ed2c100b76b7828e42ee26424b1da82dae",
+      "hierarchySha256": "564629facf3bb9fbe3fc05a84bd540a0cdccd8f7e6d73bc11a696404c560355e",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T13:01:11.395Z"
+    },
+    {
+      "id": "nr03-058-note-delete-dialog",
+      "description": "D note destructive confirmation",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-058-note-delete-dialog/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-058-note-delete-dialog/screen.png",
+      "screenshotSha256": "da45ca4c64f3af614824bf19cf93a8924c866eeefc5750be75f78409494ac1d5",
+      "hierarchySha256": "5372beaefb48de632e87c673120eea5d2799bbce46d494f5bd96a964eda27b5b",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T13:02:36.429Z"
+    },
+    {
+      "id": "nr03-059-note-delete-cancel",
+      "description": "D deletion Cancel preserves saved note",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-059-note-delete-cancel/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-059-note-delete-cancel/screen.png",
+      "screenshotSha256": "9e3a6e575181886f8f9f3f1a4f844a8d2e84658f872151f0ca3dbe01d504e19b",
+      "hierarchySha256": "564629facf3bb9fbe3fc05a84bd540a0cdccd8f7e6d73bc11a696404c560355e",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T13:02:48.584Z"
+    },
+    {
+      "id": "nr03-060-note-deleted",
+      "description": "D confirmed own note deletion empty guidance",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-060-note-deleted/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-060-note-deleted/screen.png",
+      "screenshotSha256": "3699d14227a59ec690e4917815c4e865c751e189ac77ee59dce8336517c7eed0",
+      "hierarchySha256": "17e839e455f921d47481dd676547976d98f543750ae7b554e91a7c5ffebe8f8b",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T13:03:04.980Z"
+    },
+    {
+      "id": "nr03-061-note-interrupted-save",
+      "description": "D interrupted saving reloads error with draft safe",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-061-note-interrupted-save/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-061-note-interrupted-save/screen.png",
+      "screenshotSha256": "30cd817bebdce05abe4047bbf82480a2f4cec516a80bd04198b67b9f7a1d1b51",
+      "hierarchySha256": "4f84303bd579621abf497be404bfdb587fecf95f34c870aaea3177963d2152fd",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T13:03:36.443Z"
+    },
+    {
+      "id": "nr03-062-note-interrupted-retry",
+      "description": "D interrupted saving can explicitly retry",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-062-note-interrupted-retry/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-062-note-interrupted-retry/screen.png",
+      "screenshotSha256": "ebb480f5166f2179eb946b52b5e04c2d1f1ac9e69f2447b022824294219f00a7",
+      "hierarchySha256": "564629facf3bb9fbe3fc05a84bd540a0cdccd8f7e6d73bc11a696404c560355e",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T13:03:59.135Z"
+    },
+    {
+      "id": "nr03-063-note-validation-message",
+      "description": "D native title error explanation with focused field",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-063-note-validation-message/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-063-note-validation-message/screen.png",
+      "screenshotSha256": "42c7e3a244d387d7767cee44a7729452cfc0e854b069cfa19a0008068cef6941",
+      "hierarchySha256": "5e44e398aa6c7f7f19b501953c6f05ed71f4f274e2c0115162367548b55aa867",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T13:04:21.657Z"
+    },
+    {
+      "id": "nr03-064-capacity-explanation-final",
+      "description": "D final Upgrade local explanation",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-064-capacity-explanation-final/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-064-capacity-explanation-final/screen.png",
+      "screenshotSha256": "4fe94f34d972d72e93923d3e362e69c93840fb207343a5479e619363ac5d43aa",
+      "hierarchySha256": "6a555d1fabded6a53326fb2f8498577e92d4e578ca85ae6253aaffc867288381",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T13:04:37.559Z"
+    },
+    {
+      "id": "nr03-065-capacity-retry-final",
+      "description": "D final capacity retry repeats local failure",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-065-capacity-retry-final/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-065-capacity-retry-final/screen.png",
+      "screenshotSha256": "1d542bdb1a7c373c783f092889a522d905a34169068f74b2190a5f45b388e3fd",
+      "hierarchySha256": "58e3b10964aaed000988e0e5f3e197b47d1f3eaf7d2f82cd5409ac62fbc8cedf",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T13:04:57.499Z"
+    },
+    {
+      "id": "nr03-066-model-options",
+      "description": "D model options current selection and retained draft behind",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-066-model-options/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-066-model-options/screen.png",
+      "screenshotSha256": "daf9812ff42e63d9bf41261bac36b4a4da6765d5f5b6fe8ba9dfeec6a7ede39f",
+      "hierarchySha256": "80f50acd6d29eb8aa30670e6c59a6ae9b30191f4a4bf2200d7d855095da5c6ba",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T13:06:02.400Z"
+    },
+    {
+      "id": "nr03-067-model-selected-draft",
+      "description": "D model selection preserves draft",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-067-model-selected-draft/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-067-model-selected-draft/screen.png",
+      "screenshotSha256": "37785b852a00044fe8a461b53fa6ac7d96458adf882e6a19a8dedff30df4d629",
+      "hierarchySha256": "48bf7cb65ad46479c22fb30a2079796ecda23805cd366e24f89530dfcb67a588",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T13:06:13.830Z"
+    },
+    {
+      "id": "nr03-068-effort-options",
+      "description": "D independent Low High effort sheet",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-068-effort-options/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-068-effort-options/screen.png",
+      "screenshotSha256": "580fecd111dc478b2ac327630f2e44607baf4e4a2f98752b495e2aa5a019a497",
+      "hierarchySha256": "3933465d06a7c0cf116dea84cfc5d6ce0dfda65ebe370b2da7262bc32c3499a2",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T13:06:30.886Z"
+    },
+    {
+      "id": "nr03-069-effort-summary",
+      "description": "D effort Low retained in menu",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-069-effort-summary/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-069-effort-summary/screen.png",
+      "screenshotSha256": "fcd1f6d04602a7e20970687c594f9a8c4736fb8771061991c8253f0ab517561d",
+      "hierarchySha256": "7b213b0cbb42b17edde49c5e838f26811b039544512301ac96b68242112669f6",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T13:06:47.533Z"
+    },
+    {
+      "id": "nr03-070-restored-preferences",
+      "description": "D restored Follow System theme and font English",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-070-restored-preferences/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-070-restored-preferences/screen.png",
+      "screenshotSha256": "032de1fa3a53d40f91ac15d62a17c31ee54fc8abc67dd6155c69515398d1adc1",
+      "hierarchySha256": "42952be4950e525f61260153a896fd00e43154c0affe966fc092d4f6cf1aff33",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T13:07:01.490Z"
+    },
+    {
+      "id": "nr03-071-restored-empty",
+      "description": "D restored empty chat Instant High before stop",
+      "classification": "D",
+      "capture": "evidence/reference/run03-20261016/scenes/nr03-071-restored-empty/capture.json",
+      "screenshot": "evidence/reference/run03-20261016/scenes/nr03-071-restored-empty/screen.png",
+      "screenshotSha256": "a7912a14baf9d304f7a4ede8d0fae6c202427cd3aeda61c6e243a630d5c72ad4",
+      "hierarchySha256": "138fa68d8f1cf9887ac3544bfc0ebc377b657c5515e2414d87bd57d19d9b7960",
+      "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+      "screenshotCapturedAt": "2026-10-16T13:07:11.157Z"
+    }
+  ],
+  "artifactSha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+  "lastDeviceGuard": {
+    "checkedAt": "2026-10-16T13:07:15.091Z",
+    "serial": "emulator-5596",
+    "avd": "rea_kimi_ui_20261015",
+    "boot": "1"
+  },
+  "updatedAt": "2026-10-16T13:07:15.745Z",
+  "installedArtifact": {
+    "package": "org.research.kimistyle",
+    "sha256": "057196b83df26f4ae47da0181d1af7c89fda2423f92b9bfb147c7575837ca140",
+    "checkedAt": "2026-10-16T12:48:46.204Z",
+    "matchesLocalArtifact": true
+  }
+}

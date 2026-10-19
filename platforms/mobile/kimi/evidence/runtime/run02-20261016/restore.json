@@ -1,0 +1,95 @@
+{
+  "recordedAt": "2026-10-16T04:13:40.577Z",
+  "avd": "rea_kimi_ui_20261015",
+  "serial": "emulator-5596",
+  "originalApkModified": false,
+  "appearance": {
+    "theme": "Follow System",
+    "fontSize": "Follow System",
+    "language": "English",
+    "evidence": {
+      "path": "evidence/runtime/run02-20261016/scenes/r02-46-restored-appearance/screen.png",
+      "sha256": "cfb54b9129ae7d2c19a702e206b017adaea5f931b93090aec6a75b7dbb50abd3",
+      "width": 1080,
+      "height": 2400
+    }
+  },
+  "network": {
+    "baseline": {
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "recordedAt": "2026-10-16T03:53:51.906Z",
+      "wifi": "1",
+      "data": "1"
+    },
+    "final": {
+      "mobileData": "1",
+      "checkedAt": "2026-10-16T04:09:46.3079050Z",
+      "avd": "rea_kimi_ui_20261015",
+      "night": "Night mode: no",
+      "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+      "connectivitySummary": [
+        "Active default network: 103"
+      ],
+      "fontScale": "1.0",
+      "serial": "emulator-5596",
+      "wifi": "1"
+    },
+    "settingsMatch": true,
+    "activeNetworkVerified": true
+  },
+  "account": {
+    "normalLoginUserAssisted": true,
+    "credentialsRecorded": false,
+    "retainedOnlyInLocalAvd": true,
+    "loggedOut": false
+  },
+  "permissions": {
+    "microphone": "Requested and refused once; no recording grant or audio test",
+    "notification": "Earlier refusal unchanged"
+  },
+  "retained": [
+    "User-assisted normal login in dedicated local AVD",
+    "Self-created neutral test conversations and artificial TXT fixture",
+    "Existing tools and source APK"
+  ],
+  "notPerformed": [
+    "Existing private conversation opening",
+    "Destructive Delete confirmation",
+    "External sharing or publication",
+    "Payment/subscription",
+    "Host clipboard access"
+  ],
+  "lifecycle": {
+    "stopAction": {
+      "operation": "stop",
+      "arguments": [
+        "shell",
+        "am",
+        "force-stop",
+        "com.moonshot.kimichat"
+      ],
+      "description": "Run02 complete; retain user-assisted login only in dedicated local AVD",
+      "startedAt": "2026-10-16T04:10:52.132Z",
+      "completedAt": "2026-10-16T04:10:52.333Z",
+      "stdout": ""
+    },
+    "exitAction": {
+      "operation": "exit-emulator",
+      "arguments": [
+        "emu",
+        "kill"
+      ],
+      "description": "Close only the verified dedicated Kimi AVD; do not stop shared adb server",
+      "startedAt": "2026-10-16T04:10:52.711Z",
+      "completedAt": "2026-10-16T04:10:52.972Z",
+      "stdout": "OK: killing emulator, bye bye\r\r\nOK\r\r\n"
+    },
+    "shutdownVerification": "shutdown-verification.json"
+  },
+  "localOnlyEvidence": [
+    "r02-18-post-login-guide",
+    "r02-19-prompt-ready"
+  ],
+  "sourceSharing": "docs/sharing-scope.md"
+}

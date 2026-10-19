@@ -1,0 +1,1656 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "LOCAL-RUN02-COPY-001",
+  "createdAtUtc": "2026-10-16T03:02:43.322Z",
+  "origin": "current",
+  "sourceApkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "taskScope": "Run02 static questions for model selection, ordinary input draft, font save/cancel, voice/microphone, offline failure and login gates",
+  "runtimeSessionDirectoryForFutureCrosscheck": "evidence/runtime/run02-20261016",
+  "method": "Read existing default/zh CVR derivations and saved DEX class/string candidates. Verify selected CVR source files/lines/hashes and UTF-8 base64 roundtrip. No APK reparse, decompilation, device/GUI control or installation.",
+  "command": "node tools/build-run02-copy-candidates.mjs",
+  "boundary": "B labels and identifiers are static declarations. Topic assignments and questions are C research candidates. All runtime occurrence conditions and bindings remain unknown in this file; later A evidence must be linked explicitly.",
+  "candidateCount": 27,
+  "topicCounts": {
+    "model": 4,
+    "draft": 3,
+    "font": 6,
+    "voice": 6,
+    "offline": 4,
+    "login": 4
+  },
+  "candidates": [
+    {
+      "id": "RUN02-COPY-01",
+      "topic": "model",
+      "key": "model_select_previous_model",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "候选模型选择层是否提供过往模型；未登录与离线时仍否可打开和关闭？",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "model_select_previous_model",
+          "text": "Previous models",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 943,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|model_select_previous_model|UHJldmlvdXMgbW9kZWxz",
+          "sourceLineSha256Utf8": "e7512cd621ee5b4eaae4b1853c92d60b910ede61fdfe0e628e2338d38172ea1f",
+          "decodedTextSha256Utf8": "de884cb94ef8e2f241864f15171671a429236c91809161a6c187aa27e755780f",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "model_select_previous_model",
+          "text": "过往模型",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 943,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|model_select_previous_model|6L+H5b6A5qih5Z6L",
+          "sourceLineSha256Utf8": "9e7f7d19e5c69f98b202887d5dece03dc0ae568da28781039680a73a272ad4c2",
+          "decodedTextSha256Utf8": "6e8d3a657fbf9dd40869ca4200ee3e577b8d0b3b6816c4c30c19c7d9ca66d3f5",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-02",
+      "topic": "model",
+      "key": "model_select_thinking_level",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "是否有思考等级控件；打开/重选/返回之后的值由谁保存？",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "model_select_thinking_level",
+          "text": "Thinking effort",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 944,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|model_select_thinking_level|VGhpbmtpbmcgZWZmb3J0",
+          "sourceLineSha256Utf8": "316f4ba6e561e5103663985d0cd851216c90178fed105e2362055b8d6093e522",
+          "decodedTextSha256Utf8": "264c28cbf01ce9fa107dab0803dda90e796217e8a6ee6e3fa063f354f003f90d",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [
+            {
+              "key": "remote_thinking_level_title",
+              "sourceLine": 1798
+            }
+          ],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "model_select_thinking_level",
+          "text": "思考等级",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 944,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|model_select_thinking_level|5oCd6ICD562J57qn",
+          "sourceLineSha256Utf8": "a57628d58d62f1b166070d1dc12c0aedaf08bab3d9a3dc0137261aaaee22b2f5",
+          "decodedTextSha256Utf8": "a431bcd0ae8925234f581ee0056bbb5a64faeb2269c62d4b92fb19dc467a57d1",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [
+            {
+              "key": "remote_thinking_level_title",
+              "sourceLine": 1798
+            }
+          ],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-03",
+      "topic": "model",
+      "key": "model_select_new_chat",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "切换是否只影响当前会话，或要求新会话；输入草稿是否保留？",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "model_select_new_chat",
+          "text": "New chat",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 942,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|model_select_new_chat|TmV3IGNoYXQ=",
+          "sourceLineSha256Utf8": "10dfa41b69417d27853eb8ca871ba702c751fc015159642bd3f6eed010f44349",
+          "decodedTextSha256Utf8": "db18382a249e0206bc28514931d423b77d55dce180c1eb8e4bf35f861c9a50ec",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [
+            {
+              "key": "create_new_chat",
+              "sourceLine": 466
+            }
+          ],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "model_select_new_chat",
+          "text": "新会话",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 942,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|model_select_new_chat|5paw5Lya6K+d",
+          "sourceLineSha256Utf8": "a9987e16bb5edab64e8d5e77f2285e90111163ddb8dfcf8ebb4979cef60bdfba",
+          "decodedTextSha256Utf8": "c57c30bc05f744ab3cb81c74183f0408deb55a002422c41f30fbe3ae3d87edaa",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-04",
+      "topic": "model",
+      "key": "queue_model_switch_unavailable",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "什么状态下切换被拦截；中文指定会话进行中，英文只说不可用，实际前置条件待测。",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "queue_model_switch_unavailable",
+          "text": "Model switching unavailable",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1497,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|queue_model_switch_unavailable|TW9kZWwgc3dpdGNoaW5nIHVuYXZhaWxhYmxl",
+          "sourceLineSha256Utf8": "e027d32ca8bea17a2ffcb37cf1efcf900f1a5b29072d3eb1eeb61256f12a18c8",
+          "decodedTextSha256Utf8": "001b6e2f4cea8a4fac7c80acdf193dfc97ff984ffe97b5c8f3cdf1a7ee4f13df",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "queue_model_switch_unavailable",
+          "text": "会话进行中不支持切换模型",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1497,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|queue_model_switch_unavailable|5Lya6K+d6L+b6KGM5Lit5LiN5pSv5oyB5YiH5o2i5qih5Z6L",
+          "sourceLineSha256Utf8": "dac28bbbbe012576f8f26bcafc9f3b2d3c6efe4f25f651e85528faf4853eb45b",
+          "decodedTextSha256Utf8": "82cd0d95c6e834b2bef4f6557e22323d32ea6fb9b2ac3a535b177a8ac87e5968",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-05",
+      "topic": "draft",
+      "key": "chat_text_field_hint",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "以不含隐私的短文本填入普通输入框，开关抽屉/设置/模型层和返回后检查保留；此资源只证明占位文字。",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "chat_text_field_hint",
+          "text": "Ask anything…",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 292,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|chat_text_field_hint|QXNrIGFueXRoaW5n4oCm",
+          "sourceLineSha256Utf8": "43d727464fa962ee10d9f8cc98fe4450655cfc90a289f9203f2052f9844be23f",
+          "decodedTextSha256Utf8": "de781187cbfb16ef20d840ddc6cb4bb571c73aa51aecf0cf3f72344c5f833ca5",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "chat_text_field_hint",
+          "text": "尽管问…",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 292,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|chat_text_field_hint|5bC9566h6Zeu4oCm",
+          "sourceLineSha256Utf8": "5f2dc317f6882648cf911c65d509fdf4c9c7623e54c78ed51da2ba3754f80335",
+          "decodedTextSha256Utf8": "55fe71dcd0db45d5783778b3840bf9f8d47ae342088772207f6230fae17ccd2a",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-06",
+      "topic": "draft",
+      "key": "create_new_chat",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "建立新会话入口与返回旧会话是否分别保留草稿；未发送文本不要误记为已发送消息。",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "create_new_chat",
+          "text": "New chat",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 466,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|create_new_chat|TmV3IGNoYXQ=",
+          "sourceLineSha256Utf8": "9f0c0d524321b5b9e5a269b7b964eb398287e6093c12bae492e95a2e14a55969",
+          "decodedTextSha256Utf8": "db18382a249e0206bc28514931d423b77d55dce180c1eb8e4bf35f861c9a50ec",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [
+            {
+              "key": "model_select_new_chat",
+              "sourceLine": 942
+            }
+          ],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "create_new_chat",
+          "text": "开启新会话",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 466,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|create_new_chat|5byA5ZCv5paw5Lya6K+d",
+          "sourceLineSha256Utf8": "21ab45d1ce0766cc8ed459bca8f81b5271bce17c715d73a4f350b120b5e2ad80",
+          "decodedTextSha256Utf8": "a0da8597ba75bbc6edfc97f27518b00ff662155cdce46136ff2cef9738c79067",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-07",
+      "topic": "draft",
+      "key": "already_at_new_chat",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "空白新会话再次点击新建是否提示；有草稿的新会话重复操作是否覆盖草稿？",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "already_at_new_chat",
+          "text": "You are already in a new chat",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 158,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|already_at_new_chat|WW91IGFyZSBhbHJlYWR5IGluIGEgbmV3IGNoYXQ=",
+          "sourceLineSha256Utf8": "6581102e9cd0539d1209e603e1be66bf47b5d1800448348af6000c1899322ef3",
+          "decodedTextSha256Utf8": "b788d0a07b3130a8e4943c7f54e9d19743b3c2fe6c673aa78f9b8bb449c4c874",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "already_at_new_chat",
+          "text": "当前已是新会话",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 158,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|already_at_new_chat|5b2T5YmN5bey5piv5paw5Lya6K+d",
+          "sourceLineSha256Utf8": "640ef5ea6af08dce37e22a7a6ac8d45cdd175ca9fbcfd428e57db53888ada6b4",
+          "decodedTextSha256Utf8": "46c49ccc79f84bfba897fd05ad255a57191f945dfc71bf6ac31254d0140c4af1",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-08",
+      "topic": "font",
+      "key": "font_setting",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "字体大小入口的实际标签、页面与导航层级是什么；与 setting_font_size_title 的相同英文避免单键归因。",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "font_setting",
+          "text": "Font size",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 644,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|font_setting|Rm9udCBzaXpl",
+          "sourceLineSha256Utf8": "37e44985d089f59bb3aa6847c3e247bf7366762838173f5f256da48a5e24d087",
+          "decodedTextSha256Utf8": "6d784d95c63833e60695476524e3bcf7b9cab90d6e405aa434e7511bf610ad3b",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [
+            {
+              "key": "setting_font_size_title",
+              "sourceLine": 1904
+            }
+          ],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "font_setting",
+          "text": "文字大小",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 644,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|font_setting|5paH5a2X5aSn5bCP",
+          "sourceLineSha256Utf8": "70f0082b5b2717b199490e0edac00569ae5618311910ad33e00469c95e4031d4",
+          "decodedTextSha256Utf8": "52826b6a046f60d14a8fb362025fa891fdf65c8c5094ea90a39beab358f182cb",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-09",
+      "topic": "font",
+      "key": "font_display_hint2",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "原文要求点击右上 Save；拖动后只返回/关闭，与明确保存相比是否影响聊天字号？",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "font_display_hint2",
+          "text": "Drag the slider below, or enable \"Follow System\" to set the font size for Kimi chats. Tap Save in the top-right corner when done",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 639,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|font_display_hint2|RHJhZyB0aGUgc2xpZGVyIGJlbG93LCBvciBlbmFibGUgIkZvbGxvdyBTeXN0ZW0iIHRvIHNldCB0aGUgZm9udCBzaXplIGZvciBLaW1pIGNoYXRzLiBUYXAgU2F2ZSBpbiB0aGUgdG9wLXJpZ2h0IGNvcm5lciB3aGVuIGRvbmU=",
+          "sourceLineSha256Utf8": "b9bf2d3a9c902843fc7cc2660f287d3b29fe6377458b196ffd15a106f546d315",
+          "decodedTextSha256Utf8": "001ed03712b5ca651786af0414aff29bd0753389182403617f90f4e0f6889bfd",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "font_display_hint2",
+          "text": "拖动下面的滑块，或者开启跟随系统设置，可设置 kimi 对话中的文字大小，选择后点击右上角保存。",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 639,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|font_display_hint2|5ouW5Yqo5LiL6Z2i55qE5ruR5Z2X77yM5oiW6ICF5byA5ZCv6Lef6ZqP57O757uf6K6+572u77yM5Y+v6K6+572uIGtpbWkg5a+56K+d5Lit55qE5paH5a2X5aSn5bCP77yM6YCJ5oup5ZCO54K55Ye75Y+z5LiK6KeS5L+d5a2Y44CC",
+          "sourceLineSha256Utf8": "b06e567227bf8a254cb9bd8b10785eefe8bb881eda667d89544828edff547679",
+          "decodedTextSha256Utf8": "5ff9c10e7223fdd0410275a3ce08f3e3cccaece84f50dc541575133431a1b238",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-10",
+      "topic": "font",
+      "key": "font_follow_system_switch_hint",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "跟随系统开关是否禁用滑块；系统字号为1.0时不能据外观相同判定设置无效。",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "font_follow_system_switch_hint",
+          "text": "When enabled, font size will follow the system settings",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 642,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|font_follow_system_switch_hint|V2hlbiBlbmFibGVkLCBmb250IHNpemUgd2lsbCBmb2xsb3cgdGhlIHN5c3RlbSBzZXR0aW5ncw==",
+          "sourceLineSha256Utf8": "2e7d7380ff798e0328ca9a5d866f9c98ff1868921efe77b0b53f48c4fed67cfe",
+          "decodedTextSha256Utf8": "476d70a030ebe9c36cf37a9361005ddd971930388999fbe3e819e47669d85ffc",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "font_follow_system_switch_hint",
+          "text": "开启后字体大小将跟随系统设置",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 642,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|font_follow_system_switch_hint|5byA5ZCv5ZCO5a2X5L2T5aSn5bCP5bCG6Lef6ZqP57O757uf6K6+572u",
+          "sourceLineSha256Utf8": "ef7fb290d850f5cca585e016f47a8d2bb93a55cd70a57c7e7288ade88bab1f7f",
+          "decodedTextSha256Utf8": "53589275a84b1cf2c019278f5335058870d299b4bdecd7bb6092c2f99a5ad81e",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-11",
+      "topic": "font",
+      "key": "save",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "明确保存后是否退出、提示、持久化；该英文有多个同文键，不能凭标签唯一绑定 save。",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "save",
+          "text": "Save",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1823,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|save|U2F2ZQ==",
+          "sourceLineSha256Utf8": "ace713cfda0e44f66351c2cc93591e1516d22d78f22d827d498fbbd1b9e27b5a",
+          "decodedTextSha256Utf8": "1509f561f2416598629b886ad7d3c05a7e221e4e0675c84bbff4ee6d9e03913d",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [
+            {
+              "key": "publish_save",
+              "sourceLine": 1448
+            },
+            {
+              "key": "text_save",
+              "sourceLine": 2147
+            }
+          ],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "save",
+          "text": "保存",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1823,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|save|5L+d5a2Y",
+          "sourceLineSha256Utf8": "41a9ddbc03f2896e6b3b841b9936fd56430e2dcb399c7a40db15d7d966fd30ee",
+          "decodedTextSha256Utf8": "a3030bf8f16dc63c6b277564c68f78a3be5abe5f2907c51826dee7184ff793fd",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-12",
+      "topic": "font",
+      "key": "cancel",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "若出现取消，仅在真实入口存在时测试；没有取消按钮时记录系统返回/导航返回，不假造取消控件。",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "cancel",
+          "text": "Cancel",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 245,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|cancel|Q2FuY2Vs",
+          "sourceLineSha256Utf8": "1ee5601e052b84409896e8355e7022685cb99f38d95c20eff0985f2bf34fff80",
+          "decodedTextSha256Utf8": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [
+            {
+              "key": "account_delete_cancel",
+              "sourceLine": 57
+            },
+            {
+              "key": "account_delete_confirm_cancel_button",
+              "sourceLine": 59
+            },
+            {
+              "key": "account_delete_pending_dialog_keep",
+              "sourceLine": 67
+            },
+            {
+              "key": "account_device_remove_action_cancel",
+              "sourceLine": 98
+            },
+            {
+              "key": "billing_gift_popup_cancel",
+              "sourceLine": 199
+            },
+            {
+              "key": "chat_highspeed_gate_action_gotit",
+              "sourceLine": 264
+            },
+            {
+              "key": "chat_voice_cancel_input",
+              "sourceLine": 297
+            },
+            {
+              "key": "claw_group_dissolve_cancel",
+              "sourceLine": 352
+            },
+            {
+              "key": "claw_group_leave_cancel",
+              "sourceLine": 378
+            },
+            {
+              "key": "claw_group_remove_member_cancel",
+              "sourceLine": 385
+            },
+            {
+              "key": "claw_group_removeclaw_cancel",
+              "sourceLine": 389
+            },
+            {
+              "key": "dr_create_new_task_window_cancel",
+              "sourceLine": 546
+            },
+            {
+              "key": "memory_space_clear_cancel",
+              "sourceLine": 853
+            },
+            {
+              "key": "minor_mode_cancel",
+              "sourceLine": 876
+            },
+            {
+              "key": "okc_btn_keep_publish",
+              "sourceLine": 1016
+            },
+            {
+              "key": "queue_generation_action_cancel",
+              "sourceLine": 1473
+            },
+            {
+              "key": "queue_management_action_clear_cancel",
+              "sourceLine": 1479
+            },
+            {
+              "key": "queue_management_action_delete_cancel",
+              "sourceLine": 1482
+            },
+            {
+              "key": "queue_quota_action_cancel",
+              "sourceLine": 1498
+            },
+            {
+              "key": "remote_common_cancel",
+              "sourceLine": 1572
+            },
+            {
+              "key": "remote_device_add_conflict_cancel",
+              "sourceLine": 1589
+            },
+            {
+              "key": "remote_device_remove_cancel",
+              "sourceLine": 1607
+            },
+            {
+              "key": "remote_permission_risk_cancel",
+              "sourceLine": 1724
+            },
+            {
+              "key": "setting_chat_capacity_upgrade_action_cancel",
+              "sourceLine": 1868
+            },
+            {
+              "key": "skills_rename_skill_cancel",
+              "sourceLine": 1974
+            },
+            {
+              "key": "skills_template_to_skill_first_time_popup_cancel",
+              "sourceLine": 1993
+            },
+            {
+              "key": "website_dialog_cancel",
+              "sourceLine": 2271
+            }
+          ],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "cancel",
+          "text": "取消",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 245,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|cancel|5Y+W5raI",
+          "sourceLineSha256Utf8": "22bb570cf98907b53e6db7b3bde970cce25bbf0a8401b1ff7ee9270518a09fb0",
+          "decodedTextSha256Utf8": "2cd0f3be8738a86cede1a1452f874f31d569864bbb00cacd4130990f4610cb5c",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [
+            {
+              "key": "account_delete_cancel",
+              "sourceLine": 57
+            },
+            {
+              "key": "account_delete_confirm_cancel_button",
+              "sourceLine": 59
+            },
+            {
+              "key": "account_device_remove_action_cancel",
+              "sourceLine": 98
+            },
+            {
+              "key": "billing_gift_popup_cancel",
+              "sourceLine": 199
+            },
+            {
+              "key": "chat_highspeed_gate_action_gotit",
+              "sourceLine": 264
+            },
+            {
+              "key": "claw_group_dissolve_cancel",
+              "sourceLine": 352
+            },
+            {
+              "key": "claw_group_leave_cancel",
+              "sourceLine": 378
+            },
+            {
+              "key": "claw_group_remove_member_cancel",
+              "sourceLine": 385
+            },
+            {
+              "key": "claw_group_removeclaw_cancel",
+              "sourceLine": 389
+            },
+            {
+              "key": "dr_create_new_task_window_cancel",
+              "sourceLine": 546
+            },
+            {
+              "key": "memory_space_clear_cancel",
+              "sourceLine": 853
+            },
+            {
+              "key": "minor_mode_cancel",
+              "sourceLine": 876
+            },
+            {
+              "key": "okc_btn_keep_publish",
+              "sourceLine": 1016
+            },
+            {
+              "key": "queue_generation_action_cancel",
+              "sourceLine": 1473
+            },
+            {
+              "key": "queue_management_action_clear_cancel",
+              "sourceLine": 1479
+            },
+            {
+              "key": "queue_management_action_delete_cancel",
+              "sourceLine": 1482
+            },
+            {
+              "key": "queue_quota_action_cancel",
+              "sourceLine": 1498
+            },
+            {
+              "key": "remote_common_cancel",
+              "sourceLine": 1572
+            },
+            {
+              "key": "remote_device_add_conflict_cancel",
+              "sourceLine": 1589
+            },
+            {
+              "key": "remote_device_remove_cancel",
+              "sourceLine": 1607
+            },
+            {
+              "key": "remote_permission_risk_cancel",
+              "sourceLine": 1724
+            },
+            {
+              "key": "setting_chat_capacity_upgrade_action_cancel",
+              "sourceLine": 1868
+            },
+            {
+              "key": "skills_rename_skill_cancel",
+              "sourceLine": 1974
+            },
+            {
+              "key": "skills_template_to_skill_first_time_popup_cancel",
+              "sourceLine": 1993
+            },
+            {
+              "key": "website_dialog_cancel",
+              "sourceLine": 2271
+            }
+          ],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-13",
+      "topic": "font",
+      "key": "setting_chat_toast_saved",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "是否出现 Settings saved 提示；记录出现位置和可见时间，不由 toast 键名推定组件类型或时长。",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "setting_chat_toast_saved",
+          "text": "Settings saved",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1901,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|setting_chat_toast_saved|U2V0dGluZ3Mgc2F2ZWQ=",
+          "sourceLineSha256Utf8": "ca64f88499ddb3d394efa7236c2ff8752add08737881034462dbd8d5ff0e65e3",
+          "decodedTextSha256Utf8": "74a7f53bad3999738fb6ce7cab835cb4b93aa2a42a33ed7cba9676af019658b7",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "setting_chat_toast_saved",
+          "text": "设定已保存",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1901,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|setting_chat_toast_saved|6K6+5a6a5bey5L+d5a2Y",
+          "sourceLineSha256Utf8": "a797cacd1eda7339781cb23e13d3cac14bcf1329488411a31f0ee9288718e371",
+          "decodedTextSha256Utf8": "1ca65987ba9bb56a46d5a454f4b7367fbf95b24fb56f23379f2d9acb80b8f518",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-14",
+      "topic": "voice",
+      "key": "description_input_mode_voice",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "语音入口是切换模式还是立即录音；它与登录门槛和麦克风请求哪个先触发？",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "description_input_mode_voice",
+          "text": "Switch to voice input",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 519,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|description_input_mode_voice|U3dpdGNoIHRvIHZvaWNlIGlucHV0",
+          "sourceLineSha256Utf8": "757240f5bec0b1d7bc7fe3cf85efe555b6fda66c8696b11aad5c2bbfe32e9194",
+          "decodedTextSha256Utf8": "069d4db42236716ee4d8e613d9c2300cadffb5c33e6001ff7bfef340ced132a8",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "description_input_mode_voice",
+          "text": "切换至语音输入",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 519,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|description_input_mode_voice|5YiH5o2i6Iez6K+t6Z+z6L6T5YWl",
+          "sourceLineSha256Utf8": "2be2cb4d4f88799f4162c54238454ba7a034fdabf7bd3ec83b0ae69abcc93fde",
+          "decodedTextSha256Utf8": "0dbcc68a4d9aae4e1f4c7f08a891b3338d3541c5f59c7963c047818a8f5035c5",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-15",
+      "topic": "voice",
+      "key": "permission_popup_audio_title",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "首次进入是否先出现产品说明，再弹 Android 系统请求；已拒绝时再次进入怎样？",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "permission_popup_audio_title",
+          "text": "Kimi Requests Microphone Permission",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1256,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|permission_popup_audio_title|S2ltaSBSZXF1ZXN0cyBNaWNyb3Bob25lIFBlcm1pc3Npb24=",
+          "sourceLineSha256Utf8": "8e52a481d56c6422a221f03e082ce8c18ec5b43e19763980b39c9e4de5bfb1e9",
+          "decodedTextSha256Utf8": "0922e6c0289bc087b77ced78de29da6aa2c712b77c997656a3aa47cd6da9bd28",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "permission_popup_audio_title",
+          "text": "Kimi 申请麦克风权限说明",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1256,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|permission_popup_audio_title|S2ltaSDnlLPor7fpuqblhYvpo47mnYPpmZDor7TmmI4=",
+          "sourceLineSha256Utf8": "30631948f2fb73e5f0d95309b089cc07907f71ce3f6cce0cd3d8b2b85035b492",
+          "decodedTextSha256Utf8": "b53cda3f42bb8fd44bdb558755200e09792102e37dde4888db9b930bd3fb3388",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-16",
+      "topic": "voice",
+      "key": "permission_popup_audio_content",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "用途与拒绝后果是否实际出现；拒绝一次后的文字、输入模式和已有草稿如何变化？",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "permission_popup_audio_content",
+          "text": "For voice input recognition. If you do not grant this permission, you will not be able to use this feature",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1255,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|permission_popup_audio_content|Rm9yIHZvaWNlIGlucHV0IHJlY29nbml0aW9uLiBJZiB5b3UgZG8gbm90IGdyYW50IHRoaXMgcGVybWlzc2lvbiwgeW91IHdpbGwgbm90IGJlIGFibGUgdG8gdXNlIHRoaXMgZmVhdHVyZQ==",
+          "sourceLineSha256Utf8": "efd7d2300bdb0ba1cc9c1e3f44c002c03255d9edc9f77bc157f5317076953c3c",
+          "decodedTextSha256Utf8": "d09721f752bae1616a3a2e2eea0b6f95ac5d8008d9a9495dc832c4aa63c75405",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "permission_popup_audio_content",
+          "text": "用于语音输入识别场景，若不授予该权限，你将无法使用该功能",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1255,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|permission_popup_audio_content|55So5LqO6K+t6Z+z6L6T5YWl6K+G5Yir5Zy65pmv77yM6Iul5LiN5o6I5LqI6K+l5p2D6ZmQ77yM5L2g5bCG5peg5rOV5L2/55So6K+l5Yqf6IO9",
+          "sourceLineSha256Utf8": "9b661968ae5b00ffa84403a796fd09b3ca3311c06c0bdb0e4fdc0a9861066c55",
+          "decodedTextSha256Utf8": "4717ff3099d5c218d911a76707ceca9751b87cea0f1eca68502c259f2a9ddf0f",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-17",
+      "topic": "voice",
+      "key": "chat_voice_hint_release_to_send",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "出现松开发送提示的实际手势条件；没有执行发送时仅观察入口及取消，勿推定提交成功。",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "chat_voice_hint_release_to_send",
+          "text": "Release to send",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 299,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|chat_voice_hint_release_to_send|UmVsZWFzZSB0byBzZW5k",
+          "sourceLineSha256Utf8": "4f84418b0862192b928c820cc0b886fd92db0860c83d912c3083a3f330c3a3fc",
+          "decodedTextSha256Utf8": "48103dd6fc754baffa02f81c192c3b7d7e0f45f000087ab4324ca39f29283301",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "chat_voice_hint_release_to_send",
+          "text": "松开发送",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 299,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|chat_voice_hint_release_to_send|5p2+5byA5Y+R6YCB",
+          "sourceLineSha256Utf8": "ce4fa4b936a7a2ad6d75057e6363248ffa913301342c26aae6ccb11fb70e0972",
+          "decodedTextSha256Utf8": "fc27bcb39011d738a54025665f2d3f8b21a9361d2fdb62b2acd6337f177c0a11",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-18",
+      "topic": "voice",
+      "key": "chat_voice_cancel_input",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "是否有取消输入入口，取消后是否回到原模式并保留之前的文字草稿？",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "chat_voice_cancel_input",
+          "text": "Cancel",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 297,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|chat_voice_cancel_input|Q2FuY2Vs",
+          "sourceLineSha256Utf8": "1a988c6428bdbf5ac9d8073aa508cbc40f32ec300d40ae6b13b1c9130a256a5c",
+          "decodedTextSha256Utf8": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [
+            {
+              "key": "account_delete_cancel",
+              "sourceLine": 57
+            },
+            {
+              "key": "account_delete_confirm_cancel_button",
+              "sourceLine": 59
+            },
+            {
+              "key": "account_delete_pending_dialog_keep",
+              "sourceLine": 67
+            },
+            {
+              "key": "account_device_remove_action_cancel",
+              "sourceLine": 98
+            },
+            {
+              "key": "billing_gift_popup_cancel",
+              "sourceLine": 199
+            },
+            {
+              "key": "cancel",
+              "sourceLine": 245
+            },
+            {
+              "key": "chat_highspeed_gate_action_gotit",
+              "sourceLine": 264
+            },
+            {
+              "key": "claw_group_dissolve_cancel",
+              "sourceLine": 352
+            },
+            {
+              "key": "claw_group_leave_cancel",
+              "sourceLine": 378
+            },
+            {
+              "key": "claw_group_remove_member_cancel",
+              "sourceLine": 385
+            },
+            {
+              "key": "claw_group_removeclaw_cancel",
+              "sourceLine": 389
+            },
+            {
+              "key": "dr_create_new_task_window_cancel",
+              "sourceLine": 546
+            },
+            {
+              "key": "memory_space_clear_cancel",
+              "sourceLine": 853
+            },
+            {
+              "key": "minor_mode_cancel",
+              "sourceLine": 876
+            },
+            {
+              "key": "okc_btn_keep_publish",
+              "sourceLine": 1016
+            },
+            {
+              "key": "queue_generation_action_cancel",
+              "sourceLine": 1473
+            },
+            {
+              "key": "queue_management_action_clear_cancel",
+              "sourceLine": 1479
+            },
+            {
+              "key": "queue_management_action_delete_cancel",
+              "sourceLine": 1482
+            },
+            {
+              "key": "queue_quota_action_cancel",
+              "sourceLine": 1498
+            },
+            {
+              "key": "remote_common_cancel",
+              "sourceLine": 1572
+            },
+            {
+              "key": "remote_device_add_conflict_cancel",
+              "sourceLine": 1589
+            },
+            {
+              "key": "remote_device_remove_cancel",
+              "sourceLine": 1607
+            },
+            {
+              "key": "remote_permission_risk_cancel",
+              "sourceLine": 1724
+            },
+            {
+              "key": "setting_chat_capacity_upgrade_action_cancel",
+              "sourceLine": 1868
+            },
+            {
+              "key": "skills_rename_skill_cancel",
+              "sourceLine": 1974
+            },
+            {
+              "key": "skills_template_to_skill_first_time_popup_cancel",
+              "sourceLine": 1993
+            },
+            {
+              "key": "website_dialog_cancel",
+              "sourceLine": 2271
+            }
+          ],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "chat_voice_cancel_input",
+          "text": "取消输入",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 297,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|chat_voice_cancel_input|5Y+W5raI6L6T5YWl",
+          "sourceLineSha256Utf8": "46c35a232686b47483240b6ba0adf72c7691818d989b8960dac63dc4c48aa063",
+          "decodedTextSha256Utf8": "372286ff900c9971341b06ac62d69906d810f2ec089dcdae4a32ae1a07a68cae",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-19",
+      "topic": "voice",
+      "key": "chat_voice_hint_edit_text",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "是否在转写后可编辑；未观察到转写结果则保留未验证，不强行扩展到语音通话。",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "chat_voice_hint_edit_text",
+          "text": "Edit text",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 298,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|chat_voice_hint_edit_text|RWRpdCB0ZXh0",
+          "sourceLineSha256Utf8": "7968028c3198a27464e6706adf357f4d1052a7ccc4ceeefb45f1ca0246a07238",
+          "decodedTextSha256Utf8": "7967d944899516194673bf8f5391776cc10cf1d70e840d8a76cead74815bd488",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "chat_voice_hint_edit_text",
+          "text": "编辑文字",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 298,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|chat_voice_hint_edit_text|57yW6L6R5paH5a2X",
+          "sourceLineSha256Utf8": "c56c9b57c26d331996ac62015e34c5c8aa1a4213f25dbaabd486118efbed99d6",
+          "decodedTextSha256Utf8": "fe067a88a36d364461b5fb1f042e4db9d36e17a618f7231e508cdd5d9822d9c3",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-20",
+      "topic": "offline",
+      "key": "chat_error_screen_title",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "离线时哪个页面显示加载失败；是否有独立重试按钮及保留内容，而非猜测全屏错误容器？",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "chat_error_screen_title",
+          "text": "Network loading failed\nPlease check your network and try again",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 262,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|chat_error_screen_title|TmV0d29yayBsb2FkaW5nIGZhaWxlZApQbGVhc2UgY2hlY2sgeW91ciBuZXR3b3JrIGFuZCB0cnkgYWdhaW4=",
+          "sourceLineSha256Utf8": "a4d0f609e6f8d20799e48222c2849fcf3546c2cad63b9f9ca53b2216f2c2137c",
+          "decodedTextSha256Utf8": "2de551793efbf18671e83e95fc98114ffc4e3a02c0bfbb265d99ea1ae46d7c4f",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "chat_error_screen_title",
+          "text": "网络加载失败\n请检查网络后再重试",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 262,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|chat_error_screen_title|572R57uc5Yqg6L295aSx6LSlCuivt+ajgOafpee9kee7nOWQjuWGjemHjeivlQ==",
+          "sourceLineSha256Utf8": "05ec7ca4a707c5fd412ee62ec4706836cdfe2c630bc3e30a47dd9640c5a78eaf",
+          "decodedTextSha256Utf8": "3112274877022106f97c53174c14df22465c13f73fc492dfa1ab5f07c0869667",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-21",
+      "topic": "offline",
+      "key": "connection_error_and_retry",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "连接错误能否点击重试；重试忙碌、重复点击、恢复网络后的结果和输入保留如何？",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "connection_error_and_retry",
+          "text": "Connection error. Tap to retry",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 450,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|connection_error_and_retry|Q29ubmVjdGlvbiBlcnJvci4gVGFwIHRvIHJldHJ5",
+          "sourceLineSha256Utf8": "db98ca10601bf3516583286261cf2c9cbc6aeeda9785b1b1ddc87251421479dd",
+          "decodedTextSha256Utf8": "5077fe10e98e697fc7a1f5a96772d0bf9fc61b04850b2c84cea7fa330251fd52",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "connection_error_and_retry",
+          "text": "连接异常，请点击重试",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 450,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|connection_error_and_retry|6L+e5o6l5byC5bi477yM6K+354K55Ye76YeN6K+V",
+          "sourceLineSha256Utf8": "3c041f9f7255a5cdcbe0537a33b0119fe83c58b86bd3f7dfa1fd850f45e0d1bc",
+          "decodedTextSha256Utf8": "5c5cc874f05fe201f6601fd81355913d4d57aca9d63c888851fbf911e83e1121",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-22",
+      "topic": "offline",
+      "key": "network_unavailable",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "断网时显示此文案还是其他本地/服务端错误；不要把所有网络失败统一归到同一键。",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "network_unavailable",
+          "text": "Network is unavailable…",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 990,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|network_unavailable|TmV0d29yayBpcyB1bmF2YWlsYWJsZeKApg==",
+          "sourceLineSha256Utf8": "866e24b94f288971db2662e2d13cd68cd4c5382d465b54af80aa79da05c07999",
+          "decodedTextSha256Utf8": "5f45ca494a5ac1228da1efabf7d0f94094e563f03767649fe3194bc510a9be30",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "network_unavailable",
+          "text": "当前网络不可用…",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 990,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|network_unavailable|5b2T5YmN572R57uc5LiN5Y+v55So4oCm",
+          "sourceLineSha256Utf8": "b042bea74aadc5b21b16625ab607a64e5cdba02c074f63dc8b818419bafca8a9",
+          "decodedTextSha256Utf8": "d7d8ec8bba39d56c6d8cb3270461d5cb8aea240c9a366a20f9ab41e1bcc0ef69",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-23",
+      "topic": "offline",
+      "key": "network_restored_and_normal",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "恢复联网是否自动消除错误或仍需刷新；是否实际出现恢复提示而非仅状态恢复？",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "network_restored_and_normal",
+          "text": "Network restored, connection normal",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 989,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|network_restored_and_normal|TmV0d29yayByZXN0b3JlZCwgY29ubmVjdGlvbiBub3JtYWw=",
+          "sourceLineSha256Utf8": "7e15c2a404d1e8d3c836560a0ee24bad8cafddd9134c72cc0205ddf1beda62bf",
+          "decodedTextSha256Utf8": "f37e8373a05e6f92c132e0fb680fd32a815f2903508645cef565fd48f87a065f",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "network_restored_and_normal",
+          "text": "网络已恢复，连接正常",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 989,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|network_restored_and_normal|572R57uc5bey5oGi5aSN77yM6L+e5o6l5q2j5bi4",
+          "sourceLineSha256Utf8": "ba1bd70f2c0aa7f37189b974286109d8801c66cc6c2f40a2e525daec56ed728f",
+          "decodedTextSha256Utf8": "df94182abc2e5278172bbb1ae1b4e32638fb1c67c14ab0738c3c6c4c8dd6acd2",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-24",
+      "topic": "login",
+      "key": "please_to_login_and_chat_with_kimi",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "哪些入口在未登录状态被阻止；打开模型/输入文字/发送/语音分别检查，不从此文字推成全局门槛。",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "please_to_login_and_chat_with_kimi",
+          "text": "Log in to chat with Kimi",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 1278,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|please_to_login_and_chat_with_kimi|TG9nIGluIHRvIGNoYXQgd2l0aCBLaW1p",
+          "sourceLineSha256Utf8": "bd43eb065ebc6acd2d5a8e8e74011a21834caaa5187266d168a8af7ad3d31c31",
+          "decodedTextSha256Utf8": "e17e69ff8d63b21e6bf87f66364f87e17a70839ddf9bbc6496b1ac14931d85d8",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "please_to_login_and_chat_with_kimi",
+          "text": "登录后与 Kimi 畅聊",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 1278,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|please_to_login_and_chat_with_kimi|55m75b2V5ZCO5LiOIEtpbWkg55WF6IGK",
+          "sourceLineSha256Utf8": "25d21d706f6499c2b58df35f856f314f3d23eefa4948ecd84257ad0cd472ed57",
+          "decodedTextSha256Utf8": "63856e0d4515f8c8c33f88a1388d098d39dc2758544843038ad412d1a2b5d96d",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-25",
+      "topic": "login",
+      "key": "login_btn",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "观察真实登录入口和可关闭方式；不输入用户手机号/验证码，不调用真实账号完成流程。",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "login_btn",
+          "text": "Log In",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 777,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|login_btn|TG9nIElu",
+          "sourceLineSha256Utf8": "ef8ab529c1c59d821768032dc4b1a41d0dd7af784eae8919d8b33e3989ce6a41",
+          "decodedTextSha256Utf8": "2ded4a3ee653ffdd82681e9f39144e169a1a217bea7f7c22a2795f48e3dc6864",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "login_btn",
+          "text": "登录",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 777,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|login_btn|55m75b2V",
+          "sourceLineSha256Utf8": "365881cf96069d63a6942ec04beff5c615b23b0c1af10759f8eef3fdda0761e1",
+          "decodedTextSha256Utf8": "1e2df9c3075ae9e48a96d1013063f777b1728a4c5d08c6d667421587b464e3de",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-26",
+      "topic": "login",
+      "key": "auth_error_unlogin",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "被拦截时出现产品登录层、toast还是返回错误；该通用鉴权文本不证明聊天发送路径使用它。",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "auth_error_unlogin",
+          "text": "User not logged in",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 186,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|auth_error_unlogin|VXNlciBub3QgbG9nZ2VkIGlu",
+          "sourceLineSha256Utf8": "a367eb8a0e61e7f5e15a1a40794a98e17b2d44a042f8f19716baeda04cc5c56e",
+          "decodedTextSha256Utf8": "8039ca5dfd55821aeb7cf21b4abf3ea6e479b088cc9d2f2ed4234b5065b45938",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "auth_error_unlogin",
+          "text": "用户未登录",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 186,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|auth_error_unlogin|55So5oi35pyq55m75b2V",
+          "sourceLineSha256Utf8": "b177f2d8ecc7bb0779844ce5ad5f6e68bd0c5558ec6b2b587ae21a7c1fc7ca72",
+          "decodedTextSha256Utf8": "780261d727c3be47c00b88f7e7e0052698ccc70f389fd04f2e741126397dcd2f",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    },
+    {
+      "id": "RUN02-COPY-27",
+      "topic": "login",
+      "key": "auth_error_user_cancelled_login",
+      "selectionClassification": "C",
+      "runtimeStatus": "pending; candidate not proof of observation",
+      "question": "取消登录/返回后恢复到原场景还是首页；文字、草稿、已选模型和键盘状态是否保留？",
+      "resources": {
+        "default": {
+          "locale": "default",
+          "key": "auth_error_user_cancelled_login",
+          "text": "User cancelled login",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 187,
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "rawSourceLine": "string|auth_error_user_cancelled_login|VXNlciBjYW5jZWxsZWQgbG9naW4=",
+          "sourceLineSha256Utf8": "96da86e941462211a23789f7bf6b9583325bd02d865289417d25324833213bb1",
+          "decodedTextSha256Utf8": "95ed3251d4ae1babc5367e6e8123823a88b7ffd4a90c29fe59da34e4d65a4423",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        },
+        "zh": {
+          "locale": "zh",
+          "key": "auth_error_user_cancelled_login",
+          "text": "用户取消登录",
+          "placeholders": [],
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values-zh/strings.commonMain.cvr",
+          "sourceLine": 187,
+          "sourceFileSha256": "3b164e0813649ed8550488e318ad4d7b7bc889a87ae8f8445eb4960d2eea9da4",
+          "rawSourceLine": "string|auth_error_user_cancelled_login|55So5oi35Y+W5raI55m75b2V",
+          "sourceLineSha256Utf8": "3efe08b546c3ed3860a12bcb38ab6db6d43bdafce5c817467b75df49f2f07fd0",
+          "decodedTextSha256Utf8": "8cd73306a19841307fa86e6cd56e45e43c730fb7b64443191a2247badae2e064",
+          "evidenceLevel": "B",
+          "sameTextOtherKeysInThisLocale": [],
+          "occurrenceConditions": "unknown; run02 candidate only, no screen/control/trigger binding established"
+        }
+      }
+    }
+  ],
+  "staticAnchors": [
+    {
+      "id": "RUN02-DEX-01",
+      "topic": "model",
+      "sourceDex": "classes2.dex",
+      "sourceDexSha256": "379811d9db48b68a739766c12c876f6962c0e84e6785026bb30b6e00ddc5c195",
+      "stringIndex": 44261,
+      "stringDataOffset": 11897821,
+      "text": "defaultChatModel",
+      "evidenceLevel": "B",
+      "interpretationClassification": "C",
+      "sourceRecordPath": "evidence/source/classes2-string-candidates.json",
+      "sourceRecordSha256": "7a8e50b07868df45d5b37ea4ac5008c951a0d4d1c603e5445e629f1dd029c594",
+      "sourceJsonPointer": "/strings/2654",
+      "sourceJsonTextLine": 13279,
+      "limitation": "标识符仅提示可能有默认模型状态；默认值、作用域、保存位置与控件绑定均未知。",
+      "xrefOrCaller": "not traced",
+      "runtimeBinding": "unknown"
+    },
+    {
+      "id": "RUN02-DEX-02",
+      "topic": "model",
+      "sourceDex": "classes3.dex",
+      "sourceDexSha256": "6eea0169d02e3a8717f08326185ce414898734c5ceb5328b6eed779980343648",
+      "stringIndex": 33735,
+      "stringDataOffset": 6429875,
+      "text": "model_select_new_chat",
+      "evidenceLevel": "B",
+      "interpretationClassification": "C",
+      "sourceRecordPath": "evidence/source/classes3-string-candidates.json",
+      "sourceRecordSha256": "8044886aec30cc542854e7582f24bb4739ab0a2c57941f6b9203e143a9ea4f51",
+      "sourceJsonPointer": "/strings/1099",
+      "sourceJsonTextLine": 5504,
+      "limitation": "资源键字符串存在；没有跟踪引用它的方法。",
+      "xrefOrCaller": "not traced",
+      "runtimeBinding": "unknown"
+    },
+    {
+      "id": "RUN02-DEX-03",
+      "topic": "model",
+      "sourceDex": "classes3.dex",
+      "sourceDexSha256": "6eea0169d02e3a8717f08326185ce414898734c5ceb5328b6eed779980343648",
+      "stringIndex": 39939,
+      "stringDataOffset": 6581461,
+      "text": "string:model_select_new_chat",
+      "evidenceLevel": "B",
+      "interpretationClassification": "C",
+      "sourceRecordPath": "evidence/source/classes3-string-candidates.json",
+      "sourceRecordSha256": "8044886aec30cc542854e7582f24bb4739ab0a2c57941f6b9203e143a9ea4f51",
+      "sourceJsonPointer": "/strings/1516",
+      "sourceJsonTextLine": 7589,
+      "limitation": "Compose生成资源键样式字符串存在；不构成UI事件契约。",
+      "xrefOrCaller": "not traced",
+      "runtimeBinding": "unknown"
+    },
+    {
+      "id": "RUN02-DEX-04",
+      "topic": "draft",
+      "sourceDex": "classes2.dex",
+      "sourceDexSha256": "379811d9db48b68a739766c12c876f6962c0e84e6785026bb30b6e00ddc5c195",
+      "stringIndex": 6518,
+      "stringDataOffset": 11164918,
+      "text": "ChatModel-draft",
+      "evidenceLevel": "B",
+      "interpretationClassification": "C",
+      "sourceRecordPath": "evidence/source/classes2-string-candidates.json",
+      "sourceRecordSha256": "7a8e50b07868df45d5b37ea4ac5008c951a0d4d1c603e5445e629f1dd029c594",
+      "sourceJsonPointer": "/strings/467",
+      "sourceJsonTextLine": 2344,
+      "limitation": "提示输入草稿研究方向；不证明普通聊天草稿持久化或恢复规则。",
+      "xrefOrCaller": "not traced",
+      "runtimeBinding": "unknown"
+    },
+    {
+      "id": "RUN02-DEX-05",
+      "topic": "font",
+      "sourceDex": "classes3.dex",
+      "sourceDexSha256": "6eea0169d02e3a8717f08326185ce414898734c5ceb5328b6eed779980343648",
+      "stringIndex": 26258,
+      "stringDataOffset": 6241685,
+      "text": "composeResources/kimi.shared.generated.resources/drawable/followsystem.xml",
+      "evidenceLevel": "B",
+      "interpretationClassification": "C",
+      "sourceRecordPath": "evidence/source/classes3-string-candidates.json",
+      "sourceRecordSha256": "8044886aec30cc542854e7582f24bb4739ab0a2c57941f6b9203e143a9ea4f51",
+      "sourceJsonPointer": "/strings/494",
+      "sourceJsonTextLine": 2479,
+      "limitation": "打包资源路径字符串；不证明开关组件或字号计算策略。",
+      "xrefOrCaller": "not traced",
+      "runtimeBinding": "unknown"
+    },
+    {
+      "id": "RUN02-DEX-06",
+      "topic": "voice",
+      "sourceDex": "classes2.dex",
+      "sourceDexSha256": "379811d9db48b68a739766c12c876f6962c0e84e6785026bb30b6e00ddc5c195",
+      "stringIndex": 37869,
+      "stringDataOffset": 11700594,
+      "text": "VoiceBottomBar",
+      "evidenceLevel": "B",
+      "interpretationClassification": "C",
+      "sourceRecordPath": "evidence/source/classes2-string-candidates.json",
+      "sourceRecordSha256": "7a8e50b07868df45d5b37ea4ac5008c951a0d4d1c603e5445e629f1dd029c594",
+      "sourceJsonPointer": "/strings/1262",
+      "sourceJsonTextLine": 6319,
+      "limitation": "组件名样式标识符；无法凭名称确认实际状态机、手势、麦克风权限时序。",
+      "xrefOrCaller": "not traced",
+      "runtimeBinding": "unknown"
+    },
+    {
+      "id": "RUN02-DEX-07",
+      "topic": "voice",
+      "sourceDex": "classes3.dex",
+      "sourceDexSha256": "6eea0169d02e3a8717f08326185ce414898734c5ceb5328b6eed779980343648",
+      "stringIndex": 22337,
+      "stringDataOffset": 6138960,
+      "text": "VoiceBottomBar onDispose: voiceRecording=",
+      "evidenceLevel": "B",
+      "interpretationClassification": "C",
+      "sourceRecordPath": "evidence/source/classes3-string-candidates.json",
+      "sourceRecordSha256": "8044886aec30cc542854e7582f24bb4739ab0a2c57941f6b9203e143a9ea4f51",
+      "sourceJsonPointer": "/strings/85",
+      "sourceJsonTextLine": 434,
+      "limitation": "日志式文本含dispose与recording词；不证明离开时实际停止录音。",
+      "xrefOrCaller": "not traced",
+      "runtimeBinding": "unknown"
+    },
+    {
+      "id": "RUN02-DEX-08",
+      "topic": "login",
+      "sourceDex": "classes2.dex",
+      "sourceDexSha256": "379811d9db48b68a739766c12c876f6962c0e84e6785026bb30b6e00ddc5c195",
+      "stringIndex": 401,
+      "stringDataOffset": 10999885,
+      "text": " isLogin=",
+      "evidenceLevel": "B",
+      "interpretationClassification": "C",
+      "sourceRecordPath": "evidence/source/classes2-string-candidates.json",
+      "sourceRecordSha256": "7a8e50b07868df45d5b37ea4ac5008c951a0d4d1c603e5445e629f1dd029c594",
+      "sourceJsonPointer": "/strings/5",
+      "sourceJsonTextLine": 34,
+      "limitation": "日志式状态字符串；不证明登录门槛覆盖范围或导航行为。",
+      "xrefOrCaller": "not traced",
+      "runtimeBinding": "unknown"
+    }
+  ],
+  "boundedSearches": {
+    "descriptiveClassNames": [
+      {
+        "sourcePath": "evidence/source/classes-class-inventory.json",
+        "sourceFileSha256": "6ed721eef9863e7baf8422079eb36501dd07786d60d64107892701486e4153bb",
+        "sourceDex": "classes.dex",
+        "sourceDexSha256": "7554ab857c38d5807f5e096a3c5cdb4bb6943caa0605fb7b43cb885d4fe46418",
+        "classCount": 10298,
+        "predicate": "descriptor contains moonshot AND matches /FontSize|FontSetting|ChatModel|ModelSelect|InputDraft|VoiceInput|VoiceBottom|LoginScreen|NetworkError/",
+        "matches": [],
+        "limitation": "Bounded descriptive-name query only. Most classes are obfuscated; zero matches do not establish absence of an implementation. Method inventories only cover ownPrefixes declared by saved parser."
+      },
+      {
+        "sourcePath": "evidence/source/classes2-class-inventory.json",
+        "sourceFileSha256": "8644185e28d7acae3ff67fce97a632618e05b5acca9250e481b2a6b2a73aac77",
+        "sourceDex": "classes2.dex",
+        "sourceDexSha256": "379811d9db48b68a739766c12c876f6962c0e84e6785026bb30b6e00ddc5c195",
+        "classCount": 14540,
+        "predicate": "descriptor contains moonshot AND matches /FontSize|FontSetting|ChatModel|ModelSelect|InputDraft|VoiceInput|VoiceBottom|LoginScreen|NetworkError/",
+        "matches": [],
+        "limitation": "Bounded descriptive-name query only. Most classes are obfuscated; zero matches do not establish absence of an implementation. Method inventories only cover ownPrefixes declared by saved parser."
+      },
+      {
+        "sourcePath": "evidence/source/classes3-class-inventory.json",
+        "sourceFileSha256": "87f7b1481bbd3df629a564d1e2159d418b38981974bfeef740054eccf342cda8",
+        "sourceDex": "classes3.dex",
+        "sourceDexSha256": "6eea0169d02e3a8717f08326185ce414898734c5ceb5328b6eed779980343648",
+        "classCount": 5663,
+        "predicate": "descriptor contains moonshot AND matches /FontSize|FontSetting|ChatModel|ModelSelect|InputDraft|VoiceInput|VoiceBottom|LoginScreen|NetworkError/",
+        "matches": [],
+        "limitation": "Bounded descriptive-name query only. Most classes are obfuscated; zero matches do not establish absence of an implementation. Method inventories only cover ownPrefixes declared by saved parser."
+      }
+    ],
+    "draftNamedCopyKeys": {
+      "sourcePaths": [
+        "assets/derived/copy/default.json",
+        "assets/derived/copy/zh.json"
+      ],
+      "predicate": "key matches /draft/i",
+      "matches": [],
+      "limitation": "Key-name query only; ordinary input draft state can exist without any user-facing draft string."
+    }
+  },
+  "unknowns": [
+    "Feature reachability under logged-out/online/offline state",
+    "Resource-key bindings to actual controls and app locale choice",
+    "Model list, model defaults, trial/quota availability and remote feature flags",
+    "Draft lifetime across overlay/navigation/new chat/process death and storage ownership",
+    "Font preview versus committed state, explicit save, cancel/back, persistence and system font interaction",
+    "Order of login gate, product microphone explanation and Android permission request",
+    "Voice gesture cancellation, recognition, text restoration and actual request cancellation",
+    "Offline loading/sending/retry state and network recovery",
+    "Authentication-provider behavior and effects of dismissing login"
+  ]
+}

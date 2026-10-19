@@ -1,0 +1,1148 @@
+{
+  "schemaVersion": 1,
+  "runId": "run03-20261016",
+  "generatedAt": "2026-10-16T10:39:57.901Z",
+  "reviewer": "native_reference independent offline worker",
+  "package": "com.moonshot.kimichat",
+  "defaultAllow": false,
+  "policy": "Only explicitly reviewed exact paths/bytes. Source video and raw capture are unchanged. No logs, HTML intermediates, browser caches, new recordings or wildcard approval.",
+  "researchIndex": {
+    "path": "docs/run03-motion-research.md",
+    "sha256": "844cf360d0ca15155b40fb09f475fb410511df071317c97c93aed4f693cc3fe7"
+  },
+  "recordings": [
+    {
+      "id": "concurrency-01",
+      "classification": "A",
+      "package": "com.moonshot.kimichat",
+      "video": {
+        "path": "evidence/runtime/run03-20261016/motion/concurrency-01/screenrecord.mp4",
+        "bytes": 1405631,
+        "sha256": "f3179706767794ba48dcb27c861b8cbe4967a43a9018277e85a10a6a55f3f246"
+      },
+      "capture": {
+        "path": "evidence/runtime/run03-20261016/motion/concurrency-01/capture.json",
+        "bytes": 898,
+        "sha256": "f5c3ea15722d82d4d7952a49b65cea75179eec5e1a7af145f06e57a7bdd2e8b6"
+      },
+      "review": {
+        "path": "evidence/runtime/run03-20261016/motion/concurrency-01/review.json",
+        "bytes": 9945,
+        "sha256": "87f1ea17dc3adf36384c333e25f75bb854f96f81a5fea436230ec6b5b8520a8a"
+      },
+      "frameIndex": {
+        "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-index.json",
+        "bytes": 56999,
+        "sha256": "3e74e344651700deb707124f7c7937f9230aaa159b39044b5e38dde96aa21b29"
+      },
+      "sourceVideoSamples": 63,
+      "decodedFrames": 63,
+      "allDecodedFramesReviewed": true,
+      "privacyReview": "clear",
+      "distribution": "allow-reviewed-exact-files",
+      "animationDuration": null,
+      "easing": null,
+      "interruptionVerified": false
+    },
+    {
+      "id": "motion-01",
+      "classification": "A",
+      "package": "com.moonshot.kimichat",
+      "video": {
+        "path": "evidence/runtime/run03-20261016/motion/motion-01/screenrecord.mp4",
+        "bytes": 634791,
+        "sha256": "658942ddf94449eb6d30d4f87abd3f18265a7693cbbb6dc6b1ebf30ff0096340"
+      },
+      "capture": {
+        "path": "evidence/runtime/run03-20261016/motion/motion-01/capture.json",
+        "bytes": 9390,
+        "sha256": "ae142363d44756c323098754ab2decba6c6ac1d113e508429a334f0a1f7320dc"
+      },
+      "review": {
+        "path": "evidence/runtime/run03-20261016/motion/motion-01/review.json",
+        "bytes": 9005,
+        "sha256": "cee555f37d3626af088888a558db388b83c2cc6b1ba55f89476a3915c7aba939"
+      },
+      "frameIndex": {
+        "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-index.json",
+        "bytes": 26412,
+        "sha256": "cde4b3dbfbfb16c3da21e89ba880395c367d55b8f380777afb0fd841b13fcc94"
+      },
+      "sourceVideoSamples": 28,
+      "decodedFrames": 28,
+      "allDecodedFramesReviewed": true,
+      "privacyReview": "clear",
+      "distribution": "allow-reviewed-exact-files",
+      "animationDuration": null,
+      "easing": null,
+      "interruptionVerified": false
+    }
+  ],
+  "files": [
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/screenrecord.mp4",
+      "bytes": 1405631,
+      "sha256": "f3179706767794ba48dcb27c861b8cbe4967a43a9018277e85a10a6a55f3f246",
+      "kind": "original-runtime-video",
+      "classification": "A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/capture.json",
+      "bytes": 898,
+      "sha256": "f5c3ea15722d82d4d7952a49b65cea75179eec5e1a7af145f06e57a7bdd2e8b6",
+      "kind": "source-capture-metadata",
+      "classification": "A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/review.json",
+      "bytes": 9945,
+      "sha256": "87f1ea17dc3adf36384c333e25f75bb854f96f81a5fea436230ec6b5b8520a8a",
+      "kind": "independent-review",
+      "classification": "A observations and bounded conclusions",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-index.json",
+      "bytes": 56999,
+      "sha256": "3e74e344651700deb707124f7c7937f9230aaa159b39044b5e38dde96aa21b29",
+      "kind": "decoded-pts-index",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0001.png",
+      "bytes": 635427,
+      "sha256": "c1a66fcd96e0be51304c951ceab5ec0270b7f496b5cb905e3f77b8257a4d28af",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0002.png",
+      "bytes": 636682,
+      "sha256": "f7f0df8f5c85c26f7c194c8373ee657b2c0a38d719cce1805b9f90fc40078f1e",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0003.png",
+      "bytes": 637417,
+      "sha256": "220785154aea517bf4528d4c50f6a9e8ff0202b5418efc8c025892b1e264bb49",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0004.png",
+      "bytes": 637207,
+      "sha256": "e46c08476eb8fe099c9078d1c54561ea5a508565d53b1066839d32cc04b1280b",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0005.png",
+      "bytes": 643296,
+      "sha256": "935b4dad8eaaa4d5485ff5ee5086082a311416a248cfba35a9d1637f534716b2",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0006.png",
+      "bytes": 650899,
+      "sha256": "2090f794aeb30a65f95306cbc134d80a74c985b65bc6f5f3ccc5ea82b2e16199",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0007.png",
+      "bytes": 652392,
+      "sha256": "d0235d44c8a20da9d32aefeb0c1818614617bd0bbcfd383588204d40bae31c04",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0008.png",
+      "bytes": 647656,
+      "sha256": "b91efc3519fd9c5ac1135eed4bd7a1927f73670530a8b574e7c3ffec0acc695f",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0009.png",
+      "bytes": 648449,
+      "sha256": "4f39c018dfcb6e960d3ca12bb7881a28fa4560f98953baf85c928c6c0e5e1be6",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0010.png",
+      "bytes": 626684,
+      "sha256": "21215db6b3220f3345f3386ba882567efbcbd90bd802e173144c4e3dee509b0b",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0011.png",
+      "bytes": 625819,
+      "sha256": "4ad92e86cdbe3c4c0f61c3c613826ca51a0eb2f8ddb5c0f5b5e22796c893f2c1",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0012.png",
+      "bytes": 626246,
+      "sha256": "4341df6c123946ce60eb3f7c6765434c2641bcb119d15c67afd9974abc0306dc",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0013.png",
+      "bytes": 623900,
+      "sha256": "6c2e2fdb76f54810241dbd4d00bc7fef5a6beaf0a84c8170b5cdf727eb0fac64",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0014.png",
+      "bytes": 623969,
+      "sha256": "d579bb74681d07cadcb2a7eb526c96404fde951654b304ab8597857b6c8d6193",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0015.png",
+      "bytes": 624712,
+      "sha256": "a859c36c038f081596532695102e36676c68030c4a01a1b0c2c30544688fb906",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0016.png",
+      "bytes": 622951,
+      "sha256": "37cbe7c56b7cb87186c229fc007dc799ef0143b04d47f426005030168d682726",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0017.png",
+      "bytes": 433191,
+      "sha256": "ddc7d47b1066d8e46ae3015a1206fb01be7ad9fce6896166395425b174af0ad3",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0018.png",
+      "bytes": 438168,
+      "sha256": "56ee94ca16f16dc848b622f6f7040d11ff90aa9f2af233014ede2a4a9b58c29f",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0019.png",
+      "bytes": 436110,
+      "sha256": "c6ee35c006d30a94ce4bf4f7bd0c94b00318cc0e9d7e01d28a4dda1f2b861347",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0020.png",
+      "bytes": 436036,
+      "sha256": "fa7c9df364d49dcfbf00f20fae3f5addb912df6d66e937686390204fcbc5c8d2",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0021.png",
+      "bytes": 434183,
+      "sha256": "e39ca8c35105e53510bbe6eb747e9b99c1613b8cb5a2883e80947090efcec26c",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0022.png",
+      "bytes": 415677,
+      "sha256": "cf00b5479b2e597a0ecb36d3fe2f5aef99e62678a1e564ef02267c2d85b0a47b",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0023.png",
+      "bytes": 418009,
+      "sha256": "538a286704c870f70782e1fc1cc809de3df4797846aaa49a450ca5735fd84cf0",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0024.png",
+      "bytes": 460788,
+      "sha256": "34f9e698e773134ade794c82104e6ae49431e9f0ce0e793449cc5e193e758f6a",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0025.png",
+      "bytes": 462094,
+      "sha256": "0afb417bfa5c6bf94558ffd7247d655a19294fe683de334f2ad43d12cd886b64",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0026.png",
+      "bytes": 465930,
+      "sha256": "9915167b16da5d8b163b58bacd87df37a70f8a1e0eed62b89f8208db5c644069",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0027.png",
+      "bytes": 464624,
+      "sha256": "1d719ecea10e538c8af0d9e2578dbe35c177e716a408c61d041dd66d1060204b",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0028.png",
+      "bytes": 508707,
+      "sha256": "e45d727926364227057d2867960656e15ce12ce7b3b29135505dd2845860077a",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0029.png",
+      "bytes": 572458,
+      "sha256": "3599466796204832ca2b53443eafc599f8efdb39c9000b39c5a17b99c72b4362",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0030.png",
+      "bytes": 544635,
+      "sha256": "e83af9dc3d4ab799c3ae9bbb1905403e4160d686f3453f39a09f28bbe07c13c7",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0031.png",
+      "bytes": 543368,
+      "sha256": "a204b8465c58bec4ee7f1a02dab965249dda84f8f56750de4bacb577b2e59607",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0032.png",
+      "bytes": 546519,
+      "sha256": "4efc6591debcd97e3edec1092b0c08b29b85cd8389036919ebfab7119099885c",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0033.png",
+      "bytes": 556785,
+      "sha256": "336d673ddbf61326c624cc650fe89c97e8ad5e172a973258bf05d894c88fec71",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0034.png",
+      "bytes": 571543,
+      "sha256": "90f0a235fd71570cd675484535dcad05f7c699bd7ce877e060ca755b934a652d",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0035.png",
+      "bytes": 563898,
+      "sha256": "67f9bdb5aefe5cb20138b1cebb65cc302c65154aafc90c372968b3f603bfb5e9",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0036.png",
+      "bytes": 561994,
+      "sha256": "aeef454b4e07f24c4fe6b832bd63bf1ff26e5cd7a4a9581396e18b944e0e2ca4",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0037.png",
+      "bytes": 566078,
+      "sha256": "6ceecc0af04fc2ffb7d89d9ec9738e0fe1d40ddb5312ded082ccd4911641acef",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0038.png",
+      "bytes": 563459,
+      "sha256": "8b5da91f00bffd90da1b69eb55abb9ef86096c5878020b78c4f93684acab210e",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0039.png",
+      "bytes": 562936,
+      "sha256": "1b2aa2f74a54bbb4f4c7e9cb399de1c1d46004e9c05fd3724d229033aa98df8b",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0040.png",
+      "bytes": 562550,
+      "sha256": "92ccb25f9122d4b0f1aeae164aedbb2eeb8e2afac395f6632fca46152510d63d",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0041.png",
+      "bytes": 563223,
+      "sha256": "dabe746f6407d60775aa7266e7425bfee214f5ae3b04075414f81674b01ab6ae",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0042.png",
+      "bytes": 563283,
+      "sha256": "e9ee93bc900761cb6e9d4d405da814edb76e3d41dbd058cc2c1abc1299b6cf56",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0043.png",
+      "bytes": 563363,
+      "sha256": "b41c69feb669821a9eb8bcf169a7107c8eeb27bbd6e25dc2c465c3609f2f52c7",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0044.png",
+      "bytes": 563472,
+      "sha256": "4291886fb2a039262e880d63b3be5c27a57a9cc76176856a79f2106dc7e31cc3",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0045.png",
+      "bytes": 563561,
+      "sha256": "d3454c0d8b0e132bba6c9bc491bd245f5dd2b3fea4ca240dfdcb8cdee0f28279",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0046.png",
+      "bytes": 563422,
+      "sha256": "dedfc2f8ea7670f3deb8ba4876e436e0e8d2a18067e00c220c71d0c33dab5fc8",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0047.png",
+      "bytes": 563274,
+      "sha256": "c70355ea7ad1a36c96d37f97f61d9e3eb01804362c0d46b1fd4da14122e1f9d7",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0048.png",
+      "bytes": 562946,
+      "sha256": "6bc95c3ec67d56c91458a1ad51789d516266c1868d11607f0a7d83f232c72f65",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0049.png",
+      "bytes": 562515,
+      "sha256": "e0ff1f8cf083992aefb88995f5a7bac81fd82399c6c7b92776411ad89f54b155",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0050.png",
+      "bytes": 562444,
+      "sha256": "2dcbf07a89ec5f5509680f65113d6059402060671e47107c834833715cb04754",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0051.png",
+      "bytes": 562940,
+      "sha256": "744b7bdc1dc70ff2bda8023bf279707d8d91c9518c80a24af6a88b0b5320b309",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0052.png",
+      "bytes": 562850,
+      "sha256": "81a8613fe0bc2d58b3166eb0a6f5a1eb85eb8273ccddbe2306b61d1a4c385018",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0053.png",
+      "bytes": 562444,
+      "sha256": "b2b5b50439806c25e10669556dc95997129dfb45871e0a1a4aaa5a2979f17b9d",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0054.png",
+      "bytes": 562905,
+      "sha256": "5d98375f493e8410ef40cc577eb78b7229414bda7fcbbe0a84c0ebe9de81ed41",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0055.png",
+      "bytes": 561813,
+      "sha256": "24ad2855e4eb7f1009e22ec192e4a18b92185ee2d8880430af26060cf1760227",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0056.png",
+      "bytes": 563333,
+      "sha256": "6d5d422b934d56ada6c947abfe21d74cd1f610a32e10682815661e4fd643ec66",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0057.png",
+      "bytes": 562488,
+      "sha256": "6a2dab2b29f95da007922f705984e8fbea5c726ef2a08ad2c7b81d92538fca06",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0058.png",
+      "bytes": 563048,
+      "sha256": "9473a413934e6d274e871dd937abcda97a6515529d3d0982caf7d0741c24f5d4",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0059.png",
+      "bytes": 575500,
+      "sha256": "8a61480fa5858e7772204c8e7448664d3c98da54577e0c8bdb0d0768fa60514b",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0060.png",
+      "bytes": 574855,
+      "sha256": "b0c11a002db206a3584741f3b1478a9bf7d29d8a90ba13e3825b90c16235b634",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0061.png",
+      "bytes": 575173,
+      "sha256": "d21400830ae107a463dcc435416db740d016cb51d2bdc1ab6fb5a3f6ddbc04e6",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0062.png",
+      "bytes": 575167,
+      "sha256": "cacdee9e6a26cde058d12d7421a8ca71b8199922eb8f2f1c95869385f6812deb",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-0063.png",
+      "bytes": 575502,
+      "sha256": "8034bbd5f2152c362b1a326202783ee914135ca191bbbdf453e5de76cdcc80c3",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/review-sheets/sheet-1.png",
+      "bytes": 300911,
+      "sha256": "1ddd682696b1040baa90d6ad4b1d8bbe45e2d56c389c67d37c9c726acb3dff34",
+      "kind": "derived-contact-sheet",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/review-sheets/sheet-2.png",
+      "bytes": 393479,
+      "sha256": "adf405e76e69bf262ae5ac8d8b15754a21b8c34d383b45d72b969d1f7dc81b6e",
+      "kind": "derived-contact-sheet",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "concurrency-01",
+      "path": "evidence/runtime/run03-20261016/motion/concurrency-01/review-sheets/sheet-3.png",
+      "bytes": 198904,
+      "sha256": "0d93de0ae0873e1d10b41c593aedbedf21de68b79b25dad41bfe208a101be0ea",
+      "kind": "derived-contact-sheet",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/screenrecord.mp4",
+      "bytes": 634791,
+      "sha256": "658942ddf94449eb6d30d4f87abd3f18265a7693cbbb6dc6b1ebf30ff0096340",
+      "kind": "original-runtime-video",
+      "classification": "A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/capture.json",
+      "bytes": 9390,
+      "sha256": "ae142363d44756c323098754ab2decba6c6ac1d113e508429a334f0a1f7320dc",
+      "kind": "source-capture-metadata",
+      "classification": "A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/review.json",
+      "bytes": 9005,
+      "sha256": "cee555f37d3626af088888a558db388b83c2cc6b1ba55f89476a3915c7aba939",
+      "kind": "independent-review",
+      "classification": "A observations and bounded conclusions",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-index.json",
+      "bytes": 26412,
+      "sha256": "cde4b3dbfbfb16c3da21e89ba880395c367d55b8f380777afb0fd841b13fcc94",
+      "kind": "decoded-pts-index",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0001.png",
+      "bytes": 586141,
+      "sha256": "0cf312c33ac0c522f0b1e646892b986b0d62a92ea5aa15339fa7f8c968d97ef3",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0002.png",
+      "bytes": 585723,
+      "sha256": "aef12f1e86b6458544bb8e4324c338bfc9724477e202b85c7edc5d2de5c7d09e",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0003.png",
+      "bytes": 586451,
+      "sha256": "27dcc907e4e8b9c84f569a564e3a2fa1b3cbade345cea91b8f128a6d2602356b",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0004.png",
+      "bytes": 588547,
+      "sha256": "dfa4f49b489f3d6d0b0fbcca9cffd5f0e27d0179172d6dfd58151bf6737e933d",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0005.png",
+      "bytes": 592293,
+      "sha256": "aa1e443b4a359680082b77c9dc4c8f57189c09b2f096629ca8e40d76bfbac5ad",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0006.png",
+      "bytes": 606494,
+      "sha256": "1fb85e48eefd78265e31b20f6ce77ead82b01f08ad939911a43ac76759f62da3",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0007.png",
+      "bytes": 602916,
+      "sha256": "42f58e1e27c74fb192ed4a669a56ec2a0879a14ee1a5533918d62841196e53cb",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0008.png",
+      "bytes": 579870,
+      "sha256": "296a52cac507303eb044c84ce9b2e5b42a44abc3018f108b8a1fdc6ad0ca9f82",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0009.png",
+      "bytes": 581887,
+      "sha256": "860d32d90a05c0e8aad4d1f27c694b84708ef90854aa8c482f376862f992f6fc",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0010.png",
+      "bytes": 580032,
+      "sha256": "c4c40a8eedb6fc3509afadb09856638d220df6457f092eeaab6e02eae06abdd6",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0011.png",
+      "bytes": 643628,
+      "sha256": "9e7d1527093450e4009f5e457c001ea6f856638498efc72b14d2dc8a62cf6486",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0012.png",
+      "bytes": 644365,
+      "sha256": "bcbf3b90e761f3ee08225397c5545dec6498aff73589f0016a795ba3b98414a5",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0013.png",
+      "bytes": 531291,
+      "sha256": "735cb5ea3cc022ee38b474a9225e8b8268d2581e2a0a822aa43a76b5164eb389",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0014.png",
+      "bytes": 531493,
+      "sha256": "4f547130f9940a2a64c59a8202de545b1daf1083c1e6c0e26bd1b7c39c1ec138",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0015.png",
+      "bytes": 531166,
+      "sha256": "eea82f7656120628983c7ea31db68cb1f772d190d3032da9695e177180cc0076",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0016.png",
+      "bytes": 533526,
+      "sha256": "e48c36100aaab65a49957d6a508d9ca6f00d5c34e6ea82d722f702a8869c27c1",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0017.png",
+      "bytes": 528469,
+      "sha256": "c7be70cbd4f4794e3001ee995d53c52afe04d94ba10fdb4abe1244679492e1a0",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0018.png",
+      "bytes": 531524,
+      "sha256": "6ef8d4defaf328f62d5f73949638315d5c609b21aec532fc525b84046b4ca8ef",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0019.png",
+      "bytes": 527210,
+      "sha256": "cb47bcbc5eb2e062e248b5bbeb78f45f7ee7e7d8bfc628a23fb2b22103d0813b",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0020.png",
+      "bytes": 531293,
+      "sha256": "130e05d9d316e012d26d1104194c106cdca73f9630f60c28fba6be07c8508c72",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0021.png",
+      "bytes": 530888,
+      "sha256": "cf43c100947cd6423718de5b08bfbcd00755adc9d121ad34924e71b16ca03102",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0022.png",
+      "bytes": 638272,
+      "sha256": "0f6b60fdbfb2ae5cf4bf77a669c5cdf6719a3b741afead0877fbd00de5c59436",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0023.png",
+      "bytes": 587029,
+      "sha256": "5f823cbb27a47d3b9b0bd148e777952367da002d847d5d3163bddc1ab30eea41",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0024.png",
+      "bytes": 593573,
+      "sha256": "e5c007cd9c3dacc539829ba889d782ede75ff5ec494094866264cdc5b2591bd8",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0025.png",
+      "bytes": 594536,
+      "sha256": "f219238f50b8036d62d4b1b788b32e57be8919f2f3039fde5e2dbef200df7af9",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0026.png",
+      "bytes": 580043,
+      "sha256": "69349afe0bab06a843139c47f87c4c27c858e5595c6cb13f9fc13c00796a0b64",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0027.png",
+      "bytes": 579194,
+      "sha256": "e476b04b118f8e1fa1d4f76fe2881e7b13ad520cae2bf535698b3a4f8be4fa87",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/browser-decoded/frame-0028.png",
+      "bytes": 579611,
+      "sha256": "844665d247c0bc2dfea77334aae4cb006c6d8acf8ef2cabbc7ea465ef8e1a902",
+      "kind": "decoded-frame-pixels",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/review-sheets/sheet-1.png",
+      "bytes": 268430,
+      "sha256": "b1cca2f778c64ac68fca83ab257fef45c57fda33c0c61712242c8cbfcb36f90f",
+      "kind": "derived-contact-sheet",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/review-sheets/sheet-2.png",
+      "bytes": 105858,
+      "sha256": "6982c7a8b5852122cfa500339a5510bb75017865e075ad3259b6bc17f06c97fb",
+      "kind": "derived-contact-sheet",
+      "classification": "derived-from-A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/guard.png",
+      "bytes": 288052,
+      "sha256": "f7b2de11bfc50710d5e55ee6a93cd5ae9c405c4e3584f34b82ca4a917ad0b725",
+      "kind": "original-runtime-guard-pixels",
+      "classification": "A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    },
+    {
+      "recordingId": "motion-01",
+      "path": "evidence/runtime/run03-20261016/motion/motion-01/guard.xml",
+      "bytes": 31700,
+      "sha256": "9cc24557ad5591127664e7806de58f0d23f284c78a606674ae01abbb11df38b9",
+      "kind": "original-runtime-guard-uia",
+      "classification": "A",
+      "reviewStatus": "reviewed",
+      "privacyReview": "clear"
+    }
+  ],
+  "counts": {
+    "recordings": 2,
+    "files": 106,
+    "bytes": 55110837
+  }
+}

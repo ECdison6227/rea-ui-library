@@ -1,0 +1,22 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const relative='evidence/runtime/run03-20261016/scenes/r03-06-k28-request';
+const capture=JSON.parse(fs.readFileSync(path.join(root,relative,'capture.json'),'utf8'));
+const xml=fs.readFileSync(path.join(root,relative,'hierarchy.xml'),'utf8');
+const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+if(hash(path.join(root,relative,'screen.png'))!==capture.screenshot.sha256)throw Error('Source screenshot identity changed');
+if(hash(path.join(root,relative,'hierarchy.xml'))!==capture.hierarchy.sha256)throw Error('Source hierarchy identity changed');
+const nodes=[...xml.matchAll(/<node\b[^>]*>/g)].map(m=>Object.fromEntries([...m[0].matchAll(/([\w:-]+)="([^"]*)"/g)].map(a=>[a[1],a[2]])));
+const ids=[['navigation','content-desc','Navigation button'],['new-chat','content-desc','New chat'],['model-primary','text','Kimi'],['model-secondary','text','K2.8'],['message','text','Run03 mdel K2.8 test. Reply only RUN03-K28-OK.'],['capacity','text','Too many people are chatting with Kimi; a subscription will grant you priority access. Upgrade'],['composer','class','android.widget.EditText'],['more-input','content-desc','More input options'],['voice-input','content-desc','Switch to voice input']];
+const density=420/160;
+const measurements=ids.map(([id,field,value])=>{
+ const matches=nodes.filter(n=>n[field]===value);if(matches.length!==1)throw Error('Expected one '+id);
+ const node=matches[0],b=node.bounds.match(/\d+/g).map(Number);
+ return {id,classification:'A',origin:'current source capture, read-only reviewed by implementation worker',originalBounds:node.bounds,physicalPx:{left:b[0],top:b[1],right:b[2],bottom:b[3],width:b[2]-b[0],height:b[3]-b[1]},dpFromSemanticBounds:Object.fromEntries(Object.entries({left:b[0],top:b[1],width:b[2]-b[0],height:b[3]-b[1]}).map(([k,v])=>[k,Number((v/density).toFixed(6))])),class:node.class,text:node.text,contentDescription:node['content-desc']};
+});
+const record={schemaVersion:1,preparedAt:new Date().toISOString(),source:{scene:relative,package:capture.package,apkSha256:capture.apkSha256,screenshotSha256:capture.screenshot.sha256,hierarchySha256:capture.hierarchy.sha256,screenshotCapturedAt:capture.screenshotCapturedAt,atomicCapture:false,conditions:capture.conditions},conversion:{formula:'dp = physicalPx / 2.625',densityDpi:420,limits:'Semantic UIA bounds, not guaranteed visible-ink bounds; screenshot and hierarchy are non-atomic. Precision does not imply new measurement accuracy.'},measurements,reference:{classification:'D',scene:'source-capacity-error',package:'org.research.kimistyle',input:'Run03 mdel K2.8 test. Reply only RUN03-K28-OK.',model:'Kimi K2.8',error:'Too many people are chatting with Kimi; a subscription will grant you priority access. Upgrade',choices:['48dp header targets; no More in this uncompleted-error scene','Message row reserves 44dp retry space, 335dp approximate bubble at this device width, 69dp minimum height','Error below bubble without Thinking complete or answer tools','Gray error text with blue Upgrade span','64dp composer with Ask me. Task me. placeholder','Unbranded Local native reference footer retained for disclosure','Android default font and approximate 16sp/26dp line spacing are D; no source font claim'],behaviorDifferences:['Retry uses 6-second local fixture and repeats capacity error; no model/network request or subscription service','Upgrade opens a local explanation, never purchase UI','Whole capacity TextView has reference click semantics; original span interaction not yet verified','Dialog and focus lifecycle are independent native View implementation'],runtimeValidation:'Not executed by implementation worker. The device controller must install current APK and capture pairing; this report does not complete R02.'}};
+fs.writeFileSync(path.join(root,'docs/native-reference-capacity-pairing.json'),JSON.stringify(record,null,2)+'\n');
+console.log('Prepared '+measurements.length+' source geometry observations; D runtime validation remains pending.');

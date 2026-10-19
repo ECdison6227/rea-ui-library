@@ -1,0 +1,75 @@
+{
+  "recordedAt": "2026-10-15T15:49:46.104Z",
+  "classification": "A for observed restoration, explicitly retained test state",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "originalApkModified": false,
+  "preferences": {
+    "theme": {
+      "before": "Follow System",
+      "tested": "Dark mode",
+      "after": "Follow System",
+      "evidence": [
+        "13-theme-selector",
+        "14-dark-theme",
+        "32-theme-restored",
+        "34-restored-appearance"
+      ]
+    },
+    "language": {
+      "before": "English / en-US",
+      "tested": "简体中文 / zh-CN",
+      "after": "English / en-US",
+      "evidence": [
+        "19-language-options",
+        "20-language-change",
+        "33-language-restored",
+        "34-restored-appearance"
+      ]
+    },
+    "fontSize": {
+      "before": "Follow System",
+      "after": "Follow System",
+      "changed": false
+    },
+    "system": {
+      "fontScaleChanged": false,
+      "nightModeChanged": false,
+      "localeChanged": false
+    }
+  },
+  "finalScene": {
+    "id": "34-restored-appearance",
+    "sha256": "a050949e78237ca9d9afca4848e39e27a2426164665d6add61659cc8565d20aa",
+    "conditions": {
+      "size": "Physical size: 1080x2400",
+      "density": "Physical density: 420",
+      "fontScale": "1.0",
+      "systemLocales": "null",
+      "buildLocale": "en-US",
+      "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+      "nightMode": "Night mode: no"
+    }
+  },
+  "retained": [
+    "New dedicated AVD and installed Kimi test package",
+    "Initial privacy consent and notification-denied test state",
+    "Existing SDK/JDK/JADX tools, source APK and research evidence"
+  ],
+  "lifecycle": {
+    "stopAppRecorded": true,
+    "exitDedicatedAvdRequested": true,
+    "verification": "See shutdown-verification.json; request acknowledgment alone is not proof of stopped process"
+  },
+  "otherResearch": {
+    "action": "Only own Kimi launcher/qemu stopped during port migration; shared ADB server left running",
+    "earlyPort5582": "Collision discovered after an install attempt. Attempt canceled; no UI taps/screens attributed to Kimi on that port. Other instance not inspected for cleanup or altered further."
+  },
+  "notPerformed": [
+    "User login",
+    "Chat/feedback/verification-code submission",
+    "Global tool/config update",
+    "Windows feature change/reboot",
+    "APK modification",
+    "Publication"
+  ]
+}

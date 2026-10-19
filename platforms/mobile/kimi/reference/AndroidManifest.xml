@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.research.kimistyle">
+  <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="34" />
+  <application android:label="Native Style Reference" android:theme="@android:style/Theme.Material.Light.NoActionBar" android:allowBackup="false" android:supportsRtl="true">
+    <activity android:name=".ClipboardFixtureActivity" android:exported="true" android:taskAffinity="" android:excludeFromRecents="true" android:autoRemoveFromRecents="true" android:noHistory="true" />
+    <activity android:name=".MainActivity" android:exported="true" android:windowSoftInputMode="adjustResize" android:configChanges="keyboardHidden|orientation|screenSize">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>

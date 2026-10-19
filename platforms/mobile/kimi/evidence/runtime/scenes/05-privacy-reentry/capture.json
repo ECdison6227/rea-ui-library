@@ -1,0 +1,34 @@
+{
+  "id": "05-privacy-reentry",
+  "description": "Privacy agreement appears again after disagree and relaunch",
+  "classification": "A",
+  "origin": "current",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-15T15:17:53.672Z",
+  "capturedAt": "2026-10-15T15:17:59.910Z",
+  "method": "Android adb exec-out screencap -p; uiautomator dump; independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/scenes/05-privacy-reentry/screen.png",
+    "sha256": "3f79972e9b2cbdf63454b3c3e7c9920f0793e4aa98d5f62f85fc088670936cfa",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/scenes/05-privacy-reentry/hierarchy.xml",
+    "sha256": "5340b794cfbbe10331c76d4f36d57fb39de5609ac8f3a45340deefc52cf6948c"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 4,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "systemLocales": "null",
+    "nightMode": "Night mode: no"
+  },
+  "window": [],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+}

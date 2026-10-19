@@ -1,0 +1,43 @@
+{
+  "id": "r03-231-narrow-large-chat",
+  "description": "Actual owned chat at narrow width and large system text",
+  "classification": "A",
+  "origin": "current",
+  "runId": "run03-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-16T11:07:35.599Z",
+  "capturedAt": "2026-10-16T11:07:40.312Z",
+  "screenshotCapturedAt": "2026-10-16T11:07:37.507Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-231-narrow-large-chat/screen.png",
+    "sha256": "a9cca5f077407c62f25264e3283f70fc911dd28763c4e0c87b5332c1ff177806",
+    "width": 800,
+    "height": 1800
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-231-narrow-large-chat/hierarchy.xml",
+    "sha256": "5777e67e8016773afdc0646bd5e8d795f6f7b367bcf87fa9e50d5dd06cd2889c"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 554,
+  "conditions": {
+    "size": "Physical size: 1080x2400\r\nOverride size: 800x1800",
+    "density": "Physical density: 420",
+    "fontScale": "1.3",
+    "systemLocales": "en-US",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{c005120 u0 com.moonshot.kimichat/.MainActivity t19}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen",
+  "captureSettlingDelayMs": 1500,
+  "accountMode": "normal retained user-assisted login verified by authenticated home and actual submitted self-created request; credentials excluded"
+}

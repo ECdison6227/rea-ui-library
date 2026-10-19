@@ -1,0 +1,43 @@
+{
+  "id": "r03-200-ime-newline-key",
+  "description": "Real Gboard key after keyboard send setting disabled",
+  "classification": "A",
+  "origin": "current",
+  "runId": "run03-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-16T10:30:46.228Z",
+  "capturedAt": "2026-10-16T10:30:51.145Z",
+  "screenshotCapturedAt": "2026-10-16T10:30:48.380Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-200-ime-newline-key/screen.png",
+    "sha256": "2d8c9d177b983631d8cc9123861cd4ba53dcfb77d4b952c286b552c5dde51492",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-200-ime-newline-key/hierarchy.xml",
+    "sha256": "6677038ea0b7c464a30281d753984d4a9caa7f40d9b86bdcb7e5eef77592c633"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 473,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "systemLocales": "null",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{c005120 u0 com.moonshot.kimichat/.MainActivity t19}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen",
+  "captureSettlingDelayMs": 1500,
+  "accountMode": "normal retained user-assisted login verified by authenticated home and actual submitted self-created request; credentials excluded"
+}

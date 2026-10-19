@@ -1,0 +1,40 @@
+{
+  "id": "07-notification-permission",
+  "description": "System notification permission follows Agree in this fresh installation",
+  "classification": "A",
+  "origin": "current",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-15T15:19:22.302Z",
+  "capturedAt": "2026-10-15T15:19:27.616Z",
+  "screenshotCapturedAt": "2026-10-15T15:19:23.850Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/scenes/07-notification-permission/screen.png",
+    "sha256": "fb60dd0a19b90c83d9df0d8bc94c66d2b6c4840994f3d59c65ca506511a03ebb",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/scenes/07-notification-permission/hierarchy.xml",
+    "sha256": "2218b06d2d39e2e42ab0cfce8167b3e55bbe9398ca419d4b19089a03deadaca0"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 5,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "systemLocales": "null",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{6b6b2ab u0 com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity t10}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+}

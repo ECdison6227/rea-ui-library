@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-15T15:49:46.805Z",
+  "output": "runtime.html",
+  "htmlBytes": 5675855,
+  "htmlSha256": "71c54fea7f7b235971eeaa96dea7554d0726227a8b6f9bb63e4d36d5377c3861",
+  "sessionSha256": "f498543255e136af988f8fd9870216a8e035642a1a80ec6f773972957a9daade",
+  "annotationSha256": "afbaa73dbc279458bc709fd03c33ed47d45c80064d837303d82da1a5589d5ad8",
+  "included": [
+    "03-kimi-privacy",
+    "04-privacy-disagree",
+    "05-privacy-reentry",
+    "07-notification-permission",
+    "08-guest-home",
+    "09-navigation-drawer",
+    "10-composer-focus",
+    "11-settings",
+    "12-appearance",
+    "13-theme-selector",
+    "14-dark-theme",
+    "15-dark-appearance",
+    "16-font-size",
+    "17-language-selector",
+    "18-font-size-options",
+    "19-language-options",
+    "20-language-change",
+    "21-chinese-return",
+    "22-chinese-home",
+    "23-composer-keyboard",
+    "24-input-options",
+    "25-camera-entry",
+    "26-back-from-login",
+    "27-relaunch-persistence",
+    "28-relaunch-settled",
+    "29-theme-restored",
+    "30-restore-home",
+    "31-restore-settings",
+    "32-theme-restored",
+    "33-language-restored",
+    "34-restored-appearance"
+  ],
+  "kindCounts": {
+    "app-ui": 26,
+    "system-result": 1,
+    "system-permission": 1,
+    "unconfirmed-result": 3
+  },
+  "excluded": [
+    {
+      "id": "01-first-launch",
+      "reason": "安装完成前启动失败，仅环境审计记录。"
+    },
+    {
+      "id": "02-kimi-initial",
+      "reason": "Android System UI ANR 干扰，排除 Kimi 原生设计证据。"
+    },
+    {
+      "id": "06-after-agree",
+      "reason": "过渡截图与稍后 UI hierarchy 不一致，排除设计与状态结论。"
+    }
+  ],
+  "pending": [],
+  "screenshotHashesVerified": 31,
+  "hierarchyHashesVerified": 31,
+  "sourceScreenshotsModified": 0,
+  "sourceRecordsModified": 0,
+  "pixelSamples": [
+    {
+      "scene": "08-guest-home",
+      "id": "home-white-patch",
+      "purpose": "主页上部空白区域的合成像素",
+      "x": 480,
+      "y": 400,
+      "width": 120,
+      "height": 120,
+      "unit": "physical screenshot px; origin top-left; x/y inclusive, right/bottom exclusive",
+      "pixelCount": 14400,
+      "distinctRgba": 1,
+      "mostFrequent": [
+        {
+          "rgba": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "count": 14400
+        }
+      ],
+      "interpretation": "Composited screenshot pixels only. Not a code color token, whole-page measurement, dp/sp value or font-size estimate."
+    }
+  ],
+  "browserScriptSyntaxChecked": true,
+  "guiOrDeviceOperationsPerformed": false
+}

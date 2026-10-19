@@ -1,0 +1,43 @@
+{
+  "id": "r02-45-delete-confirmation",
+  "description": "Risk-action confirmation preview without committing deletion",
+  "classification": "A",
+  "origin": "current",
+  "runId": "run02-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-16T04:05:21.269Z",
+  "capturedAt": "2026-10-16T04:05:27.945Z",
+  "screenshotCapturedAt": "2026-10-16T04:05:24.649Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/run02-20261016/scenes/r02-45-delete-confirmation/screen.png",
+    "sha256": "e3d4893a9b95b1c377923ff0a6d8b8a00dbfaf74353c73376a092847975c2b9c",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/run02-20261016/scenes/r02-45-delete-confirmation/hierarchy.xml",
+    "sha256": "f9d9c18d0dfc356ca0af08019ceded3a18a5b4f591af0e5b11a6d08190e8ea64"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 95,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "systemLocales": "null",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{c090514 u0 com.moonshot.kimichat/.MainActivity t15}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen",
+  "captureSettlingDelayMs": 2000,
+  "accountMode": "authenticated-after-user-assisted-phone-login"
+}

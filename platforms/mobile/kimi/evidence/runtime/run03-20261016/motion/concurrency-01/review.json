@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 1,
+  "id": "concurrency-01",
+  "reviewedAt": "2026-10-16T10:32:43.325Z",
+  "reviewer": "native_reference independent offline worker",
+  "origin": "review of retained original A video; no new device action",
+  "source": {
+    "video": "evidence/runtime/run03-20261016/motion/concurrency-01/screenrecord.mp4",
+    "bytes": 1405631,
+    "sha256": "f3179706767794ba48dcb27c861b8cbe4967a43a9018277e85a10a6a55f3f246",
+    "capture": "evidence/runtime/run03-20261016/motion/concurrency-01/capture.json",
+    "captureSha256": "f5c3ea15722d82d4d7952a49b65cea75179eec5e1a7af145f06e57a7bdd2e8b6",
+    "frameIndex": "evidence/runtime/run03-20261016/motion/concurrency-01/browser-decoded/frame-index.json",
+    "frameIndexSha256": "3e74e344651700deb707124f7c7937f9230aaa159b39044b5e38dde96aa21b29"
+  },
+  "decode": {
+    "codec": "avc1.42c032",
+    "width": 1080,
+    "height": 2400,
+    "sourceVideoSamples": 63,
+    "decodedFrames": 63,
+    "everyVideoSampleDecoded": true,
+    "originalMediaTimebase": {
+      "numerator": 1,
+      "denominator": 90000
+    },
+    "firstPtsTicks": 0,
+    "lastPtsTicks": 1219890,
+    "lastSampleDurationTicks": 23923,
+    "sttsSampleSpanSeconds": 13.820144444444445,
+    "minConsecutivePtsGapSeconds": 0.020855555555555405,
+    "maxConsecutivePtsGapSeconds": 1.282288888888889,
+    "constantFpsAssumed": false
+  },
+  "pixelReview": {
+    "everyDecodedFrameReviewedInContactSheets": true,
+    "contactSheets": [
+      {
+        "path": "evidence/runtime/run03-20261016/motion/concurrency-01/review-sheets/sheet-1.png",
+        "sha256": "1ddd682696b1040baa90d6ad4b1d8bbe45e2d56c389c67d37c9c726acb3dff34",
+        "frameNumbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "derived": true,
+        "originalPixelsUnmodified": true
+      },
+      {
+        "path": "evidence/runtime/run03-20261016/motion/concurrency-01/review-sheets/sheet-2.png",
+        "sha256": "adf405e76e69bf262ae5ac8d8b15754a21b8c34d383b45d72b969d1f7dc81b6e",
+        "frameNumbers": [
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42
+        ],
+        "derived": true,
+        "originalPixelsUnmodified": true
+      },
+      {
+        "path": "evidence/runtime/run03-20261016/motion/concurrency-01/review-sheets/sheet-3.png",
+        "sha256": "0d93de0ae0873e1d10b41c593aedbedf21de68b79b25dad41bfe208a101be0ea",
+        "frameNumbers": [
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63
+        ],
+        "derived": true,
+        "originalPixelsUnmodified": true
+      }
+    ],
+    "nativeResolutionFramesReviewed": [
+      1,
+      6,
+      8,
+      18,
+      19,
+      31,
+      51,
+      63
+    ],
+    "method": "Every video sample appears once in separately labelled derived contact sheets; listed key frames additionally inspected at full original decoded resolution. Raw MP4, source PNGs and capture metadata are unchanged."
+  },
+  "privacy": {
+    "status": "no-identity-or-private-history-observed-in-reviewed-video-pixels",
+    "observations": "Only self-created Research Run03 test chat/output and, in concurrency clip, generic Android Gboard controls are visible. No drawer, account greeting, personal avatar, QR code or unrelated conversation was observed.",
+    "limit": "Review applies to decoded visible video samples. It is not a new pixel capture or a proof about data outside the supplied recording.",
+    "distributionReview": "clear"
+  },
+  "distribution": {
+    "status": "allow-reviewed-exact-files",
+    "currentlyPackaged": false,
+    "allowlist": "docs/run03-motion-safe-files.json",
+    "reason": "Only exact approved bytes may be packaged. New recordings, altered files, logs, HTML intermediates and browser profiles remain excluded. No archive is created by this script."
+  },
+  "animationParameters": {
+    "duration": null,
+    "easing": null,
+    "spring": null,
+    "triggerToPixelLatency": null,
+    "reducedMotion": null
+  },
+  "timeBasisLimit": "Host UTC/monotonic call intervals, guest uptime and MP4 video-media PTS are distinct. Sparse encoded samples and absence of a common synchronization marker prevent an exact action-to-frame mapping.",
+  "containerHeaders": {
+    "movie": {
+      "timescale": 10000,
+      "durationTicks": 138201,
+      "seconds": 13.8201
+    },
+    "videoMedia": {
+      "timescale": 90000,
+      "durationTicks": 1243812,
+      "seconds": 13.820133333333333
+    },
+    "note": "MDHD duration differs by one 1/90000 tick from the sum of sample deltas; retain both rather than invent precision. Auxiliary zero-duration metadata tracks were not used as video frames."
+  },
+  "keyFrames": [
+    {
+      "frame": 1,
+      "ptsSeconds": 0,
+      "classification": "A",
+      "observation": "Completed old C output tail 482?500 and answer tools; composer empty."
+    },
+    {
+      "frame": 18,
+      "ptsSeconds": 4.471122222222222,
+      "classification": "A",
+      "observation": "Own C request visible with generation dot, Send messages anytime? and stop square; earlier self-created A/B messages remain above."
+    },
+    {
+      "frame": 31,
+      "ptsSeconds": 7.269233333333333,
+      "classification": "A",
+      "observation": "C Thinking card remains; exact queued D text is still editable, upward Send arrow visible, system keyboard open."
+    },
+    {
+      "frame": 63,
+      "ptsSeconds": 13.554333333333334,
+      "classification": "A",
+      "observation": "C Thinking summary begins List 500 integer pairs?; exact D remains in composer with upward Send arrow. No submitted D bubble or stop result appears."
+    }
+  ],
+  "sourceActions": [
+    {
+      "number": 448,
+      "operation": "tap-label",
+      "startedAt": "2026-10-16T10:17:54.439Z",
+      "completedAt": "2026-10-16T10:17:57.865Z",
+      "description": "Observed label Retry; Retry only current own completed CONCUR-RUN03-8941 answer during video",
+      "actionObjectSha256": "b697d5efb6744700a66b4f0dad1f0e641a2687d04e6377b642c3e8d69c41dcd9"
+    },
+    {
+      "number": 449,
+      "operation": "tap",
+      "startedAt": "2026-10-16T10:17:58.371Z",
+      "completedAt": "2026-10-16T10:17:58.826Z",
+      "description": "Focus composer immediately after Retry",
+      "actionObjectSha256": "5b0b98100625966a9cf7f99dd8dc286002c396c30ca5778251283174a6c5f48a"
+    },
+    {
+      "number": 450,
+      "operation": "key",
+      "startedAt": "2026-10-16T10:17:59.232Z",
+      "completedAt": "2026-10-16T10:18:01.219Z",
+      "description": "Guest clipboard contains only prewritten own queued D fixture",
+      "actionObjectSha256": "b5b19195766a1a7bae1f59147426089269bd20c937e191b98ed1f5073e66da74"
+    },
+    {
+      "number": 451,
+      "operation": "verified-research-draft",
+      "startedAt": "2026-10-16T10:18:02.559Z",
+      "completedAt": "2026-10-16T10:18:12.504Z",
+      "description": null,
+      "actionObjectSha256": "eb0b9048178b575c58efbcedce24cd9575227410edbb186c18eab09203e6dd6b"
+    },
+    {
+      "number": 452,
+      "operation": "submit-exact",
+      "startedAt": "2026-10-16T10:18:02.559Z",
+      "completedAt": "2026-10-16T10:18:13.117Z",
+      "description": "Fresh exact test draft and single Send action checked; ",
+      "actionObjectSha256": "ccdfa9b5b1d87366413778504c2e83634aaf13b3bd8da52c2791b5ec53a91e8b"
+    },
+    {
+      "number": 453,
+      "operation": "stop-generation-checked",
+      "startedAt": "2026-10-16T10:18:33.222Z",
+      "completedAt": "2026-10-16T10:18:42.284Z",
+      "description": "Observed live generating placeholder + square-control semantic node; UI cancellation only, network cancellation unknown",
+      "actionObjectSha256": "6a8776b76f1459aa04112e204b157cd012364f24199eee323b108eda3ea12207"
+    }
+  ],
+  "hostCoverage": {
+    "recordWrapperStartedAt": "2026-10-16T10:17:53.2019176Z",
+    "recordWrapperCompletedAt": "2026-10-16T10:18:58.9201556Z",
+    "recordWrapperWallSeconds": 65.719,
+    "requestedScreenrecordSeconds": 18,
+    "actualSendDispatchBound": {
+      "notBefore": "2026-10-16T10:18:12.504Z",
+      "notAfter": "2026-10-16T10:18:13.117Z",
+      "basis": "verified-research-draft completion precedes action() dispatch in android-session.mjs; submit action.startedAt includes the earlier UIA guard and is not the physical dispatch time"
+    },
+    "checkedStopActionWindow": {
+      "startedAt": "2026-10-16T10:18:33.222Z",
+      "completedAt": "2026-10-16T10:18:42.284Z"
+    },
+    "mappingToVideoPts": "not calibrated; do not add host start to media PTS and call it an exact event time"
+  },
+  "conclusions": {
+    "retryGenerationObserved": true,
+    "editingDWhileCThinkingObserved": true,
+    "sendAffordanceVisibleDuringEditing": true,
+    "DSubmissionVisiblyCovered": false,
+    "queueCounterVisiblyCovered": false,
+    "stopResultVisiblyCovered": false,
+    "concurrentSecondRequestAcceptanceProven": false,
+    "statement": "This recording supports editing/retaining an unsent second draft during C generation. It does not visibly cover D submission, queue acceptance or checkedStop; use separately reviewed later scenes for those claims."
+  },
+  "metadataReview": {
+    "capture": "all fields reviewed; source task/device/timing metadata only",
+    "decoderIndex": "browser/codec/sample/PTS/hash metadata only; no user browser profile or account data"
+  }
+}

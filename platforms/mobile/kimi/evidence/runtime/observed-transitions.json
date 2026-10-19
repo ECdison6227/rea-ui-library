@@ -1,0 +1,544 @@
+{
+  "schemaVersion": 1,
+  "scope": "Original Kimi Android 3.1.3 (376), no-login dedicated AVD; sampled first-use/settings/input/auth-gate/restore paths, scenes 03 through 34",
+  "classification": "A for observed states/actions; attribution limitations remain explicit",
+  "origin": "current",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "sourceSession": "evidence/runtime/session.json",
+  "actionIndexBase": 1,
+  "transitions": [
+    {
+      "id": "T01",
+      "fromScene": "03-kimi-privacy",
+      "actionIndexes": [
+        3
+      ],
+      "trigger": {
+        "kind": "tap",
+        "physicalPx": [
+          360,
+          1415
+        ],
+        "target": "Disagree"
+      },
+      "toScene": "04-privacy-disagree",
+      "observedResult": "Android launcher is visible; Kimi no longer in foreground",
+      "attribution": "observed-single-action-path",
+      "unknowns": [
+        "Process lifetime",
+        "Data retention",
+        "System Back or outside-tap behavior"
+      ]
+    },
+    {
+      "id": "T02",
+      "fromScene": "04-privacy-disagree",
+      "actionIndexes": [
+        4
+      ],
+      "trigger": {
+        "kind": "launch",
+        "target": "com.moonshot.kimichat/.MainActivity"
+      },
+      "toScene": "05-privacy-reentry",
+      "observedResult": "Privacy panel appears again",
+      "attribution": "observed-single-action-path",
+      "unknowns": [
+        "Persistence across force-stop/reboot/upgrade/reinstall"
+      ]
+    },
+    {
+      "id": "T03",
+      "fromScene": "05-privacy-reentry",
+      "actionIndexes": [
+        5
+      ],
+      "trigger": {
+        "kind": "tap",
+        "physicalPx": [
+          720,
+          1415
+        ],
+        "target": "Agree"
+      },
+      "intermediateScenes": [
+        "06-after-agree"
+      ],
+      "toScene": "07-notification-permission",
+      "observedResult": "Darkened privacy intermediate frame, followed by Android notification permission dialog",
+      "attribution": "observed-sequence-with-sparse-sampling",
+      "unknowns": [
+        "Exact transition time",
+        "Animation parameters",
+        "Repeated tap behavior",
+        "Consent persistence implementation"
+      ]
+    },
+    {
+      "id": "T04",
+      "fromScene": "07-notification-permission",
+      "actionIndexes": [
+        6
+      ],
+      "trigger": {
+        "kind": "tap",
+        "physicalPx": [
+          540,
+          1480
+        ],
+        "target": "Don't allow",
+        "owner": "com.google.android.permissioncontroller"
+      },
+      "toScene": "08-guest-home",
+      "observedResult": "Guest home is visible with navigation, tool chips and empty composer",
+      "attribution": "observed-single-action-path",
+      "unknowns": [
+        "Allow path",
+        "Repeated prompting",
+        "Actual backend generation availability"
+      ]
+    },
+    {
+      "id": "T05",
+      "fromScene": "08-guest-home",
+      "actionIndexes": [
+        7
+      ],
+      "trigger": {
+        "kind": "tap",
+        "physicalPx": [
+          100,
+          194
+        ],
+        "target": "Navigation button"
+      },
+      "toScene": "09-navigation-drawer",
+      "observedResult": "Early screenshot still shows home; scene filename does not describe visible drawer state",
+      "attribution": "only-early-frame-observed",
+      "unknowns": [
+        "When drawer opening begins",
+        "Whether input processing was delayed",
+        "Animation duration"
+      ]
+    },
+    {
+      "id": "T06",
+      "fromScene": "09-navigation-drawer",
+      "actionIndexes": [
+        7,
+        8
+      ],
+      "trigger": {
+        "kind": "unisolated-sequence",
+        "target": "Navigation tap followed later by intended composer tap",
+        "interveningTapPhysicalPx": [
+          540,
+          2180
+        ]
+      },
+      "toScene": "10-composer-focus",
+      "observedResult": "Navigation drawer is open; no keyboard is visible; composer focus is not established",
+      "attribution": "uncertain-event-attribution",
+      "forbiddenInference": "Do not record composer tap as a confirmed drawer-open event",
+      "unknowns": [
+        "Exact drawer-open trigger/time",
+        "Input focus outcome",
+        "Outside-tap close behavior"
+      ]
+    },
+    {
+      "id": "T07",
+      "fromScene": "10-composer-focus",
+      "actionIndexes": [
+        9
+      ],
+      "trigger": {
+        "kind": "tap",
+        "physicalPx": [
+          815,
+          225
+        ],
+        "target": "Drawer gear"
+      },
+      "toScene": "11-settings",
+      "observedResult": "Settings page is visible while still not logged in",
+      "attribution": "observed-single-action-path",
+      "unknowns": [
+        "Back stack",
+        "Drawer state after returning",
+        "Subpage behavior",
+        "Login action result"
+      ]
+    },
+    {
+      "id": "T08",
+      "fromScene": "11-settings",
+      "actionIndexes": [
+        10
+      ],
+      "trigger": {
+        "kind": "tap",
+        "physicalPx": [
+          420,
+          540
+        ],
+        "target": "Appearance"
+      },
+      "toScene": "12-appearance",
+      "observedResult": "Appearance page, Theme and Font size summaries Follow System, Language English",
+      "attribution": "observed-single-action-path",
+      "unknowns": [
+        "Defaults for other profiles or installations"
+      ]
+    },
+    {
+      "id": "T09",
+      "fromScene": "12-appearance",
+      "actionIndexes": [
+        11
+      ],
+      "trigger": {
+        "kind": "tap",
+        "physicalPx": [
+          450,
+          370
+        ],
+        "target": "Theme settings"
+      },
+      "toScene": "13-theme-selector",
+      "observedResult": "Theme choices Follow System / Light mode / Dark mode; Follow System checked",
+      "attribution": "observed-single-action-path",
+      "unknowns": [
+        "Reselecting the checked option"
+      ]
+    },
+    {
+      "id": "T10",
+      "fromScene": "13-theme-selector",
+      "actionIndexes": [
+        12
+      ],
+      "trigger": {
+        "kind": "tap",
+        "physicalPx": [
+          420,
+          668
+        ],
+        "target": "Dark mode"
+      },
+      "toScene": "14-dark-theme",
+      "observedResult": "Same page is dark and Dark mode has the checkmark; Android system night mode remains no",
+      "attribution": "observed-single-action-path",
+      "saveActionRequiredForThisObservedChange": false,
+      "unknowns": [
+        "Exact visual update delay",
+        "Other theme choices",
+        "Persistence across restart"
+      ]
+    },
+    {
+      "id": "T11",
+      "fromScene": "14-dark-theme",
+      "actionIndexes": [
+        13
+      ],
+      "trigger": {
+        "kind": "system-back"
+      },
+      "toScene": "15-dark-appearance",
+      "observedResult": "Appearance page remains dark and Theme settings summary reads Dark mode",
+      "attribution": "observed-single-action-path",
+      "retainedState": [
+        "App Dark mode across this return"
+      ],
+      "unknowns": [
+        "Persistence beyond current run",
+        "System theme change handling"
+      ]
+    },
+    {
+      "id": "T12",
+      "fromScene": "16-font-size",
+      "fromSceneActualContent": "Appearance page, not Font size",
+      "actionIndexes": [
+        14,
+        15
+      ],
+      "trigger": {
+        "kind": "system-back-then-tap",
+        "physicalPx": [
+          420,
+          665
+        ],
+        "actualTarget": "Feature management row in Settings",
+        "originalActionDescription": "Open app language selection"
+      },
+      "toScene": "17-language-selector",
+      "toSceneActualContent": "Feature management, not a language selector",
+      "observedResult": "Vibration feedback and Use keyboard send button switches are checked",
+      "attribution": "observed-navigation-sequence-with-mislabeled-intent",
+      "unknowns": [
+        "Switch-off behavior",
+        "Actual haptics",
+        "Actual keyboard send behavior"
+      ]
+    },
+    {
+      "id": "T13",
+      "fromScene": "17-language-selector",
+      "fromSceneActualContent": "Feature management",
+      "actionIndexes": [
+        16,
+        17,
+        18
+      ],
+      "trigger": {
+        "kind": "navigation-sequence",
+        "steps": [
+          "System Back",
+          "Open Appearance at [420,540]",
+          "Open Font size at [420,520]"
+        ]
+      },
+      "toScene": "18-font-size-options",
+      "observedResult": "Font size page with preview, Follow System checked, four labeled slider positions and top-right Save icon",
+      "attribution": "observed-navigation-sequence",
+      "unknowns": [
+        "Slider movement",
+        "Font size values",
+        "Save and cancellation semantics",
+        "Persistence"
+      ]
+    },
+    {
+      "id": "T14",
+      "fromScene": "18-font-size-options",
+      "actionIndexes": [
+        19,
+        20
+      ],
+      "trigger": {
+        "kind": "system-back-then-tap",
+        "physicalPx": [
+          420,
+          666
+        ],
+        "target": "Language in Appearance"
+      },
+      "toScene": "19-language-options",
+      "observedResult": "Language Selection page with blue checkmark next to English",
+      "attribution": "observed-navigation-sequence",
+      "unknowns": [
+        "Discarding unsaved font changes was not tested because no font change was made",
+        "Other language behavior"
+      ]
+    },
+    {
+      "id": "T15",
+      "fromScene": "19-language-options",
+      "actionIndexes": [
+        21
+      ],
+      "trigger": {
+        "kind": "tap",
+        "physicalPx": [
+          420,
+          675
+        ],
+        "target": "简体中文"
+      },
+      "toScene": "20-language-change",
+      "observedResult": "Page title is 语言切换, blue checkmark is beside 简体中文, appLocales is [zh-CN]",
+      "attribution": "observed-single-action-path",
+      "saveActionRequiredForThisObservedChange": false,
+      "unchangedRecordedConditions": {
+        "buildLocale": "en-US",
+        "systemLocales": "null",
+        "nightMode": "Night mode: no"
+      },
+      "unknowns": [
+        "Exact update delay",
+        "Other locales and RTL",
+        "Persistence across restart",
+        "Full product localization coverage"
+      ]
+    },
+    {
+      "id": "T16",
+      "fromScene": "20-language-change",
+      "actionIndexes": [
+        22,
+        23,
+        24
+      ],
+      "trigger": {
+        "kind": "system-back-sequence",
+        "count": 3
+      },
+      "toScene": "21-chinese-return",
+      "observedResult": "Open navigation drawer is dark and Chinese, including 定时任务/项目/新建项目/历史会话/去登录; only a narrow strip of home is visible",
+      "attribution": "observed-navigation-sequence",
+      "retainedState": [
+        "App Dark mode",
+        "Chinese app language",
+        "Drawer open at final sampled state"
+      ],
+      "unknowns": [
+        "Intermediate page animation/state restoration",
+        "Component reuse/recreation",
+        "Restart persistence",
+        "Full home content"
+      ]
+    },
+    {
+      "id": "T17",
+      "fromScene": "21-chinese-return",
+      "actionIndexes": [
+        25
+      ],
+      "trigger": {
+        "kind": "system-back"
+      },
+      "toScene": "22-chinese-home",
+      "observedResult": "Drawer is closed and the full Chinese dark home is visible, with blue-ring avatar eyes and welcome text",
+      "attribution": "observed-single-action-path",
+      "unknowns": [
+        "Back priority with additional overlays",
+        "Avatar animation parameters or loading semantics"
+      ]
+    },
+    {
+      "id": "T18",
+      "fromScene": "22-chinese-home",
+      "actionIndexes": [
+        26
+      ],
+      "trigger": {
+        "kind": "tap",
+        "physicalPx": [
+          500,
+          2175
+        ],
+        "target": "Empty Chinese composer"
+      },
+      "toScene": "23-composer-keyboard",
+      "toSceneActualContent": "Expanded focused composer; screenshot has no visible software keyboard",
+      "observedResult": "Screenshot shows caret, taller composer and no welcome sentence; subsequent UIA reports EditText focused=true",
+      "attribution": "observed-single-action-path-with-nonatomic-geometry",
+      "geometryMismatch": {
+        "laterUiaEditTextBounds": "[74,1228][1006,1353]",
+        "screenshotObservation": "Composer still close to lower screen edge",
+        "policy": "Do not use later UIA bounds as screenshot geometry or infer keyboard height"
+      },
+      "unknowns": [
+        "When or whether software keyboard became visible",
+        "Actual typing, IME composition, send/line break",
+        "Draft preservation"
+      ]
+    },
+    {
+      "id": "T19",
+      "fromScene": "23-composer-keyboard",
+      "toScene": "24-input-options",
+      "actionIndexes": [
+        27,
+        28
+      ],
+      "trigger": "System Back then +",
+      "observedResult": "Attachment capability bottom sheet visible",
+      "attribution": "observed-sequence-with-nonatomic-capture",
+      "unknowns": [
+        "Outside tap/drag dismissal",
+        "Other attachment results"
+      ]
+    },
+    {
+      "id": "T20",
+      "fromScene": "24-input-options",
+      "toScene": "25-camera-entry",
+      "actionIndexes": [
+        29
+      ],
+      "trigger": "Tap camera",
+      "observedResult": "Login gate visible before camera permission",
+      "attribution": "observed-sequence-with-nonatomic-capture",
+      "unknowns": [
+        "Actual authentication",
+        "Photo/file entry gates",
+        "Login completion continuation"
+      ]
+    },
+    {
+      "id": "T21",
+      "fromScene": "25-camera-entry",
+      "toScene": "26-back-from-login",
+      "actionIndexes": [
+        30
+      ],
+      "trigger": "System Back",
+      "observedResult": "Chinese dark home visible; sheet not retained",
+      "attribution": "observed-sequence-with-nonatomic-capture",
+      "unknowns": [
+        "Request cancellation",
+        "Post-login navigation"
+      ]
+    },
+    {
+      "id": "T22",
+      "fromScene": "26-back-from-login",
+      "toScene": "28-relaunch-settled",
+      "actionIndexes": [
+        31,
+        32
+      ],
+      "trigger": "Force-stop then launch",
+      "observedResult": "Chinese and Dark mode retained across this process restart",
+      "attribution": "observed-sequence-with-nonatomic-capture",
+      "unknowns": [
+        "Device reboot",
+        "Preference storage implementation",
+        "Upgrade/reset behavior"
+      ]
+    },
+    {
+      "id": "T23",
+      "fromScene": "31-restore-settings",
+      "toScene": "32-theme-restored",
+      "actionIndexes": [
+        40,
+        41,
+        42
+      ],
+      "trigger": "Observed-label queries: Appearance → Theme → Follow System",
+      "observedResult": "App theme returns light and Follow System check is visible",
+      "attribution": "observed-sequence-with-nonatomic-capture",
+      "unknowns": [
+        "System theme changes"
+      ]
+    },
+    {
+      "id": "T24",
+      "fromScene": "32-theme-restored",
+      "toScene": "34-restored-appearance",
+      "actionIndexes": [
+        43,
+        44,
+        45,
+        46
+      ],
+      "trigger": "Back → language → English → Back",
+      "observedResult": "Final summaries Follow System theme/font and English",
+      "attribution": "observed-sequence-with-nonatomic-capture",
+      "unknowns": [
+        "Other preference persistence"
+      ]
+    }
+  ],
+  "limitations": [
+    "Screenshots and UIAutomator dumps are non-atomic; individual capture records retain their exact timing and hashes.",
+    "Action completion timestamps and screenshot intervals do not measure animation duration.",
+    "This is a partial observed transition ledger, not a complete product state machine.",
+    "Auxiliary Txx identifiers are local research labels and are not REA Evidence IDs."
+  ]
+}

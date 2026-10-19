@@ -1,0 +1,1992 @@
+{
+  "schemaVersion": 1,
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "package": "com.moonshot.kimichat",
+  "accountMode": "no-login",
+  "backend": "original app network; no fixtures",
+  "actions": [
+    {
+      "operation": "launch",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-n",
+        "com.moonshot.kimichat/.MainActivity"
+      ],
+      "description": "Launch original Kimi MainActivity",
+      "startedAt": "2026-10-15T15:15:16.606Z",
+      "completedAt": "2026-10-15T15:15:17.533Z",
+      "stdout": "Starting: Intent { cmp=com.moonshot.kimichat/.MainActivity }\r\n"
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "1365"
+      ],
+      "description": "Dismiss System UI ANR with Wait, environment recovery",
+      "startedAt": "2026-10-15T15:16:19.961Z",
+      "completedAt": "2026-10-15T15:16:21.394Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "360",
+        "1415"
+      ],
+      "description": "Privacy Disagree to inspect refusal path",
+      "startedAt": "2026-10-15T15:17:07.279Z",
+      "completedAt": "2026-10-15T15:17:08.016Z",
+      "stdout": ""
+    },
+    {
+      "operation": "launch",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-n",
+        "com.moonshot.kimichat/.MainActivity"
+      ],
+      "description": "Launch original Kimi MainActivity",
+      "startedAt": "2026-10-15T15:17:50.366Z",
+      "completedAt": "2026-10-15T15:17:51.134Z",
+      "stdout": "Starting: Intent { cmp=com.moonshot.kimichat/.MainActivity }\r\n"
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "720",
+        "1415"
+      ],
+      "description": "Agree in dedicated test installation, continue into Kimi",
+      "startedAt": "2026-10-15T15:18:20.107Z",
+      "completedAt": "2026-10-15T15:18:20.666Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "1480"
+      ],
+      "description": "Deny notification permission to study recovery and guest navigation",
+      "startedAt": "2026-10-15T15:19:47.725Z",
+      "completedAt": "2026-10-15T15:19:48.445Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "100",
+        "194"
+      ],
+      "description": "Open home navigation menu",
+      "startedAt": "2026-10-15T15:20:16.282Z",
+      "completedAt": "2026-10-15T15:20:16.929Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "2180"
+      ],
+      "description": "Focus composer from guest home",
+      "startedAt": "2026-10-15T15:21:51.488Z",
+      "completedAt": "2026-10-15T15:21:52.142Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "815",
+        "225"
+      ],
+      "description": "Open settings from observed drawer gear",
+      "startedAt": "2026-10-15T15:22:55.928Z",
+      "completedAt": "2026-10-15T15:22:56.409Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "420",
+        "540"
+      ],
+      "description": "Open Appearance settings",
+      "startedAt": "2026-10-15T15:23:59.614Z",
+      "completedAt": "2026-10-15T15:23:59.763Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "450",
+        "370"
+      ],
+      "description": "Open theme selection",
+      "startedAt": "2026-10-15T15:24:35.343Z",
+      "completedAt": "2026-10-15T15:24:35.727Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "420",
+        "668"
+      ],
+      "description": "Select Dark mode",
+      "startedAt": "2026-10-15T15:25:23.197Z",
+      "completedAt": "2026-10-15T15:25:23.358Z",
+      "stdout": ""
+    },
+    {
+      "operation": "back",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "description": "Return to Appearance after theme change",
+      "startedAt": "2026-10-15T15:25:29.087Z",
+      "completedAt": "2026-10-15T15:25:29.234Z",
+      "stdout": ""
+    },
+    {
+      "operation": "back",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "description": "Return without changing app font size",
+      "startedAt": "2026-10-15T15:26:12.995Z",
+      "completedAt": "2026-10-15T15:26:13.383Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "420",
+        "665"
+      ],
+      "description": "Open app language selection",
+      "startedAt": "2026-10-15T15:26:14.349Z",
+      "completedAt": "2026-10-15T15:26:14.611Z",
+      "stdout": ""
+    },
+    {
+      "operation": "back",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "description": "Return from Feature management to Settings",
+      "startedAt": "2026-10-15T15:27:16.237Z",
+      "completedAt": "2026-10-15T15:27:16.390Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "420",
+        "540"
+      ],
+      "description": "Open Appearance again",
+      "startedAt": "2026-10-15T15:27:16.877Z",
+      "completedAt": "2026-10-15T15:27:17.108Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "420",
+        "520"
+      ],
+      "description": "Open Font size from Appearance",
+      "startedAt": "2026-10-15T15:27:17.737Z",
+      "completedAt": "2026-10-15T15:27:17.918Z",
+      "stdout": ""
+    },
+    {
+      "operation": "back",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "description": "Leave Font size without changing follow-system setting",
+      "startedAt": "2026-10-15T15:27:37.871Z",
+      "completedAt": "2026-10-15T15:27:38.218Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "420",
+        "666"
+      ],
+      "description": "Open Language from Appearance",
+      "startedAt": "2026-10-15T15:27:39.985Z",
+      "completedAt": "2026-10-15T15:27:40.266Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "420",
+        "675"
+      ],
+      "description": "Select Simplified Chinese in app language settings",
+      "startedAt": "2026-10-15T15:28:17.482Z",
+      "completedAt": "2026-10-15T15:28:17.921Z",
+      "stdout": ""
+    },
+    {
+      "operation": "back",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "description": "Return from Chinese language list to Appearance",
+      "startedAt": "2026-10-15T15:29:34.523Z",
+      "completedAt": "2026-10-15T15:29:35.101Z",
+      "stdout": ""
+    },
+    {
+      "operation": "back",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "description": "Return from Appearance to Settings, prior batch stopped at identity probe",
+      "startedAt": "2026-10-15T15:30:17.391Z",
+      "completedAt": "2026-10-15T15:30:17.910Z",
+      "stdout": ""
+    },
+    {
+      "operation": "back",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "description": "Return from Settings to drawer or home",
+      "startedAt": "2026-10-15T15:30:18.809Z",
+      "completedAt": "2026-10-15T15:30:19.333Z",
+      "stdout": ""
+    },
+    {
+      "operation": "back",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "description": "Close Chinese navigation drawer with system Back",
+      "startedAt": "2026-10-15T15:33:23.072Z",
+      "completedAt": "2026-10-15T15:33:23.494Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "500",
+        "2175"
+      ],
+      "description": "Focus empty Chinese composer",
+      "startedAt": "2026-10-15T15:33:34.596Z",
+      "completedAt": "2026-10-15T15:33:35.007Z",
+      "stdout": ""
+    },
+    {
+      "operation": "back",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "description": "Leave empty composer focus without submitting",
+      "startedAt": "2026-10-15T15:35:23.463Z",
+      "completedAt": "2026-10-15T15:35:24.868Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "116",
+        "2185"
+      ],
+      "description": "Open composer input options",
+      "startedAt": "2026-10-15T15:35:26.046Z",
+      "completedAt": "2026-10-15T15:35:26.740Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "184",
+        "1740"
+      ],
+      "description": "Choose camera from input options to inspect permission gate",
+      "startedAt": "2026-10-15T15:36:10.154Z",
+      "completedAt": "2026-10-15T15:36:10.744Z",
+      "stdout": ""
+    },
+    {
+      "operation": "back",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "description": "Return from login gate without authenticating",
+      "startedAt": "2026-10-15T15:38:01.490Z",
+      "completedAt": "2026-10-15T15:38:01.875Z",
+      "stdout": ""
+    },
+    {
+      "operation": "stop",
+      "arguments": [
+        "shell",
+        "am",
+        "force-stop",
+        "com.moonshot.kimichat"
+      ],
+      "description": "Relaunch check for language and theme persistence",
+      "startedAt": "2026-10-15T15:38:52.630Z",
+      "completedAt": "2026-10-15T15:38:53.448Z",
+      "stdout": ""
+    },
+    {
+      "operation": "launch",
+      "arguments": [
+        "shell",
+        "am",
+        "start",
+        "-n",
+        "com.moonshot.kimichat/.MainActivity"
+      ],
+      "description": "Launch original Kimi MainActivity",
+      "startedAt": "2026-10-15T15:38:54.520Z",
+      "completedAt": "2026-10-15T15:38:55.395Z",
+      "stdout": "Starting: Intent { cmp=com.moonshot.kimichat/.MainActivity }\r\n"
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "100",
+        "194"
+      ],
+      "description": "Open drawer to restore test preferences",
+      "startedAt": "2026-10-15T15:41:04.203Z",
+      "completedAt": "2026-10-15T15:41:04.732Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "815",
+        "225"
+      ],
+      "description": "Open Settings for restoration",
+      "startedAt": "2026-10-15T15:41:05.374Z",
+      "completedAt": "2026-10-15T15:41:06.333Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "420",
+        "540"
+      ],
+      "description": "Open Appearance for restoration",
+      "startedAt": "2026-10-15T15:41:07.096Z",
+      "completedAt": "2026-10-15T15:41:07.536Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "420",
+        "370"
+      ],
+      "description": "Open Theme settings for restoration",
+      "startedAt": "2026-10-15T15:41:08.092Z",
+      "completedAt": "2026-10-15T15:41:12.224Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "420",
+        "370"
+      ],
+      "description": "Restore initial Follow System theme",
+      "startedAt": "2026-10-15T15:41:12.976Z",
+      "completedAt": "2026-10-15T15:41:13.287Z",
+      "stdout": ""
+    },
+    {
+      "operation": "back",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "description": "Leave login reached during unsuccessful preference restoration",
+      "startedAt": "2026-10-15T15:42:42.581Z",
+      "completedAt": "2026-10-15T15:42:42.855Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "815",
+        "225"
+      ],
+      "description": "Settings gear in visually verified Chinese drawer",
+      "startedAt": "2026-10-15T15:43:35.765Z",
+      "completedAt": "2026-10-15T15:43:36.292Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap-label",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "190",
+        "539"
+      ],
+      "description": "Observed label 外观; Open verified Appearance row",
+      "startedAt": "2026-10-15T15:44:27.393Z",
+      "completedAt": "2026-10-15T15:44:31.617Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap-label",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "168",
+        "370"
+      ],
+      "description": "Observed label 主题设置; Open verified theme settings row",
+      "startedAt": "2026-10-15T15:44:32.634Z",
+      "completedAt": "2026-10-15T15:44:36.722Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap-label",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "535",
+        "370"
+      ],
+      "description": "Observed label 跟随系统; Restore initial app theme through visible choice",
+      "startedAt": "2026-10-15T15:44:37.850Z",
+      "completedAt": "2026-10-15T15:44:42.128Z",
+      "stdout": ""
+    },
+    {
+      "operation": "back",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "description": "Return to Appearance after verified theme restoration",
+      "startedAt": "2026-10-15T15:45:49.625Z",
+      "completedAt": "2026-10-15T15:45:49.888Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap-label",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "126",
+        "666"
+      ],
+      "description": "Observed label 语言; Open current language row for restoration",
+      "startedAt": "2026-10-15T15:45:50.605Z",
+      "completedAt": "2026-10-15T15:45:54.155Z",
+      "stdout": ""
+    },
+    {
+      "operation": "tap-label",
+      "arguments": [
+        "shell",
+        "input",
+        "tap",
+        "540",
+        "518"
+      ],
+      "description": "Observed label English; Restore initial app language",
+      "startedAt": "2026-10-15T15:45:54.878Z",
+      "completedAt": "2026-10-15T15:45:58.275Z",
+      "stdout": ""
+    },
+    {
+      "operation": "back",
+      "arguments": [
+        "shell",
+        "input",
+        "keyevent",
+        "4"
+      ],
+      "description": "Return to Appearance to confirm restored summaries",
+      "startedAt": "2026-10-15T15:47:20.823Z",
+      "completedAt": "2026-10-15T15:47:21.037Z",
+      "stdout": ""
+    },
+    {
+      "operation": "stop",
+      "arguments": [
+        "shell",
+        "am",
+        "force-stop",
+        "com.moonshot.kimichat"
+      ],
+      "description": "End first research session after restoring app defaults",
+      "startedAt": "2026-10-15T15:47:52.606Z",
+      "completedAt": "2026-10-15T15:47:53.024Z",
+      "stdout": ""
+    },
+    {
+      "operation": "exit-emulator",
+      "arguments": [
+        "emu",
+        "kill"
+      ],
+      "description": "Close only the verified dedicated Kimi AVD; do not stop shared adb server",
+      "startedAt": "2026-10-15T15:47:54.104Z",
+      "completedAt": "2026-10-15T15:47:54.395Z",
+      "stdout": "OK: killing emulator, bye bye\r\r\nOK\r\r\n"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "01-first-launch",
+      "description": "First launch of original Kimi in dedicated AVD",
+      "classification": "environment-only",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:13:59.662Z",
+      "capturedAt": "2026-10-15T15:14:10.995Z",
+      "method": "Android adb exec-out screencap -p; uiautomator dump; independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/01-first-launch/screen.png",
+        "sha256": "ad82e8542591873fbcd647aa90d7580f125fcc685ece1f0c1cadc9bda06f643e",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/01-first-launch/hierarchy.xml",
+        "sha256": "56bbe2294e19e95ea2cf4f9923e850917a5a99a3c7cb1fe21dc6366d47c9dcca"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 0,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "nightMode": "Night mode: no"
+      },
+      "window": [],
+      "visualReview": "Launch failed before installation completed; not a Kimi screen. Preserved for audit only.",
+      "validity": "excluded-from-Kimi-evidence"
+    },
+    {
+      "id": "02-kimi-initial",
+      "description": "Original Kimi after successful installation and launch",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:15:18.950Z",
+      "capturedAt": "2026-10-15T15:15:24.188Z",
+      "method": "Android adb exec-out screencap -p; uiautomator dump; independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/02-kimi-initial/screen.png",
+        "sha256": "328678e966a0faa0d8cf83008535e4e69d249c47cd9c9110fe008f524e234fb5",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/02-kimi-initial/hierarchy.xml",
+        "sha256": "56bbe2294e19e95ea2cf4f9923e850917a5a99a3c7cb1fe21dc6366d47c9dcca"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 1,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "nightMode": "Night mode: no"
+      },
+      "window": [],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "03-kimi-privacy",
+      "description": "Kimi visible after first-boot System UI Wait",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:16:24.670Z",
+      "capturedAt": "2026-10-15T15:16:30.556Z",
+      "method": "Android adb exec-out screencap -p; uiautomator dump; independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/03-kimi-privacy/screen.png",
+        "sha256": "bb571ebaa5e6d8298838e4d4afceba5d792b653127811206c75c76f0acbe1c3c",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/03-kimi-privacy/hierarchy.xml",
+        "sha256": "5340b794cfbbe10331c76d4f36d57fb39de5609ac8f3a45340deefc52cf6948c"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 2,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "nightMode": "Night mode: no"
+      },
+      "window": [],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "04-privacy-disagree",
+      "description": "Result of declining initial privacy agreement",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:17:09.870Z",
+      "capturedAt": "2026-10-15T15:17:17.749Z",
+      "method": "Android adb exec-out screencap -p; uiautomator dump; independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/04-privacy-disagree/screen.png",
+        "sha256": "75ce124652ce9b4d4b0bcf1dfa77477ab731fa90ffa11f39ec3e74d796f1f60f",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/04-privacy-disagree/hierarchy.xml",
+        "sha256": "7ea340ff56bc8a0ad025da8965b95550bd9dafb653a6e055fbe11891f07a5f98"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 3,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "nightMode": "Night mode: no"
+      },
+      "window": [],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "05-privacy-reentry",
+      "description": "Privacy agreement appears again after disagree and relaunch",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:17:53.672Z",
+      "capturedAt": "2026-10-15T15:17:59.910Z",
+      "method": "Android adb exec-out screencap -p; uiautomator dump; independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/05-privacy-reentry/screen.png",
+        "sha256": "3f79972e9b2cbdf63454b3c3e7c9920f0793e4aa98d5f62f85fc088670936cfa",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/05-privacy-reentry/hierarchy.xml",
+        "sha256": "5340b794cfbbe10331c76d4f36d57fb39de5609ac8f3a45340deefc52cf6948c"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 4,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "nightMode": "Night mode: no"
+      },
+      "window": [],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "06-after-agree",
+      "description": "Original Kimi after agreeing initial privacy terms",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:18:22.172Z",
+      "capturedAt": "2026-10-15T15:18:28.383Z",
+      "method": "Android adb exec-out screencap -p; uiautomator dump; independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/06-after-agree/screen.png",
+        "sha256": "fa3e3b0bd8c3e990843bff41f48aee3d39d318848f7aac888fde3a5bb45b97f0",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/06-after-agree/hierarchy.xml",
+        "sha256": "2218b06d2d39e2e42ab0cfce8167b3e55bbe9398ca419d4b19089a03deadaca0"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 5,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "nightMode": "Night mode: no"
+      },
+      "window": [],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "07-notification-permission",
+      "description": "System notification permission follows Agree in this fresh installation",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:19:22.302Z",
+      "capturedAt": "2026-10-15T15:19:27.616Z",
+      "screenshotCapturedAt": "2026-10-15T15:19:23.850Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/07-notification-permission/screen.png",
+        "sha256": "fb60dd0a19b90c83d9df0d8bc94c66d2b6c4840994f3d59c65ca506511a03ebb",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/07-notification-permission/hierarchy.xml",
+        "sha256": "2218b06d2d39e2e42ab0cfce8167b3e55bbe9398ca419d4b19089a03deadaca0"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 5,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{6b6b2ab u0 com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity t10}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "08-guest-home",
+      "description": "Original Kimi entry after rejecting notification permission",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:19:50.846Z",
+      "capturedAt": "2026-10-15T15:19:56.504Z",
+      "screenshotCapturedAt": "2026-10-15T15:19:52.139Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/08-guest-home/screen.png",
+        "sha256": "703c79852b3c0ea6d7793610e28a2ee0bba2022d5ea7cfa242cd35372091e144",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/08-guest-home/hierarchy.xml",
+        "sha256": "b8021dc154ddf2d3dde2222d25d0e0a48f95a3c28dc166856ada07bc55a1385a"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 6,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "09-navigation-drawer",
+      "description": "Navigation drawer from guest home",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:20:17.688Z",
+      "capturedAt": "2026-10-15T15:20:22.140Z",
+      "screenshotCapturedAt": "2026-10-15T15:20:18.553Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/09-navigation-drawer/screen.png",
+        "sha256": "b617a268e5fddd60c09c4aea7795944f0b8a40aff91a95c27ab237ec22a2ccca",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/09-navigation-drawer/hierarchy.xml",
+        "sha256": "b8021dc154ddf2d3dde2222d25d0e0a48f95a3c28dc166856ada07bc55a1385a"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 7,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "10-composer-focus",
+      "description": "Guest composer focus attempt and resulting keyboard or overlay",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:21:53.479Z",
+      "capturedAt": "2026-10-15T15:21:58.892Z",
+      "screenshotCapturedAt": "2026-10-15T15:21:55.115Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/10-composer-focus/screen.png",
+        "sha256": "cb21eca3b643c3307c82f009bb60f5eb473e5ec4c7b5ceeb3ba07131da3612c9",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/10-composer-focus/hierarchy.xml",
+        "sha256": "d895b14033e8f95ff84bf1f257f6e862b95232b86ec43ccfeb1f4ca119c49535"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 8,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "11-settings",
+      "description": "Settings entry from navigation drawer, early frame",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:22:57.510Z",
+      "capturedAt": "2026-10-15T15:23:01.507Z",
+      "screenshotCapturedAt": "2026-10-15T15:22:58.295Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/11-settings/screen.png",
+        "sha256": "f014884c0cf6572cac3d608914cf99674c3b45afd2a122d43a1ea4d5f5e2f10f",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/11-settings/hierarchy.xml",
+        "sha256": "4ef8cc81b4748e3498bb70c18379dcdbb899417cbb54c6692a96891912475aa6"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 9,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "12-appearance",
+      "description": "Appearance choices and current selection",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:24:00.415Z",
+      "capturedAt": "2026-10-15T15:24:03.268Z",
+      "screenshotCapturedAt": "2026-10-15T15:24:00.885Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/12-appearance/screen.png",
+        "sha256": "2bbbc1139dde80e17209224259b900e98eb152ae6dc46a341c14b48253c8c646",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/12-appearance/hierarchy.xml",
+        "sha256": "ba0711d3a701b312127d283ee68101e4200f03927ab11c28a5792a18ff682948"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 10,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "13-theme-selector",
+      "description": "Theme selection options from Appearance",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:24:36.697Z",
+      "capturedAt": "2026-10-15T15:24:40.222Z",
+      "screenshotCapturedAt": "2026-10-15T15:24:37.674Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/13-theme-selector/screen.png",
+        "sha256": "73efbd23fd3cc55097fca09d2d862c9eed02b1caa8347df1765fca3aaccc247a",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/13-theme-selector/hierarchy.xml",
+        "sha256": "5a735f6af48b76e7c166831f582063c254ef2250eba4c3eb37b6e5ae89052a82"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 11,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "14-dark-theme",
+      "description": "Result after choosing app Dark mode while Android system remains light",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:25:23.819Z",
+      "capturedAt": "2026-10-15T15:25:27.794Z",
+      "screenshotCapturedAt": "2026-10-15T15:25:24.811Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/14-dark-theme/screen.png",
+        "sha256": "14f62fe13be1ba4d25697c9c1608fae18de182f7b5129e78c194920b7ba5baad",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/14-dark-theme/hierarchy.xml",
+        "sha256": "6cc014b0bf72e0973dfbaf5c3651bf8ce8e64ffd320ae01c0c9e083d2b8df229"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 12,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "15-dark-appearance",
+      "description": "Appearance summary after app Dark mode selection",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:25:29.720Z",
+      "capturedAt": "2026-10-15T15:25:32.692Z",
+      "screenshotCapturedAt": "2026-10-15T15:25:30.191Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/15-dark-appearance/screen.png",
+        "sha256": "9453b17c74c7eec062054403ca220879bc218b9e1d77e8288ba72a8b38c536b3",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/15-dark-appearance/hierarchy.xml",
+        "sha256": "9cca670c04408171fc3045846bd2432338cab0903b6c2d10224662ba591f71da"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 13,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "16-font-size",
+      "description": "App font size options without altering selection",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:26:06.794Z",
+      "capturedAt": "2026-10-15T15:26:10.711Z",
+      "screenshotCapturedAt": "2026-10-15T15:26:08.211Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/16-font-size/screen.png",
+        "sha256": "ed0d26a95a08841b3d954e24c15bca8c507dff9dede25b52000d873d6f17c9d8",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/16-font-size/hierarchy.xml",
+        "sha256": "9cca670c04408171fc3045846bd2432338cab0903b6c2d10224662ba591f71da"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 13,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "17-language-selector",
+      "description": "Language choices in app settings",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:26:15.221Z",
+      "capturedAt": "2026-10-15T15:26:18.143Z",
+      "screenshotCapturedAt": "2026-10-15T15:26:15.694Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/17-language-selector/screen.png",
+        "sha256": "c31fb271fcf31431a6c999e5f962404a4f4aa67ca9937d0fe2fc3f7c952d7455",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/17-language-selector/hierarchy.xml",
+        "sha256": "a7f1283bdf726663db7e1dc02eaccf907b9bc2396df6ecf888dbec3c54899e15"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 15,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "18-font-size-options",
+      "description": "Font size page reached through Appearance",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:27:18.249Z",
+      "capturedAt": "2026-10-15T15:27:21.330Z",
+      "screenshotCapturedAt": "2026-10-15T15:27:18.876Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/18-font-size-options/screen.png",
+        "sha256": "7afe20e751f3d648c99805a399c5ee4cdaec00d8e41ed08e3127c975ad757661",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/18-font-size-options/hierarchy.xml",
+        "sha256": "8ea1e972ea2101a40ad1a2d7b7905eeac6cb9b1b152ca9b8734add57c4ae39f7"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 18,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "19-language-options",
+      "description": "Language options page reached through Appearance",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:27:40.892Z",
+      "capturedAt": "2026-10-15T15:27:43.844Z",
+      "screenshotCapturedAt": "2026-10-15T15:27:41.390Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/19-language-options/screen.png",
+        "sha256": "1dc2848f390b46177d9492e601467cc833ad25bd571848aff3caf6aca718d6f4",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/19-language-options/hierarchy.xml",
+        "sha256": "603bd66e8cc0848c6d5d514959142f561c454f24d71ae1923ee08e44101613da"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 20,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "20-language-change",
+      "description": "Result of choosing Simplified Chinese",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:28:18.776Z",
+      "capturedAt": "2026-10-15T15:28:23.142Z",
+      "screenshotCapturedAt": "2026-10-15T15:28:19.844Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/20-language-change/screen.png",
+        "sha256": "7eac87fcf7c1bc1007793dd42b69b7b166b21007c770ee23edb8131669466d45",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/20-language-change/hierarchy.xml",
+        "sha256": "9df55b56390ea3c1dc57185a87a12762c9febcd4c8672347a1f0b6b0649f4922"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 21,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [zh-CN]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "21-chinese-return",
+      "description": "Chinese dark theme after returning from settings",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:30:20.595Z",
+      "capturedAt": "2026-10-15T15:30:26.852Z",
+      "screenshotCapturedAt": "2026-10-15T15:30:22.167Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/21-chinese-return/screen.png",
+        "sha256": "dd954967fe68f5661c267e980f13047489d29fc7d42ecda345e53b1ab41b516e",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/21-chinese-return/hierarchy.xml",
+        "sha256": "a0be5fb9d4ea8049017a35b1d5a8a395e72f2c85d7253dea15717dc009927a22"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 24,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [zh-CN]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "22-chinese-home",
+      "description": "Chinese dark original home after dismissing drawer",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:33:24.311Z",
+      "capturedAt": "2026-10-15T15:33:29.831Z",
+      "screenshotCapturedAt": "2026-10-15T15:33:25.653Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/22-chinese-home/screen.png",
+        "sha256": "095c8dda1ebd3e287c553c1037ef29bf4edae8aa93fbc1753ce6ffaf5749cf7e",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/22-chinese-home/hierarchy.xml",
+        "sha256": "2abb01ba15e2cc03ee96013908cf6fa0a5a17d85bb9cc415401878a92e45d753"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 25,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [zh-CN]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "23-composer-keyboard",
+      "description": "Composer focus and keyboard result without text or submission",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:33:36.363Z",
+      "capturedAt": "2026-10-15T15:33:42.618Z",
+      "screenshotCapturedAt": "2026-10-15T15:33:38.130Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/23-composer-keyboard/screen.png",
+        "sha256": "4bc7a898e014f2f9214a624e5603d7394237cd70d5e4f887d6bda29a4dbe4f88",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/23-composer-keyboard/hierarchy.xml",
+        "sha256": "eae54ffdaa98da939a4cb1a9f30859306c17b0b4d79dee92f7e1be5121517729"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 26,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [zh-CN]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "24-input-options",
+      "description": "Input options from Chinese dark empty composer",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:35:27.768Z",
+      "capturedAt": "2026-10-15T15:35:34.315Z",
+      "screenshotCapturedAt": "2026-10-15T15:35:29.528Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/24-input-options/screen.png",
+        "sha256": "ec4f7597766531942b1545e6fd43c72afcf665226df45406d48006560c0995c9",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/24-input-options/hierarchy.xml",
+        "sha256": "b45da8887c50fa75a05fff4958260e4de91989da537446945d68dcce44e831b2"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 28,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [zh-CN]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "25-camera-entry",
+      "description": "Camera entry gate from attachment sheet",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:36:11.801Z",
+      "capturedAt": "2026-10-15T15:36:15.421Z",
+      "screenshotCapturedAt": "2026-10-15T15:36:12.628Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/25-camera-entry/screen.png",
+        "sha256": "2972a14146ddebe07dbee4a7fc6c11dceb6dcd85fb426a37c46a598bd3d406a0",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/25-camera-entry/hierarchy.xml",
+        "sha256": "5bf340afc9017d36deb17210006ad1f3cd9e935792cd6f3f7f31dddb76d92d8e"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 29,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [zh-CN]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "26-back-from-login",
+      "description": "Back result after camera entry redirected to login",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:38:03.101Z",
+      "capturedAt": "2026-10-15T15:38:09.183Z",
+      "screenshotCapturedAt": "2026-10-15T15:38:04.393Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/26-back-from-login/screen.png",
+        "sha256": "81eeb96b093f04a9e9ac76899ec6713d043bc251a014c13d89b5bbc7aa4e6087",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/26-back-from-login/hierarchy.xml",
+        "sha256": "2abb01ba15e2cc03ee96013908cf6fa0a5a17d85bb9cc415401878a92e45d753"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 30,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [zh-CN]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{db8c2e8 u0 com.moonshot.kimichat/.MainActivity t10}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "27-relaunch-persistence",
+      "description": "Process relaunch result after choosing Chinese and Dark mode",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:38:56.868Z",
+      "capturedAt": "2026-10-15T15:39:02.302Z",
+      "screenshotCapturedAt": "2026-10-15T15:38:58.258Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/27-relaunch-persistence/screen.png",
+        "sha256": "6d9f67a902f1a693be8009ae27a1ff44fed791b6b12b353ee591c14b820a2c59",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/27-relaunch-persistence/hierarchy.xml",
+        "sha256": "2abb01ba15e2cc03ee96013908cf6fa0a5a17d85bb9cc415401878a92e45d753"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 32,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [zh-CN]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{44d5486 u0 com.moonshot.kimichat/.MainActivity t11}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "28-relaunch-settled",
+      "description": "Later original home after force-stop and launch to verify retained app preferences",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:39:33.507Z",
+      "capturedAt": "2026-10-15T15:39:39.538Z",
+      "screenshotCapturedAt": "2026-10-15T15:39:35.065Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/28-relaunch-settled/screen.png",
+        "sha256": "ef2bf6b23a117b2f08550d213d7bd74867d32933dafaccb99bb7e3c9ef3af2b4",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/28-relaunch-settled/hierarchy.xml",
+        "sha256": "2ef5bd5663fb36690bd47906b28a0f3272d6b2b9b260f8b230d762eca1bc85ac"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 32,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [zh-CN]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{44d5486 u0 com.moonshot.kimichat/.MainActivity t11}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "29-theme-restored",
+      "description": "Theme setting restored to initial Follow System",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:41:13.744Z",
+      "capturedAt": "2026-10-15T15:41:17.249Z",
+      "screenshotCapturedAt": "2026-10-15T15:41:14.333Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/29-theme-restored/screen.png",
+        "sha256": "765422b1fd36a5656791d62a743a68c37316150ebb2bf373ecac9e65d7ce8911",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/29-theme-restored/hierarchy.xml",
+        "sha256": "5bf340afc9017d36deb17210006ad1f3cd9e935792cd6f3f7f31dddb76d92d8e"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 37,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [zh-CN]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{44d5486 u0 com.moonshot.kimichat/.MainActivity t11}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "30-restore-home",
+      "description": "Verify actual home before restoring preferences with observed navigation",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:42:43.577Z",
+      "capturedAt": "2026-10-15T15:42:48.747Z",
+      "screenshotCapturedAt": "2026-10-15T15:42:44.784Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/30-restore-home/screen.png",
+        "sha256": "4e8abca41710214dc867748f6929f1ff78481ebaad6c1f9e44d68205b0643356",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/30-restore-home/hierarchy.xml",
+        "sha256": "a0be5fb9d4ea8049017a35b1d5a8a395e72f2c85d7253dea15717dc009927a22"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 38,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [zh-CN]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{44d5486 u0 com.moonshot.kimichat/.MainActivity t11}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "31-restore-settings",
+      "description": "Verify Settings before restoring test preferences",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:43:37.315Z",
+      "capturedAt": "2026-10-15T15:43:41.279Z",
+      "screenshotCapturedAt": "2026-10-15T15:43:38.075Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/31-restore-settings/screen.png",
+        "sha256": "5c7e529e366d10fecd605e83b5cc3ba4f265841826d303e5eaed2fd762dfdb17",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/31-restore-settings/hierarchy.xml",
+        "sha256": "6ef3defb476d9419cbe0d9c6e703d7f61c044edcf45f81fe82ac6599ab89ed7d"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 39,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [zh-CN]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{44d5486 u0 com.moonshot.kimichat/.MainActivity t11}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "32-theme-restored",
+      "description": "Verified visible Follow System restored through label queries",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:44:43.119Z",
+      "capturedAt": "2026-10-15T15:44:47.913Z",
+      "screenshotCapturedAt": "2026-10-15T15:44:44.170Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/32-theme-restored/screen.png",
+        "sha256": "57c70444c055e10fde2f71c700a16ea00f5cccd1c9c918c6e32bb5cc9a890dd4",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/32-theme-restored/hierarchy.xml",
+        "sha256": "e92165d966cce1a513222320bd3ff8e6f5489ec13671caebe5cb8a3f54d7290c"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 42,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [zh-CN]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{44d5486 u0 com.moonshot.kimichat/.MainActivity t11}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "33-language-restored",
+      "description": "Verified English restoration in language list",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:45:58.898Z",
+      "capturedAt": "2026-10-15T15:46:03.024Z",
+      "screenshotCapturedAt": "2026-10-15T15:45:59.774Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/33-language-restored/screen.png",
+        "sha256": "a6283298e33d1c2a6df808ac3867100ea4f76d7a8bf01af1c82a09014721c405",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/33-language-restored/hierarchy.xml",
+        "sha256": "0f5167573b36a1c88c2c5b9dc3a9add1c2feaa90220cb7487359a8118d8d4029"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 45,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{44d5486 u0 com.moonshot.kimichat/.MainActivity t11}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    },
+    {
+      "id": "34-restored-appearance",
+      "description": "Final restoration check: Follow System theme and English, font size unchanged",
+      "classification": "A",
+      "origin": "current",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "package": "com.moonshot.kimichat",
+      "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+      "startedAt": "2026-10-15T15:47:21.762Z",
+      "capturedAt": "2026-10-15T15:47:25.071Z",
+      "screenshotCapturedAt": "2026-10-15T15:47:22.299Z",
+      "atomicCapture": false,
+      "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+      "screenshot": {
+        "path": "evidence/runtime/scenes/34-restored-appearance/screen.png",
+        "sha256": "a050949e78237ca9d9afca4848e39e27a2426164665d6add61659cc8565d20aa",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/34-restored-appearance/hierarchy.xml",
+        "sha256": "ba0711d3a701b312127d283ee68101e4200f03927ab11c28a5792a18ff682948"
+      },
+      "hierarchyError": null,
+      "actionsBeforeCapture": 46,
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "buildLocale": "en-US",
+        "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+        "nightMode": "Night mode: no"
+      },
+      "window": [
+        "    topResumedActivity=ActivityRecord{44d5486 u0 com.moonshot.kimichat/.MainActivity t11}"
+      ],
+      "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "evidenceId": "LOCAL-VERIFY-STYLE-001",
+  "classification": "B",
+  "origin": "current",
+  "checkedAtUtc": "2026-10-16T13:12:58.254Z",
+  "sourceApkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "command": "node tools/verify-style-data.mjs",
+  "result": "passed",
+  "verifiedLocales": 17,
+  "verifiedCopyEntries": 37046,
+  "verifiedPluralVariants": 1315,
+  "verifiedCssDeclarations": 163,
+  "verifiedFonts": 6,
+  "verifiedFontNameRecords": 187,
+  "checks": [
+    "Source file SHA-256 matches every locale, CSS and font",
+    "Every nonempty CVR data line represented once",
+    "Every decoded ordinary/plural text roundtrips to original base64",
+    "Source line identities and stored line/text hashes match",
+    "Every root custom property and color-scheme declaration accounted for",
+    "Font table directory and name record raw bytes match source; OS/2 weight and fvar presence match source"
+  ],
+  "limitations": [
+    "This verifies derived data against local original assets, not provenance of the original APK extraction",
+    "Does not observe the app, typography, fallback, CSS computed styles, locale selection or UI behavior",
+    "Does not independently validate cmap parser correctness against another font engine or test shaping"
+  ]
+}

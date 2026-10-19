@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "id": "motion-01",
+  "classification": "A",
+  "origin": "current original runtime only when this capture command is executed",
+  "runId": "run03-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "method": "bounded original Android screenrecord plus declared menu/outside taps; no REA Evidence ID",
+  "requestedRecordingLimitSeconds": 6,
+  "sourceSessionAndSceneFilesModified": false,
+  "atomicCapture": false,
+  "decoders": {
+    "ffmpeg": {
+      "available": false,
+      "path": null,
+      "version": null,
+      "searchBoundary": "explicit path, current PATH via where.exe, retained user FFmpeg toolchain, C:/Program Files/ffmpeg/bin; not a whole-disk absence claim"
+    },
+    "ffprobe": {
+      "available": false,
+      "path": null,
+      "version": null,
+      "searchBoundary": "explicit path, current PATH via where.exe, retained user FFmpeg toolchain, C:/Program Files/ffmpeg/bin; not a whole-disk absence claim"
+    }
+  },
+  "events": [
+    {
+      "name": "ime-visibility-request",
+      "hostMonotonicNs": "705010847552100",
+      "hostElapsedMs": 5078.2361,
+      "hostUtc": "2026-10-16T10:24:04.686Z"
+    },
+    {
+      "name": "ime-visibility-complete",
+      "hostMonotonicNs": "705012680664900",
+      "hostElapsedMs": 6911.312,
+      "hostUtc": "2026-10-16T10:24:06.519Z"
+    },
+    {
+      "name": "guest-uptime-before-request",
+      "hostMonotonicNs": "705014395962600",
+      "hostElapsedMs": 8626.6082,
+      "hostUtc": "2026-10-16T10:24:08.234Z"
+    },
+    {
+      "name": "guest-uptime-before-complete",
+      "hostMonotonicNs": "705014544201100",
+      "hostElapsedMs": 8774.8486,
+      "hostUtc": "2026-10-16T10:24:08.382Z"
+    },
+    {
+      "name": "screenrecord-host-process-spawned",
+      "hostMonotonicNs": "705014555481400",
+      "hostElapsedMs": 8786.1317,
+      "hostUtc": "2026-10-16T10:24:08.393Z"
+    },
+    {
+      "name": "first-open-dispatch",
+      "hostMonotonicNs": "705015317994400",
+      "hostElapsedMs": 9548.6421,
+      "hostUtc": "2026-10-16T10:24:09.156Z",
+      "point": [
+        336,
+        195
+      ],
+      "requestedOffsetMs": 750
+    },
+    {
+      "name": "first-open-adb-complete",
+      "hostMonotonicNs": "705015503366600",
+      "hostElapsedMs": 9734.0166,
+      "hostUtc": "2026-10-16T10:24:09.341Z"
+    },
+    {
+      "name": "first-outside-close-dispatch",
+      "hostMonotonicNs": "705016070025100",
+      "hostElapsedMs": 10300.6832,
+      "hostUtc": "2026-10-16T10:24:09.908Z",
+      "point": [
+        540,
+        1680
+      ],
+      "requestedOffsetMs": 1500
+    },
+    {
+      "name": "first-outside-close-adb-complete",
+      "hostMonotonicNs": "705017045929100",
+      "hostElapsedMs": 11276.5805,
+      "hostUtc": "2026-10-16T10:24:10.884Z"
+    },
+    {
+      "name": "reopen-dispatch",
+      "hostMonotonicNs": "705017046124700",
+      "hostElapsedMs": 11276.7703,
+      "hostUtc": "2026-10-16T10:24:10.884Z",
+      "point": [
+        336,
+        195
+      ],
+      "requestedOffsetMs": 2300
+    },
+    {
+      "name": "reopen-adb-complete",
+      "hostMonotonicNs": "705018229011900",
+      "hostElapsedMs": 12459.6566,
+      "hostUtc": "2026-10-16T10:24:12.067Z"
+    },
+    {
+      "name": "rapid-outside-close-dispatch",
+      "hostMonotonicNs": "705018229053400",
+      "hostElapsedMs": 12459.6952,
+      "hostUtc": "2026-10-16T10:24:12.067Z",
+      "point": [
+        540,
+        1680
+      ],
+      "requestedOffsetMs": null
+    },
+    {
+      "name": "rapid-outside-close-adb-complete",
+      "hostMonotonicNs": "705019770797600",
+      "hostElapsedMs": 14001.4432,
+      "hostUtc": "2026-10-16T10:24:13.609Z"
+    },
+    {
+      "name": "screenrecord-adb-process-exit",
+      "hostMonotonicNs": "705021356876300",
+      "hostElapsedMs": 15587.5212,
+      "hostUtc": "2026-10-16T10:24:15.195Z",
+      "code": 0
+    },
+    {
+      "name": "guest-uptime-after-request",
+      "hostMonotonicNs": "705022699254300",
+      "hostElapsedMs": 16929.8998,
+      "hostUtc": "2026-10-16T10:24:16.537Z"
+    },
+    {
+      "name": "guest-uptime-after-complete",
+      "hostMonotonicNs": "705023718465800",
+      "hostElapsedMs": 17949.111,
+      "hostUtc": "2026-10-16T10:24:17.556Z"
+    }
+  ],
+  "analysis": {
+    "animationDuration": null,
+    "easing": null,
+    "interruptionVerified": false,
+    "review": "pending actual video/frame inspection"
+  },
+  "timeBasis": {
+    "host": "process.hrtime.bigint monotonic; action dispatch and completion on host",
+    "guest": "separate /proc/uptime values bracketed by host requests",
+    "video": "PTS only if ffprobe successfully reads this actual video",
+    "alignment": "Host spawn is not encoder start. ADB dispatch is not on-screen input time. Independent clocks are not treated as synchronized."
+  },
+  "beforeWindow": [
+    "topResumedActivity=ActivityRecord{c005120 u0 com.moonshot.kimichat/.MainActivity t19}"
+  ],
+  "imeVisibility": {
+    "confirmedHidden": true,
+    "inputShown": false,
+    "inputShownFieldsObserved": 1,
+    "inputMethodWindows": [
+      {
+        "header": "Window #7 Window{95bd44a u0 InputMethod}:",
+        "isVisible": false,
+        "drawState": "NO_SURFACE"
+      }
+    ],
+    "windowScanRecognized": true,
+    "mIsInputViewShownIgnored": true,
+    "policy": "Require input_method.mInputShown=false and every identified InputMethod window isVisible=false. NO_SURFACE is auxiliary only; missing/unknown fields do not prove hidden.",
+    "hostRequest": {
+      "name": "ime-visibility-request",
+      "hostMonotonicNs": "705010847552100",
+      "hostElapsedMs": 5078.2361,
+      "hostUtc": "2026-10-16T10:24:04.686Z"
+    },
+    "hostCompletion": {
+      "name": "ime-visibility-complete",
+      "hostMonotonicNs": "705012680664900",
+      "hostElapsedMs": 6911.312,
+      "hostUtc": "2026-10-16T10:24:06.519Z"
+    },
+    "rawDumpsRecorded": false
+  },
+  "chatGuard": {
+    "modelBounds": [
+      222,
+      132,
+      451,
+      258
+    ],
+    "modelTap": [
+      336,
+      195
+    ],
+    "messageBounds": [
+      190,
+      1580,
+      1006,
+      1718
+    ],
+    "guardTextSha256": "30d8456d9f27c510fec14970c5b46c598e43ff249ef6ba57a5e6036d604216d6",
+    "guardTextCharacters": 63,
+    "composer": {
+      "mode": "empty-unfocused-ime-hidden",
+      "placeholder": "Ask anything. Images work too.",
+      "editorCount": 1,
+      "editorFocused": "false",
+      "imeHiddenConfirmed": true
+    }
+  },
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "systemFontScale": "1.0",
+    "systemNightMode": "Night mode: no",
+    "keyboard": "idle empty/compact composer; independently confirmed IME hidden, not inferred from focus; pixel verification still required",
+    "locale": "English source navigation guard; exact locale not inferred"
+  },
+  "guardArtifacts": {
+    "screenshotSha256": "f7b2de11bfc50710d5e55ee6a93cd5ae9c405c4e3584f34b82ca4a917ad0b725",
+    "hierarchySha256": "9cc24557ad5591127664e7806de58f0d23f284c78a606674ae01abbb11df38b9",
+    "atomic": false,
+    "privacyReview": "pending; exact self-created chat guard is not a pixel privacy review"
+  },
+  "guestUptimeBefore": {
+    "raw": "13767.29 42042.13",
+    "request": {
+      "name": "guest-uptime-before-request",
+      "hostMonotonicNs": "705014395962600",
+      "hostElapsedMs": 8626.6082,
+      "hostUtc": "2026-10-16T10:24:08.234Z"
+    },
+    "completion": {
+      "name": "guest-uptime-before-complete",
+      "hostMonotonicNs": "705014544201100",
+      "hostElapsedMs": 8774.8486,
+      "hostUtc": "2026-10-16T10:24:08.382Z"
+    }
+  },
+  "hostRecordingSpawn": {
+    "name": "screenrecord-host-process-spawned",
+    "hostMonotonicNs": "705014555481400",
+    "hostElapsedMs": 8786.1317,
+    "hostUtc": "2026-10-16T10:24:08.393Z"
+  },
+  "outsideTap": [
+    540,
+    1680
+  ],
+  "declaredSequence": "open model menu, outside dismiss, reopen, rapid outside dismiss; no model selection",
+  "rapidClose": {
+    "requestedHostDispatchGapMs": 80,
+    "observedHostDispatchGapMs": 1182.9249,
+    "notAnAnimationDuration": true
+  },
+  "recorderResult": {
+    "code": 0,
+    "stderr": ""
+  },
+  "video": {
+    "path": "evidence/runtime/run03-20261016/motion/motion-01/screenrecord.mp4",
+    "bytes": 634791,
+    "sha256": "658942ddf94449eb6d30d4f87abd3f18265a7693cbbb6dc6b1ebf30ff0096340",
+    "actualDurationSeconds": null
+  },
+  "guestUptimeAfter": {
+    "raw": "13776.44 42055.01",
+    "request": {
+      "name": "guest-uptime-after-request",
+      "hostMonotonicNs": "705022699254300",
+      "hostElapsedMs": 16929.8998,
+      "hostUtc": "2026-10-16T10:24:16.537Z"
+    },
+    "completion": {
+      "name": "guest-uptime-after-complete",
+      "hostMonotonicNs": "705023718465800",
+      "hostElapsedMs": 17949.111,
+      "hostUtc": "2026-10-16T10:24:17.556Z"
+    }
+  },
+  "afterWindow": [
+    "topResumedActivity=ActivityRecord{c005120 u0 com.moonshot.kimichat/.MainActivity t19}"
+  ],
+  "decode": {
+    "status": "unavailable",
+    "limitation": "No verified ffmpeg+ffprobe pair found in the declared search boundary. Raw MP4 only; reliable frame decoding, animation endpoints and interruption remain unverified."
+  },
+  "status": "captured-pending-review",
+  "remoteVideoRemoved": true,
+  "completedAt": "2026-10-16T10:24:18.365Z"
+}

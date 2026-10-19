@@ -1,0 +1,43 @@
+{
+  "id": "r03-204-pinyin-configuration",
+  "description": "Gboard simplified Chinese Pinyin with inline composing option before adding temporary layout",
+  "classification": "A",
+  "origin": "current",
+  "runId": "run03-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-16T10:38:58.015Z",
+  "capturedAt": "2026-10-16T10:39:03.314Z",
+  "screenshotCapturedAt": "2026-10-16T10:39:00.219Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-204-pinyin-configuration/screen.png",
+    "sha256": "53a905048a029ce661072a7720a16ab2c9fff28c4e7d899350b6e57cd84cfc4f",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-204-pinyin-configuration/hierarchy.xml",
+    "sha256": "c3b3e2c28133b8825e687f642bc0b0eca1ecf6c7bf8b574e3d1de4315598acf6"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 483,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "systemLocales": "null",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{e8ab967 u0 com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.latin.preference.SettingsActivity t55}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen",
+  "captureSettlingDelayMs": 1500,
+  "accountMode": "normal retained user-assisted login verified by authenticated home and actual submitted self-created request; credentials excluded"
+}

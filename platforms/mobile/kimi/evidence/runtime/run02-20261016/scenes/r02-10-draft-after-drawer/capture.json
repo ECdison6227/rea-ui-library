@@ -1,0 +1,41 @@
+{
+  "id": "r02-10-draft-after-drawer",
+  "description": "Unsent draft after drawer round trip",
+  "classification": "A",
+  "origin": "current",
+  "runId": "run02-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-16T03:05:57.643Z",
+  "capturedAt": "2026-10-16T03:06:08.708Z",
+  "screenshotCapturedAt": "2026-10-16T03:05:59.826Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/run02-20261016/scenes/r02-10-draft-after-drawer/screen.png",
+    "sha256": "627a39cdf05d5f975e7c0e785321fb7dd45d95a29869787a38784c1e5c51343f",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/run02-20261016/scenes/r02-10-draft-after-drawer/hierarchy.xml",
+    "sha256": "679d0b4661adcd8c4c2a831d07d3f87f04daec65716533e1e40bc50e3b03236c"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 11,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "systemLocales": "null",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{693f763 u0 com.moonshot.kimichat/.MainActivity t13}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen"
+}

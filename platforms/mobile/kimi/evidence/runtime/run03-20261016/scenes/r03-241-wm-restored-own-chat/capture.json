@@ -1,0 +1,43 @@
+{
+  "id": "r03-241-wm-restored-own-chat",
+  "description": "WM/user settings and portrait canvas restored, return exact owned chat",
+  "classification": "A",
+  "origin": "current",
+  "runId": "run03-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-16T11:17:34.703Z",
+  "capturedAt": "2026-10-16T11:17:39.675Z",
+  "screenshotCapturedAt": "2026-10-16T11:17:36.877Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-241-wm-restored-own-chat/screen.png",
+    "sha256": "ed38398ec4a695b318624ad31d70aaa4a01ec3a68fc1c82cef97237e69a9acd4",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-241-wm-restored-own-chat/hierarchy.xml",
+    "sha256": "13516cb36e5ef2d7e8846d8872047aea443f081b6cd4b2c99ad53e4c87e6632c"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 573,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "systemLocales": "en-US",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{c005120 u0 com.moonshot.kimichat/.MainActivity t19}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen",
+  "captureSettlingDelayMs": 1500,
+  "accountMode": "normal retained user-assisted login verified by authenticated home and actual submitted self-created request; credentials excluded"
+}

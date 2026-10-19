@@ -1,0 +1,2321 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-16T06:28:19.467Z",
+  "objective": "Continue remaining original-product functional verification, then complete native reference, paired comparison and cross-business transfer without claiming untested work complete.",
+  "authority": "Current user explicitly requested a new session context to continue the listed remaining items until completion; ordinary reversible tests on self-created disposable research data may proceed.",
+  "status": "partial",
+  "target": {
+    "package": "com.moonshot.kimichat",
+    "versionName": "3.1.3",
+    "versionCode": 376,
+    "sha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332"
+  },
+  "handoff": "docs/session-handoff.md",
+  "checkpoint": "docs/run03-live-checkpoint.json",
+  "historicalCompleted": [
+    {
+      "id": "DONE-01",
+      "status": "verified-within-stated-scope",
+      "statement": "制品身份、资源/本地化/字体/widget静态证据",
+      "evidence": "evidence/index.json",
+      "limits": "Read linked source; do not generalize to untested variants or backend semantics."
+    },
+    {
+      "id": "DONE-02",
+      "status": "verified-within-stated-scope",
+      "statement": "首轮隐私、通知拒绝、主页/侧栏/设置、主题/语言及部分返回",
+      "evidence": "spec/components-and-behavior.md",
+      "limits": "Read linked source; do not generalize to untested variants or backend semantics."
+    },
+    {
+      "id": "DONE-03",
+      "status": "verified-within-stated-scope",
+      "statement": "模型菜单及选K3的入口、placeholder与额度提示",
+      "evidence": "spec/run02-behavior-verification.md",
+      "limits": "Read linked source; do not generalize to untested variants or backend semantics."
+    },
+    {
+      "id": "DONE-04",
+      "status": "verified-within-stated-scope",
+      "statement": "软键盘、短草稿导航保留、字号预览/Back放弃/Save提交和恢复",
+      "evidence": "spec/run02-behavior-verification.md",
+      "limits": "Read linked source; do not generalize to untested variants or backend semantics."
+    },
+    {
+      "id": "DONE-05",
+      "status": "verified-within-stated-scope",
+      "statement": "正常短信登录、Instant测试生成完成、Retry与UI停止输出",
+      "evidence": "spec/run02-authenticated-behavior.md",
+      "limits": "Read linked source; do not generalize to untested variants or backend semantics."
+    },
+    {
+      "id": "DONE-06",
+      "status": "verified-within-stated-scope",
+      "statement": "自造TXT解析/移除/提交/成功读取、麦克风一次拒绝与文字恢复",
+      "evidence": "spec/run02-attachments-and-permissions.md",
+      "limits": "Read linked source; do not generalize to untested variants or backend semantics."
+    },
+    {
+      "id": "DONE-07",
+      "status": "verified-within-stated-scope",
+      "statement": "专用AVD断网发送失败、消息保留、联网恢复点红标成功",
+      "evidence": "spec/run02-attachments-and-permissions.md",
+      "limits": "Read linked source; do not generalize to untested variants or backend semantics."
+    },
+    {
+      "id": "DONE-08",
+      "status": "verified-within-stated-scope",
+      "statement": "Android回答Copy/Paste、Rename取消、Delete确认取消",
+      "evidence": "evidence/runtime/run02-20261016/final-observations.json",
+      "limits": "Read linked source; do not generalize to untested variants or backend semantics."
+    }
+  ],
+  "statusDefinitions": {
+    "unverified": "No sufficient current task evidence",
+    "partial": "Some entry/state/path evidenced; listed acceptance incomplete",
+    "in_progress": "Actively testing in a fresh run",
+    "needs_user": "Concrete missing device/account/sample requested; not complete",
+    "needs_authorization": "Concrete extra-scope action prepared and awaiting explicit authorization; not complete",
+    "verified": "All applicable acceptance checks supported by actual evidence and restoration record",
+    "not_applicable": "Evidence-backed inapplicability with explicit scope decision; cannot be used to hide environment blockers"
+  },
+  "completionPolicy": {
+    "required": "All applicable task acceptance verified, or user explicitly accepts a narrower evidence-backed scope; unresolved dependencies remain outstanding.",
+    "onBlocker": "Ask for specific minimum help early, continue independent tasks, preserve the outstanding item. Do not silently mark complete.",
+    "scopeBoundaries": [
+      "Own newly-created disposable test content only",
+      "No existing private conversations/files",
+      "No external delivery/publication/payment/real-computer control without concrete authorization",
+      "No fake runtime screenshots or inferred exact values"
+    ],
+    "evidence": "A original runtime; B packaged/decompiled declarations; C bounded inference; D independent implementation/transfer choices"
+  },
+  "taskCount": 37,
+  "tasks": [
+    {
+      "id": "F01",
+      "group": "模型",
+      "priority": 1,
+      "title": "K3与K2.8实际生成",
+      "status": "needs_user",
+      "prerequisites": [
+        "正常登录",
+        "当前账号具有可选模型"
+      ],
+      "acceptance": [
+        "分别在新建中性会话选择并提交最小请求",
+        "原图确认所选入口、生成/完成结果、切回原偏好"
+      ],
+      "boundaries": [
+        "菜单存在不等于该模型实际请求路由；内部路由需相应证据",
+        "遇额外付费门槛先记录，不购买"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-01-k3-result/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-02-model-menu/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-06-k28-request/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-94-k3-retry-request/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-95-k3-retry-result/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-96-k3-later/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-97-k3-standard-restored/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-98-k28-retry-request/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-99-k28-retry-result/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T06:45:02.439Z",
+          "summary": "K3 was selected and a verified exact Run03 prompt submitted in a fresh neutral chat. Actual result was capacity failure with subscription priority text and a red retry affordance; no answer, payment or model route proof. K2.8 pending.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-01-k3-result/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-02-model-menu/capture.json"
+          ]
+        },
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T06:46:47.741Z",
+          "summary": "K2.8 also received the same capacity/subscription-priority failure. Actual submitted text was Run03 mdel K2.8 test. Reply only RUN03-K28-OK. (input injection lost o in model). No model produced a successful answer, and routing remains unknown; no payment performed.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-06-k28-request/capture.json"
+          ]
+        },
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T08:10:04.517Z",
+          "summary": "Later exact fresh neutral requests rechecked models after elapsed time. K3 High request94/95/96 produced only own message, no retained answer/error or generating control; no success claimed. K2.8 request98/99 again returned actual capacity/subscription-priority error. K3 Standard parent summary restored97 before leaving; normal Instant remains the known working model. No purchase or account change performed; internal routing unknown.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-94-k3-retry-request/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-95-k3-retry-result/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-96-k3-later/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-97-k3-standard-restored/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-98-k28-retry-request/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-99-k28-retry-result/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": {
+        "status": "unavailable",
+        "response": "用户暂时不能恢复当前账号可用状态，受限项保留未完成",
+        "recordedAt": "2026-10-16T09:22:33.994Z"
+      },
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "F02",
+      "group": "模型",
+      "priority": 1,
+      "title": "Thinking effort子菜单与选择保留",
+      "status": "verified",
+      "prerequisites": [
+        "当前入口可见"
+      ],
+      "acceptance": [
+        "打开子菜单、记录选项/默认值",
+        "选择、返回摘要、再次进入/适用的进程重启保留",
+        "外侧点击/Back/重选至少各有适用结果"
+      ],
+      "boundaries": [
+        "可选项可能随服务端/账号变化，不拿静态文案当当前开放"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-03-thinking-effort/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-04-effort-high/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-05-effort-relaunch-private/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-89-model-menu-current/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-90-model-outside-dismiss/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-91-model-back-dismiss/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-92-instant-effort/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-93-effort-reselected/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-97-k3-standard-restored/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-100-instant-preference-restored/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-106-instant-high-restored/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-107-search-recovery-settled/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-108-current-high-before-reselect/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-109-high-reselected/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T06:45:03.151Z",
+          "summary": "K3 submenu Standard/High/Max observed. High updates summary; after force-stop/relaunch header and reopened menu retain High. Relaunch reset current view to a fresh home. Menu Back dismissal tested. Restoring K3 Standard now; outside/reselection paths still pending. r03-05 contains identity beneath menu and must be withheld from distribution.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-03-thinking-effort/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-04-effort-high/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-05-effort-relaunch-private/capture.json"
+          ]
+        },
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T08:25:36.411Z",
+          "summary": "K3 options Standard/High/Max and Instant options Standard/High observed. Selected High, parent summary updates; force-stop/relaunch retained High. Outside tap and Android Back close model menu. 92 was actually Standard->High, not same-value reselect; fresh108 visibly checks High, then109 reselects High and retains it. K3 Standard97 later reflected Standard in Instant100, an observed carryover without per-model persistence inference; active original Instant High restored106/107 and kept109.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-03-thinking-effort/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-04-effort-high/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-05-effort-relaunch-private/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-89-model-menu-current/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-90-model-outside-dismiss/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-91-model-back-dismiss/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-92-instant-effort/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-93-effort-reselected/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-97-k3-standard-restored/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-100-instant-preference-restored/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-106-instant-high-restored/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-107-search-recovery-settled/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-108-current-high-before-reselect/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-109-high-reselected/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": {
+        "state": "Current active Instant High restored and true High->High reselect verified. Per-model independent persistence not inferred.",
+        "evidence": "evidence/runtime/run03-20261016/scenes/r03-109-high-reselected/capture.json"
+      },
+      "scopeDecision": null
+    },
+    {
+      "id": "F03",
+      "group": "模型",
+      "priority": 2,
+      "title": "已有草稿及生成中切模型",
+      "status": "verified",
+      "prerequisites": [
+        "F01",
+        "可控的自造输入"
+      ],
+      "acceptance": [
+        "草稿存在时切换模型核对文本/焦点",
+        "生成中尝试打开/切换并记录拦截或允许",
+        "完成/停止后恢复并避免并行控制"
+      ],
+      "boundaries": [
+        "不得以方法名或文案推实际禁止规则"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-183-model-draft-before/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-184-model-draft-after/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-185-draft-original-context/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-186-live-model-menu/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-187-lifecycle-return/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T10:02:53.937Z",
+          "summary": "已有自建聊天内45字符草稿切Instant→K3后回新会话首页，K3 High与完整草稿仍在、焦点false；切回Instant并从确切Research Run03 Life入口回原自建聊天，原正文与同一草稿保留。184含问候身份整套排除。177模型菜单截图时已经完成，故该次不算生成中测试；将补fresh生成守卫。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-183-model-draft-before/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-184-model-draft-after/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-185-draft-original-context/capture.json"
+          ]
+        },
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T10:09:06.331Z",
+          "summary": "补充实际生成中模型菜单：open-model-generating先以fresh UIA确认Send messages anytime…及本轮自造消息，留存observed-generation-before-model事件和hash后才点模型。186允许打开菜单并选标New chat的K3进入空新上下文；切回Instant从Research Run03 Life返回，187原会话保留A-RUN03-6842输出直至240行，恢复Instant High。仅证明这些UI上下文/草稿规则，不推请求实际路由或后端取消。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-186-live-model-menu/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-187-lifecycle-return/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "F04",
+      "group": "输入与状态",
+      "priority": 1,
+      "title": "长草稿跨导航、进程及新会话",
+      "status": "verified",
+      "prerequisites": [
+        "输入法教学层已关闭",
+        "确认实际输入全文"
+      ],
+      "acceptance": [
+        "建立带Run03标记的长草稿",
+        "抽屉/设置/后台往返及进程重启核对保留",
+        "切新会话/返回原会话核对草稿归属及清理"
+      ],
+      "boundaries": [
+        "已有Re短草稿证据复用，不能等同长草稿持久化",
+        "只清理本轮自造草稿"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-13-long-draft-exact/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-27-draft-settings-return/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-28-long-draft-background/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-29-relaunch-draft-private/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-32-reopen-own-draft/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-33-new-chat-draft-private/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-36-own-draft-after-new/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-37-draft-cleaned/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T07:06:58.483Z",
+          "summary": "Established full actual 230-character draft. Exact text SHA595fc451...b5b51 matches after settings/drawer Back and background/foreground. Relaunch opens fresh home with empty composer; reopening original own saved conversation pending. Earlier 86-character injection is separate sample.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-13-long-draft-exact/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-27-draft-settings-return/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-28-long-draft-background/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-29-relaunch-draft-private/capture.json"
+          ]
+        },
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T07:11:55.343Z",
+          "summary": "Actual 230-character own draft retained unchanged (SHA595fc451da4c2d7246c373d5a52ee608e8001f845b4c6f27ea2fff25723b5b51) across drawer/settings, background, force-stop/relaunch and reopening own saved chat. Fresh home/new chat composer blank, returning own chat restores draft. Only this own draft cleaned to empty after verification.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-13-long-draft-exact/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-27-draft-settings-return/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-28-long-draft-background/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-29-relaunch-draft-private/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-32-reopen-own-draft/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-33-new-chat-draft-private/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-36-own-draft-after-new/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-37-draft-cleaned/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": {
+        "state": "Only own 230-character draft removed; own submitted chat retained",
+        "evidence": "evidence/runtime/run03-20261016/scenes/r03-37-draft-cleaned/capture.json"
+      },
+      "scopeDecision": null
+    },
+    {
+      "id": "F05",
+      "group": "输入与状态",
+      "priority": 2,
+      "title": "Enter、换行、组合态与重复发送",
+      "status": "verified",
+      "prerequisites": [
+        "真实可用IME",
+        "最小中性测试内容"
+      ],
+      "acceptance": [
+        "区分换行与发送开关的前后行为",
+        "验证多行输入/至少一种实际组合态或说明所需IME",
+        "重复点击时记录气泡数/忙碌状态/结果，不造成大量请求"
+      ],
+      "boundaries": [
+        "注入命令成功不能代替实际EditText及原图"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-172-ime-keyboard/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-173-ime-composing/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-174-multiline/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-175-multiline-exact/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-176-ime-send-result/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-178-ime-completed/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-179-repeat-send/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-180-repeat-settled/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-198-feature-management/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-199-keyboard-send-off/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-200-ime-newline-key/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-201-ime-newline-result/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-204-pinyin-configuration/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-206-pinyin-active/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-207-inline-composing-on/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-208-pinyin-preedit/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-209-pinyin-reselected/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-210-pinyin-composition/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-211-pinyin-committed/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-212-ime-restore-list/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-213-ime-restored/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-214-keyboard-send-restored/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T10:00:16.242Z",
+          "summary": "实际Gboard软键逐字输入hello并出现候选；未读取composing spans，不扩大为所有IME组合态。硬件Shift+Enter未产生LF，后续粘贴落在词尾前，已清理；另用自造70字符含一个LF文本核对多行，Gboard Send+随后Enter只生成一条IME请求与IME-RUN03-2194。Send原坐标两次点击后最终只有一条REPEAT请求及回答，同时相同文本进入编辑输入器，后取消；不推服务端去重。尚未验证Enter发送开关。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-172-ime-keyboard/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-173-ime-composing/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-174-multiline/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-175-multiline-exact/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-176-ime-send-result/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-178-ime-completed/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-179-repeat-send/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-180-repeat-settled/capture.json"
+          ]
+        },
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T10:53:48.294Z",
+          "summary": "补齐Feature management键盘发送开关前后真实行为：ON时Gboard Send提交多行得到IME-RUN03-2194；OFF后键盘变return且单击只插入1个LF、未生成消息。实际Gboard简体拼音在Inline composing ON和拼音布局下，软键输入ceshi得到下划线ce shi及中文候选，选择测试后草稿为Research Run03 Pinyin 测试，未发送并清理；直接span区间未读取，不外推所有IME。临时中文布局已仅选中自身移除，213只剩原English US QWERTY；214键盘Send恢复ON，其他两开关未变。重复点击仍按179/180已观察单消息+编辑器事实记录。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-198-feature-management/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-199-keyboard-send-off/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-200-ime-newline-key/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-201-ime-newline-result/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-204-pinyin-configuration/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-206-pinyin-active/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-207-inline-composing-on/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-208-pinyin-preedit/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-209-pinyin-reselected/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-210-pinyin-composition/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-211-pinyin-committed/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-212-ime-restore-list/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-213-ime-restored/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-214-keyboard-send-restored/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "F06",
+      "group": "语音",
+      "priority": 3,
+      "title": "麦克风允许、真实录音、取消及识别",
+      "status": "needs_user",
+      "prerequisites": [
+        "可用正常音源/录音设备",
+        "用户提供明确短语音样本"
+      ],
+      "acceptance": [
+        "重新进入权限路径并记录允许/拒绝后的恢复",
+        "真实录音、取消/发送前边界、识别结果与输入保留",
+        "恢复本轮权限与音频配置并记录"
+      ],
+      "boundaries": [
+        "默认-no-audio不能证明真实音频",
+        "不得录用户未同意的环境声音；缺样本请求人工辅助"
+      ],
+      "evidence": [],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "kind": "dependency-audit",
+          "result": "Retained AVD uses no-audio and emulated back camera; no real hardware or second authenticated client supplied. Emulator paths may still be tested separately."
+        }
+      ],
+      "assistanceRequest": {
+        "requestedAt": "2026-10-16T06:38:12.166Z",
+        "request": "A normal test phone for agreed speech/photo sample, and second authenticated client for sync.",
+        "userReply": "暂时不能提供设备，请保留这些项目未完成",
+        "resolved": false
+      },
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "F07",
+      "group": "语音",
+      "priority": 3,
+      "title": "语音通话与打断/退出",
+      "status": "needs_user",
+      "prerequisites": [
+        "功能当前账号可用",
+        "明确测试音源",
+        "必要时人工辅助"
+      ],
+      "acceptance": [
+        "正常进入通话、界面状态/文字或字幕",
+        "暂停/打断/切文字/挂断及重入",
+        "音源条件及限制单列"
+      ],
+      "boundaries": [
+        "不把显示通话UI当成功收音",
+        "不误拨真实电话或外部联系人"
+      ],
+      "evidence": [],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "kind": "dependency-audit",
+          "result": "Retained AVD uses no-audio and emulated back camera; no real hardware or second authenticated client supplied. Emulator paths may still be tested separately."
+        }
+      ],
+      "assistanceRequest": {
+        "requestedAt": "2026-10-16T06:38:12.166Z",
+        "request": "A normal test phone for agreed speech/photo sample, and second authenticated client for sync.",
+        "userReply": "暂时不能提供设备，请保留这些项目未完成",
+        "resolved": false
+      },
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "F08",
+      "group": "回答操作",
+      "priority": 2,
+      "title": "朗读、速度/音色与停止",
+      "status": "needs_user",
+      "prerequisites": [
+        "自建测试回答",
+        "可验证音频输出"
+      ],
+      "acceptance": [
+        "本轮自造回答上朗读/暂停/停止",
+        "速度/音色入口及实际状态变化",
+        "返回后状态与恢复"
+      ],
+      "boundaries": [
+        "无声音采集证据只可验证UI；实际听感/音频需相应条件"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-153-read-aloud/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-154-timer-chat-menu/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-215-voice-settings/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-216-voice-summary-luna/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-217-voice-restored/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-219-long-answer-tools/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-220-playback-speed/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-221-playback-paused-fast/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-222-playback-resumed/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-223-playback-rate-restored/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-224-playback-closed/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-225-speed-change-live/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-226-player-restored-closed/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-234-speed-selection-confirm/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-235-speed-baseline-confirm/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T11:09:18.913Z",
+          "summary": "补充软件路径：Voice playback从Tintin选Luna，返回Settings摘要确为Luna；再选Tintin恢复，Auto-play保持OFF。自造长C答案上真实播放器计时、Pause/Resume、Speed菜单0.5/0.8/1.0/1.2/1.5x、恢复1.0x toast及关闭均有证据；221首次1.5尝试因菜单已关闭不算，225以连续打开菜单/选择和即时截图补核。模拟器no-audio，无听感/真实声学输出，用户暂不能供设备，整体保留未完成。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-153-read-aloud/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-154-timer-chat-menu/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-215-voice-settings/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-216-voice-summary-luna/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-217-voice-restored/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-219-long-answer-tools/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-220-playback-speed/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-221-playback-paused-fast/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-222-playback-resumed/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-223-playback-rate-restored/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-224-playback-closed/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-225-speed-change-live/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-226-player-restored-closed/capture.json"
+          ]
+        },
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T12:37:21.570Z",
+          "summary": "速度修正：221与225均不证明1.5x切换；234明确Switched to 1.5x，235明确恢复1.0x。实际听感仍无设备，整体未完成。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-234-speed-selection-confirm/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-235-speed-baseline-confirm/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "F09",
+      "group": "图片与相机",
+      "priority": 2,
+      "title": "照片选择、取消、上传与识别",
+      "status": "verified",
+      "prerequisites": [
+        "自造无个人资料图片",
+        "系统相册正常支持"
+      ],
+      "acceptance": [
+        "准备明确标识测试图",
+        "照片选择/取消、选择成功、移除及提交",
+        "回答核对图内指定可验证信息"
+      ],
+      "boundaries": [
+        "系统PhotoPicker样式与Kimi分开",
+        "不读取已有私人照片"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-48-input-options/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-49-photos-picker/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-50-photos-reopen/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-51-image-attached/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-52-photo-picker-observed/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-53-image-actually-attached/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-54-image-card/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-55-image-removed/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-56-image-reselected/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-57-image-request/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-58-image-result/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T07:25:58.053Z",
+          "summary": "Created 1000x700 PNG with RUN03 IMAGE 7429, blue square, red circle and 2 shapes; source/device SHA verified by real REA push. PhotoPicker entry shown and cancelled before creating own query. Picker screenshot49 is initial blank while later UIA has one fixture thumbnail; non-atomic states not merged. Selection/removal/send/results pending.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-48-input-options/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-49-photos-picker/capture.json"
+          ]
+        },
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T07:31:32.244Z",
+          "summary": "Original app PhotoPicker cancelled and reentered; selected only synthetic fixture, confirmed Add (1). Image removed and reselected while own exact text remained. Submitted PNG plus verified query; actual reply accurately returns 7429, blue square and red circle. Earlier cloud-media settings detour changed no setting, and scene51 is not an attachment despite intended filename. No real camera evidence claimed.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-49-photos-picker/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-50-photos-reopen/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-51-image-attached/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-52-photo-picker-observed/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-53-image-actually-attached/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-54-image-card/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-55-image-removed/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-56-image-reselected/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-57-image-request/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-58-image-result/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": {
+        "state": "Own unsent attachments and cancellation draft cleared; submitted test content retained in own new chat. DocsUI original grid restored. Network WiFi/data1 and validated default network restored.",
+        "evidence": [
+          "evidence/runtime/run03-20261016/scenes/r03-80-upload-cleanup/capture.json",
+          "evidence/runtime/run03-20261016/scenes/r03-79a-documents-grid-restored/capture.json",
+          "evidence/runtime/run03-20261016/network-restored-attachment2.json"
+        ]
+      },
+      "scopeDecision": null
+    },
+    {
+      "id": "F10",
+      "group": "图片与相机",
+      "priority": 3,
+      "title": "相机授权、拍摄、重拍与取消",
+      "status": "needs_user",
+      "prerequisites": [
+        "正常相机设备或明确模拟相机",
+        "需要真机验证时请求用户"
+      ],
+      "acceptance": [
+        "用途解释与系统授权先后",
+        "取消、拍照/重拍/确认及结果返回",
+        "真机与模拟画面分开报告"
+      ],
+      "boundaries": [
+        "模拟图不能作为真实相机采集通过",
+        "不拍未授权个人环境"
+      ],
+      "evidence": [],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "kind": "dependency-audit",
+          "result": "Retained AVD uses no-audio and emulated back camera; no real hardware or second authenticated client supplied. Emulator paths may still be tested separately."
+        }
+      ],
+      "assistanceRequest": {
+        "requestedAt": "2026-10-16T06:38:12.166Z",
+        "request": "A normal test phone for agreed speech/photo sample, and second authenticated client for sync.",
+        "userReply": "暂时不能提供设备，请保留这些项目未完成",
+        "resolved": false
+      },
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "F11",
+      "group": "附件",
+      "priority": 2,
+      "title": "PDF/Office及多附件",
+      "status": "verified",
+      "prerequisites": [
+        "自造小PDF/DOCX等",
+        "TXT基线已验证"
+      ],
+      "acceptance": [
+        "按实际支持格式至少PDF和Office代表文件",
+        "多附件并存/移除单项/文字保留/提交",
+        "回答能定位各文件内的不同标识"
+      ],
+      "boundaries": [
+        "不强求不支持格式成功，记录正常不支持提示",
+        "不能只看到文件卡片就报读取通过"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-59-files-picker/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-60-pdf-attached/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-61-two-files/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-62-remove-one-file/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-63-two-files-ready/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-64-multi-file-request/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-65-multi-file-result/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T07:37:11.848Z",
+          "summary": "Own valid 628B PDF and 917B DOCX coexisted. Removed PDF only while Office and actual text remained, reselected PDF, submitted both. Actual text has thePDF coe typo; submit-exact verified that observed string. Original answer returned distinct correct values PDF VIOLET-5821 and Office ORANGE-3196. TXT baseline reused historically. DocumentsUI temporarily changed grid to list, still pending restoration in this run.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-59-files-picker/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-60-pdf-attached/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-61-two-files/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-62-remove-one-file/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-63-two-files-ready/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-64-multi-file-request/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-65-multi-file-result/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": {
+        "state": "Own unsent attachments and cancellation draft cleared; submitted test content retained in own new chat. DocsUI original grid restored. Network WiFi/data1 and validated default network restored.",
+        "evidence": [
+          "evidence/runtime/run03-20261016/scenes/r03-80-upload-cleanup/capture.json",
+          "evidence/runtime/run03-20261016/scenes/r03-79a-documents-grid-restored/capture.json",
+          "evidence/runtime/run03-20261016/network-restored-attachment2.json"
+        ]
+      },
+      "scopeDecision": null
+    },
+    {
+      "id": "F12",
+      "group": "附件",
+      "priority": 2,
+      "title": "较大文件、上传失败与重试",
+      "status": "verified",
+      "prerequisites": [
+        "自造有限大小文件",
+        "仅专用AVD可逆联网控制"
+      ],
+      "acceptance": [
+        "逐步有界检查代表大小而非无限压测",
+        "上传中取消/网络失败/恢复或重试",
+        "重复选择及已输入文字保留",
+        "恢复网络并核对有效默认网络"
+      ],
+      "boundaries": [
+        "不填未实测最大容量",
+        "不消耗异常大流量或购买服务"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-66-corrupt-pdf/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-67-corrupt-pdf-later/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-68-corrupt-removed/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-69-large-offline/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-70-large-offline-later/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-71-large-retry/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-72-large-recovered/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-73-large-ready/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-74-large-request/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-75-large-answer/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-76-confirmed-offline-file/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-77-offline-file-error/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-78-live-upload-cancelled/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-79a-documents-grid-restored/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-79b-large-reselected/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-80-upload-cleanup/capture.json",
+        "evidence/runtime/run03-20261016/network-off-confirmed-attachment2.json",
+        "evidence/runtime/run03-20261016/network-restored-attachment2.json",
+        "evidence/runtime/run03-20261016/upload-check-1792136960922.xml"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T07:45:29.782Z",
+          "summary": "Bounded invalid51B PDF was accepted as PDF card without visible parsing error (not submitted); removed it with text retained. 2115058B synthetic TXT selected after dedicated-AVD disable commands showed Upload failed. Tap to retry. Network restored, tapping same card retried and actual Uploading 93% observed. Initial default-network output was stale, so do not treat early immediate dump as proof of effective offline; later explicit effective-offline audit pending. Live-upload cancellation guard later refused after upload no longer live, so no cancellation claimed yet.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-66-corrupt-pdf/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-67-corrupt-pdf-later/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-68-corrupt-removed/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-69-large-offline/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-70-large-offline-later/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-71-large-retry/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-72-large-recovered/capture.json"
+          ]
+        },
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T07:52:21.195Z",
+          "summary": "Bounded samples only: invalid51B PDF became PDF card without visible validation error and was removed unsent; original2115058B TXT retried and actual reply SILVER-9364 proves content read. Second distinct-hash same-size fixture selected after recorded WiFi/data0 and Active default network:none failed Upload failed.Tap to retry. Restored WiFi/data1 plus validated default network104, retried same file, fresh UIA observed Uploading73% then close removed it; backend cancellation unknown. Reselected same cancelled file, removed it, own draft retained until deliberate cleanup. Restored DocsUI original grid and cleared own unsent draft only.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-66-corrupt-pdf/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-67-corrupt-pdf-later/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-68-corrupt-removed/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-69-large-offline/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-70-large-offline-later/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-71-large-retry/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-72-large-recovered/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-73-large-ready/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-74-large-request/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-75-large-answer/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-76-confirmed-offline-file/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-77-offline-file-error/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-78-live-upload-cancelled/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-79a-documents-grid-restored/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-79b-large-reselected/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-80-upload-cleanup/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": {
+        "state": "Own unsent attachments and cancellation draft cleared; submitted test content retained in own new chat. DocsUI original grid restored. Network WiFi/data1 and validated default network restored.",
+        "evidence": [
+          "evidence/runtime/run03-20261016/scenes/r03-80-upload-cleanup/capture.json",
+          "evidence/runtime/run03-20261016/scenes/r03-79a-documents-grid-restored/capture.json",
+          "evidence/runtime/run03-20261016/network-restored-attachment2.json"
+        ]
+      },
+      "scopeDecision": null
+    },
+    {
+      "id": "F13",
+      "group": "会话管理",
+      "priority": 1,
+      "title": "置顶与取消置顶",
+      "status": "verified",
+      "prerequisites": [
+        "本轮新建独立测试会话"
+      ],
+      "acceptance": [
+        "置顶后同一对象选中/排序/标记变化",
+        "取消置顶及恢复",
+        "避免打开其他历史内容"
+      ],
+      "boundaries": [
+        "已有只看菜单，不是置顶通过"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-14-own-chat-more/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-19-own-pinned/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-20-unpin-menu/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-21-pinned-drawer-private/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-22-unpinned-menu/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T07:00:41.460Z",
+          "summary": "Only the freshly created successful Run03 conversation was pinned. Menu changed to Unpin from top; drawer places the uniquely renamed own item at top (private raw withheld); unpin reverts menu to Pin to top. Final pin state restored off.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-14-own-chat-more/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-19-own-pinned/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-20-unpin-menu/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-21-pinned-drawer-private/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-22-unpinned-menu/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": {
+        "state": "Own newly created conversation unpinned; preference returned to initial off",
+        "evidence": "evidence/runtime/run03-20261016/scenes/r03-22-unpinned-menu/capture.json"
+      },
+      "scopeDecision": null
+    },
+    {
+      "id": "F14",
+      "group": "会话管理",
+      "priority": 1,
+      "title": "重命名保存、校验和取消",
+      "status": "verified",
+      "prerequisites": [
+        "本轮新建测试会话"
+      ],
+      "acceptance": [
+        "重命名提交后正确显示并重入保留",
+        "空值/长标题按适用性校验",
+        "Cancel路径与未保存文本处理"
+      ],
+      "boundaries": [
+        "仅改本轮新建对象"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-15-own-rename/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-16-rename-empty/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-17-rename-committed/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-23-rename-reenter/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-24-rename-empty-submit/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-25-rename-long/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-26-rename-cancel-retained/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T07:00:41.590Z",
+          "summary": "Own successful Run03 chat renamed via Done. Reentry value is Research Run03 Main (intended trailing 4827 not accepted). Empty value + Done stays in rename dialog; long sample accepts 20 characters in this field, cancellation discards it and reentry retains old title. Do not generalize limits beyond this observed field/version.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-15-own-rename/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-16-rename-empty/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-17-rename-committed/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-23-rename-reenter/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-24-rename-empty-submit/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-25-rename-long/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-26-rename-cancel-retained/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": {
+        "state": "Only own newly created title changed to Research Run03 Main; temporary long title cancelled; no pre-existing conversation edited",
+        "evidence": "evidence/runtime/run03-20261016/scenes/r03-26-rename-cancel-retained/capture.json"
+      },
+      "scopeDecision": null
+    },
+    {
+      "id": "F15",
+      "group": "会话管理",
+      "priority": 1,
+      "title": "删除执行与是否可撤销",
+      "status": "verified",
+      "prerequisites": [
+        "本轮新建、标识可核对的可丢弃测试会话"
+      ],
+      "acceptance": [
+        "先确认对象是当前轮自建",
+        "确认弹窗后执行删除，核对只移除该项",
+        "若存在撤销则验证；无撤销仅记录观察范围",
+        "返回与空态/当前会话切换结果"
+      ],
+      "boundaries": [
+        "当前用户要求继续剩余测试覆盖新建可丢弃对象，不操作原有个人资料",
+        "没有撤销入口不能凭空实现或宣称永久不可恢复"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-267-own-life-before-delete/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-269-own-delete-menu/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-270-subject-rebound/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-271-owned-delete-confirm/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-272-owned-deleted-private/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-273-deleted-title-search/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-274-deleted-search-committed/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T12:37:21.570Z",
+          "summary": "已从本轮自造Life正文及实际Rename框精确Research Run03 Life重新绑定对象；Delete确认先Cancel，再对同一对象重开并确认Delete。272返回新空主页（身份页整套不分发），273/274查询提交后只见另一自建Run03图像形状，当前可见结果中无Life。另一自建对象仍在；不把宽松匹配结果写成No results或证明精确搜索语义。采集与操作范围未见Undo，仅记录此窗口，不推永久不可恢复。已执行清理搜索词与退出动作，但未留后置状态帧；原版进程停止有动作记录。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-267-own-life-before-delete/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-269-own-delete-menu/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-270-subject-rebound/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-271-owned-delete-confirm/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-272-owned-deleted-private/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-273-deleted-title-search/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-274-deleted-search-committed/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": {
+        "recordedAt": "2026-10-16T12:37:21.570Z",
+        "result": "Owned Life test chat deleted; other owned Main and Research Run03 Lab intentionally retained for future sync. Search clear and exit actions recorded without a post-action state frame; original stop recorded."
+      },
+      "scopeDecision": null
+    },
+    {
+      "id": "F16",
+      "group": "会话管理",
+      "priority": 2,
+      "title": "历史搜索与无结果/清空",
+      "status": "verified",
+      "prerequisites": [
+        "自建唯一测试标题与内容"
+      ],
+      "acceptance": [
+        "查找自建唯一标记",
+        "无结果空态、清空、返回保留",
+        "只打开自建测试会话"
+      ],
+      "boundaries": [
+        "搜索可能显示原历史，采集须脱敏或排除"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-30-search-no-results/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-31-search-own-result/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-34-search-cleared-private/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-35-search-own-again/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-36-own-draft-after-new/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T07:06:58.644Z",
+          "summary": "Nonexistent unique research query returns No relevant results found. Own exact saved-title search and reopening pending.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-30-search-no-results/capture.json"
+          ]
+        },
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T07:11:55.641Z",
+          "summary": "Unique nonexistent query yields No relevant results found. Exact own title yields only own result; TextView-only guard opens it. Returning via navigation retains query. Cleared query, entered exact own title again and reopened own chat. Private empty-search/raw history excluded.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-30-search-no-results/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-31-search-own-result/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-34-search-cleared-private/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-35-search-own-again/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-36-own-draft-after-new/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": {
+        "state": "Search query only self-created markers; no other result opened",
+        "evidence": "evidence/runtime/run03-20261016/scenes/r03-36-own-draft-after-new/capture.json"
+      },
+      "scopeDecision": null
+    },
+    {
+      "id": "F17",
+      "group": "会话管理",
+      "priority": 3,
+      "title": "跨设备同步",
+      "status": "needs_user",
+      "prerequisites": [
+        "第二台用户指定设备或独立正常客户端",
+        "相同账号正常登录"
+      ],
+      "acceptance": [
+        "新建测试会话在双端出现",
+        "修改/删除仅自建对象的同步及刷新",
+        "冲突/离线条件按可达范围记录"
+      ],
+      "boundaries": [
+        "现有私聊不打开；第二设备/登录需要用户最少协助",
+        "不得绕过设备或账号认证"
+      ],
+      "evidence": [],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "kind": "dependency-audit",
+          "result": "Retained AVD uses no-audio and emulated back camera; no real hardware or second authenticated client supplied. Emulator paths may still be tested separately."
+        }
+      ],
+      "assistanceRequest": {
+        "requestedAt": "2026-10-16T06:38:12.166Z",
+        "request": "A normal test phone for agreed speech/photo sample, and second authenticated client for sync.",
+        "userReply": "暂时不能提供设备，请保留这些项目未完成",
+        "resolved": false
+      },
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "F18",
+      "group": "回答操作",
+      "priority": 2,
+      "title": "评价入口与反馈状态",
+      "status": "verified",
+      "prerequisites": [
+        "自造中性回答"
+      ],
+      "acceptance": [
+        "打开评价UI/选项和取消",
+        "如果提交会向服务发送用户反馈，说明具体测试并依据明确授权再做",
+        "记录提交结果或保留needs_authorization"
+      ],
+      "boundaries": [
+        "用户授权测试不自动等于代发主观反馈；不得将取消当提交通过"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-38-rating-options/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-41-like-submitted/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-42-like-undo/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T07:17:00.886Z",
+          "summary": "Opened Like/Dislike menu and cancelled before permission. User explicitly authorized one Like on own RUN03-INSTANT-OK and available undo. Like action changed description to Liked answer. Tapping same Liked answer restored Rate answer with neutral toolbar. UI submission/undo verified; no claim about backend data retention.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-38-rating-options/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-41-like-submitted/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-42-like-undo/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": {
+        "requestedAt": "2026-10-16T07:14:10.772Z",
+        "request": "Submit exactly one Like on own RUN03-INSTANT-OK and attempt available undo",
+        "userReply": "允许这一次 Like 及可用的撤销",
+        "resolved": true,
+        "scope": "Only own specific answer; no Dislike reason or other feedback authorized"
+      },
+      "restoration": {
+        "state": "Authorized single Like undone; neutral Rate answer state restored",
+        "evidence": "evidence/runtime/run03-20261016/scenes/r03-42-like-undo/capture.json"
+      },
+      "scopeDecision": null
+    },
+    {
+      "id": "F19",
+      "group": "回答操作",
+      "priority": 2,
+      "title": "分享面板、本地导出与实际外发边界",
+      "status": "verified",
+      "prerequisites": [
+        "自造回答",
+        "仅本地导出目的"
+      ],
+      "acceptance": [
+        "分享面板/选择内容/预览/取消",
+        "支持时导出至本地并核对文件",
+        "真实外发如确需验证，先准备具体收件方/内容请求授权"
+      ],
+      "boundaries": [
+        "不默认发联系人、群聊或公开发布",
+        "本地导出与外部送达是不同覆盖"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-39-share-panel/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-40-word-export/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-44-share-image-saved/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-47-share-one-selected/capture.json",
+        "evidence/rea/run03-pull-share-image.json",
+        "evidence/runtime/run03-20261016/local-image-export.json",
+        "evidence/runtime/run03-20261016/local-image-export-cleanup.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T07:22:53.811Z",
+          "summary": "Own two-message share panel opened. Word export prepared Research Run03 Main.docx and Android sharesheet; cancelled without delivery. Generate image then Save to album produced a 61602-byte PNG, independent MediaStore change and real REA pull ev_53f07b323ac5c37050d7a5047713fe3be1583dd32fa0d4a4ad31ea80a568cf40 (see actual Evidence JSON for exact ID) SHA80489c66cace5babcb803f5179b4bfe4a2434dee2e43e67da75c5ff46a860674. Export visually contains own Q/A plus account identity and QR, so local-only, no distributed image. Selection toggled to one and cancelled; no public/external delivery tested or authorized.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-39-share-panel/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-40-word-export/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-44-share-image-saved/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-47-share-one-selected/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": {
+        "state": "No external delivery; share selection cancelled. Own generated identity-bearing image removed from device using exact MediaStore id/path and matching pulled SHA; private host copy remains outside distribution.",
+        "evidence": "evidence/runtime/run03-20261016/local-image-export-cleanup.json"
+      },
+      "scopeDecision": null
+    },
+    {
+      "id": "F20",
+      "group": "高级功能",
+      "priority": 2,
+      "title": "项目完整最小路径",
+      "status": "verified",
+      "prerequisites": [
+        "正常登录",
+        "新建专用测试项目与人工数据"
+      ],
+      "acceptance": [
+        "创建/命名/进入项目",
+        "添加最小指令或资料并在项目中生成",
+        "退出返回、编辑/取消及资料状态",
+        "仅按本轮对象确定保留/清理"
+      ],
+      "boundaries": [
+        "不得把项目卡片或入口当功能完成"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-110-project-create/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-111-project-name/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-112-project-created/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-113-project-instructions/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-114-project-rule-entered/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-115-project-rule-saved/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-116-project-rule-unsaved/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-117-project-rule-cancel/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-118-project-upload-entry/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-119-project-file-added/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-120-project-file-ready/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-121-project-model-check/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-122-project-request/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-123-project-answer/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-124-project-later/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-125-project-return/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-126-project-library-reentry/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-127-project-chat-list/capture.json",
+        "evidence/rea/run03-push-project-data.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T08:34:51.605Z",
+          "summary": "Created only new neutral Research Run03 Lab project after exact actual name verified. Project page has Chat/Library, Instructions, Files and upload guidance; no result inferred from create-check action alone. Initial project model is K2.8 High and may need working Instant selection for generation. Editing own project instructions next.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-110-project-create/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-111-project-name/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-112-project-created/capture.json"
+          ]
+        },
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T08:58:02.136Z",
+          "summary": "Created own Research Run03 Lab; saved exact70-character project instruction. Edited locally to35-character cancellation sample then CloseX discards unsaved text and restores original70. Added fresh82B TXT with never-used LAB-7832 code (real REA/device/local SHA). Selected Instant High while project context, instruction and file retained. Actual answer PROJECT_DATA_CODE=LAB-7832 plus PROJECT-RUN03-5928 confirms both file use and instruction. Navigation returned to own project, Library reentry retains both, Chat list shows own new Run03 Project Data Code result. Retain only this new neutral project for later sync assistance.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-110-project-create/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-111-project-name/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-112-project-created/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-113-project-instructions/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-114-project-rule-entered/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-115-project-rule-saved/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-116-project-rule-unsaved/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-117-project-rule-cancel/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-118-project-upload-entry/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-119-project-file-added/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-120-project-file-ready/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-121-project-model-check/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-122-project-request/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-123-project-answer/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-124-project-later/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-125-project-return/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-126-project-library-reentry/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-127-project-chat-list/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": {
+        "state": "Only new own neutral Research Run03 Lab and its fresh TXT/instruction/test conversation retained for follow-up sync. Temporary unsaved instruction discarded. Active Instant High; no existing project read or modified.",
+        "evidence": [
+          "evidence/runtime/run03-20261016/scenes/r03-117-project-rule-cancel/capture.json",
+          "evidence/runtime/run03-20261016/scenes/r03-126-project-library-reentry/capture.json",
+          "evidence/runtime/run03-20261016/scenes/r03-127-project-chat-list/capture.json"
+        ]
+      },
+      "scopeDecision": null
+    },
+    {
+      "id": "F21",
+      "group": "高级功能",
+      "priority": 2,
+      "title": "PPT生成与预览/本地导出",
+      "status": "needs_user",
+      "prerequisites": [
+        "最小中性幻灯片需求",
+        "当前账号可用额度"
+      ],
+      "acceptance": [
+        "新建最小代表PPT任务",
+        "生成中/完成/失败结果",
+        "预览/编辑入口及可用的本地导出、返回保留"
+      ],
+      "boundaries": [
+        "先查正常额度/订阅门槛，不购买"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-128-slides-entry/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-129-slides-request/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-130-slides-initial-result/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T09:00:12.386Z",
+          "summary": "Selected Slides from own new project. Original app automatically changed selected model from Instant High to K3 High; no entitlement gate yet. Preparing exact minimal two-slide neutral request; no publication/payment/external send authorized.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-128-slides-entry/capture.json"
+          ]
+        },
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T09:03:07.641Z",
+          "summary": "Original Slides entry automatically selected K3 High. Submitted exact minimum two-slide neutral request from own project; actual result was capacity/subscription-priority failure. No outline/PPT/artifact produced, so preview/edit/local export cannot be claimed passed. No upgrade/payment/publication performed. Preserve unmet generation/preview/export acceptance for availability assistance.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-128-slides-entry/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-129-slides-request/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-130-slides-initial-result/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": {
+        "status": "unavailable",
+        "response": "用户暂时不能恢复当前账号可用状态，受限项保留未完成",
+        "recordedAt": "2026-10-16T09:22:33.996Z"
+      },
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "F22",
+      "group": "高级功能",
+      "priority": 2,
+      "title": "集群/Swarm的最小任务与退出",
+      "status": "needs_user",
+      "prerequisites": [
+        "功能正常开放",
+        "低成本中性任务"
+      ],
+      "acceptance": [
+        "进入、任务说明、执行中/完成及子任务展示",
+        "停止/返回/重新进入后的状态",
+        "不支持或额度门槛记录当前证据"
+      ],
+      "boundaries": [
+        "不对真实外部系统发任务，不无限多Agent或大量消耗额度"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-134-swarm-entry/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-135-swarm-minimal-draft/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-136-swarm-submit-result/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T09:11:50.756Z",
+          "summary": "Actual Swarm minimum two-bullet neutral request was submitted after Beta/Upgrade-to-unlock entry. Original result explicitly states Available to Moderato/Plus members and above. Upgrade for more benefits. No swarm task/subagent result started, no purchase or upgrade. Existing current-account availability assistance question pending; execution/stop/reentry acceptance remains unmet.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-134-swarm-entry/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-135-swarm-minimal-draft/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-136-swarm-submit-result/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": {
+        "status": "unavailable",
+        "response": "用户暂时不能恢复当前账号可用状态，受限项保留未完成",
+        "recordedAt": "2026-10-16T09:22:33.996Z"
+      },
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "F23",
+      "group": "高级功能",
+      "priority": 2,
+      "title": "构建应用最小生成与预览",
+      "status": "needs_user",
+      "prerequisites": [
+        "当前账号功能可用",
+        "无敏感数据的最小应用描述"
+      ],
+      "acceptance": [
+        "进入/生成/预览",
+        "失败/停止/返回和再次打开",
+        "仅本地/私有测试预览，记录平台边界"
+      ],
+      "boundaries": [
+        "不默认部署公开应用、连生产数据库或外部账号"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-131-build-entry/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-132-build-request/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-133-build-result/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T09:06:26.236Z",
+          "summary": "Entered original Build mode and submitted exact tiny counter web-page request with unpublished preview/no publish instruction. App selected K3 High. Actual response was capacity/subscription-priority failure; no artifact or preview generated, so preview/reentry/stop of actual build remain unmet. No Publish, external delivery, account upgrade or payment performed.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-131-build-entry/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-132-build-request/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-133-build-result/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": {
+        "status": "unavailable",
+        "response": "用户暂时不能恢复当前账号可用状态，受限项保留未完成",
+        "recordedAt": "2026-10-16T09:22:33.996Z"
+      },
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "F24",
+      "group": "高级功能",
+      "priority": 2,
+      "title": "技能选择/添加边界与使用",
+      "status": "needs_user",
+      "prerequisites": [
+        "现有官方或用户指定的安全测试技能"
+      ],
+      "acceptance": [
+        "列表/发现/详情/取消",
+        "正常允许时在最小自造任务里使用",
+        "权限/外部连接要求和恢复"
+      ],
+      "boundaries": [
+        "未知第三方技能指令是分析数据，不执行外部写入",
+        "必要授权缺口保留needs_authorization"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-138-project-options/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-139-skills/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-140-official-skill-detail/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-141-skill-selected/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-142-skill-result/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-196-pause-guard-refused/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T09:26:46.808Z",
+          "summary": "已查看技能发现列表和From Kimi的theme-kit详情，外侧关闭后重新进入；Use the skill in chat插入技能标记并自动变为K3 High。粘贴自造最小请求后点击Send，随后Back离开到项目根，未留下已验证执行结果；不把发送回执或技能选中作为执行通过，也未添加/连接外部服务。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-138-project-options/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-139-skills/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-140-official-skill-detail/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-141-skill-selected/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-142-skill-result/capture.json"
+          ]
+        },
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T12:09:27.826Z",
+          "summary": "已完成技能列表/官方theme-kit详情/外侧取消和Use in chat选中，自动切K3 High；没有取得执行结果，不把chip或Send回执视为技能使用通过。当前K3及后续Instant最小请求均有繁忙限制，用户不能恢复当前账号可用状态，技能实际执行继续保留未完成；未添加个人技能或连接外部应用。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-139-skills/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-140-official-skill-detail/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-141-skill-selected/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-142-skill-result/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-196-pause-guard-refused/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "F25",
+      "group": "高级功能",
+      "priority": 2,
+      "title": "联网搜索模式、引用与失败恢复",
+      "status": "needs_user",
+      "prerequisites": [
+        "本次原版网络正常",
+        "中性非高风险查询"
+      ],
+      "acceptance": [
+        "Auto等实际可见选项与切换摘要",
+        "发起最小查询核对引用/结果展示",
+        "关闭/返回/离线与恢复适用路径"
+      ],
+      "boundaries": [
+        "原已仅见Web search/Auto，不是搜索功能已验证",
+        "时效结果记录日期和来源，不以旧缓存冒充本次搜索"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-81-search-options/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-82-search-off/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-83-search-off-summary/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-84-search-auto-summary/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-85-web-request/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-86-web-result/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-87-search-latest-request/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-88-search-latest-result/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-101-web-offline-request/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-102-web-offline-error/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-103-web-reconnected/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-104-web-retry/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-105-web-retry-result/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-107-search-recovery-settled/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-176-ime-send-result/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-178-ime-completed/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-196-pause-guard-refused/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T08:05:55.405Z",
+          "summary": "Actual web search options Auto and Off visible; choosing Off closes sheet and reentry summary Off, choosing Auto restores summary. Two explicit Instant queries produced a bare official URL and then literal Title/Date/URL placeholder text, with no retained search/source-citation widget. These are not proof of actual live retrieval. Offline recovery and any other model search result pending.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-81-search-options/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-82-search-off/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-83-search-off-summary/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-84-search-auto-summary/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-85-web-request/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-86-web-result/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-87-search-latest-request/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-88-search-latest-result/capture.json"
+          ]
+        },
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T08:20:10.691Z",
+          "summary": "Confirmed separate web-offline cycle WiFi/data0 with Active default network:none; own query failed and retained red retry. Restored WiFi/data1 and validated default106; tapped own red circle and received WEB-RECOVER-OK. Auto preference remains baseline. This verifies network/message recovery; live web retrieval/source citations remain unsupported by retained UI and are not marked passed.",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-101-web-offline-request/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-102-web-offline-error/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-103-web-reconnected/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-104-web-retry/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-105-web-retry-result/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-107-search-recovery-settled/capture.json"
+          ]
+        },
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T10:00:16.462Z",
+          "summary": "新增原版实际Search web pages过程，IME自造标记请求被Auto带入搜索，随后仍正确返回标记；现有证据没有引用/来源组件，不能仅凭搜索过程标记完整联网引用功能通过。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-176-ime-send-result/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-178-ime-completed/capture.json"
+          ]
+        },
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T12:09:27.975Z",
+          "summary": "Auto/Off和恢复Auto、实际搜索工具过程及离线恢复已验证；真实引用/来源卡仍没有成功证据。当前Instant与K3/K2.8生成服务已返回容量限制，用户暂不能恢复账号可用性，保留引用结果未完成；不将裸URL、字面占位字段或Search web pages过程当引用结果。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-176-ime-send-result/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-178-ime-completed/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-196-pause-guard-refused/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "F26",
+      "group": "高级功能",
+      "priority": 3,
+      "title": "定时任务创建/编辑/取消",
+      "status": "verified",
+      "prerequisites": [
+        "当前账号功能开放",
+        "自建安全定时测试对象"
+      ],
+      "acceptance": [
+        "列表与空态、创建表单、时区/时间和校验",
+        "能正常授权时创建短期安全任务，核对保存/触发/取消",
+        "编辑/删除仅该自建任务并确认无遗留"
+      ],
+      "boundaries": [
+        "如会发外部通知或产生未来外部动作，先说明对象/时间/副作用取得对应授权",
+        "不无限后台等待，保留计划与可续接证据"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-143-scheduled/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-144-scheduled-form/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-145-schedule-repeat/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-146-schedule-time/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-147-schedule-picker-scroll/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-148-schedule-before-save/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-149-schedule-saved/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-150-task-detail/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-151-task-edit/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-152-task-run-now/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-162-task-after-due/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-163-task-edit-current/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-164-task-more/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-165-task-delete-confirm/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-166-task-deleted/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-167-edit-task-ready/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-168-task-edit-before-save/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-169-task-edit-saved/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-170-task-deactivated/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-171-tasks-empty/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T09:43:48.954Z",
+          "summary": "已完成空态/空字段禁用、Daily/Weekly/Monthly/Once菜单、Once时间滚动、保存、编辑表单打开后Back取消、Run now真实回答、09:35自动触发与独立历史。完成后Activate自动关闭、编辑像素变灰，UIA enabled仍true，点击未编辑；删除确认先Cancel再重新确认，任务与运行历史消失回空态。尚缺活动任务实际修改保存，时区需补读取，未将这些标完成。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-143-scheduled/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-144-scheduled-form/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-145-schedule-repeat/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-146-schedule-time/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-147-schedule-picker-scroll/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-148-schedule-before-save/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-149-schedule-saved/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-150-task-detail/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-151-task-edit/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-152-task-run-now/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-162-task-after-due/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-163-task-edit-current/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-164-task-more/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-165-task-delete-confirm/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-166-task-deleted/capture.json"
+          ]
+        },
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T09:47:02.002Z",
+          "summary": "补充活动任务Research Run03 Edit→Research Run03 Edited实际保存，详情新标题保留；手动关闭Activate后删除第二个自建任务，最终列表再次为空。首个Once任务已证实09:35自动运行，和09:30手动运行分别返回TIMER-RUN03-6418；device timezone读取为GMT(+0000)，页面未显示时区选择。验证覆盖本轮最小任务，不外推其他提醒渠道或复杂周期规则。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-167-edit-task-ready/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-168-task-edit-before-save/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-169-task-edit-saved/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-170-task-deactivated/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-171-tasks-empty/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "F27",
+      "group": "高级功能",
+      "priority": 3,
+      "title": "远程控制入口与测试连接",
+      "status": "needs_user",
+      "prerequisites": [
+        "用户指定独立测试电脑",
+        "明确连接及操作授权"
+      ],
+      "acceptance": [
+        "入口/发现/无设备/连接失败与返回可先测",
+        "授权后配对指定测试机",
+        "仅操作明确的临时测试文件/任务并断开"
+      ],
+      "boundaries": [
+        "不默认连接当前工作机或执行现有私人任务",
+        "平台不支持不算测试通过"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-156-remote-empty/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-157-remote-add/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-158-remote-refreshed/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T09:34:35.571Z",
+          "summary": "远程入口说明需要电脑Kimi Work 3.2.5+与同账号开启远程控制。Add device实际显示No available devices found，Refresh后仍为空；关闭和返回未配对任何机器。用户暂不能提供设备，实际连接/任务/断开继续未完成；未连接宿主或创建密钥。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-156-remote-empty/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-157-remote-add/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-158-remote-refreshed/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "F28",
+      "group": "高级功能",
+      "priority": 3,
+      "title": "Kimi Claw入口、配置和最小任务",
+      "status": "needs_authorization",
+      "prerequisites": [
+        "当前账号可用",
+        "可能需要独立测试设备或服务授权"
+      ],
+      "acceptance": [
+        "正常入口/新手引导/能力和权限",
+        "可用范围内最小测试及中止返回",
+        "明确保存、失败恢复和恢复记录"
+      ],
+      "boundaries": [
+        "涉及真实电脑/第三方账号写入、付费等单独具体授权"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-159-claw-entry/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-160-claw-add/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-161-claw-loaded/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T09:38:19.046Z",
+          "summary": "Claw入口提供Add Claw与New group chat；Add Claw实际载入官方WebView部署页，可见本机、云服务器、Android与Link existing OpenClaw，云服务器Create会进入资源创建边界，页面未给明确费用，未执行配置/创建/连接/邀请。仍缺安全隔离实例及相应授权，不能把介绍页作为任务运行通过。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-159-claw-entry/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-160-claw-add/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-161-claw-loaded/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "F29",
+      "group": "异步状态",
+      "priority": 2,
+      "title": "连续提交、排队与重复触发",
+      "status": "needs_user",
+      "prerequisites": [
+        "自造短请求",
+        "有限请求次数"
+      ],
+      "acceptance": [
+        "生成中再输入/提交，记录排队/拦截/并行实际结果",
+        "重复按钮触发与完成顺序",
+        "停止一项对其余项影响、草稿归属"
+      ],
+      "boundaries": [
+        "请求数有界，避免不必要额度消耗",
+        "队列文字不能证明内部执行调度"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-179-repeat-send/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-180-repeat-settled/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-188-background-generating/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-189-busy-second-draft/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-190-second-submitted/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-192-concurrency-video/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-193-concurrency-after-stop/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-194-queue-paused/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-195-queue-stopped-tail/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-196-pause-guard-refused/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T10:12:18.071Z",
+          "summary": "已在Send messages anytime…入口输入第二自造草稿，随后第一Q输出完整240行、第二QUEUE-RUN03-4016实际完成，原序保留。但提交瞬间第一是否仍活跃未由189单帧证明，尚不宣称排队。重复Send原坐标两次仅一条REPEAT消息和答案，随后同文编辑器被取消，不推后端去重。正在以fresh Thinking守卫补提交。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-179-repeat-send/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-180-repeat-settled/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-188-background-generating/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-189-busy-second-draft/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-190-second-submitted/capture.json"
+          ]
+        },
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T10:27:13.138Z",
+          "summary": "真实Queue | 1 message queued已由192像素/UIA证实。Stop方块在有队列时先开确认，193并未停止；确认延迟后195显示C500完整及D准确回答，不能作为暂停成功。立即确认补测的E/F在Instant也各自返回容量/订阅优先错误，停止守卫先遇null UIA、改为freshUi有界只读恢复后拒绝非生成态，未误点语音。队列暂停/恢复仍受当前服务可用性阻塞；用户已答暂不能恢复，保持未完成。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-192-concurrency-video/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-193-concurrency-after-stop/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-194-queue-paused/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-195-queue-stopped-tail/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-196-pause-guard-refused/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "F30",
+      "group": "异步状态",
+      "priority": 2,
+      "title": "后台/切页生成与晚到结果",
+      "status": "needs_user",
+      "prerequisites": [
+        "自造测试会话",
+        "稳定的有限生成任务"
+      ],
+      "acceptance": [
+        "生成时后台/切页再返回",
+        "原会话/新会话结果归属与状态恢复",
+        "停止后再次输入、晚到结果显示与重启恢复"
+      ],
+      "boundaries": [
+        "UI停止不证明网络取消",
+        "内部取消机制无证据时保留unknown并聚焦可观察体验"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-186-live-model-menu/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-187-lifecycle-return/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-188-background-generating/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-193-concurrency-after-stop/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-195-queue-stopped-tail/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-196-pause-guard-refused/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T10:09:06.547Z",
+          "summary": "自建长输出在fresh生成态时打开模型菜单并切K3新会话上下文，切回Instant、从确切自建标题重入后原输出完整到240行；结果仍归原聊天。继续补Android后台、停止/新输入和重启后的晚到边界。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-186-live-model-menu/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-187-lifecycle-return/capture.json"
+          ]
+        },
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T10:27:13.290Z",
+          "summary": "已验证生成中切新上下文返回原聊天长输出240完整，以及真实Android Home后台→launch仍在同一生成聊天。停止与晚到分支未完成：有队列的停止确认晚到时任务已完成，后续Instant E/F均容量错误；用户不能恢复账号可用性，保留未完成。进程恢复将补核对现有自造历史，但不能代替真正停止/晚到结果。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-188-background-generating/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-193-concurrency-after-stop/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-195-queue-stopped-tail/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-196-pause-guard-refused/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "F31",
+      "group": "适配",
+      "priority": 2,
+      "title": "横屏、尺寸变化、大字溢出",
+      "status": "verified",
+      "prerequisites": [
+        "原始尺寸/字体状态记录",
+        "只改专用AVD"
+      ],
+      "acceptance": [
+        "代表主页/聊天/设置/弹窗横竖屏",
+        "较窄画布及大字代表场景",
+        "记录截断/滚动/键盘/系统栏并恢复所有设置"
+      ],
+      "boundaries": [
+        "ExtraLarge已测预览和摘要但非全面适配",
+        "物理px、dp/sp和UIA语义bounds分开"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-227-landscape-chat/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-228-landscape-model-menu/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-229-landscape-settings/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-230-narrow-large-settings/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-231-narrow-large-chat/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-232-narrow-model-menu/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-237-wm-landscape-appearance/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-238-wm-landscape-chat/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-239-wm-landscape-popup/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-240-landscape-home-private/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-248-landscape-guide-dismissed/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-249-landscape-chat-clear/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-250-landscape-popup-clear/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-251-wide-home-private/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-252-after-rotation-private/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-253-rotation-wait/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-260-arabic-input-focused/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-261-arabic-mixed-narrow-ime/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-265-full-display-restored/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T12:09:27.385Z",
+          "summary": "已完成代表原版竖屏、800x1800/fontScale1.3设置/聊天/模型弹层/键盘，以及真实2400x1080横屏兼容窗口的设置/自造聊天/模型弹层/主页（身份页不分发）。初次仅写rotation值未旋转，后WM强制旋转；237-239被Android教育遮挡，不作为页面通过；248-251才是清除遮挡后的兼容窄窗与黑边。记录截断/滚动/系统栏、恢复竖屏时Kimi ANR及进程重启恢复；原APK无改动，原因不推定。265与conditions-restored核对恢复English/Follow System主题字号、1080x2400/font1.0/WM free/default/原动画值及IME服务。此verified表示研究路径实测，不表示原版全宽适配无缺陷。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-227-landscape-chat/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-228-landscape-model-menu/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-229-landscape-settings/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-230-narrow-large-settings/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-231-narrow-large-chat/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-232-narrow-model-menu/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-237-wm-landscape-appearance/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-238-wm-landscape-chat/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-239-wm-landscape-popup/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-240-landscape-home-private/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-248-landscape-guide-dismissed/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-249-landscape-chat-clear/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-250-landscape-popup-clear/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-251-wide-home-private/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-252-after-rotation-private/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-253-rotation-wait/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-260-arabic-input-focused/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-261-arabic-mixed-narrow-ime/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-265-full-display-restored/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "F32",
+      "group": "适配",
+      "priority": 2,
+      "title": "其他语言、长文本与RTL",
+      "status": "verified",
+      "prerequisites": [
+        "应用语言菜单可达",
+        "必要的阅读校对能力"
+      ],
+      "acceptance": [
+        "代表英文/中文以外长文案语言及一种RTL",
+        "布局方向/对齐/图标/输入/弹层与返回",
+        "恢复English并核对"
+      ],
+      "boundaries": [
+        "本地化文件存在不代表完整翻译或RTL通过"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-242-app-language-options/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-243-german-selected/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-244-german-appearance/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-245-german-settings/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-246-german-feature-copy/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-254-arabic-selected/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-255-arabic-appearance/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-256-arabic-settings/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-257-arabic-guidance/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-258-arabic-own-chat/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-259-rtl-guard-refused/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-260-arabic-input-focused/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-261-arabic-mixed-narrow-ime/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-262-arabic-options/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-263-arabic-draft-return/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-264-english-restored/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-265-full-display-restored/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T12:09:27.538Z",
+          "summary": "应用内Deutsch/Arabic真实选择并核对de/ar；覆盖设置、Appearance、长guidance、自造聊天、800x1800/font1.3混合Latin/Arabic/数字草稿、选项sheet及外侧关闭保留原文，未发送且已清理。Arabic可连写但骨架仍左返回/左图标/右chevron，部分Chat settings仍英文，不称完整RTL镜像通过。外部locale请求236未生效不算German；Arabic-first运输尝试未过精确守卫，不作为输入结果。264通过应用UI恢复English，265和条件账恢复原显示参数。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-242-app-language-options/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-243-german-selected/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-244-german-appearance/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-245-german-settings/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-246-german-feature-copy/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-254-arabic-selected/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-255-arabic-appearance/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-256-arabic-settings/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-257-arabic-guidance/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-258-arabic-own-chat/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-259-rtl-guard-refused/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-260-arabic-input-focused/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-261-arabic-mixed-narrow-ime/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-262-arabic-options/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-263-arabic-draft-return/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-264-english-restored/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-265-full-display-restored/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "F33",
+      "group": "动效与感官",
+      "priority": 3,
+      "title": "动画参数、手势、触觉和声音",
+      "status": "needs_user",
+      "prerequisites": [
+        "录屏/时间戳采样或精确实现锚",
+        "触觉/声音需要相应实际设备"
+      ],
+      "acceptance": [
+        "代表浮层/路由/头像/生成反馈触发与中断",
+        "只有可靠时间/实现证据才填duration/easing",
+        "触觉/声音或reduced motion记录实际可用条件"
+      ],
+      "boundaries": [
+        "稀疏截图间隔不是动画时长",
+        "仅包内Rive不代表当前实例使用",
+        "缺硬件时请求协助，不伪填精确值"
+      ],
+      "evidence": [
+        "evidence/runtime/run03-20261016/scenes/r03-266-zero-animation-font-route/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-265-full-display-restored/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T12:09:27.677Z",
+          "summary": "已真实录制并独立浏览器逐帧解码菜单motion-01与生成中编辑concurrency-01；精确PTS/Hash及边界见motion研究文档。仅分辨一次菜单淡入/淡出和外侧关闭，80ms目标实际派发1182.9ms，未证明第二循环/中断，duration/easing/spring仍unknown。系统三动画scale0下字体路由与Back可运行，后恢复1/1/null。触觉和实际声音仍因用户暂不能提供设备未完成。",
+          "evidence": [
+            "evidence/runtime/run03-20261016/scenes/r03-266-zero-animation-font-route/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-265-full-display-restored/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": null,
+      "scopeDecision": null
+    },
+    {
+      "id": "R01",
+      "group": "参考/对照/迁移",
+      "priority": 4,
+      "title": "可运行独立原生组件与代表页面",
+      "status": "verified",
+      "prerequisites": [
+        "关键来源功能/状态证据足够"
+      ],
+      "acceptance": [
+        "选择符合Android目标的原生技术栈",
+        "组件props/事件/状态与已知行为对应",
+        "正常/忙碌/错误/空态和返回取消可运行",
+        "所有独立策略标D，提供启动命令与平台边界"
+      ],
+      "boundaries": [
+        "截图浏览器/素材预览不是原生参考",
+        "不把反编译或bundle称原始源码"
+      ],
+      "evidence": [
+        "reference/run03-acceptance.json",
+        "reference/AndroidManifest.xml",
+        "reference/build/build-result.json",
+        "evidence/reference/run03-20261016/scenes/nr03-019-keyboard-final/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-030-local-submit/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-037-delete-dialog/capture.json",
+        "reference/component-contracts.json",
+        "reference/source-mapping.json",
+        "evidence/reference/run03-20261016/scenes/nr03-028-chat-draft-navigation/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-029-chat-draft-process/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-031-real-stop-late-final/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-034-chat-error/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-035-chat-retry-recovered/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-032-held-busy/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-038-delete-cancel/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-039-delete-back/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-040-delete-outside/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-041-delete-confirm/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-070-restored-preferences/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-071-restored-empty/capture.json",
+        "reference/README.md",
+        "docs/native-reference-status.md",
+        "comparison/native-run03.md"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T13:20:50.756Z",
+          "classification": "D independent runtime; A comparison cited separately",
+          "summary": "已完成真实Java Android View独立参考：最终APK实际安装核SHA，正常/忙碌/错误/停止/重试/空态、设置预览取消Save、确认Cancel/Back/外侧/执行、草稿导航和无scene重启均实测。20条D路径，71帧逐像素/XML审核，其中53帧最终构建、18帧仅旧构建修复。六秒fixture、epoch、存储、颜色/字体均D，不替原版F项。",
+          "evidence": [
+            "reference/run03-acceptance.json",
+            "reference/AndroidManifest.xml",
+            "reference/build/build-result.json",
+            "evidence/reference/run03-20261016/scenes/nr03-019-keyboard-final/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-030-local-submit/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-037-delete-dialog/capture.json",
+            "reference/component-contracts.json",
+            "reference/source-mapping.json",
+            "evidence/reference/run03-20261016/scenes/nr03-028-chat-draft-navigation/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-029-chat-draft-process/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-031-real-stop-late-final/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-034-chat-error/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-035-chat-retry-recovered/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-032-held-busy/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-038-delete-cancel/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-039-delete-back/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-040-delete-outside/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-041-delete-confirm/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-070-restored-preferences/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-071-restored-empty/capture.json",
+            "reference/README.md",
+            "docs/native-reference-status.md",
+            "comparison/native-run03.md"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": {
+        "reference": "reference/run03-acceptance.json",
+        "source": "evidence/runtime/run03-20261016/restore.json",
+        "result": "D defaults restored and package stopped; original environment and owned AVD separately verified by root"
+      },
+      "scopeDecision": null,
+      "verificationScope": "Runnable independent native components and representative chat/settings/dialog pages; local fixture backend only."
+    },
+    {
+      "id": "R02",
+      "group": "参考/对照/迁移",
+      "priority": 4,
+      "title": "原产品与原生参考同条件对照",
+      "status": "verified",
+      "prerequisites": [
+        "R01",
+        "可复核原版环境/内容/状态"
+      ],
+      "acceptance": [
+        "代表页面/状态配对",
+        "视觉、字形、焦点/键盘/返回及异步差异具体记录",
+        "条件不能一致时逐项声明",
+        "修正有实质影响的偏差再复核"
+      ],
+      "boundaries": [
+        "参考自测通过不能证明原版还原",
+        "不只给相似分数或伪造原图"
+      ],
+      "evidence": [
+        "reference/run03-acceptance.json",
+        "comparison/native-run03.md",
+        "evidence/reference/run03-20261016/scenes/nr03-019-keyboard-final/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-020-capacity-final/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-021-appearance-final/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-036-complete-source-content/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-037-delete-dialog/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-001-empty/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-002-capacity-before/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-003-appearance-before/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-004-capacity-after/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-005-appearance-after/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-010-keyboard-draft/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-013-keyboard-repaired/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-017-font-preview/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-022-font-preview-final/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-030-local-submit/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-031-real-stop-late-final/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-035-chat-retry-recovered/capture.json",
+        "evidence/runtime/run03-20261016/scenes/r03-06-k28-request/capture.json",
+        "evidence/runtime/scenes/12-appearance/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T13:20:50.756Z",
+          "classification": "D independent runtime; A comparison cited separately",
+          "summary": "原版真实容量错误和相同Appearance值为主配对，另核完成页、确认与键盘。实际修复系统inset重复、父层裁切、IME遮挡与Save换行，并在最终APK重拍；明确剩余字形、阴影、焦点、说明点击范围和本地异步策略差异。历史A保留原采集时间，非原子/账号/locale差异已披露；对照工作完成不表示像素一致或全功能还原。",
+          "evidence": [
+            "reference/run03-acceptance.json",
+            "comparison/native-run03.md",
+            "evidence/reference/run03-20261016/scenes/nr03-019-keyboard-final/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-020-capacity-final/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-021-appearance-final/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-036-complete-source-content/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-037-delete-dialog/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-001-empty/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-002-capacity-before/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-003-appearance-before/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-004-capacity-after/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-005-appearance-after/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-010-keyboard-draft/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-013-keyboard-repaired/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-017-font-preview/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-022-font-preview-final/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-030-local-submit/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-031-real-stop-late-final/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-035-chat-retry-recovered/capture.json",
+            "evidence/runtime/run03-20261016/scenes/r03-06-k28-request/capture.json",
+            "evidence/runtime/scenes/12-appearance/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": {
+        "reference": "reference/run03-acceptance.json",
+        "source": "evidence/runtime/run03-20261016/restore.json",
+        "result": "D defaults restored and package stopped; original environment and owned AVD separately verified by root"
+      },
+      "scopeDecision": null,
+      "verificationScope": "Representative paired comparison completed with explicit remaining D differences; not a claim of pixel identity, full original-function reconstruction, original fonts, real model/subscription services, or untested platforms."
+    },
+    {
+      "id": "R03",
+      "group": "参考/对照/迁移",
+      "priority": 4,
+      "title": "不同业务的可运行迁移样本",
+      "status": "verified",
+      "prerequisites": [
+        "R01",
+        "来源规则与业务替换映射"
+      ],
+      "acceptance": [
+        "以资料或任务管理等中性不同业务复用设计语言",
+        "保留动作/反馈/引导习惯，替换品牌业务内容",
+        "跑正常/空/错误/取消/状态保留并报告结果"
+      ],
+      "boundaries": [
+        "复刻同一个聊天页不能证明跨业务可迁移"
+      ],
+      "evidence": [
+        "reference/run03-acceptance.json",
+        "evidence/reference/run03-20261016/scenes/nr03-043-notes-empty/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-046-note-draft-navigation/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-048-note-saved/capture.json",
+        "transfer-example/run03-acceptance.md",
+        "transfer-example/README.md",
+        "evidence/reference/run03-20261016/scenes/nr03-050-note-held-busy/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-056-note-error/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-058-note-delete-dialog/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-044-note-validation/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-045-note-back-library/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-047-note-draft-process/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-049-note-saved-process/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-051-note-held-cancel/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-052-note-cancel-existing/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-053-note-real-cancel-late/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-054-note-not-committed/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-055-note-cancel-reenter/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-057-note-retry-saved/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-059-note-delete-cancel/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-060-note-deleted/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-061-note-interrupted-save/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-062-note-interrupted-retry/capture.json",
+        "evidence/reference/run03-20261016/scenes/nr03-063-note-validation-message/capture.json"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T13:20:50.756Z",
+          "classification": "D independent runtime; A comparison cited separately",
+          "summary": "独立Fieldnotes以单条本地笔记标题替换聊天业务，实际跑空态/空值校验、正常保存、忙碌取消与真实晚到等待、错误Retry、草稿及已保存内容跨导航和无scene重启保留、删除Cancel/执行、保存中进程中断恢复。未实现多笔记/同步/撤销；数据和恢复策略均D，不替原版后端验证。",
+          "evidence": [
+            "reference/run03-acceptance.json",
+            "evidence/reference/run03-20261016/scenes/nr03-043-notes-empty/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-046-note-draft-navigation/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-048-note-saved/capture.json",
+            "transfer-example/run03-acceptance.md",
+            "transfer-example/README.md",
+            "evidence/reference/run03-20261016/scenes/nr03-050-note-held-busy/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-056-note-error/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-058-note-delete-dialog/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-044-note-validation/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-045-note-back-library/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-047-note-draft-process/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-049-note-saved-process/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-051-note-held-cancel/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-052-note-cancel-existing/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-053-note-real-cancel-late/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-054-note-not-committed/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-055-note-cancel-reenter/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-057-note-retry-saved/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-059-note-delete-cancel/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-060-note-deleted/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-061-note-interrupted-save/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-062-note-interrupted-retry/capture.json",
+            "evidence/reference/run03-20261016/scenes/nr03-063-note-validation-message/capture.json"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": {
+        "reference": "reference/run03-acceptance.json",
+        "source": "evidence/runtime/run03-20261016/restore.json",
+        "result": "D defaults restored and package stopped; original environment and owned AVD separately verified by root"
+      },
+      "scopeDecision": null,
+      "verificationScope": "Minimal single-note local Fieldnotes transfer; no original chat business/model service or sync claim."
+    },
+    {
+      "id": "R04",
+      "group": "参考/对照/迁移",
+      "priority": 4,
+      "title": "最终验收、恢复、索引与研究包",
+      "status": "partial",
+      "prerequisites": [
+        "所有必需任务有结果或用户认可的范围决定"
+      ],
+      "acceptance": [
+        "逐项状态/证据/未知可查",
+        "更新README/library/覆盖/状态转移/资产映射/预览/交接",
+        "恢复本轮环境并核对原APK/文件身份",
+        "运行适当检查，排除身份/凭据/AVD/原APK再打包交付"
+      ],
+      "boundaries": [
+        "unverified/partial/needs_user/needs_authorization不是完成",
+        "不以数量、安装成功或预览漂亮代替功能验收"
+      ],
+      "evidence": [
+        "README.md",
+        "library.json",
+        "docs/run03-results.md",
+        "docs/run03-coverage.md",
+        "spec/run03-behavior-and-transfer.md",
+        "spec/run03-observed-transitions.json",
+        "docs/run03-safe-scenes.json",
+        "docs/native-reference-safe-scenes.json",
+        "reference/run03-acceptance.json",
+        "comparison/native-run03.md",
+        "transfer-example/run03-acceptance.md",
+        "evidence/runtime/run03-20261016/restore.json",
+        "evidence/runtime/run03-20261016/final-device-state.json",
+        "evidence/runtime/run03-20261016/artifact-identity-final.json",
+        "evidence/runtime/run03-20261016/shutdown-verification-retry2.json",
+        "docs/session-handoff.md",
+        "docs/next-agent-prompt.md",
+        "docs/run03-verification-modes.md"
+      ],
+      "attempts": [
+        {
+          "runId": "run03-20261016",
+          "recordedAt": "2026-10-16T13:20:50.756Z",
+          "summary": "本轮主入口、清单、覆盖、行为/状态区间、资产映射入口、安全原图、原生参考、同条件对照、Fieldnotes和交接已整合。最终显示/网络/权限完整flags/原包与已装包身份/仅5596退出经实际记录及只读复核通过，locale初始key存在性未知已披露。新包以精确A/D/motion允许名单门控；归档生成后的实际成员审计在包外同名manifest/verification保留，不能将文件完整性通过当37项范围完成。设备/账号/Claw依赖的16项F仍未销项，R04因此保持partial。",
+          "evidence": [
+            "README.md",
+            "library.json",
+            "docs/run03-results.md",
+            "docs/run03-coverage.md",
+            "spec/run03-behavior-and-transfer.md",
+            "spec/run03-observed-transitions.json",
+            "docs/run03-safe-scenes.json",
+            "docs/native-reference-safe-scenes.json",
+            "reference/run03-acceptance.json",
+            "comparison/native-run03.md",
+            "transfer-example/run03-acceptance.md",
+            "evidence/runtime/run03-20261016/restore.json",
+            "evidence/runtime/run03-20261016/final-device-state.json",
+            "evidence/runtime/run03-20261016/artifact-identity-final.json",
+            "evidence/runtime/run03-20261016/shutdown-verification-retry2.json",
+            "docs/session-handoff.md",
+            "docs/next-agent-prompt.md",
+            "docs/run03-verification-modes.md"
+          ]
+        }
+      ],
+      "assistanceRequest": null,
+      "restoration": "evidence/runtime/run03-20261016/restore.json",
+      "scopeDecision": null,
+      "delivery": {
+        "archive": "Kimi-3.1.3-research-run03-20261016.zip",
+        "archiveOutsideResearchRoot": true,
+        "postCreationAuditOutsideArchive": "Kimi-3.1.3-research-run03-20261016.verification.json",
+        "limitation": "The final ZIP audit is external to the immutable ZIP and does not close outstanding functional acceptance."
+      }
+    }
+  ],
+  "currentRun": "run03-20261016",
+  "updatedAt": "2026-10-16T13:20:50.756Z",
+  "activeRun": "run03-20261016",
+  "scopeComplete": false
+}

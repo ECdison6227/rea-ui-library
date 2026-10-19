@@ -1,0 +1,43 @@
+{
+  "id": "r03-170-task-deactivated",
+  "description": "Actual task deactivation",
+  "classification": "A",
+  "origin": "current",
+  "runId": "run03-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-16T09:46:36.829Z",
+  "capturedAt": "2026-10-16T09:46:41.760Z",
+  "screenshotCapturedAt": "2026-10-16T09:46:38.915Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-170-task-deactivated/screen.png",
+    "sha256": "c21bd1ad85444a63de344811513df162b12771d0ed3f4ab9f60014f90dfc867c",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-170-task-deactivated/hierarchy.xml",
+    "sha256": "d43016f38f12d3cae421b97310bc0cbb1fac398d196faf43c5896d42c02c66d0"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 366,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "systemLocales": "null",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{c005120 u0 com.moonshot.kimichat/.MainActivity t19}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen",
+  "captureSettlingDelayMs": 1500,
+  "accountMode": "normal retained user-assisted login verified by authenticated home and actual submitted self-created request; credentials excluded"
+}

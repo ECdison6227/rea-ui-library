@@ -1,0 +1,43 @@
+{
+  "id": "r03-273-deleted-title-search",
+  "description": "Exact own deleted title search result after verified delete",
+  "classification": "A",
+  "origin": "current",
+  "runId": "run03-20261016",
+  "serial": "emulator-5596",
+  "avd": "rea_kimi_ui_20261015",
+  "package": "com.moonshot.kimichat",
+  "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "startedAt": "2026-10-16T12:21:12.189Z",
+  "capturedAt": "2026-10-16T12:21:19.033Z",
+  "screenshotCapturedAt": "2026-10-16T12:21:15.003Z",
+  "atomicCapture": false,
+  "method": "Android adb exec-out screencap -p; subsequent uiautomator dump; non-atomic independent shell observation, not REA Evidence",
+  "screenshot": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-273-deleted-title-search/screen.png",
+    "sha256": "4e56870b9979554e00a5e48c181d4b3cde41af837f4885760cd23c4e2bc287eb",
+    "width": 1080,
+    "height": 2400
+  },
+  "hierarchy": {
+    "path": "evidence/runtime/run03-20261016/scenes/r03-273-deleted-title-search/hierarchy.xml",
+    "sha256": "295a2b063b9c56a57238d39f60dea96b0c8c43b28200d0169401dc93a22d9bc3"
+  },
+  "hierarchyError": null,
+  "actionsBeforeCapture": 641,
+  "conditions": {
+    "size": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "fontScale": "1.0",
+    "systemLocales": "en-US",
+    "buildLocale": "en-US",
+    "appLocales": "Locales for com.moonshot.kimichat for user 0 are [en-US]",
+    "nightMode": "Night mode: no"
+  },
+  "window": [
+    "    topResumedActivity=ActivityRecord{6a1ce2a u0 com.moonshot.kimichat/.MainActivity t60}"
+  ],
+  "visualReview": "pending human/agent pixel inspection; capture success alone does not establish useful screen",
+  "captureSettlingDelayMs": 1500,
+  "accountMode": "normal retained user-assisted login verified by authenticated home and actual submitted self-created request; credentials excluded"
+}

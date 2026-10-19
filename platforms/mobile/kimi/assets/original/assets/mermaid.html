@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mermaid DEMO</title>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 0px;
+    }
+
+    div[id^="mermaid-svg"] {
+      width: 100%;
+      height: 100%;
+      border: 0px solid #000;
+      padding: 0px;
+      text-align: center;
+    }
+
+
+    div[id^="mermaid-svg"]:not(:first-child) {
+      margin-top: 0px;
+    }
+  </style>
+</head>
+<body>
+<div id="mermaid-svg"></div>
+
+<script type="module">
+  import mermaid from "./mermaid.esm.min.mjs";
+
+  const queryString = window.location.search;
+  console.log(queryString);
+
+  const urlParams = new URLSearchParams(queryString);
+  const mermaidStr = urlParams.get('mermaid').toString();
+  // console.log(mermaidStr);
+  const darkMode = urlParams.get('darkMode').toString() == 'true';
+  // console.log(darkMode);
+  const look = urlParams.get('look').toString();
+  console.log(look);
+
+  mermaid.initialize({
+    logLevel: "fatal",
+    securityLevel: "antiscript", // antiscript | strict
+    darkMode: darkMode,
+    arrowMarkerAbsolute: false,
+    flowchart: {
+      htmlLabels: true,
+      curve: "linear",
+    },
+    sequence: {
+      diagramMarginX: 50,
+      diagramMarginY: 10,
+      actorMargin: 50,
+      width: 150,
+      height: 65,
+      boxMargin: 10,
+      boxTextMargin: 5,
+      noteMargin: 10,
+      messageMargin: 35,
+      mirrorActors: true,
+      bottomMarginAdj: 1,
+      useMaxWidth: true,
+      rightAngles: false,
+      showSequenceNumbers: false,
+    },
+    gantt: {
+      titleTopMargin: 25,
+      barHeight: 20,
+      barGap: 4,
+      topPadding: 50,
+      leftPadding: 75,
+      gridLineStartPadding: 35,
+      fontSize: 11,
+      fontFamily: '"Open-Sans", "sans-serif"',
+      numberSectionStyles: 4,
+      axisFormat: "%Y-%m-%d",
+    },
+
+    theme: "base",
+    look: look, //classic/handDrawn
+    themeVariables: {
+      primaryColor: "#CCCCFD",
+    }
+  });
+
+  async function setDemo(mer, id) {
+    return new Promise(async (resolve, reject) => {
+      let result;
+      try {
+        // 如果拿不到 result,  生成失败，是中间状态或者模型结果错误，这里判断不能去截图
+        result = await mermaid.parse(mer);
+      } catch (error) {
+        console.error("parse.error", error);
+        reject(error);
+      }
+
+      // console.log("parse end");
+      if (result) {
+        // console.log("parse result true");
+        try {
+          const svgDom = document.getElementById(id);
+
+          const renderResult = await mermaid.render(
+            `s_${Math.round(Math.random() * 10000)}`,
+            mer
+          );
+
+          if (renderResult) {
+            svgDom.innerHTML = renderResult.svg;
+          }
+
+          resolve(renderResult);
+        } catch (error) {
+          console.error("render.error", error);
+          reject(error);
+        }
+      }
+    });
+  }
+
+  await setDemo(mermaidStr, "mermaid-svg");
+</script>
+</body>
+</html>

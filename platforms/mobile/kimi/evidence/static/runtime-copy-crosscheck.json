@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "LOCAL-RUNTIME-COPY-001",
+  "origin": "current",
+  "checkedAtUtc": "2026-10-15T15:21:04.484Z",
+  "method": "Read-only comparison of retained screenshot/UIA/capture.json against 17 decoded CVR files; no runtime action and no REA Evidence ID",
+  "command": "node tools/crosscheck-runtime-copy.mjs",
+  "sourceApkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+  "searchBoundary": "17 Compose strings.commonMain.cvr files only. Exact ordinary string equality for label candidates; selected fragment concatenation for the body. Does not search resources.arsc, code binding, server text or dependency text.",
+  "scenes": [
+    {
+      "id": "03-kimi-privacy",
+      "capturePath": "evidence/runtime/scenes/03-kimi-privacy/capture.json",
+      "package": "com.moonshot.kimichat",
+      "serial": "emulator-5596",
+      "avd": "rea_kimi_ui_20261015",
+      "capturedAt": "2026-10-15T15:16:30.556Z",
+      "conditions": {
+        "size": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "fontScale": "1.0",
+        "systemLocales": "null",
+        "nightMode": "Night mode: no"
+      },
+      "screenshot": {
+        "path": "evidence/runtime/scenes/03-kimi-privacy/screen.png",
+        "sha256": "bb571ebaa5e6d8298838e4d4afceba5d792b653127811206c75c76f0acbe1c3c",
+        "width": 1080,
+        "height": 2400
+      },
+      "hierarchy": {
+        "path": "evidence/runtime/scenes/03-kimi-privacy/hierarchy.xml",
+        "sha256": "5340b794cfbbe10331c76d4f36d57fb39de5609ac8f3a45340deefc52cf6948c"
+      },
+      "visualInspection": {
+        "classification": "A",
+        "method": "Agent inspected original retained screen.png with view_image; original image unchanged",
+        "observations": [
+          "Image is nonblank and shows Kimi privacy consent dialog",
+          "Title Welcome to Kimi and buttons Disagree / Agree are visible",
+          "Terms of Service and Privacy Policy are visually blue fragments in a body paragraph",
+          "Text at ServiceandPrivacy and PolicyUnderstand has no visible inserted word spacing, consistent with UIA text"
+        ],
+        "limits": [
+          "No new precise color/font/spacing measurements made",
+          "Link click targets and actions not tested in this crosscheck"
+        ]
+      },
+      "textNodes": [
+        {
+          "sourceNodeOrdinal": 10,
+          "text": "Welcome to Kimi",
+          "class": "android.widget.TextView",
+          "package": "com.moonshot.kimichat",
+          "resourceId": "",
+          "bounds": "[228,962][853,1025]",
+          "clickableOnTextNode": "false",
+          "enabled": "true",
+          "classification": "A",
+          "sourcePath": "evidence/runtime/scenes/03-kimi-privacy/hierarchy.xml",
+          "sourceFileSha256": "5340b794cfbbe10331c76d4f36d57fb39de5609ac8f3a45340deefc52cf6948c"
+        },
+        {
+          "sourceNodeOrdinal": 11,
+          "text": "Terms of ServiceandPrivacy PolicyUnderstand our services and how we protect your information. By tapping Agree, you consent to the above agreements",
+          "class": "android.widget.TextView",
+          "package": "com.moonshot.kimichat",
+          "resourceId": "",
+          "bounds": "[228,1046][853,1311]",
+          "clickableOnTextNode": "false",
+          "enabled": "true",
+          "classification": "A",
+          "sourcePath": "evidence/runtime/scenes/03-kimi-privacy/hierarchy.xml",
+          "sourceFileSha256": "5340b794cfbbe10331c76d4f36d57fb39de5609ac8f3a45340deefc52cf6948c"
+        },
+        {
+          "sourceNodeOrdinal": 14,
+          "text": "Disagree",
+          "class": "android.widget.TextView",
+          "package": "com.moonshot.kimichat",
+          "resourceId": "",
+          "bounds": "[276,1386][451,1449]",
+          "clickableOnTextNode": "false",
+          "enabled": "true",
+          "classification": "A",
+          "sourcePath": "evidence/runtime/scenes/03-kimi-privacy/hierarchy.xml",
+          "sourceFileSha256": "5340b794cfbbe10331c76d4f36d57fb39de5609ac8f3a45340deefc52cf6948c"
+        },
+        {
+          "sourceNodeOrdinal": 17,
+          "text": "Agree",
+          "class": "android.widget.TextView",
+          "package": "com.moonshot.kimichat",
+          "resourceId": "",
+          "bounds": "[662,1386][775,1449]",
+          "clickableOnTextNode": "false",
+          "enabled": "true",
+          "classification": "A",
+          "sourcePath": "evidence/runtime/scenes/03-kimi-privacy/hierarchy.xml",
+          "sourceFileSha256": "5340b794cfbbe10331c76d4f36d57fb39de5609ac8f3a45340deefc52cf6948c"
+        }
+      ],
+      "matches": [
+        {
+          "text": "Welcome to Kimi",
+          "runtimeRepresentation": "exact text node",
+          "runtimeNodes": [
+            {
+              "sourceNodeOrdinal": 10,
+              "text": "Welcome to Kimi",
+              "class": "android.widget.TextView",
+              "package": "com.moonshot.kimichat",
+              "resourceId": "",
+              "bounds": "[228,962][853,1025]",
+              "clickableOnTextNode": "false",
+              "enabled": "true",
+              "classification": "A",
+              "sourcePath": "evidence/runtime/scenes/03-kimi-privacy/hierarchy.xml",
+              "sourceFileSha256": "5340b794cfbbe10331c76d4f36d57fb39de5609ac8f3a45340deefc52cf6948c"
+            }
+          ],
+          "comparison": "exact text equality or exact substring within the captured body",
+          "candidateCountWithinSearchedCvrCorpus": 1,
+          "candidates": [
+            {
+              "locale": "default",
+              "key": "welcome_to_kimi",
+              "text": "Welcome to Kimi",
+              "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+              "sourceLine": 2322,
+              "rawSourceLine": "string|welcome_to_kimi|V2VsY29tZSB0byBLaW1p",
+              "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+              "sourceLineSha256Utf8": "8a16cd918191abd3802af885bc25d67a3c2aa8b6b9a15fc099d135b210007110",
+              "decodedTextSha256Utf8": "03cba3c8852b513a79082daab39b0f65398ed45e2fc4f26c8bd117f37cc60683",
+              "classification": "B",
+              "leadingWhitespace": false,
+              "trailingWhitespace": false,
+              "bindingAtRuntime": "unknown; text correspondence alone is not code/resource binding evidence"
+            }
+          ],
+          "resourceBindingStatus": "unique text candidate within the 17 decoded CVR files; runtime binding still unverified"
+        },
+        {
+          "text": "Terms of Service",
+          "runtimeRepresentation": "substring of one merged body TextView; no separately exposed link node",
+          "runtimeNodes": [
+            {
+              "sourceNodeOrdinal": 11,
+              "text": "Terms of ServiceandPrivacy PolicyUnderstand our services and how we protect your information. By tapping Agree, you consent to the above agreements",
+              "class": "android.widget.TextView",
+              "package": "com.moonshot.kimichat",
+              "resourceId": "",
+              "bounds": "[228,1046][853,1311]",
+              "clickableOnTextNode": "false",
+              "enabled": "true",
+              "classification": "A",
+              "sourcePath": "evidence/runtime/scenes/03-kimi-privacy/hierarchy.xml",
+              "sourceFileSha256": "5340b794cfbbe10331c76d4f36d57fb39de5609ac8f3a45340deefc52cf6948c"
+            }
+          ],
+          "comparison": "exact text equality or exact substring within the captured body",
+          "candidateCountWithinSearchedCvrCorpus": 1,
+          "candidates": [
+            {
+              "locale": "default",
+              "key": "user_service",
+              "text": "Terms of Service",
+              "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+              "sourceLine": 2247,
+              "rawSourceLine": "string|user_service|VGVybXMgb2YgU2VydmljZQ==",
+              "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+              "sourceLineSha256Utf8": "812f387457a1d26419bdd88c3b25c5a22676ac00108e72a4ca3e5af751bd4ea3",
+              "decodedTextSha256Utf8": "4afa55bf7aec7ddc5dfb904271f881be278e7629ce258675bf4b62f460017abb",
+              "classification": "B",
+              "leadingWhitespace": false,
+              "trailingWhitespace": false,
+              "bindingAtRuntime": "unknown; text correspondence alone is not code/resource binding evidence"
+            }
+          ],
+          "resourceBindingStatus": "unique text candidate within the 17 decoded CVR files; runtime binding still unverified"
+        },
+        {
+          "text": "and",
+          "runtimeRepresentation": "substring of one merged body TextView; no separately exposed link node",
+          "runtimeNodes": [
+            {
+              "sourceNodeOrdinal": 11,
+              "text": "Terms of ServiceandPrivacy PolicyUnderstand our services and how we protect your information. By tapping Agree, you consent to the above agreements",
+              "class": "android.widget.TextView",
+              "package": "com.moonshot.kimichat",
+              "resourceId": "",
+              "bounds": "[228,1046][853,1311]",
+              "clickableOnTextNode": "false",
+              "enabled": "true",
+              "classification": "A",
+              "sourcePath": "evidence/runtime/scenes/03-kimi-privacy/hierarchy.xml",
+              "sourceFileSha256": "5340b794cfbbe10331c76d4f36d57fb39de5609ac8f3a45340deefc52cf6948c"
+            }
+          ],
+          "comparison": "exact text equality or exact substring within the captured body",
+          "candidateCountWithinSearchedCvrCorpus": 1,
+          "candidates": [
+            {
+              "locale": "default",
+              "key": "and",
+              "text": "and",
+              "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+              "sourceLine": 159,
+              "rawSourceLine": "string|and|YW5k",
+              "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+              "sourceLineSha256Utf8": "85f6c5fd4da62fa2d576aeb2847999b41661a56481cb8f9552d9a3d6c26155b2",
+              "decodedTextSha256Utf8": "6201111b83a0cb5b0922cb37cc442b9a40e24e3b1ce100a4bb204f4c63fd2ac0",
+              "classification": "B",
+              "leadingWhitespace": false,
+              "trailingWhitespace": false,
+              "bindingAtRuntime": "unknown; text correspondence alone is not code/resource binding evidence"
+            }
+          ],
+          "resourceBindingStatus": "unique text candidate within the 17 decoded CVR files; runtime binding still unverified"
+        },
+        {
+          "text": "Privacy Policy",
+          "runtimeRepresentation": "substring of one merged body TextView; no separately exposed link node",
+          "runtimeNodes": [
+            {
+              "sourceNodeOrdinal": 11,
+              "text": "Terms of ServiceandPrivacy PolicyUnderstand our services and how we protect your information. By tapping Agree, you consent to the above agreements",
+              "class": "android.widget.TextView",
+              "package": "com.moonshot.kimichat",
+              "resourceId": "",
+              "bounds": "[228,1046][853,1311]",
+              "clickableOnTextNode": "false",
+              "enabled": "true",
+              "classification": "A",
+              "sourcePath": "evidence/runtime/scenes/03-kimi-privacy/hierarchy.xml",
+              "sourceFileSha256": "5340b794cfbbe10331c76d4f36d57fb39de5609ac8f3a45340deefc52cf6948c"
+            }
+          ],
+          "comparison": "exact text equality or exact substring within the captured body",
+          "candidateCountWithinSearchedCvrCorpus": 1,
+          "candidates": [
+            {
+              "locale": "default",
+              "key": "privacy_policy",
+              "text": "Privacy Policy",
+              "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+              "sourceLine": 1347,
+              "rawSourceLine": "string|privacy_policy|UHJpdmFjeSBQb2xpY3k=",
+              "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+              "sourceLineSha256Utf8": "ab847660b303e9f9ac893d6bf7f0a878d5b1c323000e0f157969b56d02c8c007",
+              "decodedTextSha256Utf8": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+              "classification": "B",
+              "leadingWhitespace": false,
+              "trailingWhitespace": false,
+              "bindingAtRuntime": "unknown; text correspondence alone is not code/resource binding evidence"
+            }
+          ],
+          "resourceBindingStatus": "unique text candidate within the 17 decoded CVR files; runtime binding still unverified"
+        },
+        {
+          "text": "Disagree",
+          "runtimeRepresentation": "exact text node",
+          "runtimeNodes": [
+            {
+              "sourceNodeOrdinal": 14,
+              "text": "Disagree",
+              "class": "android.widget.TextView",
+              "package": "com.moonshot.kimichat",
+              "resourceId": "",
+              "bounds": "[276,1386][451,1449]",
+              "clickableOnTextNode": "false",
+              "enabled": "true",
+              "classification": "A",
+              "sourcePath": "evidence/runtime/scenes/03-kimi-privacy/hierarchy.xml",
+              "sourceFileSha256": "5340b794cfbbe10331c76d4f36d57fb39de5609ac8f3a45340deefc52cf6948c"
+            }
+          ],
+          "comparison": "exact text equality or exact substring within the captured body",
+          "candidateCountWithinSearchedCvrCorpus": 1,
+          "candidates": [
+            {
+              "locale": "default",
+              "key": "disagree",
+              "text": "Disagree",
+              "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+              "sourceLine": 532,
+              "rawSourceLine": "string|disagree|RGlzYWdyZWU=",
+              "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+              "sourceLineSha256Utf8": "b75fd4f4e585723735ab132db7571e8b16a72335488913737e25b85a9b203e36",
+              "decodedTextSha256Utf8": "2f44826ed4ab04de6147973e03ce8e8efee9be9e2ae81342163899d374864e04",
+              "classification": "B",
+              "leadingWhitespace": false,
+              "trailingWhitespace": false,
+              "bindingAtRuntime": "unknown; text correspondence alone is not code/resource binding evidence"
+            }
+          ],
+          "resourceBindingStatus": "unique text candidate within the 17 decoded CVR files; runtime binding still unverified"
+        },
+        {
+          "text": "Agree",
+          "runtimeRepresentation": "exact text node",
+          "runtimeNodes": [
+            {
+              "sourceNodeOrdinal": 17,
+              "text": "Agree",
+              "class": "android.widget.TextView",
+              "package": "com.moonshot.kimichat",
+              "resourceId": "",
+              "bounds": "[662,1386][775,1449]",
+              "clickableOnTextNode": "false",
+              "enabled": "true",
+              "classification": "A",
+              "sourcePath": "evidence/runtime/scenes/03-kimi-privacy/hierarchy.xml",
+              "sourceFileSha256": "5340b794cfbbe10331c76d4f36d57fb39de5609ac8f3a45340deefc52cf6948c"
+            }
+          ],
+          "comparison": "exact text equality or exact substring within the captured body",
+          "candidateCountWithinSearchedCvrCorpus": 2,
+          "candidates": [
+            {
+              "locale": "default",
+              "key": "agree_and_continue",
+              "text": "Agree",
+              "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+              "sourceLine": 149,
+              "rawSourceLine": "string|agree_and_continue|QWdyZWU=",
+              "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+              "sourceLineSha256Utf8": "db704cea313d88250593ff241ea3e28902f8d2619cd708cb5e6a46d221628209",
+              "decodedTextSha256Utf8": "da288642c92f72d03736491651c8fcc459efba182bf95ad06d5977156fd83a63",
+              "classification": "B",
+              "leadingWhitespace": false,
+              "trailingWhitespace": false,
+              "bindingAtRuntime": "unknown; text correspondence alone is not code/resource binding evidence"
+            },
+            {
+              "locale": "default",
+              "key": "agree",
+              "text": "Agree",
+              "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+              "sourceLine": 150,
+              "rawSourceLine": "string|agree|QWdyZWU=",
+              "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+              "sourceLineSha256Utf8": "e207ffe9d0901150c3ab8cefa6da9c25f679d21fa7f5153b1fd5ed8bd07a2523",
+              "decodedTextSha256Utf8": "da288642c92f72d03736491651c8fcc459efba182bf95ad06d5977156fd83a63",
+              "classification": "B",
+              "leadingWhitespace": false,
+              "trailingWhitespace": false,
+              "bindingAtRuntime": "unknown; text correspondence alone is not code/resource binding evidence"
+            }
+          ],
+          "resourceBindingStatus": "ambiguous text candidates; no unique resource-key attribution"
+        }
+      ],
+      "bodyComparison": {
+        "runtimeBody": {
+          "sourceNodeOrdinal": 11,
+          "text": "Terms of ServiceandPrivacy PolicyUnderstand our services and how we protect your information. By tapping Agree, you consent to the above agreements",
+          "class": "android.widget.TextView",
+          "package": "com.moonshot.kimichat",
+          "resourceId": "",
+          "bounds": "[228,1046][853,1311]",
+          "clickableOnTextNode": "false",
+          "enabled": "true",
+          "classification": "A",
+          "sourcePath": "evidence/runtime/scenes/03-kimi-privacy/hierarchy.xml",
+          "sourceFileSha256": "5340b794cfbbe10331c76d4f36d57fb39de5609ac8f3a45340deefc52cf6948c"
+        },
+        "fragments": [
+          {
+            "locale": "default",
+            "key": "user_service",
+            "text": "Terms of Service",
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+            "sourceLine": 2247,
+            "rawSourceLine": "string|user_service|VGVybXMgb2YgU2VydmljZQ==",
+            "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+            "sourceLineSha256Utf8": "812f387457a1d26419bdd88c3b25c5a22676ac00108e72a4ca3e5af751bd4ea3",
+            "decodedTextSha256Utf8": "4afa55bf7aec7ddc5dfb904271f881be278e7629ce258675bf4b62f460017abb",
+            "classification": "B",
+            "leadingWhitespace": false,
+            "trailingWhitespace": false,
+            "bindingAtRuntime": "unknown; text correspondence alone is not code/resource binding evidence"
+          },
+          {
+            "locale": "default",
+            "key": "and",
+            "text": "and",
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+            "sourceLine": 159,
+            "rawSourceLine": "string|and|YW5k",
+            "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+            "sourceLineSha256Utf8": "85f6c5fd4da62fa2d576aeb2847999b41661a56481cb8f9552d9a3d6c26155b2",
+            "decodedTextSha256Utf8": "6201111b83a0cb5b0922cb37cc442b9a40e24e3b1ce100a4bb204f4c63fd2ac0",
+            "classification": "B",
+            "leadingWhitespace": false,
+            "trailingWhitespace": false,
+            "bindingAtRuntime": "unknown; text correspondence alone is not code/resource binding evidence"
+          },
+          {
+            "locale": "default",
+            "key": "privacy_policy",
+            "text": "Privacy Policy",
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+            "sourceLine": 1347,
+            "rawSourceLine": "string|privacy_policy|UHJpdmFjeSBQb2xpY3k=",
+            "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+            "sourceLineSha256Utf8": "ab847660b303e9f9ac893d6bf7f0a878d5b1c323000e0f157969b56d02c8c007",
+            "decodedTextSha256Utf8": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "classification": "B",
+            "leadingWhitespace": false,
+            "trailingWhitespace": false,
+            "bindingAtRuntime": "unknown; text correspondence alone is not code/resource binding evidence"
+          },
+          {
+            "locale": "default",
+            "key": "privacy_page_content_2",
+            "text": "Understand our services and how we protect your information. By tapping Agree, you consent to the above agreements",
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+            "sourceLine": 1344,
+            "rawSourceLine": "string|privacy_page_content_2|VW5kZXJzdGFuZCBvdXIgc2VydmljZXMgYW5kIGhvdyB3ZSBwcm90ZWN0IHlvdXIgaW5mb3JtYXRpb24uIEJ5IHRhcHBpbmcgQWdyZWUsIHlvdSBjb25zZW50IHRvIHRoZSBhYm92ZSBhZ3JlZW1lbnRz",
+            "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+            "sourceLineSha256Utf8": "be84678cd93ba8fe5a690f563c5e244fb66c614220ab74a7ec85fd3d49c659a7",
+            "decodedTextSha256Utf8": "bf4a55d277970a781387495e9c0a10efc361040a80f196a853c86a994f65a1f8",
+            "classification": "B",
+            "leadingWhitespace": false,
+            "trailingWhitespace": false,
+            "bindingAtRuntime": "unknown; text correspondence alone is not code/resource binding evidence"
+          }
+        ],
+        "joinedWithoutSeparator": "Terms of ServiceandPrivacy PolicyUnderstand our services and how we protect your information. By tapping Agree, you consent to the above agreements",
+        "exactlyMatchesRuntimeUia": true,
+        "joinedWithSpaces": "Terms of Service and Privacy Policy Understand our services and how we protect your information. By tapping Agree, you consent to the above agreements",
+        "spaceJoinMatchesRuntimeUia": false,
+        "boundaries": [
+          {
+            "leftKey": "user_service",
+            "rightKey": "and",
+            "offsetUtf16": 16,
+            "leftCharacter": "e",
+            "rightCharacter": "a",
+            "separatorInRawFragments": "",
+            "classifications": {
+              "originalFragmentEdges": "B",
+              "analyticalJoin": "C"
+            },
+            "observation": "Original component strings have no edge whitespace; separator-free analytical join matches this UIA boundary. Runtime construction not traced."
+          },
+          {
+            "leftKey": "and",
+            "rightKey": "privacy_policy",
+            "offsetUtf16": 19,
+            "leftCharacter": "d",
+            "rightCharacter": "P",
+            "separatorInRawFragments": "",
+            "classifications": {
+              "originalFragmentEdges": "B",
+              "analyticalJoin": "C"
+            },
+            "observation": "Original component strings have no edge whitespace; separator-free analytical join matches this UIA boundary. Runtime construction not traced."
+          },
+          {
+            "leftKey": "privacy_policy",
+            "rightKey": "privacy_page_content_2",
+            "offsetUtf16": 33,
+            "leftCharacter": "y",
+            "rightCharacter": "U",
+            "separatorInRawFragments": "",
+            "classifications": {
+              "originalFragmentEdges": "B",
+              "analyticalJoin": "C"
+            },
+            "observation": "Original component strings have no edge whitespace; separator-free analytical join matches this UIA boundary. Runtime construction not traced."
+          }
+        ],
+        "alternatePackagedCombinedLabel": {
+          "locale": "default",
+          "key": "user_service_and_privacy_agreement",
+          "text": "Terms of Service and Privacy Policy",
+          "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+          "sourceLine": 2246,
+          "rawSourceLine": "string|user_service_and_privacy_agreement|VGVybXMgb2YgU2VydmljZSBhbmQgUHJpdmFjeSBQb2xpY3k=",
+          "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+          "sourceLineSha256Utf8": "34fc88bf0dafc88b282dd0f1eb0a1f797aa20625d36351a41e932acd5506730b",
+          "decodedTextSha256Utf8": "88b923280080f67a47bda32fd034e9199d5a4f3424932a6834a5f2f5a267bee3",
+          "classification": "B",
+          "leadingWhitespace": false,
+          "trailingWhitespace": false,
+          "bindingAtRuntime": "unknown; text correspondence alone is not code/resource binding evidence"
+        },
+        "combinedLabelExactPrefixOfRuntimeBody": false,
+        "classifications": {
+          "observedRuntimeText": "A",
+          "packagedOriginalFragments": "B",
+          "interpretationOfJoining": "C"
+        },
+        "conclusion": "The observed body can be reproduced exactly by separator-free joining of these four unqualified resource texts. The originals do not contain edge whitespace. This is correspondence, not proof of the runtime concatenation code, locale selection or root cause."
+      },
+      "counterexamplesToOvergeneralization": [
+        {
+          "key": "onboarding_welcome_description",
+          "record": {
+            "locale": "default",
+            "key": "onboarding_welcome_description",
+            "text": "Welcome to Kimi. See what I can do.",
+            "sourcePath": "assets/original/assets/composeResources/kimi.shared.generated.resources/values/strings.commonMain.cvr",
+            "sourceLine": 1232,
+            "rawSourceLine": "string|onboarding_welcome_description|V2VsY29tZSB0byBLaW1pLiBTZWUgd2hhdCBJIGNhbiBkby4=",
+            "sourceFileSha256": "800e9077ace472c85af705291f1fde777b52e4e35f96ff50c909c7236d245805",
+            "sourceLineSha256Utf8": "2fe711685582c26dff205e8bdca4289a8443ab3b50d5ca0cb96ee37eba696daf",
+            "decodedTextSha256Utf8": "103656d1d9fb7be21647a0b4c749264e87af7d649323a404f5ac232983dc088f",
+            "classification": "B",
+            "leadingWhitespace": false,
+            "trailingWhitespace": false,
+            "bindingAtRuntime": "unknown; text correspondence alone is not code/resource binding evidence"
+          },
+          "note": "Contains Welcome to Kimi but is not the observed exact title; keep onboarding description separate from this consent title"
+        },
+        {
+          "keys": [
+            "agree",
+            "agree_and_continue"
+          ],
+          "note": "Both default resources decode to Agree. UIA lacks a resource-id on the label; text alone cannot distinguish them. Their zh texts differ, but that does not prove which key this English screen used."
+        },
+        {
+          "key": "user_service_and_privacy_agreement",
+          "note": "A combined label with spaces exists in the package, but it is not an exact prefix of this captured merged body. This does not establish whether any code path references it."
+        }
+      ],
+      "unknowns": [
+        "Actual resource key references and composition code",
+        "Application locale selection and fallback order; captured systemLocales value is the string null",
+        "Binding of the visible Agree label to agree or agree_and_continue",
+        "Actual link URL, click targets and navigation",
+        "Agree/Disagree effects, dismissal, Back handling, focus/reading order, persistence and subsequent launches",
+        "Other platforms, builds, locales, themes and font scales"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,376 @@
+{
+  "apk": {
+    "path": "C:\\Users\\edsjrcheng\\Desktop\\kimiuiphone\\Kimi.apk",
+    "sha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+    "size": 41038830
+  },
+  "manifest": {
+    "source": "AndroidManifest.xml",
+    "evidenceLevel": "B: packaged declarations; no runtime validation",
+    "apkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332",
+    "manifestSha256": "889b8939000c2a7fae3be9e1dd1e0198b513490a3ce929b98e9d7156de97a0a8",
+    "resourcesSha256": "d380cbfdb54c999f1e9eb2ee8b841fbb46278325981f054e360daa63c0a4eda7",
+    "manifest": {
+      "android:versionCode": 376,
+      "android:versionName": "3.1.3",
+      "android:compileSdkVersion": 37,
+      "android:compileSdkVersionCodename": "17",
+      "package": "com.moonshot.kimichat",
+      "platformBuildVersionCode": 37,
+      "platformBuildVersionName": 17
+    },
+    "sdk": [
+      {
+        "android:minSdkVersion": 26,
+        "android:targetSdkVersion": 36
+      }
+    ],
+    "application": {
+      "android:theme": "@style/AppTheme",
+      "android:label": "@string/kimi_app_name",
+      "android:icon": "@mipmap/ic_launcher",
+      "android:name": "com.moonshot.kimichat.KimiApplication",
+      "android:persistent": true,
+      "android:allowBackup": false,
+      "android:largeHeap": true,
+      "android:extractNativeLibs": true,
+      "android:usesCleartextTraffic": false,
+      "android:networkSecurityConfig": "@xml/network_security_config_public",
+      "android:roundIcon": "@mipmap/ic_launcher_round",
+      "android:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "android:enableOnBackInvokedCallback": false
+    },
+    "launchers": [
+      {
+        "attributes": {
+          "android:theme": "@style/Theme.Splash",
+          "android:name": "com.moonshot.kimichat.MainActivity",
+          "android:exported": true,
+          "android:launchMode": 1,
+          "android:configChanges": "0x50007ffc",
+          "android:windowSoftInputMode": "0x00000010"
+        },
+        "line": 366,
+        "sourceOffset": 60284
+      }
+    ],
+    "permissions": [
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.REQUEST_INSTALL_PACKAGES"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.ACCESS_WIFI_STATE"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.INTERNET"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.VIBRATE"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.READ_MEDIA_IMAGES"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.READ_MEDIA_VIDEO"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.RECORD_AUDIO"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.CAMERA"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.FOREGROUND_SERVICE"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.FOREGROUND_SERVICE_MICROPHONE"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.ACCESS_COARSE_LOCATION"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "com.moonshot.kimichat.permission.JPUSH_MESSAGE"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.READ_PHONE_STATE"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "com.android.launcher.permission.INSTALL_SHORTCUT"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "oplus.permission.settings.LAUNCH_FOR_EXPORT"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.ACCESS_LOCAL_NETWORK"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.USE_BIOMETRIC"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.USE_FINGERPRINT"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.RECEIVE_BOOT_COMPLETED"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "com.moonshot.kimichat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.BLUETOOTH"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.MODIFY_AUDIO_SETTINGS"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.CHANGE_NETWORK_STATE"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "com.huawei.android.launcher.permission.CHANGE_BADGE"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "com.vivo.notification.permission.BADGE_ICON"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "com.vivo.abe.permission.launcher.notification.num"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "com.hihonor.android.launcher.permission.CHANGE_BADGE"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "android.permission.POST_NOTIFICATIONS"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "com.asus.msa.SupplementaryDID.ACCESS"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "com.moonshot.kimichat.permission.MIPUSH_RECEIVE"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "com.moonshot.kimichat.permission.PROCESS_PUSH_MSG"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "com.moonshot.kimichat.permission.PUSH_PROVIDER"
+      },
+      {
+        "tag": "uses-permission",
+        "android:name": "com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO"
+      }
+    ],
+    "features": [
+      {
+        "android:name": "android.hardware.camera",
+        "android:required": false
+      },
+      {
+        "android:name": "android.hardware.telephony",
+        "android:required": false
+      }
+    ],
+    "activityCount": 40,
+    "resourcePackage": [
+      {
+        "id": 127,
+        "name": "com.moonshot.kimichat",
+        "types": [
+          "anim",
+          "animator",
+          "array",
+          "attr",
+          "bool",
+          "color",
+          "dimen",
+          "drawable",
+          "?9",
+          "id",
+          "integer",
+          "interpolator",
+          "layout",
+          "mipmap",
+          "plurals",
+          "raw",
+          "string",
+          "style",
+          "?19",
+          "xml"
+        ],
+        "offset": 1539804
+      }
+    ]
+  },
+  "resources": {
+    "packages": [
+      {
+        "id": 127,
+        "name": "com.moonshot.kimichat",
+        "types": [
+          "anim",
+          "animator",
+          "array",
+          "attr",
+          "bool",
+          "color",
+          "dimen",
+          "drawable",
+          "?9",
+          "id",
+          "integer",
+          "interpolator",
+          "layout",
+          "mipmap",
+          "plurals",
+          "raw",
+          "string",
+          "style",
+          "?19",
+          "xml"
+        ],
+        "offset": 1539804
+      }
+    ],
+    "definitions": 39983,
+    "byType": {
+      "anim": 40,
+      "animator": 18,
+      "array": 19,
+      "attr": 306,
+      "bool": 5,
+      "color": 67,
+      "dimen": 91,
+      "drawable": 313,
+      "id": 391,
+      "integer": 7,
+      "interpolator": 7,
+      "layout": 57,
+      "mipmap": 17,
+      "plurals": 697,
+      "raw": 12,
+      "string": 37652,
+      "style": 281,
+      "xml": 3
+    }
+  },
+  "dex": [
+    {
+      "source": "classes.dex",
+      "sha256": "7554ab857c38d5807f5e096a3c5cdb4bb6943caa0605fb7b43cb885d4fe46418",
+      "strings": 61113,
+      "types": 15882,
+      "methodIds": 65245,
+      "classes": 10298,
+      "ownClasses": 0,
+      "candidateClasses": 0,
+      "ownNamespaces": []
+    },
+    {
+      "source": "classes2.dex",
+      "sha256": "379811d9db48b68a739766c12c876f6962c0e84e6785026bb30b6e00ddc5c195",
+      "strings": 60079,
+      "types": 20202,
+      "methodIds": 65440,
+      "classes": 14540,
+      "ownClasses": 38,
+      "candidateClasses": 38,
+      "ownNamespaces": [
+        "Lcom/moonshot/kimichat",
+        "Lcom/moonshot/kimichat/abconfig",
+        "Lcom/moonshot/kimichat/auth",
+        "Lcom/moonshot/kimichat/chat/rtc/service",
+        "Lcom/moonshot/kimichat/common/db",
+        "Lcom/moonshot/kimichat/common/permission",
+        "Lcom/moonshot/kimichat/community/track",
+        "Lcom/moonshot/kimichat/media",
+        "Lcom/moonshot/kimichat/push",
+        "Lcom/moonshot/kimichat/remotecontrol",
+        "Lcom/moonshot/kimichat/route",
+        "Lcom/moonshot/kimichat/table",
+        "Lcom/moonshot/kimichat/ui",
+        "Lcom/moonshot/kimichat/ui/components/pullrefresh",
+        "Lcom/moonshot/kimichat/ui/components/scrollbar",
+        "Lcom/moonshot/kimichat/webview",
+        "Lcom/moonshot/kimichat/wxapi"
+      ]
+    },
+    {
+      "source": "classes3.dex",
+      "sha256": "6eea0169d02e3a8717f08326185ce414898734c5ceb5328b6eed779980343648",
+      "strings": 43136,
+      "types": 8410,
+      "methodIds": 35082,
+      "classes": 5663,
+      "ownClasses": 0,
+      "candidateClasses": 0,
+      "ownNamespaces": []
+    }
+  ],
+  "limitations": [
+    "This Node script does not execute the application, access the network, verify signing, or use Java, JADX, Android SDK or an emulator.",
+    "DEX parsing inventories identifier/class tables and encoded method declarations; no instruction semantics or call graph.",
+    "Some DEX strings use modified UTF-8; Node UTF-8 decoding may replace unusual embedded NUL or surrogate encodings.",
+    "Resources include third-party defaults and do not prove visual usage.",
+    "Manifest permissions are requests, not evidence that permissions were granted or exercised."
+  ]
+}
