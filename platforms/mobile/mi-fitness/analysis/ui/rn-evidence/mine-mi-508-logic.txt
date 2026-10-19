@@ -1,0 +1,13 @@
+var t=r(d[0]);
+
+Object.defineProperty(e,"__esModule",{value:!0}),e.UnLoginMedalShortCut=e.MedalShortCut=void 0;
+
+var n=t(r(d[1])),o=t(r(d[2])),u=(function(t,n){if(!n&&t&&t.__esModule)return t;if(null===t||"object"!=typeof t&&"function"!=typeof t)return{default:t};var o=b(n);if(o&&o.has(t))return o.get(t);var u={__proto__:null},c=Object.defineProperty&&Object.getOwnPropertyDescriptor;for(var l in t)if("default"!==l&&{}.hasOwnProperty.call(t,l)){var f=c?Object.getOwnPropertyDescriptor(t,l):null;f&&(f.get||f.set)?Object.defineProperty(u,l,f):u[l]=t[l]}return u.default=t,o&&o.set(t,u),u})(r(d[3])),c=t(r(d[4])),l=r(d[5]),f=r(d[6]),s=r(d[7]),h=t(r(d[8])),p=r(d[9]),y=r(d[10]),v=r(d[11]),w=r(d[12]),L=r(d[13]),E=r(d[14]);
+
+function b(t){if("function"!=typeof WeakMap)return null;var n=new WeakMap,o=new WeakMap;return(b=function(t){return t?o:n})(t)}
+
+/* Babel regenerator helper omitted from readable view; exact source retained in .js */
+
+var _=function(t){var n=t.silentUpdate,o=t.fetcher,l=(0,p.use)(o),h=l.medalList,y=l.gotCount;(0,v.usePageAppearEnhanced)(n);var w=(0,f.useThemeValue)(),b=h.slice(0,3).map(function(t){return{id:t.id,icon:t.icon}}),x=y>3;return 0===y?u.default.createElement(E.Empty,null):u.default.createElement(L.Container,null,b.map(function(t,n){return u.default.createElement(c.default,{key:t.id,source:{uri:t.icon},resizeMode:"contain",style:{width:20,height:20,marginLeft:0===n?0:-5,zIndex:b.length-n}})}),x&&u.default.createElement(s.Center,{paddingLeft:"6px"},u.default.createElement(s.Text,{fontSize:"12px",fontStyle:"normal",fontWeight:"400",color:w.mainTextColor,opacity:.6},y)))};
+
+e.UnLoginMedalShortCut=E.Empty,e.MedalShortCut=function(){var t=(0,y.useFetchCacheState)(w.getMyAllGotMedalList,"Mine_getMyAllGotMedalList"),c=(0,o.default)(t,2),f=c[0],s=c[1];return u.default.createElement(h.default,{fallback:u.default.createElement(E.Empty,{key:"empty"})},u.default.createElement(u.Suspense,{fallback:u.default.createElement(u.default.Fragment,null)},u.default.createElement(_,{fetcher:f,key:"suspense",silentUpdate:function(){var t,o;return x().async(function(u){for(;;)switch(u.prev=u.next){case 0:return u.prev=0,t=(0,w.getMyAllGotMedalList)(),u.next=4,x().awrap(t);case 4:o=u.sent,l.RRLog.info("MedalShortCut silentUpdate result"),(0,n.default)(t,{status:"fulfilled",data:o}),s(t),u.next=13;break;case 10:u.prev=10,u.t0=u.catch(0),l.RRLog.info("MedalShortCut silentUpdate error",u.t0);case 13:case"end":return u.stop()}},null,null,[[0,10]],Promise)}})))}

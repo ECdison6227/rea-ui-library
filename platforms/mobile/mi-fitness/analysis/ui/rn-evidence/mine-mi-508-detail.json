@@ -1,0 +1,182 @@
+{
+  "bundle": "mine",
+  "id": "mi-508",
+  "line": 516,
+  "aliases": {
+    "t": 3,
+    "n": 17,
+    "o": 27,
+    "u": 14,
+    "c": 1113,
+    "l": 558,
+    "f": "mi-163",
+    "s": 1780,
+    "h": "mi-413",
+    "p": "mi-156",
+    "y": "mi-141",
+    "v": "mi-450",
+    "w": "mi-142",
+    "L": "mi-509",
+    "E": "mi-511"
+  },
+  "elements": [
+    {
+      "type": "E.Empty",
+      "module": "mi-511",
+      "props": null,
+      "children": []
+    },
+    {
+      "type": "L.Container",
+      "module": "mi-509",
+      "props": null,
+      "children": [
+        {
+          "$code": "b.map(function(t,n){return u.default.createElement(c.default,{key:t.id,source:{uri:t.icon},resizeMode:\"contain\",style:{width:20,height:20,marginLeft:0===n?0:-5,zIndex:b.length-n}})})"
+        },
+        {
+          "$code": "x&&u.default.createElement(s.Center,{paddingLeft:\"6px\"},u.default.createElement(s.Text,{fontSize:\"12px\",fontStyle:\"normal\",fontWeight:\"400\",color:w.mainTextColor,opacity:.6},y))"
+        }
+      ]
+    },
+    {
+      "type": "c.default",
+      "module": 1113,
+      "props": {
+        "key": {
+          "$code": "t.id"
+        },
+        "source": {
+          "uri": {
+            "$code": "t.icon"
+          }
+        },
+        "resizeMode": "contain",
+        "style": {
+          "width": 20,
+          "height": 20,
+          "marginLeft": {
+            "$code": "0===n?0:-5"
+          },
+          "zIndex": {
+            "$code": "b.length-n"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "s.Center",
+      "module": 1780,
+      "props": {
+        "paddingLeft": "6px"
+      },
+      "children": [
+        {
+          "$code": "u.default.createElement(s.Text,{fontSize:\"12px\",fontStyle:\"normal\",fontWeight:\"400\",color:w.mainTextColor,opacity:.6},y)"
+        }
+      ]
+    },
+    {
+      "type": "s.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": "12px",
+        "fontStyle": "normal",
+        "fontWeight": "400",
+        "color": {
+          "$code": "w.mainTextColor"
+        },
+        "opacity": 0.6
+      },
+      "children": [
+        {
+          "$code": "y"
+        }
+      ]
+    },
+    {
+      "type": "h.default",
+      "module": "mi-413",
+      "props": {
+        "fallback": {
+          "$code": "u.default.createElement(E.Empty,{key:\"empty\"})"
+        }
+      },
+      "children": [
+        {
+          "$code": "u.default.createElement(u.Suspense,{fallback:u.default.createElement(u.default.Fragment,null)},u.default.createElement(_,{fetcher:f,key:\"suspense\",silentUpdate:function(){var t,o;return x().async(function(u){for(;;)switch(u.prev=u.next){case 0:return u.prev=0,t=(0,w.getMyAllGotMedalList)(),u.next=4,"
+        }
+      ]
+    },
+    {
+      "type": "E.Empty",
+      "module": "mi-511",
+      "props": {
+        "key": "empty"
+      },
+      "children": []
+    },
+    {
+      "type": "u.Suspense",
+      "module": 14,
+      "props": {
+        "fallback": {
+          "$code": "u.default.createElement(u.default.Fragment,null)"
+        }
+      },
+      "children": [
+        {
+          "$code": "u.default.createElement(_,{fetcher:f,key:\"suspense\",silentUpdate:function(){var t,o;return x().async(function(u){for(;;)switch(u.prev=u.next){case 0:return u.prev=0,t=(0,w.getMyAllGotMedalList)(),u.next=4,x().awrap(t);case 4:o=u.sent,l.RRLog.info(\"MedalShortCut silentUpdate result\"),(0,n.default)(t,"
+        }
+      ]
+    },
+    {
+      "type": "u.default.Fragment",
+      "props": null,
+      "children": []
+    },
+    {
+      "type": "_",
+      "props": {
+        "fetcher": {
+          "$code": "f"
+        },
+        "key": "suspense",
+        "silentUpdate": {
+          "$code": "function(){var t,o;return x().async(function(u){for(;;)switch(u.prev=u.next){case 0:return u.prev=0,t=(0,w.getMyAllGotMedalList)(),u.next=4,x().awrap(t);case 4:o=u.sent,l.RRLog.info(\"MedalShortCut silentUpdate result\"),(0,n.default)(t,{status:\"fulfilled\",data:o}),s(t),u.next=13;break;case 10:u.prev=10,u.t0=u.catch(0),l.RRLog.info(\"MedalShortCut silentUpdate error\",u.t0);case 13:case\"end\":return u.stop()}},null,null,[[0,10]],Promise)}"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": [
+    {
+      "key": "width",
+      "value": 20
+    },
+    {
+      "key": "height",
+      "value": 20
+    },
+    {
+      "key": "marginLeft",
+      "value": {
+        "$code": "0===n?0:-5"
+      }
+    },
+    {
+      "key": "paddingLeft",
+      "value": "6px"
+    },
+    {
+      "key": "fontSize",
+      "value": "12px"
+    },
+    {
+      "key": "fontWeight",
+      "value": "400"
+    }
+  ]
+}

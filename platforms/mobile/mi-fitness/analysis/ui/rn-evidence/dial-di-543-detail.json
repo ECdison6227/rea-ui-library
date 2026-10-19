@@ -1,0 +1,161 @@
+{
+  "bundle": "dial",
+  "id": "di-543",
+  "line": 551,
+  "aliases": {
+    "t": 3,
+    "n": 54,
+    "o": 27,
+    "u": 14,
+    "l": 18,
+    "c": 1260,
+    "f": "di-149",
+    "s": "di-319",
+    "p": "di-321",
+    "y": "di-323",
+    "v": "di-341",
+    "b": "di-422",
+    "k": "di-544",
+    "E": "di-424",
+    "O": "di-545",
+    "T": "di-553",
+    "h": "di-554",
+    "_": "di-552"
+  },
+  "elements": [
+    {
+      "type": "c.default",
+      "module": 1260,
+      "props": {
+        "source": {
+          "uri": {
+            "$code": "l"
+          }
+        },
+        "style": {
+          "flex": 1
+        },
+        "startInLoadingState": {
+          "$code": "!0"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "O.default",
+      "module": "di-545",
+      "props": {
+        "tabsItem": {
+          "$code": "n"
+        },
+        "key": {
+          "$code": "n.key"
+        },
+        "showBar": {
+          "$code": "C"
+        },
+        "configType": {
+          "$code": "o"
+        },
+        "operationType": {
+          "$code": "s.OperationType.DIAL_AGGREGATION"
+        },
+        "operationId": {
+          "$code": "l"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "b.default",
+      "module": "di-422",
+      "props": {
+        "route": {
+          "$code": "l||n"
+        },
+        "active": {
+          "$code": "o"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "y.TabView",
+      "module": "di-323",
+      "props": {
+        "key": {
+          "$code": "null==W?void 0:W.length"
+        },
+        "navigationState": {
+          "index": {
+            "$code": "Math.max(0,W.findIndex(function(t){var o;return t.key===(null!==(o=n)&&void 0!==o?o:k.RECOMMEND_KEY)}))"
+          },
+          "routes": {
+            "$code": "W"
+          }
+        },
+        "renderScene": {
+          "$code": "q"
+        },
+        "renderTabItem": {
+          "$code": "F"
+        },
+        "onTabPress": {
+          "$code": "z"
+        },
+        "contentContainerStyle": {
+          "$code": "h.styles.tabBarContainer"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "p.default",
+      "module": "di-321",
+      "props": null,
+      "children": []
+    },
+    {
+      "type": "l.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "h.styles.container"
+        },
+        "key": {
+          "$code": "x"
+        }
+      },
+      "children": [
+        {
+          "$code": "J"
+        },
+        {
+          "$code": "u.default.createElement(v.default,{show:j,onClose:D,membershipBarInfo:I,belowElementHeight:120,source:(null==S?void 0:S.key)===k.RECOMMEND_KEY?\"watchface_homepage_recommend\":\"watchface_homepage_\"+(null==S?void 0:S.title)})"
+        }
+      ]
+    },
+    {
+      "type": "v.default",
+      "module": "di-341",
+      "props": {
+        "show": {
+          "$code": "j"
+        },
+        "onClose": {
+          "$code": "D"
+        },
+        "membershipBarInfo": {
+          "$code": "I"
+        },
+        "belowElementHeight": 120,
+        "source": {
+          "$code": "(null==S?void 0:S.key)===k.RECOMMEND_KEY?\"watchface_homepage_recommend\":\"watchface_homepage_\"+(null==S?void 0:S.title)"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": []
+}

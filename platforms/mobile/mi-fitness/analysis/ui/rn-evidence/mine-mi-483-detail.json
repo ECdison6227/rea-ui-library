@@ -1,0 +1,187 @@
+{
+  "bundle": "mine",
+  "id": "mi-483",
+  "line": 491,
+  "aliases": {
+    "t": 3,
+    "n": 14,
+    "o": "mi-138",
+    "c": "mi-11",
+    "u": "mi-484",
+    "s": "mi-485",
+    "l": "mi-399",
+    "f": "mi-488",
+    "h": "mi-490"
+  },
+  "elements": [
+    {
+      "type": "n.default.Fragment",
+      "props": null,
+      "children": [
+        {
+          "$code": "n.default.createElement(h.SettingItem,{name:c.default.trans(\"mine.my.track\"),source:l.ImageAssets.menu.mineTrack,onPress:function(){y(u.LoginModal)}})"
+        },
+        {
+          "$code": "n.default.createElement(h.SettingItem,{name:c.default.trans(\"mine.app.item.settings\"),source:l.ImageAssets.menu.appSetting,onPress:function(){(0,l.clickAppSettingTrack)(),t.push(\"com.xiaomi.fitness.about.setting.SettingActivity\",{_rt:\"native\"})}})"
+        },
+        {
+          "$code": "n.default.createElement(h.SettingItem,{name:c.default.trans(\"mine.personal.data.management\"),source:l.ImageAssets.menu.thirdPartyDataManagement,onPress:function(){y(u.LoginModal)}})"
+        },
+        {
+          "$code": "n.default.createElement(h.SettingItem,{name:c.default.trans(\"mine.device.authorization\"),source:l.ImageAssets.menu.icDeviceAuthorization,onPress:function(){return p().async(function(t){for(;;)switch(t.prev=t.next){case 0:y(u.LoginModal);case 1:case\"end\":return t.stop()}},null,null,null,Promise)}})"
+        },
+        {
+          "$code": "n.default.createElement(h.SettingItem,{name:c.default.trans(\"mine.system.permission\"),source:l.ImageAssets.menu.systemPermission,onPress:function(){(0,l.clickSystemPermissionTrack)(),t.push(\"com.xiaomi.fitness.privacy.permission.SystemPermissionFragment\",{_rt:\"native\"})}})"
+        },
+        {
+          "$code": "n.default.createElement(h.SettingItem,{name:c.default.trans(\"mine.bugreport\"),source:l.ImageAssets.menu.helpAndFeedback,onPress:function(){y(u.LoginModal)}})"
+        },
+        {
+          "$code": "n.default.createElement(h.SettingItem,{name:c.default.trans(\"mine.device.share\"),source:l.ImageAssets.menu.deviceSharing,onPress:function(){y(u.LoginModal)}})"
+        },
+        {
+          "$code": "n.default.createElement(f.UpdateSettingItem,null)"
+        },
+        {
+          "$code": "n.default.createElement(h.SettingItem,{name:c.default.trans(\"mine.about\"),source:l.ImageAssets.menu.about,onPress:function(){(0,l.clickAboutTrack)(),t.push(\"com.xiaomi.fitness.about.AboutActivity\",{_rt:\"native\"})}})"
+        }
+      ]
+    },
+    {
+      "type": "h.SettingItem",
+      "module": "mi-490",
+      "props": {
+        "name": {
+          "$code": "c.default.trans(\"mine.my.track\")"
+        },
+        "source": {
+          "$code": "l.ImageAssets.menu.mineTrack"
+        },
+        "onPress": {
+          "$code": "function(){y(u.LoginModal)}"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "h.SettingItem",
+      "module": "mi-490",
+      "props": {
+        "name": {
+          "$code": "c.default.trans(\"mine.app.item.settings\")"
+        },
+        "source": {
+          "$code": "l.ImageAssets.menu.appSetting"
+        },
+        "onPress": {
+          "$code": "function(){(0,l.clickAppSettingTrack)(),t.push(\"com.xiaomi.fitness.about.setting.SettingActivity\",{_rt:\"native\"})}"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "h.SettingItem",
+      "module": "mi-490",
+      "props": {
+        "name": {
+          "$code": "c.default.trans(\"mine.personal.data.management\")"
+        },
+        "source": {
+          "$code": "l.ImageAssets.menu.thirdPartyDataManagement"
+        },
+        "onPress": {
+          "$code": "function(){y(u.LoginModal)}"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "h.SettingItem",
+      "module": "mi-490",
+      "props": {
+        "name": {
+          "$code": "c.default.trans(\"mine.device.authorization\")"
+        },
+        "source": {
+          "$code": "l.ImageAssets.menu.icDeviceAuthorization"
+        },
+        "onPress": {
+          "$code": "function(){return p().async(function(t){for(;;)switch(t.prev=t.next){case 0:y(u.LoginModal);case 1:case\"end\":return t.stop()}},null,null,null,Promise)}"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "h.SettingItem",
+      "module": "mi-490",
+      "props": {
+        "name": {
+          "$code": "c.default.trans(\"mine.system.permission\")"
+        },
+        "source": {
+          "$code": "l.ImageAssets.menu.systemPermission"
+        },
+        "onPress": {
+          "$code": "function(){(0,l.clickSystemPermissionTrack)(),t.push(\"com.xiaomi.fitness.privacy.permission.SystemPermissionFragment\",{_rt:\"native\"})}"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "h.SettingItem",
+      "module": "mi-490",
+      "props": {
+        "name": {
+          "$code": "c.default.trans(\"mine.bugreport\")"
+        },
+        "source": {
+          "$code": "l.ImageAssets.menu.helpAndFeedback"
+        },
+        "onPress": {
+          "$code": "function(){y(u.LoginModal)}"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "h.SettingItem",
+      "module": "mi-490",
+      "props": {
+        "name": {
+          "$code": "c.default.trans(\"mine.device.share\")"
+        },
+        "source": {
+          "$code": "l.ImageAssets.menu.deviceSharing"
+        },
+        "onPress": {
+          "$code": "function(){y(u.LoginModal)}"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "f.UpdateSettingItem",
+      "module": "mi-488",
+      "props": null,
+      "children": []
+    },
+    {
+      "type": "h.SettingItem",
+      "module": "mi-490",
+      "props": {
+        "name": {
+          "$code": "c.default.trans(\"mine.about\")"
+        },
+        "source": {
+          "$code": "l.ImageAssets.menu.about"
+        },
+        "onPress": {
+          "$code": "function(){(0,l.clickAboutTrack)(),t.push(\"com.xiaomi.fitness.about.AboutActivity\",{_rt:\"native\"})}"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": []
+}

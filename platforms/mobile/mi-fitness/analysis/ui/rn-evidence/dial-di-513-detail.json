@@ -1,0 +1,200 @@
+{
+  "bundle": "dial",
+  "id": "di-513",
+  "line": 521,
+  "aliases": {
+    "t": 3,
+    "n": 27,
+    "l": 14,
+    "o": 18,
+    "u": 1113,
+    "s": 1121,
+    "f": 1780
+  },
+  "elements": [
+    {
+      "type": "f.Modal",
+      "module": 1780,
+      "props": {
+        "isOpen": {
+          "$code": "y"
+        },
+        "onClose": {
+          "$code": "E"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(p,{style:{transform:[{translateY:P}],position:\"absolute\",top:0,left:0,right:0,bottom:0,backgroundColor:\"rgba(0,0,0,0.5)\"}},l.default.createElement(f.Center,{flex:1},l.default.createElement(f.Box,null,b||(c?l.default.createElement(f.Pressable,{onPress:C,_pressed:{opacity:.7}},"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "props": {
+        "style": {
+          "transform": [
+            {
+              "translateY": {
+                "$code": "P"
+              }
+            }
+          ],
+          "position": "absolute",
+          "top": 0,
+          "left": 0,
+          "right": 0,
+          "bottom": 0,
+          "backgroundColor": "rgba(0,0,0,0.5)"
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(f.Center,{flex:1},l.default.createElement(f.Box,null,b||(c?l.default.createElement(f.Pressable,{onPress:C,_pressed:{opacity:.7}},l.default.createElement(u.default,{source:{uri:c},style:{width:289.67,height:406,borderRadius:37},resizeMode:u.default.resizeMode.contain})):null),"
+        }
+      ]
+    },
+    {
+      "type": "f.Center",
+      "module": 1780,
+      "props": {
+        "flex": 1
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(f.Box,null,b||(c?l.default.createElement(f.Pressable,{onPress:C,_pressed:{opacity:.7}},l.default.createElement(u.default,{source:{uri:c},style:{width:289.67,height:406,borderRadius:37},resizeMode:u.default.resizeMode.contain})):null),l.default.createElement(f.Center,{mt:\"20px"
+        }
+      ]
+    },
+    {
+      "type": "f.Box",
+      "module": 1780,
+      "props": null,
+      "children": [
+        {
+          "$code": "b||(c?l.default.createElement(f.Pressable,{onPress:C,_pressed:{opacity:.7}},l.default.createElement(u.default,{source:{uri:c},style:{width:289.67,height:406,borderRadius:37},resizeMode:u.default.resizeMode.contain})):null)"
+        },
+        {
+          "$code": "l.default.createElement(f.Center,{mt:\"20px\"},l.default.createElement(f.Pressable,{onPress:E,_pressed:{opacity:.7}},l.default.createElement(f.Image,{source:s.Assets.Icons.CircleClose,alt:\"Close\",width:42.67,height:42.67})))"
+        }
+      ]
+    },
+    {
+      "type": "f.Pressable",
+      "module": 1780,
+      "props": {
+        "onPress": {
+          "$code": "C"
+        },
+        "_pressed": {
+          "opacity": 0.7
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(u.default,{source:{uri:c},style:{width:289.67,height:406,borderRadius:37},resizeMode:u.default.resizeMode.contain})"
+        }
+      ]
+    },
+    {
+      "type": "u.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "uri": {
+            "$code": "c"
+          }
+        },
+        "style": {
+          "width": 289.67,
+          "height": 406,
+          "borderRadius": 37
+        },
+        "resizeMode": {
+          "$code": "u.default.resizeMode.contain"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "f.Center",
+      "module": 1780,
+      "props": {
+        "mt": "20px"
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(f.Pressable,{onPress:E,_pressed:{opacity:.7}},l.default.createElement(f.Image,{source:s.Assets.Icons.CircleClose,alt:\"Close\",width:42.67,height:42.67}))"
+        }
+      ]
+    },
+    {
+      "type": "f.Pressable",
+      "module": 1780,
+      "props": {
+        "onPress": {
+          "$code": "E"
+        },
+        "_pressed": {
+          "opacity": 0.7
+        }
+      },
+      "children": [
+        {
+          "$code": "l.default.createElement(f.Image,{source:s.Assets.Icons.CircleClose,alt:\"Close\",width:42.67,height:42.67})"
+        }
+      ]
+    },
+    {
+      "type": "f.Image",
+      "module": 1780,
+      "props": {
+        "source": {
+          "$code": "s.Assets.Icons.CircleClose"
+        },
+        "alt": "Close",
+        "width": 42.67,
+        "height": 42.67
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [
+    "o.Animated.spring(P,{toValue:0,useNativeDriver:!0,tension:50,friction:7})",
+    "o.Animated.timing(P,{toValue:v,duration:300,useNativeDriver:!0})"
+  ],
+  "numericStyleProperties": [
+    {
+      "key": "tension",
+      "value": 50
+    },
+    {
+      "key": "friction",
+      "value": 7
+    },
+    {
+      "key": "duration",
+      "value": 300
+    },
+    {
+      "key": "width",
+      "value": 289.67
+    },
+    {
+      "key": "height",
+      "value": 406
+    },
+    {
+      "key": "borderRadius",
+      "value": 37
+    },
+    {
+      "key": "width",
+      "value": 42.67
+    },
+    {
+      "key": "height",
+      "value": 42.67
+    }
+  ]
+}

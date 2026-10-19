@@ -1,0 +1,214 @@
+// Readability-only formatting of exact raw evidence. Source offsets/SHA: card-summary-modal.meta.json
+function Gge(e) {
+  const t = n.c(37),
+    { markdown: r, title: i, origin: o, replyMessageId: a, linkUrl: l } = e,
+    { _: c } = d(),
+    { replyRef: u, onReply: p } = Fpe(a);
+  let h;
+  t[0] !== r || t[1] !== p || t[2] !== a
+    ? ((h = { copyText: r, onReply: p, messageId: a }),
+      (t[0] = r),
+      (t[1] = p),
+      (t[2] = a),
+      (t[3] = h))
+    : (h = t[3]);
+  const f = Bpe(h);
+  let m;
+  t[4] !== r || t[5] !== i
+    ? ((m = t2(r, i)), (t[4] = r), (t[5] = i), (t[6] = m))
+    : (m = t[6]);
+  const g = m;
+  let v;
+  t[7] !== r || t[8] !== a || t[9] !== u || t[10] !== i
+    ? ((v = () => {
+        var e;
+        (u.current?.focus({ preventScroll: !0 }),
+          (e = { markdown: r, title: i, messageId: a }),
+          lde.setState({ summary: e }),
+          SP(a, "summary"));
+      }),
+      (t[7] = r),
+      (t[8] = a),
+      (t[9] = u),
+      (t[10] = i),
+      (t[11] = v))
+    : (v = t[11]);
+  const y = v;
+  let b;
+  t[12] !== y
+    ? ((b = () => {
+        window.getSelection()?.toString() || y();
+      }),
+      (t[12] = y),
+      (t[13] = b))
+    : (b = t[13]);
+  const _ = b;
+  let x;
+  t[14] !== y
+    ? ((x = (e) => {
+        e.target !== e.currentTarget ||
+          e.repeat ||
+          ("Enter" !== e.key && " " !== e.key) ||
+          (e.preventDefault(), y());
+      }),
+      (t[14] = y),
+      (t[15] = x))
+    : (x = t[15]);
+  const w = x;
+  let k, E, T, S, I, A;
+  return (
+    t[16] !== c
+      ? ((k = c({ id: "H8dK1_" })), (t[16] = c), (t[17] = k))
+      : (k = t[17]),
+    t[18] !== l || t[19] !== o
+      ? ((E = s.jsx(Yge, { origin: o, linkUrl: l })),
+        (t[18] = l),
+        (t[19] = o),
+        (t[20] = E))
+      : (E = t[20]),
+    t[21] !== E || t[22] !== i
+      ? ((T = s.jsx($ge, { title: i, children: E })),
+        (t[21] = E),
+        (t[22] = i),
+        (t[23] = T))
+      : (T = t[23]),
+    t[24] !== g
+      ? ((S = g.trim() && s.jsx(Vge, { markdown: g })),
+        (t[24] = g),
+        (t[25] = S))
+      : (S = t[25]),
+    t[26] !== _ ||
+    t[27] !== w ||
+    t[28] !== f ||
+    t[29] !== u ||
+    t[30] !== k ||
+    t[31] !== T ||
+    t[32] !== S
+      ? ((I = s.jsxs(yn, {
+          ref: u,
+          className: "rfqo3s0 qvlc2z0 _11ah0wx0 _11ah0wx1",
+          tabIndex: 0,
+          role: "group",
+          "aria-label": k,
+          "data-artifact-card": !0,
+          "data-testid": "summary-card",
+          onClick: _,
+          onKeyDown: w,
+          ...f,
+          children: [T, S],
+        })),
+        (t[26] = _),
+        (t[27] = w),
+        (t[28] = f),
+        (t[29] = u),
+        (t[30] = k),
+        (t[31] = T),
+        (t[32] = S),
+        (t[33] = I))
+      : (I = t[33]),
+    t[34] !== p || t[35] !== I
+      ? ((A = s.jsx(Xpe, { onReply: p, children: I })),
+        (t[34] = p),
+        (t[35] = I),
+        (t[36] = A))
+      : (A = t[36]),
+    A
+  );
+}
+function Vge(e) {
+  const t = n.c(10),
+    { markdown: r } = e,
+    { ref: i, showFade: o } = r2();
+  let a;
+  t[0] !== r
+    ? ((a = (function (e) {
+        const t = $0(e);
+        let n = 0;
+        for (let r = 0; r < t.length; r++)
+          if (t[r].trim()) {
+            if (5 === n) return { text: t.slice(0, r).join(""), more: !0 };
+            n++;
+          }
+        return { text: e, more: !1 };
+      })(r)),
+      (t[0] = r),
+      (t[1] = a))
+    : (a = t[1]);
+  const l = a,
+    c = (o || l.more) && "rfqo3s3";
+  let u, d, p;
+  return (
+    t[2] !== c ? ((u = en("rfqo3s2", c)), (t[2] = c), (t[3] = u)) : (u = t[3]),
+    t[4] !== l.text
+      ? ((d = s.jsx(B0, {
+          ...j5,
+          animated: !1,
+          components: Wge,
+          children: l.text,
+        })),
+        (t[4] = l.text),
+        (t[5] = d))
+      : (d = t[5]),
+    t[6] !== i || t[7] !== u || t[8] !== d
+      ? ((p = s.jsx("div", {
+          className: "qvlc2z4",
+          children: s.jsx("div", {
+            ref: i,
+            className: u,
+            "data-testid": "summary-preview",
+            children: d,
+          }),
+        })),
+        (t[6] = i),
+        (t[7] = u),
+        (t[8] = d),
+        (t[9] = p))
+      : (p = t[9]),
+    p
+  );
+}
+const Wge = {
+  ...p3,
+  a: ({ children: e }) => s.jsx(s.Fragment, { children: e }),
+  img: () => null,
+};
+function Yge(e) {
+  const t = n.c(8),
+    { origin: r, linkUrl: i } = e;
+  if (nm(i)) {
+    let e, n;
+    return (
+      t[0] !== i || t[1] !== r
+        ? ((e = r ?? tm(i)), (t[0] = i), (t[1] = r), (t[2] = e))
+        : (e = t[2]),
+      t[3] !== i || t[4] !== e
+        ? ((n = s.jsx(l3, {
+            className: "rfqo3s1 qvlc2z3",
+            href: i,
+            target: "_blank",
+            rel: "noreferrer noopener",
+            "data-testid": "card-link",
+            onClick: Qge,
+            children: e,
+          })),
+          (t[3] = i),
+          (t[4] = e),
+          (t[5] = n))
+        : (n = t[5]),
+      n
+    );
+  }
+  if (!r) return null;
+  let o;
+  return (
+    t[6] !== r
+      ? ((o = s.jsx("span", { className: qge, children: r })),
+        (t[6] = r),
+        (t[7] = o))
+      : (o = t[7]),
+    o
+  );
+}
+function Qge(e) {
+  return e.stopPropagation();
+}

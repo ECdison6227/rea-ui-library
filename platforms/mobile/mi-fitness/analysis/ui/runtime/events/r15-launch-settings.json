@@ -1,0 +1,26 @@
+{
+  "id": "r15-launch-settings",
+  "serial": "emulator-5580",
+  "avd": "rea_mihealth_ui_20261015",
+  "started": "2026-10-15T13:08:50.180Z",
+  "finished": "2026-10-15T13:08:51.967Z",
+  "args": [
+    "shell",
+    "am",
+    "start",
+    "-S",
+    "-W",
+    "-n",
+    "study.style.reference/.MainActivity",
+    "--es",
+    "scene",
+    "settings",
+    "--es",
+    "theme",
+    "day"
+  ],
+  "exitCode": 0,
+  "stdout": "Stopping: study.style.reference\r\nStarting: Intent { cmp=study.style.reference/.MainActivity (has extras) }\r\nStatus: ok\r\nLaunchState: COLD\r\nActivity: study.style.reference/.MainActivity\r\nTotalTime: 1372\r\nWaitTime: 1377\r\nComplete\r\n",
+  "stderr": "",
+  "error": null
+}

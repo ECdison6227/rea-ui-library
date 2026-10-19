@@ -1,0 +1,133 @@
+{
+  "evidence_id": "ev_3e52933b4ed0f59266bde68cfebf23c68f58935a74714096495483128e6867c8",
+  "subject": {
+    "name": "base.apk",
+    "digest": {
+      "sha256": "2a80fc5a87353c2c6ef3c01fa0085862fe45e4ddb9c2d272cb3780841b5889a6"
+    },
+    "local_path": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\base.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\base.apk",
+    "class_name": "com.xiaomi.fitness.main.export.MainTab",
+    "method_name": "<clinit>",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "40c6972bc7e1689e09979b64ba49ba04b9c05e49976b838315d63d6415e762ba",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\EDSJRC~1\\AppData\\Local\\Temp\\rea-android-7dbfffea0b7151c16baca08ac9107860\\target.apk",
+      "class_count": 49309,
+      "resource_count": 11210,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"21.0.12.1\",\"available_processors\":4,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xiaomi.fitness.main.export.MainTab"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"\\u003cinit\\u003e(int, int, int, androidx.fragment.app.Fragment, int): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(IIILandroidx/fragment/app/Fragment;I)V\"},{\"signature\":\"access$getClassToIndexMap$cp(): java.util.concurrent.ConcurrentHashMap\",\"def_pos\":0,\"name\":\"access$getClassToIndexMap$cp\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/util/concurrent/ConcurrentHashMap;\"},{\"signature\":\"access$getDEVICE_TAB_RED_POINT_KEY$cp(): java.lang.String\",\"def_pos\":0,\"name\":\"access$getDEVICE_TAB_RED_POINT_KEY$cp\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\"},{\"signature\":\"access$getHEALTH_TAB_RED_POINT_KEY$cp(): java.lang.String\",\"def_pos\":0,\"name\":\"access$getHEALTH_TAB_RED_POINT_KEY$cp\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\"},{\"signature\":\"access$getINDEX_DEVICE$cp(): int\",\"def_pos\":0,\"name\":\"access$getINDEX_DEVICE$cp\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"access$getINDEX_HEALTH$cp(): int\",\"def_pos\":0,\"name\":\"access$getINDEX_HEALTH$cp\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"access$getINDEX_ME$cp(): int\",\"def_pos\":0,\"name\":\"access$getINDEX_ME$cp\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"access$getINDEX_SPORT$cp(): int\",\"def_pos\":0,\"name\":\"access$getINDEX_SPORT$cp\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"access$getMY_TAB_RED_POINT_KEY$cp(): java.lang.String\",\"def_pos\":0,\"name\":\"access$getMY_TAB_RED_POINT_KEY$cp\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\"},{\"signature\":\"access$getSPORT_TAB_RED_POINT_KEY$cp(): java.lang.String\",\"def_pos\":0,\"name\":\"access$getSPORT_TAB_RED_POINT_KEY$cp\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\"},{\"signature\":\"component1(): int\",\"def_pos\":0,\"name\":\"component1\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"component2(): int\",\"def_pos\":0,\"name\":\"component2\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"component3(): int\",\"def_pos\":0,\"name\":\"component3\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"component4(): androidx.fragment.app.Fragment\",\"def_pos\":0,\"name\":\"component4\",\"is_constructor\":false,\"dex_descriptor\":\"()Landroidx/fragment/app/Fragment;\"},{\"signature\":\"component5(): int\",\"def_pos\":0,\"name\":\"component5\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"copy(int, int, int, androidx.fragment.app.Fragment, int): com.xiaomi.fitness.main.export.MainTab\",\"def_pos\":0,\"name\":\"copy\",\"is_constructor\":false,\"dex_descriptor\":\"(IIILandroidx/fragment/app/Fragment;I)Lcom/xiaomi/fitness/main/export/MainTab;\"},{\"signature\":\"copy$default(com.xiaomi.fitness.main.export.MainTab, int, int, int, androidx.fragment.app.Fragment, int, int, java.lang.Object): com.xiaomi.fitness.main.export.MainTab\",\"def_pos\":0,\"name\":\"copy$default\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/xiaomi/fitness/main/export/MainTab;IIILandroidx/fragment/app/Fragment;IILjava/lang/Object;)Lcom/xiaomi/fitness/main/export/MainTab;\"},{\"signature\":\"equals(java.lang.Object): boolean\",\"def_pos\":0,\"name\":\"equals\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Z\"},{\"signature\":\"getBackgroundColor(): int\",\"def_pos\":0,\"name\":\"getBackgroundColor\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"getDEVICE_TAB_RED_POINT_KEY(): java.lang.String\",\"def_pos\":0,\"name\":\"getDEVICE_TAB_RED_POINT_KEY\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\"},{\"signature\":\"getFragment(): androidx.fragment.app.Fragment\",\"def_pos\":0,\"name\":\"getFragment\",\"is_constructor\":false,\"dex_descriptor\":\"()Landroidx/fragment/app/Fragment;\"},{\"signature\":\"getHEALTH_TAB_RED_POINT_KEY(): java.lang.String\",\"def_pos\":0,\"name\":\"getHEALTH_TAB_RED_POINT_KEY\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\"},{\"signature\":\"getINDEX_DEVICE(): int\",\"def_pos\":0,\"name\":\"getINDEX_DEVICE\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"getINDEX_HEALTH(): int\",\"def_pos\":0,\"name\":\"getINDEX_HEALTH\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"getINDEX_ME(): int\",\"def_pos\":0,\"name\":\"getINDEX_ME\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"getINDEX_SPORT(): int\",\"def_pos\":0,\"name\":\"getINDEX_SPORT\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"getIcon(): int\",\"def_pos\":0,\"name\":\"getIcon\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"getIndex(): int\",\"def_pos\":0,\"name\":\"getIndex\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"getMY_TAB_RED_POINT_KEY(): java.lang.String\",\"def_pos\":0,\"name\":\"getMY_TAB_RED_POINT_KEY\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\"},{\"signature\":\"getName(): int\",\"def_pos\":0,\"name\":\"getName\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"getSPORT_TAB_RED_POINT_KEY(): java.lang.String\",\"def_pos\":0,\"name\":\"getSPORT_TAB_RED_POINT_KEY\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\"},{\"signature\":\"hashCode(): int\",\"def_pos\":0,\"name\":\"hashCode\",\"is_constructor\":false,\"dex_descriptor\":\"()I\"},{\"signature\":\"toString(): java.lang.String\",\"def_pos\":0,\"name\":\"toString\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\"}],\"method_count\":34,\"inner_class_count\":1,\"inner_classes\":[\"com.xiaomi.fitness.main.export.MainTab.Companion\"],\"name\":\"MainTab\",\"full_name\":\"com.xiaomi.fitness.main.export.MainTab\",\"field_count\":20,\"fields\":[{\"type\":\"com.xiaomi.fitness.main.export.MainTab$Companion\",\"def_pos\":0,\"name\":\"Companion\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"DEVICE_TAB_RED_POINT_KEY\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"HEALTH_TAB_RED_POINT_KEY\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"INDEX_DEVICE\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"INDEX_HEALTH\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"INDEX_INVALID\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"INDEX_ME\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"INDEX_SPORT\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"KEY_SHOW_CHOOSE_COMMON_APP\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"KEY_TAB\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"MY_TAB_RED_POINT_KEY\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"PAGE_TYPE\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"SON_PAGE_TYPE\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"SPORT_TAB_RED_POINT_KEY\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"backgroundColor\"},{\"type\":\"java.util.concurrent.ConcurrentHashMap\\u003cjava.lang.String, java.lang.Integer\\u003e\",\"def_pos\":0,\"name\":\"classToIndexMap\"},{\"type\":\"androidx.fragment.app.Fragment\",\"def_pos\":0,\"name\":\"fragment\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"icon\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"index\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"name\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xiaomi.fitness.main.export.MainTab",
+          "method_name": "<clinit>",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[\"static_initializer_disassembly\"],\"mode\":\"smali\",\"full_name\":\"com.xiaomi.fitness.main.export.MainTab.\\u003cclinit\\u003e\",\"class_name\":\"com.xiaomi.fitness.main.export.MainTab\",\"overload_index\":0,\"fell_back\":true,\"body\":\".method static constructor \\u003cclinit\\u003e()V\\n    .registers 2\\n\\n    new-instance v0, Lcom/xiaomi/fitness/main/export/MainTab$Companion;\\n\\n    const/4 v1, 0x0\\n\\n    invoke-direct {v0, v1}, Lcom/xiaomi/fitness/main/export/MainTab$Companion;-\\u003e\\u003cinit\\u003e(Lkotlin/jvm/internal/DefaultConstructorMarker;)V\\n\\n    sput-object v0, Lcom/xiaomi/fitness/main/export/MainTab;-\\u003eCompanion:Lcom/xiaomi/fitness/main/export/MainTab$Companion;\\n\\n    const/4 v0, 0x1\\n\\n    sput v0, Lcom/xiaomi/fitness/main/export/MainTab;-\\u003eINDEX_SPORT:I\\n\\n    const/4 v0, 0x2\\n\\n    sput v0, Lcom/xiaomi/fitness/main/export/MainTab;-\\u003eINDEX_DEVICE:I\\n\\n    const/4 v0, 0x3\\n\\n    sput v0, Lcom/xiaomi/fitness/main/export/MainTab;-\\u003eINDEX_ME:I\\n\\n    const-string v0, \\\"root.health\\\"\\n\\n    sput-object v0, Lcom/xiaomi/fitness/main/export/MainTab;-\\u003eHEALTH_TAB_RED_POINT_KEY:Ljava/lang/String;\\n\\n    const-string v0, \\\"root.sport\\\"\\n\\n    sput-object v0, Lcom/xiaomi/fitness/main/export/MainTab;-\\u003eSPORT_TAB_RED_POINT_KEY:Ljava/lang/String;\\n\\n    const-string v0, \\\"root.devices\\\"\\n\\n    sput-object v0, Lcom/xiaomi/fitness/main/export/MainTab;-\\u003eDEVICE_TAB_RED_POINT_KEY:Ljava/lang/String;\\n\\n    const-string v0, \\\"root.my\\\"\\n\\n    sput-object v0, Lcom/xiaomi/fitness/main/export/MainTab;-\\u003eMY_TAB_RED_POINT_KEY:Ljava/lang/String;\\n\\n    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;\\n\\n    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-\\u003e\\u003cinit\\u003e()V\\n\\n    sput-object v0, Lcom/xiaomi/fitness/main/export/MainTab;-\\u003eclassToIndexMap:Ljava/util/concurrent/ConcurrentHashMap;\\n\\n    return-void\\n.end method\",\"overload_count\":1,\"method_name\":\"\\u003cclinit\\u003e\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xiaomi.fitness.main.export.MainTab",
+    "method": {
+      "name": "<clinit>",
+      "reported_signature": "<clinit>(): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()V"
+    },
+    "overload_count": 1,
+    "representation": "smali",
+    "body_status": "available",
+    "fell_back": true,
+    "markers": [
+      "static_initializer_disassembly"
+    ],
+    "source": {
+      "status": "complete",
+      "text": ".method static constructor <clinit>()V\n    .registers 2\n\n    new-instance v0, Lcom/xiaomi/fitness/main/export/MainTab$Companion;\n\n    const/4 v1, 0x0\n\n    invoke-direct {v0, v1}, Lcom/xiaomi/fitness/main/export/MainTab$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V\n\n    sput-object v0, Lcom/xiaomi/fitness/main/export/MainTab;->Companion:Lcom/xiaomi/fitness/main/export/MainTab$Companion;\n\n    const/4 v0, 0x1\n\n    sput v0, Lcom/xiaomi/fitness/main/export/MainTab;->INDEX_SPORT:I\n\n    const/4 v0, 0x2\n\n    sput v0, Lcom/xiaomi/fitness/main/export/MainTab;->INDEX_DEVICE:I\n\n    const/4 v0, 0x3\n\n    sput v0, Lcom/xiaomi/fitness/main/export/MainTab;->INDEX_ME:I\n\n    const-string v0, \"root.health\"\n\n    sput-object v0, Lcom/xiaomi/fitness/main/export/MainTab;->HEALTH_TAB_RED_POINT_KEY:Ljava/lang/String;\n\n    const-string v0, \"root.sport\"\n\n    sput-object v0, Lcom/xiaomi/fitness/main/export/MainTab;->SPORT_TAB_RED_POINT_KEY:Ljava/lang/String;\n\n    const-string v0, \"root.devices\"\n\n    sput-object v0, Lcom/xiaomi/fitness/main/export/MainTab;->DEVICE_TAB_RED_POINT_KEY:Ljava/lang/String;\n\n    const-string v0, \"root.my\"\n\n    sput-object v0, Lcom/xiaomi/fitness/main/export/MainTab;->MY_TAB_RED_POINT_KEY:Ljava/lang/String;\n\n    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;\n\n    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V\n\n    sput-object v0, Lcom/xiaomi/fitness/main/export/MainTab;->classToIndexMap:Ljava/util/concurrent/ConcurrentHashMap;\n\n    return-void\n.end method",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

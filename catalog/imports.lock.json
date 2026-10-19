@@ -4,40 +4,94 @@
     {
       "id": "hark",
       "path": "platforms/web/hark",
-      "url": "https://github.com/ECdison6227/hark-ui-research",
+      "storage": "monorepo",
+      "provenance": {
+        "kind": "retired-git-repository",
+        "repositoryUrl": "https://github.com/ECdison6227/hark-ui-research",
+        "revision": "b5b49eb46494b86d56c21654ea585ad379d9b9d7",
+        "historyRef": "refs/tags/legacy/hark/main",
+        "target": "hark.com/chat · 2026-10-15",
+        "method": "REA historical research",
+        "researchEntry": "README.md"
+      },
       "revision": "b5b49eb46494b86d56c21654ea585ad379d9b9d7",
       "snapshot": null,
+      "integrity": {
+        "manifest": "catalog/manifests/hark.json",
+        "files": 249,
+        "treeSha256": "976e312f1acf738da9c062515ae66f38595ee81bd317a3413f83f5dfefbdeae5"
+      },
       "origin": "historical",
       "workingTreeMutationPerformed": false
     },
     {
       "id": "mi-fitness",
       "path": "platforms/mobile/mi-fitness",
-      "url": "https://github.com/ECdison6227/ui-phone-mi-fitness",
+      "storage": "monorepo",
+      "provenance": {
+        "kind": "retired-git-repository",
+        "repositoryUrl": "https://github.com/ECdison6227/ui-phone-mi-fitness",
+        "revision": "c78748d5296522da30f3348c82482c05b54d1483",
+        "historyRef": "refs/tags/legacy/mi-fitness/main",
+        "target": "3.57.0 · Mine 11.202.21",
+        "method": "REA historical research",
+        "researchEntry": "analysis/ui/README.md"
+      },
       "revision": "c78748d5296522da30f3348c82482c05b54d1483",
       "snapshot": null,
+      "integrity": {
+        "manifest": "catalog/manifests/mi-fitness.json",
+        "files": 8737,
+        "treeSha256": "c9d6b75ac8f593e5b059131a110a8fa4340a7ce6b3872e65aadc228483f82d95"
+      },
       "origin": "historical",
       "workingTreeMutationPerformed": false
     },
     {
       "id": "mirasim",
       "path": "platforms/mobile/mirasim",
-      "url": "https://github.com/ECdison6227/ui-phone-mirasim",
+      "storage": "monorepo",
+      "provenance": {
+        "kind": "retired-git-repository",
+        "repositoryUrl": "https://github.com/ECdison6227/ui-phone-mirasim",
+        "revision": "1f99dd16b8945875f2d0971396be2e75e0c6ef41",
+        "historyRef": "refs/tags/legacy/mirasim/main",
+        "target": "0.0.497",
+        "method": "REA historical research",
+        "researchEntry": "README.md"
+      },
       "revision": "1f99dd16b8945875f2d0971396be2e75e0c6ef41",
       "snapshot": null,
+      "integrity": {
+        "manifest": "catalog/manifests/mirasim.json",
+        "files": 1194,
+        "treeSha256": "34089e1561d85c81428066b5dce7ee19f763b80930363660ff69303701373ed9"
+      },
       "origin": "historical",
       "workingTreeMutationPerformed": false
     },
     {
       "id": "kimi",
       "path": "platforms/mobile/kimi",
-      "url": null,
+      "storage": "monorepo",
+      "provenance": {
+        "kind": "reviewed-snapshot",
+        "target": "Android 3.1.3 / 376 · Run03",
+        "method": "REA static and runtime Run03",
+        "researchEntry": "README.md",
+        "archiveSha256": "5ea98712b198278e0602cf485a5f642fe5cb90f80d9f30bf1f028b0a5077c42c"
+      },
       "revision": null,
       "snapshot": {
         "archive": "Kimi-3.1.3-research-run03-20261016.zip",
         "sha256": "5ea98712b198278e0602cf485a5f642fe5cb90f80d9f30bf1f028b0a5077c42c",
         "files": 3430,
         "sourceApkSha256": "9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332"
+      },
+      "integrity": {
+        "manifest": "catalog/manifests/kimi.json",
+        "files": 3430,
+        "treeSha256": "1dc1c1b7dba3b778f005dfe2fd8619624a0ca378bbc11ecd11ba505b0ba44993"
       },
       "origin": "historical",
       "workingTreeMutationPerformed": false

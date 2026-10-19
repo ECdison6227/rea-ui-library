@@ -12,7 +12,6 @@
       "kind": "research",
       "root": "platforms/web/hark",
       "visibility": "public",
-      "sourceUrl": "https://github.com/ECdison6227/hark-ui-research",
       "revision": "b5b49eb46494b86d56c21654ea585ad379d9b9d7",
       "sourceVersion": "hark.com/chat · 2026-10-15",
       "summary": "从真实聊天页面理解流式文本、表格、图片堆叠与卡片动作。保留浏览器观察、前端声明和推断的边界。",
@@ -79,7 +78,21 @@
         "requires": "浏览器",
         "verifiedHere": false
       },
-      "paletteClassification": "D: catalog presentation only; use source tokens for implementation"
+      "paletteClassification": "D: catalog presentation only; use source tokens for implementation",
+      "provenance": {
+        "kind": "retired-git-repository",
+        "repositoryUrl": "https://github.com/ECdison6227/hark-ui-research",
+        "revision": "b5b49eb46494b86d56c21654ea585ad379d9b9d7",
+        "historyRef": "refs/tags/legacy/hark/main",
+        "target": "hark.com/chat · 2026-10-15",
+        "method": "REA historical research",
+        "researchEntry": "README.md"
+      },
+      "integrity": {
+        "manifest": "catalog/manifests/hark.json",
+        "files": 249,
+        "treeSha256": "976e312f1acf738da9c062515ae66f38595ee81bd317a3413f83f5dfefbdeae5"
+      }
     },
     {
       "id": "mi-fitness",
@@ -89,7 +102,6 @@
       "kind": "research",
       "root": "platforms/mobile/mi-fitness",
       "visibility": "public",
-      "sourceUrl": "https://github.com/ECdison6227/ui-phone-mi-fitness",
       "revision": "c78748d5296522da30f3348c82482c05b54d1483",
       "sourceVersion": "3.57.0 · Mine 11.202.21",
       "summary": "Android三页、十组件基线，覆盖卡片、分组设置、引导与页面状态保留，并提供原生参考和跨业务资料管理示例。",
@@ -160,7 +172,21 @@
         "requires": "Android SDK / JDK；装机前核对自己的设备",
         "verifiedHere": false
       },
-      "paletteClassification": "D: catalog presentation only; use source tokens for implementation"
+      "paletteClassification": "D: catalog presentation only; use source tokens for implementation",
+      "provenance": {
+        "kind": "retired-git-repository",
+        "repositoryUrl": "https://github.com/ECdison6227/ui-phone-mi-fitness",
+        "revision": "c78748d5296522da30f3348c82482c05b54d1483",
+        "historyRef": "refs/tags/legacy/mi-fitness/main",
+        "target": "3.57.0 · Mine 11.202.21",
+        "method": "REA historical research",
+        "researchEntry": "analysis/ui/README.md"
+      },
+      "integrity": {
+        "manifest": "catalog/manifests/mi-fitness.json",
+        "files": 8737,
+        "treeSha256": "c9d6b75ac8f593e5b059131a110a8fa4340a7ce6b3872e65aadc228483f82d95"
+      }
     },
     {
       "id": "mirasim",
@@ -170,7 +196,6 @@
       "kind": "research",
       "root": "platforms/mobile/mirasim",
       "visibility": "public",
-      "sourceUrl": "https://github.com/ECdison6227/ui-phone-mirasim",
       "revision": "1f99dd16b8945875f2d0971396be2e75e0c6ef41",
       "sourceVersion": "0.0.497",
       "summary": "React + Capacitor手机应用的界面、主题和平台接口研究，提供原提取前端的离线预览与更新/权限参考策略。",
@@ -236,7 +261,21 @@
         "requires": "Python3；独立预览默认127.0.0.1:4174",
         "verifiedHere": false
       },
-      "paletteClassification": "D: catalog presentation only; use source tokens for implementation"
+      "paletteClassification": "D: catalog presentation only; use source tokens for implementation",
+      "provenance": {
+        "kind": "retired-git-repository",
+        "repositoryUrl": "https://github.com/ECdison6227/ui-phone-mirasim",
+        "revision": "1f99dd16b8945875f2d0971396be2e75e0c6ef41",
+        "historyRef": "refs/tags/legacy/mirasim/main",
+        "target": "0.0.497",
+        "method": "REA historical research",
+        "researchEntry": "README.md"
+      },
+      "integrity": {
+        "manifest": "catalog/manifests/mirasim.json",
+        "files": 1194,
+        "treeSha256": "34089e1561d85c81428066b5dce7ee19f763b80930363660ff69303701373ed9"
+      }
     },
     {
       "id": "kimi",
@@ -246,7 +285,6 @@
       "kind": "research",
       "root": "platforms/mobile/kimi",
       "visibility": "public",
-      "sourceUrl": null,
       "revision": null,
       "sourceVersion": "Android 3.1.3 / 376 · Run03",
       "snapshot": {
@@ -333,7 +371,23 @@
         "requires": "Android SDK35 / JDK21；原始APK和私有AVD不在总库",
         "verifiedHere": false
       },
-      "paletteClassification": "D: catalog presentation only; use source tokens for implementation"
+      "paletteClassification": "D: catalog presentation only; use source tokens for implementation",
+      "provenance": {
+        "kind": "reviewed-snapshot",
+        "target": "Android 3.1.3 / 376 · Run03",
+        "method": "REA static and runtime Run03",
+        "researchEntry": "README.md",
+        "archiveSha256": "5ea98712b198278e0602cf485a5f642fe5cb90f80d9f30bf1f028b0a5077c42c"
+      },
+      "integrity": {
+        "manifest": "catalog/manifests/kimi.json",
+        "files": 3430,
+        "treeSha256": "1dc1c1b7dba3b778f005dfe2fd8619624a0ca378bbc11ecd11ba505b0ba44993"
+      }
     }
-  ]
+  ],
+  "repository": {
+    "url": "https://github.com/ECdison6227/rea-ui-library",
+    "ref": "main"
+  }
 }

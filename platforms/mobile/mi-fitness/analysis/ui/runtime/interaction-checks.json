@@ -1,0 +1,33 @@
+{
+  "privacyBack": {
+    "sameNodeData": true,
+    "scope": "One secondary agreement dialog; system back did not dismiss it."
+  },
+  "reselection": {
+    "before": "[143,831][943,906]",
+    "after": "[143,831][943,906]",
+    "sameNodeData": true
+  },
+  "settingsReturn": {
+    "before": "[143,831][943,906]",
+    "after": "[143,831][943,906]",
+    "sameScrollAnchor": true
+  },
+  "rootBack": {
+    "evidenceFile": "evidence/00-root-back.json",
+    "result": "Observed NexusLauncher focused after root back"
+  },
+  "themeRecreation": {
+    "before": "My > Settings",
+    "action": "cmd uimode night yes",
+    "returned": "Health main tab",
+    "scope": "Observed only during this configuration-change experiment; not the ordinary back rule."
+  },
+  "accountLogin": {
+    "noTextEntered": true,
+    "captureBlocked": true,
+    "secureWindowDump": "account-window-flags.txt",
+    "observedCancelOutcome": "Device empty state and Mine remained browsable after back"
+  },
+  "scope": "Isolated Android15 emulator; logged out, no wearable/personal data. Not all modes/accounts/devices."
+}

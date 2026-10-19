@@ -1,0 +1,41 @@
+{
+  "id": "sp-292",
+  "line": 300,
+  "bytes": 2220,
+  "deps": [
+    3,
+    54,
+    14,
+    18,
+    "sp-125",
+    1780,
+    "sp-293"
+  ],
+  "exports": [
+    "useToast"
+  ],
+  "strings": [
+    "bottom"
+  ],
+  "routes": [],
+  "styleSheets": [
+    {
+      "callee": "u.StyleSheet.create",
+      "styles": {
+        "toastContainer": {
+          "paddingHorizontal": 15,
+          "paddingVertical": 12,
+          "borderRadius": 12,
+          "borderWidth": 0.33,
+          "elevation": 5
+        },
+        "toastText": {
+          "fontSize": 16
+        }
+      },
+      "code": "u.StyleSheet.create({toastContainer:{paddingHorizontal:15,paddingVertical:12,borderRadius:12,borderWidth:.33,elevation:5},toastText:{fontSize:16}})"
+    }
+  ],
+  "assetNames": [],
+  "calls": []
+}

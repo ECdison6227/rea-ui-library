@@ -1,0 +1,3520 @@
+[
+  {
+    "dex": "classes9.dex",
+    "dexSha256": "01f56ac1f2ae18397c5f38b740355d7da1202f5cc72f94acc01dd74e54d91665",
+    "class": "Lcom/xiaomi/fitness/account/manager/BroadcastsKt;",
+    "method": {
+      "id": 10316,
+      "class": "Lcom/xiaomi/fitness/account/manager/BroadcastsKt;",
+      "proto": 8127,
+      "name": "broadcastLogin",
+      "signature": "Lcom/xiaomi/fitness/account/manager/BroadcastsKt;->broadcastLogin(Landroid/content/Intent;Lkotlin/jvm/functions/Function1;)V",
+      "access": 25,
+      "codeOff": 2663252
+    },
+    "code": {
+      "fileOffset": 2663252,
+      "registers": 4,
+      "incomingWords": 2,
+      "outgoingWords": 3,
+      "tryCount": 0,
+      "codeUnits": 25,
+      "decodedCodeUnits": 25,
+      "errors": [],
+      "strings": [
+        {
+          "codeUnitOffset": 2,
+          "fileOffset": 2663272,
+          "stringIndex": 34835,
+          "value": "action_login"
+        },
+        {
+          "codeUnitOffset": 7,
+          "fileOffset": 2663282,
+          "stringIndex": 51017,
+          "value": "key_intent"
+        }
+      ],
+      "calls": [
+        {
+          "codeUnitOffset": 4,
+          "fileOffset": 2663276,
+          "opcode": 112,
+          "methodIndex": 634,
+          "target": "Landroid/content/Intent;-><init>(Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 9,
+          "fileOffset": 2663286,
+          "opcode": 110,
+          "methodIndex": 655,
+          "target": "Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;"
+        },
+        {
+          "codeUnitOffset": 14,
+          "fileOffset": 2663296,
+          "opcode": 114,
+          "methodIndex": 57495,
+          "target": "Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 17,
+          "fileOffset": 2663302,
+          "opcode": 113,
+          "methodIndex": 18807,
+          "target": "Lcom/xiaomi/fitness/common/extensions/ApplicationExtKt;->getApplication()Landroid/app/Application;"
+        },
+        {
+          "codeUnitOffset": 21,
+          "fileOffset": 2663310,
+          "opcode": 110,
+          "methodIndex": 618,
+          "target": "Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V"
+        }
+      ],
+      "fields": [],
+      "types": [
+        {
+          "codeUnitOffset": 0,
+          "fileOffset": 2663268,
+          "opcode": 34,
+          "type": "Landroid/content/Intent;"
+        }
+      ]
+    }
+  },
+  {
+    "dex": "classes9.dex",
+    "dexSha256": "01f56ac1f2ae18397c5f38b740355d7da1202f5cc72f94acc01dd74e54d91665",
+    "class": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;",
+    "method": {
+      "id": 10488,
+      "class": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;",
+      "proto": 1979,
+      "name": "getServiceToken",
+      "signature": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->getServiceToken(Ljava/lang/String;Z)Lcom/xiaomi/fitness/account/token/MiAccessToken;",
+      "access": 18,
+      "codeOff": 2670128
+    },
+    "code": {
+      "fileOffset": 2670128,
+      "registers": 16,
+      "incomingWords": 3,
+      "outgoingWords": 10,
+      "tryCount": 0,
+      "codeUnits": 202,
+      "decodedCodeUnits": 202,
+      "errors": [],
+      "strings": [
+        {
+          "codeUnitOffset": 24,
+          "fileOffset": 2670192,
+          "stringIndex": 47061,
+          "value": "getServiceToken, account==null, invalidate="
+        },
+        {
+          "codeUnitOffset": 32,
+          "fileOffset": 2670208,
+          "stringIndex": 7465,
+          "value": ", isLocal:"
+        },
+        {
+          "codeUnitOffset": 40,
+          "fileOffset": 2670224,
+          "stringIndex": 7817,
+          "value": ", sid="
+        },
+        {
+          "codeUnitOffset": 96,
+          "fileOffset": 2670336,
+          "stringIndex": 47062,
+          "value": "getServiceToken: ServiceTokenResult: "
+        },
+        {
+          "codeUnitOffset": 116,
+          "fileOffset": 2670376,
+          "stringIndex": 47063,
+          "value": "getServiceToken: get new token, forceRefresh is "
+        },
+        {
+          "codeUnitOffset": 124,
+          "fileOffset": 2670392,
+          "stringIndex": 7818,
+          "value": ", sidTemp is "
+        },
+        {
+          "codeUnitOffset": 151,
+          "fileOffset": 2670446,
+          "stringIndex": 53572,
+          "value": "name"
+        }
+      ],
+      "calls": [
+        {
+          "codeUnitOffset": 0,
+          "fileOffset": 2670144,
+          "opcode": 110,
+          "methodIndex": 10486,
+          "target": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->getMAccessManager()Lcom/xiaomi/fitness/account/manager/IMiAccountManager;"
+        },
+        {
+          "codeUnitOffset": 4,
+          "fileOffset": 2670152,
+          "opcode": 114,
+          "methodIndex": 10322,
+          "target": "Lcom/xiaomi/fitness/account/manager/IMiAccountManager;->getMiAccount()Landroid/accounts/Account;"
+        },
+        {
+          "codeUnitOffset": 11,
+          "fileOffset": 2670166,
+          "opcode": 110,
+          "methodIndex": 10486,
+          "target": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->getMAccessManager()Lcom/xiaomi/fitness/account/manager/IMiAccountManager;"
+        },
+        {
+          "codeUnitOffset": 15,
+          "fileOffset": 2670174,
+          "opcode": 114,
+          "methodIndex": 10329,
+          "target": "Lcom/xiaomi/fitness/account/manager/IMiAccountManager;->isUseLocal()Z"
+        },
+        {
+          "codeUnitOffset": 21,
+          "fileOffset": 2670186,
+          "opcode": 112,
+          "methodIndex": 56133,
+          "target": "Ljava/lang/StringBuilder;-><init>()V"
+        },
+        {
+          "codeUnitOffset": 26,
+          "fileOffset": 2670196,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 29,
+          "fileOffset": 2670202,
+          "opcode": 110,
+          "methodIndex": 56144,
+          "target": "Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 34,
+          "fileOffset": 2670212,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 37,
+          "fileOffset": 2670218,
+          "opcode": 110,
+          "methodIndex": 56144,
+          "target": "Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 42,
+          "fileOffset": 2670228,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 45,
+          "fileOffset": 2670234,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 48,
+          "fileOffset": 2670240,
+          "opcode": 110,
+          "methodIndex": 56149,
+          "target": "Ljava/lang/StringBuilder;->toString()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 55,
+          "fileOffset": 2670254,
+          "opcode": 113,
+          "methodIndex": 19235,
+          "target": "Lcom/xiaomi/fitness/common/log/Logger;->i(Ljava/lang/String;[Ljava/lang/Object;)V"
+        },
+        {
+          "codeUnitOffset": 58,
+          "fileOffset": 2670260,
+          "opcode": 110,
+          "methodIndex": 10486,
+          "target": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->getMAccessManager()Lcom/xiaomi/fitness/account/manager/IMiAccountManager;"
+        },
+        {
+          "codeUnitOffset": 62,
+          "fileOffset": 2670268,
+          "opcode": 114,
+          "methodIndex": 10322,
+          "target": "Lcom/xiaomi/fitness/account/manager/IMiAccountManager;->getMiAccount()Landroid/accounts/Account;"
+        },
+        {
+          "codeUnitOffset": 69,
+          "fileOffset": 2670282,
+          "opcode": 114,
+          "methodIndex": 55935,
+          "target": "Ljava/lang/CharSequence;->length()I"
+        },
+        {
+          "codeUnitOffset": 75,
+          "fileOffset": 2670294,
+          "opcode": 110,
+          "methodIndex": 10486,
+          "target": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->getMAccessManager()Lcom/xiaomi/fitness/account/manager/IMiAccountManager;"
+        },
+        {
+          "codeUnitOffset": 79,
+          "fileOffset": 2670302,
+          "opcode": 114,
+          "methodIndex": 10326,
+          "target": "Lcom/xiaomi/fitness/account/manager/IMiAccountManager;->getSid()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 83,
+          "fileOffset": 2670310,
+          "opcode": 110,
+          "methodIndex": 10486,
+          "target": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->getMAccessManager()Lcom/xiaomi/fitness/account/manager/IMiAccountManager;"
+        },
+        {
+          "codeUnitOffset": 87,
+          "fileOffset": 2670318,
+          "opcode": 114,
+          "methodIndex": 10325,
+          "target": "Lcom/xiaomi/fitness/account/manager/IMiAccountManager;->getServiceToken(Ljava/lang/String;Z)Lcom/xiaomi/passport/servicetoken/ServiceTokenResult;"
+        },
+        {
+          "codeUnitOffset": 93,
+          "fileOffset": 2670330,
+          "opcode": 112,
+          "methodIndex": 56133,
+          "target": "Ljava/lang/StringBuilder;-><init>()V"
+        },
+        {
+          "codeUnitOffset": 98,
+          "fileOffset": 2670340,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 101,
+          "fileOffset": 2670346,
+          "opcode": 110,
+          "methodIndex": 56142,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 104,
+          "fileOffset": 2670352,
+          "opcode": 110,
+          "methodIndex": 56149,
+          "target": "Ljava/lang/StringBuilder;->toString()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 108,
+          "fileOffset": 2670360,
+          "opcode": 113,
+          "methodIndex": 10120,
+          "target": "Lcom/xiaomi/fitness/account/extensions/LogExtKt;->safePrintI(Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 113,
+          "fileOffset": 2670370,
+          "opcode": 112,
+          "methodIndex": 56133,
+          "target": "Ljava/lang/StringBuilder;-><init>()V"
+        },
+        {
+          "codeUnitOffset": 118,
+          "fileOffset": 2670380,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 121,
+          "fileOffset": 2670386,
+          "opcode": 110,
+          "methodIndex": 56144,
+          "target": "Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 126,
+          "fileOffset": 2670396,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 129,
+          "fileOffset": 2670402,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 132,
+          "fileOffset": 2670408,
+          "opcode": 110,
+          "methodIndex": 56149,
+          "target": "Ljava/lang/StringBuilder;->toString()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 136,
+          "fileOffset": 2670416,
+          "opcode": 113,
+          "methodIndex": 10119,
+          "target": "Lcom/xiaomi/fitness/account/extensions/LogExtKt;->logi(Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 153,
+          "fileOffset": 2670450,
+          "opcode": 113,
+          "methodIndex": 57512,
+          "target": "Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 159,
+          "fileOffset": 2670462,
+          "opcode": 110,
+          "methodIndex": 56560,
+          "target": "Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 167,
+          "fileOffset": 2670478,
+          "opcode": 110,
+          "methodIndex": 10442,
+          "target": "Lcom/xiaomi/fitness/account/token/MiAccessToken;->getServiceToken()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 173,
+          "fileOffset": 2670490,
+          "opcode": 113,
+          "methodIndex": 57509,
+          "target": "Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z"
+        },
+        {
+          "codeUnitOffset": 192,
+          "fileOffset": 2670528,
+          "opcode": 118,
+          "methodIndex": 10427,
+          "target": "Lcom/xiaomi/fitness/account/token/MiAccessToken;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JZILkotlin/jvm/internal/DefaultConstructorMarker;)V"
+        },
+        {
+          "codeUnitOffset": 197,
+          "fileOffset": 2670538,
+          "opcode": 114,
+          "methodIndex": 56499,
+          "target": "Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+        }
+      ],
+      "fields": [
+        {
+          "codeUnitOffset": 139,
+          "fileOffset": 2670422,
+          "opcode": 84,
+          "fieldIndex": 20817,
+          "field": {
+            "class": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult;",
+            "type": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult$ErrorCode;",
+            "name": "errorCode"
+          }
+        },
+        {
+          "codeUnitOffset": 141,
+          "fileOffset": 2670426,
+          "opcode": 98,
+          "fieldIndex": 20814,
+          "field": {
+            "class": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult$ErrorCode;",
+            "type": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult$ErrorCode;",
+            "name": "ERROR_NONE"
+          }
+        },
+        {
+          "codeUnitOffset": 145,
+          "fileOffset": 2670434,
+          "opcode": 84,
+          "fieldIndex": 20821,
+          "field": {
+            "class": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult;",
+            "type": "Ljava/lang/String;",
+            "name": "userId"
+          }
+        },
+        {
+          "codeUnitOffset": 149,
+          "fileOffset": 2670442,
+          "opcode": 84,
+          "fieldIndex": 984,
+          "field": {
+            "class": "Landroid/accounts/Account;",
+            "type": "Ljava/lang/String;",
+            "name": "name"
+          }
+        },
+        {
+          "codeUnitOffset": 157,
+          "fileOffset": 2670458,
+          "opcode": 84,
+          "fieldIndex": 4585,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;",
+            "type": "Ljava/util/concurrent/ConcurrentHashMap;",
+            "name": "mAccessTokens"
+          }
+        },
+        {
+          "codeUnitOffset": 171,
+          "fileOffset": 2670486,
+          "opcode": 84,
+          "fieldIndex": 20820,
+          "field": {
+            "class": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult;",
+            "type": "Ljava/lang/String;",
+            "name": "serviceToken"
+          }
+        },
+        {
+          "codeUnitOffset": 181,
+          "fileOffset": 2670506,
+          "opcode": 84,
+          "fieldIndex": 20816,
+          "field": {
+            "class": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult;",
+            "type": "Ljava/lang/String;",
+            "name": "cUserId"
+          }
+        },
+        {
+          "codeUnitOffset": 183,
+          "fileOffset": 2670510,
+          "opcode": 84,
+          "fieldIndex": 20820,
+          "field": {
+            "class": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult;",
+            "type": "Ljava/lang/String;",
+            "name": "serviceToken"
+          }
+        },
+        {
+          "codeUnitOffset": 185,
+          "fileOffset": 2670514,
+          "opcode": 84,
+          "fieldIndex": 20819,
+          "field": {
+            "class": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult;",
+            "type": "Ljava/lang/String;",
+            "name": "security"
+          }
+        },
+        {
+          "codeUnitOffset": 195,
+          "fileOffset": 2670534,
+          "opcode": 84,
+          "fieldIndex": 4585,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;",
+            "type": "Ljava/util/concurrent/ConcurrentHashMap;",
+            "name": "mAccessTokens"
+          }
+        }
+      ],
+      "types": [
+        {
+          "codeUnitOffset": 19,
+          "fileOffset": 2670182,
+          "opcode": 34,
+          "type": "Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 53,
+          "fileOffset": 2670250,
+          "opcode": 35,
+          "type": "[Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 91,
+          "fileOffset": 2670326,
+          "opcode": 34,
+          "type": "Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 111,
+          "fileOffset": 2670366,
+          "opcode": 34,
+          "type": "Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 163,
+          "fileOffset": 2670470,
+          "opcode": 31,
+          "type": "Lcom/xiaomi/fitness/account/token/MiAccessToken;"
+        },
+        {
+          "codeUnitOffset": 179,
+          "fileOffset": 2670502,
+          "opcode": 34,
+          "type": "Lcom/xiaomi/fitness/account/token/MiAccessToken;"
+        }
+      ]
+    }
+  },
+  {
+    "dex": "classes9.dex",
+    "dexSha256": "01f56ac1f2ae18397c5f38b740355d7da1202f5cc72f94acc01dd74e54d91665",
+    "class": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;",
+    "method": {
+      "id": 10490,
+      "class": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;",
+      "proto": 1980,
+      "name": "getToken",
+      "signature": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->getToken(Ljava/lang/String;ZI)Lcom/xiaomi/fitness/account/token/MiAccessToken;",
+      "access": 18,
+      "codeOff": 2670712
+    },
+    "code": {
+      "fileOffset": 2670712,
+      "registers": 22,
+      "incomingWords": 4,
+      "outgoingWords": 10,
+      "tryCount": 0,
+      "codeUnits": 355,
+      "decodedCodeUnits": 355,
+      "errors": [],
+      "strings": [
+        {
+          "codeUnitOffset": 14,
+          "fileOffset": 2670756,
+          "stringIndex": 7465,
+          "value": ", isLocal:"
+        },
+        {
+          "codeUnitOffset": 32,
+          "fileOffset": 2670792,
+          "stringIndex": 47061,
+          "value": "getServiceToken, account==null, invalidate="
+        },
+        {
+          "codeUnitOffset": 46,
+          "fileOffset": 2670820,
+          "stringIndex": 7817,
+          "value": ", sid="
+        },
+        {
+          "codeUnitOffset": 110,
+          "fileOffset": 2670948,
+          "stringIndex": 47732,
+          "value": "getToken: mAccessTokens["
+        },
+        {
+          "codeUnitOffset": 118,
+          "fileOffset": 2670964,
+          "stringIndex": 33604,
+          "value": "] is "
+        },
+        {
+          "codeUnitOffset": 153,
+          "fileOffset": 2671034,
+          "stringIndex": 47730,
+          "value": "getToken: ServiceTokenResult: "
+        },
+        {
+          "codeUnitOffset": 173,
+          "fileOffset": 2671074,
+          "stringIndex": 47731,
+          "value": "getToken: get a new service token, forceRefresh is "
+        },
+        {
+          "codeUnitOffset": 181,
+          "fileOffset": 2671090,
+          "stringIndex": 7818,
+          "value": ", sidTemp is "
+        },
+        {
+          "codeUnitOffset": 208,
+          "fileOffset": 2671144,
+          "stringIndex": 53572,
+          "value": "name"
+        },
+        {
+          "codeUnitOffset": 245,
+          "fileOffset": 2671218,
+          "stringIndex": 34781,
+          "value": "accessToken is "
+        },
+        {
+          "codeUnitOffset": 282,
+          "fileOffset": 2671292,
+          "stringIndex": 47555,
+          "value": "getSystemToken, notifyAuthenticate, invalidate="
+        },
+        {
+          "codeUnitOffset": 323,
+          "fileOffset": 2671374,
+          "stringIndex": 47556,
+          "value": "getSystemToken,errorCode="
+        },
+        {
+          "codeUnitOffset": 331,
+          "fileOffset": 2671390,
+          "stringIndex": 8081,
+          "value": ",invalidate="
+        },
+        {
+          "codeUnitOffset": 339,
+          "fileOffset": 2671406,
+          "stringIndex": 8085,
+          "value": ",isLocal:"
+        }
+      ],
+      "calls": [
+        {
+          "codeUnitOffset": 6,
+          "fileOffset": 2670740,
+          "opcode": 110,
+          "methodIndex": 10486,
+          "target": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->getMAccessManager()Lcom/xiaomi/fitness/account/manager/IMiAccountManager;"
+        },
+        {
+          "codeUnitOffset": 10,
+          "fileOffset": 2670748,
+          "opcode": 114,
+          "methodIndex": 10322,
+          "target": "Lcom/xiaomi/fitness/account/manager/IMiAccountManager;->getMiAccount()Landroid/accounts/Account;"
+        },
+        {
+          "codeUnitOffset": 19,
+          "fileOffset": 2670766,
+          "opcode": 110,
+          "methodIndex": 10486,
+          "target": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->getMAccessManager()Lcom/xiaomi/fitness/account/manager/IMiAccountManager;"
+        },
+        {
+          "codeUnitOffset": 23,
+          "fileOffset": 2670774,
+          "opcode": 114,
+          "methodIndex": 10329,
+          "target": "Lcom/xiaomi/fitness/account/manager/IMiAccountManager;->isUseLocal()Z"
+        },
+        {
+          "codeUnitOffset": 29,
+          "fileOffset": 2670786,
+          "opcode": 112,
+          "methodIndex": 56133,
+          "target": "Ljava/lang/StringBuilder;-><init>()V"
+        },
+        {
+          "codeUnitOffset": 34,
+          "fileOffset": 2670796,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 37,
+          "fileOffset": 2670802,
+          "opcode": 110,
+          "methodIndex": 56144,
+          "target": "Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 40,
+          "fileOffset": 2670808,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 43,
+          "fileOffset": 2670814,
+          "opcode": 110,
+          "methodIndex": 56144,
+          "target": "Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 48,
+          "fileOffset": 2670824,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 53,
+          "fileOffset": 2670834,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 56,
+          "fileOffset": 2670840,
+          "opcode": 110,
+          "methodIndex": 56149,
+          "target": "Ljava/lang/StringBuilder;->toString()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 60,
+          "fileOffset": 2670848,
+          "opcode": 113,
+          "methodIndex": 10119,
+          "target": "Lcom/xiaomi/fitness/account/extensions/LogExtKt;->logi(Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 63,
+          "fileOffset": 2670854,
+          "opcode": 112,
+          "methodIndex": 10492,
+          "target": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->notifyAuthenticate(Landroid/content/Intent;I)V"
+        },
+        {
+          "codeUnitOffset": 66,
+          "fileOffset": 2670860,
+          "opcode": 110,
+          "methodIndex": 10486,
+          "target": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->getMAccessManager()Lcom/xiaomi/fitness/account/manager/IMiAccountManager;"
+        },
+        {
+          "codeUnitOffset": 70,
+          "fileOffset": 2670868,
+          "opcode": 114,
+          "methodIndex": 10322,
+          "target": "Lcom/xiaomi/fitness/account/manager/IMiAccountManager;->getMiAccount()Landroid/accounts/Account;"
+        },
+        {
+          "codeUnitOffset": 79,
+          "fileOffset": 2670886,
+          "opcode": 114,
+          "methodIndex": 55935,
+          "target": "Ljava/lang/CharSequence;->length()I"
+        },
+        {
+          "codeUnitOffset": 85,
+          "fileOffset": 2670898,
+          "opcode": 110,
+          "methodIndex": 10486,
+          "target": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->getMAccessManager()Lcom/xiaomi/fitness/account/manager/IMiAccountManager;"
+        },
+        {
+          "codeUnitOffset": 89,
+          "fileOffset": 2670906,
+          "opcode": 114,
+          "methodIndex": 10326,
+          "target": "Lcom/xiaomi/fitness/account/manager/IMiAccountManager;->getSid()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 99,
+          "fileOffset": 2670926,
+          "opcode": 110,
+          "methodIndex": 56560,
+          "target": "Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 107,
+          "fileOffset": 2670942,
+          "opcode": 112,
+          "methodIndex": 56133,
+          "target": "Ljava/lang/StringBuilder;-><init>()V"
+        },
+        {
+          "codeUnitOffset": 112,
+          "fileOffset": 2670952,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 115,
+          "fileOffset": 2670958,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 120,
+          "fileOffset": 2670968,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 123,
+          "fileOffset": 2670974,
+          "opcode": 110,
+          "methodIndex": 56142,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 126,
+          "fileOffset": 2670980,
+          "opcode": 110,
+          "methodIndex": 56149,
+          "target": "Ljava/lang/StringBuilder;->toString()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 130,
+          "fileOffset": 2670988,
+          "opcode": 113,
+          "methodIndex": 10119,
+          "target": "Lcom/xiaomi/fitness/account/extensions/LogExtKt;->logi(Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 136,
+          "fileOffset": 2671000,
+          "opcode": 110,
+          "methodIndex": 10456,
+          "target": "Lcom/xiaomi/fitness/account/token/MiAccessToken;->setUpdated(Z)V"
+        },
+        {
+          "codeUnitOffset": 140,
+          "fileOffset": 2671008,
+          "opcode": 110,
+          "methodIndex": 10486,
+          "target": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->getMAccessManager()Lcom/xiaomi/fitness/account/manager/IMiAccountManager;"
+        },
+        {
+          "codeUnitOffset": 144,
+          "fileOffset": 2671016,
+          "opcode": 114,
+          "methodIndex": 10325,
+          "target": "Lcom/xiaomi/fitness/account/manager/IMiAccountManager;->getServiceToken(Ljava/lang/String;Z)Lcom/xiaomi/passport/servicetoken/ServiceTokenResult;"
+        },
+        {
+          "codeUnitOffset": 150,
+          "fileOffset": 2671028,
+          "opcode": 112,
+          "methodIndex": 56133,
+          "target": "Ljava/lang/StringBuilder;-><init>()V"
+        },
+        {
+          "codeUnitOffset": 155,
+          "fileOffset": 2671038,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 158,
+          "fileOffset": 2671044,
+          "opcode": 110,
+          "methodIndex": 56142,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 161,
+          "fileOffset": 2671050,
+          "opcode": 110,
+          "methodIndex": 56149,
+          "target": "Ljava/lang/StringBuilder;->toString()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 165,
+          "fileOffset": 2671058,
+          "opcode": 113,
+          "methodIndex": 10120,
+          "target": "Lcom/xiaomi/fitness/account/extensions/LogExtKt;->safePrintI(Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 170,
+          "fileOffset": 2671068,
+          "opcode": 112,
+          "methodIndex": 56133,
+          "target": "Ljava/lang/StringBuilder;-><init>()V"
+        },
+        {
+          "codeUnitOffset": 175,
+          "fileOffset": 2671078,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 178,
+          "fileOffset": 2671084,
+          "opcode": 110,
+          "methodIndex": 56144,
+          "target": "Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 183,
+          "fileOffset": 2671094,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 186,
+          "fileOffset": 2671100,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 189,
+          "fileOffset": 2671106,
+          "opcode": 110,
+          "methodIndex": 56149,
+          "target": "Ljava/lang/StringBuilder;->toString()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 193,
+          "fileOffset": 2671114,
+          "opcode": 113,
+          "methodIndex": 10119,
+          "target": "Lcom/xiaomi/fitness/account/extensions/LogExtKt;->logi(Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 210,
+          "fileOffset": 2671148,
+          "opcode": 113,
+          "methodIndex": 57512,
+          "target": "Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 229,
+          "fileOffset": 2671186,
+          "opcode": 118,
+          "methodIndex": 10427,
+          "target": "Lcom/xiaomi/fitness/account/token/MiAccessToken;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JZILkotlin/jvm/internal/DefaultConstructorMarker;)V"
+        },
+        {
+          "codeUnitOffset": 234,
+          "fileOffset": 2671196,
+          "opcode": 114,
+          "methodIndex": 56499,
+          "target": "Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 237,
+          "fileOffset": 2671202,
+          "opcode": 112,
+          "methodIndex": 10493,
+          "target": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->notifyObserver(Ljava/lang/String;Lcom/xiaomi/fitness/account/token/MiAccessToken;)V"
+        },
+        {
+          "codeUnitOffset": 242,
+          "fileOffset": 2671212,
+          "opcode": 112,
+          "methodIndex": 56133,
+          "target": "Ljava/lang/StringBuilder;-><init>()V"
+        },
+        {
+          "codeUnitOffset": 247,
+          "fileOffset": 2671222,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 250,
+          "fileOffset": 2671228,
+          "opcode": 110,
+          "methodIndex": 56142,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 253,
+          "fileOffset": 2671234,
+          "opcode": 110,
+          "methodIndex": 56149,
+          "target": "Ljava/lang/StringBuilder;->toString()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 257,
+          "fileOffset": 2671242,
+          "opcode": 113,
+          "methodIndex": 10119,
+          "target": "Lcom/xiaomi/fitness/account/extensions/LogExtKt;->logi(Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 269,
+          "fileOffset": 2671266,
+          "opcode": 110,
+          "methodIndex": 10486,
+          "target": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->getMAccessManager()Lcom/xiaomi/fitness/account/manager/IMiAccountManager;"
+        },
+        {
+          "codeUnitOffset": 273,
+          "fileOffset": 2671274,
+          "opcode": 114,
+          "methodIndex": 10329,
+          "target": "Lcom/xiaomi/fitness/account/manager/IMiAccountManager;->isUseLocal()Z"
+        },
+        {
+          "codeUnitOffset": 279,
+          "fileOffset": 2671286,
+          "opcode": 112,
+          "methodIndex": 56133,
+          "target": "Ljava/lang/StringBuilder;-><init>()V"
+        },
+        {
+          "codeUnitOffset": 284,
+          "fileOffset": 2671296,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 287,
+          "fileOffset": 2671302,
+          "opcode": 110,
+          "methodIndex": 56144,
+          "target": "Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 290,
+          "fileOffset": 2671308,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 293,
+          "fileOffset": 2671314,
+          "opcode": 110,
+          "methodIndex": 56144,
+          "target": "Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 296,
+          "fileOffset": 2671320,
+          "opcode": 110,
+          "methodIndex": 56149,
+          "target": "Ljava/lang/StringBuilder;->toString()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 300,
+          "fileOffset": 2671328,
+          "opcode": 113,
+          "methodIndex": 10119,
+          "target": "Lcom/xiaomi/fitness/account/extensions/LogExtKt;->logi(Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 305,
+          "fileOffset": 2671338,
+          "opcode": 112,
+          "methodIndex": 10492,
+          "target": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->notifyAuthenticate(Landroid/content/Intent;I)V"
+        },
+        {
+          "codeUnitOffset": 310,
+          "fileOffset": 2671348,
+          "opcode": 110,
+          "methodIndex": 10486,
+          "target": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->getMAccessManager()Lcom/xiaomi/fitness/account/manager/IMiAccountManager;"
+        },
+        {
+          "codeUnitOffset": 314,
+          "fileOffset": 2671356,
+          "opcode": 114,
+          "methodIndex": 10329,
+          "target": "Lcom/xiaomi/fitness/account/manager/IMiAccountManager;->isUseLocal()Z"
+        },
+        {
+          "codeUnitOffset": 320,
+          "fileOffset": 2671368,
+          "opcode": 112,
+          "methodIndex": 56133,
+          "target": "Ljava/lang/StringBuilder;-><init>()V"
+        },
+        {
+          "codeUnitOffset": 325,
+          "fileOffset": 2671378,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 328,
+          "fileOffset": 2671384,
+          "opcode": 110,
+          "methodIndex": 56142,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 333,
+          "fileOffset": 2671394,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 336,
+          "fileOffset": 2671400,
+          "opcode": 110,
+          "methodIndex": 56144,
+          "target": "Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 341,
+          "fileOffset": 2671410,
+          "opcode": 110,
+          "methodIndex": 56143,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 344,
+          "fileOffset": 2671416,
+          "opcode": 110,
+          "methodIndex": 56144,
+          "target": "Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 347,
+          "fileOffset": 2671422,
+          "opcode": 110,
+          "methodIndex": 56149,
+          "target": "Ljava/lang/StringBuilder;->toString()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 351,
+          "fileOffset": 2671430,
+          "opcode": 113,
+          "methodIndex": 10119,
+          "target": "Lcom/xiaomi/fitness/account/extensions/LogExtKt;->logi(Ljava/lang/String;)V"
+        }
+      ],
+      "fields": [
+        {
+          "codeUnitOffset": 97,
+          "fileOffset": 2670922,
+          "opcode": 84,
+          "fieldIndex": 4585,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;",
+            "type": "Ljava/util/concurrent/ConcurrentHashMap;",
+            "name": "mAccessTokens"
+          }
+        },
+        {
+          "codeUnitOffset": 196,
+          "fileOffset": 2671120,
+          "opcode": 84,
+          "fieldIndex": 20817,
+          "field": {
+            "class": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult;",
+            "type": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult$ErrorCode;",
+            "name": "errorCode"
+          }
+        },
+        {
+          "codeUnitOffset": 198,
+          "fileOffset": 2671124,
+          "opcode": 98,
+          "fieldIndex": 20814,
+          "field": {
+            "class": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult$ErrorCode;",
+            "type": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult$ErrorCode;",
+            "name": "ERROR_NONE"
+          }
+        },
+        {
+          "codeUnitOffset": 202,
+          "fileOffset": 2671132,
+          "opcode": 84,
+          "fieldIndex": 20821,
+          "field": {
+            "class": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult;",
+            "type": "Ljava/lang/String;",
+            "name": "userId"
+          }
+        },
+        {
+          "codeUnitOffset": 206,
+          "fileOffset": 2671140,
+          "opcode": 84,
+          "fieldIndex": 984,
+          "field": {
+            "class": "Landroid/accounts/Account;",
+            "type": "Ljava/lang/String;",
+            "name": "name"
+          }
+        },
+        {
+          "codeUnitOffset": 216,
+          "fileOffset": 2671160,
+          "opcode": 84,
+          "fieldIndex": 20816,
+          "field": {
+            "class": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult;",
+            "type": "Ljava/lang/String;",
+            "name": "cUserId"
+          }
+        },
+        {
+          "codeUnitOffset": 218,
+          "fileOffset": 2671164,
+          "opcode": 84,
+          "fieldIndex": 20820,
+          "field": {
+            "class": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult;",
+            "type": "Ljava/lang/String;",
+            "name": "serviceToken"
+          }
+        },
+        {
+          "codeUnitOffset": 220,
+          "fileOffset": 2671168,
+          "opcode": 84,
+          "fieldIndex": 20819,
+          "field": {
+            "class": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult;",
+            "type": "Ljava/lang/String;",
+            "name": "security"
+          }
+        },
+        {
+          "codeUnitOffset": 232,
+          "fileOffset": 2671192,
+          "opcode": 84,
+          "fieldIndex": 4585,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;",
+            "type": "Ljava/util/concurrent/ConcurrentHashMap;",
+            "name": "mAccessTokens"
+          }
+        },
+        {
+          "codeUnitOffset": 261,
+          "fileOffset": 2671250,
+          "opcode": 98,
+          "fieldIndex": 20815,
+          "field": {
+            "class": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult$ErrorCode;",
+            "type": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult$ErrorCode;",
+            "name": "ERROR_USER_INTERACTION_NEEDED"
+          }
+        },
+        {
+          "codeUnitOffset": 265,
+          "fileOffset": 2671258,
+          "opcode": 84,
+          "fieldIndex": 20818,
+          "field": {
+            "class": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult;",
+            "type": "Landroid/content/Intent;",
+            "name": "intent"
+          }
+        },
+        {
+          "codeUnitOffset": 303,
+          "fileOffset": 2671334,
+          "opcode": 84,
+          "fieldIndex": 20818,
+          "field": {
+            "class": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult;",
+            "type": "Landroid/content/Intent;",
+            "name": "intent"
+          }
+        },
+        {
+          "codeUnitOffset": 308,
+          "fileOffset": 2671344,
+          "opcode": 84,
+          "fieldIndex": 20817,
+          "field": {
+            "class": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult;",
+            "type": "Lcom/xiaomi/passport/servicetoken/ServiceTokenResult$ErrorCode;",
+            "name": "errorCode"
+          }
+        }
+      ],
+      "types": [
+        {
+          "codeUnitOffset": 27,
+          "fileOffset": 2670782,
+          "opcode": 34,
+          "type": "Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 103,
+          "fileOffset": 2670934,
+          "opcode": 31,
+          "type": "Lcom/xiaomi/fitness/account/token/MiAccessToken;"
+        },
+        {
+          "codeUnitOffset": 105,
+          "fileOffset": 2670938,
+          "opcode": 34,
+          "type": "Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 148,
+          "fileOffset": 2671024,
+          "opcode": 34,
+          "type": "Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 168,
+          "fileOffset": 2671064,
+          "opcode": 34,
+          "type": "Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 214,
+          "fileOffset": 2671156,
+          "opcode": 34,
+          "type": "Lcom/xiaomi/fitness/account/token/MiAccessToken;"
+        },
+        {
+          "codeUnitOffset": 240,
+          "fileOffset": 2671208,
+          "opcode": 34,
+          "type": "Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 277,
+          "fileOffset": 2671282,
+          "opcode": 34,
+          "type": "Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 318,
+          "fileOffset": 2671364,
+          "opcode": 34,
+          "type": "Ljava/lang/StringBuilder;"
+        }
+      ]
+    }
+  },
+  {
+    "dex": "classes9.dex",
+    "dexSha256": "01f56ac1f2ae18397c5f38b740355d7da1202f5cc72f94acc01dd74e54d91665",
+    "class": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;",
+    "method": {
+      "id": 10492,
+      "class": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;",
+      "proto": 8121,
+      "name": "notifyAuthenticate",
+      "signature": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->notifyAuthenticate(Landroid/content/Intent;I)V",
+      "access": 18,
+      "codeOff": 2671704
+    },
+    "code": {
+      "fileOffset": 2671704,
+      "registers": 6,
+      "incomingWords": 3,
+      "outgoingWords": 4,
+      "tryCount": 0,
+      "codeUnits": 24,
+      "decodedCodeUnits": 24,
+      "errors": [],
+      "strings": [],
+      "calls": [
+        {
+          "codeUnitOffset": 8,
+          "fileOffset": 2671736,
+          "opcode": 110,
+          "methodIndex": 56646,
+          "target": "Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z"
+        },
+        {
+          "codeUnitOffset": 15,
+          "fileOffset": 2671750,
+          "opcode": 113,
+          "methodIndex": 10317,
+          "target": "Lcom/xiaomi/fitness/account/manager/BroadcastsKt;->broadcastLogin$default(Landroid/content/Intent;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)V"
+        },
+        {
+          "codeUnitOffset": 20,
+          "fileOffset": 2671760,
+          "opcode": 110,
+          "methodIndex": 56582,
+          "target": "Ljava/util/concurrent/CountDownLatch;->await()V"
+        }
+      ],
+      "fields": [
+        {
+          "codeUnitOffset": 4,
+          "fileOffset": 2671728,
+          "opcode": 84,
+          "fieldIndex": 4587,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;",
+            "type": "Ljava/util/concurrent/atomic/AtomicBoolean;",
+            "name": "mRefreshing"
+          }
+        },
+        {
+          "codeUnitOffset": 18,
+          "fileOffset": 2671756,
+          "opcode": 84,
+          "fieldIndex": 4586,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;",
+            "type": "Ljava/util/concurrent/CountDownLatch;",
+            "name": "mLoginSemaphore"
+          }
+        }
+      ],
+      "types": []
+    },
+    "rawInstructions": [
+      {
+        "codeUnit": 0,
+        "hex": "2012"
+      },
+      {
+        "codeUnit": 1,
+        "hex": "0532 0003"
+      },
+      {
+        "codeUnit": 3,
+        "hex": "000e"
+      },
+      {
+        "codeUnit": 4,
+        "hex": "3554 11eb"
+      },
+      {
+        "codeUnit": 6,
+        "hex": "0112"
+      },
+      {
+        "codeUnit": 7,
+        "hex": "1212"
+      },
+      {
+        "codeUnit": 8,
+        "hex": "306e dd46 0215"
+      },
+      {
+        "codeUnit": 11,
+        "hex": "050a"
+      },
+      {
+        "codeUnit": 12,
+        "hex": "0538 0006"
+      },
+      {
+        "codeUnit": 14,
+        "hex": "0512"
+      },
+      {
+        "codeUnit": 15,
+        "hex": "4071 284d 5054"
+      },
+      {
+        "codeUnit": 18,
+        "hex": "3454 11ea"
+      },
+      {
+        "codeUnit": 20,
+        "hex": "106e dd06 0004"
+      },
+      {
+        "codeUnit": 23,
+        "hex": "000e"
+      }
+    ],
+    "interpretation": "registers=6, incomingWords=3: v3=this, v4=intent, v5=loginPolicy; const/4 v0,2; if-eq v5,v0 -> continue, else return; then AtomicBoolean compareAndSet(false,true), broadcastLogin, CountDownLatch.await"
+  },
+  {
+    "dex": "classes9.dex",
+    "dexSha256": "01f56ac1f2ae18397c5f38b740355d7da1202f5cc72f94acc01dd74e54d91665",
+    "class": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;",
+    "method": {
+      "id": 10489,
+      "class": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;",
+      "proto": 1980,
+      "name": "getServiceToken",
+      "signature": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->getServiceToken(Ljava/lang/String;ZI)Lcom/xiaomi/fitness/account/token/MiAccessToken;",
+      "access": 1,
+      "codeOff": 2670548
+    },
+    "code": {
+      "fileOffset": 2670548,
+      "registers": 7,
+      "incomingWords": 4,
+      "outgoingWords": 4,
+      "tryCount": 1,
+      "codeUnits": 68,
+      "decodedCodeUnits": 68,
+      "errors": [],
+      "strings": [
+        {
+          "codeUnitOffset": 0,
+          "fileOffset": 2670564,
+          "stringIndex": 62423,
+          "value": "sid"
+        },
+        {
+          "codeUnitOffset": 18,
+          "fileOffset": 2670600,
+          "stringIndex": 47060,
+          "value": "getServiceToken() null , login maybe"
+        },
+        {
+          "codeUnitOffset": 33,
+          "fileOffset": 2670630,
+          "stringIndex": 11406,
+          "value": "It is updating token, wait!"
+        }
+      ],
+      "calls": [
+        {
+          "codeUnitOffset": 2,
+          "fileOffset": 2670568,
+          "opcode": 113,
+          "methodIndex": 57513,
+          "target": "Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 8,
+          "fileOffset": 2670580,
+          "opcode": 110,
+          "methodIndex": 10486,
+          "target": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->getMAccessManager()Lcom/xiaomi/fitness/account/manager/IMiAccountManager;"
+        },
+        {
+          "codeUnitOffset": 12,
+          "fileOffset": 2670588,
+          "opcode": 114,
+          "methodIndex": 10322,
+          "target": "Lcom/xiaomi/fitness/account/manager/IMiAccountManager;->getMiAccount()Landroid/accounts/Account;"
+        },
+        {
+          "codeUnitOffset": 20,
+          "fileOffset": 2670604,
+          "opcode": 113,
+          "methodIndex": 10119,
+          "target": "Lcom/xiaomi/fitness/account/extensions/LogExtKt;->logi(Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 35,
+          "fileOffset": 2670634,
+          "opcode": 113,
+          "methodIndex": 10119,
+          "target": "Lcom/xiaomi/fitness/account/extensions/LogExtKt;->logi(Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 40,
+          "fileOffset": 2670644,
+          "opcode": 110,
+          "methodIndex": 56068,
+          "target": "Ljava/lang/Object;->wait()V"
+        },
+        {
+          "codeUnitOffset": 43,
+          "fileOffset": 2670650,
+          "opcode": 112,
+          "methodIndex": 10488,
+          "target": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->getServiceToken(Ljava/lang/String;Z)Lcom/xiaomi/fitness/account/token/MiAccessToken;"
+        },
+        {
+          "codeUnitOffset": 53,
+          "fileOffset": 2670670,
+          "opcode": 112,
+          "methodIndex": 10490,
+          "target": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;->getToken(Ljava/lang/String;ZI)Lcom/xiaomi/fitness/account/token/MiAccessToken;"
+        },
+        {
+          "codeUnitOffset": 61,
+          "fileOffset": 2670686,
+          "opcode": 110,
+          "methodIndex": 56066,
+          "target": "Ljava/lang/Object;->notifyAll()V"
+        }
+      ],
+      "fields": [
+        {
+          "codeUnitOffset": 25,
+          "fileOffset": 2670614,
+          "opcode": 84,
+          "fieldIndex": 4589,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;",
+            "type": "Ljava/lang/Object;",
+            "name": "mUpdateLock"
+          }
+        },
+        {
+          "codeUnitOffset": 28,
+          "fileOffset": 2670620,
+          "opcode": 85,
+          "fieldIndex": 4583,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;",
+            "type": "Z",
+            "name": "isUpdating"
+          }
+        },
+        {
+          "codeUnitOffset": 38,
+          "fileOffset": 2670640,
+          "opcode": 84,
+          "fieldIndex": 4589,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;",
+            "type": "Ljava/lang/Object;",
+            "name": "mUpdateLock"
+          }
+        },
+        {
+          "codeUnitOffset": 51,
+          "fileOffset": 2670666,
+          "opcode": 92,
+          "fieldIndex": 4583,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;",
+            "type": "Z",
+            "name": "isUpdating"
+          }
+        },
+        {
+          "codeUnitOffset": 57,
+          "fileOffset": 2670678,
+          "opcode": 92,
+          "fieldIndex": 4583,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;",
+            "type": "Z",
+            "name": "isUpdating"
+          }
+        },
+        {
+          "codeUnitOffset": 59,
+          "fileOffset": 2670682,
+          "opcode": 84,
+          "fieldIndex": 4589,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/account/token/TokenManagerImpl;",
+            "type": "Ljava/lang/Object;",
+            "name": "mUpdateLock"
+          }
+        }
+      ],
+      "types": []
+    }
+  },
+  {
+    "dex": "classes10.dex",
+    "dexSha256": "9f2467f0e23133d440acd5e4cf4324d3121f9ab7174379c7adde9f61917d657c",
+    "class": "Lcom/xiaomi/fitness/eco/device/manager/OtherDeviceLoaderManagerImpl;",
+    "method": {
+      "id": 10726,
+      "class": "Lcom/xiaomi/fitness/eco/device/manager/OtherDeviceLoaderManagerImpl;",
+      "proto": 3636,
+      "name": "refreshEcoDevices",
+      "signature": "Lcom/xiaomi/fitness/eco/device/manager/OtherDeviceLoaderManagerImpl;->refreshEcoDevices(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;",
+      "access": 18,
+      "codeOff": 2827048
+    },
+    "code": {
+      "fileOffset": 2827048,
+      "registers": 5,
+      "incomingWords": 2,
+      "outgoingWords": 3,
+      "tryCount": 0,
+      "codeUnits": 41,
+      "decodedCodeUnits": 41,
+      "errors": [],
+      "strings": [],
+      "calls": [
+        {
+          "codeUnitOffset": 2,
+          "fileOffset": 2827068,
+          "opcode": 113,
+          "methodIndex": 55964,
+          "target": "Lkotlin/coroutines/intrinsics/IntrinsicsKt;->intercepted(Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;"
+        },
+        {
+          "codeUnitOffset": 7,
+          "fileOffset": 2827078,
+          "opcode": 112,
+          "methodIndex": 56106,
+          "target": "Lkotlinx/coroutines/CancellableContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;I)V"
+        },
+        {
+          "codeUnitOffset": 10,
+          "fileOffset": 2827084,
+          "opcode": 110,
+          "methodIndex": 56108,
+          "target": "Lkotlinx/coroutines/CancellableContinuationImpl;->initCancellability()V"
+        },
+        {
+          "codeUnitOffset": 15,
+          "fileOffset": 2827094,
+          "opcode": 113,
+          "methodIndex": 11252,
+          "target": "Lcom/xiaomi/fitness/eco/device/manager/export/EcoDeviceManagerExtKt;->getInstance(Lcom/xiaomi/fitness/eco/device/manager/export/EcoDeviceManager$Companion;)Lcom/xiaomi/fitness/eco/device/manager/export/EcoDeviceManager;"
+        },
+        {
+          "codeUnitOffset": 21,
+          "fileOffset": 2827106,
+          "opcode": 112,
+          "methodIndex": 10705,
+          "target": "Lcom/xiaomi/fitness/eco/device/manager/OtherDeviceLoaderManagerImpl$refreshEcoDevices$2$1;-><init>(Lkotlinx/coroutines/CancellableContinuation;)V"
+        },
+        {
+          "codeUnitOffset": 24,
+          "fileOffset": 2827112,
+          "opcode": 110,
+          "methodIndex": 11246,
+          "target": "Lcom/xiaomi/fitness/eco/device/manager/export/EcoDeviceManager;->refreshEcoList(Lcyl;)V"
+        },
+        {
+          "codeUnitOffset": 27,
+          "fileOffset": 2827118,
+          "opcode": 110,
+          "methodIndex": 56107,
+          "target": "Lkotlinx/coroutines/CancellableContinuationImpl;->getResult()Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 31,
+          "fileOffset": 2827126,
+          "opcode": 113,
+          "methodIndex": 55963,
+          "target": "Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 37,
+          "fileOffset": 2827138,
+          "opcode": 113,
+          "methodIndex": 55971,
+          "target": "Lkotlin/coroutines/jvm/internal/DebugProbesKt;->probeCoroutineSuspended(Lkotlin/coroutines/Continuation;)V"
+        }
+      ],
+      "fields": [
+        {
+          "codeUnitOffset": 13,
+          "fileOffset": 2827090,
+          "opcode": 98,
+          "fieldIndex": 6282,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/export/EcoDeviceManager;",
+            "type": "Lcom/xiaomi/fitness/eco/device/manager/export/EcoDeviceManager$Companion;",
+            "name": "Companion"
+          }
+        }
+      ],
+      "types": [
+        {
+          "codeUnitOffset": 0,
+          "fileOffset": 2827064,
+          "opcode": 34,
+          "type": "Lkotlinx/coroutines/CancellableContinuationImpl;"
+        },
+        {
+          "codeUnitOffset": 19,
+          "fileOffset": 2827102,
+          "opcode": 34,
+          "type": "Lcom/xiaomi/fitness/eco/device/manager/OtherDeviceLoaderManagerImpl$refreshEcoDevices$2$1;"
+        }
+      ]
+    }
+  },
+  {
+    "dex": "classes10.dex",
+    "dexSha256": "9f2467f0e23133d440acd5e4cf4324d3121f9ab7174379c7adde9f61917d657c",
+    "class": "Lcom/xiaomi/fitness/eco/device/manager/OtherDeviceLoaderManagerImpl;",
+    "method": {
+      "id": 10728,
+      "class": "Lcom/xiaomi/fitness/eco/device/manager/OtherDeviceLoaderManagerImpl;",
+      "proto": 5725,
+      "name": "updateDevices",
+      "signature": "Lcom/xiaomi/fitness/eco/device/manager/OtherDeviceLoaderManagerImpl;->updateDevices()V",
+      "access": 1,
+      "codeOff": 2827316
+    },
+    "code": {
+      "fileOffset": 2827316,
+      "registers": 4,
+      "incomingWords": 1,
+      "outgoingWords": 4,
+      "tryCount": 0,
+      "codeUnits": 11,
+      "decodedCodeUnits": 11,
+      "errors": [],
+      "strings": [],
+      "calls": [
+        {
+          "codeUnitOffset": 3,
+          "fileOffset": 2827338,
+          "opcode": 112,
+          "methodIndex": 10717,
+          "target": "Lcom/xiaomi/fitness/eco/device/manager/OtherDeviceLoaderManagerImpl$updateDevices$1;-><init>(Lcom/xiaomi/fitness/eco/device/manager/OtherDeviceLoaderManagerImpl;Lkotlin/coroutines/Continuation;)V"
+        },
+        {
+          "codeUnitOffset": 7,
+          "fileOffset": 2827346,
+          "opcode": 113,
+          "methodIndex": 5338,
+          "target": "Lcom/xiaomi/fitness/common/extensions/AnyExtKt;->io$default(Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;"
+        }
+      ],
+      "fields": [],
+      "types": [
+        {
+          "codeUnitOffset": 0,
+          "fileOffset": 2827332,
+          "opcode": 34,
+          "type": "Lcom/xiaomi/fitness/eco/device/manager/OtherDeviceLoaderManagerImpl$updateDevices$1;"
+        }
+      ]
+    }
+  },
+  {
+    "dex": "classes10.dex",
+    "dexSha256": "9f2467f0e23133d440acd5e4cf4324d3121f9ab7174379c7adde9f61917d657c",
+    "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;",
+    "method": {
+      "id": 11884,
+      "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;",
+      "proto": 3399,
+      "name": "getEcoDevices",
+      "signature": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;->getEcoDevices(IILkotlin/coroutines/Continuation;)Ljava/lang/Object;",
+      "access": 18,
+      "codeOff": 2882864
+    },
+    "code": {
+      "fileOffset": 2882864,
+      "registers": 16,
+      "incomingWords": 4,
+      "outgoingWords": 5,
+      "tryCount": 0,
+      "codeUnits": 337,
+      "decodedCodeUnits": 337,
+      "errors": [],
+      "strings": [
+        {
+          "codeUnitOffset": 71,
+          "fileOffset": 2883022,
+          "stringIndex": 33754,
+          "value": "call to 'resume' before 'invoke' with coroutine"
+        },
+        {
+          "codeUnitOffset": 131,
+          "fileOffset": 2883142,
+          "stringIndex": 40819,
+          "value": "getEcoDevices scaleData is "
+        },
+        {
+          "codeUnitOffset": 155,
+          "fileOffset": 2883190,
+          "stringIndex": 34392,
+          "value": "code"
+        },
+        {
+          "codeUnitOffset": 161,
+          "fileOffset": 2883202,
+          "stringIndex": 54320,
+          "value": "result"
+        },
+        {
+          "codeUnitOffset": 167,
+          "fileOffset": 2883214,
+          "stringIndex": 48759,
+          "value": "list"
+        },
+        {
+          "codeUnitOffset": 187,
+          "fileOffset": 2883254,
+          "stringIndex": 51021,
+          "value": "null cannot be cast to non-null type kotlin.collections.MutableList<com.xiaomi.fitness.electronic.scale.export.bean.RespDeviceInfo>"
+        },
+        {
+          "codeUnitOffset": 269,
+          "fileOffset": 2883418,
+          "stringIndex": 40820,
+          "value": "getEcoDevices shareList is "
+        }
+      ],
+      "calls": [
+        {
+          "codeUnitOffset": 21,
+          "fileOffset": 2882922,
+          "opcode": 112,
+          "methodIndex": 11829,
+          "target": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;-><init>(Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;Lkotlin/coroutines/Continuation;)V"
+        },
+        {
+          "codeUnitOffset": 26,
+          "fileOffset": 2882932,
+          "opcode": 113,
+          "methodIndex": 55963,
+          "target": "Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 64,
+          "fileOffset": 2883008,
+          "opcode": 113,
+          "methodIndex": 55856,
+          "target": "Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V"
+        },
+        {
+          "codeUnitOffset": 73,
+          "fileOffset": 2883026,
+          "opcode": 112,
+          "methodIndex": 54670,
+          "target": "Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 85,
+          "fileOffset": 2883050,
+          "opcode": 113,
+          "methodIndex": 55856,
+          "target": "Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V"
+        },
+        {
+          "codeUnitOffset": 94,
+          "fileOffset": 2883068,
+          "opcode": 113,
+          "methodIndex": 55856,
+          "target": "Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V"
+        },
+        {
+          "codeUnitOffset": 99,
+          "fileOffset": 2883078,
+          "opcode": 112,
+          "methodIndex": 54894,
+          "target": "Ljava/util/ArrayList;-><init>()V"
+        },
+        {
+          "codeUnitOffset": 112,
+          "fileOffset": 2883104,
+          "opcode": 114,
+          "methodIndex": 16524,
+          "target": "Lcom/xiaomi/fitness/electronic/scale/export/ElectronicScaleRequest;->getEcoDevices(IIILkotlin/coroutines/Continuation;)Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 128,
+          "fileOffset": 2883136,
+          "opcode": 112,
+          "methodIndex": 54764,
+          "target": "Ljava/lang/StringBuilder;-><init>()V"
+        },
+        {
+          "codeUnitOffset": 133,
+          "fileOffset": 2883146,
+          "opcode": 110,
+          "methodIndex": 54772,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 136,
+          "fileOffset": 2883152,
+          "opcode": 110,
+          "methodIndex": 54771,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 139,
+          "fileOffset": 2883158,
+          "opcode": 110,
+          "methodIndex": 54779,
+          "target": "Ljava/lang/StringBuilder;->toString()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 143,
+          "fileOffset": 2883166,
+          "opcode": 113,
+          "methodIndex": 3708,
+          "target": "Lcom/xiaomi/fit/eco/device/extensions/EcoDeviceModelExtKt;->logi(Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 148,
+          "fileOffset": 2883176,
+          "opcode": 110,
+          "methodIndex": 16753,
+          "target": "Lcom/xiaomi/fitness/electronic/scale/export/bean/ScaleData;->getResp()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 152,
+          "fileOffset": 2883184,
+          "opcode": 112,
+          "methodIndex": 59708,
+          "target": "Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 157,
+          "fileOffset": 2883194,
+          "opcode": 110,
+          "methodIndex": 59715,
+          "target": "Lorg/json/JSONObject;->optInt(Ljava/lang/String;)I"
+        },
+        {
+          "codeUnitOffset": 163,
+          "fileOffset": 2883206,
+          "opcode": 110,
+          "methodIndex": 59711,
+          "target": "Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;"
+        },
+        {
+          "codeUnitOffset": 169,
+          "fileOffset": 2883218,
+          "opcode": 110,
+          "methodIndex": 59716,
+          "target": "Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;"
+        },
+        {
+          "codeUnitOffset": 177,
+          "fileOffset": 2883234,
+          "opcode": 110,
+          "methodIndex": 59706,
+          "target": "Lorg/json/JSONArray;->toString()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 183,
+          "fileOffset": 2883246,
+          "opcode": 113,
+          "methodIndex": 54371,
+          "target": "Liye;->g(Ljava/lang/String;Ljava/lang/Class;)Ljava/util/List;"
+        },
+        {
+          "codeUnitOffset": 189,
+          "fileOffset": 2883258,
+          "opcode": 113,
+          "methodIndex": 55999,
+          "target": "Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 192,
+          "fileOffset": 2883264,
+          "opcode": 113,
+          "methodIndex": 56017,
+          "target": "Lkotlin/jvm/internal/TypeIntrinsics;->asMutableList(Ljava/lang/Object;)Ljava/util/List;"
+        },
+        {
+          "codeUnitOffset": 203,
+          "fileOffset": 2883286,
+          "opcode": 114,
+          "methodIndex": 54943,
+          "target": "Ljava/util/Collection;->isEmpty()Z"
+        },
+        {
+          "codeUnitOffset": 210,
+          "fileOffset": 2883300,
+          "opcode": 114,
+          "methodIndex": 55008,
+          "target": "Ljava/util/List;->addAll(Ljava/util/Collection;)Z"
+        },
+        {
+          "codeUnitOffset": 217,
+          "fileOffset": 2883314,
+          "opcode": 113,
+          "methodIndex": 55972,
+          "target": "Lkotlin/coroutines/jvm/internal/SpillingKt;->nullOutSpilledVariable(Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 223,
+          "fileOffset": 2883326,
+          "opcode": 113,
+          "methodIndex": 55972,
+          "target": "Lkotlin/coroutines/jvm/internal/SpillingKt;->nullOutSpilledVariable(Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 229,
+          "fileOffset": 2883338,
+          "opcode": 113,
+          "methodIndex": 55972,
+          "target": "Lkotlin/coroutines/jvm/internal/SpillingKt;->nullOutSpilledVariable(Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 235,
+          "fileOffset": 2883350,
+          "opcode": 113,
+          "methodIndex": 55972,
+          "target": "Lkotlin/coroutines/jvm/internal/SpillingKt;->nullOutSpilledVariable(Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 241,
+          "fileOffset": 2883362,
+          "opcode": 113,
+          "methodIndex": 55972,
+          "target": "Lkotlin/coroutines/jvm/internal/SpillingKt;->nullOutSpilledVariable(Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 255,
+          "fileOffset": 2883390,
+          "opcode": 114,
+          "methodIndex": 16529,
+          "target": "Lcom/xiaomi/fitness/electronic/scale/export/ElectronicScaleRequest;->getShareListSync(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 266,
+          "fileOffset": 2883412,
+          "opcode": 112,
+          "methodIndex": 54764,
+          "target": "Ljava/lang/StringBuilder;-><init>()V"
+        },
+        {
+          "codeUnitOffset": 271,
+          "fileOffset": 2883422,
+          "opcode": 110,
+          "methodIndex": 54772,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 274,
+          "fileOffset": 2883428,
+          "opcode": 110,
+          "methodIndex": 54771,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 277,
+          "fileOffset": 2883434,
+          "opcode": 110,
+          "methodIndex": 54779,
+          "target": "Ljava/lang/StringBuilder;->toString()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 281,
+          "fileOffset": 2883442,
+          "opcode": 113,
+          "methodIndex": 3708,
+          "target": "Lcom/xiaomi/fit/eco/device/extensions/EcoDeviceModelExtKt;->logi(Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 286,
+          "fileOffset": 2883452,
+          "opcode": 112,
+          "methodIndex": 3424,
+          "target": "Lcom/google/gson/Gson;-><init>()V"
+        },
+        {
+          "codeUnitOffset": 289,
+          "fileOffset": 2883458,
+          "opcode": 110,
+          "methodIndex": 16753,
+          "target": "Lcom/xiaomi/fitness/electronic/scale/export/bean/ScaleData;->getResp()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 295,
+          "fileOffset": 2883470,
+          "opcode": 112,
+          "methodIndex": 11828,
+          "target": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$$inlined$fromJson$1;-><init>()V"
+        },
+        {
+          "codeUnitOffset": 298,
+          "fileOffset": 2883476,
+          "opcode": 110,
+          "methodIndex": 3458,
+          "target": "Lcom/google/gson/reflect/TypeToken;->getType()Ljava/lang/reflect/Type;"
+        },
+        {
+          "codeUnitOffset": 302,
+          "fileOffset": 2883484,
+          "opcode": 110,
+          "methodIndex": 3428,
+          "target": "Lcom/google/gson/Gson;->fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 308,
+          "fileOffset": 2883496,
+          "opcode": 110,
+          "methodIndex": 16826,
+          "target": "Lcom/xiaomi/fitness/electronic/scale/export/bean/SharedUser;->getData()Ljava/util/List;"
+        },
+        {
+          "codeUnitOffset": 315,
+          "fileOffset": 2883510,
+          "opcode": 114,
+          "methodIndex": 54943,
+          "target": "Ljava/util/Collection;->isEmpty()Z"
+        },
+        {
+          "codeUnitOffset": 321,
+          "fileOffset": 2883522,
+          "opcode": 112,
+          "methodIndex": 11876,
+          "target": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;->changeEcoShareAccountToDeviceInfo(Ljava/util/List;)Ljava/util/List;"
+        },
+        {
+          "codeUnitOffset": 327,
+          "fileOffset": 2883534,
+          "opcode": 114,
+          "methodIndex": 54943,
+          "target": "Ljava/util/Collection;->isEmpty()Z"
+        },
+        {
+          "codeUnitOffset": 333,
+          "fileOffset": 2883546,
+          "opcode": 114,
+          "methodIndex": 55008,
+          "target": "Ljava/util/List;->addAll(Ljava/util/Collection;)Z"
+        }
+      ],
+      "fields": [
+        {
+          "codeUnitOffset": 7,
+          "fileOffset": 2882894,
+          "opcode": 82,
+          "fieldIndex": 6489,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "I",
+            "name": "label"
+          }
+        },
+        {
+          "codeUnitOffset": 16,
+          "fileOffset": 2882912,
+          "opcode": 89,
+          "fieldIndex": 6489,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "I",
+            "name": "label"
+          }
+        },
+        {
+          "codeUnitOffset": 24,
+          "fileOffset": 2882928,
+          "opcode": 84,
+          "fieldIndex": 6490,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "Ljava/lang/Object;",
+            "name": "result"
+          }
+        },
+        {
+          "codeUnitOffset": 30,
+          "fileOffset": 2882940,
+          "opcode": 82,
+          "fieldIndex": 6489,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "I",
+            "name": "label"
+          }
+        },
+        {
+          "codeUnitOffset": 40,
+          "fileOffset": 2882960,
+          "opcode": 84,
+          "fieldIndex": 6488,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "Ljava/lang/Object;",
+            "name": "L$5"
+          }
+        },
+        {
+          "codeUnitOffset": 44,
+          "fileOffset": 2882968,
+          "opcode": 84,
+          "fieldIndex": 6487,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "Ljava/lang/Object;",
+            "name": "L$4"
+          }
+        },
+        {
+          "codeUnitOffset": 48,
+          "fileOffset": 2882976,
+          "opcode": 84,
+          "fieldIndex": 6486,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "Ljava/lang/Object;",
+            "name": "L$3"
+          }
+        },
+        {
+          "codeUnitOffset": 52,
+          "fileOffset": 2882984,
+          "opcode": 84,
+          "fieldIndex": 6485,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "Ljava/lang/Object;",
+            "name": "L$2"
+          }
+        },
+        {
+          "codeUnitOffset": 56,
+          "fileOffset": 2882992,
+          "opcode": 84,
+          "fieldIndex": 6484,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "Ljava/lang/Object;",
+            "name": "L$1"
+          }
+        },
+        {
+          "codeUnitOffset": 60,
+          "fileOffset": 2883000,
+          "opcode": 84,
+          "fieldIndex": 6483,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "Ljava/lang/Object;",
+            "name": "L$0"
+          }
+        },
+        {
+          "codeUnitOffset": 77,
+          "fileOffset": 2883034,
+          "opcode": 82,
+          "fieldIndex": 6481,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "I",
+            "name": "I$1"
+          }
+        },
+        {
+          "codeUnitOffset": 79,
+          "fileOffset": 2883038,
+          "opcode": 82,
+          "fieldIndex": 6480,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "I",
+            "name": "I$0"
+          }
+        },
+        {
+          "codeUnitOffset": 81,
+          "fileOffset": 2883042,
+          "opcode": 84,
+          "fieldIndex": 6483,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "Ljava/lang/Object;",
+            "name": "L$0"
+          }
+        },
+        {
+          "codeUnitOffset": 102,
+          "fileOffset": 2883084,
+          "opcode": 84,
+          "fieldIndex": 6538,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;",
+            "type": "Lcom/xiaomi/fitness/electronic/scale/export/ElectronicScaleRequest;",
+            "name": "mEcoScaleRequest"
+          }
+        },
+        {
+          "codeUnitOffset": 104,
+          "fileOffset": 2883088,
+          "opcode": 91,
+          "fieldIndex": 6483,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "Ljava/lang/Object;",
+            "name": "L$0"
+          }
+        },
+        {
+          "codeUnitOffset": 106,
+          "fileOffset": 2883092,
+          "opcode": 89,
+          "fieldIndex": 6480,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "I",
+            "name": "I$0"
+          }
+        },
+        {
+          "codeUnitOffset": 108,
+          "fileOffset": 2883096,
+          "opcode": 89,
+          "fieldIndex": 6481,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "I",
+            "name": "I$1"
+          }
+        },
+        {
+          "codeUnitOffset": 110,
+          "fileOffset": 2883100,
+          "opcode": 89,
+          "fieldIndex": 6489,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "I",
+            "name": "label"
+          }
+        },
+        {
+          "codeUnitOffset": 213,
+          "fileOffset": 2883306,
+          "opcode": 84,
+          "fieldIndex": 6538,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;",
+            "type": "Lcom/xiaomi/fitness/electronic/scale/export/ElectronicScaleRequest;",
+            "name": "mEcoScaleRequest"
+          }
+        },
+        {
+          "codeUnitOffset": 215,
+          "fileOffset": 2883310,
+          "opcode": 91,
+          "fieldIndex": 6483,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "Ljava/lang/Object;",
+            "name": "L$0"
+          }
+        },
+        {
+          "codeUnitOffset": 221,
+          "fileOffset": 2883322,
+          "opcode": 91,
+          "fieldIndex": 6484,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "Ljava/lang/Object;",
+            "name": "L$1"
+          }
+        },
+        {
+          "codeUnitOffset": 227,
+          "fileOffset": 2883334,
+          "opcode": 91,
+          "fieldIndex": 6485,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "Ljava/lang/Object;",
+            "name": "L$2"
+          }
+        },
+        {
+          "codeUnitOffset": 233,
+          "fileOffset": 2883346,
+          "opcode": 91,
+          "fieldIndex": 6486,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "Ljava/lang/Object;",
+            "name": "L$3"
+          }
+        },
+        {
+          "codeUnitOffset": 239,
+          "fileOffset": 2883358,
+          "opcode": 91,
+          "fieldIndex": 6487,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "Ljava/lang/Object;",
+            "name": "L$4"
+          }
+        },
+        {
+          "codeUnitOffset": 245,
+          "fileOffset": 2883370,
+          "opcode": 91,
+          "fieldIndex": 6488,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "Ljava/lang/Object;",
+            "name": "L$5"
+          }
+        },
+        {
+          "codeUnitOffset": 247,
+          "fileOffset": 2883374,
+          "opcode": 89,
+          "fieldIndex": 6480,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "I",
+            "name": "I$0"
+          }
+        },
+        {
+          "codeUnitOffset": 249,
+          "fileOffset": 2883378,
+          "opcode": 89,
+          "fieldIndex": 6481,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "I",
+            "name": "I$1"
+          }
+        },
+        {
+          "codeUnitOffset": 251,
+          "fileOffset": 2883382,
+          "opcode": 89,
+          "fieldIndex": 6482,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "I",
+            "name": "I$2"
+          }
+        },
+        {
+          "codeUnitOffset": 253,
+          "fileOffset": 2883386,
+          "opcode": 89,
+          "fieldIndex": 6489,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;",
+            "type": "I",
+            "name": "label"
+          }
+        }
+      ],
+      "types": [
+        {
+          "codeUnitOffset": 0,
+          "fileOffset": 2882880,
+          "opcode": 32,
+          "type": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;"
+        },
+        {
+          "codeUnitOffset": 5,
+          "fileOffset": 2882890,
+          "opcode": 31,
+          "type": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;"
+        },
+        {
+          "codeUnitOffset": 19,
+          "fileOffset": 2882918,
+          "opcode": 34,
+          "type": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$1;"
+        },
+        {
+          "codeUnitOffset": 42,
+          "fileOffset": 2882964,
+          "opcode": 31,
+          "type": "Ljava/util/List;"
+        },
+        {
+          "codeUnitOffset": 46,
+          "fileOffset": 2882972,
+          "opcode": 31,
+          "type": "Lorg/json/JSONArray;"
+        },
+        {
+          "codeUnitOffset": 50,
+          "fileOffset": 2882980,
+          "opcode": 31,
+          "type": "Lorg/json/JSONObject;"
+        },
+        {
+          "codeUnitOffset": 54,
+          "fileOffset": 2882988,
+          "opcode": 31,
+          "type": "Lorg/json/JSONObject;"
+        },
+        {
+          "codeUnitOffset": 58,
+          "fileOffset": 2882996,
+          "opcode": 31,
+          "type": "Lcom/xiaomi/fitness/electronic/scale/export/bean/ScaleData;"
+        },
+        {
+          "codeUnitOffset": 62,
+          "fileOffset": 2883004,
+          "opcode": 31,
+          "type": "Ljava/util/List;"
+        },
+        {
+          "codeUnitOffset": 69,
+          "fileOffset": 2883018,
+          "opcode": 34,
+          "type": "Ljava/lang/IllegalStateException;"
+        },
+        {
+          "codeUnitOffset": 83,
+          "fileOffset": 2883046,
+          "opcode": 31,
+          "type": "Ljava/util/List;"
+        },
+        {
+          "codeUnitOffset": 97,
+          "fileOffset": 2883074,
+          "opcode": 34,
+          "type": "Ljava/util/ArrayList;"
+        },
+        {
+          "codeUnitOffset": 124,
+          "fileOffset": 2883128,
+          "opcode": 31,
+          "type": "Lcom/xiaomi/fitness/electronic/scale/export/bean/ScaleData;"
+        },
+        {
+          "codeUnitOffset": 126,
+          "fileOffset": 2883132,
+          "opcode": 34,
+          "type": "Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 146,
+          "fileOffset": 2883172,
+          "opcode": 34,
+          "type": "Lorg/json/JSONObject;"
+        },
+        {
+          "codeUnitOffset": 181,
+          "fileOffset": 2883242,
+          "opcode": 28,
+          "type": "Lcom/xiaomi/fitness/electronic/scale/export/bean/RespDeviceInfo;"
+        },
+        {
+          "codeUnitOffset": 199,
+          "fileOffset": 2883278,
+          "opcode": 31,
+          "type": "Ljava/util/Collection;"
+        },
+        {
+          "codeUnitOffset": 262,
+          "fileOffset": 2883404,
+          "opcode": 31,
+          "type": "Lcom/xiaomi/fitness/electronic/scale/export/bean/ScaleData;"
+        },
+        {
+          "codeUnitOffset": 264,
+          "fileOffset": 2883408,
+          "opcode": 34,
+          "type": "Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 284,
+          "fileOffset": 2883448,
+          "opcode": 34,
+          "type": "Lcom/google/gson/Gson;"
+        },
+        {
+          "codeUnitOffset": 293,
+          "fileOffset": 2883466,
+          "opcode": 34,
+          "type": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$getEcoDevices$$inlined$fromJson$1;"
+        },
+        {
+          "codeUnitOffset": 306,
+          "fileOffset": 2883492,
+          "opcode": 31,
+          "type": "Lcom/xiaomi/fitness/electronic/scale/export/bean/SharedUser;"
+        },
+        {
+          "codeUnitOffset": 313,
+          "fileOffset": 2883506,
+          "opcode": 31,
+          "type": "Ljava/util/Collection;"
+        },
+        {
+          "codeUnitOffset": 325,
+          "fileOffset": 2883530,
+          "opcode": 31,
+          "type": "Ljava/util/Collection;"
+        }
+      ]
+    }
+  },
+  {
+    "dex": "classes10.dex",
+    "dexSha256": "9f2467f0e23133d440acd5e4cf4324d3121f9ab7174379c7adde9f61917d657c",
+    "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;",
+    "method": {
+      "id": 11892,
+      "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;",
+      "proto": 3636,
+      "name": "requestEcoBindDeviceList",
+      "signature": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;->requestEcoBindDeviceList(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;",
+      "access": 17,
+      "codeOff": 2884100
+    },
+    "code": {
+      "fileOffset": 2884100,
+      "registers": 10,
+      "incomingWords": 2,
+      "outgoingWords": 6,
+      "tryCount": 0,
+      "codeUnits": 147,
+      "decodedCodeUnits": 147,
+      "errors": [],
+      "strings": [
+        {
+          "codeUnitOffset": 53,
+          "fileOffset": 2884222,
+          "stringIndex": 33754,
+          "value": "call to 'resume' before 'invoke' with coroutine"
+        },
+        {
+          "codeUnitOffset": 94,
+          "fileOffset": 2884304,
+          "stringIndex": 54022,
+          "value": "requestBindDeviceList ecoBindDevices is "
+        }
+      ],
+      "calls": [
+        {
+          "codeUnitOffset": 22,
+          "fileOffset": 2884160,
+          "opcode": 112,
+          "methodIndex": 11852,
+          "target": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$requestEcoBindDeviceList$1;-><init>(Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;Lkotlin/coroutines/Continuation;)V"
+        },
+        {
+          "codeUnitOffset": 28,
+          "fileOffset": 2884172,
+          "opcode": 113,
+          "methodIndex": 55963,
+          "target": "Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 46,
+          "fileOffset": 2884208,
+          "opcode": 113,
+          "methodIndex": 55856,
+          "target": "Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V"
+        },
+        {
+          "codeUnitOffset": 55,
+          "fileOffset": 2884226,
+          "opcode": 112,
+          "methodIndex": 54670,
+          "target": "Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 59,
+          "fileOffset": 2884234,
+          "opcode": 113,
+          "methodIndex": 55856,
+          "target": "Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V"
+        },
+        {
+          "codeUnitOffset": 64,
+          "fileOffset": 2884244,
+          "opcode": 113,
+          "methodIndex": 55856,
+          "target": "Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V"
+        },
+        {
+          "codeUnitOffset": 67,
+          "fileOffset": 2884250,
+          "opcode": 113,
+          "methodIndex": 54780,
+          "target": "Ljava/lang/System;->currentTimeMillis()J"
+        },
+        {
+          "codeUnitOffset": 80,
+          "fileOffset": 2884276,
+          "opcode": 119,
+          "methodIndex": 11885,
+          "target": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;->getEcoDevices$default(Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;IILkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 91,
+          "fileOffset": 2884298,
+          "opcode": 112,
+          "methodIndex": 54764,
+          "target": "Ljava/lang/StringBuilder;-><init>()V"
+        },
+        {
+          "codeUnitOffset": 96,
+          "fileOffset": 2884308,
+          "opcode": 110,
+          "methodIndex": 54772,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 99,
+          "fileOffset": 2884314,
+          "opcode": 110,
+          "methodIndex": 54771,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 102,
+          "fileOffset": 2884320,
+          "opcode": 110,
+          "methodIndex": 54779,
+          "target": "Ljava/lang/StringBuilder;->toString()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 106,
+          "fileOffset": 2884328,
+          "opcode": 113,
+          "methodIndex": 3708,
+          "target": "Lcom/xiaomi/fit/eco/device/extensions/EcoDeviceModelExtKt;->logi(Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 111,
+          "fileOffset": 2884338,
+          "opcode": 110,
+          "methodIndex": 55091,
+          "target": "Ljava/util/concurrent/CopyOnWriteArrayList;->clear()V"
+        },
+        {
+          "codeUnitOffset": 116,
+          "fileOffset": 2884348,
+          "opcode": 112,
+          "methodIndex": 11875,
+          "target": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;->changeEcoDeviceInfoToDevice(Ljava/util/List;)Ljava/util/List;"
+        },
+        {
+          "codeUnitOffset": 122,
+          "fileOffset": 2884360,
+          "opcode": 110,
+          "methodIndex": 55090,
+          "target": "Ljava/util/concurrent/CopyOnWriteArrayList;->addAll(Ljava/util/Collection;)Z"
+        },
+        {
+          "codeUnitOffset": 129,
+          "fileOffset": 2884374,
+          "opcode": 113,
+          "methodIndex": 55972,
+          "target": "Lkotlin/coroutines/jvm/internal/SpillingKt;->nullOutSpilledVariable(Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 137,
+          "fileOffset": 2884390,
+          "opcode": 114,
+          "methodIndex": 11111,
+          "target": "Lcom/xiaomi/fitness/eco/device/manager/dao/EcoDeviceDao;->updateBindDeviceList(Ljava/util/List;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"
+        }
+      ],
+      "fields": [
+        {
+          "codeUnitOffset": 7,
+          "fileOffset": 2884130,
+          "opcode": 82,
+          "fieldIndex": 6511,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$requestEcoBindDeviceList$1;",
+            "type": "I",
+            "name": "label"
+          }
+        },
+        {
+          "codeUnitOffset": 16,
+          "fileOffset": 2884148,
+          "opcode": 89,
+          "fieldIndex": 6511,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$requestEcoBindDeviceList$1;",
+            "type": "I",
+            "name": "label"
+          }
+        },
+        {
+          "codeUnitOffset": 26,
+          "fileOffset": 2884168,
+          "opcode": 84,
+          "fieldIndex": 6512,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$requestEcoBindDeviceList$1;",
+            "type": "Ljava/lang/Object;",
+            "name": "result"
+          }
+        },
+        {
+          "codeUnitOffset": 32,
+          "fileOffset": 2884180,
+          "opcode": 82,
+          "fieldIndex": 6511,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$requestEcoBindDeviceList$1;",
+            "type": "I",
+            "name": "label"
+          }
+        },
+        {
+          "codeUnitOffset": 42,
+          "fileOffset": 2884200,
+          "opcode": 84,
+          "fieldIndex": 6510,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$requestEcoBindDeviceList$1;",
+            "type": "Ljava/lang/Object;",
+            "name": "L$0"
+          }
+        },
+        {
+          "codeUnitOffset": 71,
+          "fileOffset": 2884258,
+          "opcode": 90,
+          "fieldIndex": 6540,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;",
+            "type": "J",
+            "name": "mLastRequestTime"
+          }
+        },
+        {
+          "codeUnitOffset": 73,
+          "fileOffset": 2884262,
+          "opcode": 89,
+          "fieldIndex": 6511,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$requestEcoBindDeviceList$1;",
+            "type": "I",
+            "name": "label"
+          }
+        },
+        {
+          "codeUnitOffset": 109,
+          "fileOffset": 2884334,
+          "opcode": 84,
+          "fieldIndex": 6534,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;",
+            "type": "Ljava/util/concurrent/CopyOnWriteArrayList;",
+            "name": "mEcoBindDevices"
+          }
+        },
+        {
+          "codeUnitOffset": 114,
+          "fileOffset": 2884344,
+          "opcode": 84,
+          "fieldIndex": 6534,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;",
+            "type": "Ljava/util/concurrent/CopyOnWriteArrayList;",
+            "name": "mEcoBindDevices"
+          }
+        },
+        {
+          "codeUnitOffset": 125,
+          "fileOffset": 2884366,
+          "opcode": 84,
+          "fieldIndex": 6535,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;",
+            "type": "Lcom/xiaomi/fitness/eco/device/manager/dao/EcoDeviceDao;",
+            "name": "mEcoDeviceDao"
+          }
+        },
+        {
+          "codeUnitOffset": 127,
+          "fileOffset": 2884370,
+          "opcode": 84,
+          "fieldIndex": 6534,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;",
+            "type": "Ljava/util/concurrent/CopyOnWriteArrayList;",
+            "name": "mEcoBindDevices"
+          }
+        },
+        {
+          "codeUnitOffset": 133,
+          "fileOffset": 2884382,
+          "opcode": 91,
+          "fieldIndex": 6510,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$requestEcoBindDeviceList$1;",
+            "type": "Ljava/lang/Object;",
+            "name": "L$0"
+          }
+        },
+        {
+          "codeUnitOffset": 135,
+          "fileOffset": 2884386,
+          "opcode": 89,
+          "fieldIndex": 6511,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$requestEcoBindDeviceList$1;",
+            "type": "I",
+            "name": "label"
+          }
+        },
+        {
+          "codeUnitOffset": 144,
+          "fileOffset": 2884404,
+          "opcode": 84,
+          "fieldIndex": 6534,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;",
+            "type": "Ljava/util/concurrent/CopyOnWriteArrayList;",
+            "name": "mEcoBindDevices"
+          }
+        }
+      ],
+      "types": [
+        {
+          "codeUnitOffset": 0,
+          "fileOffset": 2884116,
+          "opcode": 32,
+          "type": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$requestEcoBindDeviceList$1;"
+        },
+        {
+          "codeUnitOffset": 5,
+          "fileOffset": 2884126,
+          "opcode": 31,
+          "type": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$requestEcoBindDeviceList$1;"
+        },
+        {
+          "codeUnitOffset": 20,
+          "fileOffset": 2884156,
+          "opcode": 34,
+          "type": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer$requestEcoBindDeviceList$1;"
+        },
+        {
+          "codeUnitOffset": 44,
+          "fileOffset": 2884204,
+          "opcode": 31,
+          "type": "Ljava/util/List;"
+        },
+        {
+          "codeUnitOffset": 51,
+          "fileOffset": 2884218,
+          "opcode": 34,
+          "type": "Ljava/lang/IllegalStateException;"
+        },
+        {
+          "codeUnitOffset": 87,
+          "fileOffset": 2884290,
+          "opcode": 31,
+          "type": "Ljava/util/List;"
+        },
+        {
+          "codeUnitOffset": 89,
+          "fileOffset": 2884294,
+          "opcode": 34,
+          "type": "Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 120,
+          "fileOffset": 2884356,
+          "opcode": 31,
+          "type": "Ljava/util/Collection;"
+        }
+      ]
+    }
+  },
+  {
+    "dex": "classes10.dex",
+    "dexSha256": "9f2467f0e23133d440acd5e4cf4324d3121f9ab7174379c7adde9f61917d657c",
+    "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceManagerRemoteImpl$refreshEcoList$1;",
+    "method": {
+      "id": 11938,
+      "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceManagerRemoteImpl$refreshEcoList$1;",
+      "proto": 3594,
+      "name": "invokeSuspend",
+      "signature": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceManagerRemoteImpl$refreshEcoList$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;",
+      "access": 17,
+      "codeOff": 2889124
+    },
+    "code": {
+      "fileOffset": 2889124,
+      "registers": 5,
+      "incomingWords": 2,
+      "outgoingWords": 2,
+      "tryCount": 1,
+      "codeUnits": 86,
+      "decodedCodeUnits": 86,
+      "errors": [],
+      "strings": [
+        {
+          "codeUnitOffset": 17,
+          "fileOffset": 2889174,
+          "stringIndex": 33754,
+          "value": "call to 'resume' before 'invoke' with coroutine"
+        },
+        {
+          "codeUnitOffset": 66,
+          "fileOffset": 2889272,
+          "stringIndex": 53489,
+          "value": "refreshEcoList success with DeadObjectException: "
+        },
+        {
+          "codeUnitOffset": 78,
+          "fileOffset": 2889296,
+          "stringIndex": 9523,
+          "value": "EcoDeviceManagerRemoteImpl"
+        }
+      ],
+      "calls": [
+        {
+          "codeUnitOffset": 0,
+          "fileOffset": 2889140,
+          "opcode": 113,
+          "methodIndex": 55963,
+          "target": "Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 11,
+          "fileOffset": 2889162,
+          "opcode": 113,
+          "methodIndex": 55856,
+          "target": "Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V"
+        },
+        {
+          "codeUnitOffset": 19,
+          "fileOffset": 2889178,
+          "opcode": 112,
+          "methodIndex": 54670,
+          "target": "Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 23,
+          "fileOffset": 2889186,
+          "opcode": 113,
+          "methodIndex": 55856,
+          "target": "Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V"
+        },
+        {
+          "codeUnitOffset": 28,
+          "fileOffset": 2889196,
+          "opcode": 113,
+          "methodIndex": 11961,
+          "target": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceManagerRemoteImpl;->access$getMEcoDeviceContainer$p(Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceManagerRemoteImpl;)Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;"
+        },
+        {
+          "codeUnitOffset": 34,
+          "fileOffset": 2889208,
+          "opcode": 110,
+          "methodIndex": 11892,
+          "target": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceContainer;->requestEcoBindDeviceList(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"
+        },
+        {
+          "codeUnitOffset": 45,
+          "fileOffset": 2889230,
+          "opcode": 113,
+          "methodIndex": 11964,
+          "target": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceManagerRemoteImpl;->access$onRequestDeviceListSuccess(Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceManagerRemoteImpl;Ljava/util/List;)V"
+        },
+        {
+          "codeUnitOffset": 52,
+          "fileOffset": 2889244,
+          "opcode": 114,
+          "methodIndex": 51452,
+          "target": "Lcyl;->onSuccess()V"
+        },
+        {
+          "codeUnitOffset": 57,
+          "fileOffset": 2889254,
+          "opcode": 110,
+          "methodIndex": 54793,
+          "target": "Ljava/lang/Throwable;->getMessage()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 63,
+          "fileOffset": 2889266,
+          "opcode": 112,
+          "methodIndex": 54764,
+          "target": "Ljava/lang/StringBuilder;-><init>()V"
+        },
+        {
+          "codeUnitOffset": 68,
+          "fileOffset": 2889276,
+          "opcode": 110,
+          "methodIndex": 54772,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 71,
+          "fileOffset": 2889282,
+          "opcode": 110,
+          "methodIndex": 54772,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 74,
+          "fileOffset": 2889288,
+          "opcode": 110,
+          "methodIndex": 54779,
+          "target": "Ljava/lang/StringBuilder;->toString()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 80,
+          "fileOffset": 2889300,
+          "opcode": 113,
+          "methodIndex": 3705,
+          "target": "Lcom/xiaomi/fit/eco/device/extensions/EcoDeviceModelExtKt;->loge(Ljava/lang/String;Ljava/lang/String;)V"
+        }
+      ],
+      "fields": [
+        {
+          "codeUnitOffset": 4,
+          "fileOffset": 2889148,
+          "opcode": 82,
+          "fieldIndex": 6561,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceManagerRemoteImpl$refreshEcoList$1;",
+            "type": "I",
+            "name": "label"
+          }
+        },
+        {
+          "codeUnitOffset": 26,
+          "fileOffset": 2889192,
+          "opcode": 84,
+          "fieldIndex": 6562,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceManagerRemoteImpl$refreshEcoList$1;",
+            "type": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceManagerRemoteImpl;",
+            "name": "this$0"
+          }
+        },
+        {
+          "codeUnitOffset": 32,
+          "fileOffset": 2889204,
+          "opcode": 89,
+          "fieldIndex": 6561,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceManagerRemoteImpl$refreshEcoList$1;",
+            "type": "I",
+            "name": "label"
+          }
+        },
+        {
+          "codeUnitOffset": 43,
+          "fileOffset": 2889226,
+          "opcode": 84,
+          "fieldIndex": 6562,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceManagerRemoteImpl$refreshEcoList$1;",
+            "type": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceManagerRemoteImpl;",
+            "name": "this$0"
+          }
+        },
+        {
+          "codeUnitOffset": 48,
+          "fileOffset": 2889236,
+          "opcode": 84,
+          "fieldIndex": 6560,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/eco/device/manager/remote/EcoDeviceManagerRemoteImpl$refreshEcoList$1;",
+            "type": "Lcyl;",
+            "name": "$callback"
+          }
+        },
+        {
+          "codeUnitOffset": 83,
+          "fileOffset": 2889306,
+          "opcode": 98,
+          "fieldIndex": 28830,
+          "field": {
+            "class": "Lkotlin/Unit;",
+            "type": "Lkotlin/Unit;",
+            "name": "INSTANCE"
+          }
+        }
+      ],
+      "types": [
+        {
+          "codeUnitOffset": 15,
+          "fileOffset": 2889170,
+          "opcode": 34,
+          "type": "Ljava/lang/IllegalStateException;"
+        },
+        {
+          "codeUnitOffset": 41,
+          "fileOffset": 2889222,
+          "opcode": 31,
+          "type": "Ljava/util/List;"
+        },
+        {
+          "codeUnitOffset": 61,
+          "fileOffset": 2889262,
+          "opcode": 34,
+          "type": "Ljava/lang/StringBuilder;"
+        }
+      ]
+    }
+  },
+  {
+    "dex": "classes10.dex",
+    "dexSha256": "9f2467f0e23133d440acd5e4cf4324d3121f9ab7174379c7adde9f61917d657c",
+    "class": "Lcom/xiaomi/fitness/login/LoginComponent$receiver$1;",
+    "method": {
+      "id": 45476,
+      "class": "Lcom/xiaomi/fitness/login/LoginComponent$receiver$1;",
+      "proto": 6230,
+      "name": "onReceive",
+      "signature": "Lcom/xiaomi/fitness/login/LoginComponent$receiver$1;->onReceive(Landroid/content/Context;Landroid/content/Intent;)V",
+      "access": 1,
+      "codeOff": 5478032
+    },
+    "code": {
+      "fileOffset": 5478032,
+      "registers": 4,
+      "incomingWords": 3,
+      "outgoingWords": 3,
+      "tryCount": 0,
+      "codeUnits": 41,
+      "decodedCodeUnits": 41,
+      "errors": [],
+      "strings": [
+        {
+          "codeUnitOffset": 5,
+          "fileOffset": 5478058,
+          "stringIndex": 51781,
+          "value": "onReceive: "
+        },
+        {
+          "codeUnitOffset": 17,
+          "fileOffset": 5478082,
+          "stringIndex": 23434,
+          "value": "LoginComponent"
+        },
+        {
+          "codeUnitOffset": 24,
+          "fileOffset": 5478096,
+          "stringIndex": 47649,
+          "value": "key_intent"
+        }
+      ],
+      "calls": [
+        {
+          "codeUnitOffset": 2,
+          "fileOffset": 5478052,
+          "opcode": 112,
+          "methodIndex": 54764,
+          "target": "Ljava/lang/StringBuilder;-><init>()V"
+        },
+        {
+          "codeUnitOffset": 7,
+          "fileOffset": 5478062,
+          "opcode": 110,
+          "methodIndex": 54772,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 10,
+          "fileOffset": 5478068,
+          "opcode": 110,
+          "methodIndex": 54771,
+          "target": "Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 13,
+          "fileOffset": 5478074,
+          "opcode": 110,
+          "methodIndex": 54779,
+          "target": "Ljava/lang/StringBuilder;->toString()Ljava/lang/String;"
+        },
+        {
+          "codeUnitOffset": 19,
+          "fileOffset": 5478086,
+          "opcode": 113,
+          "methodIndex": 5414,
+          "target": "Lcom/xiaomi/fitness/common/log/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 26,
+          "fileOffset": 5478100,
+          "opcode": 110,
+          "methodIndex": 509,
+          "target": "Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;"
+        },
+        {
+          "codeUnitOffset": 37,
+          "fileOffset": 5478122,
+          "opcode": 110,
+          "methodIndex": 45500,
+          "target": "Lcom/xiaomi/fitness/login/LoginSupportActivity$Companion;->launch(Landroid/content/Intent;Z)V"
+        }
+      ],
+      "fields": [
+        {
+          "codeUnitOffset": 34,
+          "fileOffset": 5478116,
+          "opcode": 98,
+          "fieldIndex": 21048,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/login/LoginSupportActivity;",
+            "type": "Lcom/xiaomi/fitness/login/LoginSupportActivity$Companion;",
+            "name": "Companion"
+          }
+        }
+      ],
+      "types": [
+        {
+          "codeUnitOffset": 0,
+          "fileOffset": 5478048,
+          "opcode": 34,
+          "type": "Ljava/lang/StringBuilder;"
+        },
+        {
+          "codeUnitOffset": 30,
+          "fileOffset": 5478108,
+          "opcode": 31,
+          "type": "Landroid/content/Intent;"
+        }
+      ]
+    }
+  },
+  {
+    "dex": "classes10.dex",
+    "dexSha256": "9f2467f0e23133d440acd5e4cf4324d3121f9ab7174379c7adde9f61917d657c",
+    "class": "Lcom/xiaomi/fitness/login/token/TokenManagerRemoteImpl;",
+    "method": {
+      "id": 46682,
+      "class": "Lcom/xiaomi/fitness/login/token/TokenManagerRemoteImpl;",
+      "proto": 1233,
+      "name": "getServiceToken",
+      "signature": "Lcom/xiaomi/fitness/login/token/TokenManagerRemoteImpl;->getServiceToken(Ljava/lang/String;ZI)Lcom/xiaomi/fitness/account/token/MiAccessToken;",
+      "access": 1,
+      "codeOff": 5556188
+    },
+    "code": {
+      "fileOffset": 5556188,
+      "registers": 5,
+      "incomingWords": 4,
+      "outgoingWords": 4,
+      "tryCount": 0,
+      "codeUnits": 24,
+      "decodedCodeUnits": 24,
+      "errors": [],
+      "strings": [
+        {
+          "codeUnitOffset": 0,
+          "fileOffset": 5556204,
+          "stringIndex": 58256,
+          "value": "sid"
+        }
+      ],
+      "calls": [
+        {
+          "codeUnitOffset": 2,
+          "fileOffset": 5556208,
+          "opcode": 113,
+          "methodIndex": 56001,
+          "target": "Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V"
+        },
+        {
+          "codeUnitOffset": 7,
+          "fileOffset": 5556218,
+          "opcode": 114,
+          "methodIndex": 4609,
+          "target": "Lcom/xiaomi/fitness/account/token/TokenManager;->getServiceToken(Ljava/lang/String;ZI)Lcom/xiaomi/fitness/account/token/MiAccessToken;"
+        },
+        {
+          "codeUnitOffset": 13,
+          "fileOffset": 5556230,
+          "opcode": 110,
+          "methodIndex": 4605,
+          "target": "Lcom/xiaomi/fitness/account/token/MiAccessToken;->getUpdated()Z"
+        },
+        {
+          "codeUnitOffset": 20,
+          "fileOffset": 5556244,
+          "opcode": 112,
+          "methodIndex": 46683,
+          "target": "Lcom/xiaomi/fitness/login/token/TokenManagerRemoteImpl;->notifyTokenChange(Ljava/lang/String;Lcom/xiaomi/fitness/account/token/MiAccessToken;)V"
+        }
+      ],
+      "fields": [
+        {
+          "codeUnitOffset": 5,
+          "fileOffset": 5556214,
+          "opcode": 84,
+          "fieldIndex": 21494,
+          "field": {
+            "class": "Lcom/xiaomi/fitness/login/token/TokenManagerRemoteImpl;",
+            "type": "Lcom/xiaomi/fitness/account/token/TokenManager;",
+            "name": "mTokenManager"
+          }
+        }
+      ],
+      "types": []
+    }
+  }
+]

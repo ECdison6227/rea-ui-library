@@ -1,0 +1,114 @@
+// Readability-only formatting of exact raw evidence. Source offsets/SHA: card-swipe-reply.meta.json
+function Kpe(e) {
+  const t = e instanceof Element ? e : null;
+  if (!t?.closest("[data-artifact-card]")) return !1;
+  const n = t.closest('[data-testid="table-scroll"]');
+  return !n || n.scrollWidth <= n.clientWidth;
+}
+function Xpe(t) {
+  const r = n.c(18),
+    { onReply: i, children: o } = t,
+    a = e.useRef(null),
+    l = r5(),
+    c = !!i && !l;
+  let u, d;
+  (r[0] !== i ? ((u = () => i?.()), (r[0] = i), (r[1] = u)) : (u = r[1]),
+    r[2] !== c || r[3] !== u
+      ? ((d = {
+          role: "assistant",
+          enabled: c,
+          hostRef: a,
+          onReply: u,
+          isTarget: Kpe,
+        }),
+        (r[2] = c),
+        (r[3] = u),
+        (r[4] = d))
+      : (d = r[4]));
+  const p = (function ({
+    role: t,
+    enabled: n,
+    hostRef: r,
+    onReply: s,
+    isTarget: i,
+  }) {
+    const [o, a] = e.useState(!1),
+      l = s2(n),
+      c = s2(s),
+      u = s2(i),
+      d = c5(t),
+      [p] = e.useState(
+        () =>
+          new m5({
+            direction: d,
+            isTarget: (e) => u.current(e),
+            canReply: () => l.current,
+            onReply: () => c.current(),
+            onActiveChange: a,
+            blockHost: () => r.current,
+          }),
+      );
+    (e.useEffect(() => {
+      n || p.disable();
+    }, [n, p]),
+      e.useEffect(() => {
+        const e = r.current;
+        if (e && n)
+          return (
+            e.addEventListener("wheel", p.onWheel, { passive: !0 }),
+            () => e.removeEventListener("wheel", p.onWheel)
+          );
+      }, [n, r, p]),
+      e.useEffect(() => p.stop, [p]));
+    const { x: h, glyphX: f, glyphOpacity: m, glyphScale: g } = p;
+    return { active: o, x: h, glyphX: f, glyphOpacity: m, glyphScale: g };
+  })(d);
+  let h, f, m, g;
+  return (
+    r[5] !== p.active ||
+    r[6] !== p.glyphOpacity ||
+    r[7] !== p.glyphScale ||
+    r[8] !== p.glyphX
+      ? ((h =
+          p.active &&
+          s.jsx(kn.div, {
+            className: "_19zus101",
+            style: {
+              opacity: p.glyphOpacity,
+              scale: p.glyphScale,
+              x: p.glyphX,
+              y: "-50%",
+            },
+            "aria-hidden": !0,
+            "data-testid": "card-reply-swipe-glyph",
+            children: s.jsx(x4, { size: Xt.icon.lg }),
+          })),
+        (r[5] = p.active),
+        (r[6] = p.glyphOpacity),
+        (r[7] = p.glyphScale),
+        (r[8] = p.glyphX),
+        (r[9] = h))
+      : (h = r[9]),
+    r[10] !== p.x
+      ? ((f = { x: p.x }), (r[10] = p.x), (r[11] = f))
+      : (f = r[11]),
+    r[12] !== o || r[13] !== f
+      ? ((m = s.jsx(kn.div, { style: f, children: o })),
+        (r[12] = o),
+        (r[13] = f),
+        (r[14] = m))
+      : (m = r[14]),
+    r[15] !== h || r[16] !== m
+      ? ((g = s.jsxs("div", {
+          ref: a,
+          className: "_19zus100",
+          children: [h, m],
+        })),
+        (r[15] = h),
+        (r[16] = m),
+        (r[17] = g))
+      : (g = r[17]),
+    g
+  );
+}
+const Zpe = { id: "bljNOz" };

@@ -1,0 +1,360 @@
+{
+  "bundle": "dial",
+  "id": "di-531",
+  "line": 539,
+  "aliases": {
+    "t": 3,
+    "n": 54,
+    "o": 27,
+    "u": 14,
+    "c": 18,
+    "l": 771,
+    "s": "di-138",
+    "f": "di-140",
+    "p": "di-141",
+    "h": "di-144",
+    "v": "di-128",
+    "y": 631,
+    "b": 1048,
+    "w": "di-263",
+    "S": "di-149",
+    "E": "di-152",
+    "_": "di-262",
+    "P": "di-340",
+    "x": "di-137",
+    "O": "di-532",
+    "k": "di-170",
+    "T": "di-312",
+    "j": "di-343",
+    "L": "di-513",
+    "M": "di-421",
+    "D": "di-534",
+    "C": "di-536",
+    "I": "di-542",
+    "B": "di-543",
+    "N": "di-555",
+    "U": "di-558",
+    "F": "di-559",
+    "R": "di-560",
+    "A": "di-547",
+    "G": "di-561",
+    "W": "di-595",
+    "z": "di-597",
+    "V": "di-598"
+  },
+  "elements": [
+    {
+      "type": "j.default",
+      "module": "di-343",
+      "props": {
+        "visible": {
+          "$code": "ye"
+        },
+        "contentSource": "high_value_user_wm_popup",
+        "pageDetail": "DialMarket",
+        "onClose": {
+          "$code": "ke"
+        },
+        "onPaymentResult": {
+          "$code": "Te"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "L.default",
+      "module": "di-513",
+      "props": {
+        "key": "exclusive_bundle",
+        "isOpen": {
+          "$code": "!0"
+        },
+        "onClose": {
+          "$code": "n"
+        }
+      },
+      "children": [
+        {
+          "$code": "u.default.createElement(D.default,{popupData:pe,onBodyPress:function(){o(),n()},onGoBrowse:function(){o(),ee(\"2\"),Pe(2),n()}})"
+        }
+      ]
+    },
+    {
+      "type": "D.default",
+      "module": "di-534",
+      "props": {
+        "popupData": {
+          "$code": "pe"
+        },
+        "onBodyPress": {
+          "$code": "function(){o(),n()}"
+        },
+        "onGoBrowse": {
+          "$code": "function(){o(),ee(\"2\"),Pe(2),n()}"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "L.default",
+      "module": "di-513",
+      "props": {
+        "key": {
+          "$code": "\"regular_popup_\"+ie.id"
+        },
+        "imageUrl": {
+          "$code": "ie.imageUrl"
+        },
+        "isOpen": {
+          "$code": "!0"
+        },
+        "onClose": {
+          "$code": "t"
+        },
+        "onImagePress": {
+          "$code": "xe"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "z.default",
+      "module": "di-597",
+      "props": {
+        "visible": {
+          "$code": "!0"
+        },
+        "discountAmount": {
+          "$code": "n"
+        },
+        "countdownTime": {
+          "$code": "null!==(o=null==ce?void 0:ce.countdownTime)&&void 0!==o?o:0"
+        },
+        "onClose": {
+          "$code": "function(){b.Storage.setValue(\"dialMarketTransformerPopupDismissed\",!0,b.StorageOptions.USER),oe(!0),v.default.expose({tip:\"56.82.1.1.51643\",card_name:\"NMC-icon\"}),t()}"
+        },
+        "onPress": {
+          "$code": "function(){b.Storage.setValue(\"dialMarketTransformerPopupDismissed\",!0,b.StorageOptions.USER),null!=ce&&ce.urlType&&null!=ce&&ce.jumpUrl&&(de.current=!0,me({type:ce.urlType,pageUrl:ce.jumpUrl,source:\"\",contentSource:\"\",exposeSource:\"\"}))}"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "B.default",
+      "module": "di-543",
+      "props": {
+        "subTab": {
+          "$code": "Q"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "x.DialClassifyAggregation",
+      "module": "di-137",
+      "props": {
+        "source": "watchface_market_category_tab",
+        "contentSource": "manual_operation",
+        "exposeSource": "quick_access_分类"
+      },
+      "children": []
+    },
+    {
+      "type": "R.SupportPayContext.Provider",
+      "props": {
+        "value": {
+          "isSupportPay": {
+            "$code": "Ge"
+          },
+          "updateTab": {
+            "$code": "Pe"
+          },
+          "subTab": {
+            "$code": "$"
+          }
+        }
+      },
+      "children": [
+        {
+          "$code": "u.default.createElement(G.default,null)"
+        }
+      ]
+    },
+    {
+      "type": "G.default",
+      "module": "di-561",
+      "props": null,
+      "children": []
+    },
+    {
+      "type": "O.default",
+      "module": "di-532",
+      "props": {
+        "onPress": {
+          "$code": "Ye"
+        },
+        "placeholder": {
+          "$code": "h.default.trans(\"dial.search.placeholder\")"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "s.default",
+      "module": "di-138",
+      "props": {
+        "loadState": {
+          "$code": "s.DataLoadState.loaded"
+        },
+        "renderNavBar": {
+          "$code": "function(){return 2===Fe.tabIndex?u.default.createElement(C.default,{onBack:function(){return Y().async(function(t){for(;;)switch(t.prev=t.next){case 0:M.membershipBarShownState.clear(),Qe.onBackPress();case 2:case\"end\":return t.stop()}},null,null,null,Promise)},titleText:h.default.trans(\"dial.market.nav.title.my\"),isSupportPay:Ge,showLocalPush:We,inWhitelist:ze,source:q}):u.default.createElement(I.default,{onBack:function(){return Y().async(function(t){for(;;)switch(t.prev=t.next){case 0:M.membershipBarShownState.clear(),Qe.onBackPress();case 2:case\"end\":return t.stop()}},null,null,null,Promise)},renderCenter:qe})}"
+        },
+        "isShowBackBarButton": {
+          "$code": "!1"
+        },
+        "edges": [
+          "top"
+        ]
+      },
+      "children": [
+        {
+          "$code": "u.default.createElement(l.default,{ref:_e,style:V.styles.pager,initialPage:Fe.tabIndex,onPageScrollStateChanged:Ve,onPageSelected:He,scrollEnabled:!1},Be.map(function(t,n){return u.default.createElement(c.View,{key:n},Fe.visitedTabs.has(n)&&t?t():null)}))"
+        },
+        {
+          "$code": "u.default.createElement(N.default,{active:Fe.tabIndex,onPress:Pe})"
+        },
+        {
+          "$code": "je()"
+        },
+        {
+          "$code": "Ee()"
+        },
+        {
+          "$code": "u.default.createElement(W.default,{visible:ne,amount:Number(null!==(n=null==ce?void 0:ce.discountAmount)&&void 0!==n?n:0)/100,countDown:null==ce?void 0:ce.countdownTime,onPress:function(){var t,n;de.current=!0,me({type:null!==(t=null==ce?void 0:ce.urlType)&&void 0!==t?t:0,pageUrl:null!==(n=null==ce?"
+        }
+      ]
+    },
+    {
+      "type": "C.default",
+      "module": "di-536",
+      "props": {
+        "onBack": {
+          "$code": "function(){return Y().async(function(t){for(;;)switch(t.prev=t.next){case 0:M.membershipBarShownState.clear(),Qe.onBackPress();case 2:case\"end\":return t.stop()}},null,null,null,Promise)}"
+        },
+        "titleText": {
+          "$code": "h.default.trans(\"dial.market.nav.title.my\")"
+        },
+        "isSupportPay": {
+          "$code": "Ge"
+        },
+        "showLocalPush": {
+          "$code": "We"
+        },
+        "inWhitelist": {
+          "$code": "ze"
+        },
+        "source": {
+          "$code": "q"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "I.default",
+      "module": "di-542",
+      "props": {
+        "onBack": {
+          "$code": "function(){return Y().async(function(t){for(;;)switch(t.prev=t.next){case 0:M.membershipBarShownState.clear(),Qe.onBackPress();case 2:case\"end\":return t.stop()}},null,null,null,Promise)}"
+        },
+        "renderCenter": {
+          "$code": "qe"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "l.default",
+      "module": 771,
+      "props": {
+        "ref": {
+          "$code": "_e"
+        },
+        "style": {
+          "$code": "V.styles.pager"
+        },
+        "initialPage": {
+          "$code": "Fe.tabIndex"
+        },
+        "onPageScrollStateChanged": {
+          "$code": "Ve"
+        },
+        "onPageSelected": {
+          "$code": "He"
+        },
+        "scrollEnabled": {
+          "$code": "!1"
+        }
+      },
+      "children": [
+        {
+          "$code": "Be.map(function(t,n){return u.default.createElement(c.View,{key:n},Fe.visitedTabs.has(n)&&t?t():null)})"
+        }
+      ]
+    },
+    {
+      "type": "c.View",
+      "module": 18,
+      "props": {
+        "key": {
+          "$code": "n"
+        }
+      },
+      "children": [
+        {
+          "$code": "Fe.visitedTabs.has(n)&&t?t():null"
+        }
+      ]
+    },
+    {
+      "type": "N.default",
+      "module": "di-555",
+      "props": {
+        "active": {
+          "$code": "Fe.tabIndex"
+        },
+        "onPress": {
+          "$code": "Pe"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "W.default",
+      "module": "di-595",
+      "props": {
+        "visible": {
+          "$code": "ne"
+        },
+        "amount": {
+          "$code": "Number(null!==(n=null==ce?void 0:ce.discountAmount)&&void 0!==n?n:0)/100"
+        },
+        "countDown": {
+          "$code": "null==ce?void 0:ce.countdownTime"
+        },
+        "onPress": {
+          "$code": "function(){var t,n;de.current=!0,me({type:null!==(t=null==ce?void 0:ce.urlType)&&void 0!==t?t:0,pageUrl:null!==(n=null==ce?void 0:ce.jumpUrl)&&void 0!==n?n:\"\",source:\"\",contentSource:\"\",exposeSource:\"\"}),v.default.click({tip:\"56.82.1.1.52912\",card_name:\"NMC-icon\"})}"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": [
+    {
+      "key": "durationSec",
+      "value": {
+        "$code": "t"
+      }
+    }
+  ]
+}

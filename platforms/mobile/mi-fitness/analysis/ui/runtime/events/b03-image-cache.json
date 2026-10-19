@@ -1,0 +1,20 @@
+{
+  "id": "b03-image-cache",
+  "serial": "emulator-5580",
+  "avd": "rea_mihealth_ui_20261015",
+  "started": "2026-10-15T12:51:15.468Z",
+  "finished": "2026-10-15T12:51:15.575Z",
+  "args": [
+    "shell",
+    "find",
+    "/data/user/0/com.mi.health/cache",
+    "-maxdepth",
+    "3",
+    "-type",
+    "d"
+  ],
+  "exitCode": 0,
+  "stdout": "/data/user/0/com.mi.health/cache\r\n/data/user/0/com.mi.health/cache/oat_primary\r\n/data/user/0/com.mi.health/cache/oat_primary/x86_64\r\n/data/user/0/com.mi.health/cache/data\r\n/data/user/0/com.mi.health/cache/data/user\r\n/data/user/0/com.mi.health/cache/data/user/0\r\n/data/user/0/com.mi.health/cache/mirn_bundles\r\n/data/user/0/com.mi.health/cache/mirn_bundles/production\r\n/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear\r\n/data/user/0/com.mi.health/cache/WebView\r\n/data/user/0/com.mi.health/cache/image_manager_disk_cache\r\n/data/user/0/com.mi.health/cache/http-cache\r\n/data/user/0/com.mi.health/cache/lottie_network_cache\r\n/data/user/0/com.mi.health/cache/sentry\r\n/data/user/0/com.mi.health/cache/sentry/ff674b5116485eb4365273c76e44c8a1aa6f5b46\r\n/data/user/0/com.mi.health/cache/sentry/ff674b5116485eb4365273c76e44c8a1aa6f5b46/outbox\r\n/data/user/0/com.mi.health/cache/sentry/ff674b5116485eb4365273c76e44c8a1aa6f5b46/.sentry-native\r\n/data/user/0/com.mi.health/cache/sentry/ff674b5116485eb4365273c76e44c8a1aa6f5b46/.options-cache\r\n/data/user/0/com.mi.health/cache/sentry/ff674b5116485eb4365273c76e44c8a1aa6f5b46/.scope-cache\r\n",
+  "stderr": "",
+  "error": null
+}

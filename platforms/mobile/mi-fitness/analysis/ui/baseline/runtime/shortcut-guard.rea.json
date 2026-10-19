@@ -1,0 +1,49 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_f300de74013661fb7e27721655f565d0cc6861387bbba04c7a96563dd94f86fd\",\"subject\":null,\"provider\":{\"id\":\"adb\",\"name\":\"Android Debug Bridge\",\"version\":\"37.0.1-15733141\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"capture_adb_screen\",\"parameters\":{\"serial\":\"emulator-5580\",\"output_directory\":\"C:\\\\Users\\\\edsjrcheng\\\\Desktop\\\\xiaomi健康\\\\analysis\\\\ui\\\\baseline\\\\runtime\\\\shortcut-guard\"},\"raw_result\":null,\"normalized_result\":{\"client\":{\"binary_path\":\"adb\",\"path_source\":\"path\",\"version\":\"37.0.1-15733141\",\"installed_path\":\"C:\\\\Users\\\\edsjrcheng\\\\AppData\\\\Local\\\\Microsoft\\\\WinGet\\\\Packages\\\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\\\platform-tools\\\\adb.exe\"},\"serial\":\"emulator-5580\",\"local_path\":\"C:\\\\Users\\\\edsjrcheng\\\\Desktop\\\\xiaomi健康\\\\analysis\\\\ui\\\\baseline\\\\runtime\\\\shortcut-guard\\\\screen.png\",\"bytes\":220060,\"sha256\":\"abfa77855be5c60f9666eb4f7e3cec692372f70bc415eba97f2e696b48ed930f\",\"width\":1080,\"height\":2400},\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Artifact identity is unavailable for this observation.\",\"The capture is one frame at read time; no recording or interaction occurred\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_f300de74013661fb7e27721655f565d0cc6861387bbba04c7a96563dd94f86fd",
+    "subject": null,
+    "provider": {
+      "id": "adb",
+      "name": "Android Debug Bridge",
+      "version": "37.0.1-15733141"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "capture_adb_screen",
+    "parameters": {
+      "serial": "emulator-5580",
+      "output_directory": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\baseline\\runtime\\shortcut-guard"
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "client": {
+        "binary_path": "adb",
+        "path_source": "path",
+        "version": "37.0.1-15733141",
+        "installed_path": "C:\\Users\\edsjrcheng\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5580",
+      "local_path": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\baseline\\runtime\\shortcut-guard\\screen.png",
+      "bytes": 220060,
+      "sha256": "abfa77855be5c60f9666eb4f7e3cec692372f70bc415eba97f2e696b48ed930f",
+      "width": 1080,
+      "height": 2400
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "The capture is one frame at read time; no recording or interaction occurred"
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  }
+}

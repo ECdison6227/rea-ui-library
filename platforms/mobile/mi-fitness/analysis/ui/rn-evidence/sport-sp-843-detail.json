@@ -1,0 +1,220 @@
+{
+  "bundle": "sport",
+  "id": "sp-843",
+  "line": 851,
+  "aliases": {
+    "t": 3,
+    "n": 17,
+    "o": 27,
+    "u": 14,
+    "l": 18,
+    "s": "sp-138",
+    "c": "sp-141",
+    "f": 631,
+    "p": 558,
+    "y": 693,
+    "_": "sp-144",
+    "v": "sp-261",
+    "x": 1780,
+    "T": "sp-844",
+    "C": "sp-810",
+    "E": "sp-793",
+    "S": "sp-272",
+    "b": "sp-278",
+    "h": "sp-262",
+    "w": "sp-476"
+  },
+  "elements": [
+    {
+      "type": "x.View",
+      "module": 1780,
+      "props": {
+        "bgColor": {
+          "$code": "W.bgColor"
+        },
+        "pt": "4px",
+        "borderRadius": "18px",
+        "px": "12px"
+      },
+      "children": [
+        {
+          "$code": "u.default.createElement(x.HStack,{justifyContent:\"space-between\",alignItems:\"center\",px:\"2px\",py:\"12px\"},u.default.createElement(x.Text,{fontFamily:\"MiSans\",fontWeight:\"600\",fontSize:\"17px\",py:\"3.5px\",color:W.mainTextColor},c.default.trans(\"sport.plan.trainingSchedule\")),u.default.createElement(x.Te"
+        },
+        {
+          "$code": "u.default.createElement(x.Box,{bg:W.lineColor,h:\"1px\",mb:\"12px\",opacity:.05})"
+        },
+        {
+          "$code": "u.default.createElement(E.WeekCalendar,{startDate:M,endDate:O,ref:A,selectedDay:L,onDayChanged:Y,activityDays:D},z.length>0?u.default.createElement(T.CalendarCourseList,{space:\"12px\",pt:\"24px\",pb:\"12px\",data:z,onPress:function(t){var n,o,u;if(\"planned\"===t.status)if((0,b.trackPlanTabGoToTrainingClic"
+        }
+      ]
+    },
+    {
+      "type": "x.HStack",
+      "module": 1780,
+      "props": {
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "px": "2px",
+        "py": "12px"
+      },
+      "children": [
+        {
+          "$code": "u.default.createElement(x.Text,{fontFamily:\"MiSans\",fontWeight:\"600\",fontSize:\"17px\",py:\"3.5px\",color:W.mainTextColor},c.default.trans(\"sport.plan.trainingSchedule\"))"
+        },
+        {
+          "$code": "u.default.createElement(x.Text,{fontSize:\"17px\",fontWeight:\"500\",color:W.primaryColor,onPress:function(){var t;null==(t=A.current)||t.scrollToToday(),N(k())}},c.default.trans(\"sport.plan.today\"))"
+        }
+      ]
+    },
+    {
+      "type": "x.Text",
+      "module": 1780,
+      "props": {
+        "fontFamily": "MiSans",
+        "fontWeight": "600",
+        "fontSize": "17px",
+        "py": "3.5px",
+        "color": {
+          "$code": "W.mainTextColor"
+        }
+      },
+      "children": [
+        {
+          "$code": "c.default.trans(\"sport.plan.trainingSchedule\")"
+        }
+      ]
+    },
+    {
+      "type": "x.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": "17px",
+        "fontWeight": "500",
+        "color": {
+          "$code": "W.primaryColor"
+        },
+        "onPress": {
+          "$code": "function(){var t;null==(t=A.current)||t.scrollToToday(),N(k())}"
+        }
+      },
+      "children": [
+        {
+          "$code": "c.default.trans(\"sport.plan.today\")"
+        }
+      ]
+    },
+    {
+      "type": "x.Box",
+      "module": 1780,
+      "props": {
+        "bg": {
+          "$code": "W.lineColor"
+        },
+        "h": "1px",
+        "mb": "12px",
+        "opacity": 0.05
+      },
+      "children": []
+    },
+    {
+      "type": "E.WeekCalendar",
+      "module": "sp-793",
+      "props": {
+        "startDate": {
+          "$code": "M"
+        },
+        "endDate": {
+          "$code": "O"
+        },
+        "ref": {
+          "$code": "A"
+        },
+        "selectedDay": {
+          "$code": "L"
+        },
+        "onDayChanged": {
+          "$code": "Y"
+        },
+        "activityDays": {
+          "$code": "D"
+        }
+      },
+      "children": [
+        {
+          "$code": "z.length>0?u.default.createElement(T.CalendarCourseList,{space:\"12px\",pt:\"24px\",pb:\"12px\",data:z,onPress:function(t){var n,o,u;if(\"planned\"===t.status)if((0,b.trackPlanTabGoToTrainingClick)(P,R,t.id,null==(n=t.raw)?void 0:n.name),(0,b.trackCourseClick)({asset_name:null!==(o=null==t?void 0:null==(u=t"
+        }
+      ]
+    },
+    {
+      "type": "T.CalendarCourseList",
+      "module": "sp-844",
+      "props": {
+        "space": "12px",
+        "pt": "24px",
+        "pb": "12px",
+        "data": {
+          "$code": "z"
+        },
+        "onPress": {
+          "$code": "function(t){var n,o,u;if(\"planned\"===t.status)if((0,b.trackPlanTabGoToTrainingClick)(P,R,t.id,null==(n=t.raw)?void 0:n.name),(0,b.trackCourseClick)({asset_name:null!==(o=null==t?void 0:null==(u=t.raw)?void 0:u.name)&&void 0!==o?o:\"\",asset_id:null==t?void 0:t.id,source:\"10\"}),\"ios\"===l.Platform.OS){var s=JSON.stringify({course_summary_type:2,course_status:t.raw.playState,course_duration:t.raw.minute,course_content:{course_video:{video_course_id:t.id}},from:10,course_name:t.raw.name});p.RRLog.debug(\"json\",\"\"+t.datestamp,P,s),v.default.gotoTraining(\"\"+t.datestamp,P,s)}else{p.RRLog.debug(\"cousrseStatus\",t.cousrseStatus);var c={_rt:\"native\",course_id:t.id,from:10,_useNativeRoute:!0,training_plan_info:JSON.stringify({status:t.cousrseStatus,planId:P}),_paramsTypes:new Map([[\"course_id\",\"Long\"],[\"from\",\"Int\"],[\"training_plan_info\",\"com.mi.health.course.export.data.TrainingCourseInfo\"]])};F.push(\"com.mi.health.course.activity.CourseInfoActivity\",c)}else v.default.gotoSportReport(h.PlanType.TEMPLATE,t.id,t.raw.sportRecord)}"
+        },
+        "checkCompleted": {
+          "$code": "function(t){return t.status!==C.STATUS.FINISHED}"
+        },
+        "keyExtractor": {
+          "$code": "function(t){return t.id}"
+        },
+        "onCourseExpose": {
+          "$code": "H"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "x.View",
+      "module": 1780,
+      "props": {
+        "mt": "24px",
+        "mb": "12px"
+      },
+      "children": [
+        {
+          "$code": "u.default.createElement(w.BreakItem,null)"
+        }
+      ]
+    },
+    {
+      "type": "w.BreakItem",
+      "module": "sp-476",
+      "props": null,
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": [
+    {
+      "key": "borderRadius",
+      "value": "18px"
+    },
+    {
+      "key": "fontFamily",
+      "value": "MiSans"
+    },
+    {
+      "key": "fontWeight",
+      "value": "600"
+    },
+    {
+      "key": "fontSize",
+      "value": "17px"
+    },
+    {
+      "key": "fontSize",
+      "value": "17px"
+    },
+    {
+      "key": "fontWeight",
+      "value": "500"
+    }
+  ]
+}

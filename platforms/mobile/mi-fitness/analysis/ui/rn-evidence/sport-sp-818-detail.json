@@ -1,0 +1,257 @@
+{
+  "bundle": "sport",
+  "id": "sp-818",
+  "line": 826,
+  "aliases": {
+    "t": 3,
+    "n": 14,
+    "u": 18,
+    "l": 1113,
+    "o": "sp-138",
+    "s": "sp-141",
+    "f": 631,
+    "c": "sp-144",
+    "p": "sp-261",
+    "y": 1780,
+    "E": "sp-328",
+    "v": "sp-175",
+    "b": "sp-819"
+  },
+  "elements": [
+    {
+      "type": "v.default",
+      "module": "sp-175",
+      "props": {
+        "title": {
+          "$code": "s.default.trans(\"sport.sensorCourse.title\")"
+        },
+        "showMoreButton": {
+          "$code": "!1"
+        },
+        "cardExtraStyle": {
+          "paddingRight": 12
+        }
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(y.Pressable,{onPress:S,style:[b.default.container,O]},n.default.createElement(l.default,{source:t.sensorEntryNew,style:[u.StyleSheet.absoluteFillObject,L],resizeMode:l.default.resizeMode.cover}),n.default.createElement(y.VStack,{style:b.default.content,justifyContent:\"space-b"
+        }
+      ]
+    },
+    {
+      "type": "y.Pressable",
+      "module": 1780,
+      "props": {
+        "onPress": {
+          "$code": "S"
+        },
+        "style": [
+          {
+            "$code": "b.default.container"
+          },
+          {
+            "$code": "O"
+          }
+        ]
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(l.default,{source:t.sensorEntryNew,style:[u.StyleSheet.absoluteFillObject,L],resizeMode:l.default.resizeMode.cover})"
+        },
+        {
+          "$code": "n.default.createElement(y.VStack,{style:b.default.content,justifyContent:\"space-between\"},n.default.createElement(y.VStack,{space:\"2px\",maxW:\"65%\"},n.default.createElement(y.Text,{numberOfLines:1,style:b.default.titleText},s.default.trans(\"sport.course.interactive\")),n.default.createElement(y.Text,{"
+        }
+      ]
+    },
+    {
+      "type": "l.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "t.sensorEntryNew"
+        },
+        "style": [
+          {
+            "$code": "u.StyleSheet.absoluteFillObject"
+          },
+          {
+            "$code": "L"
+          }
+        ],
+        "resizeMode": {
+          "$code": "l.default.resizeMode.cover"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "y.VStack",
+      "module": 1780,
+      "props": {
+        "style": {
+          "$code": "b.default.content"
+        },
+        "justifyContent": "space-between"
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(y.VStack,{space:\"2px\",maxW:\"65%\"},n.default.createElement(y.Text,{numberOfLines:1,style:b.default.titleText},s.default.trans(\"sport.course.interactive\")),n.default.createElement(y.Text,{numberOfLines:1,style:b.default.description},s.default.trans(\"sport.course.interactive.pub"
+        },
+        {
+          "$code": "n.default.createElement(y.HStack,{space:\"4px\",alignItems:\"center\"},n.default.createElement(y.HStack,{space:\"2px\",alignItems:\"center\"},n.default.createElement(l.default,{source:t.miLogo,style:b.default.miLogo}),n.default.createElement(y.Text,{numberOfLines:1,style:b.default.miText},s.default.trans(\"c"
+        }
+      ]
+    },
+    {
+      "type": "y.VStack",
+      "module": 1780,
+      "props": {
+        "space": "2px",
+        "maxW": "65%"
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(y.Text,{numberOfLines:1,style:b.default.titleText},s.default.trans(\"sport.course.interactive\"))"
+        },
+        {
+          "$code": "n.default.createElement(y.Text,{numberOfLines:1,style:b.default.description},s.default.trans(\"sport.course.interactive.publicize\"))"
+        }
+      ]
+    },
+    {
+      "type": "y.Text",
+      "module": 1780,
+      "props": {
+        "numberOfLines": 1,
+        "style": {
+          "$code": "b.default.titleText"
+        }
+      },
+      "children": [
+        {
+          "$code": "s.default.trans(\"sport.course.interactive\")"
+        }
+      ]
+    },
+    {
+      "type": "y.Text",
+      "module": 1780,
+      "props": {
+        "numberOfLines": 1,
+        "style": {
+          "$code": "b.default.description"
+        }
+      },
+      "children": [
+        {
+          "$code": "s.default.trans(\"sport.course.interactive.publicize\")"
+        }
+      ]
+    },
+    {
+      "type": "y.HStack",
+      "module": 1780,
+      "props": {
+        "space": "4px",
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(y.HStack,{space:\"2px\",alignItems:\"center\"},n.default.createElement(l.default,{source:t.miLogo,style:b.default.miLogo}),n.default.createElement(y.Text,{numberOfLines:1,style:b.default.miText},s.default.trans(\"common.MiFitness\")))"
+        },
+        {
+          "$code": "n.default.createElement(y.View,{style:b.default.vLine})"
+        },
+        {
+          "$code": "n.default.createElement(l.default,{source:t.aidongLogo,style:b.default.aidongLogo})"
+        }
+      ]
+    },
+    {
+      "type": "y.HStack",
+      "module": 1780,
+      "props": {
+        "space": "2px",
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(l.default,{source:t.miLogo,style:b.default.miLogo})"
+        },
+        {
+          "$code": "n.default.createElement(y.Text,{numberOfLines:1,style:b.default.miText},s.default.trans(\"common.MiFitness\"))"
+        }
+      ]
+    },
+    {
+      "type": "l.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "t.miLogo"
+        },
+        "style": {
+          "$code": "b.default.miLogo"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "y.Text",
+      "module": 1780,
+      "props": {
+        "numberOfLines": 1,
+        "style": {
+          "$code": "b.default.miText"
+        }
+      },
+      "children": [
+        {
+          "$code": "s.default.trans(\"common.MiFitness\")"
+        }
+      ]
+    },
+    {
+      "type": "y.View",
+      "module": 1780,
+      "props": {
+        "style": {
+          "$code": "b.default.vLine"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "l.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "t.aidongLogo"
+        },
+        "style": {
+          "$code": "b.default.aidongLogo"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": [
+    {
+      "key": "width",
+      "value": {
+        "$code": "k"
+      }
+    },
+    {
+      "key": "height",
+      "value": {
+        "$code": "w"
+      }
+    },
+    {
+      "key": "paddingRight",
+      "value": 12
+    }
+  ]
+}

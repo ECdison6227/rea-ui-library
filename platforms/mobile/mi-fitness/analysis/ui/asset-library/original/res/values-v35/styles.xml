@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Course_EditTextStyle" parent="@style/EditTextStyle">
+        <item name="android:background">@drawable/course_search_edit_bg</item>
+        <item name="android:useLocalePreferredLineHeightForMinimum">false</item>
+    </style>
+    <style name="RN_EditTextStyle" parent="@style/EditTextStyle">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:useLocalePreferredLineHeightForMinimum">false</item>
+    </style>
+    <style name="Route_EditTextStyle" parent="@style/EditTextStyle">
+        <item name="android:background">@drawable/sport_route_location_search_edit_bg</item>
+        <item name="android:useLocalePreferredLineHeightForMinimum">false</item>
+    </style>
+    <style name="World_Clock_EditTextStyle" parent="@style/EditTextStyle">
+        <item name="android:background">@drawable/shape_search_bg</item>
+        <item name="android:useLocalePreferredLineHeightForMinimum">false</item>
+    </style>
+</resources>

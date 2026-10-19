@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/nfc_door_card_product_list_item_stroke_width" android:color="@color/common_hint_txt_color" />
+            <corners android:radius="@dimen/nfc_issued_card_list_detail_top_up_rectangle_radius" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/nfc_door_card_product_list_item_stroke_width" android:color="@color/common_blue" />
+            <corners android:radius="@dimen/nfc_issued_card_list_detail_top_up_rectangle_radius" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,11 @@
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');const {Readable}=require('node:stream');const {pipeline}=require('node:stream/promises');const {execFileSync}=require('node:child_process');
+const core=JSON.parse(fs.readFileSync('analysis/phase2/core-installation.json','utf8'));
+const sdk=path.join(core.root,'sdk'),downloads=path.join(core.root,'downloads');fs.mkdirSync(sdk,{recursive:true});fs.mkdirSync('analysis/ui/runtime',{recursive:true});
+async function download(url,file,sha){if(fs.existsSync(file)&&crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')===sha)return;const r=await fetch(url);if(!r.ok)throw Error('HTTP '+r.status);let bytes=0,last=Date.now();const input=Readable.fromWeb(r.body);input.on('data',b=>{bytes+=b.length;if(Date.now()-last>10000){console.log(path.basename(file)+': '+Math.round(bytes/1048576)+' MiB');last=Date.now();}});await pipeline(input,fs.createWriteStream(file+'.partial'));const actual=crypto.createHash('sha256').update(fs.readFileSync(file+'.partial')).digest('hex');if(actual!==sha)throw Error('SDK command-line digest mismatch');fs.renameSync(file+'.partial',file);}
+(async()=>{
+ const name='commandlinetools-win-15859902_latest.zip',url='https://dl.google.com/android/repository/'+name,sha='90ae805d20434428bffcb699c290860f19bb5f66a67e6b330067e3de801fb04a',zip=path.join(downloads,name);
+ await download(url,zip,sha);
+ const latest=path.join(sdk,'cmdline-tools','latest');if(!fs.existsSync(path.join(latest,'bin','sdkmanager.bat'))){const stage=path.join(sdk,'cmdline-unpack');fs.mkdirSync(stage,{recursive:true});execFileSync('C:\\Windows\\System32\\tar.exe',['-xf',zip,'-C',stage]);fs.mkdirSync(path.dirname(latest),{recursive:true});fs.renameSync(path.join(stage,'cmdline-tools'),latest);}
+ fs.writeFileSync('analysis/ui/runtime/sdk-tools-installation.json',JSON.stringify({sdkRoot:sdk,commandlineTools:latest,url,sha256:sha,jdkHome:core.jdkHome,adb:'C:\\Users\\edsjrcheng\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\platform-tools\\adb.exe'},null,2));
+ console.log('Android command-line tools installed: '+latest);
+})().catch(e=>{console.error(e.stack);process.exitCode=1});

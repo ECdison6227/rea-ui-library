@@ -1,0 +1,37 @@
+{
+  "bundle": "sport",
+  "id": "sp-834",
+  "line": 842,
+  "aliases": {
+    "t": 3,
+    "n": 17,
+    "o": 14,
+    "u": "sp-138",
+    "c": "sp-263",
+    "f": "sp-835",
+    "s": "sp-272"
+  },
+  "elements": [
+    {
+      "type": "f.default",
+      "module": "sp-835",
+      "props": {
+        "data": {
+          "$code": "l"
+        },
+        "onItemPress": {
+          "$code": "function(t){var n={_rt:\"native\",_useNativeRoute:!0,isShowCreateBtn:p,distance:t.distance,route_id:t.id,trace_file_url:t.file,_paramsTypes:new Map([[\"route_id\",\"Int\"],[\"trace_file_url\",\"String\"]])},o={_rt:\"native\",_useNativeRoute:!0,route_id:t.id,distance:t.distance,track_official_route:!0,track_path:t.file,_paramsTypes:new Map([[\"route_id\",\"Int\"],[\"track_path\",\"String\"],[\"track_official_route\",\"Boolean\"]])};1==t.officialRouteType?c.SportAccess.navToCreateRoutePageWithParam(function(t,n){return s.push(t,n)},o):c.SportAccess.navToSportRouteDetailPage(function(t,n){return s.push(t,n)},n)}"
+        },
+        "onMoreButtonPress": {
+          "$code": "_"
+        },
+        "showCreateEntry": {
+          "$code": "p"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": []
+}

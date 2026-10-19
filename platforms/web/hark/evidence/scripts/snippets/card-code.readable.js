@@ -1,0 +1,107 @@
+// Readability-only formatting of exact raw evidence. Source offsets/SHA: card-code.meta.json
+function $pe(t) {
+  const r = n.c(33),
+    { code: i, language: o, title: a, replyMessageId: l, linkUrl: c } = t,
+    { _: u } = d(),
+    { expanded: p, toggle: h } = zpe(l),
+    f = e.useRef(null),
+    { replyRef: m, onReply: g } = Fpe(l),
+    v = qpe(f, p, i);
+  let y;
+  r[0] !== u || r[1] !== o
+    ? ((y = o
+        ? (function (e) {
+            return (
+              PN[e.toLowerCase()] ||
+              e.charAt(0).toUpperCase() + e.slice(1).toLowerCase()
+            );
+          })(o)
+        : u({ id: "EWPtMO" })),
+      (r[0] = u),
+      (r[1] = o),
+      (r[2] = y))
+    : (y = r[2]);
+  const b = y,
+    _ = v || p;
+  let x, w;
+  (r[3] !== p || r[4] !== _ || r[5] !== h
+    ? ((x = { expanded: p, expandable: _, onToggle: h }),
+      (r[3] = p),
+      (r[4] = _),
+      (r[5] = h),
+      (r[6] = x))
+    : (x = r[6]),
+    r[7] !== i || r[8] !== g || r[9] !== l || r[10] !== x
+      ? ((w = { copyText: i, expand: x, onReply: g, messageId: l }),
+        (r[7] = i),
+        (r[8] = g),
+        (r[9] = l),
+        (r[10] = x),
+        (r[11] = w))
+      : (w = r[11]));
+  const k = Bpe(w),
+    E = p && xpe;
+  let T;
+  r[12] !== E
+    ? ((T = en(_pe, "kg31mb0", E)), (r[12] = E), (r[13] = T))
+    : (T = r[13]);
+  const S = a ?? b,
+    I = a ? b : void 0,
+    A = v || p;
+  let C;
+  r[14] !== p ||
+  r[15] !== c ||
+  r[16] !== g ||
+  r[17] !== S ||
+  r[18] !== I ||
+  r[19] !== A ||
+  r[20] !== h
+    ? ((C = s.jsx(Dpe, {
+        onReply: g,
+        title: S,
+        subtitle: I,
+        expanded: p,
+        expandable: A,
+        onToggleExpand: h,
+        linkUrl: c,
+      })),
+      (r[14] = p),
+      (r[15] = c),
+      (r[16] = g),
+      (r[17] = S),
+      (r[18] = I),
+      (r[19] = A),
+      (r[20] = h),
+      (r[21] = C))
+    : (C = r[21]);
+  const N = v && Ape;
+  let R, O, L;
+  return (
+    r[22] !== N
+      ? ((R = en("kg31mb1", N)), (r[22] = N), (r[23] = R))
+      : (R = r[23]),
+    r[24] !== i || r[25] !== R
+      ? ((O = s.jsx("pre", { ref: f, className: R, children: i })),
+        (r[24] = i),
+        (r[25] = R),
+        (r[26] = O))
+      : (O = r[26]),
+    r[27] !== k || r[28] !== m || r[29] !== C || r[30] !== O || r[31] !== T
+      ? ((L = s.jsxs(yn, {
+          ref: m,
+          className: T,
+          tabIndex: 0,
+          "data-testid": "code-card",
+          ...k,
+          children: [C, O],
+        })),
+        (r[27] = k),
+        (r[28] = m),
+        (r[29] = C),
+        (r[30] = O),
+        (r[31] = T),
+        (r[32] = L))
+      : (L = r[32]),
+    L
+  );
+}

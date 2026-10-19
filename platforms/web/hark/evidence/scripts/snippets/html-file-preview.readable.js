@@ -1,0 +1,94 @@
+// Readability-only formatting of exact raw evidence. Source offsets/SHA: html-file-preview.meta.json
+function QC(e) {
+  const t = C.c(11),
+    { content: n } = e,
+    { _: i } = x(),
+    [s, r] = S.useState(!1);
+  let o, a;
+  t[0] !== i || t[1] !== n || t[2] !== s
+    ? ((o =
+        s && null !== n
+          ? E.jsx(OC, { content: n, lang: "html" })
+          : E.jsx(xg, {
+              className: "sr3qzx1 _1yq1pt05 _2za4zxl",
+              children:
+                null !== n &&
+                E.jsx("iframe", {
+                  className: "sr3qzx2",
+                  sandbox: "allow-scripts",
+                  srcDoc: n,
+                  title: i({ id: "G7cMuO" }),
+                }),
+            })),
+      (a =
+        null !== n &&
+        E.jsx("div", {
+          className: "sr3qzx3",
+          children: E.jsx(ug, {
+            shape: "circle",
+            size: "xl",
+            className: "sr3qzx4",
+            onClick: () => r(zC),
+            "aria-label": i(s ? { id: "70yJyl" } : { id: "SBUNdn" }),
+            "aria-pressed": s,
+            children: s
+              ? E.jsx(Cn, { size: hg.icon.md })
+              : E.jsx(En, { size: hg.icon.md }),
+          }),
+        })),
+      (t[0] = i),
+      (t[1] = n),
+      (t[2] = s),
+      (t[3] = o),
+      (t[4] = a))
+    : ((o = t[3]), (a = t[4]));
+  const c = null === n;
+  let l, d;
+  return (
+    t[5] !== c
+      ? ((l = E.jsx(pC, { loading: c })), (t[5] = c), (t[6] = l))
+      : (l = t[6]),
+    t[7] !== o || t[8] !== a || t[9] !== l
+      ? ((d = E.jsxs("div", { className: "sr3qzx0", children: [o, a, l] })),
+        (t[7] = o),
+        (t[8] = a),
+        (t[9] = l),
+        (t[10] = d))
+      : (d = t[10]),
+    d
+  );
+}
+function zC(e) {
+  return !e;
+}
+function JC(e) {
+  const t = C.c(6),
+    { url: n } = e,
+    { content: i, error: s } = aC(n);
+  if (null !== s) {
+    let e;
+    return (
+      t[0] !== s
+        ? ((e = E.jsx(fC, { error: s })), (t[0] = s), (t[1] = e))
+        : (e = t[1]),
+      e
+    );
+  }
+  if (null !== i && "" === i.trim()) {
+    let e;
+    return (
+      t[2] === Symbol.for("react.memo_cache_sentinel")
+        ? ((e = E.jsx(bC, { children: E.jsx(I, { id: "i9laiI" }) })),
+          (t[2] = e))
+        : (e = t[2]),
+      e
+    );
+  }
+  let r;
+  return (
+    t[3] !== i || t[4] !== n
+      ? ((r = E.jsx(QC, { content: i }, n)), (t[3] = i), (t[4] = n), (t[5] = r))
+      : (r = t[5]),
+    r
+  );
+}

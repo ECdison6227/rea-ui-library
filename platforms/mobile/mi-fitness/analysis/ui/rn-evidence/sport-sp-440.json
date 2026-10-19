@@ -1,0 +1,43 @@
+{
+  "id": "sp-440",
+  "line": 448,
+  "bytes": 1508,
+  "deps": [
+    3,
+    14,
+    18,
+    "sp-162",
+    "sp-144"
+  ],
+  "exports": [
+    "default"
+  ],
+  "strings": [
+    "dial.nav.selected",
+    "dial.nav.unselected",
+    " ",
+    "100%",
+    "center"
+  ],
+  "routes": [],
+  "styleSheets": [
+    {
+      "callee": "l.StyleSheet.create",
+      "styles": {
+        "tab": {
+          "height": "100%",
+          "minWidth": 24,
+          "justifyContent": "center",
+          "alignItems": "center"
+        },
+        "label": {
+          "fontSize": 16,
+          "paddingHorizontal": 10
+        }
+      },
+      "code": "l.StyleSheet.create({tab:{height:\"100%\",minWidth:24,justifyContent:\"center\",alignItems:\"center\"},label:{fontSize:16,paddingHorizontal:10}})"
+    }
+  ],
+  "assetNames": [],
+  "calls": []
+}

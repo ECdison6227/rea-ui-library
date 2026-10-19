@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <stroke android:width="0.30000007dp" android:color="@color/eco_device_unbind_menu_border" />
+            <solid android:color="@color/eco_device_unbind_menu_pressed_background" />
+            <corners android:radius="@dimen/common_card_item_radius" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="0.30000007dp" android:color="@color/eco_device_unbind_menu_border" />
+            <solid android:color="@color/eco_device_unbind_menu_background" />
+            <corners android:radius="@dimen/common_card_item_radius" />
+        </shape>
+    </item>
+</selector>

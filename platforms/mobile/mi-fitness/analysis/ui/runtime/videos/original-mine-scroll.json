@@ -1,0 +1,49 @@
+{
+  "source": "Original APK running on isolated emulator; no clip synthesis",
+  "serial": "emulator-5580",
+  "start": "2026-10-15T12:05:06.439Z",
+  "actions": [
+    {
+      "at": "2026-10-15T12:05:08.292Z",
+      "action": "swipe up",
+      "coordinates": [
+        540,
+        1930,
+        540,
+        760
+      ],
+      "durationMs": 500
+    },
+    {
+      "at": "2026-10-15T12:05:10.553Z",
+      "action": "swipe down",
+      "coordinates": [
+        540,
+        760,
+        540,
+        1930
+      ],
+      "durationMs": 500
+    }
+  ],
+  "recorder": {
+    "size": [
+      720,
+      1600
+    ],
+    "bitRate": 4000000,
+    "timeLimitSeconds": 8
+  },
+  "path": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\runtime\\videos\\original-mine-scroll.mp4",
+  "bytes": 665947,
+  "sha256": "a86c356ed74f87275f4c38b9fb6f2ecad50c1e045cb79eaee72361a6c7cf03a6",
+  "stderr": "",
+  "limitation": "Recorded scroll demonstration; not frame-calibrated timing/easing measurement.",
+  "decodedPlayback": {
+    "width": 720,
+    "height": 1600,
+    "durationSeconds": 4.3774,
+    "verifiedBy": "Headless Edge video decoder",
+    "note": "Recorder time-limit8 is a requested cap, not the actual media playback duration."
+  }
+}

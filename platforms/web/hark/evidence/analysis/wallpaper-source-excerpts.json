@@ -1,0 +1,359 @@
+{
+  "source": "evidence/scripts/wallpaper_core.html",
+  "sourceSHA256": "6cdacc4cd85f288d8aef046746ca3814b9c0bf2217baa8fd3ab86346881e66e0",
+  "characters": 275427,
+  "offsetConvention": "zero-based Unicode character offsets; end exclusive",
+  "evidenceType": "static source obtained by authorized same-origin browser fetch; shader compilation and every branch not independently runtime verified",
+  "shaderExports": [
+    {
+      "path": "evidence/scripts/wallpaper-vertex.glsl",
+      "sourceOffset": 11036,
+      "sourceEndExclusive": 11107,
+      "firstSourceLine": 163,
+      "lastSourceLine": 163
+    },
+    {
+      "path": "evidence/scripts/wallpaper-fragment.glsl",
+      "sourceOffset": 11125,
+      "sourceEndExclusive": 44900,
+      "firstSourceLine": 165,
+      "lastSourceLine": 748
+    }
+  ],
+  "uniforms": [
+    [
+      "vec2",
+      "uRes"
+    ],
+    [
+      "float",
+      "uDet"
+    ],
+    [
+      "float",
+      "uTime"
+    ],
+    [
+      "vec3",
+      "uC0"
+    ],
+    [
+      "vec3",
+      "uC1"
+    ],
+    [
+      "vec3",
+      "uC2"
+    ],
+    [
+      "vec3",
+      "uC3"
+    ],
+    [
+      "vec2",
+      "uGlowPos"
+    ],
+    [
+      "vec3",
+      "uGlowCol"
+    ],
+    [
+      "float",
+      "uGlow"
+    ],
+    [
+      "float",
+      "uGlowSize"
+    ],
+    [
+      "float",
+      "uDensity"
+    ],
+    [
+      "float",
+      "uWarp"
+    ],
+    [
+      "float",
+      "uGrain"
+    ],
+    [
+      "vec2",
+      "uDrift"
+    ],
+    [
+      "vec3",
+      "uPrecip"
+    ],
+    [
+      "vec3",
+      "uShaft"
+    ],
+    [
+      "float",
+      "uFog"
+    ],
+    [
+      "vec3",
+      "uMilk"
+    ],
+    [
+      "float",
+      "uDeck"
+    ],
+    [
+      "float",
+      "uPuff"
+    ],
+    [
+      "float",
+      "uNight"
+    ],
+    [
+      "float",
+      "uHaze"
+    ],
+    [
+      "float",
+      "uSquash"
+    ],
+    [
+      "vec3",
+      "uTint"
+    ],
+    [
+      "float",
+      "uRays"
+    ],
+    [
+      "vec2",
+      "uRayLook"
+    ],
+    [
+      "float",
+      "uHalo"
+    ],
+    [
+      "vec3",
+      "uHaloLook"
+    ],
+    [
+      "sampler2D",
+      "uLut"
+    ],
+    [
+      "float",
+      "uLutAmt"
+    ],
+    [
+      "float",
+      "uTexV"
+    ],
+    [
+      "vec4",
+      "uCirA"
+    ],
+    [
+      "vec4",
+      "uCirB"
+    ],
+    [
+      "vec3",
+      "uSun"
+    ],
+    [
+      "float",
+      "uPolar"
+    ],
+    [
+      "vec2",
+      "uAureole"
+    ],
+    [
+      "float",
+      "uWhiten"
+    ],
+    [
+      "vec3",
+      "uPurple"
+    ],
+    [
+      "vec2",
+      "uCrep"
+    ],
+    [
+      "vec3",
+      "uLit"
+    ],
+    [
+      "vec3",
+      "uTintHi"
+    ],
+    [
+      "vec3",
+      "uFloorZ"
+    ],
+    [
+      "vec3",
+      "uFloorH"
+    ],
+    [
+      "vec3",
+      "uDogs"
+    ],
+    [
+      "vec3",
+      "uCorona"
+    ],
+    [
+      "float",
+      "uAlpha"
+    ]
+  ],
+  "snippets": [
+    {
+      "label": "shader declarations",
+      "source": "evidence/scripts/wallpaper_core.html",
+      "startLine": 165,
+      "endLineInclusive": 215,
+      "characterOffset": 11111,
+      "characterEndExclusive": 14654,
+      "text": "const FRAG = `\n#ifdef GL_ES\nprecision highp float;\n#endif\nuniform vec2  uRes;\nuniform float uDet;      // detail unit in device px = min(height, width / aspect): the size of one 'height unit' for the details\nuniform float uTime;     // slow, accumulated time (drives drift)\nuniform vec3  uC0;       // zenith\nuniform vec3  uC1;\nuniform vec3  uC2;\nuniform vec3  uC3;       // horizon\nuniform vec2  uGlowPos;\nuniform vec3  uGlowCol;\nuniform float uGlow;\nuniform float uGlowSize; // body footprint: >1 near the horizon, 1 high up\nuniform float uDensity;\nuniform float uWarp;\nuniform float uGrain;\nuniform vec2  uDrift;    // wind: direction (screen space) x strength\nuniform vec3  uPrecip;   // x rain, y snow/hail, z fall-speed multiplier\nuniform vec3  uShaft;    // x strength, y coverage, z reach (how far down)\nuniform float uFog;      // clumpy fog amount\nuniform vec3  uMilk;     // fog color (ambient-light aware)\nuniform float uDeck;     // overcast lid amount: drives cloud-base mottle\nuniform float uPuff;     // cumulus amount: defined bright clumps (partly regime)\nuniform float uNight;    // additive night-cloud veil (dark skies only)\nuniform float uHaze;     // atmospheric perspective: textured white low band (day)\nuniform float uSquash;   // gradient height compression: <1 squeezes the low stops' span\nuniform vec3  uTint;     // low-sun cloud tint: chromatic multiply on bright field material\nuniform float uRays;     // godrays: beam-fan strength (rides the glow's visibility)\nuniform vec2  uRayLook;  // godrays look: x beam scale, y radial falloff (live-tuned)\nuniform float uHalo;     // 22° solar halo amount (frame param, crossfaded)\nuniform vec3  uHaloLook; // halo look: x ring radius, y dispersion, z softness (live-tuned)\nuniform sampler2D uLut;  // owner color LUT: 33³ as a 1089×33 slice strip\nuniform float uLutAmt;   // LUT mix strength (0 = ungraded)\nuniform float uTexV;    // global texture vibrancy (grade-shipped)\nuniform vec4  uCirA;     // cirrus: base angle (rad), angle variance (rad), fiber density x, opacity\nuniform vec4  uCirB;     // cirrus: coverage bias, evolve speed, break depth, grain scale\nuniform vec3  uSun;      // THE SUN for sky geometry, whatever body the glow shows: x,y screen position (compositional sweep + bodyY), z TRUE altitude (deg)\nuniform float uPolar;    // polarizer band strength (frame param: dial × daylight × clarity × no deck)\nuniform vec2  uAureole;  // aureole: x strength (frame param), y half-width in degrees (grows with turbidity)\nuniform float uWhiten;   // horizon whitening: aerosol optical depth per air mass (frame param: dial × turbidity × gates)\nuniform vec3  uPurple;   // purple light: x strength (frame param), y lobe center altitude (deg), z lobe σ (deg)\nuniform vec2  uCrep;     // crepuscular shadow fan: x strength (frame param), y angular noise scale\nuniform vec3  uLit;      // cloud lighting: x thin-cloud darkening, y back-light strength, z low-sun airlight bias (frame params)\nuniform vec3  uTintHi;   // low-sun tint for the HIGH cloud (cirrus): stays lit ~2° longer than uTint's deck\nuniform vec3  uFloorZ;   // night floor at the zenith (display sRGB, already × the night gate; 0 by day)\nuniform vec3  uFloorH;   // night floor at the horizon\nuniform vec3  uDogs;     // sundogs: x strength (frame param), y separation from the sun (detail units), z tail length (detail units)\nuniform vec3  uCorona;   // corona: x strength (frame param), y ring radius (detail units), z purity 0–1\nuniform float uAlpha;    // crossfade opacity of this pass\n"
+    },
+    {
+      "label": "noise and gradient",
+      "source": "evidence/scripts/wallpaper_core.html",
+      "startLine": 217,
+      "endLineInclusive": 243,
+      "characterOffset": 14655,
+      "characterEndExclusive": 15517,
+      "text": "float hash(vec2 p){\n  // precision-safe hash (Dave Hoskins): no giant intermediate products,\n  // so it stays pattern-free even at large gl_FragCoord values\n  vec3 p3 = fract(vec3(p.xyx) * 0.1031);\n  p3 += dot(p3, p3.yzx + 33.33);\n  return fract((p3.x + p3.y) * p3.z);\n}\nfloat vnoise(vec2 p){\n  vec2 i = floor(p);\n  vec2 f = fract(p);\n  vec2 u = f * f * f * (f * (f * 6.0 - 15.0) + 10.0);   // quintic: silkier gradients\n  float a = hash(i);\n  float b = hash(i + vec2(1.0, 0.0));\n  float c = hash(i + vec2(0.0, 1.0));\n  float d = hash(i + vec2(1.0, 1.0));\n  return mix(mix(a, b, u.x), mix(c, d, u.x), u.y);\n}\nfloat fbm(vec2 p){\n  float v = 0.0;\n  float a = 0.52;\n  mat2 rot = mat2(0.8, 0.6, -0.6, 0.8);\n  for (int i = 0; i < 4; i++){       // fewer octaves = big soft masses, no wisps\n    v += a * vnoise(p);\n    p = rot * p * 1.9;\n    a *= 0.5;\n  }\n  return v;\n"
+    },
+    {
+      "label": "field and four-stop gradient",
+      "source": "evidence/scripts/wallpaper_core.html",
+      "startLine": 273,
+      "endLineInclusive": 309,
+      "characterOffset": 17261,
+      "characterEndExclusive": 19197,
+      "text": "void main(){\n  vec2 uv = gl_FragCoord.xy / uRes;\n  // SCENE SCALE (owner, 2026-09-22): the SKY fits the height — uv.y is the\n  // sky coordinate everywhere (0.10 horizon, 0.90 zenith), so the whole\n  // sky is always in frame and horizon layers ride the bottom edge. The\n  // DETAILS live in uDet, the tighter of height and width/aspect: p is the\n  // field frame in detail units (centered), kS converts a window-fraction\n  // offset into detail units on each axis. On a landscape window uDet is\n  // the height and kS = (W/H, 1): the tuned look, unchanged. On a phone\n  // uDet is the width/aspect, so the sun's halo, aureole and arc shrink\n  // to fit instead of running off the sides.\n  vec2 p  = (gl_FragCoord.xy - 0.5 * uRes) / uDet;\n  vec2 kS = uRes / uDet;\n  float t = uTime;\n  vec2 pw = p - uDrift * t * 0.018;   // advect the whole field downwind\n\n  // one gentle layer of domain warping -> haze that breathes, not smoke that swirls\n  vec2 q = vec2(\n    fbm(pw * 1.0 + t * vec2(0.010, 0.006)),\n    fbm(pw * 1.0 + vec2(5.2, 1.3) - t * vec2(0.007, 0.009))\n  );\n  vec2 r = vec2(\n    fbm(pw * 1.4 + 1.1 * uWarp * q + vec2(1.7, 9.2) + t * vec2(0.0035, -0.0025)),\n    fbm(pw * 1.4 + 1.1 * uWarp * q + vec2(8.3, 2.8) - t * vec2(0.0025, 0.0035))\n  );\n  float f = fbm(pw * 1.1 + 0.8 * uWarp * r);\n  f = mix(f, 0.5, 0.35);             // flatten the field: diffuse, defocused\n\n  // vertical 4-stop gradient, gently perturbed by the cloud field\n  float g = clamp(uv.y + (f - 0.5) * (0.18 + 0.6 * uDensity) * (0.88 + 0.3 * uv.y), 0.0, 1.0);\n  // height compression: an exponent < 1 pushes the sample point up, so\n  // the lower stops' colors get squeezed into a SHORTER band — the\n  // sunset glow physically sinks with the sun instead of thinning tall\n  float gm = pow(g, uSquash);\n  vec3 col = mix(uC3, uC2, smoothstep(0.0, 0.45, gm));\n  col = mix(col, uC1, smoothstep(0.32, 0.78, gm));\n  col = mix(col, uC0, smoothstep(0.62, 1.0, gm));\n"
+    },
+    {
+      "label": "vignette LUT night-floor grain output",
+      "source": "evidence/scripts/wallpaper_core.html",
+      "startLine": 712,
+      "endLineInclusive": 748,
+      "characterOffset": 43217,
+      "characterEndExclusive": 44903,
+      "text": "  // whisper of a vignette\n  float vd = length((uv - 0.5) * vec2(uRes.x / uRes.y, 1.0));\n  col *= 1.0 - 0.20 * smoothstep(0.6, 1.3, vd);\n\n  // owner color LUT: the Lightroom grade, applied to the finished frame\n  // BEFORE the grain/dither (grain rides on top; dither still fights\n  // any banding the grade introduces). 33³ strip, two slice taps + mix.\n  if (uLutAmt > 0.001){\n    vec3 lc = clamp(col, 0.0, 1.0);\n    float b33 = lc.b * 32.0;\n    float sl0 = floor(b33);\n    float sl1 = min(sl0 + 1.0, 32.0);\n    vec2 luv0 = vec2((sl0 * 33.0 + lc.r * 32.0 + 0.5) / 1089.0, (lc.g * 32.0 + 0.5) / 33.0);\n    vec2 luv1 = vec2((sl1 * 33.0 + lc.r * 32.0 + 0.5) / 1089.0, (lc.g * 32.0 + 0.5) / 33.0);\n    vec3 graded = mix(texture2D(uLut, luv0).rgb, texture2D(uLut, luv1).rgb, b33 - sl0);\n    col = mix(col, graded, uLutAmt);\n  }\n\n  // NIGHT FLOOR (owner, 2026-09-22): the deepest night never falls to\n  // black. A screen-lift toward a very dark blue, zenith→horizon, applied\n  // AFTER the vignette and the LUT (which push below the grade's own\n  // linear floor) and before the grain. The CPU gates it to night, so by\n  // day both colors are zero and this is a no-op.\n  vec3 nf = mix(uFloorH, uFloorZ, clamp(uv.y, 0.0, 1.0));\n  col = nf + col * (1.0 - nf);\n\n  // static photographic grain: three decorrelated taps averaged toward a\n  // gaussian, like Photoshop's monochromatic noise (x1.7 restores strength)\n  float gn = (hash(gl_FragCoord.xy)\n            + hash(gl_FragCoord.xy + 17.13)\n            + hash(gl_FragCoord.xy + 41.77)) / 3.0;\n  col += (gn - 0.5) * uGrain * 1.7;\n  col += (hash(gl_FragCoord.xy * 1.7 + 31.0) - 0.5) * (1.6 / 255.0);\n\n  gl_FragColor = vec4(col, uAlpha);\n}\n`;\n"
+    },
+    {
+      "label": "WebGL setup without embedded LUT data",
+      "source": "evidence/scripts/wallpaper_core.html",
+      "startLine": 760,
+      "endLineInclusive": 808,
+      "characterOffset": 140768,
+      "characterEndExclusive": 143226,
+      "text": "/* ---------- WebGL setup ---------- */\nconst canvas = $('#gl');\nconst gl = canvas.getContext('webgl', { antialias: false, alpha: false, powerPreference: 'low-power' })\n        || canvas.getContext('experimental-webgl');\nlet U = null;\n\nfunction makeShader(type, src){\n  const s = gl.createShader(type);\n  gl.shaderSource(s, src);\n  gl.compileShader(s);\n  if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(s) || 'shader error');\n  return s;\n}\nfunction initGL(){\n  const prog = gl.createProgram();\n  gl.attachShader(prog, makeShader(gl.VERTEX_SHADER, VERT));\n  gl.attachShader(prog, makeShader(gl.FRAGMENT_SHADER, FRAG));\n  gl.linkProgram(prog);\n  if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(prog) || 'link error');\n  gl.useProgram(prog);\n\n  const buf = gl.createBuffer();\n  gl.bindBuffer(gl.ARRAY_BUFFER, buf);\n  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);\n  const loc = gl.getAttribLocation(prog, 'aPos');\n  gl.enableVertexAttribArray(loc);\n  gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);\n\n  U = {};\n  ['uRes','uDet','uTime','uC0','uC1','uC2','uC3','uGlowPos','uGlowCol','uGlow','uGlowSize','uDensity','uWarp','uGrain','uDrift','uPrecip','uShaft','uFog','uMilk','uDeck','uPuff','uNight','uHaze','uSquash','uTint','uRays','uRayLook','uHalo','uHaloLook','uLut','uLutAmt','uTexV','uCirA','uCirB','uSun','uPolar','uAureole','uWhiten','uPurple','uCrep','uLit','uTintHi','uFloorZ','uFloorH','uDogs','uCorona','uAlpha']\n    .forEach(n => { U[n] = gl.getUniformLocation(prog, n); });\n\n  gl.enable(gl.BLEND);\n  gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);   // crossfade compositing\n\n  /* color LUT texture on unit 1 — identity until an owner grade lands.\n     NPOT strip (1089×33): CLAMP_TO_EDGE + LINEAR, no mips (WebGL1 rule). */\n  const lutTex = gl.createTexture();\n  gl.activeTexture(gl.TEXTURE1);\n  gl.bindTexture(gl.TEXTURE_2D, lutTex);\n  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);\n  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);\n  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);\n  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);\n  gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1089, 33, 0, gl.RGBA, gl.UNSIGNED_BYTE, identityLutPixels());\n  gl.uniform1i(U.uLut, 1);\n  gl.activeTexture(gl.TEXTURE0);\n  if (LUT_PNG) loadLut(lutTex);\n}\n"
+    },
+    {
+      "label": "resize and detail scaling",
+      "source": "evidence/scripts/wallpaper_core.html",
+      "startLine": 868,
+      "endLineInclusive": 880,
+      "characterOffset": 145423,
+      "characterEndExclusive": 146079,
+      "text": "function resize(){\n  const dpr = Math.min(window.devicePixelRatio || 1, 1.75);\n  canvas.width = Math.round(innerWidth * dpr);\n  canvas.height = Math.round(innerHeight * dpr);\n  gl.viewport(0, 0, canvas.width, canvas.height);\n}\n/* the detail unit (device px) for a canvas of w×h — see state.scene:\n   the tighter of the height and the width ÷ reference aspect */\nfunction detUnit(w, h){\n  const keep = w / Math.max(0.1, state.scene.aspect);          // the unit that keeps the composition in frame\n  const unit = keep + (h - keep) * clamp(state.scene.crop, 0, 1);   // slide toward the height rule = crop a little\n  return Math.max(1, Math.min(h, unit));\n}\n"
+    },
+    {
+      "label": "CPU frame palette inputs",
+      "source": "evidence/scripts/wallpaper_core.html",
+      "startLine": 1575,
+      "endLineInclusive": 1607,
+      "characterOffset": 205325,
+      "characterEndExclusive": 207051,
+      "text": "function buildFrame(){\n  const h = localHour();\n  const geo = solarGeom(h);\n  const wT = state.wTime, wC = state.wCond, wK = state.wTemp;\n\n  /* 1 — the sky gradient. V2: the physical LUT (real sun elevation +\n     moon + live aerosol) through the owner's grade. Legacy: the TOD\n     keyframes warped by solar geometry. Either way the SAME downstream\n     layers (condition, AQI, fog, cloud density) apply on top, and the\n     crossfade machinery sees only the resulting cols. */\n  const aodPhys = effAod();                         // physical estimate (halo gate needs it)\n  const aodNow = dispAod(aodPhys);                  // fx: haze axis pinned pristine when off\n  const sunElevDeg = Math.asin(clamp(geo.sinA, -1, 1)) * 180 / Math.PI;\n  const seed = daySeed();   // this day's unobservables (see daySeed): read by the corona, the twilight fan, …\n  let squashU = 1;   // gradient height compression (sunset)\n  let cols;\n  {\n    const moonElev = SKY2.moonAltitudeDeg(msAtHour(h), state.lat, state.lon);\n    cols = SKY2.stops(sunElevDeg, moonElev, moonIllum(), aodNow);\n    /* sunset compression: as the sun dips below the horizon, the warm\n       glow band sinks with it — a true HEIGHT compression (uSquash\n       bends the gradient coordinate so the low stops span less screen),\n       plus a soft color cascade that cools the leftover warmth aloft.\n       Zero at sunset itself, full ≈ −4.5…−7°, gone by −11° so the\n       tuned night gradient is never touched. */\n    const dep = -sunElevDeg;\n    const w = smooth01(dep / 4.5) * (1 - smooth01((dep - 7) / 4));\n    squashU = 1 - 0.45 * w;\n    if (w > 0.001){\n      cols[1] = lerp3(cols[1], cols[0], 0.28 * w);\n      cols[2] = lerp3(cols[2], cols[1], 0.35 * w);\n    }\n  }\n"
+    },
+    {
+      "label": "night floor and wind",
+      "source": "evidence/scripts/wallpaper_core.html",
+      "startLine": 2059,
+      "endLineInclusive": 2074,
+      "characterOffset": 231370,
+      "characterEndExclusive": 232338,
+      "text": "  /* NIGHT FLOOR colors (display sRGB) × the night gate: in from −6°, full\n     by −12°, so twilight keeps its own colors and the floor owns the\n     moonless small hours. Zenith darker than horizon, blue-leaning. */\n  const nightG = smooth01((-sunElevDeg - 6) / 6);\n  const ft = clamp(state.night.floor, 0, 1);\n  const floorZ = lerp3([0.020, 0.028, 0.060], [0.090, 0.120, 0.290], ft).map(v => v * nightG);\n  const floorH = lerp3([0.030, 0.042, 0.085], [0.125, 0.165, 0.340], ft).map(v => v * nightG);\n\n  /* wind: clouds advect downwind; stronger wind = faster drift.\n     Gated by the Weather influence; at 0 it keeps a fixed gentle heading. */\n  const th = (state.windDir + 180) * Math.PI / 180;     // blowing toward (compass)\n  let dx = lerp(0.86, Math.sin(th), wC);\n  let dy = lerp(0.50, Math.cos(th), wC);\n  const dn = Math.hypot(dx, dy) || 1;\n  const wMag = lerp(1, 0.55 + 1.25 * smooth01(effWind() / 45), wC);\n  const drift = [dx / dn * wMag, dy / dn * wMag];\n"
+    },
+    {
+      "label": "fade constants",
+      "source": "evidence/scripts/wallpaper_core.html",
+      "startLine": 2098,
+      "endLineInclusive": 2100,
+      "characterOffset": 233480,
+      "characterEndExclusive": 233657,
+      "text": "const FADE_DUR = 2.5;      // seconds for a full dissolve\nconst FADE_EPS = 0.02;     // change threshold that triggers a fade\nlet fadePrev = null, fadeP = 0, lastTarget = null;\n"
+    },
+    {
+      "label": "uniform submission and actual draw",
+      "source": "evidence/scripts/wallpaper_core.html",
+      "startLine": 2139,
+      "endLineInclusive": 2190,
+      "characterOffset": 235905,
+      "characterEndExclusive": 238611,
+      "text": "function drawParams(f, alpha){\n  gl.uniform2f(U.uRes, canvas.width, canvas.height);\n  gl.uniform1f(U.uDet, detUnit(canvas.width, canvas.height));\n  gl.uniform1f(U.uTime, slowT);\n  gl.uniform1f(U.uAlpha, alpha);\n  gl.uniform3f(U.uC0, f.cols[0][0], f.cols[0][1], f.cols[0][2]);\n  gl.uniform3f(U.uC1, f.cols[1][0], f.cols[1][1], f.cols[1][2]);\n  gl.uniform3f(U.uC2, f.cols[2][0], f.cols[2][1], f.cols[2][2]);\n  gl.uniform3f(U.uC3, f.cols[3][0], f.cols[3][1], f.cols[3][2]);\n  gl.uniform2f(U.uGlowPos, f.glowPos[0], f.glowPos[1]);\n  gl.uniform3f(U.uGlowCol, f.glowCol[0], f.glowCol[1], f.glowCol[2]);\n  gl.uniform1f(U.uGlow, f.glowStr);\n  gl.uniform1f(U.uGlowSize, f.glowSize);\n  gl.uniform1f(U.uDensity, f.dens);\n  gl.uniform1f(U.uWarp, state.flow);\n  gl.uniform1f(U.uGrain, state.grain);\n  gl.uniform2f(U.uDrift, f.drift[0], f.drift[1]);\n  gl.uniform3f(U.uPrecip, f.precip[0], f.precip[1], f.precip[2]);\n  gl.uniform3f(U.uShaft, state.shaftStr, state.shaftCov, state.shaftReach);\n  gl.uniform1f(U.uFog, f.fog);\n  gl.uniform3f(U.uMilk, f.milk[0], f.milk[1], f.milk[2]);\n  gl.uniform1f(U.uDeck, f.deck);\n  gl.uniform1f(U.uPuff, f.puff);\n  gl.uniform1f(U.uNight, f.night);\n  gl.uniform1f(U.uHaze, f.haze);\n  gl.uniform1f(U.uSquash, f.squash);\n  gl.uniform3f(U.uTint, f.tint[0], f.tint[1], f.tint[2]);\n  gl.uniform1f(U.uRays, f.rays);\n  gl.uniform2f(U.uRayLook, state.rays.scale, state.rays.falloff);\n  gl.uniform1f(U.uHalo, f.halo);\n  gl.uniform3f(U.uHaloLook, state.halo.radius, state.halo.dispersion, 1.0);\n  gl.uniform1f(U.uLutAmt, state.lutAmt);\n  /* grade-shipped texture vibrancy + cirrus look (state-driven, no fade) */\n  gl.uniform1f(U.uTexV, SKY2.GRADE.textureVibrancy != null ? SKY2.GRADE.textureVibrancy : 1);\n  const ci = state.cirrus;\n  gl.uniform4f(U.uCirA, ci.angle * Math.PI / 180, ci.variance * Math.PI / 180, ci.fiber, ci.opacity);\n  gl.uniform4f(U.uCirB, ci.cover, ci.evolve, ci.breakDepth, ci.grain);\n  /* sun-relative sky geometry + the polarizer band (frame params) */\n  gl.uniform3f(U.uSun, f.sun[0], f.sun[1], f.sun[2]);\n  gl.uniform1f(U.uPolar, f.polar);\n  gl.uniform2f(U.uAureole, f.aureole[0], f.aureole[1]);\n  gl.uniform1f(U.uWhiten, f.whiten);\n  gl.uniform3f(U.uPurple, f.purple[0], f.purple[1], f.purple[2]);\n  gl.uniform2f(U.uCrep, f.crep, state.purity.crepScale);\n  gl.uniform3f(U.uLit, f.lit[0], f.lit[1], f.lit[2]);\n  gl.uniform3f(U.uTintHi, f.tintHi[0], f.tintHi[1], f.tintHi[2]);\n  gl.uniform3f(U.uFloorZ, f.floorZ[0], f.floorZ[1], f.floorZ[2]);\n  gl.uniform3f(U.uFloorH, f.floorH[0], f.floorH[1], f.floorH[2]);\n  gl.uniform3f(U.uDogs, f.dogs[0], f.dogs[1], f.dogs[2]);\n  gl.uniform3f(U.uCorona, f.corona[0], f.corona[1], f.corona[2]);\n  gl.drawArrays(gl.TRIANGLES, 0, 3);\n}\n"
+    },
+    {
+      "label": "crossfade and paced loop",
+      "source": "evidence/scripts/wallpaper_core.html",
+      "startLine": 2192,
+      "endLineInclusive": 2233,
+      "characterOffset": 238612,
+      "characterEndExclusive": 240511,
+      "text": "function drawScene(dt){\n  const target = buildFrame();\n  if (fadePrev === null && lastTarget && frameDist(target, lastTarget) > FADE_EPS){\n    fadePrev = lastTarget;                 // freeze the outgoing sky\n    fadeP = 0;\n  }\n  if (fadePrev){\n    fadeP = Math.min(1, fadeP + (dt || 0) / FADE_DUR);\n    drawParams(fadePrev, 1.0);             // old sky, still breathing\n    drawParams(target, smooth01(fadeP));   // new sky dissolving in over it\n    if (fadeP >= 1) fadePrev = null;\n  } else {\n    drawParams(target, 1.0);\n  }\n  lastTarget = cloneFrame(target);\n}\n\n/* The sky drifts at ~one cloud-length per 80 seconds, so repainting it at\n   display rate buys nothing the eye can see. What each repaint DOES buy is\n   a bill for everything composited above the canvas: every glass surface\n   with a backdrop-filter re-resolves whenever its backdrop changes, and\n   each pass syncs on this canvas's shared IOSurface (traced as\n   WaitForCommandsToBeScheduled stalls dominating rich-content interaction\n   frames). Pacing the shader to ~30fps halves that tax at 60Hz and\n   quarters it on ProMotion, for the whole app at once. All sky time below\n   is dt-based, so skipped frames change pacing only, never the clock; 31ms\n   rather than 33 so the gate never beats against a 16.7ms vsync and lands\n   on 30fps exactly. */\nconst FRAME_MIN_MS = 31;\nfunction frame(now){\n  if (now - last < FRAME_MIN_MS){ requestAnimationFrame(frame); return; }\n  const dt = Math.min((now - last) / 1000, 0.1);\n  last = now;\n  slowT += dt * state.speed;                       // \"1x\" ~= one cloud-length per 80s\n  /* custom time is not frozen: it keeps flowing at timeFlow × real\n     time, so a chosen golden hour actually unfolds (agency request) */\n  if (!state.live){\n    state.hourOverride = ((state.hourOverride + dt * state.timeFlow / 3600) % 24 + 24) % 24;\n  }\n  drawScene(dt);\n  requestAnimationFrame(frame);\n}\n"
+    },
+    {
+      "label": "scene selection",
+      "source": "evidence/scripts/wallpaper_core.html",
+      "startLine": 2326,
+      "endLineInclusive": 2347,
+      "characterOffset": 245410,
+      "characterEndExclusive": 246146,
+      "text": "function applyScene(sc){\n  state.lat = sc.lat; state.lon = sc.lon; state.place = sc.name; state.tz = sc.tz;\n  state.sim = sc.sim;\n  state.windSim = sc.wind != null ? sc.wind : null;\n  state.aqiSim = sc.aqi != null ? sc.aqi : null;\n\n  /* resolve the named hour against this place's actual sun today */\n  const geo = solarGeom(12);\n  const H = {\n    sunrise: geo.rise + 0.2, morning: geo.rise + 2.5,\n    noon: (geo.rise + geo.set) / 2, afternoon: 15.5,\n    golden: geo.set - 0.9, sunset: geo.set - 0.2, dusk: geo.set + 0.5,\n    night: 23.0, midnight: 0.15\n  };\n  const h = typeof sc.hour === 'number' ? sc.hour : H[sc.hour];\n  state.live = false;\n  state.hourOverride = ((h % 24) + 24) % 24;\n\n  activeScene = sc;\n\n  fetchWeather(true);\n}\n"
+    },
+    {
+      "label": "weather ingestion",
+      "source": "evidence/scripts/wallpaper_core.html",
+      "startLine": 2402,
+      "endLineInclusive": 2456,
+      "characterOffset": 248627,
+      "characterEndExclusive": 251596,
+      "text": "async function fetchWeather(reset){\n  const url = 'https://api.open-meteo.com/v1/forecast'\n    + '?latitude=' + state.lat + '&longitude=' + state.lon\n    + '&current=temperature_2m,weather_code,cloud_cover,is_day,wind_speed_10m,wind_direction_10m,relative_humidity_2m,cloud_cover_low,cloud_cover_mid,cloud_cover_high,wind_gusts_10m'\n    /* radiation/visibility/snow/cape aren't served via current= — take\n       the current hour from hourly (forecast_hours starts at \"now\") */\n    + '&hourly=visibility,direct_radiation,diffuse_radiation,shortwave_radiation,terrestrial_radiation,snow_depth,cape'\n    + '&forecast_hours=2&timezone=auto';\n  const aqUrl = 'https://air-quality-api.open-meteo.com/v1/air-quality'\n    + '?latitude=' + state.lat + '&longitude=' + state.lon\n    + '&current=us_aqi,aerosol_optical_depth';\n  const aqP = fetch(aqUrl).then(r => r.ok ? r.json() : null).catch(() => null);\n  try {\n    const r = await fetch(url);\n    if (!r.ok) throw new Error('http ' + r.status);\n    const j = await r.json();\n    state.temp = j.current.temperature_2m;\n    state.code = j.current.weather_code;\n    state.cloud = j.current.cloud_cover;\n    state.wind = j.current.wind_speed_10m;\n    state.windDir = j.current.wind_direction_10m;\n    if (j.current.relative_humidity_2m != null) state.humidity = j.current.relative_humidity_2m;\n    if (j.current.cloud_cover_low != null) state.cloudLow = j.current.cloud_cover_low;\n    if (j.current.cloud_cover_mid != null) state.cloudMid = j.current.cloud_cover_mid;\n    if (j.current.cloud_cover_high != null) state.cloudHigh = j.current.cloud_cover_high;\n    if (j.current.wind_gusts_10m != null) state.gusts = j.current.wind_gusts_10m;\n    const hh = j.hourly;\n    if (hh && hh.time && hh.time.length){\n      const pick = v => (v && v[0] != null) ? v[0] : null;    // index 0 = the current hour\n      state.visibility = pick(hh.visibility);\n      state.snowDepth = pick(hh.snow_depth);\n      state.cape = pick(hh.cape);\n      const dir = pick(hh.direct_radiation), dif = pick(hh.diffuse_radiation);\n      const sw = pick(hh.shortwave_radiation), terr = pick(hh.terrestrial_radiation);\n      state.diffuseFrac = (dir != null && dif != null && dir + dif > 20) ? dif / (dir + dif) : null;\n      state.skyTransmit = (sw != null && terr != null && terr > 50)\n        ? clamp(sw / (0.75 * terr), 0, 1.2) : null;\n    }\n    state.utcOffset = j.utc_offset_seconds;\n    state.haveWx = true;\n    state.updated = new Date();\n  } catch (e) {\n    const warn = reset || state.haveWx || !fetchWeather.warned;\n    state.haveWx = false;\n    if (reset){\n      state.temp = 16; state.code = 2; state.cloud = 40;\n      state.wind = 9; state.windDir = 250; state.aqi = 35; state.updated = null;\n    }\n    if (warn){\n      toast('Live weather is unreachable — pick a condition chip to simulate');\n      fetchWeather.warned = true;\n    }\n  }\n  const aj = await aqP;\n  if (aj && aj.current && aj.current.us_aqi != null) state.aqi = aj.current.us_aqi;\n"
+    },
+    {
+      "label": "public sky controls",
+      "source": "evidence/scripts/wallpaper_core.html",
+      "startLine": 2687,
+      "endLineInclusive": 2742,
+      "characterOffset": 266510,
+      "characterEndExclusive": 269464,
+      "text": "window.hark = {\n  setLive(on){\n    clearScene();\n    state.live = !!on;\n    if (on) state.dateSim = null;                 // live = here and NOW\n    if (!on) state.hourOverride = localHourLiveSnapshot();\n    state.stagedCloud = !on;                      // entering custom stages the 42% default\n    tick();\n  },\n  setHour(h){\n    clearScene();\n    state.hourOverride = ((h % 24) + 24) % 24;\n    /* the timeline scrubber tracks 1:1 (owner): drop any in-flight\n       dissolve and the fade baseline so dragging moves the sky\n       directly — every OTHER state change keeps its crossfade */\n    fadePrev = null;\n    lastTarget = null;\n    tick();\n  },\n  setDate(s){\n    clearScene();\n    state.dateSim = s || null;\n    if (s && state.live){ state.live = false; state.hourOverride = localHourLiveSnapshot(); }\n    tick();\n  },\n  setTimeFlow(v){ state.timeFlow = clamp(v, 0, 120); },   // 120× = 2 sim minutes per real second\n  setSim(code){\n    clearScene();\n    state.sim = code;\n    if (code === null){                            // Live = all auto, REAL cloud\n      state.windSim = null; state.aqiSim = null;\n      state.cloudSim = null; state.aodSim = null;\n      state.stagedCloud = false;                   // dismiss the staged 42% default\n    }\n    tick();\n  },\n  setWind(kmh){ state.windSim = kmh; clearScene(); tick(); },\n  setAqi(v){ state.aqiSim = v; clearScene(); tick(); },\n  setCloud(v){ state.cloudSim = v < 0 ? null : clamp(v, 0, 100); clearScene(); tick(); },\n  setAod(v){ state.aodSim = v < 0 ? null : clamp(v, 0.02, 1.5); clearScene(); tick(); },\n  setCirrus(k, v){ if (k in state.cirrus) state.cirrus[k] = v; },\n  setRays(k, v){ if (k in state.rays) state.rays[k] = v; },\n  setHalo(k, v){ if (k in state.halo) state.halo[k] = (k === 'force') ? !!v : v; },\n  setPurity(k, v){ if (k in state.purity) state.purity[k] = (k === 'force') ? !!v : v; },\n  setScene(k, v){ if (k in state.scene) state.scene[k] = v; },   // scene scale: reference aspect for the detail unit\n  setCloudLit(k, v){ if (k in state.cloudLit) state.cloudLit[k] = v; },   // cloud lighting + low-sun dials\n  setAfterglow(k, v){ if (k in state.afterglow) state.afterglow[k] = v; },   // re-illumination brightness\n  setNight(k, v){ if (k in state.night) state.night[k] = v; },   // night floor dial\n  setDogs(k, v){ if (k in state.dogs) state.dogs[k] = (k === 'force') ? !!v : v; },       // sundogs\n  setCorona(k, v){ if (k in state.corona) state.corona[k] = (k === 'force') ? !!v : v; },   // coronae\n  setLutAmt(v){ state.lutAmt = clamp(v, 0, 1); tick(); },\n  setSkyglow(v){ state.skyglowStrength = clamp(v, 0, 1); tick(); },\n  /* debug/test hook: override the measured city-light value (null = refetch on next place) */\n  setSkyglowSample(v){ state.skyglow = v == null ? null : clamp(v, 0, 1); tick(); },\n  applyScene: i => { if (SCENES[i]){ applyScene(SCENES[i]); tick(); } },\n  selectPlace: (name, lat, lon, tz) => selectPlace({ name, lat, lon, tz: tz || null }),\n"
+    },
+    {
+      "label": "sky status and theme inputs",
+      "source": "evidence/scripts/wallpaper_core.html",
+      "startLine": 2771,
+      "endLineInclusive": 2842,
+      "characterOffset": 270542,
+      "characterEndExclusive": 273412,
+      "text": "function tick(){\n  const h = localHour();\n  const f = lastTarget || buildFrame();\n  const mixP = fadePrev ? smooth01(fadeP) : 1;\n  /* lutJS mirrors the GPU grade so the pill dot and the glass\n     light/dark switching see the same colors the screen shows */\n  const col = i => {\n    const c = lutJS(fadePrev ? lerp3(fadePrev.cols[i], f.cols[i], mixP) : f.cols[i]);\n    /* the FRAG's night floor (screen-lift, zenith→horizon) — the glass UI\n       must switch on the colors the screen actually shows */\n    const nf = lerp3(f.floorH, f.floorZ, i === 0 ? 1 : i === 3 ? 0 : (3 - i) / 3);\n    return c.map((v, j) => nf[j] + v * (1 - nf[j]));\n  };\n  const c3 = col(3);\n  /* bottom-weighted sky luminance: native flips the glass UI light/dark on it */\n  const L = c => 0.299 * c[0] + 0.587 * c[1] + 0.114 * c[2];\n  const lum = 0.1 * L(col(0)) + 0.2 * L(col(1)) + 0.3 * L(col(2)) + 0.4 * L(c3);\n  /* true day/night at the displayed hour, from real solar geometry */\n  const geo = solarGeom(h);\n  const sunR = ((geo.rise % 24) + 24) % 24;\n  const isDay = (((h - sunR) % 24) + 24) % 24 < geo.dayLen;\n  post({\n    type: 'status',\n    place: state.place,\n    tempF: Math.round(state.temp * 9 / 5 + 32),\n    cond: condText(effCode()),\n    cloud: Math.round(effCloud()),\n    mph: Math.round(effWind() * 0.621371),\n    dir: compass(state.windDir),\n    aqi: Math.round(effAqi()),\n    hour: h,\n    timeText: fmtHour(h),\n    live: state.live,\n    sim: state.sim === null ? -1 : state.sim,\n    simActive: state.sim !== null || state.windSim !== null || state.aqiSim !== null\n             || state.cloudSim !== null || state.aodSim !== null,\n    online: state.haveWx,\n    windKmh: effWind(),\n    windAuto: state.windSim === null,\n    aqiVal: effAqi(),\n    aqiAuto: state.aqiSim === null,\n    aodVal: effAod(),\n    aodAuto: state.aodSim === null,\n    cloudAuto: state.cloudSim === null,\n    dateSim: state.dateSim || '',\n    flow: state.timeFlow,\n    scene: activeScene ? activeScene.label : '',\n    dot: [c3[0], c3[1], c3[2]],\n    lum,\n    day: isDay,\n    glow: state.skyglow === null ? -1 : state.skyglow,\n    /* clear-sky plumbing readouts (phenomena plan, step 0) */\n    turb: f.turb,\n    seed: f.seed,\n    sunAlt: f.sun[2],\n    polar: f.polar,\n    aureole: f.aureole,\n    whiten: f.whiten,\n    purple: f.purple[0],\n    crep: f.crep,\n    dust: f.dust,\n    lit: f.lit,\n    tintHi: f.tintHi,\n    floorZ: f.floorZ,\n    floorH: f.floorH,\n    dogs: [f.dogs[0], f.dogs[1] / (state.halo.radius / 22)],          // strength, separation in degrees\n    corona: [f.corona[0], f.corona[1] / (state.halo.radius / 22), f.corona[2]],   // strength, radius in degrees, purity\n    redF: f.redF,\n    glowCol: f.glowCol,\n    /* scene scale: the detail unit as a share of the height (1 = landscape, tuned look) */\n    det: canvas.height > 0 ? detUnit(canvas.width, canvas.height) / canvas.height : 1\n  });\n"
+    },
+    {
+      "label": "boot timing and motion preferences",
+      "source": "evidence/scripts/wallpaper_core.html",
+      "startLine": 2848,
+      "endLineInclusive": 2874,
+      "characterOffset": 273554,
+      "characterEndExclusive": 274463,
+      "text": "try {\n  if (!gl) throw new Error('no webgl');\n  initGL();\n  resize();\n  addEventListener('resize', resize);\n  loadSnapshot();\n  state.lutAmt = LUT_AMT_DEFAULT;\n  if (matchMedia('(prefers-reduced-motion: reduce)').matches) state.speed = 0.08;\n  post({\n    type: 'config',\n    sims: SIMS.map(x => ({ label: x[0], code: x[1] === null ? -1 : x[1] })),\n    scenes: SCENES.map(x => x.label),\n    presets: PRESETS.map(x => x.label)\n  });\n  fetchWeather();\n  setInterval(fetchWeather, 10 * 60 * 1000);\n  document.addEventListener('visibilitychange', () => {\n    if (!document.hidden) fetchWeather();      // app resumed elsewhere/later: refresh, then ease\n  });\n  setInterval(tick, 1000);\n  tick();\n  requestAnimationFrame(t => { last = t; requestAnimationFrame(frame); });\n} catch (e) {\n  document.getElementById('glfail').style.display = 'flex';\n  toast('Render failed: ' + (e.message || e));\n  console.error(e);\n}\n"
+    }
+  ]
+}

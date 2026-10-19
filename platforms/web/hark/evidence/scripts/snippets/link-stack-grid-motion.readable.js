@@ -1,0 +1,176 @@
+// Readability-only formatting of exact raw evidence. Source offsets/SHA: link-stack-grid-motion.meta.json
+const qj = { k: 207, zeta: 0.92, eps: 0.12 },
+  $j = { k: 104, zeta: 0.82, eps: 0.05 },
+  Gj = { k: 253, zeta: 0.88, eps: 0.0015 };
+function Vj(e, t) {
+  const n = 43758.5453 * Math.sin(127.1 * (e + 1) + 311.7 * t);
+  return n - Math.floor(n);
+}
+function Wj(e, t, n, r) {
+  const s = n.k * r;
+  return {
+    v: e,
+    vel: 0,
+    to: t,
+    k: s,
+    c: 2 * Math.sqrt(s) * n.zeta,
+    eps: n.eps,
+  };
+}
+function Yj(e, t) {
+  ((e.vel += (e.k * (e.to - e.v) - e.c * e.vel) * t), (e.v += e.vel * t));
+  const n = Math.abs(e.to - e.v) < e.eps && Math.abs(e.vel) < 30 * e.eps;
+  return (n && ((e.v = e.to), (e.vel = 0)), n);
+}
+function Qj(e) {
+  return e.map((e) => {
+    const t = e.getBoundingClientRect(),
+      n = getComputedStyle(e),
+      r = new DOMMatrixReadOnly("none" === n.transform ? "" : n.transform);
+    return {
+      x: t.left + t.width / 2,
+      y: t.top + t.height / 2,
+      rot: (180 * Math.atan2(r.b, r.a)) / Math.PI,
+      scale: Math.hypot(r.a, r.b) || 1,
+      faded: parseFloat(n.opacity) < 0.5,
+    };
+  });
+}
+function Kj(e) {
+  const t = e.map((e) => e.offsetWidth),
+    n = e.map((e) => e.offsetHeight),
+    r = e.some((e) => "photo" === e.dataset.kind),
+    s = r ? Math.max(...t, ...n) : Math.max(...t),
+    i = r ? s : Math.max(...n),
+    o = i + 20,
+    a = Math.ceil(e.length / 2),
+    l = 2 * s + 20,
+    c = a * o - 20,
+    u = e[0],
+    d =
+      (u &&
+        parseFloat(
+          getComputedStyle(u).getPropertyValue("--veil-bottom-fade"),
+        )) ||
+      0,
+    p = window.innerHeight - d - 48,
+    h = Math.min(1, (p - 48) / c, (window.innerWidth - 96) / l),
+    f = window.innerWidth / 2,
+    m = (48 + p) / 2;
+  return e.map((e, t) => {
+    const a = t % 2,
+      u = Math.floor(t / 2),
+      d = -l / 2 + a * (s + 20) + s / 2,
+      p = r ? -c / 2 + u * o + i / 2 : -c / 2 + u * o + n[t] / 2;
+    return { x: f + d * h, y: m + p * h, rot: 0, scale: h, faded: !1 };
+  });
+}
+function Xj(e, t, n, r, s, i, o) {
+  const a = t.map((e, t) => {
+      const i = n[t],
+        o = r[t],
+        a = o.x - i.x,
+        l = o.y - i.y,
+        c = Math.hypot(a, l) || 1,
+        u = (e) => 1 + 0.18 * (2 * Vj(t, e) - 1);
+      return {
+        card: e,
+        a: i,
+        b: o,
+        dx: a,
+        dy: l,
+        dist: c,
+        nx: -l / c,
+        ny: a / c,
+        bow:
+          Math.min(130, 0.22 * c) * (t % 2 ? -1 : 1) * (0.7 + 0.6 * Vj(t, 7)),
+        wait: 28 * s(t) * (0.85 + 0.3 * Vj(t, 3)),
+        fade: i.faded || o.faded,
+        x: Wj(i.x, o.x, qj, u(1)),
+        y: Wj(i.y, o.y, qj, u(2)),
+        r: Wj(i.rot, o.rot, $j, u(4)),
+        s: Wj(i.scale, o.scale, Gj, u(5)),
+        off: !1,
+        along: 0,
+      };
+    }),
+    l = a.reduce((e, t) => e + t.dist, 0) || 1,
+    c = "pile" === e.dataset.layout ? 0 : 1;
+  function u() {
+    const t = a.reduce((e, t) => e + t.along * t.dist, 0) / l,
+      n = i ? t : 1 - t;
+    e.style.setProperty("--spread", Math.max(c, n).toFixed(4));
+  }
+  function d(e) {
+    const t = dj(
+      ((e.x.v - e.a.x) * e.dx + (e.y.v - e.a.y) * e.dy) / (e.dist * e.dist),
+      0,
+      1,
+    );
+    e.along = t;
+    const n = e.bow * Math.sin(Math.PI * t),
+      r = e.card.offsetWidth,
+      s = e.card.offsetHeight,
+      i = e.x.v + e.nx * n - r / 2,
+      o = e.y.v + e.ny * n - s / 2;
+    if (
+      ((e.card.style.transform = `translate(${i.toFixed(2)}px, ${o.toFixed(2)}px) rotate(${e.r.v.toFixed(2)}deg) scale(${e.s.v.toFixed(4)}) scale(var(--grid-hover, 1))`),
+      e.fade)
+    ) {
+      const n = e.b.faded ? 1 - t : t;
+      e.card.style.opacity = dj(2.2 * n, 0, 1).toFixed(3);
+    }
+  }
+  const p = performance.now();
+  let h = p,
+    f = 0;
+  return (
+    a.forEach(d),
+    u(),
+    (f = requestAnimationFrame(function e(t) {
+      const n = Math.min(0.032, (t - h) / 1e3);
+      h = t;
+      let r = !1;
+      for (const s of a) {
+        if (!s.off) {
+          if (t - p < s.wait) {
+            r = !0;
+            continue;
+          }
+          s.off = !0;
+        }
+        ([Yj(s.x, n), Yj(s.y, n), Yj(s.r, n), Yj(s.s, n)].every(Boolean) ||
+          (r = !0),
+          d(s));
+      }
+      if ((u(), r && t - p < 900)) f = requestAnimationFrame(e);
+      else {
+        for (const e of a)
+          ((e.x.v = e.x.to),
+            (e.y.v = e.y.to),
+            (e.r.v = e.r.to),
+            (e.s.v = e.s.to),
+            d(e));
+        (u(), o());
+      }
+    })),
+    () => cancelAnimationFrame(f)
+  );
+}
+function Zj(e) {
+  const t = e.querySelector(".link-stack.is-spread");
+  t && t.dispatchEvent(new CustomEvent("stack:collapse"));
+}
+function Jj(e) {
+  if (e.overlayWired) return;
+  e.overlayWired = !0;
+  const t = () => Zj(e.overlay);
+  e.overlay.addEventListener("pointerdown", (e) => {
+    e.target?.closest(".link-card") || t();
+  });
+  const n = (e) => {
+    "Escape" === e.key && (uj.close ? uj.close() : t());
+  };
+  (window.addEventListener("keydown", n),
+    e.disposers.push(() => window.removeEventListener("keydown", n)));
+}

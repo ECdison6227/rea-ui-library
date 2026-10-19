@@ -1,0 +1,102 @@
+{
+  "bundle": "mine",
+  "id": "mi-513",
+  "line": 521,
+  "aliases": {
+    "t": 3,
+    "n": 17,
+    "o": 27,
+    "u": 54,
+    "c": 14,
+    "l": 18,
+    "f": "mi-282",
+    "s": "mi-413",
+    "h": "mi-156",
+    "p": "mi-514",
+    "y": "mi-399",
+    "v": "mi-517",
+    "w": "mi-520"
+  },
+  "elements": [
+    {
+      "type": "p.default",
+      "module": "mi-514",
+      "props": {
+        "from": {
+          "$code": "p.EBannerType.MY_TAB"
+        },
+        "useGestureScrollView": {
+          "$code": "!0"
+        },
+        "dotStyle": {
+          "$code": "w.default.dotStyle"
+        },
+        "activeDotStyle": {
+          "$code": "w.default.activeDotStyle"
+        },
+        "containerStyle": {
+          "$code": "w.default.swiperContainer"
+        },
+        "paginationStyle": {
+          "$code": "w.default.paginationStyle"
+        },
+        "data": {
+          "$code": "l"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "s.default",
+      "module": "mi-413",
+      "props": {
+        "fallback": {
+          "$code": "c.default.createElement(c.default.Fragment,null)"
+        },
+        "key": {
+          "$code": "L"
+        }
+      },
+      "children": [
+        {
+          "$code": "c.default.createElement(c.Suspense,{fallback:c.default.createElement(c.default.Fragment,null)},c.default.createElement(x,{fetcher:f}))"
+        }
+      ]
+    },
+    {
+      "type": "c.default.Fragment",
+      "props": null,
+      "children": []
+    },
+    {
+      "type": "c.Suspense",
+      "module": 14,
+      "props": {
+        "fallback": {
+          "$code": "c.default.createElement(c.default.Fragment,null)"
+        }
+      },
+      "children": [
+        {
+          "$code": "c.default.createElement(x,{fetcher:f})"
+        }
+      ]
+    },
+    {
+      "type": "c.default.Fragment",
+      "props": null,
+      "children": []
+    },
+    {
+      "type": "x",
+      "props": {
+        "fetcher": {
+          "$code": "f"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": []
+}

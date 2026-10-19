@@ -1,0 +1,15 @@
+var t=r(d[0]);
+
+Object.defineProperty(e,"__esModule",{value:!0}),e.UserProfile=e.NnLoginUserProfile=void 0;
+
+var n=t(r(d[1])),o=t(r(d[2])),u=(function(t,n){if(!n&&t&&t.__esModule)return t;if(null===t||"object"!=typeof t&&"function"!=typeof t)return{default:t};var o=b(n);if(o&&o.has(t))return o.get(t);var u={__proto__:null},c=Object.defineProperty&&Object.getOwnPropertyDescriptor;for(var l in t)if("default"!==l&&{}.hasOwnProperty.call(t,l)){var f=c?Object.getOwnPropertyDescriptor(t,l):null;f&&(f.get||f.set)?Object.defineProperty(u,l,f):u[l]=t[l]}return u.default=t,o&&o.set(t,u),u})(r(d[3])),c=t(r(d[4])),l=t(r(d[5])),f=r(d[6]),s=t(r(d[7])),h=r(d[8]),p=r(d[9]),y=r(d[10]),v=r(d[11]),w=r(d[12]),L=t(r(d[13]));
+
+function b(t){if("function"!=typeof WeakMap)return null;var n=new WeakMap,o=new WeakMap;return(b=function(t){return t?o:n})(t)}
+
+/* Babel regenerator helper omitted from readable view; exact source retained in .js */
+
+e.NnLoginUserProfile=(0,v.withRenderFC)(function(t){var n=t.children;return(0,u.useEffect)(function(){f.CommonBridge.showLoginPage()},[]),u.default.createElement(p.UserProfileView,{name:l.default.trans("mine.user.info.no.login.name"),descList:[l.default.trans("mine.user.info.no.login")],onPress:function(){f.CommonBridge.showLoginPage()}},n)},"[NnLoginUserProfile]");
+
+var P=function(t){var n=t.fetcher,o=t.children,l=(0,h.use)(n),f=l.name,s=l.gender,y=l.height,w=l.age,b=l.source,E=(0,c.default)();return u.default.createElement(p.UserProfileView,{name:f,source:b,descList:[s,y,w].filter(Boolean),onPress:function(){(0,v.clickPersonalCenterTrack)(),E.push(L.default.userInfoRoute,{_rt:"native"})}},o)};
+
+e.UserProfile=(0,v.withRenderFC)(function(t){var c=t.children,l=(0,u.useState)(w.getUserProfile),f=(0,o.default)(l,2),h=f[0],v=f[1];return(0,y.usePageAppearEnhanced)(function(){var t,o;return E().async(function(u){for(;;)switch(u.prev=u.next){case 0:return t=(0,w.getUserProfile)(),u.next=3,E().awrap(t);case 3:o=u.sent,(0,n.default)(t,{data:o,status:"fulfilled"}),v(t);case 6:case"end":return u.stop()}},null,null,null,Promise)}),u.default.createElement(s.default,{fallback:u.default.createElement(p.UserProfileView,{name:"",descList:[]})},u.default.createElement(u.Suspense,{fallback:u.default.createElement(p.UserProfileView,{name:"",descList:[]})},u.default.createElement(P,{fetcher:h},c)))},"[UserProfile]")

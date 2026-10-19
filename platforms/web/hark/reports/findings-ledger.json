@@ -1,0 +1,188 @@
+{
+  "date": "2026-10-15",
+  "target": "https://hark.com/chat",
+  "findings": [
+    {
+      "id": "F01",
+      "topic": "文字排版",
+      "evidenceType": "实测",
+      "finding": "普通气泡/输入框15px、19px、400；代码14px、20px、Mono。",
+      "sources": [
+        "evidence/styles/targeted-computed-styles.json"
+      ]
+    },
+    {
+      "id": "F02",
+      "topic": "摘要详情",
+      "evidenceType": "实测",
+      "finding": "摘要详情Hark Serif标题40/52；正文18/25.2，与气泡分开。",
+      "sources": [
+        "evidence/styles/rich-computed-styles.json",
+        "evidence/screenshots/15-summary-open.png"
+      ]
+    },
+    {
+      "id": "F03",
+      "topic": "材质",
+      "evidenceType": "实测+静态",
+      "finding": "用户/助手fill透明度.3/.7；composer glass blur50px。",
+      "sources": [
+        "evidence/styles/rich-computed-styles.json",
+        "evidence/styles/B9bSKZIz.css"
+      ]
+    },
+    {
+      "id": "F04",
+      "topic": "连续圆角",
+      "evidenceType": "实测+静态",
+      "finding": "常见24px，独立fill/stroke + 尺寸驱动Bezier clip-path。",
+      "sources": [
+        "evidence/dom/rea-code-06-reply-visible.html",
+        "evidence/analysis/design-rules.json"
+      ]
+    },
+    {
+      "id": "F05",
+      "topic": "天空背景",
+      "evidenceType": "静态+运行结构",
+      "finding": "WebGL画布；完整发布shader有FBM、梯度、LUT、颗粒。具体uniform运行值未测。",
+      "sources": [
+        "evidence/scripts/wallpaper_core.html",
+        "evidence/scripts/wallpaper-fragment.glsl",
+        "evidence/analysis/wallpaper-source-excerpts.json"
+      ]
+    },
+    {
+      "id": "F06",
+      "topic": "设计变量",
+      "evidenceType": "静态",
+      "finding": "544条带原选择器的声明；同名变量有不同主题值。",
+      "sources": [
+        "reports/design-tokens.css",
+        "reports/design-tokens.json"
+      ]
+    },
+    {
+      "id": "F07",
+      "topic": "原生卡片",
+      "evidenceType": "静态+部分实测",
+      "finding": "按presentation/归一化kind分发；summary/table/code/links已经生成。不是完整服务端schema。",
+      "sources": [
+        "evidence/scripts/snippets/cards-normalization.readable.js",
+        "evidence/scripts/snippets/cards-render-dispatch.readable.js",
+        "evidence/interactions/06-stream-dom-samples.json"
+      ]
+    },
+    {
+      "id": "F08",
+      "topic": "代码卡交互",
+      "evidenceType": "实测",
+      "finding": "REA控制场景展开、收起、回复均完成。",
+      "sources": [
+        "evidence/rea/05-code-bundle.json",
+        "evidence/screenshots/rea-code-06-reply-visible.png"
+      ]
+    },
+    {
+      "id": "F09",
+      "topic": "摘要卡交互",
+      "evidenceType": "实测",
+      "finding": "折叠预览点击后打开独立详情弹层。",
+      "sources": [
+        "evidence/interactions/14-card-actions.json",
+        "evidence/screenshots/15-summary-open.png"
+      ]
+    },
+    {
+      "id": "F10",
+      "topic": "图片叠卡",
+      "evidenceType": "实测",
+      "finding": "7张图片pile展开；锁滚动；最终关闭态spread0/lockedfalse。",
+      "sources": [
+        "evidence/screenshots/23-photo-stack-spread.png",
+        "evidence/interactions/24-collapse-final-state.json"
+      ]
+    },
+    {
+      "id": "F11",
+      "topic": "表格与文件",
+      "evidenceType": "实测",
+      "finding": "表格菜单CSV下载成功；文件CSV预览加载为电子表格。",
+      "sources": [
+        "evidence/interactions/table-export.csv",
+        "evidence/interactions/21-table-download.json",
+        "evidence/screenshots/26-file-preview-loaded.png"
+      ]
+    },
+    {
+      "id": "F12",
+      "topic": "表格排序",
+      "evidenceType": "部分验证",
+      "finding": "静态有desc/asc/null；当前三行表格点击列头3次顺序不变。",
+      "sources": [
+        "evidence/interactions/17-table-sorting.json",
+        "evidence/scripts/snippets/table-card-model.readable.js"
+      ]
+    },
+    {
+      "id": "F13",
+      "topic": "实时协议",
+      "evidenceType": "实测+静态",
+      "finding": "EventSource text/event-stream，snapshot/patches/seq/entry_add/message_update。",
+      "sources": [
+        "evidence/network/13-sse-metadata.json",
+        "evidence/scripts/snippets/stream-feed-manager.readable.js"
+      ]
+    },
+    {
+      "id": "F14",
+      "topic": "输出节奏",
+      "evidenceType": "实测",
+      "finding": "100ms采样：富卡成批出现；短正文首次出现时完整。未证实逐token。",
+      "sources": [
+        "evidence/interactions/06-stream-dom-samples.json",
+        "evidence/interactions/13-sse-dom-samples.json"
+      ]
+    },
+    {
+      "id": "F15",
+      "topic": "连接归属",
+      "evidenceType": "实测+推断",
+      "finding": "SharedWorker user事件、页面conversation SSE都出现；具体回退原因未知。",
+      "sources": [
+        "evidence/network/07-worker-identity.json",
+        "evidence/network/11-reconnect-page-metadata.json"
+      ]
+    },
+    {
+      "id": "F16",
+      "topic": "滚动",
+      "evidenceType": "静态+实测",
+      "finding": "near-bottom<=70px；内容增长补偿；叠卡滚动锁为另一机制。",
+      "sources": [
+        "evidence/scripts/snippets/scroll-pinning.readable.js",
+        "evidence/interactions/13-sse-dom-samples.json"
+      ]
+    },
+    {
+      "id": "F17",
+      "topic": "窄屏",
+      "evidenceType": "实测",
+      "finding": "390px视口下composer358px/左16px/高48px；无文档横向溢出。",
+      "sources": [
+        "evidence/styles/27-mobile-layout.json",
+        "evidence/screenshots/27-mobile-chat.png"
+      ]
+    },
+    {
+      "id": "F18",
+      "topic": "停止与HTML",
+      "evidenceType": "静态",
+      "finding": "工具Stop确认/乐观取消/回滚；文件HTML sandbox allow-scripts；未实测停止。",
+      "sources": [
+        "evidence/scripts/snippets/stop-tool-optimistic.readable.js",
+        "evidence/scripts/snippets/html-file-preview.readable.js"
+      ]
+    }
+  ]
+}

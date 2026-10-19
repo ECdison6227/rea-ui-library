@@ -1,0 +1,63 @@
+{
+  "id": "sp-720",
+  "line": 728,
+  "bytes": 594,
+  "deps": [
+    18
+  ],
+  "exports": [
+    "styles"
+  ],
+  "strings": [
+    "#0000004D",
+    "center",
+    "#000000",
+    "absolute",
+    "500",
+    "MiSans"
+  ],
+  "routes": [],
+  "styleSheets": [
+    {
+      "callee": "o.StyleSheet.create",
+      "styles": {
+        "modalContainer": {
+          "flex": 1,
+          "backgroundColor": "#0000004D",
+          "justifyContent": "center",
+          "alignItems": "center"
+        },
+        "modalBox": {
+          "width": 182,
+          "padding": 11,
+          "borderRadius": 16,
+          "borderWidth": 0.3,
+          "shadowColor": "#000000",
+          "shadowOffset": {
+            "width": 0,
+            "height": 6.97
+          },
+          "shadowOpacity": 0.1,
+          "shadowRadius": 15.68,
+          "elevation": 5,
+          "position": "absolute",
+          "top": 100,
+          "right": 12
+        },
+        "optionContainer": {
+          "paddingVertical": 16.5,
+          "paddingHorizontal": 16
+        },
+        "optionText": {
+          "fontSize": 16,
+          "fontWeight": "500",
+          "color": "#000000",
+          "fontFamily": "MiSans"
+        }
+      },
+      "code": "o.StyleSheet.create({modalContainer:{flex:1,backgroundColor:\"#0000004D\",justifyContent:\"center\",alignItems:\"center\"},modalBox:{width:182,padding:11,borderRadius:16,borderWidth:.3,shadowColor:\"#000000\",shadowOffset:{width:0,height:6.97},shadowOpacity:.1,shadowRadius:15.68,elevation:5,position:\"absolute\",top:100,right:12},optionContainer:{paddingVertical:16.5,paddingHorizontal:16},optionText:{fontSize:16,fontWeight:\"500\",color:\"#000000\",fontFamily:\"MiSans\"}})"
+    }
+  ],
+  "assetNames": [],
+  "calls": []
+}

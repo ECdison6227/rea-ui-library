@@ -11,7 +11,9 @@
     "build": "node tools/build.mjs",
     "verify": "node tools/verify.mjs",
     "test": "node --test tests/*.test.mjs",
-    "sources:status": "git submodule status",
-    "sources:init": "node tools/init-sources.mjs"
+    "sources:status": "node tools/studies.mjs status",
+    "sources:init": "node tools/init-sources.mjs",
+    "study:add": "node tools/studies.mjs add",
+    "study:lock": "node tools/studies.mjs lock"
   }
 }

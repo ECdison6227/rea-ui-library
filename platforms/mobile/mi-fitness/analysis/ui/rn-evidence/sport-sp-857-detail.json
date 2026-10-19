@@ -1,0 +1,398 @@
+{
+  "bundle": "sport",
+  "id": "sp-857",
+  "line": 865,
+  "aliases": {
+    "t": 3,
+    "n": 14,
+    "o": 18,
+    "l": 1113,
+    "u": 631,
+    "c": "sp-144",
+    "s": 1780,
+    "f": "sp-234",
+    "p": "sp-858"
+  },
+  "elements": [
+    {
+      "type": "f.default",
+      "module": "sp-234",
+      "props": {
+        "style": {
+          "$code": "o.StyleSheet.flatten([b.card,P,{minWidth:j,backgroundColor:A}])"
+        },
+        "useRNTouchable": {
+          "$code": "!0"
+        },
+        "onPress": {
+          "$code": "E"
+        },
+        "activeOpacity": 1,
+        "accessibilityLabel": {
+          "$code": "k"
+        }
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(s.Text,{style:b.titleText,color:_.hTxtColor},y)"
+        },
+        {
+          "$code": "x(C)?n.default.createElement(s.Text,{style:b.mainValue,color:_.hTxtColor},h):n.default.createElement(f.default,{useRNTouchable:!0,onPress:M,activeOpacity:1,accessibilityRole:\"button\",accessibilityLabel:h},n.default.createElement(s.HStack,{alignItems:\"center\",style:b.emptyValueContainer},n.default.cr"
+        },
+        {
+          "$code": "\"string\"==typeof v&&v.length>0&&n.default.createElement(s.Text,{style:b.statusText,color:_.mainTextColor,opacity:.35},v)"
+        },
+        {
+          "$code": "R&&S&&n.default.createElement(s.View,{style:b.rangeContainer},n.default.createElement(s.HStack,{borderRadius:\"10px\",space:\"1px\",height:\"10px\",flex:1},C.map(function(t,l,u){return n.default.createElement(p.default,{key:\"segment-\"+l,color:t,isActive:l===V,style:o.StyleSheet.flatten([0===l?{borderTopLe"
+        },
+        {
+          "$code": "n.default.createElement(s.HStack,{justifyContent:\"space-between\"},n.default.createElement(s.Text,{style:b.rangeText,color:_.cardSubtitle},R),n.default.createElement(s.Text,{style:b.rangeText,color:_.cardSubtitle},S))"
+        }
+      ]
+    },
+    {
+      "type": "s.Text",
+      "module": 1780,
+      "props": {
+        "style": {
+          "$code": "b.titleText"
+        },
+        "color": {
+          "$code": "_.hTxtColor"
+        }
+      },
+      "children": [
+        {
+          "$code": "y"
+        }
+      ]
+    },
+    {
+      "type": "s.Text",
+      "module": 1780,
+      "props": {
+        "style": {
+          "$code": "b.mainValue"
+        },
+        "color": {
+          "$code": "_.hTxtColor"
+        }
+      },
+      "children": [
+        {
+          "$code": "h"
+        }
+      ]
+    },
+    {
+      "type": "f.default",
+      "module": "sp-234",
+      "props": {
+        "useRNTouchable": {
+          "$code": "!0"
+        },
+        "onPress": {
+          "$code": "M"
+        },
+        "activeOpacity": 1,
+        "accessibilityRole": "button",
+        "accessibilityLabel": {
+          "$code": "h"
+        }
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(s.HStack,{alignItems:\"center\",style:b.emptyValueContainer},n.default.createElement(s.Text,{style:b.emptyValue,color:_.hTxtColor,numberOfLines:2},h),n.default.createElement(l.default,{style:b.arrow,source:_.IconArrowRightGray}))"
+        }
+      ]
+    },
+    {
+      "type": "s.HStack",
+      "module": 1780,
+      "props": {
+        "alignItems": "center",
+        "style": {
+          "$code": "b.emptyValueContainer"
+        }
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(s.Text,{style:b.emptyValue,color:_.hTxtColor,numberOfLines:2},h)"
+        },
+        {
+          "$code": "n.default.createElement(l.default,{style:b.arrow,source:_.IconArrowRightGray})"
+        }
+      ]
+    },
+    {
+      "type": "s.Text",
+      "module": 1780,
+      "props": {
+        "style": {
+          "$code": "b.emptyValue"
+        },
+        "color": {
+          "$code": "_.hTxtColor"
+        },
+        "numberOfLines": 2
+      },
+      "children": [
+        {
+          "$code": "h"
+        }
+      ]
+    },
+    {
+      "type": "l.default",
+      "module": 1113,
+      "props": {
+        "style": {
+          "$code": "b.arrow"
+        },
+        "source": {
+          "$code": "_.IconArrowRightGray"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "s.Text",
+      "module": 1780,
+      "props": {
+        "style": {
+          "$code": "b.statusText"
+        },
+        "color": {
+          "$code": "_.mainTextColor"
+        },
+        "opacity": 0.35
+      },
+      "children": [
+        {
+          "$code": "v"
+        }
+      ]
+    },
+    {
+      "type": "s.View",
+      "module": 1780,
+      "props": {
+        "style": {
+          "$code": "b.rangeContainer"
+        }
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(s.HStack,{borderRadius:\"10px\",space:\"1px\",height:\"10px\",flex:1},C.map(function(t,l,u){return n.default.createElement(p.default,{key:\"segment-\"+l,color:t,isActive:l===V,style:o.StyleSheet.flatten([0===l?{borderTopLeftRadius:10,borderBottomLeftRadius:10}:{},l===u.length-1?{bord"
+        }
+      ]
+    },
+    {
+      "type": "s.HStack",
+      "module": 1780,
+      "props": {
+        "borderRadius": "10px",
+        "space": "1px",
+        "height": "10px",
+        "flex": 1
+      },
+      "children": [
+        {
+          "$code": "C.map(function(t,l,u){return n.default.createElement(p.default,{key:\"segment-\"+l,color:t,isActive:l===V,style:o.StyleSheet.flatten([0===l?{borderTopLeftRadius:10,borderBottomLeftRadius:10}:{},l===u.length-1?{borderTopRightRadius:10,borderBottomRightRadius:10}:{}])})})"
+        },
+        {
+          "$code": "null!=C&&C.length?null:n.default.createElement(p.default,{isActive:!1,color:\"#E9ECF3\",style:o.StyleSheet.flatten([{borderTopLeftRadius:10,borderBottomLeftRadius:10},{borderTopRightRadius:10,borderBottomRightRadius:10}])})"
+        }
+      ]
+    },
+    {
+      "type": "p.default",
+      "module": "sp-858",
+      "props": {
+        "key": {
+          "$code": "\"segment-\"+l"
+        },
+        "color": {
+          "$code": "t"
+        },
+        "isActive": {
+          "$code": "l===V"
+        },
+        "style": {
+          "$code": "o.StyleSheet.flatten([0===l?{borderTopLeftRadius:10,borderBottomLeftRadius:10}:{},l===u.length-1?{borderTopRightRadius:10,borderBottomRightRadius:10}:{}])"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "p.default",
+      "module": "sp-858",
+      "props": {
+        "isActive": {
+          "$code": "!1"
+        },
+        "color": "#E9ECF3",
+        "style": {
+          "$code": "o.StyleSheet.flatten([{borderTopLeftRadius:10,borderBottomLeftRadius:10},{borderTopRightRadius:10,borderBottomRightRadius:10}])"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "s.HStack",
+      "module": 1780,
+      "props": {
+        "justifyContent": "space-between"
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(s.Text,{style:b.rangeText,color:_.cardSubtitle},R)"
+        },
+        {
+          "$code": "n.default.createElement(s.Text,{style:b.rangeText,color:_.cardSubtitle},S)"
+        }
+      ]
+    },
+    {
+      "type": "s.Text",
+      "module": 1780,
+      "props": {
+        "style": {
+          "$code": "b.rangeText"
+        },
+        "color": {
+          "$code": "_.cardSubtitle"
+        }
+      },
+      "children": [
+        {
+          "$code": "R"
+        }
+      ]
+    },
+    {
+      "type": "s.Text",
+      "module": 1780,
+      "props": {
+        "style": {
+          "$code": "b.rangeText"
+        },
+        "color": {
+          "$code": "_.cardSubtitle"
+        }
+      },
+      "children": [
+        {
+          "$code": "S"
+        }
+      ]
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": [
+    {
+      "key": "borderRadius",
+      "value": 14
+    },
+    {
+      "key": "padding",
+      "value": 12
+    },
+    {
+      "key": "marginRight",
+      "value": 10
+    },
+    {
+      "key": "fontSize",
+      "value": 16
+    },
+    {
+      "key": "fontWeight",
+      "value": "500"
+    },
+    {
+      "key": "marginVertical",
+      "value": 4
+    },
+    {
+      "key": "marginTop",
+      "value": 1
+    },
+    {
+      "key": "marginBottom",
+      "value": 3
+    },
+    {
+      "key": "fontSize",
+      "value": 18
+    },
+    {
+      "key": "fontWeight",
+      "value": "600"
+    },
+    {
+      "key": "paddingVertical",
+      "value": 3.5
+    },
+    {
+      "key": "marginTop",
+      "value": 4
+    },
+    {
+      "key": "fontSize",
+      "value": 14
+    },
+    {
+      "key": "fontWeight",
+      "value": "400"
+    },
+    {
+      "key": "paddingVertical",
+      "value": 3
+    },
+    {
+      "key": "fontSize",
+      "value": 13
+    },
+    {
+      "key": "fontWeight",
+      "value": "400"
+    },
+    {
+      "key": "paddingVertical",
+      "value": 2.5
+    },
+    {
+      "key": "marginBottom",
+      "value": 22
+    },
+    {
+      "key": "marginBottom",
+      "value": 10
+    },
+    {
+      "key": "marginTop",
+      "value": "auto"
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "width",
+      "value": 20
+    },
+    {
+      "key": "height",
+      "value": 20
+    },
+    {
+      "key": "borderRadius",
+      "value": "10px"
+    },
+    {
+      "key": "height",
+      "value": "10px"
+    }
+  ]
+}

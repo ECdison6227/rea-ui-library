@@ -1,0 +1,83 @@
+{
+  "runId": "2026-10-15T13-16-45-025Z",
+  "at": "2026-10-15T13:18:12.731Z",
+  "classification": "D reference runtime verification; does not establish original parity",
+  "serial": "emulator-5580",
+  "apkSha256": "cd77abf7486510ecc178fb448cdacb7a8edfa1d601dc72158113409ca3939d70",
+  "passed": 8,
+  "failed": 1,
+  "results": [
+    {
+      "name": "health components mount and metric event returns",
+      "status": "passed",
+      "evidence": [
+        "hero-destination.xml",
+        "hero-return.xml"
+      ]
+    },
+    {
+      "name": "metric card emits detail and preserves overview",
+      "status": "passed",
+      "evidence": [
+        "metric-destination.xml",
+        "metric-return.xml"
+      ]
+    },
+    {
+      "name": "profile auth boundary can cancel",
+      "status": "passed",
+      "evidence": [
+        "mine-top.xml",
+        "profile-boundary.xml",
+        "profile-cancel.xml"
+      ]
+    },
+    {
+      "name": "shortcut prerequisite sheet cancels without navigating",
+      "status": "passed",
+      "evidence": [
+        "shortcut-sheet.xml",
+        "shortcut-cancel.xml"
+      ]
+    },
+    {
+      "name": "surface card prerequisite sheet cancels",
+      "status": "passed",
+      "evidence": [
+        "surface-sheet.xml",
+        "surface-cancel.xml"
+      ]
+    },
+    {
+      "name": "tab reselection and settings return preserve scroll anchor",
+      "status": "passed",
+      "evidence": [
+        "mine-scrolled.xml",
+        "mine-reselected.xml",
+        "settings-pushed.xml",
+        "mine-settings-return.xml"
+      ]
+    },
+    {
+      "name": "switch commits off/on and updates explanatory copy",
+      "status": "passed",
+      "evidence": [
+        "switch-off.xml",
+        "switch-restored.xml"
+      ]
+    },
+    {
+      "name": "guest logout remains on settings",
+      "status": "passed",
+      "evidence": [
+        "logout-before.xml",
+        "logout-after.xml"
+      ]
+    },
+    {
+      "name": "transfer validates empty input then saves data",
+      "status": "failed",
+      "error": "AssertionError [ERR_ASSERTION]: empty edit remains open"
+    }
+  ]
+}

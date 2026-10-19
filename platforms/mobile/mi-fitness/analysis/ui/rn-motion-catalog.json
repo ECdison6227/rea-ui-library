@@ -1,0 +1,1408 @@
+[
+  {
+    "bundle": "sport",
+    "moduleId": "sp-318",
+    "bundleLine": 326,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-318.js",
+    "exports": [
+      "GradientProgressCircle"
+    ],
+    "calls": [
+      {
+        "method": "parallel",
+        "code": "u.Animated.parallel([u.Animated.timing(q,{toValue:f,duration:R,delay:M,easing:V,useNativeDriver:!1}),u.Animated.timing(z,{toValue:f,duration:R,delay:M,easing:V,useNativeDriver:!1})])"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(q,{toValue:f,duration:R,delay:M,easing:V,useNativeDriver:!1})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(z,{toValue:f,duration:R,delay:M,easing:V,useNativeDriver:!1})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-321",
+    "bundleLine": 329,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-321.js",
+    "exports": [
+      "ProgressCircle"
+    ],
+    "calls": [
+      {
+        "method": "parallel",
+        "code": "u.Animated.parallel([u.Animated.timing(H,{toValue:n,duration:S,delay:M,easing:k,useNativeDriver:!1}),u.Animated.timing(N,{toValue:n,duration:S,delay:M,easing:k,useNativeDriver:!1})])"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(H,{toValue:n,duration:S,delay:M,easing:k,useNativeDriver:!1})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(N,{toValue:n,duration:S,delay:M,easing:k,useNativeDriver:!1})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-364",
+    "bundleLine": 372,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-364.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "timing",
+        "code": "w.Animated.timing(this.state.arrowAngle,{toValue:1,duration:500,easing:w.Easing.linear,useNativeDriver:!0,isInteraction:!1})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-459",
+    "bundleLine": 467,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-459.js",
+    "exports": [
+      "SlideAnimated",
+      "FadeAnimated"
+    ],
+    "calls": [
+      {
+        "method": "parallel",
+        "code": "p.Animated.parallel([p.Animated.timing(n.state.opacity,{toValue:n.getPropertyValue(\"opacity\",!t),duration:n.state.opacityDuration||n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS}),p.Animated.timing(n.state.scale,{toValue:n.getPropertyValue(\"scale\",!t),duration:n.state.scaleDuration||n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS}),p.Animated.timing(n.state.translateX,{toValue:n.getPropertyValue(\"translateX\",!t),duration:n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS}),p.Animated.timing(n.state.translateY,{toValue:n.getPropertyValue(\"translateY\",!t),duration:n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})])"
+      },
+      {
+        "method": "timing",
+        "code": "p.Animated.timing(n.state.opacity,{toValue:n.getPropertyValue(\"opacity\",!t),duration:n.state.opacityDuration||n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})"
+      },
+      {
+        "method": "timing",
+        "code": "p.Animated.timing(n.state.scale,{toValue:n.getPropertyValue(\"scale\",!t),duration:n.state.scaleDuration||n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})"
+      },
+      {
+        "method": "timing",
+        "code": "p.Animated.timing(n.state.translateX,{toValue:n.getPropertyValue(\"translateX\",!t),duration:n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})"
+      },
+      {
+        "method": "timing",
+        "code": "p.Animated.timing(n.state.translateY,{toValue:n.getPropertyValue(\"translateY\",!t),duration:n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})"
+      },
+      {
+        "method": "timing",
+        "code": "p.Animated.timing(s.state[n],{toValue:s.getPropertyValue(n,!t),duration:s.state.duration,easing:s.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})"
+      },
+      {
+        "method": "parallel",
+        "code": "p.Animated.parallel([p.Animated.timing(s.state.opacity,{toValue:s.getPropertyValue(\"opacity\",!t),duration:s.state.duration,easing:s.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})].concat((0,n.default)(u)))"
+      },
+      {
+        "method": "timing",
+        "code": "p.Animated.timing(s.state.opacity,{toValue:s.getPropertyValue(\"opacity\",!t),duration:s.state.duration,easing:s.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-518",
+    "bundleLine": 526,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-518.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(T,{toValue:R?1:0,duration:100,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-558",
+    "bundleLine": 566,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-558.js",
+    "exports": [
+      "f2Script",
+      "s",
+      "_origin",
+      "o",
+      "min",
+      "max",
+      "nice",
+      "isRounding",
+      "crossOrigin",
+      "onload",
+      "src",
+      null,
+      "y",
+      "i",
+      "interpolate",
+      "startState",
+      "endState",
+      "e",
+      "f",
+      "n"
+    ],
+    "calls": [
+      {
+        "method": "delay",
+        "code": "t.delay(e,i)"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-572",
+    "bundleLine": 580,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-572.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "sequence",
+        "code": "n.Animated.sequence([n.Animated.timing(f,{toValue:1.02,duration:1e3,useNativeDriver:!0}),n.Animated.timing(f,{toValue:.92,duration:1e3,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "n.Animated.timing(f,{toValue:1.02,duration:1e3,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "n.Animated.timing(f,{toValue:.92,duration:1e3,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-573",
+    "bundleLine": 581,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-573.js",
+    "exports": [
+      "MemberProductsPannelCardModel",
+      "MemberProductsPannel",
+      "MemberProductsItemModel",
+      "MemberProductPrice"
+    ],
+    "calls": [
+      {
+        "method": "timing",
+        "code": "f.Animated.timing(W,{toValue:1,duration:1e3,useNativeDriver:!1})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-583",
+    "bundleLine": 591,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-583.js",
+    "exports": [
+      "useFlipCounter"
+    ],
+    "calls": [
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(p,c(c({},l),{},{toValue:1}))"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-589",
+    "bundleLine": 597,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-589.js",
+    "exports": [
+      "useCouponPopup",
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "parallel",
+        "code": "u.Animated.parallel([u.Animated.timing(v,{toValue:1,duration:300,useNativeDriver:!0}),u.Animated.timing(w,{toValue:0,duration:300,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(v,{toValue:1,duration:300,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(w,{toValue:0,duration:300,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(v,{toValue:0,duration:300,useNativeDriver:!0})"
+      },
+      {
+        "method": "spring",
+        "code": "u.Animated.spring(S,{toValue:0,useNativeDriver:!0,tension:50,friction:7})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(S,{toValue:b.Screen.height(),duration:300,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-596",
+    "bundleLine": 604,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-596.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "sequence",
+        "code": "o.Animated.sequence([o.Animated.timing(V,{toValue:1,duration:1e3,useNativeDriver:!0}),o.Animated.timing(V,{toValue:.9,duration:1e3,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "o.Animated.timing(V,{toValue:1,duration:1e3,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "o.Animated.timing(V,{toValue:.9,duration:1e3,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-647",
+    "bundleLine": 655,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-647.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "timing",
+        "code": "n.Animated.timing(R,{toValue:c?1:0,duration:200,useNativeDriver:!1})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-649",
+    "bundleLine": 657,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-649.js",
+    "exports": [
+      "TrainingNotifyItem"
+    ],
+    "calls": [
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(S,{toValue:f?1:0,duration:300,useNativeDriver:!1})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-663",
+    "bundleLine": 671,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-663.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "sequence",
+        "code": "l.Animated.sequence([l.Animated.timing(j,{toValue:-(D-S),duration:8e3,useNativeDriver:!0}),l.Animated.timing(j,{toValue:0,duration:0,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(j,{toValue:-(D-S),duration:8e3,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(j,{toValue:0,duration:0,useNativeDriver:!0})"
+      },
+      {
+        "method": "sequence",
+        "code": "l.Animated.sequence([l.Animated.timing(j,{toValue:-(D-S),duration:8e3,useNativeDriver:!0}),l.Animated.timing(j,{toValue:0,duration:0,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(j,{toValue:-(D-S),duration:8e3,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(j,{toValue:0,duration:0,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-767",
+    "bundleLine": 775,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-767.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "sequence",
+        "code": "n.Animated.sequence([n.Animated.timing(f,{toValue:1.02,duration:1e3,useNativeDriver:!0}),n.Animated.timing(f,{toValue:.92,duration:1e3,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "n.Animated.timing(f,{toValue:1.02,duration:1e3,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "n.Animated.timing(f,{toValue:.92,duration:1e3,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-855",
+    "bundleLine": 863,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-855.js",
+    "exports": [
+      "TrainingIndicators"
+    ],
+    "calls": [
+      {
+        "method": "timing",
+        "code": "c.Animated.timing(w.current,{toValue:1,duration:500,useNativeDriver:!1})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-915",
+    "bundleLine": 923,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-915.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(F,{toValue:w?1:0,duration:300,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-941",
+    "bundleLine": 949,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-941.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "sequence",
+        "code": "o.Animated.sequence([o.Animated.timing(w,{toValue:o.I18nManager.isRTL?O-p:-(O-p),duration:8e3,useNativeDriver:!0}),o.Animated.timing(w,{toValue:0,duration:0,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "o.Animated.timing(w,{toValue:o.I18nManager.isRTL?O-p:-(O-p),duration:8e3,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "o.Animated.timing(w,{toValue:0,duration:0,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-949",
+    "bundleLine": 957,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-949.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(R,{toValue:y,duration:600,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-955",
+    "bundleLine": 963,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-955.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "parallel",
+        "code": "o.Animated.parallel([o.Animated.timing(j,{toValue:t,duration:V,easing:R.current,useNativeDriver:!1}),o.Animated.timing(D,{toValue:t,duration:V,easing:R.current,useNativeDriver:!0}),o.Animated.timing(k,{toValue:t,duration:O?V:Math.round(.6*V),easing:R.current,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "o.Animated.timing(j,{toValue:t,duration:V,easing:R.current,useNativeDriver:!1})"
+      },
+      {
+        "method": "timing",
+        "code": "o.Animated.timing(D,{toValue:t,duration:V,easing:R.current,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "o.Animated.timing(k,{toValue:t,duration:O?V:Math.round(.6*V),easing:R.current,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-1006",
+    "bundleLine": 1014,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-1006.js",
+    "exports": [
+      "TabFlatList",
+      "TabScrollView",
+      "TabSectionList",
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(Z,{toValue:0,duration:200,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-1106",
+    "bundleLine": 1114,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-1106.js",
+    "exports": [
+      "useSlideAnimation"
+    ],
+    "calls": [
+      {
+        "method": "parallel",
+        "code": "t.Animated.parallel([t.Animated.timing(l,{toValue:0,duration:h.duration.show,easing:h.easing,useNativeDriver:!1}),t.Animated.timing(A,{toValue:1,duration:h.duration.show,easing:h.easing,useNativeDriver:!1}),t.Animated.timing(v,{toValue:150,duration:h.duration.show,easing:h.easing,useNativeDriver:!1})])"
+      },
+      {
+        "method": "timing",
+        "code": "t.Animated.timing(l,{toValue:0,duration:h.duration.show,easing:h.easing,useNativeDriver:!1})"
+      },
+      {
+        "method": "timing",
+        "code": "t.Animated.timing(A,{toValue:1,duration:h.duration.show,easing:h.easing,useNativeDriver:!1})"
+      },
+      {
+        "method": "timing",
+        "code": "t.Animated.timing(v,{toValue:150,duration:h.duration.show,easing:h.easing,useNativeDriver:!1})"
+      },
+      {
+        "method": "parallel",
+        "code": "t.Animated.parallel([t.Animated.timing(l,{toValue:150,duration:h.duration.hide,easing:h.easing,useNativeDriver:!1}),t.Animated.timing(A,{toValue:0,duration:h.duration.hide,easing:h.easing,useNativeDriver:!1}),t.Animated.timing(v,{toValue:0,duration:h.duration.hide,easing:h.easing,useNativeDriver:!1})])"
+      },
+      {
+        "method": "timing",
+        "code": "t.Animated.timing(l,{toValue:150,duration:h.duration.hide,easing:h.easing,useNativeDriver:!1})"
+      },
+      {
+        "method": "timing",
+        "code": "t.Animated.timing(A,{toValue:0,duration:h.duration.hide,easing:h.easing,useNativeDriver:!1})"
+      },
+      {
+        "method": "timing",
+        "code": "t.Animated.timing(v,{toValue:0,duration:h.duration.hide,easing:h.easing,useNativeDriver:!1})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-1111",
+    "bundleLine": 1119,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-1111.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "spring",
+        "code": "c.Animated.spring(N,{toValue:1.1,useNativeDriver:!0,friction:8})"
+      },
+      {
+        "method": "parallel",
+        "code": "c.Animated.parallel([c.Animated.spring(C,{toValue:0,useNativeDriver:!0,friction:8}),c.Animated.spring(L,{toValue:0,useNativeDriver:!0,friction:8}),c.Animated.spring(N,{toValue:1,useNativeDriver:!0,friction:8})])"
+      },
+      {
+        "method": "spring",
+        "code": "c.Animated.spring(C,{toValue:0,useNativeDriver:!0,friction:8})"
+      },
+      {
+        "method": "spring",
+        "code": "c.Animated.spring(L,{toValue:0,useNativeDriver:!0,friction:8})"
+      },
+      {
+        "method": "spring",
+        "code": "c.Animated.spring(N,{toValue:1,useNativeDriver:!0,friction:8})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-1132",
+    "bundleLine": 1140,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-1132.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "parallel",
+        "code": "u.Animated.parallel([u.Animated.timing(w,{toValue:1,duration:300,useNativeDriver:!0}),u.Animated.timing(V,{toValue:0,duration:300,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(w,{toValue:1,duration:300,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(V,{toValue:0,duration:300,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(w,{toValue:0,duration:300,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-1180",
+    "bundleLine": 1188,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-1180.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "timing",
+        "code": "o.Animated.timing(w,{toValue:y?1:0,duration:200,useNativeDriver:!1})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-1204",
+    "bundleLine": 1212,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-1204.js",
+    "exports": [
+      "useGroupLocationSearch"
+    ],
+    "calls": [
+      {
+        "method": "timing",
+        "code": "n.Animated.timing(V.current,{toValue:1,duration:200,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "n.Animated.timing(V.current,{toValue:0,duration:200,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "sport",
+    "moduleId": "sp-1288",
+    "bundleLine": 1296,
+    "source": "analysis\\assets\\extracted\\c86a7eb68dd32b3c-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/sport-sp-1288.js",
+    "exports": [
+      "SweepLightAnimation"
+    ],
+    "calls": [
+      {
+        "method": "sequence",
+        "code": "l.Animated.sequence([l.Animated.timing(_,{toValue:.8,duration:.1*O.duration,easing:O.easing,useNativeDriver:!0}),l.Animated.timing(N,{toValue:n,duration:O.duration,easing:O.easing,useNativeDriver:!0}),l.Animated.timing(_,{toValue:0,duration:.1*O.duration,easing:O.easing,useNativeDriver:!0}),l.Animated.timing(N,{toValue:t,duration:0,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(_,{toValue:.8,duration:.1*O.duration,easing:O.easing,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(N,{toValue:n,duration:O.duration,easing:O.easing,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(_,{toValue:0,duration:.1*O.duration,easing:O.easing,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(N,{toValue:t,duration:0,useNativeDriver:!0})"
+      },
+      {
+        "method": "sequence",
+        "code": "l.Animated.sequence([n,l.Animated.delay(O.loopInterval)])"
+      },
+      {
+        "method": "delay",
+        "code": "l.Animated.delay(O.loopInterval)"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "mine",
+    "moduleId": "mi-343",
+    "bundleLine": 351,
+    "source": "analysis\\assets\\extracted\\fc87206bd4201baa-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/mine-mi-343.js",
+    "exports": [
+      "MedalItem"
+    ],
+    "calls": [
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(M.current,{toValue:.9,duration:100,useNativeDriver:!0})"
+      },
+      {
+        "method": "spring",
+        "code": "u.Animated.spring(M.current,{toValue:1,friction:3,tension:40,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "mine",
+    "moduleId": "mi-363",
+    "bundleLine": 371,
+    "source": "analysis\\assets\\extracted\\fc87206bd4201baa-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/mine-mi-363.js",
+    "exports": [
+      "AllCountryMedals"
+    ],
+    "calls": [
+      {
+        "method": "timing",
+        "code": "o.Animated.timing(v,{toValue:1,duration:200,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "mine",
+    "moduleId": "mi-383",
+    "bundleLine": 391,
+    "source": "analysis\\assets\\extracted\\fc87206bd4201baa-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/mine-mi-383.js",
+    "exports": [
+      "SlideAnimated",
+      "FadeAnimated"
+    ],
+    "calls": [
+      {
+        "method": "parallel",
+        "code": "p.Animated.parallel([p.Animated.timing(n.state.opacity,{toValue:n.getPropertyValue(\"opacity\",!t),duration:n.state.opacityDuration||n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS}),p.Animated.timing(n.state.scale,{toValue:n.getPropertyValue(\"scale\",!t),duration:n.state.scaleDuration||n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS}),p.Animated.timing(n.state.translateX,{toValue:n.getPropertyValue(\"translateX\",!t),duration:n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS}),p.Animated.timing(n.state.translateY,{toValue:n.getPropertyValue(\"translateY\",!t),duration:n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})])"
+      },
+      {
+        "method": "timing",
+        "code": "p.Animated.timing(n.state.opacity,{toValue:n.getPropertyValue(\"opacity\",!t),duration:n.state.opacityDuration||n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})"
+      },
+      {
+        "method": "timing",
+        "code": "p.Animated.timing(n.state.scale,{toValue:n.getPropertyValue(\"scale\",!t),duration:n.state.scaleDuration||n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})"
+      },
+      {
+        "method": "timing",
+        "code": "p.Animated.timing(n.state.translateX,{toValue:n.getPropertyValue(\"translateX\",!t),duration:n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})"
+      },
+      {
+        "method": "timing",
+        "code": "p.Animated.timing(n.state.translateY,{toValue:n.getPropertyValue(\"translateY\",!t),duration:n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})"
+      },
+      {
+        "method": "timing",
+        "code": "p.Animated.timing(s.state[n],{toValue:s.getPropertyValue(n,!t),duration:s.state.duration,easing:s.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})"
+      },
+      {
+        "method": "parallel",
+        "code": "p.Animated.parallel([p.Animated.timing(s.state.opacity,{toValue:s.getPropertyValue(\"opacity\",!t),duration:s.state.duration,easing:s.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})].concat((0,n.default)(u)))"
+      },
+      {
+        "method": "timing",
+        "code": "p.Animated.timing(s.state.opacity,{toValue:s.getPropertyValue(\"opacity\",!t),duration:s.state.duration,easing:s.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "mine",
+    "moduleId": "mi-572",
+    "bundleLine": 580,
+    "source": "analysis\\assets\\extracted\\fc87206bd4201baa-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/mine-mi-572.js",
+    "exports": [
+      "f2Script",
+      "s",
+      "_origin",
+      "o",
+      "min",
+      "max",
+      "nice",
+      "isRounding",
+      "crossOrigin",
+      "onload",
+      "src",
+      null,
+      "y",
+      "i",
+      "interpolate",
+      "startState",
+      "endState",
+      "e",
+      "f",
+      "n"
+    ],
+    "calls": [
+      {
+        "method": "delay",
+        "code": "t.delay(e,i)"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "mine",
+    "moduleId": "mi-593",
+    "bundleLine": 601,
+    "source": "analysis\\assets\\extracted\\fc87206bd4201baa-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/mine-mi-593.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "sequence",
+        "code": "n.Animated.sequence([n.Animated.timing(f,{toValue:1.02,duration:1e3,useNativeDriver:!0}),n.Animated.timing(f,{toValue:.92,duration:1e3,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "n.Animated.timing(f,{toValue:1.02,duration:1e3,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "n.Animated.timing(f,{toValue:.92,duration:1e3,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "mine",
+    "moduleId": "mi-594",
+    "bundleLine": 602,
+    "source": "analysis\\assets\\extracted\\fc87206bd4201baa-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/mine-mi-594.js",
+    "exports": [
+      "MemberProductsPannelCardModel",
+      "MemberProductsPannel",
+      "MemberProductsItemModel",
+      "MemberProductPrice"
+    ],
+    "calls": [
+      {
+        "method": "timing",
+        "code": "f.Animated.timing(W,{toValue:1,duration:1e3,useNativeDriver:!1})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "mine",
+    "moduleId": "mi-603",
+    "bundleLine": 611,
+    "source": "analysis\\assets\\extracted\\fc87206bd4201baa-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/mine-mi-603.js",
+    "exports": [
+      "useFlipCounter"
+    ],
+    "calls": [
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(p,c(c({},l),{},{toValue:1}))"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "mine",
+    "moduleId": "mi-615",
+    "bundleLine": 623,
+    "source": "analysis\\assets\\extracted\\fc87206bd4201baa-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/mine-mi-615.js",
+    "exports": [
+      "useCouponPopup",
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "parallel",
+        "code": "u.Animated.parallel([u.Animated.timing(v,{toValue:1,duration:300,useNativeDriver:!0}),u.Animated.timing(w,{toValue:0,duration:300,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(v,{toValue:1,duration:300,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(w,{toValue:0,duration:300,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(v,{toValue:0,duration:300,useNativeDriver:!0})"
+      },
+      {
+        "method": "spring",
+        "code": "u.Animated.spring(S,{toValue:0,useNativeDriver:!0,tension:50,friction:7})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(S,{toValue:b.Screen.height(),duration:300,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "dial",
+    "moduleId": "di-341",
+    "bundleLine": 349,
+    "source": "analysis\\assets\\extracted\\b48567af188568ad-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/dial-di-341.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "parallel",
+        "code": "l.Animated.parallel([l.Animated.timing(Y,{toValue:-69-C-ne,duration:n?0:300,useNativeDriver:!0}),l.Animated.timing(q,{toValue:1,duration:n?0:300,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(Y,{toValue:-69-C-ne,duration:n?0:300,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(q,{toValue:1,duration:n?0:300,useNativeDriver:!0})"
+      },
+      {
+        "method": "parallel",
+        "code": "l.Animated.parallel([l.Animated.timing(Y,{toValue:0,duration:n?0:300,useNativeDriver:!0}),l.Animated.timing(q,{toValue:0,duration:n?0:300,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(Y,{toValue:0,duration:n?0:300,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(q,{toValue:0,duration:n?0:300,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "dial",
+    "moduleId": "di-374",
+    "bundleLine": 382,
+    "source": "analysis\\assets\\extracted\\b48567af188568ad-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/dial-di-374.js",
+    "exports": [
+      "f2Script",
+      "s",
+      "_origin",
+      "o",
+      "min",
+      "max",
+      "nice",
+      "isRounding",
+      "crossOrigin",
+      "onload",
+      "src",
+      null,
+      "y",
+      "i",
+      "interpolate",
+      "startState",
+      "endState",
+      "e",
+      "f",
+      "n"
+    ],
+    "calls": [
+      {
+        "method": "delay",
+        "code": "t.delay(e,i)"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "dial",
+    "moduleId": "di-395",
+    "bundleLine": 403,
+    "source": "analysis\\assets\\extracted\\b48567af188568ad-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/dial-di-395.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "sequence",
+        "code": "n.Animated.sequence([n.Animated.timing(f,{toValue:1.02,duration:1e3,useNativeDriver:!0}),n.Animated.timing(f,{toValue:.92,duration:1e3,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "n.Animated.timing(f,{toValue:1.02,duration:1e3,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "n.Animated.timing(f,{toValue:.92,duration:1e3,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "dial",
+    "moduleId": "di-396",
+    "bundleLine": 404,
+    "source": "analysis\\assets\\extracted\\b48567af188568ad-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/dial-di-396.js",
+    "exports": [
+      "MemberProductsPannelCardModel",
+      "MemberProductsPannel",
+      "MemberProductsItemModel",
+      "MemberProductPrice"
+    ],
+    "calls": [
+      {
+        "method": "timing",
+        "code": "f.Animated.timing(W,{toValue:1,duration:1e3,useNativeDriver:!1})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "dial",
+    "moduleId": "di-406",
+    "bundleLine": 414,
+    "source": "analysis\\assets\\extracted\\b48567af188568ad-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/dial-di-406.js",
+    "exports": [
+      "useFlipCounter"
+    ],
+    "calls": [
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(p,c(c({},l),{},{toValue:1}))"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "dial",
+    "moduleId": "di-417",
+    "bundleLine": 425,
+    "source": "analysis\\assets\\extracted\\b48567af188568ad-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/dial-di-417.js",
+    "exports": [
+      "useCouponPopup",
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "parallel",
+        "code": "u.Animated.parallel([u.Animated.timing(v,{toValue:1,duration:300,useNativeDriver:!0}),u.Animated.timing(w,{toValue:0,duration:300,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(v,{toValue:1,duration:300,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(w,{toValue:0,duration:300,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(v,{toValue:0,duration:300,useNativeDriver:!0})"
+      },
+      {
+        "method": "spring",
+        "code": "u.Animated.spring(S,{toValue:0,useNativeDriver:!0,tension:50,friction:7})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(S,{toValue:b.Screen.height(),duration:300,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "dial",
+    "moduleId": "di-445",
+    "bundleLine": 453,
+    "source": "analysis\\assets\\extracted\\b48567af188568ad-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/dial-di-445.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "sequence",
+        "code": "l.Animated.sequence([l.Animated.delay(y),l.Animated.timing(h,{toValue:-t,duration:n,easing:l.Easing.linear,useNativeDriver:!0})])"
+      },
+      {
+        "method": "delay",
+        "code": "l.Animated.delay(y)"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(h,{toValue:-t,duration:n,easing:l.Easing.linear,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "dial",
+    "moduleId": "di-466",
+    "bundleLine": 474,
+    "source": "analysis\\assets\\extracted\\b48567af188568ad-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/dial-di-466.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "parallel",
+        "code": "u.Animated.parallel([u.Animated.timing(ne,{toValue:t,duration:300,useNativeDriver:!1}),u.Animated.timing(ae,{toValue:n,duration:300,useNativeDriver:!1}),u.Animated.timing(ie,{toValue:l,duration:300,useNativeDriver:!1}),u.Animated.timing(le,{toValue:o,duration:300,useNativeDriver:!1}),u.Animated.timing(re,{toValue:f,duration:300,useNativeDriver:!1})])"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(ne,{toValue:t,duration:300,useNativeDriver:!1})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(ae,{toValue:n,duration:300,useNativeDriver:!1})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(ie,{toValue:l,duration:300,useNativeDriver:!1})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(le,{toValue:o,duration:300,useNativeDriver:!1})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(re,{toValue:f,duration:300,useNativeDriver:!1})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "dial",
+    "moduleId": "di-467",
+    "bundleLine": 475,
+    "source": "analysis\\assets\\extracted\\b48567af188568ad-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/dial-di-467.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "spring",
+        "code": "u.Animated.spring(v,{toValue:_.current,useNativeDriver:!0,tension:50,friction:7})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "dial",
+    "moduleId": "di-492",
+    "bundleLine": 500,
+    "source": "analysis\\assets\\extracted\\b48567af188568ad-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/dial-di-492.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "parallel",
+        "code": "l.Animated.parallel([l.Animated.timing(Ve,{toValue:t,duration:300,useNativeDriver:!1}),l.Animated.timing(Ae,{toValue:n,duration:300,useNativeDriver:!1}),l.Animated.timing(Ie,{toValue:u,duration:300,useNativeDriver:!1}),l.Animated.timing(Me,{toValue:o,duration:300,useNativeDriver:!1})])"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(Ve,{toValue:t,duration:300,useNativeDriver:!1})"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(Ae,{toValue:n,duration:300,useNativeDriver:!1})"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(Ie,{toValue:u,duration:300,useNativeDriver:!1})"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(Me,{toValue:o,duration:300,useNativeDriver:!1})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "dial",
+    "moduleId": "di-513",
+    "bundleLine": 521,
+    "source": "analysis\\assets\\extracted\\b48567af188568ad-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/dial-di-513.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "spring",
+        "code": "o.Animated.spring(P,{toValue:0,useNativeDriver:!0,tension:50,friction:7})"
+      },
+      {
+        "method": "timing",
+        "code": "o.Animated.timing(P,{toValue:v,duration:300,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "dial",
+    "moduleId": "di-526",
+    "bundleLine": 534,
+    "source": "analysis\\assets\\extracted\\b48567af188568ad-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/dial-di-526.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "sequence",
+        "code": "l.Animated.sequence([l.Animated.timing(j,{toValue:-(D-S),duration:8e3,useNativeDriver:!0}),l.Animated.timing(j,{toValue:0,duration:0,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(j,{toValue:-(D-S),duration:8e3,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(j,{toValue:0,duration:0,useNativeDriver:!0})"
+      },
+      {
+        "method": "sequence",
+        "code": "l.Animated.sequence([l.Animated.timing(j,{toValue:-(D-S),duration:8e3,useNativeDriver:!0}),l.Animated.timing(j,{toValue:0,duration:0,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(j,{toValue:-(D-S),duration:8e3,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "l.Animated.timing(j,{toValue:0,duration:0,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "dial",
+    "moduleId": "di-597",
+    "bundleLine": 605,
+    "source": "analysis\\assets\\extracted\\b48567af188568ad-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/dial-di-597.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "parallel",
+        "code": "u.Animated.parallel([u.Animated.spring(D,{toValue:0,useNativeDriver:!0,tension:50,friction:14}),u.Animated.timing(L,{toValue:1,duration:1e3,useNativeDriver:!0})])"
+      },
+      {
+        "method": "spring",
+        "code": "u.Animated.spring(D,{toValue:0,useNativeDriver:!0,tension:50,friction:14})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(L,{toValue:1,duration:1e3,useNativeDriver:!0})"
+      },
+      {
+        "method": "parallel",
+        "code": "u.Animated.parallel([u.Animated.timing(ee,{toValue:0,duration:500,useNativeDriver:!0}),u.Animated.timing(te,{toValue:_,duration:500,useNativeDriver:!0}),u.Animated.timing(ne,{toValue:x,duration:500,useNativeDriver:!0}),u.Animated.timing(re,{toValue:0,duration:500,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(ee,{toValue:0,duration:500,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(te,{toValue:_,duration:500,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(ne,{toValue:x,duration:500,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(re,{toValue:0,duration:500,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "dial",
+    "moduleId": "di-649",
+    "bundleLine": 657,
+    "source": "analysis\\assets\\extracted\\b48567af188568ad-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/dial-di-649.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "timing",
+        "code": "n.Animated.timing(j,{toValue:c?1:0,duration:200,useNativeDriver:!1})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "dial",
+    "moduleId": "di-651",
+    "bundleLine": 659,
+    "source": "analysis\\assets\\extracted\\b48567af188568ad-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/dial-di-651.js",
+    "exports": [
+      "default"
+    ],
+    "calls": [
+      {
+        "method": "parallel",
+        "code": "u.Animated.parallel([u.Animated.timing(P,{toValue:-A,duration:8e3,easing:u.Easing.linear,useNativeDriver:!0}),u.Animated.timing(F,{toValue:0,duration:8e3,easing:u.Easing.linear,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(P,{toValue:-A,duration:8e3,easing:u.Easing.linear,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(F,{toValue:0,duration:8e3,easing:u.Easing.linear,useNativeDriver:!0})"
+      },
+      {
+        "method": "parallel",
+        "code": "u.Animated.parallel([u.Animated.timing(F,{toValue:-A,duration:8e3,easing:u.Easing.linear,useNativeDriver:!0}),u.Animated.timing(P,{toValue:0,duration:8e3,easing:u.Easing.linear,useNativeDriver:!0})])"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(F,{toValue:-A,duration:8e3,easing:u.Easing.linear,useNativeDriver:!0})"
+      },
+      {
+        "method": "timing",
+        "code": "u.Animated.timing(P,{toValue:0,duration:8e3,easing:u.Easing.linear,useNativeDriver:!0})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  },
+  {
+    "bundle": "dial",
+    "moduleId": "di-699",
+    "bundleLine": 707,
+    "source": "analysis\\assets\\extracted\\b48567af188568ad-index.android.bundle",
+    "extractedModule": "analysis/ui/rn-evidence/dial-di-699.js",
+    "exports": [
+      "SlideAnimated",
+      "FadeAnimated"
+    ],
+    "calls": [
+      {
+        "method": "parallel",
+        "code": "p.Animated.parallel([p.Animated.timing(n.state.opacity,{toValue:n.getPropertyValue(\"opacity\",!t),duration:n.state.opacityDuration||n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS}),p.Animated.timing(n.state.scale,{toValue:n.getPropertyValue(\"scale\",!t),duration:n.state.scaleDuration||n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS}),p.Animated.timing(n.state.translateX,{toValue:n.getPropertyValue(\"translateX\",!t),duration:n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS}),p.Animated.timing(n.state.translateY,{toValue:n.getPropertyValue(\"translateY\",!t),duration:n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})])"
+      },
+      {
+        "method": "timing",
+        "code": "p.Animated.timing(n.state.opacity,{toValue:n.getPropertyValue(\"opacity\",!t),duration:n.state.opacityDuration||n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})"
+      },
+      {
+        "method": "timing",
+        "code": "p.Animated.timing(n.state.scale,{toValue:n.getPropertyValue(\"scale\",!t),duration:n.state.scaleDuration||n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})"
+      },
+      {
+        "method": "timing",
+        "code": "p.Animated.timing(n.state.translateX,{toValue:n.getPropertyValue(\"translateX\",!t),duration:n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})"
+      },
+      {
+        "method": "timing",
+        "code": "p.Animated.timing(n.state.translateY,{toValue:n.getPropertyValue(\"translateY\",!t),duration:n.state.duration,easing:n.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})"
+      },
+      {
+        "method": "timing",
+        "code": "p.Animated.timing(s.state[n],{toValue:s.getPropertyValue(n,!t),duration:s.state.duration,easing:s.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})"
+      },
+      {
+        "method": "parallel",
+        "code": "p.Animated.parallel([p.Animated.timing(s.state.opacity,{toValue:s.getPropertyValue(\"opacity\",!t),duration:s.state.duration,easing:s.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})].concat((0,n.default)(u)))"
+      },
+      {
+        "method": "timing",
+        "code": "p.Animated.timing(s.state.opacity,{toValue:s.getPropertyValue(\"opacity\",!t),duration:s.state.duration,easing:s.state.easing,useNativeDriver:\"ios\"!==p.Platform.OS})"
+      }
+    ],
+    "usage": "Candidate call inventory; selected applied patterns are adjudicated in rn-pages.json. Third-party/copied/chart helpers may occur."
+  }
+]

@@ -7,12 +7,14 @@ import {definitions,validateDefinitions,getCatalog,contained,ROOT,sourceFile,rea
 import {createCatalogServer} from '../tools/serve.mjs';
 import {filterSources,migrationPrompt,comparisonRows} from '../site/logic.js';
 import {buildPublic} from '../tools/build.mjs';
+import {addStudy} from '../tools/studies.mjs';
+import {verifyStudy} from '../tools/integrity.mjs';
 
-test('source catalog contains only traceable REA research and keeps the empty desktop category',()=>{
- const data=definitions();assert.deepEqual(validateDefinitions(data),[]);const c=getCatalog();assert.equal(c.sources.length,4);assert.equal(c.platforms.find(p=>p.id==='desktop').count,0);assert.ok(c.sources.every(s=>s.kind==='research'&&s.origin==='historical'));assert.ok(!c.sources.some(s=>/ec-lab|quickpod|anyao/.test(s.id)));
+test('source catalog contains traceable REA research with dynamically counted platforms',()=>{
+ const data=definitions();assert.deepEqual(validateDefinitions(data),[]);const c=getCatalog();assert.equal(c.sources.length,data.sources.length);for(const p of c.platforms)assert.equal(p.count,c.sources.filter(s=>s.platform===p.id).length);assert.ok(c.sources.every(s=>s.kind==='research'&&s.origin==='historical'));assert.ok(!fs.existsSync(path.join(ROOT,'.gitmodules')));
 });
 test('classification and multiple search terms work independently of UI rendering',()=>{
- const sources=getCatalog().sources;assert.deepEqual(filterSources(sources,{platform:'web'}).map(s=>s.id),['hark']);assert.deepEqual(filterSources(sources,{query:'Android 草稿'}).map(s=>s.id),['kimi']);assert.equal(filterSources(sources,{platform:'desktop'}).length,0);assert.equal(filterSources(sources,{query:'不存在的来源'}).length,0);
+ const sources=[{id:'one',platform:'web',name:'alpha',subtitle:'',summary:'',tags:['draft'],stack:['Android']},{id:'two',platform:'desktop',name:'beta',subtitle:'',summary:'',tags:[],stack:[]}];assert.deepEqual(filterSources(sources,{platform:'web'}).map(s=>s.id),['one']);assert.deepEqual(filterSources(sources,{query:'Android draft'}).map(s=>s.id),['one']);assert.equal(filterSources(sources,{platform:'mobile'}).length,0);assert.equal(filterSources(sources,{query:'不存在的来源'}).length,0);
 });
 test('readiness acceptance does not change Kimi technical coverage or source identity',()=>{
  const s=getCatalog().sources.find(s=>s.id==='kimi');assert.equal(s.acceptance.acceptedByUser,true);assert.equal(s.acceptance.technicalCoverageUnchanged,true);assert.match(s.coverage,/20/);assert.match(s.coverage,/未测/);assert.equal(s.snapshot.sourceApkSha256,'9637623695b36eaba1639a6c346310ef05b2a9d478332dcbc5e934cc94dd8332');const p=migrationPrompt(s);assert.ok(p.includes(s.root)&&p.includes(s.coverage)&&p.includes(s.limits[0]));
@@ -26,7 +28,7 @@ test('document API permits only declared artifacts and protects raw evidence by 
 test('HTTP catalog is read-only and blocks private paths and undeclared document reads',async()=>{
  const server=createCatalogServer();server.listen(0,'127.0.0.1');await once(server,'listening');const base='http://127.0.0.1:'+server.address().port;
  try{
-  const c=await (await fetch(base+'/data/catalog.json')).json();assert.equal(c.sources.length,4);assert.equal(c.privateMode,false);
+  const c=await (await fetch(base+'/data/catalog.json')).json();assert.equal(c.sources.length,definitions().sources.length);assert.equal(c.privateMode,false);
   assert.equal((await fetch(base+'/api/document?source=hark&path=README.md')).status,200);
   assert.equal((await fetch(base+'/api/document?source=hark&path=evidence/manifest.json')).status,403);
   assert.equal((await fetch(base+'/source/hark/reports/evidence-gallery.html')).status,403);
@@ -40,7 +42,18 @@ test('public build has only reviewed thumbnails and metadata; unknown stale file
  const base=path.join(ROOT,'.runtime');fs.mkdirSync(base,{recursive:true});const output=fs.mkdtempSync(path.join(base,'export-test-'));
  try{
   buildPublic({output});const manifest=JSON.parse(fs.readFileSync(path.join(output,'build-manifest.json'),'utf8'));
-  assert.equal(manifest.rawEvidenceIncluded,false);assert.equal(manifest.sourceCount,4);assert.ok(manifest.files.every(f=>!f.path.startsWith('platforms/')&&!f.path.includes('private/')));
+  assert.equal(manifest.rawEvidenceIncluded,false);assert.equal(manifest.sourceCount,definitions().sources.length);assert.ok(manifest.files.every(f=>!f.path.startsWith('platforms/')&&!f.path.includes('private/')));const catalog=JSON.parse(fs.readFileSync(path.join(output,'data/catalog.json'),'utf8'));for(const s of catalog.sources){assert.match(s.sourceRevisionUrl,/ECdison6227\/rea-ui-library\/tree\//);for(const a of s.artifacts)assert.match(a.url,/ECdison6227\/rea-ui-library\/blob\//);}
   const bytes=Buffer.from('must never be included in an export');fs.writeFileSync(path.join(output,'private-note.txt'),bytes);assert.throws(()=>buildPublic({output}),/Unknown file/);assert.deepEqual(fs.readFileSync(path.join(output,'private-note.txt')),bytes);
  }finally{const resolved=path.resolve(output);if(!resolved.startsWith(path.resolve(base)+path.sep))throw Error('Unsafe test cleanup');fs.rmSync(resolved,{recursive:true,force:true});}
+});
+
+test('new research registers without an external repository; subsequent byte changes are detected',()=>{
+ const id='catalog-fixture-'+process.pid,relative='platforms/desktop/'+id,folder=path.resolve(ROOT,relative),manifest=path.join(ROOT,'catalog/manifests',id+'.json'),registry=path.join(ROOT,'catalog/sources.json'),before=fs.readFileSync(registry);
+ if(fs.existsSync(folder)||fs.existsSync(manifest))throw Error('Unexpected existing test fixture');
+ try{
+  fs.mkdirSync(folder,{recursive:true});fs.writeFileSync(path.join(folder,'README.md'),'Synthetic test research entry\n');fs.writeFileSync(path.join(folder,'spec.md'),'Synthetic test rules\n');
+  const profile=JSON.parse(fs.readFileSync(path.join(ROOT,'catalog/study.template.json'),'utf8'));Object.assign(profile,{id,root:relative,platform:'desktop'});profile.run.cwd=relative;
+  const s=addStudy(profile);assert.equal(verifyStudy(s).files,2);assert.ok(getCatalog().sources.some(s=>s.id===id));assert.equal(getCatalog().platforms.find(p=>p.id==='desktop').count,definitions().sources.filter(s=>s.platform==='desktop').length);assert.throws(()=>addStudy(profile),/already registered/);
+  fs.appendFileSync(path.join(folder,'spec.md'),'Unreviewed change\n');assert.throws(()=>verifyStudy(s),/Study files changed/);
+ }finally{fs.writeFileSync(registry,before);if(path.dirname(folder)!==path.join(ROOT,'platforms/desktop'))throw Error('Unsafe fixture cleanup');if(fs.existsSync(folder))fs.rmSync(folder,{recursive:true,force:true});if(fs.existsSync(manifest))fs.unlinkSync(manifest);}
 });

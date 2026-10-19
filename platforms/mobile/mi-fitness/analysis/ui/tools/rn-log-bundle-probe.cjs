@@ -1,0 +1,14 @@
+const fs=require('fs'),path=require('path'),cp=require('child_process'),crypto=require('crypto');
+const base=path.resolve(__dirname,'..'),adb=path.join(process.env.LOCALAPPDATA,'Microsoft/WinGet/Packages/Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe/platform-tools/adb.exe'),serial='emulator-5580';
+const run=args=>cp.execFileSync(adb,['-s',serial,...args],{encoding:'utf8',windowsHide:true,maxBuffer:32*1024*1024,timeout:25000});
+const identity=run(['shell','getprop','ro.boot.qemu.avd_name']).trim();
+if(identity!=='rea_mihealth_ui_20261015')throw Error('Unexpected device '+identity);
+const appPid=run(['shell','pidof','com.mi.health']).trim().split(/\s+/)[0];
+if(!/^\d+$/.test(appPid))throw Error('App PID unavailable');
+const output=run(['logcat','-d','--pid='+appPid,'-v','threadtime']);
+const lines=output.split(/\r?\n/),pattern=/skytree|bundleloader|moduleName.{0,30}mine|mine.{0,50}(bundle|contenthash)|contenthash|bundleInfo|cominfo|buzinfo|loadScriptFrom(File|Assets)/i;
+const matching=lines.map((text,i)=>({line:i+1,text})).filter(x=>pattern.test(x.text));
+const result={at:new Date().toISOString(),serial,identity,appPid,command:['logcat','-d','--pid='+appPid,'-v','threadtime'],allProcessLogLineCount:lines.length,retainedMatchingLineCount:matching.length,fullOutputSha256:crypto.createHash('sha256').update(output).digest('hex'),query:pattern.source,matching,scope:'Read-only logcat buffer for com.mi.health PID only. Unmatched process logs are not persisted. No UI interaction, process restart, adbd restart or log clearing.'};
+fs.mkdirSync(path.join(base,'runtime/logs'),{recursive:true});
+fs.writeFileSync(path.join(base,'runtime/logs/rn-bundle-log-probe.json'),JSON.stringify(result,null,2));
+console.log(JSON.stringify({...result,matching:matching.slice(-60)},null,2));

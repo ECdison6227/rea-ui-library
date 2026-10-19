@@ -1,0 +1,46 @@
+{
+  "id": "display",
+  "source": "REA device observation",
+  "evidence": {
+    "evidence_id": "ev_9b93678b638a18f87f968f6c7495f1e4958b5e066415cd9417c317b901892411",
+    "subject": null,
+    "provider": {
+      "id": "adb",
+      "name": "Android Debug Bridge",
+      "version": "37.0.1-15733141"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "inspect_adb_display",
+    "parameters": {
+      "serial": "emulator-5580"
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "client": {
+        "binary_path": "adb",
+        "path_source": "path",
+        "version": "37.0.1-15733141",
+        "installed_path": "C:\\Users\\edsjrcheng\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5580",
+      "physical_size": {
+        "width": 1080,
+        "height": 2400
+      },
+      "override_size": null,
+      "physical_density": 440,
+      "override_density": null
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Override values are present only when a build has overridden the physical values"
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  }
+}

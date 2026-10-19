@@ -1,0 +1,623 @@
+{
+  "schemaVersion": 2,
+  "id": "mihealth-3.57.0-android-baseline",
+  "updatedAt": "2026-10-15T13:57:45.019Z",
+  "meaning": "Delivery links, runtime coverage and residuals; not a fidelity score",
+  "baselineDeliverables": "Original runtime + specifications + executable native reference + matched-state comparison + unrelated-business example are present",
+  "source": {
+    "package": "com.mi.health",
+    "versionName": "3.57.0",
+    "versionCode": 357000,
+    "apkSha256": "2a80fc5a87353c2c6ef3c01fa0085862fe45e4ddb9c2d272cb3780841b5889a6",
+    "mineRuntimeVersion": "11.202.21",
+    "mineRuntimeSha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958"
+  },
+  "environment": {
+    "api": 35,
+    "widthPx": 1080,
+    "heightPx": 2400,
+    "densityDpi": 440,
+    "density": 2.75,
+    "fontScale": 1,
+    "locale": "zh-CN",
+    "theme": "day",
+    "deployment": "ordinary guest CN, no wearable, zero health data"
+  },
+  "pages": [
+    {
+      "id": "health",
+      "scene": "health-day",
+      "scope": "default guest/empty light portrait",
+      "sourceRuntime": {
+        "status": "verified",
+        "classification": "A",
+        "origin": "current",
+        "image": "baseline/runtime/health-day/screen.png",
+        "reaRecord": "baseline/runtime/healthcap.rea.json",
+        "evidenceId": "ev_716b470d4284b551bafa1e3ddb5f5493f9a6e535fb6c1065b73866e2777c7963",
+        "sha256": "a932b00337f9d4cd71516d5b9d55451cc0af1841d7935c3ca8c487005c2e2166",
+        "captureExactTimestamp": null,
+        "fileWrittenAt": "2026-10-15T12:51:16.081Z",
+        "timeNote": "REA frame operation has no shutter timestamp; filesystem write time is not camera time",
+        "hierarchy": "runtime/hierarchy/b01-health.json"
+      },
+      "spec": "baseline/spec.md",
+      "reference": {
+        "status": "verified",
+        "classification": "D",
+        "image": "baseline/reference-accepted/health-day/screen.png",
+        "metadata": "baseline/reference-accepted/health-day.meta.json",
+        "apkSha256": "4a62b1255795edbb422990a8198e3320f98b8cdf592a4966a42c18ef8c9d3b5b"
+      },
+      "comparison": {
+        "status": "verified-performed",
+        "path": "baseline/comparison/final/index.html",
+        "visualParity": "partial; specific residuals are recorded, no invented percentage"
+      },
+      "behaviorParity": "partial; baseline actions mapped, destinations outside the three-page scope remain adapters"
+    },
+    {
+      "id": "mine",
+      "scene": "mine-day",
+      "scope": "default guest/empty light portrait",
+      "sourceRuntime": {
+        "status": "verified",
+        "classification": "A",
+        "origin": "current",
+        "image": "baseline/runtime/mine-day/screen.png",
+        "reaRecord": "baseline/runtime/minecap.rea.json",
+        "evidenceId": "ev_1d57d0e878ed7ab61a9f841d5766bacd63d04fe53bc3af5fed5b36a9420e86d8",
+        "sha256": "c8857401ecf63646478bfd7b522b243bf112ed10fb80ee238e9bc11e7f067348",
+        "captureExactTimestamp": null,
+        "fileWrittenAt": "2026-10-15T12:52:18.762Z",
+        "timeNote": "REA frame operation has no shutter timestamp; filesystem write time is not camera time",
+        "hierarchy": "runtime/hierarchy/b06-mine-visible.json"
+      },
+      "spec": "baseline/spec.md",
+      "reference": {
+        "status": "verified",
+        "classification": "D",
+        "image": "baseline/reference-accepted/mine-day/screen.png",
+        "metadata": "baseline/reference-accepted/mine-day.meta.json",
+        "apkSha256": "4a62b1255795edbb422990a8198e3320f98b8cdf592a4966a42c18ef8c9d3b5b"
+      },
+      "comparison": {
+        "status": "verified-performed",
+        "path": "baseline/comparison/final/index.html",
+        "visualParity": "partial; specific residuals are recorded, no invented percentage"
+      },
+      "behaviorParity": "partial; baseline actions mapped, destinations outside the three-page scope remain adapters"
+    },
+    {
+      "id": "settings",
+      "scene": "settings-day",
+      "scope": "default guest/empty light portrait",
+      "sourceRuntime": {
+        "status": "verified",
+        "classification": "A",
+        "origin": "current",
+        "image": "baseline/runtime/settings-day/screen.png",
+        "reaRecord": "baseline/runtime/settingscap.rea.json",
+        "evidenceId": "ev_627d382d9998bb8838a229e02cf660f5c7aef7aef8c1871f4720c2e113943320",
+        "sha256": "209f4bac18cf8c5da8d2eb25263dcad04def3b487a3de02b904bc3ef46d254e3",
+        "captureExactTimestamp": null,
+        "fileWrittenAt": "2026-10-15T12:54:17.812Z",
+        "timeNote": "REA frame operation has no shutter timestamp; filesystem write time is not camera time",
+        "hierarchy": "runtime/hierarchy/b08-settings.json"
+      },
+      "spec": "baseline/spec.md",
+      "reference": {
+        "status": "verified",
+        "classification": "D",
+        "image": "baseline/reference-accepted/settings-day/screen.png",
+        "metadata": "baseline/reference-accepted/settings-day.meta.json",
+        "apkSha256": "4a62b1255795edbb422990a8198e3320f98b8cdf592a4966a42c18ef8c9d3b5b"
+      },
+      "comparison": {
+        "status": "verified-performed",
+        "path": "baseline/comparison/final/index.html",
+        "visualParity": "partial; specific residuals are recorded, no invented percentage"
+      },
+      "behaviorParity": "partial; baseline actions mapped, destinations outside the three-page scope remain adapters"
+    }
+  ],
+  "components": [
+    {
+      "id": "TopBar",
+      "sourceDefault": "verified within matching source scenes",
+      "sourceInteractions": {
+        "status": "verified-selected; not all possible states",
+        "classification": "A",
+        "origin": "current",
+        "records": [
+          "runtime/hierarchy/b47-add-result.json",
+          "runtime/hierarchy/b48-add-menu-resume.json",
+          "runtime/hierarchy/b49-menu-back.json",
+          "runtime/hierarchy/b51-menu-outside.json",
+          "runtime/hierarchy/b54-add-destination-settled.json",
+          "runtime/hierarchy/b55-add-return.json"
+        ]
+      },
+      "spec": "baseline/contracts.json#TopBar",
+      "implementation": {
+        "classification": "D",
+        "path": "analysis/ui/android-reference/src/study/style/reference/StyleKit.java",
+        "owner": "study.style.reference.StyleKit",
+        "entry": "topBar",
+        "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
+      },
+      "referenceRuntime": "baseline/tests/result.json",
+      "comparison": "baseline/comparison/final/index.html#component-TopBar",
+      "visualParity": "partial; component crops and manual differences recorded",
+      "unverifiedStates": [
+        "settings collapse animation",
+        "long title layout",
+        "keyboard focus restoration"
+      ],
+      "businessBoundary": {
+        "keep": [
+          "title role hierarchy",
+          "action alignment",
+          "platform insets"
+        ],
+        "replace": [
+          "title strings",
+          "icons",
+          "routes"
+        ],
+        "adapt": [
+          "platform back and safe areas"
+        ]
+      }
+    },
+    {
+      "id": "BottomNav",
+      "sourceDefault": "verified within matching source scenes",
+      "sourceInteractions": {
+        "status": "verified-selected; not all possible states",
+        "classification": "A",
+        "origin": "current",
+        "records": [
+          "runtime/hierarchy/b04-mine.json",
+          "runtime/hierarchy/b06-mine-visible.json",
+          "runtime/hierarchy/b17-reselect-result.json",
+          "runtime/hierarchy/b01-health.json"
+        ]
+      },
+      "spec": "baseline/contracts.json#BottomNav",
+      "implementation": {
+        "classification": "D",
+        "path": "analysis/ui/android-reference/src/study/style/reference/StyleKit.java",
+        "owner": "study.style.reference.StyleKit",
+        "entry": "bottomNav",
+        "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
+      },
+      "referenceRuntime": "baseline/tests/result.json",
+      "comparison": "baseline/comparison/final/index.html#component-BottomNav",
+      "visualParity": "partial; component crops and manual differences recorded",
+      "unverifiedStates": [
+        "arbitrary destination counts",
+        "deep-link tab restoration",
+        "process-death restoration"
+      ],
+      "businessBoundary": {
+        "keep": [
+          "fixed icon-label composition",
+          "independent selection",
+          "no indicator"
+        ],
+        "replace": [
+          "destinations",
+          "icons",
+          "badge data"
+        ],
+        "adapt": [
+          "platform root-back and history"
+        ]
+      }
+    },
+    {
+      "id": "ProgressHero",
+      "sourceDefault": "verified within matching source scenes",
+      "sourceInteractions": {
+        "status": "verified-selected; not all possible states",
+        "classification": "A",
+        "origin": "current",
+        "records": [
+          "runtime/hierarchy/b01-health.json",
+          "runtime/hierarchy/b19-hero-result.json"
+        ]
+      },
+      "spec": "baseline/contracts.json#ProgressHero",
+      "implementation": {
+        "classification": "D",
+        "path": "analysis/ui/android-reference/src/study/style/reference/MainActivity.java",
+        "owner": "study.style.reference.MainActivity",
+        "entry": "ProgressHero + health() summary",
+        "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract",
+        "detailBoundary": {
+          "classification": "D",
+          "entry": "MainActivity.openDetailBoundary(title)",
+          "coverage": "entry event and return only; second-level original detail visual/content not reconstructed; not a login gate"
+        }
+      },
+      "referenceRuntime": "baseline/tests/result.json",
+      "comparison": "baseline/comparison/final/index.html#component-ProgressHero",
+      "visualParity": "partial; component crops and manual differences recorded",
+      "unverifiedStates": [
+        "nonzero arc drawing",
+        "ring duration/easing",
+        "share preparation runtime",
+        "cancellation/late result"
+      ],
+      "businessBoundary": {
+        "keep": [
+          "hierarchy of overview then three drilldowns",
+          "small targets/units",
+          "context-preserving action"
+        ],
+        "replace": [
+          "health rings algorithm",
+          "400/6000/30 thresholds",
+          "calorie food conversion",
+          "health labels"
+        ],
+        "adapt": [
+          "omit visual if target has no meaningful progress denominator"
+        ]
+      }
+    },
+    {
+      "id": "MetricCard",
+      "sourceDefault": "verified within matching source scenes",
+      "sourceInteractions": {
+        "status": "verified-selected; not all possible states",
+        "classification": "A",
+        "origin": "current",
+        "records": [
+          "runtime/hierarchy/b01-health.json",
+          "runtime/hierarchy/b21-sleep-result.json"
+        ]
+      },
+      "spec": "baseline/contracts.json#MetricCard",
+      "implementation": {
+        "classification": "D",
+        "path": "analysis/ui/android-reference/src/study/style/reference/StyleKit.java",
+        "owner": "study.style.reference.StyleKit",
+        "entry": "metricCard",
+        "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract",
+        "detailBoundary": {
+          "classification": "D",
+          "entry": "MainActivity.openDetailBoundary(title)",
+          "coverage": "entry event and return only; second-level original detail visual/content not reconstructed; not a login gate"
+        }
+      },
+      "referenceRuntime": "baseline/tests/result.json",
+      "comparison": "baseline/comparison/final/index.html#component-MetricCard",
+      "visualParity": "partial; component crops and manual differences recorded",
+      "unverifiedStates": [
+        "ready charts",
+        "stale/error/loading UI",
+        "full long-card height",
+        "foldable runtime"
+      ],
+      "businessBoundary": {
+        "keep": [
+          "icon/title/explanation hierarchy",
+          "optional detail affordance",
+          "one task per card"
+        ],
+        "replace": [
+          "health data",
+          "icon colors/meaning",
+          "chart renderer"
+        ],
+        "adapt": [
+          "state language and target domain validation"
+        ]
+      }
+    },
+    {
+      "id": "ProfileHeader",
+      "sourceDefault": "verified within matching source scenes",
+      "sourceInteractions": {
+        "status": "verified-selected; not all possible states",
+        "classification": "A",
+        "origin": "current",
+        "records": [
+          "runtime/hierarchy/b06-mine-visible.json",
+          "runtime/hierarchy/b26-profile-result.json"
+        ]
+      },
+      "spec": "baseline/contracts.json#ProfileHeader",
+      "implementation": {
+        "classification": "D",
+        "path": "analysis/ui/android-reference/src/study/style/reference/StyleKit.java",
+        "owner": "study.style.reference.StyleKit",
+        "entry": "profile",
+        "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
+      },
+      "referenceRuntime": "baseline/tests/result.json",
+      "comparison": "baseline/comparison/final/index.html#component-ProfileHeader",
+      "visualParity": "partial; component crops and manual differences recorded",
+      "unverifiedStates": [
+        "logged-in updates",
+        "long name",
+        "large-font wrapping",
+        "identity request error runtime"
+      ],
+      "businessBoundary": {
+        "keep": [
+          "avatar/text role and spacing",
+          "single-line truncation",
+          "optional trailing identity affordance"
+        ],
+        "replace": [
+          "Xiaomi account",
+          "medal/service",
+          "description",
+          "avatar asset"
+        ],
+        "adapt": [
+          "target authentication/workspace adapter"
+        ]
+      }
+    },
+    {
+      "id": "ShortcutGrid",
+      "sourceDefault": "verified within matching source scenes",
+      "sourceInteractions": {
+        "status": "verified-selected; not all possible states",
+        "classification": "A",
+        "origin": "current",
+        "records": [
+          "runtime/hierarchy/b34-activity-guard.json",
+          "runtime/hierarchy/b35-guard-cancelled.json",
+          "runtime/hierarchy/b40-back-result.json",
+          "runtime/hierarchy/b38-mask-result.json"
+        ]
+      },
+      "spec": "baseline/contracts.json#ShortcutGrid",
+      "implementation": {
+        "classification": "D",
+        "path": "analysis/ui/android-reference/src/study/style/reference/StyleKit.java",
+        "owner": "study.style.reference.StyleKit",
+        "entry": "shortcutGrid",
+        "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
+      },
+      "referenceRuntime": "baseline/tests/result.json",
+      "comparison": "baseline/comparison/final/index.html#component-ShortcutGrid",
+      "visualParity": "partial; component crops and manual differences recorded",
+      "unverifiedStates": [
+        "runtime login success continuation",
+        "more entries",
+        "very narrow viewport behavior"
+      ],
+      "businessBoundary": {
+        "keep": [
+          "ordered equal-width compact shortcuts",
+          "guard at action boundary"
+        ],
+        "replace": [
+          "entry list",
+          "routes",
+          "account provider"
+        ],
+        "adapt": [
+          "configuration-based count and explicit overflow strategy; overflow choice is D"
+        ]
+      }
+    },
+    {
+      "id": "SurfaceCard",
+      "sourceDefault": "verified within matching source scenes",
+      "sourceInteractions": {
+        "status": "verified-selected; not all possible states",
+        "classification": "A",
+        "origin": "current",
+        "records": [
+          "runtime/hierarchy/b36-weekly-guard.json",
+          "runtime/hierarchy/b37-guard-resume.json"
+        ]
+      },
+      "spec": "baseline/contracts.json#SurfaceCard",
+      "implementation": {
+        "classification": "D",
+        "path": "analysis/ui/android-reference/src/study/style/reference/StyleKit.java",
+        "owner": "study.style.reference.StyleKit",
+        "entry": "surface",
+        "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
+      },
+      "referenceRuntime": "baseline/tests/result.json",
+      "comparison": "baseline/comparison/final/index.html#component-SurfaceCard",
+      "visualParity": "partial; component crops and manual differences recorded",
+      "unverifiedStates": [
+        "host press overlay/scale",
+        "global shadow system",
+        "all disabled surfaces"
+      ],
+      "businessBoundary": {
+        "keep": [
+          "surface hierarchy",
+          "local radius role",
+          "slots"
+        ],
+        "replace": [
+          "content",
+          "illustrations"
+        ],
+        "adapt": [
+          "native smooth corners and platform shadows independently"
+        ]
+      }
+    },
+    {
+      "id": "ChevronRow",
+      "sourceDefault": "verified within matching source scenes",
+      "sourceInteractions": {
+        "status": "verified-selected; not all possible states",
+        "classification": "A",
+        "origin": "current",
+        "records": [
+          "runtime/hierarchy/b07-mine-menu.json",
+          "runtime/hierarchy/b08-settings.json",
+          "runtime/hierarchy/b16-settings-return.json"
+        ]
+      },
+      "spec": "baseline/contracts.json#ChevronRow",
+      "implementation": {
+        "classification": "D",
+        "path": "analysis/ui/android-reference/src/study/style/reference/StyleKit.java",
+        "owner": "study.style.reference.StyleKit",
+        "entry": "chevronRow",
+        "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
+      },
+      "referenceRuntime": "baseline/tests/result.json",
+      "comparison": "baseline/comparison/final/index.html#component-ChevronRow",
+      "visualParity": "partial; component crops and manual differences recorded",
+      "unverifiedStates": [
+        "runtime disabled explanation",
+        "long-text max-line clipping",
+        "native row double-tap behavior"
+      ],
+      "businessBoundary": {
+        "keep": [
+          "description inline not modal by default",
+          "right state/arrow hierarchy",
+          "visual availability separate from action permission"
+        ],
+        "replace": [
+          "labels",
+          "values",
+          "routes",
+          "capability conditions"
+        ],
+        "adapt": [
+          "throttle only on corresponding component, not all actions"
+        ]
+      }
+    },
+    {
+      "id": "SwitchRow",
+      "sourceDefault": "verified within matching source scenes",
+      "sourceInteractions": {
+        "status": "verified-selected; not all possible states",
+        "classification": "A",
+        "origin": "current",
+        "records": [
+          "runtime/hierarchy/b12-notification-on.json",
+          "runtime/hierarchy/b14-notification-off-stable.json"
+        ]
+      },
+      "spec": "baseline/contracts.json#SwitchRow",
+      "implementation": {
+        "classification": "D",
+        "path": "analysis/ui/android-reference/src/study/style/reference/StyleKit.java",
+        "owner": "study.style.reference.StyleKit",
+        "entry": "switchRow + setChecked(row, checked), owner commits",
+        "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
+      },
+      "referenceRuntime": "baseline/tests/result.json",
+      "comparison": "baseline/comparison/final/index.html#component-SwitchRow",
+      "visualParity": "partial; component crops and manual differences recorded",
+      "unverifiedStates": [
+        "system permission grant/result",
+        "cross-restart persistence",
+        "failure rollback",
+        "cause of b09 overlapping account authentication"
+      ],
+      "businessBoundary": {
+        "keep": [
+          "controlled state",
+          "semantic label consistent with actual boolean",
+          "request separate from commit"
+        ],
+        "replace": [
+          "notification copy",
+          "account/permission adapter"
+        ],
+        "adapt": [
+          "platform switch/accessibility; busy/error is explicit D"
+        ]
+      }
+    },
+    {
+      "id": "PrimaryButton",
+      "sourceDefault": "verified within matching source scenes",
+      "sourceInteractions": {
+        "status": "verified-selected; not all possible states",
+        "classification": "A",
+        "origin": "current",
+        "records": [
+          "runtime/hierarchy/b13-logout-stable.json"
+        ]
+      },
+      "spec": "baseline/contracts.json#PrimaryButton",
+      "implementation": {
+        "classification": "D",
+        "path": "analysis/ui/android-reference/src/study/style/reference/StyleKit.java",
+        "owner": "study.style.reference.StyleKit",
+        "entry": "primaryButton",
+        "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
+      },
+      "referenceRuntime": "baseline/tests/result.json",
+      "comparison": "baseline/comparison/final/index.html#component-PrimaryButton",
+      "visualParity": "partial; component crops and manual differences recorded",
+      "unverifiedStates": [
+        "pressed duration",
+        "disabled/loading visuals",
+        "logged-in logout confirmation and completed session behavior"
+      ],
+      "businessBoundary": {
+        "keep": [
+          "prominent singular bottom action",
+          "separate foreground/label states",
+          "fixed area separate from scrolling body"
+        ],
+        "replace": [
+          "logout business action",
+          "label",
+          "session handler"
+        ],
+        "adapt": [
+          "smooth corners and platform metrics; do not assume one universal button variant"
+        ]
+      }
+    }
+  ],
+  "popupNavigation": {
+    "path": "baseline/popup-navigation.json",
+    "human": "baseline/popup-navigation.md",
+    "coverage": "field-by-field A/B/D; source queue pressure and lifecycle races remain unverified"
+  },
+  "referenceTests": {
+    "file": "baseline/tests/result.json",
+    "classification": "D runtime checks, not original proof",
+    "apkSha256": "4a62b1255795edbb422990a8198e3320f98b8cdf592a4966a42c18ef8c9d3b5b"
+  },
+  "transfer": {
+    "status": "verified-local-fixture",
+    "implementation": "android-reference/src/study/style/reference/MainActivity.java#transferPage",
+    "mapping": "transfer-example/README.md",
+    "runtime": "baseline/transfer/",
+    "tests": "baseline/tests/result.json"
+  },
+  "assets": {
+    "library": "asset-library/README.md",
+    "inventory": "asset-library/inventory.json",
+    "verification": "asset-library/verification.json",
+    "reference": "android-reference/assets-manifest.json",
+    "boundary": "Inventory preservation is not proof of first-party/current-use status"
+  },
+  "unknowns": [
+    "Exact OEM and per-glyph fallback fonts",
+    "MIUI adaptive/smooth corner and full motion equivalence",
+    "Original nonzero charts, logged-in/account success and real wearables",
+    "Original queue pressure, external authentication races, process-death/rotation state restoration",
+    "Original text entry, editing, persistence, cancellation and retry outside selected scenes",
+    "Reconstructed night/landscape/foldable fidelity; source historical night screenshots do exist",
+    "Unobserved destination pages and scanner/permission branches"
+  ],
+  "adaptations": "baseline/implementation-notes.md",
+  "restoration": "docs/environment.md"
+}

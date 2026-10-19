@@ -1,0 +1,45 @@
+{
+  "id": "live-bundle-0",
+  "source": "target-app-bundle-from-owned-emulator",
+  "evidence": {
+    "evidence_id": "ev_4b19bdb230e5223001a26c650fb1510cee45222ac78f7712f381ac8115c85bbb",
+    "subject": null,
+    "provider": {
+      "id": "adb",
+      "name": "Android Debug Bridge",
+      "version": "37.0.1-15733141"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "pull_adb_file",
+    "parameters": {
+      "serial": "emulator-5580",
+      "device_path": "/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/mine/e5d8d3390f6109d6c50e9a27d0143a22/index.android.bundle",
+      "output_directory": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\runtime\\active-bundles\\mine\\code"
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "client": {
+        "binary_path": "adb",
+        "path_source": "path",
+        "version": "37.0.1-15733141",
+        "installed_path": "C:\\Users\\edsjrcheng\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5580",
+      "device_path": "/data/user/0/com.mi.health/cache/mirn_bundles/production/miwear/mine/e5d8d3390f6109d6c50e9a27d0143a22/index.android.bundle",
+      "local_path": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\runtime\\active-bundles\\mine\\code\\index.android.bundle",
+      "bytes": 5115522,
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "The pulled file is a host-local copy; the device retains the original"
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  }
+}

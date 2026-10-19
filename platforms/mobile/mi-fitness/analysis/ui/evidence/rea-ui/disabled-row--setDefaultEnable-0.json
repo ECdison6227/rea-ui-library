@@ -1,0 +1,131 @@
+{
+  "evidence_id": "ev_dabd6aa1ca98b4dbb66b627448bcc8ada0c2b33bc9de415334df034fc3fde0ab",
+  "subject": {
+    "name": "base.apk",
+    "digest": {
+      "sha256": "2a80fc5a87353c2c6ef3c01fa0085862fe45e4ddb9c2d272cb3780841b5889a6"
+    },
+    "local_path": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\base.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\base.apk",
+    "class_name": "com.xiaomi.fitness.widget.RightArrowSingleLineTextView",
+    "method_name": "setDefaultEnable",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "40c6972bc7e1689e09979b64ba49ba04b9c05e49976b838315d63d6415e762ba",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\EDSJRC~1\\AppData\\Local\\Temp\\rea-android-7dbfffea0b7151c16baca08ac9107860\\target.apk",
+      "class_count": 49309,
+      "resource_count": 11210,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"21.0.12.1\",\"available_processors\":4,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xiaomi.fitness.widget.RightArrowSingleLineTextView"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"signature\":\"\\u003cinit\\u003e(android.content.Context): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Landroid/content/Context;)V\"},{\"signature\":\"\\u003cinit\\u003e(android.content.Context, android.util.AttributeSet): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Landroid/content/Context;Landroid/util/AttributeSet;)V\"},{\"signature\":\"\\u003cinit\\u003e(android.content.Context, android.util.AttributeSet, int): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Landroid/content/Context;Landroid/util/AttributeSet;I)V\"},{\"signature\":\"\\u003cinit\\u003e(android.content.Context, android.util.AttributeSet, int, int, kotlin.jvm.internal.DefaultConstructorMarker): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V\"},{\"signature\":\"getTvFeatureItemRemind(): android.widget.TextView\",\"def_pos\":0,\"name\":\"getTvFeatureItemRemind\",\"is_constructor\":false,\"dex_descriptor\":\"()Landroid/widget/TextView;\"},{\"signature\":\"onTouchEvent(android.view.MotionEvent): boolean\",\"def_pos\":0,\"name\":\"onTouchEvent\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/view/MotionEvent;)Z\"},{\"signature\":\"setArrowViewPadding(android.graphics.drawable.Drawable, java.lang.Integer, android.graphics.drawable.Icon, java.lang.String): void\",\"def_pos\":0,\"name\":\"setArrowViewPadding\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/graphics/drawable/Drawable;Ljava/lang/Integer;Landroid/graphics/drawable/Icon;Ljava/lang/String;)V\"},{\"signature\":\"setArrowViewPadding$default(com.xiaomi.fitness.widget.RightArrowSingleLineTextView, android.graphics.drawable.Drawable, java.lang.Integer, android.graphics.drawable.Icon, java.lang.String, int, java.lang.Object): void\",\"def_pos\":0,\"name\":\"setArrowViewPadding$default\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/xiaomi/fitness/widget/RightArrowSingleLineTextView;Landroid/graphics/drawable/Drawable;Ljava/lang/Integer;Landroid/graphics/drawable/Icon;Ljava/lang/String;ILjava/lang/Object;)V\"},{\"signature\":\"setCircleIcon(int): void\",\"def_pos\":0,\"name\":\"setCircleIcon\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\"},{\"signature\":\"setCircleIcon(android.graphics.drawable.Drawable): void\",\"def_pos\":0,\"name\":\"setCircleIcon\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/graphics/drawable/Drawable;)V\"},{\"signature\":\"setDefaultEnable(boolean): void\",\"def_pos\":0,\"name\":\"setDefaultEnable\",\"is_constructor\":false,\"dex_descriptor\":\"(Z)V\"},{\"signature\":\"setEnable(boolean): void\",\"def_pos\":0,\"name\":\"setEnable\",\"is_constructor\":false,\"dex_descriptor\":\"(Z)V\"},{\"signature\":\"setEndButton(android.view.View): void\",\"def_pos\":0,\"name\":\"setEndButton\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/view/View;)V\"},{\"signature\":\"setEndButtonIcon(int): void\",\"def_pos\":0,\"name\":\"setEndButtonIcon\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\"},{\"signature\":\"setIcon(android.graphics.drawable.Drawable, boolean, float): void\",\"def_pos\":0,\"name\":\"setIcon\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/graphics/drawable/Drawable;ZF)V\"},{\"signature\":\"setIcon(int): void\",\"def_pos\":0,\"name\":\"setIcon\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\"},{\"signature\":\"setIcon(android.graphics.drawable.Drawable): void\",\"def_pos\":0,\"name\":\"setIcon\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/graphics/drawable/Drawable;)V\"},{\"signature\":\"setIcon(java.lang.String): void\",\"def_pos\":0,\"name\":\"setIcon\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"setRemindDotColor(int): void\",\"def_pos\":0,\"name\":\"setRemindDotColor\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\"},{\"signature\":\"setRemindDotDrawable(int): void\",\"def_pos\":0,\"name\":\"setRemindDotDrawable\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\"},{\"signature\":\"setRemindText(int): void\",\"def_pos\":0,\"name\":\"setRemindText\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\"},{\"signature\":\"setRemindText(android.text.SpannableString): void\",\"def_pos\":0,\"name\":\"setRemindText\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/text/SpannableString;)V\"},{\"signature\":\"setRemindText(java.lang.String): void\",\"def_pos\":0,\"name\":\"setRemindText\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"setRemindTextColor(int): void\",\"def_pos\":0,\"name\":\"setRemindTextColor\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\"},{\"signature\":\"setRemindTextEnable(boolean): void\",\"def_pos\":0,\"name\":\"setRemindTextEnable\",\"is_constructor\":false,\"dex_descriptor\":\"(Z)V\"},{\"signature\":\"setRightIconTextColor(int): void\",\"def_pos\":0,\"name\":\"setRightIconTextColor\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\"},{\"signature\":\"setRightTextSize(float): void\",\"def_pos\":0,\"name\":\"setRightTextSize\",\"is_constructor\":false,\"dex_descriptor\":\"(F)V\"},{\"signature\":\"setRightTextWithDot(int): void\",\"def_pos\":0,\"name\":\"setRightTextWithDot\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\"},{\"signature\":\"setRightTextWithDot(java.lang.String): void\",\"def_pos\":0,\"name\":\"setRightTextWithDot\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"setRoundedIcon(int, float): void\",\"def_pos\":0,\"name\":\"setRoundedIcon\",\"is_constructor\":false,\"dex_descriptor\":\"(IF)V\"},{\"signature\":\"setRoundedIcon(android.graphics.drawable.Drawable, float): void\",\"def_pos\":0,\"name\":\"setRoundedIcon\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/graphics/drawable/Drawable;F)V\"},{\"signature\":\"setStartIconVisible(boolean): void\",\"def_pos\":0,\"name\":\"setStartIconVisible\",\"is_constructor\":false,\"dex_descriptor\":\"(Z)V\"},{\"signature\":\"setTitle(int): void\",\"def_pos\":0,\"name\":\"setTitle\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\"},{\"signature\":\"setTitle(java.lang.String): void\",\"def_pos\":0,\"name\":\"setTitle\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"setTitleBold(boolean): void\",\"def_pos\":0,\"name\":\"setTitleBold\",\"is_constructor\":false,\"dex_descriptor\":\"(Z)V\"},{\"signature\":\"setTitleTextColor(int): void\",\"def_pos\":0,\"name\":\"setTitleTextColor\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\"},{\"signature\":\"setViewPadding(int, int, int, int): void\",\"def_pos\":0,\"name\":\"setViewPadding\",\"is_constructor\":false,\"dex_descriptor\":\"(IIII)V\"},{\"signature\":\"showMore(boolean): void\",\"def_pos\":0,\"name\":\"showMore\",\"is_constructor\":false,\"dex_descriptor\":\"(Z)V\"},{\"signature\":\"showRightIcon(boolean): void\",\"def_pos\":0,\"name\":\"showRightIcon\",\"is_constructor\":false,\"dex_descriptor\":\"(Z)V\"},{\"signature\":\"showRightIconBG(android.graphics.drawable.Drawable): void\",\"def_pos\":0,\"name\":\"showRightIconBG\",\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/graphics/drawable/Drawable;)V\"},{\"signature\":\"showRightIconText(java.lang.String): void\",\"def_pos\":0,\"name\":\"showRightIconText\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"updateTitleMaxLines(int): void\",\"def_pos\":0,\"name\":\"updateTitleMaxLines\",\"is_constructor\":false,\"dex_descriptor\":\"(I)V\"}],\"method_count\":42,\"inner_class_count\":0,\"inner_classes\":[],\"name\":\"RightArrowSingleLineTextView\",\"full_name\":\"com.xiaomi.fitness.widget.RightArrowSingleLineTextView\",\"field_count\":7,\"fields\":[{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"allowClickWhenDisabled\"},{\"type\":\"android.widget.ImageView\",\"def_pos\":0,\"name\":\"mIvFeatureItemMore\"},{\"type\":\"android.widget.ImageView\",\"def_pos\":0,\"name\":\"mIvFeatureItemStartIcon\"},{\"type\":\"android.widget.TextView\",\"def_pos\":0,\"name\":\"mTvFeatureItemRemind\"},{\"type\":\"android.widget.TextView\",\"def_pos\":0,\"name\":\"mTvFeatureItemRightText\"},{\"type\":\"android.widget.TextView\",\"def_pos\":0,\"name\":\"mTvFeatureItemTitle\"},{\"type\":\"android.widget.TextView\",\"def_pos\":0,\"name\":\"mTvFeatureItemTitleRightIcon\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xiaomi.fitness.widget.RightArrowSingleLineTextView",
+          "method_name": "setDefaultEnable",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"mode\":\"java\",\"full_name\":\"com.xiaomi.fitness.widget.RightArrowSingleLineTextView.setDefaultEnable\",\"class_name\":\"com.xiaomi.fitness.widget.RightArrowSingleLineTextView\",\"overload_index\":0,\"fell_back\":false,\"body\":\"    public final void setDefaultEnable(boolean enabled) {\\r\\n        setEnable(enabled);\\r\\n        this.mIvFeatureItemStartIcon.setAlpha(enabled ? 1.0f : 0.25f);\\r\\n    }\",\"overload_count\":1,\"method_name\":\"setDefaultEnable\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xiaomi.fitness.widget.RightArrowSingleLineTextView",
+    "method": {
+      "name": "setDefaultEnable",
+      "reported_signature": "setDefaultEnable(boolean): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Z)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void setDefaultEnable(boolean enabled) {\r\n        setEnable(enabled);\r\n        this.mIvFeatureItemStartIcon.setAlpha(enabled ? 1.0f : 0.25f);\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

@@ -1,0 +1,262 @@
+{
+  "id": "di-597",
+  "line": 605,
+  "bytes": 9710,
+  "deps": [
+    3,
+    54,
+    27,
+    14,
+    18,
+    "di-144",
+    "di-128",
+    631,
+    1121,
+    1780,
+    "di-297",
+    "di-402",
+    "di-404",
+    "di-406",
+    "di-395",
+    "di-596"
+  ],
+  "exports": [
+    "default"
+  ],
+  "strings": [
+    "window",
+    "",
+    "clamp",
+    "56.82.1.1.52230",
+    "NMC-pop",
+    "ios",
+    "56.82.0.1.52233",
+    "absolute",
+    "rgba(0,0,0,0.5)",
+    "none",
+    "stretch",
+    "dial.redPacket.newUserLimitedTime",
+    "dial.redPacket.unusedTitle",
+    "-",
+    "dial.redPacket.currencyUnit",
+    "cover",
+    "dial.redPacket.expireAfter",
+    "dial.redPacket.goUse",
+    "dial.redPacket.monthlySubscriptionOnly",
+    "20px",
+    "Close",
+    "visible",
+    "center",
+    "70%",
+    "600",
+    "700",
+    "relative",
+    "flex-end",
+    "800",
+    "Semibold",
+    "hidden",
+    "row",
+    "MiSans",
+    "400"
+  ],
+  "routes": [],
+  "styleSheets": [
+    {
+      "callee": "u.StyleSheet.create",
+      "styles": {
+        "amountProgressHost": {
+          "position": "absolute",
+          "left": 0,
+          "top": 0,
+          "width": 1,
+          "height": 1,
+          "opacity": 0
+        },
+        "card": {
+          "width": 280,
+          "overflow": "visible",
+          "alignItems": "center"
+        },
+        "topBg": {
+          "width": 280,
+          "height": "70%",
+          "borderTopLeftRadius": 51,
+          "borderTopRightRadius": 51,
+          "backgroundColor": {
+            "$code": "v.RED_PACKET_COLORS.brandRed"
+          },
+          "position": "absolute",
+          "top": 20,
+          "left": 0
+        },
+        "top": {
+          "width": 255,
+          "minHeight": 210,
+          "borderTopLeftRadius": 51,
+          "borderTopRightRadius": 51,
+          "backgroundColor": {
+            "$code": "v.RED_PACKET_COLORS.cardWarmBg"
+          },
+          "alignItems": "center",
+          "paddingBottom": 44,
+          "overflow": "visible"
+        },
+        "topBadge": {
+          "width": 130,
+          "minHeight": 30,
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 6
+        },
+        "topBadgeText": {
+          "color": {
+            "$code": "v.RED_PACKET_COLORS.badgeText"
+          },
+          "fontSize": 12,
+          "fontWeight": "600",
+          "textAlign": "center"
+        },
+        "title": {
+          "marginTop": 18,
+          "color": {
+            "$code": "v.RED_PACKET_COLORS.titleText"
+          },
+          "fontSize": 22,
+          "fontWeight": "700",
+          "textAlign": "center"
+        },
+        "amountRow": {
+          "marginTop": 16,
+          "alignSelf": "center",
+          "alignItems": "center"
+        },
+        "amountRoller": {
+          "position": "relative",
+          "flexShrink": 0,
+          "height": 80,
+          "overflow": "visible"
+        },
+        "amountCard": {
+          "position": "absolute",
+          "left": 0,
+          "right": 0,
+          "bottom": 0,
+          "height": 80,
+          "justifyContent": "flex-end",
+          "alignItems": "center",
+          "overflow": "visible"
+        },
+        "amountInnerRow": {
+          "alignItems": "center",
+          "justifyContent": "center"
+        },
+        "amountLine": {
+          "$code": "(function(t){for(var o=1;o<arguments.length;o++){var l=null!=arguments[o]?arguments[o]:{};o%2?T(Object(l),!0).forEach(function(o){(0,n.default)(t,o,l[o])}):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(l)):T(Object(l)).forEach(function(n){Object.defineProperty(t,n,Object.getOwnPropertyDescriptor(l,n))})}return t})({lineHeight:80,textAlign:\"center\"},u.Platform.select({android:{includeFontPadding:!1}}))"
+        },
+        "amount": {
+          "color": {
+            "$code": "v.RED_PACKET_COLORS.amountRed"
+          },
+          "fontSize": 72,
+          "fontWeight": "800",
+          "fontFamily": "Semibold"
+        },
+        "amountUnit": {
+          "color": {
+            "$code": "v.RED_PACKET_COLORS.amountRed"
+          },
+          "fontSize": 18,
+          "fontWeight": "700",
+          "marginLeft": 4
+        },
+        "bottom": {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "marginTop": {
+            "$code": "-58"
+          },
+          "paddingTop": 62,
+          "paddingBottom": 16,
+          "paddingHorizontal": 18,
+          "borderBottomLeftRadius": 51,
+          "borderBottomRightRadius": 51,
+          "overflow": "hidden",
+          "minHeight": 166
+        },
+        "countdownPill": {
+          "flexDirection": "row",
+          "alignItems": "center"
+        },
+        "countdownSuffix": {
+          "color": {
+            "$code": "v.RED_PACKET_COLORS.white"
+          },
+          "fontWeight": "600",
+          "fontFamily": "MiSans",
+          "letterSpacing": 0
+        },
+        "button": {
+          "width": 235,
+          "height": 42,
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginTop": 10
+        },
+        "buttonText": {
+          "color": {
+            "$code": "v.RED_PACKET_COLORS.buttonText"
+          },
+          "fontSize": 18,
+          "fontWeight": "800"
+        },
+        "footnote": {
+          "marginTop": 10,
+          "color": {
+            "$code": "v.RED_PACKET_COLORS.white"
+          },
+          "fontSize": 11,
+          "fontWeight": "400",
+          "textAlign": "center",
+          "opacity": 0.8
+        }
+      },
+      "code": "u.StyleSheet.create({amountProgressHost:{position:\"absolute\",left:0,top:0,width:1,height:1,opacity:0},card:{width:280,overflow:\"visible\",alignItems:\"center\"},topBg:{width:280,height:\"70%\",borderTopLeftRadius:51,borderTopRightRadius:51,backgroundColor:v.RED_PACKET_COLORS.brandRed,position:\"absolute\",top:20,left:0},top:{width:255,minHeight:210,borderTopLeftRadius:51,borderTopRightRadius:51,backgroundColor:v.RED_PACKET_COLORS.cardWarmBg,alignItems:\"center\",paddingBottom:44,overflow:\"visible\"},topBadge:{width:130,minHeight:30,alignItems:\"center\",justifyContent:\"center\",paddingHorizontal:12,paddingVertical:6},topBadgeText:{color:v.RED_PACKET_COLORS.badgeText,fontSize:12,fontWeight:\"600\",textAlign:\"center\"},title:{marginTop:18,color:v.RED_PACKET_COLORS.titleText,fontSize:22,fontWeight:\"700\",textAlign:\"center\"},amountRow:{marginTop:16,alignSelf:\"center\",alignItems:\"center\"},amountRoller:{position:\"relative\",flexShrink:0,height:80,overflow:\"visible\"},amountCard:{position:\"absolute\",left:0,right:0,bottom:0,height:80,justifyContent:\"flex-end\",alignItems:\"center\",overflow:\"visible\"},amountInnerRow:{alignItems:\"center\",justifyContent:\"center\"},amountLine:(function(t){for(var o=1;o<arguments.length;o++){var l=null!=arguments[o]?arguments[o]:{};o%2?T(Object(l),!0).forEach(function(o){(0,n.default)(t,o,l[o])}):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(l)):T(Object(l)).forEach(function(n){Object.defineProperty(t,n,Object.getOwnPropertyDescriptor(l,n))})}return t})({lineHeight:80,textAlign:\"center\"},u.Platform.select({android:{includeFontPadding:!1}})),amount:{color:v.RED_PACKET_COLORS.amountRed,fontSize:72,fontWeight:\"800\",fontFamily:\"Semibold\"},amountUnit:{color:v.RED_PACKET_COLORS.amountRed,fontSize:18,fontWeight:\"700\",marginLeft:4},bottom:{alignItems:\"center\",alignSelf:\"stretch\",marginTop:-58,paddingTop:62,paddingBottom:16,paddingHorizontal:18,borderBottomLeftRadius:51,borderBottomRightRadius:51,overflow:\"hidden\",minHeight:166},countdownPill:{flexDirection:\"row\",alignItems:\"center\"},countdownSuffix:{color:v.RED_PACKET_COLORS.white,fontWeight:\"600\",fontFamily:\"MiSans\",letterSpacing:0},button:{width:235,height:42,alignItems:\"center\",justifyContent:\"center\",marginTop:10},buttonText:{color:v.RED_PACKET_COLORS.buttonText,fontSize:18,fontWeight:\"800\"},footnote:{marginTop:10,color:v.RED_PACKET_COLORS.white,fontSize:11,fontWeight:\"400\",textAlign:\"center\",opacity:.8}})"
+    }
+  ],
+  "assetNames": [],
+  "calls": [
+    {
+      "method": "parallel",
+      "code": "u.Animated.parallel([u.Animated.spring(D,{toValue:0,useNativeDriver:!0,tension:50,friction:14}),u.Animated.timing(L,{toValue:1,duration:1e3,useNativeDriver:!0})])"
+    },
+    {
+      "method": "spring",
+      "code": "u.Animated.spring(D,{toValue:0,useNativeDriver:!0,tension:50,friction:14})"
+    },
+    {
+      "method": "timing",
+      "code": "u.Animated.timing(L,{toValue:1,duration:1e3,useNativeDriver:!0})"
+    },
+    {
+      "method": "parallel",
+      "code": "u.Animated.parallel([u.Animated.timing(ee,{toValue:0,duration:500,useNativeDriver:!0}),u.Animated.timing(te,{toValue:_,duration:500,useNativeDriver:!0}),u.Animated.timing(ne,{toValue:x,duration:500,useNativeDriver:!0}),u.Animated.timing(re,{toValue:0,duration:500,useNativeDriver:!0})])"
+    },
+    {
+      "method": "timing",
+      "code": "u.Animated.timing(ee,{toValue:0,duration:500,useNativeDriver:!0})"
+    },
+    {
+      "method": "timing",
+      "code": "u.Animated.timing(te,{toValue:_,duration:500,useNativeDriver:!0})"
+    },
+    {
+      "method": "timing",
+      "code": "u.Animated.timing(ne,{toValue:x,duration:500,useNativeDriver:!0})"
+    },
+    {
+      "method": "timing",
+      "code": "u.Animated.timing(re,{toValue:0,duration:500,useNativeDriver:!0})"
+    }
+  ]
+}

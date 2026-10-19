@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>原 App 与 Android 原生参考对照</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f6f7f9;color:#202124;font-family:system-ui,"Microsoft YaHei",sans-serif;font-size:14px;line-height:1.6}main{max-width:1420px;margin:auto;padding:24px}h1{font-size:24px;margin:0 0 12px}h2{font-size:20px;margin:0}h3{font-size:16px}p{margin:8px 0}header,.panel{background:white;padding:20px;border-radius:16px;margin-bottom:20px}.note{color:#64666b}.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:14px 0}button,select{font:inherit;padding:8px 12px;border-radius:8px;border:1px solid #c9cbd0;background:white;color:#202124}button[aria-pressed=true]{border-color:#ff612e;color:#b52e04;background:#fff4ef}a{color:#a93613;overflow-wrap:anywhere}.stage{background:#dfe1e5;padding:12px;border-radius:8px;overflow:auto;text-align:center}.stage img{width:min(100%,1080px);height:auto;display:block;margin:auto}.stage.single img{width:min(100%,540px)}.stage.native img{width:auto;max-width:none}.legend{display:flex;justify-content:space-around;gap:12px;margin:8px 0;color:#555}.columns{display:grid;grid-template-columns:1fr 1fr;gap:20px}pre{font:12px/1.5 ui-monospace,Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;background:#f6f7f9;padding:10px;border-radius:8px;max-height:420px;overflow:auto}details{margin:12px 0;border-top:1px solid #e6e6e6;padding-top:8px}summary{cursor:pointer}code{font-family:ui-monospace,Consolas,monospace}.pill{display:inline-block;padding:2px 8px;background:#fff0e8;color:#82300d;border-radius:6px}.status{margin-left:12px;font-weight:400;font-size:13px;color:#6a6a6a}table{border-collapse:collapse;width:100%;text-align:left}td,th{border-bottom:1px solid #ececec;padding:7px;vertical-align:top}.empty{color:#777}#pending{padding:24px;background:white;border-radius:16px}@media(max-width:720px){main{padding:12px}.columns{grid-template-columns:1fr}header,.panel{padding:14px}}
+</style>
+<main>
+  <!-- revision-banner-start -->
+<aside style="padding:16px;background:#e8f5ed;border:2px solid #247a45;border-radius:12px;margin-bottom:20px"><strong>当前：最终三页 / 十组件图像对照</strong><p>参考 APK 与每页截图哈希、实际差异和未知见下方。最终表示交付快照，不表示与原版完全同等。</p><a href="../index.html">查看早期迭代（非最终依据）</a></aside>
+<!-- revision-banner-end -->
+  <header>
+    <h1>原 App 与 Android 原生参考对照</h1>
+    <p>左侧为原 App 实际运行截图，右侧为独立编写的参考。点击可切换并排、等权叠图和差异图；所有图像在本地加载。</p>
+    <p class="note">环境基线：1080×2400 px，density 2.75（440 dpi），中文、浅色、字体缩放 1。差异和辅助测量只覆盖 y=[96,2334)。原版内容从y96开始，参考AOSP decor从y136开始，所以y96..136仍可能含参考系统栏像素，须单独解释。整图上下文和源图哈希保留。</p>
+    <p class="note">差异图为 RGB 绝对差值，显示放大 3 倍；黑色也可能表示被排除的系统栏。50% 叠图只指两张图片等权混合。页面不提供相似度或完成度百分比。</p>
+    <p class="note">文字/图标区域是像素候选，不是 OCR、字体基线或已确认语义对应。动画、手势和行为验证见行为证据。</p>
+    <div id="summary"></div>
+  </header>
+  <div id="pending">对照图片尚未生成。全部六张截图齐备后，在本目录运行 <code>python compare.py</code>，再打开本页。需要 Pillow。</div>
+  <div id="pages"></div>
+</main>
+<script src="report-data.js"></script>
+<script>
+(() => {
+  'use strict';
+  const report = window.COMPARISON_REPORT;
+  if (!report) return;
+  document.querySelector('#pending').hidden = true;
+  const el = (tag, text, className) => {const node=document.createElement(tag);if(text!==undefined)node.textContent=text;if(className)node.className=className;return node;};
+  const link = (label, href) => {const node=el('a',label);node.href=href;return node;};
+  const jsonDetail = (label, value) => {const node=el('details');node.append(el('summary',label),el('pre',JSON.stringify(value,null,2)));return node;};
+  const printable = value => typeof value==='string' ? value : JSON.stringify(value);
+  document.querySelector('#summary').append(el('p',`生成时间：${report.generatedAtUtc} · 三个页面的图像对照已生成；人工复核状态逐页列示。`));
+  for(const page of report.pages){
+    const section=el('section',undefined,'panel');
+    const title=el('h2',page.label);title.append(el('span',`人工复核：${page.manualReviewStatus}`,'status'));section.append(title);
+    const ev=el('p');ev.append('原图 REA ID：');ev.append(page.originalEvidence.record ? link(page.originalEvidence.evidenceId||'未知',page.originalEvidence.record) : el('span','未知'));section.append(ev);
+    const refEv=el('p');refEv.append('参考运行截图 REA ID：');refEv.append(page.referenceEvidence?.record ? link(page.referenceEvidence.evidenceId||'未知',page.referenceEvidence.record) : el('span','未知'));section.append(refEv);
+    const paths=el('p');paths.append(link('打开原图',page.sources.original.path),' · ',link('打开参考截图',page.sources.reference.path),' · ',link('机器可读完整报告','report.json'));section.append(paths);
+    const toolbar=el('div',undefined,'toolbar'),stage=el('div',undefined,'stage'),image=el('img');image.alt=`${page.label}原版和参考并排`;image.loading='lazy';stage.append(image);
+    const legend=el('div',undefined,'legend');
+    const modes=[['sideBySide','并排'],['overlay','50% 叠图'],['difference','差异 ×3'],['rawDifference','原始差异']];
+    const buttons=[];const modeText=el('p',undefined,'note');
+    const setMode=key=>{image.src=page.images[key].path;image.alt=`${page.label}：${modes.find(item=>item[0]===key)[1]}`;stage.classList.toggle('single',key!=='sideBySide');legend.replaceChildren(...(key==='sideBySide'?[el('span','原 App'),el('span','Android 原生参考')]:[el('span',key==='overlay'?'整图等权叠合；系统栏只作为上下文展示':'y=[96,2334) 内的RGB绝对差值') ]));for(const [button,buttonKey]of buttons)button.setAttribute('aria-pressed',String(buttonKey===key));modeText.textContent=key==='sideBySide'?'原图保持不变；并排合成另存。':'原图保持不变；此图为另存的派生对照。';};
+    for(const[key,label]of modes){const button=el('button',label);button.type='button';button.onclick=()=>setMode(key);buttons.push([button,key]);toolbar.append(button);}
+    const zoom=el('button','按原始像素显示');zoom.type='button';zoom.setAttribute('aria-pressed','false');zoom.onclick=()=>{const native=stage.classList.toggle('native');zoom.setAttribute('aria-pressed',String(native));zoom.textContent=native?'适应页面宽度':'按原始像素显示';};toolbar.append(zoom);section.append(toolbar,legend,stage,modeText);setMode('sideBySide');
+    const columns=el('div',undefined,'columns'),known=el('div'),unknown=el('div');known.append(el('h3','已知差异'));unknown.append(el('h3','未知与待验证'));
+    for(const [holder,items,fallback]of[[known,page.knownDifferences,'尚未登记，不能据此推断没有差异。'],[unknown,page.unknowns,'暂无单独登记；像素候选和行为仍受报告限制。']]){if(!items.length)holder.append(el('p',fallback,'empty'));for(const item of items)holder.append(el('p',printable(item)));}columns.append(known,unknown);section.append(columns);
+    if(page.matchedDetails?.length)section.append(jsonDetail('已核对的对应关系（不构成整体等同结论）',page.matchedDetails));
+    if(page.components?.length){const crops=el('details');crops.append(el('summary',`基础组件派生裁剪对照（${page.components.length}项；A原图 / D参考）`));for(const component of page.components){crops.append(el('h3',component.id),el('p',`${component.notes} 裁剪框：${component.cropBoxPx.join(', ')} px。`,'note'));const crop=el('img');crop.src=component.images.sideBySide.path;crop.alt=`${component.id} 派生裁剪，左原图右参考`;crop.loading='lazy';crop.style='display:block;max-width:100%;height:auto;margin:8px 0';crops.append(crop);const links=el('p');links.append(link('50%叠图',component.images.overlay.path),' · ',link('差异×3',component.images.difference.path));crops.append(links);}section.append(crops);}
+    const compact={};for(const key of['original','reference']){compact[key]={};for(const[name,data]of Object.entries(page.regions[key].flatColorRegions))compact[key][name]={exactRgb:data.exactRgb,totalQualifyingRegions:data.totalQualifyingRegions,regions:data.regions};}
+    section.append(jsonDetail('色块边界（物理 px 与 dp；语义须由源码/层级确认）',compact));
+    section.append(jsonDetail('文字/图标位置候选与未确认配对位移',page.inkPositionCandidates));
+    section.append(jsonDetail('完整输入图元数据、哈希与捕获证据限制',{sources:page.sources,originalEvidence:page.originalEvidence,referenceEvidence:page.referenceEvidence,referenceCaptureMetadata:page.referenceCaptureMetadata}));
+    document.querySelector('#pages').append(section);
+  }
+  const footer=el('section',undefined,'panel');footer.append(el('h2','解释边界'),jsonDetail('测量与图像解释限制',report.limitations),el('p','修改 differences.json 后重新运行 compare.py，人工差异记录会写入离线 report-data.js；本页无需 HTTP 服务或网络。','note'));document.querySelector('#pages').append(footer);
+})();
+</script>
+</html>

@@ -1,0 +1,316 @@
+{
+  "bundle": "mine",
+  "id": "mi-521",
+  "line": 529,
+  "aliases": {
+    "t": 3,
+    "n": 17,
+    "o": 27,
+    "u": 14,
+    "l": 18,
+    "c": 1113,
+    "f": 1268,
+    "s": "mi-192",
+    "h": 558,
+    "p": "mi-163",
+    "y": 1780,
+    "v": "mi-359",
+    "b": "mi-522",
+    "w": "mi-413",
+    "x": "mi-156",
+    "E": "mi-259",
+    "L": "mi-450",
+    "P": "mi-399",
+    "O": "mi-523",
+    "_": "mi-435",
+    "j": "mi-526",
+    "T": "mi-524"
+  },
+  "elements": [
+    {
+      "type": "E.InView",
+      "module": "mi-259",
+      "props": {
+        "triggerOnce": {
+          "$code": "!0"
+        },
+        "threshold": 0.6666666666666666,
+        "onChange": {
+          "$code": "function(){h.RRLog.info(R,\"Expose\"),b.AliPayTrack.exposeAlipayCard()}"
+        }
+      },
+      "children": [
+        {
+          "$code": "u.default.createElement(l.Pressable,{onPress:k},u.default.createElement(y.Box,{bg:x.bgColor,borderRadius:\"18px\",borderWidth:\"1px\",borderColor:P.bgBorder,flexDirection:\"row\",alignItems:\"center\",px:\"10px\",mt:\"12px\",py:\"12px\",overflow:\"hidden\"},u.default.createElement(f.default,{colors:w,start:{x:0,y:0"
+        }
+      ]
+    },
+    {
+      "type": "l.Pressable",
+      "module": 18,
+      "props": {
+        "onPress": {
+          "$code": "k"
+        }
+      },
+      "children": [
+        {
+          "$code": "u.default.createElement(y.Box,{bg:x.bgColor,borderRadius:\"18px\",borderWidth:\"1px\",borderColor:P.bgBorder,flexDirection:\"row\",alignItems:\"center\",px:\"10px\",mt:\"12px\",py:\"12px\",overflow:\"hidden\"},u.default.createElement(f.default,{colors:w,start:{x:0,y:0},end:{x:1,y:1},pointerEvents:\"none\",style:{posi"
+        }
+      ]
+    },
+    {
+      "type": "y.Box",
+      "module": 1780,
+      "props": {
+        "bg": {
+          "$code": "x.bgColor"
+        },
+        "borderRadius": "18px",
+        "borderWidth": "1px",
+        "borderColor": {
+          "$code": "P.bgBorder"
+        },
+        "flexDirection": "row",
+        "alignItems": "center",
+        "px": "10px",
+        "mt": "12px",
+        "py": "12px",
+        "overflow": "hidden"
+      },
+      "children": [
+        {
+          "$code": "u.default.createElement(f.default,{colors:w,start:{x:0,y:0},end:{x:1,y:1},pointerEvents:\"none\",style:{position:\"absolute\",width:156,height:156,borderRadius:78,top:-102,left:-36,transform:[{scaleX:1.794871794871795}]}})"
+        },
+        {
+          "$code": "u.default.createElement(c.default,{source:v.default.alipay.redPocket,style:{width:50,height:50}})"
+        },
+        {
+          "$code": "u.default.createElement(y.Box,{flex:1,justifyContent:\"center\",ml:\"6px\"},u.default.createElement(y.Text,{fontSize:\"14px\",mb:\"2px\",fontWeight:\"500\",numberOfLines:1},j.title),u.default.createElement(_.HighLightText,{text:j.subTitle,mainTextProps:{color:P.subText,fontSize:\"12px\",fontWeight:\"400\",numberO"
+        },
+        {
+          "$code": "u.default.createElement(O.AlipayButton,{identity:T})"
+        }
+      ]
+    },
+    {
+      "type": "f.default",
+      "module": 1268,
+      "props": {
+        "colors": {
+          "$code": "w"
+        },
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 1,
+          "y": 1
+        },
+        "pointerEvents": "none",
+        "style": {
+          "position": "absolute",
+          "width": 156,
+          "height": 156,
+          "borderRadius": 78,
+          "top": {
+            "$code": "-102"
+          },
+          "left": {
+            "$code": "-36"
+          },
+          "transform": [
+            {
+              "scaleX": 1.794871794871795
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "c.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "v.default.alipay.redPocket"
+        },
+        "style": {
+          "width": 50,
+          "height": 50
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "y.Box",
+      "module": 1780,
+      "props": {
+        "flex": 1,
+        "justifyContent": "center",
+        "ml": "6px"
+      },
+      "children": [
+        {
+          "$code": "u.default.createElement(y.Text,{fontSize:\"14px\",mb:\"2px\",fontWeight:\"500\",numberOfLines:1},j.title)"
+        },
+        {
+          "$code": "u.default.createElement(_.HighLightText,{text:j.subTitle,mainTextProps:{color:P.subText,fontSize:\"12px\",fontWeight:\"400\",numberOfLines:2},hightText:j.price,hightTextProps:{color:\"#FF3255\",fontSize:\"16px\",fontWeight:\"600\"}})"
+        }
+      ]
+    },
+    {
+      "type": "y.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": "14px",
+        "mb": "2px",
+        "fontWeight": "500",
+        "numberOfLines": 1
+      },
+      "children": [
+        {
+          "$code": "j.title"
+        }
+      ]
+    },
+    {
+      "type": "_.HighLightText",
+      "module": "mi-435",
+      "props": {
+        "text": {
+          "$code": "j.subTitle"
+        },
+        "mainTextProps": {
+          "color": {
+            "$code": "P.subText"
+          },
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "numberOfLines": 2
+        },
+        "hightText": {
+          "$code": "j.price"
+        },
+        "hightTextProps": {
+          "color": "#FF3255",
+          "fontSize": "16px",
+          "fontWeight": "600"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "O.AlipayButton",
+      "module": "mi-523",
+      "props": {
+        "identity": {
+          "$code": "T"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "w.default",
+      "module": "mi-413",
+      "props": {
+        "fallback": {
+          "$code": "u.default.createElement(u.default.Fragment,null)"
+        }
+      },
+      "children": [
+        {
+          "$code": "u.default.createElement(u.Suspense,{fallback:u.default.createElement(u.default.Fragment,null)},u.default.createElement(F,{fetcher:f,silentUpdate:y}))"
+        }
+      ]
+    },
+    {
+      "type": "u.default.Fragment",
+      "props": null,
+      "children": []
+    },
+    {
+      "type": "u.Suspense",
+      "module": 14,
+      "props": {
+        "fallback": {
+          "$code": "u.default.createElement(u.default.Fragment,null)"
+        }
+      },
+      "children": [
+        {
+          "$code": "u.default.createElement(F,{fetcher:f,silentUpdate:y})"
+        }
+      ]
+    },
+    {
+      "type": "u.default.Fragment",
+      "props": null,
+      "children": []
+    },
+    {
+      "type": "F",
+      "props": {
+        "fetcher": {
+          "$code": "f"
+        },
+        "silentUpdate": {
+          "$code": "y"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": [
+    {
+      "key": "borderRadius",
+      "value": "18px"
+    },
+    {
+      "key": "width",
+      "value": 156
+    },
+    {
+      "key": "height",
+      "value": 156
+    },
+    {
+      "key": "borderRadius",
+      "value": 78
+    },
+    {
+      "key": "width",
+      "value": 50
+    },
+    {
+      "key": "height",
+      "value": 50
+    },
+    {
+      "key": "fontSize",
+      "value": "14px"
+    },
+    {
+      "key": "fontWeight",
+      "value": "500"
+    },
+    {
+      "key": "fontSize",
+      "value": "12px"
+    },
+    {
+      "key": "fontWeight",
+      "value": "400"
+    },
+    {
+      "key": "fontSize",
+      "value": "16px"
+    },
+    {
+      "key": "fontWeight",
+      "value": "600"
+    }
+  ]
+}

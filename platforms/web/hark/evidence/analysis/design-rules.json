@@ -1,0 +1,2070 @@
+{
+  "offsetConvention": "zero-based Unicode character offsets in the unmodified file; end offsets exclusive",
+  "rules": [
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "[data-continuous-fill],[data-continuous-stroke]",
+      "declarations": "display:none",
+      "characterOffset": 2421,
+      "characterEndExclusive": 2482
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "[data-corner-path]>[data-continuous-fill],[data-corner-path]>[data-continuous-stroke]",
+      "declarations": "display:block;position:absolute;inset:0;z-index:-1;pointer-events:none;transition:inherit;transition-property:background-color,background-image;--continuous-fill: inherit;--continuous-fill-image: inherit;--continuous-stroke: inherit;--continuous-inset: inherit",
+      "characterOffset": 2737,
+      "characterEndExclusive": 3084
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "[data-corner-path]>[data-continuous-fill]",
+      "declarations": "background-color:var(--continuous-fill, transparent);background-image:var(--continuous-fill-image, none);border-radius:inherit;box-shadow:var(--continuous-inset, none)",
+      "characterOffset": 3084,
+      "characterEndExclusive": 3294
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "[data-corner-path]>[data-continuous-stroke]",
+      "declarations": "background-color:var(--continuous-stroke, transparent)",
+      "characterOffset": 3294,
+      "characterEndExclusive": 3393
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".material",
+      "declarations": "position:relative;overflow:hidden",
+      "characterOffset": 4096,
+      "characterEndExclusive": 4140
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".material>.material-fill",
+      "declarations": "position:absolute;inset:-1px;--overshoot: 1px;pointer-events:none",
+      "characterOffset": 4140,
+      "characterEndExclusive": 4231
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".material>.material-blur",
+      "declarations": "position:absolute;inset:.5px;--overshoot: -.5px;pointer-events:none",
+      "characterOffset": 4231,
+      "characterEndExclusive": 4324
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".material>.material-fill",
+      "declarations": "transition:opacity var(--mode-dur) var(--mode-ease),scale .12s ease-out",
+      "characterOffset": 4324,
+      "characterEndExclusive": 4421
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".material>.material-blur",
+      "declarations": "transition:backdrop-filter var(--mode-dur) var(--mode-ease),scale .12s ease-out",
+      "characterOffset": 4421,
+      "characterEndExclusive": 4526
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".material>.material-curve",
+      "declarations": "inset:-150px;--overshoot: 150px",
+      "characterOffset": 4526,
+      "characterEndExclusive": 4584
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".material>.material-blur",
+      "declarations": "inset:-150px;--overshoot: 150px",
+      "characterOffset": 4584,
+      "characterEndExclusive": 4641
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".material .material>.material-curve",
+      "declarations": "inset:0;--overshoot: 0px;border-radius:inherit;corner-shape:inherit",
+      "characterOffset": 4641,
+      "characterEndExclusive": 4745
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".material .material>.material-blur",
+      "declarations": "inset:.5px;--overshoot: -.5px;border-radius:inherit;corner-shape:inherit",
+      "characterOffset": 4745,
+      "characterEndExclusive": 4853
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".material>.material-content",
+      "declarations": "position:relative;height:100%;--overshoot: 0px",
+      "characterOffset": 4853,
+      "characterEndExclusive": 4928
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".material[data-layer-transform]>.material-blur,.material[data-layer-transform]>.material-fill,.material[data-layer-transform]>.material-content",
+      "declarations": "transform:var(--layer-transform, none);transform-origin:50% calc(100% - var(--overshoot, 0px))",
+      "characterOffset": 4928,
+      "characterEndExclusive": 5167
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".material[data-layer-transform]",
+      "declarations": "overflow:visible",
+      "characterOffset": 5167,
+      "characterEndExclusive": 5216
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".material[data-layer-transform]>.material-fill,.material[data-layer-transform]>.material-curve,.material[data-layer-transform]>.material-blur",
+      "declarations": "inset:0;--overshoot: 0px;border-radius:inherit",
+      "characterOffset": 5216,
+      "characterEndExclusive": 5405
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".material[data-layer-transform]>.material-content",
+      "declarations": "overflow:hidden;border-radius:inherit",
+      "characterOffset": 5405,
+      "characterEndExclusive": 5493
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".material[data-corner-clip]>.material-fill:not(.material-curve),.material[data-corner-clip]>.material-content",
+      "declarations": "border-radius:0;clip-path:var(--corner-clip, none)",
+      "characterOffset": 5493,
+      "characterEndExclusive": 5654
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".rh8xfp0 .link-card-title",
+      "declarations": "font-family:var(--font-ui);font-weight:500;color:var(--card-title-ink);display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden",
+      "characterOffset": 31675,
+      "characterEndExclusive": 31857
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".rh8xfp0 .link-card-source",
+      "declarations": "font-family:var(--font-ui);color:var(--card-source-ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis",
+      "characterOffset": 31857,
+      "characterEndExclusive": 31998
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".rh8xfp0 .link-card[data-face=short] .link-card-title",
+      "declarations": "display:block;white-space:nowrap;text-overflow:ellipsis",
+      "characterOffset": 33301,
+      "characterEndExclusive": 33411
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk10",
+      "declarations": "margin:0",
+      "characterOffset": 59504,
+      "characterEndExclusive": 59524
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk10:not(:last-child)",
+      "declarations": "margin-bottom:16px",
+      "characterOffset": 59524,
+      "characterEndExclusive": 59571
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk11",
+      "declarations": "font-size:20px;line-height:1;margin:8px 0",
+      "characterOffset": 59571,
+      "characterEndExclusive": 59624
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk12",
+      "declarations": "font-size:16px;margin:8px 0",
+      "characterOffset": 59624,
+      "characterEndExclusive": 59663
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk13",
+      "declarations": "font-size:15px;margin:8px 0",
+      "characterOffset": 59663,
+      "characterEndExclusive": 59702
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk14",
+      "declarations": "font-size:14px;font-weight:600;margin:8px 0",
+      "characterOffset": 59702,
+      "characterEndExclusive": 59757
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk15",
+      "declarations": "font-size:13px;font-weight:600;margin:8px 0",
+      "characterOffset": 59757,
+      "characterEndExclusive": 59812
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk16",
+      "declarations": "font-size:12px;font-weight:600;margin:8px 0",
+      "characterOffset": 59812,
+      "characterEndExclusive": 59867
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk17",
+      "declarations": "margin:8px 0;padding-left:16px;border-left:2px solid var(--text-50, rgba(0,0,0,.5));color:var(--text, #111)",
+      "characterOffset": 59867,
+      "characterEndExclusive": 59986
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk18",
+      "declarations": "border:none;border-top:1px solid var(--text-10, rgba(0,0,0,.1));margin:16px 0",
+      "characterOffset": 59986,
+      "characterEndExclusive": 60075
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk19",
+      "declarations": "font-weight:600",
+      "characterOffset": 60075,
+      "characterEndExclusive": 60102
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk1a",
+      "declarations": "padding-left:24px;margin:8px 0;list-style-position:outside",
+      "characterOffset": 60102,
+      "characterEndExclusive": 60172
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk1b",
+      "declarations": "padding-left:24px;margin:8px 0;list-style-type:decimal;list-style-position:outside",
+      "characterOffset": 60172,
+      "characterEndExclusive": 60266
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk1c",
+      "declarations": "margin-bottom:8px",
+      "characterOffset": 60266,
+      "characterEndExclusive": 60295
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk1c>._10dfkk10:first-child",
+      "declarations": "display:inline",
+      "characterOffset": 60295,
+      "characterEndExclusive": 60344
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk1d",
+      "declarations": "font-style:italic",
+      "characterOffset": 60344,
+      "characterEndExclusive": 60373
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk1e",
+      "declarations": "text-decoration:line-through;opacity:.7",
+      "characterOffset": 60373,
+      "characterEndExclusive": 60424
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk1f",
+      "declarations": "accent-color:var(--color-primary, #0a7cff);margin-right:4px",
+      "characterOffset": 60424,
+      "characterEndExclusive": 60495
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk1g",
+      "declarations": "border-radius:12px;overflow-x:auto;overscroll-behavior-x:contain",
+      "characterOffset": 60495,
+      "characterEndExclusive": 60571
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk1h",
+      "declarations": "width:100%;border-collapse:collapse;font-size:14px;line-height:1.4",
+      "characterOffset": 60571,
+      "characterEndExclusive": 60649
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk1k",
+      "declarations": "overflow-wrap:normal;word-break:normal;padding:8px;text-align:left;font-weight:600;border-bottom:1px solid var(--text-50, rgba(0,0,0,.5))",
+      "characterOffset": 60649,
+      "characterEndExclusive": 60798
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk1l",
+      "declarations": "overflow-wrap:normal;word-break:normal;padding:8px",
+      "characterOffset": 60798,
+      "characterEndExclusive": 60860
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk1n",
+      "declarations": "white-space:nowrap",
+      "characterOffset": 60860,
+      "characterEndExclusive": 60890
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk1o",
+      "declarations": "border-radius:12px;padding:8px;margin:8px 0;background-color:color-mix(in srgb,var(--text, #111) 10%,transparent);white-space:pre-wrap;word-break:break-word;overflow-wrap:anywhere",
+      "characterOffset": 60890,
+      "characterEndExclusive": 61081
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk1p",
+      "declarations": "background-color:color-mix(in srgb,var(--text, #111) 10%,transparent);padding:2px 4px;border-radius:4px;font-size:.8em;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;overflow-wrap:anywhere",
+      "characterOffset": 61081,
+      "characterEndExclusive": 61334
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk1o ._10dfkk1p",
+      "declarations": "background-color:transparent;padding:0;border-radius:0;font-size:inherit",
+      "characterOffset": 61334,
+      "characterEndExclusive": 61429
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk1q",
+      "declarations": "max-width:100%;max-height:240px;border-radius:24px;cursor:zoom-in",
+      "characterOffset": 61429,
+      "characterEndExclusive": 61506
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk1t",
+      "declarations": "width:min(calc(var(--_10dfkk1r) * 1px),calc(240px * var(--_10dfkk1r) / var(--_10dfkk1s)));height:auto;aspect-ratio:auto var(--_10dfkk1r) / var(--_10dfkk1s)",
+      "characterOffset": 61506,
+      "characterEndExclusive": 61673
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk1u",
+      "declarations": "color:var(--text-secondary);text-decoration:none;overflow-wrap:anywhere",
+      "characterOffset": 61673,
+      "characterEndExclusive": 61756
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._10dfkk1u:hover",
+      "declarations": "color:var(--text-primary)",
+      "characterOffset": 61756,
+      "characterEndExclusive": 61799
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx0",
+      "declarations": "max-width:min(85%,min(424px,calc(100vw - 120px)));font-weight:400;line-height:19px;transition:opacity .4s ease-out",
+      "characterOffset": 66182,
+      "characterEndExclusive": 66308
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1",
+      "declarations": "min-height:48px;padding-top:14.5px;padding-bottom:14.5px;display:flex;flex-direction:column;justify-content:center",
+      "characterOffset": 66308,
+      "characterEndExclusive": 66434
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx3",
+      "declarations": "animation:_151xtfx2 .4s ease-out",
+      "characterOffset": 66434,
+      "characterEndExclusive": 66478
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx4",
+      "declarations": "--continuous-fill: var(--bubble-user-bg);background-color:var(--continuous-fill);color:var(--text-primary);align-self:flex-end;max-width:min(424px,calc(100vw - 120px))",
+      "characterOffset": 66478,
+      "characterEndExclusive": 66657
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx5",
+      "declarations": "--continuous-fill: var(--bubble-agent-bg);background-color:var(--continuous-fill);color:var(--text-primary);align-self:flex-start",
+      "characterOffset": 66657,
+      "characterEndExclusive": 66798
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx6",
+      "declarations": "width:fit-content;box-sizing:border-box;align-self:flex-end;max-width:min(424px,calc(100vw - 120px))",
+      "characterOffset": 66798,
+      "characterEndExclusive": 66910
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx7",
+      "declarations": "width:100%;border-radius:24px",
+      "characterOffset": 66910,
+      "characterEndExclusive": 66951
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx8",
+      "declarations": "position:relative;align-self:auto;width:100%;min-width:0;max-width:min(424px,calc(100vw - 120px))",
+      "characterOffset": 66951,
+      "characterEndExclusive": 67060
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx9",
+      "declarations": "position:absolute;inset:0;border-radius:24px;background:#fff;opacity:0;pointer-events:none",
+      "characterOffset": 67060,
+      "characterEndExclusive": 67162
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxa",
+      "declarations": "position:relative;min-width:0",
+      "characterOffset": 67162,
+      "characterEndExclusive": 67203
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxb",
+      "declarations": "--continuous-fill: var(--bubble-agent-bg);background-color:var(--continuous-fill);width:100%;padding-top:14.5px;padding-bottom:14.5px;color:var(--text-primary);align-self:flex-start;font-weight:400;line-height:19px;transition:opacity .4s ease-out",
+      "characterOffset": 67203,
+      "characterEndExclusive": 67461
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxc",
+      "declarations": "display:flex;flex-direction:column;gap:12px;-webkit-touch-callout:none",
+      "characterOffset": 67461,
+      "characterEndExclusive": 67543
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxc>[data-rich-entry]+*",
+      "declarations": "margin-top:12px",
+      "characterOffset": 67543,
+      "characterEndExclusive": 67590
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxd",
+      "declarations": "display:flex;flex-direction:column;width:100%",
+      "characterOffset": 67590,
+      "characterEndExclusive": 67647
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxe",
+      "declarations": "width:100%;max-width:100%",
+      "characterOffset": 67647,
+      "characterEndExclusive": 67684
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxf",
+      "declarations": "position:relative;display:flex;flex-direction:column;width:100%;max-width:100%",
+      "characterOffset": 67684,
+      "characterEndExclusive": 67774
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxg",
+      "declarations": "align-self:flex-end",
+      "characterOffset": 67774,
+      "characterEndExclusive": 67805
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxh",
+      "declarations": "align-self:flex-start",
+      "characterOffset": 67805,
+      "characterEndExclusive": 67838
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxi",
+      "declarations": "position:relative;z-index:1;display:flex;flex-direction:column;width:100%;max-width:100%;touch-action:pan-y",
+      "characterOffset": 67838,
+      "characterEndExclusive": 67957
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxj",
+      "declarations": "will-change:transform",
+      "characterOffset": 67957,
+      "characterEndExclusive": 67990
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxk",
+      "declarations": "position:relative;display:flex;flex-direction:column;width:fit-content",
+      "characterOffset": 67990,
+      "characterEndExclusive": 68072
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxl",
+      "declarations": "max-width:min(424px,calc(100vw - 120px))",
+      "characterOffset": 68072,
+      "characterEndExclusive": 68124
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxm",
+      "declarations": "max-width:100%",
+      "characterOffset": 68124,
+      "characterEndExclusive": 68150
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxk [data-testid=message-text]",
+      "declarations": "width:100%;max-width:100%",
+      "characterOffset": 68150,
+      "characterEndExclusive": 68214
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxn",
+      "declarations": "align-self:flex-end",
+      "characterOffset": 68214,
+      "characterEndExclusive": 68245
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxo",
+      "declarations": "align-self:flex-start",
+      "characterOffset": 68245,
+      "characterEndExclusive": 68278
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxp",
+      "declarations": "position:absolute;top:-14px;right:-14px;z-index:1;display:grid;pointer-events:none",
+      "characterOffset": 68278,
+      "characterEndExclusive": 68372
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxp>*",
+      "declarations": "grid-area:1 / 1",
+      "characterOffset": 68372,
+      "characterEndExclusive": 68401
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxq",
+      "declarations": "position:absolute;z-index:0;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;color:var(--text-secondary);font-size:12px;font-weight:500;line-height:1.4;white-space:nowrap;opacity:0;visibility:hidden;pointer-events:none;-webkit-user-select:none;user-select:none;transition:opacity .1s ease 0ms,visibility 0s linear .1s",
+      "characterOffset": 68401,
+      "characterEndExclusive": 68751
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxr",
+      "declarations": "visibility:visible;transition:none",
+      "characterOffset": 68751,
+      "characterEndExclusive": 68797
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxs",
+      "declarations": "color:var(--text-tertiary)",
+      "characterOffset": 68797,
+      "characterEndExclusive": 68835
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxt",
+      "declarations": "display:flex;flex-direction:column;align-items:inherit",
+      "characterOffset": 68835,
+      "characterEndExclusive": 68901
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxu",
+      "declarations": "left:calc(100% + 24px);align-items:flex-start;text-align:left",
+      "characterOffset": 68901,
+      "characterEndExclusive": 68974
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxv",
+      "declarations": "right:calc(100% + 24px);align-items:flex-end;text-align:right",
+      "characterOffset": 68974,
+      "characterEndExclusive": 69047
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxw",
+      "declarations": "position:absolute;z-index:0;top:50%;transform:translateY(-50%);display:flex;align-items:center;justify-content:center;color:var(--text-50);pointer-events:none;-webkit-user-select:none;user-select:none",
+      "characterOffset": 69047,
+      "characterEndExclusive": 69259
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxx",
+      "declarations": "left:100%",
+      "characterOffset": 69259,
+      "characterEndExclusive": 69280
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxy",
+      "declarations": "right:100%",
+      "characterOffset": 69280,
+      "characterEndExclusive": 69302
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxz",
+      "declarations": "-webkit-touch-callout:default",
+      "characterOffset": 69302,
+      "characterEndExclusive": 69343
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx11",
+      "declarations": "position:relative;overflow:hidden;max-height:var(--_151xtfx10)",
+      "characterOffset": 69343,
+      "characterEndExclusive": 69418
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx12",
+      "declarations": "mask-image:linear-gradient(to bottom,black calc(100% - 40px),transparent);-webkit-mask-image:linear-gradient(to bottom,black calc(100% - 40px),transparent)",
+      "characterOffset": 69418,
+      "characterEndExclusive": 69586
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx16",
+      "declarations": "position:relative",
+      "characterOffset": 69586,
+      "characterEndExclusive": 69616
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx17",
+      "declarations": "mask-image:linear-gradient(to bottom,#000 0 calc(100% - var(--_151xtfx13)),rgba(0,0,0,var(--_151xtfx14)));-webkit-mask-image:linear-gradient(to bottom,black 0,black calc(100% - var(--_151xtfx13)),rgba(0,0,0,var(--_151xtfx14)) 100%)",
+      "characterOffset": 69616,
+      "characterEndExclusive": 69860
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx18",
+      "declarations": "position:absolute;left:0;right:0;bottom:0;height:var(--_151xtfx13);pointer-events:none;mask-image:linear-gradient(to bottom,transparent,black);-webkit-mask-image:linear-gradient(to bottom,transparent,black);backdrop-filter:blur(var(--_151xtfx15));-webkit-backdrop-filter:blur(var(--_151xtfx15))",
+      "characterOffset": 69860,
+      "characterEndExclusive": 70167
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx19",
+      "declarations": "visibility:hidden;backdrop-filter:none;-webkit-backdrop-filter:none",
+      "characterOffset": 70167,
+      "characterEndExclusive": 70247
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1a",
+      "declarations": "white-space:pre-wrap;word-break:break-word",
+      "characterOffset": 70247,
+      "characterEndExclusive": 70302
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1b",
+      "declarations": "position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0",
+      "characterOffset": 70302,
+      "characterEndExclusive": 70438
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1c",
+      "declarations": "filter:blur(.45em) opacity(.55)",
+      "characterOffset": 70438,
+      "characterEndExclusive": 70482
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx4:hover ._151xtfx1c",
+      "declarations": "filter:none",
+      "characterOffset": 70482,
+      "characterEndExclusive": 70523
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1a:focus ._151xtfx1c",
+      "declarations": "filter:none",
+      "characterOffset": 70523,
+      "characterEndExclusive": 70565
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1d",
+      "declarations": "display:flex;align-items:center;gap:8px;height:16px",
+      "characterOffset": 70565,
+      "characterEndExclusive": 70629
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1e",
+      "declarations": "align-self:flex-end",
+      "characterOffset": 70629,
+      "characterEndExclusive": 70661
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1f",
+      "declarations": "align-self:flex-start",
+      "characterOffset": 70661,
+      "characterEndExclusive": 70695
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1g",
+      "declarations": "cursor:pointer",
+      "characterOffset": 70695,
+      "characterEndExclusive": 70722
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1h",
+      "declarations": "display:flex;align-items:center;gap:4px;color:var(--text-50);font-size:13px;line-height:1",
+      "characterOffset": 70722,
+      "characterEndExclusive": 70824
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1i",
+      "declarations": "background:none;border:none;padding:0;color:var(--text-50);font-size:13px;line-height:1;cursor:pointer;text-decoration:underline;text-underline-offset:2px;opacity:.8;transition:opacity .12s ease",
+      "characterOffset": 70824,
+      "characterEndExclusive": 71031
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1i:hover",
+      "declarations": "opacity:1",
+      "characterOffset": 71031,
+      "characterEndExclusive": 71059
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1j",
+      "declarations": "display:flex;align-items:center;gap:4px;color:var(--text-90);font-size:13px;line-height:1",
+      "characterOffset": 71059,
+      "characterEndExclusive": 71161
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1k",
+      "declarations": "font-style:italic;display:flex;align-items:center",
+      "characterOffset": 71161,
+      "characterEndExclusive": 71223
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1l",
+      "declarations": "width:10px;height:10px;word-break:break-word;border-radius:50%;background-color:var(--bg-40)",
+      "characterOffset": 71223,
+      "characterEndExclusive": 71328
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1m",
+      "declarations": "display:flex;align-items:center;gap:4px",
+      "characterOffset": 71328,
+      "characterEndExclusive": 71380
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1n",
+      "declarations": "align-self:flex-start;display:flex;gap:4px;align-items:center;min-height:48px;padding-top:0;padding-bottom:0",
+      "characterOffset": 71380,
+      "characterEndExclusive": 71501
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1o",
+      "declarations": "color:var(--bg-80);margin:0",
+      "characterOffset": 71501,
+      "characterEndExclusive": 71541
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1p",
+      "declarations": "display:flex;align-items:center;padding-left:58px",
+      "characterOffset": 71541,
+      "characterEndExclusive": 71603
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1q",
+      "declarations": "display:flex;align-items:center;gap:4px;padding:4px 8px;background-color:var(--bg-5);border-radius:12px;font-size:13px;color:var(--bg-30);margin-bottom:4px;align-self:flex-start",
+      "characterOffset": 71603,
+      "characterEndExclusive": 71793
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1r",
+      "declarations": "font-size:14px",
+      "characterOffset": 71793,
+      "characterEndExclusive": 71820
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1s",
+      "declarations": "font-weight:600;font-size:15px;line-height:1.2",
+      "characterOffset": 71820,
+      "characterEndExclusive": 71879
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1t",
+      "declarations": "border:none;border-top:1px solid var(--text-30);margin:0;width:100%",
+      "characterOffset": 71879,
+      "characterEndExclusive": 71959
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1u",
+      "declarations": "--continuous-fill: var(--bubble-agent-bg);background-color:var(--continuous-fill);color:var(--text-primary);align-self:flex-start;display:flex;flex-direction:column;gap:8px;padding:16px;border-radius:24px",
+      "characterOffset": 71959,
+      "characterEndExclusive": 72176
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1v",
+      "declarations": "display:flex;justify-content:space-between;align-items:center;gap:8px;width:100%",
+      "characterOffset": 72176,
+      "characterEndExclusive": 72269
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1w",
+      "declarations": "font-weight:600;font-size:15px;color:var(--text)",
+      "characterOffset": 72269,
+      "characterEndExclusive": 72330
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1x",
+      "declarations": "display:inline-flex;align-items:center;justify-content:center;color:var(--text-50);flex-shrink:0",
+      "characterOffset": 72330,
+      "characterEndExclusive": 72439
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1y",
+      "declarations": "-webkit-mask-image:linear-gradient(black,black),linear-gradient(to right,transparent 0%,rgba(0,0,0,.5) 50%,black 100%);mask-image:linear-gradient(#000,#000),linear-gradient(to right,transparent 0%,rgba(0,0,0,.5) 50%,black 100%);-webkit-mask-size:100% 100%,340px 18px;mask-size:100% 100%,340px 18px;-webkit-mask-position:0 0,bottom right;mask-position:0 0,bottom right;-webkit-mask-repeat:no-repeat,no-repeat;mask-repeat:no-repeat,no-repeat;-webkit-mask-composite:destination-out;mask-composite:subtract",
+      "characterOffset": 72439,
+      "characterEndExclusive": 72954
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx1z",
+      "declarations": "display:flex;flex-direction:column;max-width:100%;gap:12px",
+      "characterOffset": 72954,
+      "characterEndExclusive": 73025
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx20",
+      "declarations": "max-width:min(85%,424px)",
+      "characterOffset": 73025,
+      "characterEndExclusive": 73062
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx21",
+      "declarations": "width:100%;align-self:flex-end",
+      "characterOffset": 73062,
+      "characterEndExclusive": 73105
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx22",
+      "declarations": "width:100%;align-self:flex-start",
+      "characterOffset": 73105,
+      "characterEndExclusive": 73150
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx23",
+      "declarations": "align-self:flex-end",
+      "characterOffset": 73150,
+      "characterEndExclusive": 73182
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx24",
+      "declarations": "align-self:flex-start",
+      "characterOffset": 73182,
+      "characterEndExclusive": 73216
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfx3",
+      "declarations": "animation:none",
+      "characterOffset": 73254,
+      "characterEndExclusive": 73280
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxc",
+      "declarations": "-webkit-user-select:none;user-select:none",
+      "characterOffset": 73304,
+      "characterEndExclusive": 73357
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxu",
+      "declarations": "left:100%;right:auto",
+      "characterOffset": 73357,
+      "characterEndExclusive": 73389
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxv",
+      "declarations": "right:100%;left:auto",
+      "characterOffset": 73389,
+      "characterEndExclusive": 73421
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxz",
+      "declarations": "-webkit-user-select:text;user-select:text",
+      "characterOffset": 73421,
+      "characterEndExclusive": 73474
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxf:has([data-testid=message-text]:hover) ._151xtfxq",
+      "declarations": "opacity:1;visibility:visible;transition:opacity .1s ease 75ms,visibility 0s linear 75ms",
+      "characterOffset": 73496,
+      "characterEndExclusive": 73644
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._151xtfxc:focus-within ._151xtfxq",
+      "declarations": "opacity:1;visibility:visible;transition:opacity .1s ease 75ms,visibility 0s linear 75ms",
+      "characterOffset": 73644,
+      "characterEndExclusive": 73767
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "[data-hover-timestamp-host]:hover>._151xtfxq",
+      "declarations": "opacity:1;visibility:visible;transition:opacity .1s ease 75ms,visibility 0s linear 75ms",
+      "characterOffset": 73767,
+      "characterEndExclusive": 73900
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlb0",
+      "declarations": "flex:1;min-height:0;position:relative",
+      "characterOffset": 73901,
+      "characterEndExclusive": 73950
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlb1",
+      "declarations": "height:100%",
+      "characterOffset": 73950,
+      "characterEndExclusive": 73973
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlb2",
+      "declarations": "height:100%;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;overflow-anchor:none;padding-top:var(--content-inset-top, 96px);padding-bottom:calc(var(--chat-input-height, 68px) + 32px);scroll-padding-top:80px;scrollbar-width:none",
+      "characterOffset": 73973,
+      "characterEndExclusive": 74226
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlb2::-webkit-scrollbar",
+      "declarations": "display:none",
+      "characterOffset": 74226,
+      "characterEndExclusive": 74269
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlb4",
+      "declarations": "display:flex;flex-direction:column;gap:12px;width:100%;max-width:768px;margin-left:auto;margin-right:auto;padding-left:clamp(16px,calc((100% - 512px)/2),128px);padding-right:clamp(16px,calc((100% - 512px)/2),128px)",
+      "characterOffset": 74269,
+      "characterEndExclusive": 74495
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlb4>div:not(:first-child):has([data-rich-entry])",
+      "declarations": "margin-top:12px",
+      "characterOffset": 74495,
+      "characterEndExclusive": 74567
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlb4>div:has([data-rich-entry])+div:is([data-message-id],:has([data-message-id]))",
+      "declarations": "margin-top:12px",
+      "characterOffset": 74567,
+      "characterEndExclusive": 74671
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlb4>div[data-row-divider]+div:has([data-rich-entry])",
+      "declarations": "margin-top:0",
+      "characterOffset": 74671,
+      "characterEndExclusive": 74744
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlb4>div:has([data-rich-entry])",
+      "declarations": "position:relative;z-index:1",
+      "characterOffset": 74744,
+      "characterEndExclusive": 74810
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlb4>div:has(.link-stack:hover),._1rkfhlb4>div:has(.link-stack.is-pushing),._1rkfhlb4>div:has(.link-stack.is-flying)",
+      "declarations": "z-index:10",
+      "characterOffset": 74810,
+      "characterEndExclusive": 74944
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlb5",
+      "declarations": "transition:filter .4s ease-out,opacity .4s ease-out",
+      "characterOffset": 74944,
+      "characterEndExclusive": 75007
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlb6",
+      "declarations": "transition:filter 0s ease-out,opacity 0s ease-out",
+      "characterOffset": 75007,
+      "characterEndExclusive": 75068
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlb7",
+      "declarations": "flex-shrink:0",
+      "characterOffset": 75068,
+      "characterEndExclusive": 75093
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlb8",
+      "declarations": "flex-shrink:0;margin-top:-12px",
+      "characterOffset": 75093,
+      "characterEndExclusive": 75135
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlb9",
+      "declarations": "position:absolute;bottom:calc(var(--chat-input-height, 68px) + 32px);left:0;right:0;display:flex;justify-content:center;pointer-events:none;z-index:1",
+      "characterOffset": 75135,
+      "characterEndExclusive": 75296
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlba",
+      "declarations": "pointer-events:auto",
+      "characterOffset": 75296,
+      "characterEndExclusive": 75327
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlbb",
+      "declarations": "position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding-bottom:32px",
+      "characterOffset": 75327,
+      "characterEndExclusive": 75439
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlbc",
+      "declarations": "font-size:48px;font-weight:400",
+      "characterOffset": 75439,
+      "characterEndExclusive": 75481
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlbd",
+      "declarations": "filter:blur(16px);opacity:.3",
+      "characterOffset": 75481,
+      "characterEndExclusive": 75521
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlbe",
+      "declarations": "filter:blur(8px);opacity:.5",
+      "characterOffset": 75521,
+      "characterEndExclusive": 75560
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlbf",
+      "declarations": "transition-property:filter,opacity;transition-duration:.803851383571721s;transition-timing-function:ease-out;transition-timing-function:linear(0,.0427,.1458,.2791,.421,.557,.6785,.7812,.8637,.9269,.9729,1.0042,1.0237,1.0342,1.0382,1.0377,1.0343,1.0295,1.0241,1.0187,1.0139,1.0097,1.0062,1.0036,1.0016,1.0002,.9993,.9988,.9986,.9985,.9986,.9988,.999)",
+      "characterOffset": 75560,
+      "characterEndExclusive": 75921
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlbg",
+      "declarations": "contain-intrinsic-size:auto none",
+      "characterOffset": 75921,
+      "characterEndExclusive": 75965
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlbg[data-far-row]",
+      "declarations": "content-visibility:auto",
+      "characterOffset": 75965,
+      "characterEndExclusive": 76014
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlbh",
+      "declarations": "transition:filter .4s ease-out,opacity .4s ease-out",
+      "characterOffset": 76014,
+      "characterEndExclusive": 76077
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlbi",
+      "declarations": "opacity:0;filter:blur(8px)",
+      "characterOffset": 76077,
+      "characterEndExclusive": 76115
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlbj",
+      "declarations": "flex:1;display:flex;flex-direction:column;gap:12px;padding:80px 128px 16px;overflow:hidden",
+      "characterOffset": 76115,
+      "characterEndExclusive": 76217
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlb3",
+      "declarations": "padding-top:136px",
+      "characterOffset": 76254,
+      "characterEndExclusive": 76283
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlbd",
+      "declarations": "filter:blur(8px)",
+      "characterOffset": 76283,
+      "characterEndExclusive": 76311
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1rkfhlbj",
+      "declarations": "padding:80px 16px 16px",
+      "characterOffset": 76348,
+      "characterEndExclusive": 76382
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheeh1",
+      "declarations": "--continuous-fill: var(--regular-bg);position:relative;display:flex;flex-direction:column;align-self:flex-start;width:100%;border-radius:24px;overflow:hidden;background-color:var(--continuous-fill);animation:_1ebheeh0 .4s ease-out",
+      "characterOffset": 110645,
+      "characterEndExclusive": 110887
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheeh2._1ebheeh2",
+      "declarations": "max-height:none",
+      "characterOffset": 110887,
+      "characterEndExclusive": 110924
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheeh4",
+      "declarations": "--_1ebheeh3: 70px;display:flex;align-items:center;gap:8px;height:var(--_1ebheeh3);flex-shrink:0;padding-left:16px;padding-right:16px",
+      "characterOffset": 110924,
+      "characterEndExclusive": 111068
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheeh5._1ebheeh5",
+      "declarations": "padding-right:calc((var(--_1ebheeh3) - 16px) / 2)",
+      "characterOffset": 111068,
+      "characterEndExclusive": 111139
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheeh6._1ebheeh6",
+      "declarations": "--_1ebheeh3: 51px",
+      "characterOffset": 111139,
+      "characterEndExclusive": 111178
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheeh7._1ebheeh7",
+      "declarations": "--_1ebheeh3: 72px",
+      "characterOffset": 111178,
+      "characterEndExclusive": 111217
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheeh8",
+      "declarations": "display:flex;align-items:flex-start;flex-shrink:0",
+      "characterOffset": 111217,
+      "characterEndExclusive": 111278
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheeh9",
+      "declarations": "flex:1;min-width:0",
+      "characterOffset": 111278,
+      "characterEndExclusive": 111308
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheeha",
+      "declarations": "flex:none;display:flex;align-items:center;height:72px;padding-right:28px",
+      "characterOffset": 111308,
+      "characterEndExclusive": 111392
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheehb",
+      "declarations": "flex:none;width:40px;height:40px;border-radius:12px;margin-inline-end:4px",
+      "characterOffset": 111392,
+      "characterEndExclusive": 111477
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheehc",
+      "declarations": "display:flex;align-items:center;justify-content:center;font-family:GT Standard L,GT Standard L Fallback,-apple-system,BlinkMacSystemFont,sans-serif;font-size:20px;font-weight:500;color:var(--text-secondary);background-color:var(--text-10)",
+      "characterOffset": 111477,
+      "characterEndExclusive": 111727
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheehd",
+      "declarations": "display:flex;flex-direction:column;justify-content:center;gap:4px;min-width:0",
+      "characterOffset": 111727,
+      "characterEndExclusive": 111816
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheehe",
+      "declarations": "font-family:GT Standard L,GT Standard L Fallback,-apple-system,BlinkMacSystemFont,sans-serif;font-size:15px;font-weight:400;line-height:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--text-primary)",
+      "characterOffset": 111816,
+      "characterEndExclusive": 112054
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheehf",
+      "declarations": "text-decoration:none",
+      "characterOffset": 112054,
+      "characterEndExclusive": 112086
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheehf:hover",
+      "declarations": "text-decoration:underline",
+      "characterOffset": 112086,
+      "characterEndExclusive": 112129
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheehg",
+      "declarations": "font-family:GT Standard L,GT Standard L Fallback,-apple-system,BlinkMacSystemFont,sans-serif;font-size:15px;font-weight:400;line-height:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--text-secondary)",
+      "characterOffset": 112129,
+      "characterEndExclusive": 112369
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheehh._1ebheehh",
+      "declarations": "flex:none;display:flex;align-items:center;justify-content:center;width:auto;height:auto;min-width:0;min-height:0;padding:8px;margin:-8px;border:none;border-radius:var(--mr6c8q1y);background:none;box-shadow:none;color:var(--text-secondary)",
+      "characterOffset": 112369,
+      "characterEndExclusive": 112629
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheehi",
+      "declarations": "font-family:GT Standard L,GT Standard L Fallback,-apple-system,BlinkMacSystemFont,sans-serif;font-size:15px;font-weight:400;line-height:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none;color:var(--text-secondary)",
+      "characterOffset": 112629,
+      "characterEndExclusive": 112890
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheehi:hover",
+      "declarations": "color:var(--text-primary)",
+      "characterOffset": 112890,
+      "characterEndExclusive": 112933
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheeh5 ._1ebheehd",
+      "declarations": "gap:0",
+      "characterOffset": 112933,
+      "characterEndExclusive": 112961
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheeh5 ._1ebheehe",
+      "declarations": "font-weight:500;line-height:19px",
+      "characterOffset": 112961,
+      "characterEndExclusive": 113016
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheeh5 ._1ebheehg,._1ebheeh5 ._1ebheehi",
+      "declarations": "line-height:19px",
+      "characterOffset": 113016,
+      "characterEndExclusive": 113077
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheehj",
+      "declarations": "flex:1",
+      "characterOffset": 113077,
+      "characterEndExclusive": 113095
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheehk",
+      "declarations": "width:38px",
+      "characterOffset": 113095,
+      "characterEndExclusive": 113117
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheehl",
+      "declarations": "height:1px;border-radius:.5px;flex-shrink:0;margin:0 16px;background-color:var(--stroke-secondary)",
+      "characterOffset": 113117,
+      "characterEndExclusive": 113227
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheehm",
+      "declarations": "mask-image:linear-gradient(to bottom,black calc(100% - 96px),transparent calc(100% - 8px));-webkit-mask-image:linear-gradient(to bottom,black calc(100% - 96px),transparent calc(100% - 8px))",
+      "characterOffset": 113227,
+      "characterEndExclusive": 113428
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1ebheeh1",
+      "declarations": "animation:none",
+      "characterOffset": 113466,
+      "characterEndExclusive": 113492
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".kg31mb0",
+      "declarations": "max-width:550px;max-height:412px",
+      "characterOffset": 113493,
+      "characterEndExclusive": 113535
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".kg31mb1",
+      "declarations": "margin:0;padding:0 16px 16px;overflow:hidden;font-family:GT Standard Mono,ui-monospace,monospace;font-size:14px;line-height:20px;white-space:pre-wrap;overflow-wrap:anywhere;color:var(--text-primary)",
+      "characterOffset": 113535,
+      "characterEndExclusive": 113743
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": "._1v3a8gc0 ._1ebheehe,._1v3a8gc0 ._1ebheehf,._1v3a8gc0 ._1ebheehg",
+      "declarations": "line-height:19px",
+      "characterOffset": 126954,
+      "characterEndExclusive": 127037
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".bxc254e>:not([data-continuous-fill])",
+      "declarations": "opacity:.8",
+      "characterOffset": 131512,
+      "characterEndExclusive": 131561
+    },
+    {
+      "source": "evidence/styles/Bgegb_jl.css",
+      "selector": ".cykdq90 ._1ebheeh4 button",
+      "declarations": "display:none",
+      "characterOffset": 134438,
+      "characterEndExclusive": 134478
+    },
+    {
+      "source": "evidence/styles/CTg21sq_.css",
+      "selector": "._13nvxnx0",
+      "declarations": "border-radius:24px;font-size:15px;font-weight:500;line-height:1.2;min-height:50px;word-break:break-word;overflow-wrap:anywhere;color:var(--text-primary);padding:16px",
+      "characterOffset": 2973,
+      "characterEndExclusive": 3150
+    },
+    {
+      "source": "evidence/styles/CTg21sq_.css",
+      "selector": "._13nvxnx1",
+      "declarations": "background-color:transparent;color:var(--text-secondary);border-style:solid;border-width:1px;border-color:var(--stroke-primary)",
+      "characterOffset": 3150,
+      "characterEndExclusive": 3289
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".theme-light ._1hzjiv00 [data-panel-material=chip]",
+      "declarations": "background-color:#ffffff8c;mix-blend-mode:normal",
+      "characterOffset": 48389,
+      "characterEndExclusive": 48489
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoa1",
+      "declarations": "min-height:100%;display:flex;align-items:center;justify-content:center;transform:translateY(calc((var(--chat-input-height, 68px) - 68px) / 2))",
+      "characterOffset": 56420,
+      "characterEndExclusive": 56572
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoa2",
+      "declarations": "display:flex;flex-direction:column;align-items:center;max-width:28ch;text-align:center;text-wrap:balance;font-size:var(--mr6c8q16);line-height:1.5;color:var(--jb6aoa0, var(--text-50))",
+      "characterOffset": 56572,
+      "characterEndExclusive": 56765
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoa3",
+      "declarations": "position:absolute;inset:0;background:#0000000d;pointer-events:none",
+      "characterOffset": 56765,
+      "characterEndExclusive": 56841
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoa4",
+      "declarations": "overflow:hidden",
+      "characterOffset": 56841,
+      "characterEndExclusive": 56866
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoa5",
+      "declarations": "pointer-events:none",
+      "characterOffset": 56866,
+      "characterEndExclusive": 56895
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoa6>*:not(:last-child)",
+      "declarations": "margin-bottom:10px",
+      "characterOffset": 56895,
+      "characterEndExclusive": 56942
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoa7",
+      "declarations": "flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;overflow-anchor:none;scrollbar-width:none;padding-left:var(--mr6c8qk);padding-right:var(--mr6c8qk);padding-top:calc(var(--mr6c8q2m) + var(--mr6c8qk));padding-bottom:calc(var(--chat-input-height, 68px) + var(--mr6c8qm))",
+      "characterOffset": 56942,
+      "characterEndExclusive": 57224
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoa7::-webkit-scrollbar",
+      "declarations": "display:none",
+      "characterOffset": 57224,
+      "characterEndExclusive": 57265
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoa8",
+      "declarations": "position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding-left:64px",
+      "characterOffset": 57265,
+      "characterEndExclusive": 57376
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoa8.jb6aoa8",
+      "declarations": "align-items:flex-start",
+      "characterOffset": 57376,
+      "characterEndExclusive": 57416
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoa9",
+      "declarations": "position:relative;height:100%;width:100%",
+      "characterOffset": 57416,
+      "characterEndExclusive": 57466
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoaa",
+      "declarations": "position:absolute;top:0;bottom:0;right:0;width:420px;display:flex;flex-direction:column;transition:visibility 0s",
+      "characterOffset": 57466,
+      "characterEndExclusive": 57588
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoab",
+      "declarations": "visibility:hidden;pointer-events:none;transition:visibility 0s linear 233ms",
+      "characterOffset": 57588,
+      "characterEndExclusive": 57673
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoac",
+      "declarations": "position:absolute;inset:0;opacity:1;isolation:isolate;transition:opacity .5s cubic-bezier(.37,0,.63,1) 233ms,filter .5s cubic-bezier(.37,0,.63,1) 233ms,visibility 0s",
+      "characterOffset": 57673,
+      "characterEndExclusive": 57848
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoad",
+      "declarations": "opacity:0;filter:blur(4px);visibility:hidden;pointer-events:none;transition:opacity .15s ease,filter .15s ease,visibility 0s linear .15s",
+      "characterOffset": 57848,
+      "characterEndExclusive": 57994
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoae",
+      "declarations": "position:absolute;inset:0;background:var(--text-10);backdrop-filter:blur(var(--mr6c8q2c));-webkit-backdrop-filter:blur(var(--mr6c8q2c));transition:opacity .2s ease-out",
+      "characterOffset": 57994,
+      "characterEndExclusive": 58171
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoaf",
+      "declarations": "opacity:0;visibility:hidden;transition:opacity .14s ease-out,filter .14s ease-out,visibility 0s linear .14s",
+      "characterOffset": 58171,
+      "characterEndExclusive": 58288
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoag",
+      "declarations": "position:absolute;top:0;bottom:0;left:0;width:100%;padding-top:calc(var(--mr6c8q2m) + var(--mr6c8ql));padding-left:var(--mr6c8qk);padding-right:var(--mr6c8qk);padding-bottom:calc(var(--chat-input-height, 68px) + var(--mr6c8ql));overflow-y:auto;overflow-x:hidden;overflow-anchor:none;scrollbar-width:none",
+      "characterOffset": 58288,
+      "characterEndExclusive": 58601
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoag::-webkit-scrollbar",
+      "declarations": "display:none",
+      "characterOffset": 58601,
+      "characterEndExclusive": 58642
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoah",
+      "declarations": "transform:translate(-100%);visibility:hidden;transition:visibility 0s linear .16s",
+      "characterOffset": 58642,
+      "characterEndExclusive": 58733
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoa7",
+      "declarations": "-webkit-touch-callout:none;-webkit-user-select:none;user-select:none",
+      "characterOffset": 58756,
+      "characterEndExclusive": 58834
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jb6aoab,.jb6aoac,.jb6aoad,.jb6aoae,.jb6aoaf,.jb6aoah",
+      "declarations": "transition:none",
+      "characterOffset": 58873,
+      "characterEndExclusive": 58943
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "html.touch ._1v3ox8l7>.material-content",
+      "declarations": "background:var(--regular-bg)",
+      "characterOffset": 59377,
+      "characterEndExclusive": 59446
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "html.touch ._1v3ox8l7>.material-fill",
+      "declarations": "display:none",
+      "characterOffset": 59446,
+      "characterEndExclusive": 59496
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wd0",
+      "declarations": "width:100%;flex-shrink:0;position:relative;z-index:var(--mr6c8q2x);padding-bottom:max(32px,env(safe-area-inset-bottom));background-color:transparent",
+      "characterOffset": 84822,
+      "characterEndExclusive": 84981
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "html.keyboard-open ._7ol3wd0",
+      "declarations": "padding-bottom:16px",
+      "characterOffset": 84981,
+      "characterEndExclusive": 85030
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wd1",
+      "declarations": "display:flex;justify-content:center;width:100%",
+      "characterOffset": 85030,
+      "characterEndExclusive": 85087
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wd1:not(:empty)",
+      "declarations": "margin-bottom:var(--mr6c8q4)",
+      "characterOffset": 85087,
+      "characterEndExclusive": 85138
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wd2",
+      "declarations": "width:100%;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:var(--mr6c8q4);position:relative",
+      "characterOffset": 85138,
+      "characterEndExclusive": 85266
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wd3",
+      "declarations": "--continuous-fill: var(--composer-bg);--continuous-backdrop: blur(50px);--continuous-stroke: var(--stroke-composer);--continuous-stroke-width: 1px;position:absolute;inset:0;border-radius:var(--mr6c8q1x);background-color:var(--continuous-fill);backdrop-filter:var(--continuous-backdrop);-webkit-backdrop-filter:var(--continuous-backdrop);border:1px solid var(--continuous-stroke);transition:background-color var(--mr6c8q2i);pointer-events:none",
+      "characterOffset": 85266,
+      "characterEndExclusive": 85719
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wd4",
+      "declarations": "display:flex;flex-direction:column;width:100%;box-sizing:border-box;position:relative;min-height:48px;border:none;border-radius:var(--mr6c8q1x);background-color:transparent;overflow:visible;cursor:text",
+      "characterOffset": 85719,
+      "characterEndExclusive": 85931
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wd5._7ol3wd5",
+      "declarations": "transition:color var(--mr6c8q2i),height calc(var(--hark-time-scale, 1) * .7150000000000001s) cubic-bezier(.3,.7,.35,1) calc(var(--hark-time-scale, 1) * .13s)",
+      "characterOffset": 85931,
+      "characterEndExclusive": 86108
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wd6",
+      "declarations": "mask-image:linear-gradient(to bottom,transparent,black 24px);-webkit-mask-image:linear-gradient(to bottom,transparent,black 24px)",
+      "characterOffset": 86108,
+      "characterEndExclusive": 86248
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wd7",
+      "declarations": "display:flex;align-items:flex-end;width:100%",
+      "characterOffset": 86248,
+      "characterEndExclusive": 86303
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wd9",
+      "declarations": "--_7ol3wd8: 2px;display:flex;align-items:center;gap:var(--_7ol3wd8);flex-shrink:0;align-self:flex-end;padding:8px 8px 8px 0",
+      "characterOffset": 86303,
+      "characterEndExclusive": 86437
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wda",
+      "declarations": "width:32px;height:32px;min-height:0;padding:0",
+      "characterOffset": 86437,
+      "characterEndExclusive": 86493
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wda._7ol3wda",
+      "declarations": "transition:scale .12s ease-out",
+      "characterOffset": 86493,
+      "characterEndExclusive": 86543
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdb._7ol3wdb",
+      "declarations": "width:var(--composer-send-w, 52px);height:32px;min-height:0;padding:0;border-radius:16px;transition:scale .12s ease-out",
+      "characterOffset": 86543,
+      "characterEndExclusive": 86682
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdc._7ol3wdc._7ol3wdc",
+      "declarations": "background-color:var(--color-attention);color:#fff;box-shadow:0 0 2px color-mix(in srgb,var(--color-attention) 50%,transparent)",
+      "characterOffset": 86682,
+      "characterEndExclusive": 86838
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdc._7ol3wdc._7ol3wdc:hover",
+      "declarations": "background-color:color-mix(in srgb,var(--text-primary) 5%,var(--color-attention))",
+      "characterOffset": 86838,
+      "characterEndExclusive": 86954
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdc._7ol3wdc._7ol3wdc:active",
+      "declarations": "background-color:color-mix(in srgb,var(--text-primary) 10%,var(--color-attention))",
+      "characterOffset": 86954,
+      "characterEndExclusive": 87072
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdd",
+      "declarations": "position:absolute;top:0;bottom:0;right:var(--mr6c8q4);display:flex;align-items:center",
+      "characterOffset": 87072,
+      "characterEndExclusive": 87168
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wde",
+      "declarations": "margin:0;padding-top:var(--mr6c8q4);text-align:center;font-size:var(--mr6c8qs);line-height:1;color:var(--text-50);pointer-events:none;-webkit-user-select:none;user-select:none",
+      "characterOffset": 87168,
+      "characterEndExclusive": 87354
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdg",
+      "declarations": "border-color:var(--text-20)",
+      "characterOffset": 87354,
+      "characterEndExclusive": 87392
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdh",
+      "declarations": "flex-shrink:0;overflow:hidden",
+      "characterOffset": 87392,
+      "characterEndExclusive": 87432
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdi",
+      "declarations": "opacity:1;transition:opacity .15s ease",
+      "characterOffset": 87432,
+      "characterEndExclusive": 87481
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdj",
+      "declarations": "opacity:.3;transition:opacity .15s ease",
+      "characterOffset": 87481,
+      "characterEndExclusive": 87531
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdk",
+      "declarations": "display:flex;align-items:center;justify-content:center",
+      "characterOffset": 87531,
+      "characterEndExclusive": 87596
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdl",
+      "declarations": "font-size:var(--mr6c8qv);color:var(--text-50);text-align:center;width:100%",
+      "characterOffset": 87596,
+      "characterEndExclusive": 87681
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdm",
+      "declarations": "color:var(--color-error)",
+      "characterOffset": 87681,
+      "characterEndExclusive": 87716
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdn",
+      "declarations": "position:relative;width:100%;overflow:hidden;padding-top:var(--mr6c8q4);padding-inline:var(--mr6c8q8);box-sizing:border-box;display:flex;flex-direction:column;gap:var(--mr6c8q4)",
+      "characterOffset": 87716,
+      "characterEndExclusive": 87904
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdo",
+      "declarations": "display:none",
+      "characterOffset": 87904,
+      "characterEndExclusive": 87927
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdp",
+      "declarations": "display:inline-flex",
+      "characterOffset": 87927,
+      "characterEndExclusive": 87957
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdq",
+      "declarations": "position:absolute;right:var(--mr6c8q4);top:calc(100% + var(--mr6c8q2));font-size:var(--mr6c8qs);line-height:1;pointer-events:none",
+      "characterOffset": 87957,
+      "characterEndExclusive": 88097
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdr",
+      "declarations": "color:var(--text-50)",
+      "characterOffset": 88097,
+      "characterEndExclusive": 88128
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wds",
+      "declarations": "color:var(--color-error)",
+      "characterOffset": 88128,
+      "characterEndExclusive": 88163
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdt",
+      "declarations": "width:100%;flex:1 1 auto;min-width:0;max-height:219px;margin:0;appearance:none;border:none;border-radius:0;outline:none;background-color:transparent;resize:none;overflow-y:auto;scrollbar-width:none;padding-top:14.5px;min-height:0;padding-bottom:14.5px;padding-left:var(--mr6c8q8);padding-right:8px;line-height:19px;letter-spacing:0;font-weight:var(--mr6c8q1e);color:var(--text-primary);transition:color var(--mr6c8q2i)",
+      "characterOffset": 88163,
+      "characterEndExclusive": 88592
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdt::placeholder",
+      "declarations": "color:var(--text-secondary)",
+      "characterOffset": 88592,
+      "characterEndExclusive": 88643
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdt::-webkit-scrollbar",
+      "declarations": "display:none",
+      "characterOffset": 88643,
+      "characterEndExclusive": 88685
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdu",
+      "declarations": "position:relative;flex:1 1 auto;min-width:0;display:flex",
+      "characterOffset": 88685,
+      "characterEndExclusive": 88752
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdv",
+      "declarations": "position:absolute;left:0;right:0;top:0;height:auto;max-height:none;visibility:hidden;pointer-events:none;white-space:pre-wrap;overflow-wrap:break-word;overflow:hidden",
+      "characterOffset": 88752,
+      "characterEndExclusive": 88929
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdw",
+      "declarations": "position:absolute;left:var(--mr6c8q8);top:14.5px;line-height:19px;font-size:var(--mr6c8qv);letter-spacing:0;color:var(--text-secondary);white-space:nowrap;overflow:hidden;max-width:calc(100% - 24px);pointer-events:none;-webkit-user-select:none;user-select:none;opacity:0;transition:none",
+      "characterOffset": 88929,
+      "characterEndExclusive": 89226
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdx",
+      "declarations": "caret-color:transparent",
+      "characterOffset": 89226,
+      "characterEndExclusive": 89260
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdy",
+      "declarations": "display:inline-block",
+      "characterOffset": 89260,
+      "characterEndExclusive": 89291
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wdz",
+      "declarations": "opacity:1;transition:opacity calc(var(--hark-time-scale, 1) * .26s) cubic-bezier(.4,0,.2,1) calc(var(--hark-time-scale, 1) * .195s)",
+      "characterOffset": 89291,
+      "characterEndExclusive": 89433
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wd10",
+      "declarations": "font-style:italic;font-weight:300",
+      "characterOffset": 89433,
+      "characterEndExclusive": 89478
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wd11",
+      "declarations": "overflow:hidden",
+      "characterOffset": 89478,
+      "characterEndExclusive": 89505
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wd12",
+      "declarations": "position:relative;display:flex;align-items:center;justify-content:center;width:16px;height:16px",
+      "characterOffset": 89505,
+      "characterEndExclusive": 89612
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wd13",
+      "declarations": "display:flex;position:absolute;inset:0;align-items:center;justify-content:center",
+      "characterOffset": 89612,
+      "characterEndExclusive": 89704
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": "._7ol3wd14",
+      "declarations": "position:relative;display:flex;align-items:center;gap:2px",
+      "characterOffset": 89704,
+      "characterEndExclusive": 89773
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jpeo2s0",
+      "declarations": "position:absolute;inset:0;display:flex;flex-direction:column;overflow:hidden",
+      "characterOffset": 103632,
+      "characterEndExclusive": 103718
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jpeo2s1",
+      "declarations": "flex:1;position:relative;min-height:0;display:flex",
+      "characterOffset": 103718,
+      "characterEndExclusive": 103778
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jpeo2s2",
+      "declarations": "flex-shrink:0;width:var(--home-col-width, 420px);min-height:0;position:relative;overflow:visible",
+      "characterOffset": 103778,
+      "characterEndExclusive": 103884
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jpeo2s3",
+      "declarations": "visibility:hidden;transition:visibility 0s linear 233ms",
+      "characterOffset": 103884,
+      "characterEndExclusive": 103949
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jpeo2s4",
+      "declarations": "z-index:calc(var(--mr6c8q32) + 1)",
+      "characterOffset": 103949,
+      "characterEndExclusive": 103992
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jpeo2s5",
+      "declarations": "position:absolute;top:0;left:0;width:calc((100vw - 768px)/2);height:100%;overflow:visible;z-index:var(--mr6c8q2w);pointer-events:none",
+      "characterOffset": 103992,
+      "characterEndExclusive": 104135
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jpeo2s6",
+      "declarations": "position:relative;flex:1;min-width:0;display:flex",
+      "characterOffset": 104135,
+      "characterEndExclusive": 104194
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jpeo2s7",
+      "declarations": "position:relative;flex:1;min-width:0;overflow:hidden;display:flex;transition:filter .62s cubic-bezier(.22,1,.36,1),opacity .62s cubic-bezier(.22,1,.36,1)",
+      "characterOffset": 104194,
+      "characterEndExclusive": 104357
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jpeo2s8",
+      "declarations": "filter:blur(26px);opacity:.5;pointer-events:none",
+      "characterOffset": 104357,
+      "characterEndExclusive": 104415
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jpeo2s9",
+      "declarations": "opacity:0;visibility:hidden;pointer-events:none;transition:opacity .22s ease-out,filter .22s ease-out,visibility 0s linear .22s",
+      "characterOffset": 104415,
+      "characterEndExclusive": 104552
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jpeo2sa",
+      "declarations": "transform:translateY(calc(100% + 48px));pointer-events:none;transition:transform .38s cubic-bezier(.5,0,.9,.4)",
+      "characterOffset": 104552,
+      "characterEndExclusive": 104672
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jpeo2sb",
+      "declarations": "pointer-events:none",
+      "characterOffset": 104672,
+      "characterEndExclusive": 104701
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jpeo2sc",
+      "declarations": "position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:center;pointer-events:none;z-index:var(--mr6c8q2z);transition:transform .52s cubic-bezier(.2,.9,.25,1.1)",
+      "characterOffset": 104701,
+      "characterEndExclusive": 104886
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jpeo2sd",
+      "declarations": "width:min(768px,100%);position:relative;pointer-events:auto",
+      "characterOffset": 104886,
+      "characterEndExclusive": 104955
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jpeo2se",
+      "declarations": "display:none",
+      "characterOffset": 104955,
+      "characterEndExclusive": 104977
+    },
+    {
+      "source": "evidence/styles/cTNWVXWS.css",
+      "selector": ".jpeo2s3,.jpeo2s9",
+      "declarations": "transition:none",
+      "characterOffset": 105015,
+      "characterEndExclusive": 105049
+    },
+    {
+      "source": "evidence/styles/mRA91S-D.css",
+      "selector": "._2dh2kq2 ._151xtfx4,._2dh2kq2 ._151xtfxg",
+      "declarations": "align-self:flex-start",
+      "characterOffset": 605,
+      "characterEndExclusive": 669
+    },
+    {
+      "source": "evidence/styles/rbdLCTAb.css",
+      "selector": ".r7cjh3 ._151xtfx5,.r7cjh3 ._151xtfx4",
+      "declarations": "max-width:none",
+      "characterOffset": 4119,
+      "characterEndExclusive": 4172
+    },
+    {
+      "source": "evidence/styles/rbdLCTAb.css",
+      "selector": ".nkmobga ._151xtfx5,.nkmobga ._151xtfx4",
+      "declarations": "max-width:none",
+      "characterOffset": 5393,
+      "characterEndExclusive": 5448
+    },
+    {
+      "source": "evidence/styles/rbdLCTAb.css",
+      "selector": "._1p406y60",
+      "declarations": "flex:1;min-width:0;position:relative;z-index:var(--mr6c8q2w);display:flex;flex-direction:column;border-radius:var(--mr6c8q21)",
+      "characterOffset": 6785,
+      "characterEndExclusive": 6922
+    },
+    {
+      "source": "evidence/styles/rbdLCTAb.css",
+      "selector": "._1p406y61",
+      "declarations": "flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--mr6c8qi);color:var(--text-50);text-align:center;padding:var(--mr6c8ql)",
+      "characterOffset": 6922,
+      "characterEndExclusive": 7098
+    },
+    {
+      "source": "evidence/styles/rbdLCTAb.css",
+      "selector": "._1p406y62",
+      "declarations": "font-size:var(--mr6c8q18);font-weight:var(--mr6c8q1f);color:var(--text-90);letter-spacing:-.01em",
+      "characterOffset": 7098,
+      "characterEndExclusive": 7206
+    },
+    {
+      "source": "evidence/styles/rbdLCTAb.css",
+      "selector": "._1p406y63",
+      "declarations": "font-size:var(--mr6c8q17);color:var(--text-50)",
+      "characterOffset": 7206,
+      "characterEndExclusive": 7264
+    }
+  ]
+}

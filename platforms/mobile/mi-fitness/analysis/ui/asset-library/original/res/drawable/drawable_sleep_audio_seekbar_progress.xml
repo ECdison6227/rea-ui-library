@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="@dimen/size_33_33" />
+            <solid android:color="@color/health_sleep_seekbar_background_color" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="@dimen/size_33_33" />
+                <solid android:color="@color/health_sleep_seekbar_progress_color" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

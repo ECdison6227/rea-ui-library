@@ -1,0 +1,25 @@
+{
+  "command": [
+    "analysis/tools/node_modules/.bin/tsc",
+    "--noEmit",
+    "--target",
+    "es2022",
+    "--module",
+    "nodenext",
+    "--moduleResolution",
+    "nodenext",
+    "--allowImportingTsExtensions",
+    "--strict",
+    "--types",
+    "node",
+    "--typeRoots",
+    "analysis/tools/node_modules/@types",
+    "analysis/reference/ports.ts",
+    "analysis/reference/update-policy.ts",
+    "analysis/reference/permission-policy.ts",
+    "analysis/reference/reference.test.ts"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": ""
+}

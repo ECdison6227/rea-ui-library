@@ -1,0 +1,1 @@
+__d(function(g,r,i,a,m,e,d){var n=r(d[0]);Object.defineProperty(e,"__esModule",{value:!0}),e.useOptions=void 0;var l=n(r(d[1]));e.useOptions=function(){return[{label:l.default.trans("sport.plan.addDevice"),value:"launchToAddDevice"},{label:l.default.trans("sport.plan.scanQRCode"),value:"launchToQRCodeScan"}]}},"sp-723",[3,"sp-141"]);

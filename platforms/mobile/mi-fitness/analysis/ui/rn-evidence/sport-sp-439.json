@@ -1,0 +1,34 @@
+{
+  "id": "sp-439",
+  "line": 447,
+  "bytes": 555,
+  "deps": [
+    3,
+    14,
+    18,
+    "sp-144"
+  ],
+  "exports": [
+    "default"
+  ],
+  "strings": [
+    "#FF612E",
+    "#F04D18",
+    "indicator",
+    "absolute"
+  ],
+  "routes": [],
+  "styleSheets": [
+    {
+      "callee": "l.StyleSheet.create",
+      "styles": {
+        "indicator": {
+          "$code": "l.StyleSheet.flatten([{position:\"absolute\",bottom:0,width:24,height:4,borderRadius:2},l.I18nManager.isRTL?{right:0}:{left:0}])"
+        }
+      },
+      "code": "l.StyleSheet.create({indicator:l.StyleSheet.flatten([{position:\"absolute\",bottom:0,width:24,height:4,borderRadius:2},l.I18nManager.isRTL?{right:0}:{left:0}])})"
+    }
+  ],
+  "assetNames": [],
+  "calls": []
+}

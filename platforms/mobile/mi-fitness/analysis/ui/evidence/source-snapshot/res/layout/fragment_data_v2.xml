@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_data_v2_0" android:background="@color/text_revert_color" android:paddingTop="@dimen/dimen_margin_35dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xiaomi.fitness.widget.view.HomeHeaderTabTitleView android:id="@id/header" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+    <miuix.springback.view.SpringBackLayout android:id="@id/swipe_container" android:background="@color/text_revert_color" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/header" app:scrollableView="@id/scrollView">
+        <androidx.core.widget.NestedScrollView android:id="@id/scrollView" android:background="@color/app_4_0_bg_color" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:overScrollMode="never" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.xiaomi.fitness.homepage.view.DataHeaderV2View android:id="@id/dataHeaderView" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:id="@id/content_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.fitness.banner.export.view.AnnouncementBannerView android:id="@id/bannerAnnouncementView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_margin_12dp" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/healthDataRecyclerView" android:background="@color/app_4_0_bg_color" android:paddingBottom="@dimen/size_20" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_margin_14dp" android:overScrollMode="never" />
+                    <com.xiaomi.fitness.view.HealthAlipayTouchView android:id="@id/alipay_touch_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_margin_12dp" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/healthBannerRecyclerView" android:paddingBottom="@dimen/size_20" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </miuix.springback.view.SpringBackLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

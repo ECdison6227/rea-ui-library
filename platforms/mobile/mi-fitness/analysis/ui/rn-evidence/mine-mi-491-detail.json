@@ -1,0 +1,206 @@
+{
+  "bundle": "mine",
+  "id": "mi-491",
+  "line": 499,
+  "aliases": {
+    "t": 3,
+    "n": 14,
+    "o": "mi-138",
+    "c": "mi-11",
+    "u": "mi-399",
+    "s": "mi-492",
+    "l": "mi-494",
+    "f": "mi-490",
+    "h": "mi-488"
+  },
+  "elements": [
+    {
+      "type": "n.default.Fragment",
+      "props": null,
+      "children": [
+        {
+          "$code": "y.show&&n.default.createElement(f.SettingItem,{name:c.default.trans(\"mine.company.exclusive.entrance\"),source:u.ImageAssets.menu.companyExclusiveEntrance,onPress:function(){t.push(\"com.xiaomi.fitness.mine.company.CompanyUserWebViewActivity\",{_rt:\"native\",URL:y.jumpUrl,title:c.default.trans(\"mine.com"
+        },
+        {
+          "$code": "n.default.createElement(f.SettingItem,{name:c.default.trans(\"mine.my.track\"),source:u.ImageAssets.menu.mineTrack,onPress:function(){t.push(\"com.xiaomi.fitness.route.track.view.MyTrackLibraryActivity\",{_rt:\"native\"})}})"
+        },
+        {
+          "$code": "n.default.createElement(f.SettingItem,{name:c.default.trans(\"mine.app.item.settings\"),source:u.ImageAssets.menu.appSetting,onPress:function(){(0,u.clickAppSettingTrack)(),t.push(\"com.xiaomi.fitness.about.setting.SettingActivity\",{_rt:\"native\"})}})"
+        },
+        {
+          "$code": "n.default.createElement(f.SettingItem,{name:c.default.trans(\"mine.personal.data.management\"),source:u.ImageAssets.menu.thirdPartyDataManagement,onPress:function(){return p().async(function(t){for(;;)switch(t.prev=t.next){case 0:(0,u.clickThirdDataManageTrack)(),(0,s.gotoAuthConfigListPage)();case 2:"
+        },
+        {
+          "$code": "n.default.createElement(f.SettingItem,{name:c.default.trans(\"mine.device.authorization\"),source:u.ImageAssets.menu.icDeviceAuthorization,onPress:function(){return p().async(function(n){for(;;)switch(n.prev=n.next){case 0:(0,u.clickAuthConfigListPageTrack)(),t.push(\"com.xiaomi.xms.wearable.ui.ThirdAp"
+        },
+        {
+          "$code": "n.default.createElement(f.SettingItem,{name:c.default.trans(\"mine.system.permission\"),source:u.ImageAssets.menu.systemPermission,onPress:function(){(0,u.clickSystemPermissionTrack)(),t.push(\"com.xiaomi.fitness.privacy.permission.SystemPermissionFragment\",{_rt:\"native\"})}})"
+        },
+        {
+          "$code": "n.default.createElement(f.SettingItem,{name:c.default.trans(\"mine.bugreport\"),source:u.ImageAssets.menu.helpAndFeedback,onPress:function(){return p().async(function(n){for(;;)switch(n.prev=n.next){case 0:(0,u.clickHelpAndFeedbackTrack)(),t.push(\"toFeedBack\",{_rt:\"native\",_useNativeRoute:!0});case 2:"
+        },
+        {
+          "$code": "n.default.createElement(f.SettingItem,{name:c.default.trans(\"mine.device.share\"),source:u.ImageAssets.menu.deviceSharing,onPress:function(){return p().async(function(n){for(;;)switch(n.prev=n.next){case 0:t.push(\"com.xiaomi.fitness.rn.share.ui.DeviceShareActivity\",{_rt:\"native\"});case 1:case\"end\":re"
+        },
+        {
+          "$code": "n.default.createElement(h.UpdateSettingItem,null)"
+        },
+        {
+          "$code": "n.default.createElement(f.SettingItem,{name:c.default.trans(\"mine.about\"),source:u.ImageAssets.menu.about,onPress:function(){(0,u.clickAboutTrack)(),t.push(\"com.xiaomi.fitness.about.AboutActivity\",{_rt:\"native\"})}})"
+        }
+      ]
+    },
+    {
+      "type": "f.SettingItem",
+      "module": "mi-490",
+      "props": {
+        "name": {
+          "$code": "c.default.trans(\"mine.company.exclusive.entrance\")"
+        },
+        "source": {
+          "$code": "u.ImageAssets.menu.companyExclusiveEntrance"
+        },
+        "onPress": {
+          "$code": "function(){t.push(\"com.xiaomi.fitness.mine.company.CompanyUserWebViewActivity\",{_rt:\"native\",URL:y.jumpUrl,title:c.default.trans(\"mine.company.exclusive.entrance\")})}"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "f.SettingItem",
+      "module": "mi-490",
+      "props": {
+        "name": {
+          "$code": "c.default.trans(\"mine.my.track\")"
+        },
+        "source": {
+          "$code": "u.ImageAssets.menu.mineTrack"
+        },
+        "onPress": {
+          "$code": "function(){t.push(\"com.xiaomi.fitness.route.track.view.MyTrackLibraryActivity\",{_rt:\"native\"})}"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "f.SettingItem",
+      "module": "mi-490",
+      "props": {
+        "name": {
+          "$code": "c.default.trans(\"mine.app.item.settings\")"
+        },
+        "source": {
+          "$code": "u.ImageAssets.menu.appSetting"
+        },
+        "onPress": {
+          "$code": "function(){(0,u.clickAppSettingTrack)(),t.push(\"com.xiaomi.fitness.about.setting.SettingActivity\",{_rt:\"native\"})}"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "f.SettingItem",
+      "module": "mi-490",
+      "props": {
+        "name": {
+          "$code": "c.default.trans(\"mine.personal.data.management\")"
+        },
+        "source": {
+          "$code": "u.ImageAssets.menu.thirdPartyDataManagement"
+        },
+        "onPress": {
+          "$code": "function(){return p().async(function(t){for(;;)switch(t.prev=t.next){case 0:(0,u.clickThirdDataManageTrack)(),(0,s.gotoAuthConfigListPage)();case 2:case\"end\":return t.stop()}},null,null,null,Promise)}"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "f.SettingItem",
+      "module": "mi-490",
+      "props": {
+        "name": {
+          "$code": "c.default.trans(\"mine.device.authorization\")"
+        },
+        "source": {
+          "$code": "u.ImageAssets.menu.icDeviceAuthorization"
+        },
+        "onPress": {
+          "$code": "function(){return p().async(function(n){for(;;)switch(n.prev=n.next){case 0:(0,u.clickAuthConfigListPageTrack)(),t.push(\"com.xiaomi.xms.wearable.ui.ThirdAppListFragment\",{_rt:\"native\"});case 2:case\"end\":return n.stop()}},null,null,null,Promise)}"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "f.SettingItem",
+      "module": "mi-490",
+      "props": {
+        "name": {
+          "$code": "c.default.trans(\"mine.system.permission\")"
+        },
+        "source": {
+          "$code": "u.ImageAssets.menu.systemPermission"
+        },
+        "onPress": {
+          "$code": "function(){(0,u.clickSystemPermissionTrack)(),t.push(\"com.xiaomi.fitness.privacy.permission.SystemPermissionFragment\",{_rt:\"native\"})}"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "f.SettingItem",
+      "module": "mi-490",
+      "props": {
+        "name": {
+          "$code": "c.default.trans(\"mine.bugreport\")"
+        },
+        "source": {
+          "$code": "u.ImageAssets.menu.helpAndFeedback"
+        },
+        "onPress": {
+          "$code": "function(){return p().async(function(n){for(;;)switch(n.prev=n.next){case 0:(0,u.clickHelpAndFeedbackTrack)(),t.push(\"toFeedBack\",{_rt:\"native\",_useNativeRoute:!0});case 2:case\"end\":return n.stop()}},null,null,null,Promise)}"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "f.SettingItem",
+      "module": "mi-490",
+      "props": {
+        "name": {
+          "$code": "c.default.trans(\"mine.device.share\")"
+        },
+        "source": {
+          "$code": "u.ImageAssets.menu.deviceSharing"
+        },
+        "onPress": {
+          "$code": "function(){return p().async(function(n){for(;;)switch(n.prev=n.next){case 0:t.push(\"com.xiaomi.fitness.rn.share.ui.DeviceShareActivity\",{_rt:\"native\"});case 1:case\"end\":return n.stop()}},null,null,null,Promise)}"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "h.UpdateSettingItem",
+      "module": "mi-488",
+      "props": null,
+      "children": []
+    },
+    {
+      "type": "f.SettingItem",
+      "module": "mi-490",
+      "props": {
+        "name": {
+          "$code": "c.default.trans(\"mine.about\")"
+        },
+        "source": {
+          "$code": "u.ImageAssets.menu.about"
+        },
+        "onPress": {
+          "$code": "function(){(0,u.clickAboutTrack)(),t.push(\"com.xiaomi.fitness.about.AboutActivity\",{_rt:\"native\"})}"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": []
+}

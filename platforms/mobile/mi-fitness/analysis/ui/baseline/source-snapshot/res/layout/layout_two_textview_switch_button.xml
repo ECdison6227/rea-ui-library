@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_feature_item_start_icon" android:layout_width="@dimen/feature_item_icon_size" android:layout_height="@dimen/feature_item_icon_size" android:layout_marginTop="@dimen/feature_item_icon_top_bottom_margin" android:layout_marginBottom="@dimen/feature_item_icon_top_bottom_margin" android:scaleType="centerCrop" android:layout_marginEnd="@dimen/feature_item_title_start_margin" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/feature_item_title_top_bottom_margin" android:layout_marginBottom="13.329987dp" android:layout_weight="1.0">
+        <TextView android:textColor="@color/selector_feature_item_title_text_color" android:id="@id/tv_feature_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" style="@style/FontMedium.16sp" />
+        <TextView android:textColor="@color/selector_feature_item_subtitle_text_color" android:id="@id/tv_feature_item_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/FontRegular.12sp" />
+    </LinearLayout>
+    <TextView android:textColor="@color/selector_feature_item_remind_text_color" android:id="@id/tv_feature_item_remind" android:background="@drawable/icon_feature_item_remind" android:layout_width="@dimen/feature_item_remind_dot_size" android:layout_height="@dimen/feature_item_remind_dot_size" android:layout_marginStart="@dimen/feature_item_remind_margin_start" style="@style/FontRegular.14sp" />
+    <com.xiaomi.fitness.widget.button.SwitchButton android:id="@id/switch_btn" android:focusable="true" android:layout_width="@dimen/lib_sb_width" android:layout_height="@dimen/lib_sb_height" android:contentDescription="@string/common_switch_off_content" android:layout_marginStart="@dimen/feature_item_more_margin_start" />
+</merge>

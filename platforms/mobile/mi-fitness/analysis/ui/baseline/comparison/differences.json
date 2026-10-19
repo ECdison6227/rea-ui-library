@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "instructions": "Manual findings apply only to reviewReferenceSha256. A changed reference makes them stale. All bounds are physical px, right/bottom exclusive. D implementation is compared with A original; no equivalence or similarity score is claimed.",
+  "reviewedAtUtc": "2026-10-15T13:16:41.993Z",
+  "reviewMethod": "Actually viewed all three side-by-side and all three 50% overlays, then checked selected exact-RGB components and bounded dark-ink probes with Pillow.",
+  "pages": {
+    "health-day": {
+      "reviewStatus": "reviewed-with-differences",
+      "reviewReferenceSha256": "92a90a75aa3260bb1eaa301ff0395aeaa5062fca486e606f8f9c83ce24c21a99",
+      "matchedDetails": [
+        "健康标题深色字形包围框A/D均[75,179,244,262]；轻标题角色和位置在本模拟器默认字体下对应，不能推断小米真机逐字字体相同。",
+        "三摘要面A[33,797,1047,1319]→D[33,797,1047,1320]；左右和顶部对应、底部差1px。未登录面A/D均[33,1358,1047,1592]。",
+        "三指标为0、未登录及睡眠/心率空态的内容顺序对应；不涵盖非零数据。"
+      ],
+      "knownDifferences": [
+        {
+          "component": "ProgressHero",
+          "classification": "D versus A",
+          "observation": "D三环下端平切，A有局部圆滑收口；D倒影资产/渐变为近似，未复现原版算法。",
+          "impact": "本页最显著的视觉差异；非零进度和动效仍未知。"
+        },
+        {
+          "component": "ProgressHero.share",
+          "classification": "D versus A",
+          "observation": "饼干/计数偏右下；x0字形A[943,714,990,746]→D[950,728,996,759]。A分享面白描边/阴影，D普通圆角面缺少这一层。"
+        },
+        {
+          "component": "TopBar",
+          "classification": "D versus A",
+          "observation": "添加图标墨迹A[943,183,1008,248]→D[943,176,1008,241]，D上移7px。y96..136处A白、D#F6F7F9；这是参考AOSP系统栏占位差异落入固定ROI，单独解释。"
+        },
+        {
+          "component": "ProgressHero.summary",
+          "classification": "D versus A",
+          "observation": "卡路里字形A[119,866,232,903]→D[124,866,234,903]；步数A[466,866,540,903]→D[454,866,527,903]。列内图文箭头间距、目标行字重/行位仍有差。活动次数正文右边界A384、D365。"
+        },
+        {
+          "component": "MetricCard/ProfileHeader variant",
+          "classification": "D versus A",
+          "observation": "未登录标题A[203,1426,374,1468]→D[203,1422,383,1467]；睡眠标题A[78,1764,168,1808]→D[77,1762,165,1806]，字形宽度/字重与位置仍有差；D箭头更细小。"
+        },
+        {
+          "component": "BottomNav",
+          "classification": "D versus A",
+          "observation": "白面起点A2151、D2152。健康选中图标橙色框A[105,2189,165,2249]→D[103,2187,168,2252]，D稍大；文字位置/字重可见轻微重影。"
+        }
+      ],
+      "unknowns": [
+        "Hero非零进度、实时倒影算法、动画时间与中断未知。",
+        "空指标卡被固定导航截断，完整高度不能从本图确定。",
+        "OEM及逐字中文fallback face未知。",
+        "D二级边界说明和D认证弹层并非原版详情/账号SDK视觉复刻。"
+      ]
+    },
+    "mine-day": {
+      "reviewStatus": "reviewed-with-differences",
+      "reviewReferenceSha256": "315bfedfdec46529b86bf1d7fc188d881a68c07b99211ac56eade4d4c7125ab6",
+      "matchedDetails": [
+        "采用mine11.202.21的五入口顺序：活动、课程、亲友、奖品、订单；页头保持空白。",
+        "小习惯白面A[33,1105,526,1579]→D[33,1105,526,1578]；周报A/D[554,1105,1047,1328]；竞赛A/D[554,1356,1047,1579]。",
+        "当前样本中#F6F7F9背景、白面、12dp外侧间距和10dp两列间隙对应；内部图文仍分别核对。"
+      ],
+      "knownDifferences": [
+        {
+          "component": "ProfileHeader",
+          "classification": "D versus A",
+          "observation": "姓名A[242,319,401,370]→D[242,323,401,374]，D下移4px；说明A[241,387,402,418]→D[241,390,402,421]，下移3px。尾部徽章大小/透明层也有重影。"
+        },
+        {
+          "component": "ShortcutGrid",
+          "classification": "D versus A",
+          "observation": "首项文字A[58,602,210,639]→D[60,616,208,653]，下移14px且略窄；其余入口也有同向文字行位差。个别图标约下移2px。",
+          "impact": "顺序和等宽分配对应，图文间距仍需修正。"
+        },
+        {
+          "component": "SurfaceCard/promo",
+          "classification": "D versus A",
+          "observation": "会员横幅D缺少A右上的斜向明暗图案；会员文案、权益文案和开通动作的排版/字形仍有差。运营插画和医疗权益不作为通用迁移规则。"
+        },
+        {
+          "component": "SurfaceCard/promo title",
+          "classification": "D versus A",
+          "observation": "小习惯标题A[74,1163,211,1208]→D[74,1166,209,1211]；周报A[595,1163,873,1208]→D[595,1166,868,1211]。D下移3px且略窄，副文行位和图标尺寸也有差。"
+        },
+        {
+          "component": "ChevronRow",
+          "classification": "D versus A",
+          "observation": "任务中心白面A[33,1612,1047,1799]→D[33,1611,1047,1798]；健康问诊A[33,1832,1047,1997]高165px，D[33,1831,1047,2018]高187px。D错误套68dp而A该行约60dp，下一行从A2030变成D2051。",
+          "impact": "错误行高会累积滚动位置偏差，应按行实例和分组设置。"
+        },
+        {
+          "component": "BottomNav",
+          "classification": "D versus A",
+          "observation": "D白面起点比A低1px；“我的”文字D约上移4px。相同资源仍有栅格尺寸/位置差异。"
+        }
+      ],
+      "unknowns": [
+        "登录后资料、长名字、大字与更多入口未对照。",
+        "会员、医疗和任务状态属健康业务专属内容。",
+        "完整菜单每一行和滚动/回弹/导航动画未由此静帧验证。"
+      ]
+    },
+    "settings-day": {
+      "reviewStatus": "reviewed-with-differences",
+      "reviewReferenceSha256": "f6bc65c3fb97598581853ed2483cdf379d663b3a37d575d246026060167eec11",
+      "matchedDetails": [
+        "#FF612E按钮精确连通框A/D均[78,2132,1002,2260]；开关橙框A/D均[884,1200,1008,1269]。框和颜色相同不等于圆角曲线全同。",
+        "地区标题墨迹A/D均[73,548,158,589]；云服务均[73,806,378,848]；双接授权均[73,1004,510,1046]；通知均[74,1192,288,1234]。当前默认字体下16sp加重行标题角色和位置对应。",
+        "白页、约26dp内容inset、分隔、可变行结构与固定底部动作均已在当前帧核对。",
+        "该原版帧开关是ON：橙轨、右侧白thumb和开启说明一致；自定义源控件checked=false不能推翻像素和语义说明。"
+      ],
+      "knownDifferences": [
+        {
+          "component": "TopBar.back",
+          "classification": "D versus A",
+          "observation": "返回箭头A主色#333333、墨迹[78,190,141,235]；D主色#000000、[75,188,147,237]，D更大更黑。"
+        },
+        {
+          "component": "TopBar.title",
+          "classification": "D versus A",
+          "observation": "“设置”墨迹A[75,332,242,412]→D[76,332,243,412]，D右移1px；MIUI展开栏折叠未在D还原。"
+        },
+        {
+          "component": "ChevronRow",
+          "classification": "D versus A",
+          "observation": "地区右值有轻微横向重影；D自绘chevron较A窄细，不能由标题位置相同推断箭头/触区相同。"
+        },
+        {
+          "component": "PrimaryButton",
+          "classification": "D versus A",
+          "observation": "退出标签白墨迹A[448,2176,631,2221]→D[450,2176,630,2221]，宽度/水平位置略有差。D普通圆角与A adaptive/smooth drawable不保证数学曲线等同。"
+        },
+        {
+          "component": "SwitchRow",
+          "classification": "D versus A",
+          "observation": "D为本地Canvas开关；ON填色范围对应，但按压反馈、thumb阴影、过渡动画和内部可访问性实现未逐项对照。"
+        }
+      ],
+      "unknowns": [
+        "系统通知权限、跨重启持久化与失败恢复未知。",
+        "登录态真实退出、确认/失败分支未知；访客点击无变化不能推广。",
+        "MIUI标题折叠时长、曲线和中断未知。",
+        "截图仅覆盖默认ON；ON/OFF操作证据由独立行为记录确认。"
+      ]
+    }
+  }
+}

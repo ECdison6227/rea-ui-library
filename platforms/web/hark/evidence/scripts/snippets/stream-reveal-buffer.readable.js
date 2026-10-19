@@ -1,0 +1,264 @@
+// Readability-only formatting of exact raw evidence. Source offsets/SHA: stream-reveal-buffer.meta.json
+const h2 = {
+    charsPerSecond: 90,
+    revealCharsPerSecond: 30,
+    drainMultiplier: 3,
+    catchUpMultiplier: 4,
+  },
+  f2 = e.createContext(h2);
+function m2(e) {
+  const t = n.c(9),
+    { value: r, children: i } = e,
+    {
+      charsPerSecond: o,
+      revealCharsPerSecond: a,
+      drainMultiplier: l,
+      catchUpMultiplier: c,
+      instant: u,
+    } = r,
+    d = void 0 === o ? h2.charsPerSecond : o,
+    p = void 0 === a ? h2.revealCharsPerSecond : a,
+    h = void 0 === l ? h2.drainMultiplier : l,
+    f = void 0 === c ? h2.catchUpMultiplier : c;
+  let m;
+  t[0] !== f || t[1] !== d || t[2] !== h || t[3] !== u || t[4] !== p
+    ? ((m = {
+        charsPerSecond: d,
+        revealCharsPerSecond: p,
+        drainMultiplier: h,
+        catchUpMultiplier: f,
+        instant: u,
+      }),
+      (t[0] = f),
+      (t[1] = d),
+      (t[2] = h),
+      (t[3] = u),
+      (t[4] = p),
+      (t[5] = m))
+    : (m = t[5]);
+  const g = m;
+  let v;
+  return (
+    t[6] !== i || t[7] !== g
+      ? ((v = s.jsx(f2.Provider, { value: g, children: i })),
+        (t[6] = i),
+        (t[7] = g),
+        (t[8] = v))
+      : (v = t[8]),
+    v
+  );
+}
+const g2 = new Set();
+let v2 = null;
+function y2(e) {
+  return (
+    g2.add(e),
+    v2 ||
+      ((v2 = () => {
+        for (const e of g2) e();
+      }),
+      document.addEventListener("visibilitychange", v2)),
+    () => {
+      (g2.delete(e),
+        0 === g2.size &&
+          v2 &&
+          (document.removeEventListener("visibilitychange", v2), (v2 = null)));
+    }
+  );
+}
+const b2 = () => document.hidden,
+  _2 = () => !1;
+function x2() {
+  return e.useSyncExternalStore(y2, b2, _2);
+}
+function w2(t, r) {
+  const s = n.c(45),
+    i = "stream" === r.mode && r.active,
+    o = "stream" === r.mode && (r.live ?? !1),
+    a = "stream" === r.mode && (r.snapOnRewrite ?? !1),
+    l = "stream" === r.mode && (r.snap ?? !1),
+    c = "stream" === r.mode ? r.catchUpBeyond : void 0,
+    u = "reveal" === r.mode,
+    d = "reveal" === r.mode && (r.active ?? !0),
+    p = u ? d : i,
+    [h, f] = e.useState(u ? 0 : t.length),
+    [m, g] = e.useState(u && d),
+    [v, y] = e.useState(p),
+    [b, _] = e.useState(t),
+    x = x2(),
+    [w, k] = e.useState(x),
+    E = e.useContext(f2);
+  let T;
+  s[0] !== c || s[1] !== E || s[2] !== o || s[3] !== h || s[4] !== t
+    ? ((T = {
+        targetText: t,
+        isLiveStreaming: o,
+        catchUpBeyond: c,
+        revealedLen: h,
+        config: E,
+      }),
+      (s[0] = c),
+      (s[1] = E),
+      (s[2] = o),
+      (s[3] = h),
+      (s[4] = t),
+      (s[5] = T))
+    : (T = s[5]);
+  const S = e.useRef(T);
+  let I, A;
+  (p !== v && (y(p), p && !v && g(!0)),
+    t !== b &&
+      (_(t),
+      t.startsWith(b) || f(a ? t.length : 0),
+      !m && o && t.length > b.length && (g(!0), f(b.length))),
+    x !== w && (k(x), x || !m || (u && d) || f(t.length)),
+    l && m && h < t.length && f(t.length),
+    s[6] !== c || s[7] !== E || s[8] !== o || s[9] !== h || s[10] !== t
+      ? ((I = () => {
+          S.current = {
+            targetText: t,
+            isLiveStreaming: o,
+            catchUpBeyond: c,
+            revealedLen: h,
+            config: E,
+          };
+        }),
+        (s[6] = c),
+        (s[7] = E),
+        (s[8] = o),
+        (s[9] = h),
+        (s[10] = t),
+        (s[11] = I))
+      : (I = s[11]),
+    e.useEffect(I),
+    s[12] !== u || s[13] !== t
+      ? ((A = (function (e, t) {
+          return e ? t.length : 0;
+        })(u, t)),
+        (s[12] = u),
+        (s[13] = t),
+        (s[14] = A))
+      : (A = s[14]));
+  const C = A;
+  let N, R, O, L;
+  if (
+    (s[15] !== E.instant ||
+    s[16] !== x ||
+    s[17] !== i ||
+    s[18] !== u ||
+    s[19] !== m
+      ? ((N = () => {
+          if (x || E.instant || (!i && !m)) return;
+          let e = 0,
+            t = 0,
+            n = 0;
+          const r = (s) => {
+            if (0 === t) return ((t = s), void (e = requestAnimationFrame(r)));
+            const i = Math.min(s - t, 100);
+            t = s;
+            const o = S.current,
+              a = o.catchUpBeyond,
+              l = (function (e, { revealOnMount: t, live: n, catchingUp: r }) {
+                return t
+                  ? e.revealCharsPerSecond
+                  : n
+                    ? e.charsPerSecond * (r ? e.catchUpMultiplier : 1)
+                    : e.charsPerSecond * e.drainMultiplier;
+              })(o.config, {
+                revealOnMount: u,
+                live: o.isLiveStreaming,
+                catchingUp: null != a && o.revealedLen < a,
+              });
+            n += (l * i) / 1e3;
+            const c = Math.floor(n);
+            if (c <= 0) return void (e = requestAnimationFrame(r));
+            n -= c;
+            let d = !1;
+            (f((e) => {
+              const t = S.current.targetText.length;
+              return e >= t
+                ? (S.current.isLiveStreaming || (d = !0), e)
+                : Math.min(e + c, t);
+            }),
+              d || (e = requestAnimationFrame(r)));
+          };
+          return (
+            (e = requestAnimationFrame(r)),
+            () => cancelAnimationFrame(e)
+          );
+        }),
+        (s[15] = E.instant),
+        (s[16] = x),
+        (s[17] = i),
+        (s[18] = u),
+        (s[19] = m),
+        (s[20] = N))
+      : (N = s[20]),
+    s[21] !== E.instant ||
+    s[22] !== x ||
+    s[23] !== o ||
+    s[24] !== i ||
+    s[25] !== C ||
+    s[26] !== u ||
+    s[27] !== m
+      ? ((R = [i, o, m, u, x, E.instant, C]),
+        (s[21] = E.instant),
+        (s[22] = x),
+        (s[23] = o),
+        (s[24] = i),
+        (s[25] = C),
+        (s[26] = u),
+        (s[27] = m),
+        (s[28] = R))
+      : (R = s[28]),
+    e.useEffect(N, R),
+    E.instant)
+  ) {
+    let e;
+    return (
+      s[29] !== t
+        ? ((e = { text: t, isRevealing: !1 }), (s[29] = t), (s[30] = e))
+        : (e = s[30]),
+      e
+    );
+  }
+  if (!m) {
+    if (u) {
+      let e, n;
+      return (
+        s[31] !== h || s[32] !== t
+          ? ((e = t.slice(0, h)), (s[31] = h), (s[32] = t), (s[33] = e))
+          : (e = s[33]),
+        s[34] !== e
+          ? ((n = { text: e, isRevealing: !0 }), (s[34] = e), (s[35] = n))
+          : (n = s[35]),
+        n
+      );
+    }
+    let e;
+    return (
+      s[36] !== t
+        ? ((e = { text: t, isRevealing: !1 }), (s[36] = t), (s[37] = e))
+        : (e = s[37]),
+      e
+    );
+  }
+  if ((l || !o) && h >= t.length) {
+    let e;
+    return (
+      s[38] !== t
+        ? ((e = { text: t, isRevealing: !1 }), (s[38] = t), (s[39] = e))
+        : (e = s[39]),
+      e
+    );
+  }
+  return (
+    s[40] !== h || s[41] !== t
+      ? ((O = t.slice(0, h)), (s[40] = h), (s[41] = t), (s[42] = O))
+      : (O = s[42]),
+    s[43] !== O
+      ? ((L = { text: O, isRevealing: !0 }), (s[43] = O), (s[44] = L))
+      : (L = s[44]),
+    L
+  );
+}

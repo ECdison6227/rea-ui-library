@@ -1,0 +1,75 @@
+{
+  "artifacts": [],
+  "captures": [],
+  "environments": [],
+  "providers": [],
+  "records": [
+    {
+      "analysis_profile": null,
+      "authority": "external-service",
+      "confidence": "observed",
+      "environment": {
+        "architecture": "unknown",
+        "id": "Chrome/155.0.8059.41@537.36 (@96e02f81f8f3430db10a322d20b2b13e8a3288e9)",
+        "isolation": "none",
+        "platform": "unknown"
+      },
+      "evidence_id": "ev_be70f606cc60ca800cf007399c0d5305fc897974de7af445c217e4a64ebfa62c",
+      "evidence_links": [],
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Only page targets whose current URL matches an explicitly requested exact origin are listed.",
+        "CDP discovery omitted attachment state for one or more targets; attached is reported as unknown.",
+        "Browser host platform and architecture were not observed."
+      ],
+      "locations": [],
+      "normalized_result": {
+        "browser": {
+          "js_version": "15.5.35.20",
+          "product": "Chrome/155.0.8059.41",
+          "protocol_version": "1.3",
+          "revision": "537.36 (@96e02f81f8f3430db10a322d20b2b13e8a3288e9)",
+          "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+        },
+        "excluded": {
+          "disallowed_origin": 0,
+          "non_page": 5,
+          "unsupported_url": 0
+        },
+        "limitations": [
+          "Only page targets whose current URL matches an explicitly requested exact origin are listed.",
+          "CDP discovery omitted attachment state for one or more targets; attached is reported as unknown."
+        ],
+        "targets": [
+          {
+            "attached": null,
+            "origin": "https://hark.com",
+            "target_id": "878F6A712A2DDB7BD8A44391AEC97035",
+            "title": "Hark",
+            "type": "page",
+            "url": "https://hark.com/"
+          }
+        ]
+      },
+      "operation": "list_browser_targets",
+      "parameters": {
+        "allowed_origins": [
+          "https://hark.com"
+        ],
+        "cdp_endpoint": "http://127.0.0.1:9333"
+      },
+      "predicate_type": "rea.browser-target-list",
+      "provider": {
+        "id": "rea-cdp-browser",
+        "name": "REA Chrome DevTools Protocol observation provider",
+        "version": "2"
+      },
+      "raw_result": null,
+      "relationship_coverage": null,
+      "subject": null
+    }
+  ],
+  "scenarios": [],
+  "unknowns": [],
+  "redaction_note": "A capture raced with user login and selected accounts.google.com. The out-of-scope capture was removed entirely; no login evidence is used."
+}

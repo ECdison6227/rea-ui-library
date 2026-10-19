@@ -1,0 +1,175 @@
+
+DevTools listening on ws://127.0.0.1:9333/devtools/browser/1f9c53b7-e8ad-4d8d-b7cb-f63989e413f7
+Trying to load the allocator multiple times. This is *not* supported.
+[80517:3227061:1015/004951.560283:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[80555:3227112:1015/004952.479693:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/004952.488128:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/004953.078776:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/004953.110139:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/004954.488404:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/004954.489546:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/004954.495182:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/004954.504041:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80517:3227078:1015/004957.178167:ERROR:base/process/process_mac.cc:90] task_policy_set TASK_SUPPRESSION_POLICY: (os/kern) invalid argument (4)
+2026-10-15 00:49:59.863 Google Chrome[80517:3226914] error messaging the mach port for IMKCFRunLoopWakeUpReliable
+Created TensorFlow Lite XNNPACK delegate for CPU.
+2026-10-15 00:50:03.793 Google Chrome[80517:3226914] TSM AdjustCapsLockLEDForKeyTransitionHandling - _ISSetPhysicalKeyboardCapsLockLED Inhibit
+[80962:3228935:1015/005005.442605:VERBOSE1:chrome/updater/updater.cc:375] Version: 157.0.8089.0, opt, ARM_64, command line: /Users/cjr/Library/Application Support/Google/GoogleUpdater/157.0.8089.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake-all --enable-logging --vmodule=*/components/update_client/*=2,*/chrome/enterprise_companion/*=2,*/chrome/updater/*=2
+[80962:3228935:1015/005005.445325:VERBOSE1:chrome/updater/updater.cc:378] OS version: 26.5.0, arch: arm64, System uptime (seconds): 179198, parent pid: 80517
+[80962:3228935:1015/005005.452362:VERBOSE1:chrome/updater/updater.cc:383] Available disk space in install directory (/Users/cjr/Library/Application Support/Google/GoogleUpdater): 93540491264B (87.116GiB) / 245107195904B (228.274GiB)
+[80962:3228935:1015/005005.453775:VERBOSE1:chrome/updater/updater.cc:387] Available disk space in temporary directory (/var/folders/fb/xr09ps7d14xcxh9zpv3yhxxm0000gp/T/): 93540491264B (87.116GiB) / 245107195904B (228.274GiB)
+[80962:3228935:1015/005005.454001:VERBOSE2:chrome/updater/event_history.cc:266] Emitted a UPDATER_PROCESS START event to the history log
+[80964:3228941:1015/005005.478466:VERBOSE1:chrome/updater/updater.cc:375] Version: 157.0.8089.0, opt, ARM_64, command line: /Users/cjr/Library/Application Support/Google/GoogleUpdater/157.0.8089.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --crash-handler --database=/Users/cjr/Library/Application Support/Google/GoogleUpdater/157.0.8089.0/Crashpad --url=https://clients2.google.com/cr/report --annotation=prod=Update4 --annotation=ver=157.0.8089.0 --handshake-fd=6 --enable-logging --vmodule=*/components/update_client/*=2,*/chrome/enterprise_companion/*=2,*/chrome/updater/*=2
+[80964:3228941:1015/005005.479090:VERBOSE1:chrome/updater/updater.cc:378] OS version: 26.5.0, arch: arm64, System uptime (seconds): 179198, parent pid: 1
+[80964:3228941:1015/005005.481750:VERBOSE1:chrome/updater/updater.cc:383] Available disk space in install directory (/Users/cjr/Library/Application Support/Google/GoogleUpdater): 93540487168B (87.116GiB) / 245107195904B (228.274GiB)
+[80964:3228941:1015/005005.481868:VERBOSE1:chrome/updater/updater.cc:387] Available disk space in temporary directory (/var/folders/fb/xr09ps7d14xcxh9zpv3yhxxm0000gp/T/): 93540487168B (87.116GiB) / 245107195904B (228.274GiB)
+[80964:3228941:1015/005005.481982:VERBOSE2:chrome/updater/event_history.cc:266] Emitted a UPDATER_PROCESS START event to the history log
+[80962:3228935:1015/005005.484401:VERBOSE1:chrome/updater/crash_reporter.cc:123] Crash handler launched and ready.
+[80962:3228935:1015/005005.486234:VERBOSE1:chrome/updater/crash_client.cc:109] Found 0 completed crash reports
+[80962:3228935:1015/005005.486340:VERBOSE1:chrome/updater/crash_client.cc:132] Found 0 pending crash reports
+[80962:3228935:1015/005005.486430:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:145] open /Users/cjr/Library/Application Support/Google/RLZ/Crashpad/settings.dat: No such file or directory (2)
+[80962:3228935:1015/005005.486688:VERBOSE1:chrome/updater/updater.cc:107] Crash reporting initialized.
+[80962:3228949:1015/005005.487134:VERBOSE1:chrome/updater/app/app_wakeall.cc:58] Launching `/Users/cjr/Library/Application Support/Google/GoogleUpdater/157.0.8089.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake`
+[80965:3228955:1015/005005.504629:VERBOSE1:chrome/updater/updater.cc:375] Version: 157.0.8089.0, opt, ARM_64, command line: /Users/cjr/Library/Application Support/Google/GoogleUpdater/157.0.8089.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake --enable-logging --vmodule=*/components/update_client/*=2,*/chrome/enterprise_companion/*=2,*/chrome/updater/*=2
+[80965:3228955:1015/005005.505527:VERBOSE1:chrome/updater/updater.cc:378] OS version: 26.5.0, arch: arm64, System uptime (seconds): 179198, parent pid: 80962
+[80965:3228955:1015/005005.510050:VERBOSE1:chrome/updater/updater.cc:383] Available disk space in install directory (/Users/cjr/Library/Application Support/Google/GoogleUpdater): 93540483072B (87.116GiB) / 245107195904B (228.274GiB)
+[80965:3228955:1015/005005.510105:VERBOSE1:chrome/updater/updater.cc:387] Available disk space in temporary directory (/var/folders/fb/xr09ps7d14xcxh9zpv3yhxxm0000gp/T/): 93540483072B (87.116GiB) / 245107195904B (228.274GiB)
+[80965:3228955:1015/005005.510189:VERBOSE2:chrome/updater/event_history.cc:266] Emitted a UPDATER_PROCESS START event to the history log
+[80967:3228960:1015/005005.524091:VERBOSE1:chrome/updater/updater.cc:375] Version: 157.0.8089.0, opt, ARM_64, command line: /Users/cjr/Library/Application Support/Google/GoogleUpdater/157.0.8089.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --crash-handler --database=/Users/cjr/Library/Application Support/Google/GoogleUpdater/157.0.8089.0/Crashpad --url=https://clients2.google.com/cr/report --annotation=prod=Update4 --annotation=ver=157.0.8089.0 --handshake-fd=6 --enable-logging --vmodule=*/components/update_client/*=2,*/chrome/enterprise_companion/*=2,*/chrome/updater/*=2
+[80967:3228960:1015/005005.525799:VERBOSE1:chrome/updater/updater.cc:378] OS version: 26.5.0, arch: arm64, System uptime (seconds): 179198, parent pid: 1
+[80967:3228960:1015/005005.528358:VERBOSE1:chrome/updater/updater.cc:383] Available disk space in install directory (/Users/cjr/Library/Application Support/Google/GoogleUpdater): 93539266560B (87.115GiB) / 245107195904B (228.274GiB)
+[80967:3228960:1015/005005.528391:VERBOSE1:chrome/updater/updater.cc:387] Available disk space in temporary directory (/var/folders/fb/xr09ps7d14xcxh9zpv3yhxxm0000gp/T/): 93539266560B (87.115GiB) / 245107195904B (228.274GiB)
+[80967:3228960:1015/005005.528460:VERBOSE2:chrome/updater/event_history.cc:266] Emitted a UPDATER_PROCESS START event to the history log
+[80965:3228955:1015/005005.528984:VERBOSE1:chrome/updater/crash_reporter.cc:123] Crash handler launched and ready.
+[80965:3228955:1015/005005.529627:VERBOSE1:chrome/updater/crash_client.cc:109] Found 0 completed crash reports
+[80965:3228955:1015/005005.529716:VERBOSE1:chrome/updater/crash_client.cc:132] Found 0 pending crash reports
+[80965:3228955:1015/005005.529790:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:145] open /Users/cjr/Library/Application Support/Google/RLZ/Crashpad/settings.dat: No such file or directory (2)
+[80965:3228955:1015/005005.530018:VERBOSE1:chrome/updater/updater.cc:107] Crash reporting initialized.
+[80965:3228955:1015/005005.530219:VERBOSE1:chrome/updater/ipc/update_service_internal_proxy_mojo.cc:61] Run
+[80965:3228955:1015/005021.302340:VERBOSE1:chrome/updater/app/app.cc:52] Shutdown: 0
+[80965:3228955:1015/005021.307235:VERBOSE2:chrome/updater/event_history.cc:266] Emitted a UPDATER_PROCESS END event to the history log
+[80965:3228955:1015/005021.307404:VERBOSE1:chrome/updater/updater.cc:420] UpdaterMain (--wake) returned 0.
+[80962:3228949:1015/005021.342708:VERBOSE1:chrome/updater/app/app_wakeall.cc:68] `/Users/cjr/Library/Application Support/Google/GoogleUpdater/157.0.8089.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake` exited 0
+[80962:3228949:1015/005021.343408:VERBOSE1:chrome/updater/app/app_wakeall.cc:58] Launching `/Users/cjr/Library/Application Support/Google/GoogleUpdater/152.0.7933.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake`
+[80962:3228949:1015/005021.343600:VERBOSE1:chrome/updater/app/app_wakeall.cc:64] `/Users/cjr/Library/Application Support/Google/GoogleUpdater/152.0.7933.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake` process invalid: Operation timed out (60)
+[80962:3228935:1015/005021.343733:VERBOSE1:chrome/updater/app/app.cc:52] Shutdown: 0
+[80962:3228935:1015/005021.344120:VERBOSE2:chrome/updater/event_history.cc:266] Emitted a UPDATER_PROCESS END event to the history log
+[80962:3228935:1015/005021.344137:VERBOSE1:chrome/updater/updater.cc:420] UpdaterMain (--wake-all) returned 0.
+[80517:3227061:1015/005021.943066:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[80967:3228960:1015/005031.355254:VERBOSE2:chrome/updater/event_history.cc:266] Emitted a UPDATER_PROCESS END event to the history log
+[80967:3228960:1015/005031.355999:VERBOSE1:chrome/updater/updater.cc:420] UpdaterMain (--crash-handler) returned 0.
+[80964:3228941:1015/005031.358776:VERBOSE2:chrome/updater/event_history.cc:266] Emitted a UPDATER_PROCESS END event to the history log
+[80964:3228941:1015/005031.359047:VERBOSE1:chrome/updater/updater.cc:420] UpdaterMain (--crash-handler) returned 0.
+[80517:3227061:1015/005114.714700:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+Trying to load the allocator multiple times. This is *not* supported.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791996767.643321 3235475 environment.cc:526] Selected adapter: Apple M1, arch=metal-3, vendor=apple, backend=Metal, adapterType=Integrated GPU
+I0000 00:00:1791996767.665480 3235503 environment.cc:526] Selected adapter: Apple M1, arch=metal-3, vendor=apple, backend=Metal, adapterType=Integrated GPU
+[80517:3227061:1015/005303.981255:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[80517:3227061:1015/005637.849190:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[80517:3227061:1015/010246.629016:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[80555:3227112:1015/011130.794513:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/011130.799107:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/011130.802406:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/011130.804316:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/011130.804485:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80517:3227061:1015/011130.804950:ERROR:google_apis/gcm/engine/connection_factory_impl.cc:474] ConnectionHandler failed with net error: -2
+[80555:3227112:1015/011130.805008:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/011130.805115:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/011135.850193:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/011135.854585:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/011135.855593:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/011135.855979:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/011135.859566:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/011135.860432:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/011135.860477:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/011145.905062:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80517:3227061:1015/011215.905952:ERROR:google_apis/gcm/engine/connection_factory_impl.cc:427] Failed to connect to MCS endpoint with error -7
+[80555:3227112:1015/014926.886490:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/014936.900839:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/015817.016203:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/015822.099181:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/015842.125829:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/015842.127715:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/021449.172108:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/021449.174219:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/022303.870396:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/022303.871736:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/022704.306550:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/022704.612985:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/023730.698437:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/023730.700465:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/034807.020586:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/034812.023684:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/041023.274904:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/041023.276380:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/051056.734294:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/051056.736374:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/051607.494362:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/051607.495567:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/051607.495706:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/051607.497392:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[48874:3633437:1015/055105.550768:VERBOSE1:chrome/updater/updater.cc:375] Version: 157.0.8089.0, opt, ARM_64, command line: /Users/cjr/Library/Application Support/Google/GoogleUpdater/157.0.8089.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake-all --enable-logging --vmodule=*/components/update_client/*=2,*/chrome/enterprise_companion/*=2,*/chrome/updater/*=2
+[48874:3633437:1015/055105.551869:VERBOSE1:chrome/updater/updater.cc:378] OS version: 26.5.0, arch: arm64, System uptime (seconds): 197259, parent pid: 80517
+[48874:3633437:1015/055105.555081:VERBOSE1:chrome/updater/updater.cc:383] Available disk space in install directory (/Users/cjr/Library/Application Support/Google/GoogleUpdater): 95727185920B (89.153GiB) / 245107195904B (228.274GiB)
+[48874:3633437:1015/055105.555130:VERBOSE1:chrome/updater/updater.cc:387] Available disk space in temporary directory (/var/folders/fb/xr09ps7d14xcxh9zpv3yhxxm0000gp/T/): 95727185920B (89.153GiB) / 245107195904B (228.274GiB)
+[48874:3633437:1015/055105.555227:VERBOSE2:chrome/updater/event_history.cc:266] Emitted a UPDATER_PROCESS START event to the history log
+[48876:3633442:1015/055105.569023:VERBOSE1:chrome/updater/updater.cc:375] Version: 157.0.8089.0, opt, ARM_64, command line: /Users/cjr/Library/Application Support/Google/GoogleUpdater/157.0.8089.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --crash-handler --database=/Users/cjr/Library/Application Support/Google/GoogleUpdater/157.0.8089.0/Crashpad --url=https://clients2.google.com/cr/report --annotation=prod=Update4 --annotation=ver=157.0.8089.0 --handshake-fd=6 --enable-logging --vmodule=*/components/update_client/*=2,*/chrome/enterprise_companion/*=2,*/chrome/updater/*=2
+[48876:3633442:1015/055105.569764:VERBOSE1:chrome/updater/updater.cc:378] OS version: 26.5.0, arch: arm64, System uptime (seconds): 197259, parent pid: 1
+[48876:3633442:1015/055105.572374:VERBOSE1:chrome/updater/updater.cc:383] Available disk space in install directory (/Users/cjr/Library/Application Support/Google/GoogleUpdater): 95727116288B (89.153GiB) / 245107195904B (228.274GiB)
+[48876:3633442:1015/055105.572412:VERBOSE1:chrome/updater/updater.cc:387] Available disk space in temporary directory (/var/folders/fb/xr09ps7d14xcxh9zpv3yhxxm0000gp/T/): 95727116288B (89.153GiB) / 245107195904B (228.274GiB)
+[48876:3633442:1015/055105.572502:VERBOSE2:chrome/updater/event_history.cc:266] Emitted a UPDATER_PROCESS START event to the history log
+[48874:3633437:1015/055105.573093:VERBOSE1:chrome/updater/crash_reporter.cc:123] Crash handler launched and ready.
+[48874:3633437:1015/055105.574098:VERBOSE1:chrome/updater/crash_client.cc:109] Found 0 completed crash reports
+[48874:3633437:1015/055105.574201:VERBOSE1:chrome/updater/crash_client.cc:132] Found 0 pending crash reports
+[48874:3633437:1015/055105.574300:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:145] open /Users/cjr/Library/Application Support/Google/RLZ/Crashpad/settings.dat: No such file or directory (2)
+[48874:3633437:1015/055105.574693:VERBOSE1:chrome/updater/updater.cc:107] Crash reporting initialized.
+[48874:3633451:1015/055105.575096:VERBOSE1:chrome/updater/app/app_wakeall.cc:58] Launching `/Users/cjr/Library/Application Support/Google/GoogleUpdater/157.0.8089.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake`
+[48877:3633457:1015/055105.587226:VERBOSE1:chrome/updater/updater.cc:375] Version: 157.0.8089.0, opt, ARM_64, command line: /Users/cjr/Library/Application Support/Google/GoogleUpdater/157.0.8089.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake --enable-logging --vmodule=*/components/update_client/*=2,*/chrome/enterprise_companion/*=2,*/chrome/updater/*=2
+[48877:3633457:1015/055105.587860:VERBOSE1:chrome/updater/updater.cc:378] OS version: 26.5.0, arch: arm64, System uptime (seconds): 197259, parent pid: 48874
+[48877:3633457:1015/055105.590039:VERBOSE1:chrome/updater/updater.cc:383] Available disk space in install directory (/Users/cjr/Library/Application Support/Google/GoogleUpdater): 95727112192B (89.153GiB) / 245107195904B (228.274GiB)
+[48877:3633457:1015/055105.590068:VERBOSE1:chrome/updater/updater.cc:387] Available disk space in temporary directory (/var/folders/fb/xr09ps7d14xcxh9zpv3yhxxm0000gp/T/): 95727112192B (89.153GiB) / 245107195904B (228.274GiB)
+[48877:3633457:1015/055105.590133:VERBOSE2:chrome/updater/event_history.cc:266] Emitted a UPDATER_PROCESS START event to the history log
+[48879:3633461:1015/055105.599794:VERBOSE1:chrome/updater/updater.cc:375] Version: 157.0.8089.0, opt, ARM_64, command line: /Users/cjr/Library/Application Support/Google/GoogleUpdater/157.0.8089.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --crash-handler --database=/Users/cjr/Library/Application Support/Google/GoogleUpdater/157.0.8089.0/Crashpad --url=https://clients2.google.com/cr/report --annotation=prod=Update4 --annotation=ver=157.0.8089.0 --handshake-fd=6 --enable-logging --vmodule=*/components/update_client/*=2,*/chrome/enterprise_companion/*=2,*/chrome/updater/*=2
+[48879:3633461:1015/055105.600293:VERBOSE1:chrome/updater/updater.cc:378] OS version: 26.5.0, arch: arm64, System uptime (seconds): 197259, parent pid: 1
+[48879:3633461:1015/055105.602151:VERBOSE1:chrome/updater/updater.cc:383] Available disk space in install directory (/Users/cjr/Library/Application Support/Google/GoogleUpdater): 95727112192B (89.153GiB) / 245107195904B (228.274GiB)
+[48879:3633461:1015/055105.602180:VERBOSE1:chrome/updater/updater.cc:387] Available disk space in temporary directory (/var/folders/fb/xr09ps7d14xcxh9zpv3yhxxm0000gp/T/): 95727112192B (89.153GiB) / 245107195904B (228.274GiB)
+[48879:3633461:1015/055105.602245:VERBOSE2:chrome/updater/event_history.cc:266] Emitted a UPDATER_PROCESS START event to the history log
+[48877:3633457:1015/055105.602664:VERBOSE1:chrome/updater/crash_reporter.cc:123] Crash handler launched and ready.
+[48877:3633457:1015/055105.603321:VERBOSE1:chrome/updater/crash_client.cc:109] Found 0 completed crash reports
+[48877:3633457:1015/055105.603400:VERBOSE1:chrome/updater/crash_client.cc:132] Found 0 pending crash reports
+[48877:3633457:1015/055105.603473:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:145] open /Users/cjr/Library/Application Support/Google/RLZ/Crashpad/settings.dat: No such file or directory (2)
+[48877:3633457:1015/055105.603689:VERBOSE1:chrome/updater/updater.cc:107] Crash reporting initialized.
+[48877:3633457:1015/055105.603874:VERBOSE1:chrome/updater/ipc/update_service_internal_proxy_mojo.cc:61] Run
+[48877:3633457:1015/055122.988440:VERBOSE1:chrome/updater/app/app.cc:52] Shutdown: 0
+[48877:3633457:1015/055122.989332:VERBOSE2:chrome/updater/event_history.cc:266] Emitted a UPDATER_PROCESS END event to the history log
+[48877:3633457:1015/055122.989378:VERBOSE1:chrome/updater/updater.cc:420] UpdaterMain (--wake) returned 0.
+[48874:3633451:1015/055123.148596:VERBOSE1:chrome/updater/app/app_wakeall.cc:68] `/Users/cjr/Library/Application Support/Google/GoogleUpdater/157.0.8089.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake` exited 0
+[48874:3633451:1015/055123.148821:VERBOSE1:chrome/updater/app/app_wakeall.cc:58] Launching `/Users/cjr/Library/Application Support/Google/GoogleUpdater/152.0.7933.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake`
+[48874:3633451:1015/055123.149301:VERBOSE1:chrome/updater/app/app_wakeall.cc:64] `/Users/cjr/Library/Application Support/Google/GoogleUpdater/152.0.7933.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake` process invalid: Operation timed out (60)
+[48874:3633437:1015/055123.149515:VERBOSE1:chrome/updater/app/app.cc:52] Shutdown: 0
+[48874:3633437:1015/055123.150193:VERBOSE2:chrome/updater/event_history.cc:266] Emitted a UPDATER_PROCESS END event to the history log
+[48874:3633437:1015/055123.150229:VERBOSE1:chrome/updater/updater.cc:420] UpdaterMain (--wake-all) returned 0.
+[48879:3633461:1015/055133.249511:VERBOSE2:chrome/updater/event_history.cc:266] Emitted a UPDATER_PROCESS END event to the history log
+[48879:3633461:1015/055133.249774:VERBOSE1:chrome/updater/updater.cc:420] UpdaterMain (--crash-handler) returned 0.
+[48876:3633442:1015/055133.251460:VERBOSE2:chrome/updater/event_history.cc:266] Emitted a UPDATER_PROCESS END event to the history log
+[48876:3633442:1015/055133.251522:VERBOSE1:chrome/updater/updater.cc:420] UpdaterMain (--crash-handler) returned 0.
+[80555:3227112:1015/063948.334670:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/063958.414148:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/064008.455913:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/071019.757162:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/071019.760069:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/085730.105827:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/085730.417469:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/091100.860500:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/091100.862935:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/092656.277662:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/092656.280388:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80517:3227061:1015/100505.636673:ERROR:google_apis/gcm/engine/connection_factory_impl.cc:474] ConnectionHandler failed with net error: -2
+[80517:3227061:1015/100558.934681:ERROR:google_apis/gcm/engine/connection_factory_impl.cc:474] ConnectionHandler failed with net error: -2
+[80555:3227112:1015/105449.326063:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/105449.354859:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80517:3227061:1015/105519.407697:ERROR:google_apis/gcm/engine/connection_factory_impl.cc:427] Failed to connect to MCS endpoint with error -7
+[80555:3227112:1015/105524.521967:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80555:3227112:1015/105531.363205:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -100
+[80517:3227061:1015/105531.375707:ERROR:google_apis/gcm/engine/connection_factory_impl.cc:427] Failed to connect to MCS endpoint with error -100

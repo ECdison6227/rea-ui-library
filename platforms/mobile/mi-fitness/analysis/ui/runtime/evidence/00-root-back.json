@@ -1,0 +1,46 @@
+{
+  "id": "root-back",
+  "source": "original-app-interaction-observation",
+  "evidence": {
+    "evidence_id": "ev_74403f9c4ff2c48523bb9a2be7e95fc0763355be30396236495bdd1146fd5ea5",
+    "subject": null,
+    "provider": {
+      "id": "adb",
+      "name": "Android Debug Bridge",
+      "version": "37.0.1-15733141"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "inspect_adb_window",
+    "parameters": {
+      "serial": "emulator-5580"
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "client": {
+        "binary_path": "adb",
+        "path_source": "path",
+        "version": "37.0.1-15733141",
+        "installed_path": "C:\\Users\\edsjrcheng\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5580",
+      "focused_window": "Window{e4a9b1a u0 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity}",
+      "focused_app": "ActivityRecord{401b3d3 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t7}",
+      "observed_lines": [
+        "Window{e4a9b1a u0 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity}",
+        "ActivityRecord{401b3d3 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t7}"
+      ]
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Focus values are the window manager's declarations at read time; no interaction occurred",
+      "Focus declarations were read from `dumpsys window displays`"
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  }
+}

@@ -2,7 +2,7 @@
 
 按**网页、电脑端、手机端**组织的REA产品风格研究与参考项目库。每份来源保留自己的设计语言、原始资料、Git版本、技术栈和运行方式。
 
-总仓库：[ECdison6227/rea-ui-library](https://github.com/ECdison6227/rea-ui-library)，当前为私有仓库；原有来源仓库保持不变。
+总仓库：[ECdison6227/rea-ui-library](https://github.com/ECdison6227/rea-ui-library)，当前为私有仓库，也是后续分析的唯一维护入口。已纳入资料直接存放在本库；无需旧仓库或子模块。旧历史随总库保留，迁移与删除结果见[迁移记录](docs/migrations/2026-10-19/imports.json)。
 
 ## 打开统一入口
 
@@ -17,7 +17,7 @@ npm run dev
 
 打开 **http://127.0.0.1:4318/**。支持平台筛选、关键词搜索、研究文档、最多三个来源比较，以及复制给Agent的迁移任务。端口冲突会明确报错，可用 `npm run dev -- --port 4320` 指定空闲端口。
 
-本地首次副本已带齐三个Git子模块及Kimi快照，直接运行 `npm run dev` 即可。已有克隆可用 `npm run sources:init` 补齐来源。该脚本为深层资源路径启用仓库局部的Git长路径支持，不修改全局Git配置或系统注册表。启动总入口不启动原应用、模拟器、来源后端或账号服务。
+普通 clone 就带齐全部研究。`npm run sources:init` 仅设置本仓库的Git长路径并校验本地文件，不访问旧仓库，不修改全局Git配置或系统注册表。启动总入口不启动原应用、模拟器、来源后端或账号服务。
 
 | 平台 | 当前来源 | 主要可复用内容 |
 | --- | --- | --- |
@@ -52,8 +52,12 @@ npm run verify
 npm run build
 ```
 
-`dist/`仅含统一目录、精选已审缩略图和技能审查说明，不复制来源的原始证据或私有项目。静态目录中的远端文档指向锁定Git版本；Kimi本地快照需要获取总库后阅读。本地服务器有文档查看功能；公开静态导出不提供该本机API。
+`dist/`仅含统一目录、精选已审缩略图和技能审查说明，不复制来源的原始证据或私有项目。静态目录的文档链接统一指向本总库内的研究目录；本地服务器有文档查看功能，静态导出不提供本机API。各研究的完整文件清单与SHA保存在catalog/manifests，历史出处单独保存。
 
 Hark原始截图/DOM含既有聊天，默认不开放原始证据查看器。需要在自己的电脑上查看时运行 `npm run dev:private`，仍仅监听127.0.0.1。不要把该模式直接绑定公网。
 
-[架构与更新](docs/architecture.md) · [来源盘点与入库依据](docs/inventory.md) · [验证](docs/validation.md) · [索引与版本锁](catalog/imports.lock.json)。私有总仓库提供统一入口；原始来源仓库保持独立，原skill仓库的改进仍以可审查补丁交付。
+## 后续新增UI分析
+
+直接把REA研究放进 `platforms/web/<id>/`、`platforms/desktop/<id>/` 或 `platforms/mobile/<id>/`，按[新增指南](docs/adding-studies.md)登记。以后不需要再创建单独分析仓库。
+
+[架构与更新](docs/architecture.md) · [来源盘点与入库依据](docs/inventory.md) · [验证](docs/validation.md) · [索引与版本锁](catalog/imports.lock.json)。原skill仓库继续独立，改进以可审查补丁交付。

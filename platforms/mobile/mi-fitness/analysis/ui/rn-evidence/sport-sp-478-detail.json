@@ -1,0 +1,72 @@
+{
+  "bundle": "sport",
+  "id": "sp-478",
+  "line": 486,
+  "aliases": {
+    "t": 3,
+    "o": 14,
+    "n": 18,
+    "l": "sp-144",
+    "u": "sp-234"
+  },
+  "elements": [
+    {
+      "type": "u.default",
+      "module": "sp-234",
+      "props": {
+        "style": {
+          "$code": "n.StyleSheet.flatten([c.button,{backgroundColor:h}])"
+        },
+        "onPress": {
+          "$code": "S"
+        }
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(n.Text,{style:n.StyleSheet.flatten([c.text,{color:C}])},s)"
+        }
+      ]
+    },
+    {
+      "type": "n.Text",
+      "module": 18,
+      "props": {
+        "style": {
+          "$code": "n.StyleSheet.flatten([c.text,{color:C}])"
+        }
+      },
+      "children": [
+        {
+          "$code": "s"
+        }
+      ]
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": [
+    {
+      "key": "borderRadius",
+      "value": 36
+    },
+    {
+      "key": "paddingHorizontal",
+      "value": 15
+    },
+    {
+      "key": "paddingVertical",
+      "value": 4
+    },
+    {
+      "key": "fontSize",
+      "value": 12
+    },
+    {
+      "key": "fontFamily",
+      "value": "MiSans"
+    },
+    {
+      "key": "paddingVertical",
+      "value": 3
+    }
+  ]
+}

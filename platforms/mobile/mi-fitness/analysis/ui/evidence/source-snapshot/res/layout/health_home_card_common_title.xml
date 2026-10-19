@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/homeCardTitle" android:tag="layout/health_home_card_common_title_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivHomeCardIcon" android:layout_width="26.0dp" android:layout_height="26.0dp" />
+        <LinearLayout android:orientation="vertical" android:id="@id/tvRecordDietButtonLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/health_weight_record_diet_button_color" android:layout_gravity="end|center" android:id="@id/tvRecordDiet" android:background="@drawable/health_weight_record_diet_button_bg_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_weight_record_diet_short" android:drawablePadding="3.0dp" android:paddingHorizontal="10.0dp" android:paddingVertical="7.0dp" app:drawableEndCompat="@drawable/health_weight_record_diet_arrow_right" style="@style/FontMedium.12sp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/snoreMonitorStatusLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@id/snoreMonitorStatusPaddingView" android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="21.0" />
+            <com.google.android.material.card.MaterialCardView android:theme="@style/TranslucentMaterialTheme" android:id="@id/snoreMonitorStatusCard" android:layout_width="0.0dp" android:layout_height="26.0dp" android:layout_weight="104.0" app:cardBackgroundColor="#148482ff" app:cardCornerRadius="8.0dp" app:cardElevation="0.0dp" app:strokeColor="#1f8482ff" app:strokeWidth="0.6dp">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="#6260de" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/snoreMonitorStatusTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/health_snore_monitoring_ongoing_tip1" android:maxLines="1" android:paddingHorizontal="10.0dp" android:paddingVertical="4.0dp" android:textFontWeight="500" app:autoSizeMaxTextSize="12.0sp" app:autoSizeMinTextSize="2.0sp" app:autoSizeTextType="uniform" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="17.0sp" android:textColor="@color/text_color" android:id="@id/tvHomeCardTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:textDirection="locale" style="@style/FontMedium" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/llValueContent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:gravity="start" android:id="@id/tvHomeCardValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="2.0dp" android:textDirection="locale" style="@style/FontMedium" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_color" android:id="@id/tvHomeCardEmptyDesc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableEnd="@drawable/health_home_card_arrow" android:textDirection="locale" style="@style/FontNormal" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/text_color_40" android:id="@id/tvHomeCardDesc" android:layout_width="match_parent" android:layout_height="wrap_content" android:textDirection="locale" style="@style/FontNormal" />
+</LinearLayout>

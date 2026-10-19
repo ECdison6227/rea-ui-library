@@ -20,9 +20,9 @@ export function validateDefinitions(data){
   if(!PLATFORMS[s.platform]||s.kind!=='research'||s.visibility!=='public')errors.push('Not an eligible public REA research source: '+s.id);
   if(!s.root?.startsWith('platforms/'+s.platform+'/'))errors.push('Platform/root mismatch: '+s.id);
   if(!s.name||!s.coverage||!s.readiness||!s.limits?.length||!s.artifacts?.length)errors.push('Missing scope/coverage/artifacts: '+s.id);
-  if(s.sourceUrl&&!/^https:\/\/github\.com\/ECdison6227\/[A-Za-z0-9._-]+$/.test(s.sourceUrl))errors.push('Unexpected source URL: '+s.id);
-  if(s.sourceUrl&&!/^[a-f0-9]{40}$/.test(s.revision||''))errors.push('Unpinned Git source: '+s.id);
-  if(!s.sourceUrl&&!/^[a-f0-9]{64}$/.test(s.snapshot?.sha256||''))errors.push('Unpinned local snapshot: '+s.id);
+  if(s.integrity?.manifest!=='catalog/manifests/'+s.id+'.json'||!Number.isInteger(s.integrity?.files)||s.integrity.files<1||!/^[a-f0-9]{64}$/.test(s.integrity?.treeSha256||''))errors.push('Missing/invalid content integrity: '+s.id);
+  if(!s.sourceVersion||!s.provenance||!Array.isArray(s.tags)||!Array.isArray(s.stack)||!Array.isArray(s.features)||!Array.isArray(s.palette)||!s.run)errors.push('Missing study profile: '+s.id);
+  if(s.revision&&!/^[a-f0-9]{40}$/.test(s.revision))errors.push('Invalid historical revision: '+s.id);
   try{const base=contained(ROOT,s.root);for(const a of s.artifacts){if(!a.label||!a.role)errors.push('Incomplete artifact: '+s.id);const f=contained(base,a.path);if(!fs.existsSync(f))errors.push('Missing artifact: '+s.id+'/'+a.path);}if(s.thumbnail){if(s.thumbnail.reviewed!==true||!fs.existsSync(contained(base,s.thumbnail.path)))errors.push('Unreviewed/missing thumbnail: '+s.id);}}catch(e){errors.push(s.id+': '+e.message);}
  }
  return errors;
@@ -33,9 +33,9 @@ export function getCatalog({privateMode=false,staticMode=false}={}){
   ...s,origin:'historical',aggregationDoesNotCreateRuntimeEvidence:true,
   thumbnail:s.thumbnail?{...s.thumbnail,url:'./assets/thumbs/'+s.id+path.extname(s.thumbnail.path)}:null,
   artifacts:s.artifacts.map(a=>({...a,available:!a.restricted||privateMode,
-   url:staticMode?(s.sourceUrl?s.sourceUrl+'/blob/'+s.revision+'/'+a.path.split('/').map(encodeURIComponent).join('/'):null):'/source/'+s.id+'/'+a.path.split('/').map(encodeURIComponent).join('/'),
+   url:staticMode?raw.repository.url+'/blob/'+raw.repository.ref+'/'+s.root+'/'+a.path.split('/').map(encodeURIComponent).join('/'):'/source/'+s.id+'/'+a.path.split('/').map(encodeURIComponent).join('/'),
    document:!staticMode&&/\.(md|json|css|ts|swift)$/i.test(a.path)})),
-  sourceRevisionUrl:s.sourceUrl?s.sourceUrl+'/tree/'+s.revision:null
+  sourceRevisionUrl:raw.repository.url+'/tree/'+raw.repository.ref+'/'+s.root
  }));
  return {schemaVersion:1,owner:raw.owner,goal:raw.goal,evidencePolicy:raw.evidencePolicy,apiEnabled:!staticMode,privateMode,
   platforms:Object.entries(PLATFORMS).map(([id,name])=>({id,name,count:sources.filter(s=>s.platform===id).length})),sources};

@@ -1,0 +1,4745 @@
+{
+  "environment": {
+    "widthPx": 1080,
+    "heightPx": 2400,
+    "densityDpi": 440,
+    "logicalWidthDp": 392.727,
+    "logicalHeightDp": 872.727,
+    "language": "zh-CN",
+    "platform": "Android15/API35 Google APIs with ARM64 translation"
+  },
+  "limitations": [
+    "Positive in-window rectangles only. Invalid/offscreen inverted accessibility bounds are excluded.",
+    "dp conversion uses observed density, not text metrics; font size/weight require resource/code evidence.",
+    "Global fontScale is a setting, not proof every component scales uniformly."
+  ],
+  "measurements": [
+    {
+      "state": "04-region",
+      "at": "2026-10-15T11:46:27.844Z",
+      "globalFontScale": 1,
+      "nodes": [
+        {
+          "text": "选择地区",
+          "resourceId": "com.mi.health:id/action_bar_title_expand",
+          "boundsPx": [
+            71,
+            301,
+            423,
+            430
+          ],
+          "extentDp": {
+            "width": 128,
+            "height": 46.909
+          },
+          "positionDp": {
+            "left": 25.818,
+            "top": 109.455
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "出于对您的个人数据安全的保护，将根据您选择的地区信息为您提供相关能力和数据同步服务，因此请谨慎选择当前所在地区",
+          "resourceId": "com.mi.health:id/action_bar_subtitle_expand",
+          "boundsPx": [
+            71,
+            430,
+            1009,
+            598
+          ],
+          "extentDp": {
+            "width": 341.091,
+            "height": 61.091
+          },
+          "positionDp": {
+            "left": 25.818,
+            "top": 156.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "中国大陆",
+          "resourceId": "com.mi.health:id/select_country_btn",
+          "boundsPx": [
+            63,
+            721,
+            1017,
+            849
+          ],
+          "extentDp": {
+            "width": 346.909,
+            "height": 46.545
+          },
+          "positionDp": {
+            "left": 22.909,
+            "top": 262.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "下一步",
+          "resourceId": "com.mi.health:id/btn_next",
+          "boundsPx": [
+            63,
+            2132,
+            1017,
+            2260
+          ],
+          "extentDp": {
+            "width": 346.909,
+            "height": 46.545
+          },
+          "positionDp": {
+            "left": 22.909,
+            "top": 775.273
+          },
+          "note": "Text extent is a line/view box, not font size."
+        }
+      ]
+    },
+    {
+      "state": "06-health",
+      "at": "2026-10-15T11:49:16.355Z",
+      "globalFontScale": 1,
+      "nodes": [
+        {
+          "text": "健康",
+          "resourceId": "com.mi.health:id/title",
+          "boundsPx": [
+            72,
+            151,
+            248,
+            280
+          ],
+          "extentDp": {
+            "width": 64,
+            "height": 46.909
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 54.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "添加新设备",
+          "resourceId": "com.mi.health:id/header_view_iv_add",
+          "boundsPx": [
+            926,
+            166,
+            1025,
+            265
+          ],
+          "extentDp": {
+            "width": 36,
+            "height": 36
+          },
+          "positionDp": {
+            "left": 336.727,
+            "top": 60.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "活力指标",
+          "resourceId": "com.mi.health:id/targetView",
+          "boundsPx": [
+            265,
+            335,
+            815,
+            610
+          ],
+          "extentDp": {
+            "width": 200,
+            "height": 100
+          },
+          "positionDp": {
+            "left": 96.364,
+            "top": 121.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "活力指标",
+          "resourceId": "com.mi.health:id/reflectView",
+          "boundsPx": [
+            251,
+            610,
+            829,
+            830
+          ],
+          "extentDp": {
+            "width": 210.182,
+            "height": 80
+          },
+          "positionDp": {
+            "left": 91.273,
+            "top": 221.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "约 0 片饼干",
+          "resourceId": "com.mi.health:id/shareBtnView",
+          "boundsPx": [
+            854,
+            555,
+            1080,
+            797
+          ],
+          "extentDp": {
+            "width": 82.182,
+            "height": 88
+          },
+          "positionDp": {
+            "left": 310.545,
+            "top": 201.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "x0",
+          "resourceId": "com.mi.health:id/thingNumView",
+          "boundsPx": [
+            942,
+            704,
+            992,
+            797
+          ],
+          "extentDp": {
+            "width": 18.182,
+            "height": 33.818
+          },
+          "positionDp": {
+            "left": 342.545,
+            "top": 256
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "卡路里",
+          "resourceId": "com.mi.health:id/unitStrView",
+          "boundsPx": [
+            78,
+            841,
+            323,
+            924
+          ],
+          "extentDp": {
+            "width": 89.091,
+            "height": 30.182
+          },
+          "positionDp": {
+            "left": 28.364,
+            "top": 305.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "0",
+          "resourceId": "com.mi.health:id/valueView",
+          "boundsPx": [
+            72,
+            930,
+            116,
+            1018
+          ],
+          "extentDp": {
+            "width": 16,
+            "height": 32
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 338.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "/400千卡",
+          "resourceId": "com.mi.health:id/tagertView",
+          "boundsPx": [
+            72,
+            1026,
+            208,
+            1075
+          ],
+          "extentDp": {
+            "width": 49.455,
+            "height": 17.818
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 373.091
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "步数",
+          "resourceId": "com.mi.health:id/unitStrView",
+          "boundsPx": [
+            408,
+            841,
+            631,
+            924
+          ],
+          "extentDp": {
+            "width": 81.091,
+            "height": 30.182
+          },
+          "positionDp": {
+            "left": 148.364,
+            "top": 305.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "0",
+          "resourceId": "com.mi.health:id/valueView",
+          "boundsPx": [
+            402,
+            930,
+            446,
+            1018
+          ],
+          "extentDp": {
+            "width": 16,
+            "height": 32
+          },
+          "positionDp": {
+            "left": 146.182,
+            "top": 338.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "/6000步",
+          "resourceId": "com.mi.health:id/tagertView",
+          "boundsPx": [
+            402,
+            1026,
+            524,
+            1075
+          ],
+          "extentDp": {
+            "width": 44.364,
+            "height": 17.818
+          },
+          "positionDp": {
+            "left": 146.182,
+            "top": 373.091
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "中高强度",
+          "resourceId": "com.mi.health:id/unitStrView",
+          "boundsPx": [
+            738,
+            841,
+            1028,
+            924
+          ],
+          "extentDp": {
+            "width": 105.455,
+            "height": 30.182
+          },
+          "positionDp": {
+            "left": 268.364,
+            "top": 305.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "0",
+          "resourceId": "com.mi.health:id/valueView",
+          "boundsPx": [
+            732,
+            930,
+            776,
+            1018
+          ],
+          "extentDp": {
+            "width": 16,
+            "height": 32
+          },
+          "positionDp": {
+            "left": 266.182,
+            "top": 338.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "/30分钟",
+          "resourceId": "com.mi.health:id/tagertView",
+          "boundsPx": [
+            732,
+            1026,
+            849,
+            1075
+          ],
+          "extentDp": {
+            "width": 42.545,
+            "height": 17.818
+          },
+          "positionDp": {
+            "left": 266.182,
+            "top": 373.091
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "活动次数 0 次",
+          "resourceId": "com.mi.health:id/standLableView",
+          "boundsPx": [
+            138,
+            1198,
+            903,
+            1254
+          ],
+          "extentDp": {
+            "width": 278.182,
+            "height": 20.364
+          },
+          "positionDp": {
+            "left": 50.182,
+            "top": 435.636
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "点击登录",
+          "resourceId": "com.mi.health:id/txt_login_title",
+          "boundsPx": [
+            201,
+            1412,
+            377,
+            1477
+          ],
+          "extentDp": {
+            "width": 64,
+            "height": 23.636
+          },
+          "positionDp": {
+            "left": 73.091,
+            "top": 513.455
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "体验更丰富的设备管理和运动健康服务",
+          "resourceId": "com.mi.health:id/txt_login_desc",
+          "boundsPx": [
+            201,
+            1483,
+            762,
+            1532
+          ],
+          "extentDp": {
+            "width": 204,
+            "height": 17.818
+          },
+          "positionDp": {
+            "left": 73.091,
+            "top": 539.273
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "10月15日, 无睡眠数据, 记录您的睡眠数据",
+          "resourceId": "",
+          "boundsPx": [
+            33,
+            1620,
+            540,
+            2150
+          ],
+          "extentDp": {
+            "width": 184.364,
+            "height": 192.727
+          },
+          "positionDp": {
+            "left": 12,
+            "top": 589.091
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "睡眠",
+          "resourceId": "com.mi.health:id/tvHomeCardTitle",
+          "boundsPx": [
+            75,
+            1748,
+            498,
+            1817
+          ],
+          "extentDp": {
+            "width": 153.818,
+            "height": 25.091
+          },
+          "positionDp": {
+            "left": 27.273,
+            "top": 635.636
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "记录您的睡眠数据",
+          "resourceId": "com.mi.health:id/tvHomeCardEmptyDesc",
+          "boundsPx": [
+            75,
+            1817,
+            498,
+            1875
+          ],
+          "extentDp": {
+            "width": 153.818,
+            "height": 21.091
+          },
+          "positionDp": {
+            "left": 27.273,
+            "top": 660.727
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "有待提高",
+          "resourceId": "com.mi.health:id/txt1",
+          "boundsPx": [
+            75,
+            2132,
+            336,
+            2150
+          ],
+          "extentDp": {
+            "width": 94.909,
+            "height": 6.545
+          },
+          "positionDp": {
+            "left": 27.273,
+            "top": 775.273
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "优",
+          "resourceId": "com.mi.health:id/txt3",
+          "boundsPx": [
+            336,
+            2132,
+            498,
+            2150
+          ],
+          "extentDp": {
+            "width": 58.909,
+            "height": 6.545
+          },
+          "positionDp": {
+            "left": 122.182,
+            "top": 775.273
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "10月15日, 无心率数据, 记录您的心率数据",
+          "resourceId": "",
+          "boundsPx": [
+            568,
+            1620,
+            1047,
+            2150
+          ],
+          "extentDp": {
+            "width": 174.182,
+            "height": 192.727
+          },
+          "positionDp": {
+            "left": 206.545,
+            "top": 589.091
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "心率",
+          "resourceId": "com.mi.health:id/tvHomeCardTitle",
+          "boundsPx": [
+            610,
+            1751,
+            1005,
+            1820
+          ],
+          "extentDp": {
+            "width": 143.636,
+            "height": 25.091
+          },
+          "positionDp": {
+            "left": 221.818,
+            "top": 636.727
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "记录您的心率数据",
+          "resourceId": "com.mi.health:id/tvHomeCardEmptyDesc",
+          "boundsPx": [
+            610,
+            1820,
+            1005,
+            1878
+          ],
+          "extentDp": {
+            "width": 143.636,
+            "height": 21.091
+          },
+          "positionDp": {
+            "left": 221.818,
+            "top": 661.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "00:00",
+          "resourceId": "com.mi.health:id/txt1",
+          "boundsPx": [
+            607,
+            2137,
+            807,
+            2150
+          ],
+          "extentDp": {
+            "width": 72.727,
+            "height": 4.727
+          },
+          "positionDp": {
+            "left": 220.727,
+            "top": 777.091
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "24:00",
+          "resourceId": "com.mi.health:id/txt3",
+          "boundsPx": [
+            807,
+            2137,
+            1008,
+            2150
+          ],
+          "extentDp": {
+            "width": 73.091,
+            "height": 4.727
+          },
+          "positionDp": {
+            "left": 293.455,
+            "top": 777.091
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "",
+          "resourceId": "com.mi.health:id/main_tl_bottom",
+          "boundsPx": [
+            0,
+            2151,
+            1080,
+            2334
+          ],
+          "extentDp": {
+            "width": 392.727,
+            "height": 66.545
+          },
+          "positionDp": {
+            "left": 0,
+            "top": 782.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "健康",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            105,
+            2260,
+            165,
+            2304
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 38.182,
+            "top": 821.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "运动",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            375,
+            2261,
+            435,
+            2305
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 136.364,
+            "top": 822.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "设备",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            645,
+            2263,
+            705,
+            2307
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 234.545,
+            "top": 822.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            915,
+            2263,
+            975,
+            2307
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 332.727,
+            "top": 822.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        }
+      ]
+    },
+    {
+      "state": "07b-sport-loaded",
+      "at": "2026-10-15T11:50:40.231Z",
+      "globalFontScale": 1,
+      "nodes": [
+        {
+          "text": "运动",
+          "resourceId": "",
+          "boundsPx": [
+            72,
+            151,
+            248,
+            268
+          ],
+          "extentDp": {
+            "width": 64,
+            "height": 42.545
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 54.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "添加新设备",
+          "resourceId": "",
+          "boundsPx": [
+            927,
+            160,
+            1026,
+            259
+          ],
+          "extentDp": {
+            "width": 36,
+            "height": 36
+          },
+          "positionDp": {
+            "left": 337.091,
+            "top": 58.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "户外跑步",
+          "resourceId": "",
+          "boundsPx": [
+            72,
+            477,
+            216,
+            526
+          ],
+          "extentDp": {
+            "width": 52.364,
+            "height": 17.818
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 173.455
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "健走",
+          "resourceId": "",
+          "boundsPx": [
+            304,
+            477,
+            376,
+            526
+          ],
+          "extentDp": {
+            "width": 26.182,
+            "height": 17.818
+          },
+          "positionDp": {
+            "left": 110.545,
+            "top": 173.455
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "户外骑行",
+          "resourceId": "",
+          "boundsPx": [
+            463,
+            477,
+            607,
+            526
+          ],
+          "extentDp": {
+            "width": 52.364,
+            "height": 17.818
+          },
+          "positionDp": {
+            "left": 168.364,
+            "top": 173.455
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "室内跑步",
+          "resourceId": "",
+          "boundsPx": [
+            659,
+            477,
+            803,
+            526
+          ],
+          "extentDp": {
+            "width": 52.364,
+            "height": 17.818
+          },
+          "positionDp": {
+            "left": 239.636,
+            "top": 173.455
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "跳绳",
+          "resourceId": "",
+          "boundsPx": [
+            892,
+            477,
+            964,
+            526
+          ],
+          "extentDp": {
+            "width": 26.182,
+            "height": 17.818
+          },
+          "positionDp": {
+            "left": 324.364,
+            "top": 173.455
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "运动记录",
+          "resourceId": "",
+          "boundsPx": [
+            72,
+            633,
+            870,
+            696
+          ],
+          "extentDp": {
+            "width": 290.182,
+            "height": 22.909
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 230.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "全部",
+          "resourceId": "",
+          "boundsPx": [
+            870,
+            626,
+            1020,
+            703
+          ],
+          "extentDp": {
+            "width": 54.545,
+            "height": 28
+          },
+          "positionDp": {
+            "left": 316.364,
+            "top": 227.636
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "全部",
+          "resourceId": "",
+          "boundsPx": [
+            870,
+            638,
+            948,
+            691
+          ],
+          "extentDp": {
+            "width": 28.364,
+            "height": 19.273
+          },
+          "positionDp": {
+            "left": 316.364,
+            "top": 232
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "暂无运动记录",
+          "resourceId": "",
+          "boundsPx": [
+            209,
+            819,
+            1014,
+            878
+          ],
+          "extentDp": {
+            "width": 292.727,
+            "height": 21.455
+          },
+          "positionDp": {
+            "left": 76,
+            "top": 297.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "",
+          "resourceId": "com.mi.health:id/main_tl_bottom",
+          "boundsPx": [
+            0,
+            2151,
+            1080,
+            2334
+          ],
+          "extentDp": {
+            "width": 392.727,
+            "height": 66.545
+          },
+          "positionDp": {
+            "left": 0,
+            "top": 782.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "健康",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            105,
+            2260,
+            165,
+            2304
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 38.182,
+            "top": 821.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "运动",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            375,
+            2261,
+            435,
+            2305
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 136.364,
+            "top": 822.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "设备",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            645,
+            2263,
+            705,
+            2307
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 234.545,
+            "top": 822.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            915,
+            2263,
+            975,
+            2307
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 332.727,
+            "top": 822.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        }
+      ]
+    },
+    {
+      "state": "11-mine-after-login-cancel",
+      "at": "2026-10-15T11:55:17.648Z",
+      "globalFontScale": 1,
+      "nodes": [
+        {
+          "text": "消息通知",
+          "resourceId": "",
+          "boundsPx": [
+            795,
+            160,
+            894,
+            259
+          ],
+          "extentDp": {
+            "width": 36,
+            "height": 36
+          },
+          "positionDp": {
+            "left": 289.091,
+            "top": 58.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "添加新设备",
+          "resourceId": "",
+          "boundsPx": [
+            927,
+            160,
+            1026,
+            259
+          ],
+          "extentDp": {
+            "width": 36,
+            "height": 36
+          },
+          "positionDp": {
+            "left": 337.091,
+            "top": 58.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "未登录",
+          "resourceId": "",
+          "boundsPx": [
+            239,
+            306,
+            404,
+            380
+          ],
+          "extentDp": {
+            "width": 60,
+            "height": 26.909
+          },
+          "positionDp": {
+            "left": 86.909,
+            "top": 111.273
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "无小米账号",
+          "resourceId": "",
+          "boundsPx": [
+            239,
+            380,
+            404,
+            424
+          ],
+          "extentDp": {
+            "width": 60,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 86.909,
+            "top": 138.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的活动",
+          "resourceId": "",
+          "boundsPx": [
+            111,
+            588,
+            267,
+            673
+          ],
+          "extentDp": {
+            "width": 56.727,
+            "height": 30.909
+          },
+          "positionDp": {
+            "left": 40.364,
+            "top": 213.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的课程",
+          "resourceId": "",
+          "boundsPx": [
+            345,
+            588,
+            501,
+            673
+          ],
+          "extentDp": {
+            "width": 56.727,
+            "height": 30.909
+          },
+          "positionDp": {
+            "left": 125.455,
+            "top": 213.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的订单",
+          "resourceId": "",
+          "boundsPx": [
+            579,
+            588,
+            735,
+            673
+          ],
+          "extentDp": {
+            "width": 56.727,
+            "height": 30.909
+          },
+          "positionDp": {
+            "left": 210.545,
+            "top": 213.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的亲友",
+          "resourceId": "",
+          "boundsPx": [
+            813,
+            588,
+            969,
+            673
+          ],
+          "extentDp": {
+            "width": 56.727,
+            "height": 30.909
+          },
+          "positionDp": {
+            "left": 295.636,
+            "top": 213.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "小米运动健康会员",
+          "resourceId": "",
+          "boundsPx": [
+            193,
+            767,
+            778,
+            838
+          ],
+          "extentDp": {
+            "width": 212.727,
+            "height": 25.818
+          },
+          "positionDp": {
+            "left": 70.182,
+            "top": 278.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "立即开通",
+          "resourceId": "",
+          "boundsPx": [
+            820,
+            751,
+            976,
+            854
+          ],
+          "extentDp": {
+            "width": 56.727,
+            "height": 37.455
+          },
+          "positionDp": {
+            "left": 298.182,
+            "top": 273.091
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "【新增】公立医生在线问诊",
+          "resourceId": "",
+          "boundsPx": [
+            72,
+            919,
+            468,
+            974
+          ],
+          "extentDp": {
+            "width": 144,
+            "height": 20
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 334.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "全量表盘，免费下载",
+          "resourceId": "",
+          "boundsPx": [
+            560,
+            919,
+            857,
+            974
+          ],
+          "extentDp": {
+            "width": 108,
+            "height": 20
+          },
+          "positionDp": {
+            "left": 203.636,
+            "top": 334.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "专业健康管家 24 小时在线",
+          "resourceId": "",
+          "boundsPx": [
+            72,
+            980,
+            521,
+            1035
+          ],
+          "extentDp": {
+            "width": 163.273,
+            "height": 20
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 356.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "总有一款让您满心欢喜",
+          "resourceId": "",
+          "boundsPx": [
+            560,
+            980,
+            1010,
+            1035
+          ],
+          "extentDp": {
+            "width": 163.636,
+            "height": 20
+          },
+          "positionDp": {
+            "left": 203.636,
+            "top": 356.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "小习惯",
+          "resourceId": "",
+          "boundsPx": [
+            72,
+            1144,
+            488,
+            1226
+          ],
+          "extentDp": {
+            "width": 151.273,
+            "height": 29.818
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 416
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "加入打卡",
+          "resourceId": "",
+          "boundsPx": [
+            72,
+            1237,
+            488,
+            1301
+          ],
+          "extentDp": {
+            "width": 151.273,
+            "height": 23.273
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 449.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "运动健康周报",
+          "resourceId": "",
+          "boundsPx": [
+            593,
+            1144,
+            933,
+            1226
+          ],
+          "extentDp": {
+            "width": 123.636,
+            "height": 29.818
+          },
+          "positionDp": {
+            "left": 215.636,
+            "top": 416
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "10.05 ~ 10.11",
+          "resourceId": "",
+          "boundsPx": [
+            593,
+            1226,
+            836,
+            1290
+          ],
+          "extentDp": {
+            "width": 88.364,
+            "height": 23.273
+          },
+          "positionDp": {
+            "left": 215.636,
+            "top": 445.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "活力竞赛",
+          "resourceId": "",
+          "boundsPx": [
+            593,
+            1395,
+            933,
+            1478
+          ],
+          "extentDp": {
+            "width": 123.636,
+            "height": 30.182
+          },
+          "positionDp": {
+            "left": 215.636,
+            "top": 507.273
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "和好友来场 PK",
+          "resourceId": "",
+          "boundsPx": [
+            593,
+            1477,
+            847,
+            1541
+          ],
+          "extentDp": {
+            "width": 92.364,
+            "height": 23.273
+          },
+          "positionDp": {
+            "left": 215.636,
+            "top": 537.091
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "任务中心",
+          "resourceId": "",
+          "boundsPx": [
+            143,
+            1668,
+            943,
+            1743
+          ],
+          "extentDp": {
+            "width": 290.909,
+            "height": 27.273
+          },
+          "positionDp": {
+            "left": 52,
+            "top": 606.545
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "健康问诊",
+          "resourceId": "",
+          "boundsPx": [
+            143,
+            1877,
+            369,
+            1952
+          ],
+          "extentDp": {
+            "width": 82.182,
+            "height": 27.273
+          },
+          "positionDp": {
+            "left": 52,
+            "top": 682.545
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的路线库",
+          "resourceId": "",
+          "boundsPx": [
+            143,
+            2086,
+            943,
+            2150
+          ],
+          "extentDp": {
+            "width": 290.909,
+            "height": 23.273
+          },
+          "positionDp": {
+            "left": 52,
+            "top": 758.545
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "",
+          "resourceId": "com.mi.health:id/main_tl_bottom",
+          "boundsPx": [
+            0,
+            2151,
+            1080,
+            2334
+          ],
+          "extentDp": {
+            "width": 392.727,
+            "height": 66.545
+          },
+          "positionDp": {
+            "left": 0,
+            "top": 782.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "健康",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            105,
+            2260,
+            165,
+            2304
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 38.182,
+            "top": 821.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "运动",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            375,
+            2261,
+            435,
+            2305
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 136.364,
+            "top": 822.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "设备",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            645,
+            2263,
+            705,
+            2307
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 234.545,
+            "top": 822.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            915,
+            2263,
+            975,
+            2307
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 332.727,
+            "top": 822.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        }
+      ]
+    },
+    {
+      "state": "12-mine-menu",
+      "at": "2026-10-15T11:56:24.166Z",
+      "globalFontScale": 1,
+      "nodes": [
+        {
+          "text": "消息通知",
+          "resourceId": "",
+          "boundsPx": [
+            795,
+            160,
+            894,
+            259
+          ],
+          "extentDp": {
+            "width": 36,
+            "height": 36
+          },
+          "positionDp": {
+            "left": 289.091,
+            "top": 58.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "添加新设备",
+          "resourceId": "",
+          "boundsPx": [
+            927,
+            160,
+            1026,
+            259
+          ],
+          "extentDp": {
+            "width": 36,
+            "height": 36
+          },
+          "positionDp": {
+            "left": 337.091,
+            "top": 58.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "任务中心",
+          "resourceId": "",
+          "boundsPx": [
+            143,
+            268,
+            943,
+            323
+          ],
+          "extentDp": {
+            "width": 290.909,
+            "height": 20
+          },
+          "positionDp": {
+            "left": 52,
+            "top": 97.455
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "健康问诊",
+          "resourceId": "",
+          "boundsPx": [
+            143,
+            457,
+            369,
+            532
+          ],
+          "extentDp": {
+            "width": 82.182,
+            "height": 27.273
+          },
+          "positionDp": {
+            "left": 52,
+            "top": 166.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的路线库",
+          "resourceId": "",
+          "boundsPx": [
+            143,
+            666,
+            943,
+            741
+          ],
+          "extentDp": {
+            "width": 290.909,
+            "height": 27.273
+          },
+          "positionDp": {
+            "left": 52,
+            "top": 242.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "App 设置",
+          "resourceId": "",
+          "boundsPx": [
+            143,
+            831,
+            943,
+            906
+          ],
+          "extentDp": {
+            "width": 290.909,
+            "height": 27.273
+          },
+          "positionDp": {
+            "left": 52,
+            "top": 302.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "三方数据管理",
+          "resourceId": "",
+          "boundsPx": [
+            143,
+            996,
+            943,
+            1071
+          ],
+          "extentDp": {
+            "width": 290.909,
+            "height": 27.273
+          },
+          "positionDp": {
+            "left": 52,
+            "top": 362.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "设备授权管理",
+          "resourceId": "",
+          "boundsPx": [
+            143,
+            1161,
+            943,
+            1236
+          ],
+          "extentDp": {
+            "width": 290.909,
+            "height": 27.273
+          },
+          "positionDp": {
+            "left": 52,
+            "top": 422.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "系统权限",
+          "resourceId": "",
+          "boundsPx": [
+            143,
+            1326,
+            943,
+            1401
+          ],
+          "extentDp": {
+            "width": 290.909,
+            "height": 27.273
+          },
+          "positionDp": {
+            "left": 52,
+            "top": 482.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "帮助与反馈",
+          "resourceId": "",
+          "boundsPx": [
+            143,
+            1491,
+            943,
+            1566
+          ],
+          "extentDp": {
+            "width": 290.909,
+            "height": 27.273
+          },
+          "positionDp": {
+            "left": 52,
+            "top": 542.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "设备共享",
+          "resourceId": "",
+          "boundsPx": [
+            143,
+            1656,
+            943,
+            1731
+          ],
+          "extentDp": {
+            "width": 290.909,
+            "height": 27.273
+          },
+          "positionDp": {
+            "left": 52,
+            "top": 602.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "App 版本",
+          "resourceId": "",
+          "boundsPx": [
+            143,
+            1821,
+            810,
+            1896
+          ],
+          "extentDp": {
+            "width": 242.545,
+            "height": 27.273
+          },
+          "positionDp": {
+            "left": 52,
+            "top": 662.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "V3.57.0",
+          "resourceId": "",
+          "boundsPx": [
+            810,
+            1832,
+            943,
+            1885
+          ],
+          "extentDp": {
+            "width": 48.364,
+            "height": 19.273
+          },
+          "positionDp": {
+            "left": 294.545,
+            "top": 666.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "关于",
+          "resourceId": "",
+          "boundsPx": [
+            143,
+            1986,
+            943,
+            2061
+          ],
+          "extentDp": {
+            "width": 290.909,
+            "height": 27.273
+          },
+          "positionDp": {
+            "left": 52,
+            "top": 722.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "",
+          "resourceId": "com.mi.health:id/main_tl_bottom",
+          "boundsPx": [
+            0,
+            2151,
+            1080,
+            2334
+          ],
+          "extentDp": {
+            "width": 392.727,
+            "height": 66.545
+          },
+          "positionDp": {
+            "left": 0,
+            "top": 782.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "健康",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            105,
+            2260,
+            165,
+            2304
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 38.182,
+            "top": 821.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "运动",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            375,
+            2261,
+            435,
+            2305
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 136.364,
+            "top": 822.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "设备",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            645,
+            2263,
+            705,
+            2307
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 234.545,
+            "top": 822.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            915,
+            2263,
+            975,
+            2307
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 332.727,
+            "top": 822.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        }
+      ]
+    },
+    {
+      "state": "13-app-settings",
+      "at": "2026-10-15T11:56:54.466Z",
+      "globalFontScale": 1,
+      "nodes": [
+        {
+          "text": "返回",
+          "resourceId": "com.mi.health:id/up",
+          "boundsPx": [
+            55,
+            158,
+            187,
+            268
+          ],
+          "extentDp": {
+            "width": 48,
+            "height": 40
+          },
+          "positionDp": {
+            "left": 20,
+            "top": 57.455
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "设置",
+          "resourceId": "com.mi.health:id/action_bar_title_expand",
+          "boundsPx": [
+            71,
+            301,
+            247,
+            430
+          ],
+          "extentDp": {
+            "width": 64,
+            "height": 46.909
+          },
+          "positionDp": {
+            "left": 25.818,
+            "top": 109.455
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "地区",
+          "resourceId": "com.mi.health:id/tv_feature_item_title",
+          "boundsPx": [
+            72,
+            534,
+            160,
+            599
+          ],
+          "extentDp": {
+            "width": 32,
+            "height": 23.636
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 194.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "中国大陆",
+          "resourceId": "com.mi.health:id/tv_feature_item_remind",
+          "boundsPx": [
+            769,
+            537,
+            925,
+            595
+          ],
+          "extentDp": {
+            "width": 56.727,
+            "height": 21.091
+          },
+          "positionDp": {
+            "left": 279.636,
+            "top": 195.273
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "运动健康云服务",
+          "resourceId": "com.mi.health:id/tv_feature_item_title",
+          "boundsPx": [
+            72,
+            792,
+            380,
+            857
+          ],
+          "extentDp": {
+            "width": 112,
+            "height": 23.636
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 288
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "运动健康设备双接授权",
+          "resourceId": "com.mi.health:id/tv_feature_item_title",
+          "boundsPx": [
+            72,
+            990,
+            512,
+            1055
+          ],
+          "extentDp": {
+            "width": 160,
+            "height": 23.636
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 360
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "设备可在“米家”和“小米运动健康”同时使用",
+          "resourceId": "com.mi.health:id/tv_feature_item_subtitle",
+          "boundsPx": [
+            72,
+            1055,
+            681,
+            1104
+          ],
+          "extentDp": {
+            "width": 221.455,
+            "height": 17.818
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 383.636
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "新消息通知",
+          "resourceId": "com.mi.health:id/tv_feature_item_title",
+          "boundsPx": [
+            72,
+            1178,
+            292,
+            1243
+          ],
+          "extentDp": {
+            "width": 80,
+            "height": 23.636
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 428.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "关闭通知权限，可能会错过重要通知哦",
+          "resourceId": "com.mi.health:id/tv_feature_item_subtitle",
+          "boundsPx": [
+            72,
+            1243,
+            633,
+            1292
+          ],
+          "extentDp": {
+            "width": 204,
+            "height": 17.818
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 452
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "当前已开启",
+          "resourceId": "com.mi.health:id/switch_btn",
+          "boundsPx": [
+            884,
+            1200,
+            1008,
+            1269
+          ],
+          "extentDp": {
+            "width": 45.091,
+            "height": 25.091
+          },
+          "positionDp": {
+            "left": 321.455,
+            "top": 436.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "无障碍设置",
+          "resourceId": "com.mi.health:id/tv_feature_item_title",
+          "boundsPx": [
+            72,
+            1366,
+            292,
+            1431
+          ],
+          "extentDp": {
+            "width": 80,
+            "height": 23.636
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 496.727
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "使用更多无障碍相关功能",
+          "resourceId": "com.mi.health:id/tv_feature_item_subtitle",
+          "boundsPx": [
+            72,
+            1431,
+            435,
+            1480
+          ],
+          "extentDp": {
+            "width": 132,
+            "height": 17.818
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 520.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "退出登录",
+          "resourceId": "com.mi.health:id/btn_logout",
+          "boundsPx": [
+            78,
+            2132,
+            1002,
+            2260
+          ],
+          "extentDp": {
+            "width": 336,
+            "height": 46.545
+          },
+          "positionDp": {
+            "left": 28.364,
+            "top": 775.273
+          },
+          "note": "Text extent is a line/view box, not font size."
+        }
+      ]
+    },
+    {
+      "state": "14-settings-night",
+      "at": "2026-10-15T11:58:23.606Z",
+      "globalFontScale": 1,
+      "nodes": [
+        {
+          "text": "返回",
+          "resourceId": "com.mi.health:id/up",
+          "boundsPx": [
+            55,
+            158,
+            187,
+            268
+          ],
+          "extentDp": {
+            "width": 48,
+            "height": 40
+          },
+          "positionDp": {
+            "left": 20,
+            "top": 57.455
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "设置",
+          "resourceId": "com.mi.health:id/action_bar_title_expand",
+          "boundsPx": [
+            71,
+            301,
+            247,
+            430
+          ],
+          "extentDp": {
+            "width": 64,
+            "height": 46.909
+          },
+          "positionDp": {
+            "left": 25.818,
+            "top": 109.455
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "地区",
+          "resourceId": "com.mi.health:id/tv_feature_item_title",
+          "boundsPx": [
+            72,
+            534,
+            160,
+            599
+          ],
+          "extentDp": {
+            "width": 32,
+            "height": 23.636
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 194.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "中国大陆",
+          "resourceId": "com.mi.health:id/tv_feature_item_remind",
+          "boundsPx": [
+            769,
+            537,
+            925,
+            595
+          ],
+          "extentDp": {
+            "width": 56.727,
+            "height": 21.091
+          },
+          "positionDp": {
+            "left": 279.636,
+            "top": 195.273
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "运动健康云服务",
+          "resourceId": "com.mi.health:id/tv_feature_item_title",
+          "boundsPx": [
+            72,
+            792,
+            380,
+            857
+          ],
+          "extentDp": {
+            "width": 112,
+            "height": 23.636
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 288
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "运动健康设备双接授权",
+          "resourceId": "com.mi.health:id/tv_feature_item_title",
+          "boundsPx": [
+            72,
+            990,
+            512,
+            1055
+          ],
+          "extentDp": {
+            "width": 160,
+            "height": 23.636
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 360
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "设备可在“米家”和“小米运动健康”同时使用",
+          "resourceId": "com.mi.health:id/tv_feature_item_subtitle",
+          "boundsPx": [
+            72,
+            1055,
+            681,
+            1104
+          ],
+          "extentDp": {
+            "width": 221.455,
+            "height": 17.818
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 383.636
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "新消息通知",
+          "resourceId": "com.mi.health:id/tv_feature_item_title",
+          "boundsPx": [
+            72,
+            1178,
+            292,
+            1243
+          ],
+          "extentDp": {
+            "width": 80,
+            "height": 23.636
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 428.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "关闭通知权限，可能会错过重要通知哦",
+          "resourceId": "com.mi.health:id/tv_feature_item_subtitle",
+          "boundsPx": [
+            72,
+            1243,
+            633,
+            1292
+          ],
+          "extentDp": {
+            "width": 204,
+            "height": 17.818
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 452
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "当前已开启",
+          "resourceId": "com.mi.health:id/switch_btn",
+          "boundsPx": [
+            884,
+            1200,
+            1008,
+            1269
+          ],
+          "extentDp": {
+            "width": 45.091,
+            "height": 25.091
+          },
+          "positionDp": {
+            "left": 321.455,
+            "top": 436.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "无障碍设置",
+          "resourceId": "com.mi.health:id/tv_feature_item_title",
+          "boundsPx": [
+            72,
+            1366,
+            292,
+            1431
+          ],
+          "extentDp": {
+            "width": 80,
+            "height": 23.636
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 496.727
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "使用更多无障碍相关功能",
+          "resourceId": "com.mi.health:id/tv_feature_item_subtitle",
+          "boundsPx": [
+            72,
+            1431,
+            435,
+            1480
+          ],
+          "extentDp": {
+            "width": 132,
+            "height": 17.818
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 520.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "退出登录",
+          "resourceId": "com.mi.health:id/btn_logout",
+          "boundsPx": [
+            78,
+            2132,
+            1002,
+            2260
+          ],
+          "extentDp": {
+            "width": 336,
+            "height": 46.545
+          },
+          "positionDp": {
+            "left": 28.364,
+            "top": 775.273
+          },
+          "note": "Text extent is a line/view box, not font size."
+        }
+      ]
+    },
+    {
+      "state": "16-device-night",
+      "at": "2026-10-15T11:59:53.834Z",
+      "globalFontScale": 1,
+      "nodes": [
+        {
+          "text": "设备",
+          "resourceId": "com.mi.health:id/title",
+          "boundsPx": [
+            72,
+            151,
+            248,
+            280
+          ],
+          "extentDp": {
+            "width": 64,
+            "height": 46.909
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 54.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "添加新设备",
+          "resourceId": "com.mi.health:id/header_view_iv_add",
+          "boundsPx": [
+            926,
+            166,
+            1025,
+            265
+          ],
+          "extentDp": {
+            "width": 36,
+            "height": 36
+          },
+          "positionDp": {
+            "left": 336.727,
+            "top": 60.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "扫一扫",
+          "resourceId": "com.mi.health:id/add_new_scan",
+          "boundsPx": [
+            110,
+            1006,
+            523,
+            1134
+          ],
+          "extentDp": {
+            "width": 150.182,
+            "height": 46.545
+          },
+          "positionDp": {
+            "left": 40,
+            "top": 365.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "添加设备",
+          "resourceId": "com.mi.health:id/add_new_add",
+          "boundsPx": [
+            557,
+            1006,
+            970,
+            1134
+          ],
+          "extentDp": {
+            "width": 150.182,
+            "height": 46.545
+          },
+          "positionDp": {
+            "left": 202.545,
+            "top": 365.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "",
+          "resourceId": "com.mi.health:id/main_tl_bottom",
+          "boundsPx": [
+            0,
+            2151,
+            1080,
+            2334
+          ],
+          "extentDp": {
+            "width": 392.727,
+            "height": 66.545
+          },
+          "positionDp": {
+            "left": 0,
+            "top": 782.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "健康",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            105,
+            2260,
+            165,
+            2304
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 38.182,
+            "top": 821.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "运动",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            375,
+            2261,
+            435,
+            2305
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 136.364,
+            "top": 822.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "设备",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            645,
+            2263,
+            705,
+            2307
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 234.545,
+            "top": 822.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            915,
+            2263,
+            975,
+            2307
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 332.727,
+            "top": 822.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        }
+      ]
+    },
+    {
+      "state": "17c-mine-night-visible",
+      "at": "2026-10-15T12:03:29.113Z",
+      "globalFontScale": 1,
+      "nodes": [
+        {
+          "text": "消息通知",
+          "resourceId": "",
+          "boundsPx": [
+            795,
+            160,
+            894,
+            259
+          ],
+          "extentDp": {
+            "width": 36,
+            "height": 36
+          },
+          "positionDp": {
+            "left": 289.091,
+            "top": 58.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "添加新设备",
+          "resourceId": "",
+          "boundsPx": [
+            927,
+            160,
+            1026,
+            259
+          ],
+          "extentDp": {
+            "width": 36,
+            "height": 36
+          },
+          "positionDp": {
+            "left": 337.091,
+            "top": 58.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "未登录",
+          "resourceId": "",
+          "boundsPx": [
+            239,
+            306,
+            404,
+            380
+          ],
+          "extentDp": {
+            "width": 60,
+            "height": 26.909
+          },
+          "positionDp": {
+            "left": 86.909,
+            "top": 111.273
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "无小米账号",
+          "resourceId": "",
+          "boundsPx": [
+            239,
+            380,
+            404,
+            424
+          ],
+          "extentDp": {
+            "width": 60,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 86.909,
+            "top": 138.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的活动",
+          "resourceId": "",
+          "boundsPx": [
+            56,
+            588,
+            212,
+            673
+          ],
+          "extentDp": {
+            "width": 56.727,
+            "height": 30.909
+          },
+          "positionDp": {
+            "left": 20.364,
+            "top": 213.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的课程",
+          "resourceId": "",
+          "boundsPx": [
+            259,
+            588,
+            415,
+            673
+          ],
+          "extentDp": {
+            "width": 56.727,
+            "height": 30.909
+          },
+          "positionDp": {
+            "left": 94.182,
+            "top": 213.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的亲友",
+          "resourceId": "",
+          "boundsPx": [
+            462,
+            588,
+            618,
+            673
+          ],
+          "extentDp": {
+            "width": 56.727,
+            "height": 30.909
+          },
+          "positionDp": {
+            "left": 168,
+            "top": 213.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的奖品",
+          "resourceId": "",
+          "boundsPx": [
+            664,
+            588,
+            820,
+            673
+          ],
+          "extentDp": {
+            "width": 56.727,
+            "height": 30.909
+          },
+          "positionDp": {
+            "left": 241.455,
+            "top": 213.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的订单",
+          "resourceId": "",
+          "boundsPx": [
+            867,
+            588,
+            1023,
+            673
+          ],
+          "extentDp": {
+            "width": 56.727,
+            "height": 30.909
+          },
+          "positionDp": {
+            "left": 315.273,
+            "top": 213.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "小米运动健康会员",
+          "resourceId": "",
+          "boundsPx": [
+            193,
+            767,
+            778,
+            838
+          ],
+          "extentDp": {
+            "width": 212.727,
+            "height": 25.818
+          },
+          "positionDp": {
+            "left": 70.182,
+            "top": 278.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "立即开通",
+          "resourceId": "",
+          "boundsPx": [
+            820,
+            751,
+            976,
+            854
+          ],
+          "extentDp": {
+            "width": 56.727,
+            "height": 37.455
+          },
+          "positionDp": {
+            "left": 298.182,
+            "top": 273.091
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "【新增】公立医生在线问诊",
+          "resourceId": "",
+          "boundsPx": [
+            72,
+            919,
+            468,
+            974
+          ],
+          "extentDp": {
+            "width": 144,
+            "height": 20
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 334.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "全量表盘，免费下载",
+          "resourceId": "",
+          "boundsPx": [
+            560,
+            919,
+            857,
+            974
+          ],
+          "extentDp": {
+            "width": 108,
+            "height": 20
+          },
+          "positionDp": {
+            "left": 203.636,
+            "top": 334.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "专业健康管家 24 小时在线",
+          "resourceId": "",
+          "boundsPx": [
+            72,
+            980,
+            521,
+            1035
+          ],
+          "extentDp": {
+            "width": 163.273,
+            "height": 20
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 356.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "总有一款让您满心欢喜",
+          "resourceId": "",
+          "boundsPx": [
+            560,
+            980,
+            1010,
+            1035
+          ],
+          "extentDp": {
+            "width": 163.636,
+            "height": 20
+          },
+          "positionDp": {
+            "left": 203.636,
+            "top": 356.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "小习惯",
+          "resourceId": "",
+          "boundsPx": [
+            72,
+            1144,
+            488,
+            1226
+          ],
+          "extentDp": {
+            "width": 151.273,
+            "height": 29.818
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 416
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "加入打卡",
+          "resourceId": "",
+          "boundsPx": [
+            72,
+            1237,
+            488,
+            1301
+          ],
+          "extentDp": {
+            "width": 151.273,
+            "height": 23.273
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 449.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "运动健康周报",
+          "resourceId": "",
+          "boundsPx": [
+            593,
+            1144,
+            933,
+            1226
+          ],
+          "extentDp": {
+            "width": 123.636,
+            "height": 29.818
+          },
+          "positionDp": {
+            "left": 215.636,
+            "top": 416
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "10.05 ~ 10.11",
+          "resourceId": "",
+          "boundsPx": [
+            593,
+            1226,
+            836,
+            1290
+          ],
+          "extentDp": {
+            "width": 88.364,
+            "height": 23.273
+          },
+          "positionDp": {
+            "left": 215.636,
+            "top": 445.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "活力竞赛",
+          "resourceId": "",
+          "boundsPx": [
+            593,
+            1395,
+            933,
+            1478
+          ],
+          "extentDp": {
+            "width": 123.636,
+            "height": 30.182
+          },
+          "positionDp": {
+            "left": 215.636,
+            "top": 507.273
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "和好友来场 PK",
+          "resourceId": "",
+          "boundsPx": [
+            593,
+            1477,
+            847,
+            1541
+          ],
+          "extentDp": {
+            "width": 92.364,
+            "height": 23.273
+          },
+          "positionDp": {
+            "left": 215.636,
+            "top": 537.091
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "任务中心",
+          "resourceId": "",
+          "boundsPx": [
+            143,
+            1668,
+            943,
+            1743
+          ],
+          "extentDp": {
+            "width": 290.909,
+            "height": 27.273
+          },
+          "positionDp": {
+            "left": 52,
+            "top": 606.545
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "健康问诊",
+          "resourceId": "",
+          "boundsPx": [
+            143,
+            1877,
+            369,
+            1952
+          ],
+          "extentDp": {
+            "width": 82.182,
+            "height": 27.273
+          },
+          "positionDp": {
+            "left": 52,
+            "top": 682.545
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的路线库",
+          "resourceId": "",
+          "boundsPx": [
+            143,
+            2086,
+            943,
+            2150
+          ],
+          "extentDp": {
+            "width": 290.909,
+            "height": 23.273
+          },
+          "positionDp": {
+            "left": 52,
+            "top": 758.545
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "",
+          "resourceId": "com.mi.health:id/main_tl_bottom",
+          "boundsPx": [
+            0,
+            2151,
+            1080,
+            2334
+          ],
+          "extentDp": {
+            "width": 392.727,
+            "height": 66.545
+          },
+          "positionDp": {
+            "left": 0,
+            "top": 782.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "健康",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            105,
+            2260,
+            165,
+            2304
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 38.182,
+            "top": 821.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "运动",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            375,
+            2261,
+            435,
+            2305
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 136.364,
+            "top": 822.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "设备",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            645,
+            2263,
+            705,
+            2307
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 234.545,
+            "top": 822.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            915,
+            2263,
+            975,
+            2307
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 332.727,
+            "top": 822.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        }
+      ]
+    },
+    {
+      "state": "19-sport-records",
+      "at": "2026-10-15T12:11:02.877Z",
+      "globalFontScale": 1,
+      "nodes": [
+        {
+          "text": "返回",
+          "resourceId": "com.mi.health:id/back_button",
+          "boundsPx": [
+            73,
+            136,
+            165,
+            228
+          ],
+          "extentDp": {
+            "width": 33.455,
+            "height": 33.455
+          },
+          "positionDp": {
+            "left": 26.545,
+            "top": 49.455
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "所有运动",
+          "resourceId": "com.mi.health:id/sport_all_button",
+          "boundsPx": [
+            434,
+            149,
+            645,
+            214
+          ],
+          "extentDp": {
+            "width": 76.727,
+            "height": 23.636
+          },
+          "positionDp": {
+            "left": 157.818,
+            "top": 54.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "更多设置",
+          "resourceId": "com.mi.health:id/more_button",
+          "boundsPx": [
+            941,
+            149,
+            1007,
+            215
+          ],
+          "extentDp": {
+            "width": 24,
+            "height": 24
+          },
+          "positionDp": {
+            "left": 342.182,
+            "top": 54.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "周",
+          "resourceId": "",
+          "boundsPx": [
+            71,
+            255,
+            305,
+            341
+          ],
+          "extentDp": {
+            "width": 85.091,
+            "height": 31.273
+          },
+          "positionDp": {
+            "left": 25.818,
+            "top": 92.727
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "周",
+          "resourceId": "",
+          "boundsPx": [
+            168,
+            269,
+            207,
+            327
+          ],
+          "extentDp": {
+            "width": 14.182,
+            "height": 21.091
+          },
+          "positionDp": {
+            "left": 61.091,
+            "top": 97.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "月",
+          "resourceId": "",
+          "boundsPx": [
+            305,
+            255,
+            539,
+            341
+          ],
+          "extentDp": {
+            "width": 85.091,
+            "height": 31.273
+          },
+          "positionDp": {
+            "left": 110.909,
+            "top": 92.727
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "月",
+          "resourceId": "",
+          "boundsPx": [
+            402,
+            269,
+            441,
+            327
+          ],
+          "extentDp": {
+            "width": 14.182,
+            "height": 21.091
+          },
+          "positionDp": {
+            "left": 146.182,
+            "top": 97.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "年",
+          "resourceId": "",
+          "boundsPx": [
+            539,
+            255,
+            774,
+            341
+          ],
+          "extentDp": {
+            "width": 85.455,
+            "height": 31.273
+          },
+          "positionDp": {
+            "left": 196,
+            "top": 92.727
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "年",
+          "resourceId": "",
+          "boundsPx": [
+            637,
+            269,
+            676,
+            327
+          ],
+          "extentDp": {
+            "width": 14.182,
+            "height": 21.091
+          },
+          "positionDp": {
+            "left": 231.636,
+            "top": 97.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "总",
+          "resourceId": "",
+          "boundsPx": [
+            774,
+            255,
+            1009,
+            341
+          ],
+          "extentDp": {
+            "width": 85.455,
+            "height": 31.273
+          },
+          "positionDp": {
+            "left": 281.455,
+            "top": 92.727
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "总",
+          "resourceId": "",
+          "boundsPx": [
+            872,
+            269,
+            911,
+            327
+          ],
+          "extentDp": {
+            "width": 14.182,
+            "height": 21.091
+          },
+          "positionDp": {
+            "left": 317.091,
+            "top": 97.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "6月，未选中",
+          "resourceId": "",
+          "boundsPx": [
+            72,
+            360,
+            73,
+            453
+          ],
+          "extentDp": {
+            "width": 0.364,
+            "height": 33.818
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 130.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "7月，未选中",
+          "resourceId": "",
+          "boundsPx": [
+            73,
+            360,
+            185,
+            453
+          ],
+          "extentDp": {
+            "width": 40.727,
+            "height": 33.818
+          },
+          "positionDp": {
+            "left": 26.545,
+            "top": 130.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "7月",
+          "resourceId": "com.mi.health:id/valueView",
+          "boundsPx": [
+            103,
+            404,
+            155,
+            453
+          ],
+          "extentDp": {
+            "width": 18.909,
+            "height": 17.818
+          },
+          "positionDp": {
+            "left": 37.455,
+            "top": 146.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "8月，未选中",
+          "resourceId": "",
+          "boundsPx": [
+            185,
+            360,
+            297,
+            453
+          ],
+          "extentDp": {
+            "width": 40.727,
+            "height": 33.818
+          },
+          "positionDp": {
+            "left": 67.273,
+            "top": 130.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "8月",
+          "resourceId": "com.mi.health:id/valueView",
+          "boundsPx": [
+            215,
+            404,
+            267,
+            453
+          ],
+          "extentDp": {
+            "width": 18.909,
+            "height": 17.818
+          },
+          "positionDp": {
+            "left": 78.182,
+            "top": 146.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "9月，未选中",
+          "resourceId": "",
+          "boundsPx": [
+            297,
+            360,
+            409,
+            453
+          ],
+          "extentDp": {
+            "width": 40.727,
+            "height": 33.818
+          },
+          "positionDp": {
+            "left": 108,
+            "top": 130.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "9月",
+          "resourceId": "com.mi.health:id/valueView",
+          "boundsPx": [
+            327,
+            404,
+            379,
+            453
+          ],
+          "extentDp": {
+            "width": 18.909,
+            "height": 17.818
+          },
+          "positionDp": {
+            "left": 118.909,
+            "top": 146.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "10月，已选中",
+          "resourceId": "",
+          "boundsPx": [
+            409,
+            360,
+            540,
+            453
+          ],
+          "extentDp": {
+            "width": 47.636,
+            "height": 33.818
+          },
+          "positionDp": {
+            "left": 148.727,
+            "top": 130.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "10月",
+          "resourceId": "com.mi.health:id/valueView",
+          "boundsPx": [
+            439,
+            404,
+            510,
+            453
+          ],
+          "extentDp": {
+            "width": 25.818,
+            "height": 17.818
+          },
+          "positionDp": {
+            "left": 159.636,
+            "top": 146.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "暂无数据",
+          "resourceId": "",
+          "boundsPx": [
+            411,
+            1287,
+            668,
+            1538
+          ],
+          "extentDp": {
+            "width": 93.455,
+            "height": 91.273
+          },
+          "positionDp": {
+            "left": 149.455,
+            "top": 468
+          },
+          "note": "Text extent is a line/view box, not font size."
+        }
+      ]
+    },
+    {
+      "state": "20-record-filter",
+      "at": "2026-10-15T12:11:53.459Z",
+      "globalFontScale": 1,
+      "nodes": [
+        {
+          "text": "所有运动",
+          "resourceId": "com.mi.health:id/nameView",
+          "boundsPx": [
+            369,
+            284,
+            635,
+            349
+          ],
+          "extentDp": {
+            "width": 96.727,
+            "height": 23.636
+          },
+          "positionDp": {
+            "left": 134.182,
+            "top": 103.273
+          },
+          "note": "Text extent is a line/view box, not font size."
+        }
+      ]
+    },
+    {
+      "state": "21b-mine-day-visible",
+      "at": "2026-10-15T12:15:47.748Z",
+      "globalFontScale": 1,
+      "nodes": [
+        {
+          "text": "消息通知",
+          "resourceId": "",
+          "boundsPx": [
+            795,
+            160,
+            894,
+            259
+          ],
+          "extentDp": {
+            "width": 36,
+            "height": 36
+          },
+          "positionDp": {
+            "left": 289.091,
+            "top": 58.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "添加新设备",
+          "resourceId": "",
+          "boundsPx": [
+            927,
+            160,
+            1026,
+            259
+          ],
+          "extentDp": {
+            "width": 36,
+            "height": 36
+          },
+          "positionDp": {
+            "left": 337.091,
+            "top": 58.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "未登录",
+          "resourceId": "",
+          "boundsPx": [
+            239,
+            306,
+            404,
+            380
+          ],
+          "extentDp": {
+            "width": 60,
+            "height": 26.909
+          },
+          "positionDp": {
+            "left": 86.909,
+            "top": 111.273
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "无小米账号",
+          "resourceId": "",
+          "boundsPx": [
+            239,
+            380,
+            404,
+            424
+          ],
+          "extentDp": {
+            "width": 60,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 86.909,
+            "top": 138.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的活动",
+          "resourceId": "",
+          "boundsPx": [
+            56,
+            588,
+            212,
+            673
+          ],
+          "extentDp": {
+            "width": 56.727,
+            "height": 30.909
+          },
+          "positionDp": {
+            "left": 20.364,
+            "top": 213.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的课程",
+          "resourceId": "",
+          "boundsPx": [
+            259,
+            588,
+            415,
+            673
+          ],
+          "extentDp": {
+            "width": 56.727,
+            "height": 30.909
+          },
+          "positionDp": {
+            "left": 94.182,
+            "top": 213.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的亲友",
+          "resourceId": "",
+          "boundsPx": [
+            462,
+            588,
+            618,
+            673
+          ],
+          "extentDp": {
+            "width": 56.727,
+            "height": 30.909
+          },
+          "positionDp": {
+            "left": 168,
+            "top": 213.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的奖品",
+          "resourceId": "",
+          "boundsPx": [
+            664,
+            588,
+            820,
+            673
+          ],
+          "extentDp": {
+            "width": 56.727,
+            "height": 30.909
+          },
+          "positionDp": {
+            "left": 241.455,
+            "top": 213.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的订单",
+          "resourceId": "",
+          "boundsPx": [
+            867,
+            588,
+            1023,
+            673
+          ],
+          "extentDp": {
+            "width": 56.727,
+            "height": 30.909
+          },
+          "positionDp": {
+            "left": 315.273,
+            "top": 213.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "小米运动健康会员",
+          "resourceId": "",
+          "boundsPx": [
+            193,
+            767,
+            778,
+            838
+          ],
+          "extentDp": {
+            "width": 212.727,
+            "height": 25.818
+          },
+          "positionDp": {
+            "left": 70.182,
+            "top": 278.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "立即开通",
+          "resourceId": "",
+          "boundsPx": [
+            820,
+            751,
+            976,
+            854
+          ],
+          "extentDp": {
+            "width": 56.727,
+            "height": 37.455
+          },
+          "positionDp": {
+            "left": 298.182,
+            "top": 273.091
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "【新增】公立医生在线问诊",
+          "resourceId": "",
+          "boundsPx": [
+            72,
+            919,
+            468,
+            974
+          ],
+          "extentDp": {
+            "width": 144,
+            "height": 20
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 334.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "全量表盘，免费下载",
+          "resourceId": "",
+          "boundsPx": [
+            560,
+            919,
+            857,
+            974
+          ],
+          "extentDp": {
+            "width": 108,
+            "height": 20
+          },
+          "positionDp": {
+            "left": 203.636,
+            "top": 334.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "专业健康管家 24 小时在线",
+          "resourceId": "",
+          "boundsPx": [
+            72,
+            980,
+            521,
+            1035
+          ],
+          "extentDp": {
+            "width": 163.273,
+            "height": 20
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 356.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "总有一款让您满心欢喜",
+          "resourceId": "",
+          "boundsPx": [
+            560,
+            980,
+            1010,
+            1035
+          ],
+          "extentDp": {
+            "width": 163.636,
+            "height": 20
+          },
+          "positionDp": {
+            "left": 203.636,
+            "top": 356.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "小习惯",
+          "resourceId": "",
+          "boundsPx": [
+            72,
+            1144,
+            488,
+            1226
+          ],
+          "extentDp": {
+            "width": 151.273,
+            "height": 29.818
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 416
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "加入打卡",
+          "resourceId": "",
+          "boundsPx": [
+            72,
+            1237,
+            488,
+            1301
+          ],
+          "extentDp": {
+            "width": 151.273,
+            "height": 23.273
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 449.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "运动健康周报",
+          "resourceId": "",
+          "boundsPx": [
+            593,
+            1144,
+            933,
+            1226
+          ],
+          "extentDp": {
+            "width": 123.636,
+            "height": 29.818
+          },
+          "positionDp": {
+            "left": 215.636,
+            "top": 416
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "10.05 ~ 10.11",
+          "resourceId": "",
+          "boundsPx": [
+            593,
+            1226,
+            836,
+            1290
+          ],
+          "extentDp": {
+            "width": 88.364,
+            "height": 23.273
+          },
+          "positionDp": {
+            "left": 215.636,
+            "top": 445.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "活力竞赛",
+          "resourceId": "",
+          "boundsPx": [
+            593,
+            1395,
+            933,
+            1478
+          ],
+          "extentDp": {
+            "width": 123.636,
+            "height": 30.182
+          },
+          "positionDp": {
+            "left": 215.636,
+            "top": 507.273
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "和好友来场 PK",
+          "resourceId": "",
+          "boundsPx": [
+            593,
+            1477,
+            847,
+            1541
+          ],
+          "extentDp": {
+            "width": 92.364,
+            "height": 23.273
+          },
+          "positionDp": {
+            "left": 215.636,
+            "top": 537.091
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "任务中心",
+          "resourceId": "",
+          "boundsPx": [
+            143,
+            1668,
+            943,
+            1743
+          ],
+          "extentDp": {
+            "width": 290.909,
+            "height": 27.273
+          },
+          "positionDp": {
+            "left": 52,
+            "top": 606.545
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "健康问诊",
+          "resourceId": "",
+          "boundsPx": [
+            143,
+            1877,
+            369,
+            1952
+          ],
+          "extentDp": {
+            "width": 82.182,
+            "height": 27.273
+          },
+          "positionDp": {
+            "left": 52,
+            "top": 682.545
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的路线库",
+          "resourceId": "",
+          "boundsPx": [
+            143,
+            2086,
+            943,
+            2150
+          ],
+          "extentDp": {
+            "width": 290.909,
+            "height": 23.273
+          },
+          "positionDp": {
+            "left": 52,
+            "top": 758.545
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "",
+          "resourceId": "com.mi.health:id/main_tl_bottom",
+          "boundsPx": [
+            0,
+            2151,
+            1080,
+            2334
+          ],
+          "extentDp": {
+            "width": 392.727,
+            "height": 66.545
+          },
+          "positionDp": {
+            "left": 0,
+            "top": 782.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "健康",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            105,
+            2260,
+            165,
+            2304
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 38.182,
+            "top": 821.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "运动",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            375,
+            2261,
+            435,
+            2305
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 136.364,
+            "top": 822.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "设备",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            645,
+            2263,
+            705,
+            2307
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 234.545,
+            "top": 822.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            915,
+            2263,
+            975,
+            2307
+          ],
+          "extentDp": {
+            "width": 21.818,
+            "height": 16
+          },
+          "positionDp": {
+            "left": 332.727,
+            "top": 822.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        }
+      ]
+    },
+    {
+      "state": "23-health-large-font",
+      "at": "2026-10-15T12:18:20.549Z",
+      "globalFontScale": 1.3,
+      "nodes": [
+        {
+          "text": "健康",
+          "resourceId": "com.mi.health:id/title",
+          "boundsPx": [
+            72,
+            151,
+            248,
+            280
+          ],
+          "extentDp": {
+            "width": 64,
+            "height": 46.909
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 54.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "添加新设备",
+          "resourceId": "com.mi.health:id/header_view_iv_add",
+          "boundsPx": [
+            926,
+            166,
+            1025,
+            265
+          ],
+          "extentDp": {
+            "width": 36,
+            "height": 36
+          },
+          "positionDp": {
+            "left": 336.727,
+            "top": 60.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "活力指标",
+          "resourceId": "com.mi.health:id/targetView",
+          "boundsPx": [
+            265,
+            335,
+            815,
+            610
+          ],
+          "extentDp": {
+            "width": 200,
+            "height": 100
+          },
+          "positionDp": {
+            "left": 96.364,
+            "top": 121.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "活力指标",
+          "resourceId": "com.mi.health:id/reflectView",
+          "boundsPx": [
+            251,
+            610,
+            829,
+            830
+          ],
+          "extentDp": {
+            "width": 210.182,
+            "height": 80
+          },
+          "positionDp": {
+            "left": 91.273,
+            "top": 221.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "约 0 片饼干",
+          "resourceId": "com.mi.health:id/shareBtnView",
+          "boundsPx": [
+            854,
+            555,
+            1080,
+            797
+          ],
+          "extentDp": {
+            "width": 82.182,
+            "height": 88
+          },
+          "positionDp": {
+            "left": 310.545,
+            "top": 201.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "x0",
+          "resourceId": "com.mi.health:id/thingNumView",
+          "boundsPx": [
+            934,
+            704,
+            1000,
+            797
+          ],
+          "extentDp": {
+            "width": 24,
+            "height": 33.818
+          },
+          "positionDp": {
+            "left": 339.636,
+            "top": 256
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "卡路里",
+          "resourceId": "com.mi.health:id/unitStrView",
+          "boundsPx": [
+            78,
+            841,
+            362,
+            924
+          ],
+          "extentDp": {
+            "width": 103.273,
+            "height": 30.182
+          },
+          "positionDp": {
+            "left": 28.364,
+            "top": 305.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "0",
+          "resourceId": "com.mi.health:id/valueView",
+          "boundsPx": [
+            72,
+            930,
+            121,
+            1027
+          ],
+          "extentDp": {
+            "width": 17.818,
+            "height": 35.273
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 338.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "/400千卡",
+          "resourceId": "com.mi.health:id/tagertView",
+          "boundsPx": [
+            72,
+            1035,
+            250,
+            1098
+          ],
+          "extentDp": {
+            "width": 64.727,
+            "height": 22.909
+          },
+          "positionDp": {
+            "left": 26.182,
+            "top": 376.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "步数",
+          "resourceId": "com.mi.health:id/unitStrView",
+          "boundsPx": [
+            408,
+            841,
+            657,
+            924
+          ],
+          "extentDp": {
+            "width": 90.545,
+            "height": 30.182
+          },
+          "positionDp": {
+            "left": 148.364,
+            "top": 305.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "0",
+          "resourceId": "com.mi.health:id/valueView",
+          "boundsPx": [
+            402,
+            930,
+            451,
+            1027
+          ],
+          "extentDp": {
+            "width": 17.818,
+            "height": 35.273
+          },
+          "positionDp": {
+            "left": 146.182,
+            "top": 338.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "/6000步",
+          "resourceId": "com.mi.health:id/tagertView",
+          "boundsPx": [
+            402,
+            1035,
+            562,
+            1098
+          ],
+          "extentDp": {
+            "width": 58.182,
+            "height": 22.909
+          },
+          "positionDp": {
+            "left": 146.182,
+            "top": 376.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "中高强度",
+          "resourceId": "com.mi.health:id/unitStrView",
+          "boundsPx": [
+            738,
+            841,
+            1041,
+            924
+          ],
+          "extentDp": {
+            "width": 110.182,
+            "height": 30.182
+          },
+          "positionDp": {
+            "left": 268.364,
+            "top": 305.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "0",
+          "resourceId": "com.mi.health:id/valueView",
+          "boundsPx": [
+            732,
+            930,
+            781,
+            1027
+          ],
+          "extentDp": {
+            "width": 17.818,
+            "height": 35.273
+          },
+          "positionDp": {
+            "left": 266.182,
+            "top": 338.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "/30分钟",
+          "resourceId": "com.mi.health:id/tagertView",
+          "boundsPx": [
+            732,
+            1035,
+            885,
+            1098
+          ],
+          "extentDp": {
+            "width": 55.636,
+            "height": 22.909
+          },
+          "positionDp": {
+            "left": 266.182,
+            "top": 376.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "活动次数 0 次",
+          "resourceId": "com.mi.health:id/standLableView",
+          "boundsPx": [
+            138,
+            1211,
+            903,
+            1286
+          ],
+          "extentDp": {
+            "width": 278.182,
+            "height": 27.273
+          },
+          "positionDp": {
+            "left": 50.182,
+            "top": 440.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "点击登录",
+          "resourceId": "com.mi.health:id/txt_login_title",
+          "boundsPx": [
+            201,
+            1435,
+            425,
+            1517
+          ],
+          "extentDp": {
+            "width": 81.455,
+            "height": 29.818
+          },
+          "positionDp": {
+            "left": 73.091,
+            "top": 521.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "体验更丰富的设备管理和运动健康服务",
+          "resourceId": "com.mi.health:id/txt_login_desc",
+          "boundsPx": [
+            201,
+            1523,
+            932,
+            1586
+          ],
+          "extentDp": {
+            "width": 265.818,
+            "height": 22.909
+          },
+          "positionDp": {
+            "left": 73.091,
+            "top": 553.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "10月15日, 无睡眠数据, 记录您的睡眠数据",
+          "resourceId": "",
+          "boundsPx": [
+            33,
+            1674,
+            540,
+            2150
+          ],
+          "extentDp": {
+            "width": 184.364,
+            "height": 173.091
+          },
+          "positionDp": {
+            "left": 12,
+            "top": 608.727
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "睡眠",
+          "resourceId": "com.mi.health:id/tvHomeCardTitle",
+          "boundsPx": [
+            75,
+            1802,
+            498,
+            1886
+          ],
+          "extentDp": {
+            "width": 153.818,
+            "height": 30.545
+          },
+          "positionDp": {
+            "left": 27.273,
+            "top": 655.273
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "记录您的睡眠数据",
+          "resourceId": "com.mi.health:id/tvHomeCardEmptyDesc",
+          "boundsPx": [
+            75,
+            1886,
+            498,
+            2036
+          ],
+          "extentDp": {
+            "width": 153.818,
+            "height": 54.545
+          },
+          "positionDp": {
+            "left": 27.273,
+            "top": 685.818
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "10月15日, 无心率数据, 记录您的心率数据",
+          "resourceId": "",
+          "boundsPx": [
+            568,
+            1674,
+            1047,
+            2150
+          ],
+          "extentDp": {
+            "width": 174.182,
+            "height": 173.091
+          },
+          "positionDp": {
+            "left": 206.545,
+            "top": 608.727
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "心率",
+          "resourceId": "com.mi.health:id/tvHomeCardTitle",
+          "boundsPx": [
+            610,
+            1805,
+            1005,
+            1889
+          ],
+          "extentDp": {
+            "width": 143.636,
+            "height": 30.545
+          },
+          "positionDp": {
+            "left": 221.818,
+            "top": 656.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "记录您的心率数据",
+          "resourceId": "com.mi.health:id/tvHomeCardEmptyDesc",
+          "boundsPx": [
+            610,
+            1889,
+            1005,
+            2039
+          ],
+          "extentDp": {
+            "width": 143.636,
+            "height": 54.545
+          },
+          "positionDp": {
+            "left": 221.818,
+            "top": 686.909
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "",
+          "resourceId": "com.mi.health:id/main_tl_bottom",
+          "boundsPx": [
+            0,
+            2151,
+            1080,
+            2334
+          ],
+          "extentDp": {
+            "width": 392.727,
+            "height": 66.545
+          },
+          "positionDp": {
+            "left": 0,
+            "top": 782.182
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "健康",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            96,
+            2253,
+            174,
+            2311
+          ],
+          "extentDp": {
+            "width": 28.364,
+            "height": 21.091
+          },
+          "positionDp": {
+            "left": 34.909,
+            "top": 819.273
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "运动",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            366,
+            2254,
+            444,
+            2312
+          ],
+          "extentDp": {
+            "width": 28.364,
+            "height": 21.091
+          },
+          "positionDp": {
+            "left": 133.091,
+            "top": 819.636
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "设备",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            636,
+            2256,
+            714,
+            2314
+          ],
+          "extentDp": {
+            "width": 28.364,
+            "height": 21.091
+          },
+          "positionDp": {
+            "left": 231.273,
+            "top": 820.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        },
+        {
+          "text": "我的",
+          "resourceId": "com.mi.health:id/main_tv_tab_name",
+          "boundsPx": [
+            906,
+            2256,
+            984,
+            2314
+          ],
+          "extentDp": {
+            "width": 28.364,
+            "height": 21.091
+          },
+          "positionDp": {
+            "left": 329.455,
+            "top": 820.364
+          },
+          "note": "Text extent is a line/view box, not font size."
+        }
+      ]
+    }
+  ]
+}

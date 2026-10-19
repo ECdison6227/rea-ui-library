@@ -1,0 +1,16 @@
+{
+  "scope": "project-owned Android research emulator only",
+  "originalApkModified": false,
+  "referenceInstalledSeparately": "study.style.reference",
+  "fontScale": {"observedFinal": 1, "event": "runtime/events/end-font-scale.json"},
+  "systemNight": {"observedFinal": "no", "event": "runtime/events/end-night-mode.json"},
+  "sourceNotification": {"final": "on", "evidence": "runtime/events/b15-notification-restore.json", "limitation": "local App state observation, no claim about full OS notification capability"},
+  "airplaneMode": {"retained": true, "reason": "Freeze captured downloaded UI bundle versions in dedicated AVD", "event": "runtime/events/end-airplane.json"},
+  "adbdRoot": {"restoredToNonRoot": true, "events": ["runtime/events/end-unroot.json", "runtime/events/end-id.json"]},
+  "apps": {"forceStopped": ["com.mi.health", "study.style.reference"], "events": ["runtime/events/end-stop-original.json", "runtime/events/end-stop-reference.json"]},
+  "emulator": {"stopped": true, "event": "runtime/events/end-emulator-stop.json", "retainedDisk": "rea_mihealth_ui_20261015"},
+  "toolchain": {"retained": true, "reason": "User requested necessary tools installed; reusable local JDK/Android/REA engines remain available"},
+  "accountsAndWearables": "No credential entry, login success, real wearable binding or account database read",
+  "host": {"optionalWindowsFeaturesChanged": false, "rebooted": false},
+  "published": false
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/access_activity_misport_import_0" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="5.0dp" android:paddingHorizontal="@dimen/page_padding_horizontal_large"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_margin_20dp">
+        <LinearLayout android:orientation="vertical" android:id="@id/access_layout" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="20.0">
+            <miuix.springback.view.SpringBackLayout android:layout_width="match_parent" android:layout_height="match_parent" app:scrollableView="@id/spring_back_target">
+                <miuix.core.widget.NestedScrollView android:id="@id/spring_back_target" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:id="@id/misport_icon_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="41.0dp" android:src="@drawable/setting_misport_icon" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                        <TextView android:id="@id/misport_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_margin_10dp" android:text="@string/access_misport" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/misport_icon_img" style="@style/FontNormal.16sp" />
+                        <View android:id="@id/divider_line" android:background="@color/access_item_divide_color" android:layout_width="match_parent" android:layout_height="@dimen/access_item_divide_height" android:layout_marginTop="@dimen/dimen_margin_40dp" android:layout_marginBottom="@dimen/dimen_margin_30dp" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" app:layout_constraintTop_toBottomOf="@id/misport_text" />
+                        <androidx.recyclerview.widget.RecyclerView android:id="@id/misport_data_recyclerview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_margin_20dp" android:layout_marginStart="8.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/divider_line" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </miuix.core.widget.NestedScrollView>
+            </miuix.springback.view.SpringBackLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/bottom_layout" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" android:layout_below="@id/access_layout" app:layout_constraintBottom_toTopOf="@id/misport_import_desc_urltext">
+            <ImageView android:id="@id/misport_divider_line" android:background="@color/access_black_15_transparent" android:layout_width="match_parent" android:layout_height="@dimen/access_common_divider_width" android:layout_above="@id/misport_import_desc_urltext" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/setting_item_title" android:gravity="center_horizontal" android:autoLink="all" android:layout_gravity="center_horizontal" android:id="@id/misport_import_desc_urltext" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_margin_20dp" android:layout_above="@id/misport_import_immediately" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+        <TextView android:id="@id/misport_import_immediately" android:text="@string/access_misport_import_immediately" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/CommonBtn.Primary" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

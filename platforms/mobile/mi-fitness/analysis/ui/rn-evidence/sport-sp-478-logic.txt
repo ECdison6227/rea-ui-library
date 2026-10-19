@@ -1,0 +1,7 @@
+var t=r(d[0]);
+
+Object.defineProperty(e,"__esModule",{value:!0}),e.Button=void 0;
+
+var o=t(r(d[1])),n=r(d[2]),l=r(d[3]),u=t(r(d[4])),c=n.StyleSheet.create({button:{borderRadius:36,overflow:"hidden",alignItems:"center",justifyContent:"center",paddingHorizontal:15,paddingVertical:4},text:{fontSize:12,fontFamily:"MiSans",paddingVertical:3}});
+
+e.Button=function(t){var s=t.children,f=t.completed,y=void 0!==f&&f,b=t.type,v=void 0===b?6:b,S=t.onPress,p=(0,l.useColorModeValue)("#F1F1F1","rgba(255, 255, 255, 0.06)"),F=(0,l.useColorModeValue)("#000000","rgba(255, 255, 255, 0.8)"),h=y?p:6===v?"#FF612E":"#14CA43",C=y?F:"rgba(255, 255, 255, 1)";return o.default.createElement(u.default,{style:n.StyleSheet.flatten([c.button,{backgroundColor:h}]),onPress:S},o.default.createElement(n.Text,{style:n.StyleSheet.flatten([c.text,{color:C}])},s))}

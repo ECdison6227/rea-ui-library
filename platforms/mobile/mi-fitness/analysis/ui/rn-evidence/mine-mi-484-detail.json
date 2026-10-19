@@ -1,0 +1,260 @@
+{
+  "bundle": "mine",
+  "id": "mi-484",
+  "line": 492,
+  "aliases": {
+    "t": 3,
+    "n": 14,
+    "l": 18,
+    "o": "mi-11",
+    "c": 382,
+    "s": "mi-163",
+    "u": 1780,
+    "f": "mi-485"
+  },
+  "elements": [
+    {
+      "type": "l.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "padding": 12,
+          "flex": 1,
+          "width": "100%",
+          "justifyContent": "flex-end"
+        }
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(l.View,{style:{backgroundColor:t.bgColor,padding:24,borderRadius:28}},n.default.createElement(u.Text,{style:{fontSize:16,fontWeight:\"400\",lineHeight:26,marginBottom:28}},o.default.trans(\"login.account.desc\")),n.default.createElement(u.HStack,null,n.default.createElement(u.Pre"
+        }
+      ]
+    },
+    {
+      "type": "l.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "backgroundColor": {
+            "$code": "t.bgColor"
+          },
+          "padding": 24,
+          "borderRadius": 28
+        }
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(u.Text,{style:{fontSize:16,fontWeight:\"400\",lineHeight:26,marginBottom:28}},o.default.trans(\"login.account.desc\"))"
+        },
+        {
+          "$code": "n.default.createElement(u.HStack,null,n.default.createElement(u.Pressable,{style:{flex:1,paddingHorizontal:15,paddingVertical:14,alignItems:\"center\",justifyContent:\"center\",borderRadius:16,backgroundColor:\"rgba(0, 0, 0, 0.06)\"},onPress:y},n.default.createElement(u.Text,{style:{fontSize:17,fontWeight"
+        }
+      ]
+    },
+    {
+      "type": "u.Text",
+      "module": 1780,
+      "props": {
+        "style": {
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 26,
+          "marginBottom": 28
+        }
+      },
+      "children": [
+        {
+          "$code": "o.default.trans(\"login.account.desc\")"
+        }
+      ]
+    },
+    {
+      "type": "u.HStack",
+      "module": 1780,
+      "props": null,
+      "children": [
+        {
+          "$code": "n.default.createElement(u.Pressable,{style:{flex:1,paddingHorizontal:15,paddingVertical:14,alignItems:\"center\",justifyContent:\"center\",borderRadius:16,backgroundColor:\"rgba(0, 0, 0, 0.06)\"},onPress:y},n.default.createElement(u.Text,{style:{fontSize:17,fontWeight:\"500\",color:t.hTxtColor,opacity:.8}},"
+        },
+        {
+          "$code": "n.default.createElement(l.View,{style:{width:16}})"
+        },
+        {
+          "$code": "n.default.createElement(u.Pressable,{style:{flex:1,paddingHorizontal:15,paddingVertical:14,alignItems:\"center\",justifyContent:\"center\",borderRadius:16,backgroundColor:\"#FF612E\"},onPress:function(){y(),setTimeout(function(){c.CommonBridge.showLoginPage()},1e3)}},n.default.createElement(u.Text,{style:"
+        }
+      ]
+    },
+    {
+      "type": "u.Pressable",
+      "module": 1780,
+      "props": {
+        "style": {
+          "flex": 1,
+          "paddingHorizontal": 15,
+          "paddingVertical": 14,
+          "alignItems": "center",
+          "justifyContent": "center",
+          "borderRadius": 16,
+          "backgroundColor": "rgba(0, 0, 0, 0.06)"
+        },
+        "onPress": {
+          "$code": "y"
+        }
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(u.Text,{style:{fontSize:17,fontWeight:\"500\",color:t.hTxtColor,opacity:.8}},o.default.trans(\"login.privacy.common.cancel\"))"
+        }
+      ]
+    },
+    {
+      "type": "u.Text",
+      "module": 1780,
+      "props": {
+        "style": {
+          "fontSize": 17,
+          "fontWeight": "500",
+          "color": {
+            "$code": "t.hTxtColor"
+          },
+          "opacity": 0.8
+        }
+      },
+      "children": [
+        {
+          "$code": "o.default.trans(\"login.privacy.common.cancel\")"
+        }
+      ]
+    },
+    {
+      "type": "l.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "width": 16
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "u.Pressable",
+      "module": 1780,
+      "props": {
+        "style": {
+          "flex": 1,
+          "paddingHorizontal": 15,
+          "paddingVertical": 14,
+          "alignItems": "center",
+          "justifyContent": "center",
+          "borderRadius": 16,
+          "backgroundColor": "#FF612E"
+        },
+        "onPress": {
+          "$code": "function(){y(),setTimeout(function(){c.CommonBridge.showLoginPage()},1e3)}"
+        }
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(u.Text,{style:{fontSize:17,fontWeight:\"500\",color:\"#fff\"}},o.default.trans(\"login.login\"))"
+        }
+      ]
+    },
+    {
+      "type": "u.Text",
+      "module": 1780,
+      "props": {
+        "style": {
+          "fontSize": 17,
+          "fontWeight": "500",
+          "color": "#fff"
+        }
+      },
+      "children": [
+        {
+          "$code": "o.default.trans(\"login.login\")"
+        }
+      ]
+    }
+  ],
+  "animationCalls": [
+    "setTimeout(function(){c.CommonBridge.showLoginPage()},1e3)"
+  ],
+  "numericStyleProperties": [
+    {
+      "key": "padding",
+      "value": 12
+    },
+    {
+      "key": "width",
+      "value": "100%"
+    },
+    {
+      "key": "padding",
+      "value": 24
+    },
+    {
+      "key": "borderRadius",
+      "value": 28
+    },
+    {
+      "key": "fontSize",
+      "value": 16
+    },
+    {
+      "key": "fontWeight",
+      "value": "400"
+    },
+    {
+      "key": "lineHeight",
+      "value": 26
+    },
+    {
+      "key": "marginBottom",
+      "value": 28
+    },
+    {
+      "key": "paddingHorizontal",
+      "value": 15
+    },
+    {
+      "key": "paddingVertical",
+      "value": 14
+    },
+    {
+      "key": "borderRadius",
+      "value": 16
+    },
+    {
+      "key": "fontSize",
+      "value": 17
+    },
+    {
+      "key": "fontWeight",
+      "value": "500"
+    },
+    {
+      "key": "width",
+      "value": 16
+    },
+    {
+      "key": "paddingHorizontal",
+      "value": 15
+    },
+    {
+      "key": "paddingVertical",
+      "value": 14
+    },
+    {
+      "key": "borderRadius",
+      "value": 16
+    },
+    {
+      "key": "fontSize",
+      "value": 17
+    },
+    {
+      "key": "fontWeight",
+      "value": "500"
+    }
+  ]
+}

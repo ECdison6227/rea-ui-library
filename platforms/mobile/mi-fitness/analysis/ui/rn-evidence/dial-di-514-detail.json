@@ -1,0 +1,615 @@
+{
+  "bundle": "dial",
+  "id": "di-514",
+  "line": 522,
+  "aliases": {
+    "t": 3,
+    "n": 54,
+    "o": 27,
+    "c": 14,
+    "l": 18,
+    "u": 1113,
+    "s": "di-140",
+    "f": "di-141",
+    "p": "di-144",
+    "y": 631,
+    "h": 382,
+    "E": 558,
+    "v": "di-515",
+    "C": "di-149",
+    "k": "di-262",
+    "S": 566,
+    "b": 1780,
+    "w": "di-430",
+    "I": "di-516",
+    "x": "di-519",
+    "O": "di-239",
+    "M": "di-520",
+    "P": "di-523"
+  },
+  "elements": [
+    {
+      "type": "b.VStack",
+      "module": 1780,
+      "props": {
+        "space": 22,
+        "paddingTop": 21
+      },
+      "children": [
+        {
+          "$code": "Array.from({length:Math.ceil((null==t?void 0:null==(n=t.watchfaceList)?void 0:n.length)/3)}).map(function(n,o,l){var u=t.watchfaceList.slice(3*o,3*(o+1)),s=3-u.length,f=o===l.length-1;return c.default.createElement(b.HStack,{key:o,paddingX:5,justifyContent:\"space-around\"},u.map(function(t){return c."
+        }
+      ]
+    },
+    {
+      "type": "b.HStack",
+      "module": 1780,
+      "props": {
+        "key": {
+          "$code": "o"
+        },
+        "paddingX": 5,
+        "justifyContent": "space-around"
+      },
+      "children": [
+        {
+          "$code": "u.map(function(t){return c.default.createElement(O.InView,{as:b.Box,key:t.id,maxWidth:\"33%\",onChange:t.onExpose,onStay:t.onStay,triggerOnce:!0,threshold:.6666666666666666,duration:200,freeze:ee},c.default.createElement(w.WatchFaceItem1,{onMounted:le,data:t,shape:z,onClick:t.onClick,size:V,vip:B}))})"
+        },
+        {
+          "$code": "s>0&&f?Array.from({length:s}).map(function(t,n){return c.default.createElement(w.EmptyWatchFaceItem1,{key:n,shape:z,size:V})}):null"
+        }
+      ]
+    },
+    {
+      "type": "O.InView",
+      "module": "di-239",
+      "props": {
+        "as": {
+          "$code": "b.Box"
+        },
+        "key": {
+          "$code": "t.id"
+        },
+        "maxWidth": "33%",
+        "onChange": {
+          "$code": "t.onExpose"
+        },
+        "onStay": {
+          "$code": "t.onStay"
+        },
+        "triggerOnce": {
+          "$code": "!0"
+        },
+        "threshold": 0.6666666666666666,
+        "duration": 200,
+        "freeze": {
+          "$code": "ee"
+        }
+      },
+      "children": [
+        {
+          "$code": "c.default.createElement(w.WatchFaceItem1,{onMounted:le,data:t,shape:z,onClick:t.onClick,size:V,vip:B})"
+        }
+      ]
+    },
+    {
+      "type": "w.WatchFaceItem1",
+      "module": "di-430",
+      "props": {
+        "onMounted": {
+          "$code": "le"
+        },
+        "data": {
+          "$code": "t"
+        },
+        "shape": {
+          "$code": "z"
+        },
+        "onClick": {
+          "$code": "t.onClick"
+        },
+        "size": {
+          "$code": "V"
+        },
+        "vip": {
+          "$code": "B"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "w.EmptyWatchFaceItem1",
+      "module": "di-430",
+      "props": {
+        "key": {
+          "$code": "n"
+        },
+        "shape": {
+          "$code": "z"
+        },
+        "size": {
+          "$code": "V"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "O.InView",
+      "module": "di-239",
+      "props": {
+        "as": {
+          "$code": "b.Box"
+        },
+        "bg": {
+          "$code": "N"
+        },
+        "flex": 0.5,
+        "borderRadius": 12,
+        "marginRight": {
+          "$code": "o%2==0?3:0"
+        },
+        "overflow": "hidden",
+        "onChange": {
+          "$code": "n.onExpose"
+        },
+        "triggerOnce": {
+          "$code": "!0"
+        },
+        "onStay": {
+          "$code": "n.onStay"
+        },
+        "threshold": 0.6666666666666666,
+        "duration": 200,
+        "freeze": {
+          "$code": "ee"
+        }
+      },
+      "children": [
+        {
+          "$code": "c.default.createElement(w.WatchFaceItem2,{onMounted:ce,data:n,shape:z,onClick:n.onClick,size:V,vip:B})"
+        }
+      ]
+    },
+    {
+      "type": "w.WatchFaceItem2",
+      "module": "di-430",
+      "props": {
+        "onMounted": {
+          "$code": "ce"
+        },
+        "data": {
+          "$code": "n"
+        },
+        "shape": {
+          "$code": "z"
+        },
+        "onClick": {
+          "$code": "n.onClick"
+        },
+        "size": {
+          "$code": "V"
+        },
+        "vip": {
+          "$code": "B"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "b.VStack",
+      "module": 1780,
+      "props": {
+        "space": 3
+      },
+      "children": [
+        {
+          "$code": "(0,S.isEmpty)(be)?null:c.default.createElement(I.default,{data:be,onIndexChanged:Me,from:\"dial\"})"
+        },
+        {
+          "$code": "(0,S.isEmpty)(Se)?null:c.default.createElement(b.Box,{onLayout:Le},c.default.createElement(x.default,{data:Se,useRNTouchable:!0}))"
+        },
+        {
+          "$code": "(0,S.isEmpty)(we)?null:null==we?void 0:we.map(function(t){return c.default.createElement(b.Box,{key:t.name,borderRadius:18,paddingBottom:18,overflow:\"hidden\",bg:N},c.default.createElement(b.HStack,{alignItems:\"center\",justifyContent:\"space-between\",paddingLeft:14,paddingRight:3,paddingTop:3},c.defau"
+        },
+        {
+          "$code": "(0,S.isEmpty)(Ie)?null:c.default.createElement(b.Text,{px:3,pb:3,fontSize:17,fontWeight:\"500\",color:q},p.default.trans(\"dial.market.more.recommend\"))"
+        }
+      ]
+    },
+    {
+      "type": "I.default",
+      "module": "di-516",
+      "props": {
+        "data": {
+          "$code": "be"
+        },
+        "onIndexChanged": {
+          "$code": "Me"
+        },
+        "from": "dial"
+      },
+      "children": []
+    },
+    {
+      "type": "b.Box",
+      "module": 1780,
+      "props": {
+        "onLayout": {
+          "$code": "Le"
+        }
+      },
+      "children": [
+        {
+          "$code": "c.default.createElement(x.default,{data:Se,useRNTouchable:!0})"
+        }
+      ]
+    },
+    {
+      "type": "x.default",
+      "module": "di-519",
+      "props": {
+        "data": {
+          "$code": "Se"
+        },
+        "useRNTouchable": {
+          "$code": "!0"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "b.Box",
+      "module": 1780,
+      "props": {
+        "key": {
+          "$code": "t.name"
+        },
+        "borderRadius": 18,
+        "paddingBottom": 18,
+        "overflow": "hidden",
+        "bg": {
+          "$code": "N"
+        }
+      },
+      "children": [
+        {
+          "$code": "c.default.createElement(b.HStack,{alignItems:\"center\",justifyContent:\"space-between\",paddingLeft:14,paddingRight:3,paddingTop:3},c.default.createElement(b.Text,{fontSize:17,color:q,fontWeight:\"500\"},t.name),c.default.createElement(b.Pressable,{onPress:t.onClick},c.default.createElement(b.HStack,{ali"
+        },
+        {
+          "$code": "xe(t)"
+        }
+      ]
+    },
+    {
+      "type": "b.HStack",
+      "module": 1780,
+      "props": {
+        "alignItems": "center",
+        "justifyContent": "space-between",
+        "paddingLeft": 14,
+        "paddingRight": 3,
+        "paddingTop": 3
+      },
+      "children": [
+        {
+          "$code": "c.default.createElement(b.Text,{fontSize:17,color:q,fontWeight:\"500\"},t.name)"
+        },
+        {
+          "$code": "c.default.createElement(b.Pressable,{onPress:t.onClick},c.default.createElement(b.HStack,{alignItems:\"center\"},c.default.createElement(b.Text,{fontSize:15,color:U,accessibilityLabel:p.default.trans(\"all.title\")+t.name,accessibilityRole:\"button\"},p.default.trans(\"all.title\")),c.default.createElement("
+        }
+      ]
+    },
+    {
+      "type": "b.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 17,
+        "color": {
+          "$code": "q"
+        },
+        "fontWeight": "500"
+      },
+      "children": [
+        {
+          "$code": "t.name"
+        }
+      ]
+    },
+    {
+      "type": "b.Pressable",
+      "module": 1780,
+      "props": {
+        "onPress": {
+          "$code": "t.onClick"
+        }
+      },
+      "children": [
+        {
+          "$code": "c.default.createElement(b.HStack,{alignItems:\"center\"},c.default.createElement(b.Text,{fontSize:15,color:U,accessibilityLabel:p.default.trans(\"all.title\")+t.name,accessibilityRole:\"button\"},p.default.trans(\"all.title\")),c.default.createElement(u.default,{source:X,style:P.styles.rightIcon}))"
+        }
+      ]
+    },
+    {
+      "type": "b.HStack",
+      "module": 1780,
+      "props": {
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "$code": "c.default.createElement(b.Text,{fontSize:15,color:U,accessibilityLabel:p.default.trans(\"all.title\")+t.name,accessibilityRole:\"button\"},p.default.trans(\"all.title\"))"
+        },
+        {
+          "$code": "c.default.createElement(u.default,{source:X,style:P.styles.rightIcon})"
+        }
+      ]
+    },
+    {
+      "type": "b.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 15,
+        "color": {
+          "$code": "U"
+        },
+        "accessibilityLabel": {
+          "$code": "p.default.trans(\"all.title\")+t.name"
+        },
+        "accessibilityRole": "button"
+      },
+      "children": [
+        {
+          "$code": "p.default.trans(\"all.title\")"
+        }
+      ]
+    },
+    {
+      "type": "u.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "X"
+        },
+        "style": {
+          "$code": "P.styles.rightIcon"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "b.Text",
+      "module": 1780,
+      "props": {
+        "px": 3,
+        "pb": 3,
+        "fontSize": 17,
+        "fontWeight": "500",
+        "color": {
+          "$code": "q"
+        }
+      },
+      "children": [
+        {
+          "$code": "p.default.trans(\"dial.market.more.recommend\")"
+        }
+      ]
+    },
+    {
+      "type": "b.Center",
+      "module": 1780,
+      "props": {
+        "py": 3
+      },
+      "children": [
+        {
+          "$code": "c.default.createElement(b.Text,null,p.default.trans(\"common.loading\"))"
+        }
+      ]
+    },
+    {
+      "type": "b.Text",
+      "module": 1780,
+      "props": null,
+      "children": [
+        {
+          "$code": "p.default.trans(\"common.loading\")"
+        }
+      ]
+    },
+    {
+      "type": "O.IOFlatList",
+      "module": "di-239",
+      "props": {
+        "onScroll": {
+          "$code": "Pe"
+        },
+        "style": {
+          "$code": "P.styles.container"
+        },
+        "columnWrapperStyle": {
+          "$code": "P.styles.columnWrapperStyle"
+        },
+        "data": {
+          "$code": "Ie"
+        },
+        "renderItem": {
+          "$code": "Oe"
+        },
+        "numColumns": 2,
+        "keyExtractor": {
+          "$code": "ge"
+        },
+        "refreshControl": {
+          "$code": "c.default.createElement(l.RefreshControl,{refreshing:n,onRefresh:Ce})"
+        },
+        "onEndReached": {
+          "$code": "L?ke:void 0"
+        },
+        "onEndReachedThreshold": 0.2,
+        "ListHeaderComponent": {
+          "$code": "Re"
+        },
+        "initialNumToRender": 4,
+        "ListFooterComponent": {
+          "$code": "Te"
+        },
+        "viewabilityConfigCallbackPairs": {
+          "$code": "me.current"
+        },
+        "ListEmptyComponent": {
+          "$code": "function(){return(0,S.isEmpty)(be)&&(0,S.isEmpty)(Se)&&(0,S.isEmpty)(we)&&(0,S.isEmpty)(Ie)?c.default.createElement(b.Center,{flex:1,minHeight:h.CommonStyles.ViewHeight-100},c.default.createElement(b.VStack,{alignItems:\"center\",space:2.5},c.default.createElement(u.default,{source:J,style:{height:60,width:93}}),c.default.createElement(b.Text,{color:U},p.default.trans(\"common.emptyData\")))):null}"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "l.RefreshControl",
+      "module": 18,
+      "props": {
+        "refreshing": {
+          "$code": "n"
+        },
+        "onRefresh": {
+          "$code": "Ce"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "b.Center",
+      "module": 1780,
+      "props": {
+        "flex": 1,
+        "minHeight": {
+          "$code": "h.CommonStyles.ViewHeight-100"
+        }
+      },
+      "children": [
+        {
+          "$code": "c.default.createElement(b.VStack,{alignItems:\"center\",space:2.5},c.default.createElement(u.default,{source:J,style:{height:60,width:93}}),c.default.createElement(b.Text,{color:U},p.default.trans(\"common.emptyData\")))"
+        }
+      ]
+    },
+    {
+      "type": "b.VStack",
+      "module": 1780,
+      "props": {
+        "alignItems": "center",
+        "space": 2.5
+      },
+      "children": [
+        {
+          "$code": "c.default.createElement(u.default,{source:J,style:{height:60,width:93}})"
+        },
+        {
+          "$code": "c.default.createElement(b.Text,{color:U},p.default.trans(\"common.emptyData\"))"
+        }
+      ]
+    },
+    {
+      "type": "u.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "J"
+        },
+        "style": {
+          "height": 60,
+          "width": 93
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "b.Text",
+      "module": 1780,
+      "props": {
+        "color": {
+          "$code": "U"
+        }
+      },
+      "children": [
+        {
+          "$code": "p.default.trans(\"common.emptyData\")"
+        }
+      ]
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": [
+    {
+      "key": "paddingTop",
+      "value": 21
+    },
+    {
+      "key": "paddingX",
+      "value": 5
+    },
+    {
+      "key": "duration",
+      "value": 200
+    },
+    {
+      "key": "borderRadius",
+      "value": 12
+    },
+    {
+      "key": "marginRight",
+      "value": {
+        "$code": "o%2==0?3:0"
+      }
+    },
+    {
+      "key": "duration",
+      "value": 200
+    },
+    {
+      "key": "borderRadius",
+      "value": 18
+    },
+    {
+      "key": "paddingBottom",
+      "value": 18
+    },
+    {
+      "key": "paddingLeft",
+      "value": 14
+    },
+    {
+      "key": "paddingRight",
+      "value": 3
+    },
+    {
+      "key": "paddingTop",
+      "value": 3
+    },
+    {
+      "key": "fontSize",
+      "value": 17
+    },
+    {
+      "key": "fontWeight",
+      "value": "500"
+    },
+    {
+      "key": "fontSize",
+      "value": 15
+    },
+    {
+      "key": "fontSize",
+      "value": 17
+    },
+    {
+      "key": "fontWeight",
+      "value": "500"
+    },
+    {
+      "key": "height",
+      "value": 60
+    },
+    {
+      "key": "width",
+      "value": 93
+    }
+  ]
+}

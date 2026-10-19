@@ -1,0 +1,176 @@
+{
+  "bundle": "sport",
+  "id": "sp-856",
+  "line": 864,
+  "aliases": {
+    "t": 3,
+    "n": 14,
+    "o": 18,
+    "l": 834,
+    "u": "sp-138",
+    "c": "sp-162",
+    "s": "sp-261",
+    "f": "sp-264",
+    "v": "sp-175",
+    "p": "sp-857"
+  },
+  "elements": [
+    {
+      "type": "o.View",
+      "module": 18,
+      "props": {
+        "style": {
+          "marginBottom": 10
+        }
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(v.default,{title:c.default.trans(\"sport.plan.trainingIndicator\"),showMoreButton:!1,cardExtraStyle:{marginBottom:0}},x.length>1?n.default.createElement(l.FlatList,{showsHorizontalScrollIndicator:!1,keyExtractor:function(t){return t.title},horizontal:!0,data:x,renderItem:functi"
+        }
+      ]
+    },
+    {
+      "type": "v.default",
+      "module": "sp-175",
+      "props": {
+        "title": {
+          "$code": "c.default.trans(\"sport.plan.trainingIndicator\")"
+        },
+        "showMoreButton": {
+          "$code": "!1"
+        },
+        "cardExtraStyle": {
+          "marginBottom": 0
+        }
+      },
+      "children": [
+        {
+          "$code": "x.length>1?n.default.createElement(l.FlatList,{showsHorizontalScrollIndicator:!1,keyExtractor:function(t){return t.title},horizontal:!0,data:x,renderItem:function(t){var o=t.item,l=t.index;return n.default.createElement(p.IndicatorCard,{title:o.title,value:o.value,desc:o.description,minValue:o.minVa"
+        }
+      ]
+    },
+    {
+      "type": "l.FlatList",
+      "module": 834,
+      "props": {
+        "showsHorizontalScrollIndicator": {
+          "$code": "!1"
+        },
+        "keyExtractor": {
+          "$code": "function(t){return t.title}"
+        },
+        "horizontal": {
+          "$code": "!0"
+        },
+        "data": {
+          "$code": "x"
+        },
+        "renderItem": {
+          "$code": "function(t){var o=t.item,l=t.index;return n.default.createElement(p.IndicatorCard,{title:o.title,value:o.value,desc:o.description,minValue:o.minValue,maxValue:o.maxValue,segments:o.colors,activeIndex:o.activeIndex,onPress:function(){s.default.goToTrainingIndexDataPage(o.date,o.id,o.type)},emptyGoto:function(){return y(o)},total:x.length,style:{marginRight:l==x.length-1?12:10}})}"
+        },
+        "overScrollMode": "never"
+      },
+      "children": []
+    },
+    {
+      "type": "p.IndicatorCard",
+      "module": "sp-857",
+      "props": {
+        "title": {
+          "$code": "o.title"
+        },
+        "value": {
+          "$code": "o.value"
+        },
+        "desc": {
+          "$code": "o.description"
+        },
+        "minValue": {
+          "$code": "o.minValue"
+        },
+        "maxValue": {
+          "$code": "o.maxValue"
+        },
+        "segments": {
+          "$code": "o.colors"
+        },
+        "activeIndex": {
+          "$code": "o.activeIndex"
+        },
+        "onPress": {
+          "$code": "function(){s.default.goToTrainingIndexDataPage(o.date,o.id,o.type)}"
+        },
+        "emptyGoto": {
+          "$code": "function(){return y(o)}"
+        },
+        "total": {
+          "$code": "x.length"
+        },
+        "style": {
+          "marginRight": {
+            "$code": "l==x.length-1?12:10"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "p.IndicatorCard",
+      "module": "sp-857",
+      "props": {
+        "title": {
+          "$code": "x[0].title"
+        },
+        "value": {
+          "$code": "x[0].value"
+        },
+        "desc": {
+          "$code": "x[0].description"
+        },
+        "minValue": {
+          "$code": "x[0].minValue"
+        },
+        "maxValue": {
+          "$code": "x[0].maxValue"
+        },
+        "segments": {
+          "$code": "x[0].colors"
+        },
+        "activeIndex": {
+          "$code": "x[0].activeIndex"
+        },
+        "onPress": {
+          "$code": "function(){s.default.goToTrainingIndexDataPage(x[0].date,x[0].id,x[0].type)}"
+        },
+        "emptyGoto": {
+          "$code": "function(){return y(x[0])}"
+        },
+        "style": {
+          "marginRight": 12
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": [
+    {
+      "key": "marginBottom",
+      "value": 10
+    },
+    {
+      "key": "marginBottom",
+      "value": 0
+    },
+    {
+      "key": "marginRight",
+      "value": {
+        "$code": "l==x.length-1?12:10"
+      }
+    },
+    {
+      "key": "marginRight",
+      "value": 12
+    }
+  ]
+}

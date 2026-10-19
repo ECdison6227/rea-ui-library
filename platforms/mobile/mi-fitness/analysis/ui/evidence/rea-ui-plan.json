@@ -1,0 +1,49 @@
+[
+  {
+    "id": "main",
+    "tool": "inspect_android_class",
+    "args": {
+      "path": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\base.apk",
+      "class_name": "com.xiaomi.fitness.main.MainActivity"
+    },
+    "methods": [
+      "showFragment",
+      "onBackPressed"
+    ]
+  },
+  {
+    "id": "main-tabs",
+    "tool": "inspect_android_class",
+    "args": {
+      "path": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\base.apk",
+      "class_name": "com.xiaomi.fitness.main.export.MainTab"
+    },
+    "methods": [
+      "<clinit>"
+    ]
+  },
+  {
+    "id": "health",
+    "tool": "inspect_android_class",
+    "args": {
+      "path": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\base.apk",
+      "class_name": "com.xiaomi.fitness.homepage.HealthV2Fragment"
+    },
+    "methods": [
+      "onVisible",
+      "initRefreshLayout"
+    ]
+  },
+  {
+    "id": "disabled-row",
+    "tool": "inspect_android_class",
+    "args": {
+      "path": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\base.apk",
+      "class_name": "com.xiaomi.fitness.widget.RightArrowSingleLineTextView"
+    },
+    "methods": [
+      "setDefaultEnable",
+      "onTouchEvent"
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "id": "sp-478",
+  "line": 486,
+  "bytes": 899,
+  "deps": [
+    3,
+    14,
+    18,
+    "sp-144",
+    "sp-234"
+  ],
+  "exports": [
+    "Button"
+  ],
+  "strings": [
+    "hidden",
+    "center",
+    "MiSans",
+    "#F1F1F1",
+    "rgba(255, 255, 255, 0.06)",
+    "#000000",
+    "rgba(255, 255, 255, 0.8)",
+    "#FF612E",
+    "#14CA43",
+    "rgba(255, 255, 255, 1)"
+  ],
+  "routes": [],
+  "styleSheets": [
+    {
+      "callee": "n.StyleSheet.create",
+      "styles": {
+        "button": {
+          "borderRadius": 36,
+          "overflow": "hidden",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingHorizontal": 15,
+          "paddingVertical": 4
+        },
+        "text": {
+          "fontSize": 12,
+          "fontFamily": "MiSans",
+          "paddingVertical": 3
+        }
+      },
+      "code": "n.StyleSheet.create({button:{borderRadius:36,overflow:\"hidden\",alignItems:\"center\",justifyContent:\"center\",paddingHorizontal:15,paddingVertical:4},text:{fontSize:12,fontFamily:\"MiSans\",paddingVertical:3}})"
+    }
+  ],
+  "assetNames": [],
+  "calls": []
+}

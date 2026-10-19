@@ -1,0 +1,213 @@
+{
+  "capture_path": "/Users/cjr/Projects/hark-ui-reserch/evidence/rea/02-chat-page.json",
+  "capture_sha256": "6eb378eb96fd2cb50a3d69756e475713a9a6ebc19fc32987c4e567ec343ac37b",
+  "capture_kind": "page-inspection",
+  "source_evidence_id": "ev_ef1be7aaa0463c2529db64a2aad1099a530287426faeb9e8990f7932829b8949",
+  "capture_completeness": {
+    "status": "policy_filtered",
+    "conditions": [
+      "attach_limited",
+      "policy_filtered"
+    ],
+    "policy_filtered_sections": [
+      "console_text",
+      "dom",
+      "frames",
+      "json_body_shapes",
+      "metadata",
+      "resources",
+      "scripts",
+      "storage_keys",
+      "websocket_shapes",
+      "workers"
+    ],
+    "attach_limited_sections": [
+      "console_events",
+      "metadata",
+      "network_requests",
+      "websocket_connections",
+      "websocket_frames"
+    ],
+    "truncated_sections": [],
+    "unavailable_sections": [],
+    "excluded": [
+      {
+        "section": "console_text",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "dom",
+        "reason": "unsupported_url",
+        "count": 1
+      },
+      {
+        "section": "frames",
+        "reason": "unsupported_url",
+        "count": 1
+      },
+      {
+        "section": "json_body_shapes",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "metadata",
+        "reason": "disallowed_origin",
+        "count": 82
+      },
+      {
+        "section": "metadata",
+        "reason": "unsupported_url",
+        "count": 1
+      },
+      {
+        "section": "resources",
+        "reason": "disallowed_origin",
+        "count": 15
+      },
+      {
+        "section": "scripts",
+        "reason": "disallowed_origin",
+        "count": 36
+      },
+      {
+        "section": "scripts",
+        "reason": "unattributed_origin",
+        "count": 22
+      },
+      {
+        "section": "storage_keys",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "websocket_shapes",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "workers",
+        "reason": "out_of_target_scope",
+        "count": 2
+      }
+    ],
+    "dropped_events": {
+      "scripts": 0,
+      "network_requests": 0,
+      "console_events": 0,
+      "websocket_connections": 0,
+      "websocket_frames": 0,
+      "webmcp_tools": 0,
+      "timeline_events": 0,
+      "total": 0
+    }
+  },
+  "output_directory": "/Users/cjr/Projects/hark-ui-reserch/evidence/scripts/rea-export",
+  "analysis_input": {
+    "input_path": "/Users/cjr/Projects/hark-ui-reserch/evidence/scripts/rea-export/files",
+    "format": "directory"
+  },
+  "scripts": [
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_1c274f3fabf65d18997284d81ea3e7b27ce26b0592e99e8a22d6e548256e1dcc",
+        "frame_id": null,
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://hark.com/cdn-cgi/challenge-platform/scripts/jsd/main.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6927950c6887e0db1e34fd9204ff853c860073ed6814ff4302eb7c73385c599d/cdn-cgi/challenge-platform/scripts/jsd/main.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "3f63e446b649343651f9fc2b51968808ca24a1385ebf9b1e5ada084c001c9494",
+        "bytes": 22667,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_2005018feeb4e247366fdcd9614e8ba35d3228e911a207fc5da4bd5d12e80f35",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://hark.com/chat",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-2-fbc63401a3ea48f2496edafe69a7cf105b8f26c9d7826e3cbc50a52f95114c94.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "7e60ffb59290dd625763e357444e09d38eabbceba846e00a0d85c2ccba137e05",
+        "bytes": 1685,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_a024d37893cceda196feabac83726047e4fa3c6016d8cec9d4834be74b79eb88",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://hark.com/chat",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-3-163bd9d342eb539f679277b669b7e91419eeb7ca78de343733319ee3be1fc11b.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "dba0de44d70f37aa4aab3c0d047495569a47b028e373298627d091760f492820",
+        "bytes": 921,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_c2f1a58fae55ab78f20a1535d448afe173b8e3787af76208e93055418706655b",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://hark.com/chat",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-4-b2ddef940fda2684a4e10824013e6476c7663a525a45961ac68db87a71e11e00.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "f7cfb5b3550792504cd7dad7b3ce46ea602433a8a64e8e65219b15dbf43e92dc",
+        "bytes": 12351,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    }
+  ],
+  "limitations": [
+    "Observation starts when REA attaches; prior network and console activity is unavailable.",
+    "Raw network headers, bodies, cookies, storage values, console objects, and WebSocket payloads are never retained; explicitly requested primitive console text is retained verbatim, while payload captures retain value-free shapes.",
+    "Source maps are reported only as declarative URLs and are not fetched.",
+    "URL-less scripts and console events without an allowed source URL are excluded because their origin cannot be proven.",
+    "CDP discovery omitted the target attachment state; attached is reported as unknown.",
+    "Only script bytes retained in this capture are exported. Sources are not refetched or executed, and a response or Debugger source does not prove execution.",
+    "Ordinary unambiguous URL paths preserve relative module layouts by origin, including case-distinct spellings. Query variants, exact path collisions, file/directory prefixes, inline sources, and unrepresentable paths are isolated. A case-distinct pair is isolated only when the destination filesystem cannot store both spellings; the record names that pair. Browser module relationships of isolated paths remain unknown.",
+    "Local JavaScript analysis does not implement browser import maps, root-relative URL resolution, remote URL loading, or browser runtime behavior. It may strip import queries and fragments; isolated variants are not canonical targets.",
+    "Source-map declarations are retained as metadata. No source maps or missing dependencies are fetched or reconstructed.",
+    "Scenario response bytes preserve the output of Playwright's Response.body() API; any source-body provenance caveat from the capture is retained in this manifest. Debugger sources are the exposed text encoded as UTF-8. Redacted bytes are exported exactly as retained, and may no longer parse as JavaScript."
+  ]
+}

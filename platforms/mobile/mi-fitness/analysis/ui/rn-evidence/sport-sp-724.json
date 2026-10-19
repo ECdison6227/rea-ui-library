@@ -1,0 +1,43 @@
+{
+  "id": "sp-724",
+  "line": 732,
+  "bytes": 961,
+  "deps": [
+    3,
+    14,
+    18,
+    "sp-297",
+    "sp-144",
+    1780
+  ],
+  "exports": [
+    "styles",
+    "TabViewContainer"
+  ],
+  "strings": [
+    "column",
+    "hidden",
+    " ",
+    "26px",
+    "20px",
+    "center",
+    "space-between"
+  ],
+  "routes": [],
+  "styleSheets": [
+    {
+      "callee": "n.StyleSheet.create",
+      "styles": {
+        "container": {
+          "flex": 1,
+          "flexGrow": 1,
+          "flexDirection": "column",
+          "overflow": "hidden"
+        }
+      },
+      "code": "n.StyleSheet.create({container:{flex:1,flexGrow:1,flexDirection:\"column\",overflow:\"hidden\"}})"
+    }
+  ],
+  "assetNames": [],
+  "calls": []
+}

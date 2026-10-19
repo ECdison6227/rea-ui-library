@@ -1,0 +1,104 @@
+{
+  "bundle": "mine",
+  "id": "mi-632",
+  "line": 640,
+  "aliases": {
+    "t": 3,
+    "n": 27,
+    "o": 14,
+    "u": 1113,
+    "c": "mi-168",
+    "s": "mi-138",
+    "l": "mi-197",
+    "f": "mi-126",
+    "h": 631,
+    "p": "mi-163",
+    "y": 1780,
+    "v": "mi-359",
+    "w": "mi-386",
+    "E": "mi-271",
+    "b": "mi-396",
+    "x": "mi-510",
+    "L": "mi-399",
+    "_": "mi-418",
+    "O": "mi-633",
+    "P": "mi-634"
+  },
+  "elements": [
+    {
+      "type": "y.View",
+      "module": 1780,
+      "props": {
+        "position": "absolute",
+        "right": "2px",
+        "top": "2px",
+        "w": "6px",
+        "h": "6px",
+        "bgColor": {
+          "$code": "M"
+        },
+        "borderRadius": "3px"
+      },
+      "children": []
+    },
+    {
+      "type": "y.Pressable",
+      "module": 1780,
+      "props": {
+        "mr": "12px",
+        "onPress": {
+          "$code": "function(){V(),R(function(t){w.TrackUtils.messageCenterEntranceClickTrack(t,S||!1)})}"
+        }
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(u.default,{source:N,style:{width:U.width,height:U.height},accessibilityLabel:l.default.trans(\"message.msgNotification\"),accessibilityRole:\"button\"})"
+        },
+        {
+          "$code": "W"
+        }
+      ]
+    },
+    {
+      "type": "u.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "N"
+        },
+        "style": {
+          "width": {
+            "$code": "U.width"
+          },
+          "height": {
+            "$code": "U.height"
+          }
+        },
+        "accessibilityLabel": {
+          "$code": "l.default.trans(\"message.msgNotification\")"
+        },
+        "accessibilityRole": "button"
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": [
+    {
+      "key": "borderRadius",
+      "value": "3px"
+    },
+    {
+      "key": "width",
+      "value": {
+        "$code": "U.width"
+      }
+    },
+    {
+      "key": "height",
+      "value": {
+        "$code": "U.height"
+      }
+    }
+  ]
+}

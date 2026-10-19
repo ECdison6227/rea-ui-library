@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/health_layout_card_data_item_0" android:paddingTop="13.299988dp" android:paddingBottom="14.299988dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="17.299988dp" android:paddingEnd="@dimen/size_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_value" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/HealthCardTextNumberValue" />
+    <TextView android:id="@id/tv_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_common_unit_percent" app:layout_constraintBaseline_toBaselineOf="@id/tv_value" app:layout_constraintStart_toEndOf="@id/tv_value" style="@style/HealthCardTextUnit" />
+    <com.google.android.flexbox.FlexboxLayout android:id="@id/flex_layout" android:layout_width="0.0dp" android:layout_height="wrap_content" app:flexWrap="wrap" app:layout_constraintEnd_toEndOf="@id/iv_jump" app:layout_constraintStart_toStartOf="@id/tv_value" app:layout_constraintTop_toBottomOf="@id/tv_value">
+        <TextView android:ellipsize="end" android:id="@id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:paddingEnd="@dimen/size_2" style="@style/HealthCardTextLabel" />
+        <TextView android:id="@id/tv_abnormal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/HealthCardTextAbnormal" />
+    </com.google.android.flexbox.FlexboxLayout>
+    <ImageView android:id="@id/iv_jump" android:background="@drawable/ic_base_right_arrow_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

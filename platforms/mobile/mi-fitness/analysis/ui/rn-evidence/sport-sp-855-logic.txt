@@ -1,0 +1,13 @@
+var t=r(d[0]);
+
+Object.defineProperty(e,"__esModule",{value:!0}),e.TrainingIndicators=void 0;
+
+var n=t(r(d[1])),o=t(r(d[2])),u=(function(t,n){if(!n&&t&&t.__esModule)return t;if(null===t||"object"!=typeof t&&"function"!=typeof t)return{default:t};var o=w(n);if(o&&o.has(t))return o.get(t);var u={__proto__:null},c=Object.defineProperty&&Object.getOwnPropertyDescriptor;for(var l in t)if("default"!==l&&{}.hasOwnProperty.call(t,l)){var f=c?Object.getOwnPropertyDescriptor(t,l):null;f&&(f.get||f.set)?Object.defineProperty(u,l,f):u[l]=t[l]}return u.default=t,o&&o.set(t,u),u})(r(d[3])),c=r(d[4]),l=t(r(d[5])),f=r(d[6]),s=t(r(d[7])),h=r(d[8]),p=r(d[9]),y=r(d[10]),v=r(d[11]);
+
+function w(t){if("function"!=typeof WeakMap)return null;var n=new WeakMap,o=new WeakMap;return(w=function(t){return t?o:n})(t)}
+
+/* Babel regenerator helper omitted from readable view; exact source retained in .js */
+
+var b=function(t){var n=t.fetcher,f=t.silentUpdate,s=void 0===f?function(){}:f,h=(0,y.use)(n);(0,l.default)(s);var p=(0,u.useRef)(h),w=(0,u.useRef)(new c.Animated.Value(0)),E=(0,u.useState)(0),b=(0,o.default)(E,2),L=b[0],x=b[1];(0,u.useEffect)(function(){L>0&&setTimeout(function(){c.Animated.timing(w.current,{toValue:1,duration:500,useNativeDriver:!1}).start()},2e3)},[L]);var _=w.current.interpolate({inputRange:[0,1],outputRange:[0,L],extrapolate:"clamp"}),O=(0,u.useMemo)(function(){return u.default.createElement(v.TrainingIndicatorsContent,{list:h})},[h]);return Array.isArray(h)?0===h.length?null:Array.isArray(p.current)&&p.current.length>0?u.default.createElement(u.default.Fragment,null,O):u.default.createElement(c.View,null,u.default.createElement(c.Animated.View,{style:{height:_,overflow:"hidden"}},u.default.createElement(c.View,null,O)),0===L&&u.default.createElement(c.View,{style:{opacity:0,position:"absolute"},onLayout:function(t){x(t.nativeEvent.layout.height)}},u.default.createElement(c.View,{style:{flexDirection:"row"}},O))):null};
+
+e.TrainingIndicators=function(t){var c=t.data,l=(0,p.useFetchCacheState)(function(){return Promise.resolve(c)},h.SportDataCacheKey.TRAINING_INDICATORS),y=(0,o.default)(l,2),v=y[0],w=y[1];(0,u.useEffect)(function(){var t=Promise.resolve(c);(0,n.default)(t,{status:"fulfilled",data:c}),w(t)},[c]);return u.default.createElement(u.Suspense,{fallback:u.default.createElement(b,{fetcher:Promise.resolve(c)})},u.default.createElement(b,{fetcher:v,silentUpdate:function(){return E().async(function(t){for(;;)switch(t.prev=t.next){case 0:f.RRLog.info("TrainingIndicators","silentUpdateFetcher"),w(s.default.getTrainingIndicators(),!0);case 2:case"end":return t.stop()}},null,null,null,Promise)}}))}

@@ -1,0 +1,7 @@
+Object.defineProperty(e,"__esModule",{value:!0}),e.useLoginStatusCheck=void 0;
+
+var t=r(d[0]),n=r(d[1]),o=r(d[2]),c=r(d[3]);
+
+/* Babel regenerator helper omitted from readable view; exact source retained in .js */
+
+e.useLoginStatusCheck=function(l){var h=!(arguments.length>1&&void 0!==arguments[1])||arguments[1],s=(0,c.useGlobalModalContext)().openModal;return function(){var c;return u().async(function(f){for(;;)switch(f.prev=f.next){case 0:return f.next=2,u().awrap((0,o.getLoginStatus)());case 2:if(c=f.sent,!h||c!==n.LoginStatusEnum.LOGOUT){f.next=6;break}return s(t.LoginModal),f.abrupt("return");case 6:l();case 7:case"end":return f.stop()}},null,null,null,Promise)}}

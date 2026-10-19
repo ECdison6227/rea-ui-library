@@ -1,0 +1,319 @@
+{
+  "bundle": "dial",
+  "id": "di-511",
+  "line": 519,
+  "aliases": {
+    "t": 3,
+    "n": 27,
+    "o": 14,
+    "u": 771,
+    "c": "di-138",
+    "l": "di-141",
+    "s": 631,
+    "f": 1043,
+    "h": 558,
+    "p": "di-263",
+    "v": "di-149",
+    "y": "di-262",
+    "w": 1780,
+    "b": "di-512",
+    "E": "di-343",
+    "_": "di-513",
+    "L": "di-340",
+    "S": "di-170",
+    "x": "di-514",
+    "M": "di-524",
+    "P": "di-525",
+    "k": "di-527",
+    "O": "di-528",
+    "F": "di-529",
+    "j": "di-520",
+    "D": "di-530"
+  },
+  "elements": [
+    {
+      "type": "E.default",
+      "module": "di-343",
+      "props": {
+        "visible": {
+          "$code": "me"
+        },
+        "contentSource": "high_value_user_wm_popup",
+        "pageDetail": "DialMarket",
+        "onClose": {
+          "$code": "ge"
+        },
+        "onPaymentResult": {
+          "$code": "we"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "c.default",
+      "module": "di-138",
+      "props": {
+        "loadState": {
+          "$code": "K?c.DataLoadState.loading:c.DataLoadState.loaded"
+        },
+        "renderLoading": {
+          "$code": "function(){return 0===U?o.default.createElement(w.VStack,{space:4,pb:3,px:3},o.default.createElement(b.default,null),o.default.createElement(M.default,{shape:V})):o.default.createElement(w.VStack,{space:4,pb:3,px:3},o.default.createElement(M.default,{shape:V}))}"
+        },
+        "renderNavBar": {
+          "$code": "function(){return o.default.createElement(P.default,{activeTab:U,onBack:H.onBackPress,onSearch:Fe,onTabChange:Le})}"
+        }
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(u.default,{overdrag:!0,initialPage:0,ref:A,style:D.default.viewPager,onPageSelected:Ee},o.default.createElement(w.Box,{flex:1},o.default.createElement(x.default,{operationStats:X,watchfaceSets:Z,refreshing:Q,onRefresh:ee,onLoadMore:te,hasMore:$,onDetailClick:Me,shape:ne,onHea"
+        },
+        {
+          "$code": "he&&B&&o.default.createElement(_.default,{imageUrl:he.imageUrl,isOpen:!0,onClose:Oe,onImagePress:ke})"
+        },
+        {
+          "$code": "be()"
+        }
+      ]
+    },
+    {
+      "type": "w.VStack",
+      "module": 1780,
+      "props": {
+        "space": 4,
+        "pb": 3,
+        "px": 3
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(b.default,null)"
+        },
+        {
+          "$code": "o.default.createElement(M.default,{shape:V})"
+        }
+      ]
+    },
+    {
+      "type": "b.default",
+      "module": "di-512",
+      "props": null,
+      "children": []
+    },
+    {
+      "type": "M.default",
+      "module": "di-524",
+      "props": {
+        "shape": {
+          "$code": "V"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "w.VStack",
+      "module": 1780,
+      "props": {
+        "space": 4,
+        "pb": 3,
+        "px": 3
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(M.default,{shape:V})"
+        }
+      ]
+    },
+    {
+      "type": "M.default",
+      "module": "di-524",
+      "props": {
+        "shape": {
+          "$code": "V"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "P.default",
+      "module": "di-525",
+      "props": {
+        "activeTab": {
+          "$code": "U"
+        },
+        "onBack": {
+          "$code": "H.onBackPress"
+        },
+        "onSearch": {
+          "$code": "Fe"
+        },
+        "onTabChange": {
+          "$code": "Le"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "u.default",
+      "module": 771,
+      "props": {
+        "overdrag": {
+          "$code": "!0"
+        },
+        "initialPage": 0,
+        "ref": {
+          "$code": "A"
+        },
+        "style": {
+          "$code": "D.default.viewPager"
+        },
+        "onPageSelected": {
+          "$code": "Ee"
+        }
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(w.Box,{flex:1},o.default.createElement(x.default,{operationStats:X,watchfaceSets:Z,refreshing:Q,onRefresh:ee,onLoadMore:te,hasMore:$,onDetailClick:Me,shape:ne,onHeaderClick:Pe,deviceModel:null==ae?void 0:ae.model,deviceSize:null==ae?void 0:ae.size,deviceDid:null==ae?void 0:ae"
+        },
+        {
+          "$code": "o.default.createElement(w.Box,{flex:1},o.default.createElement(k.default,{data:re,shape:ne,source:T,onDetailClick:xe,refreshWatchFaceList:oe,size:null==ae?void 0:ae.size,model:null==ae?void 0:ae.model,inWhitelist:ie,showLocalPush:ue,requestTime:le,inMyTab:_e,supportUpgrade:ce}))"
+        }
+      ]
+    },
+    {
+      "type": "w.Box",
+      "module": 1780,
+      "props": {
+        "flex": 1
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(x.default,{operationStats:X,watchfaceSets:Z,refreshing:Q,onRefresh:ee,onLoadMore:te,hasMore:$,onDetailClick:Me,shape:ne,onHeaderClick:Pe,deviceModel:null==ae?void 0:ae.model,deviceSize:null==ae?void 0:ae.size,deviceDid:null==ae?void 0:ae.did,requestTime:le,vip:Y})"
+        }
+      ]
+    },
+    {
+      "type": "x.default",
+      "module": "di-514",
+      "props": {
+        "operationStats": {
+          "$code": "X"
+        },
+        "watchfaceSets": {
+          "$code": "Z"
+        },
+        "refreshing": {
+          "$code": "Q"
+        },
+        "onRefresh": {
+          "$code": "ee"
+        },
+        "onLoadMore": {
+          "$code": "te"
+        },
+        "hasMore": {
+          "$code": "$"
+        },
+        "onDetailClick": {
+          "$code": "Me"
+        },
+        "shape": {
+          "$code": "ne"
+        },
+        "onHeaderClick": {
+          "$code": "Pe"
+        },
+        "deviceModel": {
+          "$code": "null==ae?void 0:ae.model"
+        },
+        "deviceSize": {
+          "$code": "null==ae?void 0:ae.size"
+        },
+        "deviceDid": {
+          "$code": "null==ae?void 0:ae.did"
+        },
+        "requestTime": {
+          "$code": "le"
+        },
+        "vip": {
+          "$code": "Y"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "w.Box",
+      "module": 1780,
+      "props": {
+        "flex": 1
+      },
+      "children": [
+        {
+          "$code": "o.default.createElement(k.default,{data:re,shape:ne,source:T,onDetailClick:xe,refreshWatchFaceList:oe,size:null==ae?void 0:ae.size,model:null==ae?void 0:ae.model,inWhitelist:ie,showLocalPush:ue,requestTime:le,inMyTab:_e,supportUpgrade:ce})"
+        }
+      ]
+    },
+    {
+      "type": "k.default",
+      "module": "di-527",
+      "props": {
+        "data": {
+          "$code": "re"
+        },
+        "shape": {
+          "$code": "ne"
+        },
+        "source": {
+          "$code": "T"
+        },
+        "onDetailClick": {
+          "$code": "xe"
+        },
+        "refreshWatchFaceList": {
+          "$code": "oe"
+        },
+        "size": {
+          "$code": "null==ae?void 0:ae.size"
+        },
+        "model": {
+          "$code": "null==ae?void 0:ae.model"
+        },
+        "inWhitelist": {
+          "$code": "ie"
+        },
+        "showLocalPush": {
+          "$code": "ue"
+        },
+        "requestTime": {
+          "$code": "le"
+        },
+        "inMyTab": {
+          "$code": "_e"
+        },
+        "supportUpgrade": {
+          "$code": "ce"
+        }
+      },
+      "children": []
+    },
+    {
+      "type": "_.default",
+      "module": "di-513",
+      "props": {
+        "imageUrl": {
+          "$code": "he.imageUrl"
+        },
+        "isOpen": {
+          "$code": "!0"
+        },
+        "onClose": {
+          "$code": "Oe"
+        },
+        "onImagePress": {
+          "$code": "ke"
+        }
+      },
+      "children": []
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": []
+}

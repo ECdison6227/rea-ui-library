@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "mihealth-3.57.0-android-baseline",
+  "name": "Mi Fitness 3.57.0 / updated Mine",
+  "source": {
+    "package": "com.mi.health",
+    "versionName": "3.57.0",
+    "versionCode": 357000,
+    "apkSha256": "2a80fc5a87353c2c6ef3c01fa0085862fe45e4ddb9c2d272cb3780841b5889a6",
+    "mineRuntimeVersion": "11.202.21",
+    "mineRuntimeSha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958"
+  },
+  "platforms": [
+    "Android15 evidence; Android native reference"
+  ],
+  "deploymentModes": [
+    "CN ordinary guest empty"
+  ],
+  "traits": [
+    {
+      "statement": "Light large navigation titles contrast with weighted content headings",
+      "classification": "A+B",
+      "evidence": "baseline/spec.md"
+    },
+    {
+      "statement": "Neutral page and distinct card planes; brand emphasis on primary actions",
+      "classification": "A+B",
+      "evidence": "baseline/spec.md"
+    },
+    {
+      "statement": "Navigation keeps per-page context in measured ordinary back/reselection cases",
+      "classification": "A",
+      "evidence": "baseline/popup-navigation.json"
+    },
+    {
+      "statement": "Prerequisite guidance precedes selected protected actions; queued modals are source-specific",
+      "classification": "A+B",
+      "evidence": "baseline/popup-navigation.json"
+    }
+  ],
+  "goodFit": {
+    "classification": "C recommendation",
+    "scenes": [
+      "Card-based mobile overviews",
+      "Personal tools with grouped settings and explicit primary actions"
+    ]
+  },
+  "needsAdaptation": [
+    "Target brand and domain semantics",
+    "Platform navigation, insets, typography and accessibility",
+    "Unknown source behavior must follow target correctness"
+  ],
+  "artifacts": {
+    "start": "README.md",
+    "tokens": "design-tokens.json",
+    "rnTokens": "rn-pages.json",
+    "spec": "baseline/spec.md",
+    "contracts": "baseline/contracts.json",
+    "behavior": "baseline/popup-navigation.json",
+    "reference": "android-reference/README.md",
+    "comparison": "baseline/comparison/final/index.html",
+    "transfer": "transfer-example/README.md",
+    "assets": "asset-library/README.md",
+    "nextAgent": "docs/next-agent-prompt.md"
+  },
+  "coverage": "baseline/coverage.json",
+  "unknowns": [
+    "Exact OEM and per-glyph fallback fonts",
+    "MIUI adaptive/smooth corner and full motion equivalence",
+    "Original nonzero charts, logged-in/account success and real wearables",
+    "Original queue pressure, external authentication races, process-death/rotation state restoration",
+    "Original text entry, editing, persistence, cancellation and retry outside selected scenes",
+    "Reconstructed night/landscape/foldable fidelity; source historical night screenshots do exist",
+    "Unobserved destination pages and scanner/permission branches"
+  ]
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill_horizontal|center" android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="20.0dp" android:bottomLeftRadius="20.0dp" />
+            <size android:height="20.0dp" />
+            <solid android:color="#e6e6e6" />
+        </shape>
+    </item>
+    <item android:gravity="fill_horizontal|center" android:id="@android:id/secondaryProgress">
+        <scale android:scaleWidth="100%">
+            <shape android:tint="?colorControlActivated" android:shape="rectangle">
+                <corners android:topLeftRadius="20.0dp" android:bottomLeftRadius="20.0dp" />
+                <size android:height="20.0dp" />
+                <solid android:color="@color/fitness_pai_chart" />
+            </shape>
+        </scale>
+    </item>
+    <item android:gravity="fill_horizontal|center" android:id="@android:id/progress">
+        <scale android:scaleWidth="100%">
+            <shape android:shape="rectangle">
+                <corners android:topLeftRadius="20.0dp" android:bottomLeftRadius="20.0dp" />
+                <size android:height="20.0dp" />
+                <solid android:color="@color/fitness_pai_chart" />
+            </shape>
+        </scale>
+    </item>
+</layer-list>

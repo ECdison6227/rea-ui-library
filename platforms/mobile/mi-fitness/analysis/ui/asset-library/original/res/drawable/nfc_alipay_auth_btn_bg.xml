@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dimen_margin_36dp" />
+            <solid android:color="@color/nfc_alipay_auth_btn_bg" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/nfc_alipay_auth_btn_bg" />
+            <corners android:radius="@dimen/dimen_margin_36dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dimen_margin_36dp" />
+            <solid android:color="@color/nfc_alipay_auth_btn_bg" />
+        </shape>
+    </item>
+</selector>

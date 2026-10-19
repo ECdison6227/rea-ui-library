@@ -1,0 +1,917 @@
+{
+  "capture_path": "/Users/cjr/Projects/hark-ui-reserch/evidence/rea/03-chat-assets-page.json",
+  "capture_sha256": "86fb208032324265f6aaaae32944fa7648bb6ab21f8db47551f73ba5667e3695",
+  "capture_kind": "page-inspection",
+  "source_evidence_id": "ev_4d515902647d4a1d0224c3da682c34a39f9ed44ca7a978ac725a13eddf73e13f",
+  "capture_completeness": {
+    "status": "policy_filtered",
+    "conditions": [
+      "attach_limited",
+      "policy_filtered"
+    ],
+    "policy_filtered_sections": [
+      "console_text",
+      "dom",
+      "frames",
+      "json_body_shapes",
+      "metadata",
+      "resources",
+      "scripts",
+      "storage_keys",
+      "websocket_shapes",
+      "workers"
+    ],
+    "attach_limited_sections": [
+      "console_events",
+      "metadata",
+      "network_requests",
+      "websocket_connections",
+      "websocket_frames"
+    ],
+    "truncated_sections": [],
+    "unavailable_sections": [],
+    "excluded": [
+      {
+        "section": "console_text",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "dom",
+        "reason": "unsupported_url",
+        "count": 1
+      },
+      {
+        "section": "frames",
+        "reason": "unsupported_url",
+        "count": 1
+      },
+      {
+        "section": "json_body_shapes",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "metadata",
+        "reason": "disallowed_origin",
+        "count": 40
+      },
+      {
+        "section": "metadata",
+        "reason": "unsupported_url",
+        "count": 1
+      },
+      {
+        "section": "resources",
+        "reason": "disallowed_origin",
+        "count": 9
+      },
+      {
+        "section": "scripts",
+        "reason": "disallowed_origin",
+        "count": 2
+      },
+      {
+        "section": "scripts",
+        "reason": "unattributed_origin",
+        "count": 11
+      },
+      {
+        "section": "storage_keys",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "websocket_shapes",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "workers",
+        "reason": "out_of_target_scope",
+        "count": 2
+      }
+    ],
+    "dropped_events": {
+      "scripts": 0,
+      "network_requests": 0,
+      "console_events": 0,
+      "websocket_connections": 0,
+      "websocket_frames": 0,
+      "webmcp_tools": 0,
+      "timeline_events": 0,
+      "total": 0
+    }
+  },
+  "output_directory": "/Users/cjr/Projects/hark-ui-reserch/evidence/scripts/hark-assets",
+  "analysis_input": {
+    "input_path": "/Users/cjr/Projects/hark-ui-reserch/evidence/scripts/hark-assets/files",
+    "format": "directory"
+  },
+  "scripts": [
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_00fb7fb8148e6c5e0322a7d56c3941077bb66b5694fa43d25b9c5dfb1b4b7e7e",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/BgSMAHot.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/BgSMAHot.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "c7507ab2e43a45f723b6a913c62f8d38b5ffdfd81f0e46d2ce6f715a0220b6a9",
+        "bytes": 8321,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_0be980cf2f3fc1ed8816836a89dfe4c5be14dcd1e137c008c9811b2a83c55729",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/Bz0NRe01.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/Bz0NRe01.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "cab867f43b460df83f3d75b08ce3135fb9b90f0a1beb3dc18a37fcd6461d6272",
+        "bytes": 287081,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_177de6246c3f9d9d56aa47571af94e919a1c372863ea3b1d2ce512e80416811a",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/9wvF9xJb.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/9wvF9xJb.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "c5cdd6cab4d18887b919b8dfba5e4f3f2da7931cf9f4ee2f92440d757316daeb",
+        "bytes": 1671,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_17f893a3df361622473294383630e0b1887a684bd5445c2bd2d5c14311f53046",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/BT2rDYKB.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/BT2rDYKB.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "03775ebceae2834e6556c5e136a6b46cf5b90050becd1ed31663dc303f762faa",
+        "bytes": 1716548,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_1c274f3fabf65d18997284d81ea3e7b27ce26b0592e99e8a22d6e548256e1dcc",
+        "frame_id": null,
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://hark.com/cdn-cgi/challenge-platform/scripts/jsd/main.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6927950c6887e0db1e34fd9204ff853c860073ed6814ff4302eb7c73385c599d/cdn-cgi/challenge-platform/scripts/jsd/main.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "3f63e446b649343651f9fc2b51968808ca24a1385ebf9b1e5ada084c001c9494",
+        "bytes": 22667,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_24780f9fe78f79286a736eef6393b8a3b4c4e4f0e95bce0ea8fd95d5f4670073",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/CNrmL9d1.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/CNrmL9d1.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "5e7edc9a8a0e269e0329fca872cc3deb7d6772829d64825690c2e42129a7b791",
+        "bytes": 764,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_24804eb27e1d237e4430206e733ae30591dc35e67a4f5e8abda1033ad4d044c3",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/CeFwcm67.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/CeFwcm67.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "e59d5e690c0adcff99bbd03b5af09f250add7d18720b981686cf133f8983fde6",
+        "bytes": 1329,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_4905d8ad1aa367de07dd8d6f5e2ce3b6297c81063def675ee8e8f5ea03c997db",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/Clnn7rYv.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/Clnn7rYv.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "a7bbcc18b115d2f77537546a17ddd156c7b6b7da4bdf09aff67a5964bf6a441f",
+        "bytes": 58934,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_4a8384a5b71b0f2a8d216f6806de6492903bc69f6565a9bc4e3339a94fda03c3",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/main-DxHtaWdF.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/main-DxHtaWdF.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "1779ffcf4dd3aae3db73cd2b11a2f6434c2218e674f5f6104363d935253e463a",
+        "bytes": 2130304,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_5b934d22379bd34c62c96c809bf7bc227c2d14c550f034d090987fa8dff448ef",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/BFQtfC87.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/BFQtfC87.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "ea5130d43c1ea53247a589380b55f272948878a08e30962ee7e5ea2d5b796aaf",
+        "bytes": 523839,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_5be191bf465b49f6dda936110889c354fb9e389a2e96d364a756484d04529fbf",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/ZxjEVBI5.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/ZxjEVBI5.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "0435701fc130114766a91e5a34cc44fe001abc866ce456e6475b1e29bbeb89d9",
+        "bytes": 49420,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_81a8d25ea5010e7f03186e319c4fe03a3dc196e5b696887dfc4b520c850a72d4",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/mN3I4sqY.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/mN3I4sqY.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "c89b71091143bd27f785ae07e4aab6ea2ba4389879946daff408a80a3f5ddec6",
+        "bytes": 321537,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_8e8f8dc4feb688891d97f282204599a0ab24a2d0fb5807f7459fc0117589cbbd",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/ChDOokQs.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/ChDOokQs.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "483c68dcb7e648ebe5201b6f96ed8fd65628d2835677791305369b3bccfe2982",
+        "bytes": 1957,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_98a32e13d784f78752122367ca8e1c8467708bb3f79236dacaf534b973ebbbc4",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/BpSmQN_8.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/BpSmQN_8.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "7b425166b363571f02038fed800b22e69dfdfc0dd8a51e326f25c47386561e57",
+        "bytes": 59110,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_9f4782218549d78c90184a5f36cd8d58a8305c3e90c199eeeeae182bd84c5b17",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/Dl79dO-7.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/Dl79dO-7.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "c37b1d10d292d85c67fe6893e22d4e99a133df1f78ebfff3e0555a49145a9f22",
+        "bytes": 23808,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_9ff1d11cee041ff49f702c5723c63130a4e8d03cd5f2e3d8d71578d54ccb61ac",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/B-JM-ueP.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/B-JM-ueP.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "271bcb05b6ecafb1660195339810149a6e42ad64c451dd1918cc9133b9e58fda",
+        "bytes": 47640,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_a024d37893cceda196feabac83726047e4fa3c6016d8cec9d4834be74b79eb88",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://hark.com/chat",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-17-163bd9d342eb539f679277b669b7e91419eeb7ca78de343733319ee3be1fc11b.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "dba0de44d70f37aa4aab3c0d047495569a47b028e373298627d091760f492820",
+        "bytes": 921,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_a1829e82347afa94c4f79ad68993f537b8539f64a977da50fbf2cd52a98bf43e",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/SPP2fIr0.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/SPP2fIr0.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "ba87d95a27e5217bac3722e84b36af4f4da0ae732aa3777df5c535e7511e6755",
+        "bytes": 93891,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_b19812f4084fe7d38459d28313bcc887b6c8fabcfdeb8289a7f80401cffefdbe",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/BNXT4JyW.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/BNXT4JyW.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "326e0f928deee7a34ea036a5460e7278eee606089ffa07b6947295abf1c24398",
+        "bytes": 460559,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_b3fd2d36d32e6114bdd3f1d1f8d5cd4fd1f3daf0335b61f378ec6696833a3caa",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/DovrAg42.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/DovrAg42.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "b63c10cd569d9430c5b2a340034ac116254bd3084af4ab2b6c8657a751768233",
+        "bytes": 11442,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_b5216cce64cd031e36f408a9c5c2f8f6e12bdae2558b8c2ac4a6ca88feed41c2",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/BTJCSgU4.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/BTJCSgU4.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "97c887a0cd339011e48038ed26cf02c96011558f00a0344dc0a1ee487110da17",
+        "bytes": 423226,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_b6e67b97fe75a7963b17b3f92923fbe8fdea47f0cbdc3b0a9574ed0d1eb683ea",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/D6sQjpr5.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/D6sQjpr5.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "4bd5b3c538d3369d40d5535552a72b25879975c6f4824579828de336c5597747",
+        "bytes": 86416,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_b807935af129ef85de5e11ba7612feb5247b105364aa2162107ce5a968f949b9",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/D4TFXcI2.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/D4TFXcI2.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "c097e3c74df723e03f843424ea8e903692058d34c1ce25b1f514ff20ddc76305",
+        "bytes": 47642,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_b8aa5c8302fbbb3fa842b9315a8bf50ec324092265379d24b2b87e8988e446ac",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/BfmO7SHH.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/BfmO7SHH.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "702dd049d666851117b42facaab4e7607897771843244533d1a7e118c96bfcaf",
+        "bytes": 2420,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_b93053a4d4e4618b6d8d504c39c5131dc1e8fe204affb16f28944e95e070b943",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/CJzcfLON.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/CJzcfLON.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "a86449d5375abf625e70a3581b1251a2ccbf99004faedb5b00340381f8ce170c",
+        "bytes": 708,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_c050460067b08f0926e17e48c2f6af6eb4906f26b39f976f184b000253bf3f6a",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/cOa9adYV.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/cOa9adYV.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "0c687ee843db8957930b3aa97cd3bf327418c3e6f7a7f696f65292d09740ae3a",
+        "bytes": 520,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_c2baaff17f628e22ca06bcefad0775a521d8c3b094dc172c03884d505ce500b0",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/CQ1Z0rdo.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/CQ1Z0rdo.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "c41b96b77b5c0d8ea6c72c497c5de1f5d23b0b55069b9856d20fa2b64a303bab",
+        "bytes": 30712,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_c2f1a58fae55ab78f20a1535d448afe173b8e3787af76208e93055418706655b",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://hark.com/chat",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-28-b2ddef940fda2684a4e10824013e6476c7663a525a45961ac68db87a71e11e00.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "f7cfb5b3550792504cd7dad7b3ce46ea602433a8a64e8e65219b15dbf43e92dc",
+        "bytes": 12351,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_d47011d55ca819c66bbf6186a7558a6c6d67a61647f5c981616d9d9eac610576",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/CUf9-r-a.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/CUf9-r-a.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "6cc10bfbf9c6ebb11c0fea2d678c3e40ad5af64c105d87599374fbef1eb68cd8",
+        "bytes": 861,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_dc575c8bb6003a14dd48282bdfff6e4b5fe454d4f55f88f259f85c1da88be587",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/DvrONiVz.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/DvrONiVz.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "010f9709559653b07e5e612c7ca83414a4aeb51d4fcd2009183e58f4e34d6041",
+        "bytes": 326089,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_e4b5ae081befbedd29c9169ed1ce47f8834a2dcf350203653c861d4387e5b4c9",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/DrCGSKLj.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/DrCGSKLj.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "e06a57ae0000bb98a9b1fe20f91db1e42e34abdaeb3617a66b5a0cf428bfab2d",
+        "bytes": 57723,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_ec18c1ccc15490e34f8f93fa511fa32c57e045beb47cc2ce015249648b5820f6",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/JXSyV7QJ.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/JXSyV7QJ.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "2f7dabc7ea3a9bcdb4b602937a91cd23d1c4afa1992aa8c0d269213c31f91063",
+        "bytes": 67947,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_ec2fd30eec5106feb7d9efeef8771ebc68fa1113a42ca17f5c0b3a87a074c6e5",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/CwdSmj8j.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/CwdSmj8j.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "fc9711a13b72f49d00ae9b6f88e098f5dbaa66aa1091e2c2eced4be245dbe8f8",
+        "bytes": 175208,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_f3d8d024f5038a94c2eb107b9418f355658e9e4c2dab4612e6396a2a032d53d7",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/B3cAySts.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/B3cAySts.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "11819c9f4eba4feeb7c51e5ef3983db26b5577452d5c14970333a9b30c244780",
+        "bytes": 514,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_f4a11e46e7e0eee36d9a071470dacb591617c5d475d90c555ab52678b01f771b",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/DB9_ouGM.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/DB9_ouGM.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "027e5c2488f2ea4d8f11d5c7742cbbfd31297c108097adad6ddb5140b332374d",
+        "bytes": 29683,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_fe030eb1b7bfa5f61e44cb034b46ca6aca23b11de5c849acd8459181a9ca6e7d",
+        "frame_id": "878F6A712A2DDB7BD8A44391AEC97035",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://assets.hark.com/assets/BPItp7CV.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/6c67863ee7f43ffbb455e39ca855380e532f4f91833be0b294da3a4afa592701/assets/BPItp7CV.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "c3c2ece66163b15fcb9fd3f90e75dfc340d844f994f44e601b460d877e2c785f",
+        "bytes": 4404,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    }
+  ],
+  "limitations": [
+    "Observation starts when REA attaches; prior network and console activity is unavailable.",
+    "Raw network headers, bodies, cookies, storage values, console objects, and WebSocket payloads are never retained; explicitly requested primitive console text is retained verbatim, while payload captures retain value-free shapes.",
+    "Source maps are reported only as declarative URLs and are not fetched.",
+    "URL-less scripts and console events without an allowed source URL are excluded because their origin cannot be proven.",
+    "CDP discovery omitted the target attachment state; attached is reported as unknown.",
+    "Only script bytes retained in this capture are exported. Sources are not refetched or executed, and a response or Debugger source does not prove execution.",
+    "Ordinary unambiguous URL paths preserve relative module layouts by origin, including case-distinct spellings. Query variants, exact path collisions, file/directory prefixes, inline sources, and unrepresentable paths are isolated. A case-distinct pair is isolated only when the destination filesystem cannot store both spellings; the record names that pair. Browser module relationships of isolated paths remain unknown.",
+    "Local JavaScript analysis does not implement browser import maps, root-relative URL resolution, remote URL loading, or browser runtime behavior. It may strip import queries and fragments; isolated variants are not canonical targets.",
+    "Source-map declarations are retained as metadata. No source maps or missing dependencies are fetched or reconstructed.",
+    "Scenario response bytes preserve the output of Playwright's Response.body() API; any source-body provenance caveat from the capture is retained in this manifest. Debugger sources are the exposed text encoded as UTF-8. Redacted bytes are exported exactly as retained, and may no longer parse as JavaScript."
+  ]
+}

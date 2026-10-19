@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/main_activity_main_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/main_fl_content" android:background="@color/page_bg" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <View android:background="@color/line_normal" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" />
+    <com.google.android.material.tabs.TabLayout android:layout_gravity="bottom" android:id="@id/main_tl_bottom" android:background="@color/main_tab_bg" android:layout_width="match_parent" android:layout_height="@dimen/main_tab_height" android:layout_marginHorizontal="@dimen/main_tab_layout_padding" app:tabBackground="@android:color/transparent" app:tabGravity="fill" app:tabIndicator="@null" app:tabMaxWidth="0.0dp" app:tabPaddingTop="@dimen/dimen_margin_2dp" app:tabRippleColor="@color/transparent" />
+</LinearLayout>

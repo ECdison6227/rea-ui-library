@@ -1,0 +1,160 @@
+{
+  "bundle": "dial",
+  "id": "di-542",
+  "line": 550,
+  "aliases": {
+    "t": 3,
+    "n": 14,
+    "o": 1113,
+    "l": "di-144",
+    "u": 382,
+    "f": "di-149",
+    "c": 1780
+  },
+  "elements": [
+    {
+      "type": "c.Row",
+      "module": 1780,
+      "props": {
+        "alignItems": "center",
+        "paddingX": 21,
+        "marginBottom": 1.5,
+        "pt": "9px",
+        "bg": {
+          "$code": "h"
+        }
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(c.Pressable,{onPress:y,w:9,h:9,justifyContent:\"center\",_pressed:{opacity:.7},accessibilityLabel:l.default.trans(\"dial.nav.back\"),accessibilityRole:\"button\"},n.default.createElement(o.default,{source:w,style:[{width:36,height:36},u.CommonStyles.mirrorRotate],resizeMode:\"contai"
+        },
+        {
+          "$code": "n.default.createElement(c.Row,{flex:1,justifyContent:\"center\"},n.default.createElement(c.View,{style:{flex:1,alignItems:\"center\",height:44,justifyContent:\"center\"}},s?s():n.default.createElement(c.Text,{fontSize:19,fontWeight:\"500\",color:_,numberOfLines:1,ellipsizeMode:\"tail\"},p)))"
+        }
+      ]
+    },
+    {
+      "type": "c.Pressable",
+      "module": 1780,
+      "props": {
+        "onPress": {
+          "$code": "y"
+        },
+        "w": 9,
+        "h": 9,
+        "justifyContent": "center",
+        "_pressed": {
+          "opacity": 0.7
+        },
+        "accessibilityLabel": {
+          "$code": "l.default.trans(\"dial.nav.back\")"
+        },
+        "accessibilityRole": "button"
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(o.default,{source:w,style:[{width:36,height:36},u.CommonStyles.mirrorRotate],resizeMode:\"contain\"})"
+        }
+      ]
+    },
+    {
+      "type": "o.default",
+      "module": 1113,
+      "props": {
+        "source": {
+          "$code": "w"
+        },
+        "style": [
+          {
+            "width": 36,
+            "height": 36
+          },
+          {
+            "$code": "u.CommonStyles.mirrorRotate"
+          }
+        ],
+        "resizeMode": "contain"
+      },
+      "children": []
+    },
+    {
+      "type": "c.Row",
+      "module": 1780,
+      "props": {
+        "flex": 1,
+        "justifyContent": "center"
+      },
+      "children": [
+        {
+          "$code": "n.default.createElement(c.View,{style:{flex:1,alignItems:\"center\",height:44,justifyContent:\"center\"}},s?s():n.default.createElement(c.Text,{fontSize:19,fontWeight:\"500\",color:_,numberOfLines:1,ellipsizeMode:\"tail\"},p))"
+        }
+      ]
+    },
+    {
+      "type": "c.View",
+      "module": 1780,
+      "props": {
+        "style": {
+          "flex": 1,
+          "alignItems": "center",
+          "height": 44,
+          "justifyContent": "center"
+        }
+      },
+      "children": [
+        {
+          "$code": "s?s():n.default.createElement(c.Text,{fontSize:19,fontWeight:\"500\",color:_,numberOfLines:1,ellipsizeMode:\"tail\"},p)"
+        }
+      ]
+    },
+    {
+      "type": "c.Text",
+      "module": 1780,
+      "props": {
+        "fontSize": 19,
+        "fontWeight": "500",
+        "color": {
+          "$code": "_"
+        },
+        "numberOfLines": 1,
+        "ellipsizeMode": "tail"
+      },
+      "children": [
+        {
+          "$code": "p"
+        }
+      ]
+    }
+  ],
+  "animationCalls": [],
+  "numericStyleProperties": [
+    {
+      "key": "paddingX",
+      "value": 21
+    },
+    {
+      "key": "marginBottom",
+      "value": 1.5
+    },
+    {
+      "key": "width",
+      "value": 36
+    },
+    {
+      "key": "height",
+      "value": 36
+    },
+    {
+      "key": "height",
+      "value": 44
+    },
+    {
+      "key": "fontSize",
+      "value": 19
+    },
+    {
+      "key": "fontWeight",
+      "value": "500"
+    }
+  ]
+}

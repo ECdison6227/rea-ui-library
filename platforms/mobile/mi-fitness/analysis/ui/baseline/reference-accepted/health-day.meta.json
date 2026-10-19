@@ -1,0 +1,118 @@
+{
+  "classification": "D independent native reconstruction observed at runtime; not source A",
+  "origin": "current",
+  "scene": "health",
+  "theme": "day",
+  "locale": "zh-CN",
+  "fontScale": 1,
+  "density": 2.75,
+  "width": 1080,
+  "height": 2400,
+  "apkSha256": "4a62b1255795edbb422990a8198e3320f98b8cdf592a4966a42c18ef8c9d3b5b",
+  "captureInterval": {
+    "started": "2026-10-15T13:51:54.004Z",
+    "finished": "2026-10-15T13:51:54.606Z"
+  },
+  "sha256": "82def2327bcdb59d035f1eb12fa472aac9bbfd9f9d5b4bbc87e80ea46f67de49",
+  "reaEvidenceId": "ev_0134c92dce94e052fa2725809daa48be329991a4cd19f9a5e3f457e50fe8da5c",
+  "referenceHierarchy": "runtime/hierarchy/accepted-health-default.json",
+  "capture": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_0134c92dce94e052fa2725809daa48be329991a4cd19f9a5e3f457e50fe8da5c\",\"subject\":null,\"provider\":{\"id\":\"adb\",\"name\":\"Android Debug Bridge\",\"version\":\"37.0.1-15733141\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"capture_adb_screen\",\"parameters\":{\"serial\":\"emulator-5580\",\"output_directory\":\"C:\\\\Users\\\\edsjrcheng\\\\Desktop\\\\xiaomi健康\\\\analysis\\\\ui\\\\baseline\\\\reference-accepted\\\\health-day\"},\"raw_result\":null,\"normalized_result\":{\"client\":{\"binary_path\":\"adb\",\"path_source\":\"path\",\"version\":\"37.0.1-15733141\",\"installed_path\":\"C:\\\\Users\\\\edsjrcheng\\\\AppData\\\\Local\\\\Microsoft\\\\WinGet\\\\Packages\\\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\\\platform-tools\\\\adb.exe\"},\"serial\":\"emulator-5580\",\"local_path\":\"C:\\\\Users\\\\edsjrcheng\\\\Desktop\\\\xiaomi健康\\\\analysis\\\\ui\\\\baseline\\\\reference-accepted\\\\health-day\\\\screen.png\",\"bytes\":231141,\"sha256\":\"82def2327bcdb59d035f1eb12fa472aac9bbfd9f9d5b4bbc87e80ea46f67de49\",\"width\":1080,\"height\":2400},\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Artifact identity is unavailable for this observation.\",\"The capture is one frame at read time; no recording or interaction occurred\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_0134c92dce94e052fa2725809daa48be329991a4cd19f9a5e3f457e50fe8da5c",
+      "subject": null,
+      "provider": {
+        "id": "adb",
+        "name": "Android Debug Bridge",
+        "version": "37.0.1-15733141"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "capture_adb_screen",
+      "parameters": {
+        "serial": "emulator-5580",
+        "output_directory": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\baseline\\reference-accepted\\health-day"
+      },
+      "raw_result": null,
+      "normalized_result": {
+        "client": {
+          "binary_path": "adb",
+          "path_source": "path",
+          "version": "37.0.1-15733141",
+          "installed_path": "C:\\Users\\edsjrcheng\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\platform-tools\\adb.exe"
+        },
+        "serial": "emulator-5580",
+        "local_path": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\baseline\\reference-accepted\\health-day\\screen.png",
+        "bytes": 231141,
+        "sha256": "82def2327bcdb59d035f1eb12fa472aac9bbfd9f9d5b4bbc87e80ea46f67de49",
+        "width": 1080,
+        "height": 2400
+      },
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "The capture is one frame at read time; no recording or interaction occurred"
+      ],
+      "relationship_coverage": null,
+      "locations": [],
+      "evidence_links": []
+    }
+  },
+  "window": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_578f5a4ac4b8d77d417438d07522950377c796c6b50bd220752312e4c639d4c5\",\"subject\":null,\"provider\":{\"id\":\"adb\",\"name\":\"Android Debug Bridge\",\"version\":\"37.0.1-15733141\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"inspect_adb_window\",\"parameters\":{\"serial\":\"emulator-5580\"},\"raw_result\":null,\"normalized_result\":{\"client\":{\"binary_path\":\"adb\",\"path_source\":\"path\",\"version\":\"37.0.1-15733141\",\"installed_path\":\"C:\\\\Users\\\\edsjrcheng\\\\AppData\\\\Local\\\\Microsoft\\\\WinGet\\\\Packages\\\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\\\platform-tools\\\\adb.exe\"},\"serial\":\"emulator-5580\",\"focused_window\":\"Window{ef2bd63 u0 study.style.reference/study.style.reference.MainActivity}\",\"focused_app\":\"ActivityRecord{8d750a5 u0 study.style.reference/.MainActivity t41}\",\"observed_lines\":[\"Window{ef2bd63 u0 study.style.reference/study.style.reference.MainActivity}\",\"ActivityRecord{8d750a5 u0 study.style.reference/.MainActivity t41}\"]},\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Artifact identity is unavailable for this observation.\",\"Focus values are the window manager's declarations at read time; no interaction occurred\",\"Focus declarations were read from `dumpsys window displays`\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_578f5a4ac4b8d77d417438d07522950377c796c6b50bd220752312e4c639d4c5",
+      "subject": null,
+      "provider": {
+        "id": "adb",
+        "name": "Android Debug Bridge",
+        "version": "37.0.1-15733141"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "inspect_adb_window",
+      "parameters": {
+        "serial": "emulator-5580"
+      },
+      "raw_result": null,
+      "normalized_result": {
+        "client": {
+          "binary_path": "adb",
+          "path_source": "path",
+          "version": "37.0.1-15733141",
+          "installed_path": "C:\\Users\\edsjrcheng\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\platform-tools\\adb.exe"
+        },
+        "serial": "emulator-5580",
+        "focused_window": "Window{ef2bd63 u0 study.style.reference/study.style.reference.MainActivity}",
+        "focused_app": "ActivityRecord{8d750a5 u0 study.style.reference/.MainActivity t41}",
+        "observed_lines": [
+          "Window{ef2bd63 u0 study.style.reference/study.style.reference.MainActivity}",
+          "ActivityRecord{8d750a5 u0 study.style.reference/.MainActivity t41}"
+        ]
+      },
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Focus values are the window manager's declarations at read time; no interaction occurred",
+        "Focus declarations were read from `dumpsys window displays`"
+      ],
+      "relationship_coverage": null,
+      "locations": [],
+      "evidence_links": []
+    }
+  }
+}

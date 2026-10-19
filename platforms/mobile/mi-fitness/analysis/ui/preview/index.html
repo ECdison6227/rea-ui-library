@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN" data-mi-theme="day">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>小米运动健康 · UI 设计研究台</title>
+  <link rel="stylesheet" href="../tokens.css">
+  <link rel="stylesheet" href="study.css">
+  <script defer src="data.js"></script>
+  <script defer src="study.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#overview"><span class="brand-mark">mi</span><span>UI 设计研究台<small>运动健康 3.57.0 / 离线资料</small></span></a>
+    <nav aria-label="研究台导航">
+      <a href="#overview">使用边界</a><a href="#templates">跨业务模板</a><a href="#tokens">主题与 Token</a><a href="#typography">字体与层级</a><a href="#components">组件与状态</a><a href="#motion">交互与动效</a><a href="#screenshots">原 APK 截图</a><a href="#sources">来源与交付</a>
+    </nav>
+    <div class="sidebar-bottom"><label for="theme">预览主题</label><select id="theme"><option value="system">跟随系统</option><option value="day">日间</option><option value="night">夜间</option></select><label class="check"><input type="checkbox" id="reduce-motion"> 减少演示动画</label><small>全程本地运行<br>不执行 APK bundle，不请求 App 服务</small></div>
+  </aside>
+  <main>
+    <section id="overview" class="intro">
+      <div class="eyebrow">静态逆向证据 → 可迁移实现参考</div><h1>小米运动健康 · 可迁移 UI 规范</h1>
+      <p class="lead">把已核实的颜色、文字层级、组件结构和状态规则放在一起，帮助新业务保留相近的界面语言。</p>
+      <div class="boundary"><strong>下方手机模板与组件均为基于规范重建的示例，不是原 APK 运行截图。</strong><p>业务文案、图标、数值和演示状态是适配选择。MIUI 平滑边角、系统 mipro 字体、弹簧曲线与安全区在网页中只能近似。原 APK 图片独立展示，并保留状态与取证来源。</p></div>
+      <div class="stats" id="stats"></div>
+      <div class="two-col"><article class="panel"><h3>证据分开使用</h3><p><span class="pill fact">包内代码事实</span> Native / RN 的资源与组件调用。</p><p><span class="pill adaptation">迁移示例</span> 为学习、团队协作业务构建的交互。</p><p><span class="pill runtime">运行取证</span> 仅限截图区实际载入的原 APK 图像。</p></article><article class="panel"><h3>两个实现系统，不能混成一个值</h3><p>当前运动 / 我的 V4 是 YRN 容器。RN 页面底色为 #F6F7F9、分区卡圆角 18；原生主容器 page_bg 为 #FAFAFA，兼容原生卡片圆角 16。研究台分别呈现，不将同名 XML 视作当前屏幕。</p></article></div>
+    </section>
+
+    <section id="templates"><div class="section-heading"><div><div class="eyebrow">迁移示例 / 可操作</div><h2>两种业务，同一套结构语言</h2></div><span class="pill adaptation">不是原 App 截图</span></div>
+      <p>修改账号、内容和网络状态，观察卡片、空态、提示与登录门槛。演示中的数据和路由保存在内存；“加载”使用 700ms 本地定时器，该时长属于演示选择。</p>
+      <div class="template-toolbar"><label>账号 <select id="account-state"><option value="member">已登录</option><option value="guest">未登录</option></select></label><label>内容 <select id="content-state"><option value="ready">有数据</option><option value="empty">空数据</option><option value="loading">首次加载</option><option value="error">请求失败</option><option value="offline">离线</option></select></label><label>刷新结果 <select id="load-result"><option value="success">成功</option><option value="failure">失败</option></select></label><button id="refresh-templates">刷新数据</button><button id="reset-templates" class="quiet">重置</button></div>
+      <div class="template-grid">
+        <article><div class="phone-caption"><strong>模板 A · 学习概览</strong><span>概览 → 分类 → 分区卡 → 详情</span></div><div class="phone" id="learning-phone" aria-label="学习业务重建示例"></div><details class="provenance"><summary>结构来源 / 改造项</summary><p>RN 大标题 32、标题左右 26/20、正文左右 12、分区卡 r18、指标卡 r14，来自 sport 的实际组件。底部采用原生主导航比例；此组合是跨业务重建，未声称原 App 的某个页面如此拼装。</p><p>课程文案、完成数字、图标、详情弹层内容与页面切换速度属于示例。Tab 在切换中忽略重复点击，参考 RN top_tab_scrub；网页 220ms 过渡是演示选择。</p><a href="../rn-evidence/sport-sp-724.js">sp-724 标题</a> · <a href="../rn-evidence/sport-sp-175.js">sp-175 分区卡</a></details></article>
+        <article><div class="phone-caption"><strong>模板 B · 团队空间</strong><span>资料 → 快捷入口 → 工具 → 设置</span></div><div class="phone" id="team-phone" aria-label="团队业务重建示例"></div><details class="provenance"><summary>结构来源 / 改造项</summary><p>RN 我的资料头像 50、用户名 20/500、四列快捷入口图标 24、分区卡 r18、设置标题 16/bold。登录面板外圆角 28、内部按钮圆角 16，参考 mine 的实际组件。</p><p>“团队”“项目”“文件”等业务映射与计数是示例；使用登录门槛、公开设置与独立可用态，展示行为分层。</p><a href="../rn-evidence/mine-mi-624.js">mi-624 资料</a> · <a href="../rn-evidence/mine-mi-490.js">mi-490 设置行</a> · <a href="../rn-evidence/mine-mi-484.js">mi-484 登录面板</a></details></article>
+        <aside class="state-inspector panel"><h3>当前状态</h3><dl id="state-values"></dl><h4>状态迁移</h4><div class="state-path"><code>guest</code><span>→ 登录门槛 →</span><code>member</code><hr><code>ready</code><span>→ refreshing →</span><code>ready / error</code></div><p>刷新失败时保留已有卡片，首次请求失败显示重试；登录操作先关闭菜单，再展示登录面板。这里是可复用模式的示范实现。</p><h4>事件记录</h4><ol id="event-log" aria-live="polite"></ol><button id="clear-log" class="quiet">清空记录</button></aside>
+      </div>
+    </section>
+
+    <section id="tokens"><div class="section-heading"><div><div class="eyebrow">可追溯资源与代码值</div><h2>主题与语义 Token</h2></div><button id="copy-token-values">复制当前颜色 JSON</button></div><p>原生 Android 八位色是 #AARRGGBB；CSS 与 RN 这里使用 #RRGGBBAA。先转换 alpha，再用于网页。RN 的逻辑数值和 NativeBase token 解析不等于物理像素。</p><div class="filters"><label>来源 <select id="token-system"><option value="rn">RN 当前页面主题</option><option value="native">原生组件 / 兼容资源</option></select></label><label>检索 <input id="token-filter" type="search" placeholder="背景、primary、text…"></label></div><div id="token-grid" class="token-grid"></div></section>
+
+    <section id="typography"><div class="eyebrow">文字角色 / 字体局限</div><h2>中文回退与 Latin 数字分别检查</h2><p>包内 MiSansLatin 字体可本地预览；探针已确认不含“一 / 健 / 康”。中文使用当前系统可用字体回退，不能据此判断原手机字形。页面大标题的 mipro-light 没有在这里用不存在的本地字体伪装。</p><div class="font-controls"><label>Latin 字体 <select id="latin-font"><option value="study-latin">包内 MiSansLatin</option><option value="system-ui">当前系统字体</option></select></label><label>文字缩放 <input id="text-scale" type="range" min="100" max="140" value="100" step="10"><output id="text-scale-value">100%</output></label></div><div class="two-col"><article class="panel"><h3>层级样本</h3><div id="type-samples"></div></article><article class="panel"><h3>实际文件与字重</h3><div id="font-inventory"></div><p class="note">FontMedium 原生样式请求 mipro-regular + bold；不能仅按名字映射成 500。RN 设置行的 bold 优先于同时传入的 fontWeight=500。默认行高没有统一证据，样本行高仅为网页排版选择。</p><a href="fonts/manifest.json">字体文件来源与 SHA-256</a></article></div></section>
+
+    <section id="components"><div class="eyebrow">已绑定组件 / 状态表达</div><h2>组件不是一张静态图</h2><div class="two-col"><article class="panel"><h3>原生按钮候选样式</h3><div class="component-stage"><button class="native-action" id="sample-action">确认操作</button><button class="native-action" disabled>不可用</button><button class="native-action secondary" id="sample-secondary">次要操作</button></div><p class="note">宿主样式声明高 46.659973dp、15sp。原版 AdaptRoundButtonDrawable 为平滑自适应形状；此处 CSS r16 只是近似。禁用时单独改变文字，未用整个控件统一 opacity。</p><a href="../design-system.md">原生按钮来源与边界</a></article><article class="panel"><h3>功能行：视觉禁用与点击分开</h3><label class="check"><input type="checkbox" id="row-disabled"> 视觉禁用</label><label class="check"><input type="checkbox" id="row-allow-click"> 禁用仍可解释原因</label><div class="component-stage"><button class="feature-row" id="sample-row"><span class="feature-leading" aria-hidden="true">◇</span><span class="feature-copy"><b>共享空间</b><small>需要管理员开放权限</small></span><span class="feature-value">未开启</span><span aria-hidden="true">›</span></button></div><p class="note">父类 allowClickWhenDisabled 默认 false，开启时 disabled 状态的 ACTION_UP 仍触发 performClick。setDefaultEnable 另将前导图标 alpha 降为 .25。网页用 aria-disabled 表达此种可解释禁用态。</p></article></div><details class="panel"><summary>查看 9 个原生组件契约</summary><div id="component-contracts"></div></details></section>
+
+    <section id="motion"><div class="eyebrow">第一方调用范围 / 非全局统一时长</div><h2>动效要带触发条件</h2><p>以下参数来自已解析的第一方 RN 模块。弹簧 friction/tension 不能直接等价为一段 CSS cubic-bezier；网页演示会标明近似项。原生 UI 没有被归纳成统一 200ms 或 300ms。</p><div class="motion-demos"><article class="panel"><h3>新增内容展开</h3><p>空 → 新增指标：等待 2000ms，500ms 从 0 展开到测量高度。</p><button id="reveal-demo">开始演示</button><div id="reveal-slot"><div class="rn-section"><b>新的学习摘要</b><p>该文案属于业务示例。等待与展开时长来自 sp-855。</p></div></div><small id="reveal-status" aria-live="polite">尚未触发</small></article><article class="panel"><h3>物件按压反馈</h3><button id="medal-demo" class="object-demo" aria-label="按压反馈示例">✧</button><p>按下 scale .9 / 100ms；释放延迟 100ms，再回到 1。原版释放为 spring friction=3 / tension=40；此处使用 300ms ease-out 近似。</p></article><article class="panel"><h3>底部 Toast</h3><p>同一时间关闭旧提示，底部显示 2000ms。圆角 12、文字 16、padding 15/12。</p><button id="toast-demo">显示本地提示</button></article></div><div id="motion-catalog" class="motion-catalog"></div></section>
+
+    <section id="screenshots"><div class="section-heading"><div><div class="eyebrow">独立证据类型</div><h2>原 APK 运行截图</h2></div><button id="reload-screens">刷新取证清单</button></div><p>只读取 <code>runtime/screens.json</code> 声明的本地图片，不从示例模板生成或补造“原版截图”。截图的账号、权限、设备、页面状态与 evidenceId 一起显示；截图本身不证明动画时序。</p><div class="boundary"><strong>先选版本基线：</strong>内置 mine 11.190.11 是四个快捷入口，更新 mine 11.202.21 是五个，内边距和顺序也变化。它们不是明暗主题差异；每张图的完整元数据含 runtimeBundle。账号 SDK 的三张 SECURE 黑帧已排除。详见 <a href="../runtime-rn-crosscheck.md">版本交叉验证</a>。</div><div id="screen-status" class="boundary">正在读取本地取证清单…</div><details><summary>原始滚动录像（模拟器采集，非重建示例）</summary><p>720×1600、约4.38秒；它展示原App滚动，不是对所有动效的逐帧测量。</p><video id="original-motion-video" controls muted preload="metadata" src="../runtime/videos/original-mine-scroll.mp4" style="display:block;max-width:320px;width:100%;max-height:650px"></video><a href="../runtime/videos/original-mine-scroll.json">动作与哈希</a></details><div id="screens-gallery" class="screens-gallery"></div></section>
+
+    <section id="sources"><div class="eyebrow">供人和后续 Agent 审阅</div><h2>来源与交付</h2><div class="two-col"><article class="panel"><h3>规范文件</h3><ul class="source-list"><li><a href="../design-system.md">原生设计规范与迁移准则</a></li><li><a href="../design-tokens.json">原生 Token / 原单位 / 日夜引用链</a></li><li><a href="../components.json">原生组件 XML 与代码契约</a></li><li><a href="../rn-pages.md">RN 页面与交互规格</a></li><li><a href="../rn-pages.json">RN 机器可读规范</a></li><li><a href="../rn-motion-catalog.json">RN 动效调用目录</a></li><li><a href="README.md">研究台预览说明</a></li><li><a href="snapshot-manifest.json">离线数据快照与原文件哈希</a></li></ul></article><article class="panel"><h3>如何继续复刻</h3><ol><li>确定业务名词、导航层级与公开 / 登录操作。</li><li>沿用语义层级，分别选 RN 或原生组件来源。</li><li>补全初次加载、刷新、空态、失败、离线和禁用。</li><li>用取证图片校准可见状态；用交互取证校准时序。</li></ol><p>字体回退、safe area、网页动画曲线、通用线条图标均是适配项。研究台不修改原规范，也不向 App 服务发送请求。</p></article></div><p id="snapshot-info" class="note"></p></section>
+  </main>
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="study-dialog" aria-labelledby="dialog-title"><div id="dialog-body"></div></dialog>
+</body>
+</html>

@@ -1,0 +1,598 @@
+{
+  "startedAt": "2026-10-14T17:05:09.258Z",
+  "events": [
+    {
+      "atMs": 544,
+      "kind": "request",
+      "requestId": "81409.760",
+      "method": "POST",
+      "resourceType": "Fetch",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/messages/send",
+        "queryNames": [
+          "cid"
+        ]
+      }
+    },
+    {
+      "atMs": 1003,
+      "kind": "response",
+      "requestId": "81409.760",
+      "status": 200,
+      "mimeType": "application/json",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/messages/send",
+        "queryNames": [
+          "cid"
+        ]
+      }
+    },
+    {
+      "atMs": 1010,
+      "kind": "request",
+      "requestId": "81409.761",
+      "method": "GET",
+      "resourceType": "Fetch",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/billing/summary",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 1420,
+      "kind": "response",
+      "requestId": "81409.761",
+      "status": 200,
+      "mimeType": "application/json",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/billing/summary",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 1941,
+      "kind": "request",
+      "requestId": "81409.762",
+      "method": "GET",
+      "resourceType": "Fetch",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/home/cards",
+        "queryNames": [
+          "widgetRuntimeVersion"
+        ]
+      }
+    },
+    {
+      "atMs": 2516,
+      "kind": "response",
+      "requestId": "81409.762",
+      "status": 200,
+      "mimeType": "application/json",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/home/cards",
+        "queryNames": [
+          "widgetRuntimeVersion"
+        ]
+      }
+    },
+    {
+      "atMs": 3010,
+      "kind": "request",
+      "requestId": "81409.763",
+      "method": "POST",
+      "resourceType": "XHR",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/_mp/engage/",
+        "queryNames": [
+          "verbose",
+          "ip",
+          "_"
+        ]
+      }
+    },
+    {
+      "atMs": 3556,
+      "kind": "request",
+      "requestId": "81409.764",
+      "method": "POST",
+      "resourceType": "XHR",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/_mp/track/",
+        "queryNames": [
+          "verbose",
+          "ip",
+          "_"
+        ]
+      }
+    },
+    {
+      "atMs": 4046,
+      "kind": "response",
+      "requestId": "81409.763",
+      "status": 200,
+      "mimeType": "application/json",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/_mp/engage/",
+        "queryNames": [
+          "verbose",
+          "ip",
+          "_"
+        ]
+      }
+    },
+    {
+      "atMs": 4899,
+      "kind": "response",
+      "requestId": "81409.764",
+      "status": 200,
+      "mimeType": "application/json",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/_mp/track/",
+        "queryNames": [
+          "verbose",
+          "ip",
+          "_"
+        ]
+      }
+    },
+    {
+      "atMs": 5924,
+      "kind": "request",
+      "requestId": "81409.765",
+      "method": "POST",
+      "resourceType": "Fetch",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/otlp/v1/traces",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 6981,
+      "kind": "response",
+      "requestId": "81409.765",
+      "status": 200,
+      "mimeType": "application/json",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/otlp/v1/traces",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 19853,
+      "kind": "request",
+      "requestId": "81409.766",
+      "method": "PUT",
+      "resourceType": "Fetch",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/presence/sessions/c5a72e0f-0a4c-4354-8121-a56b65a4effe",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 21068,
+      "kind": "response",
+      "requestId": "81409.766",
+      "status": 204,
+      "mimeType": "",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/presence/sessions/c5a72e0f-0a4c-4354-8121-a56b65a4effe",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 22144,
+      "kind": "request",
+      "requestId": "81409.767",
+      "method": "POST",
+      "resourceType": "Fetch",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/otlp/v1/metrics",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 23769,
+      "kind": "response",
+      "requestId": "81409.767",
+      "status": 200,
+      "mimeType": "application/json",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/otlp/v1/metrics",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 26376,
+      "kind": "request",
+      "requestId": "81409.768",
+      "method": "POST",
+      "resourceType": "Fetch",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/otlp/v1/traces",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 27714,
+      "kind": "response",
+      "requestId": "81409.768",
+      "status": 200,
+      "mimeType": "application/json",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/otlp/v1/traces",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 39851,
+      "kind": "request",
+      "requestId": "81409.769",
+      "method": "PUT",
+      "resourceType": "Fetch",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/presence/sessions/c5a72e0f-0a4c-4354-8121-a56b65a4effe",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 40182,
+      "kind": "response",
+      "requestId": "81409.769",
+      "status": 204,
+      "mimeType": "",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/presence/sessions/c5a72e0f-0a4c-4354-8121-a56b65a4effe",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 45488,
+      "kind": "request",
+      "requestId": "81409.770",
+      "method": "POST",
+      "resourceType": "Fetch",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/otlp/v1/traces",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 45853,
+      "kind": "response",
+      "requestId": "81409.770",
+      "status": 200,
+      "mimeType": "application/json",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/otlp/v1/traces",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 53689,
+      "kind": "request",
+      "requestId": "81409.771",
+      "method": "POST",
+      "resourceType": "Fetch",
+      "url": {
+        "origin": "https://api.hark.com",
+        "path": "/v1/flags/flags/",
+        "queryNames": [
+          "v",
+          "ip",
+          "_",
+          "ver",
+          "compression"
+        ]
+      }
+    },
+    {
+      "atMs": 53822,
+      "kind": "request",
+      "requestId": "81409.772",
+      "method": "GET",
+      "resourceType": "Image",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/img-proxy",
+        "queryNames": [
+          "url"
+        ]
+      }
+    },
+    {
+      "atMs": 53823,
+      "kind": "request",
+      "requestId": "81409.773",
+      "method": "GET",
+      "resourceType": "Image",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/img-proxy",
+        "queryNames": [
+          "url"
+        ]
+      }
+    },
+    {
+      "atMs": 53823,
+      "kind": "request",
+      "requestId": "81409.776",
+      "method": "GET",
+      "resourceType": "Fetch",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/trpc/unfurl.get,unfurl.get",
+        "queryNames": [
+          "batch",
+          "input"
+        ]
+      }
+    },
+    {
+      "atMs": 54345,
+      "kind": "response",
+      "requestId": "81409.776",
+      "status": 200,
+      "mimeType": "application/json",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/trpc/unfurl.get,unfurl.get",
+        "queryNames": [
+          "batch",
+          "input"
+        ]
+      }
+    },
+    {
+      "atMs": 54531,
+      "kind": "response",
+      "requestId": "81409.772",
+      "status": 200,
+      "mimeType": "image/png",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/img-proxy",
+        "queryNames": [
+          "url"
+        ]
+      }
+    },
+    {
+      "atMs": 54532,
+      "kind": "response",
+      "requestId": "81409.773",
+      "status": 200,
+      "mimeType": "image/png",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/img-proxy",
+        "queryNames": [
+          "url"
+        ]
+      }
+    },
+    {
+      "atMs": 54917,
+      "kind": "request",
+      "requestId": "81409.781",
+      "method": "POST",
+      "resourceType": "XHR",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/_mp/track/",
+        "queryNames": [
+          "verbose",
+          "ip",
+          "_"
+        ]
+      }
+    },
+    {
+      "atMs": 55229,
+      "kind": "response",
+      "requestId": "81409.771",
+      "status": 200,
+      "mimeType": "application/json",
+      "url": {
+        "origin": "https://api.hark.com",
+        "path": "/v1/flags/flags/",
+        "queryNames": [
+          "v",
+          "ip",
+          "_",
+          "ver",
+          "compression"
+        ]
+      }
+    },
+    {
+      "atMs": 55373,
+      "kind": "response",
+      "requestId": "81409.781",
+      "status": 200,
+      "mimeType": "application/json",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/_mp/track/",
+        "queryNames": [
+          "verbose",
+          "ip",
+          "_"
+        ]
+      }
+    },
+    {
+      "atMs": 57320,
+      "kind": "request",
+      "requestId": "81409.782",
+      "method": "GET",
+      "resourceType": "Fetch",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/home/cards",
+        "queryNames": [
+          "widgetRuntimeVersion"
+        ]
+      }
+    },
+    {
+      "atMs": 58369,
+      "kind": "request",
+      "requestId": "81409.783",
+      "method": "POST",
+      "resourceType": "Fetch",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/otlp/v1/traces",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 58415,
+      "kind": "response",
+      "requestId": "81409.782",
+      "status": 200,
+      "mimeType": "application/json",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/home/cards",
+        "queryNames": [
+          "widgetRuntimeVersion"
+        ]
+      }
+    },
+    {
+      "atMs": 59049,
+      "kind": "response",
+      "requestId": "81409.783",
+      "status": 200,
+      "mimeType": "application/json",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/otlp/v1/traces",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 59846,
+      "kind": "request",
+      "requestId": "81409.784",
+      "method": "PUT",
+      "resourceType": "Fetch",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/presence/sessions/c5a72e0f-0a4c-4354-8121-a56b65a4effe",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 60421,
+      "kind": "response",
+      "requestId": "81409.784",
+      "status": 204,
+      "mimeType": "",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/presence/sessions/c5a72e0f-0a4c-4354-8121-a56b65a4effe",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 60542,
+      "kind": "request",
+      "requestId": "81409.785",
+      "method": "DELETE",
+      "resourceType": "Fetch",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/presence/sessions/c5a72e0f-0a4c-4354-8121-a56b65a4effe",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 61076,
+      "kind": "response",
+      "requestId": "81409.785",
+      "status": 204,
+      "mimeType": "",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/presence/sessions/c5a72e0f-0a4c-4354-8121-a56b65a4effe",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 64454,
+      "kind": "request",
+      "requestId": "81409.786",
+      "method": "POST",
+      "resourceType": "Fetch",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/otlp/v1/traces",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 66260,
+      "kind": "response",
+      "requestId": "81409.786",
+      "status": 200,
+      "mimeType": "application/json",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/otlp/v1/traces",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 82157,
+      "kind": "request",
+      "requestId": "81409.787",
+      "method": "POST",
+      "resourceType": "Fetch",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/otlp/v1/metrics",
+        "queryNames": []
+      }
+    },
+    {
+      "atMs": 82583,
+      "kind": "response",
+      "requestId": "81409.787",
+      "status": 200,
+      "mimeType": "application/json",
+      "url": {
+        "origin": "https://hark.com",
+        "path": "/api/otlp/v1/metrics",
+        "queryNames": []
+      }
+    }
+  ],
+  "limitations": [
+    "No headers, credentials, request bodies or response values retained. Existing SSE attached before probe may not emit Network.eventSourceMessageReceived."
+  ]
+}

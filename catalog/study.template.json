@@ -1,0 +1,31 @@
+{
+  "id": "example-study",
+  "name": "填写产品名",
+  "subtitle": "填写研究主题",
+  "platform": "web",
+  "kind": "research",
+  "root": "platforms/web/example-study",
+  "visibility": "public",
+  "sourceVersion": "填写实际版本、构建或采集时间",
+  "provenance": {
+    "kind": "rea-study",
+    "target": "填写实际URL或包身份及哈希",
+    "method": "填写REA方法与证据入口，不虚构工具结果",
+    "researchEntry": "README.md"
+  },
+  "summary": "填写可复用规则及研究边界",
+  "tags": ["填写关键词"],
+  "stack": ["填写技术栈"],
+  "readiness": "填写迁移可用范围",
+  "coverage": "填写实测范围、条件和历史/本轮证据边界",
+  "features": ["填写可参考的模式"],
+  "limits": ["填写未知和未测项，不能标为已验证"],
+  "palette": ["#e5e7eb", "#111827"],
+  "cover": "generic",
+  "paletteClassification": "D: catalog presentation only; use source tokens for implementation",
+  "artifacts": [
+    {"label": "研究入口", "path": "README.md", "role": "readme"},
+    {"label": "设计与行为规则", "path": "spec.md", "role": "spec"}
+  ],
+  "run": {"cwd": "platforms/web/example-study", "command": "填写来源实际启动命令或阅读方式", "requires": "填写依赖和运行边界", "verifiedHere": false}
+}

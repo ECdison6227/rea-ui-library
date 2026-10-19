@@ -1,0 +1,53 @@
+{
+  "id": "18-sport-night",
+  "title": "运动首页（深色）",
+  "state": "未登录、无记录；运行时下载包已切换到 sport 11.222.10",
+  "theme": "night",
+  "runtimeBundle": {
+    "name": "sport",
+    "version": "11.222.10",
+    "sha256": "6a83c7c406b187837cb0f37edb37ca4b70f161235e64b867214ecbeebcf4dd79"
+  },
+  "source": "original-apk-on-emulator",
+  "evidence": {
+    "evidence_id": "ev_11316f9ec85b7d3a5aa7b1d0afe5e0836ced09bb933106240acbb6de9e539dd4",
+    "subject": null,
+    "provider": {
+      "id": "adb",
+      "name": "Android Debug Bridge",
+      "version": "37.0.1-15733141"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "capture_adb_screen",
+    "parameters": {
+      "serial": "emulator-5580",
+      "output_directory": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\runtime\\captures\\18-sport-night"
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "client": {
+        "binary_path": "adb",
+        "path_source": "path",
+        "version": "37.0.1-15733141",
+        "installed_path": "C:\\Users\\edsjrcheng\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\platform-tools\\adb.exe"
+      },
+      "serial": "emulator-5580",
+      "local_path": "C:\\Users\\edsjrcheng\\Desktop\\xiaomi健康\\analysis\\ui\\runtime\\captures\\18-sport-night\\screen.png",
+      "bytes": 168769,
+      "sha256": "60e3516da293e10b39a2eb374cf5caa61769a8123f9037b54616995a58f9c34f",
+      "width": 1080,
+      "height": 2400
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "The capture is one frame at read time; no recording or interaction occurred"
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  }
+}

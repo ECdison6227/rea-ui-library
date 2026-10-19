@@ -1,0 +1,2023 @@
+{
+  "schemaVersion": 1,
+  "id": "mihealth-3.57.0-android-baseline",
+  "intent": "Transfer product design language and reusable behavior into an existing unrelated product; not full health-feature clone",
+  "source": {
+    "package": "com.mi.health",
+    "versionName": "3.57.0",
+    "versionCode": 357000,
+    "apkSha256": "2a80fc5a87353c2c6ef3c01fa0085862fe45e4ddb9c2d272cb3780841b5889a6",
+    "mineRuntimeVersion": "11.202.21",
+    "mineRuntimeSha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958"
+  },
+  "classifications": {
+    "A": "actual target-product observation",
+    "B": "shipped or captured code declaration",
+    "C": "inference",
+    "D": "independent reconstruction/transfer choice"
+  },
+  "revalidatedAt": "2026-10-15T13:01:13.020Z",
+  "units": {
+    "geometrySource": "physical px when *Px; Android source sizes keep dp/sp; RN numeric values are logical",
+    "density": 2.75,
+    "fontScale": 1,
+    "textBounds": "view/line box; not font size",
+    "cssMapping": "1dp to1 CSSpx is D approximation and not native equivalence"
+  },
+  "acceptance": {
+    "authoritativeIndex": "analysis/ui/baseline/coverage.json",
+    "comparison": "analysis/ui/baseline/comparison/final/index.html",
+    "referenceTestsDoNotProveOriginal": true,
+    "noInventedSimilarityPercent": true,
+    "unknownsRemainUnknown": true
+  },
+  "sources": {
+    "header.health": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/phase2/apktool/res/layout/layout_home_header_title_item.xml",
+      "sha256": "d991ee318ecef4c0a21f851b9fc1f153ec3e69d9f3aa6298a90771a7791c637f",
+      "line": 2,
+      "selector": "TextView",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "portable": "analysis/ui/evidence/source-snapshot/res/layout/layout_home_header_title_item.xml"
+    },
+    "header.mine": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/rn-evidence/active-mine-mi-414.js",
+      "sha256": "e2d07f6782fea452c47b91bd082753f034fa1fe49ece84fc3dffd11e57eea75d",
+      "line": 1,
+      "selector": "TabViewContainer",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z"
+    },
+    "header.settings": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/phase2/apktool/res/values/styles.xml",
+      "sha256": "164f9970a97da4c1fe34e31eafbcc5f2d63624aa594c101987d8882997677ef2",
+      "line": 3375,
+      "selector": "name=\"Miuix.AppCompat.TextAppearance.WindowTitle.Expand\"",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "portable": "analysis/ui/evidence/source-snapshot/res/values/styles.xml"
+    },
+    "nav.layout": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/phase2/apktool/res/layout/main_activity_main.xml",
+      "sha256": "244863aff85fbe66a7f0afa29036f669beefde9bc73fe372bbbc09c5c04ebc35",
+      "line": 6,
+      "selector": "main_tl_bottom",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "portable": "analysis/ui/evidence/source-snapshot/res/layout/main_activity_main.xml"
+    },
+    "nav.item": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/phase2/apktool/res/layout/main_view_tab.xml",
+      "sha256": "d4dd1fb7bc090b7834a39fe69a575fe5462964df6155d191f5991651c9ff7f3f",
+      "line": 4,
+      "selector": "main_tv_tab_name",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "portable": "analysis/ui/evidence/source-snapshot/res/layout/main_view_tab.xml"
+    },
+    "nav.selection": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/native-sources/com/xiaomi/fitness/main/MainActivity.java",
+      "sha256": "dab438266986cf0c3c1014c2206997d9934e0718f848171c8a92330072376a3c",
+      "line": 1273,
+      "selector": "private final void selected",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z"
+    },
+    "health.hero": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/phase2/apktool/res/layout/health_main_header_data_view2_v2.xml",
+      "sha256": "30066667c2cd62d4e555c9a8bfccecb3e147864b10ee4769ba439f4e8b85cb1c",
+      "line": 5,
+      "selector": "targetView",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "portable": "analysis/ui/baseline/source-snapshot/res/layout/health_main_header_data_view2_v2.xml"
+    },
+    "health.target": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/phase2/apktool/res/layout/health_view_header_target_item_v2_view.xml",
+      "sha256": "c809f7f84caa838b2adac9c552481ecdc6d9dbdbcd39d25a9fd4146922f57652",
+      "line": 5,
+      "selector": "unitStrView",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "portable": "analysis/ui/baseline/source-snapshot/res/layout/health_view_header_target_item_v2_view.xml"
+    },
+    "health.summary": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/native-sources/com/xiaomi/fitness/homepage/view/DataHeaderV2View.java",
+      "sha256": "4ccf90d47fc66a96114024dec601602712e66e2b3a0b19bbcce8007ec6a21ed8",
+      "line": 263,
+      "selector": "private static final void createContentView$lambda$5(",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z"
+    },
+    "health.layout": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/native-sources/com/xiaomi/fitness/homepage/HealthV2Fragment.java",
+      "sha256": "7f5bc5113b2f26db0f25757cb8b1756f91b101f7ae2ed0c586818ff4175d5c60",
+      "line": 1028,
+      "selector": "private final void setLayoutManager(",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z"
+    },
+    "health.refresh": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/native-sources/com/xiaomi/fitness/homepage/HealthV2Fragment.java",
+      "sha256": "7f5bc5113b2f26db0f25757cb8b1756f91b101f7ae2ed0c586818ff4175d5c60",
+      "line": 778,
+      "selector": "private final void initRefreshLayout(",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z"
+    },
+    "health.card": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/phase2/apktool/res/layout/health_home_card_common_title.xml",
+      "sha256": "9800082c205d61a18db78f65370784439179124b18a7069d072df33cd511cefb",
+      "line": 16,
+      "selector": "tvHomeCardTitle",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "portable": "analysis/ui/evidence/source-snapshot/res/layout/health_home_card_common_title.xml"
+    },
+    "health.cardNumbers": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/phase2/apktool/res/layout/health_layout_card_data_item.xml",
+      "sha256": "55d38fec8bb915d4ab0463bb6a5e2e0c23a29c146d88f316644c565f99c20494",
+      "line": 4,
+      "selector": "tv_value",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "portable": "analysis/ui/evidence/source-snapshot/res/layout/health_layout_card_data_item.xml"
+    },
+    "profile.current": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 633,
+      "selector": "e.UserProfileView=void",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z"
+    },
+    "profile.guest": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 632,
+      "selector": "e.NnLoginUserProfile=void",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z"
+    },
+    "shortcut.current": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/rn-evidence/active-mine-mi-621.js",
+      "sha256": "781ce3ecf93e5555b4e1db01d6a586c3a1efc435b56ac53303d6e1374582bcea",
+      "line": 1,
+      "selector": "QuickActions",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z"
+    },
+    "shortcut.item": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/rn-evidence/active-mine-mi-622.js",
+      "sha256": "45551d86dcdf50b1969dc624432d5d56fe68f7a4e047be2f50fc71ee4d05e353",
+      "line": 1,
+      "selector": "EntranceItem",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z"
+    },
+    "shortcut.guard": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 518,
+      "selector": "e.useLoginStatusCheck=void",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z"
+    },
+    "mine.composition": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 431,
+      "selector": "e.MyProfileMapPage=void",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z"
+    },
+    "mine.surface": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 490,
+      "selector": "SettingsMenuSection",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z"
+    },
+    "mine.row": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/ui/runtime/active-bundles/mine/code/index.android.bundle",
+      "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958",
+      "line": 498,
+      "selector": "e.SettingItem=void",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z"
+    },
+    "surface.native": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/phase2/apktool/res/drawable/common_card_bg_white.xml",
+      "sha256": "2ae364e3a7cdb1dd0e95fdad9a0bc3b1e65ba9d061ac1c500bcb879c449b74f4",
+      "line": 2,
+      "selector": "selector",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "portable": "analysis/ui/evidence/source-snapshot/res/drawable/common_card_bg_white.xml"
+    },
+    "row.native": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/phase2/apktool/res/layout/layout_two_textview_right_arrow.xml",
+      "sha256": "734fb45b5a6e2bbf34a0923d554519c0def04ba1255d8bb33f439db198fb580f",
+      "line": 6,
+      "selector": "tv_feature_item_title",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "portable": "analysis/ui/evidence/source-snapshot/res/layout/layout_two_textview_right_arrow.xml"
+    },
+    "row.single": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/phase2/apktool/res/layout/layout_single_textview_right_arrow.xml",
+      "sha256": "d31d679bcc616ff2d2d2282efb6d6f4e7b8d379f4368c75d0f23e443c8d26ba4",
+      "line": 6,
+      "selector": "tv_feature_item_title",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "portable": "analysis/ui/evidence/source-snapshot/res/layout/layout_single_textview_right_arrow.xml"
+    },
+    "switch.native": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/phase2/apktool/res/layout/layout_two_textview_switch_button.xml",
+      "sha256": "64152a80bbbd0158ccde151b661da9bea777092d417e2ee9c5e0bde58932722e",
+      "line": 10,
+      "selector": "switch_btn",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "portable": "analysis/ui/baseline/source-snapshot/res/layout/layout_two_textview_switch_button.xml"
+    },
+    "settings.layout": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/phase2/apktool/res/layout/about_setting_activity.xml",
+      "sha256": "76698800ae539a7bc4b8bcdf52a5133903b471dea0a5fada9ffa21168d290d22",
+      "line": 21,
+      "selector": "btn_logout",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "portable": "analysis/ui/baseline/source-snapshot/res/layout/about_setting_activity.xml"
+    },
+    "button.settings": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/phase2/apktool/res/values/styles.xml",
+      "sha256": "164f9970a97da4c1fe34e31eafbcc5f2d63624aa594c101987d8882997677ef2",
+      "line": 1884,
+      "selector": "name=\"Button.Common.Large.Positive\"",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "portable": "analysis/ui/evidence/source-snapshot/res/values/styles.xml"
+    },
+    "button.settingsParent": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/phase2/apktool/res/values/styles.xml",
+      "sha256": "164f9970a97da4c1fe34e31eafbcc5f2d63624aa594c101987d8882997677ef2",
+      "line": 1892,
+      "selector": "name=\"Button.Common.Primary\"",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "portable": "analysis/ui/evidence/source-snapshot/res/values/styles.xml"
+    },
+    "button.background": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/phase2/apktool/res/drawable/common_dialog_positive_btn_smooth.xml",
+      "sha256": "9bfe2a1505054e70f27a6b11f1918bd0b0e7507f61af2b8d243703632246f43c",
+      "line": 2,
+      "selector": "miuix_useSmooth",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "portable": "analysis/ui/evidence/source-snapshot/res/drawable/common_dialog_positive_btn_smooth.xml"
+    },
+    "font.medium": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/phase2/apktool/res/values/styles.xml",
+      "sha256": "164f9970a97da4c1fe34e31eafbcc5f2d63624aa594c101987d8882997677ef2",
+      "line": 2625,
+      "selector": "name=\"FontMedium\"",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "portable": "analysis/ui/evidence/source-snapshot/res/values/styles.xml"
+    },
+    "dimensions": {
+      "classification": "B",
+      "origin": "historical",
+      "path": "analysis/phase2/apktool/res/values/dimens.xml",
+      "sha256": "a4929684b9abfaf3ba34d8c18ff2847e3502dadc2e2b3e14a134b80e2fd76652",
+      "line": 102,
+      "selector": "name=\"common_btn_single_line_width\"",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "portable": "analysis/ui/evidence/source-snapshot/res/values/dimens.xml"
+    }
+  },
+  "observations": {
+    "06-entry-after-region": {
+      "classification": "A",
+      "origin": "historical",
+      "captureAt": null,
+      "captureAtStatus": "unknown: old capture wrapper has no timestamp; hierarchyAt is separate",
+      "hierarchyAt": "2026-10-15T11:49:16.355Z",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "image": "analysis/ui/runtime/captures/06-entry-after-region/screen.png",
+      "sha256": "496135ba8eb30fd75e8c57c72c074c1fe745aea789bc34bedde94395b0357462",
+      "evidenceId": "ev_314c59b1fa5c28026237eccea1f41f6e10d3caa742a0b5d16bf913cd7782078c",
+      "hierarchyPath": "analysis/ui/runtime/hierarchy/06-health.json",
+      "state": "普通模式，未登录、无设备、无个人数据",
+      "theme": "day",
+      "runtimeBundle": null,
+      "environment": {
+        "widthPx": 1080,
+        "heightPx": 2400,
+        "densityDpi": 440,
+        "density": 2.75,
+        "fontScale": 1,
+        "locale": "zh-CN",
+        "api": 35,
+        "mode": "ordinary/guest/no wearable/no personal data"
+      },
+      "identityMatch": "Package/version and runtime bundle provenance checked against stored original evidence; current runtime recaptures are indexed separately in coverage.json"
+    },
+    "15-health-night": {
+      "classification": "A",
+      "origin": "historical",
+      "captureAt": null,
+      "captureAtStatus": "unknown: old capture wrapper has no timestamp; hierarchyAt is separate",
+      "hierarchyAt": "2026-10-15T11:58:58.146Z",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "image": "analysis/ui/runtime/captures/15-health-night/screen.png",
+      "sha256": "78dc59263767e806a4a093cc79a950ccd4df9061cacacff970a8b0393457a20d",
+      "evidenceId": "ev_d392bc17574309469a3069b7aa6eb7919d1f693527fede7d4021f5e14e469f1a",
+      "hierarchyPath": "analysis/ui/runtime/hierarchy/15-mine-night.json",
+      "state": "切换系统夜间模式后，设置返回实际落到健康 tab",
+      "theme": "night",
+      "runtimeBundle": null,
+      "environment": {
+        "widthPx": 1080,
+        "heightPx": 2400,
+        "densityDpi": 440,
+        "density": 2.75,
+        "fontScale": 1,
+        "locale": "zh-CN",
+        "api": 35,
+        "mode": "ordinary/guest/no wearable/no personal data"
+      },
+      "identityMatch": "Package/version and runtime bundle provenance checked against stored original evidence; current runtime recaptures are indexed separately in coverage.json"
+    },
+    "17-mine-night": {
+      "classification": "A",
+      "origin": "historical",
+      "captureAt": null,
+      "captureAtStatus": "unknown: old capture wrapper has no timestamp; hierarchyAt is separate",
+      "hierarchyAt": "2026-10-15T12:03:29.113Z",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "image": "analysis/ui/runtime/captures/17-mine-night/screen.png",
+      "sha256": "7a69a6dd75d32a5bcb8e35a084d3cfedc5b420100115103c05a2c412074f147a",
+      "evidenceId": "ev_d606428678a64f2a4609539c25c45c865a9e8dfee76dcfa60d6f1b1a53183e67",
+      "hierarchyPath": "analysis/ui/runtime/hierarchy/17c-mine-night-visible.json",
+      "state": "未登录、取消认证；本次配置加载后可见五个快捷入口",
+      "theme": "night",
+      "runtimeBundle": {
+        "name": "mine",
+        "version": "11.202.21",
+        "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958"
+      },
+      "environment": {
+        "widthPx": 1080,
+        "heightPx": 2400,
+        "densityDpi": 440,
+        "density": 2.75,
+        "fontScale": 1,
+        "locale": "zh-CN",
+        "api": 35,
+        "mode": "ordinary/guest/no wearable/no personal data"
+      },
+      "identityMatch": "Package/version and runtime bundle provenance checked against stored original evidence; current runtime recaptures are indexed separately in coverage.json"
+    },
+    "21-mine-day-updated": {
+      "classification": "A",
+      "origin": "historical",
+      "captureAt": null,
+      "captureAtStatus": "unknown: old capture wrapper has no timestamp; hierarchyAt is separate",
+      "hierarchyAt": "2026-10-15T12:15:47.748Z",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "image": "analysis/ui/runtime/captures/21-mine-day-updated/screen.png",
+      "sha256": "0ecd1e58696e698490b6efbc60bac5e7793025d75d1d00e5014c0315c3d7e7e5",
+      "evidenceId": "ev_6c1c64fffe197e600b56b0c287595a47cccd003c821051324c256f4630418177",
+      "hierarchyPath": "analysis/ui/runtime/hierarchy/21b-mine-day-visible.json",
+      "state": "未登录；飞行模式冻结页面包，五个快捷入口",
+      "theme": "day",
+      "runtimeBundle": {
+        "name": "mine",
+        "version": "11.202.21",
+        "sha256": "4f8012fb1ed726d3ef11f068ff7f42b6e74def6059eddaff3426b4dbb7a06958"
+      },
+      "environment": {
+        "widthPx": 1080,
+        "heightPx": 2400,
+        "densityDpi": 440,
+        "density": 2.75,
+        "fontScale": 1,
+        "locale": "zh-CN",
+        "api": 35,
+        "mode": "ordinary/guest/no wearable/no personal data"
+      },
+      "identityMatch": "Package/version and runtime bundle provenance checked against stored original evidence; current runtime recaptures are indexed separately in coverage.json"
+    },
+    "13-app-settings": {
+      "classification": "A",
+      "origin": "historical",
+      "captureAt": null,
+      "captureAtStatus": "unknown: old capture wrapper has no timestamp; hierarchyAt is separate",
+      "hierarchyAt": "2026-10-15T11:56:54.466Z",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "image": "analysis/ui/runtime/captures/13-app-settings/screen.png",
+      "sha256": "2017862e5d53feedebc1121a912827776ac70172523b9812edccbc2eebd18630",
+      "evidenceId": "ev_2aac9f73bd758d34afbb8287fd3c1aea4905652099a39a5fba03a0375a2ad746",
+      "hierarchyPath": "analysis/ui/runtime/hierarchy/13-app-settings.json",
+      "state": "原生设置页：地区、云服务、双接授权、通知和无障碍",
+      "theme": "day",
+      "runtimeBundle": null,
+      "environment": {
+        "widthPx": 1080,
+        "heightPx": 2400,
+        "densityDpi": 440,
+        "density": 2.75,
+        "fontScale": 1,
+        "locale": "zh-CN",
+        "api": 35,
+        "mode": "ordinary/guest/no wearable/no personal data"
+      },
+      "identityMatch": "Package/version and runtime bundle provenance checked against stored original evidence; current runtime recaptures are indexed separately in coverage.json"
+    },
+    "14-settings-night": {
+      "classification": "A",
+      "origin": "historical",
+      "captureAt": null,
+      "captureAtStatus": "unknown: old capture wrapper has no timestamp; hierarchyAt is separate",
+      "hierarchyAt": "2026-10-15T11:58:23.606Z",
+      "revalidatedAt": "2026-10-15T12:59:26.176Z",
+      "image": "analysis/ui/runtime/captures/14-settings-night/screen.png",
+      "sha256": "63dd19a98df0a866058884b87d6483b97640f123171a417b3373efa15c85e0b2",
+      "evidenceId": "ev_0cd614eac6588c42df58df8867f7c19121061e487680055520b33464f8a0d63e",
+      "hierarchyPath": "analysis/ui/runtime/hierarchy/14-settings-night.json",
+      "state": "系统夜间模式开启，原生设置页",
+      "theme": "night",
+      "runtimeBundle": null,
+      "environment": {
+        "widthPx": 1080,
+        "heightPx": 2400,
+        "densityDpi": 440,
+        "density": 2.75,
+        "fontScale": 1,
+        "locale": "zh-CN",
+        "api": 35,
+        "mode": "ordinary/guest/no wearable/no personal data"
+      },
+      "identityMatch": "Package/version and runtime bundle provenance checked against stored original evidence; current runtime recaptures are indexed separately in coverage.json"
+    },
+    "switch-guest-request": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b09-notification-off.json",
+      "hierarchyPath": "analysis/ui/runtime/hierarchy/b09-notification-result.json",
+      "started": "2026-10-15T12:54:18.356Z",
+      "result": "Confounded probe: account login appeared after request, but b10 cancel and b11 later showed off; does not establish login as a prerequisite",
+      "conditions": "notification displayed on; guest; tap 946,1230",
+      "unknowns": [
+        "cause of overlapping account activity",
+        "true permission outcome",
+        "persistence"
+      ]
+    },
+    "switch-off-stable": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b14-notification-off-stable.json",
+      "eventSha256": "23619c1b67c3a11bdfc5d25dc470acffe6039f564ad9309cbe0c6767c4d97a52",
+      "started": "2026-10-15T12:58:00.013Z",
+      "finished": "2026-10-15T12:58:00.236Z",
+      "hierarchyPath": "analysis/ui/runtime/hierarchy/b14-notification-off-stable.json",
+      "hierarchySha256": "18d8e964670b6ae4b6b846a4c7c50aca1adac01fe99620c5bfa8322cca28d55b",
+      "hierarchyAt": "2026-10-15T12:58:00.513Z",
+      "result": "On -> off in stable guest settings; page remains; secondary text changes and content-desc says 当前已关闭",
+      "conditions": "Android15 API35, zh-CN, density2.75 fontScale1, ordinary guest mode",
+      "image": "analysis/ui/baseline/runtime/settings-switch-off/screen.png",
+      "sha256": "8f5e172d32cb8bbf7afd69c8ffc86aacf0be3c685f623184036b1263484b6566",
+      "evidenceId": "ev_a07b9c5cf39f12d5b47910c5858145d80d00a9796acd24f0705abff1181eedf4"
+    },
+    "switch-on-stable": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b12-notification-on.json",
+      "eventSha256": "c6a6b9aef6234e86bab670d115c3e636975d089319b52a415b54fc108f93cc47",
+      "started": "2026-10-15T12:57:26.535Z",
+      "finished": "2026-10-15T12:57:26.704Z",
+      "hierarchyPath": "analysis/ui/runtime/hierarchy/b12-notification-on.json",
+      "hierarchySha256": "5e45c5935777485aa259fb8c69e1d18cacc6ca9018d08e2945fd4c3f44747882",
+      "hierarchyAt": "2026-10-15T12:57:27.018Z",
+      "result": "off -> on; secondary text returns to on description",
+      "conditions": "Android15 API35, zh-CN, density2.75 fontScale1, ordinary guest mode"
+    },
+    "guest-logout-stable": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b13-logout-stable.json",
+      "eventSha256": "2d651f603cd2cb98998ff7b9d285c908588580dcec18c081fb95a599d8d56b6e",
+      "started": "2026-10-15T12:57:29.739Z",
+      "finished": "2026-10-15T12:57:29.855Z",
+      "hierarchyPath": "analysis/ui/runtime/hierarchy/b13-logout-stable.json",
+      "hierarchySha256": "bbc57e657d64fe4d59aab6486cf08835a1dc4dabadd1ec1a216a53615ff0950f",
+      "hierarchyAt": "2026-10-15T12:57:30.175Z",
+      "result": "Guest logout click has no observable page/node change; logged-in session behavior remains unknown",
+      "conditions": "Android15 API35, zh-CN, density2.75 fontScale1, ordinary guest mode"
+    },
+    "settings-return-current": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b16-settings-back.json",
+      "eventSha256": "79e178c5c30c1a710aab089b8937479b0181eb6e0c10003f9b25f62dc79f38bb",
+      "started": "2026-10-15T12:58:04.787Z",
+      "finished": "2026-10-15T12:58:04.892Z",
+      "hierarchyPath": "analysis/ui/runtime/hierarchy/b16-settings-return.json",
+      "hierarchySha256": "1ada04f76f16a417cac1777ff71910712dc7245b1c54100725e267ce440b7f0c",
+      "hierarchyAt": "2026-10-15T12:58:05.344Z",
+      "result": "Returns to scrolled Mine; App 设置 label [143,831][943,906], matching b07 before",
+      "conditions": "Android15 API35, zh-CN, density2.75 fontScale1, ordinary guest mode"
+    },
+    "reselect-current": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b17-reselect-mine.json",
+      "eventSha256": "884bd959508559ab79f720ec607b40c13737b612035d5eacf4d42bc495f7d4c9",
+      "started": "2026-10-15T12:58:50.054Z",
+      "finished": "2026-10-15T12:58:50.283Z",
+      "hierarchyPath": "analysis/ui/runtime/hierarchy/b17-reselect-result.json",
+      "hierarchySha256": "9000cb22ead07c8efb3388ed8a4a13f4d6d901d27eb8ed3dd6c571d8e6f56b42",
+      "hierarchyAt": "2026-10-15T12:58:50.664Z",
+      "result": "Reselect current Mine preserves App 设置 anchor [143,831][943,906]",
+      "conditions": "Android15 API35, zh-CN, density2.75 fontScale1, ordinary guest mode"
+    },
+    "hero-detail-current": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b19-hero-press.json",
+      "eventSha256": "d89f7ec61d32f939c3ec762c76314829c5abc2db23598991e562134736751f44",
+      "started": "2026-10-15T12:58:54.012Z",
+      "finished": "2026-10-15T12:58:54.184Z",
+      "hierarchyPath": "analysis/ui/runtime/hierarchy/b19-hero-result.json",
+      "hierarchySha256": "b17d641e264993010873d928da055ce4b8b87d6b90b86ff32ef02affbb1383a2",
+      "hierarchyAt": "2026-10-15T12:58:54.498Z",
+      "result": "Hero press opens 活力指标 detail, date2026-10-15, zero metrics",
+      "conditions": "Android15 API35, zh-CN, density2.75 fontScale1, ordinary guest mode"
+    },
+    "metric-detail-current": {
+      "classification": "A",
+      "origin": "current",
+      "eventPath": "analysis/ui/runtime/events/b21-sleep-press.json",
+      "eventSha256": "dd578b41b9e3ff16bd1befffc601777b6cd6287810c78e10a9e3a55feb4e5e7d",
+      "started": "2026-10-15T12:59:19.137Z",
+      "finished": "2026-10-15T12:59:19.426Z",
+      "hierarchyPath": "analysis/ui/runtime/hierarchy/b21-sleep-result.json",
+      "hierarchySha256": "9e3084d0ff5a7f899df6788cf1401ac15c4f5feb5871e1bd72734fb1877721e0",
+      "hierarchyAt": "2026-10-15T12:59:19.739Z",
+      "result": "Sleep empty metric press opens 睡眠 detail with same date and explicit no-data explanation",
+      "conditions": "Android15 API35, zh-CN, density2.75 fontScale1, ordinary guest mode"
+    }
+  },
+  "pages": [
+    {
+      "id": "health",
+      "classification": {
+        "observed": "A",
+        "structure": "B",
+        "reference": "D"
+      },
+      "sourceObservations": [
+        "06-entry-after-region",
+        "15-health-night",
+        "hero-detail-current",
+        "metric-detail-current"
+      ],
+      "components": [
+        "TopBar",
+        "BottomNav",
+        "ProgressHero",
+        "MetricCard",
+        "SurfaceCard"
+      ],
+      "structure": [
+        "title/actions",
+        "single main scroll",
+        "three-target visual",
+        "three-summary surface",
+        "guest sign-in surface",
+        "two-column empty metric grid"
+      ],
+      "implementation": {
+        "path": "analysis/ui/android-reference/src/study/style/reference/MainActivity.java",
+        "entry": "health()"
+      },
+      "preserve": [
+        "overview before detail",
+        "single vertical scroll owner",
+        "detail context"
+      ],
+      "domainOnly": [
+        "metric algorithms",
+        "health thresholds",
+        "food equivalence",
+        "wearable gates"
+      ]
+    },
+    {
+      "id": "mine",
+      "classification": {
+        "observed": "A",
+        "structure": "B",
+        "reference": "D"
+      },
+      "sourceObservations": [
+        "21-mine-day-updated",
+        "17-mine-night",
+        "settings-return-current",
+        "reselect-current"
+      ],
+      "components": [
+        "TopBar",
+        "BottomNav",
+        "ProfileHeader",
+        "ShortcutGrid",
+        "SurfaceCard",
+        "ChevronRow"
+      ],
+      "structure": [
+        "blank-space title/actions",
+        "profile",
+        "five shortcuts",
+        "membership",
+        "asymmetric feature cards",
+        "service surfaces",
+        "grouped menu"
+      ],
+      "implementation": {
+        "path": "analysis/ui/android-reference/src/study/style/reference/MainActivity.java",
+        "entry": "mine()"
+      },
+      "preserve": [
+        "identity then shortcuts",
+        "ordered equal-width shortcuts",
+        "grouped services",
+        "return-scroll"
+      ],
+      "domainOnly": [
+        "Xiaomi identity",
+        "membership/medical offers",
+        "lottery/health routes"
+      ]
+    },
+    {
+      "id": "settings",
+      "classification": {
+        "observed": "A",
+        "structure": "B",
+        "reference": "D"
+      },
+      "sourceObservations": [
+        "13-app-settings",
+        "14-settings-night",
+        "switch-off-stable",
+        "switch-on-stable",
+        "guest-logout-stable"
+      ],
+      "components": [
+        "TopBar",
+        "ChevronRow",
+        "SwitchRow",
+        "PrimaryButton"
+      ],
+      "structure": [
+        "expanded ActionBar/back",
+        "scrolling variable-height row group",
+        "separate fixed positive bottom button"
+      ],
+      "implementation": {
+        "path": "analysis/ui/android-reference/src/study/style/reference/MainActivity.java",
+        "entry": "settings()"
+      },
+      "preserve": [
+        "description under title",
+        "single setting per row",
+        "fixed bottom action",
+        "controlled toggle request"
+      ],
+      "domainOnly": [
+        "health cloud/dual-device authorization",
+        "Xiaomi session implementation"
+      ]
+    }
+  ],
+  "components": [
+    {
+      "id": "TopBar",
+      "kind": "navigation",
+      "classification": {
+        "visual": [
+          "A",
+          "B"
+        ],
+        "interface": "D"
+      },
+      "pages": [
+        "health",
+        "mine",
+        "settings"
+      ],
+      "props": {
+        "variant": "healthLarge | mineBlank | settingsExpanded",
+        "title": "string",
+        "actions": "{id,label,icon,onPress}[]",
+        "onBack": "() => void",
+        "insets": "platform-owned dp"
+      },
+      "controlledState": [
+        "route",
+        "theme"
+      ],
+      "slots": [
+        "title",
+        "trailingActions",
+        "backAction"
+      ],
+      "source": [
+        "header.health",
+        "header.mine",
+        "header.settings"
+      ],
+      "observations": [
+        "06-entry-after-region",
+        "21-mine-day-updated",
+        "13-app-settings"
+      ],
+      "specs": {
+        "health": {
+          "titleSp": 32,
+          "fontFamily": "sans-serif-light",
+          "titleBoundsPx": [
+            72,
+            151,
+            248,
+            280
+          ]
+        },
+        "mine": {
+          "title": " ",
+          "titleSizeLogical": 32,
+          "paddingStartDp": 26,
+          "paddingEndDp": 20,
+          "actionsLogical": 36
+        },
+        "settings": {
+          "titleSp": 32,
+          "fontFamily": "sans-serif (resolved resource string)",
+          "titleBoundsPx": [
+            71,
+            301,
+            247,
+            430
+          ],
+          "backBoundsPx": [
+            55,
+            158,
+            187,
+            268
+          ],
+          "actionBarBoundsPx": [
+            0,
+            136,
+            1080,
+            457
+          ]
+        }
+      },
+      "events": [
+        {
+          "name": "pressBack",
+          "owner": "router/platform",
+          "order": "emit then let router pop; no local destructive reset",
+          "classification": "D"
+        },
+        {
+          "name": "pressAction(id)",
+          "owner": "route or platform adapter",
+          "classification": "D"
+        }
+      ],
+      "knownSourceStates": [
+        "health default",
+        "mine empty-space title with messages/add actions",
+        "settings expanded title",
+        "day/night visual samples"
+      ],
+      "unknownSourceStates": [
+        "settings collapse animation",
+        "long title layout",
+        "keyboard focus restoration"
+      ],
+      "notApplicable": [
+        "checked"
+      ],
+      "transfer": {
+        "keep": [
+          "title role hierarchy",
+          "action alignment",
+          "platform insets"
+        ],
+        "replace": [
+          "title strings",
+          "icons",
+          "routes"
+        ],
+        "adapt": [
+          "platform back and safe areas"
+        ]
+      },
+      "implementation": {
+        "classification": "D",
+        "path": "analysis/ui/android-reference/src/study/style/reference/StyleKit.java",
+        "owner": "study.style.reference.StyleKit",
+        "entry": "topBar",
+        "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
+      },
+      "comparison": "analysis/ui/baseline/comparison/final/index.html"
+    },
+    {
+      "id": "BottomNav",
+      "kind": "navigation",
+      "classification": {
+        "visual": [
+          "A",
+          "B"
+        ],
+        "interface": "D"
+      },
+      "pages": [
+        "health",
+        "mine"
+      ],
+      "props": {
+        "items": "{id,label,icon,badge?}[]",
+        "selectedId": "string",
+        "onSelect": "(id) => void",
+        "onReselect": "(id) => void"
+      },
+      "controlledState": [
+        "selectedId",
+        "per-tab-scroll held by shell"
+      ],
+      "slots": [
+        "icon",
+        "label",
+        "optionalBadge"
+      ],
+      "source": [
+        "nav.layout",
+        "nav.item",
+        "nav.selection"
+      ],
+      "observations": [
+        "06-entry-after-region",
+        "15-health-night",
+        "21-mine-day-updated",
+        "settings-return-current",
+        "reselect-current"
+      ],
+      "specs": {
+        "heightDp": 66.66998,
+        "topPaddingDp": 2,
+        "labelSp": 11,
+        "labelStyle": "FontMedium = mipro-regular + bold",
+        "iconToLabelGapDp": 3,
+        "indicator": "none",
+        "ripple": "transparent",
+        "daySurface": "#FFFFFF",
+        "nightSurface": "#242424",
+        "selectedDay": "#FF612E",
+        "selectedNight": "#F04D18",
+        "boundsPx": [
+          0,
+          2151,
+          1080,
+          2334
+        ],
+        "systemBottomInset": "separate; current 66 physical px"
+      },
+      "events": [
+        {
+          "name": "selectDifferent",
+          "order": "save old scroll; choose target; restore target scroll",
+          "classification": "D"
+        },
+        {
+          "name": "reselect",
+          "order": "preserve current scroll/content in observed My scenario",
+          "classification": "A",
+          "evidence": "analysis/ui/runtime/interaction-checks.json#reselection"
+        },
+        {
+          "name": "rootBack",
+          "order": "delegate Android root return",
+          "classification": "A",
+          "evidence": "analysis/ui/runtime/evidence/00-root-back.json"
+        }
+      ],
+      "knownSourceStates": [
+        "four ordered destinations",
+        "health selected",
+        "mine selected",
+        "ordinary My reselect preserves scroll"
+      ],
+      "unknownSourceStates": [
+        "arbitrary destination counts",
+        "deep-link tab restoration",
+        "process-death restoration"
+      ],
+      "notApplicable": [
+        "loading",
+        "invalid"
+      ],
+      "transfer": {
+        "keep": [
+          "fixed icon-label composition",
+          "independent selection",
+          "no indicator"
+        ],
+        "replace": [
+          "destinations",
+          "icons",
+          "badge data"
+        ],
+        "adapt": [
+          "platform root-back and history"
+        ]
+      },
+      "implementation": {
+        "classification": "D",
+        "path": "analysis/ui/android-reference/src/study/style/reference/StyleKit.java",
+        "owner": "study.style.reference.StyleKit",
+        "entry": "bottomNav",
+        "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
+      },
+      "comparison": "analysis/ui/baseline/comparison/final/index.html"
+    },
+    {
+      "id": "ProgressHero",
+      "kind": "summary",
+      "classification": {
+        "visual": [
+          "A",
+          "B"
+        ],
+        "interface": "D"
+      },
+      "pages": [
+        "health"
+      ],
+      "props": {
+        "metrics": "{id,label,value,target,unit,icon,onPress}[]",
+        "visual": "domain renderer or omitted",
+        "auxiliary": "{label,icon,onPress}",
+        "share": "{label,onRequest}"
+      },
+      "controlledState": [
+        "metric values",
+        "preparation status owned externally"
+      ],
+      "slots": [
+        "visual",
+        "three metric summaries",
+        "auxiliary row",
+        "share entry"
+      ],
+      "source": [
+        "health.hero",
+        "health.target",
+        "health.summary"
+      ],
+      "observations": [
+        "06-entry-after-region",
+        "15-health-night",
+        "hero-detail-current"
+      ],
+      "specs": {
+        "visualWidthDp": 200,
+        "reflectionSizeDp": [
+          210,
+          80
+        ],
+        "summaryTopMarginDp": 168,
+        "outerInsetDp": 12,
+        "summaryPaddingTopDp": 16,
+        "columns": 3,
+        "columnGapDp": 8,
+        "labelSp": 14,
+        "labelFont": "MiSansLatin Medium with CJK fallback",
+        "valueSp": 24,
+        "valueFont": "MiSansLatin SemiBold",
+        "valueIncludeFontPadding": false,
+        "targetSp": 12,
+        "targetStyle": "FontDemiBold = mipro-medium + bold",
+        "dividerPhysicalPx": 1,
+        "visualBoundsPx": [
+          265,
+          335,
+          815,
+          610
+        ],
+        "reflectionBoundsPx": [
+          251,
+          610,
+          829,
+          830
+        ],
+        "summaryBoundsPx": [
+          33,
+          797,
+          1047,
+          1319
+        ]
+      },
+      "events": [
+        {
+          "name": "pressVisual/pressReflection",
+          "order": "target detail",
+          "classification": "B",
+          "source": "health.summary"
+        },
+        {
+          "name": "pressMetric",
+          "order": "detail with metric context",
+          "classification": "B"
+        },
+        {
+          "name": "requestShare",
+          "order": "asset ready -> share; missing -> progress -> success continues / failure toast",
+          "classification": "B",
+          "source": "health.summary"
+        }
+      ],
+      "knownSourceStates": [
+        "guest zero metrics in day/night"
+      ],
+      "unknownSourceStates": [
+        "nonzero arc drawing",
+        "ring duration/easing",
+        "share preparation runtime",
+        "cancellation/late result"
+      ],
+      "notApplicable": [
+        "hover as source Android state"
+      ],
+      "transfer": {
+        "keep": [
+          "hierarchy of overview then three drilldowns",
+          "small targets/units",
+          "context-preserving action"
+        ],
+        "replace": [
+          "health rings algorithm",
+          "400/6000/30 thresholds",
+          "calorie food conversion",
+          "health labels"
+        ],
+        "adapt": [
+          "omit visual if target has no meaningful progress denominator"
+        ]
+      },
+      "implementation": {
+        "classification": "D",
+        "path": "analysis/ui/android-reference/src/study/style/reference/MainActivity.java",
+        "owner": "study.style.reference.MainActivity",
+        "entry": "ProgressHero + health() summary",
+        "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract",
+        "detailBoundary": {
+          "classification": "D",
+          "entry": "MainActivity.openDetailBoundary(title)",
+          "coverage": "entry event and return only; second-level original detail visual/content not reconstructed; not a login gate"
+        }
+      },
+      "comparison": "analysis/ui/baseline/comparison/final/index.html"
+    },
+    {
+      "id": "MetricCard",
+      "kind": "content",
+      "classification": {
+        "visual": [
+          "A",
+          "B"
+        ],
+        "interface": "D"
+      },
+      "pages": [
+        "health"
+      ],
+      "props": {
+        "id": "string",
+        "icon": "asset",
+        "title": "string",
+        "state": "empty | ready | loading | stale | error",
+        "value": "optional formatted value",
+        "description": "string",
+        "visual": "optional renderer",
+        "context": "target entity/date/viewKind",
+        "onPress": "(context) => void"
+      },
+      "controlledState": [
+        "dataState",
+        "dataContext"
+      ],
+      "slots": [
+        "icon",
+        "title",
+        "value or empty explanation",
+        "optional visualization",
+        "optional action"
+      ],
+      "source": [
+        "health.card",
+        "health.cardNumbers",
+        "health.layout"
+      ],
+      "observations": [
+        "06-entry-after-region",
+        "15-health-night",
+        "metric-detail-current"
+      ],
+      "specs": {
+        "columnsPhone": 2,
+        "gapDp": 10,
+        "iconDp": 26,
+        "titleSp": 17,
+        "titleStyle": "FontMedium",
+        "titleTopMarginDp": 6,
+        "valueSp": 18,
+        "descriptionSp": 13,
+        "emptyExplanationSp": 14,
+        "leftVisibleBoundsPx": [
+          33,
+          1620,
+          540,
+          2150
+        ],
+        "rightVisibleBoundsPx": [
+          568,
+          1620,
+          1047,
+          2150
+        ],
+        "heightStatus": "visible portion only; clipped by fixed navigation; do not use 530px as full card height"
+      },
+      "events": [
+        {
+          "name": "press",
+          "order": "emit context to router, then apply domain preconditions",
+          "classification": "D"
+        }
+      ],
+      "knownSourceStates": [
+        "sleep empty",
+        "heart-rate empty",
+        "two-column guest day/night"
+      ],
+      "unknownSourceStates": [
+        "ready charts",
+        "stale/error/loading UI",
+        "full long-card height",
+        "foldable runtime"
+      ],
+      "notApplicable": [
+        "checked"
+      ],
+      "transfer": {
+        "keep": [
+          "icon/title/explanation hierarchy",
+          "optional detail affordance",
+          "one task per card"
+        ],
+        "replace": [
+          "health data",
+          "icon colors/meaning",
+          "chart renderer"
+        ],
+        "adapt": [
+          "state language and target domain validation"
+        ]
+      },
+      "implementation": {
+        "classification": "D",
+        "path": "analysis/ui/android-reference/src/study/style/reference/StyleKit.java",
+        "owner": "study.style.reference.StyleKit",
+        "entry": "metricCard",
+        "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract",
+        "detailBoundary": {
+          "classification": "D",
+          "entry": "MainActivity.openDetailBoundary(title)",
+          "coverage": "entry event and return only; second-level original detail visual/content not reconstructed; not a login gate"
+        }
+      },
+      "comparison": "analysis/ui/baseline/comparison/final/index.html"
+    },
+    {
+      "id": "ProfileHeader",
+      "kind": "identity",
+      "classification": {
+        "visual": [
+          "A",
+          "B"
+        ],
+        "interface": "D"
+      },
+      "pages": [
+        "mine"
+      ],
+      "props": {
+        "name": "string",
+        "descriptions": "string[]",
+        "avatar": "optional asset",
+        "trailing": "optional slot",
+        "onPress": "() => void"
+      },
+      "controlledState": [
+        "identity owned by account/workspace adapter"
+      ],
+      "slots": [
+        "avatar",
+        "name",
+        "single-line description",
+        "trailing child"
+      ],
+      "source": [
+        "profile.current",
+        "profile.guest",
+        "mine.composition"
+      ],
+      "observations": [
+        "21-mine-day-updated",
+        "17-mine-night"
+      ],
+      "specs": {
+        "outerPageInsetDp": 12,
+        "innerHorizontalDp": 13,
+        "topMarginDp": 10,
+        "avatarDp": 50,
+        "avatarRadiusDp": 25,
+        "textStartGapDp": 12,
+        "textVerticalPaddingDp": 2,
+        "nameSizeLogical": 20,
+        "nameWeight": 500,
+        "descriptionSizeLogical": 12,
+        "descriptionWeight": 400,
+        "lines": 1,
+        "ellipsis": "tail",
+        "descriptionSeparator": " | ",
+        "nameBoundsPx": [
+          239,
+          306,
+          404,
+          380
+        ],
+        "descriptionBoundsPx": [
+          239,
+          380,
+          404,
+          424
+        ]
+      },
+      "events": [
+        {
+          "name": "press",
+          "order": "delegate identity action; guest source routes account",
+          "classification": "B"
+        },
+        {
+          "name": "mountGuest",
+          "order": "source guest profile may request login; should be explicit in target adapter",
+          "classification": "B"
+        }
+      ],
+      "knownSourceStates": [
+        "guest name and no-account description in day/night"
+      ],
+      "unknownSourceStates": [
+        "logged-in updates",
+        "long name",
+        "large-font wrapping",
+        "identity request error runtime"
+      ],
+      "notApplicable": [
+        "checked"
+      ],
+      "transfer": {
+        "keep": [
+          "avatar/text role and spacing",
+          "single-line truncation",
+          "optional trailing identity affordance"
+        ],
+        "replace": [
+          "Xiaomi account",
+          "medal/service",
+          "description",
+          "avatar asset"
+        ],
+        "adapt": [
+          "target authentication/workspace adapter"
+        ]
+      },
+      "implementation": {
+        "classification": "D",
+        "path": "analysis/ui/android-reference/src/study/style/reference/StyleKit.java",
+        "owner": "study.style.reference.StyleKit",
+        "entry": "profile",
+        "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
+      },
+      "comparison": "analysis/ui/baseline/comparison/final/index.html"
+    },
+    {
+      "id": "ShortcutGrid",
+      "kind": "navigation",
+      "classification": {
+        "visual": [
+          "A",
+          "B"
+        ],
+        "interface": "D"
+      },
+      "pages": [
+        "mine"
+      ],
+      "props": {
+        "entries": "{id,label,icon,guard?,onPress}[]",
+        "profile": "versioned composition",
+        "rowInsetDp": "number"
+      },
+      "controlledState": [
+        "ordered entries",
+        "guard result external"
+      ],
+      "slots": [
+        "equal-width entry icon and label"
+      ],
+      "source": [
+        "shortcut.current",
+        "shortcut.item",
+        "shortcut.guard"
+      ],
+      "observations": [
+        "21-mine-day-updated",
+        "17-mine-night"
+      ],
+      "specs": {
+        "baselineCount": 5,
+        "baselineOrder": [
+          "activity",
+          "course",
+          "friend",
+          "prize",
+          "order"
+        ],
+        "outerPageInsetDp": 12,
+        "additionalRowInsetDp": 0,
+        "topMarginDp": 8,
+        "topPaddingDp": 18,
+        "bottomMarginDp": 5,
+        "iconDp": 24,
+        "iconBottomMarginDp": 6,
+        "labelSizeLogical": 14,
+        "labelWeight": 400,
+        "labelTopPaddingDp": 2,
+        "labelBottomPaddingDp": 10,
+        "labelLines": 1,
+        "distribution": "flex1 centered each",
+        "entryBoundsPx": [
+          [
+            33,
+            505,
+            236,
+            673
+          ],
+          [
+            236,
+            505,
+            439,
+            673
+          ],
+          [
+            439,
+            505,
+            641,
+            673
+          ],
+          [
+            641,
+            505,
+            844,
+            673
+          ],
+          [
+            844,
+            505,
+            1047,
+            673
+          ]
+        ]
+      },
+      "events": [
+        {
+          "name": "pressEntry",
+          "order": "await login status; if logout and guarded -> LoginModal and return; else call entry action",
+          "classification": "B"
+        }
+      ],
+      "knownSourceStates": [
+        "five entries day/night",
+        "version not theme explains count/order"
+      ],
+      "unknownSourceStates": [
+        "runtime login success continuation",
+        "more entries",
+        "very narrow viewport behavior"
+      ],
+      "notApplicable": [
+        "invalid"
+      ],
+      "transfer": {
+        "keep": [
+          "ordered equal-width compact shortcuts",
+          "guard at action boundary"
+        ],
+        "replace": [
+          "entry list",
+          "routes",
+          "account provider"
+        ],
+        "adapt": [
+          "configuration-based count and explicit overflow strategy; overflow choice is D"
+        ]
+      },
+      "implementation": {
+        "classification": "D",
+        "path": "analysis/ui/android-reference/src/study/style/reference/StyleKit.java",
+        "owner": "study.style.reference.StyleKit",
+        "entry": "shortcutGrid",
+        "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
+      },
+      "comparison": "analysis/ui/baseline/comparison/final/index.html"
+    },
+    {
+      "id": "SurfaceCard",
+      "kind": "surface",
+      "classification": {
+        "visual": [
+          "A",
+          "B"
+        ],
+        "interface": "D"
+      },
+      "pages": [
+        "health",
+        "mine"
+      ],
+      "props": {
+        "variant": "nativeCommon | rnMenu | customDomain",
+        "children": "content",
+        "onPress": "optional handler",
+        "enabled": "boolean"
+      },
+      "controlledState": [
+        "theme",
+        "enabled only if interactive"
+      ],
+      "slots": [
+        "body"
+      ],
+      "source": [
+        "surface.native",
+        "mine.surface"
+      ],
+      "observations": [
+        "06-entry-after-region",
+        "21-mine-day-updated",
+        "15-health-night",
+        "17-mine-night"
+      ],
+      "specs": {
+        "nativeCommonRadiusDp": 16,
+        "rnMenuRadiusDp": 18,
+        "daySurface": "#FFFFFF",
+        "nightSurface": "#191919",
+        "rnMenuTopMarginDp": 12,
+        "rnMenuVerticalPaddingDp": 4,
+        "sourceDrawableStates": "pressed/disabled/default shape fill same in native drawable; host effects unknown",
+        "shadow": "no global shadow token inferred"
+      },
+      "events": [
+        {
+          "name": "press",
+          "order": "only if host declares an action; empty surface itself does not infer clickability",
+          "classification": "D"
+        }
+      ],
+      "knownSourceStates": [
+        "default common surfaces day/night"
+      ],
+      "unknownSourceStates": [
+        "host press overlay/scale",
+        "global shadow system",
+        "all disabled surfaces"
+      ],
+      "notApplicable": [
+        "checked",
+        "text invalid"
+      ],
+      "transfer": {
+        "keep": [
+          "surface hierarchy",
+          "local radius role",
+          "slots"
+        ],
+        "replace": [
+          "content",
+          "illustrations"
+        ],
+        "adapt": [
+          "native smooth corners and platform shadows independently"
+        ]
+      },
+      "implementation": {
+        "classification": "D",
+        "path": "analysis/ui/android-reference/src/study/style/reference/StyleKit.java",
+        "owner": "study.style.reference.StyleKit",
+        "entry": "surface",
+        "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
+      },
+      "comparison": "analysis/ui/baseline/comparison/final/index.html"
+    },
+    {
+      "id": "ChevronRow",
+      "kind": "action-row",
+      "classification": {
+        "visual": [
+          "A",
+          "B"
+        ],
+        "interface": "D"
+      },
+      "pages": [
+        "settings",
+        "mine"
+      ],
+      "props": {
+        "variant": "nativeSingle | nativeTwoLine | rnMenu",
+        "title": "string",
+        "description": "optional string",
+        "value": "optional string",
+        "leading": "optional icon",
+        "showArrow": "boolean",
+        "visualEnabled": "boolean",
+        "canExecute": "boolean",
+        "allowExplainWhenDisabled": "boolean",
+        "onPress": "() => void",
+        "onExplain": "optional () => void"
+      },
+      "controlledState": [
+        "value and availability external"
+      ],
+      "slots": [
+        "leading icon",
+        "title/description",
+        "right value/reminder",
+        "trailing arrow"
+      ],
+      "source": [
+        "row.native",
+        "row.single",
+        "mine.row",
+        "settings.layout",
+        "font.medium"
+      ],
+      "observations": [
+        "13-app-settings",
+        "14-settings-night",
+        "21-mine-day-updated"
+      ],
+      "specs": {
+        "native": {
+          "titleSp": 16,
+          "titleStyle": "mipro-regular + bold",
+          "descriptionSp": 12,
+          "descriptionStyle": "mipro-regular",
+          "rightValueSp": 14,
+          "titleMaxLines": 2,
+          "descriptionMaxLines": 4,
+          "rightValueMaxLines": 2,
+          "rightValueMaxWidthDp": 96,
+          "verticalTextMarginDp": 13.329987,
+          "optionalLeadingIconDp": 30,
+          "iconToTextGapDp": 16
+        },
+        "rnMenu": {
+          "leadingIconDp": 26,
+          "titleSizeLogical": 16,
+          "titleWeight": "bold=true resolves to 700, despite explicit500",
+          "paddingStartDp": 14,
+          "paddingEndDp": 10,
+          "titleHorizontalPaddingDp": 12,
+          "rowVerticalMarginDp": 16,
+          "arrowDp": 28,
+          "throttleMs": 300,
+          "throttleLeading": true,
+          "throttleTrailing": false
+        },
+        "settingsSingleBoundsPx": [
+          [
+            72,
+            493,
+            1008,
+            640
+          ],
+          [
+            72,
+            751,
+            1008,
+            898
+          ]
+        ],
+        "settingsTwoLineBoundsPx": [
+          [
+            72,
+            953,
+            1008,
+            1141
+          ],
+          [
+            72,
+            1329,
+            1008,
+            1517
+          ]
+        ],
+        "heightRule": "wrap_content; these measured states are not universal fixed heights"
+      },
+      "events": [
+        {
+          "name": "press",
+          "order": "if allowed execute; otherwise explain only when explicitly configured",
+          "classification": "D"
+        },
+        {
+          "name": "rnPress",
+          "order": "leading-only throttle before navigation",
+          "classification": "B",
+          "source": "mine.row"
+        }
+      ],
+      "knownSourceStates": [
+        "native no-leading-icon single/two-line rows",
+        "RN icon-bearing menu default",
+        "day/night visual"
+      ],
+      "unknownSourceStates": [
+        "runtime disabled explanation",
+        "long-text max-line clipping",
+        "native row double-tap behavior"
+      ],
+      "notApplicable": [
+        "checked"
+      ],
+      "transfer": {
+        "keep": [
+          "description inline not modal by default",
+          "right state/arrow hierarchy",
+          "visual availability separate from action permission"
+        ],
+        "replace": [
+          "labels",
+          "values",
+          "routes",
+          "capability conditions"
+        ],
+        "adapt": [
+          "throttle only on corresponding component, not all actions"
+        ]
+      },
+      "implementation": {
+        "classification": "D",
+        "path": "analysis/ui/android-reference/src/study/style/reference/StyleKit.java",
+        "owner": "study.style.reference.StyleKit",
+        "entry": "chevronRow",
+        "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
+      },
+      "comparison": "analysis/ui/baseline/comparison/final/index.html"
+    },
+    {
+      "id": "SwitchRow",
+      "kind": "controlled-setting",
+      "classification": {
+        "visual": [
+          "A",
+          "B"
+        ],
+        "interface": "D"
+      },
+      "pages": [
+        "settings"
+      ],
+      "props": {
+        "title": "string",
+        "description": "optional string",
+        "value": "boolean (authoritative)",
+        "enabled": "boolean",
+        "busy": "boolean D state",
+        "requestChange": "(desired:boolean) => void",
+        "adapterResult": "external authoritative value or guard/cancel/error"
+      },
+      "controlledState": [
+        "value external; component does not optimistically mutate"
+      ],
+      "slots": [
+        "title/description",
+        "switch"
+      ],
+      "source": [
+        "switch.native",
+        "settings.layout"
+      ],
+      "observations": [
+        "13-app-settings",
+        "14-settings-night",
+        "switch-guest-request",
+        "switch-off-stable",
+        "switch-on-stable"
+      ],
+      "specs": {
+        "titleSp": 16,
+        "titleStyle": "mipro-regular + bold",
+        "descriptionSp": 12,
+        "switchWidthDp": 45,
+        "switchHeightDp": 25,
+        "switchBoundsPx": [
+          884,
+          1200,
+          1008,
+          1269
+        ],
+        "rowBoundsPx": [
+          72,
+          1141,
+          1008,
+          1329
+        ],
+        "onDay": "#FF612E",
+        "onNight": "#F04D18",
+        "semanticState": "on via visual + content-desc 当前已开启; checked=false is unreliable on this custom widget",
+        "offDescription": "你可能错过重要消息通知，点击开关允许应用通知",
+        "onDescription": "关闭通知权限，可能会错过重要通知哦",
+        "offVisual": "see current original PNG, color sampling in comparison"
+      },
+      "events": [
+        {
+          "name": "requestChange(desired)",
+          "order": "stable guest click switches UI on/off and description, remains in settings; do not force account login based on confounded b09",
+          "classification": "A",
+          "origin": "current",
+          "evidence": [
+            "switch-off-stable",
+            "switch-on-stable"
+          ]
+        },
+        {
+          "name": "adapterResult",
+          "order": "controlled reference: adapter commits authoritative boolean; exact platform persistence/permissions are separate",
+          "classification": "D"
+        }
+      ],
+      "knownSourceStates": [
+        "on day/night",
+        "off day current",
+        "stable guest on->off and off->on with contextual descriptions"
+      ],
+      "unknownSourceStates": [
+        "system permission grant/result",
+        "cross-restart persistence",
+        "failure rollback",
+        "cause of b09 overlapping account authentication"
+      ],
+      "notApplicable": [
+        "free-form invalid input"
+      ],
+      "transfer": {
+        "keep": [
+          "controlled state",
+          "semantic label consistent with actual boolean",
+          "request separate from commit"
+        ],
+        "replace": [
+          "notification copy",
+          "account/permission adapter"
+        ],
+        "adapt": [
+          "platform switch/accessibility; busy/error is explicit D"
+        ]
+      },
+      "implementation": {
+        "classification": "D",
+        "path": "analysis/ui/android-reference/src/study/style/reference/StyleKit.java",
+        "owner": "study.style.reference.StyleKit",
+        "entry": "switchRow + setChecked(row, checked), owner commits",
+        "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
+      },
+      "comparison": "analysis/ui/baseline/comparison/final/index.html",
+      "interfaceNotes": "Controlled requestChange/setChecked is an independent D adapter recommendation; original UI on/off observations do not establish its internal state ownership or persistence."
+    },
+    {
+      "id": "PrimaryButton",
+      "kind": "action",
+      "classification": {
+        "visual": [
+          "A",
+          "B"
+        ],
+        "interface": "D"
+      },
+      "pages": [
+        "settings"
+      ],
+      "props": {
+        "variant": "settingsLargePositive",
+        "label": "string",
+        "enabled": "boolean",
+        "busy": "boolean D state",
+        "onPress": "() => void"
+      },
+      "controlledState": [
+        "enabled/busy external"
+      ],
+      "slots": [
+        "label",
+        "background",
+        "state foreground"
+      ],
+      "source": [
+        "settings.layout",
+        "button.settings",
+        "button.settingsParent",
+        "button.background",
+        "font.medium",
+        "dimensions"
+      ],
+      "observations": [
+        "13-app-settings",
+        "14-settings-night",
+        "guest-logout-stable"
+      ],
+      "specs": {
+        "styleChain": [
+          "Button.Common.Large.Positive",
+          "Button.Common.Primary",
+          "FontMedium.17sp"
+        ],
+        "fontSp": 17,
+        "fontFamily": "mipro-regular",
+        "textStyle": "bold",
+        "textColor": "#FFFFFF",
+        "minWidthDp": 336,
+        "hostHeightDp": 46.659973,
+        "measuredBoundsPx": [
+          78,
+          2132,
+          1002,
+          2260
+        ],
+        "measuredExtentDp": [
+          336,
+          46.545
+        ],
+        "bottomMarginDp": 27,
+        "dayBackground": "#FF612E",
+        "nightBackground": "#F04D18",
+        "shape": "MIUI AdaptRoundButtonDrawable, smooth=true; normal radius16/capsule36 are parameters, exact mode/curve unknown",
+        "otherButtonWarning": "CommonBtn is another style with 15sp; do not use its font size on this baseline instance"
+      },
+      "events": [
+        {
+          "name": "press",
+          "order": "emit intent to session/route adapter; destructive confirmation is not inferred from appearance",
+          "classification": "D"
+        }
+      ],
+      "knownSourceStates": [
+        "default logout-labelled action in guest settings day/night",
+        "stable guest click has no observable effect"
+      ],
+      "unknownSourceStates": [
+        "pressed duration",
+        "disabled/loading visuals",
+        "logged-in logout confirmation and completed session behavior"
+      ],
+      "notApplicable": [
+        "checked",
+        "free-form invalid input"
+      ],
+      "transfer": {
+        "keep": [
+          "prominent singular bottom action",
+          "separate foreground/label states",
+          "fixed area separate from scrolling body"
+        ],
+        "replace": [
+          "logout business action",
+          "label",
+          "session handler"
+        ],
+        "adapt": [
+          "smooth corners and platform metrics; do not assume one universal button variant"
+        ]
+      },
+      "implementation": {
+        "classification": "D",
+        "path": "analysis/ui/android-reference/src/study/style/reference/StyleKit.java",
+        "owner": "study.style.reference.StyleKit",
+        "entry": "primaryButton",
+        "status": "D reference present; runtime/comparison pass status is owned by coverage.json, not this contract"
+      },
+      "comparison": "analysis/ui/baseline/comparison/final/index.html"
+    }
+  ],
+  "platformUnknowns": [
+    "OEM/per-glyph CJK font face",
+    "all accessibility focus behavior",
+    "exact motion timing/easing",
+    "landscape/foldable runtime"
+  ],
+  "transfer": {
+    "classification": "D",
+    "sample": "unrelated document library page",
+    "implementation": "analysis/ui/android-reference/src/study/style/reference/MainActivity.java#transferPage",
+    "mustReuse": [
+      "TopBar",
+      "BottomNav",
+      "SurfaceCard",
+      "ChevronRow",
+      "SwitchRow",
+      "PrimaryButton"
+    ],
+    "keepTarget": [
+      "business correctness",
+      "existing feature set",
+      "own brand",
+      "user data"
+    ],
+    "replace": [
+      "health copy/thresholds/routes",
+      "Xiaomi account",
+      "source brand illustrations"
+    ],
+    "verify": [
+      "navigation/back/scroll",
+      "empty/ready/errors where implemented",
+      "same shared component styles",
+      "screenshot difference and independent choices"
+    ]
+  },
+  "secondaryUI": {
+    "classification": "D",
+    "detailBoundary": "Independent explanation for destination boundary; real detail pages outside three-page reference visual scope",
+    "authentication": "Independent sheet illustrates request/cancel; not Xiaomi Account SDK reconstruction",
+    "coverageRule": "Score/check the baseline pages and secondary UI separately; working D fixtures do not verify original secondary behavior"
+  },
+  "referenceAPI": {
+    "classification": "D",
+    "semanticContractsAreNotJavaSignatures": true,
+    "mapping": "analysis/ui/android-reference/java-api.md",
+    "stateFieldsDoNotImplyImplemented": true
+  }
+}

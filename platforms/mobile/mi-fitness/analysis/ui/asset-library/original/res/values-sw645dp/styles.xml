@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseButton">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingTop">@dimen/btn_padding_v</item>
+        <item name="android:paddingBottom">@dimen/btn_padding_v</item>
+        <item name="android:layout_width">@dimen/common_btn_single_line_width</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Button.FullWidth" parent="@style/Button">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">@dimen/common_btn_single_line_width</item>
+        <item name="android:layout_marginStart">@dimen/login_size_26_67</item>
+        <item name="android:layout_marginEnd">@dimen/login_size_2</item>
+    </style>
+    <style name="CommonBtn">
+        <item name="android:textSize">@dimen/common_btn_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">@dimen/common_btn_single_line_width</item>
+        <item name="android:layout_height">@dimen/common_btn_height</item>
+        <item name="android:layout_marginBottom">@dimen/common_btn_margin</item>
+        <item name="android:layout_marginStart">@dimen/common_btn_margin</item>
+        <item name="android:layout_marginEnd">@dimen/common_btn_margin</item>
+    </style>
+    <style name="userinfo_Button.FullWidth" parent="@style/userinfo_Button">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">@dimen/common_btn_single_line_width</item>
+        <item name="android:layout_marginStart">@dimen/userinfo_size_26_67</item>
+        <item name="android:layout_marginEnd">@dimen/userinfo_size_26_67</item>
+    </style>
+</resources>

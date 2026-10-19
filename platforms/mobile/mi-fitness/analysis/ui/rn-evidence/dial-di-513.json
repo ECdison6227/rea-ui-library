@@ -1,0 +1,37 @@
+{
+  "id": "di-513",
+  "line": 521,
+  "bytes": 2052,
+  "deps": [
+    3,
+    27,
+    14,
+    18,
+    1113,
+    1121,
+    1780
+  ],
+  "exports": [
+    "default"
+  ],
+  "strings": [
+    "window",
+    "absolute",
+    "rgba(0,0,0,0.5)",
+    "20px",
+    "Close"
+  ],
+  "routes": [],
+  "styleSheets": [],
+  "assetNames": [],
+  "calls": [
+    {
+      "method": "spring",
+      "code": "o.Animated.spring(P,{toValue:0,useNativeDriver:!0,tension:50,friction:7})"
+    },
+    {
+      "method": "timing",
+      "code": "o.Animated.timing(P,{toValue:v,duration:300,useNativeDriver:!0})"
+    }
+  ]
+}

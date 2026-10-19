@@ -4,9 +4,9 @@
 
 | 来源 | 平台 / 来源身份 | 锁定依据 | 本次集成边界 |
 | --- | --- | --- | --- |
-| [Hark研究](https://github.com/ECdison6227/hark-ui-research) | Web · hark.com/chat | b5b49eb46494b86d56c21654ea585ad379d9b9d7 | 既有研究及原启动方式；原始会话证据受控 |
-| [小米运动健康](https://github.com/ECdison6227/ui-phone-mi-fitness) | Android · 3.57.0 / Mine 11.202.21 | c78748d5296522da30f3348c82482c05b54d1483 | 中文浅色、未登录空数据的三页十组件代表基线 |
-| [Mirasim](https://github.com/ECdison6227/ui-phone-mirasim) | Android混合应用 · 0.0.497 | 1f99dd16b8945875f2d0971396be2e75e0c6ef41 | 打包前端与模拟桥接；无Android装机验证 |
+| [Hark研究](../platforms/web/hark/README.md) | Web · hark.com/chat | b5b49eb46494b86d56c21654ea585ad379d9b9d7 | 249文件完整内迁；原始会话证据受控 |
+| [小米运动健康](../platforms/mobile/mi-fitness/analysis/ui/README.md) | Android · 3.57.0 / Mine 11.202.21 | c78748d5296522da30f3348c82482c05b54d1483 | 8737文件完整内迁；中文浅色、未登录空数据三页十组件 |
+| [Mirasim](../platforms/mobile/mirasim/README.md) | Android混合应用 · 0.0.497 | 1f99dd16b8945875f2d0971396be2e75e0c6ef41 | 1194文件完整内迁；打包前端与模拟桥接，无Android装机验证 |
 | Kimi | Android · 3.1.3 / 376 | 分发包SHA256 5ea98712b198278e0602cf485a5f642fe5cb90f80d9f30bf1f028b0a5077c42c | 本地已审Run03快照；用户接受UI/主要流程目标，技术清单仍保留缺口 |
 
 当前没有符合范围的独立电脑端REA研究。普通桌面产品、网页产品、UI灵感实验及单独的迁移应用均未纳入；不会用它们填充桌面空分类。

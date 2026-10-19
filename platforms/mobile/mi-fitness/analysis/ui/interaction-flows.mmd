@@ -1,0 +1,43 @@
+flowchart TD
+  S[启动 Splash] --> W{欢迎完成?}
+  W -- 否 --> WA[欢迎页 / 立即体验]
+  WA --> P{隐私同意或基础模式?}
+  W -- 是 --> P
+  P -- 均否 --> PA[隐私说明]
+  PA --> AG{点击同意时已勾选?}
+  AG -- 否 --> PD[二次协议确认]
+  PD -- 确认 --> AC[记录同意时间 / 关闭基础模式]
+  AG -- 是 --> AC
+  PA -- 进入基础模式 --> BM[地区中国大陆 / 运动 tab]
+  P -- 基础模式 --> BM
+  P -- 已同意 --> RG{地区已选择?}
+  AC --> RG
+  RG -- 否 --> RS[地区选择]
+  RS --> NEXT[按渠道与版本继续]
+  RG -- 是 --> NEXT
+  NEXT --> HOME[主界面 / 可选广告或兼容外观引导]
+  BM --> TABS[健康 0 / 运动 1 / 设备 2 / 我的 3]
+  HOME --> TABS
+  TABS -- 普通切换 --> SW[切换 Fragment / 更新选中色]
+  TABS -- 重复点击当前标签 --> NOOP[无额外操作]
+  TABS -- 主界面返回 --> FIN[结束 Activity]
+  SW --> HEALTH[健康页]
+  HEALTH -- 可见 --> AUTO[自动同步]
+  HEALTH -- 下拉 --> MANUAL[手动同步 + 刷新用户信息]
+  HEALTH -- 点指标 --> CONTEXT[携带设备 ID / 日期 / 指标类型]
+  CONTEXT --> GATE{需要登录或完善资料?}
+  GATE -- 是 --> CHECK[登录或资料引导]
+  GATE -- 否 --> DETAIL[指标详情]
+  CHECK --> DETAIL
+  SW --> DEVICE[设备页]
+  DEVICE --> COUNT{有当前设备?}
+  COUNT -- 是 --> READY[状态 / 提醒 / 表盘 / 适配能力的设置]
+  COUNT -- 否 --> ACC{存在配件?}
+  ACC -- 是 --> ACCESSORY[配件卡 + 佩戴模式]
+  ACC -- 否 --> EMPTY[空态 / 扫一扫 + 添加设备 / 运营区]
+  READY -- 已连接点状态 --> SYNC[同步]
+  READY -- 断开等状态点状态 --> RECONNECT[手动强制连接]
+  READY -- 需选择常用应用 --> CHOOSE[常用应用选择]
+  RECONNECT --> PERM{连接权限 / 定位前置条件}
+  PERM -- 缺少 --> PROMPT[有节流的授权 / 开关提示]
+  PERM -- 满足 --> CONNECT[连接设备]
