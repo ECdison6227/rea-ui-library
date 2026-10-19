@@ -28,7 +28,7 @@ function showDoc(doc){$('#document-title').textContent=doc.label;$('#document-pa
 async function openDocument(s,a){try{const r=await fetch('/api/document?source='+encodeURIComponent(s.id)+'&path='+encodeURIComponent(a.path));if(!r.ok)throw Error(await r.text());showDoc(await r.json());}catch(e){toast('暂时无法打开文档：'+e.message);}}
 function openDetail(s){
  const box=$('#detail-content');box.replaceChildren(el('span','eyebrow',s.platform.toUpperCase()+' / REA RESEARCH'),el('h2','',s.name),el('p','muted',s.summary));
- const palette=el('div','detail-palette');for(const color of s.palette){const swatch=el('span');swatch.style.backgroundColor=color;swatch.title=color;palette.append(swatch);}box.append(palette,el('h3','','可参考的设计与行为'));
+  const palette=el('div','detail-palette');for(const color of s.palette){const swatch=el('span');swatch.style.backgroundColor=color;swatch.title=color;palette.append(swatch);}box.append(palette,el('p','muted','目录配色示意 · D；实施时请读取来源 tokens。'),el('h3','','可参考的设计与行为'));
  const list=el('ul');for(const feature of s.features)list.append(el('li','',feature));box.append(list,el('h3','','来源条件与保留边界'),el('p','muted',s.coverage));
  const limits=el('ul');for(const limit of s.limits)limits.append(el('li','',limit));box.append(limits,el('h3','','研究与参考入口'));
  const grid=el('div','artifact-grid');for(const a of s.artifacts){let item;if(a.document&&a.available){item=el('button','button',a.label+' ↗');item.addEventListener('click',()=>openDocument(s,a));}else if(a.available&&a.url){item=el('a','button',a.label+' ↗');item.href=a.url;item.target='_blank';item.rel='noopener noreferrer';}else{item=el('button','button',a.label+(a.restricted?' · 本地私有查看':' · 需本地总库'));item.disabled=true;}grid.append(item);}box.append(grid,el('h3','','保留来源的运行方式'));
