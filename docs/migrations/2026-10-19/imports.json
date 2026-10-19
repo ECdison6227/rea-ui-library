@@ -48,6 +48,40 @@
       }
     }
   ],
-  "remoteDeletion": "pending verification",
-  "backupFormat": "Complete bare mirrors and independently verified git bundles; original branch tips also imported as legacy tags. GitHub metadata contains no issues/PRs/releases/attachments; no LFS or wiki content."
+  "remoteDeletion": "requires-account-permission",
+  "backupFormat": "Complete bare mirrors and independently verified git bundles; original branch tips also imported as legacy tags. GitHub metadata contains no issues/PRs/releases/attachments; no LFS or wiki content.",
+  "deletionVerifiedAgainstLibraryCommit": "6fb5a216de30232c9a70d55c47863139ca2a1c84",
+  "deletions": [
+    {
+      "id": "hark",
+      "repository": "ECdison6227/hark-ui-research",
+      "status": "not-deleted",
+      "httpStatus": 403,
+      "reason": "Must have admin rights to Repository.",
+      "oauthScopes": "gist, repo, workflow",
+      "requiredOAuthScope": "delete_repo",
+      "manualSettingsUrl": "https://github.com/ECdison6227/hark-ui-research/settings"
+    },
+    {
+      "id": "mi-fitness",
+      "repository": "ECdison6227/ui-phone-mi-fitness",
+      "status": "not-deleted",
+      "httpStatus": 403,
+      "reason": "Must have admin rights to Repository.",
+      "oauthScopes": "gist, repo, workflow",
+      "requiredOAuthScope": "delete_repo",
+      "manualSettingsUrl": "https://github.com/ECdison6227/ui-phone-mi-fitness/settings"
+    },
+    {
+      "id": "mirasim",
+      "repository": "ECdison6227/ui-phone-mirasim",
+      "status": "not-deleted",
+      "httpStatus": 403,
+      "reason": "Must have admin rights to Repository.",
+      "oauthScopes": "gist, repo, workflow",
+      "requiredOAuthScope": "delete_repo",
+      "manualSettingsUrl": "https://github.com/ECdison6227/ui-phone-mirasim/settings"
+    }
+  ],
+  "deletionCheckedAt": "2026-10-19T06:22:49.974Z"
 }
