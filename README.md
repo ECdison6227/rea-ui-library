@@ -9,14 +9,15 @@
 需要Node.js 22.13+和Git；总目录无第三方运行依赖。
 
 ```sh
-git clone --recurse-submodules https://github.com/ECdison6227/rea-ui-library.git
+git -c core.longpaths=true clone https://github.com/ECdison6227/rea-ui-library.git
 cd rea-ui-library
+npm run sources:init
 npm run dev
 ```
 
 打开 **http://127.0.0.1:4318/**。支持平台筛选、关键词搜索、研究文档、最多三个来源比较，以及复制给Agent的迁移任务。端口冲突会明确报错，可用 `npm run dev -- --port 4320` 指定空闲端口。
 
-本地首次副本已带齐三个Git子模块及Kimi快照，直接运行 `npm run dev` 即可。已有克隆可用 `git submodule update --init --recursive --depth 1` 补齐来源。启动总入口不启动原应用、模拟器、来源后端或账号服务。
+本地首次副本已带齐三个Git子模块及Kimi快照，直接运行 `npm run dev` 即可。已有克隆可用 `npm run sources:init` 补齐来源。该脚本为深层资源路径启用仓库局部的Git长路径支持，不修改全局Git配置或系统注册表。启动总入口不启动原应用、模拟器、来源后端或账号服务。
 
 | 平台 | 当前来源 | 主要可复用内容 |
 | --- | --- | --- |
