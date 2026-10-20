@@ -1,0 +1,1741 @@
+{
+  "formatVersion": 1,
+  "kind": "interaction-source-map",
+  "items": [
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "privacy.back",
+      "standardId": "interaction-source-privacy-back",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "privacy.decline-first",
+      "standardId": "interaction-source-privacy-decline-first",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "privacy.decline-second",
+      "standardId": "interaction-source-privacy-decline-second",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "privacy.reopen",
+      "standardId": "interaction-source-privacy-reopen",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "privacy.agree",
+      "standardId": "interaction-source-privacy-agree",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "initialization.settle",
+      "standardId": "interaction-source-initialization-settle",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "vip.close",
+      "standardId": "interaction-source-vip-close",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "guide.down-swipe",
+      "standardId": "interaction-source-guide-down-swipe",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "preference.appears",
+      "standardId": "interaction-source-preference-appears",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "preference.outside-tap",
+      "standardId": "interaction-source-preference-outside-tap",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "search.open",
+      "standardId": "interaction-source-search-open",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "search.type",
+      "standardId": "interaction-source-search-type",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "search.submit",
+      "standardId": "interaction-source-search-submit",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "verification.back",
+      "standardId": "interaction-source-verification-back",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "verification.close",
+      "standardId": "interaction-source-verification-close",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "search.back",
+      "standardId": "interaction-source-search-back",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "mine.guest",
+      "standardId": "interaction-source-mine-guest",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "login.combined-exit",
+      "standardId": "interaction-source-login-combined-exit",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "mode.drawer-open",
+      "standardId": "interaction-source-mode-drawer-open",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "mode.back-and-more",
+      "standardId": "interaction-source-mode-back-and-more",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "player.more-open",
+      "standardId": "interaction-source-player-more-open",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "timer.open",
+      "standardId": "interaction-source-timer-open",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/state-transitions.json",
+      "sourceId": "timer.back",
+      "standardId": "interaction-source-timer-back",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.reenter",
+      "standardId": "interaction-source-round2-reenter",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.unconfirmed-coordinate-login",
+      "standardId": "interaction-source-round2-unconfirmed-coordinate-login",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.login-close",
+      "standardId": "interaction-source-round2-login-close",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.vip-login",
+      "standardId": "interaction-source-round2-vip-login",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.vip-login-close",
+      "standardId": "interaction-source-round2-vip-login-close",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.discover-preference",
+      "standardId": "interaction-source-round2-discover-preference",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.preference-skip",
+      "standardId": "interaction-source-round2-preference-skip",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.discover-scroll",
+      "standardId": "interaction-source-round2-discover-scroll",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.listen-douyin-open",
+      "standardId": "interaction-source-round2-listen-douyin-open",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.discover-return",
+      "standardId": "interaction-source-round2-discover-return",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.discover-reselect",
+      "standardId": "interaction-source-round2-discover-reselect",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.search-with-ime-guide",
+      "standardId": "interaction-source-round2-search-with-ime-guide",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.system-tutorial-input",
+      "standardId": "interaction-source-round2-system-tutorial-input",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.stylus-cancel",
+      "standardId": "interaction-source-round2-stylus-cancel",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.search-retry-missed",
+      "standardId": "interaction-source-round2-search-retry-missed",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.search-refocus",
+      "standardId": "interaction-source-round2-search-refocus",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.search-type-confirmed",
+      "standardId": "interaction-source-round2-search-type-confirmed",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.search-submit",
+      "standardId": "interaction-source-round2-search-submit",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.search-verification-loaded",
+      "standardId": "interaction-source-round2-search-verification-loaded",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.human-verification-return",
+      "standardId": "interaction-source-round2-human-verification-return",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.search-category-songs",
+      "standardId": "interaction-source-round2-search-category-songs",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.search-result-play",
+      "standardId": "interaction-source-round2-search-result-play",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.player-pause",
+      "standardId": "interaction-source-round2-player-pause",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.player-seek-resumes",
+      "standardId": "interaction-source-round2-player-seek-resumes",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.player-repause",
+      "standardId": "interaction-source-round2-player-repause",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.player-more-after-client-fault",
+      "standardId": "interaction-source-round2-player-more-after-client-fault",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.timer-open-initial",
+      "standardId": "interaction-source-round2-timer-open-initial",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.timer-select-ten",
+      "standardId": "interaction-source-round2-timer-select-ten",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.timer-reopen-ten",
+      "standardId": "interaction-source-round2-timer-reopen-ten",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.timer-restore-off",
+      "standardId": "interaction-source-round2-timer-restore-off",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.action-customization-open",
+      "standardId": "interaction-source-round2-action-customization-open",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.action-customization-cancel",
+      "standardId": "interaction-source-round2-action-customization-cancel",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.action-rail-scroll",
+      "standardId": "interaction-source-round2-action-rail-scroll",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.action-rail-scroll-again",
+      "standardId": "interaction-source-round2-action-rail-scroll-again",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.lyric-action-reveal",
+      "standardId": "interaction-source-round2-lyric-action-reveal",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.lyric-permission-rationale",
+      "standardId": "interaction-source-round2-lyric-permission-rationale",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.overlay-settings-open",
+      "standardId": "interaction-source-round2-overlay-settings-open",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.overlay-return-no-grant",
+      "standardId": "interaction-source-round2-overlay-return-no-grant",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.my-interconnection-explanation",
+      "standardId": "interaction-source-round2-my-interconnection-explanation",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.my-drawer-open",
+      "standardId": "interaction-source-round2-my-drawer-open",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.global-settings-open",
+      "standardId": "interaction-source-round2-global-settings-open",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.audio-coexistence-open",
+      "standardId": "interaction-source-round2-audio-coexistence-open",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.settings-scroll-lower",
+      "standardId": "interaction-source-round2-settings-scroll-lower",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.light-mode-notice",
+      "standardId": "interaction-source-round2-light-mode-notice",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.font-size-open",
+      "standardId": "interaction-source-round2-font-size-open",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.font-preview-large",
+      "standardId": "interaction-source-round2-font-preview-large",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.font-cancel-restores",
+      "standardId": "interaction-source-round2-font-cancel-restores",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.playlist-draft-open",
+      "standardId": "interaction-source-round2-playlist-draft-open",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.playlist-draft-type",
+      "standardId": "interaction-source-round2-playlist-draft-type",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.playlist-draft-cancel",
+      "standardId": "interaction-source-round2-playlist-draft-cancel",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.playlist-draft-reenter",
+      "standardId": "interaction-source-round2-playlist-draft-reenter",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.return-retained-search",
+      "standardId": "interaction-source-round2-return-retained-search",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.offline-albums-error",
+      "standardId": "interaction-source-round2-offline-albums-error",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round2-transitions.json",
+      "sourceId": "round2.offline-retry-recovers",
+      "standardId": "interaction-source-round2-offline-retry-recovers",
+      "recordType": "source-transition"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.86-session-resume",
+      "standardId": "interaction-source-round3-capture-86-session-resume",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.87-after-startup-wait",
+      "standardId": "interaction-source-round3-capture-87-after-startup-wait",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.88-original-relaunch",
+      "standardId": "interaction-source-round3-capture-88-original-relaunch",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.89-app-ready-check",
+      "standardId": "interaction-source-round3-capture-89-app-ready-check",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.90-my-auth-state",
+      "standardId": "interaction-source-round3-capture-90-my-auth-state",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.91-gift-dismissed",
+      "standardId": "interaction-source-round3-capture-91-gift-dismissed",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.92-reminder-denied-return",
+      "standardId": "interaction-source-round3-capture-92-reminder-denied-return",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.93-my-logged-in",
+      "standardId": "interaction-source-round3-capture-93-my-logged-in",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.94-my-settled",
+      "standardId": "interaction-source-round3-capture-94-my-settled",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.95-playlist-create-entry",
+      "standardId": "interaction-source-round3-capture-95-playlist-create-entry",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.96-private-title-ready",
+      "standardId": "interaction-source-round3-capture-96-private-title-ready",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.97-private-checkbox-check",
+      "standardId": "interaction-source-round3-capture-97-private-checkbox-check",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.98-private-playlist-created",
+      "standardId": "interaction-source-round3-capture-98-private-playlist-created",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.99-playlist-save-result",
+      "standardId": "interaction-source-round3-capture-99-playlist-save-result",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.100-playlist-add-picker",
+      "standardId": "interaction-source-round3-capture-100-playlist-add-picker",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.101-playlist-recent-loaded",
+      "standardId": "interaction-source-round3-capture-101-playlist-recent-loaded",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.102-song-added-feedback",
+      "standardId": "interaction-source-round3-capture-102-song-added-feedback",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.103-playlist-one-song",
+      "standardId": "interaction-source-round3-capture-103-playlist-one-song",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.104-playlist-settings",
+      "standardId": "interaction-source-round3-capture-104-playlist-settings",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.105-playlist-edit-fields",
+      "standardId": "interaction-source-round3-capture-105-playlist-edit-fields",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.106-playlist-rename-entry",
+      "standardId": "interaction-source-round3-capture-106-playlist-rename-entry",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.107-rename-limit-draft",
+      "standardId": "interaction-source-round3-capture-107-rename-limit-draft",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.108-rename-cancel-result",
+      "standardId": "interaction-source-round3-capture-108-rename-cancel-result",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.109-rename-discarded",
+      "standardId": "interaction-source-round3-capture-109-rename-discarded",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.110-title-empty-validation",
+      "standardId": "interaction-source-round3-capture-110-title-empty-validation",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.111-empty-title-submit",
+      "standardId": "interaction-source-round3-capture-111-empty-title-submit",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.112-playlist-title-saved",
+      "standardId": "interaction-source-round3-capture-112-playlist-title-saved",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.113-my-created-list",
+      "standardId": "interaction-source-round3-capture-113-my-created-list",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.114-playlist-reentry",
+      "standardId": "interaction-source-round3-capture-114-playlist-reentry",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.115-song-actions",
+      "standardId": "interaction-source-round3-capture-115-song-actions",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.116-download-request",
+      "standardId": "interaction-source-round3-capture-116-download-request",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.117-download-storage-prompt",
+      "standardId": "interaction-source-round3-capture-117-download-storage-prompt",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.118-download-list",
+      "standardId": "interaction-source-round3-capture-118-download-list",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.119-downloaded-offline-start",
+      "standardId": "interaction-source-round3-capture-119-downloaded-offline-start",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.120-offline-player",
+      "standardId": "interaction-source-round3-capture-120-offline-player",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.121-player-more-round3",
+      "standardId": "interaction-source-round3-capture-121-player-more-round3",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.122-timer-current-options",
+      "standardId": "interaction-source-round3-capture-122-timer-current-options",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.123-custom-timer-input",
+      "standardId": "interaction-source-round3-capture-123-custom-timer-input",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.124-custom-zero-duration",
+      "standardId": "interaction-source-round3-capture-124-custom-zero-duration",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.125-zero-submit-blocked",
+      "standardId": "interaction-source-round3-capture-125-zero-submit-blocked",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.126-custom-cancel-result",
+      "standardId": "interaction-source-round3-capture-126-custom-cancel-result",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.127-timer-off-recheck",
+      "standardId": "interaction-source-round3-capture-127-timer-off-recheck",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.128-ten-minute-running",
+      "standardId": "interaction-source-round3-capture-128-ten-minute-running",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.129-play-order-first-change",
+      "standardId": "interaction-source-round3-capture-129-play-order-first-change",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.130-play-order-shuffle",
+      "standardId": "interaction-source-round3-capture-130-play-order-shuffle",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.131-play-order-restored",
+      "standardId": "interaction-source-round3-capture-131-play-order-restored",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.132-exposed-action-editor",
+      "standardId": "interaction-source-round3-capture-132-exposed-action-editor",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.133-exposed-dirty-selection",
+      "standardId": "interaction-source-round3-capture-133-exposed-dirty-selection",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.134-exposed-cancel-reentry",
+      "standardId": "interaction-source-round3-capture-134-exposed-cancel-reentry",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.135-timer-action-saved",
+      "standardId": "interaction-source-round3-capture-135-timer-action-saved",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.136-after-timer-expiry",
+      "standardId": "interaction-source-round3-capture-136-after-timer-expiry",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.137-timer-expired-off",
+      "standardId": "interaction-source-round3-capture-137-timer-expired-off",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.138-busy-back-recovery",
+      "standardId": "interaction-source-round3-capture-138-busy-back-recovery",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.139-expired-timer-state",
+      "standardId": "interaction-source-round3-capture-139-expired-timer-state",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.140-custom-valid-duration",
+      "standardId": "interaction-source-round3-capture-140-custom-valid-duration",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.141-paused-timer-background",
+      "standardId": "interaction-source-round3-capture-141-paused-timer-background",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.142-background-timer-return",
+      "standardId": "interaction-source-round3-capture-142-background-timer-return",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.143-paused-background-timer-state",
+      "standardId": "interaction-source-round3-capture-143-paused-background-timer-state",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.144-timer-before-process-restart",
+      "standardId": "interaction-source-round3-capture-144-timer-before-process-restart",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.145-after-process-restart",
+      "standardId": "interaction-source-round3-capture-145-after-process-restart",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.146-timer-after-restart",
+      "standardId": "interaction-source-round3-capture-146-timer-after-restart",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.147-after-song-custom",
+      "standardId": "interaction-source-round3-capture-147-after-song-custom",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.148-after-song-timer-check",
+      "standardId": "interaction-source-round3-capture-148-after-song-timer-check",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.149-after-song-expiry-result",
+      "standardId": "interaction-source-round3-capture-149-after-song-expiry-result",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.150-more-after-stop",
+      "standardId": "interaction-source-round3-capture-150-more-after-stop",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.151-after-song-timer-final",
+      "standardId": "interaction-source-round3-capture-151-after-song-timer-final",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.152-timer-options-restored",
+      "standardId": "interaction-source-round3-capture-152-timer-options-restored",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.153-quality-panel",
+      "standardId": "interaction-source-round3-capture-153-quality-panel",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.154-quality-extreme-selected",
+      "standardId": "interaction-source-round3-capture-154-quality-extreme-selected",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.155-quality-reentry",
+      "standardId": "interaction-source-round3-capture-155-quality-reentry",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.156-quality-auto-restored",
+      "standardId": "interaction-source-round3-capture-156-quality-auto-restored",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.157-quality-restoration-check",
+      "standardId": "interaction-source-round3-capture-157-quality-restoration-check",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.158-trial-upsell-dismissed",
+      "standardId": "interaction-source-round3-capture-158-trial-upsell-dismissed",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.159-quality-final-auto",
+      "standardId": "interaction-source-round3-capture-159-quality-final-auto",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.160-sound-effects-panel",
+      "standardId": "interaction-source-round3-capture-160-sound-effects-panel",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.161-effect-entitlement-gate",
+      "standardId": "interaction-source-round3-capture-161-effect-entitlement-gate",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.162-effect-selected-reentry",
+      "standardId": "interaction-source-round3-capture-162-effect-selected-reentry",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.163-more-secondary-actions",
+      "standardId": "interaction-source-round3-capture-163-more-secondary-actions",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.164-more-actions-scrolled",
+      "standardId": "interaction-source-round3-capture-164-more-actions-scrolled",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.165-more-speed-landscape",
+      "standardId": "interaction-source-round3-capture-165-more-speed-landscape",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.166-playback-speed-controls",
+      "standardId": "interaction-source-round3-capture-166-playback-speed-controls",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.167-speed-one-half",
+      "standardId": "interaction-source-round3-capture-167-speed-one-half",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.168-speed-restored-carousel",
+      "standardId": "interaction-source-round3-capture-168-speed-restored-carousel",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.169-landscape-entry",
+      "standardId": "interaction-source-round3-capture-169-landscape-entry",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.170-landscape-settled",
+      "standardId": "interaction-source-round3-capture-170-landscape-settled",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.171-landscape-back",
+      "standardId": "interaction-source-round3-capture-171-landscape-back",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.172-portrait-restored",
+      "standardId": "interaction-source-round3-capture-172-portrait-restored",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.173-more-for-overlay",
+      "standardId": "interaction-source-round3-capture-173-more-for-overlay",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.174-overlay-normal-grant-entry",
+      "standardId": "interaction-source-round3-capture-174-overlay-normal-grant-entry",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.175-overlay-system-list",
+      "standardId": "interaction-source-round3-capture-175-overlay-system-list",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.176-overlay-settings-settled",
+      "standardId": "interaction-source-round3-capture-176-overlay-settings-settled",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.177-overlay-app-setting",
+      "standardId": "interaction-source-round3-capture-177-overlay-app-setting",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.178-overlay-granted-return",
+      "standardId": "interaction-source-round3-capture-178-overlay-granted-return",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.179-desktop-lyrics-home",
+      "standardId": "interaction-source-round3-capture-179-desktop-lyrics-home",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.180-desktop-lyrics-playing",
+      "standardId": "interaction-source-round3-capture-180-desktop-lyrics-playing",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.181-desktop-lyrics-closed",
+      "standardId": "interaction-source-round3-capture-181-desktop-lyrics-closed",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.182-overlay-revoke-list",
+      "standardId": "interaction-source-round3-capture-182-overlay-revoke-list",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.183-overlay-revocation-ready",
+      "standardId": "interaction-source-round3-capture-183-overlay-revocation-ready",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.184-overlay-before-revoke",
+      "standardId": "interaction-source-round3-capture-184-overlay-before-revoke",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.185-overlay-revoked-app-return",
+      "standardId": "interaction-source-round3-capture-185-overlay-revoked-app-return",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.186-overlay-revoked-prompt",
+      "standardId": "interaction-source-round3-capture-186-overlay-revoked-prompt",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.187-my-after-restart",
+      "standardId": "interaction-source-round3-capture-187-my-after-restart",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.188-my-restart-persisted",
+      "standardId": "interaction-source-round3-capture-188-my-restart-persisted",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.189-test-playlist-after-restart",
+      "standardId": "interaction-source-round3-capture-189-test-playlist-after-restart",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.190-test-song-remove-menu",
+      "standardId": "interaction-source-round3-capture-190-test-song-remove-menu",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.191-test-song-deletion",
+      "standardId": "interaction-source-round3-capture-191-test-song-deletion",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.192-test-playlist-empty-again",
+      "standardId": "interaction-source-round3-capture-192-test-playlist-empty-again",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.193-test-playlist-delete-menu",
+      "standardId": "interaction-source-round3-capture-193-test-playlist-delete-menu",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.194-test-playlist-delete-confirm",
+      "standardId": "interaction-source-round3-capture-194-test-playlist-delete-confirm",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.195-playlist-delete-cancel",
+      "standardId": "interaction-source-round3-capture-195-playlist-delete-cancel",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.196-test-playlist-deleted",
+      "standardId": "interaction-source-round3-capture-196-test-playlist-deleted",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.197-download-before-cleanup",
+      "standardId": "interaction-source-round3-capture-197-download-before-cleanup",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.198-download-file-menu",
+      "standardId": "interaction-source-round3-capture-198-download-file-menu",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.199-download-delete-confirm",
+      "standardId": "interaction-source-round3-capture-199-download-delete-confirm",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.200-own-download-removed",
+      "standardId": "interaction-source-round3-capture-200-own-download-removed",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.201-player-for-download-boundary",
+      "standardId": "interaction-source-round3-capture-201-player-for-download-boundary",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.202-download-boundary-quality",
+      "standardId": "interaction-source-round3-capture-202-download-boundary-quality",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.203-continuation-current",
+      "standardId": "interaction-source-round3-capture-203-continuation-current",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.204-player-more-current",
+      "standardId": "interaction-source-round3-capture-204-player-more-current",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.205-download-entry-observed",
+      "standardId": "interaction-source-round3-capture-205-download-entry-observed",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.206-my-current",
+      "standardId": "interaction-source-round3-capture-206-my-current",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.207-download-new-item-menu",
+      "standardId": "interaction-source-round3-capture-207-download-new-item-menu",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.208-clean-new-download-confirm",
+      "standardId": "interaction-source-round3-capture-208-clean-new-download-confirm",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.209-new-download-cleaned",
+      "standardId": "interaction-source-round3-capture-209-new-download-cleaned",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.210-search-entry-continuation",
+      "standardId": "interaction-source-round3-capture-210-search-entry-continuation",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.211-search-opened",
+      "standardId": "interaction-source-round3-capture-211-search-opened",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.212-camera-denied-search",
+      "standardId": "interaction-source-round3-capture-212-camera-denied-search",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.213-camera-denial-recovery",
+      "standardId": "interaction-source-round3-capture-213-camera-denial-recovery",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.214-notification-permission-off",
+      "standardId": "interaction-source-round3-capture-214-notification-permission-off",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.215-notification-permission-on",
+      "standardId": "interaction-source-round3-capture-215-notification-permission-on",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.216-media-notification-controls",
+      "standardId": "interaction-source-round3-capture-216-media-notification-controls",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.217-return-player-for-media",
+      "standardId": "interaction-source-round3-capture-217-return-player-for-media",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.218-background-media-notification",
+      "standardId": "interaction-source-round3-capture-218-background-media-notification",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.219-notification-pause",
+      "standardId": "interaction-source-round3-capture-219-notification-pause",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.220-lockscreen-media-paused",
+      "standardId": "interaction-source-round3-capture-220-lockscreen-media-paused",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.221-swipe-lockscreen-media",
+      "standardId": "interaction-source-round3-capture-221-swipe-lockscreen-media",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.222-lockscreen-play",
+      "standardId": "interaction-source-round3-capture-222-lockscreen-play",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.223-lockscreen-play-awake",
+      "standardId": "interaction-source-round3-capture-223-lockscreen-play-awake",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.224-keyguard-restored-app",
+      "standardId": "interaction-source-round3-capture-224-keyguard-restored-app",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.225-awake-post-completion",
+      "standardId": "interaction-source-round3-capture-225-awake-post-completion",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.226-lockscreen-next",
+      "standardId": "interaction-source-round3-capture-226-lockscreen-next",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.227-source-return-after-controls",
+      "standardId": "interaction-source-round3-capture-227-source-return-after-controls",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.228-notification-restore-entry",
+      "standardId": "interaction-source-round3-capture-228-notification-restore-entry",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.229-keyguard-menu-home-recovery",
+      "standardId": "interaction-source-round3-capture-229-keyguard-menu-home-recovery",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.230-rebooted-avd-check",
+      "standardId": "interaction-source-round3-capture-230-rebooted-avd-check",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.231-original-after-avd-reboot",
+      "standardId": "interaction-source-round3-capture-231-original-after-avd-reboot",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.232-systemui-anr-close",
+      "standardId": "interaction-source-round3-capture-232-systemui-anr-close",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.233-app-relaunch-after-systemui",
+      "standardId": "interaction-source-round3-capture-233-app-relaunch-after-systemui",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.234-cold-restart-business-check",
+      "standardId": "interaction-source-round3-capture-234-cold-restart-business-check",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.235-my-after-low-memory-restart",
+      "standardId": "interaction-source-round3-capture-235-my-after-low-memory-restart",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.236-original-reentry-diagnostic",
+      "standardId": "interaction-source-round3-capture-236-original-reentry-diagnostic",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.237-post-reentry-settle",
+      "standardId": "interaction-source-round3-capture-237-post-reentry-settle",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.238-my-recovered",
+      "standardId": "interaction-source-round3-capture-238-my-recovered",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.239-settings-drawer-current",
+      "standardId": "interaction-source-round3-capture-239-settings-drawer-current",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.240-global-settings-current",
+      "standardId": "interaction-source-round3-capture-240-global-settings-current",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.241-settings-appearance-section",
+      "standardId": "interaction-source-round3-capture-241-settings-appearance-section",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.242-font-baseline-current",
+      "standardId": "interaction-source-round3-capture-242-font-baseline-current",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.243-large-font-committed",
+      "standardId": "interaction-source-round3-capture-243-large-font-committed",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.244-large-player-applied",
+      "standardId": "interaction-source-round3-capture-244-large-player-applied",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.245-large-my",
+      "standardId": "interaction-source-round3-capture-245-large-my",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.246-large-reentry-selection",
+      "standardId": "interaction-source-round3-capture-246-large-reentry-selection",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.247-large-process-restart",
+      "standardId": "interaction-source-round3-capture-247-large-process-restart",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.248-large-restart-readiness",
+      "standardId": "interaction-source-round3-capture-248-large-restart-readiness",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.249-restored-3072-launch",
+      "standardId": "interaction-source-round3-capture-249-restored-3072-launch",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.250-current-after-3072-settle",
+      "standardId": "interaction-source-round3-capture-250-current-after-3072-settle",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.251-large-restart-selected",
+      "standardId": "interaction-source-round3-capture-251-large-restart-selected",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.252-extra-large-committed",
+      "standardId": "interaction-source-round3-capture-252-extra-large-committed",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.253-extra-large-my",
+      "standardId": "interaction-source-round3-capture-253-extra-large-my",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.254-extra-large-input",
+      "standardId": "interaction-source-round3-capture-254-extra-large-input",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.255-extra-large-long-draft",
+      "standardId": "interaction-source-round3-capture-255-extra-large-long-draft",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.256-xl-draft-cancel-reentry",
+      "standardId": "interaction-source-round3-capture-256-xl-draft-cancel-reentry",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.257-xl-reentry-before-restore",
+      "standardId": "interaction-source-round3-capture-257-xl-reentry-before-restore",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.258-standard-restored-player",
+      "standardId": "interaction-source-round3-capture-258-standard-restored-player",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.259-standard-reentry-restored",
+      "standardId": "interaction-source-round3-capture-259-standard-reentry-restored",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.260-theme-baseline",
+      "standardId": "interaction-source-round3-capture-260-theme-baseline",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.261-fixed-light-enabled",
+      "standardId": "interaction-source-round3-capture-261-fixed-light-enabled",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.262-fixed-light-player-return",
+      "standardId": "interaction-source-round3-capture-262-fixed-light-player-return",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.263-fixed-light-player",
+      "standardId": "interaction-source-round3-capture-263-fixed-light-player",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.264-fixed-light-comments",
+      "standardId": "interaction-source-round3-capture-264-fixed-light-comments",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.265-comment-private-draft",
+      "standardId": "interaction-source-round3-capture-265-comment-private-draft",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.266-comment-draft-back",
+      "standardId": "interaction-source-round3-capture-266-comment-draft-back",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.267-comment-draft-cleared",
+      "standardId": "interaction-source-round3-capture-267-comment-draft-cleared",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.268-follow-system-enabled",
+      "standardId": "interaction-source-round3-capture-268-follow-system-enabled",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.269-follow-system-day-comments",
+      "standardId": "interaction-source-round3-capture-269-follow-system-day-comments",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.270-follow-system-night-comments",
+      "standardId": "interaction-source-round3-capture-270-follow-system-night-comments",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.271-follow-night-comments-reentry",
+      "standardId": "interaction-source-round3-capture-271-follow-night-comments-reentry",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.272-follow-day-reentry",
+      "standardId": "interaction-source-round3-capture-272-follow-day-reentry",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.273-theme-restored-both-off",
+      "standardId": "interaction-source-round3-capture-273-theme-restored-both-off",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.274-comment-theme-original-restored",
+      "standardId": "interaction-source-round3-capture-274-comment-theme-original-restored",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.275-search-breadth-entry",
+      "standardId": "interaction-source-round3-capture-275-search-breadth-entry",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.276-jazz-normal-query",
+      "standardId": "interaction-source-round3-capture-276-jazz-normal-query",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.277-jazz-songs-top",
+      "standardId": "interaction-source-round3-capture-277-jazz-songs-top",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.278-jazz-songs-later",
+      "standardId": "interaction-source-round3-capture-278-jazz-songs-later",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.279-jazz-music-videos",
+      "standardId": "interaction-source-round3-capture-279-jazz-music-videos",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.280-jazz-artists",
+      "standardId": "interaction-source-round3-capture-280-jazz-artists",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.281-jazz-albums",
+      "standardId": "interaction-source-round3-capture-281-jazz-albums",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.282-jazz-playlists",
+      "standardId": "interaction-source-round3-capture-282-jazz-playlists",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.283-jazz-albums-confirmed",
+      "standardId": "interaction-source-round3-capture-283-jazz-albums-confirmed",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.284-jazz-album-detail",
+      "standardId": "interaction-source-round3-capture-284-jazz-album-detail",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.285-jazz-album-return",
+      "standardId": "interaction-source-round3-capture-285-jazz-album-return",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.286-jazz-listen-douyin",
+      "standardId": "interaction-source-round3-capture-286-jazz-listen-douyin",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.287-listen-card-opened",
+      "standardId": "interaction-source-round3-capture-287-listen-card-opened",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.288-listen-card-paused",
+      "standardId": "interaction-source-round3-capture-288-listen-card-paused",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.289-listen-background",
+      "standardId": "interaction-source-round3-capture-289-listen-background",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.290-listen-foreground-return",
+      "standardId": "interaction-source-round3-capture-290-listen-foreground-return",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.291-listen-new-favorite",
+      "standardId": "interaction-source-round3-capture-291-listen-new-favorite",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.292-recovered-original-app",
+      "standardId": "interaction-source-round3-capture-292-recovered-original-app",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.293-recovered-settled-app",
+      "standardId": "interaction-source-round3-capture-293-recovered-settled-app",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.294-anr-wait-recovery",
+      "standardId": "interaction-source-round3-capture-294-anr-wait-recovery",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.295-system-after-app-stop",
+      "standardId": "interaction-source-round3-capture-295-system-after-app-stop",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.296-original-app-relaunch",
+      "standardId": "interaction-source-round3-capture-296-original-app-relaunch",
+      "recordType": "capture-observation"
+    },
+    {
+      "sourceFile": "spec/round3-transitions.json",
+      "sourceId": "round3.capture.297-relaunch-settled-check",
+      "standardId": "interaction-source-round3-capture-297-relaunch-settled-check",
+      "recordType": "capture-observation"
+    }
+  ],
+  "generatedBy": "scripts/build-design-package-adapter.mjs"
+}

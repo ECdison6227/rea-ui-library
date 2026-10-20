@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>拾页 · 资料清单</title>
+<link rel="stylesheet" href="style.css">
+<body>
+<div class="app">
+  <header><div><p class="eyebrow">拾页 · 我的资料</p><h1>留一点时间，<br>给想读的内容。</h1></div><button class="icon" id="settings" aria-label="打开阅读设置">☷</button></header>
+  <main>
+    <section aria-labelledby="current-title" class="featured"><div class="feature-mark" aria-hidden="true">页</div><p class="eyebrow">今天的一小步</p><h2 id="current-title">慢慢读，也在向前</h2><p>整理手边的资料，选一篇开始。<br>进度属于你，不用赶。</p><div class="progress-line"><span>本周阅读</span><strong>3 / 5 篇</strong></div><progress value="3" max="5" aria-label="本周已读3篇，目标5篇"></progress></section>
+    <div class="section-heading"><h2>资料清单</h2><button class="text-action" id="new-item">新建资料</button></div>
+    <label class="search"><span aria-hidden="true">⌕</span><input id="query" type="search" placeholder="搜索想读的内容" aria-label="搜索资料"><button id="clear-query" class="icon" aria-label="清空搜索" hidden>×</button></label>
+    <div class="tabs" role="group" aria-label="资料分类"><button data-category="all" aria-pressed="true">全部</button><button data-category="unread" aria-pressed="false">待阅读</button><button data-category="done" aria-pressed="false">已读完</button></div>
+    <p id="status" role="status" aria-live="polite"></p><div id="records" class="records" aria-live="polite"></div>
+    <section class="state-samples" aria-label="反馈状态示例"><p class="eyebrow">可恢复的反馈</p><div class="sample-actions"><button id="simulate-error" class="secondary">查看加载失败</button><button id="simulate-empty" class="secondary">查看空结果</button></div></section>
+  </main>
+  <footer><span>把内容放在前面</span><span>一次，一小页。</span></footer>
+</div>
+<dialog id="editor" aria-labelledby="editor-title"><form id="edit-form" novalidate><div class="dialog-heading"><h2 id="editor-title">新建资料</h2><button type="button" id="editor-close" class="icon" aria-label="关闭编辑">×</button></div><label for="item-title">资料名称</label><input id="item-title" autocomplete="off" aria-describedby="title-help title-error" required><div class="field-meta"><span id="title-help">输入一个容易找到的名字</span><span id="counter">0 / 60</span></div><p id="title-error" class="field-error" role="alert"></p><div class="dialog-actions"><button class="secondary" type="button" id="editor-cancel">暂不添加</button><button class="primary" type="submit">保存资料</button></div></form></dialog>
+<dialog id="leave-dialog" aria-labelledby="leave-title"><h2 id="leave-title">要放弃这次修改吗？</h2><p>尚未保存的文字会被清除，原来的资料不会改变。</p><div class="dialog-actions"><button id="keep-editing" class="primary">继续编辑</button><button id="discard-edit" class="secondary">放弃修改</button></div></dialog>
+<dialog id="delete-dialog" aria-labelledby="delete-title"><h2 id="delete-title">删除这条资料？</h2><p id="delete-description"></p><div class="dialog-actions"><button id="cancel-delete" class="primary">保留资料</button><button id="confirm-delete" class="secondary danger">删除资料</button></div></dialog>
+<dialog id="settings-dialog" class="sheet" aria-labelledby="settings-title"><div class="dialog-heading"><h2 id="settings-title">阅读设置</h2><button class="icon" id="settings-close" aria-label="关闭阅读设置">×</button></div><fieldset><legend>文字大小</legend><label class="choice"><span>标准</span><input type="radio" name="text-size" value="standard" checked></label><label class="choice"><span>大字</span><input type="radio" name="text-size" value="large"></label></fieldset><p class="muted">应用到这个独立资料样本。原应用的字号与字体机制不由此推断。</p><button id="apply-settings" class="primary full">应用设置</button></dialog>
+<script src="app.js"></script>
+</body></html>

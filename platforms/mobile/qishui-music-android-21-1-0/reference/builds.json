@@ -1,0 +1,44 @@
+{
+  "formatVersion": 1,
+  "kind": "independent-native-builds",
+  "items": [
+    {
+      "classification": "D",
+      "originalBuildRecordPath": "reference/build/build-info.json",
+      "originalBuildRecordSha256": "bc1c282d1dd1ba9c6db456cb49961f825e29b6b5bd0ba9ad8a37269126708632",
+      "package": "study.qishui.reference",
+      "apk": "reference/build/qishui-reference.apk",
+      "sha256": "7d160c70e95ef4189b65db81da29f8f5b26074af2019b412b2bca1bfaa15634e",
+      "builtAtUtc": "2026-10-15T15:45:39.7993425Z",
+      "sizeBytes": 25119,
+      "compileSdk": 35,
+      "minSdk": 26,
+      "targetSdk": 34,
+      "contractChecks": "9 native-independent ConsentFlow event assertions passed; this does not verify source internals.",
+      "permissions": [],
+      "currentRevisionRenderingVerified": false
+    },
+    {
+      "classification": "D",
+      "originalBuildRecordPath": "reference/calibration-20261020/build/build-info.json",
+      "originalBuildRecordSha256": "1d767dbfb3bb3002358df7420d76dcb846b194ab6d6bca843f6af2c27eb51e61",
+      "package": "study.qishui.reference",
+      "apk": "reference/calibration-20261020/build/qishui-reference.apk",
+      "sha256": "0d58c212d8161fef9cd2de0e6d351bbcf9ec4bcb7a5ddeb378e8262e3c3d577e",
+      "builtAtUtc": "2026-10-20T03:37:23.5039816Z",
+      "sizeBytes": 25119,
+      "compileSdk": 35,
+      "minSdk": 26,
+      "targetSdk": 34,
+      "contractChecks": "9 native-independent ConsentFlow event assertions passed; this does not verify source internals.",
+      "permissions": [],
+      "currentRevisionRenderingVerified": true,
+      "renderingEvidenceRefs": [
+        "ev-native-runtime-301",
+        "ev-native-optical-comparison-20261020",
+        "ev-native-runtime-301-tree"
+      ],
+      "renderingBoundary": "Bounded consent-panel runtime and optical comparison; not original-app functionality or full parity."
+    }
+  ]
+}

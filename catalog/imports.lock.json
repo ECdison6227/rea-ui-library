@@ -115,6 +115,26 @@
       },
       "origin": "historical",
       "workingTreeMutationPerformed": false
+    },
+    {
+      "id": "qishui-music-android-21-1-0",
+      "path": "platforms/mobile/qishui-music-android-21-1-0",
+      "storage": "monorepo",
+      "provenance": {
+        "kind": "rea-study",
+        "target": "com.luna.music; Android 21.1.0 (100211030); APK SHA-256 3c538482c5166ac629eb2baaa31262f8cd9791dd7dc9401e64ab00d787c61039",
+        "method": "Retained 2026-10-15/16 REA inspect_adb_window/capture_adb_screen outputs plus independent ADB hierarchy and targeted aapt2/JADX/resource analysis; this adapter is offline historical evidence review only.",
+        "researchEntry": "README.md"
+      },
+      "revision": null,
+      "snapshot": null,
+      "integrity": {
+        "manifest": "catalog/manifests/qishui-music-android-21-1-0.json",
+        "files": 77,
+        "treeSha256": "3718e3a25f5aa946e14ff9b2d9e5ff2e9c7c3185bf3e7a27cc8585e5c8efb878"
+      },
+      "origin": "historical",
+      "workingTreeMutationPerformed": false
     }
   ],
   "thumbnails": [
@@ -151,6 +171,15 @@
       "target": "site/assets/thumbs/duolingo-android-6-80-6-china-2368.png",
       "sha256": "6921a60791722bc5fb150c30f5a01e63f708c970e88659d8a3a0220be3408fdd",
       "classification": "A · 原版课程选择",
+      "reviewed": true,
+      "transformed": false
+    },
+    {
+      "id": "qishui-music-android-21-1-0",
+      "source": "platforms/mobile/qishui-music-android-21-1-0/evidence/completion-20261020/portable-390.png",
+      "target": "site/assets/thumbs/qishui-music-android-21-1-0.png",
+      "sha256": "b4a7b250f84454223a58243b09123c24b7796acbc14fe9c7f0f6937b2b7ed1ff",
+      "classification": "D: independent cross-domain Web reference, not original Android screenshot",
       "reviewed": true,
       "transformed": false
     }

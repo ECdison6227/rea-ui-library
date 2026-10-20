@@ -579,6 +579,110 @@
         "files": 17983,
         "treeSha256": "1582c878d82441d959ffdc068352a310b90908736377bca557a79567c73635f7"
       }
+    },
+    {
+      "id": "qishui-music-android-21-1-0",
+      "name": "汽水音乐",
+      "subtitle": "深表面、内容层级与明确反馈",
+      "platform": "mobile",
+      "kind": "research",
+      "root": "platforms/mobile/qishui-music-android-21-1-0",
+      "visibility": "public",
+      "sourceVersion": "21.1.0 (100211030)",
+      "provenance": {
+        "kind": "rea-study",
+        "target": "com.luna.music; Android 21.1.0 (100211030); APK SHA-256 3c538482c5166ac629eb2baaa31262f8cd9791dd7dc9401e64ab00d787c61039",
+        "method": "Retained 2026-10-15/16 REA inspect_adb_window/capture_adb_screen outputs plus independent ADB hierarchy and targeted aapt2/JADX/resource analysis; this adapter is offline historical evidence review only.",
+        "researchEntry": "README.md"
+      },
+      "summary": "适用于资料、阅读和内容工具的深表面、薄荷决策层、主次动作及编辑/重试规则；带可运行Web跨业务参考。",
+      "tags": [
+        "内容",
+        "深色",
+        "编辑",
+        "草稿",
+        "重试",
+        "动效"
+      ],
+      "stack": [
+        "Android来源",
+        "Java原生参考",
+        "HTML/CSS/JavaScript适配"
+      ],
+      "readiness": "partial",
+      "coverage": "历史Android21.1.0有界观察；Web D参考26项检查通过，原生D0.2.0已实际运行并完成局部量化对照。原版动效/Android适配及V05/P07恢复仍未完成。",
+      "features": [
+        "完整读取69项历史运行组件观察、12项静态候选、77条首轮/第二轮状态转移及212条第三轮单帧观察的统一映射",
+        "复用24项原有局部值与全部静态声明；原单位、条件和未知保持明确",
+        "采用明确标D的文字、几何、状态、布局、焦点和动效目标实现方案",
+        "按精选/候选/归档三级检索资产及完整文案声明；未选原件保留元数据和SHA",
+        "继续使用已有原生组件参考、原版partial对照及学习切片的历史D验证",
+        "可运行的跨业务Web资料清单：新建编辑、草稿退出、校验、删除、分类搜索、错误重试与字号/减少动画，26项D浏览器检查通过。",
+        "原生D0.2.0实际运行：六组bounds一致，标题/次动作墨迹与fade局部改善；残余差异见量化报告。"
+      ],
+      "limits": [
+        "隐私面板原生0.2.0已运行并量化对照，标题/次动作边界及fade改善；字形/轮廓与其他核心组件的完整代表对照仍有边界。",
+        "原App仍未进入可用页面，关键运行过渡的真实计时、中断/退出及减少动画未采集；D方案不替代来源运行。",
+        "Web适配与键盘已检查，Android源系统大字、IME、TalkBack真实语音及适用设备条件仍待验证。",
+        "V05确切测试收藏和P07跨重启恢复仍未完成；发布授权不改变这些恢复义务和未验证状态。",
+        "逐字字体回退、唯一spring参数和后端协议归因不默认阻塞迁移",
+        "历史功能账本26 verified、28 pending、12 blocked、1 failed、1 N/A；这些计数不等于设计完成率",
+        "Android来源及D运行边界保留；字节检查与入库不证明原版全功能通过。"
+      ],
+      "palette": [
+        "#121212",
+        "#EBF9F2",
+        "#00CB64"
+      ],
+      "cover": "generic",
+      "paletteClassification": "D: catalog presentation; implementation uses scoped source tokens",
+      "designPackage": "design-package.json",
+      "artifacts": [
+        {
+          "label": "研究入口",
+          "path": "README.md",
+          "role": "readme"
+        },
+        {
+          "label": "设计规范",
+          "path": "DESIGN_SPEC.md",
+          "role": "spec"
+        },
+        {
+          "label": "Design Package v1",
+          "path": "design-package.json",
+          "role": "design-package"
+        },
+        {
+          "label": "迁移指南",
+          "path": "ADAPTATION_GUIDE.md",
+          "role": "adoption"
+        }
+      ],
+      "run": {
+        "cwd": "platforms/mobile/qishui-music-android-21-1-0",
+        "command": "Open reference/portable/index.html; native build methods in reference/README.md",
+        "requires": "Browser for portable D example; JDK21+Android SDK35/build-tools35 for native reference",
+        "verifiedHere": true,
+        "verificationBoundary": "26 bounded Web D checks plus native D0.2.0 consent-panel runtime/partial optical comparison; original app failed to reach a functional page."
+      },
+      "deliveryTier": "design-package",
+      "thumbnail": {
+        "path": "evidence/completion-20261020/portable-390.png",
+        "classification": "D: independent cross-domain Web reference, not original Android screenshot",
+        "reviewed": true
+      },
+      "integrity": {
+        "manifest": "catalog/manifests/qishui-music-android-21-1-0.json",
+        "files": 77,
+        "treeSha256": "3718e3a25f5aa946e14ff9b2d9e5ff2e9c7c3185bf3e7a27cc8585e5c8efb878"
+      },
+      "typography": {
+        "families": [
+          "Android系统无衬线（D参考）",
+          "原版字体归因未确认"
+        ]
+      }
     }
   ],
   "repository": {

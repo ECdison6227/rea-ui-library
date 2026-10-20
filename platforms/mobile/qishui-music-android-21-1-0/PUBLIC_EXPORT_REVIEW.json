@@ -1,0 +1,81 @@
+{
+  "at": "2026-10-20T07:14:25.250Z",
+  "status": "reviewed-public-distribution",
+  "sourceResearchReadiness": "partial",
+  "userAcceptedUnfinishedScope": true,
+  "publicationAuthorization": {
+    "instruction": "检查没问题的话可以推送rea ui 库上去了",
+    "sourceSession": "01a15346-cb6c-76f1-a43e-05235793aa1f",
+    "recordedAt": "2026-10-20T07:08:40.302Z",
+    "followup": "继续",
+    "condition": "Public member review, package/consumer checks and repository validation must pass.",
+    "meaning": "Authorize publication of the documented partial package; original validation and restoration remain incomplete."
+  },
+  "sourceApkIncluded": false,
+  "privateFramesIncluded": false,
+  "profilesIncluded": false,
+  "signingKeysIncluded": false,
+  "toolCachesIncluded": false,
+  "rawAssetPayloadsWithheld": 277,
+  "sourceEvidenceWithheld": 692,
+  "reviewedRuntimeImages": [
+    "evidence/runtime/screens/04-privacy-guide/screen.png",
+    "comparison/runtime/screens/r01-privacy/screen.png",
+    "comparison/runtime/screens/t02-learning-workspace/screen.png",
+    "evidence/runtime/screens/301-native-calibration-guide/screen.png",
+    "evidence/completion-20261020/portable-1440.png",
+    "evidence/completion-20261020/portable-390.png",
+    "evidence/completion-20261020/portable-320.png",
+    "evidence/completion-20261020/portable-320-text200.png"
+  ],
+  "sourceRuntimeOperationsDuringExport": 0,
+  "newFunctionalPasses": 0,
+  "nativeReferenceRuntimeIncluded": true,
+  "referenceResult": "passed-bounded-D-reference",
+  "validation": {
+    "status": "passed-integrity-only",
+    "formatVersion": 1,
+    "id": "qishui-music-android-21-1-0",
+    "platform": "mobile",
+    "readiness": "partial",
+    "filesChecked": 12,
+    "counts": {
+      "tokens": 434,
+      "components": 122,
+      "layouts": 9,
+      "interactions": 302,
+      "motion": 244,
+      "assets": 277,
+      "evidence": 704
+    },
+    "forCatalog": true,
+    "statesModified": false,
+    "originalAppExecuted": false,
+    "errors": [],
+    "warnings": [
+      "Package readiness is partial; integrity success does not complete the research."
+    ],
+    "limitations": [
+      "Checks declared contract, paths, references, source/D separation and actual file hashes. Does not authenticate author claims, perform pixel review or prove runtime fidelity/authorization."
+    ],
+    "checkedFiles": [
+      "evidence/runtime/screens/04-privacy-guide/screen.png",
+      "comparison/runtime/screens/r01-privacy/screen.png",
+      "comparison/runtime/screens/t02-learning-workspace/screen.png",
+      "evidence/runtime/04-privacy-guide-capture.public.json",
+      "evidence/completion-20261020/portable-validation.json",
+      "evidence/completion-20261020/portable-1440.png",
+      "evidence/completion-20261020/portable-390.png",
+      "evidence/completion-20261020/portable-320.png",
+      "evidence/completion-20261020/portable-320-text200.png",
+      "evidence/runtime/screens/301-native-calibration-guide/screen.png",
+      "comparison/native-calibration-20261020.json",
+      "evidence/runtime/screens/301-native-calibration-guide/hierarchy.xml"
+    ]
+  },
+  "consumer": {
+    "status": "passed-consumer-contract",
+    "errors": [],
+    "meaning": "Checks implementation guidance, not original-product completeness or target runtime parity."
+  }
+}

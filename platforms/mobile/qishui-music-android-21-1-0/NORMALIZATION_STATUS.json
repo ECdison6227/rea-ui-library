@@ -1,0 +1,38 @@
+{
+  "formatVersion": 1,
+  "task": "Normalize all retained Qishui design research",
+  "status": "complete",
+  "scope": "existing-evidence normalization and explicit D implementation specifications",
+  "sourceResearchReadiness": "partial",
+  "workstreams": {
+    "componentCrosswalk": "complete",
+    "geometryAndTypography": "source-registers-retained-and-D-profile-specified",
+    "stateMatrices": "complete-with-explicit-source-unknowns",
+    "layoutsAndInteractions": "complete-for-retained-registers",
+    "motion": "all-candidates-normalized-and-D-fallbacks-specified",
+    "assetsAndCopy": "complete-metadata-crosswalk",
+    "provenance": "historical-times-and-unknowns-preserved",
+    "delivery": "standard-source-package-normalized; independent export has a separate actual-members validation"
+  },
+  "counts": {
+    "legacyRuntimeComponents": 69,
+    "legacyStaticComponents": 12,
+    "componentFamilies": 28,
+    "sourceVariants": 81,
+    "interactionContracts": 13,
+    "importedRecords": 289,
+    "importedTransitions": 77,
+    "captureObservations": 212,
+    "assetArchive": 19043,
+    "copyDeclarations": 17490
+  },
+  "remainingResearch": [
+    "原版主要文字角色与目标D排版的视觉校准未完成；已知标题、按钮、粗体链接、轮廓与渐隐偏差保留。",
+    "核心族已全部规范化并有D实施方案，但缺少覆盖这些族的代表实现及同条件原版对照。",
+    "原版关键运行过渡的真实计时、中断、退出与减少动画证据仍不足；D参数已给定，不能当来源测量。",
+    "窄屏、系统大字、IME、触控与真实键盘/读屏的目标运行验证未完成。",
+    "资产当前运行绑定、主题/状态变体及未来实际分发成员审查尚未完成。"
+  ],
+  "restoration": "V05 exact historical favorite and P07 restoration remain unresolved; no device actions this normalization.",
+  "generatedBy": "scripts/build-design-package-adapter.mjs"
+}

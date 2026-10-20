@@ -11,10 +11,11 @@
 | **多邻国** | 有厚度的按钮、明确选择反馈、分步引导、进度与结果、轻快动效 | [设计包](platforms/mobile/duolingo-android-6-80-6-china-2368/README.md) |
 | **小米运动健康** | 概览卡片、分组设置、层级留白、导航与弹层、受控开关 | [设计包](platforms/mobile/mi-fitness/README.md) |
 | **Kimi** | 多行输入、草稿、对话反馈、选项、保存取消、异步与重试 | [设计包](platforms/mobile/kimi/README.md) |
+| **汽水音乐** | 深表面、内容层级、薄荷决策层、主次动作、编辑草稿与失败重试 | [设计包](platforms/mobile/qishui-music-android-21-1-0/README.md) |
 | Hark | 玻璃材质、流式内容、富内容卡片与天空背景 | [研究参考](platforms/web/hark/README.md) |
 | Mirasim | 简洁分组、深浅主题、抽屉、混合应用平台边界 | [研究参考](platforms/mobile/mirasim/README.md) |
 
-前三份采用统一 **Design Package v1**，含实施选择与明确差异；Hark、Mirasim暂保留旧研究入口。`partial`表示原版仍有未确定参数或还原差异，使用时按包内适用范围实施，不等于只能看文档。
+前四份采用统一 **Design Package v1**，含实施选择与明确差异；Hark、Mirasim暂保留旧研究入口。`partial`表示原版仍有未确定参数或还原差异，使用时按包内适用范围实施，不等于只能看文档。汽水的原版字体/动效、Android适配和测试恢复仍未完成，独立Web参考的26项检查不能替代这些原版验证。
 
 ## 直接复制给 AI
 
@@ -23,7 +24,7 @@
 ```text
 我的软件功能和基础界面已经完成。请从
 https://github.com/ECdison6227/rea-ui-library
-拉取设计规范，把【多邻国 / 小米运动健康 / Kimi】的UI风格、动画和通用用户交互应用到我的项目：【项目路径】。
+拉取设计规范，把【多邻国 / 小米运动健康 / Kimi / 汽水音乐】的UI风格、动画和通用用户交互应用到我的项目：【项目路径】。
 
 先读仓库AGENTS.md和选定App的design-package.json、DESIGN_SPEC.md、ADAPTATION_GUIDE.md，
 再按需读取tokens、components、layouts、interactions、motion、资产和对照。
@@ -50,6 +51,8 @@ git rev-parse HEAD
 ```
 
 多邻国目录：`platforms/mobile/duolingo-android-6-80-6-china-2368`；Kimi目录：`platforms/mobile/kimi`。先读规范，再查看原图、参考、源码和资产。Android的dp/sp不要直接套成网页px；原产品的支付、健康算法或模型服务不属于风格迁移。
+
+汽水音乐目录：`platforms/mobile/qishui-music-android-21-1-0`；先读README和范围，再运行`reference/portable/index.html`体验跨业务D参考。
 
 ## 浏览与比较
 

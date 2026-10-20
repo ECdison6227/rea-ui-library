@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-20T03:37:13.486Z",
+  "classification": "D",
+  "status": "candidate-unverified-rendering",
+  "baseVersion": "0.1.0",
+  "candidateVersion": "0.2.0",
+  "basePanelSha256": "7142e1849990f15ed492e91ff99688283a1fb5ebdcc787e27ac600f45c38e54c",
+  "candidatePanelSha256": "dbe510992bcb4daef4c3d00b19c9e0da52b377386c23f6eda8cb4019b07c758c",
+  "basis": "Historical A04/D-R01 measured ink offsets and solid divider samples",
+  "choices": {
+    "titleInkOffsetAt440dpi": -6,
+    "titleLetterSpacingEm": 0.0165,
+    "declineInkOffsetAt440dpi": -1,
+    "declineLetterSpacingEm": 0.039,
+    "acceptInkOffsetAt440dpi": -2,
+    "acceptLetterSpacingEm": 0.1558,
+    "fadeStartAlpha": 0.2,
+    "divider": "#D4E1DA"
+  },
+  "limitations": [
+    "Explicit D optical adjustments, not original typeface attribution.",
+    "Maintaining layout bounds does not prove correct glyph shape,baseline,weight or panel outline.",
+    "Must run this candidate and compare at the original conditions before claiming improvement."
+  ],
+  "sourceAppExecuted": false,
+  "originalReferenceModified": false
+}

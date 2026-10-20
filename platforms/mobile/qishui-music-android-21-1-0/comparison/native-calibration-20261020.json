@@ -1,0 +1,414 @@
+{
+  "at": "2026-10-20T04:02:10.914Z",
+  "classification": "D",
+  "status": "measured-bounded-partial",
+  "source": {
+    "classification": "A",
+    "origin": "historical",
+    "path": "evidence/runtime/screens/04-privacy-guide/screen.png",
+    "sha256": "8afa9c3951943b9e16f0f60493e368fd1f5872f415fd2a7efa218cd376eeb5cc",
+    "version": "21.1.0 (100211030)"
+  },
+  "previous": {
+    "path": "comparison/runtime/screens/r01-privacy/screen.png",
+    "sha256": "20c3884d7261a6e467531f801f8118b2316e513803ec189a14fc14d2f13c6234",
+    "version": "D0.1.0"
+  },
+  "candidate": {
+    "path": "evidence/runtime/screens/301-native-calibration-guide/screen.png",
+    "sha256": "bf8c914eb0160e4dc2b113330c7f672ece8d928f5cbff31f54444668c03e8748",
+    "version": "D0.2.0",
+    "scene": "301-native-calibration-guide"
+  },
+  "conditions": {
+    "api": 35,
+    "width": 1080,
+    "height": 2400,
+    "densityDpi": 440,
+    "fontScale": 1,
+    "changedRuntime": "Candidate1536MiB/1core; historical host allocation differs, no performance/timing comparison",
+    "atomic": false
+  },
+  "roles": [
+    {
+      "role": "panel",
+      "sourceBounds": [
+        111,
+        487,
+        969,
+        1846
+      ],
+      "candidateBounds": [
+        111,
+        487,
+        969,
+        1846
+      ],
+      "layoutBoundsEqual": true,
+      "previousDifference": {
+        "differentPixels": 33809,
+        "meanAbsoluteChannelDifference": 3.0060467698436795,
+        "maximumChannelDifference": 231
+      },
+      "candidateDifference": {
+        "differentPixels": 76396,
+        "meanAbsoluteChannelDifference": 0.8678878557465753,
+        "maximumChannelDifference": 231
+      }
+    },
+    {
+      "role": "title",
+      "sourceBounds": [
+        177,
+        575,
+        903,
+        657
+      ],
+      "candidateBounds": [
+        177,
+        575,
+        903,
+        657
+      ],
+      "layoutBoundsEqual": true,
+      "previousDifference": {
+        "differentPixels": 15567,
+        "meanAbsoluteChannelDifference": 45.72996595668436,
+        "maximumChannelDifference": 231
+      },
+      "candidateDifference": {
+        "differentPixels": 4885,
+        "meanAbsoluteChannelDifference": 4.669096732289637,
+        "maximumChannelDifference": 231
+      },
+      "sourceInk": {
+        "bounds": [
+          179,
+          587,
+          657,
+          646
+        ],
+        "pixels": 11372
+      },
+      "previousInk": {
+        "bounds": [
+          179,
+          593,
+          650,
+          651
+        ],
+        "pixels": 11061
+      },
+      "candidateInk": {
+        "bounds": [
+          179,
+          587,
+          657,
+          645
+        ],
+        "pixels": 11061
+      },
+      "previousInkDelta": [
+        0,
+        6,
+        -7,
+        5
+      ],
+      "candidateInkDelta": [
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "role": "body",
+      "sourceBounds": [
+        177,
+        710,
+        903,
+        1536
+      ],
+      "candidateBounds": [
+        177,
+        710,
+        903,
+        1536
+      ],
+      "layoutBoundsEqual": true,
+      "previousDifference": {
+        "differentPixels": 9170,
+        "meanAbsoluteChannelDifference": 1.0768342682826504,
+        "maximumChannelDifference": 231
+      },
+      "candidateDifference": {
+        "differentPixels": 62657,
+        "meanAbsoluteChannelDifference": 1.0763640143455244,
+        "maximumChannelDifference": 231
+      },
+      "sourceInk": {
+        "bounds": [
+          178,
+          755,
+          901,
+          1496
+        ],
+        "pixels": 71506
+      },
+      "previousInk": {
+        "bounds": [
+          178,
+          756,
+          901,
+          1504
+        ],
+        "pixels": 72252
+      },
+      "candidateInk": {
+        "bounds": [
+          178,
+          756,
+          901,
+          1496
+        ],
+        "pixels": 71986
+      },
+      "previousInkDelta": [
+        0,
+        1,
+        0,
+        8
+      ],
+      "candidateInkDelta": [
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "fade",
+      "sourceBounds": [
+        111,
+        1453,
+        969,
+        1536
+      ],
+      "candidateBounds": [
+        111,
+        1453,
+        969,
+        1536
+      ],
+      "layoutBoundsEqual": true,
+      "previousDifference": {
+        "differentPixels": 1699,
+        "meanAbsoluteChannelDifference": 0.36809709701275967,
+        "maximumChannelDifference": 33
+      },
+      "candidateDifference": {
+        "differentPixels": 37277,
+        "meanAbsoluteChannelDifference": 0.24718922309283756,
+        "maximumChannelDifference": 1
+      }
+    },
+    {
+      "role": "decline",
+      "sourceBounds": [
+        177,
+        1572,
+        903,
+        1627
+      ],
+      "candidateBounds": [
+        177,
+        1572,
+        903,
+        1627
+      ],
+      "layoutBoundsEqual": true,
+      "previousDifference": {
+        "differentPixels": 1783,
+        "meanAbsoluteChannelDifference": 1.0195508807079054,
+        "maximumChannelDifference": 50
+      },
+      "candidateDifference": {
+        "differentPixels": 1095,
+        "meanAbsoluteChannelDifference": 0.20465815176558977,
+        "maximumChannelDifference": 28
+      },
+      "sourceInk": {
+        "bounds": [
+          483,
+          1581,
+          598,
+          1620
+        ],
+        "pixels": 2136
+      },
+      "previousInk": {
+        "bounds": [
+          484,
+          1582,
+          596,
+          1621
+        ],
+        "pixels": 2238
+      },
+      "candidateInk": {
+        "bounds": [
+          483,
+          1581,
+          598,
+          1620
+        ],
+        "pixels": 2241
+      },
+      "previousInkDelta": [
+        1,
+        1,
+        -2,
+        1
+      ],
+      "candidateInkDelta": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "accept",
+      "sourceBounds": [
+        177,
+        1659,
+        903,
+        1791
+      ],
+      "candidateBounds": [
+        177,
+        1659,
+        903,
+        1791
+      ],
+      "layoutBoundsEqual": true,
+      "previousDifference": {
+        "differentPixels": 1663,
+        "meanAbsoluteChannelDifference": 0.9222597879622673,
+        "maximumChannelDifference": 185
+      },
+      "candidateDifference": {
+        "differentPixels": 1576,
+        "meanAbsoluteChannelDifference": 0.7825778445613156,
+        "maximumChannelDifference": 185
+      },
+      "sourceInk": {
+        "bounds": [
+          502,
+          1705,
+          579,
+          1745
+        ],
+        "pixels": 1699
+      },
+      "previousInk": {
+        "bounds": [
+          505,
+          1707,
+          576,
+          1746
+        ],
+        "pixels": 1558
+      },
+      "candidateInk": {
+        "bounds": [
+          503,
+          1705,
+          580,
+          1744
+        ],
+        "pixels": 1558
+      },
+      "previousInkDelta": [
+        3,
+        2,
+        -3,
+        1
+      ],
+      "candidateInkDelta": [
+        1,
+        0,
+        1,
+        -1
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "name": "divider",
+      "x": 400,
+      "y": 709,
+      "source": [
+        212,
+        225,
+        218
+      ],
+      "previous": [
+        211,
+        224,
+        217
+      ],
+      "candidate": [
+        212,
+        225,
+        218
+      ]
+    },
+    {
+      "name": "surface",
+      "x": 120,
+      "y": 1000,
+      "source": [
+        235,
+        249,
+        242
+      ],
+      "previous": [
+        235,
+        249,
+        242
+      ],
+      "candidate": [
+        235,
+        249,
+        242
+      ]
+    },
+    {
+      "name": "primary-fill",
+      "x": 300,
+      "y": 1700,
+      "source": [
+        0,
+        203,
+        100
+      ],
+      "previous": [
+        0,
+        203,
+        100
+      ],
+      "candidate": [
+        0,
+        203,
+        100
+      ]
+    }
+  ],
+  "limitations": [
+    "Optical corrections are independent D implementation choices, not recovered source typeface/weight/baseline.",
+    "Pixel/ink metrics depend on selected ROI and threshold; no single whole-product fidelity score.",
+    "Original app did not reach a usable page this recovery. Historical A04 is reused without a new source-run claim.",
+    "Panel outline,bold-link glyphs and other components remain independently scoped."
+  ]
+}

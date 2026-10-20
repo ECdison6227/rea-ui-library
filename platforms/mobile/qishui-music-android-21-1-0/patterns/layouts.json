@@ -1,0 +1,417 @@
+{
+  "formatVersion": 1,
+  "kind": "layouts",
+  "items": [
+    {
+      "id": "layout-consent",
+      "classification": "C",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-scene-04-privacy-guide",
+        "ev-privacy-layout"
+      ],
+      "unknowns": [
+        "Adaptive insets,height and large text variants"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse ConsentPanel; constrain width to available target viewport and verify new content instead of enforcing fixed height on small screens."
+      },
+      "name": "中心说明面板",
+      "componentRefs": [
+        "component-consent-panel"
+      ],
+      "rules": [
+        "面板312dp、内容264dp、两侧各24dp是该场景输入",
+        "标题→可滚动正文→次动作→48dp主动作，保持主次层级",
+        "原版wrapper与D content inset不同，不能把同bounds理解为同window实现"
+      ],
+      "responsive": "Unverified outside recorded viewport; target must adapt",
+      "slots": [
+        "primaryContent",
+        "secondaryContent",
+        "actions"
+      ],
+      "alignment": "Recorded source instance only; target start/end alignment is D",
+      "density": "See target geometry profile; source density is not generalized",
+      "contentWidth": {
+        "value": null,
+        "unit": "dp",
+        "basis": "unknown"
+      }
+    },
+    {
+      "id": "layout-editor",
+      "classification": "C",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-scene-106-playlist-rename-entry",
+        "ev-scene-107-rename-limit-draft",
+        "ev-scene-110-title-empty-validation",
+        "ev-scene-111-empty-title-submit",
+        "ev-scene-112-playlist-title-saved",
+        "ev-scene-113-my-created-list"
+      ],
+      "unknowns": [
+        "Exact text roles,gutters,touch bounds and keyboard resizing"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Use target-native task top bar and editor; preserve draft/committed separation and inline feedback. Define target length rules."
+      },
+      "name": "单任务编辑与离开决策",
+      "componentRefs": [
+        "component-title-validation",
+        "component-dirty-editor-exit"
+      ],
+      "rules": [
+        "左返回、居中任务标题、右保存；正文与辅助计数分层",
+        "键盘、校验反馈和离开弹层保留任务上下文",
+        "30计数属于原标题业务，不作为跨业务默认限制"
+      ],
+      "responsive": "Large-text and IME observations are bounded by recorded scenes",
+      "slots": [
+        "primaryContent",
+        "secondaryContent",
+        "actions"
+      ],
+      "alignment": "Recorded source instance only; target start/end alignment is D",
+      "density": "See target geometry profile; source density is not generalized",
+      "contentWidth": {
+        "value": null,
+        "unit": "dp",
+        "basis": "unknown"
+      }
+    },
+    {
+      "id": "layout-categorized-results",
+      "classification": "C",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "ev-scene-279-jazz-music-videos",
+        "ev-scene-280-jazz-artists",
+        "ev-scene-281-jazz-albums",
+        "ev-scene-282-jazz-playlists",
+        "ev-scene-286-jazz-listen-douyin"
+      ],
+      "unknowns": [
+        "Complete row dimensions,card variants,loading/empty/error visual specs and responsive grid"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Keep shared query and typed results; replace media with target records. Choose target row/card geometry and verify it."
+      },
+      "name": "共享查询与分类结果",
+      "componentRefs": [
+        "component-typed-search-results"
+      ],
+      "rules": [
+        "查询上下文与分类选择分离",
+        "各分类采用适合结果类型的行或卡片；不强套播放器大封面",
+        "分页锚点、切回保留与请求取消仍未知"
+      ],
+      "responsive": "No web/desktop layout claim",
+      "slots": [
+        "primaryContent",
+        "secondaryContent",
+        "actions"
+      ],
+      "alignment": "Recorded source instance only; target start/end alignment is D",
+      "density": "See target geometry profile; source density is not generalized",
+      "contentWidth": {
+        "value": null,
+        "unit": "dp",
+        "basis": "unknown"
+      }
+    },
+    {
+      "id": "layout-target-content-detail",
+      "name": "主体内容与上下文动作",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [],
+      "unknowns": [
+        "Original full responsive layout and target rendering validation remain incomplete."
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Explicit target composition using normalized families; preserve target business and verify at actual viewport."
+      },
+      "componentRefs": [
+        "component-family-media",
+        "component-family-text",
+        "component-family-actions",
+        "component-family-progress",
+        "component-family-navigation"
+      ],
+      "rules": [
+        "主体内容优先、标题/辅助/主动作分层",
+        "业务内容做插槽；保留明确返回与进度语义"
+      ],
+      "slots": [
+        "media",
+        "text",
+        "actions",
+        "progress",
+        "navigation"
+      ],
+      "alignment": "Start/end alignment respects target reading direction",
+      "contentWidth": {
+        "max": 600,
+        "gutter": 20,
+        "unit": "dp",
+        "classification": "D"
+      },
+      "density": "Minimum row56dp,touch48dp,gap8/12/24dp; allow text-driven height",
+      "responsive": {
+        "narrow": "Single-column,wrap content and grow rows",
+        "wide": "Constrain primary reading width; optional two-column cards if content fits",
+        "largeText": "Keep actions accessible,allow vertical growth,do not crop error/legal text",
+        "ime": "Use window insets and scroll focused field above keyboard"
+      },
+      "hierarchy": "Primary content → task actions → contextual/supporting information"
+    },
+    {
+      "id": "layout-target-result-list",
+      "name": "搜索列表与重试",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [],
+      "unknowns": [
+        "Original full responsive layout and target rendering validation remain incomplete."
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Explicit target composition using normalized families; preserve target business and verify at actual viewport."
+      },
+      "componentRefs": [
+        "component-family-search",
+        "component-family-navigation",
+        "component-family-results",
+        "component-family-feedback"
+      ],
+      "rules": [
+        "搜索上下文在结果/空/错误之间保持",
+        "行内容可增长，加载与显式重试分别呈现"
+      ],
+      "slots": [
+        "search",
+        "navigation",
+        "results",
+        "feedback"
+      ],
+      "alignment": "Start/end alignment respects target reading direction",
+      "contentWidth": {
+        "max": 600,
+        "gutter": 20,
+        "unit": "dp",
+        "classification": "D"
+      },
+      "density": "Minimum row56dp,touch48dp,gap8/12/24dp; allow text-driven height",
+      "responsive": {
+        "narrow": "Single-column,wrap content and grow rows",
+        "wide": "Constrain primary reading width; optional two-column cards if content fits",
+        "largeText": "Keep actions accessible,allow vertical growth,do not crop error/legal text",
+        "ime": "Use window insets and scroll focused field above keyboard"
+      },
+      "hierarchy": "Primary content → task actions → contextual/supporting information"
+    },
+    {
+      "id": "layout-target-discovery-grid",
+      "name": "发现与资料网格",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [],
+      "unknowns": [
+        "Original full responsive layout and target rendering validation remain incomplete."
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Explicit target composition using normalized families; preserve target business and verify at actual viewport."
+      },
+      "componentRefs": [
+        "component-family-grid",
+        "component-family-navigation",
+        "component-family-search"
+      ],
+      "rules": [
+        "可用宽度不足时降为单列",
+        "卡片媒体、标题和辅助信息分层"
+      ],
+      "slots": [
+        "grid",
+        "navigation",
+        "search"
+      ],
+      "alignment": "Start/end alignment respects target reading direction",
+      "contentWidth": {
+        "max": 600,
+        "gutter": 20,
+        "unit": "dp",
+        "classification": "D"
+      },
+      "density": "Minimum row56dp,touch48dp,gap8/12/24dp; allow text-driven height",
+      "responsive": {
+        "narrow": "Single-column,wrap content and grow rows",
+        "wide": "Constrain primary reading width; optional two-column cards if content fits",
+        "largeText": "Keep actions accessible,allow vertical growth,do not crop error/legal text",
+        "ime": "Use window insets and scroll focused field above keyboard"
+      },
+      "hierarchy": "Primary content → task actions → contextual/supporting information"
+    },
+    {
+      "id": "layout-target-settings-form",
+      "name": "设置与预览编辑",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [],
+      "unknowns": [
+        "Original full responsive layout and target rendering validation remain incomplete."
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Explicit target composition using normalized families; preserve target business and verify at actual viewport."
+      },
+      "componentRefs": [
+        "component-family-settings",
+        "component-family-picker",
+        "component-family-permission",
+        "component-family-feedback"
+      ],
+      "rules": [
+        "分组说明、当前值与控件对齐",
+        "预览/确认/取消及系统返回状态分离"
+      ],
+      "slots": [
+        "settings",
+        "picker",
+        "permission",
+        "feedback"
+      ],
+      "alignment": "Start/end alignment respects target reading direction",
+      "contentWidth": {
+        "max": 600,
+        "gutter": 20,
+        "unit": "dp",
+        "classification": "D"
+      },
+      "density": "Minimum row56dp,touch48dp,gap8/12/24dp; allow text-driven height",
+      "responsive": {
+        "narrow": "Single-column,wrap content and grow rows",
+        "wide": "Constrain primary reading width; optional two-column cards if content fits",
+        "largeText": "Keep actions accessible,allow vertical growth,do not crop error/legal text",
+        "ime": "Use window insets and scroll focused field above keyboard"
+      },
+      "hierarchy": "Primary content → task actions → contextual/supporting information"
+    },
+    {
+      "id": "layout-target-sheet-actions",
+      "name": "动作sheet与确认",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [],
+      "unknowns": [
+        "Original full responsive layout and target rendering validation remain incomplete."
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Explicit target composition using normalized families; preserve target business and verify at actual viewport."
+      },
+      "componentRefs": [
+        "component-family-sheet",
+        "component-family-actions",
+        "component-family-row",
+        "component-family-dialog"
+      ],
+      "rules": [
+        "固定动作层级，滚动内容不遮挡关闭",
+        "返回路径和遮罩行为按具体契约定义"
+      ],
+      "slots": [
+        "sheet",
+        "actions",
+        "row",
+        "dialog"
+      ],
+      "alignment": "Start/end alignment respects target reading direction",
+      "contentWidth": {
+        "max": 600,
+        "gutter": 20,
+        "unit": "dp",
+        "classification": "D"
+      },
+      "density": "Minimum row56dp,touch48dp,gap8/12/24dp; allow text-driven height",
+      "responsive": {
+        "narrow": "Single-column,wrap content and grow rows",
+        "wide": "Constrain primary reading width; optional two-column cards if content fits",
+        "largeText": "Keep actions accessible,allow vertical growth,do not crop error/legal text",
+        "ime": "Use window insets and scroll focused field above keyboard"
+      },
+      "hierarchy": "Primary content → task actions → contextual/supporting information"
+    },
+    {
+      "id": "layout-target-onboarding-form",
+      "name": "登录或首次表单",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [],
+      "unknowns": [
+        "Original full responsive layout and target rendering validation remain incomplete."
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Explicit target composition using normalized families; preserve target business and verify at actual viewport."
+      },
+      "componentRefs": [
+        "component-family-login",
+        "component-family-form",
+        "component-family-guidance",
+        "component-family-button"
+      ],
+      "rules": [
+        "说明、输入、协议和主动作保持阅读顺序",
+        "键盘/错误出现时维持任务与可见操作"
+      ],
+      "slots": [
+        "login",
+        "form",
+        "guidance",
+        "button"
+      ],
+      "alignment": "Start/end alignment respects target reading direction",
+      "contentWidth": {
+        "max": 600,
+        "gutter": 20,
+        "unit": "dp",
+        "classification": "D"
+      },
+      "density": "Minimum row56dp,touch48dp,gap8/12/24dp; allow text-driven height",
+      "responsive": {
+        "narrow": "Single-column,wrap content and grow rows",
+        "wide": "Constrain primary reading width; optional two-column cards if content fits",
+        "largeText": "Keep actions accessible,allow vertical growth,do not crop error/legal text",
+        "ime": "Use window insets and scroll focused field above keyboard"
+      },
+      "hierarchy": "Primary content → task actions → contextual/supporting information"
+    }
+  ],
+  "generatedBy": "scripts/build-design-package-adapter.mjs"
+}

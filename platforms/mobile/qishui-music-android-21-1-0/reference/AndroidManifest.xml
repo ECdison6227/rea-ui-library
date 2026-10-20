@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="study.qishui.reference" android:versionCode="1" android:versionName="0.1.0">
+  <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="34" />
+  <application android:allowBackup="false" android:label="风格研究参考" android:theme="@style/ReferenceTheme" android:supportsRtl="true" android:enableOnBackInvokedCallback="false" android:debuggable="true">
+    <activity android:name=".MainActivity" android:exported="true" android:screenOrientation="portrait" android:launchMode="singleTop">
+      <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+    </activity>
+    <activity android:name=".TransferActivity" android:label="专注学习 · 迁移样本" android:exported="true" android:screenOrientation="portrait" android:launchMode="singleTop" />
+  </application>
+</manifest>

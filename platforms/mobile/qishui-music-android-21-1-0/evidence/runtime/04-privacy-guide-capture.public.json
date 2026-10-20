@@ -1,0 +1,53 @@
+{
+  "evidence_id": "ev_3d84afdee283a8d7dbbed60d88184a0dc4c85c3e8e85ba80916c50e2590e416c",
+  "subject": null,
+  "provider": {
+    "id": "adb",
+    "name": "Android Debug Bridge",
+    "version": "37.0.1-15733141"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "capture_adb_screen",
+  "parameters": {
+    "serial": "emulator-5592",
+    "output_directory": "evidence/runtime/screens/04-privacy-guide"
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "client": {
+      "binary_path": "adb",
+      "path_source": "path",
+      "version": "37.0.1-15733141",
+      "installed_path": null
+    },
+    "serial": "emulator-5592",
+    "local_path": "evidence/runtime/screens/04-privacy-guide/screen.png",
+    "bytes": 220635,
+    "sha256": "8afa9c3951943b9e16f0f60493e368fd1f5872f415fd2a7efa218cd376eeb5cc",
+    "width": 1080,
+    "height": 2400
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Artifact identity is unavailable for this observation.",
+    "The capture is one frame at read time; no recording or interaction occurred"
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": [],
+  "publicRepresentation": {
+    "kind": "host-path-redacted-copy",
+    "originalPath": "evidence/runtime/04-privacy-guide-capture.json",
+    "originalSha256": "81574a7f404a77939cf5ed0582e8a091e889cb9f6c269d6e619e0c66e80b0b2b",
+    "originalRawWithheld": true,
+    "fieldsRedacted": [
+      "parameters.output_directory",
+      "normalized_result.client.installed_path",
+      "normalized_result.local_path"
+    ],
+    "reason": "Local host paths omitted; retained raw bytes and reported capture identity are unchanged in the local archive."
+  }
+}

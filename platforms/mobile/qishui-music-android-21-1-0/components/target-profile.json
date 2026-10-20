@@ -1,0 +1,1865 @@
+{
+  "formatVersion": 1,
+  "kind": "target-implementation-profile",
+  "classification": "D",
+  "scope": "Explicit Android choices, not source reconstruction",
+  "families": {
+    "consent": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "title",
+        "scrollableBody",
+        "links",
+        "secondaryAction",
+        "primaryAction"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "按来源的独立guide/reminder规则处理关闭与返回，接受条件由目标业务定义。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "button": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "label",
+        "leadingIcon",
+        "progress"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "主次强调、enabled与提交状态分开，不从灰色外观推断禁用。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "navigation": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "leading",
+        "title",
+        "trailing",
+        "tabs"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "使用稳定route键；当前项变化、重选和返回保留由目标分别定义。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "icon": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "glyph",
+        "accessibleName"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "使用目标可用的原生或矢量图标；PUA字形不作为可访问名称。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "media": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "image",
+        "placeholder",
+        "title",
+        "metadata"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "保留主体内容层级，替换封面、作者、品牌和音乐业务。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "text": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "title",
+        "body",
+        "supporting",
+        "numeric"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "按文字角色而非像素墨迹高度选择目标字号；原dp与目标sp分别记录。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "actions": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "items",
+        "selectedAction",
+        "overflow"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "动作的可见性、选中、不可用和忙碌分别建模，保存结果须显式反馈。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "progress": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "value",
+        "range",
+        "elapsed",
+        "primaryAction"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "数值、拖动草稿和已提交值分开；音乐seek恢复播放不是目标业务默认规则。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "guidance": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "anchor",
+        "explanation",
+        "next",
+        "skip"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "说明贴近目标任务，提供可理解的退出；触发频次由目标另定。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "search": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "query",
+        "leading",
+        "clear",
+        "suggestions"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "IME提交、清空和返回分别处理；请求防抖/取消为目标D策略。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "results": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "queryContext",
+        "category",
+        "rows",
+        "pagination"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "结果类型决定行或卡片；结果请求、空态、错误与保留锚点分开。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "login": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "region",
+        "identifier",
+        "consent",
+        "submit"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "保留表单层级与协议语义；不搬迁真实手机号、凭据或验证服务。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "drawer": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "header",
+        "sections",
+        "items",
+        "footer"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "关闭后焦点回到触发入口；应用/系统Back与遮罩策略由目标明确。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "sheet": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "handle",
+        "title",
+        "content",
+        "actions"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "弹层层级、scrim、返回目标及重入状态分别指定。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "picker": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "options",
+        "selection",
+        "unit",
+        "confirm"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "草稿选择与已保存值分离；00:00禁用仅用于对应时长场景。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "grid": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "header",
+        "filters",
+        "cards",
+        "miniBar"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "按内容密度组织；目标记录替换媒体内容，列数由可用宽度决定。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "settings": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "section",
+        "label",
+        "summary",
+        "control",
+        "preview"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "预览、确认、取消与应用范围分开；主题只在声明适配范围内生效。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "permission": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "rationale",
+        "openSettings",
+        "status",
+        "retry"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "系统界面属于OS，返回后重新查询能力；不复制系统权限弹窗样式。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "dependency": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "webView",
+        "status",
+        "close",
+        "retry"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "区分原产品容器与外部服务；关闭、错误和返回只按已见流程记录，不复刻验证服务。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "editor": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "back",
+        "title",
+        "save",
+        "input",
+        "counter",
+        "feedback"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "草稿与已提交值分开；目标长度、空白和Unicode规则独立选择。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "form": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "title",
+        "visibility",
+        "submit",
+        "cancel"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "私有/公开选择必须明确；提交确认后才创建已保存对象。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "dialog": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "question",
+        "context",
+        "secondary",
+        "primary"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "按动作含义命名；放弃编辑与取消删除是两种不同契约。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "row": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "leading",
+        "title",
+        "subtitle",
+        "trailing",
+        "selection"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "引用关系、本地副本和对象本身的删除语义分别表达。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "feedback": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "status",
+        "message",
+        "retry",
+        "cancel"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "空、加载、失败与权限阻断分别反馈；失败不冒充成功，重试保持上下文。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "promotion": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "headline",
+        "benefits",
+        "priceSlot",
+        "cta",
+        "close"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "保留信息层级，替换商业内容；不默认接入收费或促销服务。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "startup": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "brandSlot",
+        "progress",
+        "fallback"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "只保存已见启动瞬态；不从单帧宣称启动时长或缓存策略。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "diagnostic": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "diagnostic",
+        "recovery"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "仅作为环境证据，不作为产品视觉家族或可迁移组件。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    },
+    "unresolved": {
+      "classification": "D",
+      "status": "specified",
+      "slots": [
+        "unknown"
+      ],
+      "geometry": {
+        "minimumTouch": {
+          "value": 48,
+          "unit": "dp"
+        },
+        "minimumRow": {
+          "value": 56,
+          "unit": "dp"
+        },
+        "icon": {
+          "value": 24,
+          "unit": "dp"
+        },
+        "gutter": {
+          "value": 20,
+          "unit": "dp"
+        },
+        "gap": {
+          "value": 8,
+          "unit": "dp"
+        },
+        "contentMaxWidth": {
+          "value": 600,
+          "unit": "dp"
+        },
+        "notes": "Target defaults; specialized original consent geometry remains separately scoped."
+      },
+      "typography": {
+        "family": "token-target-type-family",
+        "title": "token-target-type-title-size",
+        "body": "token-target-type-body-size",
+        "label": "token-target-type-label-size",
+        "caption": "token-target-type-caption-size",
+        "numeric": "token-target-type-numeric-size",
+        "fontPadding": "Target-native default, measure baseline and line wrapping; not recovered source values"
+      },
+      "colorRoles": {
+        "canvas": "token-target-surface-canvas",
+        "container": "token-target-surface-container",
+        "primaryText": "token-target-text-primary",
+        "secondaryText": "token-target-text-secondary",
+        "action": "token-target-action-primary"
+      },
+      "behavior": "保留身份与原文，不根据文件名或动作意图补造组件类型。",
+      "longText": "Wrap body and error messages; allow action labels to grow; avoid truncating destructive meaning. Ellipsize content titles only when a full-detail path is available.",
+      "scaling": "Use target text scaling; allow vertical growth, honor safe area/IME, collapse multi-column layouts when columns cannot fit. Test 320dp width and enlarged system text; those are target checks, not source results.",
+      "keyboardAndFocus": "Preserve native roles. Label icons, order focus by reading sequence, focus a modal deliberately and restore its opener on close; test real keyboard and screen reader.",
+      "events": [
+        "activate",
+        "changeDraft",
+        "commit",
+        "cancel",
+        "back",
+        "retry"
+      ],
+      "backAndRetention": "Target defines draft ownership, cancel/commit and reentry explicitly; source-specific differences in interaction records take precedence."
+    }
+  },
+  "stateVocabulary": [
+    "default",
+    "selected",
+    "pressed",
+    "focused",
+    "disabled",
+    "loading",
+    "empty",
+    "error",
+    "invalid"
+  ],
+  "sourceCoverage": "unverified",
+  "generatedBy": "scripts/build-design-package-adapter.mjs"
+}
