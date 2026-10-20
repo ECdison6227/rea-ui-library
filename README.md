@@ -35,7 +35,7 @@ https://github.com/ECdison6227/rea-ui-library
 运行代表页面和交互，交付前后/来源对照与验证结果。不要只给计划、调色板或静态首页。
 ```
 
-已安装技能时可加 `$rea-design-transfer 应用规范模式`；未安装时AI可以直接读取本库[skill](skills/rea-design-transfer/SKILL.md)。仓库为私有，使用已有GitHub访问权限，不把密码或令牌贴进聊天。
+已安装技能时可加 `$rea-design-transfer 应用规范模式`；未安装时AI可以直接读取本库[skill](skills/rea-design-transfer/SKILL.md)。仓库已按所有者要求公开，AI可直接拉取，不需要用户提供GitHub密码或令牌。
 
 ## 只拉取选定风格
 
@@ -53,7 +53,7 @@ git rev-parse HEAD
 
 ## 浏览与比较
 
-Pages自动发布配置已准备：新研究登记并推送后自动校验、构建，部署成功后网页每分钟检查更新，也可手动检查。当前GitHub套餐不支持本私有仓库启用Pages，需先选择独立公开展示仓库或升级套餐；尚未上线。完整私有资料仍需GitHub访问权限。[发布机制与排查](docs/pages.md)。
+[GitHub Pages 在线目录](https://ecdison6227.github.io/rea-ui-library/)随main推送自动校验、构建和发布。新研究登记并推送后无需手改网页；部署成功后，已打开的网页每分钟检查新目录，也可点击“检查更新”。[发布机制与排查](docs/pages.md)。
 
 完整clone后，在仓库根执行：
 
@@ -88,4 +88,4 @@ npm run verify
 
 [入库标准](docs/adding-studies.md) · [AI实施约定](docs/apply-a-style.md) · [格式协议](skills/rea-design-transfer/references/design-package.md) · [历史来源](docs/migrations/2026-10-19/imports.json)
 
-总库保持私有。Pages与公开静态build只含目录、技能说明与已审缩略图，不带原始证据；原包、设备profile、私密画面和工具缓存不自动随设计包分发。
+仓库于2026-10-20按所有者明确要求公开，已有Git历史随仓库可访问。Pages静态build仍只含目录、技能说明和已审缩略图，不复制整个研究目录。后续入库仍须审查凭据、设备profile、私人画面和工具缓存，不能因为仓库公开就自动提交这些内容。
