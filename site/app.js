@@ -3,7 +3,8 @@ import {fetchCatalogSnapshot,retainSelections,validateSnapshot,REFRESH_INTERVAL_
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const initial=new URLSearchParams(location.search),state={platform:['web','desktop','mobile'].includes(initial.get('platform'))?initial.get('platform'):'all',query:initial.get('q')||'',selected:new Set()};
 const BUILT_APP_VERSION='__BUILD_APP_VERSION__';
-let catalog,toastTimer,publishedVersion=null,refreshing=false,loadedAppVersion=BUILT_APP_VERSION.startsWith('__')?null:BUILT_APP_VERSION;
+if(!BUILT_APP_VERSION.startsWith('__'))document.documentElement.dataset.appVersion=BUILT_APP_VERSION;
+let catalog,toastTimer,publishedVersion=null,refreshing=false;
 function el(tag,cls,text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;}
 function toast(text){$('#toast').textContent=text;$('#toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').hidden=true,2300);}
 function syncURL(){const params=new URLSearchParams();if(state.platform!=='all')params.set('platform',state.platform);if(state.query)params.set('q',state.query);history.replaceState(null,'',location.pathname+(params.size?'?'+params:'')+location.hash);}
@@ -15,9 +16,9 @@ function render(){
  for(const s of shown){
   const card=el('article','card');card.dataset.sourceId=s.id;
   const visual=el('div','visual '+s.cover);visual.append(el('span','platform-tag',({web:'网页',desktop:'电脑端',mobile:'手机端'})[s.platform]));
-  if(s.thumbnail){const img=el('img');img.src=s.thumbnail.url;img.alt=s.name+' · '+s.thumbnail.classification;img.loading='lazy';visual.append(img,el('span','visual-label',s.thumbnail.classification));}
-  else{const mini=el('div','hark-illustration');mini.append(el('div','mini-top',s.name+' / interface study'),el('div','mini-line'),el('div','mini-line short'));const row=el('div','mini-card-row');for(let i=0;i<3;i++)row.append(el('span'));mini.append(row);visual.append(mini,el('span','visual-label','索引示意封面 · 非原版截图'));}
-  card.append(visual);const body=el('div','card-body'),titleRow=el('div','card-title-row'),title=el('div');title.append(el('h3','',s.name),el('div','card-subtitle',s.subtitle));titleRow.append(title);body.append(titleRow,el('p','',s.summary));
+  if(s.thumbnail){const img=el('img');img.src=s.thumbnail.url;img.alt=s.name+' · '+s.thumbnail.classification;img.loading='lazy';visual.append(img);}
+  else{const mini=el('div','hark-illustration');mini.append(el('div','mini-top',s.name+' / interface study'),el('div','mini-line'),el('div','mini-line short'));const row=el('div','mini-card-row');for(let i=0;i<3;i++)row.append(el('span'));mini.append(row);visual.append(mini);}
+  card.append(visual);const body=el('div','card-body'),titleRow=el('div','card-title-row'),title=el('div');title.append(el('h3','',s.name));titleRow.append(title);body.append(titleRow,el('p','',s.summary));
   const chips=el('div','chips');for(const t of s.tags.slice(0,4))chips.append(el('span','chip',t));body.append(chips);
   const foot=el('div','card-footer'),open=el('button','card-open',s.designPackage?'使用这套风格  ↗':'查看研究参考  ↗');open.addEventListener('click',()=>openDetail(s));
   const label=el('label','compare-toggle'),checkbox=el('input');checkbox.type='checkbox';checkbox.checked=state.selected.has(s.id);checkbox.setAttribute('aria-label','选择'+s.name+'进行比较');checkbox.addEventListener('change',()=>{if(checkbox.checked&&state.selected.size>=3){checkbox.checked=false;toast('一次最多比较3个来源');return;}if(checkbox.checked)state.selected.add(s.id);else state.selected.delete(s.id);renderTray();});label.append(checkbox,document.createTextNode('加入比较'));foot.append(open,label);body.append(foot);card.append(body);cards.append(card);
@@ -33,20 +34,15 @@ function openDetail(s){
   const palette=el('div','detail-palette');for(const color of s.palette){const swatch=el('span');swatch.style.backgroundColor=color;swatch.title=color;palette.append(swatch);}box.append(palette,el('p','muted','目录配色示意 · D；实施时请读取来源 tokens。'),el('h3','','可参考的设计与行为'));
  const list=el('ul');for(const feature of s.features)list.append(el('li','',feature));box.append(list,el('h3','','来源条件与保留边界'),el('p','muted',s.coverage));
  const limits=el('ul');for(const limit of s.limits)limits.append(el('li','',limit));box.append(limits,el('h3','','研究与参考入口'));
- const grid=el('div','artifact-grid');for(const a of s.artifacts){let item;if(a.document&&a.available){item=el('button','button',a.label+' ↗');item.addEventListener('click',()=>openDocument(s,a));}else if(a.available&&a.url){item=el('a','button',a.label+' ↗');item.href=a.url;item.target='_blank';item.rel='noopener noreferrer';}else{item=el('button','button',a.label+(a.restricted?' · 本地私有查看':' · 需本地总库'));item.disabled=true;}grid.append(item);}box.append(grid,el('h3','','保留来源的运行方式'));
- const run=el('div','run-box');run.append(el('span','',s.run.cwd),el('code','',s.run.command),el('p','',s.run.requires+'；本次总库整合未重新运行来源应用。'));box.append(run);
+ const grid=el('div','artifact-grid');for(const a of s.artifacts){let item;if(a.document&&a.available){item=el('button','button',a.label+' ↗');item.addEventListener('click',()=>openDocument(s,a));}else if(a.available&&a.url){item=el('a','button',a.label+' ↗');item.href=a.url;item.target='_blank';item.rel='noopener noreferrer';}else{item=el('button','button',a.label+(a.restricted?' · 本地私有查看':' · 需本地总库'));item.disabled=true;}grid.append(item);}box.append(grid);
  const actions=el('div','detail-actions'),copy=el('button','button primary','复制给AI，应用到我的软件 ↗');copy.addEventListener('click',async()=>{const text=migrationPrompt(s);try{await navigator.clipboard.writeText(text);toast('实施指令已复制，填入项目路径即可');}catch{showDoc({label:'迁移任务',path:s.root,content:text});}});actions.append(copy);
- if(s.sourceRevisionUrl){const link=el('a','button','查看总库研究目录');link.href=s.sourceRevisionUrl;link.target='_blank';link.rel='noopener noreferrer';actions.append(link);}box.append(actions,el('div','source-revision','Content SHA256 / '+s.integrity.treeSha256));$('#detail-dialog').showModal();
+ box.append(actions);$('#detail-dialog').showModal();
 }
 for(const d of $$('dialog')){d.querySelector('[data-close]').addEventListener('click',()=>d.close());d.addEventListener('click',e=>{if(e.target===d){const b=d.getBoundingClientRect();if(e.clientX<b.left||e.clientX>b.right||e.clientY<b.top||e.clientY>b.bottom)d.close();}});}
 $('#platform-nav').addEventListener('click',e=>{const button=e.target.closest('[data-platform]');if(!button||!catalog)return;state.platform=button.dataset.platform;render();});
 $('#search').value=state.query;$('#search').addEventListener('input',e=>{state.query=e.target.value;if(catalog)render();});$('#clear-search').addEventListener('click',()=>{state.query='';$('#search').value='';render();$('#search').focus();});
 $('#compare-clear').addEventListener('click',()=>{state.selected.clear();render();});
 $('#compare-open').addEventListener('click',()=>{const sources=catalog.sources.filter(s=>state.selected.has(s.id)),table=el('table'),head=el('thead'),tr=el('tr');tr.append(el('th','','比较项目'));for(const s of sources)tr.append(el('th','',s.name));head.append(tr);table.append(head);const body=el('tbody');for(const row of comparisonRows(sources)){const tr=el('tr');tr.append(el('td','',row.label));for(const value of row.values)tr.append(el('td','',value));body.append(tr);}table.append(body);$('#compare-content').replaceChildren(table);$('#compare-dialog').showModal();});
-$('#guide-button').addEventListener('click',()=>showDoc({label:'如何使用这个库',path:'REA / 研究 → 规则 → 自己的产品',content:'1. 按实际来源平台选择研究，再看它的覆盖与保留边界。\n\n2. 新格式从design-package.json与DESIGN_SPEC.md进入，读取组件/布局/动效、资产、readiness与对照；旧研究按原入口映射。\n\n3. 复制迁移任务，填入已完成功能和普通UI的项目路径。使用rea-design-transfer，保留业务、数据、品牌和技术栈，映射所选设计并实施。\n\n4. 已有证据足够时直接进入代表页面实现。原版未测行为按你产品的需要作D决策，保留未知记录。\n\n5. 先验证你的App在正常、空、忙碌、错误、取消与返回状态下可用，再校准视觉细节。\n\n目录聚合和文件检查不会把历史证据变成新实测，也不会把未测项改为verified。'}));
-$('#skill-button').addEventListener('click',async()=>{try{const r=await fetch(catalog?.apiEnabled?'/api/skill-review':'./data/skill-review.md');if(!r.ok)throw Error('文件不可用');showDoc(catalog?.apiEnabled?await r.json():{label:'REA 技能改进',path:'docs/skill-review.md',content:await r.text()});}catch(e){toast('无法打开技能改进：'+e.message);}});
-$('#mobile-skill').addEventListener('click',()=>$('#skill-button').click());
-$('#mobile-guide').addEventListener('click',()=>$('#guide-button').click());
 document.addEventListener('keydown',e=>{
  if(e.key==='Escape'){
   const open=$$('dialog[open]');if(open.length){e.preventDefault();e.stopPropagation();open.at(-1).close();return;}
@@ -54,17 +50,12 @@ document.addEventListener('keydown',e=>{
  if(e.key==='/'&&!document.querySelector('dialog[open]')&&!['INPUT','TEXTAREA'].includes(document.activeElement.tagName)){e.preventDefault();$('#search').focus();}
 },true);
 document.addEventListener('keyup',e=>{if(e.key==='Escape')e.preventDefault();},true);
-const updateBar=el('div','catalog-updates'),updateText=el('span','','正在读取目录…'),refreshButton=el('button','text-button','检查更新'),reloadButton=el('button','text-button','刷新网页');reloadButton.hidden=true;reloadButton.addEventListener('click',()=>location.reload());updateBar.append(updateText,refreshButton,reloadButton);$('.collection-meta').after(updateBar);
 function acceptCatalog(next){catalog=validateSnapshot(next);state.selected=retainSelections(state.selected,catalog.sources);$('[data-count="all"]').textContent=String(catalog.sources.length).padStart(2,'0');for(const p of catalog.platforms)$('[data-count="'+p.id+'"]').textContent=String(p.count).padStart(2,'0');$('#error').hidden=true;render();}
-function updateLabel(){const date=publishedVersion?.builtAt||catalog?.publication?.builtAt;updateText.textContent=catalog?.apiEnabled?'本地目录 · 可手动刷新':date?'发布于 '+new Date(date).toLocaleString()+' · 每分钟检查更新':'已载入目录 · 每分钟检查更新';}
-async function refreshCatalog(manual=false){if(refreshing)return;refreshing=true;refreshButton.disabled=true;
- try{const result=await fetchCatalogSnapshot({version:publishedVersion,force:manual,apiEnabled:catalog?.apiEnabled===true});publishedVersion=result.version;
-  if(result.changed){const wasLoaded=!!catalog;acceptCatalog(result.catalog);if(manual||wasLoaded)toast('已载入最新目录，共 '+catalog.sources.length+' 份来源');}
-  if(loadedAppVersion&&result.version?.appVersion&&loadedAppVersion!==result.version.appVersion)reloadButton.hidden=false;updateLabel();
- }catch(e){updateText.textContent=catalog?'暂时无法检查更新，保留当前目录':'目录暂时不可用，请重试';if(manual)toast(e.message);}
- finally{refreshing=false;refreshButton.disabled=false;}
+async function refreshCatalog(){if(refreshing)return;refreshing=true;
+ try{const result=await fetchCatalogSnapshot({version:publishedVersion,apiEnabled:catalog?.apiEnabled===true});publishedVersion=result.version;if(result.changed)acceptCatalog(result.catalog);}
+ catch{}
+ finally{refreshing=false;}
 }
-refreshButton.addEventListener('click',()=>refreshCatalog(true));
-try{const r=await fetch('./data/catalog.json',{cache:'no-store'});if(!r.ok)throw Error('目录读取失败');const initial=validateSnapshot(await r.json());loadedAppVersion=loadedAppVersion||initial.publication?.appVersion||null;acceptCatalog(initial);updateLabel();if(!catalog.apiEnabled)await refreshCatalog();}catch(e){$('#error').hidden=false;$('#error').textContent='研究索引暂时不可用。'+e.message;$('#result-description').textContent='请检查网络或点击“检查更新”。';updateText.textContent='目录尚未载入';}
+try{const r=await fetch('./data/catalog.json',{cache:'no-store'});if(!r.ok)throw Error('目录读取失败');acceptCatalog(validateSnapshot(await r.json()));}catch(e){$('#error').hidden=false;$('#error').textContent='研究索引暂时不可用。'+e.message;$('#result-description').textContent='请稍后重试。';}
 setInterval(()=>{if(!document.hidden&&!catalog?.apiEnabled)refreshCatalog();},REFRESH_INTERVAL_MS);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden&&!catalog?.apiEnabled)refreshCatalog();});
