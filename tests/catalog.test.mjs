@@ -16,6 +16,9 @@ import crypto from 'node:crypto';
 test('source catalog contains traceable REA research with dynamically counted platforms',()=>{
  const data=definitions();assert.deepEqual(validateDefinitions(data),[]);const c=getCatalog();assert.equal(c.sources.length,data.sources.length);for(const p of c.platforms)assert.equal(p.count,c.sources.filter(s=>s.platform===p.id).length);assert.ok(c.sources.every(s=>s.kind==='research'&&s.origin==='historical'));assert.ok(!fs.existsSync(path.join(ROOT,'.gitmodules')));
 });
+test('catalog sources expose font families for the style preview',()=>{
+ for(const s of definitions().sources)assert.ok(Array.isArray(s.typography?.families)&&s.typography.families.length>0,s.id);
+});
 test('classification and multiple search terms work independently of UI rendering',()=>{
  const sources=[{id:'one',platform:'web',name:'alpha',subtitle:'',summary:'',tags:['draft'],stack:['Android']},{id:'two',platform:'desktop',name:'beta',subtitle:'',summary:'',tags:[],stack:[]}];assert.deepEqual(filterSources(sources,{platform:'web'}).map(s=>s.id),['one']);assert.deepEqual(filterSources(sources,{query:'Android draft'}).map(s=>s.id),['one']);assert.equal(filterSources(sources,{platform:'mobile'}).length,0);assert.equal(filterSources(sources,{query:'不存在的来源'}).length,0);
 });
