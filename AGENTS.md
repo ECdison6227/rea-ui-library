@@ -6,7 +6,7 @@
 
 区分研究覆盖、迁移可用性和用户接受范围。Hark 是 Web 研究；Mirasim 是手机混合应用，其浏览器适配器不验证原生权限。Kimi 采用已审分发包，保留原版与独立参考的区别，用户已接受未测边界以开展 UI/核心交互实现。普通产品、单独UI实验和迁移应用不独立入库；来源自己的迁移样本仍作为研究交付保留。未找到桌面REA研究时保持空分类。
 
-private/、catalog/private.local.json、.runtime/ 不得进入公开构建或 Git 提交。Hark 原始证据包含既有聊天，默认不在总库公开导出。总入口只在127.0.0.1运行，不从浏览器启动来源应用、安装依赖、提交表单或调用原厂接口。
+private/、catalog/private.local.json、.runtime/ 不得进入公开构建或 Git 提交。Hark原始证据默认不公开导出。本地服务只监听127.0.0.1；用户已授权GitHub Pages发布目录与已审缩略图并自动更新，不能因此公开原始研究或改变仓库私有性。不从浏览器启动来源应用、安装依赖、提交表单或调用原厂接口。
 
 新研究必须Design Package v1，并通过tools/consumer-contract.mjs的实施内容检查。固定design-package.json/DESIGN_SPEC.md及模块逻辑入口；核心组件必须有slots/events/states，交互有状态转移，核心动效有源参数或明确D替代。仅Hark/Mirasim以legacy-research保留旧格式；小米/Kimi/多邻国按标准包维护。原业务全测不作为设计门槛，原件与未知状态不改写。
 

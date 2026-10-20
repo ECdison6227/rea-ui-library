@@ -1,7 +1,9 @@
 import {filterSources,migrationPrompt,comparisonRows} from './logic.js';
+import {fetchCatalogSnapshot,retainSelections,validateSnapshot,REFRESH_INTERVAL_MS} from './updates.js';
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const initial=new URLSearchParams(location.search),state={platform:['web','desktop','mobile'].includes(initial.get('platform'))?initial.get('platform'):'all',query:initial.get('q')||'',selected:new Set()};
-let catalog,toastTimer;
+const BUILT_APP_VERSION='__BUILD_APP_VERSION__';
+let catalog,toastTimer,publishedVersion=null,refreshing=false,loadedAppVersion=BUILT_APP_VERSION.startsWith('__')?null:BUILT_APP_VERSION;
 function el(tag,cls,text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;}
 function toast(text){$('#toast').textContent=text;$('#toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').hidden=true,2300);}
 function syncURL(){const params=new URLSearchParams();if(state.platform!=='all')params.set('platform',state.platform);if(state.query)params.set('q',state.query);history.replaceState(null,'',location.pathname+(params.size?'?'+params:'')+location.hash);}
@@ -52,4 +54,17 @@ document.addEventListener('keydown',e=>{
  if(e.key==='/'&&!document.querySelector('dialog[open]')&&!['INPUT','TEXTAREA'].includes(document.activeElement.tagName)){e.preventDefault();$('#search').focus();}
 },true);
 document.addEventListener('keyup',e=>{if(e.key==='Escape')e.preventDefault();},true);
-try{const r=await fetch('./data/catalog.json');if(!r.ok)throw Error('目录读取失败');catalog=await r.json();$('[data-count="all"]').textContent=String(catalog.sources.length).padStart(2,'0');for(const p of catalog.platforms)$('[data-count="'+p.id+'"]').textContent=String(p.count).padStart(2,'0');render();}catch(e){$('#error').hidden=false;$('#error').textContent='研究索引暂时不可用。'+e.message;$('#result-description').textContent='请从总库启动本地目录服务。';}
+const updateBar=el('div','catalog-updates'),updateText=el('span','','正在读取目录…'),refreshButton=el('button','text-button','检查更新'),reloadButton=el('button','text-button','刷新网页');reloadButton.hidden=true;reloadButton.addEventListener('click',()=>location.reload());updateBar.append(updateText,refreshButton,reloadButton);$('.collection-meta').after(updateBar);
+function acceptCatalog(next){catalog=validateSnapshot(next);state.selected=retainSelections(state.selected,catalog.sources);$('[data-count="all"]').textContent=String(catalog.sources.length).padStart(2,'0');for(const p of catalog.platforms)$('[data-count="'+p.id+'"]').textContent=String(p.count).padStart(2,'0');$('#error').hidden=true;render();}
+function updateLabel(){const date=publishedVersion?.builtAt||catalog?.publication?.builtAt;updateText.textContent=catalog?.apiEnabled?'本地目录 · 可手动刷新':date?'发布于 '+new Date(date).toLocaleString()+' · 每分钟检查更新':'已载入目录 · 每分钟检查更新';}
+async function refreshCatalog(manual=false){if(refreshing)return;refreshing=true;refreshButton.disabled=true;
+ try{const result=await fetchCatalogSnapshot({version:publishedVersion,force:manual,apiEnabled:catalog?.apiEnabled===true});publishedVersion=result.version;
+  if(result.changed){const wasLoaded=!!catalog;acceptCatalog(result.catalog);if(manual||wasLoaded)toast('已载入最新目录，共 '+catalog.sources.length+' 份来源');}
+  if(loadedAppVersion&&result.version?.appVersion&&loadedAppVersion!==result.version.appVersion)reloadButton.hidden=false;updateLabel();
+ }catch(e){updateText.textContent=catalog?'暂时无法检查更新，保留当前目录':'目录暂时不可用，请重试';if(manual)toast(e.message);}
+ finally{refreshing=false;refreshButton.disabled=false;}
+}
+refreshButton.addEventListener('click',()=>refreshCatalog(true));
+try{const r=await fetch('./data/catalog.json',{cache:'no-store'});if(!r.ok)throw Error('目录读取失败');const initial=validateSnapshot(await r.json());loadedAppVersion=loadedAppVersion||initial.publication?.appVersion||null;acceptCatalog(initial);updateLabel();if(!catalog.apiEnabled)await refreshCatalog();}catch(e){$('#error').hidden=false;$('#error').textContent='研究索引暂时不可用。'+e.message;$('#result-description').textContent='请检查网络或点击“检查更新”。';updateText.textContent='目录尚未载入';}
+setInterval(()=>{if(!document.hidden&&!catalog?.apiEnabled)refreshCatalog();},REFRESH_INTERVAL_MS);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden&&!catalog?.apiEnabled)refreshCatalog();});

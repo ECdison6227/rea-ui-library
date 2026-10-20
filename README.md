@@ -53,6 +53,8 @@ git rev-parse HEAD
 
 ## 浏览与比较
 
+Pages自动发布配置已准备：新研究登记并推送后自动校验、构建，部署成功后网页每分钟检查更新，也可手动检查。当前GitHub套餐不支持本私有仓库启用Pages，需先选择独立公开展示仓库或升级套餐；尚未上线。完整私有资料仍需GitHub访问权限。[发布机制与排查](docs/pages.md)。
+
 完整clone后，在仓库根执行：
 
 ```sh
@@ -86,4 +88,4 @@ npm run verify
 
 [入库标准](docs/adding-studies.md) · [AI实施约定](docs/apply-a-style.md) · [格式协议](skills/rea-design-transfer/references/design-package.md) · [历史来源](docs/migrations/2026-10-19/imports.json)
 
-总库保持私有。公开静态build只含目录与已审缩略图，不带原始证据；原包、设备profile、私密画面和工具缓存不自动随设计包分发。
+总库保持私有。Pages与公开静态build只含目录、技能说明与已审缩略图，不带原始证据；原包、设备profile、私密画面和工具缓存不自动随设计包分发。
