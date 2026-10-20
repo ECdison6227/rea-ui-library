@@ -14,10 +14,10 @@ function render(){
  const cards=$('#cards');cards.replaceChildren();
  for(const s of shown){
   const card=el('article','card');card.dataset.sourceId=s.id;
-  const visual=el('div','visual '+s.cover);visual.append(el('span','ordinal','0'+(catalog.sources.indexOf(s)+1)),el('span','platform-tag',({web:'网页',desktop:'电脑端',mobile:'手机端'})[s.platform]));
+  const visual=el('div','visual '+s.cover);visual.append(el('span','platform-tag',({web:'网页',desktop:'电脑端',mobile:'手机端'})[s.platform]));
   if(s.thumbnail){const img=el('img');img.src=s.thumbnail.url;img.alt=s.name+' · '+s.thumbnail.classification;img.loading='lazy';visual.append(img,el('span','visual-label',s.thumbnail.classification));}
   else{const mini=el('div','hark-illustration');mini.append(el('div','mini-top',s.name+' / interface study'),el('div','mini-line'),el('div','mini-line short'));const row=el('div','mini-card-row');for(let i=0;i<3;i++)row.append(el('span'));mini.append(row);visual.append(mini,el('span','visual-label','索引示意封面 · 非原版截图'));}
-  card.append(visual);const body=el('div','card-body'),titleRow=el('div','card-title-row'),title=el('div');title.append(el('h3','',s.name),el('div','card-subtitle',s.subtitle));titleRow.append(title,el('span','card-arrow','↗'));body.append(titleRow,el('p','',s.summary));
+  card.append(visual);const body=el('div','card-body'),titleRow=el('div','card-title-row'),title=el('div');title.append(el('h3','',s.name),el('div','card-subtitle',s.subtitle));titleRow.append(title);body.append(titleRow,el('p','',s.summary));
   const chips=el('div','chips');for(const t of s.tags.slice(0,4))chips.append(el('span','chip',t));body.append(chips);
   const foot=el('div','card-footer'),open=el('button','card-open',s.designPackage?'使用这套风格  ↗':'查看研究参考  ↗');open.addEventListener('click',()=>openDetail(s));
   const label=el('label','compare-toggle'),checkbox=el('input');checkbox.type='checkbox';checkbox.checked=state.selected.has(s.id);checkbox.setAttribute('aria-label','选择'+s.name+'进行比较');checkbox.addEventListener('change',()=>{if(checkbox.checked&&state.selected.size>=3){checkbox.checked=false;toast('一次最多比较3个来源');return;}if(checkbox.checked)state.selected.add(s.id);else state.selected.delete(s.id);renderTray();});label.append(checkbox,document.createTextNode('加入比较'));foot.append(open,label);body.append(foot);card.append(body);cards.append(card);
@@ -29,7 +29,7 @@ function renderTray(){const n=state.selected.size;$('#compare-tray').hidden=n===
 function showDoc(doc){$('#document-title').textContent=doc.label;$('#document-path').textContent=doc.path||'';$('#document-content').textContent=doc.content;$('#document-dialog').showModal();}
 async function openDocument(s,a){try{const r=await fetch('/api/document?source='+encodeURIComponent(s.id)+'&path='+encodeURIComponent(a.path));if(!r.ok)throw Error(await r.text());showDoc(await r.json());}catch(e){toast('暂时无法打开文档：'+e.message);}}
 function openDetail(s){
- const box=$('#detail-content');box.replaceChildren(el('span','eyebrow',s.platform.toUpperCase()+' / REA RESEARCH'),el('h2','',s.name),el('p','muted',s.summary));
+ const box=$('#detail-content');box.replaceChildren(el('h2','',s.name),el('p','muted',s.summary));
   const palette=el('div','detail-palette');for(const color of s.palette){const swatch=el('span');swatch.style.backgroundColor=color;swatch.title=color;palette.append(swatch);}box.append(palette,el('p','muted','目录配色示意 · D；实施时请读取来源 tokens。'),el('h3','','可参考的设计与行为'));
  const list=el('ul');for(const feature of s.features)list.append(el('li','',feature));box.append(list,el('h3','','来源条件与保留边界'),el('p','muted',s.coverage));
  const limits=el('ul');for(const limit of s.limits)limits.append(el('li','',limit));box.append(limits,el('h3','','研究与参考入口'));

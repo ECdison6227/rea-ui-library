@@ -3,34 +3,32 @@
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f6f5f1"><title>REA · 产品界面研究库</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232e4438'/%3E%3Cpath d='M18 45V19h14c13 0 13 16 0 16H18m13 0 12 10' fill='none' stroke='%23e6efdc' stroke-width='5'/%3E%3C/svg%3E"><link rel="stylesheet" href="./style.css"><script type="module" src="./app.js"></script></head>
 <body>
 <aside class="sidebar">
- <a class="brand" href="./" aria-label="REA UI Library首页"><span class="brand-symbol">r<span>e</span>a<span class="brand-dot">.</span></span><span class="brand-caption">PRODUCT INTERFACE ARCHIVE</span></a>
- <div class="nav-label">研究档案 <span>01—</span></div>
+ <a class="brand" href="./" aria-label="REA UI Library首页"><span class="brand-symbol">r<span>e</span>a<span class="brand-dot">.</span></span></a>
+ <div class="nav-label">研究档案</div>
  <nav id="platform-nav" aria-label="平台分类">
   <button data-platform="all" class="nav-item active"><span class="nav-icon">▦</span>全部研究<span class="nav-count" data-count="all">—</span></button>
   <button data-platform="web" class="nav-item"><span class="nav-icon">▤</span>网页<span class="nav-count" data-count="web">—</span></button>
   <button data-platform="desktop" class="nav-item"><span class="nav-icon">▱</span>电脑端<span class="nav-count" data-count="desktop">—</span></button>
   <button data-platform="mobile" class="nav-item"><span class="nav-icon">▯</span>手机端<span class="nav-count" data-count="mobile">—</span></button>
  </nav>
- <div class="sidebar-divider"></div><div class="nav-label">工作方式 <span>02—</span></div>
+ <div class="sidebar-divider"></div><div class="nav-label">工作方式</div>
  <button id="skill-button" class="nav-item"><span class="nav-icon">⌘</span>设计提取与交付<span>↗</span></button>
  <button id="guide-button" class="nav-item"><span class="nav-icon">↳</span>如何使用这个库<span>↗</span></button>
- <div class="sidebar-note"><span class="status-dot"></span><b>从观察，到自己的产品。</b><p>来源独立，规则可查。<br>保留每一套界面的性格。</p><span class="edition">PERSONAL COLLECTION / 2026</span></div>
 </aside>
 <main>
- <header class="topbar"><span>EC / 研究与参考</span><span class="top-status"><i></i>版本已锁定 · 本地档案</span></header>
  <div class="mobile-tools"><button id="mobile-skill">技能改进 ↗</button><button id="mobile-guide">使用方式 ↗</button></div>
- <section class="hero"><div class="eyebrow">REVERSE ENGINEER · REUSE THOUGHTFULLY</div><h1>选定风格，<br>应用到你的软件<span class="title-dot">。</span></h1><div class="hero-bottom"><p>功能做好后，选择参考App。<br>让AI拉取规范，完成视觉、动画与用户交互。</p><div class="hero-mark" aria-hidden="true"><div class="mark-square"></div><div class="mark-circle"></div><div class="mark-line"></div><span>OBSERVE → UNDERSTAND → BUILD</span></div></div></section>
+ <section class="hero"><h1>选定风格，<br>应用到你的软件<span class="title-dot">。</span></h1></section>
  <section class="collection" aria-labelledby="collection-title">
-  <div class="collection-top"><div><span class="eyebrow">THE COLLECTION</span><h2 id="collection-title">全部研究 <span id="result-total">—</span></h2></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索产品、组件或交互…" aria-label="搜索研究"><kbd>/</kbd></label></div>
-  <div class="collection-meta"><span id="result-description" aria-live="polite">读取研究索引…</span><span>按实际来源平台归档</span></div>
+  <div class="collection-top"><div><h2 id="collection-title">全部研究 <span id="result-total">—</span></h2></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索产品、组件或交互…" aria-label="搜索研究"><kbd>/</kbd></label></div>
+  <div class="collection-meta"><span id="result-description" aria-live="polite">读取研究索引…</span></div>
   <div id="error" class="empty" hidden></div><div id="cards" class="cards"></div>
   <div id="empty" class="empty" hidden><span class="empty-icon">＋</span><h3 id="empty-title">还没有匹配的研究</h3><p id="empty-copy">换一个关键词，或查看其他平台。</p><button id="clear-search" class="button">清除搜索</button></div>
  </section>
- <footer><span>REA UI LIBRARY <i>—</i> 只收录 REA 研究产物</span><span>A 观察 · B 声明 · C 推断 · D 独立实现</span></footer>
+ <footer><span>A 观察 · B 声明 · C 推断 · D 独立实现</span></footer>
 </main>
 <div id="compare-tray" class="compare-tray" hidden><div><b id="compare-count">已选择 0 个来源</b><span>比较设计关系、运行条件与迁移边界</span></div><button id="compare-clear" class="text-button">清空</button><button id="compare-open" class="button primary">查看对照 ↗</button></div>
 <dialog id="detail-dialog" class="dialog"><button class="close" data-close aria-label="关闭来源详情">×</button><div id="detail-content"></div></dialog>
-<dialog id="document-dialog" class="dialog document-dialog"><button class="close" data-close aria-label="关闭文档">×</button><span class="eyebrow">SOURCE NOTE</span><h2 id="document-title"></h2><div id="document-path" class="document-path"></div><pre id="document-content"></pre></dialog>
-<dialog id="compare-dialog" class="dialog wide-dialog"><button class="close" data-close aria-label="关闭比较">×</button><span class="eyebrow">SIDE BY SIDE</span><h2>选择适合你的设计语言</h2><p class="muted">比较各自的适用范围，不合并不同来源的规则。</p><div id="compare-content" class="table-scroll"></div></dialog>
+<dialog id="document-dialog" class="dialog document-dialog"><button class="close" data-close aria-label="关闭文档">×</button><h2 id="document-title"></h2><div id="document-path" class="document-path"></div><pre id="document-content"></pre></dialog>
+<dialog id="compare-dialog" class="dialog wide-dialog"><button class="close" data-close aria-label="关闭比较">×</button><h2>选择适合你的设计语言</h2><p class="muted">比较各自的适用范围，不合并不同来源的规则。</p><div id="compare-content" class="table-scroll"></div></dialog>
 <div id="toast" role="status" hidden></div>
 </body></html>
