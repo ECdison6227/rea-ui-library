@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "scope": "Built catalog only",
+  "sourceCount": 6,
+  "publicationRevision": "2f83707c419a4fb7311c009b2832adb0304ae790",
+  "method": "Isolated headless Chromium, deviceScaleFactor=1; unaltered viewport PNGs",
+  "pathTested": "/rea-ui-library/",
+  "originalAppsExecuted": false,
+  "privateEvidenceOpened": false,
+  "captures": [
+    {
+      "path": "assets/readme/catalog-desktop.png",
+      "width": 1440,
+      "height": 1600,
+      "bytes": 205095,
+      "sha256": "ae59fa15e28b5de0f0c26567037997320fa40b53bf870c8c9448b5d5d2991e46",
+      "capturedAt": "2026-10-20T07:30:10.404Z",
+      "description": "All six source cards at the GitHub Pages project subpath; original, illustration and independent-reference thumbnails keep their source classifications.",
+      "classification": "D: catalog UI capture; contained source thumbnails retain their own source classifications."
+    },
+    {
+      "path": "assets/readme/catalog-detail.png",
+      "width": 1100,
+      "height": 1040,
+      "bytes": 100802,
+      "sha256": "dd9eefbbd6752a4681b61819da8b4af79b2420a66e67fb4647c42d758bcad37b",
+      "capturedAt": "2026-10-20T07:30:11.055Z",
+      "description": "Kimi detail dialog: source preview and style roles; no original application was launched.",
+      "classification": "D: catalog UI capture; contained source thumbnails retain their own source classifications."
+    },
+    {
+      "path": "assets/readme/catalog-mobile.png",
+      "width": 390,
+      "height": 960,
+      "bytes": 82158,
+      "sha256": "46ed5a1f7cd493c881510bfdae1905adbc2996ab51664bf7f93531ed82393346",
+      "capturedAt": "2026-10-20T07:30:11.721Z",
+      "description": "Catalog responsive layout at 390 CSS pixels.",
+      "classification": "D: catalog UI capture; contained source thumbnails retain their own source classifications."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewedAt": "2026-10-20T07:32:28.049Z",
+    "method": "Direct view_image inspection of all three final PNGs; GitHub-rendered Markdown reviewed at approximately 900px desktop and 358px mobile content widths.",
+    "result": "Six catalog cards visible; Kimi detail and responsive catalog use only reviewed thumbnails; no private captures, account credentials or original application execution."
+  }
+}

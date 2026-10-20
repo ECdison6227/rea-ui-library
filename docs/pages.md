@@ -29,3 +29,11 @@ Pages只发布目录元数据、技能说明和已审核缩略图。不会把`pl
 - 格式或哈希检查失败：先修复研究/文件锁；工作流不自动接受变更，也不发布失败构建。
 
 本地检查：`npm test`、`npm run build`、`npm run verify`。静态页面必须同时在`/rea-ui-library/`子路径验证，不能只测localhost根路径。
+
+## README截图
+
+README顶部的在线入口直接指向本Pages，仓库About的Website使用同一地址。`assets/readme/`保存目录、风格详情和手机布局的真实截图；它们是目录界面D，所含来源缩略图仍保留各自原版/示意/独立参考的分类。
+
+更新截图：先`npm run build`，再`npm run readme:capture`。工具只启动隔离的本地headless Chromium和构建目录，不打开原App/原网页或私人证据。默认使用已有Chrome，可用`REA_QA_CHROME`指定本机Chromium路径，不安装浏览器。生成器同时检查`/rea-ui-library/`子路径、响应式溢出，并记录PNG尺寸与SHA。
+
+刷新后检查真实像素，再将`assets/readme/manifest.json`的review改为reviewed并记录复核时间；不能把生成成功当作审核完成。静态Pages构建仍只上传dist，不把整个assets或研究目录加入发布范围。
