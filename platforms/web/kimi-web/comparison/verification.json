@@ -1,0 +1,1085 @@
+{
+  "capturedAt": "2026-10-20T13:23:30.351Z",
+  "classification": "D",
+  "method": "Independent Playwright reference / cross-domain checks; does not verify original source behavior",
+  "checks": [
+    {
+      "name": "Empty source submit is disabled",
+      "pass": true,
+      "detail": "No backend action while input is empty"
+    },
+    {
+      "name": "Keyboard mode selection closes menu",
+      "pass": true,
+      "detail": "ArrowDown/Enter chooses the first option"
+    },
+    {
+      "name": "Selected mode label changes",
+      "pass": true,
+      "detail": "Selected option updates the trigger"
+    },
+    {
+      "name": "Tool menu remains open after icon click",
+      "pass": true,
+      "detail": "Changing the plus SVG must not trigger outside-click dismissal"
+    },
+    {
+      "name": "Escape closes the tool menu and restores focus",
+      "pass": true,
+      "detail": "No draft loss"
+    },
+    {
+      "name": "Non-empty source submit is enabled",
+      "pass": true,
+      "detail": "Button state follows trimmed input"
+    },
+    {
+      "name": "Modal is exposed with dialog semantics",
+      "pass": true,
+      "detail": "Dialog has aria-modal and accessible name"
+    },
+    {
+      "name": "Modal tab trap remains inside dialog",
+      "pass": true,
+      "detail": "First/last focus wraps"
+    },
+    {
+      "name": "Dismiss keeps draft",
+      "pass": true,
+      "detail": "Closing the dialog preserves input"
+    },
+    {
+      "name": "Dark preference applies source surface colors",
+      "pass": true,
+      "detail": "Dark canvas #121212"
+    },
+    {
+      "name": "Narrow reference does not overflow the page",
+      "pass": true,
+      "detail": "Shortcut row scrolls inside its own bounds"
+    },
+    {
+      "name": "Narrow sidebar opens over content",
+      "pass": true,
+      "detail": "Sidebar is 240 CSS px"
+    },
+    {
+      "name": "Empty collection cannot be created",
+      "pass": true,
+      "detail": "Validation precedes persistence"
+    },
+    {
+      "name": "Collection updates the context trigger",
+      "pass": true,
+      "detail": "Context persists locally"
+    },
+    {
+      "name": "Cross-domain create adds three cards",
+      "pass": true,
+      "detail": "No source AI or authentication needed"
+    },
+    {
+      "name": "Filter reflects persisted status",
+      "pass": true,
+      "detail": "Exactly one finished item"
+    },
+    {
+      "name": "Reading items survive reload",
+      "pass": true,
+      "detail": "localStorage persistence verified"
+    },
+    {
+      "name": "Collection survives reload",
+      "pass": true,
+      "detail": "Collection context is retained"
+    },
+    {
+      "name": "Transfer mobile cards fit width",
+      "pass": true,
+      "detail": "Single-column reading cards"
+    },
+    {
+      "name": "Reduced-motion reference disables substantial animation",
+      "pass": true,
+      "detail": "Independent D accessibility adaptation"
+    },
+    {
+      "name": "No browser script errors",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "Gallery filters the independent content slice",
+      "pass": true,
+      "detail": "Category tabs preserve reusable browsing behavior"
+    }
+  ],
+  "captures": [
+    {
+      "id": "reference-home",
+      "subject": "reference",
+      "startedAt": "2026-10-20T13:23:21.054Z",
+      "completedAt": "2026-10-20T13:23:22.025Z",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "metrics": {
+        ".main": {
+          "x": 240,
+          "y": 6,
+          "width": 1194,
+          "height": 988,
+          "hidden": false
+        },
+        ".sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 1000,
+          "hidden": false
+        },
+        ".composer": {
+          "x": 445.5,
+          "y": 420,
+          "width": 768,
+          "height": 114,
+          "hidden": false
+        },
+        ".underlay": {
+          "x": 465.5,
+          "y": 498,
+          "width": 728,
+          "height": 84,
+          "hidden": false
+        },
+        ".shortcuts": {
+          "x": 465.5,
+          "y": 614,
+          "width": 728,
+          "height": 36,
+          "hidden": false
+        },
+        ".wordmark": {
+          "x": 629.5,
+          "y": 306,
+          "width": 400,
+          "height": 82,
+          "hidden": false
+        },
+        ".mode-menu": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        ".tools-menu": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        ".modal": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false
+        },
+        ".reading-grid": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false
+        }
+      }
+    },
+    {
+      "id": "reference-mode",
+      "subject": "reference",
+      "startedAt": "2026-10-20T13:23:22.662Z",
+      "completedAt": "2026-10-20T13:23:22.729Z",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "metrics": {
+        ".main": {
+          "x": 240,
+          "y": 6,
+          "width": 1194,
+          "height": 988,
+          "hidden": false
+        },
+        ".sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 1000,
+          "hidden": false
+        },
+        ".composer": {
+          "x": 445.5,
+          "y": 420,
+          "width": 768,
+          "height": 114,
+          "hidden": false
+        },
+        ".underlay": {
+          "x": 465.5,
+          "y": 498,
+          "width": 728,
+          "height": 84,
+          "hidden": false
+        },
+        ".shortcuts": {
+          "x": 465.5,
+          "y": 614,
+          "width": 728,
+          "height": 36,
+          "hidden": false
+        },
+        ".wordmark": {
+          "x": 629.5,
+          "y": 306,
+          "width": 400,
+          "height": 82,
+          "hidden": false
+        },
+        ".mode-menu": {
+          "x": 870.5,
+          "y": 528,
+          "width": 290,
+          "height": 312.5,
+          "hidden": false
+        },
+        ".tools-menu": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        ".modal": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false
+        },
+        ".reading-grid": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false
+        }
+      }
+    },
+    {
+      "id": "reference-tools",
+      "subject": "reference",
+      "startedAt": "2026-10-20T13:23:23.137Z",
+      "completedAt": "2026-10-20T13:23:23.217Z",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "metrics": {
+        ".main": {
+          "x": 240,
+          "y": 6,
+          "width": 1194,
+          "height": 988,
+          "hidden": false
+        },
+        ".sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 1000,
+          "hidden": false
+        },
+        ".composer": {
+          "x": 445.5,
+          "y": 420,
+          "width": 768,
+          "height": 114,
+          "hidden": false
+        },
+        ".underlay": {
+          "x": 465.5,
+          "y": 498,
+          "width": 728,
+          "height": 84,
+          "hidden": false
+        },
+        ".shortcuts": {
+          "x": 465.5,
+          "y": 614,
+          "width": 728,
+          "height": 36,
+          "hidden": false
+        },
+        ".wordmark": {
+          "x": 629.5,
+          "y": 306,
+          "width": 400,
+          "height": 82,
+          "hidden": false
+        },
+        ".mode-menu": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        ".tools-menu": {
+          "x": 445.5,
+          "y": 542,
+          "width": 768,
+          "height": 198,
+          "hidden": false
+        },
+        ".modal": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false
+        },
+        ".reading-grid": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false
+        }
+      }
+    },
+    {
+      "id": "reference-modal",
+      "subject": "reference",
+      "startedAt": "2026-10-20T13:23:23.680Z",
+      "completedAt": "2026-10-20T13:23:23.736Z",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "metrics": {
+        ".main": {
+          "x": 240,
+          "y": 6,
+          "width": 1194,
+          "height": 988,
+          "hidden": false
+        },
+        ".sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 1000,
+          "hidden": false
+        },
+        ".composer": {
+          "x": 445.5,
+          "y": 420,
+          "width": 768,
+          "height": 114,
+          "hidden": false
+        },
+        ".underlay": {
+          "x": 465.5,
+          "y": 498,
+          "width": 728,
+          "height": 84,
+          "hidden": false
+        },
+        ".shortcuts": {
+          "x": 465.5,
+          "y": 614,
+          "width": 728,
+          "height": 36,
+          "hidden": false
+        },
+        ".wordmark": {
+          "x": 629.5,
+          "y": 306,
+          "width": 400,
+          "height": 82,
+          "hidden": false
+        },
+        ".mode-menu": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        ".tools-menu": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        ".modal": {
+          "x": 386.75,
+          "y": 245,
+          "width": 666.5,
+          "height": 510,
+          "hidden": false
+        },
+        ".reading-grid": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false
+        }
+      }
+    },
+    {
+      "id": "reference-collapsed",
+      "subject": "reference",
+      "startedAt": "2026-10-20T13:23:24.795Z",
+      "completedAt": "2026-10-20T13:23:24.861Z",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "metrics": {
+        ".main": {
+          "x": 6,
+          "y": 6,
+          "width": 1428,
+          "height": 988,
+          "hidden": false
+        },
+        ".sidebar": {
+          "x": -240,
+          "y": 0,
+          "width": 240,
+          "height": 1000,
+          "hidden": false
+        },
+        ".composer": {
+          "x": 328.5,
+          "y": 420,
+          "width": 768,
+          "height": 114,
+          "hidden": false
+        },
+        ".underlay": {
+          "x": 348.5,
+          "y": 498,
+          "width": 728,
+          "height": 84,
+          "hidden": false
+        },
+        ".shortcuts": {
+          "x": 348.5,
+          "y": 614,
+          "width": 728,
+          "height": 36,
+          "hidden": false
+        },
+        ".wordmark": {
+          "x": 512.5,
+          "y": 306,
+          "width": 400,
+          "height": 82,
+          "hidden": false
+        },
+        ".mode-menu": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        ".tools-menu": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        ".modal": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false
+        },
+        ".reading-grid": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false
+        }
+      }
+    },
+    {
+      "id": "reference-dark",
+      "subject": "reference",
+      "startedAt": "2026-10-20T13:23:25.227Z",
+      "completedAt": "2026-10-20T13:23:25.286Z",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "metrics": {
+        ".main": {
+          "x": 6,
+          "y": 6,
+          "width": 1428,
+          "height": 988,
+          "hidden": false
+        },
+        ".sidebar": {
+          "x": -240,
+          "y": 0,
+          "width": 240,
+          "height": 1000,
+          "hidden": false
+        },
+        ".composer": {
+          "x": 328.5,
+          "y": 420,
+          "width": 768,
+          "height": 114,
+          "hidden": false
+        },
+        ".underlay": {
+          "x": 348.5,
+          "y": 498,
+          "width": 728,
+          "height": 84,
+          "hidden": false
+        },
+        ".shortcuts": {
+          "x": 348.5,
+          "y": 614,
+          "width": 728,
+          "height": 36,
+          "hidden": false
+        },
+        ".wordmark": {
+          "x": 512.5,
+          "y": 306,
+          "width": 400,
+          "height": 82,
+          "hidden": false
+        },
+        ".mode-menu": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        ".tools-menu": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        ".modal": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false
+        },
+        ".reading-grid": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false
+        }
+      }
+    },
+    {
+      "id": "reference-mobile",
+      "subject": "reference",
+      "startedAt": "2026-10-20T13:23:25.871Z",
+      "completedAt": "2026-10-20T13:23:25.929Z",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "metrics": {
+        ".main": {
+          "x": 6,
+          "y": 6,
+          "width": 378,
+          "height": 832,
+          "hidden": false
+        },
+        ".sidebar": {
+          "x": -240,
+          "y": 0,
+          "width": 240,
+          "height": 844,
+          "hidden": false
+        },
+        ".composer": {
+          "x": 19,
+          "y": 354,
+          "width": 337,
+          "height": 114,
+          "hidden": false
+        },
+        ".underlay": {
+          "x": 39,
+          "y": 432,
+          "width": 297,
+          "height": 84,
+          "hidden": false
+        },
+        ".shortcuts": {
+          "x": 39,
+          "y": 540,
+          "width": 297,
+          "height": 36,
+          "hidden": false
+        },
+        ".wordmark": {
+          "x": 19,
+          "y": 252.921875,
+          "width": 337,
+          "height": 69.078125,
+          "hidden": false
+        },
+        ".mode-menu": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        ".tools-menu": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        ".modal": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false
+        },
+        ".reading-grid": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false
+        }
+      }
+    },
+    {
+      "id": "reference-mobile-navigation",
+      "subject": "reference",
+      "startedAt": "2026-10-20T13:23:26.666Z",
+      "completedAt": "2026-10-20T13:23:26.696Z",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "metrics": {
+        ".main": {
+          "x": 6,
+          "y": 6,
+          "width": 378,
+          "height": 832,
+          "hidden": false
+        },
+        ".sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 844,
+          "hidden": false
+        },
+        ".composer": {
+          "x": 19,
+          "y": 354,
+          "width": 337,
+          "height": 114,
+          "hidden": false
+        },
+        ".underlay": {
+          "x": 39,
+          "y": 432,
+          "width": 297,
+          "height": 84,
+          "hidden": false
+        },
+        ".shortcuts": {
+          "x": 39,
+          "y": 540,
+          "width": 297,
+          "height": 36,
+          "hidden": false
+        },
+        ".wordmark": {
+          "x": 19,
+          "y": 252.921875,
+          "width": 337,
+          "height": 69.078125,
+          "hidden": false
+        },
+        ".mode-menu": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        ".tools-menu": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        ".modal": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false
+        },
+        ".reading-grid": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false
+        }
+      }
+    },
+    {
+      "id": "transfer-empty",
+      "subject": "transfer",
+      "startedAt": "2026-10-20T13:23:27.775Z",
+      "completedAt": "2026-10-20T13:23:27.840Z",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "metrics": {
+        ".main": {
+          "x": 240,
+          "y": 6,
+          "width": 1194,
+          "height": 988,
+          "hidden": false
+        },
+        ".sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 1000,
+          "hidden": false
+        },
+        ".composer": {
+          "x": 445.5,
+          "y": 420,
+          "width": 768,
+          "height": 114,
+          "hidden": false
+        },
+        ".underlay": {
+          "x": 465.5,
+          "y": 498,
+          "width": 728,
+          "height": 84,
+          "hidden": false
+        },
+        ".shortcuts": {
+          "x": 465.5,
+          "y": 614,
+          "width": 728,
+          "height": 36,
+          "hidden": false
+        },
+        ".wordmark": {
+          "x": 652.375,
+          "y": 306,
+          "width": 354.234375,
+          "height": 82,
+          "hidden": false
+        },
+        ".mode-menu": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        ".tools-menu": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        ".modal": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false
+        },
+        ".reading-grid": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false
+        }
+      }
+    },
+    {
+      "id": "transfer-library",
+      "subject": "transfer",
+      "startedAt": "2026-10-20T13:23:28.790Z",
+      "completedAt": "2026-10-20T13:23:28.861Z",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "metrics": {
+        ".main": {
+          "x": 240,
+          "y": 6,
+          "width": 1194,
+          "height": 988,
+          "hidden": false
+        },
+        ".sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 1000,
+          "hidden": false
+        },
+        ".composer": {
+          "x": 445.5,
+          "y": 269,
+          "width": 768,
+          "height": 114,
+          "hidden": false
+        },
+        ".underlay": {
+          "x": 465.5,
+          "y": 347,
+          "width": 728,
+          "height": 84,
+          "hidden": false
+        },
+        ".shortcuts": {
+          "x": 465.5,
+          "y": 463,
+          "width": 728,
+          "height": 36,
+          "hidden": false
+        },
+        ".wordmark": {
+          "x": 652.375,
+          "y": 155,
+          "width": 354.234375,
+          "height": 82,
+          "hidden": false
+        },
+        ".mode-menu": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        ".tools-menu": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        ".modal": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false
+        },
+        ".reading-grid": {
+          "x": 349.5,
+          "y": 645.09375,
+          "width": 960,
+          "height": 160,
+          "hidden": false
+        }
+      }
+    },
+    {
+      "id": "transfer-mobile",
+      "subject": "transfer",
+      "startedAt": "2026-10-20T13:23:29.296Z",
+      "completedAt": "2026-10-20T13:23:29.339Z",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "metrics": {
+        ".main": {
+          "x": 6,
+          "y": 6,
+          "width": 378,
+          "height": 832,
+          "hidden": false
+        },
+        ".sidebar": {
+          "x": -240,
+          "y": 0,
+          "width": 240,
+          "height": 844,
+          "hidden": false
+        },
+        ".composer": {
+          "x": 19,
+          "y": 209,
+          "width": 337,
+          "height": 114,
+          "hidden": false
+        },
+        ".underlay": {
+          "x": 39,
+          "y": 287,
+          "width": 297,
+          "height": 84,
+          "hidden": false
+        },
+        ".shortcuts": {
+          "x": 39,
+          "y": 395,
+          "width": 297,
+          "height": 36,
+          "hidden": false
+        },
+        ".wordmark": {
+          "x": 19.203125,
+          "y": 108,
+          "width": 336.578125,
+          "height": 69,
+          "hidden": false
+        },
+        ".mode-menu": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        ".tools-menu": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        ".modal": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false
+        },
+        ".reading-grid": {
+          "x": 19,
+          "y": 565.09375,
+          "width": 337,
+          "height": 512,
+          "hidden": false
+        }
+      }
+    },
+    {
+      "id": "components-sheet",
+      "subject": "reference",
+      "startedAt": "2026-10-20T13:23:29.788Z",
+      "completedAt": "2026-10-20T13:23:29.855Z",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "metrics": {
+        ".main": null,
+        ".sidebar": null,
+        ".composer": {
+          "x": 189,
+          "y": 875.875,
+          "width": 1062,
+          "height": 114,
+          "hidden": false
+        },
+        ".underlay": {
+          "x": 209,
+          "y": 953.875,
+          "width": 728,
+          "height": 84,
+          "hidden": false
+        },
+        ".shortcuts": null,
+        ".wordmark": null,
+        ".mode-menu": null,
+        ".tools-menu": null,
+        ".modal": null,
+        ".reading-grid": null
+      }
+    },
+    {
+      "id": "gallery-reference",
+      "subject": "transfer",
+      "startedAt": "2026-10-20T13:23:30.235Z",
+      "completedAt": "2026-10-20T13:23:30.294Z",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "metrics": {
+        ".main": {
+          "x": 6,
+          "y": 6,
+          "width": 1428,
+          "height": 988,
+          "hidden": false
+        },
+        ".sidebar": null,
+        ".composer": null,
+        ".underlay": null,
+        ".shortcuts": null,
+        ".wordmark": null,
+        ".mode-menu": null,
+        ".tools-menu": null,
+        ".modal": null,
+        ".reading-grid": null
+      }
+    }
+  ],
+  "errors": [],
+  "pass": true
+}

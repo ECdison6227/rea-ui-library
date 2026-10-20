@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kimi design reference</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="navigation-mask" hidden></div>
+<aside class="sidebar" aria-label="Workspace navigation">
+  <div class="sidebar-header"><a class="brand" href="#" aria-label="Home"></a><button class="icon-button collapse" aria-label="Collapse sidebar"></button></div>
+  <button class="new-item"><span></span><kbd>Ctrl K</kbd></button>
+  <nav class="primary-nav" aria-label="Primary navigation"></nav>
+  <section class="side-section"><button class="section-toggle" aria-expanded="true">Projects</button><button class="new-project"></button></section>
+  <section class="side-section history"><span class="section-title"></span><div class="history-items"></div></section>
+  <div class="account-menu" role="menu" hidden></div>
+  <div class="account"><button class="account-trigger" aria-haspopup="menu" aria-expanded="false"><span class="avatar"></span><span class="account-label"></span></button><button class="icon-button app-action" aria-label="Get App"></button></div>
+</aside>
+<main class="main">
+  <header class="topbar"><button class="icon-button expand" aria-label="Expand sidebar" hidden></button><div class="header-actions"><button class="secondary top-secondary"></button><button class="primary top-primary"></button></div></header>
+  <div class="home">
+    <div class="home-top"><div class="wordmark"></div></div>
+    <section class="composer-stage" aria-label="Quick entry">
+      <div class="composer">
+        <div class="editor-input"><textarea rows="2" aria-label="Add an item" spellcheck="true"></textarea></div>
+        <div class="editor-actions"><button class="icon-button tools-trigger" aria-label="Upload files or use more tools" aria-haspopup="menu" aria-expanded="false"></button><div class="editor-right"><button class="mode-trigger" aria-haspopup="menu" aria-expanded="false"><span class="mode-label"></span> <span class="muted">High</span></button><button class="send" aria-label="Submit" disabled></button></div></div>
+        <div class="mode-menu floating-menu" role="menu" hidden></div>
+      </div>
+      <div class="underlay"><button class="project-trigger"></button><button class="plugin-trigger"></button></div>
+      <div class="shortcuts" aria-label="Quick actions"></div>
+      <div class="tools-menu" role="menu" hidden></div>
+    </section>
+    <section class="reading-list" aria-label="Reading list" hidden><div class="list-heading"><h1>Your reading list</h1><button class="secondary clear-filter">All items</button></div><div class="filter-tabs" role="tablist" aria-label="Reading status"></div><div class="reading-grid"></div></section>
+    <footer class="home-footer"><div class="footer-note"></div><button class="explore"></button></footer>
+  </div>
+</main>
+<div class="modal-mask" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1"><div class="modal-header"><span id="modal-title"></span><button class="icon-button close-modal" aria-label="Close dialog">×</button></div><div class="modal-body"></div></section></div>
+<div class="toast" role="status" aria-live="polite" hidden></div>
+<script type="module" src="app.js"></script>
+</body></html>

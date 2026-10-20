@@ -1,0 +1,1122 @@
+{
+  "formatVersion": 1,
+  "kind": "components",
+  "items": [
+    {
+      "id": "cmp-navigation",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-desktop-base",
+        "obs-sidebar-collapsed",
+        "obs-mobile-navigation",
+        "decl-source-css"
+      ],
+      "unknowns": [
+        "登录后历史列表、项目树及完整触摸行为未观察。"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "保留240px宽、导航密度和弱选中；窄屏使用覆盖导航。条目替换为目标业务。"
+      },
+      "name": "WorkspaceNavigation",
+      "slots": [
+        "brand",
+        "primaryAction",
+        "navigationItems",
+        "sections",
+        "history",
+        "account"
+      ],
+      "tokenRefs": [
+        "size-sidebar-width",
+        "type-control",
+        "color-ground",
+        "size-row-radius"
+      ],
+      "states": [
+        {
+          "id": "expanded",
+          "appearance": "240px暖白侧栏；每行36px，左右8px外距；主动作42px。",
+          "evidenceRefs": [
+            "obs-desktop-base"
+          ],
+          "classification": "A"
+        },
+        {
+          "id": "collapsed",
+          "appearance": "侧栏移出左边，主画布左距变6px。",
+          "evidenceRefs": [
+            "obs-sidebar-collapsed"
+          ],
+          "classification": "A"
+        },
+        {
+          "id": "narrow-open",
+          "appearance": "390px视口时侧栏覆盖主内容。",
+          "evidenceRefs": [
+            "obs-mobile-navigation"
+          ],
+          "classification": "A"
+        },
+        {
+          "id": "focus-declared",
+          "appearance": "1px inset 主色焦点描边，轻灰底。",
+          "evidenceRefs": [
+            "decl-source-css"
+          ],
+          "classification": "B"
+        }
+      ],
+      "eventsClassification": "D",
+      "platform": "Web: Windows Chrome, CSS px, DPR 1; native font rendering varies by OS",
+      "geometry": {
+        "width": 240,
+        "rowHeight": 36,
+        "rowRadius": 10,
+        "newActionHeight": 42
+      },
+      "events": [
+        "toggleSidebar",
+        "activateItem",
+        "toggleSection"
+      ],
+      "longText": "单行省略；保持图标盒宽度"
+    },
+    {
+      "id": "cmp-composer",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-desktop-base",
+        "obs-input-filled",
+        "obs-tool-menu",
+        "obs-dark-preference"
+      ],
+      "unknowns": [
+        "真实Stop点击、网络错误、晚到结果和后端取消语义未测。"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "目标用textarea替代Lexical contenteditable；中文输入法组合期不提交；Shift+Enter换行；加载和错误按目标业务设计。"
+      },
+      "name": "LayeredComposer",
+      "slots": [
+        "editor",
+        "leadingTools",
+        "modeSelector",
+        "submit",
+        "contextUnderlay"
+      ],
+      "tokenRefs": [
+        "size-composer-width",
+        "size-composer-height",
+        "size-composer-radius",
+        "type-input",
+        "shadow-composer"
+      ],
+      "states": [
+        {
+          "id": "empty",
+          "appearance": "114px高白色容器；占位符16/24，发送按钮黑色15% alpha。",
+          "evidenceRefs": [
+            "obs-desktop-base"
+          ],
+          "classification": "A"
+        },
+        {
+          "id": "filled",
+          "appearance": "有文字时发送按钮黑色90%左右，白箭头。",
+          "evidenceRefs": [
+            "obs-input-filled"
+          ],
+          "classification": "A"
+        },
+        {
+          "id": "focus",
+          "appearance": "更深边框、叠加0 4px 12px阴影。",
+          "evidenceRefs": [
+            "obs-input-filled",
+            "decl-source-css"
+          ],
+          "classification": "A"
+        },
+        {
+          "id": "dark",
+          "appearance": "容器#1f1f1f；发送使用白84% alpha。",
+          "evidenceRefs": [
+            "obs-dark-preference"
+          ],
+          "classification": "A"
+        },
+        {
+          "id": "loading-target",
+          "appearance": "目标可显示36px停止/加载按钮，原站未证实。",
+          "evidenceRefs": [
+            "impl-reference"
+          ],
+          "classification": "D"
+        }
+      ],
+      "eventsClassification": "D",
+      "platform": "Web: Windows Chrome, CSS px, DPR 1; native font rendering varies by OS",
+      "geometry": {
+        "maxWidth": 768,
+        "initialHeight": 114,
+        "inputPadding": "12px 16px 0",
+        "inputMinHeight": 48,
+        "maxEditorHeight": 170,
+        "actionRowHeight": 36,
+        "actionMarginY": 8
+      },
+      "events": [
+        "draftChange",
+        "openTools",
+        "openMode",
+        "submit"
+      ]
+    },
+    {
+      "id": "cmp-submit",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-desktop-base",
+        "obs-input-filled",
+        "obs-dark-preference",
+        "auth-observation-chat-generating"
+      ],
+      "unknowns": [
+        "停止的请求取消语义未验证。"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "用本包的语义角色和接口实施；数值的来源等级由记录 classification 表示。"
+      },
+      "name": "CircularPrimaryAction",
+      "slots": [
+        "icon"
+      ],
+      "tokenRefs": [
+        "size-control-height",
+        "color-text-primary"
+      ],
+      "states": [
+        {
+          "id": "disabled",
+          "appearance": "36×36圆形、浅灰底、白箭头。",
+          "evidenceRefs": [
+            "obs-desktop-base"
+          ],
+          "classification": "A"
+        },
+        {
+          "id": "enabled",
+          "appearance": "黑90% alpha底，箭头28px盒。",
+          "evidenceRefs": [
+            "obs-input-filled"
+          ],
+          "classification": "A"
+        },
+        {
+          "id": "dark-enabled",
+          "appearance": "白84% alpha底，深色箭头。",
+          "evidenceRefs": [
+            "obs-dark-preference"
+          ],
+          "classification": "A"
+        }
+      ],
+      "eventsClassification": "D",
+      "platform": "Web: Windows Chrome, CSS px, DPR 1; native font rendering varies by OS",
+      "events": [
+        "activate"
+      ]
+    },
+    {
+      "id": "cmp-context",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-desktop-base",
+        "obs-mobile-home",
+        "auth-observation-project-empty"
+      ],
+      "unknowns": [
+        "跨会话项目选中持久化未单独验证。"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "用本包的语义角色和接口实施；数值的来源等级由记录 classification 表示。"
+      },
+      "name": "ContextUnderlay",
+      "slots": [
+        "project",
+        "plugins"
+      ],
+      "tokenRefs": [
+        "size-underlay-inset",
+        "size-underlay-overlap",
+        "size-composer-radius",
+        "color-underlay"
+      ],
+      "states": [
+        {
+          "id": "default",
+          "appearance": "宽度比输入小40px；margin-top:-36px；padding:42px 8px 6px。",
+          "evidenceRefs": [
+            "obs-desktop-base"
+          ],
+          "classification": "A"
+        },
+        {
+          "id": "tools-open",
+          "appearance": "工具菜单占据输入下方空间，底托不可见。",
+          "evidenceRefs": [
+            "obs-tool-menu"
+          ],
+          "classification": "A"
+        }
+      ],
+      "eventsClassification": "D",
+      "platform": "Web: Windows Chrome, CSS px, DPR 1; native font rendering varies by OS",
+      "geometry": {
+        "maxWidth": 728,
+        "minHeight": 84,
+        "radius": "0 0 24px 24px"
+      },
+      "events": [
+        "selectContext",
+        "openSecondaryTool"
+      ],
+      "longText": "限制单行；目标超长集合名省略"
+    },
+    {
+      "id": "cmp-shortcut",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-desktop-base",
+        "obs-mobile-home",
+        "decl-source-css"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "用本包的语义角色和接口实施；数值的来源等级由记录 classification 表示。"
+      },
+      "name": "IconLabelPill",
+      "slots": [
+        "icon",
+        "label"
+      ],
+      "tokenRefs": [
+        "type-control",
+        "size-control-height",
+        "size-icon-size",
+        "color-text-secondary",
+        "color-separator"
+      ],
+      "states": [
+        {
+          "id": "default",
+          "appearance": "36高，20圆角，0.5px描边，18px图标。",
+          "evidenceRefs": [
+            "obs-desktop-base"
+          ],
+          "classification": "A"
+        },
+        {
+          "id": "hover-declared",
+          "appearance": "填充Fills-F1；文字变Primary。",
+          "evidenceRefs": [
+            "decl-source-css"
+          ],
+          "classification": "B"
+        },
+        {
+          "id": "pressed-declared",
+          "appearance": "Fills-F1-active。",
+          "evidenceRefs": [
+            "decl-source-css"
+          ],
+          "classification": "B"
+        },
+        {
+          "id": "focus-declared",
+          "appearance": "2px outline offset2或父链接内描边。",
+          "evidenceRefs": [
+            "decl-source-css"
+          ],
+          "classification": "B"
+        },
+        {
+          "id": "disabled-declared",
+          "appearance": "Quaternary文字，cursor:not-allowed。",
+          "evidenceRefs": [
+            "decl-source-css"
+          ],
+          "classification": "B"
+        }
+      ],
+      "eventsClassification": "D",
+      "platform": "Web: Windows Chrome, CSS px, DPR 1; native font rendering varies by OS",
+      "geometry": {
+        "height": 36,
+        "radius": 20,
+        "padding": "0 12px 0 10px",
+        "gap": 4,
+        "borderWidth": 0.5
+      },
+      "events": [
+        "activate"
+      ],
+      "adaptation": "窄屏水平滚动，不把所有标签强行换行。"
+    },
+    {
+      "id": "cmp-option-menu",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-mode-menu",
+        "obs-effort-menu",
+        "obs-menu-dismissed",
+        "decl-source-css"
+      ],
+      "unknowns": [
+        "完整原版键盘选项遍历、点击模式后的跨会话持久化。"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "参考使用按钮和menuitemradio，添加方向键、Enter和返回焦点；优先语义可用。子选项用内嵌区代替侧向浮层。"
+      },
+      "name": "DescribedOptionMenu",
+      "slots": [
+        "guide",
+        "options",
+        "check",
+        "divider",
+        "secondaryChoice"
+      ],
+      "tokenRefs": [
+        "size-menu-radius",
+        "size-row-radius",
+        "color-popover",
+        "type-control",
+        "type-caption",
+        "shadow-popover"
+      ],
+      "states": [
+        {
+          "id": "open",
+          "appearance": "290px宽，8px内边距，16圆角，标题14/20，说明12/18。",
+          "evidenceRefs": [
+            "obs-mode-menu"
+          ],
+          "classification": "A"
+        },
+        {
+          "id": "selected",
+          "appearance": "所选行右侧蓝勾；文字不使用大面积蓝色背景。",
+          "evidenceRefs": [
+            "obs-mode-menu"
+          ],
+          "classification": "A"
+        },
+        {
+          "id": "submenu",
+          "appearance": "hover Thinking effort 显示Standard/High子菜单。",
+          "evidenceRefs": [
+            "obs-effort-menu"
+          ],
+          "classification": "A"
+        },
+        {
+          "id": "escape-submenu",
+          "appearance": "第一次Esc关闭子菜单，父菜单仍保留。",
+          "evidenceRefs": [
+            "obs-menu-dismissed"
+          ],
+          "classification": "A"
+        }
+      ],
+      "eventsClassification": "D",
+      "platform": "Web: Windows Chrome, CSS px, DPR 1; native font rendering varies by OS",
+      "geometry": {
+        "width": 290,
+        "padding": 8,
+        "itemPadding": 8,
+        "itemRadius": 10,
+        "descriptionGap": 4
+      },
+      "events": [
+        "chooseOption",
+        "openSubmenu",
+        "dismiss"
+      ]
+    },
+    {
+      "id": "cmp-tools",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-tool-menu",
+        "obs-tools-dismissed"
+      ],
+      "unknowns": [
+        "上传、连接器授权和子面板内部状态。"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "用本包的语义角色和接口实施；数值的来源等级由记录 classification 表示。"
+      },
+      "name": "WideToolPanel",
+      "slots": [
+        "toolRows",
+        "icons",
+        "descriptions"
+      ],
+      "tokenRefs": [
+        "size-composer-width",
+        "size-composer-radius",
+        "type-control",
+        "color-separator"
+      ],
+      "states": [
+        {
+          "id": "open",
+          "appearance": "输入下方8px，宽度与768px输入框一致；行标题与描述横排。",
+          "evidenceRefs": [
+            "obs-tool-menu"
+          ],
+          "classification": "A"
+        },
+        {
+          "id": "closed",
+          "appearance": "Esc收起，底托和快捷入口恢复。",
+          "evidenceRefs": [
+            "obs-tools-dismissed"
+          ],
+          "classification": "A"
+        }
+      ],
+      "eventsClassification": "D",
+      "platform": "Web: Windows Chrome, CSS px, DPR 1; native font rendering varies by OS",
+      "geometry": {
+        "width": "matches composer",
+        "gapFromComposer": 8,
+        "padding": 8,
+        "rowMinHeight": 36,
+        "radius": 24
+      },
+      "events": [
+        "chooseTool",
+        "dismiss"
+      ]
+    },
+    {
+      "id": "cmp-modal",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-project-gate",
+        "obs-login-dismissed"
+      ],
+      "unknowns": [
+        "原版焦点陷阱、遮罩关闭、表单错误、验证码与窄屏原版登录布局。"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "参考加显式关闭按钮、aria-modal、Tab焦点约束和遮罩关闭。登录QR使用不可扫描占位；迁移换为集合表单。"
+      },
+      "name": "FramedModal",
+      "slots": [
+        "header",
+        "brand",
+        "body",
+        "columns",
+        "fields",
+        "footer"
+      ],
+      "tokenRefs": [
+        "size-modal-radius",
+        "size-menu-radius",
+        "size-form-height",
+        "size-form-radius",
+        "color-mask",
+        "type-input"
+      ],
+      "states": [
+        {
+          "id": "open",
+          "appearance": "60%黑遮罩；666.5×508px居中外壳；72px顶栏；白色内容卡。",
+          "evidenceRefs": [
+            "obs-project-gate"
+          ],
+          "classification": "A"
+        },
+        {
+          "id": "disabled-form",
+          "appearance": "44px表单；未填写时登录按钮灰色。",
+          "evidenceRefs": [
+            "obs-project-gate"
+          ],
+          "classification": "A"
+        },
+        {
+          "id": "dismissed",
+          "appearance": "Esc关闭；输入草稿保留。",
+          "evidenceRefs": [
+            "obs-login-dismissed"
+          ],
+          "classification": "A"
+        }
+      ],
+      "eventsClassification": "D",
+      "platform": "Web: Windows Chrome, CSS px, DPR 1; native font rendering varies by OS",
+      "geometry": {
+        "observedWidth": 666.5,
+        "observedHeight": 508,
+        "headerHeight": 72,
+        "bodyPadding": "40px 46px 36px",
+        "columnGap": 48,
+        "divider": 0.5
+      },
+      "events": [
+        "dismiss",
+        "submitForm"
+      ]
+    },
+    {
+      "id": "cmp-account-menu",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-desktop-base",
+        "decl-source-css"
+      ],
+      "unknowns": [
+        "首次进入自动展开条件与跨会话策略。"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "用本包的语义角色和接口实施；数值的来源等级由记录 classification 表示。"
+      },
+      "name": "AccountActionMenu",
+      "slots": [
+        "rows",
+        "icons",
+        "trailingChevron"
+      ],
+      "tokenRefs": [
+        "size-menu-radius",
+        "type-control",
+        "shadow-popover"
+      ],
+      "states": [
+        {
+          "id": "open",
+          "appearance": "侧栏底部上方，224px宽，8px内距，4个36px菜单行。",
+          "evidenceRefs": [
+            "obs-desktop-base"
+          ],
+          "classification": "A"
+        }
+      ],
+      "eventsClassification": "D",
+      "platform": "Web: Windows Chrome, CSS px, DPR 1; native font rendering varies by OS",
+      "events": [
+        "chooseAccountAction",
+        "dismiss"
+      ]
+    },
+    {
+      "id": "cmp-gallery",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-inspiration-settled",
+        "obs-inspiration-hover"
+      ],
+      "unknowns": [
+        "详情和真实Remix结果、全触摸替代交互。"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "画廊参考使用独立阅读封面；保留圆角、列间距与hover动作。目标按容器宽选择列数，不把观测263px当固定常量。"
+      },
+      "name": "MediaCard",
+      "slots": [
+        "media",
+        "typeBadge",
+        "hoverAction"
+      ],
+      "tokenRefs": [
+        "size-menu-radius",
+        "size-gallery-gap"
+      ],
+      "states": [
+        {
+          "id": "default",
+          "appearance": "16px圆角，轻描边，媒体原比例；左上32px类型圆徽。",
+          "evidenceRefs": [
+            "obs-inspiration-settled"
+          ],
+          "classification": "A"
+        },
+        {
+          "id": "hover",
+          "appearance": "左上类型名扩展、右上Remix按钮出现。",
+          "evidenceRefs": [
+            "obs-inspiration-hover"
+          ],
+          "classification": "A"
+        }
+      ],
+      "eventsClassification": "D",
+      "platform": "Web: Windows Chrome, CSS px, DPR 1; native font rendering varies by OS",
+      "geometry": {
+        "radius": 16,
+        "gap": 16,
+        "observedColumnWidth": 263,
+        "badgeSize": 32
+      },
+      "events": [
+        "openItem",
+        "secondaryAction"
+      ]
+    },
+    {
+      "id": "cmp-category-tab",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-inspiration-settled",
+        "obs-inspiration-design"
+      ],
+      "unknowns": [
+        "真实浏览器后退是否保持瀑布流滚动位置。"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "用本包的语义角色和接口实施；数值的来源等级由记录 classification 表示。"
+      },
+      "name": "PillCategoryTab",
+      "slots": [
+        "label"
+      ],
+      "tokenRefs": [
+        "size-control-height",
+        "type-control",
+        "color-fill-hover"
+      ],
+      "states": [
+        {
+          "id": "default",
+          "appearance": "透明底，36px高，水平padding12px。",
+          "evidenceRefs": [
+            "obs-inspiration-settled"
+          ],
+          "classification": "A"
+        },
+        {
+          "id": "selected",
+          "appearance": "灰3%填充，100px圆角；选中分类改变URL query和卡片内容。",
+          "evidenceRefs": [
+            "obs-inspiration-design"
+          ],
+          "classification": "A"
+        }
+      ],
+      "eventsClassification": "D",
+      "platform": "Web: Windows Chrome, CSS px, DPR 1; native font rendering varies by OS",
+      "geometry": {
+        "height": 36,
+        "gap": 4,
+        "radius": 100
+      },
+      "events": [
+        "selectCategory"
+      ]
+    },
+    {
+      "id": "cmp-feedback-target",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "impl-transfer"
+      ],
+      "unknowns": [
+        "原站网络失败/重试未获样本；空项目、生成中与插件无结果已另有A证据。"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "按目标真实任务生命周期连接状态；不把本包样例视为Kimi运行事实。"
+      },
+      "name": "TargetFeedback",
+      "slots": [
+        "message",
+        "action",
+        "progress"
+      ],
+      "tokenRefs": [
+        "size-menu-radius",
+        "type-caption"
+      ],
+      "states": [
+        {
+          "id": "empty",
+          "appearance": "浅灰容器内居中提示下一步。",
+          "evidenceRefs": [
+            "impl-transfer"
+          ],
+          "classification": "D"
+        },
+        {
+          "id": "success",
+          "appearance": "底部深灰Toast，role=status。",
+          "evidenceRefs": [
+            "impl-transfer"
+          ],
+          "classification": "D"
+        },
+        {
+          "id": "loading",
+          "appearance": "16px spinner，0.8s线性循环，reduced-motion停用长动画。",
+          "evidenceRefs": [
+            "impl-reference"
+          ],
+          "classification": "D"
+        },
+        {
+          "id": "invalid",
+          "appearance": "44px字段搭配红边与贴近字段错误文案。",
+          "evidenceRefs": [
+            "impl-reference"
+          ],
+          "classification": "D"
+        }
+      ],
+      "events": [
+        "statusChanged",
+        "retryRequested",
+        "dismiss"
+      ],
+      "eventsClassification": "D: target integration contract; not claimed as original Kimi API"
+    },
+    {
+      "id": "auth-cmp-project",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "auth-observation-project-empty",
+        "auth-observation-project-with-instructions"
+      ],
+      "unknowns": [
+        "深层文件管理和原版窄屏项目布局未研究。"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "保留实测角色、几何和已取得组件样式；按阅读业务替换内容与事件，不复制原服务后台。"
+      },
+      "name": "ProjectWorkspace",
+      "slots": [
+        "cover",
+        "editableTitle",
+        "emptyOrContent",
+        "composer",
+        "instructionCard",
+        "fileCard"
+      ],
+      "tokenRefs": [
+        "size-composer-width",
+        "auth-token-knowledge-radius"
+      ],
+      "states": [
+        {
+          "id": "empty",
+          "classification": "A",
+          "appearance": "主内容为空态说明，底部输入；右侧Instructions与Files独立卡片。",
+          "evidenceRefs": [
+            "auth-observation-project-empty"
+          ]
+        },
+        {
+          "id": "configured",
+          "classification": "A",
+          "appearance": "保存说明后右卡展示用户设置的中性说明。",
+          "evidenceRefs": [
+            "auth-observation-project-with-instructions"
+          ]
+        }
+      ],
+      "events": [
+        "titleChanged",
+        "entryAdded",
+        "instructionOpened",
+        "resourceOpened"
+      ],
+      "eventsClassification": "D: target integration contract; not claimed as original Kimi API"
+    },
+    {
+      "id": "auth-cmp-instructions",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "auth-observation-instructions-empty",
+        "auth-observation-instructions-draft",
+        "auth-observation-instructions-ready",
+        "auth-observation-project-with-instructions"
+      ],
+      "unknowns": [
+        "无效输入错误、网络保存失败及晚到结果未测。"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "保留实测角色、几何和已取得组件样式；按阅读业务替换内容与事件，不复制原服务后台。"
+      },
+      "name": "InstructionEditor",
+      "slots": [
+        "title",
+        "textarea",
+        "cancel",
+        "save"
+      ],
+      "tokenRefs": [
+        "auth-token-instruction-width",
+        "auth-token-instruction-radius",
+        "type-control"
+      ],
+      "states": [
+        {
+          "id": "open",
+          "classification": "A",
+          "appearance": "560px宽、16圆角、24px内距；灰底多行输入；Cancel与Add右对齐。",
+          "evidenceRefs": [
+            "auth-observation-instructions-ready"
+          ]
+        },
+        {
+          "id": "cancel",
+          "classification": "A",
+          "appearance": "取消后重新打开为空，未保存草稿被丢弃。",
+          "evidenceRefs": [
+            "auth-observation-instructions-draft"
+          ]
+        },
+        {
+          "id": "saved",
+          "classification": "A",
+          "appearance": "Add后原项目卡片显示说明文本。",
+          "evidenceRefs": [
+            "auth-observation-project-with-instructions"
+          ]
+        }
+      ],
+      "events": [
+        "draftChanged",
+        "cancel",
+        "save"
+      ],
+      "eventsClassification": "D: target integration contract; not claimed as original Kimi API"
+    },
+    {
+      "id": "auth-cmp-rich-document",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "auth-observation-chat-complete",
+        "auth-observation-chat-markdown"
+      ],
+      "unknowns": [
+        "表格列宽完整算法和所有Markdown语法未测。"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "保留实测角色、几何和已取得组件样式；按阅读业务替换内容与事件，不复制原服务后台。"
+      },
+      "name": "RichDocument",
+      "slots": [
+        "heading",
+        "body",
+        "list",
+        "table",
+        "codeHeader",
+        "code",
+        "actions"
+      ],
+      "tokenRefs": [
+        "auth-token-body",
+        "auth-token-h1",
+        "auth-token-h2",
+        "auth-token-table",
+        "auth-token-reader-width"
+      ],
+      "states": [
+        {
+          "id": "complete",
+          "classification": "A",
+          "appearance": "720px正文列；H1 22/36/600，H2 20/32/600；表格14/22，代码有灰色标题条与Copy。",
+          "evidenceRefs": [
+            "auth-observation-chat-markdown"
+          ]
+        }
+      ],
+      "events": [
+        "copyRequested",
+        "tableActionRequested",
+        "returnRequested"
+      ],
+      "eventsClassification": "D: target integration contract; not claimed as original Kimi API"
+    },
+    {
+      "id": "auth-cmp-generation",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "auth-observation-chat-generating",
+        "auth-observation-chat-complete"
+      ],
+      "unknowns": [
+        "没有点击停止验证后端取消；网络失败、晚到结果和重试结果未测。"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "目标若有异步任务，连接其真实pending/cancel/error事件；本地同步阅读清单不伪造生成状态。"
+      },
+      "name": "GenerationControl",
+      "slots": [
+        "progress",
+        "stop",
+        "resultActions"
+      ],
+      "tokenRefs": [
+        "size-control-height"
+      ],
+      "states": [
+        {
+          "id": "pending",
+          "classification": "A",
+          "appearance": "生成过渡中输入placeholder变为Keep asking, messages queue up；圆形主动作出现方形Stop。",
+          "evidenceRefs": [
+            "auth-observation-chat-generating"
+          ]
+        },
+        {
+          "id": "complete",
+          "classification": "A",
+          "appearance": "结束后回到普通输入和禁用发送状态，结果具有复制/重试/分享/反馈操作。",
+          "evidenceRefs": [
+            "auth-observation-chat-complete"
+          ]
+        }
+      ],
+      "events": [
+        "pending",
+        "stopRequested",
+        "completed",
+        "failed"
+      ],
+      "eventsClassification": "D: target integration contract; not claimed as original Kimi API"
+    },
+    {
+      "id": "auth-cmp-catalog",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "auth-observation-plugins-installed",
+        "auth-observation-plugins-empty-search",
+        "auth-observation-skills-page"
+      ],
+      "unknowns": [
+        "安装、第三方授权、会员能力和上传流程未执行。"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "保留实测角色、几何和已取得组件样式；按阅读业务替换内容与事件，不复制原服务后台。"
+      },
+      "name": "SearchableCapabilityCatalog",
+      "slots": [
+        "pageTabs",
+        "title",
+        "search",
+        "categoryPills",
+        "twoColumnCards",
+        "trailingAction",
+        "emptyMessage"
+      ],
+      "tokenRefs": [
+        "auth-token-catalog-width",
+        "type-control",
+        "type-caption"
+      ],
+      "states": [
+        {
+          "id": "installed",
+          "classification": "A",
+          "appearance": "800px内容列，分类pill与双列82px左右条目，图标约44px盒。",
+          "evidenceRefs": [
+            "auth-observation-plugins-installed"
+          ]
+        },
+        {
+          "id": "empty-search",
+          "classification": "A",
+          "appearance": "输入无匹配查询后显示No matching plugins found。",
+          "evidenceRefs": [
+            "auth-observation-plugins-empty-search"
+          ]
+        },
+        {
+          "id": "skills",
+          "classification": "A",
+          "appearance": "页签切换Skills，新增上传说明模块和带来源/用户数的卡片。",
+          "evidenceRefs": [
+            "auth-observation-skills-page"
+          ]
+        }
+      ],
+      "events": [
+        "queryChanged",
+        "categorySelected",
+        "primaryActionRequested",
+        "secondaryActionRequested"
+      ],
+      "eventsClassification": "D: target integration contract; not claimed as original Kimi API"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "formatVersion": 1,
+  "kind": "layouts",
+  "items": [
+    {
+      "id": "layout-home",
+      "classification": "A",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-desktop-base",
+        "decl-source-css"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "参考使用CSS变量和flex组合；保留实际scrollbar-gutter。"
+      },
+      "name": "CalmEntryWorkspace",
+      "componentRefs": [
+        "cmp-navigation",
+        "cmp-composer",
+        "cmp-context",
+        "cmp-shortcut"
+      ],
+      "rules": [
+        "240px导航 + 6px主画布外距；主画布12px圆角。",
+        "主内容可用区扣除Windows 15px scrollbar gutter后居中；1440×1000时输入x445.5/y420/w768/h114。",
+        "顶栏实际52px；输入前空白采用max(100px,(vh-12-52-100-114)/2)。",
+        "400×82标识盒与输入顶部间距32px。",
+        "输入底托可见下沿582；快捷入口在614，即底托下32px。",
+        "脚注靠底，正文保留足够负空间；业务文字作为插槽。"
+      ],
+      "conditions": "1440×1000, DPR1, English, Windows Chrome155, expanded sidebar, light theme"
+    },
+    {
+      "id": "layout-narrow",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-mobile-home",
+        "obs-mobile-navigation",
+        "decl-source-css"
+      ],
+      "unknowns": [
+        "移动UA、软键盘、安全区、触摸及iOS字体缩放未测。"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "目标保留窄屏构图；真实移动端可简化顶栏、为软键盘和safe-area加适配。"
+      },
+      "name": "NarrowEntryWorkspace",
+      "componentRefs": [
+        "cmp-navigation",
+        "cmp-composer",
+        "cmp-context",
+        "cmp-shortcut"
+      ],
+      "rules": [
+        "390×844桌面UA视口，主画布左右6px，内部12px；内容列实测x19/w337。",
+        "侧栏隐藏在左；触发按钮打开240px覆盖侧栏。",
+        "输入仍114px初始高，文字换行；底托w297。",
+        "568px及以下快捷入口间距8px、顶部外距24px，横向滚动。",
+        "窄屏顶栏仍出现Download for Desktop，是桌面UA条件下观察；真正移动设备未证实。"
+      ]
+    },
+    {
+      "id": "layout-gallery",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-inspiration-settled",
+        "obs-inspiration-design"
+      ],
+      "unknowns": [
+        "原版列数切换算法未追JavaScript控制器。"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "目标参考用CSS columns；断点5/4/3/2/1列是D选择，不声称原站一致。"
+      },
+      "name": "CategoryMasonryBrowser",
+      "componentRefs": [
+        "cmp-category-tab",
+        "cmp-gallery",
+        "cmp-composer"
+      ],
+      "rules": [
+        "顶部52px标题栏；下面52px sticky分类标签区域。",
+        "画廊左右16px，卡片间16px，宽屏观察5列、列宽263px。",
+        "卡片维持媒体比例，纵向错列，16px圆角。",
+        "原站画廊底部保留浮动输入框；本地Gallery参考省略输入，保留浏览样例。"
+      ]
+    },
+    {
+      "id": "layout-modal",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-project-gate"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "复用表面层级和字段尺度，内容及列结构按目标表单复杂度调整。"
+      },
+      "name": "HeaderAndInsetCardModal",
+      "componentRefs": [
+        "cmp-modal"
+      ],
+      "rules": [
+        "外壳20圆角，底层暖白；内部白卡16圆角。",
+        "666.5×508是该中文区域登录样本，并非全产品固定尺寸。",
+        "桌面双栏，200px QR列 + 48px间隔 + 0.5px分隔 + 48px间隔 + 278px表单列。",
+        "目标窄屏转单列表单为D；原版窄屏弹层未采集。"
+      ]
+    },
+    {
+      "id": "auth-layout-project",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "auth-observation-project-empty"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "保留实测角色、几何和已取得组件样式；按阅读业务替换内容与事件，不复制原服务后台。"
+      },
+      "name": "ContextWorkspaceWithAside",
+      "componentRefs": [
+        "auth-cmp-project",
+        "cmp-composer",
+        "auth-cmp-instructions"
+      ],
+      "rules": [
+        "主列约784px，底部768px输入；右列约356px，卡片20圆角。",
+        "标题区20/28/500，80px原始文件夹插画；大块空白围绕空状态。",
+        "宽屏分两列，目标窄屏将辅助卡放到主列下方（D，原窄屏未测）。"
+      ]
+    },
+    {
+      "id": "auth-layout-reader",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "auth-observation-chat-markdown"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "保留实测角色、几何和已取得组件样式；按阅读业务替换内容与事件，不复制原服务后台。"
+      },
+      "name": "RichContentReader",
+      "componentRefs": [
+        "auth-cmp-rich-document",
+        "cmp-composer"
+      ],
+      "rules": [
+        "正文内容宽720px，编辑器继续用768px；长文独立滚动。",
+        "原站保持底部输入；阅读笔记迁移参考省略聊天输入并保留返回路径。"
+      ]
+    },
+    {
+      "id": "auth-layout-catalog",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "auth-observation-plugins-installed",
+        "auth-observation-skills-page"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "保留实测角色、几何和已取得组件样式；按阅读业务替换内容与事件，不复制原服务后台。"
+      },
+      "name": "SearchAndCapabilityCards",
+      "componentRefs": [
+        "auth-cmp-catalog",
+        "cmp-category-tab"
+      ],
+      "rules": [
+        "页签顶栏约52px；内容上限800；搜索与标题同排。",
+        "分类在说明下；双列列表gap16，卡片细边和弱背景。",
+        "目标改成发现阅读，Add真实保存条目；不假装连接插件后台。"
+      ]
+    }
+  ]
+}
