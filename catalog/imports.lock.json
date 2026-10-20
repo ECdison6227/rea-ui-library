@@ -135,6 +135,26 @@
       },
       "origin": "historical",
       "workingTreeMutationPerformed": false
+    },
+    {
+      "id": "kimi-web",
+      "path": "platforms/web/kimi-web",
+      "storage": "monorepo",
+      "provenance": {
+        "kind": "rea-study",
+        "target": "https://www.kimi.com/en",
+        "method": "REA capture_browser_scenario (launch and connect), retained actual REA Evidence, with a labeled public projection and privately retained complete originals; independent isolated-profile Playwright/CDP screenshots, computed styles, CSS declarations and node-scoped platform fonts. The initial anonymous capture used no credentials or content generation; the authenticated supplement used two neutral UI fixture prompts, without backend-protocol or output-quality testing. Supplement: normal user login, CUA Chrome extension scoped captures, synthetic project/chat, selected original component CSS/SVG reuse; no private history exported.",
+        "researchEntry": "README.md"
+      },
+      "revision": null,
+      "snapshot": null,
+      "integrity": {
+        "manifest": "catalog/manifests/kimi-web.json",
+        "files": 210,
+        "treeSha256": "a0baff8baf3b53d6607f26c4f8949a1d6ee26e16a2bf87f24a5b0bf9c17a60cf"
+      },
+      "origin": "historical",
+      "workingTreeMutationPerformed": false
     }
   ],
   "thumbnails": [
@@ -180,6 +200,15 @@
       "target": "site/assets/thumbs/qishui-music-android-21-1-0.png",
       "sha256": "b4a7b250f84454223a58243b09123c24b7796acbc14fe9c7f0f6937b2b7ed1ff",
       "classification": "D: independent cross-domain Web reference, not original Android screenshot",
+      "reviewed": true,
+      "transformed": false
+    },
+    {
+      "id": "kimi-web",
+      "source": "platforms/web/kimi-web/evidence/screenshots/desktop-base.png",
+      "target": "site/assets/thumbs/kimi-web.png",
+      "sha256": "13bbc84d143af7f5e80bd626ffa0671501fd86947f4c3009c4da26c8fc5a2626",
+      "classification": "A · 网页未登录主页，侧栏和输入底托",
       "reviewed": true,
       "transformed": false
     }

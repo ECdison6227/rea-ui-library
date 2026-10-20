@@ -1,0 +1,283 @@
+{
+  "formatVersion": 1,
+  "kind": "motion",
+  "items": [
+    {
+      "id": "motion-sidebar",
+      "classification": "B",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "decl-source-css"
+      ],
+      "unknowns": [
+        "没有逐帧运行计时，声明时长不能当成实测。"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "按声明值作为目标初始实现；系统减少动画时直接完成状态。"
+      },
+      "trigger": "sidebar expand/collapse",
+      "properties": [
+        "transform",
+        "margin-left"
+      ],
+      "duration": {
+        "value": 300,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "ease-in-out",
+        "basis": "declared"
+      },
+      "interruption": [
+        "原站运行中断和重入时序未测；目标新状态覆盖旧动画。"
+      ],
+      "delay": {
+        "value": 0,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "reducedMotion": "源CSS对应媒体查询将时长降为.01ms/1ms或移除动画；具体分支见原件。"
+    },
+    {
+      "id": "motion-menu-enter",
+      "classification": "B",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "decl-source-css"
+      ],
+      "unknowns": [
+        "没有逐帧运行计时，声明时长不能当成实测。"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "按声明值作为目标初始实现；系统减少动画时直接完成状态。"
+      },
+      "trigger": "menu opens",
+      "properties": [
+        "opacity",
+        "transform scale(.85 → 1)"
+      ],
+      "duration": {
+        "value": 150,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "cubic-bezier(0,0,.2,1)",
+        "basis": "declared"
+      },
+      "interruption": [
+        "原站运行中断和重入时序未测；目标新状态覆盖旧动画。"
+      ],
+      "delay": {
+        "value": 0,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "reducedMotion": "源CSS对应媒体查询将时长降为.01ms/1ms或移除动画；具体分支见原件。",
+      "exit": {
+        "duration": 150,
+        "easing": "cubic-bezier(.4,0,1,1)"
+      }
+    },
+    {
+      "id": "motion-input-focus",
+      "classification": "B",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "decl-source-css"
+      ],
+      "unknowns": [
+        "没有逐帧运行计时，声明时长不能当成实测。"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "按声明值作为目标初始实现；系统减少动画时直接完成状态。"
+      },
+      "trigger": "composer hover/focus",
+      "properties": [
+        "border-color",
+        "box-shadow"
+      ],
+      "duration": {
+        "value": 300,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "ease",
+        "basis": "declared"
+      },
+      "interruption": [
+        "原站运行中断和重入时序未测；目标新状态覆盖旧动画。"
+      ],
+      "delay": {
+        "value": 0,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "reducedMotion": "源CSS对应媒体查询将时长降为.01ms/1ms或移除动画；具体分支见原件。"
+    },
+    {
+      "id": "motion-control-feedback",
+      "classification": "B",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "decl-source-css"
+      ],
+      "unknowns": [
+        "没有逐帧运行计时，声明时长不能当成实测。"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "按声明值作为目标初始实现；系统减少动画时直接完成状态。"
+      },
+      "trigger": "pill / nav hover",
+      "properties": [
+        "background-color",
+        "border-color",
+        "color"
+      ],
+      "duration": {
+        "value": 150,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "ease",
+        "basis": "declared"
+      },
+      "interruption": [
+        "原站运行中断和重入时序未测；目标新状态覆盖旧动画。"
+      ],
+      "delay": {
+        "value": 0,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "reducedMotion": "源CSS对应媒体查询将时长降为.01ms/1ms或移除动画；具体分支见原件。"
+    },
+    {
+      "id": "motion-shortcut-fade",
+      "classification": "B",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "decl-source-css"
+      ],
+      "unknowns": [
+        "没有逐帧运行计时，声明时长不能当成实测。"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "按声明值作为目标初始实现；系统减少动画时直接完成状态。"
+      },
+      "trigger": "home shortcut row mounts",
+      "properties": [
+        "opacity"
+      ],
+      "duration": {
+        "value": 240,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "ease-out",
+        "basis": "declared"
+      },
+      "interruption": [
+        "原站运行中断和重入时序未测；目标新状态覆盖旧动画。"
+      ],
+      "delay": {
+        "value": "index × 45",
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "reducedMotion": "源CSS对应媒体查询将时长降为.01ms/1ms或移除动画；具体分支见原件。"
+    },
+    {
+      "id": "motion-shortcut-slide",
+      "classification": "B",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "decl-source-css"
+      ],
+      "unknowns": [
+        "没有逐帧运行计时，声明时长不能当成实测。"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "按声明值作为目标初始实现；系统减少动画时直接完成状态。"
+      },
+      "trigger": "home shortcut row mounts",
+      "properties": [
+        "translateY(14px → -4px overshoot → 0)"
+      ],
+      "duration": {
+        "value": 320,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "cubic-bezier(.49,.45,.8,1.18)",
+        "basis": "declared"
+      },
+      "interruption": [
+        "原站运行中断和重入时序未测；目标新状态覆盖旧动画。"
+      ],
+      "delay": {
+        "value": "index × 45",
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "reducedMotion": "源CSS对应媒体查询将时长降为.01ms/1ms或移除动画；具体分支见原件。"
+    },
+    {
+      "id": "motion-feedback-target",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "optional",
+      "evidenceRefs": [
+        "impl-reference"
+      ],
+      "unknowns": [
+        "原站加载动效未获运行样本。"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "800ms为目标选择，不是原站参数。"
+      },
+      "trigger": "Target asynchronous feedback",
+      "properties": [
+        "rotation"
+      ],
+      "duration": {
+        "value": 800,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "easing": {
+        "value": "linear",
+        "basis": "chosen"
+      },
+      "interruption": [
+        "Stop when loading finishes; reduced motion uses static status."
+      ],
+      "repeat": "infinite while loading"
+    }
+  ]
+}

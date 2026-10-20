@@ -1,0 +1,2203 @@
+{
+  "formatVersion": 1,
+  "kind": "evidence",
+  "items": [
+    {
+      "id": "obs-desktop-base",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/desktop-base.json",
+      "sha256": "16e628100082b3f102512e69ba4091c436da02ea03ff0b045e985248a7054348",
+      "captureInterval": {
+        "startedAt": "2026-10-20T12:52:36.797Z",
+        "completedAt": "2026-10-20T12:52:37.215Z"
+      },
+      "provider": "Independent Playwright / CDP",
+      "url": "https://www.kimi.com/en",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "Actual PNG pixels inspected individually or in evidence/contact-sheet.png; computed styles checked against the same capture. Channels were collected sequentially."
+      },
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/desktop-base.png",
+          "sha256": "13bbc84d143af7f5e80bd626ffa0671501fd86947f4c3009c4da26c8fc5a2626"
+        }
+      ],
+      "limitations": [
+        "DOM, screenshot and computed styles are sequential and non-atomic.",
+        "visibleElements inventory includes non-zero-size offscreen nodes; only actual screenshots establish on-screen visibility.",
+        "Desktop Windows UA, mouse and keyboard; viewport resize does not establish mobile OS / touch behavior."
+      ],
+      "withheldArtifacts": [
+        {
+          "originalPath": "evidence/raw/desktop-base.html",
+          "sha256": "47b49bffb9368b70d49a3297aded34a801a5d202b1f4a457f354f4c655eaa71b",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        }
+      ]
+    },
+    {
+      "id": "obs-mode-menu",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/mode-menu.json",
+      "sha256": "81e8881f80584b661798683288eaa2e07ffdb26cb4c40c0e61d7f098de44b9a9",
+      "captureInterval": {
+        "startedAt": "2026-10-20T12:52:38.936Z",
+        "completedAt": "2026-10-20T12:52:39.265Z"
+      },
+      "provider": "Independent Playwright / CDP",
+      "url": "https://www.kimi.com/en",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "Actual PNG pixels inspected individually or in evidence/contact-sheet.png; computed styles checked against the same capture. Channels were collected sequentially."
+      },
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/mode-menu.png",
+          "sha256": "8cddca8ffa3193fd8d63f8e850b7aa6d4e9b08383f7bdf47fdfb893e1c69969e"
+        }
+      ],
+      "limitations": [
+        "DOM, screenshot and computed styles are sequential and non-atomic.",
+        "visibleElements inventory includes non-zero-size offscreen nodes; only actual screenshots establish on-screen visibility.",
+        "Desktop Windows UA, mouse and keyboard; viewport resize does not establish mobile OS / touch behavior."
+      ],
+      "withheldArtifacts": [
+        {
+          "originalPath": "evidence/raw/mode-menu.html",
+          "sha256": "95fad749309fa60f380498d46d0aabd16cb8c05f68abfa5df7a39ef75baed6cf",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        }
+      ]
+    },
+    {
+      "id": "obs-effort-menu",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/effort-menu.json",
+      "sha256": "9840b84e3d5eaa4dc65932b0f13f260aeeb6102a15a7a7f213af10f551075c46",
+      "captureInterval": {
+        "startedAt": "2026-10-20T12:53:33.633Z",
+        "completedAt": "2026-10-20T12:53:33.950Z"
+      },
+      "provider": "Independent Playwright / CDP",
+      "url": "https://www.kimi.com/en",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "Actual PNG pixels inspected individually or in evidence/contact-sheet.png; computed styles checked against the same capture. Channels were collected sequentially."
+      },
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/effort-menu.png",
+          "sha256": "fd9d70959b45e696069e7bec0620c19e0e5eee93a9b92973fcb98f0f94311d67"
+        }
+      ],
+      "limitations": [
+        "DOM, screenshot and computed styles are sequential and non-atomic.",
+        "visibleElements inventory includes non-zero-size offscreen nodes; only actual screenshots establish on-screen visibility.",
+        "Desktop Windows UA, mouse and keyboard; viewport resize does not establish mobile OS / touch behavior."
+      ],
+      "withheldArtifacts": [
+        {
+          "originalPath": "evidence/raw/effort-menu.html",
+          "sha256": "f1be1cf1a63822a20e962ca42a473adcada158a05f6dc7d7e54e7a69e014bc61",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        }
+      ]
+    },
+    {
+      "id": "obs-menu-dismissed",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/menu-dismissed.json",
+      "sha256": "d88f299c02e180286601b59f013bb5df5bf95ae984230abbff8fdb5e191bf43d",
+      "captureInterval": {
+        "startedAt": "2026-10-20T12:53:35.310Z",
+        "completedAt": "2026-10-20T12:53:35.628Z"
+      },
+      "provider": "Independent Playwright / CDP",
+      "url": "https://www.kimi.com/en",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "Actual PNG pixels inspected individually or in evidence/contact-sheet.png; computed styles checked against the same capture. Channels were collected sequentially."
+      },
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/menu-dismissed.png",
+          "sha256": "67deb957192377a0cc2e864783327d35d391e12d00dc8bbb3b1771e1dd5bd974"
+        }
+      ],
+      "limitations": [
+        "DOM, screenshot and computed styles are sequential and non-atomic.",
+        "visibleElements inventory includes non-zero-size offscreen nodes; only actual screenshots establish on-screen visibility.",
+        "Desktop Windows UA, mouse and keyboard; viewport resize does not establish mobile OS / touch behavior."
+      ],
+      "withheldArtifacts": [
+        {
+          "originalPath": "evidence/raw/menu-dismissed.html",
+          "sha256": "d08c541b9c9245b717a2bfa568d927303aad48950353afdabc8d8a655c45c710",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        }
+      ]
+    },
+    {
+      "id": "obs-tool-menu",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/tool-menu.json",
+      "sha256": "cca8186e5838a66d11ebe1a8fc785dbab4097e94e3b1b874c47cc51b7d177a44",
+      "captureInterval": {
+        "startedAt": "2026-10-20T12:53:37.462Z",
+        "completedAt": "2026-10-20T12:53:38.116Z"
+      },
+      "provider": "Independent Playwright / CDP",
+      "url": "https://www.kimi.com/en",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "Actual PNG pixels inspected individually or in evidence/contact-sheet.png; computed styles checked against the same capture. Channels were collected sequentially."
+      },
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/tool-menu.png",
+          "sha256": "5695ff3480fcc9bdb8a313658161983196c325ea90e5b59769314135526c1061"
+        }
+      ],
+      "limitations": [
+        "DOM, screenshot and computed styles are sequential and non-atomic.",
+        "visibleElements inventory includes non-zero-size offscreen nodes; only actual screenshots establish on-screen visibility.",
+        "Desktop Windows UA, mouse and keyboard; viewport resize does not establish mobile OS / touch behavior."
+      ],
+      "withheldArtifacts": [
+        {
+          "originalPath": "evidence/raw/tool-menu.html",
+          "sha256": "8378bd5f02a7b3e9276fb1fa5225034043a44b3d156977c2146ac9973ec57235",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        }
+      ]
+    },
+    {
+      "id": "obs-tools-dismissed",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/tools-dismissed.json",
+      "sha256": "2ec6cb3b7874c196da6c6d91da070b80998c23183a5e0d0d5beec79196b2ef83",
+      "captureInterval": {
+        "startedAt": "2026-10-20T12:53:39.440Z",
+        "completedAt": "2026-10-20T12:53:39.779Z"
+      },
+      "provider": "Independent Playwright / CDP",
+      "url": "https://www.kimi.com/en",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "Actual PNG pixels inspected individually or in evidence/contact-sheet.png; computed styles checked against the same capture. Channels were collected sequentially."
+      },
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/tools-dismissed.png",
+          "sha256": "609b4ce19debe1196e1dbcf3a4cd3cb511aaf4291aa89b4a64d165504aa4a0d9"
+        }
+      ],
+      "limitations": [
+        "DOM, screenshot and computed styles are sequential and non-atomic.",
+        "visibleElements inventory includes non-zero-size offscreen nodes; only actual screenshots establish on-screen visibility.",
+        "Desktop Windows UA, mouse and keyboard; viewport resize does not establish mobile OS / touch behavior."
+      ],
+      "withheldArtifacts": [
+        {
+          "originalPath": "evidence/raw/tools-dismissed.html",
+          "sha256": "8e188c8530dfb57b9e107cc05ae69173b5752bee755b362420e724576ab5d2cf",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        }
+      ]
+    },
+    {
+      "id": "obs-input-filled",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/input-filled.json",
+      "sha256": "f777fb01294b20f513eb0e49b05f310d252969c02b400e9e16e7a738836c2335",
+      "captureInterval": {
+        "startedAt": "2026-10-20T12:53:40.799Z",
+        "completedAt": "2026-10-20T12:53:41.127Z"
+      },
+      "provider": "Independent Playwright / CDP",
+      "url": "https://www.kimi.com/en",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "Actual PNG pixels inspected individually or in evidence/contact-sheet.png; computed styles checked against the same capture. Channels were collected sequentially."
+      },
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/input-filled.png",
+          "sha256": "950d969e9f5229d78d361521f0e2cc932309aa99413fd129aa66a0751f8fcfa4"
+        }
+      ],
+      "limitations": [
+        "DOM, screenshot and computed styles are sequential and non-atomic.",
+        "visibleElements inventory includes non-zero-size offscreen nodes; only actual screenshots establish on-screen visibility.",
+        "Desktop Windows UA, mouse and keyboard; viewport resize does not establish mobile OS / touch behavior."
+      ],
+      "withheldArtifacts": [
+        {
+          "originalPath": "evidence/raw/input-filled.html",
+          "sha256": "6846908c7a681b5a9d37b9b4eb24ba6f669ee42ccd61af47b0be5e85cea5bfc7",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        }
+      ]
+    },
+    {
+      "id": "obs-project-gate",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/project-gate.json",
+      "sha256": "a31c1bd609e7cb6568b409b980304f2ac3ac739d70e4c52ae95da6c9f64187f6",
+      "captureInterval": {
+        "startedAt": "2026-10-20T12:53:43.023Z",
+        "completedAt": "2026-10-20T12:53:43.579Z"
+      },
+      "provider": "Independent Playwright / CDP",
+      "url": "https://www.kimi.com/en",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "Actual PNG pixels inspected individually or in evidence/contact-sheet.png; computed styles checked against the same capture. Channels were collected sequentially."
+      },
+      "artifacts": [],
+      "limitations": [
+        "DOM, screenshot and computed styles are sequential and non-atomic.",
+        "visibleElements inventory includes non-zero-size offscreen nodes; only actual screenshots establish on-screen visibility.",
+        "Desktop Windows UA, mouse and keyboard; viewport resize does not establish mobile OS / touch behavior."
+      ],
+      "withheldArtifacts": [
+        {
+          "originalPath": "evidence/screenshots/project-gate.png",
+          "sha256": "ceaecfcad3fd6c4037ea1c967b2afb634879828422b6517e1f45c4307d9700b3",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        },
+        {
+          "originalPath": "evidence/raw/project-gate.html",
+          "sha256": "fd44453556630ddbf9174112f04111153730f5c6fdab20a89b32ccf6a9eb4182",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        }
+      ]
+    },
+    {
+      "id": "obs-login-dismissed",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/login-dismissed.json",
+      "sha256": "4c01d506e892cbfb87edf7e0b5ff8512dc539d25742b52e2b5b08f86d157304e",
+      "captureInterval": {
+        "startedAt": "2026-10-20T12:54:08.254Z",
+        "completedAt": "2026-10-20T12:54:08.525Z"
+      },
+      "provider": "Independent Playwright / CDP",
+      "url": "https://www.kimi.com/en",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "Actual PNG pixels inspected individually or in evidence/contact-sheet.png; computed styles checked against the same capture. Channels were collected sequentially."
+      },
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/login-dismissed.png",
+          "sha256": "74fec66a9eead6a653ce9c92291d8fb77a789e3ffc29a93ff549e46a5ad0b389"
+        }
+      ],
+      "limitations": [
+        "DOM, screenshot and computed styles are sequential and non-atomic.",
+        "visibleElements inventory includes non-zero-size offscreen nodes; only actual screenshots establish on-screen visibility.",
+        "Desktop Windows UA, mouse and keyboard; viewport resize does not establish mobile OS / touch behavior."
+      ],
+      "withheldArtifacts": [
+        {
+          "originalPath": "evidence/raw/login-dismissed.html",
+          "sha256": "bbb263a8a2c3f995d72cef51e345ed7475284272478370fe463a23849dc12b53",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        }
+      ]
+    },
+    {
+      "id": "obs-sidebar-collapsed",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/sidebar-collapsed.json",
+      "sha256": "77e2231c34e958f34cd7db69a1ff4ed634e898c5aab0ad3e1f30191b235cf7c1",
+      "captureInterval": {
+        "startedAt": "2026-10-20T12:54:10.327Z",
+        "completedAt": "2026-10-20T12:54:10.605Z"
+      },
+      "provider": "Independent Playwright / CDP",
+      "url": "https://www.kimi.com/en",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "Actual PNG pixels inspected individually or in evidence/contact-sheet.png; computed styles checked against the same capture. Channels were collected sequentially."
+      },
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/sidebar-collapsed.png",
+          "sha256": "8bdebe937ffb381c79670392c8291fb292cf06d2533f66b80f80398b43c7c9f2"
+        }
+      ],
+      "limitations": [
+        "DOM, screenshot and computed styles are sequential and non-atomic.",
+        "visibleElements inventory includes non-zero-size offscreen nodes; only actual screenshots establish on-screen visibility.",
+        "Desktop Windows UA, mouse and keyboard; viewport resize does not establish mobile OS / touch behavior."
+      ],
+      "withheldArtifacts": [
+        {
+          "originalPath": "evidence/raw/sidebar-collapsed.html",
+          "sha256": "d1b8147b9e73767f26a91b58a6a54c4110c88c2a4871df515c1230ed0031643b",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        }
+      ]
+    },
+    {
+      "id": "obs-tablet-home",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/tablet-home.json",
+      "sha256": "b6a073242e88fa62ae92d3fe94cba780410577205574893916b24af4dee382e2",
+      "captureInterval": {
+        "startedAt": "2026-10-20T12:54:12.371Z",
+        "completedAt": "2026-10-20T12:54:12.644Z"
+      },
+      "provider": "Independent Playwright / CDP",
+      "url": "https://www.kimi.com/en",
+      "viewport": {
+        "width": 1024,
+        "height": 768,
+        "dpr": 1
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "Actual PNG pixels inspected individually or in evidence/contact-sheet.png; computed styles checked against the same capture. Channels were collected sequentially."
+      },
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/tablet-home.png",
+          "sha256": "ad8d37ff05cb41111c7f19fde8c3b973fe60d4607ab313e072dbad30d05477ad"
+        }
+      ],
+      "limitations": [
+        "DOM, screenshot and computed styles are sequential and non-atomic.",
+        "visibleElements inventory includes non-zero-size offscreen nodes; only actual screenshots establish on-screen visibility.",
+        "Desktop Windows UA, mouse and keyboard; viewport resize does not establish mobile OS / touch behavior."
+      ],
+      "withheldArtifacts": [
+        {
+          "originalPath": "evidence/raw/tablet-home.html",
+          "sha256": "d1b8147b9e73767f26a91b58a6a54c4110c88c2a4871df515c1230ed0031643b",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        }
+      ]
+    },
+    {
+      "id": "obs-mobile-home",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/mobile-home.json",
+      "sha256": "b772cb8912854658cc2074e463690aa168d67a817078189587664905b8e51d59",
+      "captureInterval": {
+        "startedAt": "2026-10-20T12:54:14.241Z",
+        "completedAt": "2026-10-20T12:54:14.557Z"
+      },
+      "provider": "Independent Playwright / CDP",
+      "url": "https://www.kimi.com/en",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "Actual PNG pixels inspected individually or in evidence/contact-sheet.png; computed styles checked against the same capture. Channels were collected sequentially."
+      },
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/mobile-home.png",
+          "sha256": "0fe85ab1bb5eb5a33aab3da67bfe2bc52c8714d012aa9991ebe73a21f60be58f"
+        }
+      ],
+      "limitations": [
+        "DOM, screenshot and computed styles are sequential and non-atomic.",
+        "visibleElements inventory includes non-zero-size offscreen nodes; only actual screenshots establish on-screen visibility.",
+        "Desktop Windows UA, mouse and keyboard; viewport resize does not establish mobile OS / touch behavior."
+      ],
+      "withheldArtifacts": [
+        {
+          "originalPath": "evidence/raw/mobile-home.html",
+          "sha256": "99e09a36b349efd42f60d1ea14adec8af7605848bc12e7213603e5aaa60cc5a8",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        }
+      ]
+    },
+    {
+      "id": "obs-mobile-navigation",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/mobile-navigation.json",
+      "sha256": "fc4d06f262a041b40507221b798fc87f3640665675e508fb2e9c3118e8036d69",
+      "captureInterval": {
+        "startedAt": "2026-10-20T12:54:38.693Z",
+        "completedAt": "2026-10-20T12:54:38.957Z"
+      },
+      "provider": "Independent Playwright / CDP",
+      "url": "https://www.kimi.com/en",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "Actual PNG pixels inspected individually or in evidence/contact-sheet.png; computed styles checked against the same capture. Channels were collected sequentially."
+      },
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/mobile-navigation.png",
+          "sha256": "2c6942a6ccbc3ff7f333bd16629bbb2efcaa7826fead62cf0d9425d33a1ce221"
+        }
+      ],
+      "limitations": [
+        "DOM, screenshot and computed styles are sequential and non-atomic.",
+        "visibleElements inventory includes non-zero-size offscreen nodes; only actual screenshots establish on-screen visibility.",
+        "Desktop Windows UA, mouse and keyboard; viewport resize does not establish mobile OS / touch behavior."
+      ],
+      "withheldArtifacts": [
+        {
+          "originalPath": "evidence/raw/mobile-navigation.html",
+          "sha256": "befd92a414d6e36e401171d51de3bf7e52a69f17a09a33e34e2e4d25a7619465",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        }
+      ]
+    },
+    {
+      "id": "obs-inspiration-settled",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/inspiration-settled.json",
+      "sha256": "795c21ffe77a3a6d5dcaf19df8b3372c9421450195520d36b02ad0a1bbe06fff",
+      "captureInterval": {
+        "startedAt": "2026-10-20T12:55:30.348Z",
+        "completedAt": "2026-10-20T12:55:31.512Z"
+      },
+      "provider": "Independent Playwright / CDP",
+      "url": "https://www.kimi.com/inspiration",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "Actual PNG pixels inspected individually or in evidence/contact-sheet.png; computed styles checked against the same capture. Channels were collected sequentially."
+      },
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/inspiration-settled.png",
+          "sha256": "3c9e704084abd6674477ebfd82e2e34b4396f9f1505dbb540ae2a634e4ea0415"
+        }
+      ],
+      "limitations": [
+        "DOM, screenshot and computed styles are sequential and non-atomic.",
+        "visibleElements inventory includes non-zero-size offscreen nodes; only actual screenshots establish on-screen visibility.",
+        "Desktop Windows UA, mouse and keyboard; viewport resize does not establish mobile OS / touch behavior."
+      ],
+      "withheldArtifacts": [
+        {
+          "originalPath": "evidence/raw/inspiration-settled.html",
+          "sha256": "ea167cfa8530c4772a3da422508e87550db45ca54bb511f194c7c5eb95f6662e",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        }
+      ]
+    },
+    {
+      "id": "obs-inspiration-hover",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/inspiration-hover.json",
+      "sha256": "ad787eca5c7c36dd5bef557c49165af9ed8c4b85005082358c711b2d3341233c",
+      "captureInterval": {
+        "startedAt": "2026-10-20T12:55:59.313Z",
+        "completedAt": "2026-10-20T12:56:00.624Z"
+      },
+      "provider": "Independent Playwright / CDP",
+      "url": "https://www.kimi.com/inspiration",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "Actual PNG pixels inspected individually or in evidence/contact-sheet.png; computed styles checked against the same capture. Channels were collected sequentially."
+      },
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/inspiration-hover.png",
+          "sha256": "f027ea9d39fad066a9dc47e352c03e1a037d004a249dd3c73b3eae8870161dd1"
+        }
+      ],
+      "limitations": [
+        "DOM, screenshot and computed styles are sequential and non-atomic.",
+        "visibleElements inventory includes non-zero-size offscreen nodes; only actual screenshots establish on-screen visibility.",
+        "Desktop Windows UA, mouse and keyboard; viewport resize does not establish mobile OS / touch behavior."
+      ],
+      "withheldArtifacts": [
+        {
+          "originalPath": "evidence/raw/inspiration-hover.html",
+          "sha256": "f5925cd50197a75082eb1fea22f57a1f430f99a3c6c05397cc07cbcd3b9cab28",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        }
+      ]
+    },
+    {
+      "id": "obs-inspiration-design",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/inspiration-design.json",
+      "sha256": "6ff05e7f4a45cc7a84d292b31be9530015c7ead1f75173bcd3946a2796512a62",
+      "captureInterval": {
+        "startedAt": "2026-10-20T12:56:02.692Z",
+        "completedAt": "2026-10-20T12:56:03.604Z"
+      },
+      "provider": "Independent Playwright / CDP",
+      "url": "https://www.kimi.com/inspiration?tab=design",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "Actual PNG pixels inspected individually or in evidence/contact-sheet.png; computed styles checked against the same capture. Channels were collected sequentially."
+      },
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/inspiration-design.png",
+          "sha256": "ea2004c4aa3079a90f0aefb08bc48595c4b831a494bcc664a7905686124c1078"
+        }
+      ],
+      "limitations": [
+        "DOM, screenshot and computed styles are sequential and non-atomic.",
+        "visibleElements inventory includes non-zero-size offscreen nodes; only actual screenshots establish on-screen visibility.",
+        "Desktop Windows UA, mouse and keyboard; viewport resize does not establish mobile OS / touch behavior."
+      ],
+      "withheldArtifacts": [
+        {
+          "originalPath": "evidence/raw/inspiration-design.html",
+          "sha256": "dc082a7df9d8ef13a2e2333bc194f93f303e6bfad4359b52eba198c204eb79a3",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        }
+      ]
+    },
+    {
+      "id": "obs-plugins-page",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/plugins-page.json",
+      "sha256": "ab34fd4ad327a9879ead38258b13a0f4e91ab397d269750a9938f19358c14034",
+      "captureInterval": {
+        "startedAt": "2026-10-20T12:54:50.595Z",
+        "completedAt": "2026-10-20T12:54:51.009Z"
+      },
+      "provider": "Independent Playwright / CDP",
+      "url": "https://www.kimi.com/plugins",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "Actual PNG pixels inspected individually or in evidence/contact-sheet.png; computed styles checked against the same capture. Channels were collected sequentially."
+      },
+      "artifacts": [],
+      "limitations": [
+        "DOM, screenshot and computed styles are sequential and non-atomic.",
+        "visibleElements inventory includes non-zero-size offscreen nodes; only actual screenshots establish on-screen visibility.",
+        "Desktop Windows UA, mouse and keyboard; viewport resize does not establish mobile OS / touch behavior."
+      ],
+      "withheldArtifacts": [
+        {
+          "originalPath": "evidence/screenshots/plugins-page.png",
+          "sha256": "4261c0dcd9a96911ba898b083dab8758e4add5dbd98bea2e4e4f31535e04607a",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        },
+        {
+          "originalPath": "evidence/raw/plugins-page.html",
+          "sha256": "49032526f8d1f507fce8ed39e2add1a92c2c6c1b14c0d1bdeeec088358b548af",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        }
+      ]
+    },
+    {
+      "id": "obs-dark-preference",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/dark-preference.json",
+      "sha256": "738505ce0dcd15df6e789fe2ef9bc10b340f3642ae2e525437b93648e527d560",
+      "captureInterval": {
+        "startedAt": "2026-10-20T12:56:44.674Z",
+        "completedAt": "2026-10-20T12:56:44.986Z"
+      },
+      "provider": "Independent Playwright / CDP",
+      "url": "https://www.kimi.com/en",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "Actual PNG pixels inspected individually or in evidence/contact-sheet.png; computed styles checked against the same capture. Channels were collected sequentially."
+      },
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/dark-preference.png",
+          "sha256": "55a27d6605a13adbdad0447dffe226fafa4b34550e0c840a5666a48ad766d6a0"
+        }
+      ],
+      "limitations": [
+        "DOM, screenshot and computed styles are sequential and non-atomic.",
+        "visibleElements inventory includes non-zero-size offscreen nodes; only actual screenshots establish on-screen visibility.",
+        "Desktop Windows UA, mouse and keyboard; viewport resize does not establish mobile OS / touch behavior."
+      ],
+      "withheldArtifacts": [
+        {
+          "originalPath": "evidence/raw/dark-preference.html",
+          "sha256": "403c4728e47c2915afe50fa0017ae7f2cad438c9d463c1181e499d49394fa496",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        }
+      ]
+    },
+    {
+      "id": "obs-keyboard-focus",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/keyboard-focus.json",
+      "sha256": "b0cf85c7361e71b5a62a0abb0b067f1fa0e1ae4ca7207312ea72b689e314e46c",
+      "captureInterval": {
+        "startedAt": "2026-10-20T12:56:49.827Z",
+        "completedAt": "2026-10-20T12:56:50.186Z"
+      },
+      "provider": "Independent Playwright / CDP",
+      "url": "https://www.kimi.com/en",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "Actual PNG pixels inspected individually or in evidence/contact-sheet.png; computed styles checked against the same capture. Channels were collected sequentially."
+      },
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/keyboard-focus.png",
+          "sha256": "1ebce0b097ec24b0da93e3122de7144f9757f118d99b821ddeb5705768025224"
+        }
+      ],
+      "limitations": [
+        "DOM, screenshot and computed styles are sequential and non-atomic.",
+        "visibleElements inventory includes non-zero-size offscreen nodes; only actual screenshots establish on-screen visibility.",
+        "Desktop Windows UA, mouse and keyboard; viewport resize does not establish mobile OS / touch behavior."
+      ],
+      "withheldArtifacts": [
+        {
+          "originalPath": "evidence/raw/keyboard-focus.html",
+          "sha256": "e00cf181ca85bb4b1080452df277e04e96ff4518bddf785af7d73ca645f93d47",
+          "reason": "Original DOM or source login QR retained privately; see PUBLICATION_REVIEW.json."
+        }
+      ]
+    },
+    {
+      "id": "obs-platform-fonts",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": "2026-10-20T13:05:06.530Z",
+      "sharing": "included",
+      "path": "evidence/raw/platform-fonts.json",
+      "sha256": "8392c48202ae244d7d9f651f65b902bcd6fa74d3cb6fe1a98437a372b1ccab2d",
+      "provider": "Independent CDP CSS.getPlatformFontsForNode",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "Read node-scoped platform font results; empty editor result explicitly not promoted to glyph attribution."
+      },
+      "limitations": [
+        "Only model-name and login-button-text returned glyph samples. Other body glyph resolution is not established."
+      ]
+    },
+    {
+      "id": "ev_637d252dde4533c9a06ce5a42f4765227077efc55808e5314b29c02d49c93b56",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/rea-desktop.json",
+      "sha256": "83ac79488be9592c1cf71c2f6abcd4b40a57e43be59bca893a5ed09d0cc8ec40",
+      "provider": "REA",
+      "reaEvidenceId": "ev_637d252dde4533c9a06ce5a42f4765227077efc55808e5314b29c02d49c93b56",
+      "captureInterval": {
+        "startedAt": "2026-10-20T00:00:00.000Z",
+        "completedAt": "2026-10-20T12:53:42.016Z"
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:22:07.574Z",
+        "method": "REA scenario screenshot and accessibility inspected; exact wall clock was not retained by the tool, so only calendar-day lower bound and export upper bound are reported."
+      },
+      "operation": "capture_browser_scenario",
+      "conditions": {
+        "browser": "Chrome 155.0.8059.40",
+        "viewport": {
+          "width": 1440,
+          "height": 1000,
+          "deviceScaleFactor": 1
+        },
+        "locale": "en-US",
+        "profile": "isolated task-owned profile",
+        "actions": [
+          {
+            "action": "wait_for_timeout",
+            "duration_ms": 3500,
+            "step_id": "settle"
+          },
+          {
+            "action": "click",
+            "button": "left",
+            "click_count": 1,
+            "locator": {
+              "kind": "css",
+              "selector": "[data-testid=model-select-trigger]"
+            },
+            "step_id": "mode"
+          }
+        ]
+      },
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "CDP attachment cannot recover pre-attach events or guarantee launch-time context options.",
+        "Browser host platform and architecture were not observed.",
+        "The broad capture interval is not a per-frame timestamp.",
+        "Bundle includes the prior launch capture and CDP target discovery; only the named real Evidence ID supports the claimed scenario."
+      ],
+      "publicProjection": {
+        "originalSha256": "5e3c11c7639c1117fb0c8354311ec7ede6e2c734f2b533df0329ecaea1530407",
+        "sharing": "included labeled projection; complete original withheld"
+      }
+    },
+    {
+      "id": "decl-source-css",
+      "classification": "B",
+      "origin": "current",
+      "subject": "source",
+      "kind": "static",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/style-excerpts.json",
+      "sha256": "c13d4bd6fd5ebe699bb867d66e7e2543932eb35e523420e3bd801254b9128554",
+      "provider": "Independent stylesheet capture",
+      "sourceBinding": {
+        "status": "verified",
+        "reason": "Downloaded URLs match stylesheet hrefs in desktop-home computed-style capture. Core geometry / values additionally corroborated by live computed styles."
+      },
+      "originalFiles": [
+        {
+          "path": "assets/source/BP_4OTso.css",
+          "sha256": "dbeca8a130084e8536eb9e523fd4fbe5ad9bf50500fcf8b4cc0efcb0797dab3e"
+        },
+        {
+          "path": "assets/source/C6aWSxxG.css",
+          "sha256": "7614a52e9f4c965d747df9c437b34ceb3afb3cd7f30012bc0932393001eafa32"
+        },
+        {
+          "path": "assets/source/CzEhVgxm.css",
+          "sha256": "e6ee52e82d512a71b74ae3ff4c30135c302678b0274f869d778bc9c746067687"
+        },
+        {
+          "path": "assets/source/D6vFIDgL.css",
+          "sha256": "8f030ed5ea12dea3df31544f8c44dce20dcf085640a4a2ba8f236f85df5ec70c"
+        },
+        {
+          "path": "assets/source/w4WvLuEo.css",
+          "sha256": "d8a6abfe08fbd46e011b98ed7fff3949c87421234f2ad95d01f3d5bd2b0fe6cc"
+        }
+      ],
+      "limitations": [
+        "Declaration does not prove each selector or media branch executed.",
+        "Keyframe times are declared values, not runtime measurements."
+      ]
+    },
+    {
+      "id": "decl-inline-icons",
+      "classification": "B",
+      "origin": "current",
+      "subject": "source",
+      "kind": "static",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "assets/source/inline-icons.json",
+      "sha256": "8f58117ef17e42f26473434208e74c383c4721932cf49522d28696217781f934",
+      "provider": "Independent serialized live DOM",
+      "sourceBinding": {
+        "status": "verified",
+        "reason": "Serialized from sidebar and publisher DOM in the source task profile."
+      },
+      "limitations": [
+        "SVGs retain source paths and embedded keyframes; the reference uses independent D icon paths instead."
+      ]
+    },
+    {
+      "id": "impl-reference",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/reference",
+      "capturedAt": "2026-10-20T14:22:07.574Z",
+      "sharing": "included",
+      "path": "reference/app.js",
+      "sha256": "f70dd0e72dfd1e64b630253294f24d09f789025615b0f520326dcdec5c113bb4",
+      "description": "Independent HTML/CSS/JS source reference and accessible control behavior; not original application source."
+    },
+    {
+      "id": "impl-transfer",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/transfer",
+      "capturedAt": "2026-10-20T13:23:30.351Z",
+      "sharing": "included",
+      "path": "comparison/verification.json",
+      "sha256": "675eca4862a3cf46da702f1864905ba257336a8063cad7f443bc054b676a0666",
+      "description": "Executable Reading Room slice, gallery filter, persistence and keyboard validation.",
+      "limitations": [
+        "Checks prove reference behavior only."
+      ]
+    },
+    {
+      "id": "impl-reference-validation",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/reference",
+      "capturedAt": "2026-10-20T13:23:30.351Z",
+      "sharing": "included",
+      "path": "comparison/verification.json",
+      "sha256": "675eca4862a3cf46da702f1864905ba257336a8063cad7f443bc054b676a0666",
+      "description": "Independent reference runtime and screenshots plus geometry comparison, A original / D reference."
+    },
+    {
+      "id": "impl-shot-reference-home",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/screenshots/reference-home.png",
+      "sha256": "cf79d5d421ab85d0c49c539b47a147d465c2a9e039c2cbc9818a188324165bbd",
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:23:21.054Z",
+        "completedAt": "2026-10-20T13:23:22.025Z"
+      },
+      "conditions": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        }
+      },
+      "description": "Independent reference screenshot; not original runtime."
+    },
+    {
+      "id": "impl-shot-reference-mode",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/screenshots/reference-mode.png",
+      "sha256": "edbc3265548dc3006c5c6ec093de3def1e7d508b66db25edd8d94335aa1a7c9e",
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:23:22.662Z",
+        "completedAt": "2026-10-20T13:23:22.729Z"
+      },
+      "conditions": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        }
+      },
+      "description": "Independent reference screenshot; not original runtime."
+    },
+    {
+      "id": "impl-shot-reference-tools",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/screenshots/reference-tools.png",
+      "sha256": "d4f822f81cddffb0db10f775496e8d3353d932b0ea5e2b9249e9f02318229193",
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:23:23.137Z",
+        "completedAt": "2026-10-20T13:23:23.217Z"
+      },
+      "conditions": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        }
+      },
+      "description": "Independent reference screenshot; not original runtime."
+    },
+    {
+      "id": "impl-shot-reference-modal",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/screenshots/reference-modal.png",
+      "sha256": "083782279377422de46f82a004afe2b67aec4812e8399588a56dfef32cfd359a",
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:23:23.680Z",
+        "completedAt": "2026-10-20T13:23:23.736Z"
+      },
+      "conditions": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        }
+      },
+      "description": "Independent reference screenshot; not original runtime."
+    },
+    {
+      "id": "impl-shot-reference-collapsed",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/screenshots/reference-collapsed.png",
+      "sha256": "5b0a693ae048725f3ea37d7fda97ae3f8718c07e6295dcab55f42d76d870f340",
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:23:24.795Z",
+        "completedAt": "2026-10-20T13:23:24.861Z"
+      },
+      "conditions": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        }
+      },
+      "description": "Independent reference screenshot; not original runtime."
+    },
+    {
+      "id": "impl-shot-reference-dark",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/screenshots/reference-dark.png",
+      "sha256": "45d5b54dc563cbd354aca81512144d57a1f1805503166cc5b3b1e725e065eb4f",
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:23:25.227Z",
+        "completedAt": "2026-10-20T13:23:25.286Z"
+      },
+      "conditions": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        }
+      },
+      "description": "Independent reference screenshot; not original runtime."
+    },
+    {
+      "id": "impl-shot-reference-mobile",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/screenshots/reference-mobile.png",
+      "sha256": "55417b3ec2f57a2ac1c8d4fd0f3516d7868c39dc26033e13c5ffc9ec5fad7789",
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:23:25.871Z",
+        "completedAt": "2026-10-20T13:23:25.929Z"
+      },
+      "conditions": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      "description": "Independent reference screenshot; not original runtime."
+    },
+    {
+      "id": "impl-shot-reference-mobile-navigation",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/screenshots/reference-mobile-navigation.png",
+      "sha256": "7cdd5f4dc496664ed9a13b83f420567fbfeb4af1660a93575f0c7d0d29b4d634",
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:23:26.666Z",
+        "completedAt": "2026-10-20T13:23:26.696Z"
+      },
+      "conditions": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      "description": "Independent reference screenshot; not original runtime."
+    },
+    {
+      "id": "impl-shot-transfer-empty",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/transfer",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/screenshots/transfer-empty.png",
+      "sha256": "e85a351e659ed08ac95b283b82cecb7b5539e7ee7e404e87ddf9d6497f718d05",
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:23:27.775Z",
+        "completedAt": "2026-10-20T13:23:27.840Z"
+      },
+      "conditions": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        }
+      },
+      "description": "Independent reference screenshot; not original runtime."
+    },
+    {
+      "id": "impl-shot-transfer-library",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/transfer",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/screenshots/transfer-library.png",
+      "sha256": "3d60f0ab8765b252688971d0ac3c69b028786b90972888c24a14c18028c42902",
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:23:28.790Z",
+        "completedAt": "2026-10-20T13:23:28.861Z"
+      },
+      "conditions": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        }
+      },
+      "description": "Independent reference screenshot; not original runtime."
+    },
+    {
+      "id": "impl-shot-transfer-mobile",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/transfer",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/screenshots/transfer-mobile.png",
+      "sha256": "2e8402799697165737b13bae5855365d8320e7f2d01721c2a04f6c0bd83af6bc",
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:23:29.296Z",
+        "completedAt": "2026-10-20T13:23:29.339Z"
+      },
+      "conditions": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      "description": "Independent reference screenshot; not original runtime."
+    },
+    {
+      "id": "impl-shot-components-sheet",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/screenshots/components-sheet.png",
+      "sha256": "1664b79d60f362080d6e03dffdff9d5957da407f4a1a2eb47556dc707f3dc922",
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:23:29.788Z",
+        "completedAt": "2026-10-20T13:23:29.855Z"
+      },
+      "conditions": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        }
+      },
+      "description": "Independent reference screenshot; not original runtime."
+    },
+    {
+      "id": "impl-shot-gallery-reference",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/transfer",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/screenshots/gallery-reference.png",
+      "sha256": "28f88ac559c1201ddc3c7e3574b31f32f681e0af57f192ceeef66b8344d5a48c",
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:23:30.235Z",
+        "completedAt": "2026-10-20T13:23:30.294Z"
+      },
+      "conditions": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        }
+      },
+      "description": "Independent reference screenshot; not original runtime."
+    },
+    {
+      "id": "auth-observation-project-create",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:43:25.890Z",
+        "completedAt": "2026-10-20T13:43:27.342Z"
+      },
+      "provider": "CUA Chrome extension",
+      "sharing": "included",
+      "path": "evidence/raw/authenticated/project-create.json",
+      "sha256": "9ae666a55ad739c827edd0fbb9830658fd0bde99acad3f6546ab677814d670e0",
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/authenticated/project-create.jpg",
+          "sha256": "e50be9511afe475260821ddae7088783b5e5a2cacf2f7ad4a5e08ee2a98c2785"
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:37:33.606Z",
+        "method": "Live screenshot inspected; only collapsed-sidebar neutral research content is distributed. Source pixels and computed styles are sequential, not atomic."
+      },
+      "conditions": {
+        "authentication": "User completed normal login in a dedicated visible tab",
+        "viewport": {
+          "dpr": 1.75,
+          "height": 878,
+          "width": 1455
+        },
+        "fixture": "One neutral project and two short UI research prompts",
+        "privateHistory": "Not opened or exported"
+      },
+      "limitations": [
+        "DPR1.75 and 1455×878 viewport differ from the first anonymous DPR1 1440×1000 capture.",
+        "Scopes containing non-zero-size offscreen nodes are not proof that all nodes were visible.",
+        "Network failure, backend cancellation and retry were not exercised."
+      ],
+      "publicProjection": {
+        "method": "Source fixture URL identifiers removed; geometry, CSS, timestamps and source identity retained."
+      }
+    },
+    {
+      "id": "auth-observation-project-create-filled",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:45:47.112Z",
+        "completedAt": "2026-10-20T13:45:48.336Z"
+      },
+      "provider": "CUA Chrome extension",
+      "sharing": "included",
+      "path": "evidence/raw/authenticated/project-create-filled.json",
+      "sha256": "d96798262e8a60c2db40cd7423b84d29b3e10a30e3ee6e0fcecd355711466643",
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/authenticated/project-create-filled.jpg",
+          "sha256": "5eeb80d207aca4aca321bda8bb6134151f10ae910812377608b55a9905d5c745"
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:37:33.606Z",
+        "method": "Live screenshot inspected; only collapsed-sidebar neutral research content is distributed. Source pixels and computed styles are sequential, not atomic."
+      },
+      "conditions": {
+        "authentication": "User completed normal login in a dedicated visible tab",
+        "viewport": {
+          "dpr": 1.75,
+          "height": 878,
+          "width": 1455
+        },
+        "fixture": "One neutral project and two short UI research prompts",
+        "privateHistory": "Not opened or exported"
+      },
+      "limitations": [
+        "DPR1.75 and 1455×878 viewport differ from the first anonymous DPR1 1440×1000 capture.",
+        "Scopes containing non-zero-size offscreen nodes are not proof that all nodes were visible.",
+        "Network failure, backend cancellation and retry were not exercised."
+      ],
+      "publicProjection": {
+        "method": "Source fixture URL identifiers removed; geometry, CSS, timestamps and source identity retained."
+      }
+    },
+    {
+      "id": "auth-observation-project-empty",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:46:14.243Z",
+        "completedAt": "2026-10-20T13:46:15.303Z"
+      },
+      "provider": "CUA Chrome extension",
+      "sharing": "included",
+      "path": "evidence/raw/authenticated/project-empty.json",
+      "sha256": "0f9f4c9775a81256e3aeffef53d4e49d4df7e46661717d4625e5350b30605b84",
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/authenticated/project-empty.jpg",
+          "sha256": "e403b6a45d78f9ce7ffe74e76128d076c0e4f9774e1910ae812af406df4e90cf"
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:37:33.606Z",
+        "method": "Live screenshot inspected; only collapsed-sidebar neutral research content is distributed. Source pixels and computed styles are sequential, not atomic."
+      },
+      "conditions": {
+        "authentication": "User completed normal login in a dedicated visible tab",
+        "viewport": {
+          "dpr": 1.75,
+          "height": 878,
+          "width": 1455
+        },
+        "fixture": "One neutral project and two short UI research prompts",
+        "privateHistory": "Not opened or exported"
+      },
+      "limitations": [
+        "DPR1.75 and 1455×878 viewport differ from the first anonymous DPR1 1440×1000 capture.",
+        "Scopes containing non-zero-size offscreen nodes are not proof that all nodes were visible.",
+        "Network failure, backend cancellation and retry were not exercised."
+      ],
+      "publicProjection": {
+        "method": "Source fixture URL identifiers removed; geometry, CSS, timestamps and source identity retained."
+      }
+    },
+    {
+      "id": "auth-observation-instructions-empty",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:48:13.090Z",
+        "completedAt": "2026-10-20T13:48:14.559Z"
+      },
+      "provider": "CUA Chrome extension",
+      "sharing": "included",
+      "path": "evidence/raw/authenticated/instructions-empty.json",
+      "sha256": "8c7cf75241c3a7a0a7b6a99543f18dfcd3224768669fb4d26021caefa09e8613",
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/authenticated/instructions-empty.jpg",
+          "sha256": "486d83b3bc1266fc227531e08dfa03e5c094d526a0aceaff4cab5b29b9b33b51"
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:37:33.606Z",
+        "method": "Live screenshot inspected; only collapsed-sidebar neutral research content is distributed. Source pixels and computed styles are sequential, not atomic."
+      },
+      "conditions": {
+        "authentication": "User completed normal login in a dedicated visible tab",
+        "viewport": {
+          "dpr": 1.75,
+          "height": 878,
+          "width": 1455
+        },
+        "fixture": "One neutral project and two short UI research prompts",
+        "privateHistory": "Not opened or exported"
+      },
+      "limitations": [
+        "DPR1.75 and 1455×878 viewport differ from the first anonymous DPR1 1440×1000 capture.",
+        "Scopes containing non-zero-size offscreen nodes are not proof that all nodes were visible.",
+        "Network failure, backend cancellation and retry were not exercised."
+      ],
+      "publicProjection": {
+        "method": "Source fixture URL identifiers removed; geometry, CSS, timestamps and source identity retained."
+      }
+    },
+    {
+      "id": "auth-observation-instructions-draft",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:48:14.586Z",
+        "completedAt": "2026-10-20T13:48:15.760Z"
+      },
+      "provider": "CUA Chrome extension",
+      "sharing": "included",
+      "path": "evidence/raw/authenticated/instructions-draft.json",
+      "sha256": "65718491b372f0f5f28125255a36369333d570d320482cf4622848204d1ad86e",
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/authenticated/instructions-draft.jpg",
+          "sha256": "ecf074f09383221d43cd0e7cd698f3e47c55961938e9b9be58d6d2836bdadf0c"
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:37:33.606Z",
+        "method": "Live screenshot inspected; only collapsed-sidebar neutral research content is distributed. Source pixels and computed styles are sequential, not atomic."
+      },
+      "conditions": {
+        "authentication": "User completed normal login in a dedicated visible tab",
+        "viewport": {
+          "dpr": 1.75,
+          "height": 878,
+          "width": 1455
+        },
+        "fixture": "One neutral project and two short UI research prompts",
+        "privateHistory": "Not opened or exported"
+      },
+      "limitations": [
+        "DPR1.75 and 1455×878 viewport differ from the first anonymous DPR1 1440×1000 capture.",
+        "Scopes containing non-zero-size offscreen nodes are not proof that all nodes were visible.",
+        "Network failure, backend cancellation and retry were not exercised."
+      ],
+      "publicProjection": {
+        "method": "Source fixture URL identifiers removed; geometry, CSS, timestamps and source identity retained."
+      }
+    },
+    {
+      "id": "auth-observation-instructions-ready",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:48:37.506Z",
+        "completedAt": "2026-10-20T13:48:38.334Z"
+      },
+      "provider": "CUA Chrome extension",
+      "sharing": "included",
+      "path": "evidence/raw/authenticated/instructions-ready.json",
+      "sha256": "ae55e0ab67d944ac7625164076a819ac11ead7e98f3e1f7a85241e7a8214522a",
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/authenticated/instructions-ready.jpg",
+          "sha256": "486d83b3bc1266fc227531e08dfa03e5c094d526a0aceaff4cab5b29b9b33b51"
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:37:33.606Z",
+        "method": "Live screenshot inspected; only collapsed-sidebar neutral research content is distributed. Source pixels and computed styles are sequential, not atomic."
+      },
+      "conditions": {
+        "authentication": "User completed normal login in a dedicated visible tab",
+        "viewport": {
+          "dpr": 1.75,
+          "height": 878,
+          "width": 1455
+        },
+        "fixture": "One neutral project and two short UI research prompts",
+        "privateHistory": "Not opened or exported"
+      },
+      "limitations": [
+        "DPR1.75 and 1455×878 viewport differ from the first anonymous DPR1 1440×1000 capture.",
+        "Scopes containing non-zero-size offscreen nodes are not proof that all nodes were visible.",
+        "Network failure, backend cancellation and retry were not exercised."
+      ],
+      "publicProjection": {
+        "method": "Source fixture URL identifiers removed; geometry, CSS, timestamps and source identity retained."
+      }
+    },
+    {
+      "id": "auth-observation-project-with-instructions",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:49:06.466Z",
+        "completedAt": "2026-10-20T13:49:07.889Z"
+      },
+      "provider": "CUA Chrome extension",
+      "sharing": "included",
+      "path": "evidence/raw/authenticated/project-with-instructions.json",
+      "sha256": "8f598fc4b69d79e64199c2469d3b0b14a02ac205fdfb50e1988e2e3acff39eb7",
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/authenticated/project-with-instructions.jpg",
+          "sha256": "fc794d03c977f88d3ea2f415dc3e4c569b311e3d00724bc6e1ab14d44a24178c"
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:37:33.606Z",
+        "method": "Live screenshot inspected; only collapsed-sidebar neutral research content is distributed. Source pixels and computed styles are sequential, not atomic."
+      },
+      "conditions": {
+        "authentication": "User completed normal login in a dedicated visible tab",
+        "viewport": {
+          "dpr": 1.75,
+          "height": 878,
+          "width": 1455
+        },
+        "fixture": "One neutral project and two short UI research prompts",
+        "privateHistory": "Not opened or exported"
+      },
+      "limitations": [
+        "DPR1.75 and 1455×878 viewport differ from the first anonymous DPR1 1440×1000 capture.",
+        "Scopes containing non-zero-size offscreen nodes are not proof that all nodes were visible.",
+        "Network failure, backend cancellation and retry were not exercised."
+      ],
+      "publicProjection": {
+        "method": "Source fixture URL identifiers removed; geometry, CSS, timestamps and source identity retained."
+      }
+    },
+    {
+      "id": "auth-observation-chat-generating",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:51:04.371Z",
+        "completedAt": "2026-10-20T13:51:04.498Z"
+      },
+      "provider": "CUA Chrome extension",
+      "sharing": "included",
+      "path": "evidence/raw/authenticated/chat-generating.json",
+      "sha256": "300dc1a43dcc7d94beb3f285ee4f1c3a2fd5ca5385146600ceb2ec347558ef30",
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/authenticated/chat-generating.jpg",
+          "sha256": "bd6877d9c16a2c304c6fc7b6bd7f34227672b35aa413707d387f58a6a7ae5517"
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:37:33.606Z",
+        "method": "Live screenshot inspected; only collapsed-sidebar neutral research content is distributed. Source pixels and computed styles are sequential, not atomic."
+      },
+      "conditions": {
+        "authentication": "User completed normal login in a dedicated visible tab",
+        "viewport": {
+          "dpr": 1.75,
+          "height": 878,
+          "width": 1455
+        },
+        "fixture": "One neutral project and two short UI research prompts",
+        "privateHistory": "Not opened or exported"
+      },
+      "limitations": [
+        "DPR1.75 and 1455×878 viewport differ from the first anonymous DPR1 1440×1000 capture.",
+        "Scopes containing non-zero-size offscreen nodes are not proof that all nodes were visible.",
+        "Network failure, backend cancellation and retry were not exercised."
+      ],
+      "publicProjection": {
+        "method": "Source fixture URL identifiers removed; geometry, CSS, timestamps and source identity retained."
+      }
+    },
+    {
+      "id": "auth-observation-chat-complete",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:50:25.708Z",
+        "completedAt": "2026-10-20T13:50:26.850Z"
+      },
+      "provider": "CUA Chrome extension",
+      "sharing": "included",
+      "path": "evidence/raw/authenticated/chat-complete.json",
+      "sha256": "852154cdbcf75bfe8b741c4ee880da79a79dc23c775a152623c35850f66ac1d5",
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/authenticated/chat-complete.jpg",
+          "sha256": "cb3c1f2df32bdb25934397194e02b6328c193017b89f7d643e5212d12e3568e2"
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:37:33.606Z",
+        "method": "Live screenshot inspected; only collapsed-sidebar neutral research content is distributed. Source pixels and computed styles are sequential, not atomic."
+      },
+      "conditions": {
+        "authentication": "User completed normal login in a dedicated visible tab",
+        "viewport": {
+          "dpr": 1.75,
+          "height": 878,
+          "width": 1455
+        },
+        "fixture": "One neutral project and two short UI research prompts",
+        "privateHistory": "Not opened or exported"
+      },
+      "limitations": [
+        "DPR1.75 and 1455×878 viewport differ from the first anonymous DPR1 1440×1000 capture.",
+        "Scopes containing non-zero-size offscreen nodes are not proof that all nodes were visible.",
+        "Network failure, backend cancellation and retry were not exercised."
+      ],
+      "publicProjection": {
+        "method": "Source fixture URL identifiers removed; geometry, CSS, timestamps and source identity retained."
+      }
+    },
+    {
+      "id": "auth-observation-chat-markdown",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:51:47.086Z",
+        "completedAt": "2026-10-20T13:51:47.275Z"
+      },
+      "provider": "CUA Chrome extension",
+      "sharing": "included",
+      "path": "evidence/raw/authenticated/chat-markdown.json",
+      "sha256": "15f1268d1925916d9bf03ce38bf751d2472424e19b258de3d0a6ba0ff3292210",
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/authenticated/chat-markdown.jpg",
+          "sha256": "907b78c67770c58cf4f2b96a607be3745551386ce8334b324f16f202e56aaae4"
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:37:33.606Z",
+        "method": "Live screenshot inspected; only collapsed-sidebar neutral research content is distributed. Source pixels and computed styles are sequential, not atomic."
+      },
+      "conditions": {
+        "authentication": "User completed normal login in a dedicated visible tab",
+        "viewport": {
+          "dpr": 1.75,
+          "height": 878,
+          "width": 1455
+        },
+        "fixture": "One neutral project and two short UI research prompts",
+        "privateHistory": "Not opened or exported"
+      },
+      "limitations": [
+        "DPR1.75 and 1455×878 viewport differ from the first anonymous DPR1 1440×1000 capture.",
+        "Scopes containing non-zero-size offscreen nodes are not proof that all nodes were visible.",
+        "Network failure, backend cancellation and retry were not exercised."
+      ],
+      "publicProjection": {
+        "method": "Source fixture URL identifiers removed; geometry, CSS, timestamps and source identity retained."
+      }
+    },
+    {
+      "id": "auth-observation-plugins-installed",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:52:41.844Z",
+        "completedAt": "2026-10-20T13:52:42.519Z"
+      },
+      "provider": "CUA Chrome extension",
+      "sharing": "included",
+      "path": "evidence/raw/authenticated/plugins-installed.json",
+      "sha256": "9eac41857623aa5697fbd1ffb7adc7165ea2d01e8cbc1f528510870981b421ad",
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/authenticated/plugins-installed.jpg",
+          "sha256": "0f4b12a83001b9a86f1935925450972e12341c3c920d2341cb0991bd77281680"
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:37:33.606Z",
+        "method": "Live screenshot inspected; only collapsed-sidebar neutral research content is distributed. Source pixels and computed styles are sequential, not atomic."
+      },
+      "conditions": {
+        "authentication": "User completed normal login in a dedicated visible tab",
+        "viewport": {
+          "dpr": 1.75,
+          "height": 878,
+          "width": 1455
+        },
+        "fixture": "One neutral project and two short UI research prompts",
+        "privateHistory": "Not opened or exported"
+      },
+      "limitations": [
+        "DPR1.75 and 1455×878 viewport differ from the first anonymous DPR1 1440×1000 capture.",
+        "Scopes containing non-zero-size offscreen nodes are not proof that all nodes were visible.",
+        "Network failure, backend cancellation and retry were not exercised."
+      ],
+      "publicProjection": {
+        "method": "Source fixture URL identifiers removed; geometry, CSS, timestamps and source identity retained."
+      }
+    },
+    {
+      "id": "auth-observation-plugins-empty-search",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:52:58.017Z",
+        "completedAt": "2026-10-20T13:52:59.528Z"
+      },
+      "provider": "CUA Chrome extension",
+      "sharing": "included",
+      "path": "evidence/raw/authenticated/plugins-empty-search.json",
+      "sha256": "8b6af0bdf92f4e897ed511570dbe270bdbbfb1804c3dc7ce0de911e7daae67be",
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/authenticated/plugins-empty-search.jpg",
+          "sha256": "77703a572aaa0d6f35adc6cfd3e609b01a60c477a893ef62f60f6433503c9430"
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:37:33.606Z",
+        "method": "Live screenshot inspected; only collapsed-sidebar neutral research content is distributed. Source pixels and computed styles are sequential, not atomic."
+      },
+      "conditions": {
+        "authentication": "User completed normal login in a dedicated visible tab",
+        "viewport": {
+          "dpr": 1.75,
+          "height": 878,
+          "width": 1455
+        },
+        "fixture": "One neutral project and two short UI research prompts",
+        "privateHistory": "Not opened or exported"
+      },
+      "limitations": [
+        "DPR1.75 and 1455×878 viewport differ from the first anonymous DPR1 1440×1000 capture.",
+        "Scopes containing non-zero-size offscreen nodes are not proof that all nodes were visible.",
+        "Network failure, backend cancellation and retry were not exercised."
+      ],
+      "publicProjection": {
+        "method": "Source fixture URL identifiers removed; geometry, CSS, timestamps and source identity retained."
+      }
+    },
+    {
+      "id": "auth-observation-skills-page",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-20T13:53:57.062Z",
+        "completedAt": "2026-10-20T13:53:58.727Z"
+      },
+      "provider": "CUA Chrome extension",
+      "sharing": "included",
+      "path": "evidence/raw/authenticated/skills-page.json",
+      "sha256": "c91e1fa6bffe2bd06c1bf002795c13e980fb7dec6fe303f677f4e0b388bb6355",
+      "artifacts": [
+        {
+          "path": "evidence/screenshots/authenticated/skills-page.jpg",
+          "sha256": "d8aa6cfe939280d1ecbb1c314d597c61c0a765c10533e7f8455c747e2c53953c"
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-20T14:37:33.606Z",
+        "method": "Live screenshot inspected; only collapsed-sidebar neutral research content is distributed. Source pixels and computed styles are sequential, not atomic."
+      },
+      "conditions": {
+        "authentication": "User completed normal login in a dedicated visible tab",
+        "viewport": {
+          "dpr": 1.75,
+          "height": 878,
+          "width": 1455
+        },
+        "fixture": "One neutral project and two short UI research prompts",
+        "privateHistory": "Not opened or exported"
+      },
+      "limitations": [
+        "DPR1.75 and 1455×878 viewport differ from the first anonymous DPR1 1440×1000 capture.",
+        "Scopes containing non-zero-size offscreen nodes are not proof that all nodes were visible.",
+        "Network failure, backend cancellation and retry were not exercised."
+      ],
+      "publicProjection": {
+        "method": "Source fixture URL identifiers removed; geometry, CSS, timestamps and source identity retained."
+      }
+    },
+    {
+      "id": "auth-reference-code",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/reference",
+      "capturedAt": "2026-10-20T14:37:33.606Z",
+      "provider": "Independent implementation / CUA validation",
+      "sharing": "included",
+      "path": "reference/workspace.js",
+      "sha256": "6b289fbc40271e7ceaa8671c9e956041df29c855c5b8a4c0230e7fbd7a4eba25",
+      "description": "D workspace behavior reuses source SVG, illustrations and component declarations, mapped to reading tasks."
+    },
+    {
+      "id": "auth-reference-checks",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/reference",
+      "capturedAt": "2026-10-20T14:37:33.606Z",
+      "provider": "Independent implementation / CUA validation",
+      "sharing": "included",
+      "path": "comparison/authenticated-verification.json",
+      "sha256": "dfce25ef33783fc6014383c2abddfaf42512c7fcfae59c908c2b9c970d2a9658",
+      "description": "Checks executed on the local reference, not proof of source behavior."
+    },
+    {
+      "id": "auth-transfer-checks",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/transfer",
+      "capturedAt": "2026-10-20T14:37:33.606Z",
+      "provider": "Independent implementation / CUA validation",
+      "sharing": "included",
+      "path": "comparison/authenticated-verification.json",
+      "sha256": "dfce25ef33783fc6014383c2abddfaf42512c7fcfae59c908c2b9c970d2a9658",
+      "description": "Collection add, goal save/cancel, rename and catalog filtering on the target reading slice."
+    },
+    {
+      "id": "auth-reference-shot-collection-empty",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/transfer",
+      "capturedAt": null,
+      "provider": "Independent implementation / CUA validation",
+      "sharing": "included",
+      "path": "comparison/screenshots/authenticated/collection-empty.jpg",
+      "sha256": "417647e9a680862267d2b5f04d3e5b634c2936971483f3df89024d70cd2e9ad4",
+      "description": "Independent target reference screenshot; source/reference conditions recorded in verification.",
+      "captureInterval": {
+        "startedAt": "2026-10-20T14:11:28.009Z",
+        "completedAt": "2026-10-20T14:11:29.253Z"
+      }
+    },
+    {
+      "id": "auth-reference-shot-collection-populated",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/transfer",
+      "capturedAt": null,
+      "provider": "Independent implementation / CUA validation",
+      "sharing": "included",
+      "path": "comparison/screenshots/authenticated/collection-populated.jpg",
+      "sha256": "c8441758dde109ce26994df5e14f04dbf71985b75c02d8af6668049dd1116a07",
+      "description": "Independent target reference screenshot; source/reference conditions recorded in verification.",
+      "captureInterval": {
+        "startedAt": "2026-10-20T14:11:33.803Z",
+        "completedAt": "2026-10-20T14:11:33.956Z"
+      }
+    },
+    {
+      "id": "auth-reference-shot-reading-notes",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/transfer",
+      "capturedAt": null,
+      "provider": "Independent implementation / CUA validation",
+      "sharing": "included",
+      "path": "comparison/screenshots/authenticated/reading-notes.jpg",
+      "sha256": "cfb7e8b463d7ba271ff0533b2251994ddaf4fc276f34430f91686a74af0a3c03",
+      "description": "Independent target reference screenshot; source/reference conditions recorded in verification.",
+      "captureInterval": {
+        "startedAt": "2026-10-20T14:12:11.226Z",
+        "completedAt": "2026-10-20T14:12:12.288Z"
+      }
+    },
+    {
+      "id": "auth-reference-shot-reading-catalog",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/transfer",
+      "capturedAt": null,
+      "provider": "Independent implementation / CUA validation",
+      "sharing": "included",
+      "path": "comparison/screenshots/authenticated/reading-catalog.jpg",
+      "sha256": "40eb00410e55a59e3c7b0d08d6ded5449879e15c3bdc3c3b47d7790a91d639be",
+      "description": "Independent target reference screenshot; source/reference conditions recorded in verification.",
+      "captureInterval": {
+        "startedAt": "2026-10-20T14:12:12.563Z",
+        "completedAt": "2026-10-20T14:12:13.732Z"
+      }
+    },
+    {
+      "id": "auth-reference-shot-reading-search-empty",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/transfer",
+      "capturedAt": null,
+      "provider": "Independent implementation / CUA validation",
+      "sharing": "included",
+      "path": "comparison/screenshots/authenticated/reading-search-empty.jpg",
+      "sha256": "719fd565470f147601542f366cbef5533a24277780b0c3a5c25ac466a866bbda",
+      "description": "Independent target reference screenshot; source/reference conditions recorded in verification.",
+      "captureInterval": {
+        "startedAt": "2026-10-20T14:12:13.765Z",
+        "completedAt": "2026-10-20T14:12:14.852Z"
+      }
+    },
+    {
+      "id": "auth-reference-shot-goal-editor",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/transfer",
+      "capturedAt": null,
+      "provider": "Independent implementation / CUA validation",
+      "sharing": "included",
+      "path": "comparison/screenshots/authenticated/goal-editor.jpg",
+      "sha256": "03aefdcd35dc18e23310dc5891083205dcb54fce7c3c90caf4d399477c11ef58",
+      "description": "Independent target reference screenshot; source/reference conditions recorded in verification.",
+      "captureInterval": {
+        "startedAt": "2026-10-20T00:00:00.000Z",
+        "completedAt": "2026-10-20T14:15:30.037Z"
+      }
+    },
+    {
+      "id": "auth-reference-shot-collection-mobile",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/transfer",
+      "capturedAt": null,
+      "provider": "Independent implementation / CUA validation",
+      "sharing": "included",
+      "path": "comparison/screenshots/authenticated/collection-mobile.jpg",
+      "sha256": "0f2fc6aedd28c36983b746b2261a96369ced9b41309c756eafcf91846d605b4f",
+      "description": "Independent target reference screenshot; source/reference conditions recorded in verification.",
+      "captureInterval": {
+        "startedAt": "2026-10-20T00:00:00.000Z",
+        "completedAt": "2026-10-20T14:15:59.914Z"
+      }
+    },
+    {
+      "id": "auth-reference-shot-source-after-reuse",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "kimi-design-study/reference",
+      "capturedAt": null,
+      "provider": "Independent implementation / CUA validation",
+      "sharing": "included",
+      "path": "comparison/screenshots/authenticated/source-after-reuse.jpg",
+      "sha256": "e936539a505116d420d951e818276bbfb55a0eb185c72a47680fa2a660db2411",
+      "description": "Independent target reference screenshot; source/reference conditions recorded in verification.",
+      "captureInterval": {
+        "startedAt": "2026-10-20T00:00:00.000Z",
+        "completedAt": "2026-10-20T14:16:24.459Z"
+      }
+    },
+    {
+      "id": "auth-reuse-source",
+      "classification": "B",
+      "origin": "current",
+      "subject": "source",
+      "kind": "static",
+      "sourceIdentity": "https://www.kimi.com/en",
+      "capturedAt": null,
+      "provider": "Retained source CSS / serialized observed SVG",
+      "sharing": "included",
+      "path": "assets/reusable/css-provenance.json",
+      "sha256": "323e5808a16d9c989ce1e516854730e43f3c58aaa8199f093d83d680001e85d4",
+      "sourceBinding": {
+        "status": "verified",
+        "reason": "Original CSS URLs were captured on the source page; authenticated computed styles corroborate selected project/reader/catalog roles."
+      },
+      "originalFiles": [
+        {
+          "path": "assets/source/C6aWSxxG.css",
+          "sha256": "7614a52e9f4c965d747df9c437b34ceb3afb3cd7f30012bc0932393001eafa32"
+        },
+        {
+          "path": "assets/source/C8wgJTpb.css",
+          "sha256": "4cc7704c617855a45058dddd42c0d2693885d8d3525e4629bf990faf63b31351"
+        },
+        {
+          "path": "assets/source/CSbU0y5D.css",
+          "sha256": "4bd94316bd03fe651df346ecdb7c297cecc6c855afd4a97feb464f7bdb4cefcf"
+        },
+        {
+          "path": "assets/source/CzEhVgxm.css",
+          "sha256": "e6ee52e82d512a71b74ae3ff4c30135c302678b0274f869d778bc9c746067687"
+        },
+        {
+          "path": "assets/source/D6vFIDgL.css",
+          "sha256": "8f030ed5ea12dea3df31544f8c44dce20dcf085640a4a2ba8f236f85df5ec70c"
+        },
+        {
+          "path": "assets/source/_4lrjgw8.css",
+          "sha256": "063deb43a13c8b82f6696ec86439b4721f4d58418afc0f3379186f39b6b7acc9"
+        }
+      ],
+      "limitations": [
+        "CSS declarations and available SVG do not establish every runtime state; wrapper and scope adaptation are D."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "capturedAt": "2026-10-20T14:16:24.486Z",
+  "classification": "D",
+  "method": "CUA actions on live local reference, original SVG/CSS/font binding checks, local persistence and state-settled screenshot pairs",
+  "checks": [
+    {
+      "name": "Cancel discards unsaved reading goal",
+      "pass": true,
+      "detail": "Reopening restores persisted value"
+    },
+    {
+      "name": "Goal save updates visible context",
+      "pass": true,
+      "detail": "Saved text appears in the context card"
+    },
+    {
+      "name": "Collection title can be renamed",
+      "pass": true,
+      "detail": "Title editor updates local collection context"
+    },
+    {
+      "name": "Quick entry creates a real reading item",
+      "pass": true,
+      "detail": "New item is persisted in the shared reading list"
+    },
+    {
+      "name": "Reader retains structured table and code",
+      "pass": true,
+      "detail": "Four-row table and a real code block"
+    },
+    {
+      "name": "Reader width follows the source text column",
+      "pass": true,
+      "detail": "720 CSS px at desktop"
+    },
+    {
+      "name": "Catalog search has a real empty state",
+      "pass": true,
+      "detail": "Input filters target data"
+    },
+    {
+      "name": "Catalog action persists a reading item",
+      "pass": true,
+      "detail": "Action changes after real persistence"
+    },
+    {
+      "name": "Saved title and items survive reload",
+      "pass": true,
+      "detail": "Shared localStorage path used by the reading app"
+    },
+    {
+      "name": "Original component CSS is loaded and bound",
+      "pass": true,
+      "detail": "Source declaration adapter, not only asset copying"
+    },
+    {
+      "name": "Original SVG and native font stack are used",
+      "pass": true,
+      "detail": "Source SVG markup and measured native family are bound"
+    },
+    {
+      "name": "Collection remains usable at narrow width",
+      "pass": true,
+      "detail": "390 CSS px target adaptation"
+    },
+    {
+      "name": "Existing composer retains disabled empty state",
+      "pass": true,
+      "detail": "Regression after original SVG integration"
+    },
+    {
+      "name": "Existing tool panel works with original SVG",
+      "pass": true,
+      "detail": "Icon replacement does not prematurely close the panel"
+    },
+    {
+      "name": "Escape restores the old tool state",
+      "pass": true,
+      "detail": "Menu keyboard path remains usable"
+    },
+    {
+      "name": "No new reference browser errors",
+      "pass": true,
+      "detail": "[]"
+    }
+  ],
+  "captures": [
+    {
+      "id": "collection-empty",
+      "subject": "transfer",
+      "path": "comparison/screenshots/authenticated/collection-empty.jpg",
+      "startedAt": "2026-10-20T14:11:28.009Z",
+      "completedAt": "2026-10-20T14:11:29.253Z",
+      "viewport": {
+        "dpr": 1.75,
+        "height": 878,
+        "width": 1455
+      }
+    },
+    {
+      "id": "collection-populated",
+      "subject": "transfer",
+      "path": "comparison/screenshots/authenticated/collection-populated.jpg",
+      "startedAt": "2026-10-20T14:11:33.803Z",
+      "completedAt": "2026-10-20T14:11:33.956Z",
+      "viewport": {
+        "dpr": 1.75,
+        "height": 878,
+        "width": 1455
+      }
+    },
+    {
+      "id": "reading-notes",
+      "subject": "transfer",
+      "path": "comparison/screenshots/authenticated/reading-notes.jpg",
+      "startedAt": "2026-10-20T14:12:11.226Z",
+      "completedAt": "2026-10-20T14:12:12.288Z",
+      "viewport": {
+        "dpr": 1.75,
+        "height": 878,
+        "width": 1455
+      }
+    },
+    {
+      "id": "reading-catalog",
+      "subject": "transfer",
+      "path": "comparison/screenshots/authenticated/reading-catalog.jpg",
+      "startedAt": "2026-10-20T14:12:12.563Z",
+      "completedAt": "2026-10-20T14:12:13.732Z",
+      "viewport": {
+        "dpr": 1.75,
+        "height": 878,
+        "width": 1455
+      }
+    },
+    {
+      "id": "reading-search-empty",
+      "subject": "transfer",
+      "path": "comparison/screenshots/authenticated/reading-search-empty.jpg",
+      "startedAt": "2026-10-20T14:12:13.765Z",
+      "completedAt": "2026-10-20T14:12:14.852Z",
+      "viewport": {
+        "dpr": 1.75,
+        "height": 878,
+        "width": 1455
+      }
+    },
+    {
+      "id": "goal-editor",
+      "subject": "transfer",
+      "path": "comparison/screenshots/authenticated/goal-editor.jpg",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-20T00:00:00.000Z",
+        "completedAt": "2026-10-20T14:15:30.037Z"
+      },
+      "viewport": {
+        "width": 1455,
+        "height": 878,
+        "dpr": 1.75
+      },
+      "timingNote": "Only calendar-day lower bound and saved-file upper bound retained for this replacement capture; not a precise frame timestamp."
+    },
+    {
+      "id": "collection-mobile",
+      "subject": "transfer",
+      "path": "comparison/screenshots/authenticated/collection-mobile.jpg",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-20T00:00:00.000Z",
+        "completedAt": "2026-10-20T14:15:59.914Z"
+      },
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1.75
+      },
+      "timingNote": "Only calendar-day lower bound and saved-file upper bound retained for this replacement capture; not a precise frame timestamp."
+    },
+    {
+      "id": "source-after-reuse",
+      "subject": "reference",
+      "path": "comparison/screenshots/authenticated/source-after-reuse.jpg",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-20T00:00:00.000Z",
+        "completedAt": "2026-10-20T14:16:24.459Z"
+      },
+      "viewport": {
+        "width": 1455,
+        "height": 878,
+        "dpr": 1.75
+      },
+      "timingNote": "Only calendar-day lower bound and saved-file upper bound retained for this replacement capture; not a precise frame timestamp."
+    }
+  ],
+  "passed": true,
+  "errors": [],
+  "limits": [
+    "Reference tests do not prove source behavior.",
+    "Mapped content differs; screenshots were checked after completed rendering.",
+    "Narrow workspace is an independent D adaptation."
+  ]
+}

@@ -40,11 +40,12 @@
 | **多邻国** | 有厚度的按钮、选择反馈、分步引导、进度与轻快动效 | [设计包](platforms/mobile/duolingo-android-6-80-6-china-2368/README.md) |
 | **小米运动健康** | 概览卡片、分组设置、层级留白、导航与受控开关 | [设计包](platforms/mobile/mi-fitness/README.md) |
 | **Kimi** | 多行输入、草稿、对话反馈、保存取消、异步与重试 | [设计包](platforms/mobile/kimi/README.md) |
+| **Kimi Web** | 暖白工作区、浮动输入、项目辅助卡、富文本与可搜索目录 | [设计包](platforms/web/kimi-web/README.md) |
 | **汽水音乐** | 深色表面、薄荷色决策层、主次动作、编辑与失败重试 | [设计包](platforms/mobile/qishui-music-android-21-1-0/README.md) |
 | **Hark** | 玻璃材质、流式内容、富内容卡片与天空背景 | [研究参考](platforms/web/hark/README.md) |
 | **Mirasim** | 简洁分组、深浅主题、抽屉与混合应用边界 | [研究参考](platforms/mobile/mirasim/README.md) |
 
-前四份为 **Design Package v1**，Hark、Mirasim保留历史研究入口。各包的 `partial` 表示仍有原版未知参数或还原差异；使用范围和目标实现选择写在包内。汽水音乐的目录封面是独立 Web 参考，其检查结果不替代原版 Android 验证。
+多邻国、小米、Kimi（Android）、Kimi Web和汽水音乐为 **Design Package v1**，Hark、Mirasim保留历史研究入口。各包的 `partial` 表示仍有原版未知参数或还原差异；使用范围和目标实现选择写在包内。Kimi Web的ready只适用于声明的代表UI；原版全部业务不因此变为已测。汽水音乐的目录封面是独立 Web 参考，其检查结果不替代原版 Android 验证。
 
 ## 让 AI 开始实施
 
@@ -53,12 +54,13 @@
 ```text
 我的软件功能和基础界面已经完成。请读取
 https://github.com/ECdison6227/rea-ui-library
-把【多邻国 / 小米运动健康 / Kimi / 汽水音乐】的视觉、动画和通用交互
+把【多邻国 / 小米运动健康 / Kimi / Kimi Web / 汽水音乐】的视觉、动画和通用交互
 应用到我的项目：【项目路径】。
 
 先读仓库 AGENTS.md 和选定来源的 design-package.json、DESIGN_SPEC.md、
 ADAPTATION_GUIDE.md，再按需读取 tokens、组件、布局、交互、动效与对照。
 记录实际使用的 commit，沿用我的技术栈、业务、数据、品牌和接口。
+可用的字体、图表、组件、图标和布局优先直接复用；按目标UI逻辑轻量增删功能、调整文案，记录理由并保持核心任务和数据路径可用。
 
 实际修改代码，完成代表页面和返回、输入、草稿、保存取消、加载、错误、重试等状态。
 来源未知参数使用包内明确标为 D 的适配方案，保留差异记录。

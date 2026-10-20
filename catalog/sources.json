@@ -683,6 +683,132 @@
           "原版字体归因未确认"
         ]
       }
+    },
+    {
+      "id": "kimi-web",
+      "name": "Kimi Web",
+      "subtitle": "暖白工作区、浮动输入与富文本",
+      "platform": "web",
+      "kind": "research",
+      "root": "platforms/web/kimi-web",
+      "visibility": "public",
+      "sourceVersion": "Live snapshot 2026-10-20; page release marker c42d8c1",
+      "provenance": {
+        "kind": "rea-study",
+        "target": "https://www.kimi.com/en",
+        "method": "REA capture_browser_scenario (launch and connect), retained actual REA Evidence, with a labeled public projection and privately retained complete originals; independent isolated-profile Playwright/CDP screenshots, computed styles, CSS declarations and node-scoped platform fonts. The initial anonymous capture used no credentials or content generation; the authenticated supplement used two neutral UI fixture prompts, without backend-protocol or output-quality testing. Supplement: normal user login, CUA Chrome extension scoped captures, synthetic project/chat, selected original component CSS/SVG reuse; no private history exported.",
+        "researchEntry": "README.md"
+      },
+      "summary": "Kimi网页公开与正常登录后代表设计：侧栏、输入底托、说明编辑、会话富文本、目录搜索；含原始资源复用和Reading Room迁移。",
+      "tags": [
+        "Web",
+        "工作区",
+        "输入",
+        "富文本",
+        "SVG复用"
+      ],
+      "stack": [
+        "Live Vue SSR web page in Windows Chrome 155.0.8059.40"
+      ],
+      "readiness": "ready",
+      "coverage": "2026-10-20网页；匿名1440×1000/DPR1，登录后1455×878/DPR1.75；取消后台语义、真实故障与移动OS未测。",
+      "features": [
+        "公开首页、导航、输入底托、菜单、亮暗色与窄屏",
+        "已登录的项目空态、说明编辑、正文/表格/代码、生成中控件、插件搜索与技能目录的代表设计",
+        "直接复用16个原始SVG、两张通用项目插画、原系统字体栈与精选组件CSS",
+        "Reading Room及集合/笔记/发现页面的可运行迁移样例"
+      ],
+      "limits": [
+        "未触发真实网络错误；停止后的后端取消与晚到结果未知，目标采用显式D策略。",
+        "真实移动UA/软键盘、原版完整键盘/读屏、全部账号与后台业务分支未测。",
+        "动效时间主要是B声明；原版未逐帧测量。",
+        "Original-platform/version boundaries remain; integrity check is not functional acceptance."
+      ],
+      "palette": [
+        "#fbfaf9",
+        "#ffffff",
+        "#1a1a1a",
+        "#1783ff"
+      ],
+      "cover": "generic",
+      "paletteClassification": "D: catalog presentation; implementation uses scoped source tokens",
+      "designPackage": "design-package.json",
+      "artifacts": [
+        {
+          "label": "研究入口",
+          "path": "README.md",
+          "role": "readme"
+        },
+        {
+          "label": "设计规范",
+          "path": "DESIGN_SPEC.md",
+          "role": "spec"
+        },
+        {
+          "label": "Design Package v1",
+          "path": "design-package.json",
+          "role": "design-package"
+        },
+        {
+          "label": "迁移指南",
+          "path": "ADAPTATION_GUIDE.md",
+          "role": "adoption"
+        },
+        {
+          "label": "浏览组件与参考",
+          "path": "index.html",
+          "role": "preview"
+        },
+        {
+          "label": "登录后补充规范",
+          "path": "AUTHENTICATED_DESIGN.md",
+          "role": "spec"
+        },
+        {
+          "label": "登录后原版/参考对照",
+          "path": "comparison/authenticated.html",
+          "role": "comparison"
+        },
+        {
+          "label": "集合/笔记/发现参考",
+          "path": "reference/workspace.html",
+          "role": "reference"
+        },
+        {
+          "label": "原计划完成核查",
+          "path": "COMPLETION_REVIEW.md",
+          "role": "spec"
+        },
+        {
+          "label": "公开分发审查",
+          "path": "PUBLICATION_REVIEW.json",
+          "role": "spec"
+        }
+      ],
+      "run": {
+        "cwd": "platforms/web/kimi-web",
+        "command": "node tools/serve.mjs",
+        "requires": "Node.js 22.13+；零第三方运行依赖，仅本地参考，不启动Kimi或调用其服务。",
+        "verifiedHere": false
+      },
+      "typography": {
+        "families": [
+          "Segoe UI",
+          "Segoe UI Semibold",
+          "system-ui"
+        ],
+        "classification": "A native family stack with node-scoped glyph samples; complete CJK fallback not attributed."
+      },
+      "thumbnail": {
+        "path": "evidence/screenshots/desktop-base.png",
+        "classification": "A · 网页未登录主页，侧栏和输入底托",
+        "reviewed": true
+      },
+      "integrity": {
+        "manifest": "catalog/manifests/kimi-web.json",
+        "files": 210,
+        "treeSha256": "a0baff8baf3b53d6607f26c4f8949a1d6ee26e16a2bf87f24a5b0bf9c17a60cf"
+      }
     }
   ],
   "repository": {

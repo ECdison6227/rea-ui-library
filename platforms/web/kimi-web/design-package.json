@@ -1,0 +1,116 @@
+{
+  "format": "rea-design-package",
+  "formatVersion": 1,
+  "id": "kimi-web",
+  "name": "Kimi Web",
+  "source": {
+    "platform": "web",
+    "runtime": "Live Vue SSR web page in Windows Chrome 155.0.8059.40",
+    "version": "Live snapshot 2026-10-20; page release marker c42d8c1",
+    "identity": "https://www.kimi.com/en",
+    "capturedAt": "2026-10-20T12:52:36.797Z",
+    "researchMethod": "REA capture_browser_scenario (launch and connect), retained actual REA Evidence, with a labeled public projection and privately retained complete originals; independent isolated-profile Playwright/CDP screenshots, computed styles, CSS declarations and node-scoped platform fonts. The initial anonymous capture used no credentials or content generation; the authenticated supplement used two neutral UI fixture prompts, without backend-protocol or output-quality testing. Supplement: normal user login, CUA Chrome extension scoped captures, synthetic project/chat, selected original component CSS/SVG reuse; no private history exported.",
+    "researchEvidenceRefs": [
+      "ev_637d252dde4533c9a06ce5a42f4765227077efc55808e5314b29c02d49c93b56",
+      "obs-desktop-base",
+      "decl-source-css",
+      "auth-observation-project-empty",
+      "auth-observation-chat-markdown",
+      "auth-observation-plugins-installed"
+    ],
+    "authentication": {
+      "required": true,
+      "status": "authenticated",
+      "verifiedAt": "2026-10-20T13:46:15.303Z",
+      "evidenceRefs": [
+        "auth-observation-project-empty",
+        "auth-observation-plugins-installed"
+      ],
+      "conditions": "User completed normal login in Chrome; anonymous DPR1 and authenticated DPR1.75 captures remain separately identified."
+    }
+  },
+  "scope": {
+    "mode": "visual-design-and-core-interactions",
+    "goal": "将Kimi网页的视觉、组件、关键动效和通用交互用于其他业务；包含正常登录后的代表设计。",
+    "included": [
+      "公开英文首页与导航",
+      "亮色和系统暗色样本",
+      "输入/模式/工具浮层",
+      "登录门槛弹层的视觉与Esc保留",
+      "390/1024/1440 CSS px视口",
+      "Inspiration画廊、hover和分类",
+      "正常登录后的中性研究项目、说明保存/取消、会话富文本与生成过渡、插件空搜索和技能目录"
+    ],
+    "excludedBusiness": [
+      "AI推理算法与生成质量验收（只发起两条中性UI样本请求）",
+      "私人历史内容、认证协议、安全测试、会员收费",
+      "第三方授权、真实安装与上传",
+      "原产品完整业务功能克隆"
+    ]
+  },
+  "readiness": {
+    "status": "ready",
+    "supportedUses": [
+      "公开首页、导航、输入底托、菜单、亮暗色与窄屏",
+      "已登录的项目空态、说明编辑、正文/表格/代码、生成中控件、插件搜索与技能目录的代表设计",
+      "直接复用16个原始SVG、两张通用项目插画、原系统字体栈与精选组件CSS",
+      "Reading Room及集合/笔记/发现页面的可运行迁移样例"
+    ],
+    "coreGaps": [],
+    "optionalGaps": [
+      "未触发真实网络错误；停止后的后端取消与晚到结果未知，目标采用显式D策略。",
+      "真实移动UA/软键盘、原版完整键盘/读屏、全部账号与后台业务分支未测。",
+      "动效时间主要是B声明；原版未逐帧测量。"
+    ]
+  },
+  "entries": {
+    "readme": "README.md",
+    "spec": "DESIGN_SPEC.md",
+    "tokens": "tokens/tokens.json",
+    "components": "components/catalog.json",
+    "layouts": "patterns/layouts.json",
+    "interactions": "patterns/interactions.json",
+    "motion": "motion/catalog.json",
+    "assets": "assets/manifest.json",
+    "evidence": "evidence/index.json",
+    "reference": "reference/README.md",
+    "comparison": "comparison/README.md",
+    "adaptation": "ADAPTATION_GUIDE.md"
+  },
+  "validation": {
+    "reference": {
+      "status": "verified",
+      "evidenceRefs": [
+        "obs-desktop-base",
+        "impl-reference-validation",
+        "auth-observation-project-empty",
+        "auth-observation-chat-markdown",
+        "auth-observation-plugins-installed",
+        "auth-reference-checks"
+      ],
+      "description": "主页与登录后代表布局已实际配对；字体/图标/组件复用路径和D差异明确列出，不声称全产品逐像素相同。"
+    },
+    "crossDomain": {
+      "status": "verified",
+      "evidenceRefs": [
+        "impl-transfer",
+        "impl-shot-transfer-library",
+        "impl-shot-gallery-reference",
+        "auth-transfer-checks"
+      ],
+      "description": "Reading Room的本地创建/集合/筛选/完成/刷新持久化和画廊分类通过执行检查。"
+    }
+  },
+  "distribution": {
+    "mode": "reviewed-public",
+    "reviewedAt": "2026-10-20T14:42:47.751Z",
+    "authorization": "Owner requested uploading the completed Kimi Web design study to ECdison6227/rea-ui-library in this conversation.",
+    "omissions": [
+      "Browser profiles, cookies, storage, credentials, private account/history/selector images and caches are excluded.",
+      "Source login QR images and full original DOM snapshots are withheld with actual SHA256.",
+      "Synthetic project/chat URL identifiers are removed from public JSON; the underlying source capture conditions and original hashes are retained.",
+      "Complete original REA record is kept privately; the public projection preserves real Evidence IDs, screenshots, actions and limitations."
+    ],
+    "publication": "Prepared as a reviewed public addition at platforms/web/kimi-web; Android Kimi remains a separate source."
+  }
+}

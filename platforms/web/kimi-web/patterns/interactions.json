@@ -1,0 +1,440 @@
+{
+  "formatVersion": 1,
+  "kind": "interactions",
+  "items": [
+    {
+      "id": "interaction-draft",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-desktop-base",
+        "obs-input-filled"
+      ],
+      "unknowns": [
+        "原版Enter/Shift+Enter和IME组合期提交未直接测试。"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "目标使用trim判断启用；Enter提交，Shift+Enter换行，composition期间不提交。"
+      },
+      "componentRefs": [
+        "cmp-composer",
+        "cmp-submit"
+      ],
+      "transitions": [
+        {
+          "from": "empty",
+          "event": "type non-empty text",
+          "to": "filled",
+          "result": "Placeholder disappears and submit changes from gray to dark.",
+          "evidenceRefs": [
+            "obs-input-filled"
+          ]
+        }
+      ],
+      "retention": "当前草稿在观察的登录弹层关闭后保留；不推断服务器同步。"
+    },
+    {
+      "id": "interaction-mode-menu",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-mode-menu",
+        "obs-effort-menu",
+        "obs-menu-dismissed"
+      ],
+      "unknowns": [
+        "原版选择和键盘遍历未测试。"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "本地参考方向键/Enter选择并返回触发器；子选项内嵌。"
+      },
+      "componentRefs": [
+        "cmp-option-menu"
+      ],
+      "transitions": [
+        {
+          "from": "closed",
+          "event": "click current model",
+          "to": "parent menu",
+          "result": "Open described option list and show selected check.",
+          "evidenceRefs": [
+            "obs-mode-menu"
+          ]
+        },
+        {
+          "from": "parent menu",
+          "event": "hover effort row",
+          "to": "submenu",
+          "result": "Show Standard and High.",
+          "evidenceRefs": [
+            "obs-effort-menu"
+          ]
+        },
+        {
+          "from": "submenu",
+          "event": "Escape",
+          "to": "parent menu",
+          "result": "Child menu disappears; parent remains.",
+          "evidenceRefs": [
+            "obs-menu-dismissed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interaction-tools",
+      "classification": "A",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-tool-menu",
+        "obs-tools-dismissed"
+      ],
+      "unknowns": [
+        "原站关闭后真实焦点位置未知；参考D返回触发器。"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "用本包的语义角色和接口实施；数值的来源等级由记录 classification 表示。"
+      },
+      "componentRefs": [
+        "cmp-tools",
+        "cmp-context",
+        "cmp-shortcut"
+      ],
+      "transitions": [
+        {
+          "from": "closed",
+          "event": "click plus",
+          "to": "wide panel",
+          "result": "Replace underlay/shortcut area with tool rows; plus becomes close.",
+          "evidenceRefs": [
+            "obs-tool-menu"
+          ]
+        },
+        {
+          "from": "wide panel",
+          "event": "Escape",
+          "to": "closed",
+          "result": "Restore underlay and shortcuts.",
+          "evidenceRefs": [
+            "obs-tools-dismissed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interaction-auth-gate",
+      "classification": "A",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-project-gate",
+        "obs-login-dismissed",
+        "obs-plugins-page"
+      ],
+      "unknowns": [
+        "验证码发送、SSO、认证完成、请求取消、失败样式均未执行。"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "用本包的语义角色和接口实施；数值的来源等级由记录 classification 表示。"
+      },
+      "componentRefs": [
+        "cmp-context",
+        "cmp-modal",
+        "cmp-composer"
+      ],
+      "transitions": [
+        {
+          "from": "draft present",
+          "event": "select project while logged out",
+          "to": "login modal",
+          "result": "Show QR / phone form behind 60% black mask.",
+          "evidenceRefs": [
+            "obs-project-gate"
+          ]
+        },
+        {
+          "from": "login modal",
+          "event": "Escape",
+          "to": "draft present",
+          "result": "Close modal while keeping typed input.",
+          "evidenceRefs": [
+            "obs-login-dismissed"
+          ]
+        },
+        {
+          "from": "public route",
+          "event": "open plugins while logged out",
+          "to": "login modal",
+          "result": "Protected content is unavailable to this profile.",
+          "evidenceRefs": [
+            "obs-plugins-page"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interaction-navigation",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-sidebar-collapsed",
+        "obs-mobile-navigation"
+      ],
+      "unknowns": [
+        "原版Ctrl+B语义只在提示中出现，没有实际按键验证。"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "参考添加Ctrl+B及Escape收起覆盖导航，不借此证明原站。"
+      },
+      "componentRefs": [
+        "cmp-navigation"
+      ],
+      "transitions": [
+        {
+          "from": "expanded",
+          "event": "collapse sidebar",
+          "to": "collapsed",
+          "result": "Recenter content and reveal top-left expand trigger.",
+          "evidenceRefs": [
+            "obs-sidebar-collapsed"
+          ]
+        },
+        {
+          "from": "narrow closed",
+          "event": "activate expand",
+          "to": "narrow open",
+          "result": "Sidebar slides over content.",
+          "evidenceRefs": [
+            "obs-mobile-navigation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interaction-category",
+      "classification": "A",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "obs-inspiration-settled",
+        "obs-inspiration-design"
+      ],
+      "unknowns": [
+        "浏览器后退恢复和晚到请求未测。"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "用本包的语义角色和接口实施；数值的来源等级由记录 classification 表示。"
+      },
+      "componentRefs": [
+        "cmp-category-tab",
+        "cmp-gallery"
+      ],
+      "transitions": [
+        {
+          "from": "Featured",
+          "event": "click Design tab",
+          "to": "Design selected",
+          "result": "URL becomes /inspiration?tab=design; cards and composer context change.",
+          "evidenceRefs": [
+            "obs-inspiration-design"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interaction-transfer",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "impl-transfer"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "仅本地阅读清单，不连接Kimi后台。"
+      },
+      "componentRefs": [
+        "cmp-composer",
+        "cmp-modal",
+        "cmp-feedback-target",
+        "cmp-category-tab"
+      ],
+      "transitions": [
+        {
+          "from": "empty",
+          "event": "submit title",
+          "to": "saved list",
+          "result": "Persist a new reading card in localStorage and announce a toast.",
+          "evidenceRefs": [
+            "impl-transfer"
+          ]
+        },
+        {
+          "from": "To read",
+          "event": "mark finished",
+          "to": "Finished",
+          "result": "Update persisted item and filtered view.",
+          "evidenceRefs": [
+            "impl-transfer"
+          ]
+        },
+        {
+          "from": "collection dialog",
+          "event": "save valid name",
+          "to": "context set",
+          "result": "Update underlay and persist selected collection locally.",
+          "evidenceRefs": [
+            "impl-transfer"
+          ]
+        },
+        {
+          "from": "dialog or menu",
+          "event": "Escape",
+          "to": "previous control",
+          "result": "Dismiss and restore focus; draft remains.",
+          "evidenceRefs": [
+            "impl-transfer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "auth-interaction-create",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "auth-observation-project-create",
+        "auth-observation-project-create-filled",
+        "auth-observation-project-empty"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "保留实测角色、几何和已取得组件样式；按阅读业务替换内容与事件，不复制原服务后台。"
+      },
+      "componentRefs": [
+        "auth-cmp-project"
+      ],
+      "transitions": [
+        {
+          "from": "name empty",
+          "event": "fill project name",
+          "to": "name filled",
+          "result": "Create icon appears; Enter submits the name.",
+          "evidenceRefs": [
+            "auth-observation-project-create-filled"
+          ]
+        },
+        {
+          "from": "filled",
+          "event": "Enter",
+          "to": "project empty",
+          "result": "New neutral project opens with instruction/file cards.",
+          "evidenceRefs": [
+            "auth-observation-project-empty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "auth-interaction-instructions",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "auth-observation-instructions-draft",
+        "auth-observation-project-with-instructions"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "保留实测角色、几何和已取得组件样式；按阅读业务替换内容与事件，不复制原服务后台。"
+      },
+      "componentRefs": [
+        "auth-cmp-instructions",
+        "auth-cmp-project"
+      ],
+      "transitions": [
+        {
+          "from": "editing draft",
+          "event": "Cancel and reopen",
+          "to": "empty editor",
+          "result": "Unsaved text is discarded.",
+          "evidenceRefs": [
+            "auth-observation-instructions-draft"
+          ]
+        },
+        {
+          "from": "editing draft",
+          "event": "Add",
+          "to": "project configured",
+          "result": "Saved text is shown in the instruction card.",
+          "evidenceRefs": [
+            "auth-observation-project-with-instructions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "auth-interaction-search",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "auth-observation-plugins-installed",
+        "auth-observation-plugins-empty-search",
+        "auth-observation-skills-page"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "保留实测角色、几何和已取得组件样式；按阅读业务替换内容与事件，不复制原服务后台。"
+      },
+      "componentRefs": [
+        "auth-cmp-catalog"
+      ],
+      "transitions": [
+        {
+          "from": "catalog",
+          "event": "type non-matching text",
+          "to": "empty results",
+          "result": "Show explicit No matching plugins found message.",
+          "evidenceRefs": [
+            "auth-observation-plugins-empty-search"
+          ]
+        },
+        {
+          "from": "Plugins",
+          "event": "select Skills",
+          "to": "Skills catalog",
+          "result": "Page tabs change route to /skills and content type changes.",
+          "evidenceRefs": [
+            "auth-observation-skills-page"
+          ]
+        }
+      ]
+    }
+  ]
+}

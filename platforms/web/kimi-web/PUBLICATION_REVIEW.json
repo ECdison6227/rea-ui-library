@@ -1,0 +1,445 @@
+{
+  "formatVersion": 1,
+  "reviewedAt": "2026-10-20T14:42:47.762Z",
+  "sourceIdentity": "https://www.kimi.com/en",
+  "studyId": "kimi-web",
+  "distribution": "reviewed-public",
+  "method": "Explicit dependency allowlist, no original-source execution, file-level SHA review, scoped privacy projections and withheld QR/DOM originals.",
+  "withheldOriginals": [
+    {
+      "path": "evidence/raw/desktop-base.html",
+      "sha256": "47b49bffb9368b70d49a3297aded34a801a5d202b1f4a457f354f4c655eaa71b",
+      "bytes": 214882,
+      "reason": "Full original DOM snapshots are retained privately; public computed styles and reviewed pixels suffice."
+    },
+    {
+      "path": "evidence/raw/mode-menu.html",
+      "sha256": "95fad749309fa60f380498d46d0aabd16cb8c05f68abfa5df7a39ef75baed6cf",
+      "bytes": 212162,
+      "reason": "Full original DOM snapshots are retained privately; public computed styles and reviewed pixels suffice."
+    },
+    {
+      "path": "evidence/raw/effort-menu.html",
+      "sha256": "f1be1cf1a63822a20e962ca42a473adcada158a05f6dc7d7e54e7a69e014bc61",
+      "bytes": 213944,
+      "reason": "Full original DOM snapshots are retained privately; public computed styles and reviewed pixels suffice."
+    },
+    {
+      "path": "evidence/raw/menu-dismissed.html",
+      "sha256": "d08c541b9c9245b717a2bfa568d927303aad48950353afdabc8d8a655c45c710",
+      "bytes": 212166,
+      "reason": "Full original DOM snapshots are retained privately; public computed styles and reviewed pixels suffice."
+    },
+    {
+      "path": "evidence/raw/tool-menu.html",
+      "sha256": "8378bd5f02a7b3e9276fb1fa5225034043a44b3d156977c2146ac9973ec57235",
+      "bytes": 479241,
+      "reason": "Full original DOM snapshots are retained privately; public computed styles and reviewed pixels suffice."
+    },
+    {
+      "path": "evidence/raw/tools-dismissed.html",
+      "sha256": "8e188c8530dfb57b9e107cc05ae69173b5752bee755b362420e724576ab5d2cf",
+      "bytes": 206795,
+      "reason": "Full original DOM snapshots are retained privately; public computed styles and reviewed pixels suffice."
+    },
+    {
+      "path": "evidence/raw/input-filled.html",
+      "sha256": "6846908c7a681b5a9d37b9b4eb24ba6f669ee42ccd61af47b0be5e85cea5bfc7",
+      "bytes": 206837,
+      "reason": "Full original DOM snapshots are retained privately; public computed styles and reviewed pixels suffice."
+    },
+    {
+      "path": "evidence/screenshots/project-gate.png",
+      "sha256": "ceaecfcad3fd6c4037ea1c967b2afb634879828422b6517e1f45c4307d9700b3",
+      "bytes": 66867,
+      "reason": "Source login QR challenge is not published."
+    },
+    {
+      "path": "evidence/raw/project-gate.html",
+      "sha256": "fd44453556630ddbf9174112f04111153730f5c6fdab20a89b32ccf6a9eb4182",
+      "bytes": 334728,
+      "reason": "Full original DOM snapshots are retained privately; public computed styles and reviewed pixels suffice."
+    },
+    {
+      "path": "evidence/raw/login-dismissed.html",
+      "sha256": "bbb263a8a2c3f995d72cef51e345ed7475284272478370fe463a23849dc12b53",
+      "bytes": 328938,
+      "reason": "Full original DOM snapshots are retained privately; public computed styles and reviewed pixels suffice."
+    },
+    {
+      "path": "evidence/raw/sidebar-collapsed.html",
+      "sha256": "d1b8147b9e73767f26a91b58a6a54c4110c88c2a4871df515c1230ed0031643b",
+      "bytes": 328956,
+      "reason": "Full original DOM snapshots are retained privately; public computed styles and reviewed pixels suffice."
+    },
+    {
+      "path": "evidence/raw/tablet-home.html",
+      "sha256": "d1b8147b9e73767f26a91b58a6a54c4110c88c2a4871df515c1230ed0031643b",
+      "bytes": 328956,
+      "reason": "Full original DOM snapshots are retained privately; public computed styles and reviewed pixels suffice."
+    },
+    {
+      "path": "evidence/raw/mobile-home.html",
+      "sha256": "99e09a36b349efd42f60d1ea14adec8af7605848bc12e7213603e5aaa60cc5a8",
+      "bytes": 329489,
+      "reason": "Full original DOM snapshots are retained privately; public computed styles and reviewed pixels suffice."
+    },
+    {
+      "path": "evidence/raw/mobile-navigation.html",
+      "sha256": "befd92a414d6e36e401171d51de3bf7e52a69f17a09a33e34e2e4d25a7619465",
+      "bytes": 329488,
+      "reason": "Full original DOM snapshots are retained privately; public computed styles and reviewed pixels suffice."
+    },
+    {
+      "path": "evidence/raw/inspiration-settled.html",
+      "sha256": "ea167cfa8530c4772a3da422508e87550db45ca54bb511f194c7c5eb95f6662e",
+      "bytes": 343966,
+      "reason": "Full original DOM snapshots are retained privately; public computed styles and reviewed pixels suffice."
+    },
+    {
+      "path": "evidence/raw/inspiration-hover.html",
+      "sha256": "f5925cd50197a75082eb1fea22f57a1f430f99a3c6c05397cc07cbcd3b9cab28",
+      "bytes": 343995,
+      "reason": "Full original DOM snapshots are retained privately; public computed styles and reviewed pixels suffice."
+    },
+    {
+      "path": "evidence/raw/inspiration-design.html",
+      "sha256": "dc082a7df9d8ef13a2e2333bc194f93f303e6bfad4359b52eba198c204eb79a3",
+      "bytes": 261511,
+      "reason": "Full original DOM snapshots are retained privately; public computed styles and reviewed pixels suffice."
+    },
+    {
+      "path": "evidence/screenshots/plugins-page.png",
+      "sha256": "4261c0dcd9a96911ba898b083dab8758e4add5dbd98bea2e4e4f31535e04607a",
+      "bytes": 52545,
+      "reason": "Source login QR challenge is not published."
+    },
+    {
+      "path": "evidence/raw/plugins-page.html",
+      "sha256": "49032526f8d1f507fce8ed39e2add1a92c2c6c1b14c0d1bdeeec088358b548af",
+      "bytes": 333130,
+      "reason": "Full original DOM snapshots are retained privately; public computed styles and reviewed pixels suffice."
+    },
+    {
+      "path": "evidence/raw/dark-preference.html",
+      "sha256": "403c4728e47c2915afe50fa0017ae7f2cad438c9d463c1181e499d49394fa496",
+      "bytes": 205406,
+      "reason": "Full original DOM snapshots are retained privately; public computed styles and reviewed pixels suffice."
+    },
+    {
+      "path": "evidence/raw/keyboard-focus.html",
+      "sha256": "e00cf181ca85bb4b1080452df277e04e96ff4518bddf785af7d73ca645f93d47",
+      "bytes": 205429,
+      "reason": "Full original DOM snapshots are retained privately; public computed styles and reviewed pixels suffice."
+    },
+    {
+      "path": "evidence/raw/rea-desktop.json",
+      "sha256": "5e3c11c7639c1117fb0c8354311ec7ede6e2c734f2b533df0329ecaea1530407",
+      "bytes": 655359,
+      "reason": "Complete original REA bundle is retained privately; a labeled public projection keeps actual IDs and relevant screenshot evidence."
+    }
+  ],
+  "projectedFiles": [
+    {
+      "path": "DESIGN_SPEC.md",
+      "originalSha256": "62d875de9f68fd19be87e670539d77296583a8fd6a5341ea9176603a4b82ec85",
+      "publicSha256": "a567eb6b8839155bd561c504299a34f897b2ec4b4ec066c73b512b7dd1a01815",
+      "kind": "consumer metadata / relative-link adapter"
+    },
+    {
+      "path": "assets/USAGE.md",
+      "originalSha256": "dbb779901af0b540300604b0cbe74ef5523ef91fb875663ab74db1eaa3f23075",
+      "publicSha256": "49be02dc1da675e3c6640806b93721d65db06f83329f98420fc4dfcd868663ea",
+      "kind": "consumer metadata / relative-link adapter"
+    },
+    {
+      "path": "assets/reusable/css-provenance.json",
+      "originalSha256": "d9ec8fe766e88fc152ec5eebd830def7a772bcd64ca8dd84cde83ad43d9e1558",
+      "publicSha256": "323e5808a16d9c989ce1e516854730e43f3c58aaa8199f093d83d680001e85d4",
+      "kind": "consumer metadata / relative-link adapter"
+    },
+    {
+      "path": "assets/reusable/manifest.json",
+      "originalSha256": "3f7d14e88fa88fedcfd74d9ff58cd4e99799cf914a360a79a87b58f7cce51183",
+      "publicSha256": "8596e54a21394108390a561ae23ea33efa3b4a5f53762f752f8f6ddaeb3fc115",
+      "kind": "consumer metadata / relative-link adapter"
+    },
+    {
+      "path": "assets/source/authenticated-inline-icons.json",
+      "originalSha256": "9140aafe2ed2d26dbe16e0317c51197c99828650be7e2cd317ed659eeaf3e74f",
+      "publicSha256": "863f099ff2819e1dcce2ad428d548a3c9fa476ece8d90b1d8eab0ba81fb732f1",
+      "kind": "consumer metadata / relative-link adapter"
+    },
+    {
+      "path": "assets/source/downloads.json",
+      "originalSha256": "e26b9d332e916d2198abe3854cc53bf99563407099570427fff55c81e1e2579a",
+      "publicSha256": "6c98ea5a45aead85ed3d5ab6afbfd06157dcd405bce70031f1646ca04ea22e0c",
+      "kind": "consumer metadata / relative-link adapter"
+    },
+    {
+      "path": "assets/source/inline-icons.json",
+      "originalSha256": "7f09f950ba781772f8e491d88616d16bcdb98984c835c248a952e6d469e9629f",
+      "publicSha256": "8f58117ef17e42f26473434208e74c383c4721932cf49522d28696217781f934",
+      "kind": "consumer metadata / relative-link adapter"
+    },
+    {
+      "path": "comparison/authenticated.html",
+      "originalSha256": "70c605e309022ccdb0b1c5b756ea10b87ca71727670be6d551014bc0e07aeed8",
+      "publicSha256": "fc813e5de5aa12cb5b05947cfc117f922a6af8f295174b2cb5bad7a7ce089017",
+      "kind": "consumer metadata / relative-link adapter"
+    },
+    {
+      "path": "comparison/index.html",
+      "originalSha256": "078f85fb49156f8dafc98bf280c0788e408a1d8dbe734d9bc09a179a63016276",
+      "publicSha256": "d01b7e42743676cb65258fa6b45324567522b71a8fa2788d534a88006ef59834",
+      "kind": "consumer metadata / relative-link adapter"
+    },
+    {
+      "path": "comparison/verification.json",
+      "originalSha256": "7fb52bfe122ec566109ebcd2ebfcbd5a1dccd32bd4ed9857449771a46305f1d7",
+      "publicSha256": "675eca4862a3cf46da702f1864905ba257336a8063cad7f443bc054b676a0666",
+      "kind": "consumer metadata / relative-link adapter"
+    },
+    {
+      "path": "evidence/raw/authenticated/chat-complete.json",
+      "originalSha256": "edb40686920f3afa21d93a4a597a11741eb56bc99080112e500cc418c9848324",
+      "publicSha256": "852154cdbcf75bfe8b741c4ee880da79a79dc23c775a152623c35850f66ac1d5",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/authenticated/chat-generating.json",
+      "originalSha256": "4f7002f68016413dde458e8bf5898c7323d86a273b59e80424f016f6ab8743e5",
+      "publicSha256": "300dc1a43dcc7d94beb3f285ee4f1c3a2fd5ca5385146600ceb2ec347558ef30",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/authenticated/chat-markdown.json",
+      "originalSha256": "caf3a1b46d6d97875e65bb81cad4d669462d83c78829a325c6ff226a4366a9d8",
+      "publicSha256": "15f1268d1925916d9bf03ce38bf751d2472424e19b258de3d0a6ba0ff3292210",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/authenticated/instructions-draft.json",
+      "originalSha256": "5f0454265ba73a8870befe8584521b651768f80bc9e50f08a7f9281fb5250615",
+      "publicSha256": "65718491b372f0f5f28125255a36369333d570d320482cf4622848204d1ad86e",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/authenticated/instructions-empty.json",
+      "originalSha256": "23ad4052158be224fab105cd0f112e6b2114e46416b5f1f7f0d68f45c99adb76",
+      "publicSha256": "8c7cf75241c3a7a0a7b6a99543f18dfcd3224768669fb4d26021caefa09e8613",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/authenticated/instructions-ready.json",
+      "originalSha256": "6ee6fbdc9dcfe94612cd10c60a1bd13419c3040d3373bc16295c6d571056f4e1",
+      "publicSha256": "ae55e0ab67d944ac7625164076a819ac11ead7e98f3e1f7a85241e7a8214522a",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/authenticated/plugins-empty-search.json",
+      "originalSha256": "6f8f9bb8511141a02176d09d5bcbc31eb0e8a4558281d4cd61d7690db2492dc4",
+      "publicSha256": "8b6af0bdf92f4e897ed511570dbe270bdbbfb1804c3dc7ce0de911e7daae67be",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/authenticated/plugins-installed.json",
+      "originalSha256": "10ee460a4dc0eae298b8105c90df3e9313678f42cd9f389398383e87828a653a",
+      "publicSha256": "9eac41857623aa5697fbd1ffb7adc7165ea2d01e8cbc1f528510870981b421ad",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/authenticated/project-create-filled.json",
+      "originalSha256": "3d878204fcb55f04c3ffbe4911444a3f35a8e5e047551a781c674d307477f11c",
+      "publicSha256": "d96798262e8a60c2db40cd7423b84d29b3e10a30e3ee6e0fcecd355711466643",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/authenticated/project-create.json",
+      "originalSha256": "56d7b59406d5676a2959538c230d659b96724830cb7ba95a194a331959a14852",
+      "publicSha256": "9ae666a55ad739c827edd0fbb9830658fd0bde99acad3f6546ab677814d670e0",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/authenticated/project-empty.json",
+      "originalSha256": "07cc916505355768c2cf913fb98837e90a0de346511ba2fc33f96bed11fe7dfe",
+      "publicSha256": "0f9f4c9775a81256e3aeffef53d4e49d4df7e46661717d4625e5350b30605b84",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/authenticated/project-with-instructions.json",
+      "originalSha256": "d84d3db5f8b6e7316b0f7af9408e2a710acd7178124819ac387d2b78d1ed7d8f",
+      "publicSha256": "8f598fc4b69d79e64199c2469d3b0b14a02ac205fdfb50e1988e2e3acff39eb7",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/authenticated/skills-page.json",
+      "originalSha256": "8f6d162745af4662ff0f92b3bbf3c449e7dfc7a861dc8fccd0e60ba098b19652",
+      "publicSha256": "c91e1fa6bffe2bd06c1bf002795c13e980fb7dec6fe303f677f4e0b388bb6355",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/dark-preference.json",
+      "originalSha256": "9037b07356b2f0933487cb24e7106ceb642b03f14a55f42ae720eb3f8fc7ca78",
+      "publicSha256": "738505ce0dcd15df6e789fe2ef9bc10b340f3642ae2e525437b93648e527d560",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/desktop-base.json",
+      "originalSha256": "64c864802e65bc954eda71aee77c00f4f472e1c91caf7ac944cabb24224e31e4",
+      "publicSha256": "16e628100082b3f102512e69ba4091c436da02ea03ff0b045e985248a7054348",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/effort-menu.json",
+      "originalSha256": "0ac5bd88d90c0cd5b813df12c7d2cd99a0475ed069eb801630d0ef46482caa1d",
+      "publicSha256": "9840b84e3d5eaa4dc65932b0f13f260aeeb6102a15a7a7f213af10f551075c46",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/input-filled.json",
+      "originalSha256": "6171ef61cdfb59f965fc65011d858c1d22c01b7538678823b8b32c940d3e5e5a",
+      "publicSha256": "f777fb01294b20f513eb0e49b05f310d252969c02b400e9e16e7a738836c2335",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/inspiration-design.json",
+      "originalSha256": "fbd6fbd423d3c232e3fc2244b5466a77ba7d3fd1a5cc7f5638135937d4a996fc",
+      "publicSha256": "6ff05e7f4a45cc7a84d292b31be9530015c7ead1f75173bcd3946a2796512a62",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/inspiration-hover.json",
+      "originalSha256": "42017512555b2dcf7a17aeeceff446bab6b535501f2d1c60d6d09ec3a04d330a",
+      "publicSha256": "ad787eca5c7c36dd5bef557c49165af9ed8c4b85005082358c711b2d3341233c",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/inspiration-settled.json",
+      "originalSha256": "7defec9b5b4f85b73cd9fc1dcd8ad1a75e98e3e9f8f0e6ba726085a83bc4346b",
+      "publicSha256": "795c21ffe77a3a6d5dcaf19df8b3372c9421450195520d36b02ad0a1bbe06fff",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/keyboard-focus.json",
+      "originalSha256": "fa026e1868166dadafca4203add4da613cc9207c095f7512eb67d359eedf665b",
+      "publicSha256": "b0cf85c7361e71b5a62a0abb0b067f1fa0e1ae4ca7207312ea72b689e314e46c",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/login-dismissed.json",
+      "originalSha256": "4b9bd283d5164a53f9e3a550ebbdf41f0ddd786c08bb8e4ca0818d5f9494c207",
+      "publicSha256": "4c01d506e892cbfb87edf7e0b5ff8512dc539d25742b52e2b5b08f86d157304e",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/menu-dismissed.json",
+      "originalSha256": "b6bc94b0df456925a45c4d6d9c011dfae179ea9d040bc5e28b723366359f6722",
+      "publicSha256": "d88f299c02e180286601b59f013bb5df5bf95ae984230abbff8fdb5e191bf43d",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/mobile-home.json",
+      "originalSha256": "25241106f90aa5a368f8a1f62740b99347fb9a7d8e3916623835c097c0c5c05e",
+      "publicSha256": "b772cb8912854658cc2074e463690aa168d67a817078189587664905b8e51d59",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/mobile-navigation.json",
+      "originalSha256": "734792378978d0da9fadcc3bac3e78951b6eab65773d89e0533aa799b31f624b",
+      "publicSha256": "fc4d06f262a041b40507221b798fc87f3640665675e508fb2e9c3118e8036d69",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/mode-menu.json",
+      "originalSha256": "5e89fb0531e2583b571d68af0851c4a9e956526a60bba8699247880358f5e632",
+      "publicSha256": "81e8881f80584b661798683288eaa2e07ffdb26cb4c40c0e61d7f098de44b9a9",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/platform-fonts.json",
+      "originalSha256": "1135b94daf4e5004a934e08e10bda0b1178a4dceda5d42b35b6bd6e7438ac307",
+      "publicSha256": "8392c48202ae244d7d9f651f65b902bcd6fa74d3cb6fe1a98437a372b1ccab2d",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/plugins-page.json",
+      "originalSha256": "82328bbc06ec69e0fb493151ca3d7da9965c3f8526cd1f973f48f8c645739ee8",
+      "publicSha256": "ab34fd4ad327a9879ead38258b13a0f4e91ab397d269750a9938f19358c14034",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/project-gate.json",
+      "originalSha256": "af91e674ba5fd8cf4fa8918f1d0f004e25eda0a3f9ab83a43bd938608719ed98",
+      "publicSha256": "a31c1bd609e7cb6568b409b980304f2ac3ac739d70e4c52ae95da6c9f64187f6",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/rea-desktop.json",
+      "originalSha256": "5e3c11c7639c1117fb0c8354311ec7ede6e2c734f2b533df0329ecaea1530407",
+      "publicSha256": "83ac79488be9592c1cf71c2f6abcd4b40a57e43be59bca893a5ed09d0cc8ec40",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/sidebar-collapsed.json",
+      "originalSha256": "71c8378f57447c098a31d0f1e0530978c31dae0dc5c223c775d702c75de7c709",
+      "publicSha256": "77e2231c34e958f34cd7db69a1ff4ed634e898c5aab0ad3e1f30191b235cf7c1",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/tablet-home.json",
+      "originalSha256": "07a019a3ca69729ce17de2ee7f570b5554d263d1faa9f5b4a879937c58ac74cd",
+      "publicSha256": "b6a073242e88fa62ae92d3fe94cba780410577205574893916b24af4dee382e2",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/tool-menu.json",
+      "originalSha256": "e1e83dc89e45872869b5a2fb714eccc4272bf4541e1753d41efe819272dd7540",
+      "publicSha256": "cca8186e5838a66d11ebe1a8fc785dbab4097e94e3b1b874c47cc51b7d177a44",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "evidence/raw/tools-dismissed.json",
+      "originalSha256": "ec6c632e99f3b4487a0f75eca51f7efc5e8ba804c5fe851e72b1561741f9d3a6",
+      "publicSha256": "2ec6cb3b7874c196da6c6d91da070b80998c23183a5e0d0d5beec79196b2ef83",
+      "kind": "labeled privacy projection"
+    },
+    {
+      "path": "reference/components.html",
+      "originalSha256": "0653c58506208fe301f8dc9f366693a3fda82a04af6586846cd4aac9eb4ecd51",
+      "publicSha256": "4040f51004bc5be0930e74606b757717240fab04f00bb2c68ba1410694606801",
+      "kind": "consumer metadata / relative-link adapter"
+    },
+    {
+      "path": "reference/gallery.html",
+      "originalSha256": "b4c63e62ae131c6d1c97fe5a6b0a1f2eec5864f8ba0b1034e7db4836cf27ec48",
+      "publicSha256": "1e7e4e8cf6bd85192822982abdf3b1faae5f58e1ad23641ab7d749a31c824dfc",
+      "kind": "consumer metadata / relative-link adapter"
+    },
+    {
+      "path": "reference/source-icons.js",
+      "originalSha256": "f62cb417f23587cc1444745880f0f46328664ce7b95c76e59d590f772547456d",
+      "publicSha256": "a7c74bd3e462326fffe99230231b1826d3582b6438eb81f3d3ffc62f396af532",
+      "kind": "consumer metadata / relative-link adapter"
+    }
+  ],
+  "excludedTrees": [
+    ".runtime",
+    ".git",
+    "node_modules",
+    "private",
+    "browser profiles",
+    "local analysis acquisition scripts",
+    "archives and contact sheets"
+  ],
+  "permissions": "Owner requested publication of this completed study into the existing public UI library. Upstream rights are retained.",
+  "finalReview": {
+    "reviewedAt": "2026-10-20T14:52:17.111Z",
+    "qrChallengeImagesIncluded": false,
+    "fullDomIncluded": false,
+    "privateIdentifiersIncluded": false,
+    "originalSourceExecuted": false,
+    "consumerContract": "passed",
+    "standardContract": "passed-integrity-only"
+  }
+}
