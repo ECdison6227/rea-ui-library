@@ -1,0 +1,106 @@
+{
+  "formatVersion": 1,
+  "kind": "layouts",
+  "items": [
+    {
+      "id": "layout-landing",
+      "classification": "A",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-desktop",
+        "source-feature-row",
+        "source-walkthrough",
+        "source-footer",
+        "source-landing-js"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Compose component-header, component-hero, component-phrase, component-field, component-button, component-cue, component-media, component-feature, component-story, component-footer using this record's ordering, responsive rules, and content slots; preserve the destination business and data paths."
+      },
+      "name": "Single public landing page",
+      "componentRefs": [
+        "component-header",
+        "component-hero",
+        "component-phrase",
+        "component-field",
+        "component-button",
+        "component-cue",
+        "component-media",
+        "component-feature",
+        "component-story",
+        "component-footer"
+      ],
+      "rules": [
+        "One nested viewport-height scroller; header is sticky within the page experience.",
+        "Hero → introduction media → six alternating feature rows → tour media → information links → closing action → legal footer.",
+        "Body remains on one public route. Image-baked product UI is not reconstructed as application functionality."
+      ]
+    },
+    {
+      "id": "layout-hero",
+      "classification": "A",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-desktop-metrics",
+        "source-mobile-metrics",
+        "source-tablet-metrics",
+        "source-css"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Compose component-header, component-hero, component-phrase, component-field, component-button, component-cue using this record's ordering, responsive rules, and content slots; preserve the destination business and data paths."
+      },
+      "name": "Centered hero with constrained entry",
+      "componentRefs": [
+        "component-header",
+        "component-hero",
+        "component-phrase",
+        "component-field",
+        "component-button",
+        "component-cue"
+      ],
+      "rules": [
+        "At 1440×1000: logo box y180 h100; headline y304 h142.40625; field x516 y544.40625 w408 h54; button y658.40625 h44.",
+        "Hero content max-width 1440px; entry max-width 408px.",
+        "Logo top is 7vh on narrow viewports, 12vh at ≥48rem, 18vh at ≥64rem. Height-dependent overrides: 4vh on small short screens; 14vh at desktop max-height850; 8vh at desktop below800.",
+        "At 390×844: gutter20, logo64, headline47/52; input x20 y372.40625 w350 h54."
+      ]
+    },
+    {
+      "id": "layout-editorial",
+      "classification": "A",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-landing-js",
+        "source-desktop-metrics",
+        "source-mobile-metrics"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Compose component-feature, component-media, component-story, component-footer using this record's ordering, responsive rules, and content slots; preserve the destination business and data paths."
+      },
+      "name": "Alternating editorial sections",
+      "componentRefs": [
+        "component-feature",
+        "component-media",
+        "component-story",
+        "component-footer"
+      ],
+      "rules": [
+        "Feature media stays square and unbordered; alternate background #fcfcfc / #f3f4f5.",
+        "Two equal columns start at48rem; gap48px then64px at64rem. Copy comes first in mobile DOM order.",
+        "Learn-more composition uses a 12-column grid at64rem, title spans5 and list spans7 with48px gaps.",
+        "On narrow screens the introduction/tour stage is4:5, still bounded to65.6vh."
+      ]
+    }
+  ]
+}

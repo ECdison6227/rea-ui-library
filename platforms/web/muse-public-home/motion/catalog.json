@@ -1,0 +1,275 @@
+{
+  "formatVersion": 1,
+  "kind": "motion",
+  "items": [
+    {
+      "id": "motion-phrase",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-landing-js",
+        "source-motion-observations"
+      ],
+      "unknowns": [
+        "Complete source start scheduling is not attributed from a few runtime samples."
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Web Animations replaces GSAP; use source declared numeric timings and per-word overlap, with explicit target lifecycle handling."
+      },
+      "trigger": "Active, visible hero phrase sequence",
+      "properties": [
+        "word opacity1→0 /0→1",
+        "word translateY0→-.3em /+.3em→0"
+      ],
+      "duration": {
+        "value": {
+          "mainHold": 3.25,
+          "otherHold": 2.5,
+          "exit": 0.15,
+          "enter": 0.2,
+          "enterDelay": 0.15,
+          "wordStagger": 0.03
+        },
+        "unit": "seconds",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": {
+          "exit": [
+            0.75,
+            0,
+            1,
+            1
+          ],
+          "enter": [
+            0,
+            0,
+            0.25,
+            1
+          ]
+        },
+        "basis": "declared"
+      },
+      "interruption": [
+        "Source responds to active/visible state and reduced motion.",
+        "Reference cancels pending animations on scroll/visibility/reduced-motion changes and resets to first phrase."
+      ]
+    },
+    {
+      "id": "motion-avatar",
+      "classification": "B",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-css",
+        "source-motion-observations"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Implement the recorded Avatar hover / press state property changes using the supplied duration/easing and interruption rules; keep source declarations separate from the target driver and observed runtime coverage."
+      },
+      "trigger": "Avatar hover / press state",
+      "properties": [
+        "overlay opacity0↔1",
+        "video play/pause"
+      ],
+      "duration": {
+        "value": 0.2,
+        "unit": "seconds (opacity transition)",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "ease (CSS default)",
+        "basis": "declared"
+      },
+      "videoDurations": {
+        "idle": 4,
+        "working": 3.833333,
+        "unit": "seconds",
+        "basis": "runtime media metadata"
+      },
+      "interruption": [
+        "Pointer leave pauses working clip.",
+        "Reduced motion suppresses animated avatar."
+      ],
+      "assetRefs": [
+        "asset-avatar-idle",
+        "asset-avatar-working"
+      ]
+    },
+    {
+      "id": "motion-touch-hold",
+      "classification": "B",
+      "coverage": "verified",
+      "priority": "optional",
+      "evidenceRefs": [
+        "source-css",
+        "source-landing-js"
+      ],
+      "unknowns": [
+        "Not exercised on a real touch device."
+      ],
+      "implementation": {
+        "status": "specified"
+      },
+      "trigger": "Coarse-pointer avatar hold",
+      "properties": [
+        "--landing-rebus-hold0→1",
+        "working avatar activation after threshold"
+      ],
+      "duration": {
+        "value": 0.4,
+        "unit": "seconds",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "linear",
+        "basis": "declared"
+      },
+      "interruption": [
+        "Pointerup/cancel clears hold and pauses working video."
+      ]
+    },
+    {
+      "id": "motion-scroll",
+      "classification": "B",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-landing-js",
+        "source-motion-observations"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Implement the recorded Learn more / return to entry property changes using the supplied duration/easing and interruption rules; keep source declarations separate from the target driver and observed runtime coverage."
+      },
+      "trigger": "Learn more / return to entry",
+      "properties": [
+        "nested scroller scrollTop"
+      ],
+      "duration": {
+        "value": 0.8,
+        "unit": "seconds",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "power2.inOut",
+        "basis": "declared"
+      },
+      "interruption": [
+        "Source scrollTo autoKill:true and overwrite:auto.",
+        "Reduced motion uses duration0.",
+        "Reference cancels on wheel/touch/scroll keys and transfers focus on completion."
+      ]
+    },
+    {
+      "id": "motion-media-reveal",
+      "classification": "B",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-landing-js"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reference retains start/end geometry and uses RAF smoothing instead of GSAP scrub; this interpolation is an independent approximation."
+      },
+      "trigger": "Desktop media enters from top90% to center65% of scroller",
+      "properties": [
+        "scale.9→1",
+        "translateY40px→0",
+        "introduction fill opacity0→1"
+      ],
+      "duration": {
+        "value": 0.3,
+        "unit": "seconds (scrub smoothing; full duration is scroll-dependent)",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "none / linear scroll progress",
+        "basis": "declared"
+      },
+      "interruption": [
+        "Resize invalidates source trigger measurements.",
+        "Only ≥48rem and no reduced motion."
+      ]
+    },
+    {
+      "id": "motion-cue-fade",
+      "classification": "B",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-css",
+        "source-landing-js"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Implement the recorded Floating cue visibility changes property changes using the supplied duration/easing and interruption rules; keep source declarations separate from the target driver and observed runtime coverage."
+      },
+      "trigger": "Floating cue visibility changes",
+      "properties": [
+        "opacity"
+      ],
+      "duration": {
+        "value": 0.15,
+        "unit": "seconds",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "CSS default ease",
+        "basis": "declared"
+      },
+      "interruption": [
+        "Can reverse when returning to the hero.",
+        "Reference removes hidden cue from focus order."
+      ]
+    },
+    {
+      "id": "motion-theme",
+      "classification": "B",
+      "coverage": "verified",
+      "priority": "optional",
+      "evidenceRefs": [
+        "source-css"
+      ],
+      "unknowns": [
+        "Full media-player theme lifecycle is outside this single public-page reference."
+      ],
+      "implementation": {
+        "status": "specified"
+      },
+      "trigger": "Source media/header theme changes (trigger not exercised)",
+      "properties": [
+        "background-color",
+        "border-color",
+        "color",
+        "fill",
+        "stroke"
+      ],
+      "duration": {
+        "value": 0.5,
+        "unit": "seconds",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "ease-in-out",
+        "basis": "declared"
+      },
+      "interruption": [
+        "Reduced-motion rule disables animated transitions."
+      ]
+    }
+  ]
+}

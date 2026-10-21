@@ -1,0 +1,995 @@
+{
+  "formatVersion": 1,
+  "kind": "evidence",
+  "items": [
+    {
+      "id": "ev_ba755d0136d0b9d07848fb4e5fb07a553dff4a6ea6c47fcebc54b1e89144ceeb",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/rea-baseline.bundle.json",
+      "sha256": "33b5f2c061659110abb8764dd850999919a323eb8aa16d0a23b3b12310f3a505",
+      "provider": "REA",
+      "reaEvidenceId": "ev_ba755d0136d0b9d07848fb4e5fb07a553dff4a6ea6c47fcebc54b1e89144ceeb",
+      "captureInterval": {
+        "startedAt": "2026-10-21T13:30:01.012Z",
+        "completedAt": "2026-10-21T13:44:41.112Z"
+      },
+      "method": "capture_browser_scenario; temporary unauthenticated Chromium profile; 1440×1000, DPR 1, en-US, light. Only a 2500 ms wait was declared.",
+      "timeBasis": "REA scenario output has elapsed timing but no wall-clock shutter timestamp. This interval is bounded by the preceding HTTP snapshot file and the subsequent evidence-bundle export; it is not an exact shutter time.",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Browser host platform and architecture were not observed."
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-desktop",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/rea-desktop.png",
+      "sha256": "7dc4e0137cb5ff7f092d1754748558dd366307aaf7cd3497f88f09e6c9b3dbaf",
+      "provider": "REA",
+      "reaEvidenceId": "ev_ba755d0136d0b9d07848fb4e5fb07a553dff4a6ea6c47fcebc54b1e89144ceeb",
+      "captureInterval": {
+        "startedAt": "2026-10-21T13:30:01.012Z",
+        "completedAt": "2026-10-21T13:44:41.112Z"
+      },
+      "method": "Unchanged PNG bytes extracted from the retained REA scenario screenshot.",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-button-hover",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/desktop-button-hover.png",
+      "sha256": "b4d484ecb535c2832a12d0d15f859e7e288142bcdb9b5b0b4aa520d6b4960910",
+      "captureInterval": {
+        "startedAt": "2026-10-21T13:46:39.810Z",
+        "completedAt": "2026-10-21T13:46:39.904Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0
+      },
+      "method": "hover Continue; no click",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-input-focus",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/desktop-input-focus.png",
+      "sha256": "5570e5faa791a0f7939ddd2543456c33fcf8e2c74db37e6b77746baa8d0de7f2",
+      "captureInterval": {
+        "startedAt": "2026-10-21T13:46:40.070Z",
+        "completedAt": "2026-10-21T13:46:40.132Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0
+      },
+      "method": "focus empty input; no submission",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-input-filled",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/desktop-input-filled.png",
+      "sha256": "f772934acf5b1fd8e204316d25b18bb320b204fc98b9589336f273bb0ed6bc10",
+      "captureInterval": {
+        "startedAt": "2026-10-21T13:46:40.152Z",
+        "completedAt": "2026-10-21T13:46:40.238Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0
+      },
+      "method": "fill neutral draft; no submission",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-mobile-resized",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/scroll-mobile-home.png",
+      "sha256": "28fa6e5e03e07a4b37eb1d74e3c15e300eb887aaa2a7d6a40d9070e48011171d",
+      "captureInterval": {
+        "startedAt": "2026-10-21T13:48:53.085Z",
+        "completedAt": "2026-10-21T13:48:53.673Z"
+      },
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0
+      },
+      "method": "Controlled Playwright screenshot of the live public page; scroll position refers to the nested page scroller.",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-tablet",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/scroll-tablet-home.png",
+      "sha256": "cdc6dd0e63b40dcc995015c3d64beb5d3716a1e6c9ce881600885934b9d496e4",
+      "captureInterval": {
+        "startedAt": "2026-10-21T13:48:56.217Z",
+        "completedAt": "2026-10-21T13:48:57.113Z"
+      },
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0
+      },
+      "method": "Controlled Playwright screenshot of the live public page; scroll position refers to the nested page scroller.",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-introduction",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/scroll-desktop-scroll-1000.png",
+      "sha256": "cd50e0bbd863fed717ee2d649b5f87d1b1d6aca87101b1724b6c65c09b22f085",
+      "captureInterval": {
+        "startedAt": "2026-10-21T13:48:40.113Z",
+        "completedAt": "2026-10-21T13:48:40.240Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 1000
+      },
+      "method": "Controlled Playwright screenshot of the live public page; scroll position refers to the nested page scroller.",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-feature-row",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/scroll-desktop-scroll-2100.png",
+      "sha256": "62e3601547ab7ef4209baf08eb595ad2dac4f0aae55475b876b56701736a43fe",
+      "captureInterval": {
+        "startedAt": "2026-10-21T13:48:41.183Z",
+        "completedAt": "2026-10-21T13:48:41.279Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 2100
+      },
+      "method": "Controlled Playwright screenshot of the live public page; scroll position refers to the nested page scroller.",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-walkthrough",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/scroll-desktop-scroll-6480.png",
+      "sha256": "773e155f9fb35f499ba1716f57e6dc51adad66e072aa5e1437b33baacff0b967",
+      "captureInterval": {
+        "startedAt": "2026-10-21T13:48:46.248Z",
+        "completedAt": "2026-10-21T13:48:46.413Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 6480
+      },
+      "method": "Controlled Playwright screenshot of the live public page; scroll position refers to the nested page scroller.",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-reading-links",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/scroll-desktop-scroll-7330.png",
+      "sha256": "42cc8fe5fd6e8674205e9d7b2e83872733486ec3574ba36de2d6a64aa104b2e0",
+      "captureInterval": {
+        "startedAt": "2026-10-21T13:48:47.337Z",
+        "completedAt": "2026-10-21T13:48:47.402Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 7330
+      },
+      "method": "Controlled Playwright screenshot of the live public page; scroll position refers to the nested page scroller.",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-footer",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/scroll-desktop-scroll-7900.png",
+      "sha256": "59143390c36983ca7a03efb2626a04835cd97229c3789bc157ec3ab248f5cf3c",
+      "captureInterval": {
+        "startedAt": "2026-10-21T13:48:48.306Z",
+        "completedAt": "2026-10-21T13:48:48.352Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 7471
+      },
+      "method": "Controlled Playwright screenshot of the live public page; scroll position refers to the nested page scroller.",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-desktop-metrics",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": "2026-10-21T13:46:39.284Z",
+      "sharing": "included",
+      "path": "evidence/raw/desktop-measurements.json",
+      "sha256": "bd2b7b507fb405760be3b9b130177d2639cd4cae32ea125ff3ccfbc2e4c554a6",
+      "method": "Read-only DOM, computed CSS, CDP font binding, or sampled video/scroll state in an unauthenticated browser. Measurements and PNGs are sequential, not atomic.",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-mobile-metrics",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": "2026-10-21T13:48:53.688Z",
+      "sharing": "included",
+      "path": "evidence/raw/scroll-mobile-measurements.json",
+      "sha256": "031f853b7f8422e928d5c43babd5b5b6cf5375200e9d6f2e49b5925d4743467f",
+      "method": "Read-only DOM, computed CSS, CDP font binding, or sampled video/scroll state in an unauthenticated browser. Measurements and PNGs are sequential, not atomic.",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-tablet-metrics",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": "2026-10-21T13:48:57.136Z",
+      "sharing": "included",
+      "path": "evidence/raw/scroll-tablet-measurements.json",
+      "sha256": "8f34a1b654e88fec8b5c677d262ec7f56303b4b3cd3270b0699cf4d40709c7a7",
+      "method": "Read-only DOM, computed CSS, CDP font binding, or sampled video/scroll state in an unauthenticated browser. Measurements and PNGs are sequential, not atomic.",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-font-bindings",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": "2026-10-21T13:53:12.898Z",
+      "sharing": "included",
+      "path": "evidence/raw/font-bindings.json",
+      "sha256": "d8427c4f529fd2abae64d52044b280d951cb955bcf5461dd2a4944c93cff267a",
+      "method": "Read-only DOM, computed CSS, CDP font binding, or sampled video/scroll state in an unauthenticated browser. Measurements and PNGs are sequential, not atomic.",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-motion-observations",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": "2026-10-21T13:53:21.329Z",
+      "sharing": "included",
+      "path": "evidence/raw/detail-observations.json",
+      "sha256": "0a2ed7e979dbc5ddb6eca8b474c4c3745cc425a8a8032d7f550d1831f0f596af",
+      "method": "Read-only DOM, computed CSS, CDP font binding, or sampled video/scroll state in an unauthenticated browser. Measurements and PNGs are sequential, not atomic.",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-avatar-hover",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/details-avatar-hover.png",
+      "sha256": "eca79e0b1a0112c38011ef8af0ee7cf527e7cc4e910211d507b63bad948936fc",
+      "captureInterval": {
+        "startedAt": "2026-10-21T13:53:15.508Z",
+        "completedAt": "2026-10-21T13:53:15.624Z"
+      },
+      "method": "Original page interaction screenshot; corresponding state samples are in source-motion-observations.",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-anchor-result",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/details-learn-more.png",
+      "sha256": "0ed490816e16656320c2fc509e5d943d3e090d02a461f068cc4905a7bff25880",
+      "captureInterval": {
+        "startedAt": "2026-10-21T13:53:18.716Z",
+        "completedAt": "2026-10-21T13:53:18.774Z"
+      },
+      "method": "Original page interaction screenshot; corresponding state samples are in source-motion-observations.",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-typography-settled",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": "2026-10-21T14:14:43.372Z",
+      "sharing": "included",
+      "path": "evidence/raw/source-typography-settled.json",
+      "sha256": "94fd5fef0452b6f0a3b0a40743ec3c608b092ffbd3aeea4e657f6e4029309ea0",
+      "method": "Fresh 390×844 context, document.fonts.ready, and Continue enabled; CDP platform fonts and focus outline were inspected.",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-mobile-settled",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/settled-probe-source-mobile.png",
+      "sha256": "747da4a024fe95e34471e2ccc3d954962195ab54897a7ee8b6e9bf4e5bd507ae",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:14:43.239Z",
+        "completedAt": "2026-10-21T14:14:43.343Z"
+      },
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 1
+      },
+      "method": "Fresh mobile viewport, fonts ready, Continue enabled; distinct from the earlier resized-desktop mobile sample.",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-startup-disabled",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/probe-source-mobile.png",
+      "sha256": "8c3ae813fa93552eb6b2a88d4923211eb5d656a4df935a5dcc7cd3b0d85c0731",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:12:04.601Z",
+        "completedAt": "2026-10-21T14:12:04.687Z"
+      },
+      "method": "Unsubmitted source form during startup; Continue appears at 30% opacity before the settled sample. Cause and backend state were not inferred.",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    },
+    {
+      "id": "source-css",
+      "classification": "B",
+      "origin": "current",
+      "subject": "source",
+      "kind": "static",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": "2026-10-21T13:48:36.749Z",
+      "sharing": "included",
+      "path": "assets/source/_next/static/chunks/263nuo7jc7gf7.css",
+      "sha256": "df0450f43589fd303f8addea463f9e18f857c2d19c24593377ed60c6d574d77e",
+      "url": "https://muse.ai/_next/static/chunks/263nuo7jc7gf7.css?dpl=dpl_9aSvApoQYFP584rn3oUznaB15ZiS",
+      "method": "Bytes of a resource loaded by the captured source document; resource URL and deployment query bind it to this page. The file is retained for inspection and is not executed by the reference."
+    },
+    {
+      "id": "source-font-css",
+      "classification": "B",
+      "origin": "current",
+      "subject": "source",
+      "kind": "static",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": "2026-10-21T13:48:36.573Z",
+      "sharing": "included",
+      "path": "assets/source/_next/static/chunks/2oajnzr9qmzq3.css",
+      "sha256": "34b580199df88f16aadf28ad442294f9aeb24a5c77a2b8f9d1fd57a97319cd3f",
+      "url": "https://muse.ai/_next/static/chunks/2oajnzr9qmzq3.css?dpl=dpl_9aSvApoQYFP584rn3oUznaB15ZiS",
+      "method": "Bytes of a resource loaded by the captured source document; resource URL and deployment query bind it to this page. The file is retained for inspection and is not executed by the reference."
+    },
+    {
+      "id": "source-landing-js",
+      "classification": "B",
+      "origin": "current",
+      "subject": "source",
+      "kind": "static",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": "2026-10-21T13:48:37.238Z",
+      "sharing": "included",
+      "path": "assets/source/_next/static/chunks/1ls5_g6blqauj.js",
+      "sha256": "8020c3f387a85a427e1f105b3eadfc47fe14fe3ff582cb5679568804712e6656",
+      "url": "https://muse.ai/_next/static/chunks/1ls5_g6blqauj.js?dpl=dpl_9aSvApoQYFP584rn3oUznaB15ZiS",
+      "method": "Bytes of a resource loaded by the captured source document; resource URL and deployment query bind it to this page. The file is retained for inspection and is not executed by the reference."
+    },
+    {
+      "id": "reference-desktop",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "local Muse public-page reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/runs/2026-10-21T14-29-33-642Z/reference-desktop.png",
+      "sha256": "5485ca95c3a5af74d12dd1c3bfc1860a2b5b98e702252e2c0a47dfd089e824d6",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:29:37.173Z",
+        "completedAt": "2026-10-21T14:29:37.343Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "method": "Independent reference rendered by Chromium. These pixels do not prove original Muse behavior."
+    },
+    {
+      "id": "reference-button-hover",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "local Muse public-page reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/runs/2026-10-21T14-29-33-642Z/reference-button-hover.png",
+      "sha256": "786fb64a688ba208815b294a911a699b33e89ba42d55137779345b46942aca8b",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:29:37.471Z",
+        "completedAt": "2026-10-21T14:29:37.677Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "method": "Independent reference rendered by Chromium. These pixels do not prove original Muse behavior."
+    },
+    {
+      "id": "reference-input-focus",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "local Muse public-page reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/runs/2026-10-21T14-29-33-642Z/reference-input-focus.png",
+      "sha256": "769f4bcd7ca1f3e8ca301410e904316a2fd0683c88b267bf3274c3845f24d1fa",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:29:37.704Z",
+        "completedAt": "2026-10-21T14:29:37.849Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "method": "Independent reference rendered by Chromium. These pixels do not prove original Muse behavior."
+    },
+    {
+      "id": "reference-scroll-1000",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "local Muse public-page reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/runs/2026-10-21T14-29-33-642Z/reference-scroll-1000.png",
+      "sha256": "960b5ad481c2f383eae4783bb3075657168fff358f4aea4eb079f6a43706e447",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:29:39.422Z",
+        "completedAt": "2026-10-21T14:29:39.737Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "method": "Independent reference rendered by Chromium. These pixels do not prove original Muse behavior."
+    },
+    {
+      "id": "reference-scroll-2100",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "local Muse public-page reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/runs/2026-10-21T14-29-33-642Z/reference-scroll-2100.png",
+      "sha256": "8f932a01945526f18503d17010be2d4b5dd2886acdaf154e84030f857e7bac4b",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:29:40.277Z",
+        "completedAt": "2026-10-21T14:29:40.475Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "method": "Independent reference rendered by Chromium. These pixels do not prove original Muse behavior."
+    },
+    {
+      "id": "reference-scroll-6480",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "local Muse public-page reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/runs/2026-10-21T14-29-33-642Z/reference-scroll-6480.png",
+      "sha256": "89a1f9631cb128ef26c410990777e758619ad52d8c11d008ffc5faa2310492b5",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:29:41.011Z",
+        "completedAt": "2026-10-21T14:29:41.545Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "method": "Independent reference rendered by Chromium. These pixels do not prove original Muse behavior."
+    },
+    {
+      "id": "reference-scroll-7330",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "local Muse public-page reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/runs/2026-10-21T14-29-33-642Z/reference-scroll-7330.png",
+      "sha256": "a971ed81742964193fb63471cd04d59386eae7306e03d414330533d17c2d03fc",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:29:42.076Z",
+        "completedAt": "2026-10-21T14:29:42.237Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "method": "Independent reference rendered by Chromium. These pixels do not prove original Muse behavior."
+    },
+    {
+      "id": "reference-mobile",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "local Muse public-page reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/runs/2026-10-21T14-29-33-642Z/reference-mobile.png",
+      "sha256": "08963b4d710ed22c98e8299dc00b71a3cdf83bc602b43bee94dd56a7bd5d8ff7",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:29:43.100Z",
+        "completedAt": "2026-10-21T14:29:43.216Z"
+      },
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "method": "Independent reference rendered by Chromium. These pixels do not prove original Muse behavior."
+    },
+    {
+      "id": "reference-tablet",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "local Muse public-page reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/runs/2026-10-21T14-29-33-642Z/reference-tablet.png",
+      "sha256": "868faadcb07cb1e308bb0d0f4525cc40fb2cd9f8d3f6e68b227649f681888e67",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:29:44.007Z",
+        "completedAt": "2026-10-21T14:29:44.085Z"
+      },
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "method": "Independent reference rendered by Chromium. These pixels do not prove original Muse behavior."
+    },
+    {
+      "id": "reference-headline-motion",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "local Muse public-page reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/runs/2026-10-21T14-29-33-642Z/reference-headline-motion.png",
+      "sha256": "ec29c473e912a74c46dc290d6e35797672f0cf8f7e4a184d18fad2acdfde1ddd",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:29:48.265Z",
+        "completedAt": "2026-10-21T14:29:48.353Z"
+      },
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "method": "Independent reference rendered by Chromium. These pixels do not prove original Muse behavior."
+    },
+    {
+      "id": "reference-keyboard-focus",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "local Muse public-page reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/runs/2026-10-21T14-29-33-642Z/reference-keyboard-focus.png",
+      "sha256": "71869f8367c5c6512f349d687c89a5f4d16dd78895c24f3c18c9b266d222b97e",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:29:49.669Z",
+        "completedAt": "2026-10-21T14:29:49.818Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "method": "Independent reference rendered by Chromium. These pixels do not prove original Muse behavior."
+    },
+    {
+      "id": "transfer-reading",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "Folio reading collection / same Muse-derived components",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/runs/2026-10-21T14-29-33-642Z/transfer-reading.png",
+      "sha256": "26e26c9225bde0834e5a92a52ffe5df418ccb9119f8d6f8f18dc08b1a477c497",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:29:50.502Z",
+        "completedAt": "2026-10-21T14:29:50.608Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "method": "Independent reference rendered by Chromium. These pixels do not prove original Muse behavior."
+    },
+    {
+      "id": "transfer-reading-filtered",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "Folio reading collection / same Muse-derived components",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/runs/2026-10-21T14-29-33-642Z/transfer-reading-filtered.png",
+      "sha256": "f8bd0511a636c05bc2212dc524e7c97de560ae4b9b846e89abf20ddd5cdc7b25",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:29:50.755Z",
+        "completedAt": "2026-10-21T14:29:50.873Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "method": "Independent reference rendered by Chromium. These pixels do not prove original Muse behavior."
+    },
+    {
+      "id": "transfer-reading-empty",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "Folio reading collection / same Muse-derived components",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/runs/2026-10-21T14-29-33-642Z/transfer-reading-empty.png",
+      "sha256": "74084b36b1cc4236559827920349bd42a3d6a9a65a64ede9801075d755212201",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:29:51.055Z",
+        "completedAt": "2026-10-21T14:29:51.139Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "method": "Independent reference rendered by Chromium. These pixels do not prove original Muse behavior."
+    },
+    {
+      "id": "reference-qa",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "local Muse design reference",
+      "capturedAt": "2026-10-21T14:29:51.176Z",
+      "sharing": "included",
+      "path": "comparison/qa-results.json",
+      "sha256": "9f5538e2b7bab9d07f7cf5d410b067423e32941ec2a41ac526b867bf8239d550",
+      "method": "Local reference browser verification, no automatic external requests; includes source geometry comparison and cross-domain filter/empty states."
+    },
+    {
+      "id": "reference-geometry",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "local Muse design reference",
+      "capturedAt": "2026-10-21T14:29:51.176Z",
+      "sharing": "included",
+      "path": "comparison/geometry-desktop.json",
+      "sha256": "fb57f20d4fe08aa47bad95edcd958fb31c2f0ac3546c55787b4765879138b04e",
+      "method": "Paired DOMRect comparison for source and reference desktop title, input, and Continue button."
+    },
+    {
+      "id": "ev_cd5271e74597a3e4a81d40605aeb1ed60014f776a1e4a2c043d6eadd0f0e5c23",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "local Muse design reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/rea-desktop-pixels.json",
+      "sha256": "5afd62d54b00115b89b479cd397858ade07d9954e01fdf074f18fd4bf3ef30ed",
+      "provider": "REA",
+      "reaEvidenceId": "ev_cd5271e74597a3e4a81d40605aeb1ed60014f776a1e4a2c043d6eadd0f0e5c23",
+      "method": "REA compare_web_screenshots on the explicitly retained source/reference PNG artifacts, channel threshold 8. A pixel metric is not a semantic or whole-product equivalence claim."
+    },
+    {
+      "id": "ev_c13ac88b80e74601ea512de023b541b38587168275ae15a768e22f36c836df7a",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "local Muse design reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/rea-mobile-pixels.json",
+      "sha256": "a46f2a5523bba284e1acd839b6c302547bed13125fcf7167c912bbcacbde6a83",
+      "provider": "REA",
+      "reaEvidenceId": "ev_c13ac88b80e74601ea512de023b541b38587168275ae15a768e22f36c836df7a",
+      "method": "REA compare_web_screenshots on the explicitly retained source/reference PNG artifacts, channel threshold 8. A pixel metric is not a semantic or whole-product equivalence claim."
+    },
+    {
+      "id": "ev_a292d13fbcb0d0fc2c37faf2c33ab135d25692b08320ed57dd0c17cf778de05a",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "local Muse design reference",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/rea-feature-pixels.json",
+      "sha256": "0e92bdc893d307d26add83dbf63783adda9fc07459612f179f481b3e0bc0071c",
+      "provider": "REA",
+      "reaEvidenceId": "ev_a292d13fbcb0d0fc2c37faf2c33ab135d25692b08320ed57dd0c17cf778de05a",
+      "method": "REA compare_web_screenshots on the explicitly retained source/reference PNG artifacts, channel threshold 8. A pixel metric is not a semantic or whole-product equivalence claim."
+    },
+    {
+      "id": "source-inline-icons",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "sourceIdentity": "https://muse.ai/",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/raw/inline-svg.json",
+      "sha256": "a9655e7f21973207b597414c09429a80a6712222ae4cb09f8fbcffe92c7e38ab",
+      "captureInterval": {
+        "startedAt": "2026-10-21T13:46:39.263Z",
+        "completedAt": "2026-10-21T13:46:39.810Z"
+      },
+      "method": "Serialized inline SVG geometry from the same original page; capture occurred after the default screenshot and before the hover screenshot. Original path geometry retained.",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-21T14:34:07.553Z",
+        "method": "Inspected the retained pixels or the cited runtime measurements; source and reference were reviewed separately."
+      }
+    }
+  ]
+}

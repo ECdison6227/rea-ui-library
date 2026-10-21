@@ -155,6 +155,26 @@
       },
       "origin": "historical",
       "workingTreeMutationPerformed": false
+    },
+    {
+      "id": "muse-public-home",
+      "path": "platforms/web/muse-public-home",
+      "storage": "monorepo",
+      "provenance": {
+        "kind": "rea-study",
+        "target": "https://muse.ai/",
+        "method": "REA capture_browser_scenario with retained screenshot/DOM/accessibility and true Evidence ID; focused Playwright computed-style, font, asset and interaction observations; REA pixel comparisons of explicit screenshot pairs. This library import preserves the captured source and performs no new original-app execution.",
+        "researchEntry": "README.md"
+      },
+      "revision": null,
+      "snapshot": null,
+      "integrity": {
+        "manifest": "catalog/manifests/muse-public-home.json",
+        "files": 271,
+        "treeSha256": "92c1ee0ac9c7fdddaed564b32b574f476ad7f97aeb0ae7a347e652606e1db467"
+      },
+      "origin": "historical",
+      "workingTreeMutationPerformed": false
     }
   ],
   "thumbnails": [
@@ -209,6 +229,15 @@
       "target": "site/assets/thumbs/kimi-web.png",
       "sha256": "13bbc84d143af7f5e80bd626ffa0671501fd86947f4c3009c4da26c8fc5a2626",
       "classification": "A · 网页未登录主页，侧栏和输入底托",
+      "reviewed": true,
+      "transformed": false
+    },
+    {
+      "id": "muse-public-home",
+      "source": "platforms/web/muse-public-home/evidence/raw/rea-desktop.png",
+      "target": "site/assets/thumbs/muse-public-home.png",
+      "sha256": "7dc4e0137cb5ff7f092d1754748558dd366307aaf7cd3497f88f09e6c9b3dbaf",
+      "classification": "A · Muse原版公开首页，未登录；1440×1000",
       "reviewed": true,
       "transformed": false
     }

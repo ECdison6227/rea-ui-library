@@ -1,0 +1,112 @@
+{
+  "format": "rea-design-package",
+  "formatVersion": 1,
+  "id": "muse-public-home",
+  "name": "Muse Public Home",
+  "source": {
+    "platform": "web",
+    "runtime": "Browser / HTML, CSS and JavaScript; Chromium155.0.8059.40 observed on Windows",
+    "version": "dpl_9aSvApoQYFP584rn3oUznaB15ZiS",
+    "identity": "https://muse.ai/",
+    "capturedAt": "2026-10-21T13:46:39.284Z",
+    "researchMethod": "REA capture_browser_scenario with retained screenshot/DOM/accessibility and true Evidence ID; focused Playwright computed-style, font, asset and interaction observations; REA pixel comparisons of explicit screenshot pairs.",
+    "researchEvidenceRefs": [
+      "ev_ba755d0136d0b9d07848fb4e5fb07a553dff4a6ea6c47fcebc54b1e89144ceeb",
+      "source-css",
+      "source-landing-js"
+    ],
+    "authentication": {
+      "requiredForScopedPage": false,
+      "status": "unauthenticated",
+      "userBoundary": "就这一个界面就行，不用login这次",
+      "verifiedCondition": "Fresh temporary browser contexts; only the public root route and in-page interactions were studied. No identity was submitted."
+    }
+  },
+  "scope": {
+    "mode": "visual-design-and-core-interactions",
+    "goal": "Extract and reproduce the one public Muse landing interface, including its own scroll content, responsive layout, assets and core visible interactions. No login.",
+    "excludedBusiness": [
+      "Authentication, registration, account selection and signed-in pages",
+      "Agent conversations, VM/browser features, purchase/approval flows shown inside illustration images",
+      "External editorial/legal/business pages",
+      "Complete promotional-film playback and source backend behavior"
+    ]
+  },
+  "readiness": {
+    "status": "ready",
+    "supportedUses": [
+      "Recreate the sampled public landing page at1440×1000,768×1024 and390×844 CSS px using retained fonts and artwork.",
+      "Reuse semantic hero, rounded input, pill action, media frame, alternating illustration rows, information links and footer.",
+      "Apply the same components to a reading collection via the included content-slot example and functioning local filter."
+    ],
+    "coreGaps": [],
+    "optionalGaps": [
+      "The earlier resized-desktop mobile sample and a fresh mobile load have text-rasterization/state differences; final mobile comparison uses the explicitly settled fresh load.",
+      "No authenticated states or submitted form validation were studied, following the user scope.",
+      "Touch hold is declared in source code but not tested on real touch hardware.",
+      "Full promotional films are represented by a retained still/original poster and a source-page link in the reference.",
+      "Source header thresholds, idle scheduling and GSAP scrub internals have explicit D replacements in the portable reference.",
+      "Real screen-reader output, browser engines other than Chromium, DPR>1 and alternate languages were not validated."
+    ]
+  },
+  "entries": {
+    "readme": "README.md",
+    "spec": "DESIGN_SPEC.md",
+    "tokens": "tokens/tokens.json",
+    "components": "components/catalog.json",
+    "layouts": "patterns/layouts.json",
+    "interactions": "patterns/interactions.json",
+    "motion": "motion/catalog.json",
+    "assets": "assets/manifest.json",
+    "evidence": "evidence/index.json",
+    "reference": "reference/README.md",
+    "comparison": "comparison/README.md",
+    "adaptation": "ADAPTATION_GUIDE.md"
+  },
+  "validation": {
+    "reference": {
+      "status": "verified",
+      "evidenceRefs": [
+        "source-desktop",
+        "source-mobile-settled",
+        "reference-desktop",
+        "reference-mobile",
+        "reference-qa",
+        "reference-geometry"
+      ]
+    },
+    "crossDomain": {
+      "status": "verified",
+      "evidenceRefs": [
+        "transfer-reading",
+        "transfer-reading-filtered",
+        "transfer-reading-empty",
+        "reference-qa"
+      ]
+    }
+  },
+  "distribution": {
+    "mode": "reviewed-public",
+    "omissions": [
+      {
+        "item": "Full promotional-film binaries",
+        "reason": "Only the visual media component and a bounded frame/poster are included; full-film behavior is not part of the reference."
+      },
+      {
+        "item": "Credentials, profiles and signed-in content",
+        "reason": "Not collected; authentication was excluded by the user."
+      },
+      {
+        "item": "Unused dark artwork and higher-DPR image variants",
+        "reason": "Only the observed light,DPR1 page assets were selected."
+      }
+    ],
+    "review": {
+      "reviewedAt": "2026-10-21T14:46:09.948Z",
+      "authorization": "User explicitly requested pushing this completed Muse study to the existing public ECdison6227/rea-ui-library.",
+      "scope": "One previously captured public landing page; no login or new source execution.",
+      "record": "integration/github-review.json",
+      "sourceSnapshotsModified": false
+    }
+  }
+}

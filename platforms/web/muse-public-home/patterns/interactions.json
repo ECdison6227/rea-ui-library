@@ -1,0 +1,202 @@
+{
+  "formatVersion": 1,
+  "kind": "interactions",
+  "items": [
+    {
+      "id": "interaction-entry",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-input-focus",
+        "source-typography-settled"
+      ],
+      "unknowns": [
+        "Authentication submission and its result states were intentionally not exercised."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reference Continue is local in-page navigation. Folio uses the same field for a real local filter, including empty results."
+      },
+      "componentRefs": [
+        "component-field",
+        "component-button"
+      ],
+      "transitions": [
+        {
+          "from": "empty",
+          "event": "focus",
+          "to": "focused",
+          "result": "Blue1px outline; geometry is retained.",
+          "evidenceRefs": [
+            "source-input-focus",
+            "source-typography-settled"
+          ]
+        },
+        {
+          "from": "focused",
+          "event": "type / clear",
+          "to": "filled / empty",
+          "result": "The field accepts local draft changes without submission.",
+          "evidenceRefs": [
+            "source-input-filled",
+            "source-desktop"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interaction-scroll",
+      "classification": "A",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-motion-observations",
+        "source-landing-js"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Implement the declared 800ms power2.inOut scroll, explicit user interruption and completion focus using the existing RAF adapter; do not infer backend side effects."
+      },
+      "componentRefs": [
+        "component-cue",
+        "component-header"
+      ],
+      "transitions": [
+        {
+          "from": "hero",
+          "event": "activate Learn more",
+          "to": "introduction",
+          "result": "Nested scroller moves to introduction minus header offset; source declares focus on section after completion.",
+          "evidenceRefs": [
+            "source-motion-observations",
+            "source-anchor-result",
+            "source-landing-js"
+          ]
+        },
+        {
+          "from": "scrolled",
+          "event": "activate header Log in (declaration)",
+          "to": "entry",
+          "result": "Source handler scrolls to zero and runs the entry callback; no authenticated destination was observed.",
+          "evidenceRefs": [
+            "source-landing-js"
+          ]
+        }
+      ],
+      "sideEffects": "Source request cancellation/persistence is not inferred. User scroll may interrupt the declared scroll tween."
+    },
+    {
+      "id": "interaction-avatar",
+      "classification": "A",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-avatar-hover",
+        "source-motion-observations"
+      ],
+      "unknowns": [
+        "Touch hold is a source declaration and was not tested on real touch hardware."
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Reuse the retained idle/working clips and observed hover pause/fade behavior; keep the declared touch hold as an unverified physical-device branch."
+      },
+      "componentRefs": [
+        "component-hero",
+        "component-phrase"
+      ],
+      "transitions": [
+        {
+          "from": "idle",
+          "event": "pointer enters avatar",
+          "to": "working-video",
+          "result": "Working video plays and overlay opacity reaches1.",
+          "evidenceRefs": [
+            "source-motion-observations"
+          ]
+        },
+        {
+          "from": "working-video",
+          "event": "pointer leaves avatar",
+          "to": "idle-visible",
+          "result": "Working video pauses and fades to0; the independent idle clip may finish.",
+          "evidenceRefs": [
+            "source-motion-observations"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interaction-links",
+      "classification": "B",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-landing-js"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reference uses real source URLs for user-activated external links. Tour playback is represented by a source-page link, not a fabricated player."
+      },
+      "componentRefs": [
+        "component-story",
+        "component-footer",
+        "component-media"
+      ],
+      "transitions": [
+        {
+          "from": "page",
+          "event": "activate information link (declaration)",
+          "to": "external destination",
+          "result": "Source href/target attributes select information or legal pages; destination behavior remains out of scope.",
+          "evidenceRefs": [
+            "source-landing-js"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interaction-reduced-motion",
+      "classification": "B",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-css",
+        "source-landing-js"
+      ],
+      "unknowns": [
+        "System setting was emulated; no physical OS accessibility session was tested."
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Apply the recorded static/zero-duration reduced-motion branch; target runtime verification remains separate from source declarations."
+      },
+      "componentRefs": [
+        "component-hero",
+        "component-phrase",
+        "component-media",
+        "component-cue"
+      ],
+      "transitions": [
+        {
+          "from": "motion-enabled",
+          "event": "prefers-reduced-motion:reduce",
+          "to": "static",
+          "result": "Source declarations suppress animated hero behavior and media reveal; scroll duration becomes0.",
+          "evidenceRefs": [
+            "source-css",
+            "source-landing-js"
+          ]
+        }
+      ]
+    }
+  ]
+}

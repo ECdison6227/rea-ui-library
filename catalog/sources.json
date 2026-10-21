@@ -809,6 +809,118 @@
         "files": 210,
         "treeSha256": "a0baff8baf3b53d6607f26c4f8949a1d6ee26e16a2bf87f24a5b0bf9c17a60cf"
       }
+    },
+    {
+      "id": "muse-public-home",
+      "name": "Muse",
+      "subtitle": "居中品牌首屏与动态短句",
+      "platform": "web",
+      "kind": "research",
+      "root": "platforms/web/muse-public-home",
+      "visibility": "public",
+      "sourceVersion": "dpl_9aSvApoQYFP584rn3oUznaB15ZiS",
+      "provenance": {
+        "kind": "rea-study",
+        "target": "https://muse.ai/",
+        "method": "REA capture_browser_scenario with retained screenshot/DOM/accessibility and true Evidence ID; focused Playwright computed-style, font, asset and interaction observations; REA pixel comparisons of explicit screenshot pairs. This library import preserves the captured source and performs no new original-app execution.",
+        "researchEntry": "README.md"
+      },
+      "summary": "公开首页的留白、Optimistic AI字体、圆角入口、头像/短句动效与交替图文；包含同组件阅读收藏参考。",
+      "tags": [
+        "Web",
+        "浅色",
+        "Hero",
+        "输入",
+        "动效",
+        "响应式"
+      ],
+      "stack": [
+        "Web来源",
+        "HTML/CSS/JavaScript参考"
+      ],
+      "readiness": "ready",
+      "coverage": "公开首页、英文浅色、DPR1；1440×1000 /768×1024 /390×844。19项D浏览器检查与三组REA像素对照；账号提交和登录后业务未运行。",
+      "features": [
+        "37项视觉与几何tokens、10个组件、3组布局、5组交互和7项动效",
+        "原Optimistic AI字体、SVG标志/图标、插画与头像视频直接复用",
+        "三档视口的标题、输入和主按钮矩形与来源测量一致",
+        "可运行单页参考和真实本地筛选的阅读收藏切片"
+      ],
+      "limits": [
+        "用户限定只研究此公开页面，不登录；认证和登录后业务未测。",
+        "完整宣传片仅用帧/封面与源页链接表示；触控、读屏器、其他引擎/DPR/语言未测。",
+        "Header阈值、轮播启动和RAF媒体平滑有明确D实现；不把参考结果当原版内部行为。",
+        "原品牌、字体和媒体的研究留存不授予下游额外许可。"
+      ],
+      "palette": [
+        "#0064d4",
+        "#fcfcfc",
+        "#111112"
+      ],
+      "cover": "generic",
+      "paletteClassification": "D: catalog presentation; implementation uses scoped source tokens",
+      "designPackage": "design-package.json",
+      "artifacts": [
+        {
+          "label": "研究入口",
+          "path": "README.md",
+          "role": "readme"
+        },
+        {
+          "label": "设计规范",
+          "path": "DESIGN_SPEC.md",
+          "role": "spec"
+        },
+        {
+          "label": "Design Package v1",
+          "path": "design-package.json",
+          "role": "design-package"
+        },
+        {
+          "label": "迁移指南",
+          "path": "ADAPTATION_GUIDE.md",
+          "role": "adoption"
+        },
+        {
+          "label": "组件参考",
+          "path": "reference/README.md",
+          "role": "reference"
+        },
+        {
+          "label": "源/参考对照",
+          "path": "comparison/README.md",
+          "role": "comparison"
+        },
+        {
+          "label": "公开入库审查",
+          "path": "integration/README.md",
+          "role": "adoption"
+        }
+      ],
+      "run": {
+        "cwd": "platforms/web/muse-public-home",
+        "command": "npm start",
+        "requires": "Node.js22+；浏览器打开http://127.0.0.1:4173/reference/；浏览器QA另需已有Playwright/Chrome。",
+        "verifiedHere": false,
+        "verificationBoundary": "19项D检查保留原2026-10-21记录；本轮只入库、校验并推送，不重跑来源或参考页面。"
+      },
+      "typography": {
+        "families": [
+          "Optimistic AI",
+          "Arial fallback"
+        ]
+      },
+      "deliveryTier": "design-package",
+      "thumbnail": {
+        "path": "evidence/raw/rea-desktop.png",
+        "classification": "A · Muse原版公开首页，未登录；1440×1000",
+        "reviewed": true
+      },
+      "integrity": {
+        "manifest": "catalog/manifests/muse-public-home.json",
+        "files": 271,
+        "treeSha256": "92c1ee0ac9c7fdddaed564b32b574f476ad7f97aeb0ae7a347e652606e1db467"
+      }
     }
   ],
   "repository": {

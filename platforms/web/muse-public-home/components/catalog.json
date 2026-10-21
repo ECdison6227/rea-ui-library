@@ -1,0 +1,693 @@
+{
+  "formatVersion": 1,
+  "kind": "components",
+  "items": [
+    {
+      "id": "component-header",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-desktop"
+      ],
+      "unknowns": [
+        "Exact continuous opacity/visibility thresholds are not fully attributed."
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Use measured endpoints. Reference fades header between 80–200px scroll; this interpolation is independent."
+      },
+      "name": "Sticky brand header",
+      "slots": [
+        "parentBrand",
+        "pageMark",
+        "primaryAction"
+      ],
+      "tokenRefs": [
+        "size-header",
+        "color-page",
+        "color-secondary-action",
+        "type-small-action",
+        "layout-gutter"
+      ],
+      "states": [
+        {
+          "id": "top",
+          "appearance": "Parent mark left; primary action right on desktop; center mark hidden.",
+          "evidenceRefs": [
+            "source-desktop"
+          ]
+        },
+        {
+          "id": "scrolled",
+          "appearance": "60px header remains visible and shows a centered 32px mark.",
+          "evidenceRefs": [
+            "source-feature-row"
+          ]
+        }
+      ],
+      "platform": "web",
+      "interfaceClassification": "D: consumer component names and slots",
+      "geometry": "60px high; 1440px max inner width; 20/40/56px gutters. Mobile top primary action is hidden.",
+      "longText": "Keep action brief; allow the left/right tracks to shrink without moving the center mark.",
+      "events": [
+        "returnToEntry"
+      ],
+      "referenceContract": {
+        "classification": "D",
+        "eventsInOrder": [
+          "returnToEntry"
+        ],
+        "consumerEventMeaning": "Named events describe the consumer component contract, not original app APIs."
+      }
+    },
+    {
+      "id": "component-hero",
+      "classification": "A",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-desktop-metrics",
+        "source-mobile-metrics",
+        "source-landing-js",
+        "source-motion-observations"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Use BrandMark/Hero and the original font, avatar geometry, and bounded content slots. Substitute target branding without introducing a new authentication flow."
+      },
+      "name": "Brand and avatar hero",
+      "slots": [
+        "brandMark",
+        "heading",
+        "avatar",
+        "phraseSlots",
+        "entryPanel"
+      ],
+      "tokenRefs": [
+        "type-hero-desktop",
+        "type-hero-tablet",
+        "type-hero-mobile",
+        "type-hero-short",
+        "size-mark",
+        "layout-gutter"
+      ],
+      "states": [
+        {
+          "id": "rest",
+          "appearance": "Logo above centered two-line headline; circular inline avatar.",
+          "evidenceRefs": [
+            "source-desktop",
+            "source-mobile-settled"
+          ]
+        },
+        {
+          "id": "avatar-hover",
+          "appearance": "Working avatar video crossfades over idle video and plays.",
+          "evidenceRefs": [
+            "source-avatar-hover",
+            "source-motion-observations"
+          ]
+        }
+      ],
+      "platform": "web",
+      "interfaceClassification": "D: consumer component names and slots",
+      "geometry": "H1 spans container. Avatar size 1.073em, lead .192em, trail .032em, translate Y -3px. Hidden phrase measures reserve line height.",
+      "longText": "Wrap at words inside a full-width grid; reserve the maximum phrase height, including narrow viewport wraps.",
+      "events": [
+        "pointerEnter",
+        "pointerLeave",
+        "touchHold"
+      ],
+      "referenceContract": {
+        "classification": "D",
+        "eventsInOrder": [
+          "pointerEnter",
+          "pointerLeave",
+          "touchHold"
+        ],
+        "consumerEventMeaning": "Named events describe the consumer component contract, not original app APIs."
+      }
+    },
+    {
+      "id": "component-phrase",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-motion-observations",
+        "source-landing-js"
+      ],
+      "unknowns": [
+        "Complete source activation/visibility scheduling was not exhaustively traced."
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Use the declared source word timing and curves in a Web Animations implementation; start after pointer activity, reset on scroll/visibility loss."
+      },
+      "name": "Rotating task phrase",
+      "slots": [
+        "phrases",
+        "inlineIcons"
+      ],
+      "tokenRefs": [
+        "type-hero-desktop",
+        "type-hero-mobile"
+      ],
+      "states": [
+        {
+          "id": "resting",
+          "appearance": "One phrase visible; other phrases retained for measurement.",
+          "evidenceRefs": [
+            "source-desktop"
+          ]
+        },
+        {
+          "id": "cycling",
+          "appearance": "Outgoing words fade upward; incoming words appear from below.",
+          "evidenceRefs": [
+            "source-avatar-hover",
+            "source-motion-observations",
+            "source-landing-js"
+          ]
+        }
+      ],
+      "platform": "web",
+      "interfaceClassification": "D: consumer component names and slots",
+      "longText": "Use the longest rendered phrase to stabilize the entry panel; inline icons use a 1em box.",
+      "events": [
+        "pointerActivity",
+        "nextPhrase",
+        "visibilityChange",
+        "reducedMotionChange"
+      ],
+      "referenceContract": {
+        "classification": "D",
+        "eventsInOrder": [
+          "pointerActivity",
+          "nextPhrase",
+          "visibilityChange",
+          "reducedMotionChange"
+        ],
+        "consumerEventMeaning": "Named events describe the consumer component contract, not original app APIs."
+      }
+    },
+    {
+      "id": "component-field",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-desktop-metrics",
+        "source-input-focus",
+        "source-typography-settled"
+      ],
+      "unknowns": [
+        "Authentication validation, autofill, virtual keyboard, and server error/loading states are excluded."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Attach the destination business action. The reference keeps text in memory and uses Continue to scroll within the page; it never submits an identity."
+      },
+      "name": "Rounded entry field",
+      "slots": [
+        "label",
+        "placeholder",
+        "value",
+        "description"
+      ],
+      "tokenRefs": [
+        "type-form",
+        "color-field",
+        "color-muted",
+        "color-accent",
+        "size-input",
+        "radius-input",
+        "layout-form-width"
+      ],
+      "states": [
+        {
+          "id": "empty",
+          "appearance": "54px filled field, 20px corners, 16px inline inset.",
+          "evidenceRefs": [
+            "source-desktop"
+          ]
+        },
+        {
+          "id": "focus",
+          "appearance": "1px #0064d4 outline at -1px offset.",
+          "evidenceRefs": [
+            "source-input-focus",
+            "source-typography-settled"
+          ]
+        },
+        {
+          "id": "filled",
+          "appearance": "Entered text remains within the same geometry; input is locally editable.",
+          "evidenceRefs": [
+            "source-input-filled"
+          ]
+        }
+      ],
+      "platform": "web",
+      "interfaceClassification": "D: consumer component names and slots",
+      "events": [
+        "focus",
+        "input",
+        "submit"
+      ],
+      "longText": "Single-line input scrolls horizontally; helper text wraps. Keep mobile input at least 16px.",
+      "referenceContract": {
+        "classification": "D",
+        "eventsInOrder": [
+          "focus",
+          "input",
+          "submit"
+        ],
+        "consumerEventMeaning": "Named events describe the consumer component contract, not original app APIs."
+      }
+    },
+    {
+      "id": "component-button",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-desktop-metrics",
+        "source-css",
+        "source-startup-disabled"
+      ],
+      "unknowns": [
+        "The cause of startup disabling and authenticated submit results were not investigated."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Keep the declared visual states and connect to the destination operation; source authentication is outside scope."
+      },
+      "name": "Pill action",
+      "slots": [
+        "label",
+        "action"
+      ],
+      "tokenRefs": [
+        "color-accent",
+        "color-secondary-action",
+        "type-form",
+        "type-small-action",
+        "size-button",
+        "radius-pill"
+      ],
+      "states": [
+        {
+          "id": "default",
+          "appearance": "44px primary, 36px compact, 48px footer variants.",
+          "evidenceRefs": [
+            "source-desktop",
+            "source-footer"
+          ]
+        },
+        {
+          "id": "hover",
+          "appearance": "Brightness .95 while enabled.",
+          "evidenceRefs": [
+            "source-button-hover",
+            "source-css"
+          ]
+        },
+        {
+          "id": "pressed-declared",
+          "appearance": "Enabled :active brightness .90; declaration only.",
+          "evidenceRefs": [
+            "source-css"
+          ]
+        },
+        {
+          "id": "disabled",
+          "appearance": "Continue at opacity .30 observed during startup; shared buttons declare .50.",
+          "evidenceRefs": [
+            "source-startup-disabled",
+            "source-css"
+          ]
+        }
+      ],
+      "platform": "web",
+      "interfaceClassification": "D: consumer component names and slots",
+      "longText": "One concise label; preserve horizontal padding and focus ring.",
+      "events": [
+        "activate",
+        "pointerEnter",
+        "pointerLeave",
+        "focus",
+        "disabledChange"
+      ],
+      "referenceContract": {
+        "classification": "D",
+        "eventsInOrder": [
+          "activate",
+          "pointerEnter",
+          "pointerLeave",
+          "focus",
+          "disabledChange"
+        ],
+        "consumerEventMeaning": "Named events describe the consumer component contract, not original app APIs."
+      }
+    },
+    {
+      "id": "component-cue",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-desktop-metrics",
+        "source-typography-settled",
+        "source-motion-observations"
+      ],
+      "unknowns": [
+        "Exact source hide threshold is not asserted."
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Use source geometry and 150ms fade. Reference hides after 40px and removes the hidden cue from keyboard traversal."
+      },
+      "name": "Floating in-page scroll cue",
+      "slots": [
+        "label",
+        "downIcon",
+        "destination"
+      ],
+      "tokenRefs": [
+        "type-small-action",
+        "color-frosted",
+        "blur-control",
+        "shadow-cue",
+        "radius-pill"
+      ],
+      "states": [
+        {
+          "id": "visible",
+          "appearance": "42px pill at viewport bottom 16px, centered; 20px icon slot with 15px glyph.",
+          "evidenceRefs": [
+            "source-desktop",
+            "source-typography-settled"
+          ]
+        },
+        {
+          "id": "hidden",
+          "appearance": "Not present over the scrolled feature area.",
+          "evidenceRefs": [
+            "source-feature-row"
+          ]
+        }
+      ],
+      "platform": "web",
+      "interfaceClassification": "D: consumer component names and slots",
+      "events": [
+        "activate"
+      ],
+      "geometry": "Width fits content; padding-inline 16px; gap 4px.",
+      "longText": "Keep a short directional label.",
+      "referenceContract": {
+        "classification": "D",
+        "eventsInOrder": [
+          "activate"
+        ],
+        "consumerEventMeaning": "Named events describe the consumer component contract, not original app APIs."
+      }
+    },
+    {
+      "id": "component-media",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-walkthrough",
+        "source-landing-js",
+        "source-css"
+      ],
+      "unknowns": [
+        "Full-film playback, sound, fullscreen and player failures were not exercised."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "The bounded reference uses a captured introduction frame and original tour poster; tour action opens the source page. Substitute destination-owned media/player when applying the design."
+      },
+      "name": "Framed media stage",
+      "slots": [
+        "heading",
+        "description",
+        "media",
+        "playAction"
+      ],
+      "tokenRefs": [
+        "type-section",
+        "color-surface",
+        "radius-media",
+        "color-frosted",
+        "blur-play"
+      ],
+      "states": [
+        {
+          "id": "poster",
+          "appearance": "Centered media, squircle corners, max-height 65.6vh; optional 64px frosted play circle.",
+          "evidenceRefs": [
+            "source-introduction",
+            "source-walkthrough"
+          ]
+        },
+        {
+          "id": "reveal",
+          "appearance": "Desktop media scales .9→1 and translates 40→0 while entering.",
+          "evidenceRefs": [
+            "source-landing-js"
+          ]
+        }
+      ],
+      "platform": "web",
+      "interfaceClassification": "D: consumer component names and slots",
+      "geometry": "16:9 at ≥48rem; 4:5 below; desktop width 82% and max-width 116.622222vh.",
+      "longText": "Header constrained to 768px with 16px inner inset; description can wrap.",
+      "events": [
+        "viewportEnter",
+        "viewportExit",
+        "activatePlay",
+        "resize",
+        "reducedMotionChange"
+      ],
+      "referenceContract": {
+        "classification": "D",
+        "eventsInOrder": [
+          "viewportEnter",
+          "viewportExit",
+          "activatePlay",
+          "resize",
+          "reducedMotionChange"
+        ],
+        "consumerEventMeaning": "Named events describe the consumer component contract, not original app APIs."
+      }
+    },
+    {
+      "id": "component-feature",
+      "classification": "A",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-feature-row",
+        "source-desktop-metrics",
+        "source-mobile-metrics",
+        "source-landing-js"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Compose FeatureRow with recorded two-column/mobile order and image slots. Viewport notifications support visibility/lazy media; artwork remains non-clickable unless the destination explicitly supplies an action."
+      },
+      "name": "Alternating illustration row",
+      "slots": [
+        "heading",
+        "description",
+        "image"
+      ],
+      "tokenRefs": [
+        "type-section",
+        "type-body",
+        "layout-max",
+        "layout-gutter",
+        "color-page",
+        "color-surface"
+      ],
+      "states": [
+        {
+          "id": "desktop",
+          "appearance": "Two columns, equal widths, 64px gap at desktop; alternate illustration side and surface.",
+          "evidenceRefs": [
+            "source-feature-row"
+          ]
+        },
+        {
+          "id": "mobile",
+          "appearance": "Copy precedes image in a single column with 16px gap.",
+          "evidenceRefs": [
+            "source-mobile-metrics"
+          ]
+        }
+      ],
+      "platform": "web",
+      "interfaceClassification": "D: consumer component names and slots",
+      "geometry": "56px block padding. 48px tablet / 64px desktop gap. Square illustration; at 1440px, 632×632px image +112px padding makes a 744px row.",
+      "longText": "Headings use text-wrap:balance; descriptions max 576px with text-wrap:pretty. Baked-in phone UI is part of the illustration, not an interactive component.",
+      "events": [
+        "viewportEnter",
+        "viewportExit"
+      ],
+      "referenceContract": {
+        "classification": "D",
+        "eventsInOrder": [
+          "viewportEnter",
+          "viewportExit"
+        ],
+        "consumerEventMeaning": "Viewport notifications only; the illustrative product UI is not interactive."
+      }
+    },
+    {
+      "id": "component-story",
+      "classification": "A",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-reading-links",
+        "source-landing-js"
+      ],
+      "unknowns": [
+        "External destinations were inspected but not opened."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Retain link-row hierarchy; replace destinations and editorial copy for the target."
+      },
+      "name": "Information link row",
+      "slots": [
+        "icon",
+        "title",
+        "description",
+        "href",
+        "chevron"
+      ],
+      "tokenRefs": [
+        "type-story",
+        "type-form",
+        "color-muted",
+        "color-divider"
+      ],
+      "states": [
+        {
+          "id": "rest",
+          "appearance": "Leading glyph, stacked title/description, trailing chevron; divider only on later rows.",
+          "evidenceRefs": [
+            "source-reading-links"
+          ]
+        },
+        {
+          "id": "hover-declared",
+          "appearance": "16px radius with secondary surface fill on hover/focus.",
+          "evidenceRefs": [
+            "source-css",
+            "source-landing-js"
+          ]
+        }
+      ],
+      "platform": "web",
+      "interfaceClassification": "D: consumer component names and slots",
+      "geometry": "32px leading track; 16px column gap; 24px vertical content padding; link extends 12px into inline gutter.",
+      "longText": "Content track minmax(0,1fr); descriptions wrap; chevron stays fixed.",
+      "events": [
+        "activate",
+        "pointerEnter",
+        "focus",
+        "blur"
+      ],
+      "referenceContract": {
+        "classification": "D",
+        "eventsInOrder": [
+          "activate",
+          "pointerEnter",
+          "focus",
+          "blur"
+        ],
+        "consumerEventMeaning": "Named events describe the consumer component contract, not original app APIs."
+      }
+    },
+    {
+      "id": "component-footer",
+      "classification": "A",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "source-footer",
+        "source-desktop-metrics",
+        "source-mobile-metrics"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Retain the closing action and responsive legal groups while substituting target brand and destinations."
+      },
+      "name": "Closing action and legal footer",
+      "slots": [
+        "heading",
+        "action",
+        "copyright",
+        "legalLinks",
+        "parentBrand"
+      ],
+      "tokenRefs": [
+        "type-section",
+        "type-small-action",
+        "color-muted",
+        "layout-gutter"
+      ],
+      "states": [
+        {
+          "id": "desktop",
+          "appearance": "560px closing section; footer distributes copyright, legal links and parent mark.",
+          "evidenceRefs": [
+            "source-footer"
+          ]
+        },
+        {
+          "id": "mobile-declared",
+          "appearance": "Footer stacks into centered groups.",
+          "evidenceRefs": [
+            "source-mobile-metrics",
+            "source-css"
+          ]
+        }
+      ],
+      "platform": "web",
+      "interfaceClassification": "D: consumer component names and slots",
+      "longText": "Allow legal links to wrap. Substitute destination brand and legal links; retain an accessible navigation label.",
+      "events": [
+        "activatePrimaryAction",
+        "activateLegalLink"
+      ],
+      "referenceContract": {
+        "classification": "D",
+        "eventsInOrder": [
+          "activatePrimaryAction",
+          "activateLegalLink"
+        ],
+        "consumerEventMeaning": "Named events describe the consumer component contract, not original app APIs."
+      }
+    }
+  ]
+}

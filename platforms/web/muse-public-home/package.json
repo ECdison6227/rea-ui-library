@@ -1,0 +1,14 @@
+{
+  "name": "muse-public-home-design-package",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A source-evidenced design package and single-page reference for the public Muse landing page.",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs",
+    "verify": "node scripts/verify-package.mjs",
+    "qa": "node scripts/verify-reference.mjs"
+  },
+  "engines": { "node": ">=22" }
+}

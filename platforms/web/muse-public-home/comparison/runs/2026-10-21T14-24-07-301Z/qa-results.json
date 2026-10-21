@@ -1,0 +1,802 @@
+{
+  "capturedAt": "2026-10-21T14:24:21.876Z",
+  "runId": "2026-10-21T14-24-07-301Z",
+  "browser": "155.0.8059.40",
+  "implementationFiles": {
+    "reference/index.html": "e62e5f8b7e43d5915f59edfc339c72f248ac8be8367f3f94ffed7bf9ac28b0b3",
+    "reference/styles.css": "8e9ac85d65660125e8f44d0e2093111ec89a2d5b265b14d098a9dceb4fa501f6",
+    "reference/components.js": "09bec22f38e2c2808127d5c3914444e68b1ba5c2d712cb902513883ef6d3111c",
+    "reference/app.js": "0b9e29841818e4d6d2ed40b30f5a33761994807f6a0a6016433ffcf224365774",
+    "reference/source-content.js": "27ebb1e287b99b4de613b09245b8d14a52c399450b40031aa86804abb6a6bc3b"
+  },
+  "checks": [
+    {
+      "name": "Desktop fits the viewport",
+      "passed": true
+    },
+    {
+      "name": "Desktop core geometry within 1 CSS px",
+      "passed": true,
+      "details": [
+        {
+          "selector": ".hero-title",
+          "original": {
+            "x": 56,
+            "y": 304,
+            "width": 1328,
+            "height": 142.40625
+          },
+          "reference": {
+            "x": 56,
+            "y": 304,
+            "width": 1328,
+            "height": 142.40625
+          },
+          "deltas": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "selector": ".text-field",
+          "original": {
+            "x": 516,
+            "y": 544.40625,
+            "width": 408,
+            "height": 54
+          },
+          "reference": {
+            "x": 516,
+            "y": 544.40625,
+            "width": 408,
+            "height": 54
+          },
+          "deltas": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "selector": ".entry-submit",
+          "original": {
+            "x": 516,
+            "y": 658.40625,
+            "width": 408,
+            "height": 44
+          },
+          "reference": {
+            "x": 516,
+            "y": 658.40625,
+            "width": 408,
+            "height": 44
+          },
+          "deltas": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Focused field matches source blue outline",
+      "passed": true
+    },
+    {
+      "name": "Continue stays on the page and sends no POST",
+      "passed": true
+    },
+    {
+      "name": "Introduction receives keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "Draft input survives in-page navigation",
+      "passed": true
+    },
+    {
+      "name": "Landing images decode successfully",
+      "passed": true
+    },
+    {
+      "name": "Mobile fits the viewport",
+      "passed": true
+    },
+    {
+      "name": "Mobile input remains at least 16 CSS px",
+      "passed": true
+    },
+    {
+      "name": "Headline cycles through the original phrase slots",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion keeps avatar videos paused",
+      "passed": true
+    },
+    {
+      "name": "Keyboard reaches a visible focusable control",
+      "passed": true
+    },
+    {
+      "name": "Reading adaptation filters real content",
+      "passed": true
+    },
+    {
+      "name": "Reading adaptation provides an empty state",
+      "passed": true
+    },
+    {
+      "name": "Reference assets and code load successfully",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Visible images decode successfully",
+      "passed": true
+    },
+    {
+      "name": "Reference has no automatic external requests",
+      "passed": true
+    }
+  ],
+  "captures": [
+    {
+      "path": "comparison/runs/2026-10-21T14-24-07-301Z/reference-desktop.png",
+      "sha256": "5485ca95c3a5af74d12dd1c3bfc1860a2b5b98e702252e2c0a47dfd089e824d6",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:24:09.892Z",
+        "completedAt": "2026-10-21T14:24:10.018Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/runs/2026-10-21T14-24-07-301Z/reference-button-hover.png",
+      "sha256": "786fb64a688ba208815b294a911a699b33e89ba42d55137779345b46942aca8b",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:24:10.135Z",
+        "completedAt": "2026-10-21T14:24:10.266Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/runs/2026-10-21T14-24-07-301Z/reference-input-focus.png",
+      "sha256": "a944134b747f8f101eca24e308a0979e2469da78ff94e726c67f27eb0bbf3bbf",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:24:10.280Z",
+        "completedAt": "2026-10-21T14:24:10.348Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/runs/2026-10-21T14-24-07-301Z/reference-scroll-1000.png",
+      "sha256": "960b5ad481c2f383eae4783bb3075657168fff358f4aea4eb079f6a43706e447",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:24:11.882Z",
+        "completedAt": "2026-10-21T14:24:12.034Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/runs/2026-10-21T14-24-07-301Z/reference-scroll-2100.png",
+      "sha256": "8f932a01945526f18503d17010be2d4b5dd2886acdaf154e84030f857e7bac4b",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:24:12.555Z",
+        "completedAt": "2026-10-21T14:24:12.639Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/runs/2026-10-21T14-24-07-301Z/reference-scroll-6480.png",
+      "sha256": "907fb67f7a2b60b7ef06261ff695c255920ab6bfb6cf7afc5b0a82e898c7ab6b",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:24:13.155Z",
+        "completedAt": "2026-10-21T14:24:13.342Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/runs/2026-10-21T14-24-07-301Z/reference-scroll-7330.png",
+      "sha256": "a971ed81742964193fb63471cd04d59386eae7306e03d414330533d17c2d03fc",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:24:13.863Z",
+        "completedAt": "2026-10-21T14:24:13.947Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/runs/2026-10-21T14-24-07-301Z/reference-mobile.png",
+      "sha256": "cbafcd71277d17b6784c95d427ee0c2f7f0785c8ebddcee57dc64863b446be29",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:24:14.674Z",
+        "completedAt": "2026-10-21T14:24:14.760Z"
+      },
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/runs/2026-10-21T14-24-07-301Z/reference-tablet.png",
+      "sha256": "aa190a48080c19bf5bf92ccbc0259e52fcef307ce497792b6124eaf5e6f005ff",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:24:15.412Z",
+        "completedAt": "2026-10-21T14:24:15.464Z"
+      },
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/runs/2026-10-21T14-24-07-301Z/reference-headline-motion.png",
+      "sha256": "258ff190881bacdc4654ede3c2771690b56bbb04ca4c2d8ccd0f4d8a9ba542da",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:24:19.561Z",
+        "completedAt": "2026-10-21T14:24:19.669Z"
+      },
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/runs/2026-10-21T14-24-07-301Z/reference-keyboard-focus.png",
+      "sha256": "e943e37b78c5deae697b279f70b5597eddf92e2dc5c9123a686a16dbaba4e703",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:24:20.751Z",
+        "completedAt": "2026-10-21T14:24:20.864Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/runs/2026-10-21T14-24-07-301Z/transfer-reading.png",
+      "sha256": "26e26c9225bde0834e5a92a52ffe5df418ccb9119f8d6f8f18dc08b1a477c497",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:24:21.462Z",
+        "completedAt": "2026-10-21T14:24:21.533Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "transfer",
+      "url": "http://127.0.0.1:4173/reference/?example=reading"
+    },
+    {
+      "path": "comparison/runs/2026-10-21T14-24-07-301Z/transfer-reading-filtered.png",
+      "sha256": "f8bd0511a636c05bc2212dc524e7c97de560ae4b9b846e89abf20ddd5cdc7b25",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:24:21.618Z",
+        "completedAt": "2026-10-21T14:24:21.682Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "transfer",
+      "url": "http://127.0.0.1:4173/reference/?example=reading"
+    },
+    {
+      "path": "comparison/runs/2026-10-21T14-24-07-301Z/transfer-reading-empty.png",
+      "sha256": "74084b36b1cc4236559827920349bd42a3d6a9a65a64ede9801075d755212201",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:24:21.779Z",
+        "completedAt": "2026-10-21T14:24:21.856Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "transfer",
+      "url": "http://127.0.0.1:4173/reference/?example=reading"
+    }
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:4173/reference/",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/_next/static/media/OptimisticAI_VF_Optimized-s.p.1qcbydubu9isy.woff2",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/styles.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/app.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/source-content.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/components.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/meta-wordmark.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/muse-logo.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/hatch.jpg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-envelope.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-airplane.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-cart.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-piggybank.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-calendar.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/b-01.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/down.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/play.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/design.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/chevron.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/shield.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/check.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/videos/avatars/hatch_connecting.mp4",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/videos/avatars/hatch_working.mp4",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/introduction-still.png",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/browser.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/muse-logo.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/messaging.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/approvals.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/secure-storage.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/goals.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/connectors.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/hatch/landing/product-walkthrough-cover.png",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/_next/static/media/OptimisticAI_VF_Optimized-s.p.1qcbydubu9isy.woff2",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/styles.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/app.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/source-content.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/components.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-envelope.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-airplane.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-cart.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-piggybank.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-calendar.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/b-01.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/down.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/play.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/design.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/chevron.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/shield.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/check.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/meta-wordmark.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/muse-logo.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/hatch.jpg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/introduction-still.png",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/browser.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/muse-logo.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/_next/static/media/OptimisticAI_VF_Optimized-s.p.1qcbydubu9isy.woff2",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/styles.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/app.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/source-content.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/components.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-envelope.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-airplane.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-cart.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-piggybank.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-calendar.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/b-01.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/down.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/play.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/design.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/chevron.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/shield.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/check.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/meta-wordmark.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/muse-logo.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/hatch.jpg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/introduction-still.png",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/browser.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/muse-logo.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/_next/static/media/OptimisticAI_VF_Optimized-s.p.1qcbydubu9isy.woff2",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/styles.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/app.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/source-content.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/components.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-envelope.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-airplane.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-cart.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-piggybank.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-calendar.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/b-01.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/down.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/play.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/design.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/chevron.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/shield.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/check.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/meta-wordmark.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/muse-logo.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/hatch.jpg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/introduction-still.png",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/browser.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/muse-logo.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/?example=reading",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/_next/static/media/OptimisticAI_VF_Optimized-s.p.1qcbydubu9isy.woff2",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/styles.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/app.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/source-content.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/components.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/down.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/muse-logo.svg",
+      "method": "GET"
+    }
+  ],
+  "limits": [
+    "Checks local reference behavior, not Muse authentication or service behavior.",
+    "Media posters use a retained frame; the full promotional films are outside this implementation.",
+    "No browser screen-reader or real touch device was tested."
+  ]
+}

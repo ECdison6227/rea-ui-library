@@ -1,0 +1,572 @@
+{
+  "capturedAt": "2026-10-21T14:01:40.786Z",
+  "browser": "155.0.8059.40",
+  "checks": [
+    {
+      "name": "Desktop fits the viewport",
+      "passed": true
+    },
+    {
+      "name": "Desktop core geometry within 1 CSS px",
+      "passed": true,
+      "details": [
+        {
+          "selector": ".hero-title",
+          "original": {
+            "x": 56,
+            "y": 304,
+            "width": 1328,
+            "height": 142.40625
+          },
+          "reference": {
+            "x": 56,
+            "y": 304,
+            "width": 1328,
+            "height": 142.40625
+          },
+          "deltas": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "selector": ".text-field",
+          "original": {
+            "x": 516,
+            "y": 544.40625,
+            "width": 408,
+            "height": 54
+          },
+          "reference": {
+            "x": 516,
+            "y": 544.40625,
+            "width": 408,
+            "height": 54
+          },
+          "deltas": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "selector": ".entry-submit",
+          "original": {
+            "x": 516,
+            "y": 658.40625,
+            "width": 408,
+            "height": 44
+          },
+          "reference": {
+            "x": 516,
+            "y": 658.40625,
+            "width": 408,
+            "height": 44
+          },
+          "deltas": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Continue stays on the page and sends no POST",
+      "passed": true
+    },
+    {
+      "name": "Introduction receives keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "Draft input survives in-page navigation",
+      "passed": true
+    },
+    {
+      "name": "Mobile fits the viewport",
+      "passed": true
+    },
+    {
+      "name": "Mobile input remains at least 16 CSS px",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion keeps avatar videos paused",
+      "passed": true
+    },
+    {
+      "name": "Keyboard reaches a visible focusable control",
+      "passed": true
+    },
+    {
+      "name": "Reading adaptation filters real content",
+      "passed": true
+    },
+    {
+      "name": "Reading adaptation provides an empty state",
+      "passed": true
+    },
+    {
+      "name": "Reference assets and code load successfully",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Reference has no automatic external requests",
+      "passed": true
+    }
+  ],
+  "captures": [
+    {
+      "path": "comparison/reference-desktop.png",
+      "sha256": "3a7bd2cca61d8bee7e5b3602757d318fef1cf2333ab5907b17a2d62bb261cef6",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:01:33.502Z",
+        "completedAt": "2026-10-21T14:01:33.614Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/reference-button-hover.png",
+      "sha256": "630f37ad5799f6530b259ac6718f9aa4d95fed431af96e65e7aeb31799de342d",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:01:33.727Z",
+        "completedAt": "2026-10-21T14:01:33.898Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/reference-input-focus.png",
+      "sha256": "ead38ee3c6eef3f96f61f2b8c4fc9f15b91d80e709984ea67cbe1af0d3154116",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:01:33.922Z",
+        "completedAt": "2026-10-21T14:01:34.014Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/reference-scroll-1000.png",
+      "sha256": "3439d28c8a7b7d3b468ffc74b4185082d301a221b51f0635addc882af7fd7702",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:01:35.546Z",
+        "completedAt": "2026-10-21T14:01:35.682Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/reference-scroll-2100.png",
+      "sha256": "9bb32cfe79e21b582ef2871e7850e23b061fac0c93fa73a1fb23ef2d9e146c75",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:01:36.207Z",
+        "completedAt": "2026-10-21T14:01:36.331Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/reference-scroll-6480.png",
+      "sha256": "559a5bd6ffcc9f07e745e8c42ebaee02f7dea154c250b67604f41a7919471c8d",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:01:36.849Z",
+        "completedAt": "2026-10-21T14:01:37.085Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/reference-scroll-7330.png",
+      "sha256": "d31a4243e2d36f012125350e3e6754e5f08cb45ec00fc3e7a0c7687d57e6f2f7",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:01:37.599Z",
+        "completedAt": "2026-10-21T14:01:37.673Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/reference-mobile.png",
+      "sha256": "c994c8aaeaf7ba162fc76def8418d0571fc60dbc6f78629dd7aa508d6f62b031",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:01:38.168Z",
+        "completedAt": "2026-10-21T14:01:38.251Z"
+      },
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/reference-tablet.png",
+      "sha256": "3e9f6c11c7195b974c3dcaeabb5ee2f49ae5c841681f42b8dfb1ae670518a2cb",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:01:38.566Z",
+        "completedAt": "2026-10-21T14:01:38.625Z"
+      },
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/reference-keyboard-focus.png",
+      "sha256": "40e659ab4aab92bddb262ca32ce33d2b610dfee237d6d0e3da0bd1cd09501f6a",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:01:39.681Z",
+        "completedAt": "2026-10-21T14:01:39.796Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "reference",
+      "url": "http://127.0.0.1:4173/reference/"
+    },
+    {
+      "path": "comparison/transfer-reading.png",
+      "sha256": "92d5e05ae683a6f566ca3c84e694d587afb9f5c7ba4cf47df03d21adbdde086f",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:01:40.409Z",
+        "completedAt": "2026-10-21T14:01:40.478Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "transfer",
+      "url": "http://127.0.0.1:4173/reference/?example=reading"
+    },
+    {
+      "path": "comparison/transfer-reading-filtered.png",
+      "sha256": "f8bd0511a636c05bc2212dc524e7c97de560ae4b9b846e89abf20ddd5cdc7b25",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:01:40.556Z",
+        "completedAt": "2026-10-21T14:01:40.621Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "transfer",
+      "url": "http://127.0.0.1:4173/reference/?example=reading"
+    },
+    {
+      "path": "comparison/transfer-reading-empty.png",
+      "sha256": "74084b36b1cc4236559827920349bd42a3d6a9a65a64ede9801075d755212201",
+      "captureInterval": {
+        "startedAt": "2026-10-21T14:01:40.718Z",
+        "completedAt": "2026-10-21T14:01:40.786Z"
+      },
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "subject": "transfer",
+      "url": "http://127.0.0.1:4173/reference/?example=reading"
+    }
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:4173/reference/",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/_next/static/media/OptimisticAI_VF_Optimized-s.p.1qcbydubu9isy.woff2",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/styles.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/app.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/source-content.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/components.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/meta-wordmark.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/muse-logo.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/hatch.jpg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-envelope.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-airplane.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-cart.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-piggybank.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-calendar.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/b-01.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/down.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/play.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/design.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/chevron.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/shield.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/check.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/videos/avatars/hatch_connecting.mp4",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/videos/avatars/hatch_working.mp4",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/introduction-still.png",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/browser.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/muse-logo.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/messaging.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/approvals.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/secure-storage.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/goals.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/connectors.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/hatch/landing/product-walkthrough-cover.png",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/_next/static/media/OptimisticAI_VF_Optimized-s.p.1qcbydubu9isy.woff2",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/styles.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/app.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/source-content.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/components.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/meta-wordmark.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-envelope.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-airplane.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-cart.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-piggybank.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/icon-calendar.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/icons/b-01.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/muse-logo.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/hatch.jpg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/down.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/play.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/design.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/chevron.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/shield.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/check.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/introduction-still.png",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/browser.webp",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/muse-logo.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/?example=reading",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/_next/static/media/OptimisticAI_VF_Optimized-s.p.1qcbydubu9isy.woff2",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/styles.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/app.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/source-content.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/reference/components.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/curated/down.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/source/images/landing/brand/muse-logo.svg",
+      "method": "GET"
+    }
+  ],
+  "limits": [
+    "Checks local reference behavior, not Muse authentication or service behavior.",
+    "Media posters use a retained frame; the full promotional films are outside this implementation.",
+    "No browser screen-reader or real touch device was tested."
+  ]
+}
