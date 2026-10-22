@@ -1,0 +1,32 @@
+{
+  "reviewedAt": "2026-10-22T16:30:42.917405+00:00",
+  "method": "Assistant visually inspected the original contact sheets and then the two regenerated sheets containing all 15 negotiated WebP responses through view_image; per-file decoding/dimensions verified separately.",
+  "classification": "D-derived-inspection, not a new source-page runtime observation",
+  "reviewedImageCount": 51,
+  "sheets": [
+    {
+      "path": "images-contact-sheet-1.jpg",
+      "sha256": "fa937a6ad7d6accc369e10f9aa8c8314b8ee1621275c76ae13fc37a7cdb5ba08"
+    },
+    {
+      "path": "images-contact-sheet-2.jpg",
+      "sha256": "952d845280d0c8e9727f7a618d7fbb025b48901282c3039d96a791f62ad08e2b"
+    },
+    {
+      "path": "images-contact-sheet-3.jpg",
+      "sha256": "7ee2770fbb8ada84c2cfc7d944f8a860077c5633ae933664806931f6ce76ed40"
+    }
+  ],
+  "findings": [
+    "36 retained images show public marketing photography, editorial graphics, transparent demo UI posters, footer/background textures, OpenGraph image and generic avatar; no error-page payload appeared in sheets.",
+    "All 10 carousel posters correspond to their named demo topics at sheet scale.",
+    "The 5 feature posters include the chat panel, Handoff browser collage, secured login, Action Buttons and custom Panels.",
+    "Transparency is shown over a checkerboard on the derived sheets; original files are unchanged.",
+    "All 15 separately retained WebP negotiated responses show the same named poster subjects at contact-sheet scale; both PNG default and WebP negotiated payloads remain intact."
+  ],
+  "limits": [
+    "Contact-sheet scale is not full-resolution typography or pixel-perfect UI validation.",
+    "Video playback and carousel transitions were not visually tested by this media acquisition pass."
+  ],
+  "uniqueImageLocators": 36
+}

@@ -13,7 +13,7 @@
 - 相对路径可解析、真实SHA、原单位、历史采集/复核时间及A/B/C/D边界。
 - 审查实际分发成员，排除凭据、账号profile、私人画面、AVD/SDK/JDK缓存、嵌套.git；原件遗漏保留原因/哈希。
 
-Hark和Mirasim是明确登记的`legacy-research`，暂作旧研究参考；新增来源不再允许旧格式。小米、Kimi、多邻国从标准入口消费。历史事实与用户此前明确要求的业务清单保留，未测不改verified。
+Hark Web已以当前Design Package v1替换默认入口并保留历史来源；Mirasim仍为明确登记的`legacy-research`旧研究参考；新增来源不再允许旧格式。小米、Kimi、多邻国从标准入口消费。历史事实与用户此前明确要求的业务清单保留，未测不改verified。
 
 ## 注册与验证
 

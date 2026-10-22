@@ -1,0 +1,63 @@
+{
+  "classification": "D reference update and runtime receipt",
+  "recordedAt": "2026-10-22T17:01:53.547470+00:00",
+  "initialArchive": "runs/initial/archive.json",
+  "initialArchiveSha256": "d5e341d3c74c0e89590c0ef53822ca8dc926d113e7ff2924e1e860e60d8cc001",
+  "currentRun": "reference-run.json",
+  "currentRunSha256": "6ae84d745e133c0dceae87f129e65b7f043e1dde1a89668d3dd46adcab449988",
+  "serverChecks": "server-path-check-current.json",
+  "serverChecksSha256": "b6327bb701034383fd292708efe77f9ff60bdd7fca91bd84c4f68aa9774b9307",
+  "changedImplementation": [
+    {
+      "path": "reference/reference.css",
+      "sha256": "ca5553119caf7bcce822ce45efdba63384a76ef242ef765c49a18d296b8aaa9a",
+      "bytes": 14172
+    },
+    {
+      "path": "reference/serve.mjs",
+      "sha256": "2a3c9323b150720a0781c208068f8b6e3a69209e0c90e0466440c276481370d3",
+      "bytes": 3279
+    },
+    {
+      "path": "reference/verify.mjs",
+      "sha256": "4c53a1c272028cdca2b9f87fd18b307d7131851fe5168503bd92e95912a992bb",
+      "bytes": 16895
+    },
+    {
+      "path": "reference/assets-reuse.json",
+      "sha256": "09c3092c61e3f7ef0a495fce8336a0b66f63d916ae2ab22309aac45d8456d520",
+      "bytes": 10013
+    }
+  ],
+  "adoptedSourceRules": {
+    "readerH2": "GT Standard L Bold700,16px/22.4px",
+    "previewTitle": "Hark Serif500,20px/26px",
+    "desktopSheet": "topcalc(titlebar+140px),bottom24,widthmin(720px,viewport-48px)",
+    "narrowSheet": "topmax(62px,safe-area-top),bottom0,width100%"
+  },
+  "readOnlySourceInputs": [
+    {
+      "path": "../current-app/summary-static.json",
+      "sha256": "a03785b8de8175003cff725bcc007e3c461e3e396ec84e1df9c8688ce092f53b"
+    },
+    {
+      "path": "../current-app/resources/CtFaX487.css",
+      "sha256": "1a2f86b8904f685ddd2c453f87c74fb79b10cd4cd01bf4257210563e54192cca"
+    },
+    {
+      "path": "../current-app/fonts/GT-Standard-L-Standard-Bold.woff2",
+      "sha256": "0fc289f07c7f9fe0a9bda757ea01f274dc291b643f8596f7262099046b4f4e85"
+    }
+  ],
+  "checks": 13,
+  "captures": 8,
+  "allPixelsReviewed": true,
+  "remainingDifferences": [
+    "Fixed D backdrop and explicit Auto Light fallback; no sky/weather implementation.",
+    "D preview icon/header/footer/content remain independent.",
+    "Extra D category keeps desktop title28px lower despite matching sheet top.",
+    "D native dialog and220ms translate/opacity entrance remain different from original200ms host blur/opacity source.",
+    "Narrow D toolbar/20px inner padding and uniform continuous corners remain D adaptation choices."
+  ],
+  "boundary": "Only reference/ and D comparison runtime artifacts changed; historical A, current-app.md, root design/spec/manifest and public-runtime unchanged by this subtask."
+}

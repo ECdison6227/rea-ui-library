@@ -1,0 +1,195 @@
+{
+  "formatVersion": 1,
+  "kind": "historical-source-and-independent-reference-comparison",
+  "recordedAt": "2026-10-22T17:01:53.547470+00:00",
+  "currentSourceComparisonStatus": "partial; current original A is maintained by root separately",
+  "referenceRuntimeStatus": "passed",
+  "referenceChecks": 13,
+  "referenceCaptures": 8,
+  "sourceOriginalExecutedByThisTask": false,
+  "sourceItems": [
+    {
+      "id": "historical-summary",
+      "classification": "A historical screenshot; read-only review is not a new source execution",
+      "path": "../../evidence/screenshots/15-summary-open.png",
+      "sourceIdentity": "Hark Web https://hark.com/chat",
+      "captureDateOriginal": "2026-10-15",
+      "captureDateTimezoneOriginal": "Asia/Shanghai",
+      "captureDateGranularity": "date retained from historical study; no new exact timestamp invented",
+      "pngPhysicalPixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "historicalViewportCssPx": {
+        "width": 1440,
+        "height": 900
+      },
+      "dpr": "not inferred from this screenshot file",
+      "theme": "dark historical",
+      "language": "zh-CN neutral REA sample",
+      "sourceEpoch": "H15",
+      "sha256": "3e34f981f201f91d5ac4f85fd0b85d83e9cbf21a9a7faafb11887fe41e5e70d0",
+      "bytes": 889669,
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T15:29:43Z",
+        "method": "view_image of retained original; no source browser control",
+        "notes": "Historical independent reading surface, visible large serif title, dark sheet and wallpaper; bottom content continues below its scroll port."
+      }
+    },
+    {
+      "id": "historical-mobile-chat",
+      "classification": "A historical screenshot; read-only review is not a new source execution",
+      "path": "../../evidence/screenshots/27-mobile-chat.png",
+      "sourceIdentity": "Hark Web https://hark.com/chat",
+      "captureDateOriginal": "2026-10-15",
+      "captureDateTimezoneOriginal": "Asia/Shanghai",
+      "captureDateGranularity": "date retained from historical study; no new exact timestamp invented",
+      "pngPhysicalPixels": {
+        "width": 390,
+        "height": 844
+      },
+      "historicalViewportCssPx": {
+        "width": 390,
+        "height": 844
+      },
+      "dpr": "not inferred from this screenshot file",
+      "theme": "dark historical",
+      "language": "zh-CN neutral REA sample",
+      "sourceEpoch": "H15",
+      "sha256": "9d621eceb43b2fddc43d7735af27ea589836507191683b8f2ef0974c8a67afae",
+      "bytes": 376130,
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T15:29:43Z",
+        "method": "view_image of retained original; no source browser control",
+        "notes": "Historical narrow chat, three-item navigation, user/assistant width difference, 16px composer insets, neutral REA test text."
+      }
+    }
+  ],
+  "historicalComputed": {
+    "path": "../../evidence/styles/rich-computed-styles.json",
+    "sha256": "d4d313429fb3c82d54a746a00a891a657fcd04bbb2f4c5a4af91afc28e2cc545",
+    "bytes": 22814,
+    "classification": "historical A measurement retained; not current source runtime"
+  },
+  "pairs": [
+    {
+      "id": "summary-reading",
+      "sourceRef": "historical-summary",
+      "referenceCaptureRef": "desktop-reader-dark",
+      "referencePath": "captures/desktop-reader-dark.png",
+      "referenceSha256": "027494a462d8596675c0a07af2d6188edefc29ad09d436ac85013a088048ca83",
+      "classification": "historical A / independent D comparison",
+      "status": "partial; distinct content and conditions, no current source equivalence",
+      "comparisonKind": "layout and role comparison",
+      "targetCommit": "d7f718d10558a32cf378b1d30bc279538fa3bf12",
+      "referenceRun": "reference-run.json",
+      "deltas": [
+        {
+          "property": "reading mode",
+          "source": "independent source surface",
+          "reference": "native modal dialog with separate sheet",
+          "assessment": "same interaction family; D focus/scroll policy"
+        },
+        {
+          "property": "title typography",
+          "source": "Hark Serif40/52/500 from historical computed",
+          "reference": "same declared role with direct retained font",
+          "assessment": "D adoption; CJK vs Latin content not pixel equal"
+        },
+        {
+          "property": "title border-box origin",
+          "source": {
+            "x": 392,
+            "y": 188
+          },
+          "reference": {
+            "x": 392,
+            "y": 216
+          },
+          "deltaCssPx": {
+            "x": 0,
+            "y": 28
+          },
+          "assessment": "Sheet top now matches140; extra D category retains28px before the title."
+        },
+        {
+          "property": "sheet top",
+          "source": "140px in retained source pixels",
+          "reference": "140px in current D computed",
+          "deltaCssPx": 0,
+          "assessment": "Current B CSS top140 adopted without changing historical A."
+        },
+        {
+          "property": "body/strong",
+          "source": "18/25.2/400;strong600",
+          "reference": "18/25.2/400;strong600",
+          "assessment": "role adopted"
+        },
+        {
+          "property": "secondary heading",
+          "source": "L700 historical computed",
+          "reference": "Original GT Standard L Bold payload, CSS700",
+          "assessment": "Previously resolvable L600 fallback removed; current D loaded700 verified."
+        },
+        {
+          "property": "background/toolbar",
+          "source": "historical sky, source actions",
+          "reference": "fixed D slate with native blur and Copy action",
+          "assessment": "different"
+        }
+      ]
+    },
+    {
+      "id": "narrow-chat",
+      "sourceRef": "historical-mobile-chat",
+      "referenceCaptureRef": "mobile-dark",
+      "referencePath": "captures/mobile-dark.png",
+      "referenceSha256": "70384499305ed3d68257e86ae70fa8b2a14495ee83988ce1b7f19006cd7fdc63",
+      "classification": "historical A / independent D comparison",
+      "status": "partial; distinct content and conditions, no current source equivalence",
+      "comparisonKind": "narrow geometry and material comparison",
+      "targetCommit": "d7f718d10558a32cf378b1d30bc279538fa3bf12",
+      "referenceRun": "reference-run.json",
+      "deltas": [
+        {
+          "property": "composer geometry",
+          "source": "390px viewport,16px side insets and48px height",
+          "reference": {
+            "x": 16,
+            "y": 764,
+            "width": 358,
+            "height": 48
+          },
+          "assessment": "historical geometry baseline adopted"
+        },
+        {
+          "property": "body",
+          "source": "15/19 historical source",
+          "reference": "15/19 direct GT L400",
+          "assessment": "different text and rich-card mixture"
+        },
+        {
+          "property": "navigation",
+          "source": "Home/Chat/Projects and account avatar",
+          "reference": "Library/Notes/Projects and Appearance button",
+          "assessment": "independent business and D entry mapping"
+        },
+        {
+          "property": "input conditions",
+          "source": "historical narrow browser capture",
+          "reference": "desktop Chromium viewport emulation, DPR1",
+          "assessment": "no OS keyboard/touch equivalence"
+        }
+      ]
+    }
+  ],
+  "unknowns": [
+    "Current authenticated Hark equivalence is not established by this D slice.",
+    "Original sky shader/weather/motion controller not executed in this D slice.",
+    "OS IME/touch/soft keyboard and across-refresh persistence not tested.",
+    "Remaining original rich renderer families outside the chosen slice are not marked verified."
+  ],
+  "previousReferenceRun": "runs/initial/reference-run.json"
+}

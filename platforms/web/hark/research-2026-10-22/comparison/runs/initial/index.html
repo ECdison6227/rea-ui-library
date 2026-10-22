@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Historical Hark / Independent D reference comparison</title>
+<style>body{font:15px/1.55 system-ui,sans-serif;margin:0;padding:32px;background:#f5f5f2;color:#202126}main{max-width:1500px;margin:auto}h1{font-size:28px;margin:12px 0}h2{font-size:22px;margin:40px 0 16px}p{max-width:960px}a{color:inherit}.pair{display:grid;grid-template-columns:1fr 1fr;gap:24px}figure{margin:0}figcaption{font-size:13px;margin-bottom:10px}img{display:block;width:100%;height:auto;border:1px solid #ccc;border-radius:10px}.mobile img{max-width:390px}.tag{font-size:12px;background:#e5e1d6;padding:4px 8px;border-radius:12px}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.gallery figcaption{margin:8px 0}code{font-size:13px}li{margin:6px 0}@media(max-width:800px){body{padding:20px}.pair,.gallery{grid-template-columns:1fr}}</style></head><body><main>
+<a href="../reference/">← Open the independent reference</a>
+<h1>Historical Hark baseline and a transferable component slice</h1>
+<p><span class="tag">Partial source comparison · D reference tested</span></p>
+<p>The left images are retained Hark observations from 15 October 2026 (Shanghai), inspected again on 22 October. The right images are an independent local implementation with neutral Fieldnotes content. No current authenticated Hark page was executed by this reference task. These are different contents and source conditions; this page makes no pixel-match or current-source equivalence claim.</p>
+<h2>Independent summary reading surface</h2>
+<div class="pair"><figure><figcaption>Historical source A · 1440×900 · <code>15-summary-open.png</code></figcaption><img src="/historical-baseline/summary.png" alt="Historical Hark independent summary reading layer"></figure><figure><figcaption>Independent D · 1440×900 · <code>desktop-reader-dark.png</code></figcaption><img src="captures/desktop-reader-dark.png" alt="Fieldnotes independent summary reading layer"></figure></div>
+<p>Transferred: independent reading layer, 720px sheet / 656px text band, original Hark Serif title 40/52/500 and GT Standard L body 18/25.2. Different: title/content/language, panel vertical placement, toolbar actions, background and overlay treatment. The D narrow title is 32/41.6.</p>
+<h2>Narrow content and anchored composer</h2>
+<div class="pair mobile"><figure><figcaption>Historical source A · 390×844 · <code>27-mobile-chat.png</code></figcaption><img src="/historical-baseline/mobile.png" alt="Historical Hark mobile-width chat"></figure><figure><figcaption>Independent D · 390×844 · <code>mobile-dark.png</code></figcaption><img src="captures/mobile-dark.png" alt="Fieldnotes independent narrow layout"></figure></div>
+<p>Transferred: 16px composer insets, 358px width, 48px empty height, 15/19 body and distinct user/assistant materials. Different: independent navigation wording, fixed D backdrop, text and rich-card mixture. This is desktop Chromium viewport emulation, with no OS keyboard or touch verification.</p>
+<h2>Additional D states</h2><div class="gallery">
+<figure><img src="captures/desktop-dark.png" alt="Dark desktop reference"><figcaption>Dark / rich cards</figcaption></figure>
+<figure><img src="captures/desktop-light.png" alt="Light desktop reference"><figcaption>Light materials</figcaption></figure>
+<figure><img src="captures/desktop-error.png" alt="Failure retains draft"><figcaption>Local failure / Retry</figcaption></figure>
+<figure><img src="captures/desktop-projects.png" alt="Project navigation state"><figcaption>D project navigation</figcaption></figure>
+<figure><img src="captures/desktop-code-expanded.png" alt="Expanded code rich card"><figcaption>Code disclosure / Mono400</figcaption></figure>
+<figure><img src="captures/mobile-reader-dark.png" alt="Narrow independent reader"><figcaption>Narrow reader</figcaption></figure>
+</div>
+<p><a href="README.md">Differences and limitations</a> · <a href="reference-run.json">Actual D run, metrics and SHA256</a> · <a href="comparison.json">Baseline identities and pair metadata</a> · <a href="../reference/assets-reuse.json">Reused source assets</a></p>
+</main></body></html>

@@ -6,15 +6,15 @@
   "sources": [
     {
       "id": "hark",
-      "name": "Hark",
-      "subtitle": "流式内容与交互卡片",
+      "name": "Hark Web",
+      "subtitle": "当前设计、交互与原资产",
       "platform": "web",
       "kind": "research",
       "root": "platforms/web/hark",
       "visibility": "public",
       "revision": "b5b49eb46494b86d56c21654ea585ad379d9b9d7",
-      "sourceVersion": "hark.com/chat · 2026-10-15",
-      "summary": "从真实聊天页面理解流式文本、表格、图片堆叠与卡片动作。保留浏览器观察、前端声明和推断的边界。",
+      "sourceVersion": "hark.com public dpl_43vpACitAoHemg5zATXXCP8hBYHa; App main-BgE0mqJD.js · 2026-10-22 UTC",
+      "summary": "当前登录App与公开站的排版、透明材质、富卡和通用交互设计包；保留历史REA与当前A/B/D边界。",
       "tags": [
         "聊天",
         "流式响应",
@@ -27,16 +27,17 @@
         "CSS",
         "已发布前端资源"
       ],
-      "readiness": "可用于规则参考",
-      "coverage": "所选页面与交互；未提供独立完整产品实现",
+      "readiness": "partial",
+      "coverage": "当前代表UI、32组登录运行、已声明静态依赖和公开媒体；全状态及精确A/D等价仍partial",
       "features": [
-        "544项有作用域的CSS变量",
-        "表格排序、菜单和导出",
-        "图片展开/收起与流式时序"
+        "当前21份App字体、19份官网字体与74命名字形",
+        "257份App静态原件与92公开媒体URL/107响应文件",
+        "桌面/窄屏、草稿/搜索/主题/阅读与13项独立参考检查"
       ],
       "limits": [
-        "原始截图/DOM包含既有聊天与文件内容，证据查看器只在本地私有模式开放",
-        "未验证的账号态、完整后端与其他页面不由本报告推断"
+        "账户原始资料与私人画面仅本地private留存，公开包已按实际成员审查",
+        "参考存在字体/背景/Auto/位置等具体差异，未宣称当前全部状态或业务等价",
+        "原字体、品牌和媒体许可未建立，研究留存不授予公开再分发权"
       ],
       "palette": [
         "#c8d8ec",
@@ -53,37 +54,46 @@
       "cover": "hark",
       "artifacts": [
         {
-          "label": "研究入口",
+          "label": "开始使用",
           "path": "README.md",
           "role": "readme"
         },
         {
-          "label": "设计规则",
-          "path": "reports/design-analysis.md",
+          "label": "设计规范",
+          "path": "DESIGN_SPEC.md",
           "role": "spec"
         },
         {
-          "label": "运行与交互",
-          "path": "reports/runtime-analysis.md",
-          "role": "behavior"
+          "label": "标准设计包",
+          "path": "design-package.json",
+          "role": "package"
         },
         {
-          "label": "CSS变量",
-          "path": "reports/design-tokens.json",
+          "label": "Tokens",
+          "path": "tokens/tokens.json",
           "role": "tokens"
         },
         {
-          "label": "原始证据查看器",
-          "path": "reports/evidence-gallery.html",
-          "role": "preview",
-          "restricted": true
+          "label": "当前运行观察",
+          "path": "research-2026-10-22/authenticated-runtime/README.md",
+          "role": "behavior"
+        },
+        {
+          "label": "独立组件参考",
+          "path": "research-2026-10-22/reference/README.md",
+          "role": "reference"
+        },
+        {
+          "label": "当前差异",
+          "path": "research-2026-10-22/comparison/current-app.md",
+          "role": "comparison"
         }
       ],
       "run": {
-        "cwd": "platforms/web/hark",
-        "command": "直接查看 reports/evidence-gallery.html；原始内容仅供本地私有查看",
-        "requires": "浏览器",
-        "verifiedHere": false
+        "cwd": "platforms/web/hark/research-2026-10-22/reference",
+        "command": "npm run dev",
+        "requires": "Node.js 22.13+；仅127.0.0.1:4393",
+        "verifiedHere": true
       },
       "paletteClassification": "D: catalog presentation only; use source tokens for implementation",
       "provenance": {
@@ -93,14 +103,26 @@
         "historyRef": "refs/tags/legacy/hark/main",
         "target": "hark.com/chat · 2026-10-15",
         "method": "REA historical research",
-        "researchEntry": "README.md"
+        "researchEntry": "LEGACY_RESEARCH.md"
       },
       "integrity": {
         "manifest": "catalog/manifests/hark.json",
-        "files": 249,
-        "treeSha256": "976e312f1acf738da9c062515ae66f38595ee81bd317a3413f83f5dfefbdeae5"
+        "files": 1408,
+        "treeSha256": "e399d103566e017c8601682471324cba3e5bc5769044978e83031a44520d7119"
       },
-      "deliveryTier": "legacy-research"
+      "deliveryTier": "design-package",
+      "designPackage": "design-package.json",
+      "currentResearch": {
+        "entry": "README.md",
+        "classification": "Current A/B plus independent D; historical provenance below unchanged",
+        "distribution": "reviewed-public; private account originals excluded"
+      },
+      "thumbnail": {
+        "path": "research-2026-10-22/public-runtime/captures/foreground-carousel-desktop-next.png",
+        "classification": "A · 当前公开官网3D轮播，键盘切换后的实际画面",
+        "reviewed": true,
+        "reviewedAt": "2026-10-22T18:05:40.295527+00:00"
+      }
     },
     {
       "id": "mi-fitness",

@@ -1,0 +1,1519 @@
+{
+  "formatVersion": 1,
+  "kind": "reviewed-current-public-runtime",
+  "sourceIdentity": "https://hark.com",
+  "recordedAt": "2026-10-22T17:33:38.481336+00:00",
+  "provider": "Independent CDP plus exact retained REA records; local summary is not a REA Evidence ID",
+  "receipts": [
+    {
+      "path": "home-carousel-receipt.json",
+      "sha256": "94bf3de9870e86daf446b687b73b6bb29b30aec45dce8a8381e1c5a5792943e4",
+      "startedAt": "2026-10-22T16:38:33.198Z",
+      "completedAt": "2026-10-22T16:38:53.923Z",
+      "result": "completed"
+    },
+    {
+      "path": "home-foreground-receipt.json",
+      "sha256": "4f866b0ca74e5b82b9ac3bdf7b55e0d960707e32dc2e17d2ed7c9f780fd019a2",
+      "startedAt": "2026-10-22T16:45:20.573Z",
+      "completedAt": "2026-10-22T16:45:42.884Z",
+      "result": "completed"
+    },
+    {
+      "path": "pricing-narrow-receipt.json",
+      "sha256": "c33ab633d7fa372bc16419b242539aae3a5e45b5c5db575780c4ecf1e8e561d6",
+      "startedAt": "2026-10-22T16:53:37.271Z",
+      "completedAt": "2026-10-22T16:53:41.684Z",
+      "result": "completed"
+    },
+    {
+      "path": "faq-restore-receipt.json",
+      "sha256": "72365cdd4cab783e08f0f48d3093b338d7c7025cf91b2c966229412631b804a9",
+      "startedAt": "2026-10-22T17:26:21.840Z",
+      "completedAt": "2026-10-22T17:26:24.856Z",
+      "result": "completed"
+    }
+  ],
+  "captures": [
+    {
+      "id": "home-desktop-intro",
+      "startedAt": "2026-10-22T16:38:33.825Z",
+      "completedAt": "2026-10-22T16:38:34.444Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0,
+        "documentHeight": 8664
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/home-desktop-intro.json",
+          "bytes": 142251,
+          "sha256": "2153bb985fc8cf2c6b316e0cca0eeca969441e2529ee8da9ad6ed25dac2459e5"
+        },
+        {
+          "path": "captures/home-desktop-intro.png",
+          "bytes": 1242783,
+          "sha256": "9c0aefbb8a20ba2e385c33d543a49713b5576ee526c041e6cc1da0b28abe54b0"
+        },
+        {
+          "path": "captures/home-desktop-intro-dom.json",
+          "bytes": 645556,
+          "sha256": "4563f79eb3bd852cd8f899829ae0aa2c411ccad56046b949bdc9b2891215a2cc"
+        }
+      ],
+      "receipt": "home-carousel-receipt.json",
+      "pixelReview": {
+        "status": "pending",
+        "reviewedAt": null,
+        "method": "Retained diagnostic background run; not promoted as reviewed visual coverage."
+      }
+    },
+    {
+      "id": "carousel-desktop-before",
+      "startedAt": "2026-10-22T16:38:35.450Z",
+      "completedAt": "2026-10-22T16:38:36.222Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 860,
+        "documentHeight": 8664
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/carousel-desktop-before.json",
+          "bytes": 141618,
+          "sha256": "2515f252310b7e61eb0069ae30ead79cc61bdc7352a243f1c2d449a1c5ba73c6"
+        },
+        {
+          "path": "captures/carousel-desktop-before.png",
+          "bytes": 1055777,
+          "sha256": "382a27a61c95c31cddb0d0cfbec0a8785836c2c81c3c7911d954ca19ab63d7fd"
+        },
+        {
+          "path": "captures/carousel-desktop-before-dom.json",
+          "bytes": 646026,
+          "sha256": "9ec670f8cbd36650522bf28a675b5e181e81363cd6c6735b9a741e3d826718d7"
+        }
+      ],
+      "receipt": "home-carousel-receipt.json",
+      "pixelReview": {
+        "status": "pending",
+        "reviewedAt": null,
+        "method": "Retained diagnostic background run; not promoted as reviewed visual coverage."
+      }
+    },
+    {
+      "id": "carousel-desktop-next",
+      "startedAt": "2026-10-22T16:38:37.845Z",
+      "completedAt": "2026-10-22T16:38:38.191Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 860,
+        "documentHeight": 8664
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/carousel-desktop-next.json",
+          "bytes": 141353,
+          "sha256": "931a740c6884b9aa55f2b33f40346dae6dc88ed1dcb860aff83d04c0551594e1"
+        },
+        {
+          "path": "captures/carousel-desktop-next.png",
+          "bytes": 980433,
+          "sha256": "926e699dfd19d9df01f21ffa886d9c26255d5b49c484a28797ba7200cfe14e64"
+        },
+        {
+          "path": "captures/carousel-desktop-next-dom.json",
+          "bytes": 647170,
+          "sha256": "f8872478b2bc8a27f61a02ab04934c7c07d0d62b1f0ae95ed46466707399a359"
+        }
+      ],
+      "receipt": "home-carousel-receipt.json",
+      "pixelReview": {
+        "status": "pending",
+        "reviewedAt": null,
+        "method": "Retained diagnostic background run; not promoted as reviewed visual coverage."
+      }
+    },
+    {
+      "id": "carousel-desktop-prev",
+      "startedAt": "2026-10-22T16:38:39.832Z",
+      "completedAt": "2026-10-22T16:38:40.175Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 860,
+        "documentHeight": 8664
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/carousel-desktop-prev.json",
+          "bytes": 141785,
+          "sha256": "a0f972fe1c61a366a6536c64ba3d14c5799cf5c13bcb61ead75115591f1e3e76"
+        },
+        {
+          "path": "captures/carousel-desktop-prev.png",
+          "bytes": 981120,
+          "sha256": "486e5e0ae9528ef50a6f35c6809a6faa2edd02605c693e91064029ec7d4e2110"
+        },
+        {
+          "path": "captures/carousel-desktop-prev-dom.json",
+          "bytes": 647169,
+          "sha256": "b9dcf3394ba6e8f69fdd96478ffc9c9ba560c2a4d405e38e8beed2008cdf9a9e"
+        }
+      ],
+      "receipt": "home-carousel-receipt.json",
+      "pixelReview": {
+        "status": "pending",
+        "reviewedAt": null,
+        "method": "Retained diagnostic background run; not promoted as reviewed visual coverage."
+      }
+    },
+    {
+      "id": "carousel-desktop-reversed",
+      "startedAt": "2026-10-22T16:38:41.998Z",
+      "completedAt": "2026-10-22T16:38:42.322Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 860,
+        "documentHeight": 8664
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/carousel-desktop-reversed.json",
+          "bytes": 141794,
+          "sha256": "468294027068a06f4bce5c0cdd56379da8e3ffc056310ede39db8f1667f3bd3e"
+        },
+        {
+          "path": "captures/carousel-desktop-reversed.png",
+          "bytes": 980090,
+          "sha256": "909cbff1be0d6475411a8d39d4612839d049d8690b9c2b6e6b5e7bfbf441db3c"
+        },
+        {
+          "path": "captures/carousel-desktop-reversed-dom.json",
+          "bytes": 647169,
+          "sha256": "a68bdc0e5c0bb46f4ea279c72dff38e0b1165ec035b34aba4e751dc45b747a41"
+        }
+      ],
+      "receipt": "home-carousel-receipt.json",
+      "pixelReview": {
+        "status": "pending",
+        "reviewedAt": null,
+        "method": "Retained diagnostic background run; not promoted as reviewed visual coverage."
+      }
+    },
+    {
+      "id": "carousel-narrow-before",
+      "startedAt": "2026-10-22T16:38:43.051Z",
+      "completedAt": "2026-10-22T16:38:43.437Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 790,
+        "documentHeight": 7716
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/carousel-narrow-before.json",
+          "bytes": 142461,
+          "sha256": "62647345071c2e55ab626e970a8539fc3a04253e991e970a3810dbe920dca7d3"
+        },
+        {
+          "path": "captures/carousel-narrow-before.png",
+          "bytes": 255249,
+          "sha256": "4db36c138b4aeb579995f3ba7316fd6964df4daaa98d5e71e91969427715e02d"
+        },
+        {
+          "path": "captures/carousel-narrow-before-dom.json",
+          "bytes": 647002,
+          "sha256": "703d2a130c97ca88cc2988b6ceda81adb21681e8b6e0133d6882fe12a77645e8"
+        }
+      ],
+      "receipt": "home-carousel-receipt.json",
+      "pixelReview": {
+        "status": "pending",
+        "reviewedAt": null,
+        "method": "Retained diagnostic background run; not promoted as reviewed visual coverage."
+      }
+    },
+    {
+      "id": "carousel-narrow-next",
+      "startedAt": "2026-10-22T16:38:45.073Z",
+      "completedAt": "2026-10-22T16:38:45.221Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 790,
+        "documentHeight": 7716
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/carousel-narrow-next.json",
+          "bytes": 142452,
+          "sha256": "fa75582b9705a0e3d38f0dc69028e439210da3feaa1b5ccd3508745a84da1414"
+        },
+        {
+          "path": "captures/carousel-narrow-next.png",
+          "bytes": 255640,
+          "sha256": "a72a980df8b79632d2d6264339976b419ffc85c3c711615823878655bdd183af"
+        },
+        {
+          "path": "captures/carousel-narrow-next-dom.json",
+          "bytes": 647072,
+          "sha256": "66ca838656302b7636d076b5c62476864e48ce424439f3150f06b7f5b063de36"
+        }
+      ],
+      "receipt": "home-carousel-receipt.json",
+      "pixelReview": {
+        "status": "pending",
+        "reviewedAt": null,
+        "method": "Retained diagnostic background run; not promoted as reviewed visual coverage."
+      }
+    },
+    {
+      "id": "carousel-narrow-reduced",
+      "startedAt": "2026-10-22T16:38:47.166Z",
+      "completedAt": "2026-10-22T16:38:47.341Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 790,
+        "documentHeight": 7716
+      },
+      "reducedMotion": true,
+      "files": [
+        {
+          "path": "captures/carousel-narrow-reduced.json",
+          "bytes": 138509,
+          "sha256": "42cbee13f34402fc1fe5fff4dea99b0c0cbe0434a98975c04eecc658390efbc9"
+        },
+        {
+          "path": "captures/carousel-narrow-reduced.png",
+          "bytes": 264562,
+          "sha256": "ee2e75a9dd4b07a1c5892b2093ac7fdb66639b7234a57a2ef3b212e425f226e3"
+        },
+        {
+          "path": "captures/carousel-narrow-reduced-dom.json",
+          "bytes": 647072,
+          "sha256": "572b7de8531b95fd3568b96b935a3e6d443742b1bf2da7f7cd8a57cd2fa3d882"
+        }
+      ],
+      "receipt": "home-carousel-receipt.json",
+      "pixelReview": {
+        "status": "pending",
+        "reviewedAt": null,
+        "method": "Retained diagnostic background run; not promoted as reviewed visual coverage."
+      }
+    },
+    {
+      "id": "foreground-home-desktop-intro",
+      "startedAt": "2026-10-22T16:45:23.719Z",
+      "completedAt": "2026-10-22T16:45:24.054Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0,
+        "documentHeight": 8664
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/foreground-home-desktop-intro.json",
+          "bytes": 140681,
+          "sha256": "784ae963761536a09a55e5f8074e9f851b9e04948b8283d380e3f0fb4a61fe7f"
+        },
+        {
+          "path": "captures/foreground-home-desktop-intro.png",
+          "bytes": 1236000,
+          "sha256": "d628b30dadc95a65f9dab8e57da89e3a490aa91c6797808683acd99de545f36b"
+        },
+        {
+          "path": "captures/foreground-home-desktop-intro-dom.json",
+          "bytes": 645568,
+          "sha256": "4a525189e1537c7cbbac5e14663c01468f3e1209354cda333cdba4b817fcccda"
+        }
+      ],
+      "receipt": "home-foreground-receipt.json",
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:33:38.481336+00:00",
+        "method": "Root viewed the actual PNG outputs; checks layout, state and visible loading limitations."
+      }
+    },
+    {
+      "id": "foreground-carousel-desktop-before",
+      "startedAt": "2026-10-22T16:45:25.061Z",
+      "completedAt": "2026-10-22T16:45:25.389Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 860,
+        "documentHeight": 8664
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/foreground-carousel-desktop-before.json",
+          "bytes": 141104,
+          "sha256": "07daea59fa39165f4aa42c7a65aa2200a77018b867d404666470ab525a95b41a"
+        },
+        {
+          "path": "captures/foreground-carousel-desktop-before.png",
+          "bytes": 967294,
+          "sha256": "16a63250a12692b26047e82845e71c0ad9c02ff31c34842a677ceabacefc092a"
+        },
+        {
+          "path": "captures/foreground-carousel-desktop-before-dom.json",
+          "bytes": 647997,
+          "sha256": "6a2bf5132b3be9ea31ac2c9bf3de978c0284c8d08f564eddfe7cde05a4a6b7d8"
+        }
+      ],
+      "receipt": "home-foreground-receipt.json",
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:33:38.481336+00:00",
+        "method": "Root viewed the actual PNG outputs; checks layout, state and visible loading limitations."
+      }
+    },
+    {
+      "id": "foreground-carousel-desktop-next",
+      "startedAt": "2026-10-22T16:45:26.994Z",
+      "completedAt": "2026-10-22T16:45:27.338Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 860,
+        "documentHeight": 8664
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/foreground-carousel-desktop-next.json",
+          "bytes": 141317,
+          "sha256": "52c30a1153924929332fed6b44c9f249b600875ddb3f8ae7fd2cb14bf38f5cc3"
+        },
+        {
+          "path": "captures/foreground-carousel-desktop-next.png",
+          "bytes": 983289,
+          "sha256": "731db5a4a541ea81e4bcad96047ebbfc500b735dffbdf9a87e6418fb9d338c3e"
+        },
+        {
+          "path": "captures/foreground-carousel-desktop-next-dom.json",
+          "bytes": 649967,
+          "sha256": "a1b67ac6a41135cd519d90e76161aa39f0fc2fcbea46e52f495cba848a7c9e20"
+        }
+      ],
+      "receipt": "home-foreground-receipt.json",
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:33:38.481336+00:00",
+        "method": "Root viewed the actual PNG outputs; checks layout, state and visible loading limitations."
+      }
+    },
+    {
+      "id": "foreground-carousel-desktop-prev",
+      "startedAt": "2026-10-22T16:45:28.948Z",
+      "completedAt": "2026-10-22T16:45:29.279Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 860,
+        "documentHeight": 8664
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/foreground-carousel-desktop-prev.json",
+          "bytes": 141384,
+          "sha256": "1b2d4f69afcae5d5f0b2e62e2833c7746a48de55ecadf5ee00b6157a0b2c98a5"
+        },
+        {
+          "path": "captures/foreground-carousel-desktop-prev.png",
+          "bytes": 961023,
+          "sha256": "6b402108caccc0c22a7123f50304c73e27c3430d0fc3ce9157d202a15b967c93"
+        },
+        {
+          "path": "captures/foreground-carousel-desktop-prev-dom.json",
+          "bytes": 649985,
+          "sha256": "638759b832c78b7585c8481998eadf96e677f1454c494ca7c3cbc5e368634fc3"
+        }
+      ],
+      "receipt": "home-foreground-receipt.json",
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:33:38.481336+00:00",
+        "method": "Root viewed the actual PNG outputs; checks layout, state and visible loading limitations."
+      }
+    },
+    {
+      "id": "foreground-carousel-desktop-reversed",
+      "startedAt": "2026-10-22T16:45:31.111Z",
+      "completedAt": "2026-10-22T16:45:31.425Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 860,
+        "documentHeight": 8664
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/foreground-carousel-desktop-reversed.json",
+          "bytes": 141368,
+          "sha256": "6fa3fb972469c1472ed0b54c172a86c72ba91fab57028444cc32d924f007a5fa"
+        },
+        {
+          "path": "captures/foreground-carousel-desktop-reversed.png",
+          "bytes": 957715,
+          "sha256": "06e4f8bea7ce65c362755502dc87da64f6e997f539f77bdf61b83a95e39cd53c"
+        },
+        {
+          "path": "captures/foreground-carousel-desktop-reversed-dom.json",
+          "bytes": 649985,
+          "sha256": "53fe567411b602b713e19a268b806924cc802213d245fa3e0b46edb86c9ef7ac"
+        }
+      ],
+      "receipt": "home-foreground-receipt.json",
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:33:38.481336+00:00",
+        "method": "Root viewed the actual PNG outputs; checks layout, state and visible loading limitations."
+      }
+    },
+    {
+      "id": "foreground-carousel-narrow-before",
+      "startedAt": "2026-10-22T16:45:32.221Z",
+      "completedAt": "2026-10-22T16:45:32.376Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 790,
+        "documentHeight": 7716
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/foreground-carousel-narrow-before.json",
+          "bytes": 142083,
+          "sha256": "6e39b5ddb10e0b1ceb6b823c2ce15416cfc1f18516b7959d00a6d6958d506845"
+        },
+        {
+          "path": "captures/foreground-carousel-narrow-before.png",
+          "bytes": 238514,
+          "sha256": "7cd8a77725de0bd80a13cc0440dfc663a1d29d63488ec5bf1102ec8de250a273"
+        },
+        {
+          "path": "captures/foreground-carousel-narrow-before-dom.json",
+          "bytes": 649887,
+          "sha256": "88f50b4e20d573d0b2b6e7cda5f1a8d918c85ca69996d25a52c720a88aa6a970"
+        }
+      ],
+      "receipt": "home-foreground-receipt.json",
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:33:38.481336+00:00",
+        "method": "Root viewed the actual PNG outputs; checks layout, state and visible loading limitations."
+      }
+    },
+    {
+      "id": "foreground-carousel-narrow-next",
+      "startedAt": "2026-10-22T16:45:34.021Z",
+      "completedAt": "2026-10-22T16:45:34.167Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 790,
+        "documentHeight": 7716
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/foreground-carousel-narrow-next.json",
+          "bytes": 142010,
+          "sha256": "133019b4f8122e3ed06e9c81439d2370ce129487732f7bc5f7a4d1d32ea6ae10"
+        },
+        {
+          "path": "captures/foreground-carousel-narrow-next.png",
+          "bytes": 265078,
+          "sha256": "979ba0d3455a1444602d1612832f73d42f36965ed1ccdc56ea8975f3cea3ea5f"
+        },
+        {
+          "path": "captures/foreground-carousel-narrow-next-dom.json",
+          "bytes": 649873,
+          "sha256": "7eafd23be79854f573145873e7c3cbe61ddfc5702fc06228d5490887edbc187c"
+        }
+      ],
+      "receipt": "home-foreground-receipt.json",
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:33:38.481336+00:00",
+        "method": "Root viewed the actual PNG outputs; checks layout, state and visible loading limitations."
+      }
+    },
+    {
+      "id": "foreground-carousel-narrow-reduced",
+      "startedAt": "2026-10-22T16:45:36.103Z",
+      "completedAt": "2026-10-22T16:45:36.253Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 790,
+        "documentHeight": 7716
+      },
+      "reducedMotion": true,
+      "files": [
+        {
+          "path": "captures/foreground-carousel-narrow-reduced.json",
+          "bytes": 138223,
+          "sha256": "f24f4b9ee21d0e0ce8be47a57e23eb7669742306b040785ac0ff3f30e3d9e9e3"
+        },
+        {
+          "path": "captures/foreground-carousel-narrow-reduced.png",
+          "bytes": 243566,
+          "sha256": "9b5dfadbacd58a10236ebd1389c149612d45cd8daf33cdb5672a553ba1914200"
+        },
+        {
+          "path": "captures/foreground-carousel-narrow-reduced-dom.json",
+          "bytes": 650100,
+          "sha256": "bdd8bf65846714aa4358e47f9b60faff876e282f8a07a6550d058009ba9908a0"
+        }
+      ],
+      "receipt": "home-foreground-receipt.json",
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:33:38.481336+00:00",
+        "method": "Root viewed the actual PNG outputs; checks layout, state and visible loading limitations."
+      }
+    },
+    {
+      "id": "pricing-narrow-intro",
+      "startedAt": "2026-10-22T16:53:39.705Z",
+      "completedAt": "2026-10-22T16:53:39.972Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 12.5,
+        "documentHeight": 2164
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/pricing-narrow-intro.json",
+          "bytes": 79780,
+          "sha256": "f230ef5511d10df33f6231e97195f2bdc5f36d75e0f8f7a99d037702ba7a039e"
+        },
+        {
+          "path": "captures/pricing-narrow-intro.png",
+          "bytes": 51325,
+          "sha256": "12f6f229ef4112ea5ef0d1774c53445a26234a49afe170e0747927d94eec0398"
+        },
+        {
+          "path": "captures/pricing-narrow-intro-dom.json",
+          "bytes": 415327,
+          "sha256": "63fc9f713061af518ad028f9bb964d5bc5ba6ab079b4785c0b1fbce2255f3bc6"
+        }
+      ],
+      "receipt": "pricing-narrow-receipt.json",
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:33:38.481336+00:00",
+        "method": "Root viewed the actual PNG outputs; checks layout, state and visible loading limitations."
+      }
+    },
+    {
+      "id": "pricing-narrow-pro2",
+      "startedAt": "2026-10-22T16:53:40.178Z",
+      "completedAt": "2026-10-22T16:53:40.273Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 116,
+        "documentHeight": 2164
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/pricing-narrow-pro2.json",
+          "bytes": 78336,
+          "sha256": "6836a98dda68781e614b5939dba51c0db53b3593d40e5a69cef8ae7ae7f45f78"
+        },
+        {
+          "path": "captures/pricing-narrow-pro2.png",
+          "bytes": 58469,
+          "sha256": "69f64694e807ed6e481f81788f283c770cb41834defb5102dee50ba5666a751d"
+        },
+        {
+          "path": "captures/pricing-narrow-pro2-dom.json",
+          "bytes": 415627,
+          "sha256": "1b37ea57cbc37f0b2e7b70de54f4ad7a1e824dc95c1393e04f7be928e38003f1"
+        }
+      ],
+      "receipt": "pricing-narrow-receipt.json",
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:33:38.481336+00:00",
+        "method": "Root viewed the actual PNG outputs; checks layout, state and visible loading limitations."
+      }
+    },
+    {
+      "id": "pricing-narrow-free",
+      "startedAt": "2026-10-22T16:53:40.604Z",
+      "completedAt": "2026-10-22T16:53:40.952Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 116,
+        "documentHeight": 2161
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/pricing-narrow-free.json",
+          "bytes": 78390,
+          "sha256": "b00027035edd9f96b07f5b25cbdf56fab42920cbfcc338b24d89b5b0e7c1e6ad"
+        },
+        {
+          "path": "captures/pricing-narrow-free.png",
+          "bytes": 61102,
+          "sha256": "fdc8c142aa7ec49f1a77b1c6fd34a77bb0a080def86dc06b594def7999ea4079"
+        },
+        {
+          "path": "captures/pricing-narrow-free-dom.json",
+          "bytes": 415254,
+          "sha256": "52736814c12227d8442a40b06805910347763357500bc88324cfe8d742374aa3"
+        }
+      ],
+      "receipt": "pricing-narrow-receipt.json",
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:33:38.481336+00:00",
+        "method": "Root viewed the actual PNG outputs; checks layout, state and visible loading limitations."
+      }
+    },
+    {
+      "id": "pricing-narrow-pro3",
+      "startedAt": "2026-10-22T16:53:41.275Z",
+      "completedAt": "2026-10-22T16:53:41.364Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 116,
+        "documentHeight": 2164
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/pricing-narrow-pro3.json",
+          "bytes": 78416,
+          "sha256": "1aaddcae43ef5fcb5943817593580691c216ae9d4767af444feea67a0e942b99"
+        },
+        {
+          "path": "captures/pricing-narrow-pro3.png",
+          "bytes": 57922,
+          "sha256": "f719949f0e7d494be81611029f2e3535a16e7d1bcd8e594d48128873f6d431a8"
+        },
+        {
+          "path": "captures/pricing-narrow-pro3-dom.json",
+          "bytes": 416460,
+          "sha256": "6afba5ecc0f1a7339d5df561a4775303465bc7f66e1c0d459b2d21f19bb5c140"
+        }
+      ],
+      "receipt": "pricing-narrow-receipt.json",
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:33:38.481336+00:00",
+        "method": "Root viewed the actual PNG outputs; checks layout, state and visible loading limitations."
+      }
+    },
+    {
+      "id": "pricing-narrow-keyboard-pro2",
+      "startedAt": "2026-10-22T16:53:41.579Z",
+      "completedAt": "2026-10-22T16:53:41.684Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 116,
+        "documentHeight": 2164
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/pricing-narrow-keyboard-pro2.json",
+          "bytes": 78430,
+          "sha256": "acd347fd6fa7aa8191e2aae72cb477cfe371bcad00df7c4bdf47b82b856e6e0b"
+        },
+        {
+          "path": "captures/pricing-narrow-keyboard-pro2.png",
+          "bytes": 59369,
+          "sha256": "f1e85992f9cf471cf2f3187a96e98305f2f89457b31e4f471599e0ef4f10037b"
+        },
+        {
+          "path": "captures/pricing-narrow-keyboard-pro2-dom.json",
+          "bytes": 416461,
+          "sha256": "df0482bd727581e1aebcb7520a8e5c84024cfe4dd1ba2aaa62d2443f9b9e8910"
+        }
+      ],
+      "receipt": "pricing-narrow-receipt.json",
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:33:38.481336+00:00",
+        "method": "Root viewed the actual PNG outputs; checks layout, state and visible loading limitations."
+      }
+    },
+    {
+      "id": "faq-narrow-closed",
+      "startedAt": "2026-10-22T17:26:22.792Z",
+      "completedAt": "2026-10-22T17:26:22.937Z",
+      "files": [
+        {
+          "path": "captures/faq-narrow-closed.png",
+          "bytes": 63328,
+          "sha256": "36d292e5bf8bc5d6853d5c425baab4614574273945fc4280b755a1869441ca39"
+        }
+      ],
+      "receipt": "faq-restore-receipt.json",
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:33:38.481336+00:00",
+        "method": "Root viewed the actual PNG outputs; checks layout, state and visible loading limitations."
+      },
+      "viewport": {
+        "w": 390,
+        "h": 844,
+        "dpr": 1
+      }
+    },
+    {
+      "id": "faq-narrow-open",
+      "startedAt": "2026-10-22T17:26:23.398Z",
+      "completedAt": "2026-10-22T17:26:23.470Z",
+      "files": [
+        {
+          "path": "captures/faq-narrow-open.png",
+          "bytes": 90988,
+          "sha256": "2b653d9a0b5afa2117b2a2e5d8d75bf2bc78f3d621177b4206bb4fe08a8c61c0"
+        }
+      ],
+      "receipt": "faq-restore-receipt.json",
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:33:38.481336+00:00",
+        "method": "Root viewed the actual PNG outputs; checks layout, state and visible loading limitations."
+      },
+      "viewport": {
+        "w": 390,
+        "h": 844,
+        "dpr": 1
+      }
+    },
+    {
+      "id": "faq-narrow-closed-again",
+      "startedAt": "2026-10-22T17:26:23.945Z",
+      "completedAt": "2026-10-22T17:26:24.037Z",
+      "files": [
+        {
+          "path": "captures/faq-narrow-closed-again.png",
+          "bytes": 67861,
+          "sha256": "eb4ad8dc77843755037667c540d8156cf2edfa46cc55e23d19466e9cbcd86f04"
+        }
+      ],
+      "receipt": "faq-restore-receipt.json",
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:33:38.481336+00:00",
+        "method": "Root viewed the actual PNG outputs; checks layout, state and visible loading limitations."
+      },
+      "viewport": {
+        "w": 390,
+        "h": 844,
+        "dpr": 1
+      }
+    }
+  ],
+  "foregroundTimelineFindings": [
+    {
+      "path": "timelines/foreground-keyboard-narrow-next.json",
+      "sha256": "5ea404fb60c261b52585908e23961ad42d38674576603c06658983d68e78dd6f",
+      "sampleCount": 38,
+      "observedIntervalMs": 1594.5818749999999,
+      "firstCenter": 0,
+      "lastCenter": 1,
+      "focus": "carousel-surface",
+      "reducedMotion": false,
+      "distinctCard0Transforms": 29,
+      "firstCenterVideo": {
+        "currentTime": 2.7814,
+        "paused": false,
+        "readyState": 4
+      },
+      "lastCenterVideo": {
+        "currentTime": 1.4377,
+        "paused": false,
+        "readyState": 4
+      },
+      "limit": "Discrete instrumented samples, not compositor FPS or fitted spring duration."
+    },
+    {
+      "path": "timelines/foreground-keyboard-next.json",
+      "sha256": "8740965a2a5f6db02996de1a9bf886eb5519942e4fd731af4c3aad1fd5671b08",
+      "sampleCount": 42,
+      "observedIntervalMs": 1561.1029170000002,
+      "firstCenter": 0,
+      "lastCenter": 1,
+      "focus": "carousel-surface",
+      "reducedMotion": false,
+      "distinctCard0Transforms": 29,
+      "firstCenterVideo": {
+        "currentTime": 1.2067,
+        "paused": false,
+        "readyState": 4
+      },
+      "lastCenterVideo": {
+        "currentTime": 1.1753,
+        "paused": false,
+        "readyState": 4
+      },
+      "limit": "Discrete instrumented samples, not compositor FPS or fitted spring duration."
+    },
+    {
+      "path": "timelines/foreground-keyboard-prev.json",
+      "sha256": "439ce3af23b969fe981ce4341a0741ea62bec4f2a220b2969c74ad2e1ffe1c78",
+      "sampleCount": 42,
+      "observedIntervalMs": 1560.9091669999998,
+      "firstCenter": 1,
+      "lastCenter": 0,
+      "focus": "carousel-surface",
+      "reducedMotion": false,
+      "distinctCard0Transforms": 39,
+      "firstCenterVideo": {
+        "currentTime": 1.5675,
+        "paused": false,
+        "readyState": 4
+      },
+      "lastCenterVideo": {
+        "currentTime": 1.3888,
+        "paused": false,
+        "readyState": 4
+      },
+      "limit": "Discrete instrumented samples, not compositor FPS or fitted spring duration."
+    },
+    {
+      "path": "timelines/foreground-keyboard-reduced-next.json",
+      "sha256": "e6d801eec024be512b7717bb8a8224d40815a65937f82f25b1aa564c1c8f9dcc",
+      "sampleCount": 41,
+      "observedIntervalMs": 1582.395042,
+      "firstCenter": 1,
+      "lastCenter": 2,
+      "focus": "carousel-surface",
+      "reducedMotion": true,
+      "distinctCard0Transforms": 2,
+      "firstCenterVideo": {
+        "currentTime": 0,
+        "paused": true,
+        "readyState": 4
+      },
+      "lastCenterVideo": {
+        "currentTime": 0,
+        "paused": true,
+        "readyState": 4
+      },
+      "limit": "Discrete instrumented samples, not compositor FPS or fitted spring duration."
+    },
+    {
+      "path": "timelines/foreground-keyboard-reversal.json",
+      "sha256": "2776b902e0e312c60108beafd87a3ca9f935d710452f51bdc9951af5e993c6a2",
+      "sampleCount": 48,
+      "observedIntervalMs": 1789.7163329999985,
+      "firstCenter": 0,
+      "lastCenter": 0,
+      "focus": "carousel-surface",
+      "reducedMotion": false,
+      "distinctCard0Transforms": 48,
+      "firstCenterVideo": {
+        "currentTime": 1.7678,
+        "paused": false,
+        "readyState": 4
+      },
+      "lastCenterVideo": {
+        "currentTime": 1.4701,
+        "paused": false,
+        "readyState": 4
+      },
+      "limit": "Discrete instrumented samples, not compositor FPS or fitted spring duration."
+    },
+    {
+      "path": "timelines/foreground-reduced-idle.json",
+      "sha256": "b8153010ba9f270d9f26fd94a1b692139e20e7220811065b238f5371e3daa05c",
+      "sampleCount": 43,
+      "observedIntervalMs": 6470.6591659999995,
+      "firstCenter": 2,
+      "lastCenter": 2,
+      "focus": "carousel-surface",
+      "reducedMotion": true,
+      "distinctCard0Transforms": 1,
+      "firstCenterVideo": {
+        "currentTime": 0,
+        "paused": true,
+        "readyState": 4
+      },
+      "lastCenterVideo": {
+        "currentTime": 0,
+        "paused": true,
+        "readyState": 4
+      },
+      "limit": "Discrete instrumented samples, not compositor FPS or fitted spring duration."
+    }
+  ],
+  "actualNodeFontReports": [
+    {
+      "path": "captures/foreground-home-desktop-intro.json",
+      "sha256": "784ae963761536a09a55e5f8074e9f851b9e04948b8283d380e3f0fb4a61fe7f",
+      "platformFonts": [
+        {
+          "selector": "[data-variant=app] p",
+          "nodeId": 158,
+          "fonts": [
+            {
+              "familyName": "GT Standard L Medium",
+              "postScriptName": "GTStandard-LMedium",
+              "isCustomFont": true,
+              "glyphCount": 83
+            }
+          ]
+        },
+        {
+          "selector": "[data-variant=feature] h2",
+          "nodeId": 340,
+          "fonts": [
+            {
+              "familyName": "Hark Serif 1 Light",
+              "postScriptName": "HarkSerif1-Light",
+              "isCustomFont": true,
+              "glyphCount": 20
+            }
+          ]
+        },
+        {
+          "selector": "[data-variant=feature] p",
+          "error": "missing node"
+        },
+        {
+          "selector": "[data-variant=prose] h2",
+          "nodeId": 445,
+          "fonts": [
+            {
+              "familyName": "Hark Serif 1 Light",
+              "postScriptName": "HarkSerif1-Light",
+              "isCustomFont": true,
+              "glyphCount": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "captures/foreground-carousel-desktop-before.json",
+      "sha256": "07daea59fa39165f4aa42c7a65aa2200a77018b867d404666470ab525a95b41a",
+      "platformFonts": [
+        {
+          "selector": "[data-prompt-text]",
+          "nodeId": 908,
+          "fonts": [
+            {
+              "familyName": "GT Standard L",
+              "postScriptName": "GTStandard-LRegular",
+              "isCustomFont": true,
+              "glyphCount": 95
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faqStates": [
+    {
+      "id": "faq-narrow-closed",
+      "ariaExpanded": "false",
+      "viewport": {
+        "w": 390,
+        "h": 844,
+        "dpr": 1
+      }
+    },
+    {
+      "id": "faq-narrow-open",
+      "ariaExpanded": "true",
+      "viewport": {
+        "w": 390,
+        "h": 844,
+        "dpr": 1
+      }
+    },
+    {
+      "id": "faq-narrow-closed-again",
+      "ariaExpanded": "false",
+      "viewport": {
+        "w": 390,
+        "h": 844,
+        "dpr": 1
+      }
+    }
+  ],
+  "restoration": {
+    "at": "2026-10-22T17:26:24.855Z",
+    "url": "https://hark.com/",
+    "viewport": {
+      "w": 1440,
+      "h": 646,
+      "dpr": 2
+    },
+    "reducedMotion": false
+  },
+  "observedRules": [
+    "Carousel surface is keyboard-focusable role=group, supports ArrowRight/ArrowLeft; no separate next/prev buttons were observed.",
+    "Foreground next 0→1, previous 1→0, interrupted reversal 0→0; transforms vary during the normal runs.",
+    "At 390px, normal next 0→1; reduced-motion next 1→2 with only two observed card0 transforms and video paused at zero.",
+    "The reduced/focused idle sample retains center2 for about6.47s; focus and reduction are not isolated causal variables.",
+    "Narrow pricing switches visible Free/pro2/pro3 content; keyboard activation shows a visible focus ring.",
+    "FAQ real click changes aria-expanded false→true→false and visible answer appears/disappears."
+  ],
+  "limitations": [
+    "The earlier background capture froze rAF and had media readiness0; it is retained as limited evidence, never used to measure motion.",
+    "Foreground carousel videos reached readyState4 and played in normal mode; this does not verify every media element.",
+    "External YouTube showed a login/robot verification prompt in narrow source captures; no login or bypass attempted.",
+    "Samples do not measure compositor FPS, exact animation start time, unique spring parameters, all drag/hover/hidden/error branches or cross-device state.",
+    "DOM, computed values and pixels are sequential captures, not atomic snapshots; viewport/DPR follow each actual record.",
+    "Restoration clears emulation and returns to the current real viewport1440×646/DPR2; it does not assert that original physical window dimensions were forced."
+  ],
+  "verification": {
+    "errors": [],
+    "status": "passed",
+    "reviewedCaptures": 16,
+    "pendingBackgroundCaptures": 8
+  }
+}

@@ -1,0 +1,1 @@
+bve=S.lazy(()=>A(w(()=>import("./C952SVCg.js"),__vite__mapDeps([124,1,2,3,4,5,6,7,8,9,121,51,52,97,74,53,75,20,21,22,23,24,25,26]),import.meta.url)).then(e=>({default:e.LanguageSettingsScreen})))

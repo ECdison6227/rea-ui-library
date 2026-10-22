@@ -1,0 +1,45 @@
+{
+  "classification": "D",
+  "recordedAt": "2026-10-22T16:47:51.912Z",
+  "sourceFile": "reference/serve.mjs",
+  "sha256": "489a3b6217bb6e15503da20a04ef0eb5d2d99178724550978169361ac1ead99c",
+  "checks": [
+    {
+      "path": "/research-2026-10-22/reference/",
+      "method": "GET",
+      "expected": 200,
+      "actual": 200,
+      "passed": true
+    },
+    {
+      "path": "/research-2026-10-22/current-app/font-inventory.json",
+      "method": "GET",
+      "expected": 404,
+      "actual": 404,
+      "passed": true
+    },
+    {
+      "path": "/research-2026-10-22/reference/%2e%2e%2fcurrent-app/font-inventory.json",
+      "method": "GET",
+      "expected": 404,
+      "actual": 404,
+      "passed": true
+    },
+    {
+      "path": "/research-2026-10-22/reference/%2e%2e%5ccurrent-app/font-inventory.json",
+      "method": "GET",
+      "expected": 404,
+      "actual": 404,
+      "passed": true
+    },
+    {
+      "path": "/research-2026-10-22/reference/app.mjs",
+      "method": "POST",
+      "expected": 405,
+      "actual": 405,
+      "passed": true
+    }
+  ],
+  "status": "passed",
+  "boundary": "Post-reference-run server namespace constraint fix. UI code/styles/assets unchanged; the original 13-check UI run and its original implementation hashes remain retained without rewriting."
+}

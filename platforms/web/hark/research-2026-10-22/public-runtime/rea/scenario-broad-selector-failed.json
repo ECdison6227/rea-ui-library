@@ -1,0 +1,303 @@
+{
+  "evidence_id": "ev_f442246fd7e81078e1d3ce5da0ef9f3a51544dae4015043c2e263c061f7aa337",
+  "subject": null,
+  "provider": {
+    "id": "rea-playwright-browser-scenario",
+    "name": "REA Playwright browser scenario capture provider",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.browser-scenario-capture",
+  "operation": "capture_browser_scenario",
+  "parameters": {
+    "browser": {
+      "mode": "connect",
+      "cdp_endpoint": "http://127.0.0.1:52194",
+      "target_id": "370F28A0EB851696D0AE5539EA328426"
+    },
+    "start_url": {
+      "url": "https://hark.com/",
+      "query": []
+    },
+    "environment": {
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "device_scale_factor": 1
+      },
+      "locale": "en-US",
+      "timezone": "Asia/Shanghai",
+      "color_scheme": "light",
+      "reduced_motion": "no-preference",
+      "service_workers": "allow"
+    },
+    "actions": [
+      {
+        "step_id": "wait-carousel",
+        "timeout_ms": 20000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "[data-variant=\"featureVideoCarousel\"] video"
+        },
+        "state": "attached"
+      },
+      {
+        "step_id": "settle",
+        "action": "wait_for_timeout",
+        "duration_ms": 1000
+      }
+    ],
+    "storage": {
+      "cookies": [],
+      "local_storage": [],
+      "session_storage": []
+    },
+    "secrets": [],
+    "capture": {
+      "after_each_step": [],
+      "at_end": [
+        "url",
+        "dom",
+        "accessibility"
+      ],
+      "events": [
+        "page-errors"
+      ],
+      "network": {
+        "request_body": false,
+        "response_body": false,
+        "header_values": false
+      }
+    },
+    "scenario_sha256": "21fdab4832327048a2c20d2f50a7a9f341ca6a66e5acc65ba804a72db0c61804"
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "browser": {
+      "mode": "connect",
+      "process_ownership": "external",
+      "cleanup": "disconnected-external",
+      "product": "Chromium",
+      "version": "156.0.8078.47"
+    },
+    "scenario": {
+      "start_origin": "https://hark.com",
+      "action_count": 2,
+      "secret_references": [],
+      "network_content": {
+        "request_body": false,
+        "response_body": false,
+        "header_values": false
+      },
+      "event_families": [
+        "page-errors"
+      ]
+    },
+    "duration_ms": 3454,
+    "steps": [
+      {
+        "step_index": 0,
+        "step_id": "scenario_start",
+        "action": "goto_start",
+        "elapsed_ms": 3353,
+        "before_url": {
+          "url": "https://hark.com/",
+          "origin": "https://hark.com",
+          "query_parameter_names": [],
+          "redacted": false
+        },
+        "after_url": {
+          "url": "https://hark.com/",
+          "origin": "https://hark.com",
+          "query_parameter_names": [],
+          "redacted": false
+        },
+        "event_sequence_start": 1,
+        "event_sequence_end": 0,
+        "artifacts": {
+          "screenshot": {
+            "state": "not_requested"
+          },
+          "dom": {
+            "state": "not_requested"
+          },
+          "accessibility": {
+            "state": "not_requested"
+          },
+          "url": {
+            "state": "not_requested"
+          },
+          "history": {
+            "state": "not_requested"
+          },
+          "storage": {
+            "state": "not_requested"
+          }
+        },
+        "completeness": {
+          "status": "complete",
+          "equality_eligible": true,
+          "missing_sections": [],
+          "truncated_sections": []
+        },
+        "status": "completed",
+        "error": null
+      },
+      {
+        "step_index": 1,
+        "step_id": "wait-carousel",
+        "action": "wait_for",
+        "elapsed_ms": 76,
+        "before_url": {
+          "url": "https://hark.com/",
+          "origin": "https://hark.com",
+          "query_parameter_names": [],
+          "redacted": false
+        },
+        "after_url": {
+          "url": "https://hark.com/",
+          "origin": "https://hark.com",
+          "query_parameter_names": [],
+          "redacted": false
+        },
+        "event_sequence_start": 1,
+        "event_sequence_end": 0,
+        "artifacts": {
+          "screenshot": {
+            "state": "not_requested"
+          },
+          "dom": {
+            "state": "not_requested"
+          },
+          "accessibility": {
+            "state": "not_requested"
+          },
+          "url": {
+            "state": "not_requested"
+          },
+          "history": {
+            "state": "not_requested"
+          },
+          "storage": {
+            "state": "not_requested"
+          }
+        },
+        "completeness": {
+          "status": "incomplete",
+          "equality_eligible": false,
+          "missing_sections": [
+            "action"
+          ],
+          "truncated_sections": []
+        },
+        "status": "failed",
+        "error": "locator.waitFor: Error: strict mode violation: locator('[data-variant=\"featureVideoCarousel\"] video') resolved to 10 elements:\n    1) <video loop=\"\" muted=\"\" tabindex=\"-1\" playsinline=\"\" preload=\"none\" aria-hidden=\"true\" disableremoteplayback=\"\" class=\"feature-video-carousel-module-scss-module__Y8b1xG__video\" poster=\"https://cdn.sanity.io/images/w2mhvsaj/production/3d6c641ff1944007caa5170afd0b61a1f5a19a01-1112x736.webp\">…</video> aka getByRole('group', { name: '1 of 10. Book me a trip to' }).locator('video')\n    2) <video loop=\"\" muted=\"\" tabindex=\"-1\" playsinline=\"\" preload=\"none\" aria-hidden=\"true\" disableremoteplayback=\"\" class=\"feature-video-carousel-module-scss-module__Y8b1xG__video\" poster=\"https://cdn.sanity.io/images/w2mhvsaj/production/53af6604f0f1de3be654b405130687744a9afbf4-1112x868.webp\">…</video> aka getByRole('group', { name: '2 of 10. I’m really craving' }).locator('video')\n    3) <video loop=\"\" muted=\"\" tabindex=\"-1\" playsinline=\"\" preload=\"none\" aria-hidden=\"true\" disableremoteplayback=\"\" class=\"feature-video-carousel-module-scss-module__Y8b1xG__video\" poster=\"https://cdn.sanity.io/images/w2mhvsaj/production/32ef649cc584d5d0011aa37658ce29137b4f7ca1-1112x668.webp\">…</video> aka getByRole('group', { name: '3 of 10. I’ve been putting' }).locator('video')\n    4) <video loop=\"\" muted=\"\" tabindex=\"-1\" playsinline=\"\" preload=\"none\" aria-hidden=\"true\" disableremoteplayback=\"\" class=\"feature-video-carousel-module-scss-module__Y8b1xG__video\" poster=\"https://cdn.sanity.io/images/w2mhvsaj/production/deb7f48fb59bafab5e1ded822a6ae92ba6d3d2c0-1112x868.webp\">…</video> aka getByRole('group', { name: '4 of 10. Can you find me a' }).locator('video')\n    5) <video loop=\"\" muted=\"\" tabindex=\"-1\" playsinline=\"\" preload=\"none\" aria-hidden=\"true\" disableremoteplayback=\"\" class=\"feature-video-carousel-module-scss-module__Y8b1xG__video\" poster=\"https://cdn.sanity.io/images/w2mhvsaj/production/80465ec0ce7a96286e124608c97de2dfc3163ce1-1408x1106.webp\">…</video> aka getByLabel('5 of 10. I’m interested in a').locator('video')\n    6) <video loop=\"\" muted=\"\" tabindex=\"-1\" playsinline=\"\" preload=\"none\" aria-hidden=\"true\" disableremoteplayback=\"\" class=\"feature-video-carousel-module-scss-module__Y8b1xG__video\" poster=\"https://cdn.sanity.io/images/w2mhvsaj/production/385f914f906a230a10dc555705668a2139328939-1112x868.webp\">…</video> aka locator('div:nth-child(6) > .feature-video-carousel-module-scss-module__Y8b1xG__face > .feature-video-carousel-module-scss-module__Y8b1xG__recording > .feature-video-carousel-module-scss-module__Y8b1xG__video')\n    7) <video loop=\"\" muted=\"\" tabindex=\"-1\" playsinline=\"\" preload=\"none\" aria-hidden=\"true\" disableremoteplayback=\"\" class=\"feature-video-carousel-module-scss-module__Y8b1xG__video\" poster=\"https://cdn.sanity.io/images/w2mhvsaj/production/806b2e1cee0adab5f2b254f93358b612fc255f29-782x940.webp\">…</video> aka locator('div:nth-child(7) > .feature-video-carousel-module-scss-module__Y8b1xG__face > .feature-video-carousel-module-scss-module__Y8b1xG__recording > .feature-video-carousel-module-scss-module__Y8b1xG__video')\n    8) <video loop=\"\" muted=\"\" tabindex=\"-1\" playsinline=\"\" preload=\"none\" aria-hidden=\"true\" disableremoteplayback=\"\" class=\"feature-video-carousel-module-scss-module__Y8b1xG__video\" poster=\"https://cdn.sanity.io/images/w2mhvsaj/production/e7d17c4af7e4ddeb499907a3c8ec28f15dea2983-1112x868.webp\">…</video> aka locator('div:nth-child(8) > .feature-video-carousel-module-scss-module__Y8b1xG__face > .feature-video-carousel-module-scss-module__Y8b1xG__recording > .feature-video-carousel-module-scss-module__Y8b1xG__video')\n    9) <video loop=\"\" muted=\"\" tabindex=\"-1\" playsinline=\"\" preload=\"none\" aria-hidden=\"true\" disableremoteplayback=\"\" class=\"feature-video-carousel-module-scss-module__Y8b1xG__video\" poster=\"https://cdn.sanity.io/images/w2mhvsaj/production/43045dd91fc3d346bc31082a8bc48bdfc8bd3dc4-1132x760.webp\">…</video> aka locator('div:nth-child(9) > .feature-video-carousel-module-scss-module__Y8b1xG__face > .feature-video-carousel-module-scss-module__Y8b1xG__recording > .feature-video-carousel-module-scss-module__Y8b1xG__video')\n    10) <video loop=\"\" muted=\"\" tabindex=\"-1\" playsinline=\"\" preload=\"none\" aria-hidden=\"true\" disableremoteplayback=\"\" class=\"feature-video-carousel-module-scss-module__Y8b1xG__video\" poster=\"https://cdn.sanity.io/images/w2mhvsaj/production/8779105b5de26bf0ac67bebf87c1a48e7f738a65-1112x868.webp\">…</video> aka locator('div:nth-child(10) > .feature-video-carousel-module-scss-module__Y8b1xG__face > .feature-video-carousel-module-scss-module__Y8b1xG__recording > .feature-video-carousel-module-scss-module__Y8b1xG__video')\n\nCall log:\n  - waiting for locator('[data-variant=\"featureVideoCarousel\"] video')\n"
+      },
+      {
+        "step_index": 2,
+        "step_id": "settle",
+        "action": "wait_for_timeout",
+        "elapsed_ms": 0,
+        "before_url": {
+          "url": "https://hark.com/",
+          "origin": "https://hark.com",
+          "query_parameter_names": [],
+          "redacted": false
+        },
+        "after_url": {
+          "url": "https://hark.com/",
+          "origin": "https://hark.com",
+          "query_parameter_names": [],
+          "redacted": false
+        },
+        "event_sequence_start": 1,
+        "event_sequence_end": 0,
+        "artifacts": {
+          "screenshot": {
+            "state": "not_requested"
+          },
+          "dom": {
+            "state": "missing",
+            "reason": "action was not executed after an earlier failure"
+          },
+          "accessibility": {
+            "state": "missing",
+            "reason": "action was not executed after an earlier failure"
+          },
+          "url": {
+            "state": "missing",
+            "reason": "action was not executed after an earlier failure"
+          },
+          "history": {
+            "state": "not_requested"
+          },
+          "storage": {
+            "state": "not_requested"
+          }
+        },
+        "completeness": {
+          "status": "incomplete",
+          "equality_eligible": false,
+          "missing_sections": [
+            "accessibility",
+            "action",
+            "dom",
+            "url"
+          ],
+          "truncated_sections": []
+        },
+        "status": "cancelled",
+        "error": "not executed after an earlier action failure"
+      }
+    ],
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": []
+    },
+    "completeness": {
+      "status": "incomplete",
+      "equality_eligible": false,
+      "missing_sections": [
+        "accessibility",
+        "action",
+        "dom",
+        "events",
+        "url"
+      ],
+      "truncated_sections": []
+    },
+    "limitations": [
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "CDP attachment cannot recover pre-attach events or guarantee launch-time context options."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "controlled-replay",
+  "environment": {
+    "id": "Chromium@156.0.8078.47",
+    "platform": "unknown",
+    "architecture": "unknown",
+    "isolation": "none"
+  },
+  "limitations": [
+    "Artifact identity is unavailable for this observation.",
+    "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+    "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+    "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+    "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+    "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+    "Storage values are hashed only after declared-secret redaction.",
+    "CDP attachment cannot recover pre-attach events or guarantee launch-time context options.",
+    "Browser host platform and architecture were not observed."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

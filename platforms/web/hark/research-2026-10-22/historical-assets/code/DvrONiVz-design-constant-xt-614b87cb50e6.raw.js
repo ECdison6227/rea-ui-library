@@ -1,0 +1,1 @@
+xt=e=>{const t=e[0];if(!t)return[];const n=1-e.reduce((e,t)=>e*(1-t.opacity),1);return[{color:t.color,opacity:n,blend:"normal"}]}

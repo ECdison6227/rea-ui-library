@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Fieldnotes · Independent Hark design reference (D)</title>
+  <link rel="stylesheet" href="reference.css">
+  <script type="module" src="reference.mjs"></script>
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true"></div>
+  <div id="workspace">
+    <header class="topbar">
+      <button class="icon-button glass" id="search-open" aria-label="Search notes" data-icon="search"></button>
+      <nav class="segmented glass" aria-label="Workspace">
+        <button data-route="library" aria-current="false">Library</button>
+        <button data-route="notes" aria-current="page">Notes</button>
+        <button data-route="projects" aria-current="false">Projects</button>
+      </nav>
+      <button class="icon-button glass" id="settings-open" aria-label="Appearance settings" data-icon="gear"></button>
+    </header>
+    <main id="main">
+      <section id="notes-view" class="view" aria-label="Neighborhood observatory notes">
+        <div class="thread" id="thread" role="log" aria-label="Note conversation" aria-live="polite">
+          <div class="thread-context"><span>FIELDNOTES</span><p>A neighborhood observatory</p></div>
+          <p class="bubble user surface">Help me plan a small neighborhood observatory.</p>
+          <p class="bubble assistant surface">Start with an open evening and a shared notebook. Here is a short proposal and a sample observation schedule.</p>
+          <button id="summary-open" class="summary-card surface" aria-haspopup="dialog">
+            <span class="card-heading"><span class="card-mark" data-icon="list"></span><span><strong>A little room for looking up</strong><small>Community proposal · 4 min read</small></span></span>
+            <span class="summary-preview">A welcoming place to observe the night sky, compare notes, and learn together. Begin with one telescope, a quiet corner, and a regular evening each month.</span>
+            <span class="card-footer">Read proposal <span data-icon="enterright"></span></span>
+          </button>
+          <section id="schedule-card" class="rich-card surface" aria-label="Sample observation schedule">
+            <header class="rich-header"><span><strong>Observation schedule</strong><small>JSON · Local example</small></span><button class="icon-button" id="reply-schedule" aria-label="Reply to schedule" data-icon="reply"></button></header>
+            <pre id="code-body"><code>{
+  "session": "First-light evening",
+  "location": "Community garden",
+  "steps": [
+    { "at": "19:00", "activity": "Welcome and orientation" },
+    { "at": "19:20", "activity": "Moon observations" },
+    { "at": "20:00", "activity": "Shared notebook" },
+    { "at": "20:30", "activity": "Pack up together" }
+  ],
+  "weatherPlan": "Move indoors for a star-map workshop"
+}</code></pre>
+            <button class="disclosure" id="code-toggle" aria-expanded="false" aria-controls="code-body">Show all <span data-icon="down"></span></button>
+          </section>
+        </div>
+      </section>
+      <section id="library-view" class="view collection" hidden aria-label="Library">
+        <div class="collection-content"><p class="eyebrow">FIELDNOTES</p><h1>A place for ideas<br>to come together.</h1><p>Keep a thought, open a proposal, or pick up a conversation.</p><button class="collection-card surface" data-route="notes"><span data-icon="list"></span><span><strong>A neighborhood observatory</strong><small>Proposal and observation schedule</small></span><span data-icon="enterright"></span></button></div>
+      </section>
+      <section id="projects-view" class="view collection" hidden aria-label="Projects">
+        <div class="collection-content"><p class="eyebrow">PROJECTS</p><h1>Make a little<br>space for curiosity.</h1><button class="collection-card surface" data-route="notes"><span data-icon="folder"></span><span><strong>Neighborhood observatory</strong><small>1 note · Local sample</small></span><span data-icon="enterright"></span></button><p class="muted">This independent reference keeps its notes in this browser tab.</p></div>
+      </section>
+    </main>
+    <div id="composer-dock">
+      <div id="reply-context" class="reply-context surface" hidden><span>Replying to <strong>Observation schedule</strong></span><button class="icon-button" id="reply-cancel" aria-label="Cancel reply" data-icon="close"></button></div>
+      <div id="composer-feedback" role="status" hidden><span id="feedback-text"></span><button id="retry-submit" hidden>Retry</button></div>
+      <form id="composer" class="surface" aria-label="Add a note" data-state="empty">
+        <label class="sr-only" for="draft">Write a note</label>
+        <textarea id="draft" rows="1" placeholder="Write a note…" maxlength="4000"></textarea>
+        <button class="send-button" id="send" type="submit" aria-label="Save note" disabled><span data-icon="enter"></span></button>
+        <button class="send-button" id="cancel-submit" type="button" aria-label="Cancel saving" hidden><span data-icon="stop"></span></button>
+      </form>
+    </div>
+    <footer class="reference-identity">Independent D reference · <a href="../comparison/">Evidence &amp; differences</a></footer>
+  </div>
+  <dialog id="reader" aria-labelledby="reader-title">
+    <header class="reader-toolbar"><button class="icon-button glass" id="reader-close" aria-label="Close proposal" data-icon="close"></button><span>Proposal</span><button class="icon-button glass" id="reader-copy" aria-label="Copy proposal" data-icon="copy"></button></header>
+    <article class="reader-sheet surface">
+      <div id="reader-content">
+        <p class="eyebrow">COMMUNITY NOTE</p><h1 id="reader-title">A little room for looking up</h1>
+        <h2>Start with the evening</h2>
+        <p>A neighborhood observatory can begin as a modest gathering. A small telescope, a clear patch of sky, and a shared notebook give people a reason to pause and look together.</p>
+        <p>The first goal is simple: <strong>make curiosity easy to join.</strong> Visitors should feel welcome whether they can name a constellation or are seeing the Moon through a telescope for the first time.</p>
+        <h2>Make it welcoming</h2>
+        <ol><li><strong>Keep a rhythm.</strong> Open on the same evening each month and explain the weather plan in advance.</li><li><strong>Share the view.</strong> Leave space for a seated observer and offer a printed star map.</li><li><strong>Keep a notebook.</strong> Invite everyone to draw, describe, or ask a question.</li></ol>
+        <h2>A small first step</h2>
+        <p>Try one open evening before adding more equipment. Invite a local astronomy group to help, collect practical feedback, and use the next gathering to improve the experience.</p>
+        <blockquote>“A familiar place can feel new when we take time to look up.”</blockquote>
+        <h2>What to bring</h2><p>A telescope, a dim red torch, a notebook, pencils, and a little patience. If clouds arrive, move indoors and explore a star map together.</p>
+      </div>
+    </article>
+    <span id="copy-feedback" role="status"></span>
+  </dialog>
+  <dialog id="settings" class="small-dialog surface" aria-labelledby="settings-title">
+    <header><h2 id="settings-title">Appearance</h2><button class="icon-button" data-close="settings" aria-label="Close settings" data-icon="close"></button></header>
+    <fieldset><legend>Theme</legend><div class="theme-options"><label><input type="radio" name="theme" value="light">Light</label><label><input type="radio" name="theme" value="dark" checked>Dark</label><label><input type="radio" name="theme" value="system">System</label><label><input type="radio" name="theme" value="auto">Auto</label></div></fieldset>
+    <p class="muted" id="theme-explanation">Dark materials · fixed D backdrop</p>
+    <fieldset><legend>Local save demonstration</legend><label class="failure-choice"><input type="checkbox" id="fail-next">Fail the next save</label></fieldset>
+    <p class="muted">A local simulation tests pending, retry and cancel. Auto uses Light in this reference; no weather service is connected.</p>
+  </dialog>
+  <dialog id="search" class="small-dialog surface" aria-labelledby="search-title">
+    <header><h2 id="search-title">Search notes</h2><button class="icon-button" data-close="search" aria-label="Close search" data-icon="close"></button></header>
+    <label class="sr-only" for="search-input">Search saved notes</label><input type="search" id="search-input" placeholder="Search saved notes…" autocomplete="off">
+    <div id="search-results" aria-live="polite"></div>
+  </dialog>
+</body>
+</html>

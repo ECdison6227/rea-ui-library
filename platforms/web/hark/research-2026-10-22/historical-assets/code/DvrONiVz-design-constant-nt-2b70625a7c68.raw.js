@@ -1,0 +1,1 @@
+nt={regular:"GTStandard-LRegular",medium:"GTStandard-LMedium",semibold:"GTStandard-LSemibold",serifLightItalic:"HarkSerif1-LightItalic",serifMedium:"HarkSerif1-Medium",mono:"GTStandardMono-Regular",monoMedium:"GTStandardMono-Medium"}

@@ -60,7 +60,7 @@ test('new legacy-only research is rejected without changing the registry',()=>{
 });
 
 test('client/server migration tasks carry repository, ref, source boundary and modern/legacy entry',()=>{
- const s=getCatalog().sources[0],a=migrationPrompt(s),b=makePrompt(s);assert.equal(a,b);for(const value of ['$rea-design-transfer',s.sourceRepositoryUrl,s.sourceRef,s.root,s.coverage,s.limits[0]])assert.ok(a.includes(value));assert.ok(a.includes(s.artifacts.find(x=>x.role==='readme').path));const modern={...s,designPackage:'design-package.json'};assert.ok(migrationPrompt(modern).includes('设计入口：design-package.json'));assert.ok(migrationPrompt(modern).includes('实际取得的commit'));
+ const s=getCatalog().sources[0],a=migrationPrompt(s),b=makePrompt(s);assert.equal(a,b);for(const value of ['$rea-design-transfer',s.sourceRepositoryUrl,s.sourceRef,s.root,s.coverage,s.limits[0]])assert.ok(a.includes(value));const legacy={...s};delete legacy.designPackage;assert.ok(migrationPrompt(legacy).includes(s.artifacts.find(x=>x.role==='readme').path));const modern={...s,designPackage:'design-package.json'};assert.ok(migrationPrompt(modern).includes('设计入口：design-package.json'));assert.ok(migrationPrompt(modern).includes('实际取得的commit'));
 });
 
 test('standard draft cannot auto-register; an explicit partial fixture preserves old sources',()=>{

@@ -1,0 +1,17 @@
+{
+ "label":"pricing-narrow",
+ "questions":["How does pricing adapt from multiple desktop columns to the narrow selected plan?","Do radio pointer and keyboard actions update the visible plan and accessibility state without starting checkout?","Which actual font faces render the title, body and plan?"],
+ "actions":[
+  {"type":"foreground"},{"type":"viewport","width":390,"height":844,"dpr":1},{"type":"media","reducedMotion":"no-preference","colorScheme":"light"},{"type":"navigate","url":"https://hark.com/pricing"},
+  {"type":"scroll","selector":"[data-variant=intro]","top":100},{"type":"wait","ms":350},
+  {"type":"capture","name":"pricing-narrow-intro","fontSelectors":["h1","[data-variant=intro] p","[id$='-second'] h2","[id$='-second'] p"]},
+  {"type":"scroll","selector":"button[role=radio][aria-controls$='-first']","top":120},{"type":"wait","ms":200},
+  {"type":"capture","name":"pricing-narrow-pro2"},
+  {"type":"click","selector":"button[role=radio][aria-controls$='-first']"},{"type":"wait","ms":300},
+  {"type":"capture","name":"pricing-narrow-free"},
+  {"type":"click","selector":"button[role=radio][aria-controls$='-third']"},{"type":"wait","ms":300},
+  {"type":"capture","name":"pricing-narrow-pro3"},
+  {"type":"key","key":"ArrowLeft"},{"type":"wait","ms":200},
+  {"type":"capture","name":"pricing-narrow-keyboard-pro2"}
+ ]
+}

@@ -1,0 +1,1 @@
+function Nve(){const e=C.c(2),{search:t}=lt();let n;return e[0]!==t?(n=E.jsx(we,{to:{pathname:"/settings/billing",search:t},replace:!0}),e[0]=t,e[1]=n):n=e[1],n}

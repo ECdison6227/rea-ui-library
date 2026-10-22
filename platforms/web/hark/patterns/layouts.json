@@ -1,0 +1,389 @@
+{
+  "formatVersion": 1,
+  "kind": "layouts",
+  "items": [
+    {
+      "id": "hark-layout-chat-desktop",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-css-bgegb-jl",
+        "hark-h15-b-css-ctnwvxws",
+        "hark-review-historical-audit",
+        "hark-20261022-a-authenticated-runtime"
+      ],
+      "unknowns": [
+        "当前Home折叠/展开、512内容带与导航草稿已核；全部返回焦点和滚动矩阵未测"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "沿用512内容带/420辅栏的关系；目标内容密度相近时直接复用，宽屏主区保持流动宽度。"
+      },
+      "name": "宽屏聊天与Home并列",
+      "componentRefs": [
+        "hark-component-sky",
+        "hark-component-app-navigation",
+        "hark-component-home-panel",
+        "hark-component-message",
+        "hark-component-rich-card",
+        "hark-component-composer"
+      ],
+      "rules": [
+        "Home打开时左列420px；聊天占余宽，Home关闭则内容带居中。",
+        "transcript max-width768px，其padding clamp(16px,calc((100% - 512px)/2),128px)形成512px带。",
+        "普通气泡常见max424；富卡可占满512。消息行gap12，rich相邻另加12。",
+        "列表顶部96px，底部composer-height+32px；composer距底max(32px,safe-area)。",
+        "禁止把不同快照1440×704/812/900的坐标合并。"
+      ],
+      "slots": [
+        "home",
+        "thread",
+        "composer"
+      ]
+    },
+    {
+      "id": "hark-layout-chat-narrow",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-css-bgegb-jl",
+        "hark-h15-b-css-ctnwvxws",
+        "hark-review-historical-audit",
+        "hark-d-transfer-contract"
+      ],
+      "unknowns": [
+        "390几何来自历史数据；A原捕获时间未精确绑定，D先采用此基线",
+        "软键盘、触控硬件、安全区和所有富卡未测"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D采用两侧16px与48px输入；保留15/19正文字级，不能窄屏默认降成14px。"
+      },
+      "name": "窄屏聊天",
+      "componentRefs": [
+        "hark-component-sky",
+        "hark-component-app-navigation",
+        "hark-component-message",
+        "hark-component-rich-card",
+        "hark-component-composer"
+      ],
+      "rules": [
+        "H15代表视口390×844：composer x16宽358高48，距底32，无document横向溢出。",
+        "source max-width620下默认列100vw-32px、bubble100vw-96px；具体selector变体保留。",
+        "横向内容只在表格/代码viewer局部滚动，页面无水平滚动。",
+        "source keyboard-open底16px；safe-area与触控只有真正测试条件下才报告A。"
+      ]
+    },
+    {
+      "id": "hark-layout-home-panels",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-review-historical-audit",
+        "hark-d-transfer-contract"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D使用已核材质/文字角色与可实现卡片编排；真实面板内容由目标业务提供。"
+      },
+      "name": "面板网格与卡片编排",
+      "componentRefs": [
+        "hark-component-home-panel",
+        "hark-component-menu",
+        "hark-component-settings-form",
+        "hark-component-dialog"
+      ],
+      "rules": [
+        "D desktop在420px辅列内单列；独立Home页面可按minmax(280px,1fr)增加列。",
+        "每面板16px内容inset、12px内部gap；标题与菜单稳定置顶。",
+        "pending/empty/error占据原卡片空间，减少列高跳动。",
+        "删除确认/标题编辑在卡片上下文中完成；返回保留选中面板。"
+      ]
+    },
+    {
+      "id": "hark-layout-project-directory",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-review-historical-audit",
+        "hark-d-transfer-contract"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D目录与编辑遵从目标实际路由；不复制旧项目内容或虚构持久化成功。"
+      },
+      "name": "项目目录与详情",
+      "componentRefs": [
+        "hark-component-project-row",
+        "hark-component-app-navigation",
+        "hark-component-composer",
+        "hark-component-message",
+        "hark-component-menu"
+      ],
+      "rules": [
+        "D目录max-width768px，左右16/24px；64px行高起步，标题/摘要自然换行。",
+        "选中project开启其thread；项目标题与主聊天上下文区分。",
+        "创建/重命名用明确保存取消；保存成功再更新列表。",
+        "无项目时只有一个创建主动作，避免多个重复新建入口。"
+      ]
+    },
+    {
+      "id": "hark-layout-settings-master-detail",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-review-historical-audit",
+        "hark-d-transfer-contract",
+        "hark-20261022-a-authenticated-runtime"
+      ],
+      "unknowns": [
+        "当前组别/桌面几何和深浅主题实际切换已核；完整跨设备/system系统变化和焦点矩阵未测"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D保证每个可见条目有行为，复用目标现有设置流；可合并重复入口但保留核心任务。"
+      },
+      "name": "设置总览与详情",
+      "componentRefs": [
+        "hark-component-settings-group",
+        "hark-component-setting-control",
+        "hark-component-settings-form",
+        "hark-component-account-row",
+        "hark-component-dialog"
+      ],
+      "rules": [
+        "D content max-width640px，组gap24px、row≥48px、field48px。",
+        "desktop详情可置于同层pane；narrow以标题+返回的单列详情。",
+        "Profile/Tasks/Accounts/Cards/System/Language/Data/Security/Help/Plans按目标功能分组；不要只复刻旧菜单数。",
+        "返回无草稿则直接；有未提交修改显示保存/丢弃/继续编辑的实际目标规则。"
+      ]
+    },
+    {
+      "id": "hark-layout-reading-dialog",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-card-summary-modal",
+        "hark-h15-b-file-viewer-dispatch",
+        "hark-review-historical-audit",
+        "hark-d-transfer-contract"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D采用独立居中阅读层及清楚返回路径；先以实际内容验证标题换行和滚动。"
+      },
+      "name": "独立阅读与文件弹层",
+      "componentRefs": [
+        "hark-component-dialog",
+        "hark-component-summary-card",
+        "hark-component-article",
+        "hark-component-file-preview"
+      ],
+      "rules": [
+        "摘要预览与详情分层；详情大衬线标题40/52/500、正文18/25.2/400是H15测量的D采用。",
+        "D dialog宽min(800px,100vw-48px)、max-height100dvh-48px；文件viewer可1120px。",
+        "正文仅本层滚动，关闭/返回/复制动作可用；焦点不进入底层。",
+        "关闭恢复触发节点与原transcript位置，长内容不把关闭按钮挤出屏幕。"
+      ]
+    },
+    {
+      "id": "hark-layout-gallery-overlay",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-link-stack-grid-motion",
+        "hark-review-historical-audit",
+        "hark-d-transfer-contract"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "复用原栈/网格状态管理；D窄屏重排仅影响目标布局，源H15两列观察不改写。"
+      },
+      "name": "图片栈展开与复位",
+      "componentRefs": [
+        "hark-component-photo-stack",
+        "hark-component-dialog",
+        "hark-component-menu"
+      ],
+      "rules": [
+        "H15七图pile展开为两列overlay；stack-specific滚动锁。",
+        "D每张图保留比例；窄屏必要时一列，图片周围留16px。",
+        "关闭统一复位spread=0、locked=false、expanded=false，不留透明拦截层。"
+      ]
+    },
+    {
+      "id": "hark-layout-public-home",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-20261022-b-css-2wo999c91t159",
+        "hark-20261022-b-css-2024m-gqsxckw",
+        "ev_372b36210620b0b72e42ff99acdc1e91775e5f054040645c146c86985fd38885"
+      ],
+      "unknowns": [
+        "当前完整媒体就绪截图与全部滚动/低横屏条件尚待A复核"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "直接复用已取得当前字体/CSS/媒体比例；用目标简介替换业务文案，保持首屏任务与五段层级，不重写原动画。"
+      },
+      "name": "当前公开首页内容序列",
+      "componentRefs": [
+        "hark-component-sky",
+        "hark-component-public-app-hero",
+        "hark-component-auth-form",
+        "hark-component-feature-carousel",
+        "hark-component-feature-section",
+        "hark-component-public-cta",
+        "hark-component-public-footer"
+      ],
+      "rules": [
+        "结构：App首屏→10条任务演示3D轮播→5组功能说明→安全/宣言2个CTA块→注册结尾→页脚。",
+        "功能次序：Make everyday easier；Hark Handoff；Secured by hark；Action Buttons；custom Panels。",
+        "Feature max135.2rem，文本max45rem、媒体742/582且max74.2rem；按media-first属性交替。",
+        "App天空仅首段主体验，public body后续用渐变衔接--color-surface-primary；完整懒加载媒体不能由初始空src截图证明。",
+        "根rem为clamp/max视口函数，1rem不固定10px；>=768间距替换为.8/1.6/2.4/4.4/8rem。"
+      ]
+    },
+    {
+      "id": "hark-layout-public-content",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-20261022-b-css-2wo999c91t159",
+        "hark-20261022-b-css-2024m-gqsxckw"
+      ],
+      "unknowns": [
+        "法律/正文所有页面当前A范围按root pixel-reviews约束"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "公共阅读布局复用宽窄关系与排版角色；目标CMS、法律文字与品牌保持目标自身内容。"
+      },
+      "name": "公开正文、宣言与法律内容",
+      "componentRefs": [
+        "hark-component-public-navigation",
+        "hark-component-article",
+        "hark-component-public-cta",
+        "hark-component-auth-form",
+        "hark-component-public-footer"
+      ],
+      "rules": [
+        "共享sticky header、白/浅灰表面、衬线主题标题与GT M正文。",
+        "article outer128rem，正文75.2rem；宣言等大标题需保留页面自己的max-width/data-text-variant。",
+        "大hero图片/视频2:1或实际素材比例，使用已保存media mapping。",
+        "长法律页完整HTML/text与裁切PNG各自记录；代表上部切片不称全页截图。"
+      ]
+    },
+    {
+      "id": "hark-layout-public-pricing",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-20261022-b-css-2wo999c91t159",
+        "hark-20261022-b-css-2024m-gqsxckw"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "直接复用当前plan CSS结构，金额/权益作为目标动态数据；不要把当前营销价格抄成长期token。"
+      },
+      "name": "套餐三列/窄屏单列选择",
+      "componentRefs": [
+        "hark-component-public-navigation",
+        "hark-component-pricing",
+        "hark-component-public-cta",
+        "hark-component-public-footer"
+      ],
+      "rules": [
+        "<1024时max56rem显示三项selector与selected plan。",
+        ">=1024时max112rem三列，selector隐藏，三卡均display:flex，highlighted白底。",
+        "计划包裹gap1.6rem/padding1.6rem/radius2rem；每卡gap2.4rem。",
+        "价格/副标题/feature列表/CTA分层，长权益正常换行，CTA底部对齐。"
+      ]
+    },
+    {
+      "id": "hark-layout-public-news",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-20261022-b-css-2wo999c91t159",
+        "hark-20261022-b-css-2024m-gqsxckw"
+      ],
+      "unknowns": [
+        "具体2/3列断点以完整源码media查询为准"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "直接复用原列表密度与首项层级，目标内容较少可维持一/二列；链接实际打开目标文章。"
+      },
+      "name": "文章列表与详情",
+      "componentRefs": [
+        "hark-component-public-navigation",
+        "hark-component-article",
+        "hark-component-public-footer"
+      ],
+      "rules": [
+        "article-list max128rem；默认1列，源码响应式2/3列。",
+        "首条文章跨所有列，后续grid gap为spacer-lg/spacer-md。",
+        "card图片2:1、radius2rem、metadata次级色；正文最宽75.2rem。"
+      ]
+    },
+    {
+      "id": "hark-layout-support-careers",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-20261022-b-css-2wo999c91t159",
+        "hark-20261022-b-css-2024m-gqsxckw",
+        "hark-review-historical-audit",
+        "hark-d-transfer-contract"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D复用阅读页与accordion行为；源未证实展开动效用motion d-disclosure替代。"
+      },
+      "name": "帮助问答与职位分组",
+      "componentRefs": [
+        "hark-component-public-navigation",
+        "hark-component-article",
+        "hark-component-accordion",
+        "hark-component-public-footer"
+      ],
+      "rules": [
+        "D标题/说明先于accordion，组标题与条目间层级明确。",
+        "当前careers历史capture可见800px分组宽/约84px团队heading，待原A与source binding再升级。",
+        "申请/邮件/反馈使用外部正常流程；研究不提交表单。"
+      ]
+    }
+  ]
+}

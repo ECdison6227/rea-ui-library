@@ -1,0 +1,1257 @@
+{
+  "label": "home-foreground",
+  "classification": "A current public-source observation; independent CDP, not a new REA Evidence ID",
+  "sourceIdentity": "Hark Web https://hark.com",
+  "targetId": "370F28A0EB851696D0AE5539EA328426",
+  "endpoint": "http://127.0.0.1:52194",
+  "startedAt": "2026-10-22T16:45:20.573Z",
+  "method": "Sequential declared normal DOM/UI actions, DOM/computed snapshots, optional CDP font glyph report, viewport PNG; not an atomic snapshot",
+  "reaDiscoveryEvidenceId": "ev_d90eff947caf12b775c317dd8dce4686ee7dc003a3a5a2059caab41b4b7578ad",
+  "plan": {
+    "label": "home-foreground",
+    "questions": [
+      "Does keyboard browse actually update the 3D cards and prompt?",
+      "How does a reversal interrupt the current visible transition?",
+      "What is the narrow layout and reduced-motion runtime behavior?",
+      "Which platform font faces render visible public text?"
+    ],
+    "actions": [
+      {
+        "type": "foreground"
+      },
+      {
+        "type": "navigate",
+        "url": "https://hark.com/"
+      },
+      {
+        "type": "viewport",
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      {
+        "type": "media",
+        "reducedMotion": "no-preference",
+        "colorScheme": "light"
+      },
+      {
+        "type": "scroll",
+        "selector": "[data-variant=app]",
+        "top": 0
+      },
+      {
+        "type": "wait",
+        "ms": 500
+      },
+      {
+        "type": "capture",
+        "name": "foreground-home-desktop-intro",
+        "fontSelectors": [
+          "[data-variant=app] p",
+          "[data-variant=feature] h2",
+          "[data-variant=feature] p",
+          "[data-variant=prose] h2"
+        ]
+      },
+      {
+        "type": "scroll",
+        "selector": "[data-carousel-surface]",
+        "top": 120
+      },
+      {
+        "type": "focus",
+        "selector": "[data-carousel-surface]"
+      },
+      {
+        "type": "wait",
+        "ms": 1000
+      },
+      {
+        "type": "capture",
+        "name": "foreground-carousel-desktop-before",
+        "fontSelectors": [
+          "[data-prompt-text]"
+        ]
+      },
+      {
+        "type": "timeline",
+        "name": "foreground-keyboard-next",
+        "ms": 1600,
+        "intervalMs": 35,
+        "keys": [
+          {
+            "atMs": 0,
+            "key": "ArrowRight"
+          }
+        ]
+      },
+      {
+        "type": "capture",
+        "name": "foreground-carousel-desktop-next"
+      },
+      {
+        "type": "timeline",
+        "name": "foreground-keyboard-prev",
+        "ms": 1600,
+        "intervalMs": 35,
+        "keys": [
+          {
+            "atMs": 0,
+            "key": "ArrowLeft"
+          }
+        ]
+      },
+      {
+        "type": "capture",
+        "name": "foreground-carousel-desktop-prev"
+      },
+      {
+        "type": "timeline",
+        "name": "foreground-keyboard-reversal",
+        "ms": 1800,
+        "intervalMs": 35,
+        "keys": [
+          {
+            "atMs": 0,
+            "key": "ArrowRight"
+          },
+          {
+            "atMs": 120,
+            "key": "ArrowLeft"
+          }
+        ]
+      },
+      {
+        "type": "capture",
+        "name": "foreground-carousel-desktop-reversed"
+      },
+      {
+        "type": "viewport",
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      {
+        "type": "scroll",
+        "selector": "[data-carousel-surface]",
+        "top": 100
+      },
+      {
+        "type": "wait",
+        "ms": 700
+      },
+      {
+        "type": "capture",
+        "name": "foreground-carousel-narrow-before"
+      },
+      {
+        "type": "timeline",
+        "name": "foreground-keyboard-narrow-next",
+        "ms": 1600,
+        "intervalMs": 40,
+        "keys": [
+          {
+            "atMs": 0,
+            "key": "ArrowRight"
+          }
+        ]
+      },
+      {
+        "type": "capture",
+        "name": "foreground-carousel-narrow-next"
+      },
+      {
+        "type": "media",
+        "reducedMotion": "reduce",
+        "colorScheme": "light"
+      },
+      {
+        "type": "wait",
+        "ms": 300
+      },
+      {
+        "type": "timeline",
+        "name": "foreground-keyboard-reduced-next",
+        "ms": 1600,
+        "intervalMs": 35,
+        "keys": [
+          {
+            "atMs": 0,
+            "key": "ArrowRight"
+          }
+        ]
+      },
+      {
+        "type": "capture",
+        "name": "foreground-carousel-narrow-reduced"
+      },
+      {
+        "type": "timeline",
+        "name": "foreground-reduced-idle",
+        "ms": 6500,
+        "intervalMs": 150,
+        "keys": []
+      }
+    ],
+    "conditionChange": "Exact delegated target brought to front after prior background target froze requestAnimationFrame; retain prior run as limited evidence."
+  },
+  "actions": [
+    {
+      "type": "foreground",
+      "startedAt": "2026-10-22T16:45:20.630Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 0,
+        "perfNow": 151834.30000001192
+      },
+      "completedAt": "2026-10-22T16:45:20.805Z",
+      "after": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 0,
+        "perfNow": 152158.5
+      },
+      "status": "completed"
+    },
+    {
+      "type": "navigate",
+      "url": "https://hark.com/",
+      "startedAt": "2026-10-22T16:45:20.956Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 0,
+        "perfNow": 152179.80000001192
+      },
+      "completedAt": "2026-10-22T16:45:23.077Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 0,
+        "perfNow": 2186.5999999940395
+      },
+      "status": "completed"
+    },
+    {
+      "type": "viewport",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "startedAt": "2026-10-22T16:45:23.185Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 0,
+        "perfNow": 2187.199999988079
+      },
+      "completedAt": "2026-10-22T16:45:23.196Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 0,
+        "perfNow": 2198.399999976158
+      },
+      "status": "completed"
+    },
+    {
+      "type": "media",
+      "reducedMotion": "no-preference",
+      "colorScheme": "light",
+      "startedAt": "2026-10-22T16:45:23.197Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 0,
+        "perfNow": 2198.7999999821186
+      },
+      "completedAt": "2026-10-22T16:45:23.199Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 0,
+        "perfNow": 2200.699999988079
+      },
+      "status": "completed"
+    },
+    {
+      "type": "scroll",
+      "selector": "[data-variant=app]",
+      "top": 0,
+      "startedAt": "2026-10-22T16:45:23.199Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 0,
+        "perfNow": 2201.0999999940395
+      },
+      "completedAt": "2026-10-22T16:45:23.200Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 0,
+        "perfNow": 2214.899999976158
+      },
+      "status": "completed"
+    },
+    {
+      "type": "wait",
+      "ms": 500,
+      "startedAt": "2026-10-22T16:45:23.214Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 0,
+        "perfNow": 2217.5
+      },
+      "completedAt": "2026-10-22T16:45:23.718Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 0,
+        "perfNow": 2720.399999976158
+      },
+      "status": "completed"
+    },
+    {
+      "type": "capture",
+      "name": "foreground-home-desktop-intro",
+      "fontSelectors": [
+        "[data-variant=app] p",
+        "[data-variant=feature] h2",
+        "[data-variant=feature] p",
+        "[data-variant=prose] h2"
+      ],
+      "startedAt": "2026-10-22T16:45:23.719Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 0,
+        "perfNow": 2720.899999976158
+      },
+      "completedAt": "2026-10-22T16:45:24.054Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 0,
+        "perfNow": 3056.5
+      },
+      "status": "completed"
+    },
+    {
+      "type": "scroll",
+      "selector": "[data-carousel-surface]",
+      "top": 120,
+      "startedAt": "2026-10-22T16:45:24.055Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 0,
+        "perfNow": 3057.5
+      },
+      "completedAt": "2026-10-22T16:45:24.057Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 3058.7999999821186
+      },
+      "status": "completed"
+    },
+    {
+      "type": "focus",
+      "selector": "[data-carousel-surface]",
+      "startedAt": "2026-10-22T16:45:24.057Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 3059
+      },
+      "completedAt": "2026-10-22T16:45:24.058Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 3060.399999976158
+      },
+      "status": "completed"
+    },
+    {
+      "type": "wait",
+      "ms": 1000,
+      "startedAt": "2026-10-22T16:45:24.059Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 3060.699999988079
+      },
+      "completedAt": "2026-10-22T16:45:25.060Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 4062.5
+      },
+      "status": "completed"
+    },
+    {
+      "type": "capture",
+      "name": "foreground-carousel-desktop-before",
+      "fontSelectors": [
+        "[data-prompt-text]"
+      ],
+      "startedAt": "2026-10-22T16:45:25.061Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 4063
+      },
+      "completedAt": "2026-10-22T16:45:25.389Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 4390.899999976158
+      },
+      "status": "completed"
+    },
+    {
+      "type": "timeline",
+      "name": "foreground-keyboard-next",
+      "ms": 1600,
+      "intervalMs": 35,
+      "keys": [
+        {
+          "atMs": 0,
+          "key": "ArrowRight"
+        }
+      ],
+      "startedAt": "2026-10-22T16:45:25.389Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 4391.399999976158
+      },
+      "completedAt": "2026-10-22T16:45:26.993Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 5994.899999976158
+      },
+      "status": "completed"
+    },
+    {
+      "type": "capture",
+      "name": "foreground-carousel-desktop-next",
+      "startedAt": "2026-10-22T16:45:26.993Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 5995.5999999940395
+      },
+      "completedAt": "2026-10-22T16:45:27.338Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 6340.5999999940395
+      },
+      "status": "completed"
+    },
+    {
+      "type": "timeline",
+      "name": "foreground-keyboard-prev",
+      "ms": 1600,
+      "intervalMs": 35,
+      "keys": [
+        {
+          "atMs": 0,
+          "key": "ArrowLeft"
+        }
+      ],
+      "startedAt": "2026-10-22T16:45:27.339Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 6341
+      },
+      "completedAt": "2026-10-22T16:45:28.945Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 7948.899999976158
+      },
+      "status": "completed"
+    },
+    {
+      "type": "capture",
+      "name": "foreground-carousel-desktop-prev",
+      "startedAt": "2026-10-22T16:45:28.947Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 7949.5
+      },
+      "completedAt": "2026-10-22T16:45:29.279Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 8281.09999999404
+      },
+      "status": "completed"
+    },
+    {
+      "type": "timeline",
+      "name": "foreground-keyboard-reversal",
+      "ms": 1800,
+      "intervalMs": 35,
+      "keys": [
+        {
+          "atMs": 0,
+          "key": "ArrowRight"
+        },
+        {
+          "atMs": 120,
+          "key": "ArrowLeft"
+        }
+      ],
+      "startedAt": "2026-10-22T16:45:29.279Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 8281.399999976158
+      },
+      "completedAt": "2026-10-22T16:45:31.110Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 10112.399999976158
+      },
+      "status": "completed"
+    },
+    {
+      "type": "capture",
+      "name": "foreground-carousel-desktop-reversed",
+      "startedAt": "2026-10-22T16:45:31.111Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 10113
+      },
+      "completedAt": "2026-10-22T16:45:31.425Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 10431.799999982119
+      },
+      "status": "completed"
+    },
+    {
+      "type": "viewport",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "startedAt": "2026-10-22T16:45:31.430Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 10432.199999988079
+      },
+      "completedAt": "2026-10-22T16:45:31.447Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 10475.699999988079
+      },
+      "status": "completed"
+    },
+    {
+      "type": "scroll",
+      "selector": "[data-carousel-surface]",
+      "top": 100,
+      "startedAt": "2026-10-22T16:45:31.513Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 860,
+        "perfNow": 10515.899999976158
+      },
+      "completedAt": "2026-10-22T16:45:31.515Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 790,
+        "perfNow": 10517.199999988079
+      },
+      "status": "completed"
+    },
+    {
+      "type": "wait",
+      "ms": 700,
+      "startedAt": "2026-10-22T16:45:31.515Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 790,
+        "perfNow": 10517.59999999404
+      },
+      "completedAt": "2026-10-22T16:45:32.217Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 790,
+        "perfNow": 11219.799999982119
+      },
+      "status": "completed"
+    },
+    {
+      "type": "capture",
+      "name": "foreground-carousel-narrow-before",
+      "startedAt": "2026-10-22T16:45:32.219Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 790,
+        "perfNow": 11222.799999982119
+      },
+      "completedAt": "2026-10-22T16:45:32.376Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 790,
+        "perfNow": 11377.899999976158
+      },
+      "status": "completed"
+    },
+    {
+      "type": "timeline",
+      "name": "foreground-keyboard-narrow-next",
+      "ms": 1600,
+      "intervalMs": 40,
+      "keys": [
+        {
+          "atMs": 0,
+          "key": "ArrowRight"
+        }
+      ],
+      "startedAt": "2026-10-22T16:45:32.376Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 790,
+        "perfNow": 11378.299999982119
+      },
+      "completedAt": "2026-10-22T16:45:34.018Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 790,
+        "perfNow": 13021.399999976158
+      },
+      "status": "completed"
+    },
+    {
+      "type": "capture",
+      "name": "foreground-carousel-narrow-next",
+      "startedAt": "2026-10-22T16:45:34.021Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 790,
+        "perfNow": 13023.199999988079
+      },
+      "completedAt": "2026-10-22T16:45:34.167Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 790,
+        "perfNow": 13169.899999976158
+      },
+      "status": "completed"
+    },
+    {
+      "type": "media",
+      "reducedMotion": "reduce",
+      "colorScheme": "light",
+      "startedAt": "2026-10-22T16:45:34.168Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 790,
+        "perfNow": 13170.299999982119
+      },
+      "completedAt": "2026-10-22T16:45:34.169Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 790,
+        "perfNow": 13173.59999999404
+      },
+      "status": "completed"
+    },
+    {
+      "type": "wait",
+      "ms": 300,
+      "startedAt": "2026-10-22T16:45:34.172Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 790,
+        "perfNow": 13173.899999976158
+      },
+      "completedAt": "2026-10-22T16:45:34.474Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 790,
+        "perfNow": 13476.799999982119
+      },
+      "status": "completed"
+    },
+    {
+      "type": "timeline",
+      "name": "foreground-keyboard-reduced-next",
+      "ms": 1600,
+      "intervalMs": 35,
+      "keys": [
+        {
+          "atMs": 0,
+          "key": "ArrowRight"
+        }
+      ],
+      "startedAt": "2026-10-22T16:45:34.475Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 790,
+        "perfNow": 13477.399999976158
+      },
+      "completedAt": "2026-10-22T16:45:36.100Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 790,
+        "perfNow": 15102.899999976158
+      },
+      "status": "completed"
+    },
+    {
+      "type": "capture",
+      "name": "foreground-carousel-narrow-reduced",
+      "startedAt": "2026-10-22T16:45:36.102Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 790,
+        "perfNow": 15104.09999999404
+      },
+      "completedAt": "2026-10-22T16:45:36.253Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 790,
+        "perfNow": 15255.299999982119
+      },
+      "status": "completed"
+    },
+    {
+      "type": "timeline",
+      "name": "foreground-reduced-idle",
+      "ms": 6500,
+      "intervalMs": 150,
+      "keys": [],
+      "startedAt": "2026-10-22T16:45:36.254Z",
+      "before": {
+        "url": "https://hark.com/",
+        "scrollY": 790,
+        "perfNow": 15255.799999982119
+      },
+      "completedAt": "2026-10-22T16:45:42.883Z",
+      "after": {
+        "url": "https://hark.com/",
+        "scrollY": 790,
+        "perfNow": 21885.59999999404
+      },
+      "status": "completed"
+    }
+  ],
+  "captures": [
+    {
+      "id": "foreground-home-desktop-intro",
+      "startedAt": "2026-10-22T16:45:23.719Z",
+      "completedAt": "2026-10-22T16:45:24.054Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0,
+        "documentHeight": 8664
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/foreground-home-desktop-intro.json",
+          "bytes": 140681,
+          "sha256": "784ae963761536a09a55e5f8074e9f851b9e04948b8283d380e3f0fb4a61fe7f"
+        },
+        {
+          "path": "captures/foreground-home-desktop-intro.png",
+          "bytes": 1236000,
+          "sha256": "d628b30dadc95a65f9dab8e57da89e3a490aa91c6797808683acd99de545f36b"
+        },
+        {
+          "path": "captures/foreground-home-desktop-intro-dom.json",
+          "bytes": 645568,
+          "sha256": "4a525189e1537c7cbbac5e14663c01468f3e1209354cda333cdba4b817fcccda"
+        }
+      ],
+      "pixelReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "foreground-carousel-desktop-before",
+      "startedAt": "2026-10-22T16:45:25.061Z",
+      "completedAt": "2026-10-22T16:45:25.389Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 860,
+        "documentHeight": 8664
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/foreground-carousel-desktop-before.json",
+          "bytes": 141104,
+          "sha256": "07daea59fa39165f4aa42c7a65aa2200a77018b867d404666470ab525a95b41a"
+        },
+        {
+          "path": "captures/foreground-carousel-desktop-before.png",
+          "bytes": 967294,
+          "sha256": "16a63250a12692b26047e82845e71c0ad9c02ff31c34842a677ceabacefc092a"
+        },
+        {
+          "path": "captures/foreground-carousel-desktop-before-dom.json",
+          "bytes": 647997,
+          "sha256": "6a2bf5132b3be9ea31ac2c9bf3de978c0284c8d08f564eddfe7cde05a4a6b7d8"
+        }
+      ],
+      "pixelReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "foreground-carousel-desktop-next",
+      "startedAt": "2026-10-22T16:45:26.994Z",
+      "completedAt": "2026-10-22T16:45:27.338Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 860,
+        "documentHeight": 8664
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/foreground-carousel-desktop-next.json",
+          "bytes": 141317,
+          "sha256": "52c30a1153924929332fed6b44c9f249b600875ddb3f8ae7fd2cb14bf38f5cc3"
+        },
+        {
+          "path": "captures/foreground-carousel-desktop-next.png",
+          "bytes": 983289,
+          "sha256": "731db5a4a541ea81e4bcad96047ebbfc500b735dffbdf9a87e6418fb9d338c3e"
+        },
+        {
+          "path": "captures/foreground-carousel-desktop-next-dom.json",
+          "bytes": 649967,
+          "sha256": "a1b67ac6a41135cd519d90e76161aa39f0fc2fcbea46e52f495cba848a7c9e20"
+        }
+      ],
+      "pixelReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "foreground-carousel-desktop-prev",
+      "startedAt": "2026-10-22T16:45:28.948Z",
+      "completedAt": "2026-10-22T16:45:29.279Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 860,
+        "documentHeight": 8664
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/foreground-carousel-desktop-prev.json",
+          "bytes": 141384,
+          "sha256": "1b2d4f69afcae5d5f0b2e62e2833c7746a48de55ecadf5ee00b6157a0b2c98a5"
+        },
+        {
+          "path": "captures/foreground-carousel-desktop-prev.png",
+          "bytes": 961023,
+          "sha256": "6b402108caccc0c22a7123f50304c73e27c3430d0fc3ce9157d202a15b967c93"
+        },
+        {
+          "path": "captures/foreground-carousel-desktop-prev-dom.json",
+          "bytes": 649985,
+          "sha256": "638759b832c78b7585c8481998eadf96e677f1454c494ca7c3cbc5e368634fc3"
+        }
+      ],
+      "pixelReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "foreground-carousel-desktop-reversed",
+      "startedAt": "2026-10-22T16:45:31.111Z",
+      "completedAt": "2026-10-22T16:45:31.425Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 1440,
+          "height": 900,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 860,
+        "documentHeight": 8664
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/foreground-carousel-desktop-reversed.json",
+          "bytes": 141368,
+          "sha256": "6fa3fb972469c1472ed0b54c172a86c72ba91fab57028444cc32d924f007a5fa"
+        },
+        {
+          "path": "captures/foreground-carousel-desktop-reversed.png",
+          "bytes": 957715,
+          "sha256": "06e4f8bea7ce65c362755502dc87da64f6e997f539f77bdf61b83a95e39cd53c"
+        },
+        {
+          "path": "captures/foreground-carousel-desktop-reversed-dom.json",
+          "bytes": 649985,
+          "sha256": "53fe567411b602b713e19a268b806924cc802213d245fa3e0b46edb86c9ef7ac"
+        }
+      ],
+      "pixelReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "foreground-carousel-narrow-before",
+      "startedAt": "2026-10-22T16:45:32.221Z",
+      "completedAt": "2026-10-22T16:45:32.376Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 790,
+        "documentHeight": 7716
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/foreground-carousel-narrow-before.json",
+          "bytes": 142083,
+          "sha256": "6e39b5ddb10e0b1ceb6b823c2ce15416cfc1f18516b7959d00a6d6958d506845"
+        },
+        {
+          "path": "captures/foreground-carousel-narrow-before.png",
+          "bytes": 238514,
+          "sha256": "7cd8a77725de0bd80a13cc0440dfc663a1d29d63488ec5bf1102ec8de250a273"
+        },
+        {
+          "path": "captures/foreground-carousel-narrow-before-dom.json",
+          "bytes": 649887,
+          "sha256": "88f50b4e20d573d0b2b6e7cda5f1a8d918c85ca69996d25a52c720a88aa6a970"
+        }
+      ],
+      "pixelReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "foreground-carousel-narrow-next",
+      "startedAt": "2026-10-22T16:45:34.021Z",
+      "completedAt": "2026-10-22T16:45:34.167Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 790,
+        "documentHeight": 7716
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/foreground-carousel-narrow-next.json",
+          "bytes": 142010,
+          "sha256": "133019b4f8122e3ed06e9c81439d2370ce129487732f7bc5f7a4d1d32ea6ae10"
+        },
+        {
+          "path": "captures/foreground-carousel-narrow-next.png",
+          "bytes": 265078,
+          "sha256": "979ba0d3455a1444602d1612832f73d42f36965ed1ccdc56ea8975f3cea3ea5f"
+        },
+        {
+          "path": "captures/foreground-carousel-narrow-next-dom.json",
+          "bytes": 649873,
+          "sha256": "7eafd23be79854f573145873e7c3cbe61ddfc5702fc06228d5490887edbc187c"
+        }
+      ],
+      "pixelReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "foreground-carousel-narrow-reduced",
+      "startedAt": "2026-10-22T16:45:36.103Z",
+      "completedAt": "2026-10-22T16:45:36.253Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "dataTheme": "dark",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 790,
+        "documentHeight": 7716
+      },
+      "reducedMotion": true,
+      "files": [
+        {
+          "path": "captures/foreground-carousel-narrow-reduced.json",
+          "bytes": 138223,
+          "sha256": "f24f4b9ee21d0e0ce8be47a57e23eb7669742306b040785ac0ff3f30e3d9e9e3"
+        },
+        {
+          "path": "captures/foreground-carousel-narrow-reduced.png",
+          "bytes": 243566,
+          "sha256": "9b5dfadbacd58a10236ebd1389c149612d45cd8daf33cdb5672a553ba1914200"
+        },
+        {
+          "path": "captures/foreground-carousel-narrow-reduced-dom.json",
+          "bytes": 650100,
+          "sha256": "bdd8bf65846714aa4358e47f9b60faff876e282f8a07a6550d058009ba9908a0"
+        }
+      ],
+      "pixelReview": {
+        "status": "pending"
+      }
+    }
+  ],
+  "timelines": [
+    {
+      "id": "foreground-keyboard-next",
+      "path": "timelines/foreground-keyboard-next.json",
+      "bytes": 244950,
+      "sha256": "8740965a2a5f6db02996de1a9bf886eb5519942e4fd731af4c3aad1fd5671b08",
+      "samples": 42,
+      "events": [
+        {
+          "atMs": 0,
+          "key": "ArrowRight",
+          "dispatchedAt": "2026-10-22T16:45:25.390Z",
+          "elapsedMs": 0.0070420000001831795
+        }
+      ]
+    },
+    {
+      "id": "foreground-keyboard-prev",
+      "path": "timelines/foreground-keyboard-prev.json",
+      "bytes": 246892,
+      "sha256": "439ce3af23b969fe981ce4341a0741ea62bec4f2a220b2969c74ad2e1ffe1c78",
+      "samples": 42,
+      "events": [
+        {
+          "atMs": 0,
+          "key": "ArrowLeft",
+          "dispatchedAt": "2026-10-22T16:45:27.339Z",
+          "elapsedMs": 0.0028340000008029165
+        }
+      ]
+    },
+    {
+      "id": "foreground-keyboard-reversal",
+      "path": "timelines/foreground-keyboard-reversal.json",
+      "bytes": 283618,
+      "sha256": "2776b902e0e312c60108beafd87a3ca9f935d710452f51bdc9951af5e993c6a2",
+      "samples": 48,
+      "events": [
+        {
+          "atMs": 0,
+          "key": "ArrowRight",
+          "dispatchedAt": "2026-10-22T16:45:29.280Z",
+          "elapsedMs": 0.0034159999995608814
+        },
+        {
+          "atMs": 120,
+          "key": "ArrowLeft",
+          "dispatchedAt": "2026-10-22T16:45:29.432Z",
+          "elapsedMs": 152.32674999999836
+        }
+      ]
+    },
+    {
+      "id": "foreground-keyboard-narrow-next",
+      "path": "timelines/foreground-keyboard-narrow-next.json",
+      "bytes": 223946,
+      "sha256": "5ea404fb60c261b52585908e23961ad42d38674576603c06658983d68e78dd6f",
+      "samples": 38,
+      "events": [
+        {
+          "atMs": 0,
+          "key": "ArrowRight",
+          "dispatchedAt": "2026-10-22T16:45:32.376Z",
+          "elapsedMs": 0.0030000000006111804
+        }
+      ]
+    },
+    {
+      "id": "foreground-keyboard-reduced-next",
+      "path": "timelines/foreground-keyboard-reduced-next.json",
+      "bytes": 239777,
+      "sha256": "e6d801eec024be512b7717bb8a8224d40815a65937f82f25b1aa564c1c8f9dcc",
+      "samples": 41,
+      "events": [
+        {
+          "atMs": 0,
+          "key": "ArrowRight",
+          "dispatchedAt": "2026-10-22T16:45:34.476Z",
+          "elapsedMs": 0.007917000000816188
+        }
+      ]
+    },
+    {
+      "id": "foreground-reduced-idle",
+      "path": "timelines/foreground-reduced-idle.json",
+      "bytes": 251704,
+      "sha256": "b8153010ba9f270d9f26fd94a1b692139e20e7220811065b238f5371e3daa05c",
+      "samples": 43,
+      "events": []
+    }
+  ],
+  "browser": {
+    "browser": "Chrome/156.0.8078.47",
+    "protocol": "1.3",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "v8": "15.6.75.19"
+  },
+  "result": "completed",
+  "completedAt": "2026-10-22T16:45:42.884Z"
+}

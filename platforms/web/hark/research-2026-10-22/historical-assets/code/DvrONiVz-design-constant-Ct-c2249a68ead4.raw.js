@@ -1,0 +1,1 @@
+Ct=e=>{const[t]=xt(e);return t?Ve(t.color,t.opacity):"transparent"}

@@ -1,0 +1,1 @@
+function(e,t){return e&&null!=t?r.createElement("svg",{style:{position:"absolute",height:0,visibility:"hidden",width:0}},r.createElement("defs",null,r.createElement("filter",{id:"tint-"+t,suppressHydrationWarning:!0},r.createElement("feFlood",{floodColor:""+e,key:e}),r.createElement("feComposite",{in2:"SourceAlpha",operator:"in"})))):null}

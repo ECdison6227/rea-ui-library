@@ -1,0 +1,1 @@
+function Iae(e){const t=n.c(3),{size:r}=e;let i,o;return t[0]===Symbol.for("react.memo_cache_sentinel")?(i=Sae.map(Aae),t[0]=i):i=t[0],t[1]!==r?(o=s.jsx("svg",{width:r,height:r,viewBox:"-50 -50 100 100",overflow:"visible","aria-hidden":"true",focusable:"false",children:i}),t[1]=r,t[2]=o):o=t[2],o}

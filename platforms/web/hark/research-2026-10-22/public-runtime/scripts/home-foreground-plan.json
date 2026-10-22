@@ -1,0 +1,188 @@
+{
+  "label": "home-foreground",
+  "questions": [
+    "Does keyboard browse actually update the 3D cards and prompt?",
+    "How does a reversal interrupt the current visible transition?",
+    "What is the narrow layout and reduced-motion runtime behavior?",
+    "Which platform font faces render visible public text?"
+  ],
+  "actions": [
+    {
+      "type": "foreground"
+    },
+    {
+      "type": "navigate",
+      "url": "https://hark.com/"
+    },
+    {
+      "type": "viewport",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1
+    },
+    {
+      "type": "media",
+      "reducedMotion": "no-preference",
+      "colorScheme": "light"
+    },
+    {
+      "type": "scroll",
+      "selector": "[data-variant=app]",
+      "top": 0
+    },
+    {
+      "type": "wait",
+      "ms": 500
+    },
+    {
+      "type": "capture",
+      "name": "foreground-home-desktop-intro",
+      "fontSelectors": [
+        "[data-variant=app] p",
+        "[data-variant=feature] h2",
+        "[data-variant=feature] p",
+        "[data-variant=prose] h2"
+      ]
+    },
+    {
+      "type": "scroll",
+      "selector": "[data-carousel-surface]",
+      "top": 120
+    },
+    {
+      "type": "focus",
+      "selector": "[data-carousel-surface]"
+    },
+    {
+      "type": "wait",
+      "ms": 1000
+    },
+    {
+      "type": "capture",
+      "name": "foreground-carousel-desktop-before",
+      "fontSelectors": [
+        "[data-prompt-text]"
+      ]
+    },
+    {
+      "type": "timeline",
+      "name": "foreground-keyboard-next",
+      "ms": 1600,
+      "intervalMs": 35,
+      "keys": [
+        {
+          "atMs": 0,
+          "key": "ArrowRight"
+        }
+      ]
+    },
+    {
+      "type": "capture",
+      "name": "foreground-carousel-desktop-next"
+    },
+    {
+      "type": "timeline",
+      "name": "foreground-keyboard-prev",
+      "ms": 1600,
+      "intervalMs": 35,
+      "keys": [
+        {
+          "atMs": 0,
+          "key": "ArrowLeft"
+        }
+      ]
+    },
+    {
+      "type": "capture",
+      "name": "foreground-carousel-desktop-prev"
+    },
+    {
+      "type": "timeline",
+      "name": "foreground-keyboard-reversal",
+      "ms": 1800,
+      "intervalMs": 35,
+      "keys": [
+        {
+          "atMs": 0,
+          "key": "ArrowRight"
+        },
+        {
+          "atMs": 120,
+          "key": "ArrowLeft"
+        }
+      ]
+    },
+    {
+      "type": "capture",
+      "name": "foreground-carousel-desktop-reversed"
+    },
+    {
+      "type": "viewport",
+      "width": 390,
+      "height": 844,
+      "dpr": 1
+    },
+    {
+      "type": "scroll",
+      "selector": "[data-carousel-surface]",
+      "top": 100
+    },
+    {
+      "type": "wait",
+      "ms": 700
+    },
+    {
+      "type": "capture",
+      "name": "foreground-carousel-narrow-before"
+    },
+    {
+      "type": "timeline",
+      "name": "foreground-keyboard-narrow-next",
+      "ms": 1600,
+      "intervalMs": 40,
+      "keys": [
+        {
+          "atMs": 0,
+          "key": "ArrowRight"
+        }
+      ]
+    },
+    {
+      "type": "capture",
+      "name": "foreground-carousel-narrow-next"
+    },
+    {
+      "type": "media",
+      "reducedMotion": "reduce",
+      "colorScheme": "light"
+    },
+    {
+      "type": "wait",
+      "ms": 300
+    },
+    {
+      "type": "timeline",
+      "name": "foreground-keyboard-reduced-next",
+      "ms": 1600,
+      "intervalMs": 35,
+      "keys": [
+        {
+          "atMs": 0,
+          "key": "ArrowRight"
+        }
+      ]
+    },
+    {
+      "type": "capture",
+      "name": "foreground-carousel-narrow-reduced"
+    },
+    {
+      "type": "timeline",
+      "name": "foreground-reduced-idle",
+      "ms": 6500,
+      "intervalMs": 150,
+      "keys": []
+    }
+  ],
+  "conditionChange": "Exact delegated target brought to front after prior background target froze requestAnimationFrame; retain prior run as limited evidence."
+}

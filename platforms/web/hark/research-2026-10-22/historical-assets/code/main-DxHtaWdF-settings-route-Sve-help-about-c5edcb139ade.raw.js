@@ -1,0 +1,1 @@
+Sve=S.lazy(()=>A(w(()=>import("./BMAxWeeU.js"),__vite__mapDeps([128,1,2,51,5,6,7,8,52,54,74,3,4,9,53,75,20,21,22,23,24,25,26]),import.meta.url)).then(e=>({default:e.AboutScreen})))

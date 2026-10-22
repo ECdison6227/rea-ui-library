@@ -1,0 +1,110 @@
+{
+  "recordedAt": "2026-10-22T17:44:13.833760+00:00",
+  "package": {
+    "status": "passed-integrity-only",
+    "formatVersion": 1,
+    "id": "hark",
+    "platform": "web",
+    "readiness": "partial",
+    "filesChecked": 567,
+    "counts": {
+      "tokens": 210,
+      "components": 37,
+      "layouts": 12,
+      "interactions": 21,
+      "motion": 20,
+      "assets": 580,
+      "evidence": 89
+    },
+    "forCatalog": true,
+    "statesModified": false,
+    "originalAppExecuted": false,
+    "errors": [],
+    "warnings": [
+      "Package readiness is partial; integrity success does not complete the research."
+    ],
+    "limitations": [
+      "Checks declared contract, paths, references, source/D separation and actual file hashes. Does not authenticate author claims, perform pixel review or prove runtime fidelity/authorization."
+    ]
+  },
+  "consumerContract": {
+    "status": "passed-consumer-contract",
+    "errors": []
+  },
+  "currentAppStatic": {
+    "schemaVersion": 1,
+    "validatedAt": "2026-10-22T16:20:41.327106+00:00",
+    "status": "passed",
+    "checks": {
+      "archivedResourceIdentities": 256,
+      "wallpaperIdentity": 1,
+      "sourceShaReferences": 2440,
+      "sourceByteSlices": 2405,
+      "spriteXml": 1,
+      "shaderAndLutIdentities": 3,
+      "browserTransferIdentities": 56,
+      "receiverStopped": 1
+    },
+    "failures": [],
+    "literalDependencyClosure": {
+      "discovered": 256,
+      "retained": 256,
+      "unretained": []
+    },
+    "boundary": "Inert B source-byte validation, not original product runtime verification."
+  },
+  "currentPublicMedia": {
+    "verifiedAt": "2026-10-22T16:32:20.044343+00:00",
+    "passed": true,
+    "savedFiles": 92,
+    "savedBytes": 440082145,
+    "sourceFiles": 48,
+    "negotiatedWebpFiles": 15,
+    "totalMediaResponseFiles": 107,
+    "totalMediaBytes": 440893743,
+    "carouselBindings": 10,
+    "errors": [],
+    "boundary": "Integrity/decoding/source binding checks only; no source-app playback or carousel interaction tested."
+  },
+  "independentReference": {
+    "checks": 13,
+    "passed": 13,
+    "reviewedCaptures": 8,
+    "result": "passed",
+    "source": "comparison/reference-run.json"
+  },
+  "localHttpFontChecks": {
+    "status": "passed",
+    "source": "comparison/server-path-check.json"
+  },
+  "currentPublicRuntime": {
+    "errors": [],
+    "status": "passed",
+    "reviewedCaptures": 16,
+    "pendingBackgroundCaptures": 8
+  },
+  "repositoryWide": {
+    "npmTest": {
+      "passed": 44,
+      "failed": 0
+    },
+    "npmBuild": "passed",
+    "npmVerify": "passed",
+    "sourceFilesChecked": 33372,
+    "reviewedThumbnails": 9,
+    "gitDiffCheck": "passed",
+    "condition": "Full checkout restored before publication; no registered source was excluded to make validation pass."
+  },
+  "meaning": "Checks do not claim all original business/states or source/reference exact equivalence. Package remains partial with explicit residuals.",
+  "priorSparseCheckoutValidation": {
+    "npmTest": {
+      "passed": 37,
+      "failed": 7
+    },
+    "npmBuild": "failed",
+    "npmVerify": "failed",
+    "reason": "This checkout is intentionally sparse: other registered studies such as mi-fitness, Kimi, Mirasim and Muse are absent. Hark-specific checks pass; no unrelated sources were changed or silently excluded.",
+    "gitDiffCheck": "passed"
+  },
+  "publicationValidationAt": "2026-10-22T18:40:29.162662+00:00"
+}

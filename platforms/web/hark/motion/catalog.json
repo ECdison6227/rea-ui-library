@@ -1,0 +1,989 @@
+{
+  "formatVersion": 1,
+  "kind": "motion",
+  "items": [
+    {
+      "id": "hark-motion-theme-material",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-css-b9bskziz",
+        "hark-h15-b-css-bgegb-jl",
+        "hark-h15-b-js-dvronivz"
+      ],
+      "unknowns": [
+        "完整light/dark/auto/system当前运行计时未测"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "保留原800ms/.45曲线；D新主题变化从当前呈现值继续，reduced motion立即切换。"
+      },
+      "trigger": "theme/material value change",
+      "properties": [
+        "fill.opacity",
+        "fill.color",
+        "stroke.color"
+      ],
+      "duration": {
+        "value": 800,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "cubic-bezier(.45,0,.55,1)",
+        "basis": "declared"
+      },
+      "interruption": [
+        "来源完整中断运行未知；D目标新动作从当前值继续，卸载取消。"
+      ],
+      "delay": {
+        "value": 0,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "exit": "同属性逆向变化；不是独立退出帧序列",
+      "reducedMotion": {
+        "classification": "D",
+        "durationMs": 0
+      }
+    },
+    {
+      "id": "hark-motion-pressed",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-css-bgegb-jl",
+        "hark-20261022-b-css-2wo999c91t159"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "复用声明scale.97与120ms按下/释放；Ddisabled/loading禁止触发。"
+      },
+      "trigger": "pointer/button active",
+      "properties": [
+        "scale",
+        "wash.boxShadow"
+      ],
+      "duration": {
+        "value": 120,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "ease-out",
+        "basis": "declared"
+      },
+      "interruption": [
+        "来源完整中断运行未知；D目标新动作从当前值继续，卸载取消。"
+      ],
+      "fromTo": {
+        "scale": [
+          1,
+          0.97
+        ]
+      },
+      "delay": {
+        "value": 0,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "exit": "release scale→1",
+      "reducedMotion": {
+        "classification": "B/D",
+        "value": "当前App provider reduce取消transition，目标仍保留静态pressed反馈"
+      }
+    },
+    {
+      "id": "hark-motion-link-stack",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-css-bgegb-jl",
+        "hark-h15-b-link-stack-grid-motion"
+      ],
+      "unknowns": [
+        "--spring .42s不恢复唯一物理spring；完整ease/各phase执行时长未知"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "先复用原helper；D曲线不明时用d-stack-alternative600ms，源ease保持null。"
+      },
+      "trigger": "stack expand/settle",
+      "properties": [
+        "transform",
+        "opacity",
+        "perspective"
+      ],
+      "duration": {
+        "value": 420,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": null,
+        "basis": "unknown"
+      },
+      "interruption": [
+        "来源完整中断运行未知；D目标新动作从当前值继续，卸载取消。"
+      ],
+      "sourceParameters": {
+        "settleMs": 260,
+        "perspectiveCssPx": 900,
+        "basis": "declared"
+      },
+      "reducedMotion": {
+        "classification": "B",
+        "value": "取消flip或animation;source scope-specific"
+      }
+    },
+    {
+      "id": "hark-motion-stack-flip",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-link-stack-drag-flip",
+        "hark-h15-b-link-motion-preference"
+      ],
+      "unknowns": [
+        "完整弹簧参数执行绑定/单次flip墙钟时长未测"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "优先原手势和动画函数；D无法包装时按钮切换/600ms替代记录差异。"
+      },
+      "trigger": "drag/release past source threshold",
+      "properties": [
+        "rotateY",
+        "translate",
+        "scale"
+      ],
+      "duration": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "easing": {
+        "value": null,
+        "basis": "unknown"
+      },
+      "interruption": [
+        "来源完整中断运行未知；D目标新动作从当前值继续，卸载取消。"
+      ],
+      "sourceParameters": {
+        "shortClickPx": 6,
+        "longPressMs": 290,
+        "releaseVelocityPxPerSecond": 600,
+        "positionThresholdNormalized": 0.55,
+        "resizeDelayMs": 120
+      },
+      "reducedMotion": {
+        "classification": "B",
+        "value": "disable flips"
+      }
+    },
+    {
+      "id": "hark-motion-sky-scene-h15",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-wallpaper-core"
+      ],
+      "unknowns": [
+        "代码两遍draw的crossfade未墙钟测量",
+        "setHour()会清baseline直接切换；不得全部scene都标2.5s"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "直接复用H15 shader机制；当前core仍需原件匹配，D参考冻结输入并保留替代状态。"
+      },
+      "trigger": "H15 core target scene differs >.02",
+      "properties": [
+        "WebGL mixed scene colors"
+      ],
+      "duration": {
+        "value": 2500,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "linear",
+        "basis": "declared"
+      },
+      "interruption": [
+        "source setHour clears fade baseline",
+        "new target handling remains in raw core;do not infer smooth reverse"
+      ],
+      "sourceParameters": {
+        "FADE_EPS": 0.02,
+        "dprCap": 1.75,
+        "drawGateMs": 31,
+        "dtMaxSeconds": 0.1,
+        "reducedSpeed": 0.08
+      },
+      "reducedMotion": {
+        "classification": "B",
+        "speed": 0.08
+      }
+    },
+    {
+      "id": "hark-motion-sky-placeholder-current",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-20261022-b-css-2024m-gqsxckw"
+      ],
+      "unknowns": [
+        "当前placeholder→canvas实际首帧时刻未测"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "直接用原opacity.8s；D失败保留placeholder，不伪称current core与H15同字节。"
+      },
+      "trigger": "current public bootstrap first render",
+      "properties": [
+        "placeholder.opacity"
+      ],
+      "duration": {
+        "value": 800,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "ease",
+        "basis": "declared"
+      },
+      "interruption": [
+        "来源完整中断运行未知；D目标新动作从当前值继续，卸载取消。"
+      ],
+      "sourceParameters": {
+        "wrapperFramePacingMs": {
+          "normal": 48,
+          "reduced": 2000,
+          "software": 60000
+        },
+        "thumbnailWidthPx": 48,
+        "webpQuality": 0.8,
+        "thumbnailMaxChars": 65536,
+        "inputHoldMs": 2000,
+        "coastingMs": 3000,
+        "recentInputMs": 15000,
+        "resizeBudget": 30
+      },
+      "reducedMotion": {
+        "classification": "B",
+        "pacingMs": 2000
+      }
+    },
+    {
+      "id": "hark-motion-tool-text-reveal",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-stream-reveal-buffer"
+      ],
+      "unknowns": [
+        "reveal caller是tool活动；不是普通chat输出或网络速率",
+        "完成时长由字符数/输入节奏决定"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "若需要同工具阅读节奏，直接包装90chars/s/reveal30/dt≤100ms；D减少动画一次显示。"
+      },
+      "trigger": "tool activity text arrives",
+      "properties": [
+        "visible character count"
+      ],
+      "duration": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "easing": {
+        "value": "linear",
+        "basis": "declared"
+      },
+      "interruption": [
+        "来源完整中断运行未知；D目标新动作从当前值继续，卸载取消。"
+      ],
+      "sourceParameters": {
+        "charsPerSecond": 90,
+        "revealBuffer": 30,
+        "dtMaxMs": 100
+      },
+      "reducedMotion": {
+        "classification": "D",
+        "behavior": "show complete text immediately"
+      }
+    },
+    {
+      "id": "hark-motion-public-button",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-20261022-b-css-2wo999c91t159"
+      ],
+      "unknowns": [
+        "并非全部元素reduce规则关闭同一种动画"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "复用240ms色彩过渡，focus即时可见；D减少动画移除transition但不取消加载反馈。"
+      },
+      "trigger": "marketing hover/color change",
+      "properties": [
+        "color",
+        "background-color",
+        "border-color",
+        "text-decoration-color"
+      ],
+      "duration": {
+        "value": 240,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "cubic-bezier(.24,.42,.42,.92)",
+        "basis": "declared"
+      },
+      "interruption": [
+        "来源完整中断运行未知；D目标新动作从当前值继续，卸载取消。"
+      ],
+      "delay": {
+        "value": 0,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "reducedMotion": {
+        "classification": "B",
+        "value": "matching selector transition:unset"
+      }
+    },
+    {
+      "id": "hark-motion-public-learn-more",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-20261022-b-15bfdjo3hjyv9"
+      ],
+      "unknowns": [
+        "同页Link helper缺reduce guard，不能声称全站关闭滚动动画"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "App原duration1s/ power2.inOut；D目标所有同页滚动统一reduce为0并记录差异。"
+      },
+      "trigger": "App Learn more / same-page anchor",
+      "properties": [
+        "scrollY"
+      ],
+      "duration": {
+        "value": 1000,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "power2.inOut",
+        "basis": "declared"
+      },
+      "interruption": [
+        "D用户主动滚动/触控立即取消自动滚动"
+      ],
+      "sourceParameters": {
+        "appReducedDurationMs": 0,
+        "genericLinkReducedGuard": false
+      },
+      "reducedMotion": {
+        "classification": "B/D",
+        "app": 0,
+        "targetAllAnchors": 0
+      }
+    },
+    {
+      "id": "hark-motion-carousel-track-current",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-20261022-b-15bfdjo3hjyv9",
+        "hark-20261022-b-css-2wo999c91t159"
+      ],
+      "unknowns": [
+        "周期T与阻尼比ζ不是固定运行时長；input与帧节奏决定完成时间"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "复用原two-half-step spring模拟与投影，source duration保持null；D不能移植时用600ms轮播替代。"
+      },
+      "trigger": "select/drag/release carousel target",
+      "properties": [
+        "track.x",
+        "rise",
+        "rotateY",
+        "translateZ",
+        "perspective"
+      ],
+      "duration": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "easing": {
+        "value": null,
+        "basis": "unknown"
+      },
+      "interruption": [
+        "source new target updates current simulation",
+        "offscreen/hidden/reduce/focus-visible/hover pause auto-advance",
+        "cleanup removes rAF,timers,WAAPI,observers,media sources"
+      ],
+      "sourceParameters": {
+        "classification": "B",
+        "track": {
+          "periodSeconds": 0.5,
+          "dampingRatio": 0.85
+        },
+        "rise": {
+          "periodSeconds": 0.4,
+          "dampingRatio": 0.85
+        },
+        "formula": "omega=2*pi/T;k=omega²;c=2*zeta*omega",
+        "dtMaxSeconds": 0.05,
+        "halfSteps": 2,
+        "radius": "2.81*S",
+        "perspective": "6.4*S",
+        "angle": "-wrappedDistance*.4181494661921708rad",
+        "depth": "-radius+max(0,rise)*perspective*(1-.8771929824561404)",
+        "fadeDistance": [
+          3.3,
+          3.8
+        ],
+        "sourceByteRange": [
+          350829,
+          363521
+        ],
+        "springHelperByteRange": [
+          180803,
+          181643
+        ]
+      },
+      "delay": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "exit": "wrapped carousel distance smoothstep fades far cards",
+      "reducedMotion": {
+        "classification": "B",
+        "behavior": "pause automated movement;source reduce conditions retained"
+      }
+    },
+    {
+      "id": "hark-motion-carousel-prompt-enter-current",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-20261022-b-15bfdjo3hjyv9",
+        "hark-20261022-b-css-2wo999c91t159"
+      ],
+      "unknowns": [
+        "CSS linear sampling公式求值为C≈699.620ms，非A运行时长",
+        "browser linear() supported branch must be verified"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "优先原49点sampler；不支持linear使用源600ms cubic-bezier(.3,1.5,.5,1)，D target还需像素配对。"
+      },
+      "trigger": "center slide prompt enter",
+      "properties": [
+        "scale",
+        "opacity",
+        "text.opacity"
+      ],
+      "duration": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "easing": {
+        "value": null,
+        "basis": "unknown"
+      },
+      "interruption": [
+        "source reselect/switch cancel prior WAAPI animations"
+      ],
+      "sourceParameters": {
+        "scale": [
+          0.3,
+          1
+        ],
+        "periodSeconds": 0.35,
+        "dampingRatio": 0.55,
+        "linearSamples": 49,
+        "durationFormula": "1000*ln(1000)/(zeta*2*pi/T)",
+        "computedDurationMs": {
+          "classification": "C",
+          "value": 699.62
+        },
+        "fallbackDurationMs": 600,
+        "fallbackEasing": "cubic-bezier(.3,1.5,.5,1)",
+        "bubbleOpacityMs": 60,
+        "textOpacityMs": 300,
+        "textEasing": "cubic-bezier(.4,0,.2,1)"
+      },
+      "reducedMotion": {
+        "classification": "B/D",
+        "behavior": "source auto pause;target show prompt statically"
+      }
+    },
+    {
+      "id": "hark-motion-carousel-prompt-exit-current",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-20261022-b-15bfdjo3hjyv9"
+      ],
+      "unknowns": [
+        "340ms=100delay+240duration仅声明；不作A",
+        "scale sampler完整C≈646.708ms会在opacity onfinish取消，不能当视觉退出总长",
+        "opacity实际easing具体默认以raw WAAPI确认，本记录linear为明确D默认"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "保留100ms delay+240ms opacity/blur完成后hide/cancel链；未证实opacity曲线选择Dlinear并保留源unknown。"
+      },
+      "trigger": "leave center slide / prompt replace",
+      "properties": [
+        "opacity",
+        "filter.blur",
+        "scale",
+        "translateY",
+        "text.opacity"
+      ],
+      "duration": {
+        "value": 240,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "linear",
+        "basis": "chosen",
+        "classification": "D"
+      },
+      "interruption": [
+        "source opacity onfinish hides prompt and cancels all remaining animations",
+        "new prompt cancels prior animations"
+      ],
+      "sourceParameters": {
+        "opacity": [
+          1,
+          0
+        ],
+        "blurPx": [
+          0,
+          2
+        ],
+        "textMs": 220,
+        "scale": [
+          1,
+          0.8
+        ],
+        "translateYPx": "8*M",
+        "scaleSampler": {
+          "periodSeconds": 0.5,
+          "dampingRatio": 0.85,
+          "computedDurationMs": {
+            "classification": "C",
+            "value": 646.708
+          },
+          "fallbackMs": 600,
+          "fallbackEasing": "cubic-bezier(.25,1,.5,1)"
+        }
+      },
+      "delay": {
+        "value": 100,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "reducedMotion": {
+        "classification": "D",
+        "behavior": "immediate hide"
+      }
+    },
+    {
+      "id": "hark-motion-feature-video-current",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-20261022-b-15bfdjo3hjyv9",
+        "hark-20261022-b-css-2wo999c91t159"
+      ],
+      "unknowns": [
+        "首帧时间/媒体长度/播放速率A未测；poster transition具体source变体各自核"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "复用near200px预加载与visible play、requestVideoFrameCallback确认；D未ready保留poster，减少动画停止自动play。"
+      },
+      "trigger": "transparent feature enters/near viewport",
+      "properties": [
+        "poster.opacity",
+        "data-playing",
+        "video playback"
+      ],
+      "duration": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "easing": {
+        "value": null,
+        "basis": "unknown"
+      },
+      "interruption": [
+        "source cleanup unload/pause;error restore poster"
+      ],
+      "sourceParameters": {
+        "nearMarginPx": 200,
+        "pause": [
+          "document.hidden",
+          "reduce",
+          "notVisible"
+        ],
+        "firstFrame": "requestVideoFrameCallback",
+        "VideoCover": "separate muted loop playsInline preload:auto policy"
+      },
+      "reducedMotion": {
+        "classification": "B",
+        "behavior": "pause transparent video"
+      }
+    },
+    {
+      "id": "hark-motion-d-overlay",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-review-historical-audit",
+        "hark-d-transfer-contract"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D开240ms/关闭180ms，位移12px、scale.98→1；这是未证实源曲线的明确迁移选项。"
+      },
+      "trigger": "D menu/dialog/search open or close",
+      "properties": [
+        "opacity",
+        "translateY",
+        "scale"
+      ],
+      "duration": {
+        "value": 240,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "easing": {
+        "value": "cubic-bezier(.2,.8,.2,1)",
+        "basis": "chosen"
+      },
+      "interruption": [
+        "restart from current computed values",
+        "close unlocks scroll and restores focus even if animation interrupted"
+      ],
+      "fromTo": {
+        "opacity": [
+          0,
+          1
+        ],
+        "translateYPx": [
+          12,
+          0
+        ],
+        "scale": [
+          0.98,
+          1
+        ]
+      },
+      "delay": {
+        "value": 0,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "exit": {
+        "durationMs": 180,
+        "ease": "ease-out"
+      },
+      "reducedMotion": {
+        "classification": "D",
+        "durationMs": 0
+      }
+    },
+    {
+      "id": "hark-motion-d-message-entry",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-review-historical-audit",
+        "hark-d-transfer-contract"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D新消息出现220ms/8px，绝不把此选择叫原站逐token动画。"
+      },
+      "trigger": "D target message insertion",
+      "properties": [
+        "opacity",
+        "translateY"
+      ],
+      "duration": {
+        "value": 220,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "easing": {
+        "value": "cubic-bezier(.2,.8,.2,1)",
+        "basis": "chosen"
+      },
+      "interruption": [
+        "unmount cancel;batch messages can appear together"
+      ],
+      "fromTo": {
+        "opacity": [
+          0,
+          1
+        ],
+        "translateYPx": [
+          8,
+          0
+        ]
+      },
+      "reducedMotion": {
+        "classification": "D",
+        "durationMs": 0
+      }
+    },
+    {
+      "id": "hark-motion-d-stack-alternative",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-review-historical-audit",
+        "hark-d-transfer-contract"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D无法包装原栈helper时600ms替代，保留原radius/尺寸及数量规则；在对照表写曲线/路径差异。"
+      },
+      "trigger": "D fallback stack expand/close",
+      "properties": [
+        "transform",
+        "opacity"
+      ],
+      "duration": {
+        "value": 600,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "easing": {
+        "value": "cubic-bezier(.2,.8,.2,1)",
+        "basis": "chosen"
+      },
+      "interruption": [
+        "reverse from current values",
+        "cleanup restores exact collapsed transform and scroll lock"
+      ],
+      "reducedMotion": {
+        "classification": "D",
+        "durationMs": 0
+      }
+    },
+    {
+      "id": "hark-motion-d-carousel-alternative",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-20261022-analysis",
+        "hark-d-transfer-contract"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D只有无法移植原3D spring时600ms的2D薄包装；用户此次原版最深研究不能由该替代判完成。"
+      },
+      "trigger": "D fallback carousel change",
+      "properties": [
+        "translateX",
+        "scale",
+        "opacity"
+      ],
+      "duration": {
+        "value": 600,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "easing": {
+        "value": "cubic-bezier(.25,1,.5,1)",
+        "basis": "chosen"
+      },
+      "interruption": [
+        "new input targets current transition without stacked timers"
+      ],
+      "reducedMotion": {
+        "classification": "D",
+        "durationMs": 0,
+        "behavior": "one static slide and real next/previous"
+      }
+    },
+    {
+      "id": "hark-motion-d-disclosure",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-20261022-analysis",
+        "hark-d-transfer-contract"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D accordion220ms开合，内容量大时保持自动高度；源当前完整展开A与曲线未证实。"
+      },
+      "trigger": "D help/settings expanded region",
+      "properties": [
+        "block-size",
+        "opacity"
+      ],
+      "duration": {
+        "value": 220,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "easing": {
+        "value": "ease-out",
+        "basis": "chosen"
+      },
+      "interruption": [
+        "Dmeasure actual content height;new toggle resumes from current height"
+      ],
+      "reducedMotion": {
+        "classification": "D",
+        "durationMs": 0
+      }
+    },
+    {
+      "id": "hark-motion-d-feedback",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-review-historical-audit",
+        "hark-d-transfer-contract"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D反馈160ms淡入，success4s后可淡出，error不自动消失；需真实目标操作结果。"
+      },
+      "trigger": "D inline status/toast enters",
+      "properties": [
+        "opacity"
+      ],
+      "duration": {
+        "value": 160,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "easing": {
+        "value": "ease-out",
+        "basis": "chosen"
+      },
+      "interruption": [
+        "replace status immediately;do not queue conflicting success/error"
+      ],
+      "reducedMotion": {
+        "classification": "D",
+        "durationMs": 0
+      }
+    },
+    {
+      "id": "hark-motion-resumed-summary-owner",
+      "classification": "B",
+      "coverage": "verified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-20261022-b-current-app-summary",
+        "hark-20261022-a-authenticated-runtime"
+      ],
+      "unknowns": [
+        "No fitted timing curve or full source reduced-motion/exit matrix from these samples."
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Animate the outer reading host opacity/filter; retain the source 200ms easeOut declaration."
+      },
+      "trigger": "summary preview activated",
+      "properties": [
+        "outerHost.opacity",
+        "outerHost.filter"
+      ],
+      "duration": {
+        "value": 200,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "easeOut",
+        "basis": "declared"
+      },
+      "interruption": [
+        "Current open rAF samples show opacity/filter change; all overlapping close/reopen states not exhaustively measured."
+      ],
+      "runtimeObservation": {
+        "selector": "._2za4zx8",
+        "firstOpacityZeroMs": 53.2,
+        "firstOpacityOneMs": 306.1,
+        "basis": "observed discrete click-relative samples; elapsed event time is not the declared duration or fitted easing"
+      }
+    }
+  ],
+  "sourceMotionLedgerEntry": "research-2026-10-22/public/static-analysis.json#motion",
+  "policy": "T/spring周期不等duration；C公式结果不是A计时；D备用方案不完成源研究"
+}

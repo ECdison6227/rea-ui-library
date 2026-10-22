@@ -1,0 +1,1 @@
+function Lve(){const e=C.c(2),{user:t}=Jr(),n=!0===br(Ae.HARDWARE_DEVICES_PAGE);if(!eg(t?.email)||!n){let t;return e[0]===Symbol.for("react.memo_cache_sentinel")?(t=E.jsx(we,{to:"/settings",replace:!0}),e[0]=t):t=e[0],t}let i;return e[1]===Symbol.for("react.memo_cache_sentinel")?(i=E.jsx(Wa,{}),e[1]=i):i=e[1],i}

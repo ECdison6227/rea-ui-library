@@ -1,0 +1,1 @@
+ct={opacityDay:.85,opacityNight:.072,seconds:1.4,streakWidth:84,angleDegrees:-15,labelRestOpacity:.5,washPeak:1,doneFillNightAlpha:.12,doneFill:Je(Ze,.05,Ye,.12)}

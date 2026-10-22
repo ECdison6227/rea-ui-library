@@ -44,10 +44,10 @@
 | **汽水音乐** | 深色表面、薄荷色决策层、主次动作、编辑与失败重试 | [设计包](platforms/mobile/qishui-music-android-21-1-0/README.md) |
 | **Muse** | 居中品牌首屏、头像与短句动效、圆角输入、交替图文与响应式 | [设计包](platforms/web/muse-public-home/README.md) |
 | **Hark Android** | 原生导航、锚定菜单、输入与卡片宿主；另附Web元素的手机适配参考 | [设计包](platforms/mobile/hark-android/README.md) |
-| **Hark Web** | 玻璃材质、流式内容、富内容卡片与天空背景 | [研究参考](platforms/web/hark/README.md) |
+| **Hark Web** | 玻璃材质、富卡、独立阅读与天空；当前原资产及桌面/窄屏观察 | [设计包](platforms/web/hark/research-2026-10-22/README.md) |
 | **Mirasim** | 简洁分组、深浅主题、抽屉与混合应用边界 | [研究参考](platforms/mobile/mirasim/README.md) |
 
-多邻国、小米、Kimi（Android）、Kimi Web、汽水音乐、Muse和Hark Android为 **Design Package v1**，Hark Web、Mirasim保留历史研究入口。各包的 `partial` 表示仍有原版未知参数或还原差异；使用范围和目标实现选择写在包内。Hark Android已深化原生静态结构，核心运行受Play地区/授权条件限制；新增的Web手机适配与目录封面均是明确D参考。Kimi Web的ready只适用于声明的代表UI；Muse的ready限定公开首页，未登录，保留长视频和跨设备的未测边界。原版全部业务不因此变为已测。汽水音乐的目录封面是独立 Web 参考，其检查结果不替代原版 Android 验证。
+多邻国、小米、Kimi（Android）、Kimi Web、汽水音乐、Muse、Hark Android和Hark Web为 **Design Package v1**。Hark Web当前追加包为partial并保留历史研究；Mirasim保留历史入口。各包的 `partial` 表示仍有原版未知参数或还原差异；使用范围和目标实现选择写在包内。Hark Android已深化原生静态结构，核心运行受Play地区/授权条件限制；新增的Web手机适配与目录封面均是明确D参考。Kimi Web的ready只适用于声明的代表UI；Muse的ready限定公开首页，未登录，保留长视频和跨设备的未测边界。原版全部业务不因此变为已测。汽水音乐的目录封面是独立 Web 参考，其检查结果不替代原版 Android 验证。
 
 ## 让 AI 开始实施
 
@@ -56,7 +56,7 @@
 ```text
 我的软件功能和基础界面已经完成。请读取
 https://github.com/ECdison6227/rea-ui-library
-把【多邻国 / 小米运动健康 / Kimi / Kimi Web / 汽水音乐 / Muse】的视觉、动画和通用交互
+把【多邻国 / 小米运动健康 / Kimi / Kimi Web / 汽水音乐 / Muse / Hark Web】的视觉、动画和通用交互
 应用到我的项目：【项目路径】。
 
 先读仓库 AGENTS.md 和选定来源的 design-package.json、DESIGN_SPEC.md、

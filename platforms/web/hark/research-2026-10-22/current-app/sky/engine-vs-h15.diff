@@ -1,0 +1,82 @@
+--- H15 retained wallpaper engine
++++ 2026-10-22 current wallpaper engine
+@@ -2072,6 +2072,20 @@
+ const FADE_DUR = 2.5;      // seconds for a full dissolve
+ const FADE_EPS = 0.02;     // change threshold that triggers a fade
+ let fadePrev = null, fadeP = 0, lastTarget = null;
++/* skies frozen part-way in, each at the opacity it had reached, drawn
++   between fadePrev and the incoming sky (see rebaseFade) */
++let fadeHeld = [];
++const FADE_HELD_MAX = 3;   // layers kept; a deeper stack folds its oldest into fadePrev
++
++/* A jump that lands mid-dissolve restarts from what is on screen: the
++   half-arrived sky is frozen as a layer at its current opacity, and the
++   new sky dissolves in over the whole composite from zero. */
++function rebaseFade(){
++  if (!fadePrev || !lastTarget) return;
++  fadeHeld.push({ f: lastTarget, a: smooth01(fadeP) });
++  if (fadeHeld.length > FADE_HELD_MAX) fadePrev = fadeHeld.shift().f;
++  fadeP = 0;
++}
+ 
+ const cloneFrame = f => ({
+   cols: f.cols.map(c => c.slice()), dens: f.dens,
+@@ -2172,8 +2186,9 @@
+   if (fadePrev){
+     fadeP = Math.min(1, fadeP + (dt || 0) / FADE_DUR);
+     drawParams(fadePrev, 1.0);             // old sky, still breathing
++    for (const h of fadeHeld) drawParams(h.f, h.a);
+     drawParams(target, smooth01(fadeP));   // new sky dissolving in over it
+-    if (fadeP >= 1) fadePrev = null;
++    if (fadeP >= 1){ fadePrev = null; fadeHeld = []; }
+   } else {
+     drawParams(target, 1.0);
+   }
+@@ -2667,14 +2682,22 @@
+     state.stagedCloud = !on;                      // entering custom stages the 42% default
+     tick();
+   },
+-  setHour(h){
++  setHour(h, fade){
+     clearScene();
+     state.hourOverride = ((h % 24) + 24) % 24;
+     /* the timeline scrubber tracks 1:1 (owner): drop any in-flight
+        dissolve and the fade baseline so dragging moves the sky
+        directly — every OTHER state change keeps its crossfade */
+-    fadePrev = null;
+-    lastTarget = null;
++    /* `fade` opts a one-off jump back in: a host holding the sky at an
++       hour for a theme choice (Dark at noon) dissolves into it like any
++       other change instead of cutting. */
++    if (!fade){
++      fadePrev = null;
++      fadeHeld = [];
++      lastTarget = null;
++    } else {
++      rebaseFade();
++    }
+     tick();
+   },
+   setDate(s){
+@@ -2742,6 +2765,12 @@
+ /* ============================================================
+    Once-a-second housekeeping: pill text + dot color
+    ============================================================ */
++/* fadePrev's color band i with the frozen layers composited over it */
++function fadeBase(i){
++  let c = fadePrev.cols[i];
++  for (const h of fadeHeld) c = lerp3(c, h.f.cols[i], h.a);
++  return c;
++}
+ function tick(){
+   const h = localHour();
+   const f = lastTarget || buildFrame();
+@@ -2749,7 +2778,7 @@
+   /* lutJS mirrors the GPU grade so the pill dot and the glass
+      light/dark switching see the same colors the screen shows */
+   const col = i => {
+-    const c = lutJS(fadePrev ? lerp3(fadePrev.cols[i], f.cols[i], mixP) : f.cols[i]);
++    const c = lutJS(fadePrev ? lerp3(fadeBase(i), f.cols[i], mixP) : f.cols[i]);
+     /* the FRAG's night floor (screen-lift, zenith→horizon) — the glass UI
+        must switch on the colors the screen actually shows */
+     const nf = lerp3(f.floorH, f.floorZ, i === 0 ? 1 : i === 3 ? 0 : (3 - i) / 3);

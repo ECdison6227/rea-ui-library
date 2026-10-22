@@ -1,0 +1,1 @@
+function Y(){return"undefined"==typeof window?"/api":`${window.location.protocol}//${window.location.host}/api`}

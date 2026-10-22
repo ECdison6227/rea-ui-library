@@ -1,0 +1,1 @@
+({size:t=16,className:n,...i})=>E.jsx("svg",{xmlns:"http://www.w3.org/2000/svg",width:t,height:t,fill:"none",className:n,viewBox:"0 0 16 16",...i,children:E.jsx("path",{fill:"currentColor",d:e})})

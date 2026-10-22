@@ -1,0 +1,146 @@
+{
+  "format": "rea-design-package",
+  "formatVersion": 1,
+  "id": "hark",
+  "name": "Hark Web",
+  "source": {
+    "platform": "web",
+    "runtime": "Current public Next.js/Turbopack; authenticated compiled browser App/CSS/WebGL; independent reference HTML/CSS/JS",
+    "version": "public dpl_43vpACitAoHemg5zATXXCP8hBYHa; current App main-BgE0mqJD.js; captured 2026-10-22 UTC",
+    "identity": "https://hark.com",
+    "capturedAt": null,
+    "captureInterval": {
+      "startedAt": "2026-10-22T12:24:40.071Z",
+      "completedAt": "2026-10-22T12:24:43.488Z"
+    },
+    "researchMethod": "Historical REA retained; current public REA/CDP plus authorized Chrome extension authenticated UI, original asset archive and local independent reference. Actual methods and boundaries per evidence entry.",
+    "researchEvidenceRefs": [
+      "ev_372b36210620b0b72e42ff99acdc1e91775e5f054040645c146c86985fd38885",
+      "ev_dd68162ecae1b69b5d1664ce8a85b764afdfa3911048d14b06533c224a261c68"
+    ],
+    "authentication": {
+      "requiredForCoreDesign": true,
+      "status": "verified-existing-user-session",
+      "lastVerifiedAt": "2026-10-22T15:04:08.734Z",
+      "evidenceRefs": [
+        "hark-20261022-a-authenticated-runtime"
+      ],
+      "conditions": "Normal existing Chrome Hark session reused through connected extension; chat, projects and settings accessible; no cookies/tokens exported."
+    },
+    "epochs": [
+      {
+        "id": "current-public",
+        "url": "https://hark.com/",
+        "version": "dpl_43vpACitAoHemg5zATXXCP8hBYHa",
+        "captureInterval": {
+          "startedAt": "2026-10-22T12:24:40.071Z",
+          "completedAt": "2026-10-22T12:24:43.488Z"
+        }
+      },
+      {
+        "id": "H15",
+        "url": "https://hark.com/chat",
+        "version": "historical2026-10-15",
+        "originalTimeGranularity": "each original file/capture kept;not all exact"
+      },
+      {
+        "id": "H13",
+        "url": "https://hark.com/chat and settings",
+        "version": "manual historical2026-10-13 Shanghai",
+        "startedAt": "2026-10-12T17:37:48.146Z",
+        "completedAt": "2026-10-12T17:41:16.170Z",
+        "binding": "unverified-current",
+        "artifactRoot": "external hark-clone references/raw;private originals not copied"
+      }
+    ]
+  },
+  "scope": {
+    "mode": "custom",
+    "goal": "继续原版Hark全部可访问UI的最深取证与字体/图标/媒体完整资产溯源，并交付可实施组件/布局/状态/关键动效规范；D仅参考/迁移选择，不作为本次原版研究完成",
+    "researchIntent": "deep-original-ui-and-complete-assets-with-visual-design-and-core-interactions",
+    "includedDesignFamilies": [
+      "authenticated workspace/navigation/composer/messages/rich cards/project/search/settings/dialogs/themes",
+      "current public home/content/legal/news/security/pricing/authentication/3D carousel",
+      "fonts/icons/shader/media/crop/variants/source runtime binding"
+    ],
+    "excludedBusiness": [
+      "真实扣费、外部OAuth授权/发送消息或反馈、原模型/全部后端算法不作为设计包默示功能验收；解释UI必要的行为另记"
+    ]
+  },
+  "readiness": {
+    "status": "partial",
+    "supportedUses": [
+      "Implement current 15/19 chat/composer, 424px summary preview and independent desktop/narrow reading layouts from current A and bound source B.",
+      "Directly reuse archived scope-specific fonts, named SVG glyphs, shaders/LUT and 92 public media locators; preserve actual response MIME/encoding.",
+      "Run the independent local notes reference with draft/search/save/cancel/retry/reading/theme checks; consult documented source differences."
+    ],
+    "coreGaps": [
+      "Reference now reuses original Bold700 and Serif20/26/500 and aligns the reading panel top; extra category/title offset, toolbar, narrow padding, dialog motion and background/Auto remain explicit differences, so exact A/D equivalence remains partial.",
+      "Current original UI representative states are observed; file/gallery/link-stack/reply/flow-error and complete focus/reduced-motion matrices are not all re-executed for this version.",
+      "Per-glyph actual App fallback attribution and all weather/uniform/performance branches remain unmeasured; font files and computed family bindings alone do not prove them."
+    ],
+    "optionalGaps": [
+      "No actual purchase, external account connection, feedback submission, security mutation, OS keyboard/touch, or full backend acceptance.",
+      "Static closure is complete for discovered literal allowed URLs, not computed URLs or global execution reachability."
+    ],
+    "originalResearchCompletion": "Representative deep study and declared-asset archive; residual current runtime coverage remains explicit, not a claim of every original business/state."
+  },
+  "entries": {
+    "readme": "README.md",
+    "spec": "DESIGN_SPEC.md",
+    "tokens": "tokens/tokens.json",
+    "components": "components/catalog.json",
+    "layouts": "patterns/layouts.json",
+    "interactions": "patterns/interactions.json",
+    "motion": "motion/catalog.json",
+    "assets": "research-2026-10-22/assets-manifest.json",
+    "evidence": "research-2026-10-22/evidence-index.json",
+    "reference": "research-2026-10-22/reference/README.md",
+    "comparison": "research-2026-10-22/comparison/README.md",
+    "adaptation": "ADAPTATION_GUIDE.md"
+  },
+  "validation": {
+    "reference": {
+      "status": "partial",
+      "evidenceRefs": [
+        "hark-20261022-a-authenticated-runtime",
+        "hark-20261022-d-reference-run"
+      ],
+      "description": "Independent reference 13 checks/8 reviewed captures passed; source/reference exact equivalence has documented differences."
+    },
+    "crossDomain": {
+      "status": "verified",
+      "evidenceRefs": [
+        "hark-20261022-d-transfer-run"
+      ],
+      "description": "Independent local notes workflow executed; this D result does not verify original Hark behavior."
+    },
+    "originalRuntime": {
+      "status": "partial",
+      "evidenceRefs": [
+        "hark-20261022-a-authenticated-runtime",
+        "hark-20261022-a-public-runtime"
+      ],
+      "description": "Current authorized App observed at desktop/narrow, theme pair, draft navigation, search empty and summary open timing; residual states remain unknown. Public foreground keyboard/reversal/narrow/reduced carousel, pricing and FAQ are separately observed and reviewed."
+    }
+  },
+  "distribution": {
+    "mode": "reviewed-public",
+    "reviewedAt": "2026-10-22T18:05:40.295527+00:00",
+    "reviewManifest": "publication-review.json",
+    "authorization": "Owner explicitly requested uploading this completed research to the Library and replacing the previous Hark Web entry.",
+    "omissions": [
+      "Account/raw private receipts, private screenshots, profiles, cookies and tokens are excluded.",
+      "Asset licenses remain their original terms; publication does not grant downstream redistribution rights.",
+      "Historical external-clone originals remain metadata-only when withheld."
+    ]
+  },
+  "taskDelivery": {
+    "status": "library-replacement-ready",
+    "userAcceptedPartial": false,
+    "entry": "README.md",
+    "meaning": "Session resumed through existing local context; prior authentication and declared-asset gaps closed. No global all-states completion claim.",
+    "userAuthorizedPublication": true
+  },
+  "updatedAt": "2026-10-22T17:41:54.682485+00:00"
+}

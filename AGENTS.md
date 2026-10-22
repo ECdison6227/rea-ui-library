@@ -8,7 +8,7 @@
 
 private/、catalog/private.local.json、.runtime/ 不得进入Git提交或Pages构建。本地服务只监听127.0.0.1；Pages只发布目录与已审缩略图。用户于2026-10-20因套餐限制明确要求“直接公开仓库”，授权将此库及已有历史公开并启用Pages；该指令取代先前保持私有的要求。新入库资料仍需审查，不把公开仓库当作提交私人原件/凭据的授权。不从浏览器启动来源应用、安装依赖、提交表单或调用原厂接口。
 
-新研究必须Design Package v1，并通过tools/consumer-contract.mjs的实施内容检查。固定design-package.json/DESIGN_SPEC.md及模块逻辑入口；核心组件必须有slots/events/states，交互有状态转移，核心动效有源参数或明确D替代。仅Hark/Mirasim以legacy-research保留旧格式；小米/Kimi/多邻国按标准包维护。原业务全测不作为设计门槛，原件与未知状态不改写。
+新研究必须Design Package v1，并通过tools/consumer-contract.mjs的实施内容检查。固定design-package.json/DESIGN_SPEC.md及模块逻辑入口；核心组件必须有slots/events/states，交互有状态转移，核心动效有源参数或明确D替代。Hark与Mirasim原历史入口保留；Hark Web的2026-10-22当前追加研究已按标准包维护，原历史不改写。小米/Kimi/多邻国按标准包维护。原业务全测不作为设计门槛，原件与未知状态不改写。
 
 用户通常先完成功能，再选App让AI拉取本库应用风格。消费AI应读取标准入口，沿用目标技术栈，实际实现视觉、动画和通用用户状态逻辑并运行对照；保留目标业务、数据和品牌。见docs/apply-a-style.md。此次用户已明确授权多邻国入库、升级小米/Kimi、修改入库规则/README并提交推送，随后授权公开总库并启用Pages自动发布。
 

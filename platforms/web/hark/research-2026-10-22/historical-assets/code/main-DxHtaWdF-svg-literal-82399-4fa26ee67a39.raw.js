@@ -1,0 +1,1 @@
+'<path d="M12,14 L14,14 L14,2 L12,2 L12,0 L16,0 L16,16 L12,16 Z" fill="currentColor"/> <path d="M4,14 L4,4 L0,4 L0,2 L6,2 L6,14 Z" fill="currentColor"/> <path d="M4,14 L4,2 L11,2 L11,4 L6,4 L6,14 Z" fill="currentColor"/>'

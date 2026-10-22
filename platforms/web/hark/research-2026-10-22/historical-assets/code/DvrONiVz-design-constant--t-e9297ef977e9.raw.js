@@ -1,0 +1,1 @@
+$t="'GT Standard Mono', ui-monospace, monospace"

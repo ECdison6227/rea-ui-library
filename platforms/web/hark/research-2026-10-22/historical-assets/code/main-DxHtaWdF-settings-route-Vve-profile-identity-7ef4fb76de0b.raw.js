@@ -1,0 +1,1 @@
+function Vve(){const e=C.c(2);{let t;return e[0]===Symbol.for("react.memo_cache_sentinel")?(t=E.jsx(we,{to:"/settings/profile",replace:!0}),e[0]=t):t=e[0],t}}

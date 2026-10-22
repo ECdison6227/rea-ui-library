@@ -1,0 +1,63 @@
+{
+  "classification": "D",
+  "recordedAt": "2026-10-22T16:57:14.956Z",
+  "sourceFile": "reference/serve.mjs",
+  "sha256": "2a3c9323b150720a0781c208068f8b6e3a69209e0c90e0466440c276481370d3",
+  "checks": [
+    {
+      "path": "/research-2026-10-22/reference/",
+      "method": "GET",
+      "expected": 200,
+      "actual": 200,
+      "passed": true
+    },
+    {
+      "path": "/research-2026-10-22/current-app/font-inventory.json",
+      "method": "GET",
+      "expected": 404,
+      "actual": 404,
+      "passed": true
+    },
+    {
+      "path": "/research-2026-10-22/reference/%2e%2e%2fcurrent-app/font-inventory.json",
+      "method": "GET",
+      "expected": 404,
+      "actual": 404,
+      "passed": true
+    },
+    {
+      "path": "/research-2026-10-22/reference/%2e%2e%5ccurrent-app/font-inventory.json",
+      "method": "GET",
+      "expected": 404,
+      "actual": 404,
+      "passed": true
+    },
+    {
+      "path": "/research-2026-10-22/reference/app.mjs",
+      "method": "POST",
+      "expected": 405,
+      "actual": 405,
+      "passed": true
+    },
+    {
+      "path": "/research-2026-10-22/current-app/fonts/GT-Standard-L-Standard-Bold.woff2",
+      "method": "GET",
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "sha256": "0fc289f07c7f9fe0a9bda757ea01f274dc291b643f8596f7262099046b4f4e85",
+      "bytes": 63628,
+      "contentType": "font/woff2",
+      "sameOriginalBytes": true
+    },
+    {
+      "path": "/research-2026-10-22/current-app/fonts/GT-Standard-L-Standard-Regular.woff2",
+      "method": "GET",
+      "expected": 404,
+      "actual": 404,
+      "passed": true
+    }
+  ],
+  "status": "passed",
+  "boundary": "Original five namespace/method cases preserved; only exact Bold font allowlist is added, with original-byte200 and non-allowlisted-font404 checks. Original server-path-check.json remains unchanged."
+}

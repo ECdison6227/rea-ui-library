@@ -1,0 +1,2951 @@
+{
+  "formatVersion": 1,
+  "classification": "D",
+  "identity": "Fieldnotes independent reference; no current Hark application executed",
+  "startedAt": "2026-10-22T16:56:24.126Z",
+  "method": "Isolated Playwright Chromium process; local loopback server only; sequential DOM measurement and unaltered viewport PNG",
+  "sourceOriginalExecuted": false,
+  "sourceSnapshotEpoch": "H15 baseline plus current App B font/CSS declarations; independent D runtime only",
+  "previousRun": "runs/initial/reference-run.json",
+  "runId": "current-typography-layout-update",
+  "targetCommit": "d7f718d10558a32cf378b1d30bc279538fa3bf12",
+  "targetState": "working tree, implementationFiles hashes define tested bytes",
+  "environment": {
+    "node": "v26.10.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "browser": "156.0.8078.4"
+  },
+  "checks": [
+    {
+      "name": "Desktop composer geometry and source path",
+      "result": "passed",
+      "width": 512,
+      "height": 48,
+      "bottom": 32,
+      "font": "15/19",
+      "glassBlur": 50,
+      "ordinaryBubbleBlur": 0,
+      "summaryPreviewTitle": "Hark Serif20/26/500"
+    },
+    {
+      "name": "Multiline composer grows 48 → 86 and caps at 219 with internal scrolling",
+      "result": "passed"
+    },
+    {
+      "name": "Synthetic IME composition suppresses submit; OS IME/soft keyboard not tested",
+      "result": "passed"
+    },
+    {
+      "name": "Navigation and browser Back retain draft and original notes DOM",
+      "result": "passed"
+    },
+    {
+      "name": "Summary independent dialog, top140, 40/52/500 title, original L700 h2, 18/25.2 body, native modal focus containment, background scroll lock and Escape focus return",
+      "result": "passed"
+    },
+    {
+      "name": "Light/dark materials; System follows media changes; Auto explicitly uses D Light fallback",
+      "result": "passed"
+    },
+    {
+      "name": "Pending blocks duplicate submissions; local failure retains draft; Retry commits exactly once",
+      "result": "passed"
+    },
+    {
+      "name": "Search includes newly saved local messages, returns to match, and shows a meaningful empty state",
+      "result": "passed"
+    },
+    {
+      "name": "Cancel invalidates pending save and keeps draft without late insertion",
+      "result": "passed"
+    },
+    {
+      "name": "Code overflow disclosure and reply context; Escape clears reply while retaining text",
+      "result": "passed"
+    },
+    {
+      "name": "Narrow viewport: 358px composer, x16 insets, 15/19 body; full-width390px reader top62/bottom0; no OS keyboard/touch claim",
+      "result": "passed"
+    },
+    {
+      "name": "Reduced motion sets theme transitions and dialog animation to zero",
+      "result": "passed"
+    },
+    {
+      "name": "No page/console/HTTP errors and no external app requests",
+      "result": "passed"
+    }
+  ],
+  "captures": [
+    {
+      "id": "desktop-dark",
+      "path": "captures/desktop-dark.png",
+      "classification": "D",
+      "description": "Default dark notes, composer and summary/code rich cards; fixed D backdrop",
+      "startedAt": "2026-10-22T16:56:29.502Z",
+      "completedAt": "2026-10-22T16:56:30.540Z",
+      "sha256": "8c30232297ead30f37b61c23d7e72eedf3f9a84bf54f7708cf7e9d1b917c394b",
+      "bytes": 87412,
+      "measurement": {
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        },
+        "theme": "dark",
+        "themeMode": "dark",
+        "route": "#notes",
+        "reducedMotion": false,
+        "scroll": {
+          "notes": 0,
+          "reader": 0
+        },
+        "draft": "",
+        "composerState": "empty",
+        "readerOpen": false,
+        "activeElement": {
+          "id": "",
+          "tag": "BODY"
+        },
+        "fontFaces": [
+          {
+            "family": "GT Standard L",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "500",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "600",
+            "status": "unloaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "700",
+            "status": "unloaded"
+          },
+          {
+            "family": "Hark Serif",
+            "weight": "300",
+            "status": "loaded"
+          },
+          {
+            "family": "Hark Serif",
+            "weight": "500",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard Mono",
+            "weight": "400",
+            "status": "loaded"
+          }
+        ],
+        "elements": {
+          "#composer": {
+            "rect": {
+              "x": 464,
+              "y": 820,
+              "width": 512,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#draft": {
+            "rect": {
+              "x": 464,
+              "y": 820,
+              "width": 466,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "14.5px 8px 14.5px 16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "hidden"
+          },
+          "#composer>.surface-fill": {
+            "rect": {
+              "x": 464,
+              "y": 820,
+              "width": 512,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.62)",
+            "padding": "0px",
+            "backdropFilter": "blur(50px)",
+            "clipPath": "path(\"M 36.688 0 L 475.312 0 C 485.876 0 491.158 0 496.844 1.798 C 503.052 4.057 507.943 8.948 510.202 15.156 C 512 19.68 512 23.04 512 24 L 512 24 C 512 24.96 512 28.32 510.202 32.844 C 507.943 39.052 503.052 43.943 496.844 46.202 C 491.158 48 485.876 48 475.312 48 L 36.688 48 C 26.124 48 20.842 48 15.156 46.202 C 8.948 43.943 4.057 39.052 1.798 32.844 C 0 28.32 0 24.96 0 24 L 0 24 C 0 23.04 0 19.68 1.798 15.156 C 4.057 8.948 8.948 4.057 15.156 1.798 C 20.842 0 26.124 0 36.688 0 Z\")",
+            "overflowY": "visible"
+          },
+          ".bubble.assistant": {
+            "rect": {
+              "x": 464,
+              "y": 273.59375,
+              "width": 424,
+              "height": 67
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "14.5px 16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".bubble.assistant>.surface-fill": {
+            "rect": {
+              "x": 464,
+              "y": 273.59375,
+              "width": 424,
+              "height": 67
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.7)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "path(\"M 33.631 0 L 390.369 0 C 400.053 0 404.895 0 410.107 1.648 C 415.798 3.719 420.281 8.202 422.352 13.893 C 424 19.093 424 23.915 424 33.5 L 424 33.5 C 424 43.085 424 47.907 422.352 53.107 C 420.281 58.798 415.798 63.281 410.107 65.352 C 404.895 67 400.053 67 390.369 67 L 33.631 67 C 23.947 67 19.105 67 13.893 65.352 C 8.202 63.281 3.719 58.798 1.648 53.107 C 0 47.907 0 43.085 0 33.5 L 0 33.5 C 0 23.915 0 19.093 1.648 13.893 C 3.719 8.202 8.202 3.719 13.893 1.648 C 19.105 0 23.947 0 33.631 0 Z\")",
+            "overflowY": "visible"
+          },
+          ".summary-card": {
+            "rect": {
+              "x": 464,
+              "y": 356.59375,
+              "width": 424,
+              "height": 180.5
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "hidden"
+          },
+          ".card-heading strong": {
+            "rect": {
+              "x": 528,
+              "y": 372.59375,
+              "width": 264.75,
+              "height": 26
+            },
+            "fontFamily": "\"Hark Serif\", Georgia, serif",
+            "fontSize": "20px",
+            "fontWeight": "500",
+            "lineHeight": "26px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#reader-title": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"Hark Serif\", Georgia, serif",
+            "fontSize": "40px",
+            "fontWeight": "500",
+            "lineHeight": "52px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "48px 32px 32px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "auto"
+          },
+          ".reader-sheet h2": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "22.4px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet p:not(.eyebrow)": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "25.2px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet strong": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "600",
+            "lineHeight": "25.2px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#code-body": {
+            "rect": {
+              "x": 464,
+              "y": 623.09375,
+              "width": 512,
+              "height": 100
+            },
+            "fontFamily": "\"GT Standard Mono\", monospace",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "20px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "auto"
+          },
+          "nav": {
+            "rect": {
+              "x": 597.2890625,
+              "y": 20,
+              "width": 245.421875,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.62)",
+            "padding": "4px",
+            "backdropFilter": "blur(50px)",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".collection-content": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          }
+        },
+        "horizontalOverflow": false
+      },
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:01:53.547470+00:00",
+        "method": "Actual view_image inspection of this unchanged viewport PNG",
+        "imageSha256": "8c30232297ead30f37b61c23d7e72eedf3f9a84bf54f7708cf7e9d1b917c394b",
+        "observations": [
+          "Preview heading visibly uses the original serif role; single-line desktop title, readable card/body and fixed slate D backdrop.",
+          "Composer remains48px high atbottom32; no clipping at the preview title."
+        ]
+      }
+    },
+    {
+      "id": "desktop-projects",
+      "path": "captures/desktop-projects.png",
+      "classification": "D",
+      "description": "D project navigation, 420px collection band, independent target copy",
+      "startedAt": "2026-10-22T16:56:32.329Z",
+      "completedAt": "2026-10-22T16:56:32.383Z",
+      "sha256": "11bd7caec743168dbb9b5f541bc9339a1bb53c68557432fb4ff3ad3daaaeea4b",
+      "bytes": 39979,
+      "measurement": {
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        },
+        "theme": "dark",
+        "themeMode": "dark",
+        "route": "#projects",
+        "reducedMotion": false,
+        "scroll": {
+          "notes": 0,
+          "reader": 0
+        },
+        "draft": "Keep this draft while browsing",
+        "composerState": "draft",
+        "readerOpen": false,
+        "activeElement": {
+          "id": "",
+          "tag": "BUTTON"
+        },
+        "fontFaces": [
+          {
+            "family": "GT Standard L",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "500",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "600",
+            "status": "unloaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "700",
+            "status": "unloaded"
+          },
+          {
+            "family": "Hark Serif",
+            "weight": "300",
+            "status": "loaded"
+          },
+          {
+            "family": "Hark Serif",
+            "weight": "500",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard Mono",
+            "weight": "400",
+            "status": "loaded"
+          }
+        ],
+        "elements": {
+          "#composer": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#draft": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "14.5px 8px 14.5px 16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "hidden"
+          },
+          "#composer>.surface-fill": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.62)",
+            "padding": "0px",
+            "backdropFilter": "blur(50px)",
+            "clipPath": "path(\"M 36.688 0 L 475.312 0 C 485.876 0 491.158 0 496.844 1.798 C 503.052 4.057 507.943 8.948 510.202 15.156 C 512 19.68 512 23.04 512 24 L 512 24 C 512 24.96 512 28.32 510.202 32.844 C 507.943 39.052 503.052 43.943 496.844 46.202 C 491.158 48 485.876 48 475.312 48 L 36.688 48 C 26.124 48 20.842 48 15.156 46.202 C 8.948 43.943 4.057 39.052 1.798 32.844 C 0 28.32 0 24.96 0 24 L 0 24 C 0 23.04 0 19.68 1.798 15.156 C 4.057 8.948 8.948 4.057 15.156 1.798 C 20.842 0 26.124 0 36.688 0 Z\")",
+            "overflowY": "visible"
+          },
+          ".bubble.assistant": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "14.5px 16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".bubble.assistant>.surface-fill": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.7)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "path(\"M 33.631 0 L 390.369 0 C 400.053 0 404.895 0 410.107 1.648 C 415.798 3.719 420.281 8.202 422.352 13.893 C 424 19.093 424 23.915 424 33.5 L 424 33.5 C 424 43.085 424 47.907 422.352 53.107 C 420.281 58.798 415.798 63.281 410.107 65.352 C 404.895 67 400.053 67 390.369 67 L 33.631 67 C 23.947 67 19.105 67 13.893 65.352 C 8.202 63.281 3.719 58.798 1.648 53.107 C 0 47.907 0 43.085 0 33.5 L 0 33.5 C 0 23.915 0 19.093 1.648 13.893 C 3.719 8.202 8.202 3.719 13.893 1.648 C 19.105 0 23.947 0 33.631 0 Z\")",
+            "overflowY": "visible"
+          },
+          ".summary-card": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "hidden"
+          },
+          ".card-heading strong": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"Hark Serif\", Georgia, serif",
+            "fontSize": "20px",
+            "fontWeight": "500",
+            "lineHeight": "26px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#reader-title": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"Hark Serif\", Georgia, serif",
+            "fontSize": "40px",
+            "fontWeight": "500",
+            "lineHeight": "52px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "48px 32px 32px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "auto"
+          },
+          ".reader-sheet h2": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "22.4px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet p:not(.eyebrow)": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "25.2px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet strong": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "600",
+            "lineHeight": "25.2px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#code-body": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard Mono\", monospace",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "20px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "auto"
+          },
+          "nav": {
+            "rect": {
+              "x": 597.2890625,
+              "y": 20,
+              "width": 245.421875,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.62)",
+            "padding": "4px",
+            "backdropFilter": "blur(50px)",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".collection-content": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          }
+        },
+        "horizontalOverflow": false
+      },
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:01:53.547470+00:00",
+        "method": "Actual view_image inspection of this unchanged viewport PNG",
+        "imageSha256": "11bd7caec743168dbb9b5f541bc9339a1bb53c68557432fb4ff3ad3daaaeea4b",
+        "observations": [
+          "D project collection remains centered with original serif heading; navigation selected state and neutral copy remain readable.",
+          "This is the independent420px collection band, not the original Home panel."
+        ]
+      }
+    },
+    {
+      "id": "desktop-reader-dark",
+      "path": "captures/desktop-reader-dark.png",
+      "classification": "D",
+      "description": "Independent summary dialog; current source top140 and original L700 h2 adopted as D",
+      "startedAt": "2026-10-22T16:56:33.032Z",
+      "completedAt": "2026-10-22T16:56:33.110Z",
+      "sha256": "027494a462d8596675c0a07af2d6188edefc29ad09d436ac85013a088048ca83",
+      "bytes": 146430,
+      "measurement": {
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        },
+        "theme": "dark",
+        "themeMode": "dark",
+        "route": "#notes",
+        "reducedMotion": false,
+        "scroll": {
+          "notes": 0,
+          "reader": 0
+        },
+        "draft": "Keep this draft while browsing",
+        "composerState": "draft",
+        "readerOpen": true,
+        "activeElement": {
+          "id": "reader-close",
+          "tag": "BUTTON"
+        },
+        "fontFaces": [
+          {
+            "family": "GT Standard L",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "500",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "600",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "700",
+            "status": "loaded"
+          },
+          {
+            "family": "Hark Serif",
+            "weight": "300",
+            "status": "loaded"
+          },
+          {
+            "family": "Hark Serif",
+            "weight": "500",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard Mono",
+            "weight": "400",
+            "status": "loaded"
+          }
+        ],
+        "elements": {
+          "#composer": {
+            "rect": {
+              "x": 464,
+              "y": 820,
+              "width": 512,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#draft": {
+            "rect": {
+              "x": 464,
+              "y": 820,
+              "width": 466,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "14.5px 8px 14.5px 16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "hidden"
+          },
+          "#composer>.surface-fill": {
+            "rect": {
+              "x": 464,
+              "y": 820,
+              "width": 512,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.62)",
+            "padding": "0px",
+            "backdropFilter": "blur(50px)",
+            "clipPath": "path(\"M 36.688 0 L 475.312 0 C 485.876 0 491.158 0 496.844 1.798 C 503.052 4.057 507.943 8.948 510.202 15.156 C 512 19.68 512 23.04 512 24 L 512 24 C 512 24.96 512 28.32 510.202 32.844 C 507.943 39.052 503.052 43.943 496.844 46.202 C 491.158 48 485.876 48 475.312 48 L 36.688 48 C 26.124 48 20.842 48 15.156 46.202 C 8.948 43.943 4.057 39.052 1.798 32.844 C 0 28.32 0 24.96 0 24 L 0 24 C 0 23.04 0 19.68 1.798 15.156 C 4.057 8.948 8.948 4.057 15.156 1.798 C 20.842 0 26.124 0 36.688 0 Z\")",
+            "overflowY": "visible"
+          },
+          ".bubble.assistant": {
+            "rect": {
+              "x": 464,
+              "y": 273.59375,
+              "width": 424,
+              "height": 67
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "14.5px 16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".bubble.assistant>.surface-fill": {
+            "rect": {
+              "x": 464,
+              "y": 273.59375,
+              "width": 424,
+              "height": 67
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.7)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "path(\"M 33.631 0 L 390.369 0 C 400.053 0 404.895 0 410.107 1.648 C 415.798 3.719 420.281 8.202 422.352 13.893 C 424 19.093 424 23.915 424 33.5 L 424 33.5 C 424 43.085 424 47.907 422.352 53.107 C 420.281 58.798 415.798 63.281 410.107 65.352 C 404.895 67 400.053 67 390.369 67 L 33.631 67 C 23.947 67 19.105 67 13.893 65.352 C 8.202 63.281 3.719 58.798 1.648 53.107 C 0 47.907 0 43.085 0 33.5 L 0 33.5 C 0 23.915 0 19.093 1.648 13.893 C 3.719 8.202 8.202 3.719 13.893 1.648 C 19.105 0 23.947 0 33.631 0 Z\")",
+            "overflowY": "visible"
+          },
+          ".summary-card": {
+            "rect": {
+              "x": 464,
+              "y": 356.59375,
+              "width": 424,
+              "height": 180.5
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "hidden"
+          },
+          ".card-heading strong": {
+            "rect": {
+              "x": 528,
+              "y": 372.59375,
+              "width": 264.75,
+              "height": 26
+            },
+            "fontFamily": "\"Hark Serif\", Georgia, serif",
+            "fontSize": "20px",
+            "fontWeight": "500",
+            "lineHeight": "26px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#reader-title": {
+            "rect": {
+              "x": 392,
+              "y": 216,
+              "width": 656,
+              "height": 52
+            },
+            "fontFamily": "\"Hark Serif\", Georgia, serif",
+            "fontSize": "40px",
+            "fontWeight": "500",
+            "lineHeight": "52px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet": {
+            "rect": {
+              "x": 360,
+              "y": 140,
+              "width": 720,
+              "height": 736
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "48px 32px 32px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "auto"
+          },
+          ".reader-sheet h2": {
+            "rect": {
+              "x": 392,
+              "y": 300,
+              "width": 656,
+              "height": 22.40625
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "22.4px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet p:not(.eyebrow)": {
+            "rect": {
+              "x": 392,
+              "y": 330.40625,
+              "width": 656,
+              "height": 75.609375
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "25.2px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet strong": {
+            "rect": {
+              "x": 574.15625,
+              "y": 433.203125,
+              "width": 218.75,
+              "height": 20
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "600",
+            "lineHeight": "25.2px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#code-body": {
+            "rect": {
+              "x": 464,
+              "y": 623.09375,
+              "width": 512,
+              "height": 100
+            },
+            "fontFamily": "\"GT Standard Mono\", monospace",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "20px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "auto"
+          },
+          "nav": {
+            "rect": {
+              "x": 597.2890625,
+              "y": 20,
+              "width": 245.421875,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.62)",
+            "padding": "4px",
+            "backdropFilter": "blur(50px)",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".collection-content": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          }
+        },
+        "horizontalOverflow": false
+      },
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:01:53.547470+00:00",
+        "method": "Actual view_image inspection of this unchanged viewport PNG",
+        "imageSha256": "027494a462d8596675c0a07af2d6188edefc29ad09d436ac85013a088048ca83",
+        "observations": [
+          "Sheet begins aty140 and spans720px; original L700 secondary headings are visibly distinct.",
+          "Extra D COMMUNITY NOTE eyebrow remains, so the main title is y216 rather than the historical y188; long reading content continues in its scroll port."
+        ]
+      }
+    },
+    {
+      "id": "desktop-light",
+      "path": "captures/desktop-light.png",
+      "classification": "D",
+      "description": "Light material cascade with fixed D light backdrop",
+      "startedAt": "2026-10-22T16:56:35.943Z",
+      "completedAt": "2026-10-22T16:56:36.002Z",
+      "sha256": "d60c7c2912fbc7da9153379ae9d318710950a44bf26093ae8ad58c0985bd2476",
+      "bytes": 88483,
+      "measurement": {
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        },
+        "theme": "light",
+        "themeMode": "light",
+        "route": "#notes",
+        "reducedMotion": false,
+        "scroll": {
+          "notes": 0,
+          "reader": 0
+        },
+        "draft": "Keep this draft while browsing",
+        "composerState": "draft",
+        "readerOpen": false,
+        "activeElement": {
+          "id": "settings-open",
+          "tag": "BUTTON"
+        },
+        "fontFaces": [
+          {
+            "family": "GT Standard L",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "500",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "600",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "700",
+            "status": "loaded"
+          },
+          {
+            "family": "Hark Serif",
+            "weight": "300",
+            "status": "loaded"
+          },
+          {
+            "family": "Hark Serif",
+            "weight": "500",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard Mono",
+            "weight": "400",
+            "status": "loaded"
+          }
+        ],
+        "elements": {
+          "#composer": {
+            "rect": {
+              "x": 464,
+              "y": 820,
+              "width": 512,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(29, 29, 31)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#draft": {
+            "rect": {
+              "x": 464,
+              "y": 820,
+              "width": 466,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(29, 29, 31)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "14.5px 8px 14.5px 16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "hidden"
+          },
+          "#composer>.surface-fill": {
+            "rect": {
+              "x": 464,
+              "y": 820,
+              "width": 512,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(29, 29, 31)",
+            "background": "rgba(255, 255, 255, 0.55)",
+            "padding": "0px",
+            "backdropFilter": "blur(50px)",
+            "clipPath": "path(\"M 36.688 0 L 475.312 0 C 485.876 0 491.158 0 496.844 1.798 C 503.052 4.057 507.943 8.948 510.202 15.156 C 512 19.68 512 23.04 512 24 L 512 24 C 512 24.96 512 28.32 510.202 32.844 C 507.943 39.052 503.052 43.943 496.844 46.202 C 491.158 48 485.876 48 475.312 48 L 36.688 48 C 26.124 48 20.842 48 15.156 46.202 C 8.948 43.943 4.057 39.052 1.798 32.844 C 0 28.32 0 24.96 0 24 L 0 24 C 0 23.04 0 19.68 1.798 15.156 C 4.057 8.948 8.948 4.057 15.156 1.798 C 20.842 0 26.124 0 36.688 0 Z\")",
+            "overflowY": "visible"
+          },
+          ".bubble.assistant": {
+            "rect": {
+              "x": 464,
+              "y": 273.59375,
+              "width": 424,
+              "height": 67
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(29, 29, 31)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "14.5px 16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".bubble.assistant>.surface-fill": {
+            "rect": {
+              "x": 464,
+              "y": 273.59375,
+              "width": 424,
+              "height": 67
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(29, 29, 31)",
+            "background": "rgba(255, 255, 255, 0.98)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "path(\"M 33.631 0 L 390.369 0 C 400.053 0 404.895 0 410.107 1.648 C 415.798 3.719 420.281 8.202 422.352 13.893 C 424 19.093 424 23.915 424 33.5 L 424 33.5 C 424 43.085 424 47.907 422.352 53.107 C 420.281 58.798 415.798 63.281 410.107 65.352 C 404.895 67 400.053 67 390.369 67 L 33.631 67 C 23.947 67 19.105 67 13.893 65.352 C 8.202 63.281 3.719 58.798 1.648 53.107 C 0 47.907 0 43.085 0 33.5 L 0 33.5 C 0 23.915 0 19.093 1.648 13.893 C 3.719 8.202 8.202 3.719 13.893 1.648 C 19.105 0 23.947 0 33.631 0 Z\")",
+            "overflowY": "visible"
+          },
+          ".summary-card": {
+            "rect": {
+              "x": 464,
+              "y": 356.59375,
+              "width": 424,
+              "height": 180.5
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(29, 29, 31)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "hidden"
+          },
+          ".card-heading strong": {
+            "rect": {
+              "x": 528,
+              "y": 372.59375,
+              "width": 264.75,
+              "height": 26
+            },
+            "fontFamily": "\"Hark Serif\", Georgia, serif",
+            "fontSize": "20px",
+            "fontWeight": "500",
+            "lineHeight": "26px",
+            "color": "rgb(29, 29, 31)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#reader-title": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"Hark Serif\", Georgia, serif",
+            "fontSize": "40px",
+            "fontWeight": "500",
+            "lineHeight": "52px",
+            "color": "rgb(29, 29, 31)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(29, 29, 31)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "48px 32px 32px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "auto"
+          },
+          ".reader-sheet h2": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "22.4px",
+            "color": "rgb(29, 29, 31)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet p:not(.eyebrow)": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "25.2px",
+            "color": "rgb(29, 29, 31)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet strong": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "600",
+            "lineHeight": "25.2px",
+            "color": "rgb(29, 29, 31)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#code-body": {
+            "rect": {
+              "x": 464,
+              "y": 623.09375,
+              "width": 512,
+              "height": 100
+            },
+            "fontFamily": "\"GT Standard Mono\", monospace",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "20px",
+            "color": "rgb(29, 29, 31)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "auto"
+          },
+          "nav": {
+            "rect": {
+              "x": 597.2890625,
+              "y": 20,
+              "width": 245.421875,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(29, 29, 31)",
+            "background": "rgba(255, 255, 255, 0.667)",
+            "padding": "4px",
+            "backdropFilter": "blur(50px)",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".collection-content": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(29, 29, 31)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          }
+        },
+        "horizontalOverflow": false
+      },
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:01:53.547470+00:00",
+        "method": "Actual view_image inspection of this unchanged viewport PNG",
+        "imageSha256": "d60c7c2912fbc7da9153379ae9d318710950a44bf26093ae8ad58c0985bd2476",
+        "observations": [
+          "Serif preview title and light surfaces remain readable after theme change; retained draft is visible.",
+          "Background remains the explicit fixed light D color."
+        ]
+      }
+    },
+    {
+      "id": "desktop-error",
+      "path": "captures/desktop-error.png",
+      "classification": "D",
+      "description": "D failed local save preserves draft and offers retry",
+      "startedAt": "2026-10-22T16:56:38.380Z",
+      "completedAt": "2026-10-22T16:56:38.430Z",
+      "sha256": "4e2cd05a0fc9ad3f9cf6d6746beaecfe5bbdb57831018018b7557752cf58c47f",
+      "bytes": 93464,
+      "measurement": {
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        },
+        "theme": "dark",
+        "themeMode": "dark",
+        "route": "#notes",
+        "reducedMotion": false,
+        "scroll": {
+          "notes": 0,
+          "reader": 0
+        },
+        "draft": "Retry preserves this local observation",
+        "composerState": "error",
+        "readerOpen": false,
+        "activeElement": {
+          "id": "draft",
+          "tag": "TEXTAREA"
+        },
+        "fontFaces": [
+          {
+            "family": "GT Standard L",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "500",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "600",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "700",
+            "status": "loaded"
+          },
+          {
+            "family": "Hark Serif",
+            "weight": "300",
+            "status": "loaded"
+          },
+          {
+            "family": "Hark Serif",
+            "weight": "500",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard Mono",
+            "weight": "400",
+            "status": "loaded"
+          }
+        ],
+        "elements": {
+          "#composer": {
+            "rect": {
+              "x": 464,
+              "y": 820,
+              "width": 512,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#draft": {
+            "rect": {
+              "x": 464,
+              "y": 820,
+              "width": 466,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "14.5px 8px 14.5px 16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "hidden"
+          },
+          "#composer>.surface-fill": {
+            "rect": {
+              "x": 464,
+              "y": 820,
+              "width": 512,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.62)",
+            "padding": "0px",
+            "backdropFilter": "blur(50px)",
+            "clipPath": "path(\"M 36.688 0 L 475.312 0 C 485.876 0 491.158 0 496.844 1.798 C 503.052 4.057 507.943 8.948 510.202 15.156 C 512 19.68 512 23.04 512 24 L 512 24 C 512 24.96 512 28.32 510.202 32.844 C 507.943 39.052 503.052 43.943 496.844 46.202 C 491.158 48 485.876 48 475.312 48 L 36.688 48 C 26.124 48 20.842 48 15.156 46.202 C 8.948 43.943 4.057 39.052 1.798 32.844 C 0 28.32 0 24.96 0 24 L 0 24 C 0 23.04 0 19.68 1.798 15.156 C 4.057 8.948 8.948 4.057 15.156 1.798 C 20.842 0 26.124 0 36.688 0 Z\")",
+            "overflowY": "visible"
+          },
+          ".bubble.assistant": {
+            "rect": {
+              "x": 464,
+              "y": 273.59375,
+              "width": 424,
+              "height": 67
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "14.5px 16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".bubble.assistant>.surface-fill": {
+            "rect": {
+              "x": 464,
+              "y": 273.59375,
+              "width": 424,
+              "height": 67
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.7)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "path(\"M 33.631 0 L 390.369 0 C 400.053 0 404.895 0 410.107 1.648 C 415.798 3.719 420.281 8.202 422.352 13.893 C 424 19.093 424 23.915 424 33.5 L 424 33.5 C 424 43.085 424 47.907 422.352 53.107 C 420.281 58.798 415.798 63.281 410.107 65.352 C 404.895 67 400.053 67 390.369 67 L 33.631 67 C 23.947 67 19.105 67 13.893 65.352 C 8.202 63.281 3.719 58.798 1.648 53.107 C 0 47.907 0 43.085 0 33.5 L 0 33.5 C 0 23.915 0 19.093 1.648 13.893 C 3.719 8.202 8.202 3.719 13.893 1.648 C 19.105 0 23.947 0 33.631 0 Z\")",
+            "overflowY": "visible"
+          },
+          ".summary-card": {
+            "rect": {
+              "x": 464,
+              "y": 356.59375,
+              "width": 424,
+              "height": 180.5
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "hidden"
+          },
+          ".card-heading strong": {
+            "rect": {
+              "x": 528,
+              "y": 372.59375,
+              "width": 264.75,
+              "height": 26
+            },
+            "fontFamily": "\"Hark Serif\", Georgia, serif",
+            "fontSize": "20px",
+            "fontWeight": "500",
+            "lineHeight": "26px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#reader-title": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"Hark Serif\", Georgia, serif",
+            "fontSize": "40px",
+            "fontWeight": "500",
+            "lineHeight": "52px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "48px 32px 32px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "auto"
+          },
+          ".reader-sheet h2": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "22.4px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet p:not(.eyebrow)": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "25.2px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet strong": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "600",
+            "lineHeight": "25.2px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#code-body": {
+            "rect": {
+              "x": 464,
+              "y": 623.09375,
+              "width": 512,
+              "height": 100
+            },
+            "fontFamily": "\"GT Standard Mono\", monospace",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "20px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "auto"
+          },
+          "nav": {
+            "rect": {
+              "x": 597.2890625,
+              "y": 20,
+              "width": 245.421875,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.62)",
+            "padding": "4px",
+            "backdropFilter": "blur(50px)",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".collection-content": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          }
+        },
+        "horizontalOverflow": false
+      },
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:01:53.547470+00:00",
+        "method": "Actual view_image inspection of this unchanged viewport PNG",
+        "imageSha256": "4e2cd05a0fc9ad3f9cf6d6746beaecfe5bbdb57831018018b7557752cf58c47f",
+        "observations": [
+          "Error message, Retry action and retained focused draft are all visible; foreground card text remains readable.",
+          "This is a local simulated failure, not an original Hark network outcome."
+        ]
+      }
+    },
+    {
+      "id": "desktop-code-expanded",
+      "path": "captures/desktop-code-expanded.png",
+      "classification": "D",
+      "description": "Expanded local code card, original Mono400; D independent reply context and disclosure",
+      "startedAt": "2026-10-22T16:56:41.017Z",
+      "completedAt": "2026-10-22T16:56:41.095Z",
+      "sha256": "c75e4e7696df5a0d3267925fd8a698b0cc3d8f05443605e3053a67aa58ccb3db",
+      "bytes": 106804,
+      "measurement": {
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        },
+        "theme": "dark",
+        "themeMode": "dark",
+        "route": "#notes",
+        "reducedMotion": false,
+        "scroll": {
+          "notes": 103,
+          "reader": 0
+        },
+        "draft": "Cancel keeps this text",
+        "composerState": "draft",
+        "readerOpen": false,
+        "activeElement": {
+          "id": "code-toggle",
+          "tag": "BUTTON"
+        },
+        "fontFaces": [
+          {
+            "family": "GT Standard L",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "500",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "600",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "700",
+            "status": "loaded"
+          },
+          {
+            "family": "Hark Serif",
+            "weight": "300",
+            "status": "loaded"
+          },
+          {
+            "family": "Hark Serif",
+            "weight": "500",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard Mono",
+            "weight": "400",
+            "status": "loaded"
+          }
+        ],
+        "elements": {
+          "#composer": {
+            "rect": {
+              "x": 464,
+              "y": 820,
+              "width": 512,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#draft": {
+            "rect": {
+              "x": 464,
+              "y": 820,
+              "width": 466,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "14.5px 8px 14.5px 16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "hidden"
+          },
+          "#composer>.surface-fill": {
+            "rect": {
+              "x": 464,
+              "y": 820,
+              "width": 512,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.62)",
+            "padding": "0px",
+            "backdropFilter": "blur(50px)",
+            "clipPath": "path(\"M 36.688 0 L 475.312 0 C 485.876 0 491.158 0 496.844 1.798 C 503.052 4.057 507.943 8.948 510.202 15.156 C 512 19.68 512 23.04 512 24 L 512 24 C 512 24.96 512 28.32 510.202 32.844 C 507.943 39.052 503.052 43.943 496.844 46.202 C 491.158 48 485.876 48 475.312 48 L 36.688 48 C 26.124 48 20.842 48 15.156 46.202 C 8.948 43.943 4.057 39.052 1.798 32.844 C 0 28.32 0 24.96 0 24 L 0 24 C 0 23.04 0 19.68 1.798 15.156 C 4.057 8.948 8.948 4.057 15.156 1.798 C 20.842 0 26.124 0 36.688 0 Z\")",
+            "overflowY": "visible"
+          },
+          ".bubble.assistant": {
+            "rect": {
+              "x": 464,
+              "y": 170.59375,
+              "width": 424,
+              "height": 67
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "14.5px 16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".bubble.assistant>.surface-fill": {
+            "rect": {
+              "x": 464,
+              "y": 170.59375,
+              "width": 424,
+              "height": 67
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.7)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "path(\"M 33.631 0 L 390.369 0 C 400.053 0 404.895 0 410.107 1.648 C 415.798 3.719 420.281 8.202 422.352 13.893 C 424 19.093 424 23.915 424 33.5 L 424 33.5 C 424 43.085 424 47.907 422.352 53.107 C 420.281 58.798 415.798 63.281 410.107 65.352 C 404.895 67 400.053 67 390.369 67 L 33.631 67 C 23.947 67 19.105 67 13.893 65.352 C 8.202 63.281 3.719 58.798 1.648 53.107 C 0 47.907 0 43.085 0 33.5 L 0 33.5 C 0 23.915 0 19.093 1.648 13.893 C 3.719 8.202 8.202 3.719 13.893 1.648 C 19.105 0 23.947 0 33.631 0 Z\")",
+            "overflowY": "visible"
+          },
+          ".summary-card": {
+            "rect": {
+              "x": 464,
+              "y": 253.59375,
+              "width": 424,
+              "height": 180.5
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "hidden"
+          },
+          ".card-heading strong": {
+            "rect": {
+              "x": 528,
+              "y": 269.59375,
+              "width": 264.75,
+              "height": 26
+            },
+            "fontFamily": "\"Hark Serif\", Georgia, serif",
+            "fontSize": "20px",
+            "fontWeight": "500",
+            "lineHeight": "26px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#reader-title": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"Hark Serif\", Georgia, serif",
+            "fontSize": "40px",
+            "fontWeight": "500",
+            "lineHeight": "52px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "48px 32px 32px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "auto"
+          },
+          ".reader-sheet h2": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "22.4px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet p:not(.eyebrow)": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "25.2px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet strong": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "600",
+            "lineHeight": "25.2px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#code-body": {
+            "rect": {
+              "x": 464,
+              "y": 520.09375,
+              "width": 512,
+              "height": 252
+            },
+            "fontFamily": "\"GT Standard Mono\", monospace",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "20px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "auto"
+          },
+          "nav": {
+            "rect": {
+              "x": 597.2890625,
+              "y": 20,
+              "width": 245.421875,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.62)",
+            "padding": "4px",
+            "backdropFilter": "blur(50px)",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".collection-content": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          }
+        },
+        "horizontalOverflow": false
+      },
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:01:53.547470+00:00",
+        "method": "Actual view_image inspection of this unchanged viewport PNG",
+        "imageSha256": "c75e4e7696df5a0d3267925fd8a698b0cc3d8f05443605e3053a67aa58ccb3db",
+        "observations": [
+          "All example JSON lines are visible in the expanded code card with Mono400; disclosure reads Show less.",
+          "Captured notes scrollTop103 is recorded; upstream context is above the viewport rather than missing from the implementation."
+        ]
+      }
+    },
+    {
+      "id": "mobile-dark",
+      "path": "captures/mobile-dark.png",
+      "classification": "D",
+      "description": "390×844 CSS viewport, 16px composer insets, dark materials; desktop emulation only",
+      "startedAt": "2026-10-22T16:56:42.022Z",
+      "completedAt": "2026-10-22T16:56:42.085Z",
+      "sha256": "70384499305ed3d68257e86ae70fa8b2a14495ee83988ce1b7f19006cd7fdc63",
+      "bytes": 70897,
+      "measurement": {
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1
+        },
+        "theme": "dark",
+        "themeMode": "dark",
+        "route": "#notes",
+        "reducedMotion": false,
+        "scroll": {
+          "notes": 0,
+          "reader": 0
+        },
+        "draft": "",
+        "composerState": "empty",
+        "readerOpen": false,
+        "activeElement": {
+          "id": "",
+          "tag": "BODY"
+        },
+        "fontFaces": [
+          {
+            "family": "GT Standard L",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "500",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "600",
+            "status": "unloaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "700",
+            "status": "unloaded"
+          },
+          {
+            "family": "Hark Serif",
+            "weight": "300",
+            "status": "loaded"
+          },
+          {
+            "family": "Hark Serif",
+            "weight": "500",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard Mono",
+            "weight": "400",
+            "status": "loaded"
+          }
+        ],
+        "elements": {
+          "#composer": {
+            "rect": {
+              "x": 16,
+              "y": 764,
+              "width": 358,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#draft": {
+            "rect": {
+              "x": 16,
+              "y": 764,
+              "width": 312,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "14.5px 8px 14.5px 16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "hidden"
+          },
+          "#composer>.surface-fill": {
+            "rect": {
+              "x": 16,
+              "y": 764,
+              "width": 358,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.62)",
+            "padding": "0px",
+            "backdropFilter": "blur(50px)",
+            "clipPath": "path(\"M 36.688 0 L 321.312 0 C 331.876 0 337.158 0 342.844 1.798 C 349.052 4.057 353.943 8.948 356.202 15.156 C 358 19.68 358 23.04 358 24 L 358 24 C 358 24.96 358 28.32 356.202 32.844 C 353.943 39.052 349.052 43.943 342.844 46.202 C 337.158 48 331.876 48 321.312 48 L 36.688 48 C 26.124 48 20.842 48 15.156 46.202 C 8.948 43.943 4.057 39.052 1.798 32.844 C 0 28.32 0 24.96 0 24 L 0 24 C 0 23.04 0 19.68 1.798 15.156 C 4.057 8.948 8.948 4.057 15.156 1.798 C 20.842 0 26.124 0 36.688 0 Z\")",
+            "overflowY": "visible"
+          },
+          ".bubble.assistant": {
+            "rect": {
+              "x": 16,
+              "y": 247.796875,
+              "width": 270,
+              "height": 105
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "14.5px 16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".bubble.assistant>.surface-fill": {
+            "rect": {
+              "x": 16,
+              "y": 247.796875,
+              "width": 270,
+              "height": 105
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.7)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "path(\"M 33.631 0 L 236.369 0 C 246.053 0 250.895 0 256.107 1.648 C 261.798 3.719 266.281 8.202 268.352 13.893 C 270 19.105 270 23.947 270 33.631 L 270 71.369 C 270 81.053 270 85.895 268.352 91.107 C 266.281 96.798 261.798 101.281 256.107 103.352 C 250.895 105 246.053 105 236.369 105 L 33.631 105 C 23.947 105 19.105 105 13.893 103.352 C 8.202 101.281 3.719 96.798 1.648 91.107 C 0 85.895 0 81.053 0 71.369 L 0 33.631 C 0 23.947 0 19.105 1.648 13.893 C 3.719 8.202 8.202 3.719 13.893 1.648 C 19.105 0 23.947 0 33.631 0 Z\")",
+            "overflowY": "visible"
+          },
+          ".summary-card": {
+            "rect": {
+              "x": 16,
+              "y": 364.796875,
+              "width": 290,
+              "height": 226
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "hidden"
+          },
+          ".card-heading strong": {
+            "rect": {
+              "x": 80,
+              "y": 380.796875,
+              "width": 210,
+              "height": 52
+            },
+            "fontFamily": "\"Hark Serif\", Georgia, serif",
+            "fontSize": "20px",
+            "fontWeight": "500",
+            "lineHeight": "26px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#reader-title": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"Hark Serif\", Georgia, serif",
+            "fontSize": "32px",
+            "fontWeight": "500",
+            "lineHeight": "41.6px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "32px 20px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "auto"
+          },
+          ".reader-sheet h2": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "22.4px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet p:not(.eyebrow)": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "25.2px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet strong": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "600",
+            "lineHeight": "25.2px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#code-body": {
+            "rect": {
+              "x": 16,
+              "y": 672.796875,
+              "width": 358,
+              "height": 100
+            },
+            "fontFamily": "\"GT Standard Mono\", monospace",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "20px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "auto"
+          },
+          "nav": {
+            "rect": {
+              "x": 91.9921875,
+              "y": 16,
+              "width": 206.015625,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.62)",
+            "padding": "4px",
+            "backdropFilter": "blur(50px)",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".collection-content": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          }
+        },
+        "horizontalOverflow": false
+      },
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:01:53.547470+00:00",
+        "method": "Actual view_image inspection of this unchanged viewport PNG",
+        "imageSha256": "70384499305ed3d68257e86ae70fa8b2a14495ee83988ce1b7f19006cd7fdc63",
+        "observations": [
+          "The20px serif preview title wraps naturally to two lines inside the290px card; no horizontal clipping.",
+          "Floating composer is358px with16px side insets; code content continues behind its dock in the scrollable notes view."
+        ]
+      }
+    },
+    {
+      "id": "mobile-reader-dark",
+      "path": "captures/mobile-reader-dark.png",
+      "classification": "D",
+      "description": "390×844 independent reading sheet, current CSS top62/full-width and32/41.6 title adopted as D",
+      "startedAt": "2026-10-22T16:56:42.695Z",
+      "completedAt": "2026-10-22T16:56:42.740Z",
+      "sha256": "dbcb6878f22e24604707dab2c01f97ff956cd97aef4e18c3c76af97eac5655cd",
+      "bytes": 99192,
+      "measurement": {
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1
+        },
+        "theme": "dark",
+        "themeMode": "dark",
+        "route": "#notes",
+        "reducedMotion": false,
+        "scroll": {
+          "notes": 0,
+          "reader": 0
+        },
+        "draft": "",
+        "composerState": "empty",
+        "readerOpen": true,
+        "activeElement": {
+          "id": "reader-close",
+          "tag": "BUTTON"
+        },
+        "fontFaces": [
+          {
+            "family": "GT Standard L",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "500",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "600",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard L",
+            "weight": "700",
+            "status": "loaded"
+          },
+          {
+            "family": "Hark Serif",
+            "weight": "300",
+            "status": "loaded"
+          },
+          {
+            "family": "Hark Serif",
+            "weight": "500",
+            "status": "loaded"
+          },
+          {
+            "family": "GT Standard Mono",
+            "weight": "400",
+            "status": "loaded"
+          }
+        ],
+        "elements": {
+          "#composer": {
+            "rect": {
+              "x": 16,
+              "y": 764,
+              "width": 358,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#draft": {
+            "rect": {
+              "x": 16,
+              "y": 764,
+              "width": 312,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "14.5px 8px 14.5px 16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "hidden"
+          },
+          "#composer>.surface-fill": {
+            "rect": {
+              "x": 16,
+              "y": 764,
+              "width": 358,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.62)",
+            "padding": "0px",
+            "backdropFilter": "blur(50px)",
+            "clipPath": "path(\"M 36.688 0 L 321.312 0 C 331.876 0 337.158 0 342.844 1.798 C 349.052 4.057 353.943 8.948 356.202 15.156 C 358 19.68 358 23.04 358 24 L 358 24 C 358 24.96 358 28.32 356.202 32.844 C 353.943 39.052 349.052 43.943 342.844 46.202 C 337.158 48 331.876 48 321.312 48 L 36.688 48 C 26.124 48 20.842 48 15.156 46.202 C 8.948 43.943 4.057 39.052 1.798 32.844 C 0 28.32 0 24.96 0 24 L 0 24 C 0 23.04 0 19.68 1.798 15.156 C 4.057 8.948 8.948 4.057 15.156 1.798 C 20.842 0 26.124 0 36.688 0 Z\")",
+            "overflowY": "visible"
+          },
+          ".bubble.assistant": {
+            "rect": {
+              "x": 16,
+              "y": 247.796875,
+              "width": 270,
+              "height": 105
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "14.5px 16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".bubble.assistant>.surface-fill": {
+            "rect": {
+              "x": 16,
+              "y": 247.796875,
+              "width": 270,
+              "height": 105
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "19px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.7)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "path(\"M 33.631 0 L 236.369 0 C 246.053 0 250.895 0 256.107 1.648 C 261.798 3.719 266.281 8.202 268.352 13.893 C 270 19.105 270 23.947 270 33.631 L 270 71.369 C 270 81.053 270 85.895 268.352 91.107 C 266.281 96.798 261.798 101.281 256.107 103.352 C 250.895 105 246.053 105 236.369 105 L 33.631 105 C 23.947 105 19.105 105 13.893 103.352 C 8.202 101.281 3.719 96.798 1.648 91.107 C 0 85.895 0 81.053 0 71.369 L 0 33.631 C 0 23.947 0 19.105 1.648 13.893 C 3.719 8.202 8.202 3.719 13.893 1.648 C 19.105 0 23.947 0 33.631 0 Z\")",
+            "overflowY": "visible"
+          },
+          ".summary-card": {
+            "rect": {
+              "x": 16,
+              "y": 364.796875,
+              "width": 290,
+              "height": 226
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "hidden"
+          },
+          ".card-heading strong": {
+            "rect": {
+              "x": 80,
+              "y": 380.796875,
+              "width": 210,
+              "height": 52
+            },
+            "fontFamily": "\"Hark Serif\", Georgia, serif",
+            "fontSize": "20px",
+            "fontWeight": "500",
+            "lineHeight": "26px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#reader-title": {
+            "rect": {
+              "x": 20,
+              "y": 122,
+              "width": 350,
+              "height": 83.1875
+            },
+            "fontFamily": "\"Hark Serif\", Georgia, serif",
+            "fontSize": "32px",
+            "fontWeight": "500",
+            "lineHeight": "41.6px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet": {
+            "rect": {
+              "x": 0,
+              "y": 62,
+              "width": 390,
+              "height": 782
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "32px 20px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "auto"
+          },
+          ".reader-sheet h2": {
+            "rect": {
+              "x": 20,
+              "y": 237.1875,
+              "width": 350,
+              "height": 22.40625
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "22.4px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet p:not(.eyebrow)": {
+            "rect": {
+              "x": 20,
+              "y": 267.59375,
+              "width": 350,
+              "height": 126.015625
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "25.2px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".reader-sheet strong": {
+            "rect": {
+              "x": 20,
+              "y": 420.796875,
+              "width": 343.75,
+              "height": 45.203125
+            },
+            "fontFamily": "\"GT Standard L\", sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "600",
+            "lineHeight": "25.2px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          "#code-body": {
+            "rect": {
+              "x": 16,
+              "y": 672.796875,
+              "width": 358,
+              "height": 100
+            },
+            "fontFamily": "\"GT Standard Mono\", monospace",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "20px",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "16px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "auto"
+          },
+          "nav": {
+            "rect": {
+              "x": 91.9921875,
+              "y": 16,
+              "width": 206.015625,
+              "height": 48
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(29, 29, 31, 0.62)",
+            "padding": "4px",
+            "backdropFilter": "blur(50px)",
+            "clipPath": "none",
+            "overflowY": "visible"
+          },
+          ".collection-content": {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "fontFamily": "\"GT Standard L\", -apple-system, system-ui, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "color": "rgb(245, 245, 247)",
+            "background": "rgba(0, 0, 0, 0)",
+            "padding": "0px",
+            "backdropFilter": "none",
+            "clipPath": "none",
+            "overflowY": "visible"
+          }
+        },
+        "horizontalOverflow": false
+      },
+      "pixelReview": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T17:01:53.547470+00:00",
+        "method": "Actual view_image inspection of this unchanged viewport PNG",
+        "imageSha256": "dbcb6878f22e24604707dab2c01f97ff956cd97aef4e18c3c76af97eac5655cd",
+        "observations": [
+          "Full390px reading sheet starts at62px, with readable32px serif title, L700 h2 and18px body.",
+          "D toolbar remains outside the sheet and D inner padding is20px; long content continues below the visible scroll port."
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "implementationFiles": [
+    {
+      "path": "../reference/index.html",
+      "sha256": "8ab2d1ba65c14372a1041ba7b55974ade4b22f3eac876f0158b098b096fd9e60",
+      "bytes": 8746
+    },
+    {
+      "path": "../reference/reference.css",
+      "sha256": "ca5553119caf7bcce822ce45efdba63384a76ef242ef765c49a18d296b8aaa9a",
+      "bytes": 14172
+    },
+    {
+      "path": "../reference/reference.mjs",
+      "sha256": "f0b797ea38f74c8b694303042d8eb3df16252bf7f31a08431b0fe41e3c57d603",
+      "bytes": 10921
+    },
+    {
+      "path": "../reference/serve.mjs",
+      "sha256": "2a3c9323b150720a0781c208068f8b6e3a69209e0c90e0466440c276481370d3",
+      "bytes": 3279
+    },
+    {
+      "path": "../reference/verify.mjs",
+      "sha256": "4c53a1c272028cdca2b9f87fd18b307d7131851fe5168503bd92e95912a992bb",
+      "bytes": 16895
+    },
+    {
+      "path": "../reference/assets/corner-path.mjs",
+      "sha256": "e7d88d29d0e95267b91a82d3c347cd8653524ca1fe4d304f203e0834714688f7",
+      "bytes": 1075
+    },
+    {
+      "path": "../reference/assets/corner-path-provenance.json",
+      "sha256": "c651085776722512f746147157c42745dc44cf513162c26beaa6f77c50f2713e",
+      "bytes": 557
+    },
+    {
+      "path": "../reference/assets-reuse.json",
+      "sha256": "09c3092c61e3f7ef0a495fce8336a0b66f63d916ae2ab22309aac45d8456d520",
+      "bytes": 10013
+    }
+  ],
+  "result": "passed",
+  "completedAt": "2026-10-22T16:56:42.847Z",
+  "pixelReview": {
+    "status": "reviewed",
+    "reviewedAt": "2026-10-22T17:01:53.547470+00:00",
+    "method": "All8 original viewport PNGs individually opened with view_image after the13-check isolated local run",
+    "reviewedCaptureCount": 8,
+    "boundary": "D pixel review only; no current Hark browser or historical A image was modified or re-executed."
+  }
+}

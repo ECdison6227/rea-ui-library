@@ -1,0 +1,1 @@
+vve=S.lazy(()=>A(w(()=>import("./BuarI72O.js"),__vite__mapDeps([125,1,2,3,4,5,6,7,8,9,68,69,51,52,70,71,66,67,72,73,120,34,35,74,53,75,20,21,22,23,24,25,26]),import.meta.url)).then(e=>({default:e.DataManagementScreen})))

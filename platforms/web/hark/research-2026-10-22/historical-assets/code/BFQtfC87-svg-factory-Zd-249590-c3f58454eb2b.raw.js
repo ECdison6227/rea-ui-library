@@ -1,0 +1,1 @@
+function Zd({width:e,height:t,viewBox:n,style:r,children:o}){return s.jsx("svg",{width:e,height:t,viewBox:n,style:r,children:o})}

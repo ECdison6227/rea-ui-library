@@ -1,0 +1,1 @@
+function Zve(){const e=C.c(1);let t;return e[0]===Symbol.for("react.memo_cache_sentinel")?(t=E.jsxs(E.Fragment,{children:[E.jsx(Pve,{}),E.jsx(Mpe,{routes:Hbe})]}),e[0]=t):t=e[0],t}

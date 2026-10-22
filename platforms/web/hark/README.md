@@ -1,27 +1,24 @@
-# Hark 聊天界面研究
+# Hark Web 设计包
 
-采集日期：2026-10-15（Asia/Shanghai）。目标：[hark.com/chat](https://hark.com/chat)。方法：REA MCP、浏览器 MCP/CDP、实际 UI 操作与已发布前端资源静态分析。
+这是替换 Library 原 Hark Web 条目的当前研究包。包含登录后 App、公开站、原字体/图标/媒体、组件状态与可运行的独立参考。
 
-从 [主报告](reports/hark-chat-analysis.md) 开始阅读。
+先读 [设计规范](DESIGN_SPEC.md) 和 [机器入口](design-package.json)。详细资料从 [研究索引](research-2026-10-22/README.md) 进入。
 
-| 文件 | 内容 |
-|---|---|
-| [主报告](reports/hark-chat-analysis.md) | 六个重点、结论、交互状态与证据边界 |
-| [截图对照与时序查看器](reports/evidence-gallery.html) | 七组前后截图、可拖动的文字显示时序与 SSE 事件表；可直接在浏览器打开 |
-| [设计分析](reports/design-analysis.md) | 排版、材质、布局、变量、天空 shader |
-| [卡片代码分析](reports/card-code-analysis.md) | 真实类型分发、字段、事件处理与流式消费链 |
-| [运行实测](reports/runtime-analysis.md) | 点击前后状态、SSE 时序、未触发行为 |
-| [原始变量 CSS](reports/design-tokens.css) / [JSON](reports/design-tokens.json) | 544 个保留名称、值、作用域的变量声明 |
-| [结论清单](reports/findings-ledger.json) | 实测/静态/推断/未验证的机器可读记录 |
-| [证据索引](evidence/index.json) | 文件字节数与 SHA-256、REA Evidence ID 定位 |
+| 内容 | 当前交付 |
+| --- | --- |
+| 设计系统 | 210条token、37个组件族、12种布局、21套交互、20项动效 |
+| 当前原版 | 32组登录运行记录、14类代表路由、桌面/窄屏/主题/搜索/阅读；公开轮播、套餐与FAQ |
+| 字体和图标 | App21份字体、官网19份字体（15份同字节）、74命名字形与源SVG构造 |
+| 源与媒体 | App257份静态原件；92个公开媒体URL、107份响应文件，保留编码协商差异 |
+| 独立参考D | 13项交互检查、8张已审截图、7项HTTP/字体检查 |
 
-`evidence/screenshots/` 保存截图；`dom/` 保存页面与场景 DOM；`styles/` 保存浏览器实际加载的 CSS 和计算样式；`scripts/` 保存 REA 导出的 36 个已发布脚本、32 个精确逻辑片段和天空核心资源；`network/` 与 `interactions/` 保存去值后的网络结构、操作记录和研究对话时序。
+- [组件与状态](components/catalog.json) · [Tokens](tokens/tokens.json) · [交互](patterns/interactions.json) · [动效](motion/catalog.json)
+- [资产清单](research-2026-10-22/assets-manifest.json) · [证据索引](research-2026-10-22/evidence-index.json) · [当前运行](research-2026-10-22/authenticated-runtime/README.md)
+- [字体、SVG与天空源码](research-2026-10-22/current-app/README.md) · [媒体与绑定](research-2026-10-22/current-public-media/README.md)
+- [运行参考](research-2026-10-22/reference/README.md) · [原版/参考差异](research-2026-10-22/comparison/current-app.md) · [迁移接入](ADAPTATION_GUIDE.md)
 
-浏览器登录由用户完成，凭据保留在项目之外的独立浏览器 profile。项目原始截图/DOM 包含本次授权查看的既有聊天、首页面板与文件内容；分析结论只引用与界面行为相关的证据。网络采样没有导出 Cookie、鉴权头、密码、验证码或完整 SSE 快照内容。
+参考启动：进入 `research-2026-10-22/reference` 后执行 `npm run dev`，打开 `http://127.0.0.1:4393/`。
 
-报告中的相对链接可在编辑器打开。重新生成索引并核验已保存资产：
+本包为partial，表示仍有明确的还原差异和未测矩阵，不表示没有可实施规格。A原版观察、B源声明、C推断与D独立实现分别保留；D检查通过不等于原版全部业务/状态已测。原版资产许可不因研究留存而改变。
 
-```sh
-python3 scripts/build-investigation-index.py
-python3 scripts/verify-investigation.py
-```
+旧版研究只作[历史来源](LEGACY_RESEARCH.md)保留，Library 默认入口已切换到本标准包。账户原始画面、字段值、cookie/token和本机profile均不随此次更新上传；实际公开成员见本包 publication-review.json。

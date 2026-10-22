@@ -1,0 +1,719 @@
+{
+  "label": "pricing-narrow",
+  "classification": "A current public-source observation; independent CDP, not a new REA Evidence ID",
+  "sourceIdentity": "Hark Web https://hark.com",
+  "targetId": "370F28A0EB851696D0AE5539EA328426",
+  "endpoint": "http://127.0.0.1:52194",
+  "startedAt": "2026-10-22T16:53:37.271Z",
+  "method": "Sequential declared normal DOM/UI actions, DOM/computed snapshots, optional CDP font glyph report, viewport PNG; not an atomic snapshot",
+  "reaDiscoveryEvidenceId": "ev_d90eff947caf12b775c317dd8dce4686ee7dc003a3a5a2059caab41b4b7578ad",
+  "plan": {
+    "label": "pricing-narrow",
+    "questions": [
+      "How does pricing adapt from multiple desktop columns to the narrow selected plan?",
+      "Do radio pointer and keyboard actions update the visible plan and accessibility state without starting checkout?",
+      "Which actual font faces render the title, body and plan?"
+    ],
+    "actions": [
+      {
+        "type": "foreground"
+      },
+      {
+        "type": "viewport",
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      {
+        "type": "media",
+        "reducedMotion": "no-preference",
+        "colorScheme": "light"
+      },
+      {
+        "type": "navigate",
+        "url": "https://hark.com/pricing"
+      },
+      {
+        "type": "scroll",
+        "selector": "[data-variant=intro]",
+        "top": 100
+      },
+      {
+        "type": "wait",
+        "ms": 350
+      },
+      {
+        "type": "capture",
+        "name": "pricing-narrow-intro",
+        "fontSelectors": [
+          "h1",
+          "[data-variant=intro] p",
+          "[id$='-second'] h2",
+          "[id$='-second'] p"
+        ]
+      },
+      {
+        "type": "scroll",
+        "selector": "button[role=radio][aria-controls$='-first']",
+        "top": 120
+      },
+      {
+        "type": "wait",
+        "ms": 200
+      },
+      {
+        "type": "capture",
+        "name": "pricing-narrow-pro2"
+      },
+      {
+        "type": "click",
+        "selector": "button[role=radio][aria-controls$='-first']"
+      },
+      {
+        "type": "wait",
+        "ms": 300
+      },
+      {
+        "type": "capture",
+        "name": "pricing-narrow-free"
+      },
+      {
+        "type": "click",
+        "selector": "button[role=radio][aria-controls$='-third']"
+      },
+      {
+        "type": "wait",
+        "ms": 300
+      },
+      {
+        "type": "capture",
+        "name": "pricing-narrow-pro3"
+      },
+      {
+        "type": "key",
+        "key": "ArrowLeft"
+      },
+      {
+        "type": "wait",
+        "ms": 200
+      },
+      {
+        "type": "capture",
+        "name": "pricing-narrow-keyboard-pro2"
+      }
+    ]
+  },
+  "actions": [
+    {
+      "type": "foreground",
+      "startedAt": "2026-10-22T16:53:37.304Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 0,
+        "perfNow": 232054.29999998212
+      },
+      "completedAt": "2026-10-22T16:53:37.336Z",
+      "after": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 0,
+        "perfNow": 232117.79999998212
+      },
+      "status": "completed"
+    },
+    {
+      "type": "viewport",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "startedAt": "2026-10-22T16:53:37.369Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 0,
+        "perfNow": 232118.40000000596
+      },
+      "completedAt": "2026-10-22T16:53:37.419Z",
+      "after": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 0,
+        "perfNow": 232237.79999998212
+      },
+      "status": "completed"
+    },
+    {
+      "type": "media",
+      "reducedMotion": "no-preference",
+      "colorScheme": "light",
+      "startedAt": "2026-10-22T16:53:37.489Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 0,
+        "perfNow": 232242.69999998808
+      },
+      "completedAt": "2026-10-22T16:53:37.498Z",
+      "after": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 0,
+        "perfNow": 232250
+      },
+      "status": "completed"
+    },
+    {
+      "type": "navigate",
+      "url": "https://hark.com/pricing",
+      "startedAt": "2026-10-22T16:53:37.503Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 0,
+        "perfNow": 232253.29999998212
+      },
+      "completedAt": "2026-10-22T16:53:39.339Z",
+      "after": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 0,
+        "perfNow": 1820.199999988079
+      },
+      "status": "completed"
+    },
+    {
+      "type": "scroll",
+      "selector": "[data-variant=intro]",
+      "top": 100,
+      "startedAt": "2026-10-22T16:53:39.341Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 0,
+        "perfNow": 1821.699999988079
+      },
+      "completedAt": "2026-10-22T16:53:39.345Z",
+      "after": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 12.5,
+        "perfNow": 1826
+      },
+      "status": "completed"
+    },
+    {
+      "type": "wait",
+      "ms": 350,
+      "startedAt": "2026-10-22T16:53:39.347Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 12.5,
+        "perfNow": 1829.0999999940395
+      },
+      "completedAt": "2026-10-22T16:53:39.702Z",
+      "after": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 12.5,
+        "perfNow": 2183.300000011921
+      },
+      "status": "completed"
+    },
+    {
+      "type": "capture",
+      "name": "pricing-narrow-intro",
+      "fontSelectors": [
+        "h1",
+        "[data-variant=intro] p",
+        "[id$='-second'] h2",
+        "[id$='-second'] p"
+      ],
+      "startedAt": "2026-10-22T16:53:39.704Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 12.5,
+        "perfNow": 2184.800000011921
+      },
+      "completedAt": "2026-10-22T16:53:39.972Z",
+      "after": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 12.5,
+        "perfNow": 2452.5999999940395
+      },
+      "status": "completed"
+    },
+    {
+      "type": "scroll",
+      "selector": "button[role=radio][aria-controls$='-first']",
+      "top": 120,
+      "startedAt": "2026-10-22T16:53:39.973Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 12.5,
+        "perfNow": 2452.800000011921
+      },
+      "completedAt": "2026-10-22T16:53:39.973Z",
+      "after": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 2453.4000000059605
+      },
+      "status": "completed"
+    },
+    {
+      "type": "wait",
+      "ms": 200,
+      "startedAt": "2026-10-22T16:53:39.973Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 2453.5
+      },
+      "completedAt": "2026-10-22T16:53:40.176Z",
+      "after": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 2656.4000000059605
+      },
+      "status": "completed"
+    },
+    {
+      "type": "capture",
+      "name": "pricing-narrow-pro2",
+      "startedAt": "2026-10-22T16:53:40.177Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 2658
+      },
+      "completedAt": "2026-10-22T16:53:40.273Z",
+      "after": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 2753.300000011921
+      },
+      "status": "completed"
+    },
+    {
+      "type": "click",
+      "selector": "button[role=radio][aria-controls$='-first']",
+      "startedAt": "2026-10-22T16:53:40.273Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 2753.699999988079
+      },
+      "hit": {
+        "x": 77.47265625,
+        "y": 142.98046875,
+        "width": 117.5234375,
+        "height": 45.7578125
+      },
+      "completedAt": "2026-10-22T16:53:40.296Z",
+      "after": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 2778.300000011921
+      },
+      "status": "completed"
+    },
+    {
+      "type": "wait",
+      "ms": 300,
+      "startedAt": "2026-10-22T16:53:40.300Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 2781
+      },
+      "completedAt": "2026-10-22T16:53:40.603Z",
+      "after": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 3083.5999999940395
+      },
+      "status": "completed"
+    },
+    {
+      "type": "capture",
+      "name": "pricing-narrow-free",
+      "startedAt": "2026-10-22T16:53:40.604Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 3084.0999999940395
+      },
+      "completedAt": "2026-10-22T16:53:40.952Z",
+      "after": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 3432
+      },
+      "status": "completed"
+    },
+    {
+      "type": "click",
+      "selector": "button[role=radio][aria-controls$='-third']",
+      "startedAt": "2026-10-22T16:53:40.952Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 3432.300000011921
+      },
+      "hit": {
+        "x": 312.51953125,
+        "y": 142.98046875,
+        "width": 117.5234375,
+        "height": 45.7578125
+      },
+      "completedAt": "2026-10-22T16:53:40.970Z",
+      "after": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 3450.0999999940395
+      },
+      "status": "completed"
+    },
+    {
+      "type": "wait",
+      "ms": 300,
+      "startedAt": "2026-10-22T16:53:40.971Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 3451
+      },
+      "completedAt": "2026-10-22T16:53:41.272Z",
+      "after": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 3753.0999999940395
+      },
+      "status": "completed"
+    },
+    {
+      "type": "capture",
+      "name": "pricing-narrow-pro3",
+      "startedAt": "2026-10-22T16:53:41.274Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 3754.5
+      },
+      "completedAt": "2026-10-22T16:53:41.364Z",
+      "after": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 3844.699999988079
+      },
+      "status": "completed"
+    },
+    {
+      "type": "key",
+      "key": "ArrowLeft",
+      "startedAt": "2026-10-22T16:53:41.365Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 3845.300000011921
+      },
+      "completedAt": "2026-10-22T16:53:41.375Z",
+      "after": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 3855.9000000059605
+      },
+      "status": "completed"
+    },
+    {
+      "type": "wait",
+      "ms": 200,
+      "startedAt": "2026-10-22T16:53:41.376Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 3856.199999988079
+      },
+      "completedAt": "2026-10-22T16:53:41.577Z",
+      "after": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 4057.699999988079
+      },
+      "status": "completed"
+    },
+    {
+      "type": "capture",
+      "name": "pricing-narrow-keyboard-pro2",
+      "startedAt": "2026-10-22T16:53:41.578Z",
+      "before": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 4058.800000011921
+      },
+      "completedAt": "2026-10-22T16:53:41.684Z",
+      "after": {
+        "url": "https://hark.com/pricing",
+        "scrollY": 116,
+        "perfNow": 4164.300000011921
+      },
+      "status": "completed"
+    }
+  ],
+  "captures": [
+    {
+      "id": "pricing-narrow-intro",
+      "startedAt": "2026-10-22T16:53:39.705Z",
+      "completedAt": "2026-10-22T16:53:39.972Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 12.5,
+        "documentHeight": 2164
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/pricing-narrow-intro.json",
+          "bytes": 79780,
+          "sha256": "f230ef5511d10df33f6231e97195f2bdc5f36d75e0f8f7a99d037702ba7a039e"
+        },
+        {
+          "path": "captures/pricing-narrow-intro.png",
+          "bytes": 51325,
+          "sha256": "12f6f229ef4112ea5ef0d1774c53445a26234a49afe170e0747927d94eec0398"
+        },
+        {
+          "path": "captures/pricing-narrow-intro-dom.json",
+          "bytes": 415327,
+          "sha256": "63fc9f713061af518ad028f9bb964d5bc5ba6ab079b4785c0b1fbce2255f3bc6"
+        }
+      ],
+      "pixelReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "pricing-narrow-pro2",
+      "startedAt": "2026-10-22T16:53:40.178Z",
+      "completedAt": "2026-10-22T16:53:40.273Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 116,
+        "documentHeight": 2164
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/pricing-narrow-pro2.json",
+          "bytes": 78336,
+          "sha256": "6836a98dda68781e614b5939dba51c0db53b3593d40e5a69cef8ae7ae7f45f78"
+        },
+        {
+          "path": "captures/pricing-narrow-pro2.png",
+          "bytes": 58469,
+          "sha256": "69f64694e807ed6e481f81788f283c770cb41834defb5102dee50ba5666a751d"
+        },
+        {
+          "path": "captures/pricing-narrow-pro2-dom.json",
+          "bytes": 415627,
+          "sha256": "1b37ea57cbc37f0b2e7b70de54f4ad7a1e824dc95c1393e04f7be928e38003f1"
+        }
+      ],
+      "pixelReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "pricing-narrow-free",
+      "startedAt": "2026-10-22T16:53:40.604Z",
+      "completedAt": "2026-10-22T16:53:40.952Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 116,
+        "documentHeight": 2161
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/pricing-narrow-free.json",
+          "bytes": 78390,
+          "sha256": "b00027035edd9f96b07f5b25cbdf56fab42920cbfcc338b24d89b5b0e7c1e6ad"
+        },
+        {
+          "path": "captures/pricing-narrow-free.png",
+          "bytes": 61102,
+          "sha256": "fdc8c142aa7ec49f1a77b1c6fd34a77bb0a080def86dc06b594def7999ea4079"
+        },
+        {
+          "path": "captures/pricing-narrow-free-dom.json",
+          "bytes": 415254,
+          "sha256": "52736814c12227d8442a40b06805910347763357500bc88324cfe8d742374aa3"
+        }
+      ],
+      "pixelReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "pricing-narrow-pro3",
+      "startedAt": "2026-10-22T16:53:41.275Z",
+      "completedAt": "2026-10-22T16:53:41.364Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 116,
+        "documentHeight": 2164
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/pricing-narrow-pro3.json",
+          "bytes": 78416,
+          "sha256": "1aaddcae43ef5fcb5943817593580691c216ae9d4767af444feea67a0e942b99"
+        },
+        {
+          "path": "captures/pricing-narrow-pro3.png",
+          "bytes": 57922,
+          "sha256": "f719949f0e7d494be81611029f2e3535a16e7d1bcd8e594d48128873f6d431a8"
+        },
+        {
+          "path": "captures/pricing-narrow-pro3-dom.json",
+          "bytes": 416460,
+          "sha256": "6afba5ecc0f1a7339d5df561a4775303465bc7f66e1c0d459b2d21f19bb5c140"
+        }
+      ],
+      "pixelReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "pricing-narrow-keyboard-pro2",
+      "startedAt": "2026-10-22T16:53:41.579Z",
+      "completedAt": "2026-10-22T16:53:41.684Z",
+      "classification": "A current public source; independent CDP",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "visualViewport": {
+          "width": 390,
+          "height": 844,
+          "offsetTop": 0,
+          "scale": 1
+        }
+      },
+      "theme": {
+        "htmlClass": "",
+        "preferredColorScheme": "light"
+      },
+      "language": {
+        "html": "en",
+        "navigator": "zh-CN"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 116,
+        "documentHeight": 2164
+      },
+      "reducedMotion": false,
+      "files": [
+        {
+          "path": "captures/pricing-narrow-keyboard-pro2.json",
+          "bytes": 78430,
+          "sha256": "acd347fd6fa7aa8191e2aae72cb477cfe371bcad00df7c4bdf47b82b856e6e0b"
+        },
+        {
+          "path": "captures/pricing-narrow-keyboard-pro2.png",
+          "bytes": 59369,
+          "sha256": "f1e85992f9cf471cf2f3187a96e98305f2f89457b31e4f471599e0ef4f10037b"
+        },
+        {
+          "path": "captures/pricing-narrow-keyboard-pro2-dom.json",
+          "bytes": 416461,
+          "sha256": "df0482bd727581e1aebcb7520a8e5c84024cfe4dd1ba2aaa62d2443f9b9e8910"
+        }
+      ],
+      "pixelReview": {
+        "status": "pending"
+      }
+    }
+  ],
+  "timelines": [],
+  "browser": {
+    "browser": "Chrome/156.0.8078.47",
+    "protocol": "1.3",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "v8": "15.6.75.19"
+  },
+  "result": "completed",
+  "completedAt": "2026-10-22T16:53:41.684Z"
+}

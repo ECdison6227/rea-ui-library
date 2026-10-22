@@ -1,0 +1,1 @@
+bt=e=>({...yt(e.face),fontSize:e.size})

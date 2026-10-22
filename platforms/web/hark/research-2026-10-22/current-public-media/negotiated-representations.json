@@ -1,0 +1,695 @@
+{
+  "schemaVersion": 1,
+  "classification": "B: anonymous content-negotiated responses of existing explicit public CDN URLs",
+  "scope": "Exactly the 15 declared-WebP locators; no new URL/query/Accept matrix",
+  "generatedAt": "2026-10-22T16:28:05.134434Z",
+  "requestHeaders": {
+    "Accept": "image/webp"
+  },
+  "items": [
+    {
+      "id": "32ef649cc584d5d0011aa37658ce29137b4f7ca1-1112x668--accept-image-webp",
+      "baseLocatorId": "32ef649cc584d5d0011aa37658ce29137b4f7ca1-1112x668",
+      "url": "https://cdn.sanity.io/images/w2mhvsaj/production/32ef649cc584d5d0011aa37658ce29137b4f7ca1-1112x668.webp",
+      "path": "negotiated-webp/32ef649cc584d5d0011aa37658ce29137b4f7ca1-1112x668.webp",
+      "bytes": 44556,
+      "sha256": "915d29834d2cfa75d637ea56adb372dfcaa8cc6e02cf6853e0452e5ec03732ec",
+      "contentType": "image/webp",
+      "metadata": {
+        "width": 1112,
+        "height": 668,
+        "format": "WEBP",
+        "mode": "RGBA",
+        "frames": 1,
+        "method": "Pillow header/payload decoding"
+      },
+      "acquisition": {
+        "startedAt": "2026-10-22T16:20:42.026970+00:00",
+        "method": "normal anonymous curl HTTPS GET; existing configured system proxy; no redirects/cookies/Authorization/profile",
+        "requestHeaders": {
+          "Accept": "image/webp"
+        },
+        "networkRoute": "127.0.0.1:7897 (existing macOS system HTTPS proxy)",
+        "completedAt": "2026-10-22T16:20:43.189475+00:00",
+        "httpStatus": 200,
+        "curlReceipt": {
+          "status": 200,
+          "contentType": "image/webp",
+          "bytes": 44556,
+          "httpVersion": "2"
+        },
+        "sourceReceipt": "content-negotiation-probe.json",
+        "status": "saved"
+      },
+      "sourceRef": {
+        "path": "manifest.json",
+        "locatorId": "32ef649cc584d5d0011aa37658ce29137b4f7ca1-1112x668"
+      },
+      "defaultResponse": {
+        "path": "originals/32ef649cc584d5d0011aa37658ce29137b4f7ca1-1112x668.webp",
+        "bytes": 165560,
+        "sha256": "7de368fea3424b4db70d3160596fef7728cf60b31ed8aafc2763a442ce86b54a",
+        "contentType": "image/png"
+      },
+      "purpose": "Match the explicitly declared image/webp media encoding while retaining the original default PNG response separately."
+    },
+    {
+      "id": "385f914f906a230a10dc555705668a2139328939-1112x868--accept-image-webp",
+      "baseLocatorId": "385f914f906a230a10dc555705668a2139328939-1112x868",
+      "url": "https://cdn.sanity.io/images/w2mhvsaj/production/385f914f906a230a10dc555705668a2139328939-1112x868.webp",
+      "path": "negotiated-webp/385f914f906a230a10dc555705668a2139328939-1112x868.webp",
+      "bytes": 51458,
+      "sha256": "9ab0887270a94b53a90e74475d107261434f1be92841f04b9af83b0847c07afb",
+      "contentType": "image/webp",
+      "metadata": {
+        "width": 1112,
+        "height": 868,
+        "format": "WEBP",
+        "mode": "RGBA",
+        "frames": 1,
+        "method": "Pillow header/payload decoding"
+      },
+      "acquisition": {
+        "startedAt": "2026-10-22T16:28:05.354594Z",
+        "method": "normal anonymous curl HTTPS GET; existing configured system proxy; no redirects/cookies/Authorization/profile",
+        "requestHeaders": {
+          "Accept": "image/webp"
+        },
+        "networkRoute": "127.0.0.1:7897 (existing macOS system HTTPS proxy)",
+        "completedAt": "2026-10-22T16:28:06.553753Z",
+        "httpStatus": 200,
+        "curlReceipt": {
+          "status": 200,
+          "contentType": "image/webp",
+          "bytes": 51458,
+          "httpVersion": "2"
+        },
+        "status": "saved"
+      },
+      "sourceRef": {
+        "path": "manifest.json",
+        "locatorId": "385f914f906a230a10dc555705668a2139328939-1112x868"
+      },
+      "defaultResponse": {
+        "path": "originals/385f914f906a230a10dc555705668a2139328939-1112x868.webp",
+        "bytes": 275575,
+        "sha256": "6e1abdb119b1aee0f17fa827725e1383bc46ad1f62ed454e3c8b0f57a2cc0d8c",
+        "contentType": "image/png"
+      },
+      "purpose": "Match the explicitly declared image/webp media encoding while retaining the original default PNG response separately."
+    },
+    {
+      "id": "3d6c641ff1944007caa5170afd0b61a1f5a19a01-1112x736--accept-image-webp",
+      "baseLocatorId": "3d6c641ff1944007caa5170afd0b61a1f5a19a01-1112x736",
+      "url": "https://cdn.sanity.io/images/w2mhvsaj/production/3d6c641ff1944007caa5170afd0b61a1f5a19a01-1112x736.webp",
+      "path": "negotiated-webp/3d6c641ff1944007caa5170afd0b61a1f5a19a01-1112x736.webp",
+      "bytes": 45748,
+      "sha256": "806eaae9f23b3c3f4cb6c73f2ae4b060901ad5f77b0e7dd94804df0ac8134bec",
+      "contentType": "image/webp",
+      "metadata": {
+        "width": 1112,
+        "height": 736,
+        "format": "WEBP",
+        "mode": "RGBA",
+        "frames": 1,
+        "method": "Pillow header/payload decoding"
+      },
+      "acquisition": {
+        "startedAt": "2026-10-22T16:28:06.576468Z",
+        "method": "normal anonymous curl HTTPS GET; existing configured system proxy; no redirects/cookies/Authorization/profile",
+        "requestHeaders": {
+          "Accept": "image/webp"
+        },
+        "networkRoute": "127.0.0.1:7897 (existing macOS system HTTPS proxy)",
+        "completedAt": "2026-10-22T16:28:07.793933Z",
+        "httpStatus": 200,
+        "curlReceipt": {
+          "status": 200,
+          "contentType": "image/webp",
+          "bytes": 45748,
+          "httpVersion": "2"
+        },
+        "status": "saved"
+      },
+      "sourceRef": {
+        "path": "manifest.json",
+        "locatorId": "3d6c641ff1944007caa5170afd0b61a1f5a19a01-1112x736"
+      },
+      "defaultResponse": {
+        "path": "originals/3d6c641ff1944007caa5170afd0b61a1f5a19a01-1112x736.webp",
+        "bytes": 173193,
+        "sha256": "b59c609cb6654539ab6d17a65f23444d2345fda1a6f5d1197694b05e72c188c1",
+        "contentType": "image/png"
+      },
+      "purpose": "Match the explicitly declared image/webp media encoding while retaining the original default PNG response separately."
+    },
+    {
+      "id": "4158453dcf0aecee99531b0bdb6bd8909866d608-1484x1164--accept-image-webp",
+      "baseLocatorId": "4158453dcf0aecee99531b0bdb6bd8909866d608-1484x1164",
+      "url": "https://cdn.sanity.io/images/w2mhvsaj/production/4158453dcf0aecee99531b0bdb6bd8909866d608-1484x1164.webp",
+      "path": "negotiated-webp/4158453dcf0aecee99531b0bdb6bd8909866d608-1484x1164.webp",
+      "bytes": 50628,
+      "sha256": "f9a523f10d3f14811e7dda5c7bd059c0e41bf85c8dc5cc931616c058c28d7c4b",
+      "contentType": "image/webp",
+      "metadata": {
+        "width": 1484,
+        "height": 1164,
+        "format": "WEBP",
+        "mode": "RGBA",
+        "frames": 1,
+        "method": "Pillow header/payload decoding"
+      },
+      "acquisition": {
+        "startedAt": "2026-10-22T16:28:07.810402Z",
+        "method": "normal anonymous curl HTTPS GET; existing configured system proxy; no redirects/cookies/Authorization/profile",
+        "requestHeaders": {
+          "Accept": "image/webp"
+        },
+        "networkRoute": "127.0.0.1:7897 (existing macOS system HTTPS proxy)",
+        "completedAt": "2026-10-22T16:28:09.033609Z",
+        "httpStatus": 200,
+        "curlReceipt": {
+          "status": 200,
+          "contentType": "image/webp",
+          "bytes": 50628,
+          "httpVersion": "2"
+        },
+        "status": "saved"
+      },
+      "sourceRef": {
+        "path": "manifest.json",
+        "locatorId": "4158453dcf0aecee99531b0bdb6bd8909866d608-1484x1164"
+      },
+      "defaultResponse": {
+        "path": "originals/4158453dcf0aecee99531b0bdb6bd8909866d608-1484x1164.webp",
+        "bytes": 365987,
+        "sha256": "cdcc31e2833d54cbe12be6ea47d2381ea4adccaaf22b29ff756b271a6660db85",
+        "contentType": "image/png"
+      },
+      "purpose": "Match the explicitly declared image/webp media encoding while retaining the original default PNG response separately."
+    },
+    {
+      "id": "43045dd91fc3d346bc31082a8bc48bdfc8bd3dc4-1132x760--accept-image-webp",
+      "baseLocatorId": "43045dd91fc3d346bc31082a8bc48bdfc8bd3dc4-1132x760",
+      "url": "https://cdn.sanity.io/images/w2mhvsaj/production/43045dd91fc3d346bc31082a8bc48bdfc8bd3dc4-1132x760.webp",
+      "path": "negotiated-webp/43045dd91fc3d346bc31082a8bc48bdfc8bd3dc4-1132x760.webp",
+      "bytes": 54240,
+      "sha256": "6e2f7d7e6bcc94e97933ea38940d8e81dea14b4839fe250b8ea58f9a5fa0a43c",
+      "contentType": "image/webp",
+      "metadata": {
+        "width": 1132,
+        "height": 760,
+        "format": "WEBP",
+        "mode": "RGBA",
+        "frames": 1,
+        "method": "Pillow header/payload decoding"
+      },
+      "acquisition": {
+        "startedAt": "2026-10-22T16:28:09.062553Z",
+        "method": "normal anonymous curl HTTPS GET; existing configured system proxy; no redirects/cookies/Authorization/profile",
+        "requestHeaders": {
+          "Accept": "image/webp"
+        },
+        "networkRoute": "127.0.0.1:7897 (existing macOS system HTTPS proxy)",
+        "completedAt": "2026-10-22T16:28:10.259742Z",
+        "httpStatus": 200,
+        "curlReceipt": {
+          "status": 200,
+          "contentType": "image/webp",
+          "bytes": 54240,
+          "httpVersion": "2"
+        },
+        "status": "saved"
+      },
+      "sourceRef": {
+        "path": "manifest.json",
+        "locatorId": "43045dd91fc3d346bc31082a8bc48bdfc8bd3dc4-1132x760"
+      },
+      "defaultResponse": {
+        "path": "originals/43045dd91fc3d346bc31082a8bc48bdfc8bd3dc4-1132x760.webp",
+        "bytes": 223129,
+        "sha256": "5816d8592f45b462b82c428648ae2570c38ffa3b44c011664c2d96994506401f",
+        "contentType": "image/png"
+      },
+      "purpose": "Match the explicitly declared image/webp media encoding while retaining the original default PNG response separately."
+    },
+    {
+      "id": "53af6604f0f1de3be654b405130687744a9afbf4-1112x868--accept-image-webp",
+      "baseLocatorId": "53af6604f0f1de3be654b405130687744a9afbf4-1112x868",
+      "url": "https://cdn.sanity.io/images/w2mhvsaj/production/53af6604f0f1de3be654b405130687744a9afbf4-1112x868.webp",
+      "path": "negotiated-webp/53af6604f0f1de3be654b405130687744a9afbf4-1112x868.webp",
+      "bytes": 82116,
+      "sha256": "a7d5e7f785a73df336afccae2855cc542793b63bc0827f6ccde868a61d1b26be",
+      "contentType": "image/webp",
+      "metadata": {
+        "width": 1112,
+        "height": 868,
+        "format": "WEBP",
+        "mode": "RGBA",
+        "frames": 1,
+        "method": "Pillow header/payload decoding"
+      },
+      "acquisition": {
+        "startedAt": "2026-10-22T16:28:10.280820Z",
+        "method": "normal anonymous curl HTTPS GET; existing configured system proxy; no redirects/cookies/Authorization/profile",
+        "requestHeaders": {
+          "Accept": "image/webp"
+        },
+        "networkRoute": "127.0.0.1:7897 (existing macOS system HTTPS proxy)",
+        "completedAt": "2026-10-22T16:28:11.547351Z",
+        "httpStatus": 200,
+        "curlReceipt": {
+          "status": 200,
+          "contentType": "image/webp",
+          "bytes": 82116,
+          "httpVersion": "2"
+        },
+        "status": "saved"
+      },
+      "sourceRef": {
+        "path": "manifest.json",
+        "locatorId": "53af6604f0f1de3be654b405130687744a9afbf4-1112x868"
+      },
+      "defaultResponse": {
+        "path": "originals/53af6604f0f1de3be654b405130687744a9afbf4-1112x868.webp",
+        "bytes": 743715,
+        "sha256": "b9a31994d08bb596abe03849e851456b77ec499e47fc1c326bf7764c6b76a98f",
+        "contentType": "image/png"
+      },
+      "purpose": "Match the explicitly declared image/webp media encoding while retaining the original default PNG response separately."
+    },
+    {
+      "id": "55b3653848507200eea53130c70a851f1cd86c24-1484x1164--accept-image-webp",
+      "baseLocatorId": "55b3653848507200eea53130c70a851f1cd86c24-1484x1164",
+      "url": "https://cdn.sanity.io/images/w2mhvsaj/production/55b3653848507200eea53130c70a851f1cd86c24-1484x1164.webp",
+      "path": "negotiated-webp/55b3653848507200eea53130c70a851f1cd86c24-1484x1164.webp",
+      "bytes": 79064,
+      "sha256": "8cba17641c934fab61c6ac6165b9e7178a950ed9bba4bd3482b6c5051776f384",
+      "contentType": "image/webp",
+      "metadata": {
+        "width": 1484,
+        "height": 1164,
+        "format": "WEBP",
+        "mode": "RGBA",
+        "frames": 1,
+        "method": "Pillow header/payload decoding"
+      },
+      "acquisition": {
+        "startedAt": "2026-10-22T16:28:11.573252Z",
+        "method": "normal anonymous curl HTTPS GET; existing configured system proxy; no redirects/cookies/Authorization/profile",
+        "requestHeaders": {
+          "Accept": "image/webp"
+        },
+        "networkRoute": "127.0.0.1:7897 (existing macOS system HTTPS proxy)",
+        "completedAt": "2026-10-22T16:28:12.814078Z",
+        "httpStatus": 200,
+        "curlReceipt": {
+          "status": 200,
+          "contentType": "image/webp",
+          "bytes": 79064,
+          "httpVersion": "2"
+        },
+        "status": "saved"
+      },
+      "sourceRef": {
+        "path": "manifest.json",
+        "locatorId": "55b3653848507200eea53130c70a851f1cd86c24-1484x1164"
+      },
+      "defaultResponse": {
+        "path": "originals/55b3653848507200eea53130c70a851f1cd86c24-1484x1164.webp",
+        "bytes": 668569,
+        "sha256": "59f4c49a83cd0aa417c8e728d8e6a1072bef881667b1abd802283861795bd675",
+        "contentType": "image/png"
+      },
+      "purpose": "Match the explicitly declared image/webp media encoding while retaining the original default PNG response separately."
+    },
+    {
+      "id": "80465ec0ce7a96286e124608c97de2dfc3163ce1-1408x1106--accept-image-webp",
+      "baseLocatorId": "80465ec0ce7a96286e124608c97de2dfc3163ce1-1408x1106",
+      "url": "https://cdn.sanity.io/images/w2mhvsaj/production/80465ec0ce7a96286e124608c97de2dfc3163ce1-1408x1106.webp",
+      "path": "negotiated-webp/80465ec0ce7a96286e124608c97de2dfc3163ce1-1408x1106.webp",
+      "bytes": 83710,
+      "sha256": "d0e7b6aabe18a7c3110f284d93cee36c1de26c61d62ac02853ba1425315a5d2a",
+      "contentType": "image/webp",
+      "metadata": {
+        "width": 1408,
+        "height": 1106,
+        "format": "WEBP",
+        "mode": "RGBA",
+        "frames": 1,
+        "method": "Pillow header/payload decoding"
+      },
+      "acquisition": {
+        "startedAt": "2026-10-22T16:28:12.845372Z",
+        "method": "normal anonymous curl HTTPS GET; existing configured system proxy; no redirects/cookies/Authorization/profile",
+        "requestHeaders": {
+          "Accept": "image/webp"
+        },
+        "networkRoute": "127.0.0.1:7897 (existing macOS system HTTPS proxy)",
+        "completedAt": "2026-10-22T16:28:14.230083Z",
+        "httpStatus": 200,
+        "curlReceipt": {
+          "status": 200,
+          "contentType": "image/webp",
+          "bytes": 83710,
+          "httpVersion": "2"
+        },
+        "status": "saved"
+      },
+      "sourceRef": {
+        "path": "manifest.json",
+        "locatorId": "80465ec0ce7a96286e124608c97de2dfc3163ce1-1408x1106"
+      },
+      "defaultResponse": {
+        "path": "originals/80465ec0ce7a96286e124608c97de2dfc3163ce1-1408x1106.webp",
+        "bytes": 1063641,
+        "sha256": "d3a9ef9c036f8193379caca913cc8161d6a2258f77c6fe0fe729b568b7be66b5",
+        "contentType": "image/png"
+      },
+      "purpose": "Match the explicitly declared image/webp media encoding while retaining the original default PNG response separately."
+    },
+    {
+      "id": "806b2e1cee0adab5f2b254f93358b612fc255f29-782x940--accept-image-webp",
+      "baseLocatorId": "806b2e1cee0adab5f2b254f93358b612fc255f29-782x940",
+      "url": "https://cdn.sanity.io/images/w2mhvsaj/production/806b2e1cee0adab5f2b254f93358b612fc255f29-782x940.webp",
+      "path": "negotiated-webp/806b2e1cee0adab5f2b254f93358b612fc255f29-782x940.webp",
+      "bytes": 45050,
+      "sha256": "e21d9b12bed81aff4b2252a90753b613fe1354c22136d5b9a7b2ae8fbf622275",
+      "contentType": "image/webp",
+      "metadata": {
+        "width": 782,
+        "height": 940,
+        "format": "WEBP",
+        "mode": "RGBA",
+        "frames": 1,
+        "method": "Pillow header/payload decoding"
+      },
+      "acquisition": {
+        "startedAt": "2026-10-22T16:28:14.261210Z",
+        "method": "normal anonymous curl HTTPS GET; existing configured system proxy; no redirects/cookies/Authorization/profile",
+        "requestHeaders": {
+          "Accept": "image/webp"
+        },
+        "networkRoute": "127.0.0.1:7897 (existing macOS system HTTPS proxy)",
+        "completedAt": "2026-10-22T16:28:15.278205Z",
+        "httpStatus": 200,
+        "curlReceipt": {
+          "status": 200,
+          "contentType": "image/webp",
+          "bytes": 45050,
+          "httpVersion": "2"
+        },
+        "status": "saved"
+      },
+      "sourceRef": {
+        "path": "manifest.json",
+        "locatorId": "806b2e1cee0adab5f2b254f93358b612fc255f29-782x940"
+      },
+      "defaultResponse": {
+        "path": "originals/806b2e1cee0adab5f2b254f93358b612fc255f29-782x940.webp",
+        "bytes": 118829,
+        "sha256": "be37870a4a9660652b07ffa380bb320727f736641e705c675094bf862c8a03b3",
+        "contentType": "image/png"
+      },
+      "purpose": "Match the explicitly declared image/webp media encoding while retaining the original default PNG response separately."
+    },
+    {
+      "id": "8779105b5de26bf0ac67bebf87c1a48e7f738a65-1112x868--accept-image-webp",
+      "baseLocatorId": "8779105b5de26bf0ac67bebf87c1a48e7f738a65-1112x868",
+      "url": "https://cdn.sanity.io/images/w2mhvsaj/production/8779105b5de26bf0ac67bebf87c1a48e7f738a65-1112x868.webp",
+      "path": "negotiated-webp/8779105b5de26bf0ac67bebf87c1a48e7f738a65-1112x868.webp",
+      "bytes": 66954,
+      "sha256": "cc5220c5482d6cbb4acbd28b6afcc77b4039dfe179b930c784acbf5354f8ad99",
+      "contentType": "image/webp",
+      "metadata": {
+        "width": 1112,
+        "height": 868,
+        "format": "WEBP",
+        "mode": "RGBA",
+        "frames": 1,
+        "method": "Pillow header/payload decoding"
+      },
+      "acquisition": {
+        "startedAt": "2026-10-22T16:28:15.289931Z",
+        "method": "normal anonymous curl HTTPS GET; existing configured system proxy; no redirects/cookies/Authorization/profile",
+        "requestHeaders": {
+          "Accept": "image/webp"
+        },
+        "networkRoute": "127.0.0.1:7897 (existing macOS system HTTPS proxy)",
+        "completedAt": "2026-10-22T16:28:16.293732Z",
+        "httpStatus": 200,
+        "curlReceipt": {
+          "status": 200,
+          "contentType": "image/webp",
+          "bytes": 66954,
+          "httpVersion": "2"
+        },
+        "status": "saved"
+      },
+      "sourceRef": {
+        "path": "manifest.json",
+        "locatorId": "8779105b5de26bf0ac67bebf87c1a48e7f738a65-1112x868"
+      },
+      "defaultResponse": {
+        "path": "originals/8779105b5de26bf0ac67bebf87c1a48e7f738a65-1112x868.webp",
+        "bytes": 582277,
+        "sha256": "4f0c5aee8c0e5435554606ecba286bce2048d9e36c94f5a77e2a458fd46e38b9",
+        "contentType": "image/png"
+      },
+      "purpose": "Match the explicitly declared image/webp media encoding while retaining the original default PNG response separately."
+    },
+    {
+      "id": "a79b53b2245a08fba9aa312c3b680849fb041aa3-1484x1164--accept-image-webp",
+      "baseLocatorId": "a79b53b2245a08fba9aa312c3b680849fb041aa3-1484x1164",
+      "url": "https://cdn.sanity.io/images/w2mhvsaj/production/a79b53b2245a08fba9aa312c3b680849fb041aa3-1484x1164.webp",
+      "path": "negotiated-webp/a79b53b2245a08fba9aa312c3b680849fb041aa3-1484x1164.webp",
+      "bytes": 19304,
+      "sha256": "1297ba23e189d06469e26f92268ddf19a31d315657aa4970a6706eb3678d8ced",
+      "contentType": "image/webp",
+      "metadata": {
+        "width": 1484,
+        "height": 1164,
+        "format": "WEBP",
+        "mode": "RGBA",
+        "frames": 1,
+        "method": "Pillow header/payload decoding"
+      },
+      "acquisition": {
+        "startedAt": "2026-10-22T16:28:16.317159Z",
+        "method": "normal anonymous curl HTTPS GET; existing configured system proxy; no redirects/cookies/Authorization/profile",
+        "requestHeaders": {
+          "Accept": "image/webp"
+        },
+        "networkRoute": "127.0.0.1:7897 (existing macOS system HTTPS proxy)",
+        "completedAt": "2026-10-22T16:28:17.246283Z",
+        "httpStatus": 200,
+        "curlReceipt": {
+          "status": 200,
+          "contentType": "image/webp",
+          "bytes": 19304,
+          "httpVersion": "2"
+        },
+        "status": "saved"
+      },
+      "sourceRef": {
+        "path": "manifest.json",
+        "locatorId": "a79b53b2245a08fba9aa312c3b680849fb041aa3-1484x1164"
+      },
+      "defaultResponse": {
+        "path": "originals/a79b53b2245a08fba9aa312c3b680849fb041aa3-1484x1164.webp",
+        "bytes": 178785,
+        "sha256": "dee91ab0a28f8ae1085fd4ef4c6e1b18548f4f8ea989da613add0ac6b5f796f3",
+        "contentType": "image/png"
+      },
+      "purpose": "Match the explicitly declared image/webp media encoding while retaining the original default PNG response separately."
+    },
+    {
+      "id": "a86db726ccb7718e5754fa2ceb65f155c50c71b3-3498x1426--accept-image-webp",
+      "baseLocatorId": "a86db726ccb7718e5754fa2ceb65f155c50c71b3-3498x1426",
+      "url": "https://cdn.sanity.io/images/w2mhvsaj/production/a86db726ccb7718e5754fa2ceb65f155c50c71b3-3498x1426.webp",
+      "path": "negotiated-webp/a86db726ccb7718e5754fa2ceb65f155c50c71b3-3498x1426.webp",
+      "bytes": 64582,
+      "sha256": "f150bc74a0b74d4aa6de3cccbd473c42da26a43e6a0a07882783ccc64af91074",
+      "contentType": "image/webp",
+      "metadata": {
+        "width": 3498,
+        "height": 1426,
+        "format": "WEBP",
+        "mode": "RGBA",
+        "frames": 1,
+        "method": "Pillow header/payload decoding"
+      },
+      "acquisition": {
+        "startedAt": "2026-10-22T16:28:17.271499Z",
+        "method": "normal anonymous curl HTTPS GET; existing configured system proxy; no redirects/cookies/Authorization/profile",
+        "requestHeaders": {
+          "Accept": "image/webp"
+        },
+        "networkRoute": "127.0.0.1:7897 (existing macOS system HTTPS proxy)",
+        "completedAt": "2026-10-22T16:28:18.749008Z",
+        "httpStatus": 200,
+        "curlReceipt": {
+          "status": 200,
+          "contentType": "image/webp",
+          "bytes": 64582,
+          "httpVersion": "2"
+        },
+        "status": "saved"
+      },
+      "sourceRef": {
+        "path": "manifest.json",
+        "locatorId": "a86db726ccb7718e5754fa2ceb65f155c50c71b3-3498x1426"
+      },
+      "defaultResponse": {
+        "path": "originals/a86db726ccb7718e5754fa2ceb65f155c50c71b3-3498x1426.webp",
+        "bytes": 487819,
+        "sha256": "9780ed4667c90b4e48d5ff2c9c042186cde2acff146d85ffd1aee7aeccc1b969",
+        "contentType": "image/png"
+      },
+      "purpose": "Match the explicitly declared image/webp media encoding while retaining the original default PNG response separately."
+    },
+    {
+      "id": "bc21e73db50267d95350b12adf6fde7492670583-1484x1164--accept-image-webp",
+      "baseLocatorId": "bc21e73db50267d95350b12adf6fde7492670583-1484x1164",
+      "url": "https://cdn.sanity.io/images/w2mhvsaj/production/bc21e73db50267d95350b12adf6fde7492670583-1484x1164.webp",
+      "path": "negotiated-webp/bc21e73db50267d95350b12adf6fde7492670583-1484x1164.webp",
+      "bytes": 30714,
+      "sha256": "4fc263ed140117b2c8472ebde5f3d7f3e0dc443aaa4923eb93976ca9e9fe76ad",
+      "contentType": "image/webp",
+      "metadata": {
+        "width": 1484,
+        "height": 1164,
+        "format": "WEBP",
+        "mode": "RGBA",
+        "frames": 1,
+        "method": "Pillow header/payload decoding"
+      },
+      "acquisition": {
+        "startedAt": "2026-10-22T16:28:18.805905Z",
+        "method": "normal anonymous curl HTTPS GET; existing configured system proxy; no redirects/cookies/Authorization/profile",
+        "requestHeaders": {
+          "Accept": "image/webp"
+        },
+        "networkRoute": "127.0.0.1:7897 (existing macOS system HTTPS proxy)",
+        "completedAt": "2026-10-22T16:28:19.857105Z",
+        "httpStatus": 200,
+        "curlReceipt": {
+          "status": 200,
+          "contentType": "image/webp",
+          "bytes": 30714,
+          "httpVersion": "2"
+        },
+        "status": "saved"
+      },
+      "sourceRef": {
+        "path": "manifest.json",
+        "locatorId": "bc21e73db50267d95350b12adf6fde7492670583-1484x1164"
+      },
+      "defaultResponse": {
+        "path": "originals/bc21e73db50267d95350b12adf6fde7492670583-1484x1164.webp",
+        "bytes": 253326,
+        "sha256": "a1fe49a961186c3abb6531041a75e00962f9d722cd592b8ee00056c620ad2c95",
+        "contentType": "image/png"
+      },
+      "purpose": "Match the explicitly declared image/webp media encoding while retaining the original default PNG response separately."
+    },
+    {
+      "id": "deb7f48fb59bafab5e1ded822a6ae92ba6d3d2c0-1112x868--accept-image-webp",
+      "baseLocatorId": "deb7f48fb59bafab5e1ded822a6ae92ba6d3d2c0-1112x868",
+      "url": "https://cdn.sanity.io/images/w2mhvsaj/production/deb7f48fb59bafab5e1ded822a6ae92ba6d3d2c0-1112x868.webp",
+      "path": "negotiated-webp/deb7f48fb59bafab5e1ded822a6ae92ba6d3d2c0-1112x868.webp",
+      "bytes": 49984,
+      "sha256": "9c9358d931ac813d8194d9278e8e3f2512ba8969fdeb3cce685fe8f7924534c8",
+      "contentType": "image/webp",
+      "metadata": {
+        "width": 1112,
+        "height": 868,
+        "format": "WEBP",
+        "mode": "RGBA",
+        "frames": 1,
+        "method": "Pillow header/payload decoding"
+      },
+      "acquisition": {
+        "startedAt": "2026-10-22T16:28:19.874293Z",
+        "method": "normal anonymous curl HTTPS GET; existing configured system proxy; no redirects/cookies/Authorization/profile",
+        "requestHeaders": {
+          "Accept": "image/webp"
+        },
+        "networkRoute": "127.0.0.1:7897 (existing macOS system HTTPS proxy)",
+        "completedAt": "2026-10-22T16:28:21.129358Z",
+        "httpStatus": 200,
+        "curlReceipt": {
+          "status": 200,
+          "contentType": "image/webp",
+          "bytes": 49984,
+          "httpVersion": "2"
+        },
+        "status": "saved"
+      },
+      "sourceRef": {
+        "path": "manifest.json",
+        "locatorId": "deb7f48fb59bafab5e1ded822a6ae92ba6d3d2c0-1112x868"
+      },
+      "defaultResponse": {
+        "path": "originals/deb7f48fb59bafab5e1ded822a6ae92ba6d3d2c0-1112x868.webp",
+        "bytes": 296115,
+        "sha256": "0587682eea23bf7a1bdc242121bc81db8d1108a380017cfa85c01fdfbec101a6",
+        "contentType": "image/png"
+      },
+      "purpose": "Match the explicitly declared image/webp media encoding while retaining the original default PNG response separately."
+    },
+    {
+      "id": "e7d17c4af7e4ddeb499907a3c8ec28f15dea2983-1112x868--accept-image-webp",
+      "baseLocatorId": "e7d17c4af7e4ddeb499907a3c8ec28f15dea2983-1112x868",
+      "url": "https://cdn.sanity.io/images/w2mhvsaj/production/e7d17c4af7e4ddeb499907a3c8ec28f15dea2983-1112x868.webp",
+      "path": "negotiated-webp/e7d17c4af7e4ddeb499907a3c8ec28f15dea2983-1112x868.webp",
+      "bytes": 43490,
+      "sha256": "c313c836a473449c09b9a10e5ce57d631d9f32148092f786d57460cc89b9d5ff",
+      "contentType": "image/webp",
+      "metadata": {
+        "width": 1112,
+        "height": 868,
+        "format": "WEBP",
+        "mode": "RGBA",
+        "frames": 1,
+        "method": "Pillow header/payload decoding"
+      },
+      "acquisition": {
+        "startedAt": "2026-10-22T16:28:21.152458Z",
+        "method": "normal anonymous curl HTTPS GET; existing configured system proxy; no redirects/cookies/Authorization/profile",
+        "requestHeaders": {
+          "Accept": "image/webp"
+        },
+        "networkRoute": "127.0.0.1:7897 (existing macOS system HTTPS proxy)",
+        "completedAt": "2026-10-22T16:28:22.203224Z",
+        "httpStatus": 200,
+        "curlReceipt": {
+          "status": 200,
+          "contentType": "image/webp",
+          "bytes": 43490,
+          "httpVersion": "2"
+        },
+        "status": "saved"
+      },
+      "sourceRef": {
+        "path": "manifest.json",
+        "locatorId": "e7d17c4af7e4ddeb499907a3c8ec28f15dea2983-1112x868"
+      },
+      "defaultResponse": {
+        "path": "originals/e7d17c4af7e4ddeb499907a3c8ec28f15dea2983-1112x868.webp",
+        "bytes": 293537,
+        "sha256": "91173a3cb727baaf67ac7714d143aa6fc7cae40b98596e4132cd3d481a82bf7f",
+        "contentType": "image/png"
+      },
+      "purpose": "Match the explicitly declared image/webp media encoding while retaining the original default PNG response separately."
+    }
+  ],
+  "summary": {
+    "locators": 92,
+    "defaultResponses": 92,
+    "negotiatedWebpResponses": 15,
+    "totalResponseFiles": 107,
+    "totalMediaBytes": 440893743,
+    "negotiatedWebpBytes": 811598
+  }
+}

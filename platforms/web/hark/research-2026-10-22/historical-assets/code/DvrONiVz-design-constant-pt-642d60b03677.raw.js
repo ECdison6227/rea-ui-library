@@ -1,0 +1,1 @@
+pt="'GT Standard L', 'GT Standard L Fallback', -apple-system, BlinkMacSystemFont, sans-serif"

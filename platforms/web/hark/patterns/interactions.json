@@ -1,0 +1,1862 @@
+{
+  "formatVersion": 1,
+  "kind": "interactions",
+  "items": [
+    {
+      "id": "hark-interaction-navigation",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-review-historical-audit",
+        "hark-d-transfer-contract"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D路由状态与当前草稿分离；每个导航入口指向真实目标状态，返回恢复原上下文。"
+      },
+      "componentRefs": [
+        "hark-component-app-navigation",
+        "hark-component-project-row",
+        "hark-component-home-panel",
+        "hark-component-settings-group"
+      ],
+      "transitions": [
+        {
+          "event": "toggleHome",
+          "to": "homeOpen",
+          "result": "打开420px列；thread保留",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "chat"
+        },
+        {
+          "event": "toggleHome",
+          "to": "chat",
+          "result": "关闭辅列，主内容带重居中",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "homeOpen"
+        },
+        {
+          "event": "openProject",
+          "to": "projectThread",
+          "result": "进入对应project上下文",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "chat"
+        },
+        {
+          "event": "back",
+          "to": "previousContext",
+          "result": "D恢复来源目录/线程与草稿",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "projectThread"
+        },
+        {
+          "event": "openSettings",
+          "to": "settings",
+          "result": "D打开设置层；背景上下文保留",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "any"
+        },
+        {
+          "event": "back",
+          "to": "previousContext",
+          "result": "D关闭层并恢复焦点",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "settings"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D关闭/返回恢复触发点与当前业务上下文；请求/数据语义由目标业务决定。"
+    },
+    {
+      "id": "hark-interaction-composer-submit",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-css-ctnwvxws",
+        "hark-review-historical-audit",
+        "hark-d-transfer-contract"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D处理IME/重复发送/失败恢复；原后端stream速率不移植为UI事实。"
+      },
+      "componentRefs": [
+        "hark-component-composer",
+        "hark-component-message",
+        "hark-component-feedback"
+      ],
+      "transitions": [
+        {
+          "event": "input",
+          "to": "draft",
+          "result": "D更新文字draft但不提交",
+          "evidenceRefs": [
+            "hark-h15-b-css-ctnwvxws",
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "empty"
+        },
+        {
+          "event": "submit while IME inactive and valid",
+          "to": "pending",
+          "result": "D一次提交真实目标请求，按钮防重复",
+          "evidenceRefs": [
+            "hark-h15-b-css-ctnwvxws",
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "draft"
+        },
+        {
+          "event": "success",
+          "to": "sent",
+          "result": "D收到结果后更新消息并清除已发送草稿",
+          "evidenceRefs": [
+            "hark-h15-b-css-ctnwvxws",
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "pending"
+        },
+        {
+          "event": "failure",
+          "to": "draftError",
+          "result": "D保留草稿和附件供retry",
+          "evidenceRefs": [
+            "hark-h15-b-css-ctnwvxws",
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "pending"
+        },
+        {
+          "event": "retry",
+          "to": "pending",
+          "result": "D复用相同上下文重试",
+          "evidenceRefs": [
+            "hark-h15-b-css-ctnwvxws",
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "draftError"
+        },
+        {
+          "event": "cancel",
+          "to": "draft",
+          "result": "D不自发清空草稿",
+          "evidenceRefs": [
+            "hark-h15-b-css-ctnwvxws",
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "draft"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D草稿按thread key保存；成功清除本次发送内容，晚到旧请求不得覆盖新draft。"
+    },
+    {
+      "id": "hark-interaction-reply",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-card-reply-context-expand",
+        "hark-h15-b-card-swipe-reply",
+        "hark-review-historical-audit"
+      ],
+      "unknowns": [
+        "原request失败/取消仍未测；最后两条D目标选择"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "保留原reply UI关联；D发送失败保护draft/引用。"
+      },
+      "componentRefs": [
+        "hark-component-composer",
+        "hark-component-reply-context",
+        "hark-component-code-card",
+        "hark-component-message"
+      ],
+      "transitions": [
+        {
+          "event": "replyTo(card)",
+          "to": "replying",
+          "result": "保存结构化目标并focus输入；文字草稿不变",
+          "evidenceRefs": [
+            "hark-h15-b-card-reply-context-expand",
+            "hark-h15-b-card-swipe-reply",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "noReply"
+        },
+        {
+          "event": "escape",
+          "to": "noReply",
+          "result": "移除引用并保留draft",
+          "evidenceRefs": [
+            "hark-h15-b-card-reply-context-expand",
+            "hark-h15-b-card-swipe-reply",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "replying"
+        },
+        {
+          "event": "clearReply",
+          "to": "noReply",
+          "result": "关闭引用条；不清空正文",
+          "evidenceRefs": [
+            "hark-h15-b-card-reply-context-expand",
+            "hark-h15-b-card-swipe-reply",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "replying"
+        },
+        {
+          "event": "submit",
+          "to": "pendingReply",
+          "result": "D业务提交引用ID和正文",
+          "evidenceRefs": [
+            "hark-h15-b-card-reply-context-expand",
+            "hark-h15-b-card-swipe-reply",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "replying"
+        },
+        {
+          "event": "failure",
+          "to": "replying",
+          "result": "D保留引用与draft以便重试",
+          "evidenceRefs": [
+            "hark-h15-b-card-reply-context-expand",
+            "hark-h15-b-card-swipe-reply",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "pendingReply"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D关闭/返回恢复触发点与当前业务上下文；请求/数据语义由目标业务决定。"
+    },
+    {
+      "id": "hark-interaction-scroll-pinning",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-scroll-pinning",
+        "hark-review-historical-audit"
+      ],
+      "unknowns": [
+        "全部paused/detach/晚到patch组合未实测"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "沿用near-bottom70px；D用户滚离底部时不被send-finally强制拉到底。"
+      },
+      "componentRefs": [
+        "hark-component-message",
+        "hark-component-composer",
+        "hark-component-photo-stack"
+      ],
+      "transitions": [
+        {
+          "event": "contentGrowth",
+          "to": "pinned",
+          "result": "源near-bottom≤70px与内容增长补偿",
+          "evidenceRefs": [
+            "hark-h15-b-scroll-pinning",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "nearBottom"
+        },
+        {
+          "event": "userScrollUp",
+          "to": "detached",
+          "result": "源有用户上滚/paused逻辑；D不强制到底",
+          "evidenceRefs": [
+            "hark-h15-b-scroll-pinning",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "pinned"
+        },
+        {
+          "event": "contentGrowth",
+          "to": "detached",
+          "result": "D新消息不偷走阅读位置",
+          "evidenceRefs": [
+            "hark-h15-b-scroll-pinning",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "detached"
+        },
+        {
+          "event": "jumpToLatest",
+          "to": "pinned",
+          "result": "D明确动作滚到最新并恢复跟随",
+          "evidenceRefs": [
+            "hark-h15-b-scroll-pinning",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "detached"
+        },
+        {
+          "event": "stackExpand",
+          "to": "stackLocked",
+          "result": "独立栈滚动锁，不混同nearBottom",
+          "evidenceRefs": [
+            "hark-h15-b-scroll-pinning",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "any"
+        },
+        {
+          "event": "stackClose",
+          "to": "previousScrollMode",
+          "result": "D恢复原滚动/跟随模式",
+          "evidenceRefs": [
+            "hark-h15-b-scroll-pinning",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "stackLocked"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D关闭/返回恢复触发点与当前业务上下文；请求/数据语义由目标业务决定。"
+    },
+    {
+      "id": "hark-interaction-code-disclosure",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-card-code",
+        "hark-h15-b-card-text-template",
+        "hark-review-historical-audit"
+      ],
+      "unknowns": [
+        "剪贴板失败/展开过程完整曲线未测"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "原溢出规则决定disclosure；D关闭/复制反馈明确，不恒定显示展开。"
+      },
+      "componentRefs": [
+        "hark-component-code-card",
+        "hark-component-text-template"
+      ],
+      "transitions": [
+        {
+          "event": "measureOverflow",
+          "to": "fits",
+          "result": "不显示无意义展开按钮",
+          "evidenceRefs": [
+            "hark-h15-b-card-code",
+            "hark-h15-b-card-text-template",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "fits"
+        },
+        {
+          "event": "toggleExpand",
+          "to": "expanded",
+          "result": "源overflow>clientHeight+1时展开",
+          "evidenceRefs": [
+            "hark-h15-b-card-code",
+            "hark-h15-b-card-text-template",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "collapsed"
+        },
+        {
+          "event": "toggleExpand",
+          "to": "collapsed",
+          "result": "收起保留原卡位置",
+          "evidenceRefs": [
+            "hark-h15-b-card-code",
+            "hark-h15-b-card-text-template",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "expanded"
+        },
+        {
+          "event": "copy",
+          "to": "same",
+          "result": "D复制原字符串，反馈成功/失败",
+          "evidenceRefs": [
+            "hark-h15-b-card-code",
+            "hark-h15-b-card-text-template",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "any"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D关闭/返回恢复触发点与当前业务上下文；请求/数据语义由目标业务决定。"
+    },
+    {
+      "id": "hark-interaction-summary-read",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-card-summary-modal",
+        "hark-review-historical-audit"
+      ],
+      "unknowns": [
+        "完整outside-click/键盘focus与保存状态来源未测"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "原独立弹层保持；D关闭/焦点返回与内容复制接真实行为。"
+      },
+      "componentRefs": [
+        "hark-component-summary-card",
+        "hark-component-dialog"
+      ],
+      "transitions": [
+        {
+          "event": "openDetail",
+          "to": "detailOpen",
+          "result": "打开独立summary dialog",
+          "evidenceRefs": [
+            "hark-h15-b-card-summary-modal",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "preview"
+        },
+        {
+          "event": "closeDetail",
+          "to": "preview",
+          "result": "D回到触发卡位置并解除本层scroll lock",
+          "evidenceRefs": [
+            "hark-h15-b-card-summary-modal",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "detailOpen"
+        },
+        {
+          "event": "escape",
+          "to": "preview",
+          "result": "D关闭并恢复trigger焦点",
+          "evidenceRefs": [
+            "hark-h15-b-card-summary-modal",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "detailOpen"
+        },
+        {
+          "event": "copy",
+          "to": "detailOpen",
+          "result": "D复制全文，保持阅读位置",
+          "evidenceRefs": [
+            "hark-h15-b-card-summary-modal",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "detailOpen"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D关闭/返回恢复触发点与当前业务上下文；请求/数据语义由目标业务决定。"
+    },
+    {
+      "id": "hark-interaction-stack",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-link-stack-counts-expansion",
+        "hark-h15-b-link-stack-grid-motion",
+        "hark-review-historical-audit"
+      ],
+      "unknowns": [
+        "H15七图片与两链接是不同实例，不全覆盖所有栈状态"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "按数量支路而非一个统一点击lightbox；D关闭统一清理动画/锁/透明层。"
+      },
+      "componentRefs": [
+        "hark-component-link-stack",
+        "hark-component-photo-stack",
+        "hark-component-dialog"
+      ],
+      "transitions": [
+        {
+          "event": "expandRequest",
+          "to": "count2",
+          "result": "源双链接无展开入口",
+          "evidenceRefs": [
+            "hark-h15-b-link-stack-counts-expansion",
+            "hark-h15-b-link-stack-grid-motion",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "count2"
+        },
+        {
+          "event": "expand",
+          "to": "spread",
+          "result": "源进入独立栈/网格并锁scroll",
+          "evidenceRefs": [
+            "hark-h15-b-link-stack-counts-expansion",
+            "hark-h15-b-link-stack-grid-motion",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "pile"
+        },
+        {
+          "event": "escape",
+          "to": "collapsed",
+          "result": "关闭后spread0/lockedfalse/expandedfalse",
+          "evidenceRefs": [
+            "hark-h15-b-link-stack-counts-expansion",
+            "hark-h15-b-link-stack-grid-motion",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "spread"
+        },
+        {
+          "event": "close",
+          "to": "collapsed",
+          "result": "D一致执行关闭复位",
+          "evidenceRefs": [
+            "hark-h15-b-link-stack-counts-expansion",
+            "hark-h15-b-link-stack-grid-motion",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "spread"
+        },
+        {
+          "event": "openExternal",
+          "to": "same",
+          "result": "D打开指定链接，栈状态保持",
+          "evidenceRefs": [
+            "hark-h15-b-link-stack-counts-expansion",
+            "hark-h15-b-link-stack-grid-motion",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "collapsed"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D关闭/返回恢复触发点与当前业务上下文；请求/数据语义由目标业务决定。"
+    },
+    {
+      "id": "hark-interaction-stack-drag",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-link-stack-drag-flip",
+        "hark-h15-b-link-motion-preference"
+      ],
+      "unknowns": [
+        "距离.55的原归一化分母必须读取raw函数，不能当.55 CSSpx",
+        "当前设备触控/长按冲突未测"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "优先包装原手势函数，保留pointer-cancel；D若无法完整移植以显式按钮替代，不猜归一化单位。"
+      },
+      "componentRefs": [
+        "hark-component-link-stack",
+        "hark-component-photo-stack"
+      ],
+      "transitions": [
+        {
+          "event": "pointerDown",
+          "to": "tracking",
+          "result": "源长按默认290ms；记录初始坐标",
+          "evidenceRefs": [
+            "hark-h15-b-link-stack-drag-flip",
+            "hark-h15-b-link-motion-preference"
+          ],
+          "classification": "B",
+          "from": "idle"
+        },
+        {
+          "event": "move within6px and short release",
+          "to": "clicked",
+          "result": "源短点击位移≤6px",
+          "evidenceRefs": [
+            "hark-h15-b-link-stack-drag-flip",
+            "hark-h15-b-link-motion-preference"
+          ],
+          "classification": "B",
+          "from": "tracking"
+        },
+        {
+          "event": "drag",
+          "to": "dragging",
+          "result": "拖动与翻牌状态",
+          "evidenceRefs": [
+            "hark-h15-b-link-stack-drag-flip",
+            "hark-h15-b-link-motion-preference"
+          ],
+          "classification": "B",
+          "from": "tracking"
+        },
+        {
+          "event": "release above threshold",
+          "to": "flip",
+          "result": "源位移≥.55或释放速度≥600px/s触发",
+          "evidenceRefs": [
+            "hark-h15-b-link-stack-drag-flip",
+            "hark-h15-b-link-motion-preference"
+          ],
+          "classification": "B",
+          "from": "dragging"
+        },
+        {
+          "event": "release below threshold",
+          "to": "settling",
+          "result": "源回弹/settle",
+          "evidenceRefs": [
+            "hark-h15-b-link-stack-drag-flip",
+            "hark-h15-b-link-motion-preference"
+          ],
+          "classification": "B",
+          "from": "dragging"
+        },
+        {
+          "event": "reducedMotion",
+          "to": "idle",
+          "result": "源禁翻牌，大位移目标禁用",
+          "evidenceRefs": [
+            "hark-h15-b-link-stack-drag-flip",
+            "hark-h15-b-link-motion-preference"
+          ],
+          "classification": "B",
+          "from": "any"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D关闭/返回恢复触发点与当前业务上下文；请求/数据语义由目标业务决定。"
+    },
+    {
+      "id": "hark-interaction-table-menu-export",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-table-card-model",
+        "hark-review-historical-audit"
+      ],
+      "unknowns": [
+        "排序实例必须新A验证，不提升旧顺序不变样本"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "D目标业务可排序时执行并测试真实行顺序；CSV/HTML/Markdown导出用目标数据。"
+      },
+      "componentRefs": [
+        "hark-component-table-card",
+        "hark-component-menu",
+        "hark-component-feedback"
+      ],
+      "transitions": [
+        {
+          "event": "cycleSort",
+          "to": "desc",
+          "result": "源模型desc→asc→null，但H15示例并未观测排序成功",
+          "evidenceRefs": [
+            "hark-h15-b-table-card-model",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "unsorted"
+        },
+        {
+          "event": "cycleSort",
+          "to": "asc",
+          "result": "源模型第二状态",
+          "evidenceRefs": [
+            "hark-h15-b-table-card-model",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "desc"
+        },
+        {
+          "event": "cycleSort",
+          "to": "unsorted",
+          "result": "源模型回null",
+          "evidenceRefs": [
+            "hark-h15-b-table-card-model",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "asc"
+        },
+        {
+          "event": "openColumnMenu",
+          "to": "menuOpen",
+          "result": "显示列动作",
+          "evidenceRefs": [
+            "hark-h15-b-table-card-model",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "table"
+        },
+        {
+          "event": "exportCsv",
+          "to": "table",
+          "result": "源支持真实CSV下载",
+          "evidenceRefs": [
+            "hark-h15-b-table-card-model",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "menuOpen"
+        },
+        {
+          "event": "escape",
+          "to": "table",
+          "result": "D关闭菜单恢复anchor焦点",
+          "evidenceRefs": [
+            "hark-h15-b-table-card-model",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "menuOpen"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D关闭/返回恢复触发点与当前业务上下文；请求/数据语义由目标业务决定。"
+    },
+    {
+      "id": "hark-interaction-file-lifecycle",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-file-viewer-dispatch",
+        "hark-h15-b-html-file-preview",
+        "hark-review-historical-audit"
+      ],
+      "unknowns": [
+        "所有非CSV renderer实际完整效果未知",
+        "原取消请求/晚到结果语义未观测"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "D target viewer具体结果另验；关闭时不让晚到结果重新打开层。"
+      },
+      "componentRefs": [
+        "hark-component-file-preview",
+        "hark-component-dialog",
+        "hark-component-feedback"
+      ],
+      "transitions": [
+        {
+          "event": "open",
+          "to": "loading",
+          "result": "D打开独立viewer，保留close",
+          "evidenceRefs": [
+            "hark-h15-b-file-viewer-dispatch",
+            "hark-h15-b-html-file-preview",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "card"
+        },
+        {
+          "event": "loadSuccess",
+          "to": "loaded",
+          "result": "渲染匹配类型；H15 CSV有已加载结论",
+          "evidenceRefs": [
+            "hark-h15-b-file-viewer-dispatch",
+            "hark-h15-b-html-file-preview",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "loading"
+        },
+        {
+          "event": "loadError",
+          "to": "failure",
+          "result": "D显示错误与retry",
+          "evidenceRefs": [
+            "hark-h15-b-file-viewer-dispatch",
+            "hark-h15-b-html-file-preview",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "loading"
+        },
+        {
+          "event": "retry",
+          "to": "loading",
+          "result": "D重试当前文件",
+          "evidenceRefs": [
+            "hark-h15-b-file-viewer-dispatch",
+            "hark-h15-b-html-file-preview",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "failure"
+        },
+        {
+          "event": "close",
+          "to": "card",
+          "result": "D取消本层请求或忽略旧结果",
+          "evidenceRefs": [
+            "hark-h15-b-file-viewer-dispatch",
+            "hark-h15-b-html-file-preview",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "loading"
+        },
+        {
+          "event": "close",
+          "to": "card",
+          "result": "D恢复thread位置",
+          "evidenceRefs": [
+            "hark-h15-b-file-viewer-dispatch",
+            "hark-h15-b-html-file-preview",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "loaded"
+        },
+        {
+          "event": "download",
+          "to": "unsupported",
+          "result": "D下载原文件并反馈",
+          "evidenceRefs": [
+            "hark-h15-b-file-viewer-dispatch",
+            "hark-h15-b-html-file-preview",
+            "hark-review-historical-audit"
+          ],
+          "classification": "B",
+          "from": "unsupported"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D关闭/返回恢复触发点与当前业务上下文；请求/数据语义由目标业务决定。"
+    },
+    {
+      "id": "hark-interaction-tool-stop",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-stop-tool-optimistic"
+      ],
+      "unknowns": [
+        "该Stop完整原运行未测；停止是否阻止后台行动不可只凭UI判断"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "UI乐观状态只在真实目标支持取消时用；D失败回滚与确认取消有真实行为。"
+      },
+      "componentRefs": [
+        "hark-component-activity",
+        "hark-component-dialog",
+        "hark-component-feedback"
+      ],
+      "transitions": [
+        {
+          "event": "requestStop",
+          "to": "confirming",
+          "result": "源显示工具Stop确认",
+          "evidenceRefs": [
+            "hark-h15-b-stop-tool-optimistic"
+          ],
+          "classification": "B",
+          "from": "running"
+        },
+        {
+          "event": "cancelStop",
+          "to": "running",
+          "result": "D不修改执行状态",
+          "evidenceRefs": [
+            "hark-h15-b-stop-tool-optimistic"
+          ],
+          "classification": "B",
+          "from": "confirming"
+        },
+        {
+          "event": "confirmStop",
+          "to": "optimisticStopped",
+          "result": "源乐观取消并请求后端",
+          "evidenceRefs": [
+            "hark-h15-b-stop-tool-optimistic"
+          ],
+          "classification": "B",
+          "from": "confirming"
+        },
+        {
+          "event": "cancelSuccess",
+          "to": "stopped",
+          "result": "D按真实业务结果保持",
+          "evidenceRefs": [
+            "hark-h15-b-stop-tool-optimistic"
+          ],
+          "classification": "B",
+          "from": "optimisticStopped"
+        },
+        {
+          "event": "cancelFailure",
+          "to": "runningError",
+          "result": "源回滚并显示错误",
+          "evidenceRefs": [
+            "hark-h15-b-stop-tool-optimistic"
+          ],
+          "classification": "B",
+          "from": "optimisticStopped"
+        },
+        {
+          "event": "retryStop",
+          "to": "confirming",
+          "result": "D再尝试同一任务",
+          "evidenceRefs": [
+            "hark-h15-b-stop-tool-optimistic"
+          ],
+          "classification": "B",
+          "from": "runningError"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D关闭/返回恢复触发点与当前业务上下文；请求/数据语义由目标业务决定。"
+    },
+    {
+      "id": "hark-interaction-project-title",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-review-historical-audit",
+        "hark-d-transfer-contract"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D明确draft/committed分离；离开未保存页给保存/丢弃/继续，目标业务数据不丢失。"
+      },
+      "componentRefs": [
+        "hark-component-project-row",
+        "hark-component-settings-form",
+        "hark-component-feedback"
+      ],
+      "transitions": [
+        {
+          "event": "beginRename",
+          "to": "editing",
+          "result": "D复制committed title到draft",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "viewing"
+        },
+        {
+          "event": "changeTitle",
+          "to": "editing",
+          "result": "D仅更新draft",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "editing"
+        },
+        {
+          "event": "commitTitle valid",
+          "to": "saving",
+          "result": "D提交真实目标存储",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "editing"
+        },
+        {
+          "event": "success",
+          "to": "viewing",
+          "result": "D更新committed并反馈",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "saving"
+        },
+        {
+          "event": "failure",
+          "to": "editingError",
+          "result": "D保留draft",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "saving"
+        },
+        {
+          "event": "cancelTitle",
+          "to": "viewing",
+          "result": "D恢复committed",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "editing"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D关闭/返回恢复触发点与当前业务上下文；请求/数据语义由目标业务决定。"
+    },
+    {
+      "id": "hark-interaction-search",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-review-historical-audit",
+        "hark-d-transfer-contract"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D搜索真实目标索引；旧结果不能覆盖新查询，新消息也必须参与实际索引。"
+      },
+      "componentRefs": [
+        "hark-component-search",
+        "hark-component-app-navigation"
+      ],
+      "transitions": [
+        {
+          "event": "open",
+          "to": "idle",
+          "result": "Dfocus输入并记trigger",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "closed"
+        },
+        {
+          "event": "changeQuery",
+          "to": "searching",
+          "result": "D200ms debounce查询",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "idle"
+        },
+        {
+          "event": "latestResult",
+          "to": "results",
+          "result": "D仅接受当前query/requestID",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "searching"
+        },
+        {
+          "event": "noResult",
+          "to": "empty",
+          "result": "D保留query",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "searching"
+        },
+        {
+          "event": "error",
+          "to": "error",
+          "result": "D保留query并提供retry",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "searching"
+        },
+        {
+          "event": "chooseResult",
+          "to": "closedDestination",
+          "result": "D进入目标thread/project位置",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "results"
+        },
+        {
+          "event": "escape",
+          "to": "closed",
+          "result": "D恢复原路由/trigger焦点",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "anyOpen"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D关闭/返回恢复触发点与当前业务上下文；请求/数据语义由目标业务决定。"
+    },
+    {
+      "id": "hark-interaction-settings-save",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-review-historical-audit",
+        "hark-d-transfer-contract"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D保存/取消/返回统一规则；目标不支持该操作时入口应解释或隐藏。"
+      },
+      "componentRefs": [
+        "hark-component-settings-form",
+        "hark-component-settings-group",
+        "hark-component-feedback"
+      ],
+      "transitions": [
+        {
+          "event": "edit",
+          "to": "editing",
+          "result": "D生成draft",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "viewing"
+        },
+        {
+          "event": "invalidSave",
+          "to": "invalid",
+          "result": "D字段附近说明且不提交",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "editing"
+        },
+        {
+          "event": "save",
+          "to": "saving",
+          "result": "D提交一次",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "editing"
+        },
+        {
+          "event": "success",
+          "to": "viewing",
+          "result": "D更新committed并确认",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "saving"
+        },
+        {
+          "event": "failure",
+          "to": "failure",
+          "result": "D保留draft与错误",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "saving"
+        },
+        {
+          "event": "cancel",
+          "to": "viewing",
+          "result": "D恢复committed",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "editing"
+        },
+        {
+          "event": "back",
+          "to": "exitChoice",
+          "result": "D如有改动给保存/丢弃/继续",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "editing"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D关闭/返回恢复触发点与当前业务上下文；请求/数据语义由目标业务决定。"
+    },
+    {
+      "id": "hark-interaction-theme",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-h15-b-js-dvronivz",
+        "hark-h15-b-js-dl79do-7",
+        "hark-h15-b-wallpaper-core"
+      ],
+      "unknowns": [
+        "light真实computed/完整切换时序及当前public-App的绑定未知",
+        "源lum输出不证明theme直接按亮度切换"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "复用四种决策与原800ms material变量；D目标没有天气时auto给独立明示默认，不能把7–18规则叫原算法。"
+      },
+      "componentRefs": [
+        "hark-component-setting-control",
+        "hark-component-sky",
+        "hark-component-continuous-surface"
+      ],
+      "transitions": [
+        {
+          "event": "chooseLight",
+          "to": "light",
+          "result": "源显式light可冻结天空hour13/liveoff",
+          "evidenceRefs": [
+            "hark-h15-b-js-dvronivz",
+            "hark-h15-b-js-dl79do-7",
+            "hark-h15-b-wallpaper-core"
+          ],
+          "classification": "B",
+          "from": "any"
+        },
+        {
+          "event": "chooseDark",
+          "to": "dark",
+          "result": "源显式dark可冻结hour23/liveoff",
+          "evidenceRefs": [
+            "hark-h15-b-js-dvronivz",
+            "hark-h15-b-js-dl79do-7",
+            "hark-h15-b-wallpaper-core"
+          ],
+          "classification": "B",
+          "from": "any"
+        },
+        {
+          "event": "chooseSystem",
+          "to": "system",
+          "result": "源按prefers-color-scheme",
+          "evidenceRefs": [
+            "hark-h15-b-js-dvronivz",
+            "hark-h15-b-js-dl79do-7",
+            "hark-h15-b-wallpaper-core"
+          ],
+          "classification": "B",
+          "from": "any"
+        },
+        {
+          "event": "chooseAuto",
+          "to": "auto",
+          "result": "源按sky-place.day/保存skyAppearance",
+          "evidenceRefs": [
+            "hark-h15-b-js-dvronivz",
+            "hark-h15-b-js-dl79do-7",
+            "hark-h15-b-wallpaper-core"
+          ],
+          "classification": "B",
+          "from": "any"
+        },
+        {
+          "event": "liveStatus",
+          "to": "autoUpdated",
+          "result": "源实时非simulation更新appearance",
+          "evidenceRefs": [
+            "hark-h15-b-js-dvronivz",
+            "hark-h15-b-js-dl79do-7",
+            "hark-h15-b-wallpaper-core"
+          ],
+          "classification": "B",
+          "from": "auto"
+        },
+        {
+          "event": "systemAppearanceChange",
+          "to": "systemUpdated",
+          "result": "源跟随操作系统",
+          "evidenceRefs": [
+            "hark-h15-b-js-dvronivz",
+            "hark-h15-b-js-dl79do-7",
+            "hark-h15-b-wallpaper-core"
+          ],
+          "classification": "B",
+          "from": "system"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D关闭/返回恢复触发点与当前业务上下文；请求/数据语义由目标业务决定。"
+    },
+    {
+      "id": "hark-interaction-destructive-setting",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-review-historical-audit",
+        "hark-d-transfer-contract"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D删除/断开/停用用同一确认/取消模式；undo只有后端可恢复时才显示。"
+      },
+      "componentRefs": [
+        "hark-component-account-row",
+        "hark-component-dialog",
+        "hark-component-feedback"
+      ],
+      "transitions": [
+        {
+          "event": "requestRemove",
+          "to": "confirming",
+          "result": "D列明删除/断开对象",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "ready"
+        },
+        {
+          "event": "cancelRemove",
+          "to": "ready",
+          "result": "D不改数据",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "confirming"
+        },
+        {
+          "event": "confirmRemove",
+          "to": "pending",
+          "result": "D提交真实目标操作",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "confirming"
+        },
+        {
+          "event": "success",
+          "to": "removed",
+          "result": "D更新状态并提供支持的undo",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "pending"
+        },
+        {
+          "event": "failure",
+          "to": "readyError",
+          "result": "D保留原对象与重试",
+          "evidenceRefs": [
+            "hark-review-historical-audit"
+          ],
+          "classification": "D",
+          "from": "pending"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D关闭/返回恢复触发点与当前业务上下文；请求/数据语义由目标业务决定。"
+    },
+    {
+      "id": "hark-interaction-auth",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-20261022-b-css-2wo999c91t159",
+        "hark-20261022-b-css-2024m-gqsxckw"
+      ],
+      "unknowns": [
+        "正常登录需root用户协作；完整callback/首次使用尚未研究"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "D用目标正式认证与清楚状态；已存在可用会话复用，不重要求登录。"
+      },
+      "componentRefs": [
+        "hark-component-auth-form",
+        "hark-component-feedback"
+      ],
+      "transitions": [
+        {
+          "event": "inputEmail",
+          "to": "emailDraft",
+          "result": "源表单控制输入",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-css-2024m-gqsxckw"
+          ],
+          "classification": "B",
+          "from": "empty"
+        },
+        {
+          "event": "invalidSubmit",
+          "to": "error",
+          "result": "源有inline error样式，具体校验D",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-css-2024m-gqsxckw"
+          ],
+          "classification": "B",
+          "from": "emailDraft"
+        },
+        {
+          "event": "validSubmit",
+          "to": "loading",
+          "result": "源loading/disabled防重复；请求交目标",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-css-2024m-gqsxckw"
+          ],
+          "classification": "B",
+          "from": "emailDraft"
+        },
+        {
+          "event": "failure",
+          "to": "error",
+          "result": "D保留邮箱并retry",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-css-2024m-gqsxckw"
+          ],
+          "classification": "B",
+          "from": "loading"
+        },
+        {
+          "event": "authSuccess",
+          "to": "authenticated",
+          "result": "D业务认证会话决定，不从按钮点击假设",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-css-2024m-gqsxckw"
+          ],
+          "classification": "B",
+          "from": "loading"
+        },
+        {
+          "event": "chooseProvider",
+          "to": "providerFlow",
+          "result": "D打开正式提供商流程，返回不损坏页面",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-css-2024m-gqsxckw"
+          ],
+          "classification": "B",
+          "from": "ready"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D关闭/返回恢复触发点与当前业务上下文；请求/数据语义由目标业务决定。"
+    },
+    {
+      "id": "hark-interaction-public-navigation",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-20261022-b-css-2wo999c91t159",
+        "hark-20261022-b-css-2024m-gqsxckw"
+      ],
+      "unknowns": [
+        "banner关闭持久化与全部菜单运行状态未测"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "直接复用声明导航层；D点击路径、Escape和焦点恢复要实测。"
+      },
+      "componentRefs": [
+        "hark-component-public-navigation",
+        "hark-component-public-footer"
+      ],
+      "transitions": [
+        {
+          "event": "openMenu",
+          "to": "menuOpen",
+          "result": "source data-is-mobile-navigation-active决定全屏层",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-css-2024m-gqsxckw"
+          ],
+          "classification": "B",
+          "from": "menuClosed"
+        },
+        {
+          "event": "closeMenu",
+          "to": "menuClosed",
+          "result": "D恢复toggle焦点和scroll",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-css-2024m-gqsxckw"
+          ],
+          "classification": "B",
+          "from": "menuOpen"
+        },
+        {
+          "event": "navigate",
+          "to": "destination",
+          "result": "D打开真实目标URL并关闭层",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-css-2024m-gqsxckw"
+          ],
+          "classification": "B",
+          "from": "menuOpen"
+        },
+        {
+          "event": "dismissBanner",
+          "to": "bannerHidden",
+          "result": "source有关闭控件；持久时长未知",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-css-2024m-gqsxckw"
+          ],
+          "classification": "B",
+          "from": "bannerVisible"
+        },
+        {
+          "event": "signUp",
+          "to": "authEntry",
+          "result": "D进入真实目标入口",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-css-2024m-gqsxckw"
+          ],
+          "classification": "B",
+          "from": "any"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D关闭/返回恢复触发点与当前业务上下文；请求/数据语义由目标业务决定。"
+    },
+    {
+      "id": "hark-interaction-carousel",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-20261022-b-css-2wo999c91t159",
+        "hark-20261022-b-15bfdjo3hjyv9"
+      ],
+      "unknowns": [
+        "精确hold/释放边界以worker与源码补充，未A计时",
+        "D hidden/reducedMotion不能当原运行事实"
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "优先原3D与spring；移植失败使用D600ms及静态减少动画模式，同时真实可导航。"
+      },
+      "componentRefs": [
+        "hark-component-feature-carousel"
+      ],
+      "transitions": [
+        {
+          "event": "next",
+          "to": "transitioning",
+          "result": "源track spring驱动下一中心卡",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-15bfdjo3hjyv9"
+          ],
+          "classification": "B",
+          "from": "idle"
+        },
+        {
+          "event": "previous",
+          "to": "transitioning",
+          "result": "源反方向track spring",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-15bfdjo3hjyv9"
+          ],
+          "classification": "B",
+          "from": "idle"
+        },
+        {
+          "event": "pointerDown",
+          "to": "dragging",
+          "result": "源surface抓取且保持vertical pan",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-15bfdjo3hjyv9"
+          ],
+          "classification": "B",
+          "from": "idle"
+        },
+        {
+          "event": "pointerUp",
+          "to": "settling",
+          "result": "源按释放与clamp/velocity策略；详见raw JS",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-15bfdjo3hjyv9"
+          ],
+          "classification": "B",
+          "from": "dragging"
+        },
+        {
+          "event": "settled",
+          "to": "holding",
+          "result": "源中心卡播放并按时序hold",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-15bfdjo3hjyv9"
+          ],
+          "classification": "B",
+          "from": "transitioning"
+        },
+        {
+          "event": "visibilityHidden",
+          "to": "paused",
+          "result": "D暂停持续媒体和动画",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-15bfdjo3hjyv9"
+          ],
+          "classification": "B",
+          "from": "holding"
+        },
+        {
+          "event": "reducedMotion",
+          "to": "static",
+          "result": "D保留当前poster及next/previous",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-15bfdjo3hjyv9"
+          ],
+          "classification": "B",
+          "from": "any"
+        },
+        {
+          "event": "next",
+          "to": "static",
+          "result": "D立即切换下一卡并更新caption",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-15bfdjo3hjyv9"
+          ],
+          "classification": "B",
+          "from": "static"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D关闭/返回恢复触发点与当前业务上下文；请求/数据语义由目标业务决定。"
+    },
+    {
+      "id": "hark-interaction-feature-media",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-20261022-b-css-2wo999c91t159",
+        "ev_372b36210620b0b72e42ff99acdc1e91775e5f054040645c146c86985fd38885",
+        "hark-d-transfer-contract"
+      ],
+      "unknowns": [
+        "初始空src不能证明视频源缺失；原observer/start/end状态待脚本和A确认"
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "直接使用实际媒体、透明视频与poster变体；D播放生命周期只为目标性能/可访问性，保留来源差异。"
+      },
+      "componentRefs": [
+        "hark-component-feature-section",
+        "hark-component-public-app-hero",
+        "hark-component-article"
+      ],
+      "transitions": [
+        {
+          "event": "enterViewport",
+          "to": "loading",
+          "result": "D设置已取得video source",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "ev_372b36210620b0b72e42ff99acdc1e91775e5f054040645c146c86985fd38885"
+          ],
+          "classification": "D",
+          "from": "poster"
+        },
+        {
+          "event": "mediaReady",
+          "to": "playing",
+          "result": "D显示视频并保留poster fallback",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "ev_372b36210620b0b72e42ff99acdc1e91775e5f054040645c146c86985fd38885"
+          ],
+          "classification": "D",
+          "from": "loading"
+        },
+        {
+          "event": "leaveViewport",
+          "to": "paused",
+          "result": "D暂停而不改变布局",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "ev_372b36210620b0b72e42ff99acdc1e91775e5f054040645c146c86985fd38885"
+          ],
+          "classification": "D",
+          "from": "playing"
+        },
+        {
+          "event": "mediaFailure",
+          "to": "poster",
+          "result": "D保留原poster",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "ev_372b36210620b0b72e42ff99acdc1e91775e5f054040645c146c86985fd38885"
+          ],
+          "classification": "D",
+          "from": "loading"
+        },
+        {
+          "event": "reducedMotion",
+          "to": "poster",
+          "result": "D禁止自动持续播放，允许用户手动播放",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "ev_372b36210620b0b72e42ff99acdc1e91775e5f054040645c146c86985fd38885"
+          ],
+          "classification": "D",
+          "from": "any"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D关闭/返回恢复触发点与当前业务上下文；请求/数据语义由目标业务决定。"
+    },
+    {
+      "id": "hark-interaction-accordion",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "hark-20261022-b-css-2wo999c91t159",
+        "hark-20261022-b-css-2024m-gqsxckw",
+        "hark-d-transfer-contract"
+      ],
+      "unknowns": [],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "D可访问accordion有真实状态；源缺少曲线时用明确d-disclosure，不给静态CSS假运行结论。"
+      },
+      "componentRefs": [
+        "hark-component-accordion"
+      ],
+      "transitions": [
+        {
+          "event": "toggle",
+          "to": "expanded",
+          "result": "D设置aria-expanded并显示当前内容",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-css-2024m-gqsxckw"
+          ],
+          "classification": "D",
+          "from": "collapsed"
+        },
+        {
+          "event": "toggle",
+          "to": "collapsed",
+          "result": "D隐藏正文并保留标题定位",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-css-2024m-gqsxckw"
+          ],
+          "classification": "D",
+          "from": "expanded"
+        },
+        {
+          "event": "openExternal",
+          "to": "expanded",
+          "result": "D打开目标职位/帮助URL，当前组保持",
+          "evidenceRefs": [
+            "hark-20261022-b-css-2wo999c91t159",
+            "hark-20261022-b-css-2024m-gqsxckw"
+          ],
+          "classification": "D",
+          "from": "expanded"
+        }
+      ],
+      "interfaceClassification": "D",
+      "retention": "D关闭/返回恢复触发点与当前业务上下文；请求/数据语义由目标业务决定。"
+    }
+  ],
+  "policy": "from/event/to/result为D接口名；每条source/targetclassification与unknowns独立"
+}
