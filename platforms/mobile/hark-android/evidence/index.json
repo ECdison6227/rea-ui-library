@@ -162,6 +162,38 @@
         "notes": "Actual pixels inspected; synthetic neutral content only. System fallback and chosen background/radius differ from unverified original native screens."
       },
       "method": "Actual Playwright screenshot of independent local reference. Reduced-motion screenshot uses320x700; other screenshots390x844. Browser CSS units are not Android physical pixels."
+    },
+    {
+      "id": "evidence-native-launch-environment-gate",
+      "classification": "A",
+      "origin": "current",
+      "subject": "source",
+      "kind": "runtime",
+      "priority": "optional",
+      "sourceIdentity": "com.hark.android@100000036; base-sha256:462218f35bf38795d74f8fb1fa034f5397ad71c1cdf7bcaba18a62896e4b3967",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-22T08:48:22.000Z",
+        "completedAt": "2026-10-22T08:48:24.999Z"
+      },
+      "provider": "REA",
+      "reaEvidenceIds": [
+        "ev_e53c8a8a9d1d587f1a9a934846de3ae9532576eca593c6eb089c7ed634c80853",
+        "ev_9e77a85df6fd6deb657c05107d4a7d33b2a8139ce1ef2066780e5248c1d00896"
+      ],
+      "sharing": "included",
+      "path": "evidence/android-play-licensing-gate.png",
+      "sha256": "d0c189150a7d337cd0be69f3a3a59cd1680fa2a8d8bcbbbe41a5d3be175b759f",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T08:49:43.698Z",
+        "notes": "Actual pixels inspected. Shows Google Play licensing UI after launching the unmodified Hark1.0.0-36 package; no account identifiers, credentials or private content. This is an environment outcome, not Hark core UI evidence."
+      },
+      "method": "Normal launch after successful Google sign-in on a clean official Android35 Google Play emulator. Official listing rejected availability for this account country; unmodified signed ARM64 sideload installed but launch redirected to Google Play licensing gate. No installer spoofing, package modification, region change or licensing bypass.",
+      "limitations": [
+        "REA screenshot has no automatic artifact identity; analyst bound it to the installed package/version via focused inspection and launch context.",
+        "The foreground UI is Google Play; do not infer Hark chat/card/settings geometry or behavior from this diagnostic."
+      ]
     }
   ]
 }

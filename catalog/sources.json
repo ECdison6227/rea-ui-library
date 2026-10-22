@@ -934,7 +934,7 @@
       "provenance": {
         "kind": "rea-study",
         "target": "com.hark.android@100000036; base-sha256:462218f35bf38795d74f8fb1fa034f5397ad71c1cdf7bcaba18a62896e4b3967",
-        "method": "REA6.5.0 open_binary/extract_artifact, apktool decode_android_resources and installedCLI inspect_android_package/class/method; original byte identities and limitations preserved in selected receipts. Native runtime collection and Google Play gate recorded independently.",
+        "method": "REA6.5.0 open_binary/extract_artifact, apktool decode_android_resources and installedCLI inspect_android_package/class/method; original byte identities and limitations preserved in selected receipts. Native runtime collection and Google Play gate recorded independently. A normal launch on the official Play-enabled emulator reached a documented Google Play licensing gate after sign-in; this environment-only A does not verify Hark core UI.",
         "researchEntry": "README.md"
       },
       "summary": "Hark Android1.0.0-36的35角色双主题、13档原生排版与局部发送控件；附独立任务参考，登录后核心视觉对照待续。",
@@ -952,7 +952,7 @@
         "HTML/CSS reference"
       ],
       "readiness": "partial",
-      "coverage": "已核对真实包/签名/REA定向静态声明；2项reducer及5项独立参考浏览器场景通过。Google账号密码正常提交后进入本人手机确认，Hark登录后原生核心UI待续。",
+      "coverage": "真实包/签名/REA定向静态声明已核对；2项reducer及5项独立参考场景通过。Google登录已完成，账号地区无法从Play取得Hark，原签名包启动被Play授权门拦截；核心原生UI待续。",
       "features": [
         "35个语义颜色角色的原生浅色/深色声明表。",
         "13档原生自定义排版与局部发送控件几何，保留sp/dp。",
@@ -960,7 +960,7 @@
         "原生输入状态模型边界与后续手机控制器接入指南。"
       ],
       "limits": [
-        "Authenticated native chat/cards/settings/sheet pixels and input/keyboard behavior require normal Google Play installation plus user Hark login.",
+        "The current Google account cannot obtain Hark from Play in its country; the signed sideload is blocked before Hark login. Core native chat/cards/settings/keyboard and motion comparison require an eligible normally licensed device/account.",
         "Native component geometry beyond focused send control, runtime font fallback and key transition measurements remain unverified.",
         "Original font redistribution license unresolved; reference uses explicit system fallback.",
         "All business branches, billing/service integrations and background notification behavior are outside design scope.",
@@ -1019,8 +1019,8 @@
       },
       "integrity": {
         "manifest": "catalog/manifests/hark-android.json",
-        "files": 27,
-        "treeSha256": "1cb87327213c2e16e875ee045b74008a26fd4604f5aaeaf4262cefcb648256cb"
+        "files": 28,
+        "treeSha256": "baa4892df0958956a9fc6b99978a2c29a8b8aa49c7b603088eceb841185b3507"
       }
     }
   ],

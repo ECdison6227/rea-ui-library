@@ -83,3 +83,5 @@ slots/states/events/tokenRefs/unknowns见[组件](components/catalog.json)，组
 可直接使用JSON角色/单位、独立CSS/reducer和合成样例。原字体许可可用时优先接入并校准；当前原件与反编译代码不上传。包含Lucide ISC许可，不证明每个图标都是Lucide；目标已有Lucide时优先复用并记录映射。参考基础箭头/加号是D，不是原品牌资产。
 
 当前partial因为原生核心UI与关键动效未完成登录后的A对照，并非未穷尽原业务。现有Google APIs AVD真实运行遇Play授权门；已准备官方Play镜像与独立干净AVD，由用户正常Google/Hark登录。等待不视为拒绝。后续对chat/composer/card/sheet/settings补代表证据；不以支付/全部连接器/后端算法作为设计完成条件。
+
+运行续接更新：Google正常登录与本人验证已经完成，最终障碍为Play账号地区不可用，以及原签名本地安装启动时的Play授权门。唯一新增A为环境诊断，不是核心Hark页面；核心tokens仍B、参考仍D，readiness保持partial。详见RESEARCH_STATUS。

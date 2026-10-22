@@ -9,15 +9,16 @@
     "version": "1.0.0-36 (100000036)",
     "identity": "com.hark.android@100000036; base-sha256:462218f35bf38795d74f8fb1fa034f5397ad71c1cdf7bcaba18a62896e4b3967",
     "capturedAt": null,
-    "researchMethod": "REA6.5.0 open_binary/extract_artifact, apktool decode_android_resources and installedCLI inspect_android_package/class/method; original byte identities and limitations preserved in selected receipts. Native runtime collection and Google Play gate recorded independently.",
+    "researchMethod": "REA6.5.0 open_binary/extract_artifact, apktool decode_android_resources and installedCLI inspect_android_package/class/method; original byte identities and limitations preserved in selected receipts. Native runtime collection and Google Play gate recorded independently. A normal launch on the official Play-enabled emulator reached a documented Google Play licensing gate after sign-in; this environment-only A does not verify Hark core UI.",
     "researchEvidenceRefs": [
       "evidence-rea-static",
-      "evidence-static-review"
+      "evidence-static-review",
+      "evidence-native-launch-environment-gate"
     ],
     "authentication": {
       "required": true,
-      "status": "Google Play sign-in reached a real phone-confirmation challenge after normal account/password submission; waiting for user to complete Google verification before Play installation and Hark login",
-      "coverage": "No authenticated Hark native core screen has been captured. No account identifiers or credentials are distributed."
+      "status": "Google sign-in completed normally; Hark official Play listing is unavailable for the account country, and the unmodified signed sideload is rejected by the Google Play licensing gate before Hark login.",
+      "coverage": "Only the launch environment outcome is observed. Hark authenticated core UI remains unverified. Account identifiers and credentials are excluded."
     }
   },
   "scope": {
@@ -39,7 +40,7 @@
       "原生输入状态模型边界与后续手机控制器接入指南。"
     ],
     "coreGaps": [
-      "Authenticated native chat/cards/settings/sheet pixels and input/keyboard behavior require normal Google Play installation plus user Hark login.",
+      "The current Google account cannot obtain Hark from Play in its country; the signed sideload is blocked before Hark login. Core native chat/cards/settings/keyboard and motion comparison require an eligible normally licensed device/account.",
       "Native component geometry beyond focused send control, runtime font fallback and key transition measurements remain unverified.",
       "Original font redistribution license unresolved; reference uses explicit system fallback."
     ],

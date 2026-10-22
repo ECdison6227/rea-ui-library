@@ -183,15 +183,15 @@
       "provenance": {
         "kind": "rea-study",
         "target": "com.hark.android@100000036; base-sha256:462218f35bf38795d74f8fb1fa034f5397ad71c1cdf7bcaba18a62896e4b3967",
-        "method": "REA6.5.0 open_binary/extract_artifact, apktool decode_android_resources and installedCLI inspect_android_package/class/method; original byte identities and limitations preserved in selected receipts. Native runtime collection and Google Play gate recorded independently.",
+        "method": "REA6.5.0 open_binary/extract_artifact, apktool decode_android_resources and installedCLI inspect_android_package/class/method; original byte identities and limitations preserved in selected receipts. Native runtime collection and Google Play gate recorded independently. A normal launch on the official Play-enabled emulator reached a documented Google Play licensing gate after sign-in; this environment-only A does not verify Hark core UI.",
         "researchEntry": "README.md"
       },
       "revision": null,
       "snapshot": null,
       "integrity": {
         "manifest": "catalog/manifests/hark-android.json",
-        "files": 27,
-        "treeSha256": "1cb87327213c2e16e875ee045b74008a26fd4604f5aaeaf4262cefcb648256cb"
+        "files": 28,
+        "treeSha256": "baa4892df0958956a9fc6b99978a2c29a8b8aa49c7b603088eceb841185b3507"
       },
       "origin": "historical",
       "workingTreeMutationPerformed": false
