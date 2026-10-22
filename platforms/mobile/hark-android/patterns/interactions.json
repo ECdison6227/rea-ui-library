@@ -176,6 +176,66 @@
           ]
         }
       ]
+    },
+    {
+      "id": "interaction-web-transfer-navigation",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "evidence-web-mobile-qa"
+      ],
+      "unknowns": [
+        "Independent target navigation and request behavior, not native Hark runtime."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Reuse target state and events while integrating actual product permissions/results separately."
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-composer",
+        "component-modal-sheet"
+      ],
+      "transitions": [
+        {
+          "from": "chat-editing",
+          "event": "select records tab",
+          "to": "records",
+          "result": "Retain draft; show local records and hide composer.",
+          "evidenceRefs": [
+            "evidence-web-mobile-qa"
+          ]
+        },
+        {
+          "from": "records",
+          "event": "search",
+          "to": "filtered records",
+          "result": "Match local notes and show explicit empty result.",
+          "evidenceRefs": [
+            "evidence-web-mobile-qa"
+          ]
+        },
+        {
+          "from": "template dialog",
+          "event": "select template",
+          "to": "chat-editing",
+          "result": "Append to draft, close dialog and restore draft focus.",
+          "evidenceRefs": [
+            "evidence-web-mobile-qa"
+          ]
+        },
+        {
+          "from": "sending",
+          "event": "failure or cancel",
+          "to": "error or editing",
+          "result": "Retain draft; retry commits once; cancel invalidates delayed completion.",
+          "evidenceRefs": [
+            "evidence-web-mobile-qa"
+          ]
+        }
+      ]
     }
   ]
 }

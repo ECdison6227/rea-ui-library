@@ -13,7 +13,9 @@
     "researchEvidenceRefs": [
       "evidence-rea-static",
       "evidence-static-review",
-      "evidence-native-launch-environment-gate"
+      "evidence-native-launch-environment-gate",
+      "evidence-rea-deepening",
+      "evidence-native-content-review"
     ],
     "authentication": {
       "required": true,
@@ -23,7 +25,7 @@
   },
   "scope": {
     "mode": "visual-design-and-core-interactions",
-    "goal": "Extract Hark Android visual rules and native core component contracts for a future mobile controller; provide a reusable neutral reference without cloning Hark services or replacing the existing web study.",
+    "goal": "Extract Hark Android visual rules and native core component contracts for a future mobile controller; provide a reusable neutral reference without cloning Hark services or replacing the existing web study. User follow-up authorizes further static deepening and a clearly source-attributed Web-to-mobile fallback using the existing Web study.",
     "excludedBusiness": [
       "Original LLM/backend/prompts/transactions",
       "Subscription/billing, external connectors and account data",
@@ -34,19 +36,19 @@
   "readiness": {
     "status": "partial",
     "supportedUses": [
-      "35个语义颜色角色的原生浅色/深色声明表。",
-      "13档原生自定义排版与局部发送控件几何，保留sp/dp。",
-      "可复用的独立输入、内容卡、选择sheet参考，明确D选择。",
-      "原生输入状态模型边界与后续手机控制器接入指南。"
+      "35个语义颜色角色的原生双主题、13档排版与发送几何。",
+      "MainSection导航放置、锚定附件菜单、输入变体、重试行及动态卡片宿主的定向静态规范。",
+      "有独立来源边界的Hark Web→手机参考，复用历史390×844样本，7项浏览器场景通过。",
+      "两条参考均附明确D选择与Vivic手机组件映射。"
     ],
     "coreGaps": [
       "The current Google account cannot obtain Hark from Play in its country; the signed sideload is blocked before Hark login. Core native chat/cards/settings/keyboard and motion comparison require an eligible normally licensed device/account.",
-      "Native component geometry beyond focused send control, runtime font fallback and key transition measurements remain unverified.",
+      "Whole native composer layout decompilation is incomplete; screen composition, native font fallback, keyboard/insets and runtime transition measurements remain unverified beyond the focused declarations.",
       "Original font redistribution license unresolved; reference uses explicit system fallback."
     ],
     "optionalGaps": [
       "All business branches, billing/service integrations and background notification behavior are outside design scope.",
-      "Hermes widget payload internals and exact original spring coefficients are not required for the bounded reference."
+      "Runtime-provided widget TSX bodies and styles are not enumerated by the shipped Hermes engine; exact native motion behavior needs runtime observation."
     ]
   },
   "entries": {
@@ -77,9 +79,10 @@
     "crossDomain": {
       "status": "verified",
       "evidenceRefs": [
-        "evidence-transfer-qa"
+        "evidence-transfer-qa",
+        "evidence-web-mobile-qa"
       ],
-      "meaning": "Five actual browser scenarios in a neutral field-research task slice; this conclusion concerns target transfer only."
+      "meaning": "Prior neutral native-style reference plus seven new actual browser scenarios in the separate historical-Web-to-mobile transfer. This verifies target reference behavior only."
     }
   },
   "distribution": {

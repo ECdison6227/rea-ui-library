@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>Field kit · Hark Web 手机适配参考</title>
+  <link rel="stylesheet" href="web-mobile.css">
+</head>
+<body>
+  <aside class="lab-label"><strong>Hark Web → 手机</strong><span>独立适配参考 · 合成数据</span><a href="index.html">查看 Android 静态规范参考 ↗</a></aside>
+  <main class="web-phone">
+    <header class="topbar">
+      <button class="round-button" id="search" aria-label="查找本地记录"><svg viewBox="0 0 24 24"><circle cx="10.7" cy="10.7" r="6.3"/><path d="m15.3 15.3 4.3 4.3"/></svg></button>
+      <div class="tabs" role="tablist" aria-label="工作区">
+        <button role="tab" id="tab-overview" aria-controls="overview" aria-selected="false" tabindex="-1">概览</button>
+        <button role="tab" id="tab-chat" aria-controls="chat" aria-selected="true" tabindex="0">对话</button>
+        <button role="tab" id="tab-records" aria-controls="records" aria-selected="false" tabindex="-1">记录</button>
+      </div>
+      <button class="round-button profile" id="settings" aria-label="打开参考设置">f</button>
+    </header>
+
+    <section id="chat" class="stream" role="tabpanel" aria-labelledby="tab-chat" tabindex="0">
+      <p class="day-label">今天 · 现场记录</p>
+      <div class="bubble user-bubble">帮我整理明天的河流调查安排。</div>
+      <div class="bubble assistant-bubble">把要带的工具、采样位置和观察记录放在一起。现场只要补充变化，就能继续这份计划。</div>
+      <article class="content-card">
+        <header class="card-heading"><span class="card-icon">↗</span><div><strong>北桥河流调查</strong><span>现场计划 · 本地示例</span></div></header>
+        <div class="card-body"><p>沿步道采集三个点位，记录水温、流速和天气。</p><dl class="data-rows"><div><dt>时间</dt><dd>明天 09:00</dd></div><div><dt>携带</dt><dd>采样瓶、温度计、记录本</dd></div><div><dt>点位</dt><dd>上游、桥下、下游</dd></div></dl></div>
+        <div id="card-details" class="card-details" hidden><p>先记录上游情况，再顺步道前往下游。每份样本填写点位和采集时间。</p><p>此计划与操作记录均为合成示例，不连接外部服务。</p></div>
+        <footer class="card-actions"><button id="complete" class="primary">标记完成</button><button id="details" class="text-button" aria-controls="card-details" aria-expanded="false">展开详情 <span>⌄</span></button></footer>
+        <p id="done" class="done-note" role="status" hidden>计划已完成，可撤销</p>
+      </article>
+      <div id="messages" aria-live="polite" aria-relevant="additions"></div>
+    </section>
+
+    <section id="overview" class="stream secondary-panel" role="tabpanel" aria-labelledby="tab-overview" tabindex="0" hidden>
+      <p class="eyebrow">FIELD KIT</p><h1>留住现场，<br>继续发现。</h1><p class="intro">一份计划，几条观察。把下一步留在手边。</p>
+      <article class="overview-card"><span class="eyebrow">明天的计划</span><h2>北桥河流调查</h2><p id="overview-state">待完成 · 3 个采样点</p><button class="primary" id="open-plan">回到对话查看计划</button></article>
+      <div class="metrics"><div><strong id="record-count">0</strong><span>本地记录</span></div><div><strong>3</strong><span>采样点位</span></div></div>
+    </section>
+
+    <section id="records" class="stream secondary-panel" role="tabpanel" aria-labelledby="tab-records" tabindex="0" hidden>
+      <p class="eyebrow">FIELD NOTES</p><h1>每一条观察，<br>都有落点。</h1><label class="search-field"><span>查找记录</span><input type="search" id="record-search" placeholder="输入关键词…" autocomplete="off"></label>
+      <div id="record-list" aria-live="polite"></div><button class="text-button" id="add-note">去对话添加一条记录 ↗</button>
+    </section>
+
+    <footer class="composer-area" id="composer-area">
+      <div class="feedback-row"><div id="feedback" aria-live="polite"></div><button class="cancel-button" id="cancel" hidden>取消请求</button></div>
+      <form class="composer" id="form"><textarea id="draft" rows="1" maxlength="2000" aria-label="现场记录草稿" placeholder="添加一条现场记录…"></textarea><button type="button" class="composer-tool" id="templates" aria-label="选择记录模板"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button><button type="submit" class="send" id="send" aria-label="发送记录" disabled><span id="send-ink"><svg viewBox="0 0 24 24"><path d="M12 19V5m-5 5 5-5 5 5"/></svg></span></button></form>
+    </footer>
+  </main>
+
+  <dialog id="sheet" aria-labelledby="sheet-title"><div class="sheet-handle"></div><div class="sheet-heading"><h2 id="sheet-title">参考设置</h2><button class="round-button" id="close" aria-label="关闭设置">×</button></div><p class="sheet-copy">这份手机参考采用库中 Hark Web 的布局、气泡和输入材质。原生 Android 研究单独保留。</p><div class="theme-options" aria-label="外观"><button data-theme-choice="light" aria-pressed="false">浅色</button><button data-theme-choice="dark" aria-pressed="true">深色</button><button data-theme-choice="system" aria-pressed="false">跟随系统</button></div><label class="failure-toggle"><input id="fail" type="checkbox"> 模拟下一次本地请求失败</label><p class="sheet-copy">记录仅留在此页，刷新清空。背景、系统字体替代、底部面板与请求时序是独立适配选择。</p><a class="source-link" href="index.html">切换到 Android 静态规范参考 ↗</a></dialog>
+  <dialog id="template-sheet" aria-labelledby="template-title"><div class="sheet-handle"></div><div class="sheet-heading"><h2 id="template-title">从一句开始</h2><button class="round-button" id="close-templates" aria-label="关闭记录模板">×</button></div><button class="template" data-template="现场观察：">现场观察<span>天气、环境和现场变化 ↗</span></button><button class="template" data-template="采样备注：">采样备注<span>点位、时间和样本情况 ↗</span></button><p class="sheet-copy">选择后填入草稿，你可以继续编辑。</p></dialog>
+  <script type="module" src="web-mobile.mjs"></script>
+</body>
+</html>

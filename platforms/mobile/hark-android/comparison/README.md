@@ -16,3 +16,11 @@
 实际参考验证：2项reducer测试、5项浏览器场景通过；390×844浅色/深色sheet、320×700减少动画截图已亲眼核对。无页面异常或外部请求。所有截图均D，不作为原版A。可直接查看[浅色](reference-light-390.png)、[深色sheet](reference-dark-sheet-390.png)、[窄屏减少动画](reference-reduced-motion-320.png)。
 
 补充A仅记录原签名包启动后被Google Play授权门拦截的[环境画面](../evidence/android-play-licensing-gate.png)，时间区间08:48:22–08:48:24 UTC。Google登录已完成，当前账号地区无法从Play取得Hark；不再将“等待用户验证”当作当前原因。此图不是Hark核心组件，不用于宣称参考与原版配对通过。
+
+## Web元素用于手机的独立参考
+
+旧Web原件仍位于 `platforms/web/hark`，固定到da3029fb，原采集日期2026-10-15。本轮查看了27-mobile-chat原图，使用其几何与已有计算样式；没有重跑原Web应用或重新赋予A采集时间。
+
+[深色390](web-mobile-dark-390.png)、[浅色设置面板390](web-mobile-light-sheet-390.png)、[320减少动画](web-mobile-reduced-320.png) 是新独立参考D，使用合成任务与记录。实际查看了像素：390下输入外框x16/w358/h48/bottom32，正文15/19；320和横屏没有页面横溢。浅色/320截图处于展开详情与已有本地记录的状态，不与原Web单条消息截图做相似度分数比较。
+
+原Web与目标仍有具体差异：GT字体替换、WebGL天空替换、连续曲线变普通圆角、空输入语音按钮改为文字发送、附件动作变本地记录模板、面板和业务流程D选择。7项实际浏览器场景见 [验证记录](web-mobile-verification.json)；不是Android原生运行、真实软键盘或目标服务器功能验收。

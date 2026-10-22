@@ -1,0 +1,165 @@
+{
+  "classification": "D",
+  "meaning": "Cross-source selection for target transfer; enclosed historical facts retain their own Web A/B provenance and are not Android source evidence.",
+  "source": {
+    "repository": "https://github.com/ECdison6227/rea-ui-library",
+    "commit": "da3029fbb247ebf38f47fd2444689e887e77f789",
+    "root": "platforms/web/hark",
+    "platform": "web",
+    "originalCaptureDate": "2026-10-15",
+    "reviewedAt": "2026-10-22T09:24:12.515Z",
+    "originalAppRerun": false
+  },
+  "files": [
+    {
+      "path": "evidence/styles/27-mobile-layout.json",
+      "sha256": "40af0091bbdb8490b7f1c2881c07d60ce9fb2d3b24ceaabddc58fe967b558c05",
+      "includedHere": false,
+      "reason": "Preserved in the original Web source; private DOM/account contents and original screenshot bytes are not copied into this transfer."
+    },
+    {
+      "path": "evidence/screenshots/27-mobile-chat.png",
+      "sha256": "9d621eceb43b2fddc43d7735af27ea589836507191683b8f2ef0974c8a67afae",
+      "includedHere": false,
+      "reason": "Preserved in the original Web source; private DOM/account contents and original screenshot bytes are not copied into this transfer."
+    },
+    {
+      "path": "reports/design-analysis.md",
+      "sha256": "b27536031423af2a84144a27935962d16507295b8a1e1e4d9814fc5fecdbe7cc",
+      "includedHere": false,
+      "reason": "Preserved in the original Web source; private DOM/account contents and original screenshot bytes are not copied into this transfer."
+    },
+    {
+      "path": "reports/design-tokens.json",
+      "sha256": "381c6aec435e76fbb3a2411d2ab73d7d007bc1c31c941e4e008ad3f985201eca",
+      "includedHere": false,
+      "reason": "Preserved in the original Web source; private DOM/account contents and original screenshot bytes are not copied into this transfer."
+    },
+    {
+      "path": "evidence/styles/B9bSKZIz.css",
+      "sha256": "7c5bbf0474b829328fba0fe98ac8c5dffe3b9904f59e4f76653bf464f4198a5f",
+      "includedHere": false,
+      "reason": "Preserved in the original Web source; private DOM/account contents and original screenshot bytes are not copied into this transfer."
+    },
+    {
+      "path": "evidence/styles/cTNWVXWS.css",
+      "sha256": "2f3b7fa58375b46ab7e3af58ffabbbf20d91a1b0bd95bd12d6f32f2c6e256bab",
+      "includedHere": false,
+      "reason": "Preserved in the original Web source; private DOM/account contents and original screenshot bytes are not copied into this transfer."
+    },
+    {
+      "path": "evidence/styles/Bgegb_jl.css",
+      "sha256": "68a2ec982a677a006b79ede68ad46b6facdfec06a0b2d354adff50a2c2248482",
+      "includedHere": false,
+      "reason": "Preserved in the original Web source; private DOM/account contents and original screenshot bytes are not copied into this transfer."
+    }
+  ],
+  "historicalRuntimeA": {
+    "captureMethod": "Historical saved browser geometry and screenshot, not a new REA runtime call.",
+    "viewport": {
+      "width": 390,
+      "height": 844,
+      "dpr": 1
+    },
+    "messageList": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 844,
+      "top": 0,
+      "right": 390,
+      "bottom": 844,
+      "left": 0
+    },
+    "composer": {
+      "x": 16,
+      "y": 764,
+      "width": 358,
+      "height": 48,
+      "top": 764,
+      "right": 374,
+      "bottom": 812,
+      "left": 16
+    },
+    "bubble": [
+      {
+        "rect": {
+          "x": 16,
+          "y": 790.78125,
+          "width": 270,
+          "height": 143,
+          "top": 790.78125,
+          "right": 286,
+          "bottom": 933.78125,
+          "left": 16
+        },
+        "font": "15px",
+        "line": "19px"
+      }
+    ],
+    "overflow": false
+  },
+  "selectedWebFacts": [
+    {
+      "role": "body/composer type",
+      "value": [
+        15,
+        19,
+        400
+      ],
+      "unit": "CSSpx/CSSpx/weight",
+      "classificationWithinWeb": "A",
+      "scope": "captured chat text and textarea"
+    },
+    {
+      "role": "dark user/assistant/composer fill alpha",
+      "value": [
+        0.3,
+        0.7,
+        0.618
+      ],
+      "unit": "alpha",
+      "classificationWithinWeb": "A+B",
+      "scope": "separate message/composer fills over #1d1d1f"
+    },
+    {
+      "role": "composer blur",
+      "value": 50,
+      "unit": "CSSpx",
+      "classificationWithinWeb": "A+B",
+      "scope": "composer glass only, not all bubbles"
+    },
+    {
+      "role": "composer border radius declaration",
+      "value": 24,
+      "unit": "CSSpx",
+      "classificationWithinWeb": "A+B",
+      "scope": "source also has continuous-curve clipping"
+    },
+    {
+      "role": "textarea maximum height",
+      "value": 219,
+      "unit": "CSSpx",
+      "classificationWithinWeb": "B",
+      "scope": "source textarea rule"
+    },
+    {
+      "role": "bottom clearance",
+      "value": [
+        32,
+        16
+      ],
+      "unit": "CSSpx",
+      "classificationWithinWeb": "A+B",
+      "scope": "32px normal / declared16px keyboard-open; hardware IME not measured"
+    }
+  ],
+  "targetDifferences": [
+    "System font fallback",
+    "Independent CSS background instead of original WebGL engine",
+    "Ordinary rounded rectangle instead of continuous clipping",
+    "Synthetic field-research task and local-only records",
+    "Own tab meanings, template picker, cancellation/retry and sheet timing",
+    "No voice/audio capture, Hark backend or production Vivic requests"
+  ]
+}

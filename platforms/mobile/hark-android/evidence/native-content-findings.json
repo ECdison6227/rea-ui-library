@@ -1,0 +1,697 @@
+{
+  "formatVersion": 1,
+  "title": "Hark Android focused static UI deepening",
+  "date": "2026-10-22",
+  "artifact": {
+    "package": "com.hark.android",
+    "version": "1.0.0-36",
+    "sha256": "462218f35bf38795d74f8fb1fa034f5397ad71c1cdf7bcaba18a62896e4b3967"
+  },
+  "boundary": "Original APK static facts reviewed for publication. Raw APK, fonts, decompiled implementation, complete strings and private runtime data are withheld. No new original-app runtime observations.",
+  "readiness": "partial",
+  "classificationDefinitions": {
+    "B": "packaged declarations or derived static facts",
+    "C": "inference",
+    "D": "independent reconstruction choice"
+  },
+  "findings": [
+    {
+      "id": "native-navigation-placements",
+      "classification": "B",
+      "scope": "navigation",
+      "statement": "Chat and Projects are declared TabBar sections; Home is NavIcon and Settings is Avatar. This is not a four-item bottom-tab assertion.",
+      "source": [
+        {
+          "className": "defpackage.fm0",
+          "method": "a",
+          "sourcePath": "jadx/sources/defpackage/fm0.java",
+          "sha256": "c9bd4c8f4fdcdd5099c7a1a1765b54b626b1f97cb5901d3822a3bdf42c5e7d05"
+        },
+        {
+          "className": "defpackage.cob",
+          "method": "a",
+          "sourcePath": "jadx/sources/defpackage/cob.java",
+          "sha256": "0450402758c82556686223535643abc53f704b7b75292ec5c6327bbb8d19f732"
+        },
+        {
+          "className": "defpackage.ig7",
+          "method": "a",
+          "sourcePath": "jadx/sources/defpackage/ig7.java",
+          "sha256": "a43da3ae5b88b5831426e2b5c762b1cb554fa3124b5194caf3c26882b27e08e7"
+        },
+        {
+          "className": "defpackage.i19",
+          "method": "<clinit>",
+          "sourcePath": "jadx/sources/defpackage/i19.java",
+          "sha256": "85903647a2a287329d3905975087519d9e28fd013b24026739bc937def3dfef3"
+        },
+        {
+          "className": "defpackage.b19",
+          "method": "<init>",
+          "sourcePath": "jadx/sources/defpackage/b19.java",
+          "sha256": "8c7e2a026d44680bec6cc5041b2df22d24bda470a8b723b331abe048e3fd11f4"
+        }
+      ],
+      "evidenceRefs": [
+        "ev_92e33b905a3276908db0a384c98fd2b1f3b7cde5bd490c6adb1e25cfe33d35cb",
+        "ev_897bc4a13a4fe90320be528e8425dc0dfd074152ac38f759072abfb18eaafe71",
+        "ev_60fd4cd698caf4695833d9edf44470b1f51f8d0ad53e3b3dcf55b2e8e359033f"
+      ],
+      "sections": [
+        {
+          "id": "assistant",
+          "labelResource": "chat_home_section_chat",
+          "placement": "TabBar",
+          "order": 0,
+          "composerMode": "Static(conversationKey=main)"
+        },
+        {
+          "id": "projects",
+          "labelResource": "projects_home_section_projects",
+          "placement": "TabBar",
+          "order": 1,
+          "composerMode": "SectionPublished"
+        },
+        {
+          "id": "home",
+          "labelResource": "home_section_home",
+          "placement": "NavIcon",
+          "order": 0,
+          "composerMode": "Static(conversationKey=main)",
+          "composerEntryDestination": "assistant"
+        },
+        {
+          "id": "settings",
+          "labelResource": "settings_home_section_settings",
+          "placement": "Avatar",
+          "order": 0,
+          "composerMode": "Hidden"
+        }
+      ],
+      "unknowns": [
+        "Runtime visibility, exact coordinates, transitions, selected styling and conditional feature inclusion are not observed."
+      ]
+    },
+    {
+      "id": "settings-map",
+      "classification": "B",
+      "scope": "navigation",
+      "statement": "Settings has thirteen declared destinations. The visible list builder separately groups profile/tasks/accounts/cards and security/preferences/feedback/about.",
+      "source": [
+        {
+          "className": "defpackage.hs",
+          "method": "<clinit>",
+          "sourcePath": "jadx/sources/defpackage/hs.java",
+          "sha256": "040046c30a75c7ee98fc1241c415eaac8b9d2d30f7905c08aa75f00e94267471"
+        },
+        {
+          "className": "defpackage.gk3",
+          "method": "s",
+          "sourcePath": "jadx/sources/defpackage/gk3.java",
+          "sha256": "109401364b3dd2d6185b54aa12e3dc5fa0274c6130646fc3a435bfa996929f6a"
+        }
+      ],
+      "evidenceRefs": [
+        "ev_d7c9ee1533b0802672d43935acdc5fecc828b3e756708659655cdb2e7c631e91",
+        "ev_9d9a1dc48b84f6fd6dd1a716a583b2d9b2f83a71cbd8dc821644641871c036ce"
+      ],
+      "destinations": [
+        "profile",
+        "memory",
+        "scheduled_tasks",
+        "connected_accounts",
+        "connected_cards",
+        "security",
+        "theme",
+        "system_preferences",
+        "about",
+        "subscription",
+        "plans",
+        "report_issue",
+        "active_sessions"
+      ],
+      "listGroups": [
+        [
+          "profile",
+          "scheduled_tasks",
+          "connected_accounts",
+          "connected_cards"
+        ],
+        [
+          "security",
+          "system_preferences",
+          "report_issue",
+          "about"
+        ]
+      ],
+      "conditions": [
+        "Connected cards row exists only when its callback is non-null.",
+        "Scheduled tasks row availability depends on its callback.",
+        "The list builder additionally constructs plan/subscription and sign-out search aliases."
+      ],
+      "unknowns": [
+        "Declared destinations do not establish that every destination is a currently visible row.",
+        "Exact full settings layout and motion remain unobserved."
+      ]
+    },
+    {
+      "id": "composer-state-model",
+      "classification": "B",
+      "scope": "composer",
+      "statement": "The native composer separates conversation readiness, send eligibility/progress, guided content, attachments, dictation and voice-call availability.",
+      "source": [
+        {
+          "className": "defpackage.tp2",
+          "method": "toString",
+          "sourcePath": "jadx/sources/defpackage/tp2.java",
+          "sha256": "2e0e930888a5e2e489fbfb478409ea54803024073ffd8cd00c4eceba97a1c3e4"
+        },
+        {
+          "className": "defpackage.ck3",
+          "method": "toString/a",
+          "sourcePath": "jadx/sources/defpackage/ck3.java",
+          "sha256": "700901d409ee23feb9ea9bde272241baca26ec4a3e43fdac897d7fcd222ccf46"
+        },
+        {
+          "className": "defpackage.q35",
+          "method": "<clinit>",
+          "sourcePath": "jadx/sources/defpackage/q35.java",
+          "sha256": "617f5ec26aa266ff48ba485abf0a221e4b524d624379599f1cfc02731c851ecf"
+        }
+      ],
+      "evidenceRefs": [
+        "ev_b687e3748d7340ccacaf63327ee699097135b634deb1dcd4d621e83a8e90399b",
+        "ev_a169b54aa22051188f5a8e3ea0a297a4f61e4448e92816ba4705fa9879f0fc01"
+      ],
+      "reviewKind": "REA constructor/caller evidence plus existing local JADX model inspection",
+      "stateFields": [
+        "conversationReady",
+        "sendInProgress",
+        "canSend",
+        "guidedComposer",
+        "createPanel",
+        "hasHeldEmail",
+        "exampleOwner",
+        "examplesVisible",
+        "hasAttachments",
+        "canAddAttachments",
+        "billingRestriction",
+        "voiceSession",
+        "voiceCallAvailable",
+        "voiceSettings"
+      ],
+      "dictationStates": [
+        "Idle",
+        "Starting",
+        "Listening",
+        "Stopping",
+        "Failed",
+        "AccessDenied",
+        "PermissionDenied"
+      ],
+      "dictationActiveStates": [
+        "Starting",
+        "Listening",
+        "Stopping"
+      ],
+      "unknowns": [
+        "The model names and conditional code are not observed transitions or service guarantees."
+      ]
+    },
+    {
+      "id": "composer-control-layout",
+      "classification": "B",
+      "scope": "composer",
+      "statement": "The control-layout model supplies variant-specific widths, gaps and disabled alpha; it is consumed by the native toolbar.",
+      "source": [
+        {
+          "className": "defpackage.fj3",
+          "method": "<init>",
+          "sourcePath": "jadx/sources/defpackage/fj3.java",
+          "sha256": "1c0bba2a272c1c18ce1f2ce3a1f1a5abb8fa52a2282daee73875f4f4c760048b"
+        },
+        {
+          "className": "defpackage.sp2",
+          "method": "d",
+          "sourcePath": "jadx/sources/defpackage/sp2.java",
+          "sha256": "e59b2e129b72e001eb1f78b20da5f1a863743bb460622a22c0fe5a166544f59c"
+        },
+        {
+          "className": "defpackage.xb1",
+          "method": "c",
+          "sourcePath": "jadx/sources/defpackage/xb1.java",
+          "sha256": "ff90d062360034b4022d7a5b79d5503b183f280e3c5f0d8b2cba6e809ee0f84e"
+        }
+      ],
+      "evidenceRefs": [
+        "ev_b687e3748d7340ccacaf63327ee699097135b634deb1dcd4d621e83a8e90399b"
+      ],
+      "measurements": [
+        {
+          "role": "send disabled alpha in guided Intro",
+          "value": 0.4,
+          "unit": "alpha"
+        },
+        {
+          "role": "send disabled alpha in other guided states",
+          "value": 0.3,
+          "unit": "alpha"
+        },
+        {
+          "role": "attachment control hit height",
+          "value": 48,
+          "unit": "dp"
+        },
+        {
+          "role": "attachment control width when dictation control is visible and inactive",
+          "value": 30,
+          "unit": "dp"
+        },
+        {
+          "role": "attachment control width otherwise",
+          "value": 32,
+          "unit": "dp"
+        },
+        {
+          "role": "attachment end gap",
+          "values": [
+            0,
+            4,
+            8
+          ],
+          "unit": "dp",
+          "condition": "0 when dictation shown; 4 when send or voice control shown; otherwise 8"
+        },
+        {
+          "role": "dictation leading offset when visible and inactive",
+          "value": 2,
+          "unit": "dp"
+        },
+        {
+          "role": "plus icon size",
+          "value": 16,
+          "unit": "dp"
+        },
+        {
+          "role": "disabled plus icon alpha multiplier",
+          "value": 0.3,
+          "unit": "multiplier on textSecondary source alpha"
+        }
+      ],
+      "conditions": [
+        "sp2.d requires host enabled AND state.canAddAttachments to enable the attachment control.",
+        "Send renders when fj3.f is true and enables only when host enabled AND fj3.c.",
+        "Voice control is gated by voiceCallAvailable and fj3.h.",
+        "Search mode changes send accessibility label to chat_search_submit."
+      ],
+      "sourceCautions": [
+        "fj3 Java has duplicated-code warnings and an uninitialized z5 in one displayed branch; do not infer all branches or resolve unknown constructor boolean meanings from this output.",
+        "sp2.e is rejected for complete-layout reconstruction."
+      ],
+      "unknowns": [
+        "Whole composer height, text padding, corner radius, maximum lines, keyboard adaptation and compact-variant trigger remain unresolved."
+      ]
+    },
+    {
+      "id": "attachment-menu-anchor",
+      "classification": "B",
+      "scope": "attachment-menu",
+      "statement": "Attachment choices use an anchored popup with viewport-clamped positioning.",
+      "source": [
+        {
+          "className": "defpackage.xb1",
+          "method": "k/d",
+          "sourcePath": "jadx/sources/defpackage/xb1.java",
+          "sha256": "ff90d062360034b4022d7a5b79d5503b183f280e3c5f0d8b2cba6e809ee0f84e"
+        },
+        {
+          "className": "defpackage.er0",
+          "method": "h",
+          "sourcePath": "jadx/sources/defpackage/er0.java",
+          "sha256": "0ceefec0bc885b7de60f682163bb8b08d960ef6b21f79c22505b3dd92cc20f60"
+        }
+      ],
+      "evidenceRefs": [
+        "ev_bbd82112570434c4a09e942c39eda1374391bd9843f726eed9ecac732b4dcf74",
+        "ev_7dc833cb7f0a9ed0442fd890b97db759de5e277e299668951d43c9b24d539f3f"
+      ],
+      "measurements": [
+        {
+          "role": "horizontal viewport margin",
+          "value": 16,
+          "unit": "dp"
+        },
+        {
+          "role": "minimum top position",
+          "value": 12,
+          "unit": "dp"
+        },
+        {
+          "role": "gap above anchor",
+          "value": 16,
+          "unit": "dp"
+        }
+      ],
+      "positionRule": "x aligns to an anchor edge based on layout direction then clamps to viewport margins. y=max(12dp, anchor.top -16dp -popup.height). Values are converted from dp to px by density before positioning.",
+      "tag": "chat-composer-attachment-menu",
+      "unknowns": [
+        "Not a measured runtime bottom sheet. Popup dismissal/back/IME and oversized-popup behavior require runtime validation."
+      ]
+    },
+    {
+      "id": "attachment-menu-choices",
+      "classification": "B",
+      "scope": "attachment-menu",
+      "statement": "The menu defines Camera, Photos, Files in that order, with camera/photos/folder glyph resources.",
+      "source": [
+        {
+          "className": "defpackage.dj8",
+          "method": "f case 3",
+          "sourcePath": "jadx/sources/defpackage/dj8.java",
+          "sha256": "cf172756df373854d3db60568e37103ae1f6d34f608e73a36329d927c6c7a89c"
+        },
+        {
+          "className": "defpackage.ga1",
+          "method": "d cases 1..3",
+          "sourcePath": "jadx/sources/defpackage/ga1.java",
+          "sha256": "d85e3be97309f5551061b90519e93f6d0ef37451019a11dd5a2cce3f012843ab"
+        },
+        {
+          "className": "defpackage.xb1",
+          "method": "d",
+          "sourcePath": "jadx/sources/defpackage/xb1.java",
+          "sha256": "ff90d062360034b4022d7a5b79d5503b183f280e3c5f0d8b2cba6e809ee0f84e"
+        }
+      ],
+      "evidenceRefs": [
+        "ev_40bd5afc5fbbba104a70dd63440d59771dd2ba1556089b02926d89fea092f97c",
+        "ev_bbd82112570434c4a09e942c39eda1374391bd9843f726eed9ecac732b4dcf74"
+      ],
+      "items": [
+        {
+          "labelResource": "chat_attachment_menu_camera",
+          "iconResource": "ic_camera"
+        },
+        {
+          "labelResource": "chat_attachment_menu_photos",
+          "iconResource": "ic_photos"
+        },
+        {
+          "labelResource": "chat_attachment_menu_files",
+          "iconResource": "ic_folder"
+        }
+      ],
+      "conditions": [
+        "The menu close callback precedes each selection callback in ga1.d.",
+        "The file picker branch supplies MIME */*.",
+        "Photo picker uses the platform media picker contract."
+      ],
+      "unknowns": [
+        "Camera, platform permission flow and picker screens were not executed."
+      ]
+    },
+    {
+      "id": "menu-surface-row",
+      "classification": "B",
+      "scope": "menu",
+      "statement": "The shared menu uses a rounded surface and larger touch rows around smaller visual row content.",
+      "source": [
+        {
+          "className": "defpackage.ks6",
+          "method": "b/d/e/<clinit>",
+          "sourcePath": "jadx/sources/defpackage/ks6.java",
+          "sha256": "bf0bae35fc86f40e5dec7c31d0f06b81f4905599fd42bcf6901d72cbd4eb91a2"
+        },
+        {
+          "className": "defpackage.lld",
+          "method": "f/r",
+          "sourcePath": "jadx/sources/defpackage/lld.java",
+          "sha256": "d63b9ef1db616c4b492d0a644572109739f233ef504bdbf254d265c7529ce7ca"
+        },
+        {
+          "className": "defpackage.gf5",
+          "method": "<clinit>",
+          "sourcePath": "jadx/sources/defpackage/gf5.java",
+          "sha256": "910c254d3e64ec65ae67e5b379bfeff2462f7df3cb7b3112b7a054c812a4465e"
+        }
+      ],
+      "evidenceRefs": [
+        "ev_a672b98cb0bfccac91ab3b70e06a3b1cdf068e5dd47998fc66087a3304c68f58",
+        "ev_97d737bed008b011738b9020f931c2b9e859b7737b1b325c9e62c3877d65ef5f",
+        "ev_69c63b519d9802800e297c0febb97a5e5b6de74c72feda0a957582325c66f56d"
+      ],
+      "measurements": [
+        {
+          "role": "surface minimum width",
+          "value": 180,
+          "unit": "dp"
+        },
+        {
+          "role": "surface corner radius declaration",
+          "value": 24,
+          "unit": "dp"
+        },
+        {
+          "role": "row minimum hit height",
+          "value": 44,
+          "unit": "dp"
+        },
+        {
+          "role": "visual row minimum height",
+          "value": 38,
+          "unit": "dp"
+        },
+        {
+          "role": "row horizontal padding",
+          "value": 12,
+          "unit": "dp"
+        },
+        {
+          "role": "icon-label gap",
+          "value": 12,
+          "unit": "dp"
+        },
+        {
+          "role": "menu icon",
+          "value": 16,
+          "unit": "dp"
+        },
+        {
+          "role": "disabled row alpha",
+          "value": 0.35,
+          "unit": "alpha"
+        },
+        {
+          "role": "press shape radius",
+          "value": 16,
+          "unit": "dp"
+        },
+        {
+          "role": "press animation duration",
+          "value": 150,
+          "unit": "ms"
+        },
+        {
+          "role": "press easing cubic bezier",
+          "value": [
+            0.42,
+            0,
+            0.58,
+            1
+          ],
+          "unit": "normalized cubic-bezier"
+        }
+      ],
+      "conditions": [
+        "lld.f(...,44,0,2) is minimum height with unconstrained maximum, not an exact 44dp height.",
+        "ks6.e uses the named animation harkMenuPress; static timing is not a runtime measurement."
+      ],
+      "unknowns": [
+        "Blur, compositor/material appearance and accessibility hit testing are unobserved.",
+        "Press-animation duration/easing initialization is independently reviewed in existing JADX source; REA method e establishes its use."
+      ]
+    },
+    {
+      "id": "failed-message-retry",
+      "classification": "B",
+      "scope": "message-actions",
+      "statement": "A failed-message retry row changes accessibility state while retry is running and prevents activation while retry/animation is active.",
+      "source": [
+        {
+          "className": "defpackage.u49",
+          "method": "g",
+          "sourcePath": "jadx/sources/defpackage/u49.java",
+          "sha256": "fa9971e5fe43f608f1259f68322a85ca0c9a017b432f7bbc6a81b4fb036f5d92"
+        }
+      ],
+      "evidenceRefs": [
+        "ev_3a922cefc42a72467a4f1536d1772c7d6844c910058adb82959a2616b6ae1a9a"
+      ],
+      "measurements": [
+        {
+          "role": "retry label font size override",
+          "value": 12,
+          "unit": "sp"
+        },
+        {
+          "role": "retry icon size",
+          "value": 18,
+          "unit": "dp"
+        },
+        {
+          "role": "row horizontal padding",
+          "value": 8,
+          "unit": "dp"
+        },
+        {
+          "role": "label-icon gap",
+          "value": 4,
+          "unit": "dp"
+        }
+      ],
+      "conditions": [
+        "Busy is jy2.b OR the animation object is active.",
+        "Busy disables click; state description uses chat_retrying_message.",
+        "Icon is ic_retry_circle_filled; label uses an error-specific resource and textTertiary color."
+      ],
+      "unknowns": [
+        "Request retry success, failure persistence and repeated-action behavior are not runtime validated.",
+        "Other message action surfaces were not exhaustively reconstructed."
+      ]
+    },
+    {
+      "id": "native-rn-boundary",
+      "classification": "B",
+      "scope": "widget-runtime",
+      "statement": "Native code creates HarkAgenticWidgetContent with explicit card payload props and wraps it in a content-height native view.",
+      "source": [
+        {
+          "className": "defpackage.bqf",
+          "method": "a",
+          "sourcePath": "jadx/sources/defpackage/bqf.java",
+          "sha256": "506d830ee24c39ae0413011b2bbfe6eb661b95bf669899cc1dee8167cd28fdc0"
+        },
+        {
+          "className": "defpackage.hg",
+          "method": "c",
+          "sourcePath": "jadx/sources/defpackage/hg.java",
+          "sha256": "26618acede13e4f73b8680498d13e1a5575c7e779fce501f6f062ebe352cd24e"
+        },
+        {
+          "className": "com.hark.widgetruntime.IntrinsicHeightReactNativeView",
+          "method": "onMeasure",
+          "sourcePath": "jadx/sources/com/hark/widgetruntime/IntrinsicHeightReactNativeView.java",
+          "sha256": "57450ba75d24c7db74eb2934335f3c62e1a982d8c5cb1960bf05dfec40fca821"
+        },
+        {
+          "className": "com.hark.widgetruntime.ReactNativeHostManager",
+          "method": "supportsRuntimeVersion/initialize",
+          "sourcePath": "jadx/sources/com/hark/widgetruntime/ReactNativeHostManager.java",
+          "sha256": "971a9b68f24e1fd61a5c5e1ff44081302c7a08bc59c2c67cd54320b02ef1537e"
+        }
+      ],
+      "evidenceRefs": [
+        "ev_02ddf721569f58151e35df6a7b4b959f59c0f33c14b5e999f65dcd320568a172",
+        "ev_dd036bdab0e7991292723574f7ec09d5c569b9e021b661589cb0080bae07828a",
+        "ev_35815ad9b5d7694d52b57b0300a2a53854d0baa1c6319f985c950f73fed0c4cf",
+        "ev_01dbfc8b32157386f852e6dd4566ff7a38724cb7a8fc0db9b10d3b2c33d41ab8"
+      ],
+      "props": [
+        "cardId",
+        "renderId",
+        "bodyTSX",
+        "environment.colorScheme",
+        "environment.variables",
+        "styleSheetSHA",
+        "styleSheetURL",
+        "contentHorizontalPadding"
+      ],
+      "runtimeVersionRange": [
+        1,
+        3
+      ],
+      "layout": "The React view is measured at exact parent width when width is constrained, with unspecified intrinsic height; native wrapper resolves measured height to parent constraints. hg.c sets its background transparent.",
+      "trace": "REA incoming reference identifies hg.c at classes2.dex code-unit offset 240 invoking wrapWithIntrinsicHeight.",
+      "unknowns": [
+        "Runtime payload bodyTSX and fetched styles are data-dependent. The shipped bundle alone does not contain every card the service might produce.",
+        "No network stylesheet fetching or app launch was performed."
+      ]
+    },
+    {
+      "id": "hermes-format",
+      "classification": "B",
+      "scope": "widget-runtime",
+      "statement": "index.android.bundle is valid Hermes v98 bytecode, not plain JavaScript. Format-aware string parsing supports the dynamic-widget boundary.",
+      "source": {
+        "sourcePath": "decoded/assets/index.android.bundle",
+        "sha256": "2b45f7671343595c255183ac14c09f6a07b4d04288bc1959e3b44ae9dd11a4d7"
+      },
+      "evidenceRefs": [],
+      "reviewKind": "Independent local Node binary parsing with official matching format reference; not a REA tool result",
+      "header": {
+        "size": 1608712,
+        "sha256": "2b45f7671343595c255183ac14c09f6a07b4d04288bc1959e3b44ae9dd11a4d7",
+        "magic": "1f1903c103bc1fc6",
+        "version": 98,
+        "source": "decoded/assets/index.android.bundle",
+        "classification": "B",
+        "capture": "independent local byte parser; not REA evidence",
+        "fileLength": 1608712,
+        "globalCodeIndex": 0,
+        "functionCount": 6461,
+        "stringKindCount": 3,
+        "identifierCount": 5173,
+        "stringCount": 8897,
+        "overflowStringCount": 13,
+        "stringStorageSize": 127658,
+        "bigIntCount": 0,
+        "bigIntStorageSize": 0,
+        "regExpCount": 128,
+        "regExpStorageSize": 13058,
+        "literalValueBufferSize": 26030,
+        "objKeyBufferSize": 12702,
+        "objShapeTableCount": 1018,
+        "numStringSwitchImms": 5,
+        "segmentID": 0,
+        "cjsModuleCount": 0,
+        "functionSourceCount": 21,
+        "debugInfoOffset": 1608676,
+        "formatReference": "https://raw.githubusercontent.com/facebook/hermes/40b4c8d4e22ed2b9af46aba81aec3ca8aa5e169c/include/hermes/BCGen/HBC/BytecodeFileFormat.h",
+        "footerSHA1Matches": true,
+        "stringTableValidation": {
+          "stringTableOffset": 98364,
+          "stringStorageOffset": 134056,
+          "allEntriesWithinStorage": true,
+          "count": 8897
+        }
+      },
+      "selectedStringsFile": "hermes-design-strings.json",
+      "selectedStringMeaning": "Table entries only. No declaration-to-runtime or string-to-call-graph promotion.",
+      "unknowns": [
+        "No full Hermes bytecode instruction decompilation was performed.",
+        "21 preserved function-source records in the header do not imply original source availability for the whole application."
+      ]
+    }
+  ],
+  "unknowns": [
+    "Core native screenshots and transitions remain unavailable behind the existing legitimate-install environment limitation.",
+    "Whole-composer layout method sp2.e decompilation is invalid despite complete tool status.",
+    "Keyboard/insets/font-scale/fallback/transitions and live material rendering are not validated.",
+    "Generated widget payload and service-provided card designs are not enumerated by shipped bytecode."
+  ],
+  "implementationJudgment": {
+    "status": "useful-for-independent-partial-reconstruction",
+    "supported": [
+      "Native navigation placement hierarchy",
+      "Anchored attachment menu with exact minimum dimensions and insets",
+      "Focused send/dictation/voice eligibility relationships",
+      "Menu press and failed-message retry declarations",
+      "Native-width/content-height card-host contract"
+    ],
+    "notEstablished": [
+      "Pixel-faithful full Android app reconstruction",
+      "Full original behavior or complete runtime page inventory"
+    ],
+    "nextBestAlternative": "Build a clean independent mobile component gallery from B facts; reuse source-attributed Hark Web A elements for unresolved content regions as D adaptation. Future eligible normally licensed Android device supplies comparison only."
+  }
+}

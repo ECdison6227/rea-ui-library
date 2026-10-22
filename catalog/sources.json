@@ -925,7 +925,7 @@
     {
       "id": "hark-android",
       "name": "Hark Android",
-      "subtitle": "原生配色、排版与输入控件",
+      "subtitle": "原生结构深挖与Web手机适配",
       "platform": "mobile",
       "kind": "research",
       "root": "platforms/mobile/hark-android",
@@ -937,7 +937,7 @@
         "method": "REA6.5.0 open_binary/extract_artifact, apktool decode_android_resources and installedCLI inspect_android_package/class/method; original byte identities and limitations preserved in selected receipts. Native runtime collection and Google Play gate recorded independently. A normal launch on the official Play-enabled emulator reached a documented Google Play licensing gate after sign-in; this environment-only A does not verify Hark core UI.",
         "researchEntry": "README.md"
       },
-      "summary": "Hark Android1.0.0-36的35角色双主题、13档原生排版与局部发送控件；附独立任务参考，登录后核心视觉对照待续。",
+      "summary": "125项原生声明token，补齐导航、锚定附件菜单、输入变体及动态卡片边界；附独立Web手机参考，保留原生运行未验证。",
       "tags": [
         "Android",
         "Compose",
@@ -952,20 +952,20 @@
         "HTML/CSS reference"
       ],
       "readiness": "partial",
-      "coverage": "真实包/签名/REA定向静态声明已核对；2项reducer及5项独立参考场景通过。Google登录已完成，账号地区无法从Play取得Hark，原签名包启动被Play授权门拦截；核心原生UI待续。",
+      "coverage": "22份新增REA回执元数据、Hermes格式核验与10项设计发现；既有参考与新增7场景Web手机适配通过。原生核心运行仍受Play地区/授权限制。",
       "features": [
-        "35个语义颜色角色的原生浅色/深色声明表。",
-        "13档原生自定义排版与局部发送控件几何，保留sp/dp。",
-        "可复用的独立输入、内容卡、选择sheet参考，明确D选择。",
-        "原生输入状态模型边界与后续手机控制器接入指南。"
+        "35个语义颜色角色的原生双主题、13档排版与发送几何。",
+        "MainSection导航放置、锚定附件菜单、输入变体、重试行及动态卡片宿主的定向静态规范。",
+        "有独立来源边界的Hark Web→手机参考，复用历史390×844样本，7项浏览器场景通过。",
+        "两条参考均附明确D选择与Vivic手机组件映射。"
       ],
       "limits": [
         "The current Google account cannot obtain Hark from Play in its country; the signed sideload is blocked before Hark login. Core native chat/cards/settings/keyboard and motion comparison require an eligible normally licensed device/account.",
-        "Native component geometry beyond focused send control, runtime font fallback and key transition measurements remain unverified.",
+        "Whole native composer layout decompilation is incomplete; screen composition, native font fallback, keyboard/insets and runtime transition measurements remain unverified beyond the focused declarations.",
         "Original font redistribution license unresolved; reference uses explicit system fallback.",
         "All business branches, billing/service integrations and background notification behavior are outside design scope.",
-        "Hermes widget payload internals and exact original spring coefficients are not required for the bounded reference.",
-        "Original-platform/version boundaries remain; integrity check is not functional acceptance."
+        "Runtime-provided widget TSX bodies and styles are not enumerated by the shipped Hermes engine; exact native motion behavior needs runtime observation.",
+        "Web transfer does not upgrade Android source runtime coverage."
       ],
       "palette": [
         "#1d1d1f",
@@ -995,6 +995,16 @@
           "label": "迁移指南",
           "path": "ADAPTATION_GUIDE.md",
           "role": "adoption"
+        },
+        {
+          "label": "原包内容地图",
+          "path": "NATIVE_CONTENT_MAP.md",
+          "role": "behavior"
+        },
+        {
+          "label": "Web转手机",
+          "path": "WEB_TO_MOBILE.md",
+          "role": "adoption"
         }
       ],
       "run": {
@@ -1012,15 +1022,15 @@
       },
       "deliveryTier": "design-package",
       "thumbnail": {
-        "path": "comparison/reference-light-390.png",
+        "path": "comparison/web-mobile-dark-390.png",
         "reviewed": true,
         "classification": "D",
-        "meaning": "独立野外任务参考截图，不是原版Hark截图。"
+        "meaning": "Independent historical-Web-to-mobile transfer with synthetic field-research data; not original Android UI."
       },
       "integrity": {
         "manifest": "catalog/manifests/hark-android.json",
-        "files": 28,
-        "treeSha256": "baa4892df0958956a9fc6b99978a2c29a8b8aa49c7b603088eceb841185b3507"
+        "files": 41,
+        "treeSha256": "cd2fcb559eafc4eee44dd506a5073a4078b7bf8d008fd901ed2438bd17d8ad2e"
       }
     }
   ],

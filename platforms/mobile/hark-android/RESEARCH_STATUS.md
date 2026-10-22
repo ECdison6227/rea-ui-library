@@ -11,3 +11,5 @@ Google/Hark由用户本人正常登录，不从聊天索取凭据或复制token�
 待补chat/composer/代表卡片/settings-theme/sheet-navigation/IME-fontScale/关键动效。每个新场景说明消除哪条设计歧义；全部支付/连接器/后台服务不作设计门槛。截图与树各自保留时间，分次采集不称原子快照；A必须实际原版，参考仍D。系统门槛截图不为核心设计增加verified。登录后优先新建中性内容并审查分发。
 
 最终运行结果（2026-10-22）：Google账号密码正常登录、本人手机确认均完成，用户对当时Google/Google Play条款确认后代点I agree；未修改账号恢复信息，可选设备备份关闭。官方Hark详情明确“This item is not available in your country”（原界面用缩写isn’t），当前账号地区无Install。相同原签名ARM64本地安装成功，REA确认版本1.0.0-36/100000036，正常启动后Google Play显示“Get this app from Play”授权门。没有改包、伪造安装来源、改账号地区或绕过授权。此为具体原厂/账号可用性障碍，继续条件是可正常从Play取得Hark的设备/账号，再进行本人Hark登录。原生核心partial；唯一新A仅为[启动环境诊断](evidence/android-play-licensing-gate.png)，不提高核心设计覆盖。一次性私有凭据文件已删除，没有凭据或账号截图进入库。
+
+用户后续明确要求再深入逆向，并接受利用已有Web元素适配手机。续接仅做定点静态检查，新增22份真实REA回执元数据、10项结构化设计发现和Hermes v98格式核验；没有重复同一Play失败。125项tokens和9类组件可指导独立重建，`sp2.e`错误反编译明确排除。[原包内容地图](NATIVE_CONTENT_MAP.md)与[Web→手机](WEB_TO_MOBILE.md)保留两条来源；新增Web移动参考7场景通过，截图已检查，未请求原厂接口或修改已部署Vivic。

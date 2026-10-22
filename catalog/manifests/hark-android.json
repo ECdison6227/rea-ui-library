@@ -2,37 +2,47 @@
   "schemaVersion": 1,
   "id": "hark-android",
   "root": "platforms/mobile/hark-android",
-  "treeSha256": "baa4892df0958956a9fc6b99978a2c29a8b8aa49c7b603088eceb841185b3507",
+  "treeSha256": "cd2fcb559eafc4eee44dd506a5073a4078b7bf8d008fd901ed2438bd17d8ad2e",
   "files": [
     {
       "path": "ADAPTATION_GUIDE.md",
-      "bytes": 1890,
-      "sha256": "7c5519f1850a8fb15596cb013222f984ed47294cd4aaccb0c992e521a4ed81f3"
+      "bytes": 2253,
+      "sha256": "482e737bb64edb4060cdcb00180f223f3e9d987a3f2b9e933162114a56ebeb8e"
     },
     {
       "path": "DESIGN_SPEC.md",
-      "bytes": 7000,
-      "sha256": "4906230e26a3b8b72a58f7adf52bc61dd8f13eefb2343583d08e01b6d21deab2"
+      "bytes": 8214,
+      "sha256": "731c473a8066b3f29e33c4530ebbabb22e36bffb35784fd387238139a68b737b"
+    },
+    {
+      "path": "NATIVE_CONTENT_MAP.md",
+      "bytes": 5426,
+      "sha256": "68b057badb3ffeb7333c57ef999d996fb45e2514a34315e587b07cc245032c17"
     },
     {
       "path": "README.md",
-      "bytes": 1627,
-      "sha256": "9863e29e50a4253763f8feaee197427138bf442643e7f7d6f84f266c975831f8"
+      "bytes": 2480,
+      "sha256": "a4591271ad5e19d89832fdb0cef199371ec1150768757f045d210273a806a8ac"
     },
     {
       "path": "RESEARCH_STATUS.md",
-      "bytes": 2514,
-      "sha256": "01001ac14bb1bdc09c64c3afee37940de0e72494a0c6e020ce2ceae0a1ccfd14"
+      "bytes": 3046,
+      "sha256": "5d7c0eb5551f34ef771be128f64b22b15d6a30b17acc553e8ff9c4689fc3b76d"
+    },
+    {
+      "path": "WEB_TO_MOBILE.md",
+      "bytes": 5297,
+      "sha256": "f41c01df616a6c00c6edb984b1e61f23dce0f2441ee731e0b702a33780f79830"
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 10686,
-      "sha256": "ebe08f0bb3edcb73404b855d9cd1bdb2d734404ace558dc294b964eeaaa0490e"
+      "bytes": 11870,
+      "sha256": "3bbd9adffcd1fcc3f1a41cc45ca400ebe6c6dad03c8730747f75eb3ce846427a"
     },
     {
       "path": "comparison/README.md",
-      "bytes": 1923,
-      "sha256": "fe05a7375f148c999bf799b617da61429c9230cc7b1af0f8f2ab1527a574e9c7"
+      "bytes": 2991,
+      "sha256": "44ecc8db655e9b79f3b5798fc32dec2f07d4ba664f463d939b7650969d3fbc01"
     },
     {
       "path": "comparison/reference-dark-sheet-390.png",
@@ -55,14 +65,34 @@
       "sha256": "bebedc59457ae08e5af2387248eb887362c074ddb32d4f74ec2df90cfcca867d"
     },
     {
+      "path": "comparison/web-mobile-dark-390.png",
+      "bytes": 194684,
+      "sha256": "61522b57cfbea808653ab7bb4e5558f5ecb2619256d80d5ed63071f675612833"
+    },
+    {
+      "path": "comparison/web-mobile-light-sheet-390.png",
+      "bytes": 112847,
+      "sha256": "433a74f4471774b32b97f7120f8b6e4b2fed50e20a458778a69f1b010dee290c"
+    },
+    {
+      "path": "comparison/web-mobile-reduced-320.png",
+      "bytes": 124257,
+      "sha256": "ceaee8ba3861ac0b7e77a0c20e84b8a145d56a37dee5ad5dcbf45f0c2af433c5"
+    },
+    {
+      "path": "comparison/web-mobile-verification.json",
+      "bytes": 1290,
+      "sha256": "b237a20962f4f63bb8e815a80d91cc1fd0d738fb58d4bf82b6d37dfc5d79886e"
+    },
+    {
       "path": "components/catalog.json",
-      "bytes": 9501,
-      "sha256": "c45a54ad55a5f41d183a7e9f1545d9c9c1d17177c02da6d6695e774ad8f33467"
+      "bytes": 16524,
+      "sha256": "cb764547442f1a8e65a13f7f18854e66d85b4d0af3ff68652a09c18e61dad051"
     },
     {
       "path": "design-package.json",
-      "bytes": 4693,
-      "sha256": "6e70917b8f7ab8ab5817d2a854a78431a2dda9114d0c2297cfdea8b5aeee4c6a"
+      "bytes": 5188,
+      "sha256": "9037462ccbe70875594473361944a53de2bcb117e7572671c77fd7ce8bfde5c3"
     },
     {
       "path": "evidence/android-play-licensing-gate.png",
@@ -71,8 +101,18 @@
     },
     {
       "path": "evidence/index.json",
-      "bytes": 9408,
-      "sha256": "57eb9e112c54b7df6b65e62e494b419ea18ab8d0687a9499e49dd4fba9c21d05"
+      "bytes": 16164,
+      "sha256": "0eac43903a81ac4fca310c47d94f306a2a00266d580b721d7b6acc2795aeab36"
+    },
+    {
+      "path": "evidence/native-content-findings.json",
+      "bytes": 25521,
+      "sha256": "0359a3d879acd8c6d613fee880a84b7125c6fb2ca9a17775cc4e702fdf028555"
+    },
+    {
+      "path": "evidence/rea-deepening-receipts.json",
+      "bytes": 32906,
+      "sha256": "ac5f894ccbece5c54db89e8ad111b24885179e12358ca83a5a436256fe5ffc32"
     },
     {
       "path": "evidence/rea-selected-observations.json",
@@ -85,24 +125,29 @@
       "sha256": "bb7cdc9bb458539caf87d962fd92ad72828aad08c920c876934ee0d006169180"
     },
     {
+      "path": "evidence/web-mobile-source-receipt.json",
+      "bytes": 5409,
+      "sha256": "55887eeb399f2a2d7f3a012937c9e7b713fe637bfe780b4fbe52861fbfb6ffd6"
+    },
+    {
       "path": "motion/catalog.json",
-      "bytes": 3224,
-      "sha256": "fcac0957ca1c95f2ca918995ec3af4393003f070e6da50c1e8f66dcef026633a"
+      "bytes": 4304,
+      "sha256": "10a46456cf3c68145b6fd6b17dd42a7605ca6ca7dd35713ba33ae8675c5a09b7"
     },
     {
       "path": "patterns/interactions.json",
-      "bytes": 5198,
-      "sha256": "fbdae44d4444c1eabbe2e8b431eb7999a9dcd532e86aff2974df9f9530f8d97d"
+      "bytes": 7032,
+      "sha256": "979052c2b2ddb317c6a642b2c63dac4af2987e5eeebe680c66ae56c3fc858950"
     },
     {
       "path": "patterns/layouts.json",
-      "bytes": 2388,
-      "sha256": "344a7df4113d165d71d1e1e6f47c9594919bd23864c75fc1be2fbd131dc573e9"
+      "bytes": 3623,
+      "sha256": "d46eca241830625796e813c842e0036849e33db3cea5665de70c6fedd7176be9"
     },
     {
       "path": "reference/README.md",
-      "bytes": 951,
-      "sha256": "6915f233958a4b5d0bd819c0f25235c6af838f81395349e8a2a5eea1d635e0f2"
+      "bytes": 1674,
+      "sha256": "4efbe6f08f0a3ca273bccbf317a44018bd5071ecf8087ead139d98cc43088510"
     },
     {
       "path": "reference/app.mjs",
@@ -136,13 +181,33 @@
     },
     {
       "path": "reference/serve.mjs",
-      "bytes": 967,
-      "sha256": "8ae1e1ca2d313fe5797c6af73d4cb6bd8f047f0fd688c3156ffa930d75219fc5"
+      "bytes": 1019,
+      "sha256": "35b1f6f47c2b80752353b684e8fb606213c9ace5db1ece5fc0d58df10fde63f3"
+    },
+    {
+      "path": "reference/verify-web-mobile.mjs",
+      "bytes": 7645,
+      "sha256": "e0c482d4aabee63b099b6cde8bb28e4edafe92ad267f54ef41697b9e99ae0f5e"
+    },
+    {
+      "path": "reference/web-mobile.css",
+      "bytes": 10528,
+      "sha256": "f52cd48ab15360929427479b975baa272eb58db2429f1c6e38b21809af422d3b"
+    },
+    {
+      "path": "reference/web-mobile.html",
+      "bytes": 6537,
+      "sha256": "ec66695fa95856bd78d94de39d553dfde89f1e0ae0225d7130e6a38bd9510fec"
+    },
+    {
+      "path": "reference/web-mobile.mjs",
+      "bytes": 7342,
+      "sha256": "8758ab18e6efdd8c34d4640598fac50783895bf7e50f6dff233f9db8d495f87a"
     },
     {
       "path": "tokens/tokens.json",
-      "bytes": 84569,
-      "sha256": "fef60e2ac439d2b5aa5e095b702e0eaafd5f203050b046c98b7f30402ce8362b"
+      "bytes": 127488,
+      "sha256": "23a2a9d00289d804698751b617e73c7d015a3c8613e6150645ae6c483f3d0612"
     }
   ]
 }

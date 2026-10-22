@@ -2,6 +2,8 @@
 
 先读design-package.json的readiness、source和模块，不混用旧Web Hark与本版Android数值。原版未知和目标D选择随实现保留。
 
+用户已于2026-10-22授权在原生运行受限时采用库内Web元素。现有Web研究包含390×844手机视口实测；可直接使用独立 [Web→手机适配](WEB_TO_MOBILE.md) 和 `reference/web-mobile.html`。这是有来源的另一条目标实现路线，不能据此把原生15/18sp改写成Web15/19px，或把Web三段导航当作原生导航。
+
 | 落点 | 复用/适配 | 目标职责 |
 | --- | --- | --- |
 | 语义配色 | 直接复用JSON角色、薄包装主题 | 断连/失败/撤销有文本和语义，不只颜色 |

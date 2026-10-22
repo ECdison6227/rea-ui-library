@@ -59,6 +59,37 @@
         "Long content scrolls inside the sheet; do not cover close control.",
         "Use native dialog/back stack for Android target rather than relying on browser Escape."
       ]
+    },
+    {
+      "id": "layout-web-to-mobile",
+      "name": "Historical Web composition adapted to a mobile target",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "evidence-web-mobile-source-review",
+        "evidence-web-mobile-qa"
+      ],
+      "unknowns": [
+        "Original Android geometry and physical keyboard/safe-area behavior are not validated by this reference."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Use the separate --web-* scope and WEB_TO_MOBILE mapping, retaining the native source rules separately."
+      },
+      "componentRefs": [
+        "component-navigation",
+        "component-composer",
+        "component-content-card",
+        "component-modal-sheet"
+      ],
+      "rules": [
+        "390CSSpx reference measured composer x16/w358/h48/bottom32; independent target, not native pixels.",
+        "Web text15/19 does not replace native15/18sp.",
+        "Only composer uses50px blur; message fills remain distinct.",
+        "Target tabs, records filter, local template actions and feedback are implemented; backend remains synthetic."
+      ]
     }
   ]
 }

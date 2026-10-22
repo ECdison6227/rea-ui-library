@@ -108,6 +108,40 @@
       "interruption": [
         "Release restores scale; reduced motion removes transform."
       ]
+    },
+    {
+      "id": "motion-native-menu-press",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "evidence-rea-deepening",
+        "evidence-native-content-review"
+      ],
+      "unknowns": [
+        "Frame timings, interruption and actual visual interpolation were not observed."
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Apply only in its declared local scope, preserving source units/conditions. Confirm native rendering and target platform binding before claiming visual parity."
+      },
+      "trigger": "Shared native menu press helper harkMenuPress",
+      "properties": [
+        "Declared press-state animation"
+      ],
+      "duration": {
+        "value": 150,
+        "unit": "ms",
+        "basis": "declared"
+      },
+      "easing": {
+        "value": "cubic-bezier(.42,0,.58,1)",
+        "basis": "declared"
+      },
+      "interruption": [
+        "Runtime press/release/disabled interruption unverified."
+      ]
     }
   ]
 }

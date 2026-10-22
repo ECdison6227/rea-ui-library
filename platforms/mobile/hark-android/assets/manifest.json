@@ -250,6 +250,40 @@
       "path": "reference/components.css",
       "sha256": "db1a217da7bcf0559a086ce0f72d9a6586dea4ed3f54bc27d91459dab2e77726",
       "license": "Original independent reference implementation written for this study."
+    },
+    {
+      "id": "asset-web-mobile-css",
+      "type": "component-code",
+      "usage": [
+        "Independent Web-to-mobile target transfer"
+      ],
+      "componentRefs": [
+        "component-composer",
+        "component-content-card",
+        "component-modal-sheet",
+        "component-navigation"
+      ],
+      "sharing": "included",
+      "path": "reference/web-mobile.css",
+      "sha256": "f52cd48ab15360929427479b975baa272eb58db2429f1c6e38b21809af422d3b",
+      "license": "Independent implementation for this study; original fonts and proprietary runtime code excluded."
+    },
+    {
+      "id": "asset-web-mobile-mjs",
+      "type": "component-code",
+      "usage": [
+        "Independent Web-to-mobile target transfer"
+      ],
+      "componentRefs": [
+        "component-composer",
+        "component-content-card",
+        "component-modal-sheet",
+        "component-navigation"
+      ],
+      "sharing": "included",
+      "path": "reference/web-mobile.mjs",
+      "sha256": "8758ab18e6efdd8c34d4640598fac50783895bf7e50f6dff233f9db8d495f87a",
+      "license": "Independent implementation for this study; original fonts and proprietary runtime code excluded."
     }
   ]
 }

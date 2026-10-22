@@ -1,6 +1,8 @@
 # Hark Android 设计规范
 
-本规范区分 **原版静态声明B** 与 **独立实施选择D**。已可复用原生颜色、自定义排版及局部发送控件几何；其他组件是明确标记的参考契约。用户目标是以后做相似手机控制App，本轮不复制Hark服务或账号机制。
+本规范区分 **原版静态声明B** 与 **独立实施选择D**。已可复用原生颜色、自定义排版、发送与附件菜单局部几何、导航放置和卡片宿主声明；独立参考补足明确标记的D交互与布局选择。用户目标是以后做相似手机控制App，本轮不复制Hark服务或账号机制。
+
+续接补充：继续定点逆向的结果见 [原包深挖](NATIVE_CONTENT_MAP.md)。用户也已接受 Web 元素用于手机，现有库中有真实390×844 Web样本，对应 [Web→手机映射与参考](WEB_TO_MOBILE.md)。两条来源分别保存，不将Web迁移成功提升为Android原版运行完成。
 
 ## 来源与证据
 
@@ -71,12 +73,18 @@ sp2.c的regular发送触区52×48dp、visible ink52×32dp；compact触区48×48d
 3. 内容卡D：source/title/summary/structured rows/主次动作/详情。跨领域为野外调查任务，完成/撤销只改本地合成数据。
 4. 选择sheet D：真实dialog，选择、遮罩、关闭和焦点恢复；原生返回/拖拽/叠层未知。
 5. 移动导航D：正文滚动与固定composer分开；配对/画布/连接为目标业务。
+6. 原生导航B：Chat/Projects为TabBar，Home为NavIcon，Settings为Avatar；不同section的composer模式分开，坐标和运行转换未知。
+7. 原生附件菜单B：相机/照片/文件为锚定弹出菜单；最小宽180dp、表面圆角24dp、行触控最小44dp，完整条件见原包内容地图。
+8. 原生失败重试行B：12sp标签、18dp图标、8dp水平padding、4dp间距，重试/动画活动时禁用重复激活。
+9. 原生动态卡片宿主B：HarkAgenticWidgetContent由native传入bodyTSX与样式/环境，宽度依父约束、高度随内容；不代表所有运行时卡片内容都在包中。
 
 slots/states/events/tokenRefs/unknowns见[组件](components/catalog.json)，组合见[layouts](patterns/layouts.json)，状态转移见[interactions](patterns/interactions.json)。参考无附件、语音、支付、连接器；指引按钮说明范围，不做空功能按钮。
 
 ## 动效
 
 原生发送方法只证实arrow/spinner分支，时长/周期/spring未测，源记录为null/unknown。参考sheet选D的220ms/cubic-bezier(.2,.8,.2,1)，translateY24→0，opacity0→1；按压120ms/ease-out；spinner900ms是参考选择。减少动画关闭位移与旋转。参考参数/采样间隔都不变成原版测量。
+
+续接定位了另一个独立作用域：原生共享菜单harkMenuPress声明150ms、cubic-bezier(.42,0,.58,1)。这是B静态菜单时序，不能用于声称发送spinner或整页转换的真实时长。
 
 ## 资产、就绪与边界
 

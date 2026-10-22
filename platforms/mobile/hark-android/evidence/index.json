@@ -194,6 +194,137 @@
         "REA screenshot has no automatic artifact identity; analyst bound it to the installed package/version via focused inspection and launch context.",
         "The foreground UI is Google Play; do not infer Hark chat/card/settings geometry or behavior from this diagnostic."
       ]
+    },
+    {
+      "id": "evidence-rea-deepening",
+      "classification": "B",
+      "origin": "current",
+      "subject": "source",
+      "kind": "static",
+      "sourceIdentity": "com.hark.android@100000036; base-sha256:462218f35bf38795d74f8fb1fa034f5397ad71c1cdf7bcaba18a62896e4b3967",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/rea-deepening-receipts.json",
+      "sha256": "ac5f894ccbece5c54db89e8ad111b24885179e12358ca83a5a436256fe5ffc32",
+      "provider": "REA",
+      "reaEvidenceIds": [
+        "ev_bbd82112570434c4a09e942c39eda1374391bd9843f726eed9ecac732b4dcf74",
+        "ev_40bd5afc5fbbba104a70dd63440d59771dd2ba1556089b02926d89fea092f97c",
+        "ev_3010a0e0d350f97a36e90b99d6d24983a26e7d462dd6ceade450da84741f9a17",
+        "ev_a169b54aa22051188f5a8e3ea0a297a4f61e4448e92816ba4705fa9879f0fc01",
+        "ev_4e0b32b94248e24340f078b2c3d31db25b0b5a9c56a4f534f2b97500267cbdbc",
+        "ev_b687e3748d7340ccacaf63327ee699097135b634deb1dcd4d621e83a8e90399b",
+        "ev_0de1ac71b075f6f2139df1540de259d565d970672b3b35dffbc1d4f811988851",
+        "ev_3a922cefc42a72467a4f1536d1772c7d6844c910058adb82959a2616b6ae1a9a",
+        "ev_a42a495ea841dcdcfcda742a5a53a841f1a4d71b55ab5bf552a2946f8e49d5ed",
+        "ev_7dc833cb7f0a9ed0442fd890b97db759de5e277e299668951d43c9b24d539f3f",
+        "ev_69c63b519d9802800e297c0febb97a5e5b6de74c72feda0a957582325c66f56d",
+        "ev_97d737bed008b011738b9020f931c2b9e859b7737b1b325c9e62c3877d65ef5f",
+        "ev_a672b98cb0bfccac91ab3b70e06a3b1cdf068e5dd47998fc66087a3304c68f58",
+        "ev_92e33b905a3276908db0a384c98fd2b1f3b7cde5bd490c6adb1e25cfe33d35cb",
+        "ev_60fd4cd698caf4695833d9edf44470b1f51f8d0ad53e3b3dcf55b2e8e359033f",
+        "ev_897bc4a13a4fe90320be528e8425dc0dfd074152ac38f759072abfb18eaafe71",
+        "ev_d7c9ee1533b0802672d43935acdc5fecc828b3e756708659655cdb2e7c631e91",
+        "ev_9d9a1dc48b84f6fd6dd1a716a583b2d9b2f83a71cbd8dc821644641871c036ce",
+        "ev_dd036bdab0e7991292723574f7ec09d5c569b9e021b661589cb0080bae07828a",
+        "ev_35815ad9b5d7694d52b57b0300a2a53854d0baa1c6319f985c950f73fed0c4cf",
+        "ev_02ddf721569f58151e35df6a7b4b959f59c0f33c14b5e999f65dcd320568a172",
+        "ev_01dbfc8b32157386f852e6dd4566ff7a38724cb7a8fc0db9b10d3b2c33d41ab8"
+      ],
+      "method": "Reviewed metadata from 22 actual focused REA calls. Raw results withheld; rejected sp2.e method explicitly marked unusable. This is not a canonical Evidence bundle."
+    },
+    {
+      "id": "evidence-native-content-review",
+      "classification": "B",
+      "origin": "current",
+      "subject": "source",
+      "kind": "static",
+      "sourceIdentity": "com.hark.android@100000036; base-sha256:462218f35bf38795d74f8fb1fa034f5397ad71c1cdf7bcaba18a62896e4b3967",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/native-content-findings.json",
+      "sha256": "0359a3d879acd8c6d613fee880a84b7125c6fb2ca9a17775cc4e702fdf028555",
+      "method": "Analyst review of successful focused REA outputs, existing JADX sources and independently parsed Hermes v98 format. No invented REA ID for the independent binary parsing."
+    },
+    {
+      "id": "evidence-web-mobile-source-review",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "hark-web-to-mobile-field-kit-transfer-v1",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "evidence/web-mobile-source-receipt.json",
+      "sha256": "55887eeb399f2a2d7f3a012937c9e7b713fe637bfe780b4fbe52861fbfb6ffd6",
+      "method": "Selection and re-reading of historical Web A/B records for this independent transfer. It does not upgrade original Android coverage or claim a new Web capture."
+    },
+    {
+      "id": "evidence-web-mobile-qa",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "hark-web-to-mobile-field-kit-transfer-v1",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/web-mobile-verification.json",
+      "sha256": "b237a20962f4f63bb8e815a80d91cc1fd0d738fb58d4bf82b6d37dfc5d79886e",
+      "method": "Seven actual isolated browser scenarios against independent reference. No external requests, no physical phone or native IME validation."
+    },
+    {
+      "id": "evidence-web-mobile-frame-0",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "hark-web-to-mobile-field-kit-transfer-v1",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/web-mobile-dark-390.png",
+      "sha256": "61522b57cfbea808653ab7bb4e5558f5ecb2619256d80d5ed63071f675612833",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T09:24:12.515Z",
+        "notes": "Actual pixels reviewed; synthetic data only. Theme, content and expanded state differ from historical original screenshot. No Android pixel-parity claim."
+      },
+      "method": "Actual Playwright screenshot of the independent Web-to-mobile reference."
+    },
+    {
+      "id": "evidence-web-mobile-frame-1",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "hark-web-to-mobile-field-kit-transfer-v1",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/web-mobile-light-sheet-390.png",
+      "sha256": "433a74f4471774b32b97f7120f8b6e4b2fed50e20a458778a69f1b010dee290c",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T09:24:12.515Z",
+        "notes": "Actual pixels reviewed; synthetic data only. Theme, content and expanded state differ from historical original screenshot. No Android pixel-parity claim."
+      },
+      "method": "Actual Playwright screenshot of the independent Web-to-mobile reference."
+    },
+    {
+      "id": "evidence-web-mobile-frame-2",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "hark-web-to-mobile-field-kit-transfer-v1",
+      "capturedAt": null,
+      "sharing": "included",
+      "path": "comparison/web-mobile-reduced-320.png",
+      "sha256": "ceaee8ba3861ac0b7e77a0c20e84b8a145d56a37dee5ad5dcbf45f0c2af433c5",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T09:24:12.515Z",
+        "notes": "Actual pixels reviewed; synthetic data only. Theme, content and expanded state differ from historical original screenshot. No Android pixel-parity claim."
+      },
+      "method": "Actual Playwright screenshot of the independent Web-to-mobile reference."
     }
   ]
 }

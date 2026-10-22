@@ -1,0 +1,52 @@
+{
+  "classification": "D",
+  "sourceRuntimeVerified": false,
+  "verifiedAt": "2026-10-22T09:12:44.008Z",
+  "scope": "Independent transfer reference only; historical Web A is not rerun; no Android keyboard/hardware or backend validation.",
+  "results": [
+    {
+      "name": "measured-390",
+      "classification": "D",
+      "measured": {
+        "x": 16,
+        "y": 764,
+        "width": 358,
+        "height": 48,
+        "bottom": 32,
+        "font": "15px",
+        "line": "19px",
+        "overflow": false
+      }
+    },
+    {
+      "name": "390px layout and source-bound dimensions",
+      "status": "passed"
+    },
+    {
+      "name": "tabs and keyboard navigation preserve the local draft",
+      "status": "passed"
+    },
+    {
+      "name": "template selection, local send, records search",
+      "status": "passed"
+    },
+    {
+      "name": "error retains draft and retry commits once",
+      "status": "passed"
+    },
+    {
+      "name": "cancel keeps draft and no delayed completion",
+      "status": "passed"
+    },
+    {
+      "name": "details, completion/undo and theme sheet return",
+      "status": "passed"
+    },
+    {
+      "name": "320px reduced-motion and landscape do not overflow",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "externalRequests": []
+}

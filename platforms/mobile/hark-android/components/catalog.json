@@ -33,7 +33,9 @@
         "geometry-send-icon",
         "geometry-send-spinner",
         "color-light-fill-primary",
-        "color-dark-fill-primary"
+        "color-dark-fill-primary",
+        "deep-composer-control-layout-0",
+        "deep-composer-control-layout-1"
       ],
       "states": [
         {
@@ -340,6 +342,214 @@
         "dismiss-settings",
         "scroll",
         "submit"
+      ]
+    },
+    {
+      "id": "component-native-navigation",
+      "name": "Declared native navigation placement",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "evidence-rea-deepening",
+        "evidence-native-content-review"
+      ],
+      "unknowns": [
+        "Coordinates, selected appearance, transitions and conditional visibility remain unobserved."
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Apply only in its declared local scope, preserving source units/conditions. Confirm native rendering and target platform binding before claiming visual parity."
+      },
+      "slots": [
+        "Home NavIcon",
+        "Chat and Projects TabBar",
+        "Settings Avatar",
+        "section-specific composer mode"
+      ],
+      "events": [
+        "target adapter selects a declared section; these names are not original public APIs"
+      ],
+      "tokenRefs": [],
+      "states": [
+        {
+          "id": "declared",
+          "appearance": "Chat/Projects use TabBar order0/1; Home uses NavIcon and Settings uses Avatar.",
+          "evidenceRefs": [
+            "evidence-rea-deepening",
+            "evidence-native-content-review"
+          ]
+        },
+        {
+          "id": "settings",
+          "appearance": "Declared composer mode is Hidden.",
+          "evidenceRefs": [
+            "evidence-rea-deepening",
+            "evidence-native-content-review"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "component-native-attachment-menu",
+      "name": "Anchored attachment popup",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "evidence-rea-deepening",
+        "evidence-native-content-review"
+      ],
+      "unknowns": [
+        "Source widget is an anchored popup, not a verified bottom sheet. Native permission handling and runtime dismissal remain unobserved."
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Apply only in its declared local scope, preserving source units/conditions. Confirm native rendering and target platform binding before claiming visual parity."
+      },
+      "slots": [
+        "viewport-clamped anchor",
+        "rounded menu surface",
+        "Camera / Photos / Files rows",
+        "icon and label"
+      ],
+      "events": [
+        "declared row handler closes the popup, then invokes its selection callback"
+      ],
+      "tokenRefs": [
+        "deep-attachment-menu-anchor-0",
+        "deep-attachment-menu-anchor-1",
+        "deep-attachment-menu-anchor-2",
+        "deep-menu-surface-row-0",
+        "deep-menu-surface-row-1",
+        "deep-menu-surface-row-2",
+        "deep-menu-surface-row-3",
+        "deep-menu-surface-row-4",
+        "deep-menu-surface-row-5",
+        "deep-menu-surface-row-6",
+        "deep-menu-surface-row-7",
+        "deep-menu-surface-row-8",
+        "deep-menu-surface-row-9",
+        "deep-menu-surface-row-10"
+      ],
+      "states": [
+        {
+          "id": "normal",
+          "appearance": "Min180dp surface; min44dp touch row around min38dp visual row, 12dp horizontal padding/gap and16dp icon.",
+          "evidenceRefs": [
+            "evidence-rea-deepening",
+            "evidence-native-content-review"
+          ]
+        },
+        {
+          "id": "disabled",
+          "appearance": "Shared row alpha .35.",
+          "evidenceRefs": [
+            "evidence-rea-deepening",
+            "evidence-native-content-review"
+          ]
+        },
+        {
+          "id": "pressed",
+          "appearance": "Shared press shape radius16dp;150ms easing declared separately.",
+          "evidenceRefs": [
+            "evidence-rea-deepening",
+            "evidence-native-content-review"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "component-native-retry-row",
+      "name": "Failed-message retry row",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "evidence-rea-deepening",
+        "evidence-native-content-review"
+      ],
+      "unknowns": [
+        "Network behavior and exact running appearance are not established by this local UI declaration."
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Apply only in its declared local scope, preserving source units/conditions. Confirm native rendering and target platform binding before claiming visual parity."
+      },
+      "slots": [
+        "12sp retry label",
+        "18dp icon",
+        "retrying state description"
+      ],
+      "events": [
+        "activate only when retry and animation flags permit"
+      ],
+      "tokenRefs": [
+        "deep-failed-message-retry-0",
+        "deep-failed-message-retry-1",
+        "deep-failed-message-retry-2",
+        "deep-failed-message-retry-3"
+      ],
+      "states": [
+        {
+          "id": "idle",
+          "appearance": "Retry label and icon with8dp horizontal padding and4dp gap.",
+          "evidenceRefs": [
+            "evidence-rea-deepening",
+            "evidence-native-content-review"
+          ]
+        },
+        {
+          "id": "retrying",
+          "appearance": "Repeated activation is disabled while retry or animation is active.",
+          "evidenceRefs": [
+            "evidence-rea-deepening",
+            "evidence-native-content-review"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "component-native-widget-host",
+      "name": "Native width / content height card host",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "evidence-rea-deepening",
+        "evidence-native-content-review"
+      ],
+      "unknowns": [
+        "The APK does not enumerate all runtime-provided TSX bodies/styles or final generated card designs."
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Apply only in its declared local scope, preserving source units/conditions. Confirm native rendering and target platform binding before claiming visual parity."
+      },
+      "slots": [
+        "transparent native host",
+        "HarkAgenticWidgetContent",
+        "bodyTSX and style references",
+        "environment and horizontal padding"
+      ],
+      "events": [
+        "runtime supplies content",
+        "content height is measured within native constraints"
+      ],
+      "tokenRefs": [],
+      "states": [
+        {
+          "id": "declared",
+          "appearance": "Native props are passed into an intrinsic-height React Native wrapper; exact width follows the parent constraint.",
+          "evidenceRefs": [
+            "evidence-rea-deepening",
+            "evidence-native-content-review"
+          ]
+        }
       ]
     }
   ]

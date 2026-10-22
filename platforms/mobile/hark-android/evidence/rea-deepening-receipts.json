@@ -1,0 +1,421 @@
+{
+  "meaning": "Reviewed metadata receipts, not a canonical Evidence bundle",
+  "items": [
+    {
+      "file": "rea-attachment-menu-container.json",
+      "evidenceId": "ev_bbd82112570434c4a09e942c39eda1374391bd9843f726eed9ecac732b4dcf74",
+      "sha256": "65078c72fd99ba19bc6aaceda3958c0f01860fab14c6a7f2b34bc900950ec441",
+      "operation": "inspect_android_method",
+      "className": "defpackage.xb1",
+      "methodName": "k",
+      "representation": "java",
+      "reportedSourceStatus": "complete",
+      "markers": [],
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    },
+    {
+      "file": "rea-attachment-menu-content-f.json",
+      "evidenceId": "ev_40bd5afc5fbbba104a70dd63440d59771dd2ba1556089b02926d89fea092f97c",
+      "sha256": "e24cbe274460c0e3882a0fa2bd38f719d0a43a44b30264d20d8b86f9e5ad6054",
+      "operation": "inspect_android_method",
+      "className": "defpackage.dj8",
+      "methodName": "f",
+      "representation": "java",
+      "reportedSourceStatus": "complete",
+      "markers": [],
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    },
+    {
+      "file": "rea-composer-body.json",
+      "evidenceId": "ev_3010a0e0d350f97a36e90b99d6d24983a26e7d462dd6ceade450da84741f9a17",
+      "sha256": "cbe7e6e00da740c4a28c7f361e9236f4c8f80c900cce964700f3a88a231a161b",
+      "operation": "inspect_android_method",
+      "className": "defpackage.sp2",
+      "methodName": "b",
+      "representation": "smali",
+      "reportedSourceStatus": "complete",
+      "markers": [
+        "Method not decompiled",
+        "Method dump skipped, instruction units count"
+      ],
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    },
+    {
+      "file": "rea-composer-callers.json",
+      "evidenceId": "ev_a169b54aa22051188f5a8e3ea0a297a4f61e4448e92816ba4705fa9879f0fc01",
+      "sha256": "45ecd4250fb48493e966ad2161c9d04e4fb64d83f19da0205d679260aae56942",
+      "operation": "trace_android_references",
+      "className": "defpackage.sp2",
+      "methodName": "b",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    },
+    {
+      "file": "rea-composer-layout-class.json",
+      "evidenceId": "ev_4e0b32b94248e24340f078b2c3d31db25b0b5a9c56a4f534f2b97500267cbdbc",
+      "sha256": "a91f4c4d351cfa7b757afdd2f3e5fc9c614ff0dffc99481b98ef3c1e8c8e83e1",
+      "operation": "inspect_android_class",
+      "className": "defpackage.fj3",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    },
+    {
+      "file": "rea-composer-layout-init.json",
+      "evidenceId": "ev_b687e3748d7340ccacaf63327ee699097135b634deb1dcd4d621e83a8e90399b",
+      "sha256": "3a3c7d51634d85a7d6a64a1ce2928ca68f2dd4ec3093bd5e7991f0b4d1e485cc",
+      "operation": "inspect_android_method",
+      "className": "defpackage.fj3",
+      "methodName": "<init>",
+      "representation": "java",
+      "reportedSourceStatus": "complete",
+      "markers": [],
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    },
+    {
+      "file": "rea-composer-main-layout.json",
+      "evidenceId": "ev_0de1ac71b075f6f2139df1540de259d565d970672b3b35dffbc1d4f811988851",
+      "sha256": "31cee4c6f55f9d6d5d559400bd77e4a525b06129fafa42b37e6861d0bcaa8248",
+      "operation": "inspect_android_method",
+      "className": "defpackage.sp2",
+      "methodName": "e",
+      "representation": "java",
+      "reportedSourceStatus": "complete",
+      "markers": [],
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": false,
+      "reviewNote": "Reject as complete implementation: contains JADX method-generation errors and spills into subsequent methods despite reported complete source status."
+    },
+    {
+      "file": "rea-failed-message-retry.json",
+      "evidenceId": "ev_3a922cefc42a72467a4f1536d1772c7d6844c910058adb82959a2616b6ae1a9a",
+      "sha256": "5d76680e3885a185a438df4c487029993fa1f4447da6af08c35baba1d0f9b9d2",
+      "operation": "inspect_android_method",
+      "className": "defpackage.u49",
+      "methodName": "g",
+      "representation": "java",
+      "reportedSourceStatus": "complete",
+      "markers": [],
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    },
+    {
+      "file": "rea-main-tabs.json",
+      "evidenceId": "ev_a42a495ea841dcdcfcda742a5a53a841f1a4d71b55ab5bf552a2946f8e49d5ed",
+      "sha256": "bb273b6e8d6a5eaa9cfb0935224d85b16ba662bc071349fd69760e8c1fe95fc4",
+      "operation": "inspect_android_method",
+      "className": "defpackage.pp",
+      "methodName": "<clinit>",
+      "representation": "smali",
+      "reportedSourceStatus": "complete",
+      "markers": [
+        "static_initializer_disassembly"
+      ],
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    },
+    {
+      "file": "rea-menu-positioner.json",
+      "evidenceId": "ev_7dc833cb7f0a9ed0442fd890b97db759de5e277e299668951d43c9b24d539f3f",
+      "sha256": "b21ebb786cfc97318180bd53564d0525e15654a478341caccc25873e052d2fc6",
+      "operation": "inspect_android_method",
+      "className": "defpackage.er0",
+      "methodName": "h",
+      "representation": "java",
+      "reportedSourceStatus": "complete",
+      "markers": [],
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    },
+    {
+      "file": "rea-menu-press.json",
+      "evidenceId": "ev_69c63b519d9802800e297c0febb97a5e5b6de74c72feda0a957582325c66f56d",
+      "sha256": "f73cdba4fbad7ba45130e217b82712fb0f13a0102d8cbb759a57e65cb8ea1d33",
+      "operation": "inspect_android_method",
+      "className": "defpackage.ks6",
+      "methodName": "e",
+      "representation": "java",
+      "reportedSourceStatus": "complete",
+      "markers": [],
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    },
+    {
+      "file": "rea-menu-row.json",
+      "evidenceId": "ev_97d737bed008b011738b9020f931c2b9e859b7737b1b325c9e62c3877d65ef5f",
+      "sha256": "5fe0f366dfc6a495f211c412fa27840e53ab232fb007085beafb13dac61d255b",
+      "operation": "inspect_android_method",
+      "className": "defpackage.ks6",
+      "methodName": "d",
+      "representation": "java",
+      "reportedSourceStatus": "complete",
+      "markers": [],
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    },
+    {
+      "file": "rea-menu-surface.json",
+      "evidenceId": "ev_a672b98cb0bfccac91ab3b70e06a3b1cdf068e5dd47998fc66087a3304c68f58",
+      "sha256": "190250295c8419c721207f1496428a4bee9ea1889cb0239f3df4e7502ebdef2d",
+      "operation": "inspect_android_method",
+      "className": "defpackage.ks6",
+      "methodName": "b",
+      "representation": "java",
+      "reportedSourceStatus": "complete",
+      "markers": [],
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    },
+    {
+      "file": "rea-nav-chat.json",
+      "evidenceId": "ev_92e33b905a3276908db0a384c98fd2b1f3b7cde5bd490c6adb1e25cfe33d35cb",
+      "sha256": "337715fcc41956dc36967f55d3f17d8196f92119847f3555c7bb563fd7936477",
+      "operation": "inspect_android_method",
+      "className": "defpackage.fm0",
+      "methodName": "a",
+      "representation": "java",
+      "reportedSourceStatus": "complete",
+      "markers": [],
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    },
+    {
+      "file": "rea-nav-home-settings.json",
+      "evidenceId": "ev_60fd4cd698caf4695833d9edf44470b1f51f8d0ad53e3b3dcf55b2e8e359033f",
+      "sha256": "70ad5e5c1934521c81ef9ff269098bb4353d4c80b3402d612c4c74cae13686e9",
+      "operation": "inspect_android_method",
+      "className": "defpackage.ig7",
+      "methodName": "a",
+      "representation": "java",
+      "reportedSourceStatus": "complete",
+      "markers": [],
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    },
+    {
+      "file": "rea-nav-projects.json",
+      "evidenceId": "ev_897bc4a13a4fe90320be528e8425dc0dfd074152ac38f759072abfb18eaafe71",
+      "sha256": "edf41aff2453350a21dcd8eb01901c252422d70e5aebfe5a587e8b78329ebb0b",
+      "operation": "inspect_android_method",
+      "className": "defpackage.cob",
+      "methodName": "a",
+      "representation": "java",
+      "reportedSourceStatus": "complete",
+      "markers": [],
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    },
+    {
+      "file": "rea-settings-destinations.json",
+      "evidenceId": "ev_d7c9ee1533b0802672d43935acdc5fecc828b3e756708659655cdb2e7c631e91",
+      "sha256": "17519365b6f99482ba6b2c5cc2dcd75b6b94eb8fe5e4ba5efadf108d15afda5e",
+      "operation": "inspect_android_method",
+      "className": "defpackage.hs",
+      "methodName": "<clinit>",
+      "representation": "smali",
+      "reportedSourceStatus": "complete",
+      "markers": [
+        "static_initializer_disassembly"
+      ],
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    },
+    {
+      "file": "rea-settings-list.json",
+      "evidenceId": "ev_9d9a1dc48b84f6fd6dd1a716a583b2d9b2f83a71cbd8dc821644641871c036ce",
+      "sha256": "01efc2e2eb215ef0eb30aa40c469cc4010a3275b0556159b8d585079df586ea7",
+      "operation": "inspect_android_method",
+      "className": "defpackage.gk3",
+      "methodName": "s",
+      "representation": "java",
+      "reportedSourceStatus": "complete",
+      "markers": [],
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    },
+    {
+      "file": "rea-widget-host-callers.json",
+      "evidenceId": "ev_dd036bdab0e7991292723574f7ec09d5c569b9e021b661589cb0080bae07828a",
+      "sha256": "7e9354d8981020527e6cc8abd305d43be653ba40625d56f4b582e0a490506f63",
+      "operation": "trace_android_references",
+      "className": "com.hark.widgetruntime.ReactNativeHostManager",
+      "methodName": "wrapWithIntrinsicHeight",
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    },
+    {
+      "file": "rea-widget-measure.json",
+      "evidenceId": "ev_35815ad9b5d7694d52b57b0300a2a53854d0baa1c6319f985c950f73fed0c4cf",
+      "sha256": "93c1bc03064bfb2912e0e1afa40a3da1ceb904329c3bd65291527e56d8c10d15",
+      "operation": "inspect_android_method",
+      "className": "com.hark.widgetruntime.IntrinsicHeightReactNativeView",
+      "methodName": "onMeasure",
+      "representation": "java",
+      "reportedSourceStatus": "complete",
+      "markers": [],
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    },
+    {
+      "file": "rea-widget-props.json",
+      "evidenceId": "ev_02ddf721569f58151e35df6a7b4b959f59c0f33c14b5e999f65dcd320568a172",
+      "sha256": "1eb901831d66a150fac9ef29546d421f5d589ec0e656dbc493293173bad8ab18",
+      "operation": "inspect_android_method",
+      "className": "defpackage.bqf",
+      "methodName": "a",
+      "representation": "java",
+      "reportedSourceStatus": "complete",
+      "markers": [],
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    },
+    {
+      "file": "rea-widget-runtime-range.json",
+      "evidenceId": "ev_01dbfc8b32157386f852e6dd4566ff7a38724cb7a8fc0db9b10d3b2c33d41ab8",
+      "sha256": "adf910346ddd712988698a955f214759f048cee7efd58d2b0c01545903b0e9b3",
+      "operation": "inspect_android_method",
+      "className": "com.hark.widgetruntime.ReactNativeHostManager",
+      "methodName": "supportsRuntimeVersion",
+      "representation": "java",
+      "reportedSourceStatus": "complete",
+      "markers": [],
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "usable": true
+    }
+  ]
+}
