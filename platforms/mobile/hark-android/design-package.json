@@ -1,0 +1,92 @@
+{
+  "format": "rea-design-package",
+  "formatVersion": 1,
+  "id": "hark-android",
+  "name": "Hark Android",
+  "source": {
+    "platform": "mobile",
+    "runtime": "Android Kotlin Compose with React Native widget runtime",
+    "version": "1.0.0-36 (100000036)",
+    "identity": "com.hark.android@100000036; base-sha256:462218f35bf38795d74f8fb1fa034f5397ad71c1cdf7bcaba18a62896e4b3967",
+    "capturedAt": null,
+    "researchMethod": "REA6.5.0 open_binary/extract_artifact, apktool decode_android_resources and installedCLI inspect_android_package/class/method; original byte identities and limitations preserved in selected receipts. Native runtime collection and Google Play gate recorded independently.",
+    "researchEvidenceRefs": [
+      "evidence-rea-static",
+      "evidence-static-review"
+    ],
+    "authentication": {
+      "required": true,
+      "status": "Google Play sign-in reached a real phone-confirmation challenge after normal account/password submission; waiting for user to complete Google verification before Play installation and Hark login",
+      "coverage": "No authenticated Hark native core screen has been captured. No account identifiers or credentials are distributed."
+    }
+  },
+  "scope": {
+    "mode": "visual-design-and-core-interactions",
+    "goal": "Extract Hark Android visual rules and native core component contracts for a future mobile controller; provide a reusable neutral reference without cloning Hark services or replacing the existing web study.",
+    "excludedBusiness": [
+      "Original LLM/backend/prompts/transactions",
+      "Subscription/billing, external connectors and account data",
+      "Vivic production UI implementation",
+      "Android/iOS equivalence and unobserved state branches"
+    ]
+  },
+  "readiness": {
+    "status": "partial",
+    "supportedUses": [
+      "35个语义颜色角色的原生浅色/深色声明表。",
+      "13档原生自定义排版与局部发送控件几何，保留sp/dp。",
+      "可复用的独立输入、内容卡、选择sheet参考，明确D选择。",
+      "原生输入状态模型边界与后续手机控制器接入指南。"
+    ],
+    "coreGaps": [
+      "Authenticated native chat/cards/settings/sheet pixels and input/keyboard behavior require normal Google Play installation plus user Hark login.",
+      "Native component geometry beyond focused send control, runtime font fallback and key transition measurements remain unverified.",
+      "Original font redistribution license unresolved; reference uses explicit system fallback."
+    ],
+    "optionalGaps": [
+      "All business branches, billing/service integrations and background notification behavior are outside design scope.",
+      "Hermes widget payload internals and exact original spring coefficients are not required for the bounded reference."
+    ]
+  },
+  "entries": {
+    "readme": "README.md",
+    "spec": "DESIGN_SPEC.md",
+    "tokens": "tokens/tokens.json",
+    "components": "components/catalog.json",
+    "layouts": "patterns/layouts.json",
+    "interactions": "patterns/interactions.json",
+    "motion": "motion/catalog.json",
+    "assets": "assets/manifest.json",
+    "evidence": "evidence/index.json",
+    "reference": "reference/README.md",
+    "comparison": "comparison/README.md",
+    "adaptation": "ADAPTATION_GUIDE.md"
+  },
+  "validation": {
+    "reference": {
+      "status": "partial",
+      "evidenceRefs": [
+        "evidence-rea-static",
+        "evidence-reference-qa",
+        "evidence-reference-frame-0",
+        "evidence-reference-frame-1"
+      ],
+      "meaning": "Native B-to-independent-D declaration mapping and reference smoke/pixel review; authenticated Android A comparison remains pending."
+    },
+    "crossDomain": {
+      "status": "verified",
+      "evidenceRefs": [
+        "evidence-transfer-qa"
+      ],
+      "meaning": "Five actual browser scenarios in a neutral field-research task slice; this conclusion concerns target transfer only."
+    }
+  },
+  "distribution": {
+    "mode": "reviewed-public",
+    "omissions": [
+      "OriginalAPK/XAPK/splits, decompiled source, proprietaryfonts/artwork remain local and uncommitted.",
+      "No accountprofile, credentials, signeddownload URLs, AVD/SDK/cache or privateusercontent is distributed.",
+      "Original webHark study is preserved without modification."
+    ]
+  }
+}

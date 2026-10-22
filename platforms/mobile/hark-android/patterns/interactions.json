@@ -1,0 +1,181 @@
+{
+  "formatVersion": 1,
+  "kind": "interactions",
+  "items": [
+    {
+      "id": "interaction-compose",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "evidence-rea-static"
+      ],
+      "unknowns": [
+        "These asynchronous guarantees are independent target design; source tp2 state fields do not prove these transitions."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Use this explicit target decision pending native runtime comparison; preserve the stated source unknown."
+      },
+      "componentRefs": [
+        "component-composer",
+        "component-native-send"
+      ],
+      "transitions": [
+        {
+          "from": "empty",
+          "event": "nonblank input",
+          "to": "editing",
+          "result": "Enable send; preserve raw draft.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        },
+        {
+          "from": "editing",
+          "event": "submit",
+          "to": "sending",
+          "result": "Freeze one operation identity; disable duplicate send; keep draft until confirmed.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        },
+        {
+          "from": "sending",
+          "event": "success for current operation",
+          "to": "empty",
+          "result": "Append synthetic assistant task; clear acknowledged draft only.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        },
+        {
+          "from": "sending",
+          "event": "failure for current operation",
+          "to": "error",
+          "result": "Preserve draft and offer retry.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        },
+        {
+          "from": "sending",
+          "event": "cancel",
+          "to": "editing",
+          "result": "Invalidate current operation and preserve draft; ignore late result.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        },
+        {
+          "from": "error",
+          "event": "retry",
+          "to": "sending",
+          "result": "Start fresh operation identity.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interaction-sheet",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "evidence-reference-design"
+      ],
+      "unknowns": [
+        "Original Back gesture and dismissal semantics pending."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Use this explicit target decision pending native runtime comparison; preserve the stated source unknown."
+      },
+      "componentRefs": [
+        "component-modal-sheet"
+      ],
+      "transitions": [
+        {
+          "from": "closed",
+          "event": "settings button",
+          "to": "open",
+          "result": "Move focus to dialog and block background.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        },
+        {
+          "from": "open",
+          "event": "select theme",
+          "to": "open",
+          "result": "Apply selected palette; persist target preference.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        },
+        {
+          "from": "open",
+          "event": "Escape / close / scrim",
+          "to": "closed",
+          "result": "Restore focus to opener and retain selected preference.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interaction-task",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "evidence-reference-design"
+      ],
+      "unknowns": [
+        "Target slice is field-research organization, not Hark transaction behavior."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Use this explicit target decision pending native runtime comparison; preserve the stated source unknown."
+      },
+      "componentRefs": [
+        "component-content-card"
+      ],
+      "transitions": [
+        {
+          "from": "collapsed",
+          "event": "details",
+          "to": "expanded",
+          "result": "Show supporting rows.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        },
+        {
+          "from": "expanded",
+          "event": "details",
+          "to": "collapsed",
+          "result": "Keep underlying task state.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        },
+        {
+          "from": "ready",
+          "event": "mark done",
+          "to": "done",
+          "result": "Update only local synthetic task status and announce it.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        }
+      ]
+    }
+  ]
+}

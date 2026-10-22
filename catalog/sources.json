@@ -921,6 +921,107 @@
         "files": 271,
         "treeSha256": "92c1ee0ac9c7fdddaed564b32b574f476ad7f97aeb0ae7a347e652606e1db467"
       }
+    },
+    {
+      "id": "hark-android",
+      "name": "Hark Android",
+      "subtitle": "原生配色、排版与输入控件",
+      "platform": "mobile",
+      "kind": "research",
+      "root": "platforms/mobile/hark-android",
+      "visibility": "public",
+      "sourceVersion": "1.0.0-36 (100000036)",
+      "provenance": {
+        "kind": "rea-study",
+        "target": "com.hark.android@100000036; base-sha256:462218f35bf38795d74f8fb1fa034f5397ad71c1cdf7bcaba18a62896e4b3967",
+        "method": "REA6.5.0 open_binary/extract_artifact, apktool decode_android_resources and installedCLI inspect_android_package/class/method; original byte identities and limitations preserved in selected receipts. Native runtime collection and Google Play gate recorded independently.",
+        "researchEntry": "README.md"
+      },
+      "summary": "Hark Android1.0.0-36的35角色双主题、13档原生排版与局部发送控件；附独立任务参考，登录后核心视觉对照待续。",
+      "tags": [
+        "Android",
+        "Compose",
+        "输入",
+        "半透明表面",
+        "Design Package v1"
+      ],
+      "stack": [
+        "Android",
+        "Kotlin Compose",
+        "React Native widgets",
+        "HTML/CSS reference"
+      ],
+      "readiness": "partial",
+      "coverage": "已核对真实包/签名/REA定向静态声明；2项reducer及5项独立参考浏览器场景通过。Google账号密码正常提交后进入本人手机确认，Hark登录后原生核心UI待续。",
+      "features": [
+        "35个语义颜色角色的原生浅色/深色声明表。",
+        "13档原生自定义排版与局部发送控件几何，保留sp/dp。",
+        "可复用的独立输入、内容卡、选择sheet参考，明确D选择。",
+        "原生输入状态模型边界与后续手机控制器接入指南。"
+      ],
+      "limits": [
+        "Authenticated native chat/cards/settings/sheet pixels and input/keyboard behavior require normal Google Play installation plus user Hark login.",
+        "Native component geometry beyond focused send control, runtime font fallback and key transition measurements remain unverified.",
+        "Original font redistribution license unresolved; reference uses explicit system fallback.",
+        "All business branches, billing/service integrations and background notification behavior are outside design scope.",
+        "Hermes widget payload internals and exact original spring coefficients are not required for the bounded reference.",
+        "Original-platform/version boundaries remain; integrity check is not functional acceptance."
+      ],
+      "palette": [
+        "#1d1d1f",
+        "#f5f5f7",
+        "#ff4d00"
+      ],
+      "cover": "generic",
+      "paletteClassification": "D: catalog presentation; implementation uses scoped source tokens",
+      "designPackage": "design-package.json",
+      "artifacts": [
+        {
+          "label": "研究入口",
+          "path": "README.md",
+          "role": "readme"
+        },
+        {
+          "label": "设计规范",
+          "path": "DESIGN_SPEC.md",
+          "role": "spec"
+        },
+        {
+          "label": "Design Package v1",
+          "path": "design-package.json",
+          "role": "design-package"
+        },
+        {
+          "label": "迁移指南",
+          "path": "ADAPTATION_GUIDE.md",
+          "role": "adoption"
+        }
+      ],
+      "run": {
+        "cwd": "platforms/mobile/hark-android",
+        "command": "node reference/serve.mjs",
+        "requires": "Node.js22.13+；仅loopback4327；合成数据，无Hark/Vivic连接",
+        "verifiedHere": true
+      },
+      "typography": {
+        "families": [
+          "GT Standard L",
+          "GT Standard Mono",
+          "Hark Serif"
+        ]
+      },
+      "deliveryTier": "design-package",
+      "thumbnail": {
+        "path": "comparison/reference-light-390.png",
+        "reviewed": true,
+        "classification": "D",
+        "meaning": "独立野外任务参考截图，不是原版Hark截图。"
+      },
+      "integrity": {
+        "manifest": "catalog/manifests/hark-android.json",
+        "files": 27,
+        "treeSha256": "1cb87327213c2e16e875ee045b74008a26fd4604f5aaeaf4262cefcb648256cb"
+      }
     }
   ],
   "repository": {

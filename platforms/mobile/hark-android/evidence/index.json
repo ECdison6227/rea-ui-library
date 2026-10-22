@@ -1,0 +1,167 @@
+{
+  "formatVersion": 1,
+  "kind": "evidence",
+  "items": [
+    {
+      "id": "evidence-rea-static",
+      "classification": "B",
+      "origin": "current",
+      "subject": "source",
+      "kind": "static",
+      "sourceIdentity": "com.hark.android@100000036; base-sha256:462218f35bf38795d74f8fb1fa034f5397ad71c1cdf7bcaba18a62896e4b3967",
+      "capturedAt": null,
+      "provider": "REA",
+      "reaEvidenceIds": [
+        "ev_7e29ebc87892c12773596333a063604332667e63b7015dd81703671b59c57432",
+        "ev_96597bc53b335cc6f26dbb24f36c87f0ab53f831d148443ab18bb04b762c485a",
+        "ev_dd218f56e7d6a009738b77db216b39f969e12bdce71551605b153e89db848925",
+        "ev_68530285dbcb19e38e82eb66ff04bfae02885ee285acf85feb0fc27968d79b7f",
+        "ev_918f194eefe0bf95ce323b42968fd6ea9491d86ebe952dd570ffafafd1553b92",
+        "ev_20e09962a1cafb6489a4a98f86604a8d4b09db732d9419debfd483ae946b6886"
+      ],
+      "path": "evidence/rea-selected-observations.json",
+      "sha256": "adf73eda5607b727b965c4e7cc19380e14e9c026dee5889d0c995a7d3ac57b99",
+      "sharing": "included",
+      "method": "Actual APK inspection and focused class/method inspection. See selected receipt for original Evidence identities and exact limitations."
+    },
+    {
+      "id": "evidence-static-review",
+      "classification": "B",
+      "origin": "current",
+      "subject": "source",
+      "kind": "static",
+      "sourceIdentity": "com.hark.android@100000036; base-sha256:462218f35bf38795d74f8fb1fa034f5397ad71c1cdf7bcaba18a62896e4b3967",
+      "capturedAt": null,
+      "path": "evidence/static-design-findings.json",
+      "sha256": "bb7cdc9bb458539caf87d962fd92ad72828aad08c920c876934ee0d006169180",
+      "sharing": "included",
+      "method": "Independent factual review against bound original APK; supplements real REA IDs without assigning invented ones."
+    },
+    {
+      "id": "evidence-reference-design",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "hark-android-independent-reference-v1",
+      "capturedAt": null,
+      "path": "reference/model.mjs",
+      "sha256": "da057bff7879b25730ff23c3acd640cdedb0f792d32b84458326f70560d8b130",
+      "sharing": "included",
+      "method": "Independent neutral field-research reference. Original app behavior, runtime colors, fonts and timings are not proved by this implementation."
+    },
+    {
+      "id": "evidence-transfer-slice",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "field-research-task-slice-v1",
+      "capturedAt": null,
+      "path": "reference/index.html",
+      "sha256": "e50e7a6bf2b2f7a9d09ca5d52fe7d9f36697e54c6f2fbe72aa02f6623d743df2",
+      "sharing": "included",
+      "method": "Cross-domain reference combines task notes, completion and asynchronous feedback with synthetic local data only."
+    },
+    {
+      "id": "evidence-reference-qa",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "field-research-reference-and-transfer-v1",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-22T08:28:22.105Z",
+        "completedAt": "2026-10-22T08:28:29.002Z"
+      },
+      "sharing": "included",
+      "path": "comparison/reference-verification.json",
+      "sha256": "bebedc59457ae08e5af2387248eb887362c074ddb32d4f74ec2df90cfcca867d",
+      "method": "Actual isolated Playwright smoke; five scenarios passed, zero page errors or external requests. Does not verify original native behavior."
+    },
+    {
+      "id": "evidence-transfer-qa",
+      "classification": "D",
+      "origin": "current",
+      "subject": "transfer",
+      "kind": "independent",
+      "sourceIdentity": "field-research-reference-and-transfer-v1",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-22T08:28:22.105Z",
+        "completedAt": "2026-10-22T08:28:29.002Z"
+      },
+      "sharing": "included",
+      "path": "comparison/reference-verification.json",
+      "sha256": "bebedc59457ae08e5af2387248eb887362c074ddb32d4f74ec2df90cfcca867d",
+      "method": "Actual isolated Playwright smoke; five scenarios passed, zero page errors or external requests. Does not verify original native behavior."
+    },
+    {
+      "id": "evidence-reference-frame-0",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "field-research-reference-and-transfer-v1",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-22T08:28:22.105Z",
+        "completedAt": "2026-10-22T08:28:29.002Z"
+      },
+      "sharing": "included",
+      "path": "comparison/reference-light-390.png",
+      "sha256": "9c5cf2cdd5463fc5c97999c0d84193c6cc45abd620a82e54c7202a67d0785fae",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T08:29:44.880Z",
+        "notes": "Actual pixels inspected; synthetic neutral content only. System fallback and chosen background/radius differ from unverified original native screens."
+      },
+      "method": "Actual Playwright screenshot of independent local reference. Reduced-motion screenshot uses320x700; other screenshots390x844. Browser CSS units are not Android physical pixels."
+    },
+    {
+      "id": "evidence-reference-frame-1",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "field-research-reference-and-transfer-v1",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-22T08:28:22.105Z",
+        "completedAt": "2026-10-22T08:28:29.002Z"
+      },
+      "sharing": "included",
+      "path": "comparison/reference-dark-sheet-390.png",
+      "sha256": "eefed9f524f3f5e8e82c34e9b92b03a8341f918b75ff2c41a4e7740b5b678393",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T08:29:44.882Z",
+        "notes": "Actual pixels inspected; synthetic neutral content only. System fallback and chosen background/radius differ from unverified original native screens."
+      },
+      "method": "Actual Playwright screenshot of independent local reference. Reduced-motion screenshot uses320x700; other screenshots390x844. Browser CSS units are not Android physical pixels."
+    },
+    {
+      "id": "evidence-reference-frame-2",
+      "classification": "D",
+      "origin": "current",
+      "subject": "reference",
+      "kind": "independent",
+      "sourceIdentity": "field-research-reference-and-transfer-v1",
+      "capturedAt": null,
+      "captureInterval": {
+        "startedAt": "2026-10-22T08:28:22.105Z",
+        "completedAt": "2026-10-22T08:28:29.002Z"
+      },
+      "sharing": "included",
+      "path": "comparison/reference-reduced-motion-320.png",
+      "sha256": "03822f897f522c76daea960e91089349e1e9afbdc831cc31d0e3c3e17af64af6",
+      "review": {
+        "status": "reviewed",
+        "reviewedAt": "2026-10-22T08:29:44.883Z",
+        "notes": "Actual pixels inspected; synthetic neutral content only. System fallback and chosen background/radius differ from unverified original native screens."
+      },
+      "method": "Actual Playwright screenshot of independent local reference. Reduced-motion screenshot uses320x700; other screenshots390x844. Browser CSS units are not Android physical pixels."
+    }
+  ]
+}

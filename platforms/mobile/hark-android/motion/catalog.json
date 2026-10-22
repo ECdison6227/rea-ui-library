@@ -1,0 +1,113 @@
+{
+  "formatVersion": 1,
+  "kind": "motion",
+  "items": [
+    {
+      "id": "motion-source-composer",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "evidence-rea-static"
+      ],
+      "unknowns": [
+        "Rendering a spinner does not establish a specific rotation period or native animation curve."
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Use the recorded role/value in its declared scope; confirm runtime binding before claiming Android pixel parity."
+      },
+      "trigger": "Native send control busy flag",
+      "properties": [
+        "arrow-versus-spinner child branch"
+      ],
+      "duration": {
+        "value": null,
+        "unit": "ms",
+        "basis": "unknown"
+      },
+      "easing": {
+        "value": null,
+        "basis": "unknown"
+      },
+      "interruption": [
+        "Original transition duration and restart behavior are not recovered from this focused method."
+      ]
+    },
+    {
+      "id": "motion-target-sheet",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "evidence-reference-design"
+      ],
+      "unknowns": [
+        "This is a distributable target timing choice, not an original Hark measurement."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Use this explicit target decision pending native runtime comparison; preserve the stated source unknown."
+      },
+      "trigger": "Reference choice sheet open",
+      "properties": [
+        "translateY(24px) to0",
+        "opacity0to1"
+      ],
+      "duration": {
+        "value": 220,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "easing": {
+        "value": "cubic-bezier(.2,.8,.2,1)",
+        "basis": "chosen"
+      },
+      "delay": {
+        "value": 0,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "interruption": [
+        "Close interrupts immediately and removes modal after CSS exit; rapid reopen starts from current DOM state.",
+        "prefers-reduced-motion:reduce removes translation and shortens to0ms."
+      ]
+    },
+    {
+      "id": "motion-target-feedback",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "evidence-reference-design"
+      ],
+      "unknowns": [
+        "Native spring coefficients not measured."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Use this explicit target decision pending native runtime comparison; preserve the stated source unknown."
+      },
+      "trigger": "Reference button press/task feedback",
+      "properties": [
+        "scale1to.98 on active",
+        "opacity feedback"
+      ],
+      "duration": {
+        "value": 120,
+        "unit": "ms",
+        "basis": "chosen"
+      },
+      "easing": {
+        "value": "ease-out",
+        "basis": "chosen"
+      },
+      "interruption": [
+        "Release restores scale; reduced motion removes transform."
+      ]
+    }
+  ]
+}

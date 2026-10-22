@@ -1,0 +1,42 @@
+{
+  "sourceIdentity": "com.hark.android@100000036; base-sha256:462218f35bf38795d74f8fb1fa034f5397ad71c1cdf7bcaba18a62896e4b3967",
+  "method": "Analyst review of REA focused method results plus private JADX1.5.6 output against the byte-identical base APK; decompilation is static and incomplete overall.",
+  "sourceFiles": [
+    {
+      "file": "rea-apk-package.json",
+      "sha256": "28bd1656d389746c52157582367a549d550975628b5371953d0cdade6092219b"
+    },
+    {
+      "file": "rea-main-activity.json",
+      "sha256": "36a2597608ac2f36ca9900411c4ea5c268ebb88fb0bc7d9d4462cd19dab9106f"
+    },
+    {
+      "file": "rea-colors-init.json",
+      "sha256": "b3ad98fa092cbd4a243b9458855bf74f5dde0ea52e78ce565c00565e78d17a44"
+    },
+    {
+      "file": "rea-type-init.json",
+      "sha256": "eb8e17dbb831a031f7ffb9613eb9e65af287cc12f64e0c8fa3cd5f2a7ffb6af1"
+    },
+    {
+      "file": "rea-composer-send.json",
+      "sha256": "8efb367be9be01a419081c070dcfb32c9db8c4c3117262bd5592356f266705a7"
+    },
+    {
+      "file": "rea-color-roles.json",
+      "sha256": "e991a4445fdbf5846662d1a1cc97a350e87ddf73c61d943716169bedf7de5936"
+    }
+  ],
+  "findings": [
+    "HarkColors has35semantic fields and two theme palettes; source alpha values are not flattened RGB.",
+    "Native custom typography uses GT Standard L and13custom roles; source line heights differ from earlier web presets.",
+    "Send control regular52x48dp/ink52x32dp; compact48x48dp/ink32x32dp; arrow16dp/spinner18dp/stroke2dp.",
+    "Native app uses Compose; a bundled React Native/Hermes runtime serves widget functionality rather than proving the whole shell is a WebView.",
+    "Static ChatComposerState fields include conversationReady/sendInProgress/canSend/guidedComposer/createPanel/attachments/voice states."
+  ],
+  "coverageLimitations": [
+    "JADX CLI bulk pass reported340decompilation errors; only successfully reviewed focused methods are used as numeric facts.",
+    "Native app runtime behind Google Play/Hark authentication remains a separate collection requirement.",
+    "Presence of labels/features/resources does not establish their live availability or rendering."
+  ]
+}

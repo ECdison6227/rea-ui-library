@@ -1,0 +1,64 @@
+{
+  "formatVersion": 1,
+  "kind": "layouts",
+  "items": [
+    {
+      "id": "layout-mobile-task",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "evidence-rea-static"
+      ],
+      "unknowns": [
+        "Native edge-to-edge/IME/window-insets runtime unmeasured."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Use this explicit target decision pending native runtime comparison; preserve the stated source unknown."
+      },
+      "name": "Single-column task conversation",
+      "componentRefs": [
+        "component-navigation",
+        "component-content-card",
+        "component-composer"
+      ],
+      "rules": [
+        "Fit390CSSpx demonstration canvas, expand to maximum480px on wide displays; real Android width remains dp/density-dependent.",
+        "Respect env(safe-area-inset-*) for browser reference; actual Android WindowInsets and IME behavior require native implementation.",
+        "Header and composer are siblings of the flexible scroll area. The composer must remain reachable when content grows.",
+        "16px group rhythm and20px horizontal gutters are explicit target choices.",
+        "No content-width or screen dimension from a marketing image is treated as an Android app constant."
+      ]
+    },
+    {
+      "id": "layout-choice-sheet",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "evidence-reference-design"
+      ],
+      "unknowns": [
+        "Native app gesture dismiss semantics unmeasured."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Use this explicit target decision pending native runtime comparison; preserve the stated source unknown."
+      },
+      "name": "Bottom anchored settings choices",
+      "componentRefs": [
+        "component-modal-sheet",
+        "component-navigation"
+      ],
+      "rules": [
+        "One focused decision group per modal.",
+        "Keep selected state visible and retain focus to opener on close.",
+        "Long content scrolls inside the sheet; do not cover close control.",
+        "Use native dialog/back stack for Android target rather than relying on browser Escape."
+      ]
+    }
+  ]
+}

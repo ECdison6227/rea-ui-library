@@ -1,0 +1,178 @@
+{
+  "format": "reviewed-rea-observation-receipt",
+  "version": 1,
+  "sourceIdentity": "com.hark.android@100000036; base-sha256:462218f35bf38795d74f8fb1fa034f5397ad71c1cdf7bcaba18a62896e4b3967",
+  "method": "Selected identity/coverage fields from actual rea-agents 6.5.0 CLI results. Raw decompiled bodies, manifests and local paths are omitted after distribution review. This projection is not a canonical Evidence bundle and does not acquire a new REA ID.",
+  "observations": [
+    {
+      "originalEvidenceId": "ev_7e29ebc87892c12773596333a063604332667e63b7015dd81703671b59c57432",
+      "operation": "inspect_android_package",
+      "canonicalPrivateRecordSha256": "28bd1656d389746c52157582367a549d550975628b5371953d0cdade6092219b",
+      "artifactSha256": "462218f35bf38795d74f8fb1fa034f5397ad71c1cdf7bcaba18a62896e4b3967",
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 6144
+      },
+      "selector": null,
+      "representation": null,
+      "bodyStatus": null,
+      "sourceStatus": "complete",
+      "sourceTextSha256": null,
+      "packageMetadata": {
+        "package_name": "com.hark.android",
+        "version_code": "100000036",
+        "version_name": "1.0.0-36",
+        "min_sdk": "32",
+        "target_sdk": "37",
+        "class_count": 16862,
+        "resource_count": 1105
+      },
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ]
+    },
+    {
+      "originalEvidenceId": "ev_96597bc53b335cc6f26dbb24f36c87f0ab53f831d148443ab18bb04b762c485a",
+      "operation": "inspect_android_class",
+      "canonicalPrivateRecordSha256": "36a2597608ac2f36ca9900411c4ea5c268ebb88fb0bc7d9d4462cd19dab9106f",
+      "artifactSha256": "462218f35bf38795d74f8fb1fa034f5397ad71c1cdf7bcaba18a62896e4b3967",
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 6144
+      },
+      "selector": "com.hark.android.MainActivity",
+      "representation": null,
+      "bodyStatus": null,
+      "sourceStatus": null,
+      "sourceTextSha256": null,
+      "packageMetadata": null,
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ]
+    },
+    {
+      "originalEvidenceId": "ev_dd218f56e7d6a009738b77db216b39f969e12bdce71551605b153e89db848925",
+      "operation": "inspect_android_method",
+      "canonicalPrivateRecordSha256": "b3ad98fa092cbd4a243b9458855bf74f5dde0ea52e78ce565c00565e78d17a44",
+      "artifactSha256": "462218f35bf38795d74f8fb1fa034f5397ad71c1cdf7bcaba18a62896e4b3967",
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 6144
+      },
+      "selector": "defpackage.kq6#<clinit>:()V",
+      "representation": "smali",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "sourceTextSha256": "ac4f777cbdcfb820d073b40148103d1d9a9454c78c450cc3b28696713f9b928d",
+      "packageMetadata": null,
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ]
+    },
+    {
+      "originalEvidenceId": "ev_68530285dbcb19e38e82eb66ff04bfae02885ee285acf85feb0fc27968d79b7f",
+      "operation": "inspect_android_method",
+      "canonicalPrivateRecordSha256": "eb8e17dbb831a031f7ffb9613eb9e65af287cc12f64e0c8fa3cd5f2a7ffb6af1",
+      "artifactSha256": "462218f35bf38795d74f8fb1fa034f5397ad71c1cdf7bcaba18a62896e4b3967",
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 6144
+      },
+      "selector": "defpackage.nu6#<clinit>:()V",
+      "representation": "smali",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "sourceTextSha256": "d67d3dfa167873cd232bad93c37f8b17ac236cff512b63f66109e10075c8bffd",
+      "packageMetadata": null,
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ]
+    },
+    {
+      "originalEvidenceId": "ev_918f194eefe0bf95ce323b42968fd6ea9491d86ebe952dd570ffafafd1553b92",
+      "operation": "inspect_android_method",
+      "canonicalPrivateRecordSha256": "8efb367be9be01a419081c070dcfb32c9db8c4c3117262bd5592356f266705a7",
+      "artifactSha256": "462218f35bf38795d74f8fb1fa034f5397ad71c1cdf7bcaba18a62896e4b3967",
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 6144
+      },
+      "selector": "defpackage.sp2#c:(Lma6;ZFLjava/lang/String;ZZLtq9;Lma6;Lsc6;I)V",
+      "representation": "java",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "sourceTextSha256": "37a3f3810134557ac3be47d8224b899a45c7b9ad809deabb95acfc30a923cd5e",
+      "packageMetadata": null,
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ]
+    },
+    {
+      "originalEvidenceId": "ev_20e09962a1cafb6489a4a98f86604a8d4b09db732d9419debfd483ae946b6886",
+      "operation": "inspect_android_method",
+      "canonicalPrivateRecordSha256": "e991a4445fdbf5846662d1a1cc97a350e87ddf73c61d943716169bedf7de5936",
+      "artifactSha256": "462218f35bf38795d74f8fb1fa034f5397ad71c1cdf7bcaba18a62896e4b3967",
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 6144
+      },
+      "selector": "defpackage.jq6#toString:()Ljava/lang/String;",
+      "representation": "java",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "sourceTextSha256": "13d4a0e0b22ff05f63ac5df0e09caf0a421eb9cb2186c31c98112a8a24580df9",
+      "packageMetadata": null,
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ]
+    }
+  ]
+}

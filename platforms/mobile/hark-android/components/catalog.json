@@ -1,0 +1,346 @@
+{
+  "formatVersion": 1,
+  "kind": "components",
+  "items": [
+    {
+      "id": "component-native-send",
+      "classification": "B",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "evidence-rea-static"
+      ],
+      "unknowns": [
+        "Native runtime hit testing, animation and actual disabled appearance pending."
+      ],
+      "implementation": {
+        "status": "specified",
+        "classification": "D",
+        "decision": "Use the recorded role/value in its declared scope; confirm runtime binding before claiming Android pixel parity."
+      },
+      "name": "Composer send control",
+      "slots": [
+        "hit target",
+        "visible ink capsule",
+        "arrow artwork or busy indicator",
+        "accessibility state description"
+      ],
+      "tokenRefs": [
+        "geometry-send-touch-width",
+        "geometry-send-touch-height",
+        "geometry-send-compact-touch-width",
+        "geometry-send-visual-height",
+        "geometry-send-icon",
+        "geometry-send-spinner",
+        "color-light-fill-primary",
+        "color-dark-fill-primary"
+      ],
+      "states": [
+        {
+          "id": "enabled",
+          "appearance": "Declared primary-fill ink and contrasting arrow.",
+          "evidenceRefs": [
+            "evidence-rea-static"
+          ]
+        },
+        {
+          "id": "disabled",
+          "appearance": "Declared alpha branch uses caller-provided alpha; do not assume one global disabled opacity.",
+          "evidenceRefs": [
+            "evidence-rea-static"
+          ]
+        },
+        {
+          "id": "sending",
+          "appearance": "Arrow branch is replaced by18dp spinner with2dp stroke and declared sending state-description.",
+          "evidenceRefs": [
+            "evidence-rea-static"
+          ]
+        }
+      ],
+      "events": [
+        "activate when enabled",
+        "busy state supplied by host"
+      ],
+      "geometry": {
+        "sourceUnit": "dp",
+        "regular": {
+          "touch": [
+            52,
+            48
+          ],
+          "ink": [
+            52,
+            32
+          ]
+        },
+        "compact": {
+          "touch": [
+            48,
+            48
+          ],
+          "ink": [
+            32,
+            32
+          ]
+        }
+      }
+    },
+    {
+      "id": "component-composer",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "evidence-rea-static"
+      ],
+      "unknowns": [
+        "Source state model tp2 declares readiness/sendInProgress/canSend/attachments/voice, but original send cancellation, keyboard transition and draft persistence are not runtime verified."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Use independent pure reducer in reference/model.mjs; bind it to target APIs later, and preserve in-flight draft on failure/cancel."
+      },
+      "name": "Anchored composer",
+      "slots": [
+        "text draft",
+        "attachment menu button",
+        "send control",
+        "attachment chips",
+        "cancel or retry feedback"
+      ],
+      "tokenRefs": [
+        "type-body-large",
+        "target-card-radius",
+        "target-page-gutter"
+      ],
+      "states": [
+        {
+          "id": "empty",
+          "appearance": "Draft empty, send disabled.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        },
+        {
+          "id": "editing",
+          "appearance": "Draft visible, send enabled if trimmed text exists.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        },
+        {
+          "id": "sending",
+          "appearance": "Draft retained while synthetic request is pending; spinner replaces arrow.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        },
+        {
+          "id": "error",
+          "appearance": "Inline error with retry; draft retained.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        },
+        {
+          "id": "cancelled",
+          "appearance": "Return to editing with draft preserved.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        }
+      ],
+      "events": [
+        "input",
+        "submit",
+        "cancel",
+        "retry",
+        "attachment-menu"
+      ]
+    },
+    {
+      "id": "component-content-card",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "evidence-rea-static"
+      ],
+      "unknowns": [
+        "Original native panel geometry and exact action lifecycle pending."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Use neutral field research tasks to verify reusable card hierarchy; no Hark service call or original implementation is copied."
+      },
+      "name": "Task content panel",
+      "slots": [
+        "eyebrow/source",
+        "title",
+        "summary",
+        "structured rows",
+        "primary action",
+        "disclosure body"
+      ],
+      "tokenRefs": [
+        "color-light-regular-surface",
+        "color-dark-regular-surface",
+        "color-light-stroke-primary",
+        "color-dark-stroke-primary",
+        "target-card-radius",
+        "type-title-medium"
+      ],
+      "states": [
+        {
+          "id": "collapsed",
+          "appearance": "Summary and one primary next step.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        },
+        {
+          "id": "expanded",
+          "appearance": "Structured supporting rows become visible.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        },
+        {
+          "id": "success",
+          "appearance": "Status turns complete; action becomes completed.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        }
+      ],
+      "events": [
+        "toggle-details",
+        "complete",
+        "undo-completion"
+      ]
+    },
+    {
+      "id": "component-modal-sheet",
+      "classification": "D",
+      "coverage": "unverified",
+      "priority": "core",
+      "evidenceRefs": [
+        "evidence-reference-design"
+      ],
+      "unknowns": [
+        "Original native sheet shape, exit gestures, timing and stacked modal behavior pending."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Use this explicit target decision pending native runtime comparison; preserve the stated source unknown."
+      },
+      "name": "Bottom choice sheet",
+      "slots": [
+        "scrim",
+        "handle",
+        "heading",
+        "close action",
+        "choice rows"
+      ],
+      "tokenRefs": [
+        "target-sheet-radius",
+        "type-title-large",
+        "target-page-gutter"
+      ],
+      "states": [
+        {
+          "id": "closed",
+          "appearance": "Removed from focus order.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        },
+        {
+          "id": "open",
+          "appearance": "Sheet traps focus, background input blocked, heading announced.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        },
+        {
+          "id": "selected",
+          "appearance": "Selected theme is marked and persisted only in reference localStorage.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        }
+      ],
+      "events": [
+        "open",
+        "select",
+        "scrim-dismiss",
+        "close",
+        "Escape",
+        "system-back-adapter"
+      ]
+    },
+    {
+      "id": "component-navigation",
+      "classification": "D",
+      "coverage": "partial",
+      "priority": "core",
+      "evidenceRefs": [
+        "evidence-rea-static"
+      ],
+      "unknowns": [
+        "The native app navigation shell is not yet observed behind login/license gate."
+      ],
+      "implementation": {
+        "status": "adaptation-required",
+        "classification": "D",
+        "decision": "Provide a reference shell demonstrating transferable hierarchy. Vivic pairing, canvas switching and authentication must remain target business logic."
+      },
+      "name": "Mobile task navigation",
+      "slots": [
+        "brand/title",
+        "menu/settings action",
+        "scrollable conversation",
+        "bottom composer"
+      ],
+      "tokenRefs": [
+        "target-header-height",
+        "target-page-gutter",
+        "type-title-medium",
+        "type-body-large"
+      ],
+      "states": [
+        {
+          "id": "initial",
+          "appearance": "One clear task entry and content panel.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        },
+        {
+          "id": "settings",
+          "appearance": "Choice sheet owns focus.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        },
+        {
+          "id": "long-content",
+          "appearance": "Content scrolls above composer without hiding primary action.",
+          "evidenceRefs": [
+            "evidence-reference-design"
+          ]
+        }
+      ],
+      "events": [
+        "open-settings",
+        "dismiss-settings",
+        "scroll",
+        "submit"
+      ]
+    }
+  ]
+}

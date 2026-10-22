@@ -1,0 +1,48 @@
+{
+  "classification": "D",
+  "subject": "reference and neutral transfer slice",
+  "startedAt": "2026-10-22T08:28:22.105Z",
+  "completedAt": "2026-10-22T08:28:29.002Z",
+  "browser": "Playwright Chromium isolated context",
+  "checks": [
+    {
+      "name": "scoped-send-geometry-and-type",
+      "metrics": {
+        "touch": [
+          52,
+          48
+        ],
+        "ink": [
+          52,
+          32
+        ],
+        "bodyFont": "15px",
+        "bodyLine": "18px"
+      }
+    },
+    {
+      "name": "card-disclosure-complete-undo",
+      "status": "passed"
+    },
+    {
+      "name": "theme-persistence-dialog-focus",
+      "status": "passed"
+    },
+    {
+      "name": "failure-retry-cancel-resend",
+      "status": "passed"
+    },
+    {
+      "name": "narrow-width-reduced-motion",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "originalAndroidCoreScreensVerified": false,
+  "limitations": [
+    "CSS px are not Android physical pixels.",
+    "System font fallback differs from proprietary bundled fonts.",
+    "Browser tests do not prove native IME/back/accessibility behavior."
+  ]
+}

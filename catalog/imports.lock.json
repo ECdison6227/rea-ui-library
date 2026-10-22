@@ -175,6 +175,26 @@
       },
       "origin": "historical",
       "workingTreeMutationPerformed": false
+    },
+    {
+      "id": "hark-android",
+      "path": "platforms/mobile/hark-android",
+      "storage": "monorepo",
+      "provenance": {
+        "kind": "rea-study",
+        "target": "com.hark.android@100000036; base-sha256:462218f35bf38795d74f8fb1fa034f5397ad71c1cdf7bcaba18a62896e4b3967",
+        "method": "REA6.5.0 open_binary/extract_artifact, apktool decode_android_resources and installedCLI inspect_android_package/class/method; original byte identities and limitations preserved in selected receipts. Native runtime collection and Google Play gate recorded independently.",
+        "researchEntry": "README.md"
+      },
+      "revision": null,
+      "snapshot": null,
+      "integrity": {
+        "manifest": "catalog/manifests/hark-android.json",
+        "files": 27,
+        "treeSha256": "1cb87327213c2e16e875ee045b74008a26fd4604f5aaeaf4262cefcb648256cb"
+      },
+      "origin": "historical",
+      "workingTreeMutationPerformed": false
     }
   ],
   "thumbnails": [
@@ -238,6 +258,15 @@
       "target": "site/assets/thumbs/muse-public-home.png",
       "sha256": "7dc4e0137cb5ff7f092d1754748558dd366307aaf7cd3497f88f09e6c9b3dbaf",
       "classification": "A · Muse原版公开首页，未登录；1440×1000",
+      "reviewed": true,
+      "transformed": false
+    },
+    {
+      "id": "hark-android",
+      "source": "platforms/mobile/hark-android/comparison/reference-light-390.png",
+      "target": "site/assets/thumbs/hark-android.png",
+      "sha256": "9c5cf2cdd5463fc5c97999c0d84193c6cc45abd620a82e54c7202a67d0785fae",
+      "classification": "D",
       "reviewed": true,
       "transformed": false
     }
